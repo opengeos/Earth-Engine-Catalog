@@ -84,7 +84,8 @@ print("Total datasets: ", len(datasets))
 
 df = pd.DataFrame(datasets)
 df.sort_values(by=["id"], inplace=True)
-df.to_csv("gee_catalog.tsv", index=False, sep="\t")
+# remove the script column because it contains ? and # characters, GitHub can't render it.
+df.drop('script', axis=1).to_csv("gee_catalog.tsv", index=False, sep="\t")  
 
 with open("gee_catalog.json", "w") as f:
     json.dump(df.to_dict("records"), f, indent=4)
