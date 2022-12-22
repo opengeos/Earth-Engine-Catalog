@@ -1,0 +1,473 @@
+{
+    "type": "Collection",
+    "id": "HYCOM/GLBu0_08/sea_temp_salinity",
+    "stac_version": "1.0.0",
+    "description": "The Hybrid Coordinate Ocean Model (HYCOM) is a data-assimilative hybrid\nisopycnal-sigma-pressure (generalized) coordinate ocean model. The subset\nof HYCOM data hosted in EE contains the variables salinity, temperature,\nvelocity, and elevation. They have been interpolated to a uniform\n0.08 degree lat/long grid between 80.48\u00b0S and 80.48\u00b0N. The salinity,\ntemperature, and velocity variables have been interpolated to 40\nstandard z-levels.\n\nThe HYCOM Consortium, which includes the National Ocean Partnership\nProgram (NOPP), is part of the U.S. Global Ocean Data Assimilation\nExperiment (GODAE).\n\nFunded by the National Ocean Partnership Program, the Office of Naval\nResearch (ONR), and DoD High Performance Computing Modernization Program.\n\nFor more information, see:\n\n- [hycom.org](https://www.hycom.org/)\n- [GIS StackExchange hycom](https://gis.stackexchange.com/questions/tagged/hycom)\n- Wikipedia [HyCOM](https://en.wikipedia.org/wiki/HyCOM)\n- Wikipedia [List of ocean circulation models](https://en.wikipedia.org/wiki/List_of_ocean_circulation_models)\n- Wikipedia [Ocean general circulation model (OGCM)](https://en.wikipedia.org/wiki/Ocean_general_circulation_model)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/HYCOM_GLBu0_08_sea_temp_salinity",
+            "type": "text/html",
+            "title": "Run the example for HYCOM/GLBu0_08/sea_temp_salinity in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/HYCOM/HYCOM_GLBu0_08_sea_temp_salinity_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/HYCOM_GLBu0_08_sea_temp_salinity#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/HYCOM/HYCOM_sea_temp_salinity.json",
+            "type": "application/json",
+            "title": "HYCOM/sea_temp_salinity"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/HYCOM/HYCOM_GLBu0_08_sea_temp_salinity.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/HYCOM/catalog.json",
+            "type": "application/json",
+            "title": "HYCOM"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "deprecated": true,
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "This dataset is freely available with no restrictions.",
+    "gee:type": "image_collection",
+    "keywords": [
+        "hycom",
+        "nopp",
+        "ocean",
+        "salinity",
+        "sst",
+        "water",
+        "water_temp"
+    ],
+    "providers": [
+        {
+            "name": "NOPP",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://hycom.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/HYCOM_GLBu0_08_sea_temp_salinity"
+        }
+    ],
+    "sci:citation": "J. A. Cummings and O. M. Smedstad. 2013: Variational Data Assimilation for\nthe Global Ocean. Data Assimilation for Atmospheric, Oceanic and Hydrologic\nApplications vol II, chapter 13, 303-343.\n",
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Experiment number",
+                "name": "experiment",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Sea Water Temperature",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "water_temp_0"
+                        ],
+                        "max": [
+                            15000
+                        ],
+                        "min": [
+                            -20000
+                        ],
+                        "palette": [
+                            "000000",
+                            "005aff",
+                            "43c8c8",
+                            "fff700",
+                            "ff0000"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 26.4,
+                    "lon": -88.6,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            8905.6
+        ],
+        "salinity_0": {
+            "minimum": -20009,
+            "maximum": 32767
+        },
+        "salinity_10": {
+            "minimum": -19624,
+            "maximum": 32767
+        },
+        "salinity_100": {
+            "minimum": -16717,
+            "maximum": 27143
+        },
+        "salinity_1000": {
+            "minimum": 0,
+            "maximum": 21982
+        },
+        "salinity_12": {
+            "minimum": -19624,
+            "maximum": 32767
+        },
+        "salinity_125": {
+            "minimum": -14896,
+            "maximum": 30131
+        },
+        "salinity_1250": {
+            "minimum": 0,
+            "maximum": 22075
+        },
+        "salinity_15": {
+            "minimum": -19624,
+            "maximum": 32767
+        },
+        "salinity_150": {
+            "minimum": -14712,
+            "maximum": 31215
+        },
+        "salinity_1500": {
+            "minimum": 0,
+            "maximum": 20937
+        },
+        "salinity_2": {
+            "minimum": -20002,
+            "maximum": 32767
+        },
+        "salinity_20": {
+            "minimum": -18606,
+            "maximum": 32767
+        },
+        "salinity_200": {
+            "minimum": -14567,
+            "maximum": 30979
+        },
+        "salinity_2000": {
+            "minimum": 0,
+            "maximum": 20936
+        },
+        "salinity_25": {
+            "minimum": -18131,
+            "maximum": 32767
+        },
+        "salinity_250": {
+            "minimum": -13198,
+            "maximum": 27945
+        },
+        "salinity_2500": {
+            "minimum": 0,
+            "maximum": 19073
+        },
+        "salinity_30": {
+            "minimum": -17892,
+            "maximum": 32767
+        },
+        "salinity_300": {
+            "minimum": -220,
+            "maximum": 27712
+        },
+        "salinity_3000": {
+            "minimum": 0,
+            "maximum": 19057
+        },
+        "salinity_35": {
+            "minimum": -17874,
+            "maximum": 32767
+        },
+        "salinity_350": {
+            "minimum": -136,
+            "maximum": 21866
+        },
+        "salinity_4": {
+            "minimum": -20001,
+            "maximum": 32767
+        },
+        "salinity_40": {
+            "minimum": -17831,
+            "maximum": 32767
+        },
+        "salinity_400": {
+            "minimum": 0,
+            "maximum": 24711
+        },
+        "salinity_4000": {
+            "minimum": 0,
+            "maximum": 19012
+        },
+        "salinity_45": {
+            "minimum": -17831,
+            "maximum": 32767
+        },
+        "salinity_50": {
+            "minimum": -17738,
+            "maximum": 32767
+        },
+        "salinity_500": {
+            "minimum": 0,
+            "maximum": 24929
+        },
+        "salinity_5000": {
+            "minimum": 0,
+            "maximum": 15583
+        },
+        "salinity_6": {
+            "minimum": -19991,
+            "maximum": 32767
+        },
+        "salinity_60": {
+            "minimum": -17733,
+            "maximum": 32767
+        },
+        "salinity_600": {
+            "minimum": 0,
+            "maximum": 24128
+        },
+        "salinity_70": {
+            "minimum": -17423,
+            "maximum": 24303
+        },
+        "salinity_700": {
+            "minimum": 0,
+            "maximum": 22350
+        },
+        "salinity_8": {
+            "minimum": -19795,
+            "maximum": 32767
+        },
+        "salinity_80": {
+            "minimum": -17326,
+            "maximum": 25320
+        },
+        "salinity_800": {
+            "minimum": 0,
+            "maximum": 21959
+        },
+        "salinity_90": {
+            "minimum": -16787,
+            "maximum": 26604
+        },
+        "salinity_900": {
+            "minimum": 0,
+            "maximum": 21965
+        },
+        "water_temp_0": {
+            "minimum": -32768,
+            "maximum": 32763
+        },
+        "water_temp_10": {
+            "minimum": -32768,
+            "maximum": 32738
+        },
+        "water_temp_100": {
+            "minimum": -32768,
+            "maximum": 31847
+        },
+        "water_temp_1000": {
+            "minimum": -32768,
+            "maximum": 7050
+        },
+        "water_temp_12": {
+            "minimum": -32768,
+            "maximum": 32735
+        },
+        "water_temp_125": {
+            "minimum": -32768,
+            "maximum": 31469
+        },
+        "water_temp_1250": {
+            "minimum": -32768,
+            "maximum": 8837
+        },
+        "water_temp_15": {
+            "minimum": -32768,
+            "maximum": 32763
+        },
+        "water_temp_150": {
+            "minimum": -32768,
+            "maximum": 31335
+        },
+        "water_temp_1500": {
+            "minimum": -23069,
+            "maximum": 12933
+        },
+        "water_temp_2": {
+            "minimum": -32768,
+            "maximum": 32755
+        },
+        "water_temp_20": {
+            "minimum": -32768,
+            "maximum": 32715
+        },
+        "water_temp_200": {
+            "minimum": -32768,
+            "maximum": 30029
+        },
+        "water_temp_2000": {
+            "minimum": -25670,
+            "maximum": 4925
+        },
+        "water_temp_25": {
+            "minimum": -32768,
+            "maximum": 32737
+        },
+        "water_temp_250": {
+            "minimum": -32768,
+            "maximum": 21629
+        },
+        "water_temp_2500": {
+            "minimum": -32768,
+            "maximum": 0
+        },
+        "water_temp_30": {
+            "minimum": -32768,
+            "maximum": 32754
+        },
+        "water_temp_300": {
+            "minimum": -32768,
+            "maximum": 22796
+        },
+        "water_temp_3000": {
+            "minimum": -22062,
+            "maximum": 0
+        },
+        "water_temp_35": {
+            "minimum": -32768,
+            "maximum": 32754
+        },
+        "water_temp_350": {
+            "minimum": -32768,
+            "maximum": 18501
+        },
+        "water_temp_4": {
+            "minimum": -32768,
+            "maximum": 32746
+        },
+        "water_temp_40": {
+            "minimum": -32768,
+            "maximum": 32674
+        },
+        "water_temp_400": {
+            "minimum": -32768,
+            "maximum": 23875
+        },
+        "water_temp_4000": {
+            "minimum": -21564,
+            "maximum": 0
+        },
+        "water_temp_45": {
+            "minimum": -32768,
+            "maximum": 32701
+        },
+        "water_temp_50": {
+            "minimum": -32768,
+            "maximum": 32237
+        },
+        "water_temp_500": {
+            "minimum": -32768,
+            "maximum": 18663
+        },
+        "water_temp_5000": {
+            "minimum": -21469,
+            "maximum": 0
+        },
+        "water_temp_6": {
+            "minimum": -32768,
+            "maximum": 32742
+        },
+        "water_temp_60": {
+            "minimum": -32768,
+            "maximum": 32630
+        },
+        "water_temp_600": {
+            "minimum": -32768,
+            "maximum": 14251
+        },
+        "water_temp_70": {
+            "minimum": -32768,
+            "maximum": 23172
+        },
+        "water_temp_700": {
+            "minimum": -32768,
+            "maximum": 11300
+        },
+        "water_temp_8": {
+            "minimum": -32768,
+            "maximum": 32741
+        },
+        "water_temp_80": {
+            "minimum": -32768,
+            "maximum": 27875
+        },
+        "water_temp_800": {
+            "minimum": -32768,
+            "maximum": 8630
+        },
+        "water_temp_90": {
+            "minimum": -32768,
+            "maximum": 32393
+        },
+        "water_temp_900": {
+            "minimum": -32768,
+            "maximum": 9544
+        }
+    },
+    "title": "HYCOM: Hybrid Coordinate Ocean Model, Water Temperature and Salinity [deprecated]",
+    "version": "Unknown",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -80.48,
+                    180,
+                    80.48
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1992-10-02T00:00:00Z",
+                    "2018-12-09T12:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

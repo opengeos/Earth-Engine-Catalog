@@ -1,0 +1,536 @@
+{
+    "type": "Collection",
+    "id": "NOAA/CFSR",
+    "stac_version": "1.0.0",
+    "description": "The National Centers for Environmental Prediction (NCEP) Climate Forecast System Reanalysis\n(CFSR) was designed and executed as a global, high-resolution, coupled atmosphere-ocean-land\nsurface-sea ice system to provide the best estimate of the state of these coupled domains over\nthe 32-year period of record from January 1979 to March 2011. It has been extended as an\noperational real-time product. The data in Earth Engine are only present\nstarting from December 13, 2018.\n\nForecasts are initialized four times per day (0000, 0600, 1200, and 1800\nUTC). We ingest only a subset of bands from files matching\ncdas1.t??z.pgrbh**03|00**.grib2 i.e. files of only 0-hour and 3-hour forecasts as the others are\nomitted. The forecast length is indicated by the 'forecast_hour' metadata field.\n\nSome images contain only a subset of bands. Using this dataset with both \\\"00\\\" and \\\"03\\\" forecast\ntypes will require you to cast the bands across the collection.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_CFSR",
+            "type": "text/html",
+            "title": "Run the example for NOAA/CFSR in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_CFSR_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CFSR#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5065/D6513W89"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_CFSR.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/catalog.json",
+            "type": "application/json",
+            "title": "NOAA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 6,
+        "type": "cadence",
+        "unit": "hour"
+    },
+    "gee:terms_of_use": "NOAA data, information, and products, regardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use. The\nforgoing data is in the public domain and is being provided without\nrestriction on use and distribution. For more information visit the\n[NWS disclaimer site](https://www.weather.gov/disclaimer/).\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "climate",
+        "daylight",
+        "flux",
+        "forecast",
+        "geophysical",
+        "ncep",
+        "noaa",
+        "nws",
+        "precipitation",
+        "radiation",
+        "snow",
+        "temperature",
+        "vapor",
+        "water",
+        "weather"
+    ],
+    "providers": [
+        {
+            "name": "NOAA NWS National Centers for Environmental Prediction (NCEP)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://cfs.ncep.noaa.gov/cfsr/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CFSR"
+        }
+    ],
+    "sci:citation": "Saha, S., S. Moorthi, H. Pan, X. Wu, J. Wang, and Coauthors, 2010: The NCEP Climate\nForecast System Reanalysis. Bulletin of the American Meteorological Society, 91, 1015-1057.\n[doi:10.1175/2010BAMS3001.1](https://doi.org/10.1175/2010BAMS3001.1)\n",
+    "sci:doi": "10.5065/D6513W89",
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Duration of forecast in hours",
+                "name": "forecast_hour",
+                "type": "INT"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Temperature Surface",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Temperature_surface"
+                        ],
+                        "max": [
+                            339
+                        ],
+                        "min": [
+                            192
+                        ],
+                        "palette": [
+                            "blue",
+                            "purple",
+                            "cyan",
+                            "green",
+                            "yellow",
+                            "red"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 26.4,
+                    "lon": -88.6,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            55660
+        ],
+        "Albedo_surface_3_Hour_Average": {
+            "minimum": 0,
+            "maximum": 91.59999847
+        },
+        "Canopy_water_evaporation_surface_3_Hour_Average": {
+            "minimum": 0,
+            "maximum": 746
+        },
+        "Categorical_Freezing_Rain_surface_3_Hour_Average": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "Categorical_Ice_Pellets_surface_3_Hour_Average": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "Categorical_Rain_surface": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "Categorical_Rain_surface_3_Hour_Average": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "Categorical_Snow_surface_3_Hour_Average": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "Clear_Sky_Downward_Long_Wave_Flux_surface_3_Hour_Average": {
+            "minimum": 56,
+            "maximum": 483
+        },
+        "Clear_Sky_Downward_Solar_Flux_surface_3_Hour_Average": {
+            "minimum": 0,
+            "maximum": 1142
+        },
+        "Clear_Sky_Upward_Long_Wave_Flux_surface_3_Hour_Average": {
+            "minimum": 78,
+            "maximum": 698
+        },
+        "Clear_Sky_Upward_Solar_Flux_atmosphere_top_3_Hour_Average": {
+            "minimum": 0,
+            "maximum": 767
+        },
+        "Clear_sky_UV-B_Downward_Solar_Flux_surface_3_Hour_Average": {
+            "minimum": 0,
+            "maximum": 24.77
+        },
+        "Cloud_Work_Function_entire_atmosphere_single_layer_3_Hour_Average": {
+            "minimum": 0,
+            "maximum": 5791
+        },
+        "Cloud_water_entire_atmosphere_single_layer": {
+            "minimum": 0,
+            "maximum": 19
+        },
+        "Convective_Precipitation_Rate_surface_3_Hour_Average": {
+            "minimum": 0,
+            "maximum": 0.002
+        },
+        "Convective_available_potential_energy_pressure_difference_layer": {
+            "minimum": 0,
+            "maximum": 5559
+        },
+        "Convective_available_potential_energy_surface": {
+            "minimum": 0,
+            "maximum": 6069
+        },
+        "Convective_precipitation_surface_3_Hour_Accumulation": {
+            "minimum": 0,
+            "maximum": 19.2
+        },
+        "Direct_Evaporation_from_Bare_Soil_surface_3_Hour_Average": {
+            "minimum": 0,
+            "maximum": 767
+        },
+        "Downward_Long-Wave_Radp_Flux_surface": {
+            "minimum": 60,
+            "maximum": 530
+        },
+        "Downward_Long-Wave_Radp_Flux_surface_3_Hour_Average": {
+            "minimum": 60,
+            "maximum": 508
+        },
+        "Downward_Short-Wave_Radiation_Flux_atmosphere_top_3_Hour_Average": {
+            "minimum": 0,
+            "maximum": 1382
+        },
+        "Downward_Short-Wave_Radiation_Flux_surface": {
+            "minimum": 0,
+            "maximum": 1224
+        },
+        "Downward_Short-Wave_Radiation_Flux_surface_3_Hour_Average": {
+            "minimum": 0,
+            "maximum": 1142
+        },
+        "Exchange_Coefficient_surface": {
+            "minimum": 0,
+            "maximum": 0.69
+        },
+        "Frictional_Velocity_surface": {
+            "minimum": 0.002,
+            "maximum": 3.5
+        },
+        "Ground_Heat_Flux_surface": {
+            "minimum": -459,
+            "maximum": 683
+        },
+        "Ground_Heat_Flux_surface_3_Hour_Average": {
+            "minimum": -170,
+            "maximum": 538
+        },
+        "Ice_cover_surface": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "Ice_thickness_surface": {
+            "minimum": 0,
+            "maximum": 4.76
+        },
+        "Land_cover_0__sea_1__land_surface": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "Latent_heat_net_flux_surface": {
+            "minimum": -399,
+            "maximum": 1675
+        },
+        "Latent_heat_net_flux_surface_3_Hour_Average": {
+            "minimum": -305,
+            "maximum": 1250
+        },
+        "Liquid_Volumetric_Soil_Moisture_non_Frozen_depth_below_surface_layer_150_cm": {
+            "minimum": 0.028,
+            "maximum": 1
+        },
+        "Liquid_Volumetric_Soil_Moisture_non_Frozen_depth_below_surface_layer_25_cm": {
+            "minimum": 0.028,
+            "maximum": 1
+        },
+        "Liquid_Volumetric_Soil_Moisture_non_Frozen_depth_below_surface_layer_5_cm": {
+            "minimum": 0.03,
+            "maximum": 1
+        },
+        "Liquid_Volumetric_Soil_Moisture_non_Frozen_depth_below_surface_layer_70_cm": {
+            "minimum": 0.028,
+            "maximum": 1
+        },
+        "Maximum_specific_humidity_at_2m_height_above_ground_3_Hour_Interval": {
+            "minimum": 0,
+            "maximum": 0.036
+        },
+        "Maximum_temperature_height_above_ground_3_Hour_Interval": {
+            "minimum": 201.39,
+            "maximum": 327.7
+        },
+        "Minimum_specific_humidity_at_2m_height_above_ground_3_Hour_Interval": {
+            "minimum": 0,
+            "maximum": 0.024
+        },
+        "Minimum_temperature_height_above_ground_3_Hour_Interval": {
+            "minimum": 201,
+            "maximum": 321.89
+        },
+        "Momentum_flux_u-component_surface_3_Hour_Average": {
+            "minimum": -6.56,
+            "maximum": 8.25
+        },
+        "Momentum_flux_v-component_surface_3_Hour_Average": {
+            "minimum": -6.17,
+            "maximum": 7.22
+        },
+        "Planetary_Boundary_Layer_Height_surface": {
+            "minimum": 17,
+            "maximum": 6590
+        },
+        "Plant_Canopy_Surface_Water_surface": {
+            "minimum": 0,
+            "maximum": 0.5
+        },
+        "Potential_Evaporation_Rate_surface": {
+            "minimum": -150,
+            "maximum": 5617
+        },
+        "Potential_Evaporation_Rate_surface_3_Hour_Average": {
+            "minimum": -120,
+            "maximum": 5263
+        },
+        "Precipitable_water_entire_atmosphere_single_layer": {
+            "minimum": -0.6,
+            "maximum": 99.09
+        },
+        "Precipitable_water_pressure_difference_layer": {
+            "minimum": 0,
+            "maximum": 7.94
+        },
+        "Precipitation_rate_surface_3_Hour_Average": {
+            "minimum": 0,
+            "maximum": 0.022
+        },
+        "Pressure_msl": {
+            "minimum": 92406.39,
+            "maximum": 106907.89
+        },
+        "Pressure_reduced_to_MSL_msl": {
+            "minimum": 92492.8,
+            "maximum": 106667.79
+        },
+        "Pressure_surface": {
+            "minimum": 48110,
+            "maximum": 105600
+        },
+        "Relative_humidity_entire_atmosphere_single_layer": {
+            "minimum": 0,
+            "maximum": 96
+        },
+        "Sensible_heat_net_flux_surface": {
+            "minimum": -1582,
+            "maximum": 2500
+        },
+        "Sensible_heat_net_flux_surface_3_Hour_Average": {
+            "minimum": -977,
+            "maximum": 1202
+        },
+        "Snow_Cover_surface_3_Hour_Average": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Snow_Phase_Change_Heat_Flux_surface_3_Hour_Average": {
+            "minimum": -405,
+            "maximum": 911
+        },
+        "Snow_depth_surface": {
+            "minimum": 0,
+            "maximum": 4.55
+        },
+        "Soil_moisture_content_depth_below_surface_layer": {
+            "minimum": 62.01,
+            "maximum": 2000.05
+        },
+        "Soil_type_surface": {
+            "minimum": 1,
+            "maximum": 9
+        },
+        "Specific_humidity_height_above_ground": {
+            "minimum": 0.001,
+            "maximum": 0.036
+        },
+        "Storm_Surface_Runoff_surface_3_Hour_Accumulation": {
+            "minimum": 0,
+            "maximum": 193.12
+        },
+        "Sublimation_evaporation_from_snow_surface_3_Hour_Average": {
+            "minimum": 0,
+            "maximum": 742
+        },
+        "Surface_Lifted_Index_surface": {
+            "minimum": -15.8,
+            "maximum": 57.2
+        },
+        "Surface_Slope_Type_surface": {
+            "minimum": 1,
+            "maximum": 9
+        },
+        "Surface_roughness_surface": {
+            "minimum": 0,
+            "maximum": 2.7
+        },
+        "Temperature_depth_below_surface_layer_150_cm": {
+            "minimum": 218.925,
+            "maximum": 307.662
+        },
+        "Temperature_depth_below_surface_layer_25_cm": {
+            "minimum": 220.288,
+            "maximum": 313.299
+        },
+        "Temperature_depth_below_surface_layer_5_cm": {
+            "minimum": 219.127,
+            "maximum": 323.104
+        },
+        "Temperature_depth_below_surface_layer_70_cm": {
+            "minimum": 218.704,
+            "maximum": 310.007
+        },
+        "Temperature_height_above_ground": {
+            "minimum": 201.17,
+            "maximum": 325.763
+        },
+        "Temperature_surface": {
+            "minimum": 192.569,
+            "maximum": 339.173
+        },
+        "Total_cloud_cover_convective_cloud": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Total_ozone_entire_atmosphere_single_layer": {
+            "minimum": 177,
+            "maximum": 571.4
+        },
+        "Total_precipitation_surface_3_Hour_Accumulation": {
+            "minimum": 0,
+            "maximum": 239
+        },
+        "Transpiration_surface_3_Hour_Average": {
+            "minimum": 0,
+            "maximum": 680
+        },
+        "UV-B_Downward_Solar_Flux_surface_3_Hour_Average": {
+            "minimum": 0,
+            "maximum": 24.7
+        },
+        "Upward_Long-Wave_Radp_Flux_atmosphere_top_3_Hour_Average": {
+            "minimum": 69,
+            "maximum": 384
+        },
+        "Upward_Long-Wave_Radp_Flux_surface": {
+            "minimum": 135,
+            "maximum": 611
+        },
+        "Upward_Long-Wave_Radp_Flux_surface_3_Hour_Average": {
+            "minimum": 78,
+            "maximum": 703
+        },
+        "Upward_Short-Wave_Radiation_Flux_atmosphere_top_3_Hour_Average": {
+            "minimum": 0,
+            "maximum": 1049
+        },
+        "Upward_Short-Wave_Radiation_Flux_surface": {
+            "minimum": 0,
+            "maximum": 869
+        },
+        "Upward_Short-Wave_Radiation_Flux_surface_3_Hour_Average": {
+            "minimum": 0,
+            "maximum": 806
+        },
+        "Vegetation_Type_surface": {
+            "minimum": 1,
+            "maximum": 13
+        },
+        "Vegetation_surface": {
+            "minimum": 0,
+            "maximum": 99
+        },
+        "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_150_cm": {
+            "minimum": 0.028,
+            "maximum": 1
+        },
+        "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_25_cm": {
+            "minimum": 0.028,
+            "maximum": 1
+        },
+        "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_5_cm": {
+            "minimum": 0.03,
+            "maximum": 1
+        },
+        "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_70_cm": {
+            "minimum": 0.028,
+            "maximum": 1
+        },
+        "Water_equivalent_of_accumulated_snow_depth_surface": {
+            "minimum": 0,
+            "maximum": 458.82
+        },
+        "Water_runoff_surface_3_Hour_Accumulation": {
+            "minimum": 0,
+            "maximum": 193.12
+        },
+        "u-component_of_wind_hybrid": {
+            "minimum": -47.24,
+            "maximum": 44.33
+        },
+        "v-component_of_wind_hybrid": {
+            "minimum": -45.45,
+            "maximum": 46.36
+        }
+    },
+    "title": "CFSR: Climate Forecast System Reanalysis",
+    "version": "V1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-12-13T00:00:00Z",
+                    "2022-12-21T06:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

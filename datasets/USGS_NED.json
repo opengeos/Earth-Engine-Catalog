@@ -1,0 +1,145 @@
+{
+    "type": "Collection",
+    "id": "USGS/NED",
+    "stac_version": "1.0.0",
+    "description": "The National Elevation Dataset (NED) used to be* the\nprimary elevation data product of the USGS. The NED is a seamless\ndataset with the best available raster elevation data of the\nconterminous United States, parts of Alaska, Hawaii, and some\nterritorial islands. The NED is derived from diverse source data\nthat are processed to a common coordinate system and unit of\nvertical measure. NED data are distributed in conformance with\nthe North American Datum of 1983 (NAD 83). All elevation values\nare in meters and, over the conterminous United States, are referenced\nto the North American Vertical Datum of 1988 (NAVD 88). The vertical\nreference will vary in other areas.\n\n*For over 15 years, the NED was the primary elevation data product\nof the USGS' National Map. However, it has been renamed and now\nconsidered just one component of elevation in The National\nMap after the 3D Elevation Program became operational.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/USGS_NED",
+            "type": "text/html",
+            "title": "Run the example for USGS/NED in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/USGS_NED_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/USGS_NED#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/3DEP/USGS_3DEP_10m.json",
+            "type": "application/json",
+            "title": "USGS/3DEP/10m"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NED.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/catalog.json",
+            "type": "application/json",
+            "title": "USGS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "deprecated": true,
+    "gee:terms_of_use": "Most U.S. Geological Survey (USGS) information resides\nin the public domain and may be used without restriction. Additional\ninformation on [Acknowledging or Crediting USGS as Information\nSource](https://www.usgs.gov/information-policies-and-instructions/crediting-usgs) is available.\n",
+    "gee:type": "image",
+    "keywords": [
+        "dem",
+        "elevation",
+        "geophysical",
+        "ned",
+        "topography",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "United States Geological Survey",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://nationalmap.gov/elevation.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_NED"
+        }
+    ],
+    "sci:citation": "USGS National Elevation Dataset courtesy of the U.S. Geological Survey",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Elevation",
+                "gee:units": "m",
+                "gsd": 10.2,
+                "name": "elevation"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Elevation",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "elevation"
+                        ],
+                        "gamma": [
+                            1.6
+                        ],
+                        "max": [
+                            4000
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 40.71,
+                    "lon": -100.55,
+                    "zoom": 2
+                }
+            }
+        ],
+        "elevation": {
+            "minimum": -85.61,
+            "maximum": 4414.22
+        }
+    },
+    "title": "USGS National Elevation Dataset 1/3 Arc-Second [deprecated]",
+    "version": "Unknown",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -171,
+                    -15,
+                    164,
+                    70
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-02-07T00:00:00Z",
+                    "2012-02-07T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

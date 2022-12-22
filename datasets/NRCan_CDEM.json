@@ -1,0 +1,148 @@
+{
+    "type": "Collection",
+    "id": "NRCan/CDEM",
+    "stac_version": "1.0.0",
+    "description": "The Canadian Digital Elevation Model (CDEM) is part of Natural Resources\nCanada's (NRCan) altimetry system and stems from the existing Canadian\nDigital Elevation Data (CDED). In these data, elevations can be either\nground or reflective surface elevations.\n\nThe CDEM is comprised of multiple DEMs with varying resolutions. These\nvary according to latitude and have a base resolution of 0.75 arc-seconds.\nFor more information see the [Product Specifications](https://ftp.geogratis.gc.ca/pub/nrcan_rncan/elevation/cdem_mnec/doc/CDEM_product_specs.pdf)\n\nContains information licensed under the\n[Open Government Licence - Canada](https://open.canada.ca/en/open-government-licence-canada).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NRCan_CDEM",
+            "type": "text/html",
+            "title": "Run the example for NRCan/CDEM in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NRCan/NRCan_CDEM_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NRCan_CDEM#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://open.canada.ca/en/open-government-licence-canada",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://ftp.geogratis.gc.ca/pub/nrcan_rncan/elevation/cdem_mnec/"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NRCan/NRCan_CDEM.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NRCan/catalog.json",
+            "type": "application/json",
+            "title": "NRCan"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "Licensed under the\n[Open Government Licence - Canada](https://open.canada.ca/en/open-government-licence-canada).\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "canada",
+        "cdem",
+        "dem",
+        "elevation",
+        "geophysical",
+        "nrcan",
+        "topography"
+    ],
+    "providers": [
+        {
+            "name": "NRCan",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://open.canada.ca/data/en/dataset/7f245e4d-76c2-4caa-951a-45d1d2051333"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NRCan_CDEM"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Elevation",
+                "gee:units": "m",
+                "name": "elevation"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Elevation",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "elevation"
+                        ],
+                        "max": [
+                            1500
+                        ],
+                        "min": [
+                            -50
+                        ],
+                        "palette": [
+                            "0905ff",
+                            "ffefc4",
+                            "ffffff"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 63.3213,
+                    "lon": -139.3643,
+                    "zoom": 9
+                }
+            }
+        ],
+        "gsd": [
+            23.19
+        ],
+        "elevation": {
+            "minimum": -226,
+            "maximum": 5944
+        }
+    },
+    "title": "Canadian Digital Elevation Model",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -142,
+                    41,
+                    -52,
+                    84
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1945-01-01T00:00:00Z",
+                    "2011-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "OGL-Canada-2.0"
+}

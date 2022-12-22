@@ -1,0 +1,136 @@
+{
+    "type": "Collection",
+    "id": "MODIS/MOD09GQ",
+    "stac_version": "1.0.0",
+    "description": "The MODIS Surface Reflectance products\nprovide an estimate of the surface spectral reflectance as it would be\nmeasured at ground level in the absence of atmospheric scattering or\nabsorption. Low-level data are corrected for atmospheric gases and\naerosols, yielding a level-2 basis for several higher-order gridded\nlevel-2 (L2G) and level-3 products.\n\nMOD09GQ provides Bands\n1 and 2 at a 250-meter resolution in a daily gridded L2G product in\nthe Sinusoidal projection. Science Data Sets provided for this product\ninclude reflectance for Bands 1 and 2, a quality rating, observation\ncoverage, and observation number. This product is meant to be used in\nconjunction with the MOD09GA where important quality and viewing\ngeometry information is stored.\n\nPlease visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data) for information on citing LP DAAC datasets.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_MOD09GQ",
+            "type": "text/html",
+            "title": "Run the example for MODIS/MOD09GQ in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_MOD09GQ_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MOD09GQ#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MOD09GQ.json",
+            "type": "application/json",
+            "title": "MODIS/006/MOD09GQ"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MOD09GQ.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "deprecated": true,
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC have no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "daily",
+        "global",
+        "mod09gq",
+        "modis",
+        "surface_reflectance",
+        "terra",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mod09gq"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MOD09GQ"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "False Color (221)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "sur_refl_b02",
+                            "sur_refl_b02",
+                            "sur_refl_b01"
+                        ],
+                        "max": [
+                            8000
+                        ],
+                        "min": [
+                            -100
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 31.052933985705163,
+                    "lon": -7.03125,
+                    "zoom": 2
+                }
+            }
+        ]
+    },
+    "title": "MOD09GQ.005 Terra Surface Reflectance Daily L2G Global 250m [deprecated]",
+    "version": "Unknown",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-24T00:00:00Z",
+                    "2017-03-30T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

@@ -1,0 +1,245 @@
+{
+    "type": "Collection",
+    "id": "LANDSAT/LM3_L1T",
+    "stac_version": "1.0.0",
+    "description": "Landsat 3 MSS DN values, representing scaled, calibrated at-sensor radiance, orthorectified scenes only.\n\nAs of May 1, 2017, the USGS is no longer producing Pre-Collection Landsat, and therefore this collection is complete. Please switch to a Collection 1-based dataset. See [this documentation page](https://developers.google.com/earth-engine/landsat) for more information.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/LANDSAT_LM3_L1T",
+            "type": "text/html",
+            "title": "Run the example for LANDSAT/LM3_L1T in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/LANDSAT/LANDSAT_LM3_L1T_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LM3_L1T#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_LM03_C01_T1.json",
+            "type": "application/json",
+            "title": "LANDSAT/LM03/C01/T1"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_LM3_L1T.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/catalog.json",
+            "type": "application/json",
+            "title": "LANDSAT"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "deprecated": true,
+    "gee:interval": {
+        "interval": 16,
+        "type": "revisit_interval",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "Landsat datasets are federally created data\nand therefore reside in the public domain and may be used, transferred, or reproduced without copyright restriction.\n\nAcknowledgement or credit of the USGS as data source should be provided\nby including a line of text citation such as the example shown below.\n\n(Product, Image, Photograph, or Dataset Name) courtesy of\nthe U.S. Geological Survey\n\nExample: Landsat-7 image courtesy of the U.S. Geological Survey\n\nSee the\n[USGS Visual Identity System Guidance](https://www.usgs.gov/information-policies-and-instructions/usgs-visual-identity-system)\nfor further details on proper citation and acknowledgement of USGS products.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "global",
+        "l3",
+        "landsat",
+        "lm3",
+        "mss",
+        "radiance",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "USGS",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://landsat.usgs.gov/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LM3_L1T"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "center_wavelength": 0.55,
+                "description": "Green",
+                "gee:wavelength": "0.5 - 0.6 &mu;m",
+                "gsd": 60,
+                "name": "B4"
+            },
+            {
+                "center_wavelength": 0.65,
+                "description": "Red",
+                "gee:wavelength": "0.6 - 0.7 &mu;m",
+                "gsd": 60,
+                "name": "B5"
+            },
+            {
+                "center_wavelength": 0.75,
+                "description": "Near Infrared 1",
+                "gee:wavelength": "0.7 - 0.8 &mu;m",
+                "gsd": 60,
+                "name": "B6"
+            },
+            {
+                "center_wavelength": 0.95,
+                "description": "Near Infrared 2",
+                "gee:wavelength": "0.8 - 1.1 &mu;m",
+                "gsd": 30,
+                "name": "B7"
+            },
+            {
+                "description": "Landsat Collection 1 QA Bitmask\n([See Landsat QA page](https://www.usgs.gov/land-resources/nli/landsat/landsat-collection-1-level-1-quality-assessment-band))\n",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Designated Fill",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Dropped Pixel",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Radiometric Saturation",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "No bands contain saturation",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "1-2 bands contain saturation",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "3-4 bands contain saturation",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "5 or more bands contain saturation",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Cloud",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 5
+                },
+                "gsd": 60,
+                "name": "BQA"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Near Infrared (321)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "B6",
+                            "B5",
+                            "B4"
+                        ]
+                    }
+                }
+            },
+            {
+                "display_name": "Shortwave Infrared (421)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "B7",
+                            "B5",
+                            "B4"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    "title": "USGS Landsat 3 MSS Raw Scenes (Orthorectified) [deprecated]",
+    "version": "Unknown",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1978-03-07T16:22:02Z",
+                    "1983-03-31T20:55:16Z"
+                ]
+            ]
+        }
+    },
+    "license": "PDDL-1.0"
+}

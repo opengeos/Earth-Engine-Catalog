@@ -1,0 +1,226 @@
+{
+    "type": "Collection",
+    "id": "LANDSAT/LE7_TOA_3YEAR",
+    "stac_version": "1.0.0",
+    "description": "These 3-year composites were created\n  from all Landsat 7 images in the specified composite period, excluding\n  images marked with a negative sun elevation in their metadata.  The\n  composites were created using\n  the [ee.Algorithms.Landsat.simpleComposite()](https://developers.google.com/earth-engine/landsat#simple-composite)\n  method with its default settings.\n  Reflectance ([0,1]) in bands B1, B2, B3, B4, B5, and B7 is scaled to 8 bits\n  ([0,255]) and temperature in band B6_VCID_2 is converted to units of\n  Kelvin-100.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/LANDSAT_LE7_TOA_3YEAR",
+            "type": "text/html",
+            "title": "Run the example for LANDSAT/LE7_TOA_3YEAR in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/LANDSAT/LANDSAT_LE7_TOA_3YEAR_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LE7_TOA_3YEAR#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_LE7_TOA_3YEAR.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/catalog.json",
+            "type": "application/json",
+            "title": "LANDSAT"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:is_derived": true,
+    "gee:terms_of_use": "Landsat datasets are federally created data\nand therefore reside in the public domain and may be used, transferred, or reproduced without copyright restriction.\n\nAcknowledgement or credit of the USGS as data source should be provided\nby including a line of text citation such as the example shown below.\n\n(Product, Image, Photograph, or Dataset Name) courtesy of\nthe U.S. Geological Survey\n\nExample: Landsat-7 image courtesy of the U.S. Geological Survey\n\nSee the\n[USGS Visual Identity System Guidance](https://www.usgs.gov/information-policies-and-instructions/usgs-visual-identity-system)\nfor further details on proper citation and acknowledgement of USGS products.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "etm",
+        "global",
+        "l7",
+        "landsat",
+        "le7",
+        "percentile",
+        "toa",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "Google",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://earthengine.google.com"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LE7_TOA_3YEAR"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "center_wavelength": 0.485,
+                "description": "Blue",
+                "gee:wavelength": "0.45 - 0.52 &mu;m",
+                "gsd": 30,
+                "name": "B1"
+            },
+            {
+                "center_wavelength": 0.56,
+                "description": "Green",
+                "gee:wavelength": "0.52 - 0.60 &mu;m",
+                "gsd": 30,
+                "name": "B2"
+            },
+            {
+                "center_wavelength": 0.66,
+                "description": "Red",
+                "gee:wavelength": "0.63 - 0.69 &mu;m",
+                "gsd": 30,
+                "name": "B3"
+            },
+            {
+                "center_wavelength": 0.835,
+                "description": "Near infrared",
+                "gee:wavelength": "0.77 - 0.90 &mu;m",
+                "gsd": 30,
+                "name": "B4"
+            },
+            {
+                "center_wavelength": 1.65,
+                "description": "Shortwave infrared 1",
+                "gee:wavelength": "1.55 - 1.75 &mu;m",
+                "gsd": 30,
+                "name": "B5"
+            },
+            {
+                "center_wavelength": 11.45,
+                "description": "High-gain Thermal Infrared 1. This band has higher radiometric\nresolution (sensitivity), although it has a more restricted dynamic range.\nResampled from 60m to 30m.\n",
+                "gee:wavelength": "10.40 - 12.50 &mu;m",
+                "gsd": 60,
+                "name": "B6_VCID_2"
+            },
+            {
+                "center_wavelength": 2.215,
+                "description": "Shortwave infrared 2",
+                "gee:wavelength": "2.08 - 2.35 &mu;m",
+                "gsd": 30,
+                "name": "B7"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "True Color (321)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "B3",
+                            "B2",
+                            "B1"
+                        ],
+                        "max": [
+                            120
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 46.529,
+                    "lon": 6.746,
+                    "zoom": 6
+                }
+            },
+            {
+                "display_name": "Near Infrared (432)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "B4",
+                            "B3",
+                            "B2"
+                        ],
+                        "max": [
+                            120
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 46.529,
+                    "lon": 6.746,
+                    "zoom": 6
+                }
+            },
+            {
+                "display_name": "Shortwave Infrared (742)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "B7",
+                            "B4",
+                            "B2"
+                        ],
+                        "max": [
+                            120
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 46.529,
+                    "lon": 6.746,
+                    "zoom": 6
+                }
+            }
+        ]
+    },
+    "title": "Landsat 7 3-year TOA percentile composites",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2012-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "PDDL-1.0"
+}

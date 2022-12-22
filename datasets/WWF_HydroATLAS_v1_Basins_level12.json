@@ -1,0 +1,141 @@
+{
+    "type": "Collection",
+    "id": "WWF/HydroATLAS/v1/Basins/level12",
+    "stac_version": "1.0.0",
+    "description": "BasinATLAS is a component of the\n[HydroATLAS database](https://www.hydrosheds.org/page/hydroatlas),\nwhich is a component of [HydroSHEDS](https://www.hydrosheds.org).\n\nBasinATLAS provides a standardized compendium of hydro-environmental\nattribute information for all watersheds of the world at high\nspatial resolution. This dataset includes data for 56 variables,\npartitioned into 281 attributes and organized in six categories: hydrology;\nphysiography; climate; land cover & use; soils & geology; and anthropogenic\ninfluences (see Table 1 in the HydroATLAS documentation linked below).\n\nWatersheds range from level 1 (coarse) to level 12 (detailed), using\nPfastetter codes. The underlying watershed deleniation uses the NASA\nSRTM Digital Elevatin Map (DEM) below 60oN latitude and the\nUSGS HYDRO1k DEM above 60oN.\n\nTechnical documentation:\n\n[https://www.hydrosheds.org/images/inpages/HydroATLAS_TechDoc_v10.pdf](https://www.hydrosheds.org/images/inpages/HydroATLAS_TechDoc_v10.pdf)\n\nNote that the quality of HydroATLAS data is significantly lower for regions\nabove 60 degrees northern latitude as there is no underlying SRTM elevation\ndata available and thus a coarser-resolution DEM was used\n(HYDRO1k provided by USGS).\n\nHydroSHEDS was developed by the World Wildlife Fund (WWF)\nConservation Science Program in partnership with the U.S. Geological\nSurvey, the International Centre for Tropical Agriculture, The\nNature Conservancy, and the Center for Environmental Systems Research\nof the University of Kassel, Germany.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WWF_HydroATLAS_v1_Basins_level12",
+            "type": "text/html",
+            "title": "Run the example for WWF/HydroATLAS/v1/Basins/level12 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/WWF/WWF_HydroATLAS_v1_Basins_level12_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/WWF_HydroATLAS_v1_Basins_level12#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://www.hydrosheds.org/page/license",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://figshare.com/ndownloader/files/20087237"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WWF/WWF_HydroATLAS_v1_Basins_level12.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WWF/catalog.json",
+            "type": "application/json",
+            "title": "WWF"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "'The HydroATLAS database is licensed under a Creative Commons Attribution\n(CC-BY) 4.0 International License. Please also refer to the HydroATLAS\n[Technical Documentation](https://data.hydrosheds.org/file/technical-documentation/HydroATLAS_TechDoc_v10.pdf)\nfor more details on the license and requested citations.\n\nBy downloading and using the data the user agrees to the terms and\nconditions of this license.'\n",
+    "gee:type": "table",
+    "keywords": [
+        "geophysical",
+        "hydroatlas",
+        "hydrography",
+        "hydrology",
+        "hydrosheds",
+        "srtm",
+        "water",
+        "watershed",
+        "wwf"
+    ],
+    "providers": [
+        {
+            "name": "WWF",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.hydrosheds.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/WWF_HydroATLAS_v1_Basins_level12"
+        }
+    ],
+    "sci:citation": "'Linke, S., Lehner, B., Ouellet Dallaire, C., Ariwi, J., Grill, G.,\nAnand, M., Beames, P., Burchard-Levine, V., Maxwell, S., Moidu, H., Tan, F.,\nThieme, M. (2019). Global hydro-environmental sub-basin and river reach\ncharacteristics at high spatial resolution. Scientific Data 6: 283.\n[DOI:10.1038/s41597-019-0300-6](https://doi.org/10.1038/s41597-019-0300-6).'\n",
+    "sci:publications": [
+        {
+            "citation": "[doi:10.6084/m9.figshare.9890531](https://doi.org/10.6084/m9.figshare.9890531)"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Upstream Drainage Area [mm]",
+                "lookat": {
+                    "lat": 36.07,
+                    "lon": 19.97,
+                    "zoom": 5
+                },
+                "polygon_visualization": {
+                    "property_name": "UP_AREA",
+                    "property_vis": {
+                        "max": [
+                            5000
+                        ],
+                        "palette": [
+                            "0300ff",
+                            "418504",
+                            "efff07",
+                            "efff07",
+                            "ff0303"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    "title": "WWF HydroATLAS Basins Level 12",
+    "version": "v1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-22T00:00:00Z",
+                    "2000-02-22T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

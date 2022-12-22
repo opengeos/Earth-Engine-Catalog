@@ -1,0 +1,145 @@
+{
+    "type": "Collection",
+    "id": "MERIT/DEM/v1_0_3",
+    "stac_version": "1.0.0",
+    "description": "MERIT DEM a high accuracy global DEM at 3 arc second resolution (~90 m at\nthe equator) produced by eliminating major error components from existing DEMs\n(NASA SRTM3 DEM, JAXA AW3D DEM, Viewfinder Panoramas DEM).\n\nMERIT DEM separates absolute bias, stripe noise, speckle\nnoise and tree height bias using multiple satellite datasets and filtering techniques.\nAfter the error removal, land areas mapped with 2 m or better vertical accuracy\nwere increased from 39% to 58%. Significant improvements were found in flat regions\nwhere height errors larger than topography variability, and landscapes such as\nriver networks and hill-valley structures became clearly represented.\n\n'MERIT DEM was developed by processing the following products as baseline data:\n\n* [NASA SRTM3 DEM v2.1](https://dds.cr.usgs.gov/srtm/version2_1/SRTM3)\n* [JAXA AW3D - 30 m DEM v1](https://www.eorc.jaxa.jp/ALOS/en/aw3d30/index.htm)\n* [Viewfinder Panoramas DEM](http://www.viewfinderpanoramas.org/dem3.html)\n\nIn addition to the above baseline dems, these products were used as supplementary data:\n\n* [NASA-NSIDC ICESat/GLAS GLA14 data](https://nsidc.org/data/gla14)\n* [U-Maryland Landsat forest cover data](https://glad.earthengine.app/view/global-forest-change)\n* [NASA Global Forest height data](https://www.nasa.gov/topics/earth/features/forest-height-map.html)\n* [JAMSTEC/U-Tokyo G3WBM water body data](http://hydro.iis.u-tokyo.ac.jp/~yamadai/G3WBM/index.html)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MERIT_DEM_v1_0_3",
+            "type": "text/html",
+            "title": "Run the example for MERIT/DEM/v1_0_3 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MERIT/MERIT_DEM_v1_0_3_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MERIT_DEM_v1_0_3#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/index.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MERIT/MERIT_DEM_v1_0_3.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MERIT/catalog.json",
+            "type": "application/json",
+            "title": "MERIT"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "Citation to the paper is adequate if you simply use MERIT DEM. If you\nasked for help for additional handling/editing of the dataset, or if your research\noutcome highly depends on the product, the developer would request co-authorship.\n\nMERIT DEM is licensed under a Creative Commons \"CC-BY-NC 4.0\" or\nOpen Data Commons \"Open Database License (ODbL 1.0)\". With a dual license, you\ncan choose an appropriate license for you.\n\nTo view a copy of these license, please visit:\n\n* [CC-BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/): Non-Commercial Use with less restriction.\n* [ODbL 1.0 license](https://opendatacommons.org/licenses/odbl/summary/): Commercial Use is OK, but the derived data based on MERIT\nDEM should be made publicly available under the same ODbL license.  For\nexample, if you create a flood hazard map using MERIT DEM and you would like to\nprovide a COMMERCIAL service based on that, you have to make the hazard map\nPUBLICLY AVAILABLE under OdBL license.\n\nNote that the above license terms are applied to the \"derived data\" based\non MERIT DEM, while they are not applied to \"produced work / artwork\" created\nwith MERIT DEM (such as figures in a journal paper). The users may have a\ncopyright of the artwork and may assign any license, when the produced work\nis not considered as \"derived data\".\n\nBy downloading and using the data the user agrees to the terms and\nconditions of one of these licenses. Notwithstanding this free license, we ask\nusers to refrain from redistributing the data in whole in its original format\non other websites without the explicit written permission from the authors.\n\nThe copyright of MERIT DEM is held by the developers, 2018, all rights reserved.\n",
+    "gee:type": "image",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true,
+    "keywords": [
+        "dem",
+        "elevation",
+        "merit",
+        "topography"
+    ],
+    "providers": [
+        {
+            "name": "Dai Yamazaki (University of Tokyo)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/index.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MERIT_DEM_v1_0_3"
+        }
+    ],
+    "sci:citation": "Yamazaki D., D. Ikeshima, R. Tawatari, T. Yamaguchi, F. O'Loughlin, J.C. Neal,\nC.C. Sampson, S. Kanae & P.D. Bates. A high accuracy map of global\nterrain elevations.  Geophysical Research Letters, vol.44, pp.5844-5853, 2017.\n\n[doi:10.1002/2017GL072874](https://doi.org/10.1002/2017GL072874)\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Elevation in meters, referenced to EGM96 geoid model.",
+                "gsd": 92.77,
+                "name": "dem"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Elevation",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "dem"
+                        ],
+                        "max": [
+                            18
+                        ],
+                        "min": [
+                            -3
+                        ],
+                        "palette": [
+                            "000000",
+                            "478FCD",
+                            "86C58E",
+                            "AFC35E",
+                            "8F7131",
+                            "B78D4F",
+                            "E2B8A6",
+                            "FFFFFF"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 23.052,
+                    "lon": 90.301,
+                    "zoom": 10
+                }
+            }
+        ]
+    },
+    "title": "MERIT DEM: Multi-Error-Removed Improved-Terrain DEM",
+    "version": "1.0.3",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1987-01-01T00:00:00Z",
+                    "2017-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "ODbL-1.0"
+}

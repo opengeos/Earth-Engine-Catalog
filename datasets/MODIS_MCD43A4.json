@@ -1,0 +1,141 @@
+{
+    "type": "Collection",
+    "id": "MODIS/MCD43A4",
+    "stac_version": "1.0.0",
+    "description": "The MODerate-resolution Imaging\nSpectroradiometer (MODIS) Reflectance product MCD43A4 provides\n500-meter reflectance data adjusted using a bidirectional reflectance\ndistribution function (BRDF) to model the values as if they were taken\nfrom nadir view. The MCD43A4 product contains 16 days of data provided\nin a level-3 gridded data set in Sinusoidal projection.\n\nBoth Terra and Aqua data are used in the generation of this product, providing\nthe highest probability for quality input data and designating it as\nan MCD, meaning Combined, product.\n\nVersion-5 MODIS/Terra+Aqua BRDF/Albedo\nproducts are Validated Stage 1, meaning that accuracy has been\nestimated using a small number of independent measurements obtained\nfrom selected locations and time periods and ground-truth/field\nprogram efforts. Although there may be later improved versions, these\ndata are ready for use in scientific publications.\n\nPlease visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data) for information on citing LP DAAC datasets.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_MCD43A4",
+            "type": "text/html",
+            "title": "Run the example for MODIS/MCD43A4 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_MCD43A4_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MCD43A4#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MCD43A4.json",
+            "type": "application/json",
+            "title": "MODIS/006/MCD43A4"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MCD43A4.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "deprecated": true,
+    "gee:interval": {
+        "interval": 8,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC have no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "16_day",
+        "brdf",
+        "global",
+        "mcd43a4",
+        "modis",
+        "nbar",
+        "reflectance",
+        "surface_reflectance",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mcd43a4"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MCD43A4"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "True Color (143)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Nadir_Reflectance_Band1",
+                            "Nadir_Reflectance_Band4",
+                            "Nadir_Reflectance_Band3"
+                        ],
+                        "gamma": [
+                            1.6
+                        ],
+                        "max": [
+                            2000
+                        ],
+                        "min": [
+                            0.01
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 31.052933985705163,
+                    "lon": -7.03125,
+                    "zoom": 2
+                }
+            }
+        ]
+    },
+    "title": "MCD43A4.005 BRDF-Adjusted Reflectance 16-Day Global 500m [deprecated]",
+    "version": "Unknown",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-18T00:00:00Z",
+                    "2017-03-14T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

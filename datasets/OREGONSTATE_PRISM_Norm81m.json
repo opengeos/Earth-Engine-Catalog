@@ -1,0 +1,253 @@
+{
+    "type": "Collection",
+    "id": "OREGONSTATE/PRISM/Norm81m",
+    "stac_version": "1.0.0",
+    "description": "The PRISM daily and monthly datasets are gridded climate\ndatasets for the conterminous United States, produced by the\nPRISM Climate Group at Oregon State University.\n\nGrids are\ndeveloped using PRISM (Parameter-elevation Regressions on Independent\nSlopes Model). PRISM interpolation routines simulate how weather\nand climate vary with elevation, and account for coastal effects,\ntemperature inversions, and terrain barriers that can cause rain\nshadows. Station data are assimilated from many networks across\nthe country. For more information, see the [Descriptions of PRISM\nSpatial Climate Datasets](https://www.prism.oregonstate.edu/documents/PRISM_datasets.pdf).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OREGONSTATE_PRISM_Norm81m",
+            "type": "text/html",
+            "title": "Run the example for OREGONSTATE/PRISM/Norm81m in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/OREGONSTATE/OREGONSTATE_PRISM_Norm81m_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/OREGONSTATE_PRISM_Norm81m#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://prism.oregonstate.edu/terms/",
+            "type": "text/html"
+        },
+        {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OREGONSTATE/OREGONSTATE_PRISM_Norm91m.json",
+            "type": "application/json",
+            "title": "OREGONSTATE/PRISM/Norm91m"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OREGONSTATE/OREGONSTATE_PRISM_Norm91m.json",
+            "type": "application/json",
+            "title": "OREGONSTATE/PRISM/Norm91m"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OREGONSTATE/OREGONSTATE_PRISM_Norm81m.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OREGONSTATE/catalog.json",
+            "type": "application/json",
+            "title": "OREGONSTATE"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "deprecated": true,
+    "gee:interval": {
+        "interval": 1,
+        "type": "climatological_interval",
+        "unit": "month"
+    },
+    "gee:terms_of_use": "These PRISM datasets are available without restriction\non use or distribution. PRISM Climate Group does request that the\nuser give proper attribution and identify PRISM, where applicable,\nas the source of the data.\n[https://prism.oregonstate.edu/terms/](https://prism.oregonstate.edu/terms/)\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "30_year",
+        "climate",
+        "geophysical",
+        "oregonstate",
+        "precipitation",
+        "pressure",
+        "prism",
+        "temperature",
+        "vapor",
+        "weather"
+    ],
+    "providers": [
+        {
+            "name": "PRISM / OREGONSTATE",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.prism.oregonstate.edu/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/OREGONSTATE_PRISM_Norm81m"
+        }
+    ],
+    "sci:citation": "Daly, C., Halbleib, M., Smith, J.I., Gibson, W.P., Doggett, M.K.,\nTaylor, G.H., Curtis, J., and Pasteris, P.A. 2008. Physiographically-sensitive\nmapping of temperature and precipitation across the conterminous\nUnited States. International Journal of Climatology, 28: 2031-2064\n[doi:10.1002/joc.1688](https://doi.org/10.1002/joc.1688)\n[pdf](https://www.prism.oregonstate.edu/documents/pubs/2008intjclim_physiographicMapping_daly.pdf)\n",
+    "sci:publications": [
+        {
+            "citation": "[Daly, C., J.I. Smith, and K.V. Olson. 2015. Mapping atmospheric\nmoisture climatologies across the conterminous United States. PloS\nONE 10(10):e0141140.\n[doi:10.1371/journal.pone.0141140](https://doi.org/10.1371/journal.pone.0141140).\n",
+            "doi": "10.1371/journal.pone.0141140"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "30 Year average of monthly total precipitation (including rain and melted snow)",
+                "gee:units": "mm",
+                "name": "ppt"
+            },
+            {
+                "description": "30 Year average of monthly mean temperature (calculated as (tmin+tmax)/2)",
+                "gee:units": "\u00b0C",
+                "name": "tmean"
+            },
+            {
+                "description": "30 Year average of monthly minimum temperature",
+                "gee:units": "\u00b0C",
+                "name": "tmin"
+            },
+            {
+                "description": "30 Year average of monthly maximum temperature",
+                "gee:units": "\u00b0C",
+                "name": "tmax"
+            },
+            {
+                "description": "30 Year average of monthly mean dew point temperature",
+                "gee:units": "\u00b0C",
+                "name": "tdmean"
+            },
+            {
+                "description": "30 Year average of monthly minimum vapor pressure deficit",
+                "gee:units": "hPa",
+                "name": "vpdmin"
+            },
+            {
+                "description": "30 Year average of monthly maximum vapor pressure deficit",
+                "gee:units": "hPa",
+                "name": "vpdmax"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "List of original creation dates for each band, e.g:\nthe first element is for the first band \"ppt\", the second element\nis for the second band \"tmean\"\n",
+                "name": "PRISM_CREATION_DATE",
+                "type": "STRING_LIST"
+            },
+            {
+                "description": "List of dataset types per-band",
+                "name": "PRISM_DATASET",
+                "type": "STRING_LIST"
+            },
+            {
+                "description": "List of code versions per-band",
+                "name": "PRISM_VERSION",
+                "type": "STRING_LIST"
+            },
+            {
+                "description": "List of original filenames per-band",
+                "name": "PRISM_FILENAME",
+                "type": "STRING_LIST"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Precipitation",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "ppt"
+                        ],
+                        "max": [
+                            300
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "red",
+                            "yellow",
+                            "green",
+                            "cyan",
+                            "purple"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 40.71,
+                    "lon": -100.55,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            4638.3
+        ],
+        "ppt": {
+            "minimum": 0.03,
+            "maximum": 1046.09
+        },
+        "tdmean": {
+            "minimum": -19.07,
+            "maximum": 25.22
+        },
+        "tmax": {
+            "minimum": -10.78,
+            "maximum": 46.63
+        },
+        "tmean": {
+            "minimum": -16.15,
+            "maximum": 37.88
+        },
+        "tmin": {
+            "minimum": -21.9,
+            "maximum": 29.79
+        },
+        "vpdmax": {
+            "minimum": 0.37,
+            "maximum": 94.11
+        },
+        "vpdmin": {
+            "minimum": 0,
+            "maximum": 33.11
+        }
+    },
+    "title": "PRISM Long-Term Average Climate Dataset Norm81m [deprecated]",
+    "version": "81m",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    24,
+                    -66,
+                    50
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1981-01-01T00:00:00Z",
+                    "2010-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

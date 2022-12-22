@@ -1,0 +1,245 @@
+{
+    "type": "Collection",
+    "id": "CIESIN/GPWv4/ancillary-data-grids",
+    "stac_version": "1.0.0",
+    "description": "The Gridded Population of World Version 4 (GPWv4) models the distribution\nof global human population for the years 2000, 2005, 2010, 2015, and 2020\non 30 arc-second (approximately 1km) grid cells. Population is distributed\nto cells using proportional allocation of population from census and\nadministrative units. Population input data are collected at the most\ndetailed spatial resolution available from the results of the 2010 round of\ncensuses, which occurred between 2005 and 2014. The input data are\nextrapolated to produce population estimates for each modeled year.\n\nThese ancillary data grids contain additional per-pixel data that can be\nused to assess the quality of the population estimates and how they were\nproduced.\n\n[General Documentation](https://beta.sedac.ciesin.columbia.edu/data/set/gpw-v4-land-water-area/docs)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/CIESIN_GPWv4_ancillary-data-grids",
+            "type": "text/html",
+            "title": "Run the example for CIESIN/GPWv4/ancillary-data-grids in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/CIESIN/CIESIN_GPWv4_ancillary-data-grids_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/CIESIN_GPWv4_ancillary-data-grids#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CIESIN/CIESIN_GPWv411_GPW_Land_Area.json",
+            "type": "application/json",
+            "title": "CIESIN/GPWv411/GPW_Land_Area"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.7927/H4F47M2C"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CIESIN/CIESIN_GPWv4_ancillary-data-grids.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CIESIN/catalog.json",
+            "type": "application/json",
+            "title": "CIESIN"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "deprecated": true,
+    "gee:provider_ids": [
+        "C1417149701-SEDAC",
+        "C1418717760-SEDAC",
+        "C1418732711-SEDAC",
+        "C1427612908-SEDAC"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image",
+    "keywords": [
+        "ciesin",
+        "gpw",
+        "population"
+    ],
+    "providers": [
+        {
+            "name": "CIESIN",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://sedac.ciesin.columbia.edu/data/collection/gpw-v4"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/CIESIN_GPWv4_ancillary-data-grids"
+        }
+    ],
+    "sci:citation": "Center for International Earth Science Information Network - CIESIN -\nColumbia University. 2016. Gridded Population of the World, Version 4\n(GPWv4): Administrative Unit Center Points with Population Estimates.\nPalisades, NY: NASA Socioeconomic Data and Applications Center\n(SEDAC). [https://doi.org/10.7927/H4F47M2C](https://doi.org/10.7927/H4F47M2C).\nAccessed DAY MONTH YEAR.\n",
+    "sci:doi": "10.7927/H4F47M2C",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Water mask",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Identifies water pixels; non-water pixels are masked",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Total water pixels that are completely water and/or permanent ice.",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Partial water pixels that also contain land.",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 1
+                },
+                "name": "water-mask"
+            },
+            {
+                "description": "Categorizes pixels with estimated zero population based on\ninformation provided in the census documents.\n",
+                "gee:classes": [
+                    {
+                        "color": "099506",
+                        "description": "Park or protected area.",
+                        "value": 201
+                    },
+                    {
+                        "color": "ff0b00",
+                        "description": "Military district, airport zone, or other infrastructure.",
+                        "value": 202
+                    },
+                    {
+                        "color": "060606",
+                        "description": "Not enumerated or not reported in census.",
+                        "value": 203
+                    },
+                    {
+                        "color": "a5a5a5",
+                        "description": "No households.",
+                        "value": 204
+                    },
+                    {
+                        "color": "ffe152",
+                        "description": "Uninhabited.",
+                        "value": 205
+                    }
+                ],
+                "name": "data-context"
+            },
+            {
+                "description": "The mean area of the input unit(s) from which population count\nand density grids are created.",
+                "gee:units": "km^2",
+                "name": "mean-administrative-unit-area"
+            },
+            {
+                "description": "An integer that represents the census data source used\nto produce the GPWv4 population estimates. Pixels (grid cells) that have\nthe same value reflect the same data source, most often a country or\nterritory. Note that these data represent the area covered by the\nstatistical data as provided, and are not official representations of\ncountry or territory boundaries.\n",
+                "name": "national-identifier"
+            },
+            {
+                "description": "Estimate of the land area, excluding permanent ice and water, within each 30 arc-second pixel.",
+                "gee:units": "km^2",
+                "name": "land-area"
+            },
+            {
+                "description": "Estimate of the water area (permanent ice and water) within each 30 arc-second pixel.",
+                "gee:units": "km^2",
+                "name": "water-area"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Zero Population Areas",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "data-context"
+                        ],
+                        "max": [
+                            205
+                        ],
+                        "min": [
+                            201
+                        ],
+                        "palette": [
+                            "099506",
+                            "ff0b00",
+                            "060606",
+                            "a5a5a5",
+                            "ffe152"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 10,
+                    "lon": 26.4,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            927.67
+        ],
+        "land-area": {
+            "minimum": 0,
+            "maximum": 0.86
+        },
+        "mean-administrative-unit-area": {
+            "minimum": 0,
+            "maximum": 816831
+        },
+        "national-identifier": {
+            "minimum": 4,
+            "maximum": 999
+        },
+        "water-area": {
+            "minimum": 0,
+            "maximum": 0.86
+        }
+    },
+    "title": "GPWv4: Gridded Population of the World Version 4, Ancillary Data Grids [deprecated]",
+    "version": "v4",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2020-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

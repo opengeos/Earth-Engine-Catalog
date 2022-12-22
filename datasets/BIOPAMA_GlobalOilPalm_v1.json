@@ -1,0 +1,165 @@
+{
+    "type": "Collection",
+    "id": "BIOPAMA/GlobalOilPalm/v1",
+    "stac_version": "1.0.0",
+    "description": "The dataset is a 10m global industrial and smallholder oil palm map for 2019.\nIt covers areas where oil palm plantations were detected. The classified images are the output\nof a convolutional neural network based on Sentinel-1 and Sentinel-2 half-year composites.\n\nSee [article](https://essd.copernicus.org/articles/13/1211/2021/) for additional information.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/BIOPAMA_GlobalOilPalm_v1",
+            "type": "text/html",
+            "title": "Run the example for BIOPAMA/GlobalOilPalm/v1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/BIOPAMA/BIOPAMA_GlobalOilPalm_v1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/BIOPAMA_GlobalOilPalm_v1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5281/zenodo.4473715"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/BIOPAMA/BIOPAMA_GlobalOilPalm_v1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/BIOPAMA/catalog.json",
+            "type": "application/json",
+            "title": "BIOPAMA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "biodiversity",
+        "biopama",
+        "conservation",
+        "crop",
+        "global",
+        "landuse",
+        "oilpalm",
+        "plantation"
+    ],
+    "providers": [
+        {
+            "name": "Biopama programme",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5281/zenodo.4473715"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/BIOPAMA_GlobalOilPalm_v1"
+        }
+    ],
+    "sci:citation": "Adri\u00e0, Descals, Serge, Wich, Erik, Meijaard, David, Gaveau, Stephen, Peedell, & Zoltan, Szantoi. (2021, January 27).\nHigh resolution global industrial and smallholder oil palm map for 2019 (Version v1). *Zenodo.*\n[doi:10.5281/zenodo.4473715](https://doi.org/10.5281/zenodo.4473715)\n",
+    "sci:doi": "10.5281/zenodo.4473715",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Oil Palm class description",
+                "gee:classes": [
+                    {
+                        "color": "ff0000",
+                        "description": "Industrial closed-canopy oil palm plantations",
+                        "value": 1
+                    },
+                    {
+                        "color": "ef00ff",
+                        "description": "Smallholder closed-canopy oil palm plantations",
+                        "value": 2
+                    },
+                    {
+                        "color": "696969",
+                        "description": "Other land covers and/or uses that are not closed-canopy oil palm.",
+                        "value": 3
+                    }
+                ],
+                "gsd": 10,
+                "name": "classification"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "classificationVis",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "classification"
+                        ],
+                        "max": [
+                            3
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "ff0000",
+                            "ef00ff",
+                            "808080"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 5.2745,
+                    "lon": -3.0175,
+                    "zoom": 12
+                }
+            }
+        ]
+    },
+    "title": "Global Map of Oil Palm Plantations",
+    "version": "v1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-01-01T00:00:00Z",
+                    "2019-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

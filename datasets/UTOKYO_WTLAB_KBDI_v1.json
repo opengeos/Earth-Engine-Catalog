@@ -1,0 +1,155 @@
+{
+    "type": "Collection",
+    "id": "UTOKYO/WTLAB/KBDI/v1",
+    "stac_version": "1.0.0",
+    "description": "Keetch-Byram Drought Index (KBDI) is a continuous reference scale for estimating the dryness of\nthe soil and duff layers. The index increases for each day without rain (the amount of increase\ndepends on the daily high temperature) and decreases when it rains. This system is based\nprimarily on recent rainfall patterns. It is a measure of meteorological drought; it reflects\nwater gain or loss within the soil.\n\nThe scale ranges from 0 (no moisture deficit) to 800 (extreme drought). The range of the index\nis determined by assuming that there is 20 cm of moisture in a saturated soil that is readily\navailable to the vegetation (Keetch and Byram, 1968). KBDI is world widely used for drought\nmonitoring for national weather forecast, wildfire prevention and usefully especially in regions\nwith rain-fed crops.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/UTOKYO_WTLAB_KBDI_v1",
+            "type": "text/html",
+            "title": "Run the example for UTOKYO/WTLAB/KBDI/v1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/UTOKYO/UTOKYO_WTLAB_KBDI_v1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/UTOKYO_WTLAB_KBDI_v1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UTOKYO/UTOKYO_WTLAB_KBDI_v1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UTOKYO/catalog.json",
+            "type": "application/json",
+            "title": "UTOKYO"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "keywords": [
+        "drought",
+        "kbdi",
+        "lst_derived",
+        "rainfall",
+        "utokyo",
+        "wtlab"
+    ],
+    "providers": [
+        {
+            "name": "Institute of Industrial Science, The University of Tokyo, Japan",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "http://wtlab.iis.u-tokyo.ac.jp/DMEWS/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/UTOKYO_WTLAB_KBDI_v1"
+        }
+    ],
+    "sci:citation": "Wataru Takeuchi, Soni Darmawan, Rizatus Shofiyati, Mai Van Khiem, Kyaw San Oo, Uday Pimple\nand Suthy Heng, 2015. Near-real time meteorological drought monitoring and early warning\nsystem for croplands in Asia.\n36th Asian conference on remote sensing (ACRS): Manila, Philippines, Oct. 20, 2015.\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Keetch-Byram Drought Index",
+                "name": "KBDI"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "KBDI",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "KBDI"
+                        ],
+                        "max": [
+                            800
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "0000ff",
+                            "33ccff",
+                            "339933",
+                            "ffff00",
+                            "cc9900",
+                            "cc6600",
+                            "ff0000"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 3,
+                    "lon": 120,
+                    "zoom": 3
+                }
+            }
+        ],
+        "gsd": [
+            4000
+        ],
+        "KBDI": {
+            "minimum": 0,
+            "maximum": 800
+        }
+    },
+    "title": "KBDI: Keetch-Byram Drought Index",
+    "version": "1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    60,
+                    -60,
+                    180,
+                    60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2007-01-01T00:00:00Z",
+                    "2022-12-20T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

@@ -1,0 +1,142 @@
+{
+    "type": "Collection",
+    "id": "UMD/GLAD/PRIMARY_HUMID_TROPICAL_FORESTS/v1",
+    "stac_version": "1.0.0",
+    "description": "Primary humid tropical forests provide numerous global ecosystem services,\nbut are under continuing threat of clearing from economic drivers. To facilitate\nnational land use planning and balancing the goals of economic development and\nmaintenance of ecosystem services, a primary humid tropical forest map was\ncreated by the UMD GLAD team. The primary forest extent was mapped\nfor the year 2001 at a spatial resolution of 30 meters using globally acquired,\nfree-of-charge, and consistently processed Landsat imagery.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/UMD_GLAD_PRIMARY_HUMID_TROPICAL_FORESTS_v1",
+            "type": "text/html",
+            "title": "Run the example for UMD/GLAD/PRIMARY_HUMID_TROPICAL_FORESTS/v1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/UMD/UMD_GLAD_PRIMARY_HUMID_TROPICAL_FORESTS_v1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/UMD_GLAD_PRIMARY_HUMID_TROPICAL_FORESTS_v1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMD/UMD_GLAD_PRIMARY_HUMID_TROPICAL_FORESTS_v1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMD/catalog.json",
+            "type": "application/json",
+            "title": "UMD"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The data may be used by anyone, anywhere, anytime without permission,\nlicense or royalty payment.\nAttribution using the recommended citation is requested.\n",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "forest",
+        "glad",
+        "global",
+        "landsat_derived",
+        "umd"
+    ],
+    "providers": [
+        {
+            "name": "UMD/GLAD",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://glad.umd.edu/dataset/primary-forest-humid-tropics"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/UMD_GLAD_PRIMARY_HUMID_TROPICAL_FORESTS_v1"
+        }
+    ],
+    "sci:citation": "Turubanova S., Potapov P., Tyukavina, A., and Hansen M. (2018) Ongoing primary forest\nloss in Brazil, Democratic Republic of the Congo, and Indonesia. Environmental\nResearch Letters.\n[https://doi.org/10.1088/1748-9326/aacd1c](https://doi.org/10.1088/1748-9326/aacd1c)\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Primary Humid Tropical Forests",
+                "gee:classes": [
+                    {
+                        "color": "008000",
+                        "description": "Primary Humid Tropical Forests",
+                        "value": 1
+                    }
+                ],
+                "name": "Primary_HT_forests"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Primary HT forests",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Primary_HT_forests"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "008000"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -0.85,
+                    "lon": 20.39,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    },
+    "title": "Primary Humid Tropical Forests",
+    "version": "v1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2002-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

@@ -1,0 +1,129 @@
+{
+    "type": "Collection",
+    "id": "AHN/AHN2_05M_RUW",
+    "stac_version": "1.0.0",
+    "description": "The AHN DEM is a 0.5m DEM covering the Netherlands. It was generated from\nLIDAR data taken in the spring between 2007 and 2012.\n\nThis version contains both ground level samples and items above ground level\n(such as buildings, bridges, trees etc). The point cloud was converted to a\n0.5m grid using an squared inverse distance weighting method.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/AHN_AHN2_05M_RUW",
+            "type": "text/html",
+            "title": "Run the example for AHN/AHN2_05M_RUW in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/AHN/AHN_AHN2_05M_RUW_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/AHN_AHN2_05M_RUW#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/AHN/AHN_AHN2_05M_RUW.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/AHN/catalog.json",
+            "type": "application/json",
+            "title": "AHN"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The datasets of the AHN are available as Open Data.\nThis means that the data can be used by anyone for free and without\nrestrictions. For more information visit the\n[Open Data](https://www.ahn.nl/open-data/) page. Downloads are available\nunder the terms of the\n[CC-0 license](https://data.overheid.nl/licenties-voor-hergebruik).\n",
+    "gee:type": "image",
+    "keywords": [
+        "ahn",
+        "dem",
+        "elevation",
+        "geophysical",
+        "lidar",
+        "netherlands"
+    ],
+    "providers": [
+        {
+            "name": "AHN",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ahn.nl/index.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/AHN_AHN2_05M_RUW"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Elevation",
+                "gee:units": "m",
+                "name": "elevation"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Elevation",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "elevation"
+                        ],
+                        "max": [
+                            30
+                        ],
+                        "min": [
+                            -5
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 53.4113,
+                    "lon": 5.36785,
+                    "zoom": 15
+                }
+            }
+        ],
+        "gsd": [
+            0.5
+        ]
+    },
+    "title": "AHN Netherlands 0.5m DEM, Raw Samples",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    3.35,
+                    50.74,
+                    7.24,
+                    53.55
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-01-01T00:00:00Z",
+                    "2012-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0"
+}

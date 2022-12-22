@@ -1,0 +1,218 @@
+{
+    "type": "Collection",
+    "id": "LANDFIRE/Fire/SClass/v1_4_0",
+    "stac_version": "1.0.0",
+    "description": "LANDFIRE (LF), Landscape Fire and Resource Management Planning Tools, is a\nshared program between the wildland fire management programs of the U.S.\nDepartment of Agriculture's Forest Service, U.S. Department of the Interior's\nGeological Survey, and The Nature Conservancy.\n\nLandfire (LF) Historical fire regimes, intervals, and vegetation conditions\nare mapped using the Vegetation Dynamics Development Tool (VDDT).\nThese data support fire and landscape management planning goals in\nthe National Cohesive Wildland Fire Management Strategy, the Federal Wildland\nFire Management Policy, and the Healthy Forests Restoration Act.\n\nThe Succession Classes (SClass) layer characterizes current vegetation conditions with respect to the vegetation species composition, cover, and height ranges of successional states that occur within each biophysical setting.\nSClass can also represent uncharacteristic vegetation components, such as exotic species, that are not found within the compositional or structural variability of successional states defined for a biophysical setting.\nSuccession classes do not directly quantify fuel characteristics of the current vegetation, but rather represent vegetative states with unique succession or disturbance-related dynamics, such as structural development or fire frequency.\nTo produce SClass, the historical reference conditions of these successional states were derived from the vegetation and disturbance dynamics model VDDT (Vegetation Dynamics Development Tool) (LF_1.0.0 CONUS only used the vegetation and disturbance dynamics model LANDSUM).\nThe area contained in succession classes is compared to the simulated historical reference conditions to calculate measurements of vegetation departure, such as fire regime condition class.\nSClass is used in landscape assessments.\n\nThe LANDIFRE Fire datasets include:\n\n* Fire Regime Groups (FRG) is intended to characterize presumed historical\n  fire regimes within landscapes based on interactions between vegetation\n  dynamics, fire spread, fire effects, and spatial context\n* Mean Fire Return Interval (MFRI) quantifies the average period between\n  fires under the presumed historical fire regime\n* Percent of Low-severity Fire (PLS) image quantifies the amount of\n  low-severity fires relative to mixed- and replacement-severity fires\n  under the presumed historical fire regime and is defined as less than 25\n  percent average top-kill within a typical fire perimeter for a given\n  vegetation type\n* Percent of Mixed-severity Fire (PMS) layer quantifies the amount of\n  mixed-severity fires relative to low- and replacement-severity fires under\n  the presumed historical fire regime, and is defined as between 25 and 75\n  percent average top-kill within a typical fire perimeter for a given\n  vegetation type\n* Percent of Replacement-severity Fire (PRS) layer quantifies the amount of\n  replacement-severity fires relative to low- and mixed-severity fires under\n  the presumed historical fire regime, and is defined as greater than 75\n  percent average top-kill within a typical fire perimeter for a given\n  vegetation type\n* Succession Classes (SClass) layer characterizes current vegetation conditions\n  with respect to the vegetation species composition, cover, and height ranges\n  of successional states that occur within each biophysical setting\n* Vegetation Condition Class (VCC) represents a simple categorization of the\n  associated Vegetation Departure (VDEP) layer and indicates the general level\n  to which current vegetation is different from the simulated historical\n  vegetation reference conditions\n* Vegetation Departure (VDep) indicates how different current vegetation on a\n  landscape is from estimated historical conditions. VDep is based on changes\n  to species composition, structural stage, and canopy closure.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/LANDFIRE_Fire_SClass_v1_4_0",
+            "type": "text/html",
+            "title": "Run the example for LANDFIRE/Fire/SClass/v1_4_0 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/LANDFIRE/LANDFIRE_Fire_SClass_v1_4_0_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/LANDFIRE_Fire_SClass_v1_4_0#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDFIRE/LANDFIRE_Fire_SClass_v1_4_0.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDFIRE/catalog.json",
+            "type": "application/json",
+            "title": "LANDFIRE"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "LANDFIRE data are public domain data with no use restrictions, though if modifications\nor derivatives of the product(s) are created, then please add some descriptive modifier\nto the data set to avoid confusion.\n",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "doi",
+        "fire",
+        "landfire",
+        "nature_conservancy",
+        "usda",
+        "usgs",
+        "vegetation",
+        "wildfire"
+    ],
+    "providers": [
+        {
+            "name": "U.S. Department of Agriculture's (USDA), U.S. Forest Service (USFS), U.S.\nDepartment of the Interior's Geological Survey (USGS), and The Nature Conservancy.",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://landfire.gov/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/LANDFIRE_Fire_SClass_v1_4_0"
+        }
+    ],
+    "sci:citation": "The suggested way to cite LANDFIRE products is specific to each product,\nso the model for citation is provided, with an example for a particular product.\nProducer. Year released. Product xxxxx:\n\n- Individual model name.\n- BpS Models and Descriptions, Online. LANDFIRE. Washington, DC. U.S. Department of\n  Agriculture, Forest Service\n- U.S. Department of the Interior; U.S. Geological Survey; Arlington, VA\n- The Nature Conservancy (Producers). Available- URL. Access date.\n\nExample Citation: LANDFIRE Biophysical Settings. 2018. Biophysical setting 14420:\nSouth Texas sand sheet grassland. In: LANDFIRE Biophysical Setting Model: Map zone 36,\n[Online]. In: BpS Models and Descriptions. In: LANDFIRE. Washington, DC:\nU.S. Department of Agriculture, Forest Service; U.S. Department of the Interior;\nU.S. Geological Survey; Arlington, VA: The Nature Conservancy (Producers).\nAvailable: [https://www.landfire.gov/bps-models.php](https://www.landfire.gov/bps-models.php) [2018, June 27].\nAdditional guidance on citation of LANDFIRE products can be found\n[here](https://www.landfire.gov/landfire_citation.php)\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Succession Classes",
+                "gee:classes": [
+                    {
+                        "color": "a16333",
+                        "description": "Succession Class A",
+                        "value": 1
+                    },
+                    {
+                        "color": "38a800",
+                        "description": "Succession Class B",
+                        "value": 2
+                    },
+                    {
+                        "color": "c9deab",
+                        "description": "Succession Class C",
+                        "value": 3
+                    },
+                    {
+                        "color": "fff8a6",
+                        "description": "Succession Class D",
+                        "value": 4
+                    },
+                    {
+                        "color": "004a4d",
+                        "description": "Succession Class E",
+                        "value": 5
+                    },
+                    {
+                        "color": "a00000",
+                        "description": "Uncharacteristic Native Vegetation Cover / Structure / Composition",
+                        "value": 6
+                    },
+                    {
+                        "color": "ff0000",
+                        "description": "Uncharacteristic Exotic Vegetation",
+                        "value": 7
+                    },
+                    {
+                        "color": "0000ff",
+                        "description": "Water",
+                        "value": 111
+                    },
+                    {
+                        "color": "c8ffff",
+                        "description": "Snow / Ice",
+                        "value": 112
+                    },
+                    {
+                        "color": "8400a8",
+                        "description": "Non-burnable Urban",
+                        "value": 120
+                    },
+                    {
+                        "color": "e8beff",
+                        "description": "Burnable Urban",
+                        "value": 121
+                    },
+                    {
+                        "color": "4e4e4e",
+                        "description": "Barren",
+                        "value": 131
+                    },
+                    {
+                        "color": "b2b2b2",
+                        "description": "Sparsely Vegetated",
+                        "value": 132
+                    },
+                    {
+                        "color": "ffff00",
+                        "description": "Non-burnable Agriculture",
+                        "value": 180
+                    },
+                    {
+                        "color": "ffaa00",
+                        "description": "Burnable Agriculture",
+                        "value": 181
+                    }
+                ],
+                "name": "SClass"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Class values of the  Succession Classes.",
+                "name": "SClass_classes",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Descriptive names of Succession Classes.",
+                "name": "SClass_names",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "SClass",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "SClass"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 40.699,
+                    "lon": -121.671,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    },
+    "title": "LANDFIRE SClass (Succession Classes) v1.4.0",
+    "version": "1.4.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -175.1,
+                    17.52,
+                    -63.66,
+                    71.48
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-09-01T00:00:00Z",
+                    "2014-09-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

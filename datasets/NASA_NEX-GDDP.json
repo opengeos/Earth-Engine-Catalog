@@ -1,0 +1,198 @@
+{
+    "type": "Collection",
+    "id": "NASA/NEX-GDDP",
+    "stac_version": "1.0.0",
+    "description": "The NASA NEX-GDDP dataset is comprised of downscaled climate scenarios\nfor the globe that are derived from the General Circulation Model (GCM)\nruns conducted under the Coupled Model Intercomparison Project Phase 5\n(CMIP5, see [Taylor et al. 2012](https://journals.ametsoc.org/doi/abs/10.1175/BAMS-D-11-00094.1))\nand across two of the four greenhouse gas emissions scenarios known as\nRepresentative Concentration Pathways (RCPs, see [Meinshausen et\nal. 2011](https://rd.springer.com/article/10.1007%2Fs10584-011-0156-z#page-1)).\nThe CMIP5 GCM runs were developed in support of the Fifth Assessment\nReport of the Intergovernmental Panel on Climate Change (IPCC AR5).\n\nThis dataset was prepared by the Climate Analytics Group and NASA Ames\nResearch Center using the NASA Earth Exchange, and distributed by the NASA\nCenter for Climate Simulation (NCCS).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA_NEX-GDDP",
+            "type": "text/html",
+            "title": "Run the example for NASA/NEX-GDDP in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_NEX-GDDP_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_NEX-GDDP#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_NEX-GDDP.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "climate",
+        "cmip5",
+        "csu",
+        "gddp",
+        "geophysical",
+        "nasa",
+        "nex",
+        "precipitation",
+        "temperature"
+    ],
+    "providers": [
+        {
+            "name": "NASA / CSU",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://cds.nccs.nasa.gov/nex-gddp/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_NEX-GDDP"
+        }
+    ],
+    "sci:citation": "Thrasher, B., Maurer, E. P., McKellar, C., & Duffy, P. B., 2012:\nTechnical Note: Bias correcting climate model simulated daily temperature\nextremes with quantile mapping. Hydrology and Earth System Sciences,\n16(9), 3309-3314.\n[doi:10.5194/hess-16-3309-2012](https://doi.org/10.5194/hess-16-3309-2012)\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Daily mean of precipitation at surface; includes both\nliquid and solid phases from all types of clouds (both large-scale\nand convective)\n",
+                "gee:units": "kg/(m^2*s)",
+                "name": "pr"
+            },
+            {
+                "description": "Daily mean of the daily-minimum near-surface air temperature",
+                "gee:units": "K",
+                "name": "tasmin"
+            },
+            {
+                "description": "Daily mean of the daily-maximum near-surface air temperature",
+                "gee:units": "K",
+                "name": "tasmax"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Name of the CMIP5 model. It is one of 'ACCESS1-0',\n'bcc-csm1-1', 'BNU-ESM', 'CanESM2', 'CCSM4', 'CESM1-BGC', 'CNRM-CM5',\n'CSIRO-Mk3-6-0', 'GFDL-CM3', 'GFDL-ESM2G', 'GFDL-ESM2M', 'inmcm4',\n'IPSL-CM5A-LR', 'IPSL-CM5A-MR', 'MIROC-ESM', 'MIROC-ESM-CHEM', 'MIROC5',\n'MPI-ESM-LR', 'MPI-ESM-MR', 'MRI-CGCM3', 'NorESM1-M'.\n",
+                "name": "model",
+                "type": "STRING"
+            },
+            {
+                "description": "Name of the CMIP5 scenario. It is one of: 'historical',\n'rcp45', 'rcp85', where 'historical' designates\nretrospective model runs (pre-2006).\n",
+                "name": "scenario",
+                "type": "STRING"
+            },
+            {
+                "description": "Calendar year",
+                "name": "year",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Calendar month",
+                "name": "month",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Calendar day",
+                "name": "day",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Minimum Air Temperature",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "tasmin"
+                        ],
+                        "max": [
+                            300
+                        ],
+                        "min": [
+                            240
+                        ],
+                        "palette": [
+                            "blue",
+                            "purple",
+                            "cyan",
+                            "green",
+                            "yellow",
+                            "red"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 52.48,
+                    "lon": 71.72,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            27830
+        ],
+        "pr": {
+            "minimum": 0,
+            "maximum": 0.42
+        },
+        "tasmax": {
+            "minimum": 188.38,
+            "maximum": 335.13
+        },
+        "tasmin": {
+            "minimum": 165.31,
+            "maximum": 318.89
+        }
+    },
+    "title": "NEX-GDDP: NASA Earth Exchange Global Daily Downscaled Climate Projections",
+    "version": "1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1950-01-01T00:00:00Z",
+                    "2100-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

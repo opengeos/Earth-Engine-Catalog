@@ -1,0 +1,219 @@
+{
+    "type": "Collection",
+    "id": "RESOLVE/ECOREGIONS/2017",
+    "stac_version": "1.0.0",
+    "description": "The RESOLVE Ecoregions dataset, updated in 2017, offers a depiction of the 846 terrestrial\necoregions that represent our living planet.  View the stylized map at\n[https://ecoregions2017.appspot.com/](https://ecoregions2017.appspot.com/) or in\n[Earth Engine](https://code.earthengine.google.com/b961ab2adfcb03c920aab63d86c49eb2).\n\nEcoregions, in the simplest definition, are ecosystems of regional extent.\nSpecifically, ecoregions represent distinct assemblages of biodiversity-all\ntaxa, not just vegetation-whose boundaries include the space required to\nsustain ecological processes. Ecoregions provide a useful basemap for\nconservation planning in particular because they draw on natural, rather\nthan political, boundaries, define distinct biogeographic assemblages and\necological habitats within biomes, and assist in representation of Earth's\nbiodiversity.\n\nThis dataset is based on recent advances in biogeography - the science\nconcerning the distribution of plants and animals. The original ecoregions\ndataset has been widely used since its introduction in 2001, underpinning the\nmost recent analyses of the effects of global climate change on nature by\necologists to the distribution of the world's beetles to modern conservation\nplanning.\n\nThe 846 terrestrial ecoregions are grouped into 14 biomes and 8 realms. Six\nof these biomes are forest biomes and remaining eight are non-forest biomes.\nFor the forest biomes, the geographic boundaries of the ecoregions\n(Dinerstein et al., 2017) and protected areas (UNEP-WCMC 2016) were\nintersected with the Global Forest Change data (Hansen et al. 2013) for the\nyears 2000 to 2015, to calculate percent of habitat in protected areas and\npercent of remaining habitat outside protected areas.  Likewise, the\nboundaries of the non-forest ecoregions and protected areas (UNEP-WCMC 2016)\nwere intersected with Anthropogenic Biomes data (Anthromes v2) for the year\n2000 (Ellis et al., 2010) to identify remaining habitats inside and outside\nthe protected areas. Each ecoregion has a unique ID, area (sq. degrees), and NNH\n(Nature Needs Half) categories 1-4. NNH categories are based on percent of\nhabitat in protected areas and percent of remaining habitat outside\nprotected areas.\n\n1. Half Protected: More than 50% of the total ecoregion area is already\n   protected.\n2. Nature Could Reach Half: Less than 50% of the total ecoregion area is\n   protected but the amount of remaining unprotected natural habitat could\n   bring protection to over 50% if new conservation areas are added to the\n   system.\n3. Nature Could Recover: The amount of protected and unprotected natural\n   habitat remaining is less than 50% but more than 20%. Ecoregions in this\n   category would require restoration to reach Half Protected.\n4. Nature Imperiled: The amount of protected and unprotected natural habitat\n   remaining is less than or equal to 20%. Achieving half protected is not\n   possible in the short term and efforts should focus on conserving\n   remaining, native habitat fragments.\n\nThe updated Ecoregions 2017 is the most-up-to-date (as of February 2018) dataset on remaining\nhabitat in each terrestrial ecoregion. It was released to chart progress towards\nachieving the visionary goal of [Nature Needs Half](https://natureneedshalf.org/), to protect half of all\nthe land on Earth to save a living terrestrial biosphere.\n\nNote - a number of ecoregions are very complex polygons with over a million\nvertices, such as Rock & Ice. These ecoregions were split when necessary,\nwith attributes like Eco_ID being preserved. If you'd like to see all\necoregions that have been split, please [run this script](https://code.earthengine.google.com/7a437c78fc8cb46ec586bb4e2c10e526).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/RESOLVE_ECOREGIONS_2017",
+            "type": "text/html",
+            "title": "Run the example for RESOLVE/ECOREGIONS/2017 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/RESOLVE/RESOLVE_ECOREGIONS_2017_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/RESOLVE_ECOREGIONS_2017#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/RESOLVE/RESOLVE_ECOREGIONS_2017.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/RESOLVE/catalog.json",
+            "type": "application/json",
+            "title": "RESOLVE"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "table",
+    "keywords": [
+        "biodiversity",
+        "conservation",
+        "ecoregions",
+        "global",
+        "habitats",
+        "protection",
+        "resolve"
+    ],
+    "providers": [
+        {
+            "name": "RESOLVE Biodiversity and Wildlife Solutions",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://ecoregions2017.appspot.com/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/RESOLVE_ECOREGIONS_2017"
+        }
+    ],
+    "sci:citation": "[Bioscience, An Ecoregions-Based Approach to Protecting Half the\nTerrestrial Realm](https://academic.oup.com/bioscience/article/67/6/534/3102935)\n[doi:10.1093/biosci/bix014](https://doi.org/10.1093/biosci/bix014)\n",
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Biome name",
+                "name": "BIOME_NAME",
+                "type": "STRING"
+            },
+            {
+                "description": "Biome number",
+                "name": "BIOME_NUM",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Color",
+                "name": "COLOR",
+                "type": "STRING"
+            },
+            {
+                "description": "Biome color",
+                "name": "COLOR_BIO",
+                "type": "STRING"
+            },
+            {
+                "description": "NNH color",
+                "name": "COLOR_NNH",
+                "type": "STRING"
+            },
+            {
+                "description": "Ecoregion unique ID",
+                "name": "ECO_ID",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Ecoregion name",
+                "name": "ECO_NAME",
+                "type": "STRING"
+            },
+            {
+                "description": "CC-BY 4.0",
+                "name": "LICENSE",
+                "type": "STRING"
+            },
+            {
+                "description": "NNH category (1-4) based on percent of habitat in\nprotected areas and percent of remaining habitat outside protected areas\n",
+                "name": "NNH",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Half Protected, Nature Could Reach Half, Nature Could Recover, or Nature Imperiled",
+                "name": "NNH_NAME",
+                "type": "STRING"
+            },
+            {
+                "description": "Object id",
+                "name": "OBJECTID",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Realm name",
+                "name": "REALM",
+                "type": "STRING"
+            },
+            {
+                "description": "Area of ecoregion polygon in square degrees",
+                "name": "SHAPE_AREA",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Length of ecoregion polygon in degrees",
+                "name": "SHAPE_LENG",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Ecoregions",
+                "lookat": {
+                    "lat": 20.3,
+                    "lon": -20.39,
+                    "zoom": 2
+                },
+                "polygon_visualization": {
+                    "property_name": "SHAPE_AREA",
+                    "property_vis": {
+                        "max": [
+                            500
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "0080D4",
+                            "D88000",
+                            "7A32C1",
+                            "A2007F",
+                            "ffc0e8",
+                            "f5ff64",
+                            "b5ffb4",
+                            "beeaff",
+                            "ffc0e8",
+                            "8e8dff",
+                            "A2FF7F",
+                            "36807F",
+                            "E5E8E6",
+                            "cyan",
+                            "blue",
+                            "orange",
+                            "yellow",
+                            "gray"
+                        ]
+                    }
+                }
+            },
+            {
+                "display_name": "Ecoregions",
+                "visualize_as": "FeatureView"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 500,
+            "thinning_strategy": "HIGHER_DENSITY"
+        }
+    },
+    "title": "RESOLVE Ecoregions 2017",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-04-05T00:00:00Z",
+                    "2017-04-05T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

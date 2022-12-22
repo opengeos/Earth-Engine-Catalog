@@ -1,0 +1,526 @@
+{
+    "type": "Collection",
+    "id": "MODIS/006/MOD13A2",
+    "stac_version": "1.0.0",
+    "description": "The MOD13A2 V6 product provides two Vegetation Indices (VI): the Normalized\nDifference Vegetation Index (NDVI) and the Enhanced Vegetation Index (EVI).\nThe NDVI is referred to as the continuity index to the existing National\nOceanic and Atmospheric Administration-Advanced Very High Resolution\nRadiometer (NOAA-AVHRR) derived NDVI. The EVI has improved sensitivity over\nhigh biomass regions.\n\nThe algorithm for this product chooses the best available\npixel value from all the acquisitions from the 16-day period. The criteria\nused are low clouds, low view angle, and the highest NDVI/EVI value.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/103/MOD13_User_Guide_V6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/104/MOD13_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MOD13A2)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_006_MOD13A2",
+            "type": "text/html",
+            "title": "Run the example for MODIS/006/MOD13A2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_006_MOD13A2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD13A2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/MODIS/MOD13A2.006"
+        },
+        {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MOD13A2.json",
+            "type": "application/json",
+            "title": "MODIS/061/MOD13A2"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MOD13A2.json",
+            "type": "application/json",
+            "title": "MODIS/061/MOD13A2"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MOD13A2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "deprecated": true,
+    "gee:interval": {
+        "interval": 16,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C194001238-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "16_day",
+        "evi",
+        "global",
+        "mod13a2",
+        "modis",
+        "nasa",
+        "ndvi",
+        "terra",
+        "usgs",
+        "vegetation"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/MODIS/MOD13A2.006"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD13A2"
+        }
+    ],
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/MODIS/MOD13A2.006",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "16-day NDVI average",
+                "gee:scale": 0.0001,
+                "name": "NDVI"
+            },
+            {
+                "description": "16-day EVI average",
+                "gee:scale": 0.0001,
+                "name": "EVI"
+            },
+            {
+                "description": "VI Quality indicators",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 2,
+                            "description": "VI quality (MODLAND QA Bits)",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "VI produced with good quality",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "VI produced, but check other QA",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Pixel produced, but most probably cloudy",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Pixel not produced due to other reasons than clouds",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 4,
+                            "description": "VI usefulness",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "Highest quality",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Lower quality",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Decreasing quality",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Decreasing quality",
+                                    "value": 4
+                                },
+                                {
+                                    "description": "Decreasing quality",
+                                    "value": 8
+                                },
+                                {
+                                    "description": "Decreasing quality",
+                                    "value": 9
+                                },
+                                {
+                                    "description": "Decreasing quality",
+                                    "value": 10
+                                },
+                                {
+                                    "description": "Lowest quality",
+                                    "value": 12
+                                },
+                                {
+                                    "description": "Quality so low that it is not useful",
+                                    "value": 13
+                                },
+                                {
+                                    "description": "L1B data faulty",
+                                    "value": 14
+                                },
+                                {
+                                    "description": "Not useful for any other reason/not processed",
+                                    "value": 15
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Aerosol Quantity",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "Climatology",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Low",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Intermediate",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Adjacent cloud detected",
+                            "first_bit": 8,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Atmosphere BRDF correction",
+                            "first_bit": 9,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Mixed Clouds",
+                            "first_bit": 10,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 3,
+                            "description": "Land/water mask",
+                            "first_bit": 11,
+                            "values": [
+                                {
+                                    "description": "Shallow ocean",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Land (nothing else but land)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Ocean coastlines and lake shorelines",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Shallow inland water",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Ephemeral water",
+                                    "value": 4
+                                },
+                                {
+                                    "description": "Deep inland water",
+                                    "value": 5
+                                },
+                                {
+                                    "description": "Moderate or continental ocean",
+                                    "value": 6
+                                },
+                                {
+                                    "description": "Deep ocean",
+                                    "value": 7
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Possible snow/ice",
+                            "first_bit": 14,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Possible shadow",
+                            "first_bit": 15,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 16
+                },
+                "name": "DetailedQA"
+            },
+            {
+                "center_wavelength": 0.645,
+                "description": "Surface reflectance band 1 (red)",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "620-670nm",
+                "name": "sur_refl_b01"
+            },
+            {
+                "center_wavelength": 0.8585,
+                "description": "Surface reflectance band 2 (near-infrared)",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "841-876nm",
+                "name": "sur_refl_b02"
+            },
+            {
+                "center_wavelength": 0.469,
+                "description": "Surface reflectance band 3 (blue)",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "459-479nm",
+                "name": "sur_refl_b03"
+            },
+            {
+                "center_wavelength": 2.13,
+                "description": "Surface reflectance band 7 (mid-infrared)",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "2105-2155nm",
+                "name": "sur_refl_b07"
+            },
+            {
+                "description": "View zenith angle of VI Pixel",
+                "gee:scale": 0.01,
+                "gee:units": "Degrees",
+                "name": "ViewZenith"
+            },
+            {
+                "description": "Sun zenith angle of VI pixel",
+                "gee:scale": 0.01,
+                "gee:units": "Degrees",
+                "name": "SolarZenith"
+            },
+            {
+                "description": "Relative azimuth angle of VI pixel",
+                "gee:scale": 0.01,
+                "gee:units": "Degrees",
+                "name": "RelativeAzimuth"
+            },
+            {
+                "description": "Day of year VI pixel",
+                "gee:units": "Julian Day",
+                "name": "DayOfYear"
+            },
+            {
+                "description": "Quality reliability of VI pixel",
+                "gee:classes": [
+                    {
+                        "description": "Good Data: use with confidence",
+                        "value": 0
+                    },
+                    {
+                        "description": "Marginal Data: useful, but look at other QA information",
+                        "value": 1
+                    },
+                    {
+                        "description": "Snow/Ice: target covered with snow/ice",
+                        "value": 2
+                    },
+                    {
+                        "description": "Cloudy: target not visible, covered with cloud",
+                        "value": 3
+                    }
+                ],
+                "name": "SummaryQA"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "NDVI",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "NDVI"
+                        ],
+                        "max": [
+                            9000
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "FFFFFF",
+                            "CE7E45",
+                            "DF923D",
+                            "F1B555",
+                            "FCD163",
+                            "99B718",
+                            "74A901",
+                            "66A000",
+                            "529400",
+                            "3E8601",
+                            "207401",
+                            "056201",
+                            "004C00",
+                            "023B01",
+                            "012E01",
+                            "011D01",
+                            "011301"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 0,
+                    "lon": 0,
+                    "zoom": 0
+                }
+            }
+        ],
+        "gsd": [
+            1000
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Terra"
+        ],
+        "DayOfYear": {
+            "minimum": 1,
+            "maximum": 366
+        },
+        "EVI": {
+            "minimum": -2000,
+            "maximum": 10000
+        },
+        "NDVI": {
+            "minimum": -2000,
+            "maximum": 10000
+        },
+        "RelativeAzimuth": {
+            "minimum": -18000,
+            "maximum": 18000
+        },
+        "SolarZenith": {
+            "minimum": 0,
+            "maximum": 18000
+        },
+        "ViewZenith": {
+            "minimum": 0,
+            "maximum": 18000
+        },
+        "sur_refl_b01": {
+            "minimum": 0,
+            "maximum": 10000
+        },
+        "sur_refl_b02": {
+            "minimum": 0,
+            "maximum": 10000
+        },
+        "sur_refl_b03": {
+            "minimum": 0,
+            "maximum": 10000
+        },
+        "sur_refl_b07": {
+            "minimum": 0,
+            "maximum": 10000
+        }
+    },
+    "title": "MOD13A2.006 Terra Vegetation Indices 16-Day Global 1km [deprecated]",
+    "version": "V006",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-18T00:00:00Z",
+                    "2022-11-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

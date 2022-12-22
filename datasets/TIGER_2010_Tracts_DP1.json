@@ -1,0 +1,181 @@
+{
+    "type": "Collection",
+    "id": "TIGER/2010/Tracts_DP1",
+    "stac_version": "1.0.0",
+    "description": "The United States Census Bureau regularly releases\na geodatabase named TIGER. This table contains the 2010 census\nDemographic Profile 1 values aggregated by census tract. Tract\nareas vary tremendously, but in urban areas are roughly equivalent\nto a neighborhood. There are about 74,000 polygon features covering\nthe United States, the District of Columbia, Puerto Rico, and\nthe [Island areas](https://www.census.gov/data/tables/2010/dec/2010-island-areas.html).\n\nFor full technical details on all TIGER 2010 products, see\nthe [TIGER technical documentation](https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2010/TGRSHP10SF1.pdf).\n\nEach tract also includes attributes with sums of the DP1\npopulation measurements that intersect the boundary. The columns\nhave the same name as the shortname column in the [DP1 lookup\ntable](https://developers.google.com/earth-engine/tiger_2010_tract_dp1_metadata).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/TIGER_2010_Tracts_DP1",
+            "type": "text/html",
+            "title": "Run the example for TIGER/2010/Tracts_DP1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/TIGER/TIGER_2010_Tracts_DP1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/TIGER_2010_Tracts_DP1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/TIGER/TIGER_2010_Tracts_DP1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/TIGER/catalog.json",
+            "type": "application/json",
+            "title": "TIGER"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The U.S. Census Bureau offers some of its public data\nin machine-readable format via an Application Programming Interface\n(API). All of the content, documentation, code and related materials\nmade available to you through the API are subject to [these terms and\nconditions](https://www.census.gov/data/developers/about/terms-of-service.html).\n",
+    "gee:type": "table",
+    "keywords": [
+        "census",
+        "demographic",
+        "human",
+        "social",
+        "tiger",
+        "us"
+    ],
+    "providers": [
+        {
+            "name": "United States Census Bureau",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/TIGER_2010_Tracts_DP1"
+        }
+    ],
+    "sci:citation": "For the creation of any reports, publications, new data sets, derived\nproducts, or services resulting from the data set, users should\n[cite the US Census Bureau](https://www.census.gov/about/policies/citation.html).\n",
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Land area",
+                "name": "aland10",
+                "type": "DOUBLE",
+                "units": "m^2"
+            },
+            {
+                "description": "Water area",
+                "name": "awater10",
+                "type": "DOUBLE",
+                "units": "m^2"
+            },
+            {
+                "description": "Census tract identifier: a concatenation of state FIPS code, county FIPS code, and census tract code",
+                "name": "geoid10",
+                "type": "STRING"
+            },
+            {
+                "description": "Latitude of the internal point",
+                "name": "intptlat10",
+                "type": "STRING"
+            },
+            {
+                "description": "Longitude of the internal point",
+                "name": "intptlon10",
+                "type": "STRING"
+            },
+            {
+                "description": "Legal/statistical area description and the census tract name",
+                "name": "namelsad10",
+                "type": "STRING"
+            },
+            {
+                "description": "Area in square degrees",
+                "name": "shape_area",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Perimeter in degrees",
+                "name": "shape_leng",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Tract Area",
+                "lookat": {
+                    "lat": 40.74101,
+                    "lon": -73.99172,
+                    "zoom": 11
+                },
+                "polygon_visualization": {
+                    "property_name": "shape_area",
+                    "property_vis": {
+                        "gamma": [
+                            7
+                        ],
+                        "max": [
+                            53
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "display_name": "Tract Area",
+                "lookat": {
+                    "lat": 40.74101,
+                    "lon": -73.99172,
+                    "zoom": 11
+                },
+                "visualize_as": "FeatureView"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 16000,
+            "prerender_tiles": true,
+            "thinning_strategy": "HIGHER_DENSITY"
+        }
+    },
+    "title": "TIGER: US Census Tracts Demographic - Profile 1",
+    "version": "2010",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -14.69,
+                    -64.435,
+                    71.567
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-01-01T00:00:00Z",
+                    "2010-01-02T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

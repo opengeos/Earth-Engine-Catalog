@@ -1,0 +1,494 @@
+{
+    "type": "Collection",
+    "id": "MODIS/061/MOD11A1",
+    "stac_version": "1.0.0",
+    "description": "The MOD11A1 V6.1 product provides daily land surface temperature\n(LST) and emissivity values in a 1200 x 1200 kilometer grid. The\ntemperature value is derived from the MOD11_L2 swath product. Above\n30 degrees latitude, some pixels may have multiple observations\nwhere the criteria for clear-sky are met. When this occurs, the\npixel value is the average of all qualifying observations. Provided\nalong with both the day-time and night-time surface temperature\nbands and their quality indicator layers are MODIS bands 31 and\n32 and six observation layers.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/118/MOD11_User_Guide_V6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/119/MOD11_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MOD11A1)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_061_MOD11A1",
+            "type": "text/html",
+            "title": "Run the example for MODIS/061/MOD11A1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MOD11A1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD11A1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/MODIS/MOD11A1.061"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MOD11A1.json",
+            "type": "application/json",
+            "title": "MODIS/006/MOD11A1"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MOD11A1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C1621100535-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "daily",
+        "emissivity",
+        "global",
+        "lst",
+        "mod11a1",
+        "modis",
+        "nasa",
+        "surface_temperature",
+        "terra",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/MODIS/MOD11A1.061"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD11A1"
+        }
+    ],
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/MODIS/MOD11A1.061",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Daytime Land Surface Temperature",
+                "gee:scale": 0.02,
+                "gee:units": "Kelvin",
+                "name": "LST_Day_1km"
+            },
+            {
+                "description": "Daytime LST Quality Indicators",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 2,
+                            "description": "Mandatory QA flags",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "LST produced, good quality, not necessary to examine more detailed QA",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "LST produced, other quality, recommend examination of more detailed QA",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "LST not produced due to cloud effects",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "LST not produced primarily due to reasons other than cloud",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Data quality flag",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "Good data quality",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Other quality data",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "TBD",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "TBD",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Emissivity error flag",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "Average emissivity error <= 0.01",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Average emissivity error <= 0.02",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Average emissivity error <= 0.04",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Average emissivity error > 0.04",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "LST error flag",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "Average LST error <= 1K",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Average LST error <= 2K",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Average LST error <= 3K",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Average LST error > 3K",
+                                    "value": 3
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 8
+                },
+                "name": "QC_Day"
+            },
+            {
+                "description": "Local time of day observation",
+                "gee:scale": 0.1,
+                "gee:units": "Hours",
+                "name": "Day_view_time"
+            },
+            {
+                "description": "View zenith angle of day observation",
+                "gee:offset": -65,
+                "gee:units": "Degrees",
+                "name": "Day_view_angle"
+            },
+            {
+                "description": "Nighttime Land Surface Temperature",
+                "gee:scale": 0.02,
+                "gee:units": "Kelvin",
+                "name": "LST_Night_1km"
+            },
+            {
+                "description": "Nighttime LST Quality indicators",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 2,
+                            "description": "Mandatory QA flags",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "LST produced, good quality, not necessary to examine more detailed QA",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "LST produced, other quality, recommend examination of more detailed QA",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "LST not produced due to cloud effects",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "LST not produced primarily due to reasons other than cloud",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Data quality flag",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "Good data quality",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Other quality data",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "TBD",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "TBD",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Emissivity error flag",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "Average emissivity error <= 0.01",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Average emissivity error <= 0.02",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Average emissivity error <= 0.04",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Average emissivity error > 0.04",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "LST error flag",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "Average LST error <= 1K",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Average LST error <= 2K",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Average LST error <= 3K",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Average LST error > 3K",
+                                    "value": 3
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 8
+                },
+                "name": "QC_Night"
+            },
+            {
+                "description": "Local time of night observation",
+                "gee:scale": 0.1,
+                "gee:units": "Hours",
+                "name": "Night_view_time"
+            },
+            {
+                "description": "View zenith angle of night observation",
+                "gee:offset": -65,
+                "gee:units": "Degrees",
+                "name": "Night_view_angle"
+            },
+            {
+                "description": "Band 31 emissivity",
+                "gee:offset": 0.49,
+                "gee:scale": 0.002,
+                "name": "Emis_31"
+            },
+            {
+                "description": "Band 32 emissivity",
+                "gee:offset": 0.49,
+                "gee:scale": 0.002,
+                "name": "Emis_32"
+            },
+            {
+                "description": "Day clear-sky coverage",
+                "gee:scale": 0.0005,
+                "name": "Clear_day_cov"
+            },
+            {
+                "description": "Night clear-sky coverage",
+                "gee:scale": 0.0005,
+                "name": "Clear_night_cov"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Land Surface Temperature",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "LST_Day_1km"
+                        ],
+                        "bias": [
+                            -1400
+                        ],
+                        "gain": [
+                            0.1
+                        ],
+                        "max": [
+                            16500
+                        ],
+                        "min": [
+                            13000
+                        ],
+                        "palette": [
+                            "040274",
+                            "040281",
+                            "0502a3",
+                            "0502b8",
+                            "0502ce",
+                            "0502e6",
+                            "0602ff",
+                            "235cb1",
+                            "307ef3",
+                            "269db1",
+                            "30c8e2",
+                            "32d3ef",
+                            "3be285",
+                            "3ff38f",
+                            "86e26f",
+                            "3ae237",
+                            "b5e22e",
+                            "d6e21f",
+                            "fff705",
+                            "ffd611",
+                            "ffb613",
+                            "ff8b13",
+                            "ff6e08",
+                            "ff500d",
+                            "ff0000",
+                            "de0101",
+                            "c21301",
+                            "a71001",
+                            "911003"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 0,
+                    "lon": 0,
+                    "zoom": 0
+                }
+            }
+        ],
+        "gsd": [
+            1000
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Terra"
+        ],
+        "Clear_day_cov": {
+            "minimum": 1,
+            "maximum": 65535
+        },
+        "Clear_night_cov": {
+            "minimum": 1,
+            "maximum": 65535
+        },
+        "Day_view_angle": {
+            "minimum": 0,
+            "maximum": 130
+        },
+        "Day_view_time": {
+            "minimum": 0,
+            "maximum": 240
+        },
+        "Emis_31": {
+            "minimum": 1,
+            "maximum": 255
+        },
+        "Emis_32": {
+            "minimum": 1,
+            "maximum": 255
+        },
+        "LST_Day_1km": {
+            "minimum": 7500,
+            "maximum": 65535
+        },
+        "LST_Night_1km": {
+            "minimum": 7500,
+            "maximum": 65535
+        },
+        "Night_view_angle": {
+            "minimum": 0,
+            "maximum": 130
+        },
+        "Night_view_time": {
+            "minimum": 0,
+            "maximum": 240
+        }
+    },
+    "title": "MOD11A1.061 Terra Land Surface Temperature and Emissivity Daily Global 1km",
+    "version": "V061",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-24T00:00:00Z",
+                    "2022-12-12T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

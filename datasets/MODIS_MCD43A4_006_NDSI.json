@@ -1,0 +1,129 @@
+{
+    "type": "Collection",
+    "id": "MODIS/MCD43A4_006_NDSI",
+    "stac_version": "1.0.0",
+    "description": "The Normalized Difference Snow Index is used to\nidentify snow, based on its characteristically higher reflectance in\nthe visible portion of the spectrum compared to the mid-IR.  NDSI is\ncomputed using the Green and Mid-IR bands, and has a range of -1.0 to\n1.0. See\n[Riggs et al. (1994)](https://doi.org/10.1109/IGARSS.1994.399618)\nfor details. This product is generated from the MODIS/006/MCD43A4 surface reflectance composites.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_MCD43A4_006_NDSI",
+            "type": "text/html",
+            "title": "Run the example for MODIS/MCD43A4_006_NDSI in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_MCD43A4_006_NDSI_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MCD43A4_006_NDSI#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MCD43A4_006_NDSI.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:is_derived": true,
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC have no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "modis",
+        "ndsi",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "Google",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://earthengine.google.com/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MCD43A4_006_NDSI"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Normalized Difference Snow Index",
+                "gsd": 463.312716528,
+                "name": "NDSI"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Colorized",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "NDSI"
+                        ],
+                        "palette": [
+                            "000088",
+                            "0000FF",
+                            "8888FF",
+                            "FFFFFF"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 31.052933985705163,
+                    "lon": -7.03125,
+                    "zoom": 2
+                }
+            }
+        ]
+    },
+    "title": "MODIS Combined 16-Day NDSI",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-24T00:00:00Z",
+                    "2022-11-23T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

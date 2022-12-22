@@ -1,0 +1,998 @@
+{
+    "type": "Collection",
+    "id": "USDA/NASS/CDL",
+    "stac_version": "1.0.0",
+    "description": "The Cropland Data Layer (CDL) is a crop-specific land cover data layer\ncreated annually for the continental United States using moderate\nresolution satellite imagery and extensive agricultural ground truth.\nThe CDL is created by the USDA, National Agricultural Statistics\nService (NASS), Research and Development Division, Geospatial\nInformation Branch, Spatial Analysis Research Section.\n\nFor detailed FAQ please visit [CropScape and Cropland Data\nLayers - FAQs](https://www.nass.usda.gov/Research_and_Science/Cropland/sarsfaqs2.php).\n\nTo explore details about the classification accuracies and utility of\nthe data, see\n[state-level omission and commission errors by crop type and year]\n(https://www.nass.usda.gov/Research_and_Science/Cropland/metadata/meta.php).\n\nThe asset date is aligned with the calendar year of harvest. For most crops\nthe planted and harvest year are the same. Some exceptions: winter wheat is\nunique, as it is planted in the prior year. A hay crop like alfalfa could\nhave been planted years prior.\n\nFor winter wheat the data also have a class called\n\"Double Crop Winter Wheat/Soybeans\". Some mid-latitude areas of the US have\nconditions such that a second crop (usually soybeans) can be planted\nimmediately after the harvest of winter wheat and itself still be harvested\nwithin the same year. So for mapping winter wheat areas use both classes\n(use both values 24 and 26).\n\nWhile the CDL date is aligned with year of harvest, the map itself is\nmore representative of what was planted. In other words, a small percentage\nof fields on a given year will not be harvested.\n\nSome non-agricultural categories are duplicate due to\n[two very different epochs in methodology](https://www.google.com/url?sa=D&q=https%3A%2F%2Fwww.nass.usda.gov%2FResearch_and_Science%2FCropland%2F).\n\nThe non-ag codes 63-65 and 81-88 are holdovers from the older\nmethodology and will only appear in CDLs from 2007 and earlier. The non-ag\ncodes from 111-195 are from the current methodology which uses the USGS NLCD\nas non-ag training and will only appear in CDLs 2007 and newer.\n\n2007 was a transition year so there may be both sets of categories in the\n2007 national product but will not appear within the same state.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/USDA_NASS_CDL",
+            "type": "text/html",
+            "title": "Run the example for USDA/NASS/CDL in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/USDA/USDA_NASS_CDL_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/USDA_NASS_CDL#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USDA/USDA_NASS_CDL.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USDA/catalog.json",
+            "type": "application/json",
+            "title": "USDA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:terms_of_use": "The NASS Cropland Data Layer has no copyright restrictions. The CDL is\nconsidered public domain and free to redistribute. However, NASS would\nappreciate acknowledgment for the usage of our CDL product.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "cdl",
+        "cropland",
+        "landcover",
+        "nass",
+        "usda"
+    ],
+    "providers": [
+        {
+            "name": "USDA National Agricultural Statistics Service",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.nass.usda.gov/Research_and_Science/Cropland/SARS1a.php"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/USDA_NASS_CDL"
+        }
+    ],
+    "sci:citation": "USDA National Agricultural Statistics Service Cropland Data Layer. {YEAR}.\nPublished crop-specific data layer [Online]. Available at\n[https://nassgeodata.gmu.edu/CropScape/](https://nassgeodata.gmu.edu/CropScape/)\n(accessed {DATE}; verified {DATE}). USDA-NASS, Washington, DC.\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Main crop-specific land cover classification.",
+                "gee:classes": [
+                    {
+                        "color": "ffd300",
+                        "description": "Corn",
+                        "value": 1
+                    },
+                    {
+                        "color": "ff2626",
+                        "description": "Cotton",
+                        "value": 2
+                    },
+                    {
+                        "color": "00a8e2",
+                        "description": "Rice",
+                        "value": 3
+                    },
+                    {
+                        "color": "ff9e0a",
+                        "description": "Sorghum",
+                        "value": 4
+                    },
+                    {
+                        "color": "267000",
+                        "description": "Soybeans",
+                        "value": 5
+                    },
+                    {
+                        "color": "ffff00",
+                        "description": "Sunflower",
+                        "value": 6
+                    },
+                    {
+                        "color": "70a500",
+                        "description": "Peanuts",
+                        "value": 10
+                    },
+                    {
+                        "color": "00af49",
+                        "description": "Tobacco",
+                        "value": 11
+                    },
+                    {
+                        "color": "dda50a",
+                        "description": "Sweet Corn",
+                        "value": 12
+                    },
+                    {
+                        "color": "dda50a",
+                        "description": "Pop or Orn Corn",
+                        "value": 13
+                    },
+                    {
+                        "color": "7cd3ff",
+                        "description": "Mint",
+                        "value": 14
+                    },
+                    {
+                        "color": "e2007c",
+                        "description": "Barley",
+                        "value": 21
+                    },
+                    {
+                        "color": "896054",
+                        "description": "Durum Wheat",
+                        "value": 22
+                    },
+                    {
+                        "color": "d8b56b",
+                        "description": "Spring Wheat",
+                        "value": 23
+                    },
+                    {
+                        "color": "a57000",
+                        "description": "Winter Wheat",
+                        "value": 24
+                    },
+                    {
+                        "color": "d69ebc",
+                        "description": "Other Small Grains",
+                        "value": 25
+                    },
+                    {
+                        "color": "707000",
+                        "description": "Dbl Crop WinWht/Soybeans",
+                        "value": 26
+                    },
+                    {
+                        "color": "aa007c",
+                        "description": "Rye",
+                        "value": 27
+                    },
+                    {
+                        "color": "a05989",
+                        "description": "Oats",
+                        "value": 28
+                    },
+                    {
+                        "color": "700049",
+                        "description": "Millet",
+                        "value": 29
+                    },
+                    {
+                        "color": "d69ebc",
+                        "description": "Speltz",
+                        "value": 30
+                    },
+                    {
+                        "color": "d1ff00",
+                        "description": "Canola",
+                        "value": 31
+                    },
+                    {
+                        "color": "7c99ff",
+                        "description": "Flaxseed",
+                        "value": 32
+                    },
+                    {
+                        "color": "d6d600",
+                        "description": "Safflower",
+                        "value": 33
+                    },
+                    {
+                        "color": "d1ff00",
+                        "description": "Rape Seed",
+                        "value": 34
+                    },
+                    {
+                        "color": "00af49",
+                        "description": "Mustard",
+                        "value": 35
+                    },
+                    {
+                        "color": "ffa5e2",
+                        "description": "Alfalfa",
+                        "value": 36
+                    },
+                    {
+                        "color": "a5f28c",
+                        "description": "Other Hay/Non Alfalfa",
+                        "value": 37
+                    },
+                    {
+                        "color": "00af49",
+                        "description": "Camelina",
+                        "value": 38
+                    },
+                    {
+                        "color": "d69ebc",
+                        "description": "Buckwheat",
+                        "value": 39
+                    },
+                    {
+                        "color": "a800e2",
+                        "description": "Sugarbeets",
+                        "value": 41
+                    },
+                    {
+                        "color": "a50000",
+                        "description": "Dry Beans",
+                        "value": 42
+                    },
+                    {
+                        "color": "702600",
+                        "description": "Potatoes",
+                        "value": 43
+                    },
+                    {
+                        "color": "00af49",
+                        "description": "Other Crops",
+                        "value": 44
+                    },
+                    {
+                        "color": "af7cff",
+                        "description": "Sugarcane",
+                        "value": 45
+                    },
+                    {
+                        "color": "702600",
+                        "description": "Sweet Potatoes",
+                        "value": 46
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Misc Vegs & Fruits",
+                        "value": 47
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Watermelons",
+                        "value": 48
+                    },
+                    {
+                        "color": "ffcc66",
+                        "description": "Onions",
+                        "value": 49
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Cucumbers",
+                        "value": 50
+                    },
+                    {
+                        "color": "00af49",
+                        "description": "Chick Peas",
+                        "value": 51
+                    },
+                    {
+                        "color": "00ddaf",
+                        "description": "Lentils",
+                        "value": 52
+                    },
+                    {
+                        "color": "54ff00",
+                        "description": "Peas",
+                        "value": 53
+                    },
+                    {
+                        "color": "f2a377",
+                        "description": "Tomatoes",
+                        "value": 54
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Caneberries",
+                        "value": 55
+                    },
+                    {
+                        "color": "00af49",
+                        "description": "Hops",
+                        "value": 56
+                    },
+                    {
+                        "color": "7cd3ff",
+                        "description": "Herbs",
+                        "value": 57
+                    },
+                    {
+                        "color": "e8bfff",
+                        "description": "Clover/Wildflowers",
+                        "value": 58
+                    },
+                    {
+                        "color": "afffdd",
+                        "description": "Sod/Grass Seed",
+                        "value": 59
+                    },
+                    {
+                        "color": "00af49",
+                        "description": "Switchgrass",
+                        "value": 60
+                    },
+                    {
+                        "color": "bfbf77",
+                        "description": "Fallow/Idle Cropland",
+                        "value": 61
+                    },
+                    {
+                        "color": "93cc93",
+                        "description": "Forest",
+                        "value": 63
+                    },
+                    {
+                        "color": "c6d69e",
+                        "description": "Shrubland",
+                        "value": 64
+                    },
+                    {
+                        "color": "ccbfa3",
+                        "description": "Barren",
+                        "value": 65
+                    },
+                    {
+                        "color": "ff00ff",
+                        "description": "Cherries",
+                        "value": 66
+                    },
+                    {
+                        "color": "ff8eaa",
+                        "description": "Peaches",
+                        "value": 67
+                    },
+                    {
+                        "color": "ba004f",
+                        "description": "Apples",
+                        "value": 68
+                    },
+                    {
+                        "color": "704489",
+                        "description": "Grapes",
+                        "value": 69
+                    },
+                    {
+                        "color": "007777",
+                        "description": "Christmas Trees",
+                        "value": 70
+                    },
+                    {
+                        "color": "af9970",
+                        "description": "Other Tree Crops",
+                        "value": 71
+                    },
+                    {
+                        "color": "ffff7c",
+                        "description": "Citrus",
+                        "value": 72
+                    },
+                    {
+                        "color": "b5705b",
+                        "description": "Pecans",
+                        "value": 74
+                    },
+                    {
+                        "color": "00a582",
+                        "description": "Almonds",
+                        "value": 75
+                    },
+                    {
+                        "color": "e8d6af",
+                        "description": "Walnuts",
+                        "value": 76
+                    },
+                    {
+                        "color": "af9970",
+                        "description": "Pears",
+                        "value": 77
+                    },
+                    {
+                        "color": "f2f2f2",
+                        "description": "Clouds/No Data",
+                        "value": 81
+                    },
+                    {
+                        "color": "999999",
+                        "description": "Developed",
+                        "value": 82
+                    },
+                    {
+                        "color": "4970a3",
+                        "description": "Water",
+                        "value": 83
+                    },
+                    {
+                        "color": "7cafaf",
+                        "description": "Wetlands",
+                        "value": 87
+                    },
+                    {
+                        "color": "e8ffbf",
+                        "description": "Nonag/Undefined",
+                        "value": 88
+                    },
+                    {
+                        "color": "00ffff",
+                        "description": "Aquaculture",
+                        "value": 92
+                    },
+                    {
+                        "color": "4970a3",
+                        "description": "Open Water",
+                        "value": 111
+                    },
+                    {
+                        "color": "d3e2f9",
+                        "description": "Perennial Ice/Snow",
+                        "value": 112
+                    },
+                    {
+                        "color": "999999",
+                        "description": "Developed/Open Space",
+                        "value": 121
+                    },
+                    {
+                        "color": "999999",
+                        "description": "Developed/Low Intensity",
+                        "value": 122
+                    },
+                    {
+                        "color": "999999",
+                        "description": "Developed/Med Intensity",
+                        "value": 123
+                    },
+                    {
+                        "color": "999999",
+                        "description": "Developed/High Intensity",
+                        "value": 124
+                    },
+                    {
+                        "color": "ccbfa3",
+                        "description": "Barren",
+                        "value": 131
+                    },
+                    {
+                        "color": "93cc93",
+                        "description": "Deciduous Forest",
+                        "value": 141
+                    },
+                    {
+                        "color": "93cc93",
+                        "description": "Evergreen Forest",
+                        "value": 142
+                    },
+                    {
+                        "color": "93cc93",
+                        "description": "Mixed Forest",
+                        "value": 143
+                    },
+                    {
+                        "color": "c6d69e",
+                        "description": "Shrubland",
+                        "value": 152
+                    },
+                    {
+                        "color": "e8ffbf",
+                        "description": "Grassland/Pasture",
+                        "value": 176
+                    },
+                    {
+                        "color": "7cafaf",
+                        "description": "Woody Wetlands",
+                        "value": 190
+                    },
+                    {
+                        "color": "7cafaf",
+                        "description": "Herbaceous Wetlands",
+                        "value": 195
+                    },
+                    {
+                        "color": "00ff8c",
+                        "description": "Pistachios",
+                        "value": 204
+                    },
+                    {
+                        "color": "d69ebc",
+                        "description": "Triticale",
+                        "value": 205
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Carrots",
+                        "value": 206
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Asparagus",
+                        "value": 207
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Garlic",
+                        "value": 208
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Cantaloupes",
+                        "value": 209
+                    },
+                    {
+                        "color": "ff8eaa",
+                        "description": "Prunes",
+                        "value": 210
+                    },
+                    {
+                        "color": "334933",
+                        "description": "Olives",
+                        "value": 211
+                    },
+                    {
+                        "color": "e27026",
+                        "description": "Oranges",
+                        "value": 212
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Honeydew Melons",
+                        "value": 213
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Broccoli",
+                        "value": 214
+                    },
+                    {
+                        "color": "739755",
+                        "description": "Avocados",
+                        "value": 215
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Peppers",
+                        "value": 216
+                    },
+                    {
+                        "color": "af9970",
+                        "description": "Pomegranates",
+                        "value": 217
+                    },
+                    {
+                        "color": "ff8eaa",
+                        "description": "Nectarines",
+                        "value": 218
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Greens",
+                        "value": 219
+                    },
+                    {
+                        "color": "ff8eaa",
+                        "description": "Plums",
+                        "value": 220
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Strawberries",
+                        "value": 221
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Squash",
+                        "value": 222
+                    },
+                    {
+                        "color": "ff8eaa",
+                        "description": "Apricots",
+                        "value": 223
+                    },
+                    {
+                        "color": "00af49",
+                        "description": "Vetch",
+                        "value": 224
+                    },
+                    {
+                        "color": "ffd300",
+                        "description": "Dbl Crop WinWht/Corn",
+                        "value": 225
+                    },
+                    {
+                        "color": "ffd300",
+                        "description": "Dbl Crop Oats/Corn",
+                        "value": 226
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Lettuce",
+                        "value": 227
+                    },
+                    {
+                        "color": "f8d248",
+                        "description": "Dbl Crop Triticale/Corn",
+                        "value": 228
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Pumpkins",
+                        "value": 229
+                    },
+                    {
+                        "color": "896054",
+                        "description": "Dbl Crop Lettuce/Durum Wht",
+                        "value": 230
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Dbl Crop Lettuce/Cantaloupe",
+                        "value": 231
+                    },
+                    {
+                        "color": "ff2626",
+                        "description": "Dbl Crop Lettuce/Cotton",
+                        "value": 232
+                    },
+                    {
+                        "color": "e2007c",
+                        "description": "Dbl Crop Lettuce/Barley",
+                        "value": 233
+                    },
+                    {
+                        "color": "ff9e0a",
+                        "description": "Dbl Crop Durum Wht/Sorghum",
+                        "value": 234
+                    },
+                    {
+                        "color": "ff9e0a",
+                        "description": "Dbl Crop Barley/Sorghum",
+                        "value": 235
+                    },
+                    {
+                        "color": "a57000",
+                        "description": "Dbl Crop WinWht/Sorghum",
+                        "value": 236
+                    },
+                    {
+                        "color": "ffd300",
+                        "description": "Dbl Crop Barley/Corn",
+                        "value": 237
+                    },
+                    {
+                        "color": "a57000",
+                        "description": "Dbl Crop WinWht/Cotton",
+                        "value": 238
+                    },
+                    {
+                        "color": "267000",
+                        "description": "Dbl Crop Soybeans/Cotton",
+                        "value": 239
+                    },
+                    {
+                        "color": "267000",
+                        "description": "Dbl Crop Soybeans/Oats",
+                        "value": 240
+                    },
+                    {
+                        "color": "ffd300",
+                        "description": "Dbl Crop Corn/Soybeans",
+                        "value": 241
+                    },
+                    {
+                        "color": "000099",
+                        "description": "Blueberries",
+                        "value": 242
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Cabbage",
+                        "value": 243
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Cauliflower",
+                        "value": 244
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Celery",
+                        "value": 245
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Radishes",
+                        "value": 246
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Turnips",
+                        "value": 247
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Eggplants",
+                        "value": 248
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Gourds",
+                        "value": 249
+                    },
+                    {
+                        "color": "ff6666",
+                        "description": "Cranberries",
+                        "value": 250
+                    },
+                    {
+                        "color": "267000",
+                        "description": "Dbl Crop Barley/Soybeans",
+                        "value": 254
+                    }
+                ],
+                "name": "cropland"
+            },
+            {
+                "description": "Classification layer for identifying cultivated and\nnon-cultivated land cover. Available from 2013 to 2017.\n",
+                "gee:classes": [
+                    {
+                        "color": "d3d3d3",
+                        "description": "Non-cultivated",
+                        "value": 1
+                    },
+                    {
+                        "color": "b1b58c",
+                        "description": "Cultivated",
+                        "value": 2
+                    }
+                ],
+                "name": "cultivated"
+            },
+            {
+                "description": "Per-pixel predicted confidence of the given classification,\nwith 0 being the least confident and 100 the most confident. Available\nfrom 2008 to 2017 (Note: Confidence for Florida and Washington D.C.\nis unavailable for 2010).\n",
+                "name": "confidence"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Array of cropland landcover classification names.",
+                "name": "cropland_class_names",
+                "type": "STRING_LIST"
+            },
+            {
+                "description": "Array of hex code color strings used for the classification palette.",
+                "name": "cropland_class_palette",
+                "type": "STRING_LIST"
+            },
+            {
+                "description": "Value of the land cover classification.",
+                "name": "cropland_class_values",
+                "type": "INT_LIST"
+            },
+            {
+                "description": "Array of cropland landcover classification names.",
+                "name": "cultivated_class_names",
+                "type": "STRING_LIST"
+            },
+            {
+                "description": "Array of hex code color strings used for the classification palette.",
+                "name": "cultivated_class_palette",
+                "type": "STRING_LIST"
+            },
+            {
+                "description": "Value of the land cover classification.",
+                "name": "cultivated_class_values",
+                "type": "INT_LIST"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Crop Landcover",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "cropland"
+                        ],
+                        "max": [
+                            95
+                        ],
+                        "min": [
+                            11
+                        ],
+                        "palette": [
+                            "ffd300",
+                            "ff2626",
+                            "00a8e2",
+                            "ff9e0a",
+                            "267000",
+                            "ffff00",
+                            "70a500",
+                            "00af49",
+                            "dda50a",
+                            "dda50a",
+                            "7cd3ff",
+                            "e2007c",
+                            "896054",
+                            "d8b56b",
+                            "a57000",
+                            "d69ebc",
+                            "707000",
+                            "aa007c",
+                            "a05989",
+                            "700049",
+                            "d69ebc",
+                            "d1ff00",
+                            "7c99ff",
+                            "d6d600",
+                            "d1ff00",
+                            "00af49",
+                            "ffa5e2",
+                            "a5f28c",
+                            "00af49",
+                            "d69ebc",
+                            "a800e2",
+                            "a50000",
+                            "702600",
+                            "00af49",
+                            "af7cff",
+                            "702600",
+                            "ff6666",
+                            "ff6666",
+                            "ffcc66",
+                            "ff6666",
+                            "00af49",
+                            "00ddaf",
+                            "54ff00",
+                            "f2a377",
+                            "ff6666",
+                            "00af49",
+                            "7cd3ff",
+                            "e8bfff",
+                            "afffdd",
+                            "00af49",
+                            "bfbf77",
+                            "93cc93",
+                            "c6d69e",
+                            "ccbfa3",
+                            "ff00ff",
+                            "ff8eaa",
+                            "ba004f",
+                            "704489",
+                            "007777",
+                            "af9970",
+                            "ffff7c",
+                            "b5705b",
+                            "00a582",
+                            "e8d6af",
+                            "af9970",
+                            "f2f2f2",
+                            "999999",
+                            "4970a3",
+                            "7cafaf",
+                            "e8ffbf",
+                            "00ffff",
+                            "4970a3",
+                            "d3e2f9",
+                            "999999",
+                            "999999",
+                            "999999",
+                            "999999",
+                            "ccbfa3",
+                            "93cc93",
+                            "93cc93",
+                            "93cc93",
+                            "c6d69e",
+                            "e8ffbf",
+                            "7cafaf",
+                            "7cafaf",
+                            "00ff8c",
+                            "d69ebc",
+                            "ff6666",
+                            "ff6666",
+                            "ff6666",
+                            "ff6666",
+                            "ff8eaa",
+                            "334933",
+                            "e27026",
+                            "ff6666",
+                            "ff6666",
+                            "ff6666",
+                            "af9970",
+                            "ff8eaa",
+                            "ff6666",
+                            "ff8eaa",
+                            "ff6666",
+                            "ff6666",
+                            "ff8eaa",
+                            "00af49",
+                            "ffd300",
+                            "ffd300",
+                            "ff6666",
+                            "ff6666",
+                            "896054",
+                            "ff6666",
+                            "ff2626",
+                            "e2007c",
+                            "ff9e0a",
+                            "ff9e0a",
+                            "a57000",
+                            "ffd300",
+                            "a57000",
+                            "267000",
+                            "267000",
+                            "ffd300",
+                            "000099",
+                            "ff6666",
+                            "ff6666",
+                            "ff6666",
+                            "ff6666",
+                            "ff6666",
+                            "ff6666",
+                            "ff6666",
+                            "ff6666",
+                            "267000"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 40.71,
+                    "lon": -100.55,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ],
+        "confidence": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "cropland": {
+            "minimum": 1,
+            "maximum": 254
+        },
+        "cultivated": {
+            "minimum": 1,
+            "maximum": 2
+        }
+    },
+    "title": "USDA NASS Cropland Data Layers",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -127,
+                    24,
+                    -65,
+                    51
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1997-01-01T00:00:00Z",
+                    "2021-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

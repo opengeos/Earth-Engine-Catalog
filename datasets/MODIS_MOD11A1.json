@@ -1,0 +1,135 @@
+{
+    "type": "Collection",
+    "id": "MODIS/MOD11A1",
+    "stac_version": "1.0.0",
+    "description": "The MODIS/Terra Land Surface Temperature and\nEmissivity (LST/E) product, MOD11A1, provides per-pixel temperature and\nemissivity values, which are produced daily using the generalized split-window\nLST algorithm.  This algorithm is optimally used to separate ranges of\natmospheric column water vapor and lower boundary air surface temperatures into\ntractable sub-ranges. The surface emissivities in bands 31 and 32 are estimated\nfrom land cover types.\n\nThe V5 MOD11A1 products are projected in a Sinusoidal grid by mapping the\nlevel-2 LST product (MOD11_L2) on 1-kilometer (precisely 0.928-km) grids. The\nMOD11A1 product comprises the following Science Data Set (SDS) layers for\ndaytime and nighttime observations:\n\n- LST_Day_1km: Daytime Land Surface Temperatures (K),  Scale 0.02\n- QC_Day: Daytime Surface Temperature quality control assessments\n- Day_view_time: Daytime LST Observation Times (Hours), Scale 0.1\n- Day_view_angle: Daytime View Zenith Angles (Degrees), Offset -65.0\n- LST_Night_1km: Nighttime Land Surface Temperatures (K),  Scale 0.02\n- QC_Night: Nighttime Surface Temperature quality control assessments\n- Night_view_time: Nighttime LST Observation Times (Hours), Scale 0.1\n- Night_view_angle: Nighttime View Zenith Angles (Degrees), Offset -65.0\n- Emis_31: Bands 31 Emissivity, Scale 0.002, Offset 0.49\n- Emis_32: Bands 32 Emissivity, Scale 0.002, Offset 0.49\n- Clear_night_cov: Nighttime Clear Sky Coverage, Scale 0.0005\n- Clear_day_cov: Daytime Clear Sky Coverage, Scale 0.0005\n\nQC bit flags:\n\n- Bits 0-1: Mandatory QC Flag\n   - 00: LST produced, good quality, not necessary to examine detailed QC.\n   - 01: LST produced, unreliable or unquantifiable quality, recommend examination of more detailed QC.\n   - 10: LST not produced due to cloud effects.\n   - 11: LST not produced primarily due to reasons other than clouds.\n- Bits 2-3: Data Quality Flag\n   - 00: Good quality L1B in bands 31 and 32.\n   - 01: Other quality data.\n   - 10: TBD\n   - 11: TBD\n- Bits 4-5: Emissivity Error Flag\n   - 00: Average emissivity error &le; 0.01\n   - 01: Average emissivity error &le; 0.02\n   - 10: Average emissivity error &le; 0.04\n   - 11: Average emissivity error &gt; 0.04\n- Bits 6-7: LST Error Flag\n   - 00: Average LST error &le; 1 K\n   - 01: Average LST error &le; 2 K\n   - 10: Average LST error &le; 3 K\n   - 11: Average LST error &gt; 3 K\n\nThe V5 Terra/MODIS LST/E products, including MOD11A1, are validated to Stage-2\nthrough field campaigns and radiance-based validation studies.\n\nPlease visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data) for information on citing LP DAAC datasets.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_MOD11A1",
+            "type": "text/html",
+            "title": "Run the example for MODIS/MOD11A1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_MOD11A1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MOD11A1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MOD11A1.json",
+            "type": "application/json",
+            "title": "MODIS/006/MOD11A1"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MOD11A1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "deprecated": true,
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC have no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "daily",
+        "emissivity",
+        "global",
+        "lst",
+        "mod11a1",
+        "modis",
+        "surface_temperature",
+        "terra"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mod11a1"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MOD11A1"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Surface Temperature",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "LST_Day_1km"
+                        ],
+                        "bias": [
+                            -1400
+                        ],
+                        "gain": [
+                            0.1
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 0,
+                    "lon": 0,
+                    "zoom": 0
+                }
+            }
+        ]
+    },
+    "title": "MOD11A1.005 Terra Land Surface Temperature and Emissivity Daily Global 1 km Grid SIN [deprecated]",
+    "version": "Unknown",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-03-05T00:00:00Z",
+                    "2017-03-30T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

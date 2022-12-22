@@ -1,0 +1,137 @@
+{
+    "type": "Collection",
+    "id": "USGS/GTOPO30",
+    "stac_version": "1.0.0",
+    "description": "GTOPO30 is a global digital elevation model (DEM) with\na horizontal grid spacing of 30 arc seconds (approximately 1 kilometer).\nThe DEM was derived from several raster and vector sources of topographic\ninformation.  Completed in late 1996, GTOPO30 was developed over\na three-year period through a collaborative effort led by the U.S.\nGeological Survey''s Center for Earth Resources Observation and\nScience (EROS). The following organizations  participated by contributing\nfunding or source data:  the National Aeronautics  and Space Administration\n(NASA), the United Nations Environment Programme/Global Resource\nInformation Database (UNEP/GRID), the U.S. Agency for International\nDevelopment (USAID), the Instituto Nacional de Estadistica Geografica\ne Informatica (INEGI) of Mexico, the Geographical Survey Institute  (GSI)\nof Japan, Manaaki Whenua Landcare Research of New Zealand, and\nthe  Scientific Committee on Antarctic Research (SCAR).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/USGS_GTOPO30",
+            "type": "text/html",
+            "title": "Run the example for USGS/GTOPO30 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/USGS_GTOPO30_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/USGS_GTOPO30#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_GTOPO30.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/catalog.json",
+            "type": "application/json",
+            "title": "USGS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "There are no restrictions on the use of data received\nfrom the U.S. Geological Survey's Earth Resources Observation and\nScience (EROS) Center. For more information, visit the USGS' [Data\nUse and Citation](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-data-use-and-citation) page.\n",
+    "gee:type": "image",
+    "keywords": [
+        "dem",
+        "elevation",
+        "geophysical",
+        "gtopo30",
+        "nasa",
+        "topography",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "United States Geological Survey",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-global-30-arc-second-elevation-gtopo30"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_GTOPO30"
+        }
+    ],
+    "sci:citation": "GTOPO30 DEM courtesy of the U.S. Geological Survey",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Elevation",
+                "gee:units": "m",
+                "gsd": 927.67,
+                "name": "elevation"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Elevation",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "elevation"
+                        ],
+                        "gamma": [
+                            1.6
+                        ],
+                        "max": [
+                            8000
+                        ],
+                        "min": [
+                            -10
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 43.9,
+                    "lon": 11.69,
+                    "zoom": 4
+                }
+            }
+        ],
+        "elevation": {
+            "minimum": -407,
+            "maximum": 8752
+        }
+    },
+    "title": "GTOPO30: Global 30 Arc-Second Elevation",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1996-01-01T00:00:00Z",
+                    "1996-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

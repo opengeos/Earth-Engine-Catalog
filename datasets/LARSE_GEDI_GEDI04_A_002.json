@@ -1,0 +1,121 @@
+{
+    "type": "Collection",
+    "id": "LARSE/GEDI/GEDI04_A_002",
+    "stac_version": "1.0.0",
+    "description": "This dataset contains Global Ecosystem Dynamics Investigation (GEDI)\nLevel 4A (L4A) Version 2 predictions of the aboveground biomass\ndensity (AGBD; in Mg/ha) and estimates of the prediction standard\nerror within each sampled geolocated laser footprint. In this version,\nthe granules are in sub-orbits.\nHeight metrics from simulated waveforms associated with field estimates\nof AGBD from multiple regions and plant functional types (PFTs) were\ncompiled to generate a calibration dataset for models representing\nthe combinations of world regions and PFTs (i.e., deciduous broadleaf\ntrees, evergreen broadleaf trees, evergreen needleleaf trees, deciduous\nneedleleaf trees, and the combination of grasslands, shrubs, and\nwoodlands).The algorithm setting group selection\nused for GEDI02_A Version 2 has been modified for evergreen broadleaf\ntrees in South America to reduce false positive errors resulting from\nthe selection of waveform modes above ground elevation as the lowest mode.\n\nPlease see [User Guide](https://daac.ornl.gov/GEDI/guides/GEDI_L4A_AGB_Density_V2_1.html)\nfor more information.\n\nThe Global Ecosystem Dynamics Investigation [GEDI](https://gedi.umd.edu/)\nmission aims to characterize ecosystem structure and dynamics to enable\nradically improved quantification and understanding of the Earth's carbon cycle\nand biodiversity. The GEDI instrument, attached to the International Space\nStation (ISS), collects data globally between 51.6&deg; N and 51.6&deg; S\nlatitudes at the highest resolution and densest sampling of the\n3-dimensional structure of the Earth.The GEDI instrument consists of three \nlasers producing a total of eight beam ground transects, which instantaneously \nsample eight ~25 m footprints spaced approximately every 60 m along-track.\n\nProduct                 | Description\n:---------------------  | :----------------------------------------------\nL2A Vector         | [LARSE/GEDI/GEDI02_A_002](LARSE_GEDI_GEDI02_A_002)\nL2A Monthly raster | [LARSE/GEDI/GEDI02_A_002_MONTHLY](LARSE_GEDI_GEDI02_A_002_MONTHLY)\nL2A table index    | [LARSE/GEDI/GEDI02_A_002_INDEX](LARSE_GEDI_GEDI02_A_002_INDEX)\nL2B Vector         | [LARSE/GEDI/GEDI02_B_002](LARSE_GEDI_GEDI02_B_002)\nL2B Monthly raster | [LARSE/GEDI/GEDI02_B_002_MONTHLY](LARSE_GEDI_GEDI02_B_002_MONTHLY)\nL2B table index    | [LARSE/GEDI/GEDI02_B_002_INDEX](LARSE_GEDI_GEDI02_B_002_INDEX)\nL4A Biomass Vector | [LARSE/GEDI/GEDI04_A_002](LARSE_GEDI_GEDI04_A_002)\nL4A table index    | [LARSE/GEDI/GEDI04_A_002_INDEX](LARSE_GEDI_GEDI04_A_002_INDEX)\nL4B Biomass        | [LARSE/GEDI/GEDI04_B_002](LARSE_GEDI_GEDI04_B_002)",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/LARSE_GEDI_GEDI04_A_002",
+            "type": "text/html",
+            "title": "Run the example for LARSE/GEDI/GEDI04_A_002 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/LARSE/LARSE_GEDI_GEDI04_A_002_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/LARSE_GEDI_GEDI04_A_002#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LARSE/LARSE_GEDI_GEDI04_A_002.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LARSE/catalog.json",
+            "type": "application/json",
+            "title": "LARSE"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy]\n(https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
+    "gee:type": "table_collection",
+    "keywords": [
+        "elevation",
+        "gedi",
+        "larse",
+        "nasa",
+        "tree_cover",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "USFS Laboratory for Applications of Remote Sensing in Ecology (LARSE)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.fs.usda.gov/"
+        },
+        {
+            "name": "NASA GEDI mission, accessed through the USGS LP DAAC",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://daac.ornl.gov/GEDI/guides/GEDI_L4A_AGB_Density_V2_1.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/LARSE_GEDI_GEDI04_A_002"
+        }
+    ],
+    "sci:citation": "GEDI L4A Footprint Level Aboveground Biomass Density, Version 2.1.\nDubayah, R.O., J. Armston, J.R. Kellner, L. Duncanson, S.P. Healey,\nP.L. Patterson, S. Hancock, H. Tang, J. Bruening, M.A. Hofton, J.B. Blair,\nand S.B. Luthcke. 2022. ORNL DAAC, Oak Ridge, Tennessee, USA.\n[doi:10.3334/ORNLDAAC/2056](https://doi.org/10.3334/ORNLDAAC/2056)\n",
+    "sci:doi": "10.5067/GEDI/GEDI04_A.002",
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "preview",
+                "lookat": {
+                    "lat": 1,
+                    "lon": 1,
+                    "zoom": 2
+                },
+                "table_visualization": {
+                    "color": "black",
+                    "point_size": 1
+                }
+            }
+        ]
+    },
+    "title": "GEDI L4A Aboveground Biomass Density, Version 2.1",
+    "version": "2.1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -51.6,
+                    180,
+                    51.6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-04-18T00:00:00Z",
+                    "2022-06-09T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

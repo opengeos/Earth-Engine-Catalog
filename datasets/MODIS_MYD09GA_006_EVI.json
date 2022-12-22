@@ -1,0 +1,148 @@
+{
+    "type": "Collection",
+    "id": "MODIS/MYD09GA_006_EVI",
+    "stac_version": "1.0.0",
+    "description": "The Enhanced Vegetation Index (EVI) is generated from the\nNear-IR, Red and Blue bands of each scene, and ranges in value from\n-1.0 to 1.0. See\n[Huete et al. (2002)](https://www.sciencedirect.com/science/article/pii/S0034425702000962)\nfor details. This product is generated from the MODIS/006/MYD09GA surface reflectance composites.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_MYD09GA_006_EVI",
+            "type": "text/html",
+            "title": "Run the example for MODIS/MYD09GA_006_EVI in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_MYD09GA_006_EVI_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MYD09GA_006_EVI#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MYD09GA_006_EVI.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:is_derived": true,
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC have no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "evi",
+        "modis",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "Google",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://earthengine.google.com/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MYD09GA_006_EVI"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Enhanced Vegetation Index",
+                "gsd": 463.312716528,
+                "name": "EVI"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Colorized",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "EVI"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "FFFFFF",
+                            "CE7E45",
+                            "DF923D",
+                            "F1B555",
+                            "FCD163",
+                            "99B718",
+                            "74A901",
+                            "66A000",
+                            "529400",
+                            "3E8601",
+                            "207401",
+                            "056201",
+                            "004C00",
+                            "023B01",
+                            "012E01",
+                            "011D01",
+                            "011301"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 31.052933985705163,
+                    "lon": -7.03125,
+                    "zoom": 2
+                }
+            }
+        ]
+    },
+    "title": "MODIS Aqua Daily EVI",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-04T00:00:00Z",
+                    "2022-12-13T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

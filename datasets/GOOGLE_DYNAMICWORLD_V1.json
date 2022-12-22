@@ -1,0 +1,296 @@
+{
+    "type": "Collection",
+    "id": "GOOGLE/DYNAMICWORLD/V1",
+    "stac_version": "1.0.0",
+    "description": "Dynamic World is a 10m near-real-time (NRT) Land Use/Land Cover (LULC)\ndataset that includes class probabilities and label information for nine\nclasses.\n\nDynamic World predictions are available for the Sentinel-2 L1C collection\nfrom 2015-06-27 to present. The revisit frequency of Sentinel-2 is between\n2-5 days depending on latitude. Dynamic World predictions are generated for\nSentinel-2 L1C images with CLOUDY_PIXEL_PERCENTAGE <= 35%.\nPredictions are masked to remove clouds and cloud shadows using a\ncombination of S2 Cloud Probability, Cloud Displacement Index, and\nDirectional Distance Transform.\n\nImages in the Dynamic World collection have names matching the individual\nSentinel-2 L1C asset names from which they were derived, e.g:\n\n  ee.Image('COPERNICUS/S2/20160711T084022_20160711T084751_T35PKT')\n\nhas a matching Dynamic World image named:\n  ee.Image('GOOGLE/DYNAMICWORLD/V1/20160711T084022_20160711T084751_T35PKT').\n\nAll probability bands except the \"label\" band collectively sum to 1.\n\nTo learn more about the Dynamic World dataset and see examples for\ngenerating composites, calculating regional statistics, and working with the\ntime series, see the [Introduction to Dynamic World](https://developers.google.com/earth-engine/tutorials/community/introduction-to-dynamic-world-pt-1) tutorial series.\n\nGiven Dynamic World class estimations are derived from single images using a\nspatial context from a small moving window, top-1 \"probabilities\" for\npredicted land covers that are in-part defined by cover over time, like\ncrops, can be comparatively low in the absence of obvious distinguishing\nfeatures. High-return surfaces in arid climates, sand, sunglint, etc may\nalso exhibit this phenomenon.\n\nTo select only pixels that confidently belong to a Dynamic World class,\nit is recommended to mask Dynamic World outputs by thresholding the\nestimated \"probability\" of the top-1 prediction.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/GOOGLE_DYNAMICWORLD_V1",
+            "type": "text/html",
+            "title": "Run the example for GOOGLE/DYNAMICWORLD/V1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/GOOGLE/GOOGLE_DYNAMICWORLD_V1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_DYNAMICWORLD_V1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GOOGLE/GOOGLE_DYNAMICWORLD_V1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GOOGLE/catalog.json",
+            "type": "application/json",
+            "title": "GOOGLE"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "This dataset is licensed under\n[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) and requires the\nfollowing attribution: \"This dataset is produced for the Dynamic World\nProject by Google in partnership with National Geographic Society and the\nWorld Resources Institute.\"\n\nContains modified Copernicus Sentinel data [2015-present].\nSee the\n[Sentinel Data Legal Notice](https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice).\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "global",
+        "google",
+        "landcover",
+        "landuse",
+        "nrt",
+        "sentinel2_derived"
+    ],
+    "providers": [
+        {
+            "name": "World Resources Institute",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.wri.org/"
+        },
+        {
+            "name": "Google",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://research.google.com/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_DYNAMICWORLD_V1"
+        }
+    ],
+    "sci:citation": "Brown, C.F., Brumby, S.P., Guzder-Williams, B. et al. Dynamic World, Near\nreal-time global 10 m land use land cover mapping. Sci Data 9, 251 (2022).\n[doi:10.1038/s41597-022-01307-4](https://doi.org/10.1038/s41597-022-01307-4)\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Estimated probability of complete coverage by water",
+                "name": "water"
+            },
+            {
+                "description": "Estimated probability of complete coverage by trees",
+                "name": "trees"
+            },
+            {
+                "description": "Estimated probability of complete coverage by grass",
+                "name": "grass"
+            },
+            {
+                "description": "Estimated probability of complete coverage by flooded vegetation",
+                "name": "flooded_vegetation"
+            },
+            {
+                "description": "Estimated probability of complete coverage by crops",
+                "name": "crops"
+            },
+            {
+                "description": "Estimated probability of complete coverage by shrub and scrub",
+                "name": "shrub_and_scrub"
+            },
+            {
+                "description": "Estimated probability of complete coverage by built",
+                "name": "built"
+            },
+            {
+                "description": "Estimated probability of complete coverage by bare",
+                "name": "bare"
+            },
+            {
+                "description": "Estimated probability of complete coverage by snow and ice",
+                "name": "snow_and_ice"
+            },
+            {
+                "description": "Index of the band with the highest estimated probability",
+                "gee:classes": [
+                    {
+                        "color": "419BDF",
+                        "description": "water",
+                        "value": 0
+                    },
+                    {
+                        "color": "397D49",
+                        "description": "trees",
+                        "value": 1
+                    },
+                    {
+                        "color": "88B053",
+                        "description": "grass",
+                        "value": 2
+                    },
+                    {
+                        "color": "7A87C6",
+                        "description": "flooded_vegetation",
+                        "value": 3
+                    },
+                    {
+                        "color": "E49635",
+                        "description": "crops",
+                        "value": 4
+                    },
+                    {
+                        "color": "DFC35A",
+                        "description": "shrub_and_scrub",
+                        "value": 5
+                    },
+                    {
+                        "color": "C4281B",
+                        "description": "built",
+                        "value": 6
+                    },
+                    {
+                        "color": "A59B8F",
+                        "description": "bare",
+                        "value": 7
+                    },
+                    {
+                        "color": "B39FE1",
+                        "description": "snow_and_ice",
+                        "value": 8
+                    }
+                ],
+                "name": "label"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "The version string uniquely identifying the Dynamic World model and inference process used to produce the image.",
+                "name": "dynamicworld_algorithm_version",
+                "type": "STRING"
+            },
+            {
+                "description": "The version string uniquely identifying the cloud masking process used to produce the image.",
+                "name": "qa_algorithm_version",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Dynamic World V1",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "label"
+                        ],
+                        "max": [
+                            8
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "419BDF",
+                            "397D49",
+                            "88B053",
+                            "7A87C6",
+                            "E49635",
+                            "DFC35A",
+                            "C4281B",
+                            "A59B8F",
+                            "B39FE1"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 52.4305,
+                    "lon": 20.6729,
+                    "zoom": 12
+                }
+            }
+        ],
+        "gsd": [
+            10
+        ],
+        "bare": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "built": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "crops": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "flooded_vegetation": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "grass": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "label": {
+            "minimum": 0,
+            "maximum": 8
+        },
+        "shrub_and_scrub": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "snow_and_ice": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "trees": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "water": {
+            "minimum": 0,
+            "maximum": 1
+        }
+    },
+    "title": "Dynamic World V1",
+    "version": "V1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-06-23T00:00:00Z",
+                    "2022-12-21T13:15:24Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

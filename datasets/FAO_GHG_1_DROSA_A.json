@@ -1,0 +1,154 @@
+{
+    "type": "Collection",
+    "id": "FAO/GHG/1/DROSA_A",
+    "stac_version": "1.0.0",
+    "description": "The two related FAO datasets on Drained Organic Soils provide estimates of:\n\n1. DROSA-A: area of Organic Soils (in hectares) drained for agricultural activities (cropland and grazed grassland)\n\n2. DROSE-A: carbon (C) and nitrous oxide (N2O) estimates (in gigagrams) from the agricultural drainage of\norganic soils under these land uses.\n\nAnnual data are available at 0.0083333 X 0.0083333 resolution (~1 km at the equator), with global coverage\nfor the period 1992 - 2018.\n\nFAOSTAT estimates follow the Intergovernmental Panel on Climate Change Guidelines\n(IPCC) and use histosols as proxy for the presence of organic soils and annual land cover maps as time-\ndependent component. Additionally, soils characteristics, land use, and climate information are applied\nin the analysis. The carbon emissions can be converted to CO2, multiplying pixel values by the ratio of\nthe molecular weight of carbon dioxide (CO2) to that of C (44/12).\n\nOrganic soils develop in wet soil ecosystems. They include tropical and boreal peatlands, high-latitude\nbogs, ferns, and mires. Organic soils cover globally a mere 3 percent of the terrestrial land area but\nrepresent up to 30 percent of the total soil carbon, thus playing an important role in maintaining the\nearth's carbon balance. Agriculture is a major cause of drainage of organic soils around the world.\nDrainage exposes to aerobic conditions the organic matter of organic soils that oxidizes releasing large\namounts of harmful greenhouse gases (GHG) to the atmosphere.\n\nDROSA-A and DROSE-A are the basis for country and regional statistics on drained organic soils\ndisseminated in three FAOSTAT datasets (Cultivation of Organic Soils; Cropland; and Grassland).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/FAO_GHG_1_DROSA_A",
+            "type": "text/html",
+            "title": "Run the example for FAO/GHG/1/DROSA_A in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/FAO/FAO_GHG_1_DROSA_A_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/FAO_GHG_1_DROSA_A#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/FAO/FAO_GHG_1_DROSA_A.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/FAO/catalog.json",
+            "type": "application/json",
+            "title": "FAO"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:terms_of_use": "The Food and Agriculture Organization of the United Nations (FAO) is mandated to collect, analyze,\ninterpret, and disseminate information related to nutrition, food, and agriculture. In this regard,\nit publishes a number of databases on topics related to FAO's mandate, and encourages the use of\nthem for scientific and research purposes. Consistent with the principles of openness and sharing\nenvisioned under the Open Data Licensing For Statistical Databases, and consistent with the mandate\nof FAO, data on GHG emissions from agriculture activities on organic soils as part of FAOSTAT\n- FAO's database on Food and Agriculture data, is available free to the user community.\n",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "agriculture",
+        "climate_change",
+        "emissions",
+        "fao",
+        "ghg",
+        "organic_soils"
+    ],
+    "providers": [
+        {
+            "name": "FAO UN",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "http://fao.org/economic/ess/environment/data/organic-soils/la/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/FAO_GHG_1_DROSA_A"
+        }
+    ],
+    "sci:citation": "[FAO 2020. Drained organic soils 1990 - 2019. Global, regional and country trends.\nFAOSTAT Analytical Brief Series No 4, FAO, Rome.](http://www.fao.org/3/cb0489en/cb0489en.pdf)\n",
+    "sci:publications": [
+        {
+            "citation": "Conchedda, G. and Tubiello, F. N.: Drainage of organic soils and GHG emissions:\nValidation with country data, Earth Syst. Sci. Data Discuss.\n[10.5194/essd-12-3113-2020](https://doi.org/10.5194/essd-12-3113-2020), 2020\n",
+            "doi": "10.5194/essd-12-3113-2020"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Area of cropland organic soils (histosols)",
+                "gee:units": "ha",
+                "name": "cropland"
+            },
+            {
+                "description": "Area of grassland organic soils (histosols)",
+                "gee:units": "ha",
+                "name": "grassland"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Cropland area drained (Annual)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "cropland"
+                        ],
+                        "max": [
+                            60
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "white",
+                            "red"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -0.4,
+                    "lon": 108,
+                    "zoom": 6
+                }
+            }
+        ],
+        "gsd": [
+            927.67
+        ]
+    },
+    "title": "UN FAO Drained Organic Soils Area (Annual)",
+    "version": "1.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1992-01-01T00:00:00Z",
+                    "2018-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

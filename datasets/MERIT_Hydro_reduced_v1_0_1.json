@@ -1,0 +1,147 @@
+{
+    "type": "Collection",
+    "id": "MERIT/Hydro_reduced/v1_0_1",
+    "stac_version": "1.0.0",
+    "description": "Supplementary visualization layers for [MERIT Hydro](MERIT_Hydro_v1_0_1)",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MERIT_Hydro_reduced_v1_0_1",
+            "type": "text/html",
+            "title": "Run the example for MERIT/Hydro_reduced/v1_0_1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MERIT/MERIT_Hydro_reduced_v1_0_1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MERIT_Hydro_reduced_v1_0_1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_Hydro/index.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MERIT/MERIT_Hydro_reduced_v1_0_1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MERIT/catalog.json",
+            "type": "application/json",
+            "title": "MERIT"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "Citation to the paper is adequate if you simply use MERIT Hydro. If you\nasked for help for additional handling/editing of the dataset, or if your research\noutcome highly depends on the product, the developer would request co-authorship.\n\nMERIT Hydro is licensed under a Creative Commons \"CC-BY-NC 4.0\" or Open\nData Commons \"Open Database License (ODbL 1.0)\".  With a dual license, you can\nchoose an appropriate license for you.\n\nTo view a copy of these license, please visit:\n\n* [CC-BY-NC 4.0 license](http://creativecommons.org/licenses/by-nc/4.0/):\nNon-Commercial Use with less restriction.\n* [ODbL 1.0 license](https://opendatacommons.org/licenses/odbl/summary/):\nCommectial Use is OK, but the derived data based on MERIT Hydro should be made\npublicly available under the same ODbL license.  For example, if you create a\nflood hazard map using MERIT Hydro and you would like to provide a COMMERCIAL\nservice based on that, you have to make the hazard map PUBLICLY AVAILABLE under\nOdBL license.\n\nNote that the above license terms are applied to the \"derived data\" based\non MERIT Hydro, while they are not applied to \"produced work / artwork\" created\nwith MERIT Hydro (such as figures in a journal paper). The users may have a\ncopyright of the artwork and may assign any license, when the produced work\nis not considered as \"derived data\".\n\nBy downloading and using the data the user agrees to the terms and\nconditions of the license. Notwithstanding this free license, we ask users to\nrefrain from redistributing the data in whole in its original format on other\nwebsites without the explicit written permission from the authors.\n\nThe copyright of MERIT Hydro is held by the developers, 2019, all rights reserved.\n",
+    "gee:type": "image",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true,
+    "keywords": [
+        "dem",
+        "elevation",
+        "flow_direction",
+        "hand",
+        "hydrography",
+        "hydrosheds",
+        "merit",
+        "river_width",
+        "upstream_drainage_area"
+    ],
+    "providers": [
+        {
+            "name": "Dai Yamazaki (University of Tokyo)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_Hydro/index.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MERIT_Hydro_reduced_v1_0_1"
+        }
+    ],
+    "sci:citation": "Yamazaki D., D. Ikeshima, J. Sosa, P.D. Bates, G.H. Allen, T.M. Pavelsky.\nMERIT Hydro: A high-resolution global hydrography map based on latest\ntopography datasets\nWater Resources Research, vol.55, pp.5053-5073, 2019,\n[doi:10.1029/2019WR024873](https://doi.org/10.1029/2019WR024873]\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "River channel width at the channel centerlines. River channel width is\ncalculated by the method described in [Yamazaki et al. 2012, WRR], with some\nimprovements/changes on the algorithm. This band was upscaled to 18 arc seconds\nfrom the original 3 arc seconds for better visualization at global scale.\n",
+                "name": "wth"
+            },
+            {
+                "description": "Upstream drainage area (flow accumulation area). This band was upscaled\nto 18 arc seconds from the original 3 arc seconds for better visualization\nat global scale.\n",
+                "gee:units": "km^2",
+                "name": "upa"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "River width",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "wth"
+                        ],
+                        "max": [
+                            400
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 23.052,
+                    "lon": 90.301,
+                    "zoom": 10
+                }
+            }
+        ],
+        "gsd": [
+            556.6
+        ]
+    },
+    "title": "MERIT Hydro: Supplementary Visualization Layers",
+    "version": "1.0.1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1987-01-01T00:00:00Z",
+                    "2017-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "ODbL-1.0"
+}

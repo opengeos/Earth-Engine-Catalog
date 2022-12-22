@@ -1,0 +1,205 @@
+{
+    "type": "Collection",
+    "id": "OpenLandMap/SOL/SOL_BULKDENS-FINEEARTH_USDA-4A1H_M/v02",
+    "stac_version": "1.0.0",
+    "description": "Soil bulk density (fine earth) 10 x kg / m<sup>3</sup> at 6 standard\ndepths (0, 10, 30, 60, 100 and 200 cm) at 250 m resolution.\n\nProcessing steps are described in detail [here](https://gitlab.com/openlandmap/global-layers/LandGISmaps/tree/master/soil).\nAntartica is not included.\n\nTo access and visualize maps outside of Earth Engine, use [this page](https://opengeohub.org/about-openlandmap).\n\nIf you discover a bug, artifact or inconsistency in the LandGIS maps\nor if you have a question please use the following channels:\n\n *  [Technical issues and questions about the code](https://gitlab.com/openlandmap/global-layers/issues)\n *  [General questions and comments](https://disqus.com/home/forums/landgis/)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OpenLandMap_SOL_SOL_BULKDENS-FINEEARTH_USDA-4A1H_M_v02",
+            "type": "text/html",
+            "title": "Run the example for OpenLandMap/SOL/SOL_BULKDENS-FINEEARTH_USDA-4A1H_M/v02 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/OpenLandMap/OpenLandMap_SOL_SOL_BULKDENS-FINEEARTH_USDA-4A1H_M_v02_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_SOL_SOL_BULKDENS-FINEEARTH_USDA-4A1H_M_v02#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-SA-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5281/zenodo.1475970"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenLandMap/OpenLandMap_SOL_SOL_BULKDENS-FINEEARTH_USDA-4A1H_M_v02.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenLandMap/catalog.json",
+            "type": "application/json",
+            "title": "OpenLandMap"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-SA-4.0](https://spdx.org/licenses/CC-BY-SA-4.0.html)",
+    "gee:type": "image",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true,
+    "keywords": [
+        "bulk",
+        "density",
+        "envirometrix",
+        "opengeohub",
+        "openlandmap",
+        "soil"
+    ],
+    "providers": [
+        {
+            "name": "EnvirometriX Ltd",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5281/zenodo.1475970"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_SOL_SOL_BULKDENS-FINEEARTH_USDA-4A1H_M_v02"
+        }
+    ],
+    "sci:citation": "Tomislav Hengl. (2018). Soil bulk density (fine earth) 10 x kg / m-cubic at 6 standard depths (0, 10, 30, 60, 100 and 200 cm) at 250 m resolution (Version v02) [Data set]. Zenodo.\n[10.5281/zenodo.1475970](https://doi.org/10.5281/zenodo.1475970)\n",
+    "sci:doi": "10.5281/zenodo.1475970",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Soil bulk density at 0 cm depth",
+                "gee:scale": 10,
+                "gee:units": "kg / m3",
+                "name": "b0"
+            },
+            {
+                "description": "Soil bulk density at 10 cm depth",
+                "gee:scale": 10,
+                "gee:units": "kg / m3",
+                "name": "b10"
+            },
+            {
+                "description": "Soil bulk density at 30 cm depth",
+                "gee:scale": 10,
+                "gee:units": "kg / m3",
+                "name": "b30"
+            },
+            {
+                "description": "Soil bulk density at 60 cm depth",
+                "gee:scale": 10,
+                "gee:units": "kg / m3",
+                "name": "b60"
+            },
+            {
+                "description": "Soil bulk density at 100 cm depth",
+                "gee:scale": 10,
+                "gee:units": "kg / m3",
+                "name": "b100"
+            },
+            {
+                "description": "Soil bulk density at 200 cm depth",
+                "gee:scale": 10,
+                "gee:units": "kg / m3",
+                "name": "b200"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Soil bulk density in x 10 kg / m3",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "b0"
+                        ],
+                        "max": [
+                            185
+                        ],
+                        "min": [
+                            5
+                        ],
+                        "palette": [
+                            "5e3c99",
+                            "b2abd2",
+                            "f7e0b2",
+                            "fdb863",
+                            "e63b01"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 30.7,
+                    "lon": -5.6,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            250
+        ],
+        "b0": {
+            "minimum": 5,
+            "maximum": 185
+        },
+        "b10": {
+            "minimum": 5,
+            "maximum": 185
+        },
+        "b100": {
+            "minimum": 5,
+            "maximum": 185
+        },
+        "b200": {
+            "minimum": 5,
+            "maximum": 185
+        },
+        "b30": {
+            "minimum": 5,
+            "maximum": 185
+        },
+        "b60": {
+            "minimum": 5,
+            "maximum": 185
+        }
+    },
+    "title": "OpenLandMap Soil Bulk Density",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1950-01-01T00:00:00Z",
+                    "2018-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-SA-4.0"
+}

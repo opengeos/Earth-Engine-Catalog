@@ -1,0 +1,227 @@
+{
+    "type": "Collection",
+    "id": "FAO/GAUL_SIMPLIFIED_500m/2015/level1",
+    "stac_version": "1.0.0",
+    "description": "This version of GAUL dataset is simplified at 500m.\n\nThe Global Administrative Unit Layers (GAUL) compiles and disseminates the\nbest available information on administrative units for all the countries in\nthe world, providing a contribution to the standardization of the spatial\ndataset representing administrative units. The GAUL always maintains global\nlayers with a unified coding system at country, first (e.g. departments),\nand second administrative levels (e.g. districts). Where data is available,\nit provides layers on a country by country basis down to third, fourth, and\nlowers levels. The overall methodology consists in a) collecting the best\navailable data from most reliable sources, b) establishing validation\nperiods of the geographic features (when possible), c) adding selected data\nto the global layer based on the last country boundaries map provided by\nthe UN Cartographic Unit (UNCS), d) generating codes using GAUL Coding\nSystem, and e) distribute data to the users\n(see [Technical Aspects of the GAUL Distribution Set](https://sgst.wr.usgs.gov/gfsad30/FAO_GUAL/TechnicalAspectsGAUL2015_Doc1.pdf)).\nNote that some administrative units are multipolygon features.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/FAO_GAUL_SIMPLIFIED_500m_2015_level1",
+            "type": "text/html",
+            "title": "Run the example for FAO/GAUL_SIMPLIFIED_500m/2015/level1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/FAO/FAO_GAUL_SIMPLIFIED_500m_2015_level1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_SIMPLIFIED_500m_2015_level1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/FAO_GAUL_SIMPLIFIED_500m_2015_level1_FeatureView",
+            "type": "text/html",
+            "title": "Run the example for FAO/GAUL_SIMPLIFIED_500m/2015/level1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/FAO/FAO_GAUL_SIMPLIFIED_500m_2015_level1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/FAO/catalog.json",
+            "type": "application/json",
+            "title": "FAO"
+        }
+    ],
+    "stac_extensions": [],
+    "gee:terms_of_use": "The GAUL dataset is distributed to the United Nations and other authorized\ninternational and national institutions/agencies. FAO grants a license to\nuse, download and print the materials contained in the GAUL dataset solely\nfor non-commercial purposes and in accordance with the conditions specified\nin the data license.\n[The full GAUL Data License document](https://developers.google.com/earth-engine/datasets/catalog/DataLicenseGAUL2015.pdf)\nis available for downloading. See also\n[the disclaimer](https://developers.google.com/earth-engine/datasets/catalog/DisclaimerGAUL2015.pdf).\n",
+    "gee:type": "table",
+    "gee:unusual_terms_of_use": true,
+    "keywords": [
+        "borders",
+        "departments",
+        "fao",
+        "gaul",
+        "provinces",
+        "states",
+        "un"
+    ],
+    "providers": [
+        {
+            "name": "FAO UN",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "http://www.fao.org/geonetwork/srv/en/metadata.show?id=12691"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_SIMPLIFIED_500m_2015_level1"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "GAUL country code",
+                "name": "ADM0_CODE",
+                "type": "INT"
+            },
+            {
+                "description": "UN country name",
+                "name": "ADM0_NAME",
+                "type": "STRING"
+            },
+            {
+                "description": "Unsettled territory: 'Yes' or 'No'",
+                "name": "DISP_AREA",
+                "type": "STRING"
+            },
+            {
+                "description": "Status of the country",
+                "name": "STATUS",
+                "type": "STRING"
+            },
+            {
+                "description": "Shape area",
+                "name": "Shape_Area",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Shape length",
+                "name": "Shape_Leng",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "GAUL code of administrative units at first level",
+                "name": "ADM1_CODE",
+                "type": "INT"
+            },
+            {
+                "description": "Name of administrative units at first level",
+                "name": "ADM1_NAME",
+                "type": "STRING"
+            },
+            {
+                "description": "Expiry year of the administrative unit",
+                "name": "EXP1_YEAR",
+                "type": "INT"
+            },
+            {
+                "description": "Creation year of the administrative unit",
+                "name": "STR1_YEAR",
+                "type": "INT"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "First Level Administrative Units",
+                "lookat": {
+                    "lat": 49.1,
+                    "lon": 7.82,
+                    "zoom": 4
+                },
+                "polygon_visualization": {
+                    "property_name": "ADM1_CODE",
+                    "property_vis": {
+                        "max": [
+                            4000
+                        ],
+                        "min": [
+                            500
+                        ],
+                        "palette": [
+                            "00FF97",
+                            "DDFF6B",
+                            "F0FF6B",
+                            "FFE96B",
+                            "7277FF",
+                            "FFFFB3",
+                            "DAFFFF",
+                            "B0FFFF",
+                            "72FFFF",
+                            "A9FF6B",
+                            "72D6FF",
+                            "00FF72",
+                            "00EEE3",
+                            "FF84FF",
+                            "E1E4E1",
+                            "ECFFE1",
+                            "B3C59F",
+                            "B3F09F",
+                            "FFFFCA",
+                            "47F09F",
+                            "DADCE7",
+                            "47F0D7",
+                            "FFA789",
+                            "00FFBB",
+                            "D3FF89",
+                            "00B6FF",
+                            "CFCDCA",
+                            "FF7789",
+                            "CFBACA",
+                            "FFE5C8",
+                            "FFD1FF",
+                            "FF7789",
+                            "FFFF89",
+                            "D3A789",
+                            "0CFFFF",
+                            "FF87A8",
+                            "D8FF6A",
+                            "D8DDBB"
+                        ]
+                    }
+                }
+            },
+            {
+                "display_name": "First Level Administrative Units",
+                "visualize_as": "FeatureView"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 1000,
+            "thinning_ranking": [
+                "Shape_Area DESC"
+            ],
+            "thinning_strategy": "HIGHER_DENSITY"
+        }
+    },
+    "title": "FAO GAUL 500m: Global Administrative Unit Layers 2015, First-Level Administrative Units",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-12-19T16:45:00Z",
+                    "2014-12-19T16:45:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

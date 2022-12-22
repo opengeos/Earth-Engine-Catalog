@@ -1,0 +1,145 @@
+{
+    "type": "Collection",
+    "id": "WCMC/biomass_carbon_density/v1_0",
+    "stac_version": "1.0.0",
+    "description": "This dataset represents above- and below-ground terrestrial carbon storage (tonnes (t) of C per hectare (ha)) for circa 2010.\nThe dataset was constructed by combining the most reliable publicly available datasets and overlaying them with the ESA CCI landcover map for the year 2010 (ESA, 2017), assigning to each grid cell the corresponding above-ground biomass value from the biomass map that was most appropriate for the grid cell's landcover type.\nInput carbon datasets were identified through a literature review of existing datasets on biomass carbon in terrestrial ecosystems published in peer-reviewed literature.\nTo determine which datasets to combine to produce the global carbon density map, identified datasets were evaluated based on resolution, accuracy, biomass definition and reference date (see Table 1 in paper cited for further information on datasets selected).\nAfter aggregating each selected dataset to a nominal scale of 300 m resolution, forest categories in the CCI ESA 2010 landcover dataset were used to extract above-ground biomass from Santoro et al. 2018 for forest areas.\nWoodland and savanna biomass were then incorporated for Africa from Bouvet et al. 2018., and from Santoro et al. 2018 for areas outside of Africa and outside of forest.\nBiomass from croplands, sparse vegetation and grassland landcover classes from CCI ESA, in addition to shrubland areas outside Africa missing from Santoro et al. 2018, were extracted from were extracted from Xia et al. 2014. and Spawn et al. 2017 averaged by ecological zone for each landcover type.\nBelow-ground biomass were added using root-to-shoot ratios from the 2006 IPCC guidelines for National Greenhouse Gas Inventories (IPCC, 2006). No below-ground values were assigned to croplands as ratios were unavailable. Above-and-below-ground biomass were then summed together and multiplied by 0.5 to convert to carbon, generating a single above-and-below-ground biomass carbon layer.\nThis dataset has not been validated.\n\nReferences:\n\n* Bouvet, A. et al. 2018. An above-ground biomass map of African savannahs and woodlands at 25 m resolution derived from ALOS PALSAR. Remote Sensing of the Environment 206, 156-173.\n* ESA (2017) [Land Cover CCI Product User Guide Version 2. Tech. Rep.](https://maps.elie.ucl.ac.be/CCI/viewer/download/ESACCI-LC-Ph2-PUGv2_2.0.pdf).\n* IPCC (2006) 2006 IPCC guidelines for national greenhouse gas inventories (eds HS Eggleston, L Buendia, K Miwa, T Ngara, K Tanabe.) Kanagawa, Japan: IGES.\n* Santoro, M. et al. (2018). A detailed portrait of the forest aboveground biomass pool for the year 2010 obtained from multiple remote sensing observations. Geophysical Research Abstracts 20, EGU2018-EG18932.\n* Spawn SA et al. (2017) New global biomass map for the year 2010. New Orleans, LA: American Geophysical Union.\n* Xia, J. et al. (2014) Spatio-temporal patterns and climate variables controlling of biomass carbon stock of global grassland ecosystems from 1982 to 2006. Remote Sensing 6, 1783-1802.\n\nProvider's note: The UN Environment Programme World Conservation Monitoring\nCentre (UNEP-WCMC) carbon biomass dataset\nrepresents conditions between 1982 and 2010 depending on land cover type. The relative patterns\nof carbon stocks are well represented with this dataset. The [NASA/ORNL carbon biomass dataset](https://daac.ornl.gov/VEGETATION/guides/Global_Maps_C_Density_2010.html)\nrepresents biomass conditions for 2010, with uncertainty estimates at the pixel-level.\nAdditional biomass of non-dominant land cover types are represented within each pixel. For more\ndetailed information, please refer to the papers describing each dataset: WCMC\n[(Soto-Navarro et al. 2020)](https://royalsocietypublishing.org/doi/full/10.1098/rstb.2019.0128)\nand [NASA/ORNL](NASA_ORNL_biomass_carbon_density_v1) [(Spawn et al. 2020)](https://www.nature.com/articles/s41597-020-0444-4).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WCMC_biomass_carbon_density_v1_0",
+            "type": "text/html",
+            "title": "Run the example for WCMC/biomass_carbon_density/v1_0 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/WCMC/WCMC_biomass_carbon_density_v1_0_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/WCMC_biomass_carbon_density_v1_0#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.34892/rh7v-hg80"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WCMC/WCMC_biomass_carbon_density_v1_0.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WCMC/catalog.json",
+            "type": "application/json",
+            "title": "WCMC"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "These data are subject to Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).\nDetails can be found [here.](https://creativecommons.org/licenses/by-sa/4.0/)\n",
+    "gee:type": "image_collection",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true,
+    "keywords": [
+        "biomass",
+        "carbon",
+        "unep",
+        "wcmc"
+    ],
+    "providers": [
+        {
+            "name": "UNEP-WCMC (UN Environment Programme World Conservation Monitoring Centre)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.34892/rh7v-hg80"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/WCMC_biomass_carbon_density_v1_0"
+        }
+    ],
+    "sci:citation": "Soto-Navarro C., Ravilious C., Arnell A., de Lamo X., Harfoot M., Hill S. L. L.,\nWearn O. R., Santoro M., Bouvet A., Mermoz S., Le Toan T., Xia J., Liu S.,\nYuan W., Spawn S. A., Gibbs H. K., Ferrier S., Harwood T., Alkemade R.,\nSchipper A. M., Schmidt-Traub G., Strassburg B., Miles L., Burgess N. D.\nand Kapos V. (2020) Mapping co-benefits for carbon storage and biodiversity to\ninform conservation policy and action. Philosophical Transactions of the Royal\nSociety B. 375 [Link](https://doi.org/10.1098/rstb.2019.0128)\n",
+    "sci:doi": "10.34892/rh7v-hg80",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Tonnes of above and below ground biomass carbon per hectare",
+                "gsd": 300,
+                "name": "carbon_tonnes_per_ha"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "carbon_tonnes_per_ha",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "carbon_tonnes_per_ha"
+                        ],
+                        "max": [
+                            180
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "d9f0a3",
+                            "addd8e",
+                            "78c679",
+                            "41ab5d",
+                            "238443",
+                            "005a32"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -14.1,
+                    "lon": 18.6,
+                    "zoom": 1
+                }
+            }
+        ],
+        "carbon_tonnes_per_ha": {
+            "minimum": 0,
+            "maximum": 445.5
+        }
+    },
+    "title": "WCMC Above and Below Ground Biomass Carbon Density",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-01-01T00:00:00Z",
+                    "2010-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-SA-4.0"
+}

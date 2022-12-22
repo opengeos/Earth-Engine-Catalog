@@ -1,0 +1,158 @@
+{
+    "type": "Collection",
+    "id": "Tsinghua/DESS/ChinaTerraceMap/v1",
+    "stac_version": "1.0.0",
+    "description": "This dataset is a China terrace map at 30 m resolution in 2018. It was\ndeveloped through supervised pixel-based classification using multisource and\nmulti-temporal data based on the Google Earth Engine platform. The overall\naccuracy and kappa coefficient achieved 94% and 0.72, respectively. This first\n30 m China terrace map can be used for studies on soil erosion, food\nsecurity, biogeochemical cycle, biodiversity, and ecosystem service\nassessments.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/Tsinghua_DESS_ChinaTerraceMap_v1",
+            "type": "text/html",
+            "title": "Run the example for Tsinghua/DESS/ChinaTerraceMap/v1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/Tsinghua/Tsinghua_DESS_ChinaTerraceMap_v1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/Tsinghua_DESS_ChinaTerraceMap_v1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5194/essd-13-2437-2021"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Tsinghua/Tsinghua_DESS_ChinaTerraceMap_v1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Tsinghua/catalog.json",
+            "type": "application/json",
+            "title": "Tsinghua"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "agriculture",
+        "china",
+        "dess",
+        "landcover",
+        "landuse",
+        "terrace",
+        "tsinghua"
+    ],
+    "providers": [
+        {
+            "name": "Department of Earth System Science, Tsinghua University (DESS, THU)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://essd.copernicus.org/articles/13/2437/2021/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/Tsinghua_DESS_ChinaTerraceMap_v1"
+        }
+    ],
+    "sci:citation": "Cao, B., Yu, L., Naipal, V., Ciais, P., Li, W., Zhao, Y., Wei, W.,\nChen, D., Liu, Z., and Gong, P.: A 30 m terrace mapping in China using\nLandsat 8 imagery and digital elevation model based on the Google Earth\nEngine, Earth Syst. Sci. Data, 13, 2437-2456,\n[doi:10.5194/essd-13-2437-2021](https://doi.org/10.5194/essd-13-2437-2021), 2021.\n",
+    "sci:doi": "10.5194/essd-13-2437-2021",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "1 when a terrace is present, 0 when it is not.",
+                "gee:classes": [
+                    {
+                        "color": "ffffff",
+                        "description": "No terraces",
+                        "value": 0
+                    },
+                    {
+                        "color": "a3ff74",
+                        "description": "Terraces present",
+                        "value": 1
+                    }
+                ],
+                "gsd": 30,
+                "name": "terrace"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Terraces",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "terrace"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "ffffff",
+                            "a3ff74"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 30.4,
+                    "lon": 106.6,
+                    "zoom": 10
+                }
+            }
+        ]
+    },
+    "title": "DESS China Terrace Map v1",
+    "version": "v1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    70,
+                    0,
+                    140,
+                    60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-01-01T00:00:00Z",
+                    "2019-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

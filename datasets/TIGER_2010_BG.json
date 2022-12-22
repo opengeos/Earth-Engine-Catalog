@@ -1,0 +1,208 @@
+{
+    "type": "Collection",
+    "id": "TIGER/2010/BG",
+    "stac_version": "1.0.0",
+    "description": "The United States Census Bureau regularly releases\na geodatabase named TIGER. This dataset contains the 2010 census\n[block groups](https://www.census.gov/programs-surveys/geography/about/glossary.html#par_textimage_4),\nwhich is a cluster of blocks within the same census tract that have the same\nfirst digit of their four-digit census block number. There are just over\n300,000 polygon features covering the United States, the District\nof Columbia, Puerto Rico, and the\nIsland areas.\n\nFor full technical details on all TIGER 2010 products, see the\n[TIGER technical documentation](https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2010/TGRSHP10SF1.pdf).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/TIGER_2010_BG",
+            "type": "text/html",
+            "title": "Run the example for TIGER/2010/BG in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/TIGER/TIGER_2010_BG_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/TIGER_2010_BG#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/TIGER/TIGER_2010_BG.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/TIGER/catalog.json",
+            "type": "application/json",
+            "title": "TIGER"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The U.S. Census Bureau offers some of its public data\nin machine-readable format via an Application Programming Interface\n(API). All of the content, documentation, code and related materials\nmade available to you through the API are subject to [these terms and\nconditions](https://www.census.gov/data/developers/about/terms-of-service.html).\n",
+    "gee:type": "table",
+    "keywords": [
+        "census",
+        "city",
+        "neighborhood",
+        "tiger",
+        "urban",
+        "us"
+    ],
+    "providers": [
+        {
+            "name": "United States Census Bureau",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/TIGER_2010_BG"
+        }
+    ],
+    "sci:citation": "For the creation of any reports, publications, new data sets, derived\nproducts, or services resulting from the data set, users should\n[cite the US Census Bureau](https://www.census.gov/about/policies/citation.html).\n",
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Land Area (square meters)",
+                "name": "ALAND10",
+                "type": "DOUBLE",
+                "units": "m^2"
+            },
+            {
+                "description": "Water Area (square meters)",
+                "name": "AWATER10",
+                "type": "DOUBLE",
+                "units": "m^2"
+            },
+            {
+                "description": "Block Group Code",
+                "name": "BLKGRPCE10",
+                "type": "STRING"
+            },
+            {
+                "description": "County FIPS Code",
+                "name": "COUNTYFP10",
+                "type": "STRING"
+            },
+            {
+                "description": "Functional Status (S = Statistical)",
+                "name": "FUNCSTAT10",
+                "type": "STRING"
+            },
+            {
+                "description": "Unique Identifier of Summary Level, Characteristic\nIteration, US, State, County, Tract, Block Group Code\n",
+                "name": "GEOID10",
+                "type": "STRING"
+            },
+            {
+                "description": "Internal Point Latitude",
+                "name": "INTPTLAT10",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Internal Point Longitude",
+                "name": "INTPTLON10",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "MAF/TIGER Feature Classification Code",
+                "name": "MTFCC10",
+                "type": "STRING"
+            },
+            {
+                "description": "Full Name",
+                "name": "NAMELSAD10",
+                "type": "STRING"
+            },
+            {
+                "description": "State FIPS Code",
+                "name": "STATEFP10",
+                "type": "STRING"
+            },
+            {
+                "description": "Census Tract Code",
+                "name": "TRACTCE10",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Water Area 2010",
+                "lookat": {
+                    "lat": 40.74101,
+                    "lon": -73.99172,
+                    "zoom": 13
+                },
+                "polygon_visualization": {
+                    "property_name": "AWATER10",
+                    "property_vis": {
+                        "max": [
+                            10000000
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "d8d9d9",
+                            "aaaaaa",
+                            "b6dfe9",
+                            "2ea3f2",
+                            "0c71c3"
+                        ]
+                    }
+                }
+            },
+            {
+                "display_name": "Water Area 2010",
+                "lookat": {
+                    "lat": 40.74101,
+                    "lon": -73.99172,
+                    "zoom": 13
+                },
+                "visualize_as": "FeatureView"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 16000,
+            "prerender_tiles": true,
+            "thinning_ranking": [
+                "STATEFP ASC"
+            ],
+            "thinning_strategy": "HIGHER_DENSITY"
+        }
+    },
+    "title": "TIGER: US Census Block Groups (BG)",
+    "version": "2010",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -14.69,
+                    -64.435,
+                    71.567
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-01-01T00:00:00Z",
+                    "2010-01-02T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

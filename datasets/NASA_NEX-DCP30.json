@@ -1,0 +1,187 @@
+{
+    "type": "Collection",
+    "id": "NASA/NEX-DCP30",
+    "stac_version": "1.0.0",
+    "description": "The NASA NEX-DCP30 dataset is comprised of downscaled climate scenarios\nfor the conterminous United States that are derived from the General\nCirculation Model (GCM) runs conducted under the Coupled Model\nIntercomparison Project Phase 5 (CMIP5, see [Taylor et al. 2012](https://journals.ametsoc.org/doi/abs/10.1175/BAMS-D-11-00094.1))\nand across the four greenhouse gas emissions scenarios known as\nRepresentative Concentration Pathways (RCPs, see [Meinshausen et al. 2011](https://rd.springer.com/article/10.1007%2Fs10584-011-0156-z#page-1))\ndeveloped for the Fifth Assessment Report of the Intergovernmental Panel\non Climate Change (IPCC AR5). The purpose of these datasets is to provide\na set of high resolution, bias-corrected climate change projections that\ncan be used to evaluate climate change impacts on processes that are\nsensitive to finer-scale climate gradients and the effects of local\ntopography on climate conditions.\n\nThe dataset contains monthly projections covering the periods from 1950\nthrough 2005 (Retrospective Run) and from 2006 to 2099 (Prospective Run).\nIt includes downscaled projections from 33 models. Not every\nscenario contains projections from every model.\n\nNEX-DCP30 was prepared by the Climate Analytics Group and NASA Ames\nResearch Center using the NASA Earth Exchange, and distributed by the NASA\nCenter for Climate Simulation (NCCS).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA_NEX-DCP30",
+            "type": "text/html",
+            "title": "Run the example for NASA/NEX-DCP30 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_NEX-DCP30_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_NEX-DCP30#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_NEX-DCP30.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "month"
+    },
+    "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "climate",
+        "cmip5",
+        "csu",
+        "geophysical",
+        "nasa",
+        "nex",
+        "precipitation",
+        "temperature"
+    ],
+    "providers": [
+        {
+            "name": "NASA / CSU",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://cds.nccs.nasa.gov/nex/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_NEX-DCP30"
+        }
+    ],
+    "sci:citation": "Thrasher, B., J. Xiong, W. Wang, F. Melton, A. Michaelis and R. Nemani\n(2013), Downscaled Climate Projections Suitable for Resource Management,\nEos Trans. AGU, 94(37), 321.\n[doi:10.1002/2013EO370002](https://doi.org/10.1002/2013EO370002)\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Monthly mean of the daily precipitation rate at surface;\nincludes both liquid and solid phases from all types of clouds\n(both large-scale and convective)\n",
+                "gee:units": "kg/(m^2*s)",
+                "name": "pr"
+            },
+            {
+                "description": "Monthly mean of the daily-minimum near-surface air temperature",
+                "gee:units": "K",
+                "name": "tasmin"
+            },
+            {
+                "description": "Monthly mean of the daily-maximum near-surface air temperature",
+                "gee:units": "K",
+                "name": "tasmax"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Name of the CMIP5 scenario. It is one of: 'historical',\n'rcp26', 'rcp45', 'rcp60', 'rcp85', where 'historical' designates\nretrospective model runs (pre-2006).\n",
+                "name": "scenario",
+                "type": "STRING"
+            },
+            {
+                "description": "Name of the CMIP5 model. It is one of 'ACCESS1-0',\n'bcc-csm1-1', 'bcc-csm1-1-m', 'BNU-ESM', 'CanESM2', 'CCSM4',\n'CESM1-BGC', 'CESM1-CAM5', 'CMCC-CM', 'CNRM-CM5', 'CSIRO-Mk3-6-0',\n'FGOALS-g2', 'FIO-ESM', 'GFDL-CM3', 'GFDL-ESM2G', 'GFDL-ESM2M',\n'GISS-E2-H-CC', 'GISS-E2-R', 'GISS-E2-R-CC', 'HadGEM2-AO',\n'HadGEM2-CC', 'HadGEM2-ES', 'inmcm4', 'IPSL-CM5A-LR', 'IPSL-CM5A-MR',\n'IPSL-CM5B-LR', 'MIROC5', 'MIROC-ESM', 'MIROC-ESM-CHEM', 'MPI-ESM-LR',\n'MPI-ESM-MR', 'MRI-CGCM3', 'NorESM1-M'.\n",
+                "name": "model",
+                "type": "STRING"
+            },
+            {
+                "description": "Calendar month",
+                "name": "metric",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Minimum Air Temperature",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "tasmin"
+                        ],
+                        "max": [
+                            285
+                        ],
+                        "min": [
+                            265
+                        ],
+                        "palette": [
+                            "blue",
+                            "purple",
+                            "cyan",
+                            "green",
+                            "yellow",
+                            "red"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 38.686,
+                    "lon": -115.356,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            927.67
+        ],
+        "pr": {
+            "minimum": 0,
+            "maximum": 0.0016
+        },
+        "tasmax": {
+            "minimum": 246.4,
+            "maximum": 325.53
+        },
+        "tasmin": {
+            "minimum": 235.91,
+            "maximum": 308.97
+        }
+    },
+    "title": "NEX-DCP30: NASA Earth Exchange Downscaled Climate Projections",
+    "version": "1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125.03,
+                    24.07,
+                    -66.47,
+                    53.74
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1950-01-01T00:00:00Z",
+                    "2099-12-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

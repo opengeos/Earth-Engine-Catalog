@@ -1,0 +1,316 @@
+{
+    "type": "Collection",
+    "id": "CSIRO/SLGA",
+    "stac_version": "1.0.0",
+    "description": "The Soil and Landscape Grid of Australia (SLGA) is a comprehensive dataset\nof soil attributes across Australia at 3 arc-second resolution (~90m\npixels). The surfaces are the outcomes from modelling that describe the\nspatial distribution of the soil attributes using existing soil data and\nenvironmental covariates. See [Viscarra Rossel et al (2015)](https://www.publish.csiro.au/sr/SR14366)\nfor further details. The SLGA can be used in studies of vadose zone\nprocesses, including solute transport, groundwater and nutrient fluxes\nbeyond the root zone, as well as a wide spectrum of ecological,\nhydrological, and broader environmental applications.\n\nEach product contains six digital soil attribute maps and their upper and\nlower confidence limits, representing the soil attribute at six depths:\n0-5cm, 5-15cm, 15-30cm, 30-60cm, 60-100cm, and 100-200cm. These depths and\nsoil attributes are consistent with the specifications of\n[GlobalSoilMap](https://www.isric.org/projects/globalsoilmapnet).\n\nThis collection has 12 images. Ten of them contain data for GSM primary\nsoil attributes; the other two contain regolith depth and soil depth GSM\nattributes.\n\n| Attribute                              | Description                                                                                                                   | Code | # of Bands |\n|----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------|------------|\n| Bulk Density (whole earth)             | Bulk density of the whole soil (including coarse fragments) in mass per unit volume by a method equivalent to the core method | BDW  | 18         |\n| Organic Carbon                         | Mass fraction of carbon by weight in the < 2mm soil material as determined by dry combustion at 900 Celsius                   | SOC  | 18         |\n| Clay                                   | < 2\u03bcm mass fraction of the <2mm soil material determined using the pipette method                                             | CLY  | 18         |\n| Silt                                   | 2-20\u03bcm mass fraction of the < 2mm soil material determined using the pipette method                                           | SLT  | 18         |\n| Sand                                   | 20\u03bcm - 2mm mass fraction of the < 2mm soil material determined using the pipette method                                       | SND  | 18         |\n| pH (CaCl2)                             | pH of 1:5 soil/0.01M calcium chloride extract                                                                                 | pHc  | 18         |\n| Available Water Capacity               | Available water capacity computed for each of the specified depth increments                                                  | AWC  | 18         |\n| Total Nitrogen                         | Mass fraction of total nitrogen in the soil by weight                                                                         | NTO  | 18         |\n| Total Phosphorus                       | Mass fraction of total phosphorus in the soil by weight                                                                       | PTO  | 18         |\n| Effective Cation Exchange Capacity     | Cations extracted using barium chloride (BaCl2) plus exchangeable H + Al                                                      | ECE  | 18         |\n| Depth of Regolith                      | Depth to hard rock. Depth is inclusive of all regolith.                                                                       | DER  | 3          |\n| Depth of Soil                          | Depth of soil profile (A & B horizons)                                                                                        | DES  | 3          |\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/CSIRO_SLGA",
+            "type": "text/html",
+            "title": "Run the example for CSIRO/SLGA in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/CSIRO/CSIRO_SLGA_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/CSIRO_SLGA#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://www.clw.csiro.au/aclep/soilandlandscapegrid/",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://www.clw.csiro.au/aclep/soilandlandscapegrid/About-Disclaimer.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.4225/08/546ED604ADD8A"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.4225/08/546EE212B0048"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.4225/08/546EEE35164BF"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.4225/08/546F091C11777"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.4225/08/546F17EC6AB6E"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.4225/08/546F29646877E"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.4225/08/546F48D6A6D48"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.4225/08/546F540FE10AA"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.4225/08/546F564AE11F9"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.4225/08/546F617719CAF"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.4225/08/547523BB0801A"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.4225/08/55C9472F05295"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CSIRO/CSIRO_SLGA.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CSIRO/catalog.json",
+            "type": "application/json",
+            "title": "CSIRO"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:extra_dois": [
+        "10.4225/08/546EE212B0048",
+        "10.4225/08/546EEE35164BF",
+        "10.4225/08/546F091C11777",
+        "10.4225/08/546F17EC6AB6E",
+        "10.4225/08/546F29646877E",
+        "10.4225/08/546F48D6A6D48",
+        "10.4225/08/546F540FE10AA",
+        "10.4225/08/546F564AE11F9",
+        "10.4225/08/546F617719CAF",
+        "10.4225/08/547523BB0801A",
+        "10.4225/08/55C9472F05295"
+    ],
+    "gee:terms_of_use": "All products developed by the Soil and Landscape Grid of Australia are\navailable at no cost under a\n[Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/)\n(CC BY) and users should read the\n[Disclaimer](https://www.clw.csiro.au/aclep/soilandlandscapegrid/About-Disclaimer.html).\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "australia",
+        "csiro",
+        "digital_soil_mapping",
+        "globalsoilmap",
+        "slga",
+        "soil",
+        "soil_depth",
+        "tern"
+    ],
+    "providers": [
+        {
+            "name": "CSIRO/SLGA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.clw.csiro.au/aclep/soilandlandscapegrid/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/CSIRO_SLGA"
+        }
+    ],
+    "sci:citation": "Viscarra Rossel, Raphael; Chen, Charlie; Grundy, Mike; Searle, Ross;\nClifford, David; Odgers, Nathan; Holmes, Karen; Griffin, Ted; Liddicoat,\nCraig; Kidd, Darren (2014): Soil and Landscape Grid National Soil Attribute\nMaps - SOIL ATTRIBUTE Release 1. v2. CSIRO. Data Collection\n[doi:10.1071/SR14366](https://doi.org/10.1071/SR14366).\n",
+    "sci:doi": "10.4225/08/546ED604ADD8A",
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Topic category according to Australia's and New Zealand's Spatial\nInformation Council",
+                "name": "anzlic_topic_category",
+                "type": "STRING"
+            },
+            {
+                "description": "General contact",
+                "name": "contact",
+                "type": "STRING"
+            },
+            {
+                "description": "Who to contact for issues related to Earth Engine ingestion",
+                "name": "contact_gee_ingestion",
+                "type": "STRING"
+            },
+            {
+                "description": "Lead Researcher",
+                "name": "contact_lead_researcher",
+                "type": "STRING"
+            },
+            {
+                "description": "Project Director",
+                "name": "contact_project_director",
+                "type": "STRING"
+            },
+            {
+                "description": "Project Leader",
+                "name": "contact_project_leader",
+                "type": "STRING"
+            },
+            {
+                "description": "Country this asset covers",
+                "name": "country",
+                "type": "STRING"
+            },
+            {
+                "description": "ISO country code",
+                "name": "country_code",
+                "type": "STRING"
+            },
+            {
+                "description": "Credit",
+                "name": "credit",
+                "type": "STRING"
+            },
+            {
+                "description": "'Numeric Value' or 'Categorical Value'",
+                "name": "datatype",
+                "type": "STRING"
+            },
+            {
+                "description": "'N' or 'C'",
+                "name": "datatype_code",
+                "type": "STRING"
+            },
+            {
+                "description": "Date of publication",
+                "name": "date_created",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "GSM v2.3 tier 1 or 2, 'P' or 'B'",
+                "name": "estimate_spatial_support",
+                "type": "STRING"
+            },
+            {
+                "description": "'Point estimate' or 'Block estimate'",
+                "name": "estimate_spatial_support_code",
+                "type": "STRING"
+            },
+            {
+                "description": "'Soil sciences not elsewhere classified'",
+                "name": "field_of_research",
+                "type": "STRING"
+            },
+            {
+                "description": "GlobalSoilMap attribute type",
+                "name": "gsm_type",
+                "type": "STRING"
+            },
+            {
+                "description": "'Data mining-kriging methods', 'Composite models. Various modelling\ncombined with variance weighted averaging', or 'Polygon disaggregation\nmethods'\n",
+                "name": "product_type",
+                "type": "STRING"
+            },
+            {
+                "description": "'N', 'C', or 'D'",
+                "name": "product_type_code",
+                "type": "STRING"
+            },
+            {
+                "description": "' National Soil Attribute Maps - Composite product', 'Australia-wide 3D\nSoil Attribute Maps', 'Western Australia Polygon Dissaggregation (DAFW)',\n'South Australia Polygon Dissaggregation (DEWNR)', or 'Tasmania (DPIWE)\nSoil Attribute Mapping'\n",
+                "name": "project",
+                "type": "STRING"
+            },
+            {
+                "description": "'NAT', 'TRN', 'WAT', 'SAT', or 'TAS'",
+                "name": "project_code",
+                "type": "STRING"
+            },
+            {
+                "description": "Provider URL",
+                "name": "provider_url",
+                "type": "STRING"
+            },
+            {
+                "description": "Rights statement",
+                "name": "rights_statement",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Soil Depth",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "DES_000_200_EV"
+                        ],
+                        "max": [
+                            1.84
+                        ],
+                        "min": [
+                            0.1
+                        ],
+                        "palette": [
+                            "8d6738",
+                            "252525"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -21.984,
+                    "lon": 132.495,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            92.77
+        ]
+    },
+    "title": "SLGA: Soil and Landscape Grid of Australia (Soil Attributes)",
+    "version": "1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    113,
+                    -44.15,
+                    154,
+                    -9.97
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1950-01-01T00:00:00Z",
+                    "2013-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

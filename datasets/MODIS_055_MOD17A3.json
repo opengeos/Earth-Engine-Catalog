@@ -1,0 +1,184 @@
+{
+    "type": "Collection",
+    "id": "MODIS/055/MOD17A3",
+    "stac_version": "1.0.0",
+    "description": "The MOD17A3 V055 product provides information about\nannual Gross and Net Primary Productivity (NPP) at 1km pixel resolution.\nNet Primary Productivity (NPP) defines the rate at which all plants\nin an ecosystem produce net useful chemical energy.  In other words,\nNPP is equal to the difference between the rate at which plants\nin an ecosystem produce useful chemical energy (or GPP), and the\nrate at which they expend some of that energy for respiration.\n\nThe version 055 of the NPP product is produced by the Numerical\nTerradynamic Simulation Group ([NTSG](https://www.ntsg.umt.edu)),\nUniversity of Montana (UMT).  It corrects the problem with cloud-contaminated\nMODIS LAI-FPAR inputs to the MOD17 algorithm. The original, uncorrected\ndatasets constitute the version 4 NPP products. For further details\nregarding the differences between the NTSG and NASA versions of\nthis product, please consult [this document](https://lpdaac.usgs.gov/documents/188/MOD17_NTSG_Note.pdf)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_055_MOD17A3",
+            "type": "text/html",
+            "title": "Run the example for MODIS/055/MOD17A3 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_055_MOD17A3_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_055_MOD17A3#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MOD17A3HGF.json",
+            "type": "application/json",
+            "title": "MODIS/006/MOD17A3HGF"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_055_MOD17A3.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "deprecated": true,
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "global",
+        "gpp",
+        "mod17a3",
+        "modis",
+        "npp",
+        "photosynthesis",
+        "productivity",
+        "psn",
+        "terra",
+        "yearly"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mod17a3"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_055_MOD17A3"
+        }
+    ],
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Annual gross primary productivity",
+                "gee:scale": 0.0001,
+                "gee:units": "kg*C/m^2",
+                "name": "Gpp"
+            },
+            {
+                "description": "Annual net primary productivity",
+                "gee:scale": 0.0001,
+                "gee:units": "kg*C/m^2",
+                "name": "Npp"
+            },
+            {
+                "description": "Percentage of filled MOD15 LAI caused by cloud-contamination\nduring a growing season (defined when daily minimum air temperatures\nare above -8\u00b0) in a year. A high value indicates a high\nfrequency of cloud-contamination. For example, QA is high for\ntropical rainforests but low in arid areas.\n",
+                "gee:units": "%",
+                "name": "Gpp_Npp_QC"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "NPP",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Npp"
+                        ],
+                        "max": [
+                            18000
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "bbe029",
+                            "0a9501",
+                            "074b03"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 0,
+                    "lon": 0,
+                    "zoom": 0
+                }
+            }
+        ],
+        "gsd": [
+            1000
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Terra"
+        ],
+        "Gpp": {
+            "minimum": 0,
+            "maximum": 65500
+        },
+        "Gpp_Npp_QC": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Npp": {
+            "minimum": 0,
+            "maximum": 65500
+        }
+    },
+    "title": "MOD17A3.055: Terra Net Primary Production Yearly Global 1km [deprecated]",
+    "version": "V055",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2014-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

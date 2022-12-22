@@ -1,0 +1,281 @@
+{
+    "type": "Collection",
+    "id": "MODIS/006/MOD14A1",
+    "stac_version": "1.0.0",
+    "description": "The MOD14A1 V6 dataset provides daily fire mask composites\nat 1km resolution derived from the MODIS 4- and 11-micrometer radiances.\nThe fire detection strategy is based on absolute detection of a\nfire (when the fire strength is sufficient to detect), and on detection\nrelative to its background (to account for variability of the surface\ntemperature and reflection by sunlight). The product distinguishes\nbetween fire, no fire and no observation. This information is used\nfor monitoring the spatial and temporal distribution of fires in\ndifferent ecosystems, detecting changes in fire distribution and\nidentifying new fire frontiers, wild fires, and changes in the\nfrequency of the fires  or their relative strength.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/88/MOD14_User_Guide_v6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/87/MOD14_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MOD14A1)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_006_MOD14A1",
+            "type": "text/html",
+            "title": "Run the example for MODIS/006/MOD14A1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_006_MOD14A1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD14A1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/MODIS/MOD14A1.006"
+        },
+        {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MOD14A1.json",
+            "type": "application/json",
+            "title": "MODIS/061/MOD14A1"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MOD14A1.json",
+            "type": "application/json",
+            "title": "MODIS/061/MOD14A1"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MOD14A1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "deprecated": true,
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C194001242-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "daily",
+        "fire",
+        "global",
+        "mod14a1",
+        "modis",
+        "nasa",
+        "terra",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/MODIS/MOD14A1.006"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD14A1"
+        }
+    ],
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/MODIS/MOD14A1.006",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Confidence of fire",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 4,
+                            "description": "Fire mask pixel classes",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Not processed (obsolete; not used since Collection 1)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Not processed (other reason)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Non-fire water pixel",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Cloud (land or water)",
+                                    "value": 4
+                                },
+                                {
+                                    "description": "Non-fire land pixel",
+                                    "value": 5
+                                },
+                                {
+                                    "description": "Unknown (land or water)",
+                                    "value": 6
+                                },
+                                {
+                                    "description": "Fire (low confidence, land or water)",
+                                    "value": 7
+                                },
+                                {
+                                    "description": "Fire (nominal confidence, land or water)",
+                                    "value": 8
+                                },
+                                {
+                                    "description": "Fire (high confidence, land or water)",
+                                    "value": 9
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 4
+                },
+                "name": "FireMask"
+            },
+            {
+                "description": "Maximum fire radiative power",
+                "gee:scale": 0.1,
+                "gee:units": "Megawatts",
+                "name": "MaxFRP"
+            },
+            {
+                "description": "Position of fire pixel within scan",
+                "name": "sample"
+            },
+            {
+                "description": "Pixel quality indicators",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 2,
+                            "description": "Land/water state",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Water",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Coast",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Land",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Missing data",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Night/day",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "Night",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Day",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 3
+                },
+                "name": "QA"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Fire Mask",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "MaxFRP",
+                            "FireMask",
+                            "FireMask"
+                        ],
+                        "max": [
+                            6000
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 0,
+                    "lon": 0,
+                    "zoom": 0
+                }
+            }
+        ],
+        "gsd": [
+            1000
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Terra"
+        ],
+        "MaxFRP": {
+            "minimum": 0,
+            "maximum": 180000
+        },
+        "sample": {
+            "minimum": 0,
+            "maximum": 1353
+        }
+    },
+    "title": "MOD14A1.006: Terra Thermal Anomalies & Fire Daily Global 1km [deprecated]",
+    "version": "V006",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-24T00:00:00Z",
+                    "2022-11-24T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

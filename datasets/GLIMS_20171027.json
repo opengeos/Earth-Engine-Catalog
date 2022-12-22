@@ -1,0 +1,168 @@
+{
+    "type": "Collection",
+    "id": "GLIMS/20171027",
+    "stac_version": "1.0.0",
+    "description": "Global Land Ice Measurements from Space (GLIMS) is\nan international initiative with the goal of repeatedly surveying\nthe world's estimated 200,000 glaciers.\n\nThe project seeks\nto create a globally comprehensive inventory of land ice, including\nmeasurements of glacier area, geometry, surface velocity, and\nsnow line elevation. To perform these analyses, the GLIMS project\nuses satellite data, primarily from the Advanced Spaceborne Thermal\nEmission and Reflection Radiometer (ASTER) and the Landsat Enhanced\nThematic Mapper Plus (ETM+), as well as historical information\nderived from maps and aerial photographs.\n\nEach feature in this dataset is a polygonal boundary of a glacier at the\ntime of analysis.  A few glacier IDs have hundreds of distinct rows over\ntime.\n\nThis dataset is a snapshot of the inventory of glacier boundaries as of\nOctober 27, 2017, providing over 690,000 rows.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/GLIMS_20171027",
+            "type": "text/html",
+            "title": "Run the example for GLIMS/20171027 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/GLIMS/GLIMS_20171027_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/GLIMS_20171027#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GLIMS/GLIMS_20210914.json",
+            "type": "application/json",
+            "title": "GLIMS/20210914"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GLIMS/GLIMS_2016.json",
+            "type": "application/json",
+            "title": "GLIMS/2016"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GLIMS/GLIMS_20210914.json",
+            "type": "application/json",
+            "title": "GLIMS/20210914"
+        },
+        {
+            "rel": "source",
+            "href": "https://www.glims.org/download/glims_db_20171027.zip"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.7265/N5V98602"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GLIMS/GLIMS_20171027.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GLIMS/catalog.json",
+            "type": "application/json",
+            "title": "GLIMS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "deprecated": true,
+    "gee:terms_of_use": "For the creation of any reports, publications, new\ndata sets, derived products, or services resulting from the data\nset, users should cite: GLIMS and NSIDC (2005, updated 2013): Global\nLand Ice Measurements from Space glacier database.  Compiled and\nmade available by the international GLIMS community and the National\nSnow and Ice Data Center, Boulder CO, U.S.A.,\n[doi:10.7265/N5V98602](https://doi.org/10.7265/N5V98602)\n",
+    "gee:type": "table",
+    "keywords": [
+        "glacier",
+        "glims",
+        "ice",
+        "landcover",
+        "nasa",
+        "nsidc",
+        "snow"
+    ],
+    "providers": [
+        {
+            "name": "National Snow and Ice Data Center (NSDIC)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.glims.org"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/GLIMS_20171027"
+        }
+    ],
+    "sci:doi": "10.7265/N5V98602",
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Glacier Area",
+                "lookat": {
+                    "lat": 73.214,
+                    "lon": -26.763,
+                    "zoom": 6
+                },
+                "polygon_visualization": {
+                    "property_name": "area",
+                    "property_vis": {
+                        "max": [
+                            10
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "gray",
+                            "cyan",
+                            "blue"
+                        ]
+                    }
+                }
+            },
+            {
+                "display_name": "Glacier Area",
+                "visualize_as": "FeatureView"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 12000,
+            "prerender_tiles": true,
+            "thinning_ranking": [
+                "area DESC"
+            ],
+            "thinning_strategy": "HIGHER_DENSITY",
+            "z_order_ranking": [
+                "area DESC"
+            ]
+        }
+    },
+    "title": "GLIMS 2017: Global Land Ice Measurements From Space [deprecated]",
+    "version": "20171027",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1850-01-01T00:00:00Z",
+                    "2016-08-19T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

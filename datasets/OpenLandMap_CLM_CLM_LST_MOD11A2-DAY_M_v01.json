@@ -1,0 +1,265 @@
+{
+    "type": "Collection",
+    "id": "OpenLandMap/CLM/CLM_LST_MOD11A2-DAY_M/v01",
+    "stac_version": "1.0.0",
+    "description": "Land Surface Temperature daytime monthly mean value 2000-2017.\n\nDerived using the [data.table package and quantile function in R](https://gitlab.com/openlandmap/global-layers/tree/master/input_layers/MOD11A2).\nFor more info about the MODIS LST product see [this page](https://lpdaac.usgs.gov/products/mod11a2v006/).\nAntartica is not included.\n\nTo access and visualize maps outside of Earth Engine, use [this page](https://opengeohub.org/about-openlandmap).\n\nIf you discover a bug, artifact or inconsistency in the LandGIS maps\nor if you have a question please use the following channels:\n\n *  [Technical issues and questions about the code](https://gitlab.com/openlandmap/global-layers/issues)\n *  [General questions and comments](https://disqus.com/home/forums/landgis/)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OpenLandMap_CLM_CLM_LST_MOD11A2-DAY_M_v01",
+            "type": "text/html",
+            "title": "Run the example for OpenLandMap/CLM/CLM_LST_MOD11A2-DAY_M/v01 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/OpenLandMap/OpenLandMap_CLM_CLM_LST_MOD11A2-DAY_M_v01_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_CLM_CLM_LST_MOD11A2-DAY_M_v01#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-SA-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5281/zenodo.1420114"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenLandMap/OpenLandMap_CLM_CLM_LST_MOD11A2-DAY_M_v01.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenLandMap/catalog.json",
+            "type": "application/json",
+            "title": "OpenLandMap"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-SA-4.0](https://spdx.org/licenses/CC-BY-SA-4.0.html)",
+    "gee:type": "image",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true,
+    "keywords": [
+        "envirometrix",
+        "lst",
+        "mod11a2",
+        "modis",
+        "monthly",
+        "opengeohub",
+        "openlandmap"
+    ],
+    "providers": [
+        {
+            "name": "EnvirometriX Ltd",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5281/zenodo.1420114"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_CLM_CLM_LST_MOD11A2-DAY_M_v01"
+        }
+    ],
+    "sci:citation": "Long-term MODIS LST day-time and night-time temperatures, sd and differences\nat 1 km based on the 2000-2017 time series\n[10.5281/zenodo.1420114](https://doi.org/10.5281/zenodo.1420114)\n",
+    "sci:doi": "10.5281/zenodo.1420114",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Long-term Land Surface Temperature daytime monthly mean, January",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "jan"
+            },
+            {
+                "description": "Long-term Land Surface Temperature daytime monthly mean, February",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "feb"
+            },
+            {
+                "description": "Long-term Land Surface Temperature daytime monthly mean, March",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "mar"
+            },
+            {
+                "description": "Long-term Land Surface Temperature daytime monthly mean, April",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "apr"
+            },
+            {
+                "description": "Long-term Land Surface Temperature daytime monthly mean, May",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "may"
+            },
+            {
+                "description": "Long-term Land Surface Temperature daytime monthly mean, June",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "jun"
+            },
+            {
+                "description": "Long-term Land Surface Temperature daytime monthly mean, July",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "jul"
+            },
+            {
+                "description": "Long-term Land Surface Temperature daytime monthly mean, August",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "aug"
+            },
+            {
+                "description": "Long-term Land Surface Temperature daytime monthly mean, September",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "sep"
+            },
+            {
+                "description": "Long-term Land Surface Temperature daytime monthly mean, October",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "oct"
+            },
+            {
+                "description": "Long-term Land Surface Temperature daytime monthly mean, November",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "nov"
+            },
+            {
+                "description": "Long-term Land Surface Temperature daytime monthly mean, December",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "dec"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Long-term Land Surface Temperature daytime monthly mean",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "jan"
+                        ],
+                        "max": [
+                            16700
+                        ],
+                        "min": [
+                            11989
+                        ],
+                        "palette": [
+                            "0000ff",
+                            "00ffff",
+                            "ffff00",
+                            "ff0000"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 30.7,
+                    "lon": -5.6,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            1000
+        ],
+        "apr": {
+            "minimum": 11989,
+            "maximum": 16700
+        },
+        "aug": {
+            "minimum": 11989,
+            "maximum": 16700
+        },
+        "dec": {
+            "minimum": 11989,
+            "maximum": 16700
+        },
+        "feb": {
+            "minimum": 11989,
+            "maximum": 16700
+        },
+        "jan": {
+            "minimum": 11989,
+            "maximum": 16700
+        },
+        "jul": {
+            "minimum": 11989,
+            "maximum": 16700
+        },
+        "jun": {
+            "minimum": 11989,
+            "maximum": 16700
+        },
+        "mar": {
+            "minimum": 11989,
+            "maximum": 16700
+        },
+        "may": {
+            "minimum": 11989,
+            "maximum": 16700
+        },
+        "nov": {
+            "minimum": 11989,
+            "maximum": 16700
+        },
+        "oct": {
+            "minimum": 11989,
+            "maximum": 16700
+        },
+        "sep": {
+            "minimum": 11989,
+            "maximum": 16700
+        }
+    },
+    "title": "OpenLandMap Long-term Land Surface Temperature Daytime Monthly Median",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2018-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-SA-4.0"
+}

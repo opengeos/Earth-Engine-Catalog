@@ -1,0 +1,290 @@
+{
+    "type": "Collection",
+    "id": "IDAHO_EPSCOR/GRIDMET",
+    "stac_version": "1.0.0",
+    "description": "The Gridded Surface Meteorological dataset provides\nhigh spatial resolution (~4-km) daily surface fields of temperature,\nprecipitation, winds, humidity and radiation across the contiguous\nUnited States from 1979. The dataset blends the high resolution\nspatial data from PRISM with the high temporal resolution data\nfrom the National Land Data Assimilation System (NLDAS) to produce\nspatially and temporally continuous fields that lend themselves\nto additional land surface modeling.\n\nThis dataset contains provisional products that are replaced with\nupdated versions when the complete source data become available.\nProducts can be distinguished by the value of the 'status' property.\nAt first, assets are ingested with status='early'. After several\ndays, they are replaced by assets with status='provisional'.\nAfter about 2 months, they are replaced by the final assets with\nstatus='permanent'.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/IDAHO_EPSCOR_GRIDMET",
+            "type": "text/html",
+            "title": "Run the example for IDAHO_EPSCOR/GRIDMET in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/IDAHO_EPSCOR/IDAHO_EPSCOR_GRIDMET_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/IDAHO_EPSCOR_GRIDMET#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/IDAHO_EPSCOR/IDAHO_EPSCOR_GRIDMET.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/IDAHO_EPSCOR/catalog.json",
+            "type": "application/json",
+            "title": "IDAHO_EPSCOR"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "This work (METDATA, by John Abatzoglou) is in the public\ndomain and is free of known copyright restrictions. Users should\nproperly cite the source used in the creation of any reports and\npublications resulting from the use of this dataset and note the\ndate when the data was acquired.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "climate",
+        "fireburning",
+        "gridmet",
+        "humidity",
+        "merced",
+        "metdata",
+        "nfdrs",
+        "precipitation",
+        "radiation",
+        "temperature",
+        "wind"
+    ],
+    "providers": [
+        {
+            "name": "University of California Merced",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "http://www.climatologylab.org/gridmet.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/IDAHO_EPSCOR_GRIDMET"
+        }
+    ],
+    "sci:citation": "Abatzoglou J. T., Development of gridded surface meteorological\ndata for ecological applications and modelling, International Journal\nof Climatology. (2012) [doi:10.1002/joc.3413](https://doi.org/10.1002/joc.3413)\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Precipitation amount",
+                "gee:units": "mm, daily total",
+                "name": "pr"
+            },
+            {
+                "description": "Maximum relative humidity",
+                "gee:units": "%",
+                "name": "rmax"
+            },
+            {
+                "description": "Minimum relative humidity",
+                "gee:units": "%",
+                "name": "rmin"
+            },
+            {
+                "description": "Specific humididy",
+                "gee:units": "kg/kg",
+                "name": "sph"
+            },
+            {
+                "description": "Surface downward shortwave radiation",
+                "gee:units": "W/m^2",
+                "name": "srad"
+            },
+            {
+                "description": "Wind direction",
+                "gee:units": "Degrees clockwise from North",
+                "name": "th"
+            },
+            {
+                "description": "Minimum temperature",
+                "gee:units": "K",
+                "name": "tmmn"
+            },
+            {
+                "description": "Maximum temperature",
+                "gee:units": "K",
+                "name": "tmmx"
+            },
+            {
+                "description": "Wind velocity at 10m",
+                "gee:units": "m/s",
+                "name": "vs"
+            },
+            {
+                "description": "Energy release component",
+                "gee:units": "NFDRS fire danger index",
+                "name": "erc"
+            },
+            {
+                "description": "Daily reference evapotranspiration",
+                "gee:units": "grass, mm",
+                "name": "eto"
+            },
+            {
+                "description": "Burning index",
+                "gee:units": "NFDRS fire danger index",
+                "name": "bi"
+            },
+            {
+                "description": "100-hour dead fuel moisture",
+                "gee:units": "%",
+                "name": "fm100"
+            },
+            {
+                "description": "1000-hour dead fuel moisture",
+                "gee:units": "%",
+                "name": "fm1000"
+            },
+            {
+                "description": "Daily reference evapotranspiration",
+                "gee:units": "Alfalfa, mm",
+                "name": "etr"
+            },
+            {
+                "description": "Mean vapor pressure deficit",
+                "gee:units": "kPa",
+                "name": "vpd"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "'early', 'provisional', or 'permanent'",
+                "name": "status",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Maximum Temperature",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "tmmx"
+                        ],
+                        "max": [
+                            314
+                        ],
+                        "min": [
+                            290
+                        ],
+                        "palette": [
+                            "d8d8d8",
+                            "4addff",
+                            "5affa3",
+                            "f2ff89",
+                            "ff725c"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 38.686,
+                    "lon": -115.356,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            4638.3
+        ],
+        "bi": {
+            "minimum": 0,
+            "maximum": 214.2
+        },
+        "erc": {
+            "minimum": 0,
+            "maximum": 131.85
+        },
+        "eto": {
+            "minimum": 0,
+            "maximum": 17.27
+        },
+        "etr": {
+            "minimum": 0,
+            "maximum": 27.02
+        },
+        "fm100": {
+            "minimum": 0.28,
+            "maximum": 33.2
+        },
+        "fm1000": {
+            "minimum": 0.36,
+            "maximum": 47.52
+        },
+        "pr": {
+            "minimum": 0,
+            "maximum": 690.44
+        },
+        "rmax": {
+            "minimum": 1.05,
+            "maximum": 100
+        },
+        "rmin": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "sph": {
+            "minimum": 0,
+            "maximum": 0.02
+        },
+        "srad": {
+            "minimum": 0,
+            "maximum": 455.61
+        },
+        "tmmn": {
+            "minimum": 225.54,
+            "maximum": 314.88
+        },
+        "tmmx": {
+            "minimum": 233.08,
+            "maximum": 327.14
+        },
+        "vpd": {
+            "minimum": 0,
+            "maximum": 9.83
+        },
+        "vs": {
+            "minimum": 0.14,
+            "maximum": 29.13
+        }
+    },
+    "title": "GRIDMET: University of Idaho Gridded Surface Meteorological Dataset",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -124.9,
+                    24.9,
+                    -66.8,
+                    49.6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1979-01-01T00:00:00Z",
+                    "2022-12-19T06:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

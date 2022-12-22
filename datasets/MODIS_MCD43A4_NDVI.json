@@ -1,0 +1,161 @@
+{
+    "type": "Collection",
+    "id": "MODIS/MCD43A4_NDVI",
+    "stac_version": "1.0.0",
+    "description": "The Normalized Difference Vegetation Index is\ngenerated from the Near-IR and Red bands of each scene as (NIR - Red) /\n(NIR + Red), and ranges in value from -1.0 to 1.0. This product is generated from the MODIS/MCD43A4 surface reflectance composites.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_MCD43A4_NDVI",
+            "type": "text/html",
+            "title": "Run the example for MODIS/MCD43A4_NDVI in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_MCD43A4_NDVI_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MCD43A4_NDVI#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MCD43A4_006_NDVI.json",
+            "type": "application/json",
+            "title": "MODIS/MCD43A4_006_NDVI"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MCD43A4_NDVI.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "deprecated": true,
+    "gee:interval": {
+        "interval": 8,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:is_derived": true,
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC have no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "modis",
+        "ndvi",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "Google",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://earthengine.google.com/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MCD43A4_NDVI"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Normalized Difference Vegetation Index",
+                "gsd": 463.312716528,
+                "name": "NDVI"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Colorized",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "NDVI"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "FFFFFF",
+                            "CE7E45",
+                            "DF923D",
+                            "F1B555",
+                            "FCD163",
+                            "99B718",
+                            "74A901",
+                            "66A000",
+                            "529400",
+                            "3E8601",
+                            "207401",
+                            "056201",
+                            "004C00",
+                            "023B01",
+                            "012E01",
+                            "011D01",
+                            "011301"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 31.052933985705163,
+                    "lon": -7.03125,
+                    "zoom": 2
+                }
+            }
+        ],
+        "NDVI": {
+            "minimum": -1,
+            "maximum": 1
+        }
+    },
+    "title": "MODIS Combined 16-Day NDVI [deprecated]",
+    "version": "Unknown",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-18T00:00:00Z",
+                    "2017-03-14T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

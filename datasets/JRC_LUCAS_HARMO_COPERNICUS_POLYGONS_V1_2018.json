@@ -1,0 +1,136 @@
+{
+    "type": "Collection",
+    "id": "JRC/LUCAS_HARMO/COPERNICUS_POLYGONS/V1/2018",
+    "stac_version": "1.0.0",
+    "description": "The\n[Land Use/Cover Area frame Survey (LUCAS)](https://ec.europa.eu/eurostat/web/lucas)\nin the European Union (EU) was set up to provide statistical information.\nIt represents a triennial in-situ landcover and land-use data-collection\nexercise that extends over the whole of the EU's territory.  LUCAS collects\ninformation on land cover and land use, agro-environmental variables, soil,\nand grassland. The surveys also provide spatial information to analyse the\nmutual influences between agriculture, environment, and countryside, such as\nirrigation and land management.\n\nThe dataset presented here is the LUCAS Copernicus module. It was set set up\nin 2018 to provide Earth Observation relevant data for the first time in\nLUCAS history. The dataset consist of 63,287 polygons of various sizes and\nshapes with consistent land cover, making the ideal tool for polygon-based\nextraction from remote sensing data. The harmonization process has improved\nthe land cover legend to LUCAS Level-3, and has joined, wherever deemed\nappropriate, the attribute data from the 2018 LUCAS survey, augmenting the\npossibilities for data extraction to the fullest potential of the LUCAS\ncollected variables.\n\nThe text \"C1 (Instructions)\" in the table schema descriptions refers to\n[this document](https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_harmonised/3_supporting/LUCAS2018-C1-Instructions.pdf).\n\nSee also [the LUCAS points dataset](JRC_LUCAS_HARMO_THLOC_V1).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JRC_LUCAS_HARMO_COPERNICUS_POLYGONS_V1_2018",
+            "type": "text/html",
+            "title": "Run the example for JRC/LUCAS_HARMO/COPERNICUS_POLYGONS/V1/2018 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/JRC/JRC_LUCAS_HARMO_COPERNICUS_POLYGONS_V1_2018_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/JRC_LUCAS_HARMO_COPERNICUS_POLYGONS_V1_2018#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://www.dropbox.com/s/f467ffmvh6nl5au/l2018_poly_attr_geomCC.csv?dl=0"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_LUCAS_HARMO_COPERNICUS_POLYGONS_V1_2018.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/catalog.json",
+            "type": "application/json",
+            "title": "JRC"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "Licensed under the Creative Commons Attribution 4.0 International License.\n",
+    "gee:type": "table",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "copernicus",
+        "eu",
+        "jrc",
+        "landcover",
+        "landuse",
+        "lucas"
+    ],
+    "providers": [
+        {
+            "name": "Joint Research Center, Unit D5",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2018_Copernicus/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/JRC_LUCAS_HARMO_COPERNICUS_POLYGONS_V1_2018"
+        }
+    ],
+    "sci:citation": "d'Andrimont, R., Verhegghen, A., Meroni, M., Lemoine, G., Strobl, P.,\nEiselt, B., Yordanov, M., Martinez-Sanchez, L. and van der Velde, M., 2020.\nLUCAS Copernicus 2018: Earth Observation relevant in-situ data on land cover\nthroughout the European Union. Earth System Science Data Discussions, 2020,\npp.1-19.\n[doi:10.5194/essd-13-1119-2021](https://doi.org/10.5194/essd-13-1119-2021)\n",
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "LUCAS Polygons",
+                "lookat": {
+                    "lat": 37,
+                    "lon": -6,
+                    "zoom": 10
+                },
+                "table_visualization": {
+                    "color": "489734",
+                    "point_size": 3
+                }
+            },
+            {
+                "display_name": "LUCAS Polygons",
+                "lookat": {
+                    "lat": 37,
+                    "lon": -6,
+                    "zoom": 10
+                },
+                "visualize_as": "FeatureView"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 150,
+            "thinning_strategy": "HIGHER_DENSITY"
+        }
+    },
+    "title": "LUCAS Copernicus (Polygons with attributes, 2018) V1",
+    "version": "V1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -13.359375,
+                    34.307144,
+                    34.804688,
+                    71.187754
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-02-05T00:00:00Z",
+                    "2019-03-14T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

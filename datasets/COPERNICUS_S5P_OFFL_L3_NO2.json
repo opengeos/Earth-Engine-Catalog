@@ -1,0 +1,359 @@
+{
+    "type": "Collection",
+    "id": "COPERNICUS/S5P/OFFL/L3_NO2",
+    "stac_version": "1.0.0",
+    "description": "### OFFL/L3_NO2\n\nThis dataset provides offline high-resolution imagery of NO<sub>2</sub> concentrations.\n\nNitrogen oxides (NO<sub>2</sub> and NO) are important trace gases in the Earth's atmosphere,\npresent in both the troposphere and the stratosphere. They enter the atmosphere\nas a result of anthropogenic activities (notably fossil fuel combustion and\nbiomass burning) and natural processes (wildfires, lightning, and microbiological processes in\nsoils). Here, NO<sub>2</sub> is used to represent concentrations\nof collective nitrogen oxides because during daytime, i.e. in the presence of\nsunlight, a photochemical cycle involving ozone (O<sub>3</sub>) converts NO into NO<sub>2</sub>\nand vice versa on a timescale of minutes. The TROPOMI NO<sub>2</sub> processing system is based\non the algorithm developments for the DOMINO-2 product and for the EU QA4ECV NO<sub>2</sub>\nreprocessed dataset for OMI, and has been adapted for TROPOMI. This\nretrieval-assimilation-modelling system uses the 3-dimensional global TM5-MP\nchemistry transport model at a resolution of 1x1 degree as an essential element.\n[[More information](http://www.tropomi.eu/data-products/nitrogen-dioxide)]\n\n### OFFL L3 Product\n\nTo make our OFFL L3 products, we find areas within the product's bounding\nbox with data using a command like this:\n\n```\nharpconvert --format hdf5 --hdf5-compression 9\n-a 'tropospheric_NO2_column_number_density_validity>50;derive(datetime_stop {time})'\nS5P_OFFL_L2__NO2____20181010T074409_20181010T092539_05135_01_010100_20181016T092316.nc\ngrid_info.h5\n```\n\nWe then merge all the data into one large mosaic (area-averaging values for\npixels that may have different values for different times).  From the\nmosaic, we create a set of tiles containing orthorectified raster data.\n\nExample harpconvert invocation for one tile:\n```\nharpconvert --format hdf5 --hdf5-compression 9\n-a 'tropospheric_NO2_column_number_density_validity>50;derive(datetime_stop {time});\nbin_spatial(2001, 50.000000, 0.01, 2001, -120.000000, 0.01);\nkeep(NO2_column_number_density,tropospheric_NO2_column_number_density,\n     stratospheric_NO2_column_number_density,NO2_slant_column_number_density,\n     tropopause_pressure,absorbing_aerosol_index,cloud_fraction,\n     sensor_altitude,sensor_azimuth_angle,\n     sensor_zenith_angle,solar_azimuth_angle,solar_zenith_angle)'\nS5P_OFFL_L2__NO2____20181010T074409_20181010T092539_05135_01_010100_20181016T092316.nc\noutput.h5\n```\n\n### Sentinel-5 Precursor\n\nSentinel-5 Precursor is a satellite launched on 13 October 2017\nby the European Space Agency to monitor air pollution.  The onboard sensor\nis frequently referred to as Tropomi (TROPOspheric Monitoring Instrument).\n\nAll of the S5P datasets, except CH<sub>4</sub>, have two versions: Near Real-Time (NRTI) and Offline\n(OFFL). CH<sub>4</sub> is available as OFFL only. The NRTI assets cover a smaller area than the OFFL\nassets, but appear more quickly after acquisition.  The OFFL assets contain data\nfrom a single orbit (which, due to half the earth being dark, contains\ndata only for a single hemisphere).\n\nBecause of noise on the data, negative vertical column values are often\nobserved in particular over clean regions or for low SO2 emissions. It is\nrecommended not to filter these values except for outliers, i.e.\nfor vertical columns lower than -0.001 mol/m^2.\n\nThe original Sentinel 5P Level 2 (L2) data is binned\nby time, not by latitude/longitude.  To make it possible to ingest the data\ninto Earth Engine, each Sentinel 5P L2 product is converted to L3, keeping\na single grid per orbit (that is, no aggregation across products\nis performed).\n\nSource products spanning the antimeridian are ingested as two Earth Engine\nassets, with suffixes _1 and _2.\n\nThe conversion to L3 is done by the [harpconvert](https://cdn.rawgit.com/stcorp/harp/master/doc/html/harpconvert.html)\ntool using the `bin_spatial` operation.  The source data is filtered to\nremove pixels with QA values less than:\n\n*  80% for AER_AI\n*  75% for the tropospheric_NO2_column_number_density band of NO2\n*  50% for all other datasets except for O3 and SO2\n\nThe O3_TCL product is ingested directly (without running harpconvert).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/COPERNICUS_S5P_OFFL_L3_NO2",
+            "type": "text/html",
+            "title": "Run the example for COPERNICUS/S5P/OFFL/L3_NO2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/COPERNICUS/COPERNICUS_S5P_OFFL_L3_NO2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_NO2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_S5P_OFFL_L3_NO2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/catalog.json",
+            "type": "application/json",
+            "title": "COPERNICUS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 2,
+        "type": "revisit_interval",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "The use of Sentinel data is governed by the [Copernicus\nSentinel Data Terms and Conditions.](https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice)\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "air_quality",
+        "copernicus",
+        "esa",
+        "eu",
+        "knmi",
+        "nitrogen_dioxide",
+        "no2",
+        "pollution",
+        "s5p",
+        "sentinel",
+        "tropomi"
+    ],
+    "providers": [
+        {
+            "name": "European Union/ESA/Copernicus",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://sentinel.esa.int/web/sentinel/user-guides/sentinel-5p-tropomi"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_NO2"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Total vertical column of NO<sub>2</sub> (ratio of the slant column density of NO<sub>2</sub>\nand the total air mass factor).\n",
+                "gee:units": "mol/m^2",
+                "name": "NO2_column_number_density"
+            },
+            {
+                "description": "tropospheric vertical column of NO<sub>2</sub>",
+                "gee:units": "mol/m^2",
+                "name": "tropospheric_NO2_column_number_density"
+            },
+            {
+                "description": "stratospheric vertical column of NO<sub>2</sub>",
+                "gee:units": "mol/m^2",
+                "name": "stratospheric_NO2_column_number_density"
+            },
+            {
+                "description": "NO<sub>2</sub> slant column density",
+                "gee:units": "mol/m^2",
+                "name": "NO2_slant_column_number_density"
+            },
+            {
+                "description": "topopause pressure",
+                "gee:units": "Pa",
+                "name": "tropopause_pressure"
+            },
+            {
+                "description": "Aerosol index (at wavelengths 354/388, i.e. the OMI pair) from the AER_AI\nlevel 2 product.  See [Level 2 Algorithms - Aerosol Index](https://earth.esa.int/web/sentinel/technical-guides/sentinel-5p/level-2/aerosol-index).\n",
+                "gee:units": "Dimensionless",
+                "name": "absorbing_aerosol_index"
+            },
+            {
+                "description": "Effective cloud fraction.\nSee the [Sentinel 5P L2 Input/Output Data Definition Spec](https://sentinels.copernicus.eu/documents/247904/3119978/Sentinel-5P-Level-2-Input-Output-Data-Definition), p.220.\n",
+                "gee:units": "fraction",
+                "name": "cloud_fraction"
+            },
+            {
+                "description": "Altitude of the satellite with respect to the geodetic sub-satellite point\n(WGS84).",
+                "gee:units": "m",
+                "name": "sensor_altitude"
+            },
+            {
+                "description": "Azimuth angle of the satellite at the ground pixel location (WGS84); angle\nmeasured East-of-North.",
+                "gee:units": "degrees",
+                "name": "sensor_azimuth_angle"
+            },
+            {
+                "description": "Zenith angle of the satellite at the ground pixel location (WGS84); angle\nmeasured away from the vertical.\n",
+                "gee:units": "degrees",
+                "name": "sensor_zenith_angle"
+            },
+            {
+                "description": "Azimuth angle of the Sun at the ground pixel location (WGS84); angle\nmeasured East-of-North.",
+                "gee:units": "degrees",
+                "name": "solar_azimuth_angle"
+            },
+            {
+                "description": "Zenith angle of the satellite at the ground pixel location (WGS84); angle\nmeasured away from the vertical.\n",
+                "gee:units": "degrees",
+                "name": "solar_zenith_angle"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "The algorithm version used in L2 processing. It is separate from the\nprocessor (framework) version, to accommodate different release\nschedules for different products.\n",
+                "name": "ALGORITHM_VERSION",
+                "type": "STRING"
+            },
+            {
+                "description": "The date, expressed as milliseconds since 1 Jan 1970,\nwhen the software used to perform L2 processing was built.\n",
+                "name": "BUILD_DATE",
+                "type": "STRING"
+            },
+            {
+                "description": "The version of the HARP tool used to grid the L2 data into an L3\nproduct.",
+                "name": "HARP_VERSION",
+                "type": "INT"
+            },
+            {
+                "description": "The institution where data processing from L1 to L2 was performed.",
+                "name": "INSTITUTION",
+                "type": "STRING"
+            },
+            {
+                "description": "The date, expressed as milliseconds since 1 Jan 1970,\nwhen Google processed the L2 data into L3 using harpconvert.\n",
+                "name": "L3_PROCESSING_TIME",
+                "type": "INT"
+            },
+            {
+                "description": "The maximum latitude of the asset (degrees).",
+                "name": "LAT_MAX",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "The minimum latitude of the asset (degrees).",
+                "name": "LAT_MIN",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "The maximum longitude of the asset (degrees).",
+                "name": "LON_MAX",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "The minimum longitude of the asset (degrees).",
+                "name": "LON_MIN",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "The orbit number of the satellite when the data was acquired.",
+                "name": "ORBIT",
+                "type": "INT"
+            },
+            {
+                "description": "Name of the platform which acquired the data.",
+                "name": "PLATFORM",
+                "type": "STRING"
+            },
+            {
+                "description": "The processing status of the product on a global level, mainly based\non the availability of auxiliary input data.  Possible values are\n\"Nominal\" and \"Degraded\".\n",
+                "name": "PROCESSING_STATUS",
+                "type": "STRING"
+            },
+            {
+                "description": "The version of the software used for L2 processing, as a string of\nthe form \"major.minor.patch\".",
+                "name": "PROCESSOR_VERSION",
+                "type": "STRING"
+            },
+            {
+                "description": "Id of the L2 product used to generate this asset.",
+                "name": "PRODUCT_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "Indicator that specifies whether the product quality is degraded or\nnot.  Allowed values are \"Degraded\" and \"Nominal\".\n",
+                "name": "PRODUCT_QUALITY",
+                "type": "STRING"
+            },
+            {
+                "description": "Name of the sensor which acquired the data.",
+                "name": "SENSOR",
+                "type": "STRING"
+            },
+            {
+                "description": "Spatial resolution at nadir. For most products this is `3.5x7km2`,\nexcept for `L2__O3__PR`, which uses `28x21km2`, and\n`L2__CO____` and `L2__CH4___`, which both use `7x7km2`.\nThis attribute originates from the CCI standard.\n",
+                "name": "SPATIAL_RESOLUTION",
+                "type": "STRING"
+            },
+            {
+                "description": "Days from 1 Jan 1950 to when the data was acquired.",
+                "name": "TIME_REFERENCE_DAYS_SINCE_1950",
+                "type": "INT"
+            },
+            {
+                "description": "The Julian day number when the data was acquired.",
+                "name": "TIME_REFERENCE_JULIAN_DAY",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "UUID for the L2 product file.",
+                "name": "TRACKING_ID",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "RGB",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "tropospheric_NO2_column_number_density"
+                        ],
+                        "max": [
+                            0.0002
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "black",
+                            "blue",
+                            "purple",
+                            "cyan",
+                            "green",
+                            "yellow",
+                            "red"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 25.01,
+                    "lon": 96.68,
+                    "zoom": 3
+                }
+            }
+        ],
+        "gsd": [
+            1113.2
+        ],
+        "instruments": [
+            "TROPOMI"
+        ],
+        "platform": [
+            "Sentinel-5P"
+        ],
+        "NO2_column_number_density": {
+            "minimum": -0.00051,
+            "maximum": 0.0192
+        },
+        "NO2_slant_column_number_density": {
+            "minimum": 1.48e-05,
+            "maximum": 0.003908
+        },
+        "absorbing_aerosol_index": {
+            "minimum": -14.43,
+            "maximum": 10.67
+        },
+        "cloud_fraction": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "sensor_altitude": {
+            "minimum": 828543,
+            "maximum": 856078
+        },
+        "sensor_azimuth_angle": {
+            "minimum": -180,
+            "maximum": 180
+        },
+        "sensor_zenith_angle": {
+            "minimum": 0.09,
+            "maximum": 67
+        },
+        "solar_azimuth_angle": {
+            "minimum": -180,
+            "maximum": 180
+        },
+        "solar_zenith_angle": {
+            "minimum": 8,
+            "maximum": 82
+        },
+        "stratospheric_NO2_column_number_density": {
+            "minimum": 8.6e-06,
+            "maximum": 0.000107
+        },
+        "tropopause_pressure": {
+            "minimum": 6156,
+            "maximum": 37345
+        },
+        "tropospheric_NO2_column_number_density": {
+            "minimum": -0.0005375,
+            "maximum": 0.0192044
+        }
+    },
+    "title": "Sentinel-5P OFFL NO2: Offline Nitrogen Dioxide",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-06-28T10:24:07Z",
+                    "2022-12-12T21:58:39Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

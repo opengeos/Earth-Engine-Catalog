@@ -1,0 +1,261 @@
+{
+    "type": "Collection",
+    "id": "JRC/D5/EUCROPMAP/V1",
+    "stac_version": "1.0.0",
+    "description": "European crop type map based on Sentinel-1 and LUCAS Copernicus in-situ\nobservations for 2018.\n\nCapitalizing on the unique\n[LUCAS 2018 Copernicus in-situ survey](JRC_LUCAS_HARMO_THLOC_V1),\nthis dataset is the first continental crop type map with 10m\npixel size for the EU based on S1A and S1B Synthetic Aperture Radar\nobservations for the year 2018.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JRC_D5_EUCROPMAP_V1",
+            "type": "text/html",
+            "title": "Run the example for JRC/D5/EUCROPMAP/V1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/JRC/JRC_D5_EUCROPMAP_V1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/JRC_D5_EUCROPMAP_V1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_D5_EUCROPMAP_V1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/catalog.json",
+            "type": "application/json",
+            "title": "JRC"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "crop",
+        "eu",
+        "jrc",
+        "lucas",
+        "sentinel1_derived"
+    ],
+    "providers": [
+        {
+            "name": "Joint Research Center (JRC)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://data.jrc.ec.europa.eu/dataset/15f86c84-eae1-4723-8e00-c1b35c8f56b9"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/JRC_D5_EUCROPMAP_V1"
+        }
+    ],
+    "sci:citation": "d'Andrimont, R., Verhegghen, A., Lemoine, G., Kempeneers, P., Meroni, M.,\n& Van der Velde, M. (2021). From parcel to continental scale-A first\nEuropean crop type map based on Sentinel-1 and LUCAS Copernicus in-situ\nobservations. Remote sensing of environment, 266, 112708.\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Main crop-specific land cover classification.",
+                "gee:classes": [
+                    {
+                        "color": "a57000",
+                        "description": "Common wheat",
+                        "value": 211
+                    },
+                    {
+                        "color": "896054",
+                        "description": "Durum wheat",
+                        "value": 212
+                    },
+                    {
+                        "color": "e2007c",
+                        "description": "Barley",
+                        "value": 213
+                    },
+                    {
+                        "color": "aa007c",
+                        "description": "Rye",
+                        "value": 214
+                    },
+                    {
+                        "color": "a05989",
+                        "description": "Oats",
+                        "value": 215
+                    },
+                    {
+                        "color": "ffd300",
+                        "description": "Maize",
+                        "value": 216
+                    },
+                    {
+                        "color": "00a8e2",
+                        "description": "Rice",
+                        "value": 217
+                    },
+                    {
+                        "color": "d69ebc",
+                        "description": "Triticale",
+                        "value": 218
+                    },
+                    {
+                        "color": "d69ebc",
+                        "description": "Other cereals",
+                        "value": 219
+                    },
+                    {
+                        "color": "dda50a",
+                        "description": "Potatoes",
+                        "value": 221
+                    },
+                    {
+                        "color": "a800e2",
+                        "description": "Sugar beet",
+                        "value": 222
+                    },
+                    {
+                        "color": "00af49",
+                        "description": "Other root crops",
+                        "value": 223
+                    },
+                    {
+                        "color": "00af49",
+                        "description": "Other non-permanent industrial crops",
+                        "value": 230
+                    },
+                    {
+                        "color": "ffff00",
+                        "description": "Sunflower",
+                        "value": 231
+                    },
+                    {
+                        "color": "d1ff00",
+                        "description": "Rapeseed and turnip rapeseed",
+                        "value": 232
+                    },
+                    {
+                        "color": "267000",
+                        "description": "Soya",
+                        "value": 233
+                    },
+                    {
+                        "color": "f2a377",
+                        "description": "Dry pulses",
+                        "value": 240
+                    },
+                    {
+                        "color": "e8bfff",
+                        "description": "Fodder crops (cereals and leguminous)",
+                        "value": 250
+                    },
+                    {
+                        "color": "696969",
+                        "description": "Bare arable land",
+                        "value": 290
+                    },
+                    {
+                        "color": "93cc93",
+                        "description": "Woodland and Shrubland (incl. permanent crops)",
+                        "value": 300
+                    },
+                    {
+                        "color": "e8ffbf",
+                        "description": "Grasslands",
+                        "value": 500
+                    }
+                ],
+                "name": "classification"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Array of cropland classification names.",
+                "name": "classification_class_names",
+                "type": "STRING_LIST"
+            },
+            {
+                "description": "Array of hex code color strings used for the classification palette.",
+                "name": "classification_class_palette",
+                "type": "STRING_LIST"
+            },
+            {
+                "description": "Value of the cropland classification.",
+                "name": "classification_class_values",
+                "type": "INT_LIST"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Classification",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "classification"
+                        ],
+                        "max": [
+                            500
+                        ],
+                        "min": [
+                            211
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 48,
+                    "lon": 10,
+                    "zoom": 4
+                }
+            }
+        ],
+        "gsd": [
+            10
+        ]
+    },
+    "title": "EUCROPMAP 2018",
+    "version": "V1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -16.171875,
+                    34.313433,
+                    36.386719,
+                    72.182526
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-01-01T00:00:00Z",
+                    "2019-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

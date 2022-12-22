@@ -1,0 +1,149 @@
+{
+    "type": "Collection",
+    "id": "AU/GA/AUSTRALIA_5M_DEM",
+    "stac_version": "1.0.0",
+    "description": "The Digital Elevation Model (DEM) 5 meter Grid of Australia\nderived from LiDAR model represents a National 5 meter (bare\nearth) DEM which has been derived from some 236 individual LiDAR\nsurveys between 2001 and 2015 covering an area in excess of 245,000\nsquare kilometers. These surveys cover Australia's populated\ncoastal zone; floodplain surveys within the Murray Darling Basin,\nand individual surveys of major and minor population centers.\nAll available 1 meter resolution LiDAR-derived DEMs have been\ncompiled and resampled using a neighborhood-mean method to 5\nmeter resolution datasets for each survey area, and then merged\ninto a single dataset for each State. Each state's dataset is\nprovided as a separate image within the image collection.\n\nThe acquisition of the individual LiDAR surveys and derivation\nof the 5m product has been part of a long-term collaboration\nbetween Geoscience Australia, the Cooperative Research Centre\nfor Spatial Information (CRCSI), the Departments of Climate Change\nand Environment, State and Territory jurisdictions, Local Government\nand the Murray Darling Basin Authority under the auspices of\nthe National Elevation Data Framework and Coastal and Urban DEM\nProgram. The source datasets have been captured to standards\nthat are generally consistent with the Australian ICSM LiDAR\nAcquisition Specifications with require a fundamental vertical\naccuracy of at least 0.30m (95% confidence) and horizontal accuracy\nof at least 0.80m (95% confidence).\n\nThere are several areas close to Perth with null (NaN) values around\n(115.85, -31.99), (115.72, -33.75), and (115.10, -33.43).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/AU_GA_AUSTRALIA_5M_DEM",
+            "type": "text/html",
+            "title": "Run the example for AU/GA/AUSTRALIA_5M_DEM in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/AU/AU_GA_AUSTRALIA_5M_DEM_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/AU_GA_AUSTRALIA_5M_DEM#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.4225/25/5652419862E23"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/AU/AU_GA_AUSTRALIA_5M_DEM.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/AU/catalog.json",
+            "type": "application/json",
+            "title": "AU"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "This dataset is made available by Geoscience Australia\nunder the Creative Commons Attribution 4.0 International License.\nThe data must be referenced with the provided citation and DOI.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "australia",
+        "dem",
+        "elevation",
+        "ga",
+        "geophysical",
+        "geoscience_australia",
+        "lidar"
+    ],
+    "providers": [
+        {
+            "name": "Geoscience Australia",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/89644"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/AU_GA_AUSTRALIA_5M_DEM"
+        }
+    ],
+    "sci:citation": "Geoscience Australia, 2015. Digital Elevation Model (DEM) of Australia\nderived from LiDAR 5 Metre Grid. Geoscience Australia, Canberra.\n",
+    "sci:doi": "10.4225/25/5652419862E23",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Elevation",
+                "gee:units": "m",
+                "name": "elevation"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Elevation",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "elevation"
+                        ],
+                        "max": [
+                            150
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "0000ff",
+                            "00ffff",
+                            "ffff00",
+                            "ff0000",
+                            "ffffff"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -35.9113,
+                    "lon": 140.1883,
+                    "zoom": 8
+                }
+            }
+        ],
+        "gsd": [
+            5
+        ]
+    },
+    "title": "Australian 5M DEM",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    114.09,
+                    -43.45,
+                    153.64,
+                    -9.88
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-12-01T00:00:00Z",
+                    "2015-12-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

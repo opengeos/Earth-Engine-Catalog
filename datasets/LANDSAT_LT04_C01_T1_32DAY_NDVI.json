@@ -1,0 +1,153 @@
+{
+    "type": "Collection",
+    "id": "LANDSAT/LT04/C01/T1_32DAY_NDVI",
+    "stac_version": "1.0.0",
+    "description": "These Landsat 4 TM Collection 1 Tier 1 composites are made from Tier 1 orthorectified scenes, using the\n  computed top-of-atmosphere (TOA) reflectance.\n  See [Chander et al. (2009)](https://www.sciencedirect.com/science/article/pii/S0034425709000169)\n  for details on the TOA computation.\n\nThe Normalized Difference Vegetation Index is\ngenerated from the Near-IR and Red bands of each scene as (NIR - Red) /\n(NIR + Red), and ranges in value from -1.0 to 1.0.\n\nThese composites are created from\nall the scenes in\neach 32-day period beginning from the first day of the year and\ncontinuing to the 352nd day of the year.  The last composite of the\nyear, beginning on day 353, will overlap the first composite of the\nfollowing year by 20 days.  All the images from each 32-day period are\nincluded in the composite, with the most recent pixel as the composite value.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/LANDSAT_LT04_C01_T1_32DAY_NDVI",
+            "type": "text/html",
+            "title": "Run the example for LANDSAT/LT04/C01/T1_32DAY_NDVI in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/LANDSAT/LANDSAT_LT04_C01_T1_32DAY_NDVI_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LT04_C01_T1_32DAY_NDVI#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_LT04_C01_T1_32DAY_NDVI.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/catalog.json",
+            "type": "application/json",
+            "title": "LANDSAT"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 32,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:is_derived": true,
+    "gee:min_zoom_level": 4,
+    "gee:terms_of_use": "Landsat datasets are federally created data\nand therefore reside in the public domain and may be used, transferred, or reproduced without copyright restriction.\n\nAcknowledgement or credit of the USGS as data source should be provided\nby including a line of text citation such as the example shown below.\n\n(Product, Image, Photograph, or Dataset Name) courtesy of\nthe U.S. Geological Survey\n\nExample: Landsat-7 image courtesy of the U.S. Geological Survey\n\nSee the\n[USGS Visual Identity System Guidance](https://www.usgs.gov/information-policies-and-instructions/usgs-visual-identity-system)\nfor further details on proper citation and acknowledgement of USGS products.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "landsat",
+        "ndvi",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "Google",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://earthengine.google.com"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LT04_C01_T1_32DAY_NDVI"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Normalized Difference Vegetation Index",
+                "gsd": 30,
+                "name": "NDVI"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Colorized",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "NDVI"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "FFFFFF",
+                            "CE7E45",
+                            "DF923D",
+                            "F1B555",
+                            "FCD163",
+                            "99B718",
+                            "74A901",
+                            "66A000",
+                            "529400",
+                            "3E8601",
+                            "207401",
+                            "056201",
+                            "004C00",
+                            "023B01",
+                            "012E01",
+                            "011D01",
+                            "011301"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 46.529,
+                    "lon": 6.746,
+                    "zoom": 6
+                }
+            }
+        ],
+        "NDVI": {
+            "minimum": -1,
+            "maximum": 1
+        }
+    },
+    "title": "Landsat 4 TM Collection 1 Tier 1 32-Day NDVI Composite",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1982-08-13T00:00:00Z",
+                    "1993-11-17T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

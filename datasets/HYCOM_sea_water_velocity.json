@@ -1,0 +1,457 @@
+{
+    "type": "Collection",
+    "id": "HYCOM/sea_water_velocity",
+    "stac_version": "1.0.0",
+    "description": "The Hybrid Coordinate Ocean Model (HYCOM) is a data-assimilative hybrid\nisopycnal-sigma-pressure (generalized) coordinate ocean model. The subset\nof HYCOM data hosted in EE contains the variables salinity, temperature,\nvelocity, and elevation. They have been interpolated to a uniform\n0.08 degree lat/long grid between 80.48\u00b0S and 80.48\u00b0N. The salinity,\ntemperature, and velocity variables have been interpolated to 40\nstandard z-levels.\n\nThe HYCOM Consortium, which includes the National Ocean Partnership\nProgram (NOPP), is part of the U.S. Global Ocean Data Assimilation\nExperiment (GODAE).\n\nFunded by the National Ocean Partnership Program, the Office of Naval\nResearch (ONR), and DoD High Performance Computing Modernization Program.\n\nFor more information, see:\n\n- [hycom.org](https://www.hycom.org/)\n- [GIS StackExchange hycom](https://gis.stackexchange.com/questions/tagged/hycom)\n- Wikipedia [HyCOM](https://en.wikipedia.org/wiki/HyCOM)\n- Wikipedia [List of ocean circulation models](https://en.wikipedia.org/wiki/List_of_ocean_circulation_models)\n- Wikipedia [Ocean general circulation model (OGCM)](https://en.wikipedia.org/wiki/Ocean_general_circulation_model)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/HYCOM_sea_water_velocity",
+            "type": "text/html",
+            "title": "Run the example for HYCOM/sea_water_velocity in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/HYCOM/HYCOM_sea_water_velocity_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/HYCOM_sea_water_velocity#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/HYCOM/HYCOM_sea_water_velocity.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/HYCOM/catalog.json",
+            "type": "application/json",
+            "title": "HYCOM"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "This dataset is freely available with no restrictions.",
+    "gee:type": "image_collection",
+    "keywords": [
+        "hycom",
+        "nopp",
+        "ocean",
+        "velocity",
+        "water"
+    ],
+    "providers": [
+        {
+            "name": "NOPP",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://hycom.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/HYCOM_sea_water_velocity"
+        }
+    ],
+    "sci:citation": "J. A. Cummings and O. M. Smedstad. 2013: Variational Data Assimilation for\nthe Global Ocean. Data Assimilation for Atmospheric, Oceanic and Hydrologic\nApplications vol II, chapter 13, 303-343.\n",
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Experiment number",
+                "name": "experiment",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Water Velocity",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "velocity_u_0",
+                            "velocity_v_0",
+                            "velocity_v_0"
+                        ],
+                        "max": [
+                            4000
+                        ],
+                        "min": [
+                            -1000
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 26.4,
+                    "lon": -88.6,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            8905.6
+        ],
+        "velocity_u_0": {
+            "minimum": -31557,
+            "maximum": 16899
+        },
+        "velocity_u_10": {
+            "minimum": -31563,
+            "maximum": 16828
+        },
+        "velocity_u_100": {
+            "minimum": -32768,
+            "maximum": 24932
+        },
+        "velocity_u_1000": {
+            "minimum": -32768,
+            "maximum": 6951
+        },
+        "velocity_u_12": {
+            "minimum": -31547,
+            "maximum": 16828
+        },
+        "velocity_u_125": {
+            "minimum": -32768,
+            "maximum": 24627
+        },
+        "velocity_u_1250": {
+            "minimum": -32768,
+            "maximum": 8351
+        },
+        "velocity_u_15": {
+            "minimum": -31517,
+            "maximum": 16828
+        },
+        "velocity_u_150": {
+            "minimum": -32768,
+            "maximum": 24288
+        },
+        "velocity_u_1500": {
+            "minimum": -22775,
+            "maximum": 3659
+        },
+        "velocity_u_2": {
+            "minimum": -31588,
+            "maximum": 16806
+        },
+        "velocity_u_20": {
+            "minimum": -32768,
+            "maximum": 16743
+        },
+        "velocity_u_200": {
+            "minimum": -32768,
+            "maximum": 21844
+        },
+        "velocity_u_2000": {
+            "minimum": -22448,
+            "maximum": 2811
+        },
+        "velocity_u_25": {
+            "minimum": -32768,
+            "maximum": 16370
+        },
+        "velocity_u_250": {
+            "minimum": -32768,
+            "maximum": 21389
+        },
+        "velocity_u_2500": {
+            "minimum": -32768,
+            "maximum": 1865
+        },
+        "velocity_u_30": {
+            "minimum": -32768,
+            "maximum": 15996
+        },
+        "velocity_u_300": {
+            "minimum": -32768,
+            "maximum": 14403
+        },
+        "velocity_u_3000": {
+            "minimum": -21841,
+            "maximum": 1677
+        },
+        "velocity_u_35": {
+            "minimum": -32768,
+            "maximum": 15639
+        },
+        "velocity_u_350": {
+            "minimum": -32768,
+            "maximum": 11257
+        },
+        "velocity_u_4": {
+            "minimum": -31589,
+            "maximum": 16831
+        },
+        "velocity_u_40": {
+            "minimum": -32768,
+            "maximum": 15120
+        },
+        "velocity_u_400": {
+            "minimum": -32768,
+            "maximum": 14624
+        },
+        "velocity_u_4000": {
+            "minimum": -21345,
+            "maximum": 1980
+        },
+        "velocity_u_45": {
+            "minimum": -32768,
+            "maximum": 15066
+        },
+        "velocity_u_50": {
+            "minimum": -32768,
+            "maximum": 14808
+        },
+        "velocity_u_500": {
+            "minimum": -32768,
+            "maximum": 11012
+        },
+        "velocity_u_5000": {
+            "minimum": -21469,
+            "maximum": 2013
+        },
+        "velocity_u_6": {
+            "minimum": -31589,
+            "maximum": 16794
+        },
+        "velocity_u_60": {
+            "minimum": -32768,
+            "maximum": 15986
+        },
+        "velocity_u_600": {
+            "minimum": -32768,
+            "maximum": 10572
+        },
+        "velocity_u_70": {
+            "minimum": -32768,
+            "maximum": 14406
+        },
+        "velocity_u_700": {
+            "minimum": -32768,
+            "maximum": 10330
+        },
+        "velocity_u_8": {
+            "minimum": -31575,
+            "maximum": 16828
+        },
+        "velocity_u_80": {
+            "minimum": -32768,
+            "maximum": 27875
+        },
+        "velocity_u_800": {
+            "minimum": -32768,
+            "maximum": 8503
+        },
+        "velocity_u_90": {
+            "minimum": -32768,
+            "maximum": 27666
+        },
+        "velocity_u_900": {
+            "minimum": -32768,
+            "maximum": 6941
+        },
+        "velocity_v_0": {
+            "minimum": -20004,
+            "maximum": 32767
+        },
+        "velocity_v_10": {
+            "minimum": -19582,
+            "maximum": 32767
+        },
+        "velocity_v_100": {
+            "minimum": -16717,
+            "maximum": 23631
+        },
+        "velocity_v_1000": {
+            "minimum": -2299,
+            "maximum": 20956
+        },
+        "velocity_v_12": {
+            "minimum": -19582,
+            "maximum": 32767
+        },
+        "velocity_v_125": {
+            "minimum": -14743,
+            "maximum": 23518
+        },
+        "velocity_v_1250": {
+            "minimum": -2244,
+            "maximum": 20950
+        },
+        "velocity_v_15": {
+            "minimum": -19582,
+            "maximum": 32767
+        },
+        "velocity_v_150": {
+            "minimum": -14700,
+            "maximum": 23444
+        },
+        "velocity_v_1500": {
+            "minimum": -2154,
+            "maximum": 20937
+        },
+        "velocity_v_2": {
+            "minimum": -20000,
+            "maximum": 32767
+        },
+        "velocity_v_20": {
+            "minimum": -18593,
+            "maximum": 32767
+        },
+        "velocity_v_200": {
+            "minimum": -13198,
+            "maximum": 23434
+        },
+        "velocity_v_2000": {
+            "minimum": -2010,
+            "maximum": 20936
+        },
+        "velocity_v_25": {
+            "minimum": -18131,
+            "maximum": 32767
+        },
+        "velocity_v_250": {
+            "minimum": -13176,
+            "maximum": 23418
+        },
+        "velocity_v_2500": {
+            "minimum": -1863,
+            "maximum": 18919
+        },
+        "velocity_v_30": {
+            "minimum": -17489,
+            "maximum": 32767
+        },
+        "velocity_v_300": {
+            "minimum": -3218,
+            "maximum": 21128
+        },
+        "velocity_v_3000": {
+            "minimum": -1819,
+            "maximum": 18923
+        },
+        "velocity_v_35": {
+            "minimum": -17409,
+            "maximum": 32767
+        },
+        "velocity_v_350": {
+            "minimum": -3183,
+            "maximum": 20974
+        },
+        "velocity_v_4": {
+            "minimum": -20000,
+            "maximum": 32767
+        },
+        "velocity_v_40": {
+            "minimum": -17386,
+            "maximum": 32767
+        },
+        "velocity_v_400": {
+            "minimum": -3089,
+            "maximum": 21402
+        },
+        "velocity_v_4000": {
+            "minimum": -1383,
+            "maximum": 18856
+        },
+        "velocity_v_45": {
+            "minimum": -17302,
+            "maximum": 32767
+        },
+        "velocity_v_50": {
+            "minimum": -17302,
+            "maximum": 32767
+        },
+        "velocity_v_500": {
+            "minimum": -2848,
+            "maximum": 20965
+        },
+        "velocity_v_5000": {
+            "minimum": -971,
+            "maximum": 15383
+        },
+        "velocity_v_6": {
+            "minimum": -19991,
+            "maximum": 32767
+        },
+        "velocity_v_60": {
+            "minimum": -17070,
+            "maximum": 32767
+        },
+        "velocity_v_600": {
+            "minimum": -2568,
+            "maximum": 20968
+        },
+        "velocity_v_70": {
+            "minimum": -16976,
+            "maximum": 22779
+        },
+        "velocity_v_700": {
+            "minimum": -2321,
+            "maximum": 21448
+        },
+        "velocity_v_8": {
+            "minimum": -19792,
+            "maximum": 32767
+        },
+        "velocity_v_80": {
+            "minimum": -16936,
+            "maximum": 23957
+        },
+        "velocity_v_800": {
+            "minimum": -2333,
+            "maximum": 20965
+        },
+        "velocity_v_90": {
+            "minimum": -16757,
+            "maximum": 23947
+        },
+        "velocity_v_900": {
+            "minimum": -2577,
+            "maximum": 20958
+        }
+    },
+    "title": "HYCOM: Hybrid Coordinate Ocean Model, Water Velocity",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -80.48,
+                    180,
+                    80.48
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1992-10-02T00:00:00Z",
+                    "2022-12-21T09:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

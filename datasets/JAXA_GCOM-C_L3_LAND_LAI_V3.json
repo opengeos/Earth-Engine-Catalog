@@ -1,0 +1,273 @@
+{
+    "type": "Collection",
+    "id": "JAXA/GCOM-C/L3/LAND/LAI/V3",
+    "stac_version": "1.0.0",
+    "description": "This product is the sum of the one-sided green leaf area per unit ground area.\n\nThis is an ongoing dataset with a latency of 3-4 days.\n\nGCOM-C conducts long-term and continuous global observation and data collection to elucidate the\nmechanism behind fluctuations in radiation budget and carbon cycle needed to make accurate\nprojections regarding future temperature rise. At the same time, cooperating with research\ninstitutions having a climate numerical model, it contributes to reduction of errors in\ntemperature rise prediction derived from the climate numerical model and improvement of accuracy\nof prediction of various environmental changes. SGLI mounted on GCOM-C is the succession sensor\nof the Global Imager (GLI) mounted on ADEOS-II (MIDORI II) and is the Imaging Radiometer which\nmeasures the radiation from near-ultraviolet to thermal infrared region (380 nm-12 um) in 19\nchannels. Global observation of once for approximately every two days is possible at\nmid-latitude near Japan by observation width at ground greater than 1,000 km. In addition, SGLI\nrealizes high resolution than the similar global sensor and has a polarized observation function\nand a multi-angle observation function.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JAXA_GCOM-C_L3_LAND_LAI_V3",
+            "type": "text/html",
+            "title": "Run the example for JAXA/GCOM-C/L3/LAND/LAI/V3 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/JAXA/JAXA_GCOM-C_L3_LAND_LAI_V3_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/JAXA_GCOM-C_L3_LAND_LAI_V3#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://gportal.jaxa.jp/gpr/index/eula?lang=en",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JAXA/JAXA_GCOM-C_L3_LAND_LAI_V3.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JAXA/catalog.json",
+            "type": "application/json",
+            "title": "JAXA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "This dataset is free to use without any restrictions (including commercial use). Anyone wishing\nto publish analyzed results or value added data products should properly credit the original\nG-Portal data, e.g., \\\"PR data by Japan Aerospace Exploration Agency\\\". For value added data\nproducts, please indicate the credit of the original G-Portal data, e.g., \\\"Original data for\nthis value added data product was provided by Japan Aerospace Exploration Agency.\\\"\n\nSee [G-Portal's terms of service (Article 7)](https://gportal.jaxa.jp/gpr/index/eula?lang=en)\nfor additional information.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "climate",
+        "g_portal",
+        "gcom",
+        "gcom_c",
+        "jaxa",
+        "lai",
+        "land",
+        "leaf_area_index"
+    ],
+    "providers": [
+        {
+            "name": "Global Change Observation Mission (GCOM)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://suzaku.eorc.jaxa.jp/GCOM/index.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/JAXA_GCOM-C_L3_LAND_LAI_V3"
+        }
+    ],
+    "sci:citation": "Kobayashi, T., Ono, Y., Kobayashi, H., Yang, W. (June. 2020). GCOM-C/SGLI\nLeaf Area Index (LAI)/ fraction of Absorbed Photosynthetically Active Radiation (fAPAR) Product\nAlgorithm Theoretical Basis Document (Version 2). Retrieved from [https://suzaku.eorc.jaxa.jp/GCOM_C/data/ATBD/ver2/V2ATBD_T2B_LAI_Kobayashi_r1.pdf](https://suzaku.eorc.jaxa.jp/GCOM_C/data/ATBD/ver2/V2ATBD_T2B_LAI_Kobayashi_r1.pdf)\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "The sum of the one-sided green leaf area per unit ground area.",
+                "name": "LAI_AVE"
+            },
+            {
+                "description": "LAI QA",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 2,
+                            "description": "Terrain type",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "water (land fraction = 0%)",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "mostly water (0% < land fraction < 50%)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "mostly coastal (50% < land fraction < 100%)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "land (land fraction = 100%)",
+                                    "value": 3
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 2
+                },
+                "name": "LAI_QA_flag"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Algorithm version",
+                "name": "ALGORITHM_VERSION",
+                "type": "STRING"
+            },
+            {
+                "description": "Spatial resolution",
+                "name": "GRID_INTERVAL",
+                "type": "STRING"
+            },
+            {
+                "description": "Unit of GRID_INTERVAL",
+                "name": "GRID_INTERVAL_UNIT",
+                "type": "STRING"
+            },
+            {
+                "description": "Image acquisition end time",
+                "name": "IMAGE_END_TIME",
+                "type": "STRING"
+            },
+            {
+                "description": "Image acquisition start time",
+                "name": "IMAGE_START_TIME",
+                "type": "STRING"
+            },
+            {
+                "description": "Good, Fair, Poor, NG",
+                "name": "PROCESSING_RESULT",
+                "type": "STRING"
+            },
+            {
+                "description": "Processing time",
+                "name": "PROCESSING_UT",
+                "type": "STRING"
+            },
+            {
+                "description": "Source filename",
+                "name": "PRODUCT_FILENAME",
+                "type": "STRING"
+            },
+            {
+                "description": "Product version",
+                "name": "PRODUCT_VERSION",
+                "type": "STRING"
+            },
+            {
+                "description": "Satellite orbit direction\n\n* A: Nighttime data\n* D: Daytime data",
+                "name": "SATELLITE_DIRECTION",
+                "type": "STRING"
+            },
+            {
+                "description": "Offset",
+                "name": "LAI_AVE_OFFSET",
+                "type": "STRING"
+            },
+            {
+                "description": "Slope",
+                "name": "LAI_AVE_SLOPE",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Leaf Area Index",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "LAI_AVE"
+                        ],
+                        "max": [
+                            8000
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "040274",
+                            "040281",
+                            "0502a3",
+                            "0502b8",
+                            "0502ce",
+                            "0502e6",
+                            "0602ff",
+                            "235cb1",
+                            "307ef3",
+                            "269db1",
+                            "30c8e2",
+                            "32d3ef",
+                            "3be285",
+                            "3ff38f",
+                            "86e26f",
+                            "3ae237",
+                            "b5e22e",
+                            "d6e21f",
+                            "fff705",
+                            "ffd611",
+                            "ffb613",
+                            "ff8b13",
+                            "ff6e08",
+                            "ff500d",
+                            "ff0000",
+                            "de0101",
+                            "c21301",
+                            "a71001",
+                            "911003"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 33.33,
+                    "lon": 128.45,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            4638.3
+        ],
+        "LAI_AVE": {
+            "minimum": 0,
+            "maximum": 65531
+        }
+    },
+    "title": "GCOM-C/SGLI L3 Leaf Area Index (V3)",
+    "version": "V3",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-11-29T00:00:00Z",
+                    "2022-12-19T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

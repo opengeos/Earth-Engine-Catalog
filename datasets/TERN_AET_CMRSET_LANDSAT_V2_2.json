@@ -1,0 +1,216 @@
+{
+    "type": "Collection",
+    "id": "TERN/AET/CMRSET_LANDSAT_V2_2",
+    "stac_version": "1.0.0",
+    "description": "This dataset provides accurate actual evapotranspiration (AET or ETa) for\nAustralia using the CMRSET algorithm. The AET band (named 'ETa') contains\nthe average daily value from the CMRSET model for all cloud-free Landsat\nobservations in that month (indicated with value 3 in the AET Data Source QA\nbits). After the Landsat 7 ETM+ Scan Line Corrector (SLC) failed on 31 May\n2003, Landsat 7 ETM+ data are only used if there are no cloud-free Landsat 5\nTM or Landsat 8 OLI data for that month. If there is no cloud-free Landsat\ndata available, pixels are infilled with blended data. The blended data will\nbe blended Landsat-MODIS until Feb 2012, then blended Landsat-VIIRS onwards\n(indicated with value 2 in the AET Data Source QA bits). If there is no\nblended data available in a month, then missing monthly AET values are\nlinearly interpolated (indicated with value 1 in the AET Data Source QA\nbits). This means monthly 30 m AET data covering all Australia, with no gaps\ndue to cloud, are available and ready to use.\n\nAccurate AET information is important for irrigation, food security, and\nenvironmental management. Like many other parts of the world, water\navailability in Australia is limited and AET is the largest consumptive\ncomponent of the water balance. In Australia 70% of available water is used\nfor crop and pasture irrigation. Better monitoring will support improved\nwater use efficiency in this sector, with any water savings available as\nenvironmental flows. Additionally, ground-water dependent ecosystems (GDE)\noccupy a small area yet are \"biodiversity hotspots\". Knowing their water\nneeds enables enhanced management of these critical areas. AET can also be\nused to model the catchment water balance. If used in water balance (mass\nbalance) calculations, then this AET value needs to be multiplied by the\nnumber of days in the month.\n\nTo let the developers know you are using this dataset, to get information on\nupdates, or if you have any questions please contact: tim.mcvicar@csiro.au,\ntom.vanniel@csiro.au, jamie.vleeshouwer@csiro.au.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/TERN_AET_CMRSET_LANDSAT_V2_2",
+            "type": "text/html",
+            "title": "Run the example for TERN/AET/CMRSET_LANDSAT_V2_2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/TERN/TERN_AET_CMRSET_LANDSAT_V2_2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/TERN_AET_CMRSET_LANDSAT_V2_2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/TERN/TERN_AET_CMRSET_LANDSAT_V2_2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/TERN/catalog.json",
+            "type": "application/json",
+            "title": "TERN"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "agriculture",
+        "australia",
+        "csiro",
+        "evaporation",
+        "evapotranspiration",
+        "hydrology",
+        "landsat_derived",
+        "tern",
+        "viirs_derived"
+    ],
+    "providers": [
+        {
+            "name": "TERN Landscapes / CSIRO Land and Water",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://portal.tern.org.au/actual-evapotranspiration-australia-cmrset-algorithm/21915"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/TERN_AET_CMRSET_LANDSAT_V2_2"
+        }
+    ],
+    "sci:citation": "Juan P. Guerschman, Tim R. McVicar, Jamie Vleeshower, Thomas G. Van Niel,\nJorge L. Pe\u00f1a-Arancibia, Yun Chen. Estimating actual evapotranspiration at\nfield-to-continent scales by calibrating the CMRSET algorithm with MODIS,\nVIIRS, Landsat and Sentinel-2 data, Journal of Hydrology, Volume 605, 2022,\n127318,\n[doi:10.1016/j.jhydrol.2021.127318](https://doi.org/10.1016/j.jhydrol.2021.127318).\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Average daily evapotranspiration",
+                "gee:units": "mm/day",
+                "name": "ETa"
+            },
+            {
+                "description": "Pixel QA attributes",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 2,
+                            "description": "AET Data Source",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "N/A (i.e., surrounding oceans)",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "AET value was linearly interpolated.",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "AET value was from data blending.\n(CMRSET_MCD43_C6_LANDSAT_V2_0 until Feb 2012, then\nCMRSET_VIIRS_LANDSAT_V2_0 onwards)\n",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "AET value was from CMRSET_LANDSAT_V2_0",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Condensation Adjustment",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "AET value was not adjusted.",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "AET value was adjusted to 0 mm/day (due to a negative value).",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 4,
+                            "description": "Number of Landsat observations used for this pixel (0-15).",
+                            "first_bit": 3
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "SLC-Off",
+                            "first_bit": 7,
+                            "values": [
+                                {
+                                    "description": "SLC-Off was not applied.",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "SLC-Off was applied to Landsat 7 (may contain sensor artifacts).",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 8
+                },
+                "name": "pixel_qa"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Average daily evapotranspiration",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "ETa"
+                        ],
+                        "max": [
+                            7
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "d7191c",
+                            "fdae61",
+                            "ffffbf",
+                            "abd9e9",
+                            "2c7bb6"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -27,
+                    "lon": 132,
+                    "zoom": 4
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    },
+    "title": "Actual Evapotranspiration for Australia (CMRSET Landsat V2.2)",
+    "version": "V2.2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    110,
+                    -45,
+                    155,
+                    -10
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-01T00:00:00Z",
+                    "2022-08-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

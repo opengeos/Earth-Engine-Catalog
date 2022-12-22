@@ -1,0 +1,173 @@
+{
+    "type": "Collection",
+    "id": "JRC/GWIS/GlobFire/v2/FinalPerimeters",
+    "stac_version": "1.0.0",
+    "description": "Fire boundaries based on the MODIS dataset MCD64A1. The data were computed\nbased on an algorithm that relies on encoding in a graph structure\na space-time relationship among patches of burned areas.\n\nEach fire has a unique number identifying the event.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JRC_GWIS_GlobFire_v2_FinalPerimeters",
+            "type": "text/html",
+            "title": "Run the example for JRC/GWIS/GlobFire/v2/FinalPerimeters in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/JRC/JRC_GWIS_GlobFire_v2_FinalPerimeters_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GWIS_GlobFire_v2_FinalPerimeters#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://gwis-globfire.s3.amazonaws.com/"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.1038/s41597-019-0312-2"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GWIS_GlobFire_v2_FinalPerimeters.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/catalog.json",
+            "type": "application/json",
+            "title": "JRC"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:skip_featureview_generation": true,
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "table",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "area",
+        "burnt",
+        "disaster",
+        "fire",
+        "globfire",
+        "mcd64a1",
+        "modis_derived",
+        "wildfire"
+    ],
+    "providers": [
+        {
+            "name": "European Commission, Joint Research Centre, Global Wildfire Information System",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.1038/s41597-019-0312-2"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GWIS_GlobFire_v2_FinalPerimeters"
+        }
+    ],
+    "sci:citation": "Art\u00e9s, T., Oom, D., De Rigo, D., Durrant, T. H., Maianti, P., Libert\u00e0, G., &\nSan-Miguel-Ayanz, J. (2019). A global wildfire dataset for the analysis of\nfire regimes and fire behaviour. Scientific data, 6(1), 1-11.\n[doi:10.1038/s41597-019-0312-2](https://doi.org/10.1038/s41597-019-0312-2)\n",
+    "sci:doi": "10.1038/s41597-019-0312-2",
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Fire area, square meters",
+                "name": "area",
+                "type": "DOUBLE",
+                "units": "m^2"
+            },
+            {
+                "description": "Final fire date in milliseconds since 1970-01-01",
+                "name": "FinalDate",
+                "type": "INT"
+            },
+            {
+                "description": "Numeric id of the fire",
+                "name": "Id",
+                "type": "INT"
+            },
+            {
+                "description": "Initial fire date in milliseconds since 1970-01-01",
+                "name": "InitialDate",
+                "type": "INT"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Countries",
+                "lookat": {
+                    "lat": 38.56,
+                    "lon": -122.121,
+                    "zoom": 12
+                },
+                "polygon_visualization": {
+                    "property_name": "area",
+                    "property_vis": {
+                        "max": [
+                            600000000
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "f5ff64",
+                            "b5ffb4",
+                            "beeaff",
+                            "ffc0e8",
+                            "8e8dff",
+                            "adadad"
+                        ]
+                    }
+                }
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 1500,
+            "thinning_strategy": "HIGHER_DENSITY"
+        }
+    },
+    "title": "GlobFire Final Fire Event Detection Based on MCD64A1",
+    "version": "v2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2021-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

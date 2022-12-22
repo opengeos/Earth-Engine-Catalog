@@ -1,0 +1,320 @@
+{
+    "type": "Collection",
+    "id": "MODIS/061/MCD64A1",
+    "stac_version": "1.0.0",
+    "description": "The Terra and Aqua combined MCD64A1 Version 6 Burned Area data product is\na monthly, global gridded 500m product containing per-pixel burned-area\nand quality information. The MCD64A1 burned-area mapping approach employs\n500m MODIS Surface Reflectance imagery coupled with 1km MODIS active\nfire observations. The algorithm uses a burn sensitive vegetation index (VI)\nto create dynamic thresholds that are applied to the composite data.\nThe VI is derived from MODIS shortwave infrared atmospherically corrected\nsurface reflectance bands 5 and 7 with a measure of temporal texture.\nThe algorithm identifies the date of burn for the 500m grid cells within\neach individual MODIS tile. The date is encoded in a single data layer as\nthe ordinal day of the calendar year on which the burn occurred, with\nvalues assigned to unburned land pixels and additional special values\nreserved for missing data and water grid cells.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1006/MCD64_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/115/MCD64_ATBD_V6.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MCD64A1)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_061_MCD64A1",
+            "type": "text/html",
+            "title": "Run the example for MODIS/061/MCD64A1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MCD64A1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD64A1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/MODIS/MCD64A1.061"
+        },
+        {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MCD64A1.json",
+            "type": "application/json",
+            "title": "MODIS/061/MCD64A1"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MCD64A1.json",
+            "type": "application/json",
+            "title": "MODIS/006/MCD64A1"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MCD64A1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "month"
+    },
+    "gee:provider_ids": [
+        "C1620913371-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "burn",
+        "fire",
+        "geophysical",
+        "global",
+        "mcd64a1",
+        "modis",
+        "monthly",
+        "nasa",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/MODIS/MCD64A1.061"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD64A1"
+        }
+    ],
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/MODIS/MCD64A1.061",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Burn day of year. Possible values: 0 (unburned), 1-366\n(approximate Julian day of burning).",
+                "name": "BurnDate"
+            },
+            {
+                "description": "Estimated uncertainty in burn day",
+                "name": "Uncertainty"
+            },
+            {
+                "description": "Quality assurance indicators",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Land/water",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Water grid cell",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Land grid cell",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Valid data flag. A value of 1 indicates that there was\nsufficient valid data in the reflectance time series for the grid\ncell to be processed. (NB Water grid cells will always have this bit\nclear.)\n",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "Insufficient valid data",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Sufficient valid data",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Shortened mapping period. This flag indicates that the\nperiod of reliable mapping does not encompass the full one-month\nproduct period, i.e., burns could not be reliably mapped over the\nfull calendar month.\n",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "Mapping period not shortened",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Mapping period shortened",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Grid cell was relabeled during the contextual relabeling\nphase of the algorithm.",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "Grid cell was not relabeled",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Grid cell was relabeled",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Spare bit",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "N/A",
+                                    "value": 0
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 3,
+                            "description": "Special condition code reserved for unburned grid cells.\nThis code provides an explanation for any grid cells that were\nsummarily classified as *unburned* by the detection algorithm due to\nspecial circumstances.\n",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "None or not applicable (i.e., burned, unmapped, or water grid cell).",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Valid observations spaced too sparsely in time.",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Too few training observations or insufficient spectral\nseparability between burned and unburned classes.\n",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Apparent burn date at limits of time series.",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Apparent water contamination.",
+                                    "value": 4
+                                },
+                                {
+                                    "description": "Persistent hot spot.",
+                                    "value": 5
+                                },
+                                {
+                                    "description": "Reserved for future use.",
+                                    "value": 6
+                                },
+                                {
+                                    "description": "Reserved for future use.",
+                                    "value": 7
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 8
+                },
+                "name": "QA"
+            },
+            {
+                "description": "First day of the year of reliable change detection",
+                "name": "FirstDay"
+            },
+            {
+                "description": "Last day of the year of reliable change detection",
+                "name": "LastDay"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Burned Area",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "BurnDate"
+                        ],
+                        "max": [
+                            341
+                        ],
+                        "min": [
+                            30
+                        ],
+                        "palette": [
+                            "4e0400",
+                            "951003",
+                            "c61503",
+                            "ff1901"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 0,
+                    "lon": 0,
+                    "zoom": 0
+                }
+            }
+        ],
+        "gsd": [
+            500
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Aqua",
+            "Terra"
+        ],
+        "BurnDate": {
+            "minimum": 0,
+            "maximum": 366
+        },
+        "FirstDay": {
+            "minimum": 0,
+            "maximum": 366
+        },
+        "LastDay": {
+            "minimum": 0,
+            "maximum": 366
+        },
+        "Uncertainty": {
+            "minimum": 0,
+            "maximum": 100
+        }
+    },
+    "title": "MCD64A1.061 MODIS Burned Area Monthly Global 500m",
+    "version": "V061",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-11-01T00:00:00Z",
+                    "2022-02-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

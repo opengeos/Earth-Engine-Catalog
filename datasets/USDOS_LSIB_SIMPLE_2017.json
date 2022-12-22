@@ -1,0 +1,142 @@
+{
+    "type": "Collection",
+    "id": "USDOS/LSIB_SIMPLE/2017",
+    "stac_version": "1.0.0",
+    "description": "The United States Office of the Geographer provides\nthe Large Scale International Boundary (LSIB) dataset. The detailed\nversion (2013) is derived from two other datasets: a LSIB line\nvector file and the World Vector Shorelines (WVS) from the National\nGeospatial-Intelligence Agency (NGA). The interior boundaries\nreflect U.S. government policies on boundaries, boundary disputes,\nand sovereignty. The exterior boundaries are derived from the\nWVS; however, the WVS coastline data is outdated and generally\nshifted from between several hundred meters to over a kilometer.\nEach feature is the polygonal area enclosed by interior boundaries\nand exterior coastlines where applicable, and many countries\nconsist of multiple features, one per disjoint region.\n\nCompared with the detailed LSIB, in this simplified dataset some disjointed\nregions of each country have been reduced to a single feature.\nFurthermore, it excludes medium and smaller islands. The resulting\nsimplified boundary lines are rarely shifted by more than 100\nmeters from the detailed LSIB lines. Each of the 312 features\nis a part of the geometry of one of the 284 countries described\nin this dataset.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/USDOS_LSIB_SIMPLE_2017",
+            "type": "text/html",
+            "title": "Run the example for USDOS/LSIB_SIMPLE/2017 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/USDOS/USDOS_LSIB_SIMPLE_2017_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/USDOS_LSIB_SIMPLE_2017#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USDOS/USDOS_LSIB_SIMPLE_2017.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USDOS/catalog.json",
+            "type": "application/json",
+            "title": "USDOS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "There are no restrictions on use of this US public domain data.",
+    "gee:type": "table",
+    "keywords": [
+        "borders",
+        "boundaries",
+        "countries",
+        "dos",
+        "political",
+        "usdos"
+    ],
+    "providers": [
+        {
+            "name": "United States Department of State, Office of the Geographer",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://geonode.state.gov/layers/catalog:geonode:LSIB"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/USDOS_LSIB_SIMPLE_2017"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Country abbreviation",
+                "name": "abbreviati",
+                "type": "STRING"
+            },
+            {
+                "description": "[Two-letter FIPS country code](https://en.wikipedia.org/wiki/List_of_FIPS_country_codes)",
+                "name": "country_co",
+                "type": "STRING"
+            },
+            {
+                "description": "US-recognized country name",
+                "name": "country_na",
+                "type": "STRING"
+            },
+            {
+                "description": "Continental region, e.g. South America",
+                "name": "wld_rgn",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Countries",
+                "lookat": {
+                    "lat": 52.48,
+                    "lon": 71.72,
+                    "zoom": 1
+                },
+                "table_visualization": {
+                    "color": "00909F",
+                    "fill_color": "b5ffb4",
+                    "width": 3
+                }
+            },
+            {
+                "display_name": "Countries",
+                "visualize_as": "FeatureView"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 250,
+            "thinning_strategy": "HIGHER_DENSITY"
+        }
+    },
+    "title": "LSIB 2017: Large Scale International Boundary Polygons, Simplified",
+    "version": "2017",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-03-30T00:00:00Z",
+                    "2017-03-30T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

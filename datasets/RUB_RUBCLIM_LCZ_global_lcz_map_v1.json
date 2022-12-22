@@ -1,0 +1,344 @@
+{
+    "type": "Collection",
+    "id": "RUB/RUBCLIM/LCZ/global_lcz_map/v1",
+    "stac_version": "1.0.0",
+    "description": "Since their introduction in 2012, Local Climate Zones (LCZs) emerged as\na new standard for characterizing urban landscapes, providing a holistic\nclassification approach that takes into account micro-scale land-cover and\nassociated physical properties.\n\nThis global map of Local Climate Zones, at 100m pixel size and\nrepresentative for the nominal year 2018, is derived from multiple earth\nobservation datasets and expert LCZ class labels. LCZ_Filter is the\nrecommended band for most users. The other classification band, LCZ, is\nonly provided as it is used to calculate the LCZ_Probability band.\n\nThe LCZ scheme complements other land use / land cover schemes by\nits focus on urban and rural landscape types, which can be described by\nany of the 17 classes in the LCZ scheme. Out of the 17 LCZ classes, 10\nreflect the 'built' environment, and each LCZ type is associated with\ngeneric numerical descriptions of key urban canopy parameters critical to\nmodel atmospheric responses to urbanisation.  In addition, since LCZs were\noriginally designed as a new framework for urban heat island studies, they\nalso contain a limited set (7) of 'natural' land-cover classes that can be\nused as 'control' or 'natural reference' areas.\n\nAs these seven natural classes in the LCZ scheme can not capture the\nheterogeneity of the world's existing natural ecosystems, we advise\nusers - if required - to combine the built LCZ classes with any other\nland-cover product that provides a wider range of natural land-cover\nclasses.\n\nSee also:\n\n* [LCZ Typology](https://doi.org/10.1175/BAMS-D-11-00019.1)\n\n* [Global map of LCZs - paper](https://doi.org/10.5194/essd-14-3835-2022)\n\n* [Global map of LCZs - dataset](https://doi.org/10.5281/zenodo.6364593)\n\n* [LCZ Gaussian filtering](https://doi.org/10.1038/s41597-020-00605-z)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/RUB_RUBCLIM_LCZ_global_lcz_map_v1",
+            "type": "text/html",
+            "title": "Run the example for RUB/RUBCLIM/LCZ/global_lcz_map/v1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/RUB/RUB_RUBCLIM_LCZ_global_lcz_map_v1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/RUB_RUBCLIM_LCZ_global_lcz_map_v1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://doi.org/10.5194/essd-14-3835-2022"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5281/zenodo.6364593"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/RUB/RUB_RUBCLIM_LCZ_global_lcz_map_v1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/RUB/catalog.json",
+            "type": "application/json",
+            "title": "RUB"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:extra_dois": [
+        "10.5194/essd-14-3835-2022"
+    ],
+    "gee:terms_of_use": "[proprietary](DO NOT USE THIS - use a custom URL)",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "climate",
+        "landcover",
+        "urban"
+    ],
+    "providers": [
+        {
+            "name": "Bochum Urban Climate Lab",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://lcz-generator.rub.de/global-lcz-map"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/RUB_RUBCLIM_LCZ_global_lcz_map_v1"
+        }
+    ],
+    "sci:citation": "Demuzere M.; Kittner J.; Martilli A.; Mills, G.; Moede, C.; Stewart, I.D.; van Vliet, J.; Bechtel, B.\nA global map of local climate zones to support earth system modelling and urban-scale environmental science.\nEarth System Science Data 2022, 14 Volume 8: 3835-3873.\n[doi:10.5194/essd-14-3835-2022](https://doi.org/10.5194/essd-14-3835-2022)\n",
+    "sci:doi": "10.5281/zenodo.6364593",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "The raw, pixel-based global LCZ map with LCZ classes",
+                "gee:classes": [
+                    {
+                        "color": "8c0000",
+                        "description": "Compact highrise",
+                        "value": 1
+                    },
+                    {
+                        "color": "d10000",
+                        "description": "Compact midrise",
+                        "value": 2
+                    },
+                    {
+                        "color": "ff0000",
+                        "description": "Compact lowrise",
+                        "value": 3
+                    },
+                    {
+                        "color": "bf4d00",
+                        "description": "Open highrise",
+                        "value": 4
+                    },
+                    {
+                        "color": "ff6600",
+                        "description": "Open midrise",
+                        "value": 5
+                    },
+                    {
+                        "color": "ff9955",
+                        "description": "Open lowrise",
+                        "value": 6
+                    },
+                    {
+                        "color": "faee05",
+                        "description": "Lightweight lowrise",
+                        "value": 7
+                    },
+                    {
+                        "color": "bcbcbc",
+                        "description": "Large lowrise",
+                        "value": 8
+                    },
+                    {
+                        "color": "ffccaa",
+                        "description": "Sparsely built",
+                        "value": 9
+                    },
+                    {
+                        "color": "555555",
+                        "description": "Heavy industry",
+                        "value": 10
+                    },
+                    {
+                        "color": "006a00",
+                        "description": "Dense Trees (LCZ A)",
+                        "value": 11
+                    },
+                    {
+                        "color": "00aa00",
+                        "description": "Scattered Trees (LCZ B)",
+                        "value": 12
+                    },
+                    {
+                        "color": "648525",
+                        "description": "Bush, scrub (LCZ C)",
+                        "value": 13
+                    },
+                    {
+                        "color": "b9db79",
+                        "description": "Low plants (LCZ D)",
+                        "value": 14
+                    },
+                    {
+                        "color": "000000",
+                        "description": "Bare rock or paved (LCZ E)",
+                        "value": 15
+                    },
+                    {
+                        "color": "fbf7ae",
+                        "description": "Bare soil or sand (LCZ F)",
+                        "value": 16
+                    },
+                    {
+                        "color": "6a6aff",
+                        "description": "Water (LCZ G)",
+                        "value": 17
+                    }
+                ],
+                "name": "LCZ"
+            },
+            {
+                "description": "The recommended global LCZ map with LCZ classes.  LCZ labels are\nobtained after applying the morphological Gaussian filter\ndescribed in Demuzere et al. (2020)\n",
+                "gee:classes": [
+                    {
+                        "color": "8c0000",
+                        "description": "Compact highrise",
+                        "value": 1
+                    },
+                    {
+                        "color": "d10000",
+                        "description": "Compact midrise",
+                        "value": 2
+                    },
+                    {
+                        "color": "ff0000",
+                        "description": "Compact lowrise",
+                        "value": 3
+                    },
+                    {
+                        "color": "bf4d00",
+                        "description": "Open highrise",
+                        "value": 4
+                    },
+                    {
+                        "color": "ff6600",
+                        "description": "Open midrise",
+                        "value": 5
+                    },
+                    {
+                        "color": "ff9955",
+                        "description": "Open lowrise",
+                        "value": 6
+                    },
+                    {
+                        "color": "faee05",
+                        "description": "Lightweight lowrise",
+                        "value": 7
+                    },
+                    {
+                        "color": "bcbcbc",
+                        "description": "Large lowrise",
+                        "value": 8
+                    },
+                    {
+                        "color": "ffccaa",
+                        "description": "Sparsely built",
+                        "value": 9
+                    },
+                    {
+                        "color": "555555",
+                        "description": "Heavy industry",
+                        "value": 10
+                    },
+                    {
+                        "color": "006a00",
+                        "description": "Dense Trees (LCZ A)",
+                        "value": 11
+                    },
+                    {
+                        "color": "00aa00",
+                        "description": "Scattered Trees (LCZ B)",
+                        "value": 12
+                    },
+                    {
+                        "color": "648525",
+                        "description": "Bush, scrub (LCZ C)",
+                        "value": 13
+                    },
+                    {
+                        "color": "b9db79",
+                        "description": "Low plants (LCZ D)",
+                        "value": 14
+                    },
+                    {
+                        "color": "000000",
+                        "description": "Bare rock or paved (LCZ E)",
+                        "value": 15
+                    },
+                    {
+                        "color": "fbf7ae",
+                        "description": "Bare soil or sand (LCZ F)",
+                        "value": 16
+                    },
+                    {
+                        "color": "6a6aff",
+                        "description": "Water (LCZ G)",
+                        "value": 17
+                    }
+                ],
+                "name": "LCZ_Filter"
+            },
+            {
+                "description": "A probability layer that identifies how often the modal LCZ was\nchosen per pixel (e.g. a probability of 60% means that the modal\nLCZ class was mapped 30 times out of 50 LCZ models). This is a\npixel-based probability derived from the LCZ layer\n",
+                "gee:units": "%",
+                "name": "LCZ_Probability"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "LCZ",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "LCZ_Filter"
+                        ],
+                        "max": [
+                            17
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "#8c0000",
+                            "#d10000",
+                            "#ff0000",
+                            "#bf4d00",
+                            "#ff6600",
+                            "#ff9955",
+                            "#faee05",
+                            "#bcbcbc",
+                            "#ffccaa",
+                            "#555555",
+                            "#006a00",
+                            "#00aa00",
+                            "#648525",
+                            "#b9db79",
+                            "#000000",
+                            "#fbf7ae",
+                            "#6a6aff"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 40.72,
+                    "lon": -73.99,
+                    "zoom": 10
+                }
+            }
+        ],
+        "gsd": [
+            100
+        ]
+    },
+    "title": "Global map of Local Climate Zones",
+    "version": "v1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-01-01T00:00:00Z",
+                    "2019-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

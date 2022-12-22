@@ -1,0 +1,242 @@
+{
+    "type": "Collection",
+    "id": "EPA/Ecoregions/2013/L4",
+    "stac_version": "1.0.0",
+    "description": "The U.S. Environmental Protection Agency (USEPA) provides\nthe Ecoregions dataset to serve as a spatial framework for the\nresearch, assessment, management, and monitoring of ecosystems\nand ecosystem components. Ecoregions denote areas of general\nsimilarity in ecosystems and in the type, quality, and quantity\nof environmental resources. These general-purpose regions are\ncritical for structuring and implementing ecosystem management\nstrategies across federal agencies, state agencies, and nongovernmental\norganizations that are responsible for different types of resources\nwithin the same geographical areas.\n\nThe approach used to\ncompile this map is based on the premise that ecological regions\ncan be identified through the analysis of patterns of biotic\nand abiotic phenomena, including geology, physiography, vegetation,\nclimate, soils, land use, wildlife, and hydrology. The relative\nimportance of each characteristic varies from one ecological\nregion to another.\n\nThis dataset includes the USEPA ecoregions\nclassification scheme, as well as the scheme from the Commission\nfor Environmental Cooperation (CEC). Ecoregions are hierarchical,\nwith Level IV being the most detailed and Level I defining the\nbroadest classifications. Because of this hierarchy, Level III\nfeatures retain information from Levels I and II. The CEC divided\nall of North America in distinct ecoregions for Levels I, II,\nand III, while the USEPA did so only for the United States at\nLevel III and Level IV. The columns starting with 'us_' belong\nto the USEPA scheme, and the columns starting with 'na_' belong\nto the CEC scheme. The ingested version of this dataset contains\nfeatures for the conterminous United States only (that is, Alaska\nand Hawaii are not included). Methods used to define the ecoregions\nare explained in Omernik (1995, 2004), Omernik and others (2000),\nand Gallant and others (1989).\n\n*Calculated by the data provider.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/EPA_Ecoregions_2013_L4",
+            "type": "text/html",
+            "title": "Run the example for EPA/Ecoregions/2013/L4 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/EPA/EPA_Ecoregions_2013_L4_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/EPA_Ecoregions_2013_L4#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://edg.epa.gov/epa_data_license.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/EPA/EPA_Ecoregions_2013_L4.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/EPA/catalog.json",
+            "type": "application/json",
+            "title": "EPA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "There are no restrictions on use of this US public domain data.",
+    "gee:type": "table",
+    "keywords": [
+        "ecoregions",
+        "epa"
+    ],
+    "providers": [
+        {
+            "name": "United States Environmental Protection Agency",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.epa.gov/eco-research/level-iii-and-iv-ecoregions-continental-united-states"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/EPA_Ecoregions_2013_L4"
+        }
+    ],
+    "sci:citation": "Commission for Environmental Cooperation. 1997. Ecological regions\nof North America: toward a common perspective. Commission for Environmental\nCooperation, Montreal, Quebec, Canada. 71p. Map (scale 1:12,500,000).\nRevised 2006.\n",
+    "sci:publications": [
+        {
+            "citation": "McMahon, G., S.M. Gregonis, S.W. Waltman, J.M. Omernik, T.D. Thorson,\nJ.A. Freeouf, A.H. Rorick, and J.E. Keys. 2001. Developing a spatial\nframework of common ecological regions for the conterminous United\nStates. Environmental Management 28(3):293-316.\n"
+        },
+        {
+            "citation": "Omernik, J.M. 1987. Ecoregions of the conterminous United States.\nMap (scale 1:7,500,000). Annals of the Association of American\nGeographers 77(1):118-125.\n"
+        },
+        {
+            "citation": "Omernik, J.M. 1995. Ecoregions: A spatial framework for environmental\nmanagement. In: Biological Assessment and Criteria: Tools for Water\nResource Planning and Decision Making. Davis, W.S. and T.P. Simon\n(eds.),   Lewis Publishers, Boca Raton, FL. p. 49-62.\n"
+        },
+        {
+            "citation": "Omernik, J.M. 2004. Perspectives on the nature and definition of\necological regions. Environmental Management 34(Supplement 1):S27-S38.\n"
+        },
+        {
+            "citation": "Omernik, J.M. and G.E. Griffith. 2014. Ecoregions of the conterminous\nUnited States: evolution of a hierarchical spatial framework. Environmental\nManagement 54(6):1249-1266.\n"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "NA Level I Code and Name",
+                "name": "l1_key",
+                "type": "STRING"
+            },
+            {
+                "description": "NA Level II Code and Name",
+                "name": "l2_key",
+                "type": "STRING"
+            },
+            {
+                "description": "US Level III Code and Name",
+                "name": "l3_key",
+                "type": "STRING"
+            },
+            {
+                "description": "Code for Level I Ecoregion (North America/CEC)",
+                "name": "na_l1code",
+                "type": "STRING"
+            },
+            {
+                "description": "Name for Level I Ecoregion (North America/CEC)",
+                "name": "na_l1name",
+                "type": "STRING"
+            },
+            {
+                "description": "Code for Level II Ecoregion (North America/CEC)",
+                "name": "na_l2code",
+                "type": "STRING"
+            },
+            {
+                "description": "Name for Level II Ecoregion (North America/CEC)",
+                "name": "na_l2name",
+                "type": "STRING"
+            },
+            {
+                "description": "Code for Level III Ecoregion (North America/CEC)",
+                "name": "na_l3code",
+                "type": "STRING"
+            },
+            {
+                "description": "Name for Level III Ecoregion (North America/CEC)",
+                "name": "na_l3name",
+                "type": "STRING"
+            },
+            {
+                "description": "Area of the feature's geometry in its original format",
+                "name": "shape_area",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Length of the edges in the feature's geometry in its original format",
+                "name": "shape_leng",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Code for Level III Ecoregion (US/USEPA)",
+                "name": "us_l3code",
+                "type": "STRING"
+            },
+            {
+                "description": "Name for Level III Ecoregion (US/USEPA)",
+                "name": "us_l3name",
+                "type": "STRING"
+            },
+            {
+                "description": "US Level IV Code and Name",
+                "name": "l4_key",
+                "type": "STRING"
+            },
+            {
+                "description": "Code for Level IV Ecoregion (US/USEPA)",
+                "name": "us_l4code",
+                "type": "STRING"
+            },
+            {
+                "description": "Name for Level IV Ecoregion (US/USEPA)",
+                "name": "us_l4name",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Area of Ecoregions",
+                "lookat": {
+                    "lat": 36.173,
+                    "lon": -95.142,
+                    "zoom": 6
+                },
+                "polygon_visualization": {
+                    "property_name": "shape_area",
+                    "property_vis": {
+                        "max": [
+                            67800000000
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "0a3b04",
+                            "1a9924",
+                            "15d812"
+                        ]
+                    }
+                }
+            },
+            {
+                "display_name": "Area of Ecoregions",
+                "lookat": {
+                    "lat": 36.173,
+                    "lon": -95.142,
+                    "zoom": 6
+                },
+                "visualize_as": "FeatureView"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 6000,
+            "prerender_tiles": true,
+            "thinning_ranking": [
+                "shape_area DESC"
+            ],
+            "thinning_strategy": "HIGHER_DENSITY"
+        }
+    },
+    "title": "US EPA Ecoregions (Level IV)",
+    "version": "2013",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -124.8,
+                    24.5,
+                    -66.9,
+                    49.4
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2013-04-16T00:00:00Z",
+                    "2013-04-17T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

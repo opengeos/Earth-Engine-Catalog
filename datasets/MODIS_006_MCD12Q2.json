@@ -1,0 +1,242 @@
+{
+    "type": "Collection",
+    "id": "MODIS/006/MCD12Q2",
+    "stac_version": "1.0.0",
+    "description": "The MCD12Q2 V6 Land Cover Dynamics product (informally\ncalled the MODIS Global Vegetation Phenology product) provides\nestimates of the timing of vegetation phenology at global scales.\nAdditionally, it provides information related to the range and\nsummation of the enhanced vegetation index (EVI) computed from\nMODIS surface reflectance data at each pixel. It identifies the\nonset of greenness, greenup midpoint, maturity, peak greenness,\nsenescence, greendown midpoint, dormancy, EVI2 minimum, EVI2 amplitude,\nintegrated EVI2 over a vegetation cycle, as well as overall and phenology\nmetric-specific quality information.\n\nThe MCD12Q2 Version 6 data product is derived from time series of the\n2-band Enhanced Vegetation Index (EVI2) calculated from MODIS Nadir\nBidirectional Reflectance Distribution Function (BRDF)-Adjusted Reflectance\n(NBAR). Vegetation phenology metrics are identified for up to two detected\ngrowing cycles per year. For pixels with more than two valid vegetation\ncycles, the data represent the two cycles with the largest NBAR-EVI2\namplitudes.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_006_MCD12Q2",
+            "type": "text/html",
+            "title": "Run the example for MODIS/006/MCD12Q2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_006_MCD12Q2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MCD12Q2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/MODIS/MCD12Q2.006"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MCD12Q2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "evi",
+        "global",
+        "mcd12q2",
+        "modis",
+        "onset_greenness",
+        "phenology",
+        "usgs",
+        "yearly"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://lpdaac.usgs.gov/products/mcd12q2v006/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MCD12Q2"
+        }
+    ],
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/MODIS/MCD12Q2.006",
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Vegetation Peak Date",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Peak_1"
+                        ],
+                        "max": [
+                            11868
+                        ],
+                        "min": [
+                            11400
+                        ],
+                        "palette": [
+                            "0f17ff",
+                            "b11406",
+                            "f1ff23"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 0,
+                    "lon": 0,
+                    "zoom": 0
+                }
+            }
+        ],
+        "gsd": [
+            500
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Aqua",
+            "Terra"
+        ],
+        "Dormancy_1": {
+            "minimum": 11138,
+            "maximum": 32766
+        },
+        "Dormancy_2": {
+            "minimum": 11138,
+            "maximum": 32766
+        },
+        "EVI_Amplitude_1": {
+            "minimum": 0,
+            "maximum": 10000
+        },
+        "EVI_Amplitude_2": {
+            "minimum": 0,
+            "maximum": 10000
+        },
+        "EVI_Area_1": {
+            "minimum": 0,
+            "maximum": 3700
+        },
+        "EVI_Area_2": {
+            "minimum": 0,
+            "maximum": 3700
+        },
+        "EVI_Minimum_1": {
+            "minimum": 0,
+            "maximum": 10000
+        },
+        "EVI_Minimum_2": {
+            "minimum": 0,
+            "maximum": 10000
+        },
+        "Greenup_1": {
+            "minimum": 11138,
+            "maximum": 32766
+        },
+        "Greenup_2": {
+            "minimum": 11138,
+            "maximum": 32766
+        },
+        "Maturity_1": {
+            "minimum": 11138,
+            "maximum": 32766
+        },
+        "Maturity_2": {
+            "minimum": 11138,
+            "maximum": 32766
+        },
+        "MidGreendown_1": {
+            "minimum": 11138,
+            "maximum": 32766
+        },
+        "MidGreendown_2": {
+            "minimum": 11138,
+            "maximum": 32766
+        },
+        "MidGreenup_1": {
+            "minimum": 11138,
+            "maximum": 32766
+        },
+        "MidGreenup_2": {
+            "minimum": 11138,
+            "maximum": 32766
+        },
+        "NumCycles": {
+            "minimum": 7,
+            "maximum": 0
+        },
+        "Peak_1": {
+            "minimum": 11138,
+            "maximum": 32766
+        },
+        "Peak_2": {
+            "minimum": 11138,
+            "maximum": 32766
+        },
+        "QA_Overall_1": {
+            "minimum": 0,
+            "maximum": 3
+        },
+        "QA_Overall_2": {
+            "minimum": 0,
+            "maximum": 3
+        },
+        "Senescence_1": {
+            "minimum": 11138,
+            "maximum": 32766
+        },
+        "Senescence_2": {
+            "minimum": 11138,
+            "maximum": 32766
+        }
+    },
+    "title": "MCD12Q2.006 Land Cover Dynamics Yearly Global 500m",
+    "version": "V006",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2019-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

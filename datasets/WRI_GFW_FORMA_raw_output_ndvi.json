@@ -1,0 +1,180 @@
+{
+    "type": "Collection",
+    "id": "WRI/GFW/FORMA/raw_output_ndvi",
+    "stac_version": "1.0.0",
+    "description": "**NOTE from WRI**: WRI decided to stop updating FORMA alerts. The goal was\nto simplify the [Global Forest Watch](https://www.globalforestwatch.org)\nuser experience and reduce redundancy.\nWe found that [Terra-i](http://www.terra-i.org/terra-i.html) and\n[GLAD](https://glad-forest-alert.appspot.com/) were more frequently used.\nMoreover, using GLAD as a standard, found that Terra-i outperformed\nFORMA globally.\n\nFORMA alerts are detected using a combination of two MODIS\nproducts: NDVI (Normalized Difference Vegetation Index) and FIRMS\n(Fires Information for Resource Management System). NDVI updates are\nprocessed every 16 days, while fire updates are processed daily. Models\nare developed individually for each ecogroup to relate the two inputs to\nthe area of clearing, using the Hansen annual tree cover loss data to train\nthe model. The minimum threshold to qualify as an alert is 25% of the pixel\ncleared, though thresholds vary by ecogroup to minimize false positives.\nHere is an [example script](https://code.earthengine.google.com/f29b1e4360f3fc36847bd789ceeb20f6)\nfor a quick introduction to the FORMA datasets.\n\nThe images in this ImageCollection contain the raw FORMA data calculated after new\nMODIS NDVI data becomes available, approximately every 16 days.\n\nThe image contains 4 bands. The 'delta', 'near_term_delta', and 'clearing' bands\nall give a percentage of clearing (from 0 to 100) for different accumulation periods.\nAccuracy gives a measure of confidence in these predictions\n(0 = very little confidence, 100 is high confidence).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WRI_GFW_FORMA_raw_output_ndvi",
+            "type": "text/html",
+            "title": "Run the example for WRI/GFW/FORMA/raw_output_ndvi in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/WRI/WRI_GFW_FORMA_raw_output_ndvi_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/WRI_GFW_FORMA_raw_output_ndvi#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WRI/WRI_GFW_FORMA_raw_output_ndvi.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WRI/catalog.json",
+            "type": "application/json",
+            "title": "WRI"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The FORMA datasets are available without restriction\non use or distribution. WRI does request that the\nuser give proper attribution and identify WRI and GFW, where applicable,\nas the source of the data.\n",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "daily",
+        "deforestation",
+        "forest",
+        "forma",
+        "gfw",
+        "modis",
+        "monitoring",
+        "wri"
+    ],
+    "providers": [
+        {
+            "name": "World Resources Institute / Global Forest Watch",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.globalforestwatch.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/WRI_GFW_FORMA_raw_output_ndvi"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Percentage of clearing in the last 96 days",
+                "gee:units": "%",
+                "name": "delta"
+            },
+            {
+                "description": "Percentage of clearing in the last 32 days",
+                "gee:units": "%",
+                "name": "near_term_delta"
+            },
+            {
+                "description": "Confidence in predictions",
+                "gee:units": "%",
+                "name": "accuracy"
+            },
+            {
+                "description": "Percentage of clearing in the last 365 days",
+                "gee:units": "%",
+                "name": "clearing"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Year of the most recent data included in the dataset",
+                "name": "year",
+                "type": "INT"
+            },
+            {
+                "description": "The biweekly (every 16 days) period of the year",
+                "name": "biweekly",
+                "type": "INT"
+            },
+            {
+                "description": "Date, in \"YYYY-MM-DD\" format, of the last MODIS NDVI data included in this dataset",
+                "name": "date",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Percent of clearing in the last 365 days",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "clearing"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -7.61,
+                    "lon": 25.73,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            250
+        ],
+        "accuracy": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "clearing": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "delta": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "near_term_delta": {
+            "minimum": 0,
+            "maximum": 100
+        }
+    },
+    "title": "FORMA Raw Output NDVI",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -120,
+                    -50,
+                    180,
+                    40
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-01-01T00:00:00Z",
+                    "2019-04-23T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

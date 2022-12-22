@@ -1,0 +1,1191 @@
+{
+    "type": "Collection",
+    "id": "ISDASOIL/Africa/v1/fcc",
+    "stac_version": "1.0.0",
+    "description": "Soil fertility capability classification derived using slope, chemical,\nand physical soil properties.  For more information about this layer, please\nvisit [this page](https://www.isda-africa.com/isdasoil/faq/#faq7).\n\nThe classes for the 'fcc' band apply to pixel values that must be\nback-transformed with `x modulo 3000`.\n\nIn areas of dense jungle (generally over central Africa), model accuracy is\nlow and therefore artifacts such as banding (striping) might be seen.\n\nSoil property predictions were made by\n[Innovative Solutions for Decision Agriculture Ltd. (iSDA)](https://isda-africa.com/)\nat 30 m pixel size using machine learning coupled with remote sensing data\nand a training set of over 100,000 analyzed soil samples.\n\nFurther information can be found in the\n[FAQ](https://www.isda-africa.com/isdasoil/faq/) and\n[technical information documentation](https://www.isda-africa.com/isdasoil/technical-information/). To submit an issue or request support, please visit\n[the iSDAsoil site](https://isda-africa.com/isdasoil).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/ISDASOIL_Africa_v1_fcc",
+            "type": "text/html",
+            "title": "Run the example for ISDASOIL/Africa/v1/fcc in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/ISDASOIL/ISDASOIL_Africa_v1_fcc_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/ISDASOIL_Africa_v1_fcc#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ISDASOIL/ISDASOIL_Africa_v1_fcc.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ISDASOIL/catalog.json",
+            "type": "application/json",
+            "title": "ISDASOIL"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "africa",
+        "fcc",
+        "isda",
+        "soil"
+    ],
+    "providers": [
+        {
+            "name": "iSDA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://isda-africa.com/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/ISDASOIL_Africa_v1_fcc"
+        }
+    ],
+    "sci:citation": "Hengl, T., Miller, M.A.E., Kri\u017ean, J., et al. African soil properties and nutrients\nmapped at 30 m spatial resolution using two-scale ensemble machine learning.\nSci Rep 11, 6130 (2021).\n[doi:10.1038/s41598-021-85639-y](https://doi.org/10.1038/s41598-021-85639-y)\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Fertility Capability Classification.\n\nStyling has been made according to the number of fertility constraints:\n\n* 0 constraints: #1a9641\n* 1 constraint: #fff1af\n* 2 constraints: #feb66a\n* 3 constraints: #f3854e\n* 4 constraints: #e54f35\n* 5 or more constraints: #d7191c\n",
+                "gee:classes": [
+                    {
+                        "color": "1a9641",
+                        "description": "No constraints",
+                        "value": 0
+                    },
+                    {
+                        "color": "fff1af",
+                        "description": "Gravel",
+                        "value": 2
+                    },
+                    {
+                        "color": "fff1af",
+                        "description": "Slope",
+                        "value": 4
+                    },
+                    {
+                        "color": "feb66a",
+                        "description": "Gravel, Slope",
+                        "value": 6
+                    },
+                    {
+                        "color": "fff1af",
+                        "description": "High erosion risk: textual contrast",
+                        "value": 8
+                    },
+                    {
+                        "color": "feb66a",
+                        "description": "Gravel, High erosion risk: textual contrast",
+                        "value": 10
+                    },
+                    {
+                        "color": "feb66a",
+                        "description": "Slope, High erosion risk: textual contrast",
+                        "value": 12
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Gravel, Slope, High erosion risk: textual contrast",
+                        "value": 14
+                    },
+                    {
+                        "color": "feb66a",
+                        "description": "Shallow, High erosion risk: shallow depth",
+                        "value": 17
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Shallow, Gravel, High erosion risk: shallow depth",
+                        "value": 19
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Shallow, Slope, High erosion risk: shallow depth",
+                        "value": 21
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: shallow depth",
+                        "value": 23
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Shallow, High erosion risk: textual contrast, High erosion risk: shallow depth",
+                        "value": 25
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Shallow, Gravel, High erosion risk: textual contrast, High erosion risk: shallow depth",
+                        "value": 27
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Shallow, Slope, High erosion risk: textual contrast, High erosion\nrisk: shallow depth",
+                        "value": 29
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: textual contrast, High\nerosion risk: shallow depth",
+                        "value": 31
+                    },
+                    {
+                        "color": "feb66a",
+                        "description": "Slope, High erosion risk: steep slope",
+                        "value": 36
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Gravel, Slope, High erosion risk: steep slope",
+                        "value": 38
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Slope, High erosion risk: textual contrast, High erosion risk:\nsteep slope",
+                        "value": 44
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Gravel, Slope, High erosion risk: textual contrast, High erosion\nrisk: steep slope",
+                        "value": 46
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Shallow, Slope, High erosion risk: shallow depth, High erosion\nrisk: steep slope",
+                        "value": 53
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: shallow depth, High\nerosion risk: steep slope",
+                        "value": 55
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: textual contrast, High erosion\nrisk: shallow depth, High erosion risk: steep slope\n",
+                        "value": 61
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: textual contrast, High\nerosion risk: shallow depth, High erosion risk: steep slope\n",
+                        "value": 63
+                    },
+                    {
+                        "color": "fff1af",
+                        "description": "Al Toxicity",
+                        "value": 128
+                    },
+                    {
+                        "color": "feb66a",
+                        "description": "Gravel, Al Toxicity",
+                        "value": 130
+                    },
+                    {
+                        "color": "feb66a",
+                        "description": "Slope, Al Toxicity",
+                        "value": 132
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Gravel, Slope, Al Toxicity",
+                        "value": 134
+                    },
+                    {
+                        "color": "feb66a",
+                        "description": "High erosion risk: textual contrast, Al Toxicity",
+                        "value": 136
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Slope, High erosion risk: textual contrast, Al Toxicity",
+                        "value": 140
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Slope, High erosion risk: steep slope, Al Toxicity",
+                        "value": 164
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Gravel, Slope, High erosion risk: steep slope, Al Toxicity",
+                        "value": 166
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Slope, High erosion risk: textual contrast, High erosion risk:\nsteep slope, Al Toxicity",
+                        "value": 172
+                    },
+                    {
+                        "color": "fff1af",
+                        "description": "Calcareous",
+                        "value": 256
+                    },
+                    {
+                        "color": "feb66a",
+                        "description": "Gravel, Calcareous",
+                        "value": 258
+                    },
+                    {
+                        "color": "feb66a",
+                        "description": "Slope, Calcareous",
+                        "value": 260
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Gravel, Slope, Calcareous",
+                        "value": 262
+                    },
+                    {
+                        "color": "feb66a",
+                        "description": "High erosion risk: textual contrast, Calcareous",
+                        "value": 264
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Gravel, High erosion risk: textual contrast, Calcareous",
+                        "value": 266
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Slope, High erosion risk: textual contrast, Calcareous",
+                        "value": 268
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Gravel, Slope, High erosion risk: textual contrast, Calcareous",
+                        "value": 270
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Shallow, High erosion risk: shallow depth, Calcareous",
+                        "value": 273
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Shallow, Gravel, High erosion risk: shallow depth, Calcareous",
+                        "value": 275
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Shallow, Slope, High erosion risk: shallow depth, Calcareous",
+                        "value": 277
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: shallow depth, Calcareous",
+                        "value": 279
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Shallow, High erosion risk: textual contrast, High erosion risk:\nshallow depth, Calcareous",
+                        "value": 281
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, High erosion risk: textual contrast, High erosion\nrisk: shallow depth, Calcareous",
+                        "value": 283
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: textual contrast, High erosion\nrisk: shallow depth, Calcareous",
+                        "value": 285
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: textual contrast, High\nerosion risk: shallow depth, Calcareous\n",
+                        "value": 287
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Slope, High erosion risk: steep slope, Calcareous",
+                        "value": 292
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Gravel, Slope, High erosion risk: steep slope, Calcareous",
+                        "value": 294
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Slope, High erosion risk: textual contrast, High erosion risk:\nsteep slope, Calcareous",
+                        "value": 300
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Gravel, Slope, High erosion risk: textual contrast, High erosion\nrisk: steep slope, Calcareous",
+                        "value": 302
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: shallow depth, High erosion\nrisk: steep slope, Calcareous",
+                        "value": 309
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: shallow depth, High\nerosion risk: steep slope, Calcareous",
+                        "value": 311
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: textual contrast, High erosion\nrisk: shallow depth, High erosion risk: steep slope, Calcareous\n",
+                        "value": 317
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: textual contrast, High\nerosion risk: shallow depth, High erosion risk: steep slope, Calcareous\n",
+                        "value": 319
+                    },
+                    {
+                        "color": "fff1af",
+                        "description": "Low K",
+                        "value": 512
+                    },
+                    {
+                        "color": "feb66a",
+                        "description": "Gravel, Low K",
+                        "value": 514
+                    },
+                    {
+                        "color": "feb66a",
+                        "description": "Slope, Low K",
+                        "value": 516
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Gravel, Slope, Low K",
+                        "value": 518
+                    },
+                    {
+                        "color": "feb66a",
+                        "description": "High erosion risk: textual contrast, Low K",
+                        "value": 520
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Gravel, High erosion risk: textual contrast, Low K",
+                        "value": 522
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Slope, High erosion risk: textual contrast, Low K",
+                        "value": 524
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Gravel, Slope, High erosion risk: textual contrast, Low K",
+                        "value": 526
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Shallow, High erosion risk: shallow depth, Low K",
+                        "value": 529
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Shallow, Gravel, High erosion risk: shallow depth, Low K",
+                        "value": 531
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Shallow, Slope, High erosion risk: shallow depth, Low K",
+                        "value": 533
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: shallow depth, Low K",
+                        "value": 535
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Shallow, High erosion risk: textual contrast, High erosion risk:\nshallow depth, Low K",
+                        "value": 537
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, High erosion risk: textual contrast, High erosion\nrisk: shallow depth, Low K",
+                        "value": 539
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: textual contrast, High erosion\nrisk: shallow depth, Low K",
+                        "value": 541
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: textual contrast, High\nerosion risk: shallow depth, Low K",
+                        "value": 543
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Slope, High erosion risk: steep slope, Low K",
+                        "value": 548
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Gravel, Slope, High erosion risk: steep slope, Low K",
+                        "value": 550
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Slope, High erosion risk: textual contrast, High erosion risk:\nsteep slope, Low K",
+                        "value": 556
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Gravel, Slope, High erosion risk: textual contrast, High erosion\nrisk: steep slope, Low K",
+                        "value": 558
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: shallow depth, High erosion\nrisk: steep slope, Low K",
+                        "value": 565
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: shallow depth, High\nerosion risk: steep slope, Low K",
+                        "value": 567
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: textual contrast, High erosion\nrisk: shallow depth, High erosion risk: steep slope, Low K\n",
+                        "value": 573
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: textual contrast, High\nerosion risk: shallow depth, High erosion risk: steep slope, Low K\n",
+                        "value": 575
+                    },
+                    {
+                        "color": "feb66a",
+                        "description": "Al Toxicity, Low K",
+                        "value": 640
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Gravel, Al Toxicity, Low K",
+                        "value": 642
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Slope, Al Toxicity, Low K",
+                        "value": 644
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Gravel, Slope, Al Toxicity, Low K",
+                        "value": 646
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "High erosion risk: textual contrast, Al Toxicity, Low K",
+                        "value": 648
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Gravel, High erosion risk: textual contrast, Al Toxicity, Low K",
+                        "value": 650
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Slope, High erosion risk: textual contrast, Al Toxicity, Low K",
+                        "value": 652
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Slope, High erosion risk: steep slope, Al Toxicity, Low K",
+                        "value": 676
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Gravel, Slope, High erosion risk: steep slope, Al Toxicity, Low K",
+                        "value": 678
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Slope, High erosion risk: textual contrast, High erosion risk:\nsteep slope, Al Toxicity, Low K",
+                        "value": 684
+                    },
+                    {
+                        "color": "feb66a",
+                        "description": "Calcareous, Low K",
+                        "value": 768
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Gravel, Calcareous, Low K",
+                        "value": 770
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Slope, Calcareous, Low K",
+                        "value": 772
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Gravel, Slope, Calcareous, Low K",
+                        "value": 774
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "High erosion risk: textual contrast, Calcareous, Low K",
+                        "value": 776
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Gravel, High erosion risk: textual contrast, Calcareous, Low K",
+                        "value": 778
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Slope, High erosion risk: textual contrast, Calcareous, Low K",
+                        "value": 780
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Gravel, Slope, High erosion risk: textual contrast, Calcareous, Low K",
+                        "value": 782
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Shallow, High erosion risk: shallow depth, Calcareous, Low K",
+                        "value": 785
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, High erosion risk: shallow depth, Calcareous, Low K",
+                        "value": 787
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: shallow depth, Calcareous, Low K",
+                        "value": 789
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: shallow depth, Calcareous, Low K",
+                        "value": 791
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, High erosion risk: textual contrast, High erosion risk:\nshallow depth, Calcareous, Low K",
+                        "value": 793
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, High erosion risk: textual contrast, High erosion\nrisk: shallow depth, Calcareous, Low K\n",
+                        "value": 795
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: textual contrast, High erosion\nrisk: shallow depth, Calcareous, Low K\n",
+                        "value": 797
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: textual contrast, High\nerosion risk: shallow depth, Calcareous, Low K\n",
+                        "value": 799
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Slope, High erosion risk: steep slope, Calcareous, Low K",
+                        "value": 804
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Gravel, Slope, High erosion risk: steep slope, Calcareous, Low K",
+                        "value": 806
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Slope, High erosion risk: textual contrast, High erosion risk:\nsteep slope, Calcareous, Low K",
+                        "value": 812
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Gravel, Slope, High erosion risk: textual contrast, High erosion\nrisk: steep slope, Calcareous, Low K",
+                        "value": 814
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: shallow depth, High erosion\nrisk: steep slope, Calcareous, Low K",
+                        "value": 821
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: shallow depth, High\nerosion risk: steep slope, Calcareous, Low K\n",
+                        "value": 823
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: textual contrast, High erosion\nrisk: shallow depth, High erosion risk: steep slope, Calcareous, Low K\n",
+                        "value": 829
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: textual contrast, High\nerosion risk: shallow depth, High erosion risk: steep slope, Calcareous, Low K\n",
+                        "value": 831
+                    },
+                    {
+                        "color": "fff1af",
+                        "description": "High leaching potential",
+                        "value": 1024
+                    },
+                    {
+                        "color": "feb66a",
+                        "description": "Gravel, High leaching potential",
+                        "value": 1026
+                    },
+                    {
+                        "color": "feb66a",
+                        "description": "Slope, High leaching potential",
+                        "value": 1028
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Gravel, Slope, High leaching potential",
+                        "value": 1030
+                    },
+                    {
+                        "color": "feb66a",
+                        "description": "High erosion risk: textual contrast, High leaching potential",
+                        "value": 1032
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Slope, High erosion risk: textual contrast, High leaching potential",
+                        "value": 1036
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Shallow, High erosion risk: shallow depth, High leaching potential",
+                        "value": 1041
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Slope, High erosion risk: steep slope, High leaching potential",
+                        "value": 1060
+                    },
+                    {
+                        "color": "feb66a",
+                        "description": "Al Toxicity, High leaching potential",
+                        "value": 1152
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Gravel, Al Toxicity, High leaching potential",
+                        "value": 1154
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Slope, Al Toxicity, High leaching potential",
+                        "value": 1156
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "High erosion risk: textual contrast, Al Toxicity, High leaching potential",
+                        "value": 1160
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Slope, High erosion risk: textual contrast, Al Toxicity, High leaching potential",
+                        "value": 1164
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Slope, High erosion risk: steep slope, Al Toxicity, High leaching potential",
+                        "value": 1188
+                    },
+                    {
+                        "color": "feb66a",
+                        "description": "Calcareous, High leaching potential",
+                        "value": 1280
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Shallow, Calcareous, High leaching potential",
+                        "value": 1281
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Gravel, Calcareous, High leaching potential",
+                        "value": 1282
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Slope, Calcareous, High leaching potential",
+                        "value": 1284
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Gravel, Slope, Calcareous, High leaching potential",
+                        "value": 1286
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "High erosion risk: textual contrast, Calcareous, High leaching potential",
+                        "value": 1288
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Gravel, High erosion risk: textual contrast, Calcareous, High leaching potential",
+                        "value": 1290
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Slope, High erosion risk: textual contrast, Calcareous, High leaching potential",
+                        "value": 1292
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Gravel, Slope, High erosion risk: textual contrast, Calcareous, High leaching potential",
+                        "value": 1294
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Shallow, High erosion risk: shallow depth, Calcareous, High leaching potential",
+                        "value": 1297
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, High erosion risk: shallow depth, Calcareous, High leaching potential",
+                        "value": 1299
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: shallow depth, Calcareous,\nHigh leaching potential",
+                        "value": 1301
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: shallow depth, Calcareous,\nHigh leaching potential",
+                        "value": 1303
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, High erosion risk: textual contrast, High erosion risk:\nshallow depth, Calcareous, High leaching potential\n",
+                        "value": 1305
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, High erosion risk: textual contrast, High erosion\nrisk: shallow depth, Calcareous, High leaching potential\n",
+                        "value": 1307
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: textual contrast, High erosion\nrisk: shallow depth, Calcareous, High leaching potential\n",
+                        "value": 1309
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Slope, High erosion risk: steep slope, Calcareous, High leaching potential",
+                        "value": 1316
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Gravel, Slope, High erosion risk: steep slope, Calcareous, High\nleaching potential",
+                        "value": 1318
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Slope, High erosion risk: textual contrast, High erosion risk:\nsteep slope, Calcareous, High leaching potential\n",
+                        "value": 1324
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Gravel, Slope, High erosion risk: textual contrast, High erosion\nrisk: steep slope, Calcareous, High leaching potential\n",
+                        "value": 1326
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: shallow depth, High erosion\nrisk: steep slope, Calcareous, High leaching potential\n",
+                        "value": 1333
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: shallow depth, High\nerosion risk: steep slope, Calcareous, High leaching potential\n",
+                        "value": 1335
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: textual contrast, High erosion\nrisk: shallow depth, High erosion risk: steep slope, Calcareous, High leaching\npotential\n",
+                        "value": 1341
+                    },
+                    {
+                        "color": "feb66a",
+                        "description": "Low K, High leaching potential",
+                        "value": 1536
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Shallow, Low K, High leaching potential",
+                        "value": 1537
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Gravel, Low K, High leaching potential",
+                        "value": 1538
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Slope, Low K, High leaching potential",
+                        "value": 1540
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Shallow, Slope, Low K, High leaching potential",
+                        "value": 1541
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Gravel, Slope, Low K, High leaching potential",
+                        "value": 1542
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "High erosion risk: textual contrast, Low K, High leaching potential",
+                        "value": 1544
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Gravel, High erosion risk: textual contrast, Low K, High leaching potential",
+                        "value": 1546
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Slope, High erosion risk: textual contrast, Low K, High leaching potential",
+                        "value": 1548
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Gravel, Slope, High erosion risk: textual contrast, Low K, High leaching potential",
+                        "value": 1550
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Shallow, High erosion risk: shallow depth, Low K, High leaching potential",
+                        "value": 1553
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, High erosion risk: shallow depth, Low K, High leaching potential",
+                        "value": 1555
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: shallow depth, Low K, High leaching potential",
+                        "value": 1557
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: shallow depth, Low\nK, High leaching potential",
+                        "value": 1559
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, High erosion risk: textual contrast, High erosion risk:\nshallow depth, Low K, High leaching potential\n",
+                        "value": 1561
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, High erosion risk: textual contrast, High erosion\nrisk: shallow depth, Low K, High leaching potential\n",
+                        "value": 1563
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: textual contrast, High erosion\nrisk: shallow depth, Low K, High leaching potential\n",
+                        "value": 1565
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: textual contrast, High\nerosion risk: shallow depth, Low K, High leaching potential\n",
+                        "value": 1567
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Slope, High erosion risk: steep slope, Low K, High leaching potential",
+                        "value": 1572
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: steep slope, Low K, High leaching potential",
+                        "value": 1573
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Gravel, Slope, High erosion risk: steep slope, Low K, High leaching potential",
+                        "value": 1574
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Slope, High erosion risk: textual contrast, High erosion risk:\nsteep slope, Low K, High leaching potential\n",
+                        "value": 1580
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Gravel, Slope, High erosion risk: textual contrast, High erosion\nrisk: steep slope, Low K, High leaching potential\n",
+                        "value": 1582
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: shallow depth, High erosion\nrisk: steep slope, Low K, High leaching potential\n",
+                        "value": 1589
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: shallow depth, High\nerosion risk: steep slope, Low K, High leaching potential\n",
+                        "value": 1591
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: textual contrast, High erosion\nrisk: shallow depth, High erosion risk: steep slope, Low K, High leaching\npotential\n",
+                        "value": 1597
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: textual contrast, High\nerosion risk: shallow depth, High erosion risk: steep slope, Low K, High leaching\npotential\n",
+                        "value": 1599
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Al Toxicity, Low K, High leaching potential",
+                        "value": 1664
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Gravel, Al Toxicity, Low K, High leaching potential",
+                        "value": 1666
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Slope, Al Toxicity, Low K, High leaching potential",
+                        "value": 1668
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Gravel, Slope, Al Toxicity, Low K, High leaching potential",
+                        "value": 1670
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "High erosion risk: textual contrast, Al Toxicity, Low K, High leaching potential",
+                        "value": 1672
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Gravel, High erosion risk: textual contrast, Al Toxicity, Low K, High leaching potential",
+                        "value": 1674
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Slope, High erosion risk: textual contrast, Al Toxicity, Low K, High leaching potential",
+                        "value": 1676
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Slope, High erosion risk: steep slope, Al Toxicity, Low K, High leaching potential",
+                        "value": 1700
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Gravel, Slope, High erosion risk: steep slope, Al Toxicity, Low K, High leaching potential",
+                        "value": 1702
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Slope, High erosion risk: textual contrast, High erosion risk:\nsteep slope, Al Toxicity, Low K, High leaching potential\n",
+                        "value": 1708
+                    },
+                    {
+                        "color": "f3854e",
+                        "description": "Calcareous, Low K, High leaching potential",
+                        "value": 1792
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Shallow, Calcareous, Low K, High leaching potential",
+                        "value": 1793
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Gravel, Calcareous, Low K, High leaching potential",
+                        "value": 1794
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "Slope, Calcareous, Low K, High leaching potential",
+                        "value": 1796
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Gravel, Slope, Calcareous, Low K, High leaching potential",
+                        "value": 1798
+                    },
+                    {
+                        "color": "e54f35",
+                        "description": "High erosion risk: textual contrast, Calcareous, Low K, High leaching potential",
+                        "value": 1800
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Gravel, High erosion risk: textual contrast, Calcareous, Low K, High leaching potential",
+                        "value": 1802
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Slope, High erosion risk: textual contrast, Calcareous, Low K, High leaching potential",
+                        "value": 1804
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Gravel, Slope, High erosion risk: textual contrast, Calcareous,\nLow K, High leaching potential",
+                        "value": 1806
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, High erosion risk: shallow depth, Calcareous, Low K, High leaching potential",
+                        "value": 1809
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, High erosion risk: shallow depth, Calcareous, Low K, High leaching potential",
+                        "value": 1811
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: shallow depth, Calcareous, Low K, High leaching potential",
+                        "value": 1813
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: shallow depth, Calcareous,\nLow K, High leaching potential",
+                        "value": 1815
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, High erosion risk: textual contrast, High erosion risk:\nshallow depth, Calcareous, Low K, High leaching potential\n",
+                        "value": 1817
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: textual contrast, High erosion\nrisk: shallow depth, Calcareous, Low K, High leaching potential\n",
+                        "value": 1821
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Slope, High erosion risk: steep slope, Calcareous, Low K, High leaching potential",
+                        "value": 1828
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Gravel, Slope, High erosion risk: steep slope, Calcareous, Low K, High leaching potential",
+                        "value": 1830
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Slope, High erosion risk: textual contrast, High erosion risk:\nsteep slope, Calcareous, Low K, High leaching potential\n",
+                        "value": 1836
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Gravel, Slope, High erosion risk: textual contrast, High erosion\nrisk: steep slope, Calcareous, Low K, High leaching potential\n",
+                        "value": 1838
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: shallow depth, High erosion\nrisk: steep slope, Calcareous, Low K, High leaching potential\n",
+                        "value": 1845
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Gravel, Slope, High erosion risk: shallow depth, High\nerosion risk: steep slope, Calcareous, Low K, High leaching potential\n",
+                        "value": 1847
+                    },
+                    {
+                        "color": "d7191c",
+                        "description": "Shallow, Slope, High erosion risk: textual contrast, High erosion\nrisk: shallow depth, High erosion risk: steep slope, Calcareous, Low K, High\nleaching potential\n",
+                        "value": 1853
+                    }
+                ],
+                "name": "fcc"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Fertility Capability Classification",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "fcc"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 25,
+                    "lon": -3,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ],
+        "fcc": {
+            "minimum": 0,
+            "maximum": 1853
+        }
+    },
+    "title": "iSDAsoil Fertility Capability Classification",
+    "version": "v1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -31.46,
+                    -35.22,
+                    57.08,
+                    37.98
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2017-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

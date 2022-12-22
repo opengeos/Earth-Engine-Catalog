@@ -1,0 +1,265 @@
+{
+    "type": "Collection",
+    "id": "OpenLandMap/PNV/PNV_BIOME-TYPE_BIOME00K_C/v01",
+    "stac_version": "1.0.0",
+    "description": "Potential Natural Vegetation biomes global predictions of classes\n(based on predictions using the BIOMES 6000 dataset's 'current biomes' category.)\n\nPotential Natural Vegetation (PNV) is the vegetation cover in equilibrium with climate\nthat would exist at a given location non-impacted by human activities. PNV is useful for raising\npublic awareness about land degradation and for estimating land potential.\nThis dataset contains results of predictions of\n- (1) global distribution of biomes based on the BIOME 6000 data set (8057 modern pollen-based site reconstructions),\n- (2) distribution of forest tree species in Europe based on detailed occurrence records (1,546,435 ground observations), and\n- (3) global monthly Fraction of Absorbed Photosynthetically Active Radiation (FAPAR) values (30,301 randomly-sampled points).\n\nTo report an issue or artifact in data, please use [this link](https://github.com/envirometrix/PNVmaps/issues).\n\nTo access and visualize maps outside of Earth Engine, use [this page](https://opengeohub.org/about-openlandmap).\n\nIf you discover a bug, artifact or inconsistency in the LandGIS maps\nor if you have a question please use the following channels:\n\n *  [Technical issues and questions about the code](https://gitlab.com/openlandmap/global-layers/issues)\n *  [General questions and comments](https://disqus.com/home/forums/landgis/)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OpenLandMap_PNV_PNV_BIOME-TYPE_BIOME00K_C_v01",
+            "type": "text/html",
+            "title": "Run the example for OpenLandMap/PNV/PNV_BIOME-TYPE_BIOME00K_C/v01 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/OpenLandMap/OpenLandMap_PNV_PNV_BIOME-TYPE_BIOME00K_C_v01_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_PNV_PNV_BIOME-TYPE_BIOME00K_C_v01#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://opendatacommons.org/licenses/odbl/1-0/",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.7910/DVN/QQHCIK"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenLandMap/OpenLandMap_PNV_PNV_BIOME-TYPE_BIOME00K_C_v01.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenLandMap/catalog.json",
+            "type": "application/json",
+            "title": "OpenLandMap"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "This is a human-readable summary of (and not a substitute for) the [license](https://creativecommons.org/licenses/by-sa/4.0/).\n\nYou are free to -\n  Share - copy and redistribute the material in any medium or format\n  Adapt - remix, transform, and build upon the material for any purpose, even commercially.\n\nThis license is acceptable for Free Cultural Works.\nThe licensor cannot revoke these freedoms as long as you follow the license terms.\n\nUnder the following terms -\n  Attribution - You must give appropriate credit, provide a link to the license, and indicate if\n  changes were made. You may do so in any reasonable manner, but not in any way that suggests the\n  licensor endorses you or your use.\n\n  ShareAlike - If you remix, transform, or build upon the material, you must distribute your\n  contributions under the same license as the original.\n\n  No additional restrictions - You may not apply legal terms or technological measures that\n  legally restrict others from doing anything the license permits.\n",
+    "gee:type": "image",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true,
+    "keywords": [
+        "biome",
+        "envirometrix",
+        "opengeohub",
+        "openlandmap",
+        "potential"
+    ],
+    "providers": [
+        {
+            "name": "EnvirometriX Ltd",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.7910/DVN/QQHCIK"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_PNV_PNV_BIOME-TYPE_BIOME00K_C_v01"
+        }
+    ],
+    "sci:citation": "Hengl T, Walsh MG, Sanderman J, Wheeler I, Harrison SP, Prentice IC. (2018) Global Mapping of Potential Natural Vegetation: An Assessment of Machine Learning Algorithms for Estimating Land Potential. PeerJ Preprints.\n[10.7287/peerj.preprints.26811v1](https://doi.org/10.7910/DVN/QQHCIK)\n",
+    "sci:doi": "10.7910/DVN/QQHCIK",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Potential distribution of biomes",
+                "gee:classes": [
+                    {
+                        "color": "1c5510",
+                        "description": "tropical evergreen broadleaf forest",
+                        "value": 1
+                    },
+                    {
+                        "color": "659208",
+                        "description": "tropical semi-evergreen broadleaf forest",
+                        "value": 2
+                    },
+                    {
+                        "color": "ae7d20",
+                        "description": "tropical deciduous broadleaf forest and woodland",
+                        "value": 3
+                    },
+                    {
+                        "color": "000065",
+                        "description": "warm-temperate evergreen broadleaf and mixed forest",
+                        "value": 4
+                    },
+                    {
+                        "color": "bbcb35",
+                        "description": "cool-temperate rainforest",
+                        "value": 7
+                    },
+                    {
+                        "color": "009a18",
+                        "description": "cool evergreen needleleaf forest",
+                        "value": 8
+                    },
+                    {
+                        "color": "caffca",
+                        "description": "cool mixed forest",
+                        "value": 9
+                    },
+                    {
+                        "color": "55eb49",
+                        "description": "temperate deciduous broadleaf forest",
+                        "value": 13
+                    },
+                    {
+                        "color": "65b2ff",
+                        "description": "cold deciduous forest",
+                        "value": 14
+                    },
+                    {
+                        "color": "0020ca",
+                        "description": "cold evergreen needleleaf forest",
+                        "value": 15
+                    },
+                    {
+                        "color": "8ea228",
+                        "description": "temperate sclerophyll woodland and shrubland",
+                        "value": 16
+                    },
+                    {
+                        "color": "ff9adf",
+                        "description": "temperate evergreen needleleaf open woodland",
+                        "value": 17
+                    },
+                    {
+                        "color": "baff35",
+                        "description": "tropical savanna",
+                        "value": 18
+                    },
+                    {
+                        "color": "ffba9a",
+                        "description": "xerophytic woods/scrub",
+                        "value": 20
+                    },
+                    {
+                        "color": "ffba35",
+                        "description": "steppe",
+                        "value": 22
+                    },
+                    {
+                        "color": "f7ffca",
+                        "description": "desert",
+                        "value": 27
+                    },
+                    {
+                        "color": "e7e718",
+                        "description": "graminoid and forb tundra",
+                        "value": 28
+                    },
+                    {
+                        "color": "798649",
+                        "description": "erect dwarf shrub tundra",
+                        "value": 30
+                    },
+                    {
+                        "color": "65ff9a",
+                        "description": "low and high shrub tundra",
+                        "value": 31
+                    },
+                    {
+                        "color": "d29e96",
+                        "description": "prostrate dwarf shrub tundra",
+                        "value": 32
+                    }
+                ],
+                "name": "biome_type"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Potential distribution of biomes",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "biome_type"
+                        ],
+                        "max": [
+                            32
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "1c5510",
+                            "659208",
+                            "ae7d20",
+                            "000065",
+                            "bbcb35",
+                            "009a18",
+                            "caffca",
+                            "55eb49",
+                            "65b2ff",
+                            "0020ca",
+                            "8ea228",
+                            "ff9adf",
+                            "baff35",
+                            "ffba9a",
+                            "ffba35",
+                            "f7ffca",
+                            "e7e718",
+                            "798649",
+                            "65ff9a",
+                            "d29e96"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 30.7,
+                    "lon": -5.6,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            1000
+        ]
+    },
+    "title": "OpenLandMap Potential Distribution of Biomes",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2002-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-SA-4.0"
+}

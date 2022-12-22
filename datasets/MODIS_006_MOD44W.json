@@ -1,0 +1,227 @@
+{
+    "type": "Collection",
+    "id": "MODIS/006/MOD44W",
+    "stac_version": "1.0.0",
+    "description": "The MOD44W V6 land/water mask 250m product is derived using a\ndecision tree classifier trained with MODIS data and validated with the\nMOD44W V5 product. A series of masks are applied to address known issues\ncaused by terrain shadow, burn scars, cloudiness, or ice cover in oceans.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_006_MOD44W",
+            "type": "text/html",
+            "title": "Run the example for MODIS/006/MOD44W in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_006_MOD44W_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD44W#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/MODIS/MOD44W.006"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MOD44W.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "geophysical",
+        "mod44w",
+        "modis",
+        "nasa",
+        "srtm",
+        "usgs",
+        "water_mask"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/MODIS/MOD44W.006"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD44W"
+        }
+    ],
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/MODIS/MOD44W.006",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Land-water mask",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Land-water mask",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Land",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Water",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 1
+                },
+                "name": "water_mask"
+            },
+            {
+                "description": "Quality assurance (QA)",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 4,
+                            "description": "Quality assurance (QA)",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "High confidence observation",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Lower confidence water, but MOD44W V5 is water",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Lower confidence land",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Ocean mask",
+                                    "value": 4
+                                },
+                                {
+                                    "description": "Ocean mask, but no water detected",
+                                    "value": 5
+                                },
+                                {
+                                    "description": "Burned area (MCD64A1)",
+                                    "value": 6
+                                },
+                                {
+                                    "description": "Urban or impervious surface",
+                                    "value": 7
+                                },
+                                {
+                                    "description": "No water detected, Version 5 MOD44W shows inland water",
+                                    "value": 8
+                                },
+                                {
+                                    "description": "No data (outside of projected area)",
+                                    "value": 10
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 4
+                },
+                "name": "water_mask_QA"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Water Mask",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "water_mask"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "bcba99",
+                            "2d0491"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 0,
+                    "lon": 0,
+                    "zoom": 0
+                }
+            }
+        ],
+        "gsd": [
+            250
+        ],
+        "instruments": [
+            "MODIS",
+            "Shuttle Imaging Radar-C (SIR-C)"
+        ],
+        "platform": [
+            "Space Shuttle Endeavour",
+            "Terra"
+        ]
+    },
+    "title": "MOD44W.006 Terra Land Water Mask Derived From MODIS and SRTM Yearly Global 250m",
+    "version": "V006",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2015-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

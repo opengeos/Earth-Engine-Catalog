@@ -1,0 +1,247 @@
+{
+    "type": "Collection",
+    "id": "WRI/GPPD/power_plants",
+    "stac_version": "1.0.0",
+    "description": "The Global Power Plant Database is a comprehensive, open source\ndatabase of power plants around the world. It centralizes\npower plant data to make it easier to navigate, compare and draw\ninsights. Each power plant is geolocated and entries contain\ninformation on plant capacity, generation, ownership, and fuel type.\nAs of June 2018, the database includes around 28,500 power plants\nfrom 164 countries.\nIt will be continuously updated as data becomes available.\n\nThe methodology for the dataset creation is given in the World Resources\nInstitute publication\n[\"A Global Database of Power Plants\"](https://www.wri.org/publication/global-power-plant-database).\n\nAssociated code for the creation of the dataset can be found on\n[GitHub](https://github.com/wri/global-power-plant-database).\nThe bleeding-edge version of the database (which may contain substantial\ndifferences from the release in Earth Engine) is available on GitHub as well.\n\nIf you use this dataset, the provider (WRI) has requested that you\n[register your use](https://goo.gl/ivTvkd) and (optionally)\nsign up to receive update notifications.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WRI_GPPD_power_plants",
+            "type": "text/html",
+            "title": "Run the example for WRI/GPPD/power_plants in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/WRI/WRI_GPPD_power_plants_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/WRI_GPPD_power_plants#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WRI/WRI_GPPD_power_plants.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WRI/catalog.json",
+            "type": "application/json",
+            "title": "WRI"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "table",
+    "keywords": [
+        "climate",
+        "energy",
+        "infrastructure",
+        "power",
+        "power_plants",
+        "wri"
+    ],
+    "providers": [
+        {
+            "name": "World Resources Institute",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://datasets.wri.org/dataset/globalpowerplantdatabase"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/WRI_GPPD_power_plants"
+        }
+    ],
+    "sci:citation": "Global Energy Observatory, Google, KTH Royal Institute of Technology in\nStockholm, University of Groningen, World Resources Institute. 2018. Global\nPower Plant Database. Published on Resource Watch and Google Earth Engine;\n[https://resourcewatch.org/](https://resourcewatch.org/)\n[https://earthengine.google.com/](https://earthengine.google.com/)\n",
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "3-character country code corresponding to the ISO 3166-1 alpha-3 specs",
+                "name": "country",
+                "type": "STRING"
+            },
+            {
+                "description": "Longer form of the country designation",
+                "name": "country_lg",
+                "type": "STRING"
+            },
+            {
+                "description": "Name or title of the power plant, generally in Romanized form",
+                "name": "name",
+                "type": "STRING"
+            },
+            {
+                "description": "10- or 12-character identifier for the power plant",
+                "name": "gppd_idnr",
+                "type": "STRING"
+            },
+            {
+                "description": "Electrical generating capacity in megawatts",
+                "name": "capacitymw",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Geolocation in decimal degrees",
+                "name": "latitude",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Geolocation in decimal degrees",
+                "name": "longitude",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Energy source used in electricity generation or export",
+                "name": "fuel1",
+                "type": "STRING"
+            },
+            {
+                "description": "Energy source used in electricity generation or export",
+                "name": "fuel2",
+                "type": "STRING"
+            },
+            {
+                "description": "Energy source used in electricity generation or export",
+                "name": "fuel3",
+                "type": "STRING"
+            },
+            {
+                "description": "Energy source used in electricity generation or export",
+                "name": "fuel4",
+                "type": "STRING"
+            },
+            {
+                "description": "Year of plant operation, weighted by unit-capacity when data is available",
+                "name": "comm_year",
+                "type": "STRING"
+            },
+            {
+                "description": "Majority shareholder of the power plant, generally in Romanized form",
+                "name": "owner",
+                "type": "STRING"
+            },
+            {
+                "description": "Entity reporting the data; could be an organization, report, or document,\ngenerally in Romanized form",
+                "name": "source",
+                "type": "STRING"
+            },
+            {
+                "description": "Web document corresponding to the \"source\" field",
+                "name": "url",
+                "type": "STRING"
+            },
+            {
+                "description": "Attribution for geolocation information",
+                "name": "src_latlon",
+                "type": "STRING"
+            },
+            {
+                "description": "Year the capacity information was reported",
+                "name": "cap_year",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Electricity generation in gigawatt-hours reported for the year 2013",
+                "name": "gwh_2013",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Electricity generation in gigawatt-hours reported for the year 2014",
+                "name": "gwh_2014",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Electricity generation in gigawatt-hours reported for the year 2015",
+                "name": "gwh_2015",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Electricity generation in gigawatt-hours reported for the year 2016",
+                "name": "gwh_2016",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Estimated annual electricity generation in gigawatt-hours for the year\n2015",
+                "name": "gwh_estimt",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Power Plant capacity",
+                "lookat": {
+                    "lat": 49,
+                    "lon": 16,
+                    "zoom": 4
+                },
+                "polygon_visualization": {
+                    "property_name": "capacitymw",
+                    "property_vis": {
+                        "max": [
+                            10
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "display_name": "Power Plant capacity",
+                "visualize_as": "FeatureView"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 10000,
+            "prerender_tiles": true,
+            "thinning_ranking": [
+                "capacitymw DESC"
+            ],
+            "thinning_strategy": "HIGHER_DENSITY",
+            "z_order_ranking": [
+                "capacitymw DESC"
+            ]
+        }
+    },
+    "title": "Global Power Plant Database",
+    "version": "1.1.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-06-11T00:00:00Z",
+                    "2018-06-11T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

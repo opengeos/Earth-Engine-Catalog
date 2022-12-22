@@ -1,0 +1,252 @@
+{
+    "type": "Collection",
+    "id": "TUBerlin/BigEarthNet/v1",
+    "stac_version": "1.0.0",
+    "description": "BigEarthNet is a new large-scale Sentinel-2 benchmark archive, consisting of\n590,326 Sentinel-2 image patches.\nTo construct BigEarthNet, 125 Sentinel-2 tiles acquired between June 2017 and\nMay 2018 over the 10 countries (Austria, Belgium, Finland, Ireland, Kosovo,\nLithuania, Luxembourg, Portugal, Serbia, Switzerland) of Europe were initially\nselected. All the tiles were atmospherically corrected by the Sentinel-2 Level\n2A product generation and formatting tool (sen2cor).\nThen, they were divided into 590,326 non-overlapping image patches. Each image\npatch was annotated by the multiple land-cover classes (i.e., multi-labels) that\nwere provided from the CORINE Land Cover database of the year 2018 (CLC 2018).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/TUBerlin_BigEarthNet_v1",
+            "type": "text/html",
+            "title": "Run the example for TUBerlin/BigEarthNet/v1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/TUBerlin/TUBerlin_BigEarthNet_v1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/TUBerlin_BigEarthNet_v1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/TUBerlin/TUBerlin_BigEarthNet_v1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/TUBerlin/catalog.json",
+            "type": "application/json",
+            "title": "TUBerlin"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The BigEarthNet Archive is licensed under the Community Data License\nAgreement - Permissive, Version 1.0.  For more information,\nplease refer to the (http://bigearth.net/downloads/documents/License.pdf).\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "chip",
+        "copernicus",
+        "corine_derived",
+        "label",
+        "ml",
+        "sentinel",
+        "tile"
+    ],
+    "providers": [
+        {
+            "name": "BigEarthNet",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "http://bigearth.net/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/TUBerlin_BigEarthNet_v1"
+        }
+    ],
+    "sci:citation": "G. Sumbul, M. Charfuelan, B. Demir, V. Markl, BigEarthNet: A Large-Scale\nBenchmark Archive for Remote Sensing Image Understanding, IEEE International\nConference on Geoscience and Remote Sensing Symposium, pp. 5901-5904,\nYokohama, Japan, 2019.\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "center_wavelength": 0.4439,
+                "description": "Aerosols",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "443.9nm (S2A) / 442.3nm (S2B)",
+                "gsd": 60,
+                "name": "B1"
+            },
+            {
+                "center_wavelength": 0.4966,
+                "description": "Blue",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "496.6nm (S2A) / 492.1nm (S2B)",
+                "gsd": 10,
+                "name": "B2"
+            },
+            {
+                "center_wavelength": 0.56,
+                "description": "Green",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "560nm (S2A) / 559nm (S2B)",
+                "gsd": 10,
+                "name": "B3"
+            },
+            {
+                "center_wavelength": 0.6645,
+                "description": "Red",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "664.5nm (S2A) / 665nm (S2B)",
+                "gsd": 10,
+                "name": "B4"
+            },
+            {
+                "center_wavelength": 0.7039,
+                "description": "Red Edge 1",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "703.9nm (S2A) / 703.8nm (S2B)",
+                "gsd": 20,
+                "name": "B5"
+            },
+            {
+                "center_wavelength": 0.7402,
+                "description": "Red Edge 2",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "740.2nm (S2A) / 739.1nm (S2B)",
+                "gsd": 20,
+                "name": "B6"
+            },
+            {
+                "center_wavelength": 0.7825,
+                "description": "Red Edge 3",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "782.5nm (S2A) / 779.7nm (S2B)",
+                "gsd": 20,
+                "name": "B7"
+            },
+            {
+                "center_wavelength": 0.8351,
+                "description": "NIR",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "835.1nm (S2A) / 833nm (S2B)",
+                "gsd": 10,
+                "name": "B8"
+            },
+            {
+                "center_wavelength": 0.945,
+                "description": "Water vapor",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "945nm (S2A) / 943.2nm (S2B)",
+                "gsd": 60,
+                "name": "B9"
+            },
+            {
+                "center_wavelength": 1.3735,
+                "description": "Cirrus",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "1373.5nm (S2A) / 1376.9nm (S2B)",
+                "gsd": 60,
+                "name": "B10"
+            },
+            {
+                "center_wavelength": 1.6137,
+                "description": "SWIR 1",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "1613.7nm (S2A) / 1610.4nm (S2B)",
+                "gsd": 20,
+                "name": "B11"
+            },
+            {
+                "center_wavelength": 2.2024,
+                "description": "SWIR 2",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "2202.4nm (S2A) / 2185.7nm (S2B)",
+                "gsd": 20,
+                "name": "B12"
+            },
+            {
+                "center_wavelength": 0.8648,
+                "description": "Red Edge 4",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "864.8nm (S2A) / 864nm (S2B)",
+                "gsd": 20,
+                "name": "B8A"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "List of landcover types found in this image",
+                "name": "labels",
+                "type": "STRING_LIST"
+            },
+            {
+                "description": "Product ID of the corresponding Sentinel-2 1C image",
+                "name": "source",
+                "type": "STRING"
+            },
+            {
+                "description": "X coordinate of tile in source image",
+                "name": "tile_x",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Y coordinate of tile in source image",
+                "name": "tile_y",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "RGB",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "B4",
+                            "B3",
+                            "B2"
+                        ],
+                        "max": [
+                            3000
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 48.27,
+                    "lon": 16.66,
+                    "zoom": 12
+                }
+            }
+        ]
+    },
+    "title": "TUBerlin/BigEarthNet/v1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -9,
+                    36.9,
+                    31.6,
+                    68.1
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-06-01T00:00:00Z",
+                    "2018-05-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

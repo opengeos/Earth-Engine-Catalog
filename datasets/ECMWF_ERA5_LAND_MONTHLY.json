@@ -1,0 +1,253 @@
+{
+    "type": "Collection",
+    "id": "ECMWF/ERA5_LAND/MONTHLY",
+    "stac_version": "1.0.0",
+    "description": "ERA5-Land is a reanalysis dataset providing a consistent view of the evolution of land variables\nover several decades at an enhanced resolution compared to ERA5. ERA5-Land has been produced by\nreplaying the land component of the ECMWF ERA5 climate reanalysis. Reanalysis combines model\ndata with observations from across the world into a globally complete and consistent dataset\nusing the laws of physics. Reanalysis produces data that goes several decades back in time,\nproviding an accurate description of the climate of the past. This dataset includes all 50\nvariables as available on CDS.\n\nThe data presented here is a subset of the full ERA5-Land dataset post-processed by ECMWF.\nMonthly-mean averages have been pre-calculated to facilitate many applications requiring easy and\nfast access to the data, when sub-monthly fields are not required.\n\nERA5-Land data is available from 1981 to three months from real-time. More information\ncan be found at the [Copernicus Climate Data Store](https://cds.climate.copernicus.eu).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/ECMWF_ERA5_LAND_MONTHLY",
+            "type": "text/html",
+            "title": "Run the example for ECMWF/ERA5_LAND/MONTHLY in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/ECMWF/ECMWF_ERA5_LAND_MONTHLY_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/ECMWF_ERA5_LAND_MONTHLY#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ECMWF/ECMWF_ERA5_LAND_MONTHLY.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ECMWF/catalog.json",
+            "type": "application/json",
+            "title": "ECMWF"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "month"
+    },
+    "gee:terms_of_use": "Please acknowledge the use of ERA5-Land as stated in the\n[Copernicus C3S/CAMS License agreement](https://apps.ecmwf.int/datasets/licences/copernicus/):\n\n- 5.1.2 Where the Licensee communicates or distributes Copernicus Products to the public, the\nLicensee shall inform the recipients of the source by using the following or any similar notice:\n'Generated using Copernicus Climate Change Service Information [Year]'.\n\n- 5.1.3 Where the Licensee makes or contributes to a publication or distribution containing\nadapted or modified Copernicus Products, the Licensee shall provide the following or any similar\nnotice: 'Contains modified Copernicus Climate Change Service Information [Year]';\n\nAny such publication or distribution covered by clauses 5.1.1 and 5.1.2 shall state that neither\nthe European Commission nor ECMWF is responsible for any use that may be made of the Copernicus\nInformation or Data it contains.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "cds",
+        "climate",
+        "copernicus",
+        "ecmwf",
+        "era5_land",
+        "evaporation",
+        "heat",
+        "lakes",
+        "precipitation",
+        "pressure",
+        "radiation",
+        "reanalysis",
+        "runoff",
+        "snow",
+        "soil_water",
+        "temperature",
+        "vegetation",
+        "wind"
+    ],
+    "providers": [
+        {
+            "name": "Climate Data Store",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://cds.climate.copernicus.eu/cdsapp"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/ECMWF_ERA5_LAND_MONTHLY"
+        }
+    ],
+    "sci:citation": "Mu&ntilde;oz Sabater, J., (2019): ERA5-Land monthly averaged data from 1981 to present. Copernicus\nClimate Change Service (C3S) Climate Data Store (CDS). (&lt;date of access&gt;),\n[doi:10.24381/cds.68d2bb30](https://doi.org/10.24381/cds.68d2bb30)\n",
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Air temperature [K] at 2m height",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "temperature_2m"
+                        ],
+                        "max": [
+                            320
+                        ],
+                        "min": [
+                            250
+                        ],
+                        "palette": [
+                            "#000080",
+                            "#0000D9",
+                            "#4000FF",
+                            "#8000FF",
+                            "#0080FF",
+                            "#00FFFF",
+                            "#00FF80",
+                            "#80FF00",
+                            "#DAFF00",
+                            "#FFFF00",
+                            "#FFF500",
+                            "#FFDA00",
+                            "#FFB000",
+                            "#FFA400",
+                            "#FF4F00",
+                            "#FF2500",
+                            "#FF0A00",
+                            "#FF00FF"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 21.2,
+                    "lon": 22.2,
+                    "zoom": 1
+                }
+            },
+            {
+                "display_name": "Total precipitation in m",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "total_precipitation"
+                        ],
+                        "max": [
+                            0.1
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "#FFFFFF",
+                            "#00FFFF",
+                            "#0080FF",
+                            "#DA00FF",
+                            "#FFA400",
+                            "#FF0000"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 21.2,
+                    "lon": 22.2,
+                    "zoom": 1
+                }
+            },
+            {
+                "display_name": "Surface pressure",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "surface_pressure"
+                        ],
+                        "max": [
+                            1150
+                        ],
+                        "min": [
+                            500
+                        ],
+                        "palette": [
+                            "#01FFFF",
+                            "#058BFF",
+                            "#0600FF",
+                            "#DF00FF",
+                            "#FF00FF",
+                            "#FF8C00",
+                            "#FF8C00"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 21.2,
+                    "lon": 22.2,
+                    "zoom": 1
+                }
+            },
+            {
+                "display_name": "u-component of wind at 10m",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "u_component_of_wind_10m"
+                        ],
+                        "max": [
+                            30
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "#FFFFFF",
+                            "#FFFF71",
+                            "#DEFF00",
+                            "#9EFF00",
+                            "#77B038",
+                            "#007E55",
+                            "#005F51",
+                            "#004B51",
+                            "#013A7B",
+                            "#023AAD"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 21.2,
+                    "lon": 22.2,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            11132
+        ]
+    },
+    "title": "ERA5-Land Monthly Averaged - ECMWF Climate Reanalysis",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1981-01-01T00:00:00Z",
+                    "2022-10-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

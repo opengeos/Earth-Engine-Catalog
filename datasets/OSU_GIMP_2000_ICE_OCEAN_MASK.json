@@ -1,0 +1,168 @@
+{
+    "type": "Collection",
+    "id": "OSU/GIMP/2000_ICE_OCEAN_MASK",
+    "stac_version": "1.0.0",
+    "description": "This dataset provides complete land ice and ocean\nclassification masks at 15 m for the Greenland ice sheet.\nIce cover was mapped using\na combination of orthorectified panchromatic (band 8)\nimagery from the Landsat 7 Enhanced Thematic Mapper\nPlus (ETM+), distributed by the USGS, and RADARSAT-1\nSynthetic Amplitude Radar (SAR) amplitude images produced\nand distributed by I. Joughin at the Applied Physics\nLaboratory, University of Washington.\n\nThe Landsat imagery was acquired for the months of July\nthrough September in 1999, 2000 and 2001 (mostly 2000)\nand the RADARSAT imagery was acquired in fall of 2000.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OSU_GIMP_2000_ICE_OCEAN_MASK",
+            "type": "text/html",
+            "title": "Run the example for OSU/GIMP/2000_ICE_OCEAN_MASK in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/OSU/OSU_GIMP_2000_ICE_OCEAN_MASK_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/OSU_GIMP_2000_ICE_OCEAN_MASK#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/B8X58MQBFUPA"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OSU/OSU_GIMP_2000_ICE_OCEAN_MASK.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OSU/catalog.json",
+            "type": "application/json",
+            "title": "OSU"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "As a condition of using these data, you must cite the use of this\ndata set using the given citation.\n",
+    "gee:type": "image",
+    "keywords": [
+        "arctic",
+        "gimp",
+        "greenland",
+        "ice",
+        "mask",
+        "nasa",
+        "polar"
+    ],
+    "providers": [
+        {
+            "name": "NASA NSIDC DAAC at CIRES",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/B8X58MQBFUPA"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/OSU_GIMP_2000_ICE_OCEAN_MASK"
+        }
+    ],
+    "sci:citation": "Howat, I.M., A. Negrete, B.E. Smith, 2014, The Greenland Ice\nMapping Project (GIMP) land classification and surface elevation\ndatasets, The Cryosphere, 8, 1509-1518,\n[doi:10.5194/tc-8-1509-2014](https://doi.org/10.5194/tc-8-1509-2014)\n[article pdf](https://www.the-cryosphere.net/8/1509/2014/tc-8-1509-2014.pdf)\n",
+    "sci:doi": "10.5067/B8X58MQBFUPA",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Ocean mask",
+                "gee:classes": [
+                    {
+                        "color": "000000",
+                        "description": "all other terrain",
+                        "value": 0
+                    },
+                    {
+                        "color": "0000FF",
+                        "description": "ocean",
+                        "value": 1
+                    }
+                ],
+                "name": "ocean_mask"
+            },
+            {
+                "description": "Ice mask",
+                "gee:classes": [
+                    {
+                        "color": "000000",
+                        "description": "not glacier ice",
+                        "value": 0
+                    },
+                    {
+                        "color": "FFFFFF",
+                        "description": "glacier ice",
+                        "value": 1
+                    }
+                ],
+                "name": "ice_mask"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Ocean and Ice Mask",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "ice_mask",
+                            "ice_mask",
+                            "ocean_mask"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 74,
+                    "lon": -41,
+                    "zoom": 4
+                }
+            }
+        ],
+        "gsd": [
+            15
+        ]
+    },
+    "title": "Greenland Ice & Ocean Mask - Greenland Mapping Project (GIMP)",
+    "version": "2.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -89.3211593425295,
+                    58.79601275381146,
+                    7.555941634834938,
+                    83.95386175580668
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1999-06-30T00:00:00Z",
+                    "2002-09-04T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

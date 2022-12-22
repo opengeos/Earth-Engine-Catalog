@@ -1,0 +1,135 @@
+{
+    "type": "Collection",
+    "id": "JRC/LUCAS_HARMO/THLOC/V1",
+    "stac_version": "1.0.0",
+    "description": "The\n[Land Use/Cover Area frame Survey (LUCAS)](https://ec.europa.eu/eurostat/web/lucas)\nin the European Union (EU) was set up to provide statistical information.\nIt represents a triennial in-situ landcover and land-use data-collection\nexercise that extends over the whole of the EU's territory.  LUCAS collects\ninformation on land cover and land use, agro-environmental variables, soil,\nand grassland. The surveys also provide spatial information to analyse the\nmutual influences between agriculture, environment, and countryside, such as\nirrigation and land management.\n\nThe dataset presented here is the harmonized version of all yearly LUCAS\nsurveys with a total of 106 attributes. Each point's location is using\nthe fields 'th_lat' and 'th_lon', that is, the LUCAS theoretical location\n(THLOC), as prescribed by the LUCAS grid.  For more information please\nsee Citations. Note that not every field is present for every year - see\nthe \\\"Years\\\" section in property descriptions.\n\nThe text \\\"C1 (Instructions)\\\" in the table schema descriptions refers to\n[this document](https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_harmonised/3_supporting/LUCAS2018-C1-Instructions.pdf).\n\nSee also\n[the 2018 LUCAS polygons dataset](JRC_LUCAS_HARMO_COPERNICUS_POLYGONS_V1_2018).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JRC_LUCAS_HARMO_THLOC_V1",
+            "type": "text/html",
+            "title": "Run the example for JRC/LUCAS_HARMO/THLOC/V1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/JRC/JRC_LUCAS_HARMO_THLOC_V1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/JRC_LUCAS_HARMO_THLOC_V1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://www.dropbox.com/s/6fist8jby0uwwgo/lucas_harmo_pack_uf_final_th_gee_noNAs_noQuo.csv"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_LUCAS_HARMO_THLOC_V1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/catalog.json",
+            "type": "application/json",
+            "title": "JRC"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "table",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "eu",
+        "jrc",
+        "landcover",
+        "landuse",
+        "lucas"
+    ],
+    "providers": [
+        {
+            "name": "Joint Research Center, Unit D5",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_harmonised/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/JRC_LUCAS_HARMO_THLOC_V1"
+        }
+    ],
+    "sci:citation": "d'Andrimont, R., Yordanov, M., Martinez-Sanchez, L. et al. Harmonised LUCAS\nin-situ land cover and use database for field surveys from 2006 to 2018\nin the European Union. Sci Data 7, 352 (2020).\n[doi:10.1038/s41597-020-00675-z](https://doi.org/10.1038/s41597-020-00675-z)\n",
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "LUCAS Points",
+                "lookat": {
+                    "lat": 37,
+                    "lon": -6,
+                    "zoom": 10
+                },
+                "table_visualization": {
+                    "color": "489734",
+                    "point_size": 3
+                }
+            },
+            {
+                "display_name": "LUCAS Points",
+                "lookat": {
+                    "lat": 37,
+                    "lon": -6,
+                    "zoom": 10
+                },
+                "visualize_as": "FeatureView"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 1500,
+            "thinning_strategy": "HIGHER_DENSITY"
+        }
+    },
+    "title": "LUCAS Harmonized (Theoretical Location, 2006-2018) V1",
+    "version": "V1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -13.359375,
+                    34.307144,
+                    34.804688,
+                    71.187754
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-02-05T00:00:00Z",
+                    "2019-03-14T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

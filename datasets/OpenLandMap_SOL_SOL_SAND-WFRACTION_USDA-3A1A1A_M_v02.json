@@ -1,0 +1,234 @@
+{
+    "type": "Collection",
+    "id": "OpenLandMap/SOL/SOL_SAND-WFRACTION_USDA-3A1A1A_M/v02",
+    "stac_version": "1.0.0",
+    "description": "Sand content in % (kg / kg) at 6 standard depths (0, 10, 30, 60, 100 and 200 cm) at 250 m resolution\n\nBased on machine learning predictions from global compilation of soil profiles and samples.\nProcessing steps are described in detail **[here](https://gitlab.com/openlandmap/global-layers/tree/master/soil)**\n. Antartica is not included.\n\nTo access and visualize maps outside of Earth Engine, use [this page](https://opengeohub.org/about-openlandmap).\n\nIf you discover a bug, artifact or inconsistency in the LandGIS maps\nor if you have a question please use the following channels:\n\n *  [Technical issues and questions about the code](https://gitlab.com/openlandmap/global-layers/issues)\n *  [General questions and comments](https://disqus.com/home/forums/landgis/)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OpenLandMap_SOL_SOL_SAND-WFRACTION_USDA-3A1A1A_M_v02",
+            "type": "text/html",
+            "title": "Run the example for OpenLandMap/SOL/SOL_SAND-WFRACTION_USDA-3A1A1A_M/v02 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/OpenLandMap/OpenLandMap_SOL_SOL_SAND-WFRACTION_USDA-3A1A1A_M_v02_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_SOL_SOL_SAND-WFRACTION_USDA-3A1A1A_M_v02#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-SA-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5281/zenodo.1476851"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenLandMap/OpenLandMap_SOL_SOL_SAND-WFRACTION_USDA-3A1A1A_M_v02.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenLandMap/catalog.json",
+            "type": "application/json",
+            "title": "OpenLandMap"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-SA-4.0](https://spdx.org/licenses/CC-BY-SA-4.0.html)",
+    "gee:type": "image",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true,
+    "keywords": [
+        "envirometrix",
+        "opengeohub",
+        "openlandmap",
+        "sand",
+        "soil",
+        "usda"
+    ],
+    "providers": [
+        {
+            "name": "EnvirometriX Ltd",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5281/zenodo.1476851"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_SOL_SOL_SAND-WFRACTION_USDA-3A1A1A_M_v02"
+        }
+    ],
+    "sci:citation": "Tomislav Hengl. (2018). Sand content in % (kg / kg) at 6 standard depths (0, 10, 30, 60, 100 and 200 cm) at 250 m resolution (Version v02) [Data set].\n[10.5281/zenodo.1476851](https://doi.org/10.5281/zenodo.1476851)\n",
+    "sci:doi": "10.5281/zenodo.1476851",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Sand content at 0 cm depth",
+                "gee:units": "% (kg / kg)",
+                "name": "b0"
+            },
+            {
+                "description": "Sand content at 10 cm depth",
+                "gee:units": "% (kg / kg)",
+                "name": "b10"
+            },
+            {
+                "description": "Sand content at 30 cm depth",
+                "gee:units": "% (kg / kg)",
+                "name": "b30"
+            },
+            {
+                "description": "Sand content at 60 cm depth",
+                "gee:units": "% (kg / kg)",
+                "name": "b60"
+            },
+            {
+                "description": "Sand content at 100 cm depth",
+                "gee:units": "% (kg / kg)",
+                "name": "b100"
+            },
+            {
+                "description": "Sand content at 200 cm depth",
+                "gee:units": "% (kg / kg)",
+                "name": "b200"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Sand content in % (kg / kg)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "b0"
+                        ],
+                        "max": [
+                            100
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "FFFF00",
+                            "F8F806",
+                            "F1F10C",
+                            "EBEB13",
+                            "E4E419",
+                            "DDDD20",
+                            "D7D726",
+                            "D0D02D",
+                            "CACA33",
+                            "C3C33A",
+                            "BCBC41",
+                            "B6B647",
+                            "B0B04E",
+                            "A9A954",
+                            "A3A35A",
+                            "9C9C61",
+                            "959568",
+                            "8F8F6E",
+                            "898975",
+                            "82827B",
+                            "7B7B82",
+                            "757589",
+                            "6E6E8F",
+                            "686895",
+                            "61619C",
+                            "5A5AA3",
+                            "5454A9",
+                            "4D4DB0",
+                            "4747B6",
+                            "4141BC",
+                            "3A3AC3",
+                            "3333CA",
+                            "2D2DD0",
+                            "2626D7",
+                            "2020DD",
+                            "1919E4",
+                            "1212EB",
+                            "0C0CF1",
+                            "0606F8",
+                            "0000FF"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 30.7,
+                    "lon": -5.6,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            250
+        ],
+        "b0": {
+            "minimum": 1,
+            "maximum": 100
+        },
+        "b10": {
+            "minimum": 1,
+            "maximum": 100
+        },
+        "b100": {
+            "minimum": 1,
+            "maximum": 100
+        },
+        "b200": {
+            "minimum": 1,
+            "maximum": 100
+        },
+        "b30": {
+            "minimum": 1,
+            "maximum": 100
+        },
+        "b60": {
+            "minimum": 1,
+            "maximum": 100
+        }
+    },
+    "title": "OpenLandMap Sand Content",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1950-01-01T00:00:00Z",
+                    "2018-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-SA-4.0"
+}

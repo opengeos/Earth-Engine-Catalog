@@ -1,0 +1,455 @@
+{
+    "type": "Collection",
+    "id": "MODIS/006/MOD44B",
+    "stac_version": "1.0.0",
+    "description": "The Terra MODIS Vegetation Continuous Fields (VCF)\nproduct is a sub-pixel-level representation of surface vegetation\ncover estimates globally. Designed to continuously represent\nEarth's terrestrial surface as a proportion of basic vegetation\ntraits, it provides a gradation of three surface cover components:\npercent tree cover, percent non-tree cover, and percent bare.\nVCF products provide a continuous, quantitative portrayal of\nland surface cover with improved spatial detail, and hence, are\nwidely used in environmental modeling and monitoring applications.\n\nGenerated yearly, the VCF product is produced using monthly\ncomposites of Terra MODIS 250 and 500 meters Land Surface Reflectance\ndata, including all seven bands, and Land Surface Temperature.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1322/MOD44B_User_Guide_V6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/113/MOD44B_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MOD44B)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_006_MOD44B",
+            "type": "text/html",
+            "title": "Run the example for MODIS/006/MOD44B in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_006_MOD44B_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD44B#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MOD44B.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:provider_ids": [
+        "C1374355842-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "annual",
+        "geophysical",
+        "global",
+        "mod44b",
+        "modis",
+        "nasa",
+        "terra",
+        "tree_cover",
+        "vegetation"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/MODIS/MOD44B.006"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD44B"
+        }
+    ],
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Percent of a pixel which is covered by tree canopy",
+                "gee:units": "%",
+                "name": "Percent_Tree_Cover"
+            },
+            {
+                "description": "Percent of a pixel which is covered by non-tree vegetation",
+                "gee:units": "%",
+                "name": "Percent_NonTree_Vegetation"
+            },
+            {
+                "description": "Percent of a pixel which is not vegetated",
+                "gee:units": "%",
+                "name": "Percent_NonVegetated"
+            },
+            {
+                "description": "Describes those inputs that had poor quality (cloudy,\nhigh aerosol, cloud shadow, or view zenith >45\u00b0). Each bit\nin the field represents 1 out of 8 input surface reflectance\nfiles to the model.\n",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 065-097",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Bad",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 113-145",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Bad",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 161-193",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Bad",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 209-241",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Bad",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 257-289",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Bad",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 305-337",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Bad",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 353-017",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Bad",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 033-045",
+                            "first_bit": 7,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Bad",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 8
+                },
+                "name": "Quality"
+            },
+            {
+                "description": "Standard deviation (SD) of the 30 models that were\nused to generate the pixel value in the percent tree cover data\nlayer\n",
+                "gee:scale": 0.01,
+                "gee:units": "%",
+                "name": "Percent_Tree_Cover_SD"
+            },
+            {
+                "description": "Standard deviation (SD) of the 30 models that were\nused to generate the pixel value in the percent non-vegetated\ndata layer\n",
+                "gee:scale": 0.01,
+                "gee:units": "%",
+                "name": "Percent_NonVegetated_SD"
+            },
+            {
+                "description": "Clarifies the 'Quality' layer to give the user an\nindication that the 'bad' data refers to cloudy input data. Each\nbit in the field represents 1 out of 8 input surface reflectance\nfiles to the model.\n",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 065-097",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Cloudy",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 113-145",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Cloudy",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 161-193",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Cloudy",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 209-241",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Cloudy",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 257-289",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Cloudy",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 305-337",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Cloudy",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 353-017",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Cloudy",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 033-045",
+                            "first_bit": 7,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Cloudy",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 8
+                },
+                "name": "Cloud"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Percent Tree Cover",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Percent_Tree_Cover"
+                        ],
+                        "max": [
+                            100
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "bbe029",
+                            "0a9501",
+                            "074b03"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 0,
+                    "lon": 0,
+                    "zoom": 0
+                }
+            }
+        ],
+        "gsd": [
+            250
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Terra"
+        ],
+        "Percent_NonTree_Vegetation": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Percent_NonVegetated": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Percent_NonVegetated_SD": {
+            "minimum": 0,
+            "maximum": 32767
+        },
+        "Percent_Tree_Cover": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Percent_Tree_Cover_SD": {
+            "minimum": 0,
+            "maximum": 32767
+        }
+    },
+    "title": "MOD44B.006 Terra Vegetation Continuous Fields Yearly Global 250m",
+    "version": "V006",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-03-05T00:00:00Z",
+                    "2020-03-05T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

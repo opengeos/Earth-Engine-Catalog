@@ -1,0 +1,190 @@
+{
+    "type": "Collection",
+    "id": "TIGER/2010/ZCTA5",
+    "stac_version": "1.0.0",
+    "description": "ZIP Code tabulation areas (ZCTAs) are approximate area representations of\nU.S. Postal Service (USPS) 5-digit ZIP Codes.\nThe Census Bureau defines ZCTAs by allocating each\nCensus block that contains addresses to a single ZIP Code tabulation area, usually\nto the ZCTA that reflects the most frequently occurring ZIP Code for the\naddresses within that block. Blocks that do not contain addresses but that\nare completely surrounded by a single ZIP Code tabulation area (enclaves)\nare assigned to the surrounding ZCTA; those surrounded by multiple ZCTAs\nwill be added to a single ZCTA based on the longest shared border.\n\nThe Census Bureau identifies 5-digit ZIP Code tabulation areas using a 5-\ncharacter numeric code that represents the most frequently occurring USPS\nZIP Code within that ZCTA.  This code may contain leading zeros.\n\nData users should not use ZCTAs to identify the official USPS ZIP Code for\nmail delivery. The USPS makes periodic changes to ZIP Codes to support more\nefficient mail delivery. ZIP Codes that cover primarily nonresidential or\npost office box addresses may not have a corresponding ZCTA because the\ndelineation process uses primarily residential addresses, resulting in a\nbias towards ZIP Codes used for city-style mail delivery.\n\nFor full technical details on all TIGER 2010 products, see the [TIGER\ntechnical documentation](https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2010/TGRSHP10SF1.pdf).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/TIGER_2010_ZCTA5",
+            "type": "text/html",
+            "title": "Run the example for TIGER/2010/ZCTA5 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/TIGER/TIGER_2010_ZCTA5_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/TIGER_2010_ZCTA5#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/TIGER/TIGER_2010_ZCTA5.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/TIGER/catalog.json",
+            "type": "application/json",
+            "title": "TIGER"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The U.S. Census Bureau offers some of its public data\nin machine-readable format via an Application Programming Interface\n(API). All of the content, documentation, code and related materials\nmade available to you through the API are subject to [these terms and\nconditions](https://www.census.gov/data/developers/about/terms-of-service.html).\n",
+    "gee:type": "table",
+    "keywords": [
+        "census",
+        "tiger",
+        "us",
+        "zcta",
+        "zip_code"
+    ],
+    "providers": [
+        {
+            "name": "United States Census Bureau",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/TIGER_2010_ZCTA5"
+        }
+    ],
+    "sci:citation": "For the creation of any reports, publications, new data sets, derived\nproducts, or services resulting from the data set, users should\n[cite the US Census Bureau](https://www.census.gov/about/policies/citation.html).\n",
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "2010 Census Land area",
+                "name": "ALAND10",
+                "type": "DOUBLE",
+                "units": "m^2"
+            },
+            {
+                "description": "2010 Census Water area",
+                "name": "AWATER10",
+                "type": "DOUBLE",
+                "units": "m^2"
+            },
+            {
+                "description": "2010 Census FIPS 55 class code",
+                "name": "CLASSFP10",
+                "type": "STRING"
+            },
+            {
+                "description": "2010 Census functional status\n(Always \"S\", for \"Statistical entity\".)",
+                "name": "FUNCSTAT10",
+                "type": "STRING"
+            },
+            {
+                "description": "2010 Census 5-digit ZIP Code Tabulation Area identifier",
+                "name": "GEOID10",
+                "type": "STRING"
+            },
+            {
+                "description": "2010 Census latitude of the internal point",
+                "name": "INTPTLAT10",
+                "type": "STRING"
+            },
+            {
+                "description": "2010 Census longitude of the internal point",
+                "name": "INTPTLON10",
+                "type": "STRING"
+            },
+            {
+                "description": "MAF/TIGER feature class code (Always \"G6350\".)",
+                "name": "MTFCC10",
+                "type": "STRING"
+            },
+            {
+                "description": "2010 Census 5-digit ZIP Code Tabulation Area code",
+                "name": "ZCTA5CE10",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "ZCTA Boundaries",
+                "lookat": {
+                    "lat": 37.649,
+                    "lon": -99.844,
+                    "zoom": 5
+                },
+                "polygon_visualization": {
+                    "property_name": "ALAND10",
+                    "property_vis": {
+                        "max": [
+                            500000000
+                        ],
+                        "min": [
+                            500000
+                        ],
+                        "palette": [
+                            "purple",
+                            "blue",
+                            "green",
+                            "yellow",
+                            "orange",
+                            "red"
+                        ]
+                    }
+                }
+            },
+            {
+                "display_name": "ZCTA Boundaries",
+                "lookat": {
+                    "lat": 37.649,
+                    "lon": -99.844,
+                    "zoom": 5
+                },
+                "visualize_as": "FeatureView"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 16000,
+            "prerender_tiles": true,
+            "thinning_strategy": "HIGHER_DENSITY"
+        }
+    },
+    "title": "TIGER: US Census 5-digit ZIP Code Tabulation Areas 2010",
+    "version": "2010",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -14.69,
+                    -64.435,
+                    71.567
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-01-01T00:00:00Z",
+                    "2010-01-02T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

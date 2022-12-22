@@ -1,0 +1,257 @@
+{
+    "type": "Collection",
+    "id": "GRIDMET/DROUGHT",
+    "stac_version": "1.0.0",
+    "description": "This dataset contains drought indices derived from the 4-km daily Gridded\nSurface Meteorological (GRIDMET) dataset. The drought indices provided include\nthe standardized precipitation index (SPI), the evaporative drought demand\nindex (EDDI), the standardized precipitation evapotranspiration index (SPEI),\nthe Palmer Drought Severity Index (PDSI) and Palmer Z Index (Z).\n\nSPI, EDDI, and SPEI are supplied on different time scales corresponding to the\ntime aggregation of precipitation, reference evapotranspiration, and\nprecipitation minus reference evapotranspiration, respectively. The time scales\ninclude 14 day, 30 day, 90 day, 180 day, 270 day, 1 year, 2 years and 5 years.\nThe standardization is done by using a non-parametric standardized probability\nbased method where plotting positions are used to obtain probabilities which\nare transformed to indices assuming an inverse-normal distribution. All data\nare standardized over a common time period of 1981-2016.\n\nPDSI and Z are calculated using a modified version of the Palmer formula which\nuses reference evapotranspiration and precipitation from GRIDMET, and a static\nsoil water holding capacity layer (top 1500mm) from STATSGO. Modifications to\nthe coefficients of the original Palmer formula are applied to calculate PDSI.\nThe baseline period for PDSI and Z calculations is 1979-2018.\n\nInterpretation of the drought indices in this dataset is different for PDSI and\nZ than for SPI, SPEI and EDDI. Utilizing the interpretation from the US Drought\nmonitor, values of these drought indices have the following meaning:\n\nPDSI and z:\n\n  * 5.0 or more (extremely wet)\n  * 4.0 to 4.99 (very wet)\n  * 3.0 to 3.99 (moderately wet),\n  * 2.0 to 2.99 (slightly wet)\n  * 1.0 to 1.99 (incipient wet spell)\n  * -0.99 to 0.99(near normal)\n  * -1.99 to -1.00 (incipient dry spell)\n  * -2.99 to -2.00 (mild drought)\n  * -3.99 to -3.00 (moderate drought)\n  * -4.99 to -4.00 (severe drought)\n  * -5.0 or less (extreme drought)\n\nSPI/SPEI/EDDI:\n\n  * 2.0 or more (extremely wet)\n  * 1.6 to 1.99 (very wet)\n  * 1.3 to 1.59 (moderately wet),\n  * 0.8 to 1.29 (slightly wet)\n  * 0.5 to 0.79 (incipient wet spell)\n  * -0.49 to 0.49(near normal),\n  * -0.79 to -0.5 (incipient dry spell)\n  * -1.29 to -0.8 (mild drought)\n  * -1.59 to -1.3 (moderate drought)\n  * -1.99 to -1.6 (severe drought)\n  * -2.0 or less (extreme drought).\n\nThis dataset contains provisional products that are replaced with\nupdated versions when the complete source data become available.\nProducts can be distinguished by the value of the 'status' property.\nAt first, assets are ingested with status='early'. After several\ndays, they are replaced by assets with status='provisional'.\nAfter about 2 months, they are replaced by the final assets with\nstatus='permanent'.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/GRIDMET_DROUGHT",
+            "type": "text/html",
+            "title": "Run the example for GRIDMET/DROUGHT in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/GRIDMET/GRIDMET_DROUGHT_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/GRIDMET_DROUGHT#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GRIDMET/GRIDMET_DROUGHT.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GRIDMET/catalog.json",
+            "type": "application/json",
+            "title": "GRIDMET"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 5,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "This work (METDATA, by John Abatzoglou) is in the public\ndomain and is free of known copyright restrictions. Users should\nproperly cite the source used in the creation of any reports and\npublications resulting from the use of this dataset and note the\ndate when the data was acquired.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "climate",
+        "climatic_water_balance",
+        "conus",
+        "crop",
+        "drought",
+        "eddi",
+        "evapotranspiration",
+        "geophysical",
+        "gridmet",
+        "merced",
+        "metdata",
+        "palmer",
+        "pdsi",
+        "precipitation",
+        "spei",
+        "spi"
+    ],
+    "providers": [
+        {
+            "name": "University of California Merced",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "http://www.climatologylab.org/gridmet.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/GRIDMET_DROUGHT"
+        }
+    ],
+    "sci:citation": "Abatzoglou J. T., Development of gridded surface meteorological data for\necological applications and modelling, International Journal of\nClimatology. (2012)\n[doi:10.1002/joc.3413](https://doi.org/10.1002/joc.3413)\n",
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "'early', 'provisional', or 'permanent'",
+                "name": "status",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "PDSI",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "pdsi"
+                        ],
+                        "max": [
+                            10
+                        ],
+                        "min": [
+                            -5
+                        ],
+                        "palette": [
+                            "red",
+                            "yellow",
+                            "green",
+                            "cyan",
+                            "blue"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 38.686,
+                    "lon": -115.356,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            4638.3
+        ],
+        "eddi14d": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "eddi180d": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "eddi1y": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "eddi270d": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "eddi2y": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "eddi30d": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "eddi5y": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "eddi90d": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "pdsi": {
+            "minimum": -15,
+            "maximum": 15
+        },
+        "spei14d": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "spei180d": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "spei1y": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "spei270d": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "spei2y": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "spei30d": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "spei5y": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "spei90d": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "spi14d": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "spi180d": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "spi1y": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "spi270d": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "spi2y": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "spi30d": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "spi5y": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "spi90d": {
+            "minimum": -6,
+            "maximum": 6
+        },
+        "z": {
+            "minimum": -15,
+            "maximum": 15
+        }
+    },
+    "title": "GRIDMET DROUGHT: CONUS Drought Indices",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -124.9,
+                    24.9,
+                    -66.8,
+                    49.6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1980-01-05T00:00:00Z",
+                    "2022-12-16T06:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

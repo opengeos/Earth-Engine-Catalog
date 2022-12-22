@@ -1,0 +1,182 @@
+{
+    "type": "Collection",
+    "id": "projects/planet-nicfi/assets/basemaps/americas",
+    "stac_version": "1.0.0",
+    "description": "This image collection provides access to high-resolution satellite\nmonitoring of the tropics for the primary purpose of reducing and reversing the\nloss of tropical forests, contributing to combating climate change, conserving\nbiodiversity, contributing to forest regrowth, restoration and enhancement, and\nfacilitating sustainable development, all of which must be Non-Commercial Use.\n\nTo learn how to access the Basemaps, follow the\n[sign up instructions here](https://developers.planet.com/docs/integrations/gee/nicfi/).\n\nNICFI mosaics contain both monthly and biannual collections.\n(Biannual collections are generated every 6 months.)  The type of\nthe mosaic is stored in the image metadata field 'cadence'. Use that\nfield along with the start and end date for each mosaic to find\nthe desired imagery.\n\nFull details about the Basemaps are available in\n[Planet's NICFI Basemap spec](https://assets.planet.com/docs/NICFI_Basemap_Spec_Addendum.pdf).\n\nFor more information about NICFI (Norway's International Climate\nand Forest Initiative) and the NICFI Basemaps,\n[see the FAQ](https://assets.planet.com/docs/NICFI_General_FAQs.pdf).\n\nIn support of NICFI's mission, you can use this data for a number of projects including, but not limited to:\n\n* Advance scientific research about the world's tropical forests and the critical services they provide.\n* Implement and improve policies for sustainable forest management and land use in developing tropical forest countries and jurisdictions.\n* Increase transparency and accountability in the tropics.\n* Protect and improve the rights of indigenous peoples and local communities in tropical forest countries.\n* Innovate solutions towards reducing pressure on forests from global commodities and financial markets.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/projects_planet-nicfi_assets_basemaps_americas",
+            "type": "text/html",
+            "title": "Run the example for projects/planet-nicfi/assets/basemaps/americas in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/planet-nicfi/projects_planet-nicfi_assets_basemaps_americas_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_planet-nicfi_assets_basemaps_americas#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://assets.planet.com/docs/Planet_ParticipantLicenseAgreement_NICFI.pdf",
+            "type": "application/pdf"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/planet-nicfi/projects_planet-nicfi_assets_basemaps_americas.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/planet-nicfi/catalog.json",
+            "type": "application/json",
+            "title": "planet-nicfi"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "This data has usage, reproduction, and distribution restrictions in support\nof the NICFI Forest Monitoring Purpose. The full licensing agreement is available\n[here](https://assets.planet.com/docs/Planet_ParticipantLicenseAgreement_NICFI.pdf).\n",
+    "gee:type": "image_collection",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true,
+    "keywords": [
+        "basemaps",
+        "forest",
+        "nicfi",
+        "planet",
+        "sr",
+        "surface_reflectance",
+        "tropics"
+    ],
+    "providers": [
+        {
+            "name": "Planet",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://planet.com/nicfi"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_planet-nicfi_assets_basemaps_americas"
+        }
+    ],
+    "sci:citation": "Planet Team (2017). Planet Application Program Interface: In Space for Life\non Earth. San Francisco, CA. [https://api.planet.com](https://api.planet.com)\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Blue",
+                "gee:scale": 0.0001,
+                "name": "B"
+            },
+            {
+                "description": "Green",
+                "gee:scale": 0.0001,
+                "name": "G"
+            },
+            {
+                "description": "Red",
+                "gee:scale": 0.0001,
+                "name": "R"
+            },
+            {
+                "description": "Near-infrared",
+                "gee:scale": 0.0001,
+                "name": "NIR"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "The interval the mosaic covers: monthly or biannual",
+                "name": "cadence",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "True color",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "R",
+                            "G",
+                            "B"
+                        ],
+                        "gamma": [
+                            1.855
+                        ],
+                        "max": [
+                            5454
+                        ],
+                        "min": [
+                            64
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 30.2,
+                    "lon": -51,
+                    "zoom": 4
+                }
+            }
+        ],
+        "gsd": [
+            4.77
+        ],
+        "B": {
+            "minimum": 0,
+            "maximum": 10000
+        },
+        "G": {
+            "minimum": 0,
+            "maximum": 10000
+        },
+        "NIR": {
+            "minimum": 0,
+            "maximum": 10000
+        },
+        "R": {
+            "minimum": 0,
+            "maximum": 10000
+        }
+    },
+    "title": "Planet & NICFI Basemaps for Tropical Forest Monitoring - Tropical Americas",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -118.5,
+                    -30.4,
+                    -34.5,
+                    30.4
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-12-01T00:00:00Z",
+                    "2021-06-29T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

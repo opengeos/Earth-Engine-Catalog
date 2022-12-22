@@ -1,0 +1,337 @@
+{
+    "type": "Collection",
+    "id": "COPERNICUS/S5P/OFFL/L3_SO2",
+    "stac_version": "1.0.0",
+    "description": "### OFFL/L3_SO2\n\nThis dataset provides offline high-resolution imagery of atmospheric sulfur\ndioxide (SO<sub>2</sub>) concentrations.\n\nSulfur dioxide (SO<sub>2</sub>) enters the Earth's atmosphere through both natural and\nanthropogenic processes. It plays a role in chemistry on a local and global\nscale and its impact ranges from short-term pollution to effects on climate.\nOnly about 30% of the emitted SO<sub>2</sub> comes from natural sources; the majority\nis of anthropogenic origin. SO<sub>2</sub> emissions adversely affect human health and\nair quality. SO<sub>2</sub> has an effect on climate through radiative forcing, via\nthe formation of sulfate aerosols. Volcanic SO<sub>2</sub> emissions can also pose a\nthreat to aviation, along with volcanic ash. S5P/TROPOMI samples the Earth's\nsurface with a revisit time of one day with unprecedented spatial resolution\nof 3.5 x 7 km which allows the resolution of fine details including the\ndetection of much smaller SO<sub>2</sub> plumes. [[More information](http://www.tropomi.eu/data-products/sulphur-dioxide)]\n\nFor this L3 SO<sub>2</sub> product, the absorbing_aerosol_index is calculated with a\npair of measurements at the 340 nm and 380 wavelengths.  The\n[COPERNICUS/S5P/OFFL/L3_AER_AI](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_AER_AI)\nproduct has the absorbing_aerosol_index calculated using the 354 nm and 388\nnm wavelengths.\n\n### OFFL L3 Product\n\nTo make our OFFL L3 products, we find areas within the product's bounding\nbox with data using a command like this:\n\n```\nharpconvert --format hdf5 --hdf5-compression 9\n-a 'SO2_column_number_density_validity>50;derive(datetime_stop {time})'\nS5P_OFFL_L2__SO2____20181228T231131_20181229T005301_06265_01_010105_20190104T083244.nc\ngrid_info.h5\n```\n\nWe then merge all the data into one large mosaic (area-averaging values for\npixels that may have different values for different times).  From the\nmosaic, we create a set of tiles containing orthorectified raster data.\n\nThe qa value is adjusted before running harpconvert to satisfy all of the\nfollowing criteria:\n\n* snow_ice < 0.5\n* sulfurdioxide_total_air_mass_factor_polluted > 0.1\n* sulfurdioxide_total_vertical_column > -0.001\n* qa_value > 0.5\n* cloud_fraction_crb < 0.3\n* solar_zenith_angle < 60\n\nThe 15km SO2 band is ingested only when solar_zenith_angle < 70.\n\nExample harpconvert invocation for one tile:\n```\nharpconvert --format hdf5 --hdf5-compression 9\n-a 'SO2_column_number_density_validity>50;derive(datetime_stop {time});\nbin_spatial(2001, 50.000000, 0.01, 2001, -120.000000, 0.01);\nkeep(SO2_column_number_density,SO2_column_number_density_amf,\n     SO2_slant_column_number_density,absorbing_aerosol_index,cloud_fraction, sensor_altitude,\n     sensor_azimuth_angle, sensor_zenith_angle,solar_azimuth_angle,\n     solar_zenith_angle)'\nS5P_OFFL_L2__SO2____20181228T231131_20181229T005301_06265_01_010105_20190104T083244.nc\noutput.h5\n```\n\n### Sentinel-5 Precursor\n\nSentinel-5 Precursor is a satellite launched on 13 October 2017\nby the European Space Agency to monitor air pollution.  The onboard sensor\nis frequently referred to as Tropomi (TROPOspheric Monitoring Instrument).\n\nAll of the S5P datasets, except CH<sub>4</sub>, have two versions: Near Real-Time (NRTI) and Offline\n(OFFL). CH<sub>4</sub> is available as OFFL only. The NRTI assets cover a smaller area than the OFFL\nassets, but appear more quickly after acquisition.  The OFFL assets contain data\nfrom a single orbit (which, due to half the earth being dark, contains\ndata only for a single hemisphere).\n\nBecause of noise on the data, negative vertical column values are often\nobserved in particular over clean regions or for low SO2 emissions. It is\nrecommended not to filter these values except for outliers, i.e.\nfor vertical columns lower than -0.001 mol/m^2.\n\nThe original Sentinel 5P Level 2 (L2) data is binned\nby time, not by latitude/longitude.  To make it possible to ingest the data\ninto Earth Engine, each Sentinel 5P L2 product is converted to L3, keeping\na single grid per orbit (that is, no aggregation across products\nis performed).\n\nSource products spanning the antimeridian are ingested as two Earth Engine\nassets, with suffixes _1 and _2.\n\nThe conversion to L3 is done by the [harpconvert](https://cdn.rawgit.com/stcorp/harp/master/doc/html/harpconvert.html)\ntool using the `bin_spatial` operation.  The source data is filtered to\nremove pixels with QA values less than:\n\n*  80% for AER_AI\n*  75% for the tropospheric_NO2_column_number_density band of NO2\n*  50% for all other datasets except for O3 and SO2\n\nThe O3_TCL product is ingested directly (without running harpconvert).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/COPERNICUS_S5P_OFFL_L3_SO2",
+            "type": "text/html",
+            "title": "Run the example for COPERNICUS/S5P/OFFL/L3_SO2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/COPERNICUS/COPERNICUS_S5P_OFFL_L3_SO2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_SO2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_S5P_OFFL_L3_SO2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/catalog.json",
+            "type": "application/json",
+            "title": "COPERNICUS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 2,
+        "type": "revisit_interval",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "The use of Sentinel data is governed by the [Copernicus\nSentinel Data Terms and Conditions.](https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice)\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "air_quality",
+        "bira",
+        "copernicus",
+        "dlr",
+        "esa",
+        "eu",
+        "pollution",
+        "s5p",
+        "sentinel",
+        "so2",
+        "sulfur_dioxide",
+        "tropomi"
+    ],
+    "providers": [
+        {
+            "name": "European Union/ESA/Copernicus",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://sentinel.esa.int/web/sentinel/user-guides/sentinel-5p-tropomi"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_SO2"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "SO<sub>2</sub> vertical column density at ground level,\ncalculated using the DOAS technique.",
+                "gee:units": "mol/m^2",
+                "name": "SO2_column_number_density"
+            },
+            {
+                "description": "Weighted mean of cloudy and clear air mass factor (amf) weighted by\nintensity-weighted cloud fraction.",
+                "gee:units": "mol/m^2",
+                "name": "SO2_column_number_density_amf"
+            },
+            {
+                "description": "SO<sub>2</sub> ring corrected slant column number density",
+                "gee:units": "mol/m^2",
+                "name": "SO2_slant_column_number_density"
+            },
+            {
+                "description": "A measure of the prevalence of aerosols in the atmosphere, calculated by\n[this equation](https://earth.esa.int/web/sentinel/technical-guides/sentinel-5p/level-2/aerosol-index) using the 340/380 wavelength pair.\n",
+                "name": "absorbing_aerosol_index"
+            },
+            {
+                "description": "Effective cloud fraction.  See the [Sentinel 5P L2 Input/Output Data Definition Spec](https://sentinels.copernicus.eu/documents/247904/3119978/Sentinel-5P-Level-2-Input-Output-Data-Definition),\np.220.\n",
+                "gee:units": "fraction",
+                "name": "cloud_fraction"
+            },
+            {
+                "description": "Azimuth angle of the satellite at the ground pixel location (WGS84); angle\nmeasured East-of-North.",
+                "gee:units": "degrees",
+                "name": "sensor_azimuth_angle"
+            },
+            {
+                "description": "Zenith angle of the satellite at the ground pixel location (WGS84); angle\nmeasured away from the vertical.\n",
+                "gee:units": "degrees",
+                "name": "sensor_zenith_angle"
+            },
+            {
+                "description": "Azimuth angle of the Sun at the ground pixel location (WGS84); angle\nmeasured East-of-North.",
+                "gee:units": "degrees",
+                "name": "solar_azimuth_angle"
+            },
+            {
+                "description": "Zenith angle of the satellite at the ground pixel location (WGS84); angle\nmeasured away from the vertical.\n",
+                "gee:units": "degrees",
+                "name": "solar_zenith_angle"
+            },
+            {
+                "description": "SO<sub>2</sub> vertical column density at 15km,\ncalculated using the DOAS technique.",
+                "gee:units": "mol/m^2",
+                "name": "SO2_column_number_density_15km"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "The algorithm version used in L2 processing. It is separate from the\nprocessor (framework) version, to accommodate different release\nschedules for different products.\n",
+                "name": "ALGORITHM_VERSION",
+                "type": "STRING"
+            },
+            {
+                "description": "The date, expressed as milliseconds since 1 Jan 1970,\nwhen the software used to perform L2 processing was built.\n",
+                "name": "BUILD_DATE",
+                "type": "STRING"
+            },
+            {
+                "description": "The version of the HARP tool used to grid the L2 data into an L3\nproduct.",
+                "name": "HARP_VERSION",
+                "type": "INT"
+            },
+            {
+                "description": "The institution where data processing from L1 to L2 was performed.",
+                "name": "INSTITUTION",
+                "type": "STRING"
+            },
+            {
+                "description": "The date, expressed as milliseconds since 1 Jan 1970,\nwhen Google processed the L2 data into L3 using harpconvert.\n",
+                "name": "L3_PROCESSING_TIME",
+                "type": "INT"
+            },
+            {
+                "description": "The maximum latitude of the asset (degrees).",
+                "name": "LAT_MAX",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "The minimum latitude of the asset (degrees).",
+                "name": "LAT_MIN",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "The maximum longitude of the asset (degrees).",
+                "name": "LON_MAX",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "The minimum longitude of the asset (degrees).",
+                "name": "LON_MIN",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "The orbit number of the satellite when the data was acquired.",
+                "name": "ORBIT",
+                "type": "INT"
+            },
+            {
+                "description": "Name of the platform which acquired the data.",
+                "name": "PLATFORM",
+                "type": "STRING"
+            },
+            {
+                "description": "The processing status of the product on a global level, mainly based\non the availability of auxiliary input data.  Possible values are\n\"Nominal\" and \"Degraded\".\n",
+                "name": "PROCESSING_STATUS",
+                "type": "STRING"
+            },
+            {
+                "description": "The version of the software used for L2 processing, as a string of\nthe form \"major.minor.patch\".",
+                "name": "PROCESSOR_VERSION",
+                "type": "STRING"
+            },
+            {
+                "description": "Id of the L2 product used to generate this asset.",
+                "name": "PRODUCT_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "Indicator that specifies whether the product quality is degraded or\nnot.  Allowed values are \"Degraded\" and \"Nominal\".\n",
+                "name": "PRODUCT_QUALITY",
+                "type": "STRING"
+            },
+            {
+                "description": "Name of the sensor which acquired the data.",
+                "name": "SENSOR",
+                "type": "STRING"
+            },
+            {
+                "description": "Spatial resolution at nadir. For most products this is `3.5x7km2`,\nexcept for `L2__O3__PR`, which uses `28x21km2`, and\n`L2__CO____` and `L2__CH4___`, which both use `7x7km2`.\nThis attribute originates from the CCI standard.\n",
+                "name": "SPATIAL_RESOLUTION",
+                "type": "STRING"
+            },
+            {
+                "description": "Days from 1 Jan 1950 to when the data was acquired.",
+                "name": "TIME_REFERENCE_DAYS_SINCE_1950",
+                "type": "INT"
+            },
+            {
+                "description": "The Julian day number when the data was acquired.",
+                "name": "TIME_REFERENCE_JULIAN_DAY",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "UUID for the L2 product file.",
+                "name": "TRACKING_ID",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "RGB",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "SO2_column_number_density"
+                        ],
+                        "max": [
+                            0.0005
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "black",
+                            "blue",
+                            "purple",
+                            "cyan",
+                            "green",
+                            "yellow",
+                            "red"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 27.86,
+                    "lon": 5.27,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            1113.2
+        ],
+        "instruments": [
+            "TROPOMI"
+        ],
+        "platform": [
+            "Sentinel-5P"
+        ],
+        "SO2_column_number_density": {
+            "minimum": -0.4051,
+            "maximum": 0.2079
+        },
+        "SO2_column_number_density_amf": {
+            "minimum": 0.1,
+            "maximum": 3.387
+        },
+        "SO2_slant_column_number_density": {
+            "minimum": -0.14746,
+            "maximum": 0.16159
+        },
+        "absorbing_aerosol_index": {
+            "minimum": -11.733,
+            "maximum": 18.657
+        },
+        "cloud_fraction": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "sensor_azimuth_angle": {
+            "minimum": -180,
+            "maximum": 180
+        },
+        "sensor_zenith_angle": {
+            "minimum": 0.098,
+            "maximum": 67
+        },
+        "solar_azimuth_angle": {
+            "minimum": -180,
+            "maximum": 180
+        },
+        "solar_zenith_angle": {
+            "minimum": 8,
+            "maximum": 102
+        }
+    },
+    "title": "Sentinel-5P OFFL SO2: Offline Sulfur Dioxide",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-12-05T11:53:01Z",
+                    "2022-12-14T17:57:35Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

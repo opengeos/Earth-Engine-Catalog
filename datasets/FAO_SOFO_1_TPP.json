@@ -1,0 +1,189 @@
+{
+    "type": "Collection",
+    "id": "FAO/SOFO/1/TPP",
+    "stac_version": "1.0.0",
+    "description": "The \"Tree Proximate People\" (TPP) is one of the datasets contributing to the\ndevelopment of indicator #13, number of forest-dependent people in extreme\npoverty, of the Collaborative Partnership on Forests (CPF) Global Core Set\nof forest-related indicators (GCS). The TPP dataset provides 4 different\nestimates of tree proximate people (trees outside forests), all of them for\nthe year 2019 with a pixel size of 100 meters at a global level.\n[Find out more about the dataset.](https://data.apps.fao.org/catalog/dcat/tree-proximate-people)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/FAO_SOFO_1_TPP",
+            "type": "text/html",
+            "title": "Run the example for FAO/SOFO/1/TPP in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/FAO/FAO_SOFO_1_TPP_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/FAO_SOFO_1_TPP#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/FAO/FAO_SOFO_1_TPP.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/FAO/catalog.json",
+            "type": "application/json",
+            "title": "FAO"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:terms_of_use": "[proprietary](DO NOT USE THIS - use a custom URL)",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "agriculture",
+        "fao",
+        "forest",
+        "global",
+        "population",
+        "rural_area"
+    ],
+    "providers": [
+        {
+            "name": "FAO Forestry Division (TPP 500m cropland)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://data.apps.fao.org/catalog/iso/8ed893bd-842a-4866-a655-a0a0c02b79b8"
+        },
+        {
+            "name": "FAO Forestry Division (TPP 1km cropland)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://data.apps.fao.org/catalog/iso/8ed893bd-842a-4866-a655-a0a0c02b79b6"
+        },
+        {
+            "name": "FAO Forestry Division (TPP 500m agricultural)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://data.apps.fao.org/catalog/iso/8ed893bd-842a-4866-a655-a0a0c02b79b7"
+        },
+        {
+            "name": "FAO Forestry Division (TPP 1km agricultural)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://data.apps.fao.org/catalog/iso/8ed893bd-842a-4866-a655-a0a0c02b79b3"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/FAO_SOFO_1_TPP"
+        }
+    ],
+    "sci:citation": "[FAO 2022. The State of the World's Forests (SOFO) - Forest pathways for green recovery and building inclusive, resilient and sustainable economies. FAO, Rome.](https://www.fao.org/documents/card/en/c/cb9360en)\n",
+    "sci:publications": [
+        {
+            "citation": "Newton, P., Castle, S.E., Kinzer, A.T., Miller, D.C., Oldekop, J.A.,\nLinhares-Juvenal, T., Pina, L., Madrid, M., & de Lamo, J. 2022.\nThe number of forest- and tree-proximate people: a new methodology\nand global estimates, One Earth, 2020\n[10.1016/j.oneear.2020.08.016](https://doi.org/10.1016/j.oneear.2020.08.016),\n",
+            "doi": "10.1016/j.oneear.2020.08.016"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Number of people living in or within 1 km from agricultural lands\nwith at least 10% of tree cover\n",
+                "gee:units": "Number of people/ha",
+                "name": "TPP_1km"
+            },
+            {
+                "description": "Number of people living in or within 1 km from croplands with at\nleast 10% of tree cover\n",
+                "gee:units": "Number of people/ha",
+                "name": "TPP_1km_cropland"
+            },
+            {
+                "description": "Number of people living in or within 500 m from agricultural lands\nwith at least 10% of tree cover\n",
+                "gee:units": "Number of people/ha",
+                "name": "TPP_500m"
+            },
+            {
+                "description": "Number of people living in or within 500 m from croplands with at\nleast 10% of tree cover\n",
+                "gee:units": "Number of people/ha",
+                "name": "TPP_500m_cropland"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Tree proximate people - 1km cutoff distance",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "TPP_1km"
+                        ],
+                        "max": [
+                            12
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "blue",
+                            "yellow",
+                            "red"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -0.4,
+                    "lon": 108,
+                    "zoom": 4
+                }
+            }
+        ],
+        "gsd": [
+            0.0009
+        ]
+    },
+    "title": "Tree proximate people (TPP)",
+    "version": "1.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-01-01T00:00:00Z",
+                    "2019-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

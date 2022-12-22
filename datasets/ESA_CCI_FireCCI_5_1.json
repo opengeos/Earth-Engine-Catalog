@@ -1,0 +1,296 @@
+{
+    "type": "Collection",
+    "id": "ESA/CCI/FireCCI/5_1",
+    "stac_version": "1.0.0",
+    "description": "The MODIS Fire_cci Burned Area pixel product version 5.1 (FireCCI51)\nis a monthly global ~250m spatial resolution dataset\ncontaining information on burned area as well as ancillary data. It is based\non surface reflectance in the Near Infrared (NIR) band from the MODIS\ninstrument onboard the Terra satellite, as well as active fire information from\nthe same sensor of the Terra and Aqua satellites.\n\nThe burned area algorithm uses a two-phase hybrid approach. In a first step\npixels with a high probability of being burned (called \"seeds\") are detected\nbased on the active fires. In a second one, a contextual growing is applied to\ncompletely detect the fire patch. This growing phase is controlled by an\nadaptive thresholding, where thresholds are computed based on the specific\ncharacteristics of the area surrounding each seed. The variable used to guide\nthe whole detection process is the NIR drop between pre- and post-fire images.\n\nThe dataset includes for each pixel the estimated day of the first detection of\nthe fire, the confidence level of that detection, and the land cover that has\nbeen burned (extracted from the ESA CCI Land Cover dataset v2.0.7). In addition,\nan observation flag is provided to identify the pixels that were not processed due\nto the lack of valid observations or because they belong to a non-burnable land\ncover.\n\nFireCCI51 was developed as part of the ESA Climate Change Initiative (CCI)\nProgramme, and it is also part of the Copernicus Climate Change Service (C3S).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/ESA_CCI_FireCCI_5_1",
+            "type": "text/html",
+            "title": "Run the example for ESA/CCI/FireCCI/5_1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/ESA/ESA_CCI_FireCCI_5_1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/ESA_CCI_FireCCI_5_1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5285/58f00d8814064b79a0c49662ad3af537"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ESA/ESA_CCI_FireCCI_5_1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ESA/catalog.json",
+            "type": "application/json",
+            "title": "ESA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "month"
+    },
+    "gee:terms_of_use": "This dataset is free and open to all users for any purpose, with the following\nterms and conditions:\n\n* Users of the data are required to acknowledge the ESA\nClimate Change Initiative and the Fire CCI project together with the individual\ndata providers if the data are used in a presentation or publication. Please\nalso cite any relevant dataset DOIs.\n\n* Intellectual property rights (IPR) in the CCI data lie with the researchers and\norganisations producing the data.\n\n* Liability: no warranty is given as to the quality or the accuracy of the CCI\ndata or its suitability for any use. All implied conditions relating to the\nquality or suitability of the information, and all liabilities arising from the\nsupply of the information (including any liability arising in negligence) are\nexcluded to the fullest extent permitted by law.\n",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "burn",
+        "c3s",
+        "cci",
+        "climate_change",
+        "copernicus",
+        "esa",
+        "fire",
+        "firecci",
+        "firecci51",
+        "fragmentation",
+        "gcos",
+        "geophysical",
+        "global",
+        "human_modification",
+        "landcover",
+        "landscape_gradient",
+        "modis",
+        "monthly",
+        "stressors"
+    ],
+    "providers": [
+        {
+            "name": "European Space Agency (ESA) Climate Change Initiative (CCI) Programme, Fire ECV",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://climate.esa.int/en/projects/fire/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/ESA_CCI_FireCCI_5_1"
+        }
+    ],
+    "sci:citation": "Product: Chuvieco, E.; Pettinari, M.L.; Lizundia-Loiola, J.; Storm, T.;\nPadilla Parellada, M. (2018): ESA Fire Climate Change Initiative\n(Fire_cci): MODIS Fire_cci Burned Area Pixel product, version 5.1. Centre for\nEnvironmental Data Analysis, 01 November 2018.\n[https://doi.org/10.5285/58f00d8814064b79a0c49662ad3af537](https://doi.org/10.5285/58f00d8814064b79a0c49662ad3af537).\n",
+    "sci:doi": "10.5285/58f00d8814064b79a0c49662ad3af537",
+    "sci:publications": [
+        {
+            "citation": "Related publication: Lizundia-Loiola, J., Ot&oacute;n, G., Ramo, R., Chuvieco, E.\n(2020): A spatio-temporal active-fire clustering approach for global burned\narea mapping at 250m from MODIS data. Remote Sensing of Environment, 236,\n111493. [https://doi.org/10.1016/j.rse.2019.111493](https://doi.org/10.1016/j.rse.2019.111493)\n",
+            "doi": "10.1016/j.rse.2019.111493"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Estimated day of the year of the first detection of the burn",
+                "name": "BurnDate"
+            },
+            {
+                "description": "Probability of detecting a pixel as burned, expressing the uncertainty of\nthe detection for all pixels, even if they are classified as unburned.\n",
+                "gee:units": "%",
+                "name": "ConfidenceLevel"
+            },
+            {
+                "description": "Land cover category of the burned pixels, extracted from the CCI LandCover\nv2.0.7 product. See Defourny, P., Lamarche, C., Bontemps, S., De Maet, T.,\nVan Bogaert, E., Moreau, I., Brockmann, C., Boettcher, M., Kirches, G.,\nWevers, J., Santoro, M., Ramoino, F., &amp; Arino, O.  (2017). Land Cover\nClimate Change Initiative - Product User Guide v2. Issue 2.0. [online]\nAvailable at: [https://maps.elie.ucl.ac.be/CCI/viewer/download/ESACCI-LC-Ph2-PUGv2_2.0.pdf](https://maps.elie.ucl.ac.be/CCI/viewer/download/ESACCI-LC-Ph2-PUGv2_2.0.pdf)\naccessed: July 2020. &copy; ESA Climate Change Initiative - Land Cover led by UCLouvain (2017).\n",
+                "gee:classes": [
+                    {
+                        "color": "ffff64",
+                        "description": "Cropland, rainfed",
+                        "value": 0
+                    },
+                    {
+                        "color": "aaf0f0",
+                        "description": "Cropland, irrigated or post-flooding",
+                        "value": 20
+                    },
+                    {
+                        "color": "dcf064",
+                        "description": "Mosaic cropland (>50%) / natural vegetation (tree, shrub, herbaceous cover) (<50%)",
+                        "value": 30
+                    },
+                    {
+                        "color": "c8c864",
+                        "description": "Mosaic natural vegetation (tree, shrub, herbaceous cover) (>50%) / cropland (<50%)",
+                        "value": 40
+                    },
+                    {
+                        "color": "006400",
+                        "description": "Tree cover, broadleaved, evergreen, closed to open (>15%)",
+                        "value": 50
+                    },
+                    {
+                        "color": "00a000",
+                        "description": "Tree cover, broadleaved, deciduous, closed to open (>15%)",
+                        "value": 60
+                    },
+                    {
+                        "color": "003c00",
+                        "description": "Tree cover, needleleaved, evergreen, closed to open (>15%)",
+                        "value": 70
+                    },
+                    {
+                        "color": "285000",
+                        "description": "Tree cover, needleleaved, deciduous, closed to open (>15%)",
+                        "value": 80
+                    },
+                    {
+                        "color": "788200",
+                        "description": "Tree cover, mixed leaf type (broadleaved and needleleaved)",
+                        "value": 90
+                    },
+                    {
+                        "color": "8ca000",
+                        "description": "Mosaic tree and shrub (>50%) / herbaceous cover (<50%)",
+                        "value": 100
+                    },
+                    {
+                        "color": "be9600",
+                        "description": "Mosaic herbaceous cover (>50%) / tree and shrub (<50%)",
+                        "value": 110
+                    },
+                    {
+                        "color": "966400",
+                        "description": "Shrubland",
+                        "value": 120
+                    },
+                    {
+                        "color": "ffb432",
+                        "description": "Grassland",
+                        "value": 130
+                    },
+                    {
+                        "color": "ffdcd2",
+                        "description": "Lichens and mosses",
+                        "value": 140
+                    },
+                    {
+                        "color": "ffebaf",
+                        "description": "Sparse vegetation (tree, shrub, herbaceous cover) (<15%)",
+                        "value": 150
+                    },
+                    {
+                        "color": "009678",
+                        "description": "Tree cover, flooded, saline water",
+                        "value": 170
+                    },
+                    {
+                        "color": "00dc82",
+                        "description": "Shrub or herbaceous cover, flooded, fresh/saline/brakish water",
+                        "value": 180
+                    }
+                ],
+                "name": "LandCover"
+            },
+            {
+                "description": "Flags indicating why a pixel was not processed.\n\n* -2: the pixel is not burnable (water bodies, bare areas, urban areas,\npermanent snow and ice)\n* -1: the pixel has not been observed during the month (due to clouds,\ncloud shadows or sensor failure)\n",
+                "name": "ObservedFlag"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Burn Date",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "BurnDate"
+                        ],
+                        "max": [
+                            366
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "ff0000",
+                            "fd4100",
+                            "fb8200",
+                            "f9c400",
+                            "f2ff00",
+                            "b6ff05",
+                            "7aff0a",
+                            "3eff0f",
+                            "02ff15",
+                            "00ff55",
+                            "00ff99",
+                            "00ffdd",
+                            "00ddff",
+                            "0098ff",
+                            "0052ff",
+                            "0210ff",
+                            "3a0dfb",
+                            "7209f6",
+                            "a905f1",
+                            "e102ed",
+                            "ff00cc",
+                            "ff0089",
+                            "ff0047",
+                            "ff0004"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 18,
+                    "lon": 0,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            250
+        ],
+        "BurnDate": {
+            "minimum": 1,
+            "maximum": 366
+        },
+        "ConfidenceLevel": {
+            "minimum": 1,
+            "maximum": 100
+        }
+    },
+    "title": "FireCCI51: MODIS Fire_cci Burned Area Pixel Product, Version 5.1",
+    "version": "5.1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2020-12-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

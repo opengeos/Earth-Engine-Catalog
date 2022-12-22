@@ -1,0 +1,131 @@
+{
+    "type": "Collection",
+    "id": "WWF/HydroSHEDS/v1/FreeFlowingRivers",
+    "stac_version": "1.0.0",
+    "description": "HydroSHEDS is a mapping product that provides hydrographic\ninformation for regional and global-scale applications in a consistent\nformat. It offers a suite of geo-referenced datasets (vector and\nraster) at various scales, including river networks, watershed\nboundaries, drainage directions, and flow accumulations. HydroSHEDS\nis based on elevation data obtained in 2000 by NASA's Shuttle Radar\nTopography Mission (SRTM).\n\nThis dataset provides polylines that represent river networks, derived from and consistent\nwith other HydroSHEDS datasets. These data are based on 15 arc-seconds\n(approx. 500 m at the equator) resolution raster data.\n\n[Mapping the world's free-flowing rivers: data set and technical documentation](\nhttps://figshare.com/articles/Mapping_the_world_s_free-flowing_rivers_data_set_and_technical_documentation/7688801)\n\nNote that the quality of the HydroSHEDS data is significantly lower for regions above\n60 degrees northern latitude as there is no underlying SRTM elevation data available\nand thus a coarser-resolution DEM was (HYDRO1k provided by USGS).\n\nHydroSHEDS was developed by the World Wildlife Fund (WWF)\nConservation Science Program in partnership with the U.S. Geological\nSurvey, the International Centre for Tropical Agriculture, The\nNature Conservancy, and the Center for Environmental Systems Research\nof the University of Kassel, Germany.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WWF_HydroSHEDS_v1_FreeFlowingRivers",
+            "type": "text/html",
+            "title": "Run the example for WWF/HydroSHEDS/v1/FreeFlowingRivers in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/WWF/WWF_HydroSHEDS_v1_FreeFlowingRivers_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/WWF_HydroSHEDS_v1_FreeFlowingRivers#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WWF/WWF_HydroSHEDS_v1_FreeFlowingRivers.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WWF/catalog.json",
+            "type": "application/json",
+            "title": "WWF"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "HydroSHEDS data are free for non-commercial and commercial\nuse. For more information, please refer to the [License Agreement](https://www.hydrosheds.org/page/license).\n",
+    "gee:type": "table",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "flow_regulation",
+        "geophysical",
+        "hydrography",
+        "hydrology",
+        "hydrosheds",
+        "river_networks",
+        "srtm",
+        "water",
+        "wwf"
+    ],
+    "providers": [
+        {
+            "name": "WWF",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.hydrosheds.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/WWF_HydroSHEDS_v1_FreeFlowingRivers"
+        }
+    ],
+    "sci:citation": "Lehner, B., Verdin, K., Jarvis, A. (2008): New global hydrography\nderived from spaceborne elevation data. Eos, Transactions, AGU,\n89(10): 93-94.\n",
+    "sci:publications": [
+        {
+            "citation": "Grill, G., Lehner, B., Thieme, M., Geenen, B., Tickner, D., Antonelli, F., Babu, S., Borrelli,\nP., Cheng, L., Crochetiere, H. and Macedo, H.E., 2019. Mapping the world's free-flowing rivers.\nNature, 569(7755), p.215. Data is available at www.hydrosheds.org\n"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Free Flowing Rivers",
+                "lookat": {
+                    "lat": 40.74101,
+                    "lon": -73.99172,
+                    "zoom": 12
+                },
+                "table_visualization": {
+                    "color": "B2B2B3",
+                    "width": 1
+                }
+            },
+            {
+                "display_name": "Free Flowing Rivers",
+                "visualize_as": "FeatureView"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 1500,
+            "thinning_ranking": [
+                "BB_LEN_KM DESC"
+            ],
+            "thinning_strategy": "GLOBALLY_CONSISTENT"
+        }
+    },
+    "title": "WWF HydroSHEDS Free Flowing Rivers Network v1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-11T00:00:00Z",
+                    "2000-02-22T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

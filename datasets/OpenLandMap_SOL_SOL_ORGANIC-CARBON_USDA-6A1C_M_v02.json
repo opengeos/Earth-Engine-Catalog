@@ -1,0 +1,211 @@
+{
+    "type": "Collection",
+    "id": "OpenLandMap/SOL/SOL_ORGANIC-CARBON_USDA-6A1C_M/v02",
+    "stac_version": "1.0.0",
+    "description": "Soil organic carbon content in x 5 g / kg at 6 standard depths\n(0, 10, 30, 60, 100 and 200 cm) at 250 m resolution\n\nPredicted from a global compilation of soil points. Processing steps are described\nin detail [here](https://gitlab.com/openlandmap/global-layers/tree/master/soil)\n. Antartica is not included.\n\nTo access and visualize maps outside of Earth Engine, use [this page](https://opengeohub.org/about-openlandmap).\n\nIf you discover a bug, artifact or inconsistency in the LandGIS maps\nor if you have a question please use the following channels:\n\n *  [Technical issues and questions about the code](https://gitlab.com/openlandmap/global-layers/issues)\n *  [General questions and comments](https://disqus.com/home/forums/landgis/)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OpenLandMap_SOL_SOL_ORGANIC-CARBON_USDA-6A1C_M_v02",
+            "type": "text/html",
+            "title": "Run the example for OpenLandMap/SOL/SOL_ORGANIC-CARBON_USDA-6A1C_M/v02 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/OpenLandMap/OpenLandMap_SOL_SOL_ORGANIC-CARBON_USDA-6A1C_M_v02_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_SOL_SOL_ORGANIC-CARBON_USDA-6A1C_M_v02#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-SA-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5281/zenodo.1475457"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenLandMap/OpenLandMap_SOL_SOL_ORGANIC-CARBON_USDA-6A1C_M_v02.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenLandMap/catalog.json",
+            "type": "application/json",
+            "title": "OpenLandMap"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-SA-4.0](https://spdx.org/licenses/CC-BY-SA-4.0.html)",
+    "gee:type": "image",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true,
+    "keywords": [
+        "carbon",
+        "envirometrix",
+        "opengeohub",
+        "openlandmap",
+        "organic",
+        "soil"
+    ],
+    "providers": [
+        {
+            "name": "EnvirometriX Ltd",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5281/zenodo.1475457"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_SOL_SOL_ORGANIC-CARBON_USDA-6A1C_M_v02"
+        }
+    ],
+    "sci:citation": "Tomislav Hengl, & Ichsani Wheeler. (2018). Soil organic carbon content in x 5 g / kg at 6 standard depths (0, 10, 30, 60, 100 and 200 cm) at 250 m resolution (Version v02) [Data set]. Zenodo.\n[10.5281/zenodo.1475457](https://doi.org/10.5281/zenodo.1475457)\n",
+    "sci:doi": "10.5281/zenodo.1475457",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Soil organic carbon content at 0 cm depth",
+                "gee:scale": 5,
+                "gee:units": "g / kg",
+                "name": "b0"
+            },
+            {
+                "description": "Soil organic carbon content at 10 cm depth",
+                "gee:scale": 5,
+                "gee:units": "g / kg",
+                "name": "b10"
+            },
+            {
+                "description": "Soil organic carbon content at 30 cm depth",
+                "gee:scale": 5,
+                "gee:units": "g / kg",
+                "name": "b30"
+            },
+            {
+                "description": "Soil organic carbon content at 60 cm depth",
+                "gee:scale": 5,
+                "gee:units": "g / kg",
+                "name": "b60"
+            },
+            {
+                "description": "Soil organic carbon content at 100 cm depth",
+                "gee:scale": 5,
+                "gee:units": "g / kg",
+                "name": "b100"
+            },
+            {
+                "description": "Soil organic carbon content at 200 cm depth",
+                "gee:scale": 5,
+                "gee:units": "g / kg",
+                "name": "b200"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Soil organic carbon content in x 5 g / kg",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "b0"
+                        ],
+                        "max": [
+                            120
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "ffffa0",
+                            "f7fcb9",
+                            "d9f0a3",
+                            "addd8e",
+                            "78c679",
+                            "41ab5d",
+                            "238443",
+                            "005b29",
+                            "004b29",
+                            "012b13",
+                            "00120b"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 30.7,
+                    "lon": -5.6,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            250
+        ],
+        "b0": {
+            "minimum": 0,
+            "maximum": 120
+        },
+        "b10": {
+            "minimum": 0,
+            "maximum": 120
+        },
+        "b100": {
+            "minimum": 0,
+            "maximum": 120
+        },
+        "b200": {
+            "minimum": 0,
+            "maximum": 120
+        },
+        "b30": {
+            "minimum": 0,
+            "maximum": 120
+        },
+        "b60": {
+            "minimum": 0,
+            "maximum": 120
+        }
+    },
+    "title": "OpenLandMap Soil Organic Carbon Content",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1950-01-01T00:00:00Z",
+                    "2018-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-SA-4.0"
+}

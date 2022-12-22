@@ -1,0 +1,236 @@
+{
+    "type": "Collection",
+    "id": "TIGER/2016/Counties",
+    "stac_version": "1.0.0",
+    "description": "The United States Census Bureau TIGER dataset contains the 2016 boundaries\nfor primary legal divisions of US states.  In most states, these entities\nare termed \"counties\". In Louisiana, these divisions are known as\n\"parishes\".\n\nAlaska has governmental entities called \"boroughs\" which fill a similar\ngovernmental role to counties, but in some areas those governmental\nresponsibilities are handled directly by the state and sometimes by a city.\nFor Alaska, county equivalent entities thus include\n\n1. organized boroughs,\n1. combined city and borough entities (e.g. Juneau),\n1. municipalities, and\n1. census areas.\n\nThe census areas are delineated cooperatively for statistical purposes by\nthe State of Alaska and the Census Bureau.\n\nIn four states (Maryland, Missouri, Nevada, and Virginia), there are one\nor more incorporated places that are independent of any county\norganization and thus constitute primary divisions of their states. These\nincorporated places are known as independent cities and are treated as\ncounty-equivalent entities for purposes of data presentation.\n\nThe District of Columbia and Guam have no primary divisions and each area is\nconsidered a county-equivalent entity for purposes of data presentation.\nThe Census Bureau treats the following entities as equivalents of counties\nfor purposes of data presentation: municipios in Puerto Rico, districts\nand islands in America Samoa, municipalities in the Commonwealth of the\nNorthern Mariana Islands, and islands in the U.S. Virgin Islands.\n\nFor full technical details on all TIGER 2016 products, see the [TIGER\ntechnical documentation](https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2016/TGRSHP2016_TechDoc.pdf).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/TIGER_2016_Counties",
+            "type": "text/html",
+            "title": "Run the example for TIGER/2016/Counties in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/TIGER/TIGER_2016_Counties_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/TIGER_2016_Counties#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "ftp://ftp2.census.gov/geo/tiger/TIGER2016/COUNTY/tl_2016_us_county.zip"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/TIGER/TIGER_2016_Counties.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/TIGER/catalog.json",
+            "type": "application/json",
+            "title": "TIGER"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The U.S. Census Bureau offers some of its public data\nin machine-readable format via an Application Programming Interface\n(API). All of the content, documentation, code and related materials\nmade available through the API are subject to [these terms and\nconditions](https://www.census.gov/data/developers/about/terms-of-service.html).\n",
+    "gee:type": "table",
+    "keywords": [
+        "census",
+        "county",
+        "tiger",
+        "us"
+    ],
+    "providers": [
+        {
+            "name": "United States Census Bureau",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/TIGER_2016_Counties"
+        }
+    ],
+    "sci:citation": "For the creation of any reports, publications, new data sets, derived\nproducts, or services resulting from the data set, users should\n[cite the US Census Bureau](https://www.census.gov/about/policies/citation.html).\n",
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Land area",
+                "name": "ALAND",
+                "type": "DOUBLE",
+                "units": "m^2"
+            },
+            {
+                "description": "Water area",
+                "name": "AWATER",
+                "type": "DOUBLE",
+                "units": "m^2"
+            },
+            {
+                "description": "Metropolitan statistical area/micropolitan statistical area code",
+                "name": "CBSAFP",
+                "type": "STRING"
+            },
+            {
+                "description": "FIPS class code",
+                "name": "CLASSFP",
+                "type": "STRING"
+            },
+            {
+                "description": "County FIPS code",
+                "name": "COUNTYFP",
+                "type": "STRING"
+            },
+            {
+                "description": "County GNIS code",
+                "name": "COUNTYNS",
+                "type": "STRING"
+            },
+            {
+                "description": "Combined statistical area code",
+                "name": "CSAFP",
+                "type": "STRING"
+            },
+            {
+                "description": "Functional Status",
+                "name": "FUNCSTAT",
+                "type": "STRING"
+            },
+            {
+                "description": "County identifier; a concatenation of state FIPS code and county FIPS code",
+                "name": "GEOID",
+                "type": "STRING"
+            },
+            {
+                "description": "Internal point latitude",
+                "name": "INTPTLAT",
+                "type": "STRING"
+            },
+            {
+                "description": "Internal point longitude",
+                "name": "INTPTLON",
+                "type": "STRING"
+            },
+            {
+                "description": "Legal/statistical area description for the county",
+                "name": "LSAD",
+                "type": "STRING"
+            },
+            {
+                "description": "Metropolitan division code",
+                "name": "METDIVFP",
+                "type": "STRING"
+            },
+            {
+                "description": "MAF/TIGER feature class code (=G4020)",
+                "name": "MTFCC",
+                "type": "STRING"
+            },
+            {
+                "description": "County name",
+                "name": "NAME",
+                "type": "STRING"
+            },
+            {
+                "description": "Name and the translated legal/statistical area description for the county",
+                "name": "NAMELSAD",
+                "type": "STRING"
+            },
+            {
+                "description": "State FIPS code",
+                "name": "STATEFP",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "County Boundaries",
+                "lookat": {
+                    "lat": 37.649,
+                    "lon": -99.844,
+                    "zoom": 5
+                },
+                "polygon_visualization": {
+                    "property_name": "ALAND",
+                    "property_vis": {
+                        "max": [
+                            50000000000
+                        ],
+                        "min": [
+                            9000000000
+                        ],
+                        "palette": [
+                            "purple",
+                            "blue",
+                            "green",
+                            "yellow",
+                            "orange",
+                            "red"
+                        ]
+                    }
+                }
+            },
+            {
+                "display_name": "County Boundaries",
+                "lookat": {
+                    "lat": 37.649,
+                    "lon": -99.844,
+                    "zoom": 5
+                },
+                "visualize_as": "FeatureView"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 4000,
+            "prerender_tiles": true,
+            "thinning_ranking": [
+                "ALAND DESC"
+            ],
+            "thinning_strategy": "HIGHER_DENSITY"
+        }
+    },
+    "title": "TIGER: US Census Counties 2016",
+    "version": "2016",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -14.69,
+                    -64.435,
+                    71.567
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-01-01T00:00:00Z",
+                    "2017-01-02T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

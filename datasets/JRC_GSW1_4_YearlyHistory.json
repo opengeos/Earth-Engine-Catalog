@@ -1,0 +1,188 @@
+{
+    "type": "Collection",
+    "id": "JRC/GSW1_4/YearlyHistory",
+    "stac_version": "1.0.0",
+    "description": "This dataset contains maps of the location and temporal\ndistribution of surface water from 1984 to 2021 and provides\nstatistics on the extent and change of those water surfaces.\nFor more information see the associated journal article: [High-resolution\nmapping of global surface water and its long-term changes](https://www.nature.com/nature/journal/v540/n7633/full/nature20584.html)\n(Nature, 2016) and the online\n[Data Users Guide](https://storage.googleapis.com/global-surface-water/downloads_ancillary/DataUsersGuidev2021.pdf).\n\nThese data were generated using 4,716,475 scenes from Landsat\n5, 7, and 8 acquired between 16 March 1984 and 31 December 2021.\nEach pixel was individually classified into water / non-water\nusing an expert system and the results were collated into a monthly\nhistory for the entire time period and two epochs (1984-1999,\n2000-2021) for change detection.\n\nThis Yearly Seasonality Classification collection contains a year-by-year\nclassification of the seasonality of water based on the occurrence values\ndetected throughout the year.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JRC_GSW1_4_YearlyHistory",
+            "type": "text/html",
+            "title": "Run the example for JRC/GSW1_4/YearlyHistory in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/JRC/JRC_GSW1_4_YearlyHistory_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GSW1_4_YearlyHistory#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GSW1_4_YearlyHistory.json",
+            "type": "application/json",
+            "title": "JRC/GSW1_4/YearlyHistory"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GSW1_3_YearlyHistory.json",
+            "type": "application/json",
+            "title": "JRC/GSW1_3/YearlyHistory"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GSW1_4_YearlyHistory.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/catalog.json",
+            "type": "application/json",
+            "title": "JRC"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:terms_of_use": "All data here is produced under the Copernicus Programme and is provided\nfree of charge, without restriction of use. For the full license\ninformation see the Copernicus Regulation.\n\nPublications, models, and data products that make use of these datasets\nmust include proper acknowledgement, including citing datasets and the\njournal article as in the following citation.\n\nIf you are using the data as a layer in a published map, please include the\nfollowing attribution text: 'Source: EC JRC/Google'\n",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "annual",
+        "geophysical",
+        "google",
+        "history",
+        "jrc",
+        "landsat_derived",
+        "surface",
+        "water",
+        "yearly"
+    ],
+    "providers": [
+        {
+            "name": "EC JRC / Google",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://global-surface-water.appspot.com"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GSW1_4_YearlyHistory"
+        }
+    ],
+    "sci:citation": "Jean-Francois Pekel, Andrew Cottam, Noel Gorelick, Alan S. Belward,\nHigh-resolution mapping of global surface water and its long-term changes.\nNature 540, 418-422 (2016). ([doi:10.1038/nature20584](https://doi.org/10.1038/nature20584))\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Classification of the seasonality of water throughout the year.",
+                "gee:classes": [
+                    {
+                        "color": "cccccc",
+                        "description": "No data",
+                        "value": 0
+                    },
+                    {
+                        "color": "ffffff",
+                        "description": "Not water",
+                        "value": 1
+                    },
+                    {
+                        "color": "99d9ea",
+                        "description": "Seasonal water",
+                        "value": 2
+                    },
+                    {
+                        "color": "0000ff",
+                        "description": "Permanent water",
+                        "value": 3
+                    }
+                ],
+                "name": "waterClass"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Year",
+                "name": "year",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Water Class",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "waterClass"
+                        ],
+                        "max": [
+                            3
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "cccccc",
+                            "ffffff",
+                            "99d9ea",
+                            "0000ff"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 45.182,
+                    "lon": 59.414,
+                    "zoom": 7
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    },
+    "title": "JRC Yearly Water Classification History, v1.4",
+    "version": "1.4",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -59,
+                    180,
+                    78
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1984-03-16T00:00:00Z",
+                    "2022-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

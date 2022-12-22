@@ -1,0 +1,258 @@
+{
+    "type": "Collection",
+    "id": "ISDASOIL/Africa/v1/texture_class",
+    "stac_version": "1.0.0",
+    "description": "USDA Texture Class at soil depths of 0-20 cm and 20-50 cm.\nIn areas of dense jungle (generally over central Africa), model accuracy is\nlow and therefore artifacts such as banding (striping) might be seen.\n\nSoil property predictions were made by\n[Innovative Solutions for Decision Agriculture Ltd. (iSDA)](https://isda-africa.com/)\nat 30 m pixel size using machine learning coupled with remote sensing data\nand a training set of over 100,000 analyzed soil samples.\n\nFurther information can be found in the\n[FAQ](https://www.isda-africa.com/isdasoil/faq/) and\n[technical information documentation](https://www.isda-africa.com/isdasoil/technical-information/). To submit an issue or request support, please visit\n[the iSDAsoil site](https://isda-africa.com/isdasoil).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/ISDASOIL_Africa_v1_texture_class",
+            "type": "text/html",
+            "title": "Run the example for ISDASOIL/Africa/v1/texture_class in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/ISDASOIL/ISDASOIL_Africa_v1_texture_class_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/ISDASOIL_Africa_v1_texture_class#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ISDASOIL/ISDASOIL_Africa_v1_texture_class.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ISDASOIL/catalog.json",
+            "type": "application/json",
+            "title": "ISDASOIL"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "africa",
+        "aluminium",
+        "isda",
+        "soil"
+    ],
+    "providers": [
+        {
+            "name": "iSDA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://isda-africa.com/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/ISDASOIL_Africa_v1_texture_class"
+        }
+    ],
+    "sci:citation": "Hengl, T., Miller, M.A.E., Kri\u017ean, J., et al. African soil properties and nutrients\nmapped at 30 m spatial resolution using two-scale ensemble machine learning.\nSci Rep 11, 6130 (2021).\n[doi:10.1038/s41598-021-85639-y](https://doi.org/10.1038/s41598-021-85639-y)\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "USDA Texture Class at 0-20 cm depth",
+                "gee:classes": [
+                    {
+                        "color": "d5c36b",
+                        "description": "Clay",
+                        "value": 1
+                    },
+                    {
+                        "color": "b96947",
+                        "description": "Silty Clay",
+                        "value": 2
+                    },
+                    {
+                        "color": "9d3706",
+                        "description": "Sandy Clay",
+                        "value": 3
+                    },
+                    {
+                        "color": "ae868f",
+                        "description": "Clay Loam",
+                        "value": 4
+                    },
+                    {
+                        "color": "f86714",
+                        "description": "Silty Clay Loam",
+                        "value": 5
+                    },
+                    {
+                        "color": "46d143",
+                        "description": "Sandy Clay Loam",
+                        "value": 6
+                    },
+                    {
+                        "color": "368f20",
+                        "description": "Loam",
+                        "value": 7
+                    },
+                    {
+                        "color": "3e5a14",
+                        "description": "Silt Loam",
+                        "value": 8
+                    },
+                    {
+                        "color": "ffd557",
+                        "description": "Sandy Loam",
+                        "value": 9
+                    },
+                    {
+                        "color": "fff72e",
+                        "description": "Silt",
+                        "value": 10
+                    },
+                    {
+                        "color": "ff5a9d",
+                        "description": "Loamy Sand",
+                        "value": 11
+                    },
+                    {
+                        "color": "ff005b",
+                        "description": "Sand",
+                        "value": 12
+                    }
+                ],
+                "name": "texture_0_20"
+            },
+            {
+                "description": "USDA Texture Class at 20-50 cm depth",
+                "gee:classes": [
+                    {
+                        "color": "d5c36b",
+                        "description": "Clay",
+                        "value": 1
+                    },
+                    {
+                        "color": "b96947",
+                        "description": "Silty Clay",
+                        "value": 2
+                    },
+                    {
+                        "color": "9d3706",
+                        "description": "Sandy Clay",
+                        "value": 3
+                    },
+                    {
+                        "color": "ae868f",
+                        "description": "Clay Loam",
+                        "value": 4
+                    },
+                    {
+                        "color": "f86714",
+                        "description": "Silty Clay Loam",
+                        "value": 5
+                    },
+                    {
+                        "color": "46d143",
+                        "description": "Sandy Clay Loam",
+                        "value": 6
+                    },
+                    {
+                        "color": "368f20",
+                        "description": "Loam",
+                        "value": 7
+                    },
+                    {
+                        "color": "3e5a14",
+                        "description": "Silt Loam",
+                        "value": 8
+                    },
+                    {
+                        "color": "ffd557",
+                        "description": "Sandy Loam",
+                        "value": 9
+                    },
+                    {
+                        "color": "fff72e",
+                        "description": "Silt",
+                        "value": 10
+                    },
+                    {
+                        "color": "ff5a9d",
+                        "description": "Loamy Sand",
+                        "value": 11
+                    },
+                    {
+                        "color": "ff005b",
+                        "description": "Sand",
+                        "value": 12
+                    }
+                ],
+                "name": "texture_20_50"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "USDA Texture Class at soil depths of 0-20 cm",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "texture_0_20"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 25,
+                    "lon": -3,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    },
+    "title": "iSDAsoil USDA Texture Class",
+    "version": "v1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -31.46,
+                    -35.22,
+                    57.08,
+                    37.98
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2017-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

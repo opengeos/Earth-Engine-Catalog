@@ -1,0 +1,170 @@
+{
+    "type": "Collection",
+    "id": "JCU/Murray/GIC/global_tidal_wetland_change/2019",
+    "stac_version": "1.0.0",
+    "description": "The Murray Global Tidal Wetland Change Dataset contains maps of the global\nextent of tidal wetlands and their change. The maps were developed from a three\nstage classification that sought to (i) estimate the global distribution of\ntidal wetlands (defined as either tidal marsh, tidal flat or mangrove\necosystems), (ii) detect their change over the study period, and (iii) estimate\nthe ecosystem type and timing of tidal wetland change events.\n\nThe dataset was produced by combining observations from 1,166,385 satellite\nimages acquired by Landsat 5 to 8 with environmental data of variables known\nto influence the distributions of each ecosystem type, including temperature,\nslope, and elevation. The image contains bands for a tidal wetland extent\nproduct (random forest probability of tidal wetland occurrence) for the\nstart and end time-steps of the study period and a tidal wetland change product\nover the full study period (loss and gain of tidal wetlands).\n\nPlease see the [usage notes](https://www.globalintertidalchange.org/data-usage)\non the [project website](https://www.globalintertidalchange.org/). A full\ndescription of the methods, validation, and limitations of the data produced by\nthis software is available in the associated scientific paper.\n\nSee also\n[UQ/murray/Intertidal/v1_1/global_intertidal](UQ_murray_Intertidal_v1_1_global_intertidal)\nfor global maps of the distribution of tidal flat ecosystems.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JCU_Murray_GIC_global_tidal_wetland_change_2019",
+            "type": "text/html",
+            "title": "Run the example for JCU/Murray/GIC/global_tidal_wetland_change/2019 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/JCU/JCU_Murray_GIC_global_tidal_wetland_change_2019_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/JCU_Murray_GIC_global_tidal_wetland_change_2019#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JCU/JCU_Murray_GIC_global_tidal_wetland_change_2019.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JCU/catalog.json",
+            "type": "application/json",
+            "title": "JCU"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "coastal",
+        "ecosystem",
+        "intertidal",
+        "landsat_derived",
+        "mangrove",
+        "murray",
+        "saltmarsh",
+        "tidal_flat",
+        "tidal_marsh"
+    ],
+    "providers": [
+        {
+            "name": "Murray/JCU",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://github.com/nick-murray/gee-global-intertidal-change-data-descriptor"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/JCU_Murray_GIC_global_tidal_wetland_change_2019"
+        }
+    ],
+    "sci:citation": "Murray, N.J., Worthington, T.A., Bunting, P., Duce, S., Hagger, V.,\nLovelock, C.E., Lucas, R., Saunders, M.I., Sheaves, M., Spalding, M.,\nWaltham, N.J., Lyons, M.B., 2022. High-resolution mapping of losses and\ngains of Earth's tidal wetlands. *Science*.\n[doi:10.1126/science.abm9583](https://doi.org/10.1126/science.abm9583)\n",
+    "sci:doi": "10.1126/science.abm9583",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Set to 1 for loss locations, masked out otherwise.",
+                "name": "loss"
+            },
+            {
+                "description": "Integer representing the end year of the time-step of loss analysis\n(e.g., 19 = 2017-2019).\n",
+                "name": "lossYear"
+            },
+            {
+                "description": "Loss type\n\n* 2 - Tidal Flat\n* 3 - Mangrove\n* 5 - Tidal Marsh\n",
+                "name": "lossType"
+            },
+            {
+                "description": "Set to 1 for gain locations, masked out otherwise.",
+                "name": "gain"
+            },
+            {
+                "description": "Integer representing the end year of the time-step of gain analysis\n(e.g., 19 = 2017-2019).\n",
+                "name": "gainYear"
+            },
+            {
+                "description": "Gain type:\n\n* 2 - Tidal Flat\n* 3 - Mangrove\n* 5 - Tidal Marsh\n",
+                "name": "gainType"
+            },
+            {
+                "description": "Random forest agreement of the overarching tidal wetland class for\nthe first time step (1999-2001). Integer between 0 and 100.\n",
+                "name": "twprobabilityStart"
+            },
+            {
+                "description": "Random forest agreement of the overarching tidal wetland class for\nthe last time step (2017-2019). Integer between 0 and 100.\n",
+                "name": "twprobabilityEnd"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Wetland Loss",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "loss"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            1
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 1.3,
+                    "lon": 103.7,
+                    "zoom": 12
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    },
+    "title": "Murray Global Tidal Wetland Change v1.0 (1999-2019)",
+    "version": "1.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1999-01-01T00:00:00Z",
+                    "2019-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

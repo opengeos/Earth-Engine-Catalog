@@ -1,0 +1,141 @@
+{
+    "type": "Collection",
+    "id": "CSP/ERGo/1_0/US/physiography",
+    "stac_version": "1.0.0",
+    "description": "The Physiography dataset represents the spatial intersection of landforms\n(available in EE as ERGo/1_0/US/landforms) and lithology (available in EE\nas ERGo/1_0/US/lithology) data layers. It provides 247 unique combinations\nout of a possible 270. The values for each type are formed by concatenating\nthe landform and lithology types (e.g., 1101 is \\\"Peak/ridge\\\" landform on\n\\\"carbonate\\\" lithology). This data layer is sometimes referred to as\ncharacterizing \\\"land facets\\\".\n\nThe landforms layer is based on the USGS's 10m NED DEM (available in EE\nas USGS/NED). The lithology layer is not basen on any DEM.\n\nThis dataset is provided just for the US, because of the availability\nof the lithology data layer, though these data are likely available for\nother countries.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/CSP_ERGo_1_0_US_physiography",
+            "type": "text/html",
+            "title": "Run the example for CSP/ERGo/1_0/US/physiography in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/CSP/CSP_ERGo_1_0_US_physiography_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/CSP_ERGo_1_0_US_physiography#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CSP/CSP_ERGo_1_0_US_physiography.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CSP/catalog.json",
+            "type": "application/json",
+            "title": "CSP"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-NC-SA-4.0](https://spdx.org/licenses/CC-BY-NC-SA-4.0.html)",
+    "gee:type": "image",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true,
+    "keywords": [
+        "aspect",
+        "csp",
+        "elevation",
+        "ergo",
+        "geophysical",
+        "landforms",
+        "slope",
+        "topography",
+        "us"
+    ],
+    "providers": [
+        {
+            "name": "Conservation Science Partners",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.csp-inc.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/CSP_ERGo_1_0_US_physiography"
+        }
+    ],
+    "sci:citation": "Theobald, D. M., Harrison-Atlas, D., Monahan, W. B., & Albano, C. M.\n(2015). Ecologically-relevant maps of landforms and physiographic diversity\nfor climate adaptation planning. PloS one, 10(12),\n[e0143619](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0143619)\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Landforms and lithology intersection",
+                "name": "constant"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Physiography",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "constant"
+                        ],
+                        "max": [
+                            4220
+                        ],
+                        "min": [
+                            1100
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 40.5242,
+                    "lon": -105.4248,
+                    "zoom": 8
+                }
+            }
+        ],
+        "gsd": [
+            90
+        ],
+        "constant": {
+            "minimum": 1100,
+            "maximum": 4220
+        }
+    },
+    "title": "US Physiography",
+    "version": "1.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -132.09,
+                    12.54,
+                    -60.35,
+                    56.21
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-01-24T00:00:00Z",
+                    "2011-05-13T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-NC-SA-4.0"
+}

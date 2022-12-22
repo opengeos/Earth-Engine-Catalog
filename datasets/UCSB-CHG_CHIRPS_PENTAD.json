@@ -1,0 +1,168 @@
+{
+    "type": "Collection",
+    "id": "UCSB-CHG/CHIRPS/PENTAD",
+    "stac_version": "1.0.0",
+    "description": "Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS)\nis a 30+ year quasi-global rainfall dataset. CHIRPS incorporates\n0.05\u00b0 resolution satellite imagery with in-situ station data\nto create gridded rainfall time series for trend analysis and seasonal\ndrought monitoring.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/UCSB-CHG_CHIRPS_PENTAD",
+            "type": "text/html",
+            "title": "Run the example for UCSB-CHG/CHIRPS/PENTAD in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/UCSB-CHG/UCSB-CHG_CHIRPS_PENTAD_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/UCSB-CHG_CHIRPS_PENTAD#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UCSB-CHG/UCSB-CHG_CHIRPS_PENTAD.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UCSB-CHG/catalog.json",
+            "type": "application/json",
+            "title": "UCSB-CHG"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "description": "Each asset spans a pentad. Each of first 5 pentads in a month\nhave 5 days. The last pentad contains all the days from the 26th to the\nend of the month.\n",
+        "interval": 1,
+        "name": "pentad",
+        "type": "cadence",
+        "unit": "custom_time_unit"
+    },
+    "gee:terms_of_use": "This datasets are in the public domain. To the extent possible under law,\n[Pete Peterson](https://chc.ucsb.edu/people/pete-peterson)\nhas waived all copyright and related or neighboring rights to\nClimate Hazards Group Infrared Precipitation with Stations (CHIRPS).\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "chg",
+        "climate",
+        "geophysical",
+        "precipitation",
+        "ucsb",
+        "weather"
+    ],
+    "providers": [
+        {
+            "name": "UCSB/CHG",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://chc.ucsb.edu/data/chirps"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/UCSB-CHG_CHIRPS_PENTAD"
+        }
+    ],
+    "sci:citation": "Funk, Chris, Pete Peterson, Martin Landsfeld, Diego Pedreros, James\nVerdin, Shraddhanand Shukla, Gregory Husak, James Rowland, Laura Harrison,\nAndrew Hoell & Joel Michaelsen. \"The climate hazards infrared precipitation\nwith stations-a new environmental record for monitoring extremes\".\nScientific Data 2, 150066. [doi:10.1038/sdata.2015.66](https://doi.org/10.1038/sdata.2015.66)\n2015.\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Precipitation",
+                "gee:units": "mm/pentad",
+                "name": "precipitation"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Month",
+                "name": "month",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Pentad",
+                "name": "pentad",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Year",
+                "name": "year",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Precipitation",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "precipitation"
+                        ],
+                        "max": [
+                            112
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "001137",
+                            "0aab1e",
+                            "e7eb05",
+                            "ff4a2d",
+                            "e90000"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 7.71,
+                    "lon": 17.93,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            5566
+        ],
+        "precipitation": {
+            "minimum": 0,
+            "maximum": 1072.43
+        }
+    },
+    "title": "CHIRPS Pentad: Climate Hazards Group InfraRed Precipitation With Station Data (Version 2.0 Final)",
+    "version": "2.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -50,
+                    180,
+                    50
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1981-01-01T00:00:00Z",
+                    "2022-11-26T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

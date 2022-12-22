@@ -1,0 +1,439 @@
+{
+    "type": "Collection",
+    "id": "COPERNICUS/CORINE/V18_5_1/100m",
+    "stac_version": "1.0.0",
+    "description": "The CORINE (coordination of information on the environment) Land Cover\n(CLC) inventory was initiated in 1985 to standardize data collection on land\nin Europe to support environmental policy development. The project is\ncoordinated by the European Environment Agency (EEA) in the frame of the EU\nCopernicus programme and implemented by national teams. The number of\nparticipating countries has increased over time currently including 33 (EEA)\nmember countries and six cooperating countries (EEA39) with a total area of\nover 5.8 Mkm2.\n\nThe reference year of the first CLC inventory was 1990 and the first update\ncreated in 2000. Later, the update cycle has become 6 years. Satellite\nimagery provides the geometrical and thematic basis for mapping with in-situ\ndata as essential ancillary information. The basic technical parameters of\nCLC (i.e. 44 classes in nomenclature, 25 hectares minimum mapping unit\n(MMU), and 100 meters minimum mapping width) have not changed since the\nbeginning, therefore the results of the different inventories are\ncomparable.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/COPERNICUS_CORINE_V18_5_1_100m",
+            "type": "text/html",
+            "title": "Run the example for COPERNICUS/CORINE/V18_5_1/100m in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/COPERNICUS/COPERNICUS_CORINE_V18_5_1_100m_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_CORINE_V18_5_1_100m#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_CORINE_V20_100m.json",
+            "type": "application/json",
+            "title": "COPERNICUS/CORINE/V20/100m"
+        },
+        {
+            "rel": "source",
+            "href": "https://land.copernicus.eu/pan-european/corine-land-cover/clc-1990?tab=download"
+        },
+        {
+            "rel": "source",
+            "href": "https://land.copernicus.eu/pan-european/corine-land-cover/clc-2000?tab=download"
+        },
+        {
+            "rel": "source",
+            "href": "https://land.copernicus.eu/pan-european/corine-land-cover/clc-2006?tab=download"
+        },
+        {
+            "rel": "source",
+            "href": "https://land.copernicus.eu/pan-european/corine-land-cover/clc-2012?tab=download"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_CORINE_V18_5_1_100m.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/catalog.json",
+            "type": "application/json",
+            "title": "COPERNICUS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "deprecated": true,
+    "gee:terms_of_use": "Access to data is based on a principle of full, open, and free access as\nestablished by the Copernicus data and information policy Regulation (EU)\nNo 1159/2013 of 12 July 2013. For more information visit:\n[https://land.copernicus.eu/pan-european/corine-land-cover/clc-2012?tab=metadata](https://land.copernicus.eu/pan-european/corine-land-cover/clc-2012?tab=metadata).\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "clc",
+        "copernicus",
+        "corine",
+        "eea",
+        "esa",
+        "eu",
+        "landcover"
+    ],
+    "providers": [
+        {
+            "name": "EEA/Copernicus",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://land.copernicus.eu/pan-european/corine-land-cover/view"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_CORINE_V18_5_1_100m"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Land cover",
+                "gee:classes": [
+                    {
+                        "color": "E6004D",
+                        "description": "Artificial surfaces > Urban fabric > Continuous urban fabric",
+                        "value": 1
+                    },
+                    {
+                        "color": "FF0000",
+                        "description": "Artificial surfaces > Urban fabric > Discontinuous urban fabric",
+                        "value": 2
+                    },
+                    {
+                        "color": "CC4DF2",
+                        "description": "Artificial surfaces > Industrial, commercial, and transport units > Industrial or commercial units",
+                        "value": 3
+                    },
+                    {
+                        "color": "CC0000",
+                        "description": "Artificial surfaces > Industrial, commercial, and\ntransport units > Road and rail networks and associated land\n",
+                        "value": 4
+                    },
+                    {
+                        "color": "E6CCCC",
+                        "description": "Artificial surfaces > Industrial, commercial, and transport units > Port areas",
+                        "value": 5
+                    },
+                    {
+                        "color": "E6CCE6",
+                        "description": "Artificial surfaces > Industrial, commercial, and transport units > Airports",
+                        "value": 6
+                    },
+                    {
+                        "color": "A600CC",
+                        "description": "Artificial surfaces > Mine, dump, and construction sites > Mineral extraction sites",
+                        "value": 7
+                    },
+                    {
+                        "color": "A64DCC",
+                        "description": "Artificial surfaces > Mine, dump, and construction sites > Dump sites",
+                        "value": 8
+                    },
+                    {
+                        "color": "FF4DFF",
+                        "description": "Artificial surfaces > Mine, dump, and construction sites > Construction sites",
+                        "value": 9
+                    },
+                    {
+                        "color": "FFA6FF",
+                        "description": "Artificial surfaces > Artificial, non-agricultural vegetated areas > Green urban areas",
+                        "value": 10
+                    },
+                    {
+                        "color": "FFE6FF",
+                        "description": "Artificial surfaces > Artificial, non-agricultural vegetated areas > Sport and leisure facilities",
+                        "value": 11
+                    },
+                    {
+                        "color": "FFFFA8",
+                        "description": "Agricultural areas > Arable land > Non-irrigated arable land",
+                        "value": 12
+                    },
+                    {
+                        "color": "FFFF00",
+                        "description": "Agricultural areas > Arable land > Permanently irrigated land",
+                        "value": 13
+                    },
+                    {
+                        "color": "E6E600",
+                        "description": "Agricultural areas > Arable land > Rice fields",
+                        "value": 14
+                    },
+                    {
+                        "color": "E68000",
+                        "description": "Agricultural areas > Permanent crops > Vineyards",
+                        "value": 15
+                    },
+                    {
+                        "color": "F2A64D",
+                        "description": "Agricultural areas > Permanent crops > Fruit trees and berry plantations",
+                        "value": 16
+                    },
+                    {
+                        "color": "E6A600",
+                        "description": "Agricultural areas > Permanent crops > Olive groves",
+                        "value": 17
+                    },
+                    {
+                        "color": "E6E64D",
+                        "description": "Agricultural areas > Pastures > Pastures",
+                        "value": 18
+                    },
+                    {
+                        "color": "FFE6A6",
+                        "description": "Agricultural areas > Heterogeneous agricultural areas > Annual crops associated with permanent crops",
+                        "value": 19
+                    },
+                    {
+                        "color": "FFE64D",
+                        "description": "Agricultural areas > Heterogeneous agricultural areas > Complex cultivation patterns",
+                        "value": 20
+                    },
+                    {
+                        "color": "E6CC4D",
+                        "description": "Agricultural areas > Heterogeneous agricultural areas >\nLand principally occupied by agriculture, with significant areas of\nnatural vegetation\n",
+                        "value": 21
+                    },
+                    {
+                        "color": "F2CCA6",
+                        "description": "Agricultural areas > Heterogeneous agricultural areas > Agro-forestry areas",
+                        "value": 22
+                    },
+                    {
+                        "color": "80FF00",
+                        "description": "Forest and semi natural areas > Forests > Broad-leaved forest",
+                        "value": 23
+                    },
+                    {
+                        "color": "00A600",
+                        "description": "Forest and semi natural areas > Forests > Coniferous forest",
+                        "value": 24
+                    },
+                    {
+                        "color": "4DFF00",
+                        "description": "Forest and semi natural areas > Forests > Mixed forest",
+                        "value": 25
+                    },
+                    {
+                        "color": "CCF24D",
+                        "description": "Forest and semi natural areas > Scrub and/or herbaceous vegetation associations > Natural grasslands",
+                        "value": 26
+                    },
+                    {
+                        "color": "A6FF80",
+                        "description": "Forest and semi natural areas > Scrub and/or herbaceous vegetation associations > Moors and heathland",
+                        "value": 27
+                    },
+                    {
+                        "color": "A6E64D",
+                        "description": "Forest and semi natural areas > Scrub and/or herbaceous\nvegetation associations > Sclerophyllous vegetation\n",
+                        "value": 28
+                    },
+                    {
+                        "color": "A6F200",
+                        "description": "Forest and semi natural areas > Scrub and/or herbaceous\nvegetation associations > Transitional woodland-shrub\n",
+                        "value": 29
+                    },
+                    {
+                        "color": "E6E6E6",
+                        "description": "Forest and semi natural areas > Open spaces with little or no vegetation > Beaches, dunes, sands",
+                        "value": 30
+                    },
+                    {
+                        "color": "CCCCCC",
+                        "description": "Forest and semi natural areas > Open spaces with little or no vegetation > Bare rocks",
+                        "value": 31
+                    },
+                    {
+                        "color": "CCFFCC",
+                        "description": "Forest and semi natural areas > Open spaces with little or no vegetation > Sparsely vegetated areas",
+                        "value": 32
+                    },
+                    {
+                        "color": "000000",
+                        "description": "Forest and semi natural areas > Open spaces with little or no vegetation > Burnt areas",
+                        "value": 33
+                    },
+                    {
+                        "color": "A6E6CC",
+                        "description": "Forest and semi natural areas > Open spaces with little or no vegetation > Glaciers and perpetual snow",
+                        "value": 34
+                    },
+                    {
+                        "color": "A6A6FF",
+                        "description": "Wetlands > Inland wetlands > Inland marshes",
+                        "value": 35
+                    },
+                    {
+                        "color": "4D4DFF",
+                        "description": "Wetlands > Inland wetlands > Peat bogs",
+                        "value": 36
+                    },
+                    {
+                        "color": "CCCCFF",
+                        "description": "Wetlands > Maritime wetlands > Salt marshes",
+                        "value": 37
+                    },
+                    {
+                        "color": "E6E6FF",
+                        "description": "Wetlands > Maritime wetlands > Salines",
+                        "value": 38
+                    },
+                    {
+                        "color": "A6A6E6",
+                        "description": "Wetlands > Maritime wetlands > Intertidal flats",
+                        "value": 39
+                    },
+                    {
+                        "color": "00CCF2",
+                        "description": "Water bodies > Inland waters > Water courses",
+                        "value": 40
+                    },
+                    {
+                        "color": "80F2E6",
+                        "description": "Water bodies > Inland waters > Water bodies",
+                        "value": 41
+                    },
+                    {
+                        "color": "00FFA6",
+                        "description": "Water bodies > Marine waters > Coastal lagoons",
+                        "value": 42
+                    },
+                    {
+                        "color": "A6FFE6",
+                        "description": "Water bodies > Marine waters > Estuaries",
+                        "value": 43
+                    },
+                    {
+                        "color": "E6F2FF",
+                        "description": "Water bodies > Marine waters > Sea and ocean",
+                        "value": 44
+                    }
+                ],
+                "name": "landcover"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Land cover class names",
+                "name": "landcover_class_names",
+                "type": "STRING_LIST"
+            },
+            {
+                "description": "Land cover class palette",
+                "name": "landcover_class_palette",
+                "type": "STRING_LIST"
+            },
+            {
+                "description": "Value of the land cover classification.",
+                "name": "landcover_class_values",
+                "type": "INT_LIST"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Land Cover",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "landcover"
+                        ],
+                        "max": [
+                            44
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "E6004D",
+                            "FF0000",
+                            "CC4DF2",
+                            "CC0000",
+                            "E6CCCC",
+                            "E6CCE6",
+                            "A600CC",
+                            "A64DCC",
+                            "FF4DFF",
+                            "FFA6FF",
+                            "FFE6FF",
+                            "FFFFA8",
+                            "FFFF00",
+                            "E6E600",
+                            "E68000",
+                            "F2A64D",
+                            "E6A600",
+                            "E6E64D",
+                            "FFE6A6",
+                            "FFE64D",
+                            "E6CC4D",
+                            "F2CCA6",
+                            "80FF00",
+                            "00A600",
+                            "4DFF00",
+                            "CCF24D",
+                            "A6FF80",
+                            "A6E64D",
+                            "A6F200",
+                            "E6E6E6",
+                            "CCCCCC",
+                            "CCFFCC",
+                            "000000",
+                            "A6E6CC",
+                            "A6A6FF",
+                            "4D4DFF",
+                            "CCCCFF",
+                            "E6E6FF",
+                            "A6A6E6",
+                            "00CCF2",
+                            "80F2E6",
+                            "00FFA6",
+                            "A6FFE6",
+                            "E6F2FF"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 39.825,
+                    "lon": 16.436,
+                    "zoom": 6
+                }
+            }
+        ],
+        "gsd": [
+            100
+        ]
+    },
+    "title": "Copernicus CORINE Land Cover [deprecated]",
+    "version": "V18.5.1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -81.77,
+                    -29.2,
+                    94.13,
+                    73.81
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1986-01-01T00:00:00Z",
+                    "2012-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

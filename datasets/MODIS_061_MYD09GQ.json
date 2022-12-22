@@ -1,0 +1,399 @@
+{
+    "type": "Collection",
+    "id": "MODIS/061/MYD09GQ",
+    "stac_version": "1.0.0",
+    "description": "The MODIS Surface Reflectance products provide an estimate\nof the surface spectral reflectance as it would be measured at\nground level in the absence of atmospheric scattering or absorption.\nLow-level data are corrected for atmospheric gases and aerosols.\nMYD09GQ version 6.1 provides bands 1 and 2 at a 250m resolution in\na daily gridded L2G product in the Sinusoidal projection, including\na QC and five observation layers. This product is meant to be used\nin conjunction with the MYD09GA where important quality and viewing\ngeometry information is stored.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/306/MOD09_User_Guide_V6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/305/MOD09_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MYD09GQ)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_061_MYD09GQ",
+            "type": "text/html",
+            "title": "Run the example for MODIS/061/MYD09GQ in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MYD09GQ_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD09GQ#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/MODIS/MYD09GQ.061"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MYD09GQ.json",
+            "type": "application/json",
+            "title": "MODIS/006/MYD09GQ"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MYD09GQ.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C1621389411-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "aqua",
+        "daily",
+        "global",
+        "modis",
+        "myd09gq",
+        "nasa",
+        "sr",
+        "surface_reflectance",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/MODIS/MYD09GQ.061"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD09GQ"
+        }
+    ],
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/MODIS/MYD09GQ.061",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Number of observations per 250m pixel",
+                "name": "num_observations"
+            },
+            {
+                "center_wavelength": 0.645,
+                "description": "Surface reflectance band 1",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "620-670nm",
+                "name": "sur_refl_b01"
+            },
+            {
+                "center_wavelength": 0.8585,
+                "description": "Surface reflectance for band 2",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "841-876nm",
+                "name": "sur_refl_b02"
+            },
+            {
+                "description": "Surface reflectance quality assurance",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 2,
+                            "description": "MODLAND QA bits",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Corrected product produced at ideal quality - all bands",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Corrected product produced at less than ideal quality - some or all bands",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Corrected product not produced due to cloud effects - all bands",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Corrected product not produced for other reasons\n- some or all bands, may be fill value (11) [Note that\na value of (11) overrides a value of (01)]\n",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Spare (unused)",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "N/A",
+                                    "value": 0
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 4,
+                            "description": "Band 1 data quality",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "Highest quality",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Noisy detector",
+                                    "value": 7
+                                },
+                                {
+                                    "description": "Dead detector, data interpolated in L1B",
+                                    "value": 8
+                                },
+                                {
+                                    "description": "Solar zenith >= 86 degrees",
+                                    "value": 9
+                                },
+                                {
+                                    "description": "Solar zenith >= 85 and < 86 degrees",
+                                    "value": 10
+                                },
+                                {
+                                    "description": "Missing input",
+                                    "value": 11
+                                },
+                                {
+                                    "description": "Internal constant used in place of climatological\ndata for at least one atmospheric constant",
+                                    "value": 12
+                                },
+                                {
+                                    "description": "Correction out of bounds, pixel constrained\nto extreme allowable value",
+                                    "value": 13
+                                },
+                                {
+                                    "description": "L1B data faulty",
+                                    "value": 14
+                                },
+                                {
+                                    "description": "Not processed due to deep ocean or clouds",
+                                    "value": 15
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 4,
+                            "description": "Band 2 data quality",
+                            "first_bit": 8,
+                            "values": [
+                                {
+                                    "description": "Highest quality",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Noisy detector",
+                                    "value": 7
+                                },
+                                {
+                                    "description": "Dead detector, data interpolated in L1B",
+                                    "value": 8
+                                },
+                                {
+                                    "description": "Solar zenith >= 86 degrees",
+                                    "value": 9
+                                },
+                                {
+                                    "description": "Solar zenith >= 85 and < 86 degrees",
+                                    "value": 10
+                                },
+                                {
+                                    "description": "Missing input",
+                                    "value": 11
+                                },
+                                {
+                                    "description": "Internal constant used in place of climatological\ndata for at least one atmospheric constant",
+                                    "value": 12
+                                },
+                                {
+                                    "description": "Correction out of bounds, pixel constrained  to extreme allowable value",
+                                    "value": 13
+                                },
+                                {
+                                    "description": "L1B data faulty",
+                                    "value": 14
+                                },
+                                {
+                                    "description": "Not processed due to deep ocean or clouds",
+                                    "value": 15
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Atmospheric correction performed",
+                            "first_bit": 12,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Adjacency correction performed",
+                            "first_bit": 13,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Spare (unused)",
+                            "first_bit": 14,
+                            "values": [
+                                {
+                                    "description": "N/A",
+                                    "value": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 16
+                },
+                "name": "QC_250m"
+            },
+            {
+                "description": "Observation coverage percent",
+                "gee:scale": 0.01,
+                "name": "obscov"
+            },
+            {
+                "description": "Observation number",
+                "name": "iobs_res"
+            },
+            {
+                "description": "Orbit pointer",
+                "name": "orbit_pnt"
+            },
+            {
+                "description": "Granule pointer",
+                "name": "granule_pnt"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "False Color",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "sur_refl_b02",
+                            "sur_refl_b02",
+                            "sur_refl_b01"
+                        ],
+                        "max": [
+                            8000
+                        ],
+                        "min": [
+                            -100
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 0,
+                    "lon": 0,
+                    "zoom": 0
+                }
+            }
+        ],
+        "gsd": [
+            250
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Aqua"
+        ],
+        "granule_pnt": {
+            "minimum": 0,
+            "maximum": 254
+        },
+        "iobs_res": {
+            "minimum": 0,
+            "maximum": 254
+        },
+        "num_observations": {
+            "minimum": 0,
+            "maximum": 127
+        },
+        "obscov": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "orbit_pnt": {
+            "minimum": 0,
+            "maximum": 15
+        },
+        "sur_refl_b01": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "sur_refl_b02": {
+            "minimum": -100,
+            "maximum": 16000
+        }
+    },
+    "title": "MYD09GQ.061 Aqua Surface Reflectance Daily Global 250m",
+    "version": "V061",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-04T00:00:00Z",
+                    "2022-12-13T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

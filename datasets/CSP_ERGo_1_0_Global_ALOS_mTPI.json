@@ -1,0 +1,149 @@
+{
+    "type": "Collection",
+    "id": "CSP/ERGo/1_0/Global/ALOS_mTPI",
+    "stac_version": "1.0.0",
+    "description": "The mTPI distinguishes ridge from valley forms. It is calculated using\nelevation data for each location subtracted by the mean elevation within a\nneighborhood. mTPI uses moving windows of radius (km): 115.8, 89.9, 35.5,\n13.1, 5.6, 2.8, and 1.2. It is based on the 30m \\\"AVE\\\" band of JAXA's ALOS\nDEM (available in EE as JAXA/ALOS/AW3D30_V1_1).\n\nThe Conservation Science Partners (CSP) Ecologically Relevant Geomorphology\n(ERGo) Datasets, Landforms and Physiography contain detailed, multi-scale\ndata on landforms and physiographic (aka land facet) patterns. Although\nthere are many potential uses of these data, the original purpose for these\ndata was to develop an ecologically relevant classification and map of\nlandforms and physiographic classes that are suitable for climate adaptation\nplanning. Because there is large uncertainty associated with future climate\nconditions and even more uncertainty around ecological responses, providing\ninformation about what is unlikely to change offers a strong foundation for\nmanagers to build robust climate adaptation plans. The quantification of\nthese features of the landscape is sensitive to the resolution, so we\nprovide the highest resolution possible given the extent and characteristics\nof a given index.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/CSP_ERGo_1_0_Global_ALOS_mTPI",
+            "type": "text/html",
+            "title": "Run the example for CSP/ERGo/1_0/Global/ALOS_mTPI in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/CSP/CSP_ERGo_1_0_Global_ALOS_mTPI_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/CSP_ERGo_1_0_Global_ALOS_mTPI#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CSP/CSP_ERGo_1_0_Global_ALOS_mTPI.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CSP/catalog.json",
+            "type": "application/json",
+            "title": "CSP"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-NC-SA-4.0](https://spdx.org/licenses/CC-BY-NC-SA-4.0.html)",
+    "gee:type": "image",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true,
+    "keywords": [
+        "aspect",
+        "csp",
+        "elevation",
+        "ergo",
+        "geophysical",
+        "global",
+        "landforms",
+        "slope",
+        "topography"
+    ],
+    "providers": [
+        {
+            "name": "Conservation Science Partners",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.csp-inc.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/CSP_ERGo_1_0_Global_ALOS_mTPI"
+        }
+    ],
+    "sci:citation": "Theobald, D. M., Harrison-Atlas, D., Monahan, W. B., & Albano, C. M.\n(2015). Ecologically-relevant maps of landforms and physiographic diversity\nfor climate adaptation planning. PloS one, 10(12),\n[e0143619](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0143619)\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "ALOS-derived mTPI ranging from negative (valleys) to positive (ridges) values",
+                "gee:units": "m",
+                "name": "AVE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "ALOS mTPI",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "AVE"
+                        ],
+                        "max": [
+                            200
+                        ],
+                        "min": [
+                            -200
+                        ],
+                        "palette": [
+                            "0b1eff",
+                            "4be450",
+                            "fffca4",
+                            "ffa011",
+                            "ff0000"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 40.3439,
+                    "lon": -105.8636,
+                    "zoom": 11
+                }
+            }
+        ],
+        "gsd": [
+            270
+        ],
+        "AVE": {
+            "minimum": -3758,
+            "maximum": 10963
+        }
+    },
+    "title": "Global ALOS mTPI (Multi-Scale Topographic Position Index)",
+    "version": "1.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-01-24T00:00:00Z",
+                    "2011-05-13T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-NC-SA-4.0"
+}

@@ -1,0 +1,443 @@
+{
+    "type": "Collection",
+    "id": "LANDSAT/LM02/C02/T1",
+    "stac_version": "1.0.0",
+    "description": "Landsat 2 MSS Collection 2 Tier 1 DN values, representing scaled, calibrated at-sensor radiance.\n\nLandsat scenes with the highest available data quality\nare placed into Tier 1 and are considered suitable for time-series processing\nanalysis. Tier 1 includes Level-1 Precision Terrain (L1TP) processed data\nthat have well-characterized radiometry and are inter-calibrated across the\ndifferent Landsat sensors. The georegistration of Tier 1 scenes will be\nconsistent and within prescribed tolerances [<=12 m root mean square error\n(RMSE)]. All Tier 1 Landsat data can be considered consistent and\ninter-calibrated (regardless of sensor) across the full collection. See more\ninformation [in the USGS\ndocs](https://www.usgs.gov/core-science-systems/nli/landsat/landsat-collections).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/LANDSAT_LM02_C02_T1",
+            "type": "text/html",
+            "title": "Run the example for LANDSAT/LM02/C02/T1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/LANDSAT/LANDSAT_LM02_C02_T1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LM02_C02_T1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_LM02_C02_T1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/catalog.json",
+            "type": "application/json",
+            "title": "LANDSAT"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 16,
+        "type": "revisit_interval",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "Landsat datasets are federally created data\nand therefore reside in the public domain and may be used, transferred, or reproduced without copyright restriction.\n\nAcknowledgement or credit of the USGS as data source should be provided\nby including a line of text citation such as the example shown below.\n\n(Product, Image, Photograph, or Dataset Name) courtesy of\nthe U.S. Geological Survey\n\nExample: Landsat-7 image courtesy of the U.S. Geological Survey\n\nSee the\n[USGS Visual Identity System Guidance](https://www.usgs.gov/information-policies-and-instructions/usgs-visual-identity-system)\nfor further details on proper citation and acknowledgement of USGS products.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "c2",
+        "global",
+        "l2",
+        "landsat",
+        "lm2",
+        "mss",
+        "radiance",
+        "t1",
+        "tier1",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "USGS",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.usgs.gov/landsat-missions/landsat-collection-2-level-1-data"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LM02_C02_T1"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "center_wavelength": 0.55,
+                "description": "Green",
+                "gee:wavelength": "0.5 - 0.6 &mu;m",
+                "gsd": 60,
+                "name": "B4"
+            },
+            {
+                "center_wavelength": 0.65,
+                "description": "Red",
+                "gee:wavelength": "0.6 - 0.7 &mu;m",
+                "gsd": 60,
+                "name": "B5"
+            },
+            {
+                "center_wavelength": 0.75,
+                "description": "Near Infrared 1",
+                "gee:wavelength": "0.7 - 0.8 &mu;m",
+                "gsd": 60,
+                "name": "B6"
+            },
+            {
+                "center_wavelength": 0.95,
+                "description": "Near Infrared 2",
+                "gee:wavelength": "0.8 - 1.1 &mu;m",
+                "gsd": 30,
+                "name": "B7"
+            },
+            {
+                "description": "Landsat Collection 2 QA Bitmask\n",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Fill",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Image data",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Fill data",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Dilated Cloud",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "Cloud is not dilated or no cloud",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "cloud dilation",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Unused",
+                            "first_bit": 2
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Cloud",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "Cloud is not dilated or no cloud",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "cloud dilation",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Cloud Shadow",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "Cloud Shadow Confidence is not high",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "High confidence cloud shadow",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Snow",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "Snow/Ice Confidence is not high",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "High confidence snow cover",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Clear",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "Cloud or Dilated Cloud bits are set",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Cloud and Dilated Cloud bits are not set",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Water",
+                            "first_bit": 7,
+                            "values": [
+                                {
+                                    "description": "Land or cloud",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Water",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Cloud Confidence",
+                            "first_bit": 8,
+                            "values": [
+                                {
+                                    "description": "No confidence level set",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Low confidence",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Medium confidence",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High confidence",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Cloud Shadow Confidence",
+                            "first_bit": 10,
+                            "values": [
+                                {
+                                    "description": "No confidence level set",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Low confidence",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Reserved",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High confidence",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Snow / Ice Confidence",
+                            "first_bit": 12,
+                            "values": [
+                                {
+                                    "description": "No confidence level set",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Low confidence",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Reserved",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High confidence",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Cirrus Confidence",
+                            "first_bit": 14,
+                            "values": [
+                                {
+                                    "description": "No confidence level set",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Low confidence",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Reserved",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High confidence",
+                                    "value": 3
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 16
+                },
+                "gsd": 30,
+                "name": "QA_PIXEL"
+            },
+            {
+                "description": "Radiometric saturation QA",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Band 1 data saturated",
+                            "first_bit": 0
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Band 2 data saturated",
+                            "first_bit": 1
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Band 3 data saturated",
+                            "first_bit": 2
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Band 4 data saturated",
+                            "first_bit": 3
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Band 5 data saturated",
+                            "first_bit": 4
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Band 6 data saturated",
+                            "first_bit": 5
+                        },
+                        {
+                            "bit_count": 3,
+                            "description": "Unused",
+                            "first_bit": 6
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Dropped pixel",
+                            "first_bit": 9,
+                            "values": [
+                                {
+                                    "description": "Pixel present",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Detector does not have a value",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 10
+                },
+                "gsd": 30,
+                "name": "QA_RADSAT"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Near Infrared (321)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "B6",
+                            "B5",
+                            "B4"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 46.529,
+                    "lon": 6.746,
+                    "zoom": 6
+                }
+            },
+            {
+                "display_name": "Shortwave Infrared (421)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "B7",
+                            "B5",
+                            "B4"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 46.529,
+                    "lon": 6.746,
+                    "zoom": 6
+                }
+            }
+        ]
+    },
+    "title": "USGS Landsat 2 MSS Collection 2 Tier 1 Raw Scenes",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1975-01-31T10:19:55Z",
+                    "1982-02-03T00:49:25Z"
+                ]
+            ]
+        }
+    },
+    "license": "PDDL-1.0"
+}

@@ -1,0 +1,154 @@
+{
+    "type": "Collection",
+    "id": "MODIS/MOD13A1",
+    "stac_version": "1.0.0",
+    "description": "Global MODIS vegetation indices are designed to\nprovide consistent spatial and temporal comparisons of vegetation conditions.\nBlue, red, and near-infrared reflectances, centered at 469-nanometers,\n645-nanometers, and 858-nanometers, respectively, are used to determine the\nMODIS daily vegetation indices.\n\nThe MODIS Normalized Difference Vegetation Index (NDVI) complements\nNOAA's Advanced Very High Resolution Radiometer (AVHRR) NDVI products\nprovide continuity for time series historical applications. MODIS also\nincludes a new Enhanced Vegetation Index (EVI) that minimizes canopy\nbackground variations and maintains sensitivity over dense vegetation\nconditions. The EVI also uses the blue band to remove residual atmosphere\ncontamination caused by smoke and sub-pixel thin cloud clouds. The MODIS\nNDVI and EVI products are computed from atmospherically corrected\nbi-directional surface reflectances that have been masked for water, clouds,\nheavy aerosols, and cloud shadows.\n\nGlobal MOD13A1 data are provided every 16 days at 500-meter spatial\nresolution as a gridded level-3 product in the Sinusoidal projection.\nVegetation indices are used for global monitoring of vegetation conditions\nand are used in products displaying land cover and land cover changes. These\ndata may be used as input for modeling global biogeochemical and hydrologic\nprocesses and global and regional climate. These data also may be used for\ncharacterizing land surface biophysical properties and processes, including\nprimary production and land cover conversion.\n\nVersion-5 MODIS Vegetation Indices products have attained Validation Stage\n3.\n\nPlease visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data) for information on citing LP DAAC datasets.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_MOD13A1",
+            "type": "text/html",
+            "title": "Run the example for MODIS/MOD13A1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_MOD13A1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MOD13A1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MOD13A1.json",
+            "type": "application/json",
+            "title": "MODIS/006/MOD13A1"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MOD13A1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "deprecated": true,
+    "gee:interval": {
+        "interval": 16,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC have no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "16_day",
+        "evi",
+        "global",
+        "mod13a1",
+        "modis",
+        "ndvi",
+        "terra",
+        "vegetation"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mod13a1"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MOD13A1"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "NDVI",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "NDVI"
+                        ],
+                        "bias": [
+                            0
+                        ],
+                        "gain": [
+                            0.0001
+                        ],
+                        "palette": [
+                            "FFFFFF",
+                            "CE7E45",
+                            "DF923D",
+                            "F1B555",
+                            "FCD163",
+                            "99B718",
+                            "74A901",
+                            "66A000",
+                            "529400",
+                            "3E8601",
+                            "207401",
+                            "056201",
+                            "004C00",
+                            "023B01",
+                            "012E01",
+                            "011D01",
+                            "011301"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 31.052933985705163,
+                    "lon": -7.03125,
+                    "zoom": 2
+                }
+            }
+        ]
+    },
+    "title": "MOD13A1.005 Vegetation Indices 16-Day L3 Global 500m [deprecated]",
+    "version": "Unknown",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-18T00:00:00Z",
+                    "2017-03-06T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

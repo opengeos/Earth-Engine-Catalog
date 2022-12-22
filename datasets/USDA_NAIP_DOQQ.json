@@ -1,0 +1,149 @@
+{
+    "type": "Collection",
+    "id": "USDA/NAIP/DOQQ",
+    "stac_version": "1.0.0",
+    "description": "The National Agriculture Imagery Program (NAIP) acquires aerial imagery\nduring the agricultural growing seasons in the continental U.S.\n\nNAIP projects are contracted each year based upon available funding and the\nimagery acquisition cycle. Beginning in 2003, NAIP was acquired on\na 5-year cycle. 2008 was a transition year, and a three-year cycle began\nin 2009.\n\nNAIP imagery is acquired at a one-meter ground sample distance (GSD) with a\nhorizontal accuracy that matches within six meters of photo-identifiable\nground control points, which are used during image inspection.\n\nOlder images were collected using 3 bands (Red, Green, and Blue: RGB), but\nnewer imagery is usually collected with an additional near-infrared band\n(RGBN). RGB asset ids begin with 'n_', NRG asset ids begin with 'c_', RGBN\nasset ids begin with 'm_'.\n\nSome older images have GSD of 2 meters.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/USDA_NAIP_DOQQ",
+            "type": "text/html",
+            "title": "Run the example for USDA/NAIP/DOQQ in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/USDA/USDA_NAIP_DOQQ_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/USDA_NAIP_DOQQ#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USDA/USDA_NAIP_DOQQ.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USDA/catalog.json",
+            "type": "application/json",
+            "title": "USDA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "Most information presented on the FSA Web site is considered public domain\ninformation. Public domain information may be freely distributed or copied,\nbut use of appropriate byline/photo/image credits is requested. For more\ninformation visit the [FSA Policies and Links](https://www.fsa.usda.gov/help/policies-and-links)\nwebsite.\n\nUsers should acknowledge USDA Farm Production and Conservation -\nBusiness Center, Geospatial Enterprise Operations when using or\ndistributing this data set.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "aerial",
+        "agriculture",
+        "fpac",
+        "highres",
+        "imagery",
+        "naip",
+        "usda"
+    ],
+    "providers": [
+        {
+            "name": "USDA Farm Production and Conservation - Business Center, Geospatial Enterprise Operations",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://naip-usdaonline.hub.arcgis.com/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/USDA_NAIP_DOQQ"
+        }
+    ],
+    "sci:citation": "USDA Farm Production and Conservation - Business Center, Geospatial Enterprise Operations",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Red",
+                "gee:units": "DN",
+                "name": "R"
+            },
+            {
+                "description": "Green",
+                "gee:units": "DN",
+                "name": "G"
+            },
+            {
+                "description": "Blue",
+                "gee:units": "DN",
+                "name": "B"
+            },
+            {
+                "description": "Near infrared",
+                "gee:units": "DN",
+                "name": "N"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "True Color",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "R",
+                            "G",
+                            "B"
+                        ],
+                        "max": [
+                            255
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 40.7278,
+                    "lon": -73.9958,
+                    "zoom": 15
+                }
+            }
+        ],
+        "gsd": [
+            0.6
+        ]
+    },
+    "title": "NAIP: National Agriculture Imagery Program",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -124.84,
+                    24.42,
+                    -64.82,
+                    49.72
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-06-15T00:00:00Z",
+                    "2020-12-17T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

@@ -1,0 +1,332 @@
+{
+    "type": "Collection",
+    "id": "WORLDCLIM/V1/BIO",
+    "stac_version": "1.0.0",
+    "description": "WorldClim V1 Bioclim provides bioclimatic variables that are derived from\nthe monthly temperature and rainfall in order to generate more biologically\nmeaningful values.\n\nThe bioclimatic variables represent annual trends (e.g., mean annual\ntemperature, annual precipitation), seasonality (e.g., annual range in\ntemperature and precipitation), and extreme or limiting environmental\nfactors (e.g., temperature of the coldest and warmest month, and\nprecipitation of the wet and dry quarters).\n\nThe bands scheme follows that of ANUCLIM, except that for temperature\nseasonality the standard deviation was used because a coefficient of\nvariation does not make sense with temperatures between -1 and 1.\n\nWorldClim version 1 was developed by Robert J. Hijmans, Susan Cameron,\nand Juan Parra, at the Museum of Vertebrate Zoology, University of\nCalifornia, Berkeley, in collaboration with Peter Jones and Andrew Jarvis\n(CIAT), and with Karen Richardson (Rainforest CRC).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WORLDCLIM_V1_BIO",
+            "type": "text/html",
+            "title": "Run the example for WORLDCLIM/V1/BIO in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/WORLDCLIM/WORLDCLIM_V1_BIO_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/WORLDCLIM_V1_BIO#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-SA-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WORLDCLIM/WORLDCLIM_V1_BIO.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WORLDCLIM/catalog.json",
+            "type": "application/json",
+            "title": "WORLDCLIM"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-SA-4.0](https://spdx.org/licenses/CC-BY-SA-4.0.html)",
+    "gee:type": "image",
+    "gee:unusual_terms_of_use": true,
+    "keywords": [
+        "berkeley",
+        "bioclim",
+        "climate",
+        "coldest",
+        "diurnal",
+        "driest",
+        "isothermality",
+        "monthly",
+        "precipitation",
+        "seasonality",
+        "temperature",
+        "warmest",
+        "weather",
+        "wettest",
+        "worldclim"
+    ],
+    "providers": [
+        {
+            "name": "University of California, Berkeley",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.worldclim.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/WORLDCLIM_V1_BIO"
+        }
+    ],
+    "sci:citation": "Hijmans, R.J., S.E. Cameron, J.L. Parra, P.G. Jones and A. Jarvis,\n2005. Very High Resolution Interpolated Climate Surfaces for Global Land\nAreas. International Journal of Climatology 25: 1965-1978.\n[doi:10.1002/joc.1276](https://doi.org/10.1002/joc.1276).\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Annual mean temperature",
+                "gee:scale": 0.1,
+                "gee:units": "\u00b0C",
+                "name": "bio01"
+            },
+            {
+                "description": "Mean diurnal range (mean of monthly (max temp - min temp))",
+                "gee:scale": 0.1,
+                "gee:units": "\u00b0C",
+                "name": "bio02"
+            },
+            {
+                "description": "Isothermality (bio02/bio07)",
+                "gee:units": "%",
+                "name": "bio03"
+            },
+            {
+                "description": "Temperature seasonality (Standard deviation * 100)",
+                "gee:scale": 0.01,
+                "gee:units": "\u00b0C",
+                "name": "bio04"
+            },
+            {
+                "description": "Max temperature of warmest month",
+                "gee:scale": 0.1,
+                "gee:units": "\u00b0C",
+                "name": "bio05"
+            },
+            {
+                "description": "Min temperature of coldest month",
+                "gee:scale": 0.1,
+                "gee:units": "\u00b0C",
+                "name": "bio06"
+            },
+            {
+                "description": "Temperature annual range (bio05-bio06)",
+                "gee:scale": 0.1,
+                "gee:units": "\u00b0C",
+                "name": "bio07"
+            },
+            {
+                "description": "Mean temperature of wettest quarter",
+                "gee:scale": 0.1,
+                "gee:units": "\u00b0C",
+                "name": "bio08"
+            },
+            {
+                "description": "Mean temperature of driest quarter",
+                "gee:scale": 0.1,
+                "gee:units": "\u00b0C",
+                "name": "bio09"
+            },
+            {
+                "description": "Mean temperature of warmest quarter",
+                "gee:scale": 0.1,
+                "gee:units": "\u00b0C",
+                "name": "bio10"
+            },
+            {
+                "description": "Mean temperature of coldest quarter",
+                "gee:scale": 0.1,
+                "gee:units": "\u00b0C",
+                "name": "bio11"
+            },
+            {
+                "description": "Annual precipitation",
+                "gee:units": "mm",
+                "name": "bio12"
+            },
+            {
+                "description": "Precipitation of wettest month",
+                "gee:units": "mm",
+                "name": "bio13"
+            },
+            {
+                "description": "Precipitation of driest month",
+                "gee:units": "mm",
+                "name": "bio14"
+            },
+            {
+                "description": "Precipitation seasonality",
+                "gee:units": "Coefficient of Variation",
+                "name": "bio15"
+            },
+            {
+                "description": "Precipitation of wettest quarter",
+                "gee:units": "mm",
+                "name": "bio16"
+            },
+            {
+                "description": "Precipitation of driest quarter",
+                "gee:units": "mm",
+                "name": "bio17"
+            },
+            {
+                "description": "Precipitation of warmest quarter",
+                "gee:units": "mm",
+                "name": "bio18"
+            },
+            {
+                "description": "Precipitation of coldest quarter",
+                "gee:units": "mm",
+                "name": "bio19"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Annual Mean Temperature",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "bio01"
+                        ],
+                        "max": [
+                            300
+                        ],
+                        "min": [
+                            -230
+                        ],
+                        "palette": [
+                            "blue",
+                            "purple",
+                            "cyan",
+                            "green",
+                            "yellow",
+                            "red"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 52.48,
+                    "lon": 71.72,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            927.67
+        ],
+        "bio01": {
+            "minimum": -290,
+            "maximum": 320
+        },
+        "bio02": {
+            "minimum": 9,
+            "maximum": 214
+        },
+        "bio03": {
+            "minimum": 7,
+            "maximum": 96
+        },
+        "bio04": {
+            "minimum": 62,
+            "maximum": 22721
+        },
+        "bio05": {
+            "minimum": -96,
+            "maximum": 490
+        },
+        "bio06": {
+            "minimum": -573,
+            "maximum": 258
+        },
+        "bio07": {
+            "minimum": 53,
+            "maximum": 725
+        },
+        "bio08": {
+            "minimum": -285,
+            "maximum": 378
+        },
+        "bio09": {
+            "minimum": -521,
+            "maximum": 366
+        },
+        "bio10": {
+            "minimum": -143,
+            "maximum": 383
+        },
+        "bio11": {
+            "minimum": -521,
+            "maximum": 289
+        },
+        "bio12": {
+            "minimum": 0,
+            "maximum": 11401
+        },
+        "bio13": {
+            "minimum": 0,
+            "maximum": 2949
+        },
+        "bio14": {
+            "minimum": 0,
+            "maximum": 752
+        },
+        "bio15": {
+            "minimum": 0,
+            "maximum": 265
+        },
+        "bio16": {
+            "minimum": 0,
+            "maximum": 8019
+        },
+        "bio17": {
+            "minimum": 0,
+            "maximum": 2495
+        },
+        "bio18": {
+            "minimum": 0,
+            "maximum": 6090
+        },
+        "bio19": {
+            "minimum": 0,
+            "maximum": 5162
+        }
+    },
+    "title": "WorldClim BIO Variables V1",
+    "version": "V1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1960-01-01T00:00:00Z",
+                    "1991-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-SA-4.0"
+}

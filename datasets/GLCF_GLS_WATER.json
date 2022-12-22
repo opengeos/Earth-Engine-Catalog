@@ -1,0 +1,212 @@
+{
+    "type": "Collection",
+    "id": "GLCF/GLS_WATER",
+    "stac_version": "1.0.0",
+    "description": "The Global Inland Water dataset shows inland surface water bodies, including\nfresh and saline lakes, rivers, and reservoirs.\n\nFrom the GLS 2000 epoch, 3,650,723 km2 of inland water were identified,\naround three quarters of which were in North America and Asia. Boreal\nforests and tundra hold the largest portion of inland water, about 40% of\nthe global total. The data exhibits strong linear correlation with both the\nMODIS dataset as well as 30-m resolution datasets over the United States\nand Canada. Residual errors were due primarily to the seasonality of water\ncover, snow and ice, and residual clouds.\n\nThe dataset contains one or more image for each available Landsat WRS2\npath/row.\n\nDocumentation:\n\n* [User's guide](https://lpdaac.usgs.gov/documents/1371/GFCC_User_Guide_V1.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/1370/GFCC_ATBD.pdf)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/GLCF_GLS_WATER",
+            "type": "text/html",
+            "title": "Run the example for GLCF/GLS_WATER in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/GLCF/GLCF_GLS_WATER_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/GLCF_GLS_WATER#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GLCF/GLCF_GLS_WATER.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GLCF/catalog.json",
+            "type": "application/json",
+            "title": "GLCF"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:provider_ids": [
+        "C1398831362-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "Intellectual property rights to this dataset belong to University of\nMaryland, Department of Geographical Sciences and NASA. Usage is free if\nacklowedgement is made.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "glcf",
+        "landsat_derived",
+        "nasa",
+        "umd",
+        "water"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/MEASURES/GFCC/GFCC30WC.001"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/GLCF_GLS_WATER"
+        }
+    ],
+    "sci:citation": "Data Citation: Global Inland Water, {Year, ...}, Global Land Cover\nFacility.\n",
+    "sci:publications": [
+        {
+            "citation": "Paper/Methods Citation: Feng, Min, Joseph O. Sexton, Saurabh Channan,\nand John R. Townshend. 2015. [A Global, High-Resolution (30-M) Inland Water\nBody Dataset for 2000: First Results of a Topographic-Spectral\nClassification Algorithm](https://www.tandfonline.com/doi/pdf/10.1080/17538947.2015.1026420).\nInternational Journal of Digital Earth.\n[doi:10.1080/17538947.2015.1026420](https://doi.org/10.1080/17538947.2015.1026420).\n",
+            "doi": "10.1080/17538947.2015.1026420"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Water classification",
+                "gee:classes": [
+                    {
+                        "color": "FAFAFA",
+                        "description": "Land",
+                        "value": 1
+                    },
+                    {
+                        "color": "00C5FF",
+                        "description": "Water",
+                        "value": 2
+                    },
+                    {
+                        "color": "DF73FF",
+                        "description": "Snow/ice",
+                        "value": 4
+                    },
+                    {
+                        "color": "828282",
+                        "description": "Cloud shadow",
+                        "value": 200
+                    },
+                    {
+                        "color": "CCCCCC",
+                        "description": "Cloud",
+                        "value": 201
+                    }
+                ],
+                "name": "water"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Path",
+                "name": "path",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Path and row",
+                "name": "pathrow",
+                "type": "STRING"
+            },
+            {
+                "description": "Row",
+                "name": "row",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Water class names",
+                "name": "water_class_names",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Water class palette",
+                "name": "water_class_palette",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Water class values",
+                "name": "water_class_values",
+                "type": "INT_LIST"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Water",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "water"
+                        ],
+                        "max": [
+                            4
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "FAFAFA",
+                            "00C5FF",
+                            "DF73FF",
+                            "828282",
+                            "CCCCCC"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -85.122,
+                    "lon": 44.871,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ],
+        "instruments": [
+            "ETM+",
+            "TM"
+        ],
+        "platform": [
+            "Landsat-5",
+            "Landsat-7"
+        ]
+    },
+    "title": "GLCF: Landsat Global Inland Water",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2000-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

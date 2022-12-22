@@ -1,0 +1,296 @@
+{
+    "type": "Collection",
+    "id": "ESA/GLOBCOVER_L4_200901_200912_V2_3",
+    "stac_version": "1.0.0",
+    "description": "GlobCover 2009 is a global land cover map based on ENVISAT's Medium\nResolution Imaging Spectrometer (MERIS) Level 1B data acquired in full\nresolution mode with a spatial resolution of approximately 300 meters.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/ESA_GLOBCOVER_L4_200901_200912_V2_3",
+            "type": "text/html",
+            "title": "Run the example for ESA/GLOBCOVER_L4_200901_200912_V2_3 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/ESA/ESA_GLOBCOVER_L4_200901_200912_V2_3_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/ESA_GLOBCOVER_L4_200901_200912_V2_3#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ESA/ESA_GLOBCOVER_L4_200901_200912_V2_3.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ESA/catalog.json",
+            "type": "application/json",
+            "title": "ESA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The GlobCover products have been processed by ESA and by the Universit\u00e9\nCatholique de Louvain. They are made available to the public by ESA.\nYou may use the GlobCover land cover map for educational and/or scientific\npurposes, without any fee on the condition that you credit ESA and the\nUniversit\u00e9 Catholique de Louvain as the source of the GlobCover products.\n",
+    "gee:type": "image",
+    "gee:unusual_terms_of_use": true,
+    "keywords": [
+        "esa",
+        "globcover",
+        "landcover"
+    ],
+    "providers": [
+        {
+            "name": "ESA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "http://dup.esrin.esa.int/page_globcover.php"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/ESA_GLOBCOVER_L4_200901_200912_V2_3"
+        }
+    ],
+    "sci:citation": "ESA 2010 and UCLouvain. [http://due.esrin.esa.int/page_globcover.php](http://due.esrin.esa.int/page_globcover.php)",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "The land cover map is derived by an automatic and\nregionally-tuned classification of a time series of global MERIS FR\nmosaics for the year 2009. The global land cover map counts 22 land cover\nclasses defined with the United Nations (UN) Land Cover Classification\nSystem (LCCS).\n",
+                "gee:classes": [
+                    {
+                        "color": "aaefef",
+                        "description": "Post-flooding or irrigated croplands",
+                        "value": 11
+                    },
+                    {
+                        "color": "ffff63",
+                        "description": "Rainfed croplands",
+                        "value": 14
+                    },
+                    {
+                        "color": "dcef63",
+                        "description": "Mosaic cropland (50-70%) / vegetation (grassland, shrubland, forest) (20-50%)",
+                        "value": 20
+                    },
+                    {
+                        "color": "cdcd64",
+                        "description": "Mosaic vegetation (grassland, shrubland, forest) (50-70%) / cropland (20-50%)",
+                        "value": 30
+                    },
+                    {
+                        "color": "006300",
+                        "description": "Closed to open (>15%) broadleaved evergreen and/or semi-deciduous forest (>5m)",
+                        "value": 40
+                    },
+                    {
+                        "color": "009f00",
+                        "description": "Closed (>40%) broadleaved deciduous forest (>5m)",
+                        "value": 50
+                    },
+                    {
+                        "color": "aac700",
+                        "description": "Open (15-40%) broadleaved deciduous forest (>5m)",
+                        "value": 60
+                    },
+                    {
+                        "color": "003b00",
+                        "description": "Closed (>40%) needleleaved evergreen forest (>5m)",
+                        "value": 70
+                    },
+                    {
+                        "color": "286300",
+                        "description": "Open (15-40%) needleleaved deciduous or evergreen forest (>5m)",
+                        "value": 90
+                    },
+                    {
+                        "color": "788300",
+                        "description": "Closed to open (>15%) mixed broadleaved and needleleaved forest (>5m)",
+                        "value": 100
+                    },
+                    {
+                        "color": "8d9f00",
+                        "description": "Mosaic forest-shrubland (50-70%) / grassland (20-50%)",
+                        "value": 110
+                    },
+                    {
+                        "color": "bd9500",
+                        "description": "Mosaic grassland (50-70%) / forest-shrubland (20-50%)",
+                        "value": 120
+                    },
+                    {
+                        "color": "956300",
+                        "description": "Closed to open (>15%) shrubland (<5m)",
+                        "value": 130
+                    },
+                    {
+                        "color": "ffb431",
+                        "description": "Closed to open (>15%) grassland",
+                        "value": 140
+                    },
+                    {
+                        "color": "ffebae",
+                        "description": "Sparse (>15%) vegetation (woody vegetation, shrubs, grassland)",
+                        "value": 150
+                    },
+                    {
+                        "color": "00785a",
+                        "description": "Closed (>40%) broadleaved forest regularly flooded - Fresh water",
+                        "value": 160
+                    },
+                    {
+                        "color": "009578",
+                        "description": "Closed (>40%) broadleaved semi-deciduous and/or evergreen forest regularly flooded - saline water",
+                        "value": 170
+                    },
+                    {
+                        "color": "00dc83",
+                        "description": "Closed to open (>15%) vegetation (grassland, shrubland, woody vegetation) on regularly flooded or waterlogged soil - fresh, brackish or saline water\n",
+                        "value": 180
+                    },
+                    {
+                        "color": "c31300",
+                        "description": "Artificial surfaces and associated areas (urban areas >50%) GLOBCOVER 2009",
+                        "value": 190
+                    },
+                    {
+                        "color": "fff5d6",
+                        "description": "Bare areas",
+                        "value": 200
+                    },
+                    {
+                        "color": "0046c7",
+                        "description": "Water bodies",
+                        "value": 210
+                    },
+                    {
+                        "color": "ffffff",
+                        "description": "Permanent snow and ice",
+                        "value": 220
+                    },
+                    {
+                        "color": "743411",
+                        "description": "Unclassified",
+                        "value": 230
+                    }
+                ],
+                "name": "landcover"
+            },
+            {
+                "description": "Binary quality band indicating whether the reference dataset has been used instead of the output of the GlobCover classification scheme.\n",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Information on dataset used for classification",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Areas classified using the output of the GlobCover classification scheme.",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Areas classified using the reference dataset.",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 1
+                },
+                "name": "qa"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Landcover",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "landcover"
+                        ],
+                        "max": [
+                            230
+                        ],
+                        "min": [
+                            11
+                        ],
+                        "palette": [
+                            "aaefef",
+                            "ffff63",
+                            "dcef63",
+                            "cdcd64",
+                            "006300",
+                            "009f00",
+                            "aac700",
+                            "003b00",
+                            "286300",
+                            "788300",
+                            "8d9f00",
+                            "bd9500",
+                            "956300",
+                            "ffb431",
+                            "ffebae",
+                            "00785a",
+                            "009578",
+                            "00dc83",
+                            "c31300",
+                            "fff5d6",
+                            "0046c7",
+                            "ffffff",
+                            "743411"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 26.4,
+                    "lon": -88.6,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            300
+        ]
+    },
+    "title": "GlobCover: Global Land Cover Map",
+    "version": "V2.3",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2009-01-01T00:00:00Z",
+                    "2010-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

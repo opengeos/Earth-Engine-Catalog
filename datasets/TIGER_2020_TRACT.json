@@ -1,0 +1,208 @@
+{
+    "type": "Collection",
+    "id": "TIGER/2020/TRACT",
+    "stac_version": "1.0.0",
+    "description": "The United States Census Bureau regularly releases\na geodatabase named TIGER. This dataset contains the 2020 census\nblocks, roughly equivalent to a city block. There are just over\n85000 polygon features covering the United States, the District\nof Columbia, Puerto Rico, and the\n[Island areas](https://www.census.gov/programs-surveys/decennial-census/decade/2020/planning-management/release/2020-island-areas-data-products.html).\n\nFor full technical details on all TIGER 2020 products, see the\n[TIGER technical documentation](https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2020/TGRSHP2020_TechDoc.pdf).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/TIGER_2020_TRACT",
+            "type": "text/html",
+            "title": "Run the example for TIGER/2020/TRACT in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/TIGER/TIGER_2020_TRACT_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/TIGER_2020_TRACT#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/TIGER/TIGER_2020_TRACT.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/TIGER/catalog.json",
+            "type": "application/json",
+            "title": "TIGER"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The U.S. Census Bureau offers some of its public data\nin machine-readable format via an Application Programming Interface\n(API). All of the content, documentation, code and related materials\nmade available to you through the API are subject to [these terms and\nconditions](https://www.census.gov/data/developers/about/terms-of-service.html).\n",
+    "gee:type": "table",
+    "keywords": [
+        "census",
+        "city",
+        "neighborhood",
+        "tiger",
+        "urban",
+        "us"
+    ],
+    "providers": [
+        {
+            "name": "United States Census Bureau",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/TIGER_2020_TRACT"
+        }
+    ],
+    "sci:citation": "For the creation of any reports, publications, new data sets, derived\nproducts, or services resulting from the data set, users should\n[cite the US Census Bureau](https://www.census.gov/about/policies/citation.html).\n",
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Land Area (square meters)",
+                "name": "ALAND",
+                "type": "DOUBLE",
+                "units": "m^2"
+            },
+            {
+                "description": "Water Area (square meters)",
+                "name": "AWATER",
+                "type": "DOUBLE",
+                "units": "m^2"
+            },
+            {
+                "description": "County FIPS Code",
+                "name": "COUNTYFP",
+                "type": "STRING"
+            },
+            {
+                "description": "Functional Status (S = Statistical)",
+                "name": "FUNCSTAT",
+                "type": "STRING"
+            },
+            {
+                "description": "Unique Identifier of Summary Level, Characteristic Iteration, US, State, County, Tract, Block Group Code",
+                "name": "GEOID",
+                "type": "STRING"
+            },
+            {
+                "description": "Internal Point Latitude",
+                "name": "INTPTLAT",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Internal Point Longitude",
+                "name": "INTPTLON",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "MAF/TIGER Feature Classification Code",
+                "name": "MTFCC",
+                "type": "STRING"
+            },
+            {
+                "description": "2020 Census tract name: this is the census tract code\nconverted to an integer or integer plus 2-character\ndecimal if the last two characters of the code are not\nboth zeros.\n",
+                "name": "NAME",
+                "type": "STRING"
+            },
+            {
+                "description": "Full Name",
+                "name": "NAMELSAD",
+                "type": "STRING"
+            },
+            {
+                "description": "State FIPS Code",
+                "name": "STATEFP",
+                "type": "STRING"
+            },
+            {
+                "description": "Census Tract Code",
+                "name": "TRACTCE",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Water Area 2020",
+                "lookat": {
+                    "lat": 40.74101,
+                    "lon": -73.99172,
+                    "zoom": 13
+                },
+                "polygon_visualization": {
+                    "property_name": "AWATER",
+                    "property_vis": {
+                        "max": [
+                            10000000
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "d8d9d9",
+                            "aaaaaa",
+                            "b6dfe9",
+                            "2ea3f2",
+                            "0c71c3"
+                        ]
+                    }
+                }
+            },
+            {
+                "display_name": "Water Area 2020",
+                "lookat": {
+                    "lat": 40.74101,
+                    "lon": -73.99172,
+                    "zoom": 13
+                },
+                "visualize_as": "FeatureView"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 16000,
+            "prerender_tiles": true,
+            "thinning_ranking": [
+                "STATEFP ASC"
+            ],
+            "thinning_strategy": "HIGHER_DENSITY"
+        }
+    },
+    "title": "TIGER: US Census Tracts",
+    "version": "2020",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -14.69,
+                    -64.435,
+                    71.567
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    "2020-01-02T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

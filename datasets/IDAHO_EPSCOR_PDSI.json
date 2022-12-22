@@ -1,0 +1,164 @@
+{
+    "type": "Collection",
+    "id": "IDAHO_EPSCOR/PDSI",
+    "stac_version": "1.0.0",
+    "description": "The Palmer Drought Severity Index dataset provides\nhigh spatial resolution (~4-km) thrice-monthly estimates of this\nwidely used measure of integrated water supply and demand anomalies\nacross the contiguous United States from 1979-present. The PDSI\nis calculated using precipitation and potential evapotranspiration\nderived from the gridded meteorological dataset of Abatzoglou (2013).\n\nPotential evapotranspiration is computed using the Penman-Montieth\nequation for a reference grass surface. Available soil water holding\ncapacity in the top 2.5m of the soil was derived from the STATSGO\nsoils database and used in the computations. Whereas PDSI has typically\nbeen computed on monthly timescales, we compute these data three-times\na month to provide more timely updates. Due to the spin-up of PDSI\ncalculations, data for the first year of record should be used\nsparingly.\n\nThis dataset contains provisional products that are replaced with\nupdated versions when the complete source data become available.\nProducts can be distinguished by the value of the 'status' property.\nAt first, assets are ingested with status='early'. After several\ndays, they are replaced by assets with status='provisional'.\nAfter about 2 months, they are replaced by the final assets with\nstatus='permanent'.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/IDAHO_EPSCOR_PDSI",
+            "type": "text/html",
+            "title": "Run the example for IDAHO_EPSCOR/PDSI in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/IDAHO_EPSCOR/IDAHO_EPSCOR_PDSI_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/IDAHO_EPSCOR_PDSI#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GRIDMET/GRIDMET_DROUGHT.json",
+            "type": "application/json",
+            "title": "GRIDMET/DROUGHT"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/IDAHO_EPSCOR/IDAHO_EPSCOR_PDSI.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/IDAHO_EPSCOR/catalog.json",
+            "type": "application/json",
+            "title": "IDAHO_EPSCOR"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "deprecated": true,
+    "gee:interval": {
+        "interval": 10,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "This work (METDATA, by John Abatzoglou) is in the public\ndomain and is free of known copyright restrictions. Users should\nproperly cite the source used in the creation of any reports and\npublications resulting from the use of this dataset and note the\ndate when the data was acquired.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "climate",
+        "conus",
+        "crop",
+        "drought",
+        "geophysical",
+        "merced",
+        "palmer",
+        "pdsi"
+    ],
+    "providers": [
+        {
+            "name": "University of California Merced",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "http://www.climatologylab.org/gridmet.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/IDAHO_EPSCOR_PDSI"
+        }
+    ],
+    "sci:citation": "Abatzoglou J.T., R. Barbero, J.W. Wolf, Z. Holden (2014), Tracking\ninterannual streamflow variability with drought indices in the\nPacific Northwest, US, Journal of Hydrometeorology, 15, 1900-1912.\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Possible values: 4.0 or more (extremely wet), 3.0\nto 3.99 (very wet), 2.0 to 2.99 (moderately wet), 1.0 to 1.99\n(slightly wet), 0.5 to 0.99 (incipient wet spell), 0.49 to -0.49\n(near normal), -0.5 to -0.99 (incipient dry spell), -1.0 to -1.99\n(mild drought), -2.0 to -2.99 (moderate drought), -3.0 to -3.99\n(severe drought), or -4.0 or less (extreme drought).\n",
+                "name": "pdsi"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "'early', 'provisional', or 'permanent'",
+                "name": "status",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "PDSI",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "pdsi"
+                        ],
+                        "max": [
+                            10
+                        ],
+                        "min": [
+                            -5
+                        ],
+                        "palette": [
+                            "red",
+                            "yellow",
+                            "green",
+                            "cyan",
+                            "blue"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 38.686,
+                    "lon": -115.356,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            4638.3
+        ],
+        "pdsi": {
+            "minimum": -11.94,
+            "maximum": 17.92
+        }
+    },
+    "title": "PDSI: University of Idaho Palmer Drought Severity Index [deprecated]",
+    "version": "Unknown",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -124.9,
+                    24.9,
+                    -66.8,
+                    49.6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1979-03-01T00:00:00Z",
+                    "2020-06-20T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

@@ -1,0 +1,185 @@
+{
+    "type": "Collection",
+    "id": "CPOM/CryoSat2/ANTARCTICA_DEM",
+    "stac_version": "1.0.0",
+    "description": "This dataset is a digital elevation model (DEM) of the\nAntarctic ice sheet and ice shelves based on\nobservations recorded by the CryoSat-2 satellite\nradar altimeter between July 2010 and July 2016.\n\nThe DEM is formed from spatio-temporal fits to elevation\nmeasurements accumulated within 1, 2, and 5 km grid cells,\nand is posted at the modal resolution of 1 km. The median\nand root mean square difference between the DEM and 2.3*10\u2077\nairborne laser altimeter measurements acquired during\nNASA Operation IceBridge campaigns are -0.30 and 13.50 m,\nrespectively.\n\nThe DEM uncertainty rises in regions of high slope,\nespecially where elevation measurements were acquired in\nlow-resolution mode; taking this into account, we estimate\nthe average accuracy to be 9.5 m.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/CPOM_CryoSat2_ANTARCTICA_DEM",
+            "type": "text/html",
+            "title": "Run the example for CPOM/CryoSat2/ANTARCTICA_DEM in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/CPOM/CPOM_CryoSat2_ANTARCTICA_DEM_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/CPOM_CryoSat2_ANTARCTICA_DEM#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5194/tc-2017-223"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CPOM/CPOM_CryoSat2_ANTARCTICA_DEM.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CPOM/catalog.json",
+            "type": "application/json",
+            "title": "CPOM"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[proprietary](DO NOT USE THIS - use a custom URL)",
+    "gee:type": "image",
+    "keywords": [
+        "antarctica",
+        "cpom",
+        "cryosat_2",
+        "dem",
+        "elevation",
+        "polar"
+    ],
+    "providers": [
+        {
+            "name": "CPOM",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "http://www.cpom.ucl.ac.uk/csopr/icesheets2/dems.php?ais_subject=dem&user_type=normal"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/CPOM_CryoSat2_ANTARCTICA_DEM"
+        }
+    ],
+    "sci:citation": "Slater, T., Shepherd, A., McMillan, M., Muir, A., Gilbert, L.,\nHogg, A. E., Konrad, H. and Parrinello, T.: A new Digital Elevation\nModel of Antarctica derived from CryoSat-2 altimetry, The Cryosphere,\n[doi:10.5194/tc-2017-223](https://doi.org/10.5194/tc-2017-223), 2018\n",
+    "sci:doi": "10.5194/tc-2017-223",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Antarctic ice sheet and ice shelf elevation.",
+                "gee:units": "m",
+                "name": "elevation"
+            },
+            {
+                "description": "Data processing method of elevation per grid cell.",
+                "gee:classes": [
+                    {
+                        "color": "000000",
+                        "description": "interpolated",
+                        "value": 0
+                    },
+                    {
+                        "color": "CBCBCB",
+                        "description": "1 km fit",
+                        "value": 1
+                    },
+                    {
+                        "color": "377EB7",
+                        "description": "resampled 2 km fit",
+                        "value": 2
+                    },
+                    {
+                        "color": "E2191B",
+                        "description": "resampled 5 km fit",
+                        "value": 3
+                    }
+                ],
+                "name": "data_composition"
+            },
+            {
+                "description": "Slope derived from elevation gradient.",
+                "gee:units": "degrees",
+                "name": "slope"
+            },
+            {
+                "description": "Smoothed version of elevation model using a median filter.",
+                "gee:units": "m",
+                "name": "z_smoothed"
+            },
+            {
+                "description": "Certainty of elevation model derived from RMS of elevation\nresiduals in observed grid cells and the kriging variance error\nin interpolated grid cells.\n",
+                "gee:units": "m",
+                "name": "z_uncertainty"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Elevation",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "elevation"
+                        ],
+                        "max": [
+                            4000
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "001fff",
+                            "00ffff",
+                            "fbff00",
+                            "ff0000"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -76,
+                    "lon": 17,
+                    "zoom": 3
+                }
+            }
+        ],
+        "gsd": [
+            1000
+        ]
+    },
+    "title": "CryoSat-2 Antarctica 1km DEM",
+    "version": "1.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -88,
+                    180,
+                    -60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-07-01T00:00:00Z",
+                    "2016-07-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

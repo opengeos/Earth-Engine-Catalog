@@ -1,0 +1,422 @@
+{
+    "type": "Collection",
+    "id": "Oxford/MAP/IGBP_Fractional_Landcover_5km_Annual",
+    "stac_version": "1.0.0",
+    "description": "The underlying dataset for this landcover product is the IGBP layer found\nwithin the MODIS annual landcover product (MCD12Q1). This data was\nconverted from its categorical format, which has a \u2248500 meter resolution,\nto a fractional product indicating the integer percentage (0-100) of the\noutput pixel covered by each of the 17 landcover classes (1 per band).\n\nThis dataset was produced by Harry Gibson and Daniel Weiss of the\nMalaria Atlas Project (Big Data Institute, University of Oxford,\nUnited Kingdom, [https://malariaatlas.org/](https://malariaatlas.org/)).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/Oxford_MAP_IGBP_Fractional_Landcover_5km_Annual",
+            "type": "text/html",
+            "title": "Run the example for Oxford/MAP/IGBP_Fractional_Landcover_5km_Annual in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/Oxford/Oxford_MAP_IGBP_Fractional_Landcover_5km_Annual_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/Oxford_MAP_IGBP_Fractional_Landcover_5km_Annual#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Oxford/Oxford_MAP_IGBP_Fractional_Landcover_5km_Annual.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Oxford/catalog.json",
+            "type": "application/json",
+            "title": "Oxford"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:terms_of_use": "[CC-BY-NC-SA-4.0](https://spdx.org/licenses/CC-BY-NC-SA-4.0.html)",
+    "gee:type": "image_collection",
+    "gee:unusual_terms_of_use": true,
+    "keywords": [
+        "igbp",
+        "landcover",
+        "map",
+        "oxford"
+    ],
+    "providers": [
+        {
+            "name": "Oxford Malaria Atlas Project",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.bdi.ox.ac.uk/research/malaria-atlas-project"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/Oxford_MAP_IGBP_Fractional_Landcover_5km_Annual"
+        }
+    ],
+    "sci:citation": "Weiss, D.J., P.M. Atkinson, S. Bhatt, B. Mappin, S.I. Hay & P.W. Gething\n(2014) An effective approach for gap-filling continental scale remotely\nsensed time-series. ISPRS Journal of Photogrammetry and Remote Sensing,\n98, 106-118.\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Dominant class of each resulting pixel",
+                "gee:classes": [
+                    {
+                        "color": "032f7e",
+                        "description": "Water",
+                        "value": 0
+                    },
+                    {
+                        "color": "02740b",
+                        "description": "Evergreen_Needleleaf_Fores",
+                        "value": 1
+                    },
+                    {
+                        "color": "02740b",
+                        "description": "Evergreen_Broadleaf_Forest",
+                        "value": 2
+                    },
+                    {
+                        "color": "8cf502",
+                        "description": "Deciduous_Needleleaf_Forest",
+                        "value": 3
+                    },
+                    {
+                        "color": "8cf502",
+                        "description": "Deciduous_Broadleaf_Forest",
+                        "value": 4
+                    },
+                    {
+                        "color": "a4da01",
+                        "description": "Mixed_Forest",
+                        "value": 5
+                    },
+                    {
+                        "color": "ffbd05",
+                        "description": "Closed_Shrublands",
+                        "value": 6
+                    },
+                    {
+                        "color": "ffbd05",
+                        "description": "Open_Shrublands",
+                        "value": 7
+                    },
+                    {
+                        "color": "7a5a02",
+                        "description": "Woody_Savannas",
+                        "value": 8
+                    },
+                    {
+                        "color": "f0ff0f",
+                        "description": "Savannas",
+                        "value": 9
+                    },
+                    {
+                        "color": "869b36",
+                        "description": "Grasslands",
+                        "value": 10
+                    },
+                    {
+                        "color": "6091b4",
+                        "description": "Permanent_Wetlands",
+                        "value": 11
+                    },
+                    {
+                        "color": "ff4e4e",
+                        "description": "Croplands",
+                        "value": 12
+                    },
+                    {
+                        "color": "999999",
+                        "description": "Urban_and_Built-up",
+                        "value": 13
+                    },
+                    {
+                        "color": "ff4e4e",
+                        "description": "Cropland_Natural_Vegetation_Mosaic",
+                        "value": 14
+                    },
+                    {
+                        "color": "ffffff",
+                        "description": "Snow_and_Ice",
+                        "value": 15
+                    },
+                    {
+                        "color": "feffc0",
+                        "description": "Barren_Or_Sparsely_Vegetated",
+                        "value": 16
+                    },
+                    {
+                        "color": "020202",
+                        "description": "Unclassified",
+                        "value": 17
+                    }
+                ],
+                "name": "Overall_Class"
+            },
+            {
+                "description": "Percentage of water",
+                "gee:units": "%",
+                "name": "Water"
+            },
+            {
+                "description": "Percentage of evergreen needleleaf forest",
+                "gee:units": "%",
+                "name": "Evergreen_Needleleaf_Forest"
+            },
+            {
+                "description": "Percentage of evergreen broadleaf forest",
+                "gee:units": "%",
+                "name": "Evergreen_Broadleaf_Forest"
+            },
+            {
+                "description": "Percentage of deciduous needleleaf forest",
+                "gee:units": "%",
+                "name": "Deciduous_Needleleaf_Forest"
+            },
+            {
+                "description": "Percentage of deciduous broadleaf forest",
+                "gee:units": "%",
+                "name": "Deciduous_Broadleaf_Forest"
+            },
+            {
+                "description": "Percentage of mixed forest",
+                "gee:units": "%",
+                "name": "Mixed_Forest"
+            },
+            {
+                "description": "Percentage of closed shrublands",
+                "gee:units": "%",
+                "name": "Closed_Shrublands"
+            },
+            {
+                "description": "Percentage of open shrublands",
+                "gee:units": "%",
+                "name": "Open_Shrublands"
+            },
+            {
+                "description": "Percentage of woody savannas",
+                "gee:units": "%",
+                "name": "Woody_Savannas"
+            },
+            {
+                "description": "Percentage of savannas",
+                "gee:units": "%",
+                "name": "Savannas"
+            },
+            {
+                "description": "Percentage of grasslands",
+                "gee:units": "%",
+                "name": "Grasslands"
+            },
+            {
+                "description": "Percentage of permanent wetlands",
+                "gee:units": "%",
+                "name": "Permanent_Wetlands"
+            },
+            {
+                "description": "Percentage of croplands",
+                "gee:units": "%",
+                "name": "Croplands"
+            },
+            {
+                "description": "Percentage of urban and built up",
+                "gee:units": "%",
+                "name": "Urban_And_Built_Up"
+            },
+            {
+                "description": "Percentage of cropland natural vegetation mosaic",
+                "gee:units": "%",
+                "name": "Cropland_Natural_Vegetation_Mosaic"
+            },
+            {
+                "description": "Percentage of snow and ice",
+                "gee:units": "%",
+                "name": "Snow_And_Ice"
+            },
+            {
+                "description": "Percentage of barren or sparsely populated",
+                "gee:units": "%",
+                "name": "Barren_Or_Sparsely_Populated"
+            },
+            {
+                "description": "Percentage of unclassified",
+                "gee:units": "%",
+                "name": "Unclassified"
+            },
+            {
+                "description": "Percentage of no data",
+                "gee:units": "%",
+                "name": "No_Data"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Landcover",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Overall_Class"
+                        ],
+                        "max": [
+                            19
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "032f7e",
+                            "02740b",
+                            "02740b",
+                            "8cf502",
+                            "8cf502",
+                            "a4da01",
+                            "ffbd05",
+                            "ffbd05",
+                            "7a5a02",
+                            "f0ff0f",
+                            "869b36",
+                            "6091b4",
+                            "999999",
+                            "ff4e4e",
+                            "ff4e4e",
+                            "ffffff",
+                            "feffc0",
+                            "020202",
+                            "020202"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 26.4,
+                    "lon": -88.6,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            5000
+        ],
+        "Barren_Or_Sparsely_Populated": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Closed_Shrublands": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Cropland_Natural_Vegetation_Mosaic": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Croplands": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Deciduous_Broadleaf_Forest": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Deciduous_Needleleaf_Forest": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Evergreen_Broadleaf_Forest": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Evergreen_Needleleaf_Forest": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Grasslands": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Mixed_Forest": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "No_Data": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Open_Shrublands": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Overall_Class": {
+            "minimum": 0,
+            "maximum": 17
+        },
+        "Permanent_Wetlands": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Savannas": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Snow_And_Ice": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Unclassified": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Urban_And_Built_Up": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Water": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Woody_Savannas": {
+            "minimum": 0,
+            "maximum": 100
+        }
+    },
+    "title": "Oxford MAP: Malaria Atlas Project Fractional International Geosphere-Biosphere Programme Landcover",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2013-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-NC-SA-4.0"
+}

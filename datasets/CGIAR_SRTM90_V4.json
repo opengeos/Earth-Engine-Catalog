@@ -1,0 +1,135 @@
+{
+    "type": "Collection",
+    "id": "CGIAR/SRTM90_V4",
+    "stac_version": "1.0.0",
+    "description": "The Shuttle Radar Topography Mission (SRTM) digital\nelevation dataset was originally produced to provide consistent,\nhigh-quality elevation data at near global scope. This version\nof the SRTM digital elevation data has been processed to fill data\nvoids, and to facilitate its ease of use.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/CGIAR_SRTM90_V4",
+            "type": "text/html",
+            "title": "Run the example for CGIAR/SRTM90_V4 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/CGIAR/CGIAR_SRTM90_V4_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/CGIAR_SRTM90_V4#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CGIAR/CGIAR_SRTM90_V4.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CGIAR/catalog.json",
+            "type": "application/json",
+            "title": "CGIAR"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "DISTRIBUTION. Users are prohibited from any commercial, non-free resale, or\nredistribution without explicit written permission from CIAT. Users should\nacknowledge CIAT as the source used in the creation of any reports,\npublications, new datasets, derived products, or services resulting from the\nuse of this dataset. CIAT also request reprints of any publications and\nnotification of any redistributing efforts. For commercial access to\nthe data, send requests to [Andy Jarvis](mailto:a.jarvis@cgiar.org).\n\nNO WARRANTY OR LIABILITY. CIAT provides these data without any warranty of\nany kind whatsoever, either express or implied, including warranties of\nmerchantability and fitness for a particular purpose. CIAT shall not be\nliable for incidental, consequential, or special damages arising out of\nthe use of any data.\n\nACKNOWLEDGMENT AND CITATION. Any users are kindly asked to cite this data\nin any published material produced using this data, and if possible link\nweb pages to the [CIAT-CSI SRTM website](https://srtm.csi.cgiar.org).\n",
+    "gee:type": "image",
+    "keywords": [
+        "cgiar",
+        "dem",
+        "elevation",
+        "geophysical",
+        "srtm",
+        "topography"
+    ],
+    "providers": [
+        {
+            "name": "NASA/CGIAR",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://srtm.csi.cgiar.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/CGIAR_SRTM90_V4"
+        }
+    ],
+    "sci:citation": "Jarvis, A., H.I. Reuter, A. Nelson, E. Guevara. 2008. Hole-filled\nSRTM for the globe Version 4, available from the CGIAR-CSI SRTM\n90m Database: [https://srtm.csi.cgiar.org](https://srtm.csi.cgiar.org).\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Elevation",
+                "gee:units": "m",
+                "gsd": 90,
+                "name": "elevation"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Elevation",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "elevation"
+                        ],
+                        "max": [
+                            8000
+                        ],
+                        "min": [
+                            -100
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 7.71,
+                    "lon": 17.93,
+                    "zoom": 2
+                }
+            }
+        ],
+        "elevation": {
+            "minimum": -444,
+            "maximum": 8806
+        }
+    },
+    "title": "SRTM Digital Elevation Data Version 4",
+    "version": "v4",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -56,
+                    180,
+                    60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-11T00:00:00Z",
+                    "2000-02-22T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

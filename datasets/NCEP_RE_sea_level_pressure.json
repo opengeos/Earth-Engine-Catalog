@@ -1,0 +1,152 @@
+{
+    "type": "Collection",
+    "id": "NCEP_RE/sea_level_pressure",
+    "stac_version": "1.0.0",
+    "description": "The NCEP/NCAR Reanalysis Project is a joint project between the National\nCenters for Environmental Prediction (NCEP, formerly \"NMC\") and the\nNational Center for Atmospheric Research (NCAR). The goal of this joint\neffort is to produce new atmospheric analyses using historical data as\nwell as to produce analyses of the current atmospheric state (Climate Data\nAssimilation System, CDAS). The NCEP/NCAR Reanalysis 1 project is using a\nstate-of-the-art analysis/forecast system to perform data assimilation using\npast data from 1948 to the present. The data have 6-hour temporal\nresolution (0000, 0600, 1200, and 1800 UTC) and 2.5 degree spatial\nresolution.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NCEP_RE_sea_level_pressure",
+            "type": "text/html",
+            "title": "Run the example for NCEP_RE/sea_level_pressure in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NCEP_RE/NCEP_RE_sea_level_pressure_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NCEP_RE_sea_level_pressure#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NCEP_RE/NCEP_RE_sea_level_pressure.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NCEP_RE/catalog.json",
+            "type": "application/json",
+            "title": "NCEP_RE"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 6,
+        "type": "cadence",
+        "unit": "hour"
+    },
+    "gee:terms_of_use": "There are no restrictions on the use of these datasets.",
+    "gee:type": "image_collection",
+    "keywords": [
+        "atmosphere",
+        "climate",
+        "geophysical",
+        "ncep",
+        "noaa",
+        "pressure",
+        "reanalysis"
+    ],
+    "providers": [
+        {
+            "name": "NCEP",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.esrl.noaa.gov/psd/data/gridded/data.ncep.reanalysis.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NCEP_RE_sea_level_pressure"
+        }
+    ],
+    "sci:citation": "Kalnay et al., 1996, The NCEP/NCAR 40-Year Reanalysis Project. Bull. Amer.\nMeteor. Soc., 77, 437-471.\n[doi:10.1175/1520-0477(1996)077<0437:TNYRP\\\\>2.0.CO;2](https://doi.org/10.1175/1520-0477(1996)077<0437:TNYRP>2.0.CO;2).\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Sea level pressure",
+                "gee:scale": 0.01,
+                "gee:units": "millibars",
+                "name": "slp"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Sea Level Pressure",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "slp"
+                        ],
+                        "max": [
+                            104500
+                        ],
+                        "min": [
+                            96500
+                        ],
+                        "palette": [
+                            "800080",
+                            "0000ab",
+                            "008000",
+                            "ffff00",
+                            "ffa500",
+                            "ff0000"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 26.4,
+                    "lon": -88.6,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            278300
+        ],
+        "slp": {
+            "minimum": 92590,
+            "maximum": 112590
+        }
+    },
+    "title": "NCEP/NCAR Reanalysis Data, Sea-Level Pressure",
+    "version": "1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1948-01-01T00:00:00Z",
+                    "2022-12-18T18:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

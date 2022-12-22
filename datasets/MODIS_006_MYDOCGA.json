@@ -1,0 +1,728 @@
+{
+    "type": "Collection",
+    "id": "MODIS/006/MYDOCGA",
+    "stac_version": "1.0.0",
+    "description": "The MYDOCGA V6 ocean reflectance product consists of\n1 kilometer reflectance data from Aqua MODIS bands 8-16. The product\nis referred to as ocean reflectance, because bands 8-16 are used\nprimarily to produce ocean products, but this is not an ocean product\nas the tiles produced are land tiles.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/306/MOD09_User_Guide_V6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/305/MOD09_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MYDOCGA)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_006_MYDOCGA",
+            "type": "text/html",
+            "title": "Run the example for MODIS/006/MYDOCGA in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_006_MYDOCGA_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MYDOCGA#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/MODIS/MYDOCGA.006"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MYDOCGA.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C203669713-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "aqua",
+        "daily",
+        "global",
+        "modis",
+        "mydocga",
+        "nasa",
+        "ocean",
+        "reflectance",
+        "sr",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/MODIS/MYDOCGA.006"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MYDOCGA"
+        }
+    ],
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/MODIS/MYDOCGA.006",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Number of observations per pixel",
+                "name": "num_observations"
+            },
+            {
+                "center_wavelength": 0.4125,
+                "description": "MODIS band 8 surface reflectance",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "405-420nm",
+                "name": "sur_refl_b08"
+            },
+            {
+                "center_wavelength": 0.443,
+                "description": "MODIS band 9 surface reflectance",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "438-448nm",
+                "name": "sur_refl_b09"
+            },
+            {
+                "center_wavelength": 0.488,
+                "description": "MODIS band 10 surface reflectance",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "483-493nm",
+                "name": "sur_refl_b10"
+            },
+            {
+                "center_wavelength": 0.531,
+                "description": "MODIS band 11 surface reflectance",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "526-536nm",
+                "name": "sur_refl_b11"
+            },
+            {
+                "center_wavelength": 0.551,
+                "description": "MODIS band 12 surface reflectance",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "546-556nm",
+                "name": "sur_refl_b12"
+            },
+            {
+                "center_wavelength": 0.667,
+                "description": "MODIS band 13 surface reflectance",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "662-672nm",
+                "name": "sur_refl_b13"
+            },
+            {
+                "center_wavelength": 0.677,
+                "description": "MODIS band 14 surface reflectance",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "673-683nm",
+                "name": "sur_refl_b14"
+            },
+            {
+                "center_wavelength": 0.747,
+                "description": "MODIS band 15 surface reflectance",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "743-753nm",
+                "name": "sur_refl_b15"
+            },
+            {
+                "center_wavelength": 0.8695,
+                "description": "MODIS band 16 surface reflectance",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "862-877nm",
+                "name": "sur_refl_b16"
+            },
+            {
+                "description": "Band quality for MODIS bands 8-15",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 4,
+                            "description": "Band 8 data quality",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Highest quality",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Noisy detector",
+                                    "value": 7
+                                },
+                                {
+                                    "description": "Dead detector; data interpolated in L1B",
+                                    "value": 8
+                                },
+                                {
+                                    "description": "Solar zenith >= 86 degrees",
+                                    "value": 9
+                                },
+                                {
+                                    "description": "Solar zenith >= 85 and < 86 degrees",
+                                    "value": 10
+                                },
+                                {
+                                    "description": "Missing input",
+                                    "value": 11
+                                },
+                                {
+                                    "description": "Internal constant used in place of climatological data for at least one atmospheric constant",
+                                    "value": 12
+                                },
+                                {
+                                    "description": "Correction out of bounds pixel constrained to extreme allowable value",
+                                    "value": 13
+                                },
+                                {
+                                    "description": "L1B data faulty",
+                                    "value": 14
+                                },
+                                {
+                                    "description": "Not processed due to deep ocean or clouds",
+                                    "value": 15
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 4,
+                            "description": "Band 9 data quality",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "Highest quality",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Noisy detector",
+                                    "value": 7
+                                },
+                                {
+                                    "description": "Dead detector; data interpolated in L1B",
+                                    "value": 8
+                                },
+                                {
+                                    "description": "Solar zenith >= 86 degrees",
+                                    "value": 9
+                                },
+                                {
+                                    "description": "Solar zenith >= 85 and < 86 degrees",
+                                    "value": 10
+                                },
+                                {
+                                    "description": "Missing input",
+                                    "value": 11
+                                },
+                                {
+                                    "description": "Internal constant used in place of climatological data for at least one atmospheric constant",
+                                    "value": 12
+                                },
+                                {
+                                    "description": "Correction out of bounds pixel constrained to extreme allowable value",
+                                    "value": 13
+                                },
+                                {
+                                    "description": "L1B data faulty",
+                                    "value": 14
+                                },
+                                {
+                                    "description": "Not processed due to deep ocean or clouds",
+                                    "value": 15
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 4,
+                            "description": "Band 10 data quality",
+                            "first_bit": 8,
+                            "values": [
+                                {
+                                    "description": "Highest quality",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Noisy detector",
+                                    "value": 7
+                                },
+                                {
+                                    "description": "Dead detector; data interpolated in L1B",
+                                    "value": 8
+                                },
+                                {
+                                    "description": "Solar zenith >= 86 degrees",
+                                    "value": 9
+                                },
+                                {
+                                    "description": "Solar zenith >= 85 and < 86 degrees",
+                                    "value": 10
+                                },
+                                {
+                                    "description": "Missing input",
+                                    "value": 11
+                                },
+                                {
+                                    "description": "Internal constant used in place of climatological data for at least one atmospheric constant",
+                                    "value": 12
+                                },
+                                {
+                                    "description": "Correction out of bounds pixel constrained to extreme allowable value",
+                                    "value": 13
+                                },
+                                {
+                                    "description": "L1B data faulty",
+                                    "value": 14
+                                },
+                                {
+                                    "description": "Not processed due to deep ocean or clouds",
+                                    "value": 15
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 4,
+                            "description": "Band 11 data quality",
+                            "first_bit": 12,
+                            "values": [
+                                {
+                                    "description": "Highest quality",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Noisy detector",
+                                    "value": 7
+                                },
+                                {
+                                    "description": "Dead detector; data interpolated in L1B",
+                                    "value": 8
+                                },
+                                {
+                                    "description": "Solar zenith >= 86 degrees",
+                                    "value": 9
+                                },
+                                {
+                                    "description": "Solar zenith >= 85 and < 86 degrees",
+                                    "value": 10
+                                },
+                                {
+                                    "description": "Missing input",
+                                    "value": 11
+                                },
+                                {
+                                    "description": "Internal constant used in place of climatological data for at least one atmospheric constant",
+                                    "value": 12
+                                },
+                                {
+                                    "description": "Correction out of bounds pixel constrained to extreme allowable value",
+                                    "value": 13
+                                },
+                                {
+                                    "description": "L1B data faulty",
+                                    "value": 14
+                                },
+                                {
+                                    "description": "Not processed due to deep ocean or clouds",
+                                    "value": 15
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 4,
+                            "description": "Band 12 data quality",
+                            "first_bit": 16,
+                            "values": [
+                                {
+                                    "description": "Highest quality",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Noisy detector",
+                                    "value": 7
+                                },
+                                {
+                                    "description": "Dead detector; data interpolated in L1B",
+                                    "value": 8
+                                },
+                                {
+                                    "description": "Solar zenith >= 86 degrees",
+                                    "value": 9
+                                },
+                                {
+                                    "description": "Solar zenith >= 85 and < 86 degrees",
+                                    "value": 10
+                                },
+                                {
+                                    "description": "Missing input",
+                                    "value": 11
+                                },
+                                {
+                                    "description": "Internal constant used in place of climatological data for at least one atmospheric constant",
+                                    "value": 12
+                                },
+                                {
+                                    "description": "Correction out of bounds pixel constrained to extreme allowable value",
+                                    "value": 13
+                                },
+                                {
+                                    "description": "L1B data faulty",
+                                    "value": 14
+                                },
+                                {
+                                    "description": "Not processed due to deep ocean or clouds",
+                                    "value": 15
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 4,
+                            "description": "Band 13 data quality",
+                            "first_bit": 20,
+                            "values": [
+                                {
+                                    "description": "Highest quality",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Noisy detector",
+                                    "value": 7
+                                },
+                                {
+                                    "description": "Dead detector; data interpolated in L1B",
+                                    "value": 8
+                                },
+                                {
+                                    "description": "Solar zenith >= 86 degrees",
+                                    "value": 9
+                                },
+                                {
+                                    "description": "Solar zenith >= 85 and < 86 degrees",
+                                    "value": 10
+                                },
+                                {
+                                    "description": "Missing input",
+                                    "value": 11
+                                },
+                                {
+                                    "description": "Internal constant used in place of climatological data for at least one atmospheric constant",
+                                    "value": 12
+                                },
+                                {
+                                    "description": "Correction out of bounds pixel constrained to extreme allowable value",
+                                    "value": 13
+                                },
+                                {
+                                    "description": "L1B data faulty",
+                                    "value": 14
+                                },
+                                {
+                                    "description": "Not processed due to deep ocean or clouds",
+                                    "value": 15
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 4,
+                            "description": "Band 14 data quality",
+                            "first_bit": 24,
+                            "values": [
+                                {
+                                    "description": "Highest quality",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Noisy detector",
+                                    "value": 7
+                                },
+                                {
+                                    "description": "Dead detector; data interpolated in L1B",
+                                    "value": 8
+                                },
+                                {
+                                    "description": "Solar zenith >= 86 degrees",
+                                    "value": 9
+                                },
+                                {
+                                    "description": "Solar zenith >= 85 and < 86 degrees",
+                                    "value": 10
+                                },
+                                {
+                                    "description": "Missing input",
+                                    "value": 11
+                                },
+                                {
+                                    "description": "Internal constant used in place of climatological data for at least one atmospheric constant",
+                                    "value": 12
+                                },
+                                {
+                                    "description": "Correction out of bounds pixel constrained to extreme allowable value",
+                                    "value": 13
+                                },
+                                {
+                                    "description": "L1B data faulty",
+                                    "value": 14
+                                },
+                                {
+                                    "description": "Not processed due to deep ocean or clouds",
+                                    "value": 15
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 4,
+                            "description": "Band 15 data quality",
+                            "first_bit": 28,
+                            "values": [
+                                {
+                                    "description": "Highest quality",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Noisy detector",
+                                    "value": 7
+                                },
+                                {
+                                    "description": "Dead detector; data interpolated in L1B",
+                                    "value": 8
+                                },
+                                {
+                                    "description": "Solar zenith >= 86 degrees",
+                                    "value": 9
+                                },
+                                {
+                                    "description": "Solar zenith >= 85 and < 86 degrees",
+                                    "value": 10
+                                },
+                                {
+                                    "description": "Missing input",
+                                    "value": 11
+                                },
+                                {
+                                    "description": "Internal constant used in place of climatological data for at least one atmospheric constant",
+                                    "value": 12
+                                },
+                                {
+                                    "description": "Correction out of bounds pixel constrained to extreme allowable value",
+                                    "value": 13
+                                },
+                                {
+                                    "description": "L1B data faulty",
+                                    "value": 14
+                                },
+                                {
+                                    "description": "Not processed due to deep ocean or clouds",
+                                    "value": 15
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 32
+                },
+                "name": "QC_b8_15_1km"
+            },
+            {
+                "description": "Band quality for MODIS band 16",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 4,
+                            "description": "Unused",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "N/A",
+                                    "value": 0
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 4,
+                            "description": "Band 16 data quality",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "Highest quality",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Noisy detector",
+                                    "value": 7
+                                },
+                                {
+                                    "description": "Dead detector; data interpolated in L1B",
+                                    "value": 8
+                                },
+                                {
+                                    "description": "Solar zenith >= 86 degrees",
+                                    "value": 9
+                                },
+                                {
+                                    "description": "Solar zenith >= 85 and < 86 degrees",
+                                    "value": 10
+                                },
+                                {
+                                    "description": "Missing input",
+                                    "value": 11
+                                },
+                                {
+                                    "description": "Internal constant used in place of climatological data for at least one atmospheric constant",
+                                    "value": 12
+                                },
+                                {
+                                    "description": "Correction out of bounds pixel constrained to extreme allowable value",
+                                    "value": 13
+                                },
+                                {
+                                    "description": "L1B data faulty",
+                                    "value": 14
+                                },
+                                {
+                                    "description": "Not processed due to deep ocean or clouds",
+                                    "value": 15
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 8
+                },
+                "name": "QC_b16_15_1km"
+            },
+            {
+                "description": "Pointer to the orbit of each observation",
+                "name": "orbit_pnt"
+            },
+            {
+                "description": "Pointer to the granule of each observation",
+                "name": "granule_pnt"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "False Color",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "sur_refl_b11",
+                            "sur_refl_b10",
+                            "sur_refl_b09"
+                        ],
+                        "max": [
+                            2000
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 0,
+                    "lon": 0,
+                    "zoom": 0
+                }
+            }
+        ],
+        "gsd": [
+            1000
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Aqua"
+        ],
+        "granule_pnt": {
+            "minimum": 0,
+            "maximum": 254
+        },
+        "num_observations": {
+            "minimum": 0,
+            "maximum": 127
+        },
+        "orbit_pnt": {
+            "minimum": 0,
+            "maximum": 15
+        },
+        "sur_refl_b08": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "sur_refl_b09": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "sur_refl_b10": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "sur_refl_b11": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "sur_refl_b12": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "sur_refl_b13": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "sur_refl_b14": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "sur_refl_b15": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "sur_refl_b16": {
+            "minimum": -100,
+            "maximum": 16000
+        }
+    },
+    "title": "MYDOCGA.006 Aqua Ocean Reflectance Daily Global 1km",
+    "version": "V006",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-04T00:00:00Z",
+                    "2022-12-13T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

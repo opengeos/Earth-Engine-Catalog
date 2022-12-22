@@ -1,0 +1,167 @@
+{
+    "type": "Collection",
+    "id": "AU/GA/DEM_1SEC/v10/DEM-S",
+    "stac_version": "1.0.0",
+    "description": "The Smoothed Digital Elevation Model (DEM-S) was derived\nfrom the SRTM data acquired by NASA in February 2000. DEM-S represents\nground surface topography (excluding vegetation features) and has\nbeen smoothed to reduce noise and improve the representation of\nsurface shape. An adaptive process applied more smoothing in flatter\nareas than hilly areas, and more smoothing in noisier areas than\nin less noisy areas.\n\nThis DEM-S supports calculation of local terrain shape attributes\nsuch as slope, aspect, and curvature that could not be reliably\nderived from the unsmoothed 1 second DEM because of noise.\n\nThere are several areas with unexpected negative values: close to\nCanberra around (150.443044, -35.355281) with values of -55 and in Western\nAustralia around (124.84, -16.44) with -43.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/AU_GA_DEM_1SEC_v10_DEM-S",
+            "type": "text/html",
+            "title": "Run the example for AU/GA/DEM_1SEC/v10/DEM-S in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/AU/AU_GA_DEM_1SEC_v10_DEM-S_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/AU_GA_DEM_1SEC_v10_DEM-S#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/AU/AU_GA_DEM_1SEC_v10_DEM-S.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/AU/catalog.json",
+            "type": "application/json",
+            "title": "AU"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image",
+    "keywords": [
+        "australia",
+        "dem",
+        "elevation",
+        "ga",
+        "geophysical",
+        "geoscience_australia",
+        "smoothed",
+        "srtm"
+    ],
+    "providers": [
+        {
+            "name": "Geoscience Australia",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ga.gov.au/metadata-gateway/metadata/record/72759/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/AU_GA_DEM_1SEC_v10_DEM-S"
+        }
+    ],
+    "sci:citation": "Geoscience Australia, 2015. Digital Elevation Model (DEM) of Australia\nderived from LiDAR 5 Metre Grid. Geoscience Australia, Canberra.\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Elevation",
+                "gee:units": "m",
+                "name": "elevation"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Elevation",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "elevation"
+                        ],
+                        "max": [
+                            1300
+                        ],
+                        "min": [
+                            -10
+                        ],
+                        "palette": [
+                            "3ae237",
+                            "b5e22e",
+                            "d6e21f",
+                            "fff705",
+                            "ffd611",
+                            "ffb613",
+                            "ff8b13",
+                            "ff6e08",
+                            "ff500d",
+                            "ff0000",
+                            "de0101",
+                            "c21301",
+                            "0602ff",
+                            "235cb1",
+                            "307ef3",
+                            "269db1",
+                            "30c8e2",
+                            "32d3ef",
+                            "3be285",
+                            "3ff38f",
+                            "86e26f"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -24.69,
+                    "lon": 133.95,
+                    "zoom": 3
+                }
+            }
+        ],
+        "gsd": [
+            30.92
+        ],
+        "elevation": {
+            "minimum": -73.31,
+            "maximum": 2224.32
+        }
+    },
+    "title": "DEM-S: Australian Smoothed Digital Elevation Model",
+    "version": "1.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    112.99,
+                    -44.06,
+                    154,
+                    -9.99
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-02-01T00:00:00Z",
+                    "2010-02-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

@@ -1,0 +1,137 @@
+{
+    "type": "Collection",
+    "id": "MODIS/MCD43A1",
+    "stac_version": "1.0.0",
+    "description": "The MODerate-resolution Imaging Spectroradiometer\n(MODIS) BRDF/Albedo Model Parameters product (MCD43A1) contains datasets\nproviding users with weighting parameters for the models used to derive the\nAlbedo and BRDF products (MCD43A3 and MCD43A4). The models support the spatial\nrelationship and parameter characterization best describing the differences in\nradiation due to the scattering (anisotropy) of each pixel, relying on\nmulti-date, atmospherically corrected, cloud-cleared input data measured over\n16-day periods. Both Terra and Aqua data are used in the generation of this\nproduct, providing the highest probability for quality input data and\ndesignating it as an MCD, meaning Combined, product.\n\nVersion-5 MODIS/Terra+Aqua BRDF/Albedo\nproducts are Validated Stage 1, meaning that accuracy has been\nestimated using a small number of independent measurements obtained\nfrom selected locations and time periods and ground-truth/field\nprogram efforts. Although there may be later improved versions, these\ndata are ready for use in scientific publications.\n\nPlease visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data) for information on citing LP DAAC datasets.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_MCD43A1",
+            "type": "text/html",
+            "title": "Run the example for MODIS/MCD43A1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_MCD43A1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MCD43A1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MCD43A1.json",
+            "type": "application/json",
+            "title": "MODIS/006/MCD43A1"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MCD43A1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "deprecated": true,
+    "gee:interval": {
+        "interval": 8,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC have no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "16_day",
+        "albedo",
+        "brdf",
+        "global",
+        "mcd43a1",
+        "modis",
+        "reflectance",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mcd43a1"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MCD43A1"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "BRDF Albedo Parameters",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "BRDF_Albedo_Parameters_Band1_iso",
+                            "BRDF_Albedo_Parameters_Band4_iso",
+                            "BRDF_Albedo_Parameters_Band3_iso"
+                        ],
+                        "max": [
+                            255
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 31.052933985705163,
+                    "lon": -7.03125,
+                    "zoom": 2
+                }
+            }
+        ]
+    },
+    "title": "MCD43A1.005 BRDF-Albedo Model Parameters 16-Day L3 Global 500m [deprecated]",
+    "version": "Unknown",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-18T00:00:00Z",
+                    "2017-03-14T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

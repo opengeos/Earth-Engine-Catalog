@@ -1,0 +1,280 @@
+{
+    "type": "Collection",
+    "id": "JAXA/ALOS/AVNIR-2/ORI",
+    "stac_version": "1.0.0",
+    "description": "This dataset is contains orthorectified imagery from\nthe Advanced Visible and Near Infrared Radiometer type 2 (AVNIR-2)\nsensor on-board the Advanced Land Observing Satellite (ALOS) \\\"DAICHI\\\".\n\nThe AVNIR-2 ORI product was created from AVNIR-2 1B1 data after stereo\nmatching with reference to ALOS's Panchromatic Remote-sensing Instrument\nfor Stereo Mapping (PRISM)-derived DSM AW3D30. The orthorectification\nprocess used AW3D30 DSM data when available and SRTM (The Shuttle\nRadar Topography Mission) DSM data otherwise.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JAXA_ALOS_AVNIR-2_ORI",
+            "type": "text/html",
+            "title": "Run the example for JAXA/ALOS/AVNIR-2/ORI in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/JAXA/JAXA_ALOS_AVNIR-2_ORI_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/JAXA_ALOS_AVNIR-2_ORI#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JAXA/JAXA_ALOS_AVNIR-2_ORI.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JAXA/catalog.json",
+            "type": "application/json",
+            "title": "JAXA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The Japan Aerospace Exploration Agency (JAXA) releases the ALOS\nOrthorectified Image Product (ALOS-ORI) free of charge and open\nto the public with the following conditions:\n\n*  When you provide or publish any products or services to a\nthird party using this dataset, you are kindly requested to display\nthat the original data is provided by JAXA.\n*  When you publish your product(s) using this dataset, you are\nkindly requested to show the copyright (\u00a9 JAXA) and the source\nof the data.\n*  JAXA does not guarantee the quality and reliability of this\ndataset and JAXA assume no responsibility whatsoever for any direct\nor indirect damage and loss caused by use of this dataset. Also,\nJAXA will not be responsible for any damages of users due to changing,\ndeleting or terminating the provision of this dataset.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "alos",
+        "avnir_2",
+        "eorc",
+        "jaxa",
+        "orthophoto",
+        "visible"
+    ],
+    "providers": [
+        {
+            "name": "JAXA Earth Observation Research Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.eorc.jaxa.jp/ALOS/en/dataset/ori_e.htm"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/JAXA_ALOS_AVNIR-2_ORI"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Blue (0.42 - 0.50 &mu;m)",
+                "name": "B1"
+            },
+            {
+                "description": "Green (0.52 - 0.60 &mu;m)",
+                "name": "B2"
+            },
+            {
+                "description": "Red (0.61 - 0.69 &mu;m)",
+                "name": "B3"
+            },
+            {
+                "description": "Near-Infrared (0.76 - 0.89 &mu;m)",
+                "name": "B4"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Satellite alitutude at scene center (km)",
+                "name": "CENTER_ALTITUDE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Frame number of scene center (0000 to 7198)",
+                "name": "CENTER_FRAME_NUMBER",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Satellite heading angle including Earth rotation at scene center (radians)",
+                "name": "CENTER_HEADING_ANGLE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Image skew angle at scene center (milli-radians)",
+                "name": "CENTER_SKEW_ANGLE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Azimuth angle of the sun at scene center (\u00b0)",
+                "name": "CENTER_SOLAR_AZIMUTH",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Solar elevation (zenith) angle of the sun at scene center (\u00b0)",
+                "name": "CENTER_SOLAR_ZENITH",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Scene center time (UTC).",
+                "name": "CENTER_START_TIME",
+                "type": "STRING"
+            },
+            {
+                "description": "Incident angle \"SNN.NNN\" (S: Incident direction R/L, NN.NNN degrees)",
+                "name": "INCIDENT_ANGLE",
+                "type": "STRING"
+            },
+            {
+                "description": "Orbit direction (\"A\"/\"D\": ascending/descending)",
+                "name": "ORBIT_DIRECTION",
+                "type": "STRING"
+            },
+            {
+                "description": "Nominal satellite orbit inclination (\u00b0)",
+                "name": "ORBIT_INCLINATION",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Nominal satellite orbit cycle period (min)",
+                "name": "ORBIT_CYCLE_PERIOD",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Angle of the vertical axis of image frame from the map northing axis.",
+                "name": "ORIENTATION_ANGLE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Processing date (JST)",
+                "name": "PROCESSING_DATE",
+                "type": "STRING"
+            },
+            {
+                "description": "Processing facility.",
+                "name": "PROCESSING_FACILITY",
+                "type": "STRING"
+            },
+            {
+                "description": "Processing software version.",
+                "name": "PROCESSING_SOFTWARE_VESRION",
+                "type": "STRING"
+            },
+            {
+                "description": "Processing time (JST)",
+                "name": "PROCESSING_TIME",
+                "type": "STRING"
+            },
+            {
+                "description": "Product ID e.g: \"ABBBCCDE\"\n\n*  A: Observation mode (\"O\")\n*  BBB: Processing level (\"ORI\")\n*  CC: Framing (\"RF\" Geo-reference, \"GT\", Geo-coded True-north\n\"GM\", Geo-coded Map-north),\n*  D: Map projection (\"U\": UTM, \"P\": PS)\n*  E: Sensor type (\"N\": nadir 35km, \"F\": forward 35km\n\"B\": backward 35km \"W\": nadir 70km)\n*  A: AVNIR-2\n",
+                "name": "PRODUCT_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "Product version number",
+                "name": "PRODUCT_NUMBER",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "RSP ID e.g: \"MPPPFFFFSN\"\n\n*  M: Oribit direction (\"A\": ascending, \"D\": descending)\n*  PPP: RSP path number (0 to 671)\n*  FFFF: RSP frame number (0000 to 7199)\n*  SN: Scene shift (\"-2\" to \" 2\")\n",
+                "name": "RSP_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "Satellite name.",
+                "name": "SATELLITE_NAME",
+                "type": "STRING"
+            },
+            {
+                "description": "Scene ID e.g. \"AABBBCDDDDDEEEE\"\n\n*  AA: Satellite code (\"AL\": ALOS)\n*  BBB: Sensor code (\"PSM\": PRISM, \"AV2\": AVNIR-2)\n*  C: Sensor type (\"N\": nadir 35km, \"F\": forward 35km,\n\"B\": backward 35km \"W\": nadir 70km, \"A\": AVNIR-2)\n*  DDDDD: Total orbit number of scene center (\"00001\" to \"99999\")\n*  EEEE: Frame number of scene center, including scene shift\n(\"0000\" to \"7199\")\n",
+                "name": "SCENE_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "Sensor code (\"PSM\": PRISM, \"AV2\": AVNIR-2)",
+                "name": "SENSOR_CODE",
+                "type": "STRING"
+            },
+            {
+                "description": "Sensor type (\"N\": nadir 35km, \"F\": forward 35km, \"B\": backward 35km \"W\": nadir 70km, \"A\": AVNIR-2)",
+                "name": "SENSOR_TYPE",
+                "type": "STRING"
+            },
+            {
+                "description": "Total orbit number of scene center.",
+                "name": "TOTAL_ORBIT_NUMBER",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "AVNIR-2 ORI RGB",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "B3",
+                            "B2",
+                            "B1"
+                        ],
+                        "max": [
+                            255
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 35.3641,
+                    "lon": 138.7302,
+                    "zoom": 12
+                }
+            }
+        ],
+        "gsd": [
+            10
+        ],
+        "B1": {
+            "minimum": 1,
+            "maximum": 255
+        },
+        "B2": {
+            "minimum": 1,
+            "maximum": 255
+        },
+        "B3": {
+            "minimum": 1,
+            "maximum": 255
+        },
+        "B4": {
+            "minimum": 1,
+            "maximum": 255
+        }
+    },
+    "title": "ALOS/AVNIR-2 ORI",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    127.05,
+                    23.81,
+                    154.41,
+                    46.04
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-04-26T00:00:00Z",
+                    "2011-04-18T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

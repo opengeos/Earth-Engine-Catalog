@@ -1,0 +1,138 @@
+{
+    "type": "Collection",
+    "id": "OSU/GIMP/DEM",
+    "stac_version": "1.0.0",
+    "description": "This Digital Elevation Model (DEM) is constructed from a combination\nof ASTER and SPOT-5 DEM's for the ice sheet periphery and margin\n(i.e. below the equilbrium line elevation) south of\napproximately 82.5&deg;N and AVHRR photoclinometry in the ice sheet\ninterior and far north (Scambos and Haran, 2002).\n\nSPOT-5 DEM's were produced and distributed as part of the Spot5\nstereoscopic survey of Polar Ice: Reference Images & Topographies\n(SPIRIT) project (Korona et al., 2009). Ocean surfaces were masked\nusing the GIMP Land Classification mask and replaced with the\nCNES CLS11 mean sea surface height (Schaeffer et al., 2012).\n\n**Note**\n\n*   All land elevation data is horizontally and vertically registered\nto average ICESat elevations for the 2003-2009 time period, and\ntherefore the DEM has a nominal date of 2007, although care must\nbe taken when using the DEM in areas of rapid change, such as\nmajor outlet glaciers south of 70&deg;0N.\n*   The DEM has a resolution of 30 m, although the \\\"true\\\" resolution of the\nDEM will vary from 40 m in areas of SPOT-5 coverage\n(see Korona et al. 2009) to 500 m in areas of photoclinometry.\n*   The ice-sheet-wide root-mean-squared validation error\nrelative to ICESat is +/-10 m, rangining from close to +/- 1 m\nover most ice surfaces to +/- 30 m in areas of high relief.\n\n[General documentation](https://doi.org/10.5067/NV34YUIXLP9W)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OSU_GIMP_DEM",
+            "type": "text/html",
+            "title": "Run the example for OSU/GIMP/DEM in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/OSU/OSU_GIMP_DEM_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/OSU_GIMP_DEM#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/NV34YUIXLP9W"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OSU/OSU_GIMP_DEM.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OSU/catalog.json",
+            "type": "application/json",
+            "title": "OSU"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:provider_ids": [
+        "C1458574534-NSIDC_ECS"
+    ],
+    "gee:terms_of_use": "As a condition of using these data, you must cite the use of this\ndata set using the given citation.\n",
+    "gee:type": "image",
+    "keywords": [
+        "arctic",
+        "gimp",
+        "greenland",
+        "nasa",
+        "polar"
+    ],
+    "providers": [
+        {
+            "name": "NASA NSIDC DAAC at CIRES",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/NV34YUIXLP9W"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/OSU_GIMP_DEM"
+        }
+    ],
+    "sci:citation": "Howat, I.M., A. Negrete, B.E. Smith, 2014, The Greenland Ice\nMapping Project (GIMP) land classification and surface elevation\ndatasets, The Cryosphere, 8, 1509-1518,\n[doi:10.5194/tc-8-1509-2014](https://doi.org/10.5194/tc-8-1509-2014)\n[article pdf](https://www.the-cryosphere.net/8/1509/2014/tc-8-1509-2014.pdf)\n",
+    "sci:doi": "10.5067/NV34YUIXLP9W",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Elevation",
+                "gee:units": "m",
+                "gsd": 30,
+                "name": "elevation"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Elevation",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "elevation"
+                        ],
+                        "max": [
+                            2000
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 76,
+                    "lon": -41,
+                    "zoom": 4
+                }
+            }
+        ]
+    },
+    "title": "Greenland DEM - Greenland Mapping Project (GIMP)",
+    "version": "2.2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -89.32179714240877,
+                    58.795926930232035,
+                    7.556480769227746,
+                    83.95392768557056
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1999-06-30T00:00:00Z",
+                    "2002-09-04T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

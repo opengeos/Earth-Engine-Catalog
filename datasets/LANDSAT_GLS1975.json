@@ -1,0 +1,151 @@
+{
+    "type": "Collection",
+    "id": "LANDSAT/GLS1975",
+    "stac_version": "1.0.0",
+    "description": "The Global Land Survey (GLS) 1975 is a\nglobal collection of imagery from the Landsat Multispectral\nScanner (MSS).  Most scenes were acquired by Landsat 1-3\nin 1972-1983.  A few gaps in the Landsat 1-3 data\nhave been filled with scenes acquired by Landsat 4-5 during the\nyears 1982-1987.  These data contain 4 spectral bands:\nGreen, Red, an NIR band, and a SWIR band.  In the typical\nFalse-color presentation, the images appear red because\nthe NIR band, displayed as red, highlights vegetation.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/LANDSAT_GLS1975",
+            "type": "text/html",
+            "title": "Run the example for LANDSAT/GLS1975 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/LANDSAT/LANDSAT_GLS1975_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_GLS1975#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_GLS1975.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/catalog.json",
+            "type": "application/json",
+            "title": "LANDSAT"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "Landsat datasets are federally created data\nand therefore reside in the public domain and may be used, transferred, or reproduced without copyright restriction.\n\nAcknowledgement or credit of the USGS as data source should be provided\nby including a line of text citation such as the example shown below.\n\n(Product, Image, Photograph, or Dataset Name) courtesy of\nthe U.S. Geological Survey\n\nExample: Landsat-7 image courtesy of the U.S. Geological Survey\n\nSee the\n[USGS Visual Identity System Guidance](https://www.usgs.gov/information-policies-and-instructions/usgs-visual-identity-system)\nfor further details on proper citation and acknowledgement of USGS products.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "global",
+        "gls",
+        "landsat",
+        "radiance",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "USGS",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.usgs.gov/core-science-systems/nli/landsat/global-land-survey-gls"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_GLS1975"
+        }
+    ],
+    "sci:citation": "GLS 1975 image courtesy of the U.S. Geological Survey",
+    "summaries": {
+        "eo:bands": [
+            {
+                "center_wavelength": 0.55,
+                "description": "Green",
+                "gee:wavelength": "500-600 nm",
+                "name": "10"
+            },
+            {
+                "center_wavelength": 0.65,
+                "description": "Red",
+                "gee:wavelength": "600-700 nm",
+                "name": "20"
+            },
+            {
+                "center_wavelength": 0.75,
+                "description": "Near infrared",
+                "gee:wavelength": "700-800 nm",
+                "name": "30"
+            },
+            {
+                "center_wavelength": 0.95,
+                "description": "Short-wavelength infrared",
+                "gee:wavelength": "800-1100 nm",
+                "name": "40"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "False Color",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "30",
+                            "20",
+                            "10"
+                        ],
+                        "gain": [
+                            1.4
+                        ],
+                        "gamma": [
+                            1.6
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 25.998,
+                    "lon": 44.517,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            60
+        ]
+    },
+    "title": "Landsat Global Land Survey 1975",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1972-07-25T00:00:00Z",
+                    "1983-02-20T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

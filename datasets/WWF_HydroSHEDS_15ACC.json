@@ -1,0 +1,152 @@
+{
+    "type": "Collection",
+    "id": "WWF/HydroSHEDS/15ACC",
+    "stac_version": "1.0.0",
+    "description": "HydroSHEDS is a mapping product that provides hydrographic\ninformation for regional and global-scale applications in a consistent\nformat. It offers a suite of geo-referenced datasets (vector and\nraster) at various scales, including river networks, watershed\nboundaries, drainage directions, and flow accumulations. HydroSHEDS\nis based on elevation data obtained in 2000 by NASA's Shuttle Radar\nTopography Mission (SRTM).\n\nThis flow accumulation dataset defines the amount of\nupstream area (in number of cells) draining into each cell. The\ndrainage direction layer is used to define which cells flow into\nthe target cell. The number of accumulated cells is essentially\na measure of the upstream catchment area. However, since the\ncell size of the HydroSHEDS data set depends on latitude, the\ncell accumulation value cannot directly be translated into drainage\nareas in square kilometers. Values range from 1 at topographic\nhighs (river sources) to very large numbers (on the order of\nmillions of cells) at the mouths of large rivers.\n\nThis dataset is at 15 arc-second resolution. The datasets available\n at 15 arc-seconds are the Hydrologically Conditioned DEM, Drainage\n(Flow) Direction, and Flow Accumulation.\n\nNote that the quality of the HydroSHEDS data is significantly lower for regions above\n60 degrees northern latitude as there is no underlying SRTM elevation data available\nand thus a coarser-resolution DEM was (HYDRO1k provided by USGS).\n\nHydroSHEDS was developed by the World Wildlife Fund (WWF)\nConservation Science Program in partnership with the U.S. Geological\nSurvey, the International Centre for Tropical Agriculture, The\nNature Conservancy, and the Center for Environmental Systems Research\nof the University of Kassel, Germany.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WWF_HydroSHEDS_15ACC",
+            "type": "text/html",
+            "title": "Run the example for WWF/HydroSHEDS/15ACC in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/WWF/WWF_HydroSHEDS_15ACC_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/WWF_HydroSHEDS_15ACC#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WWF/WWF_HydroSHEDS_15ACC.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WWF/catalog.json",
+            "type": "application/json",
+            "title": "WWF"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "HydroSHEDS data are free for non-commercial and commercial\nuse. For more information, please refer to the [License Agreement](https://www.hydrosheds.org/page/license).\n",
+    "gee:type": "image",
+    "keywords": [
+        "accumulation",
+        "drainage",
+        "flow",
+        "geophysical",
+        "hydrography",
+        "hydrology",
+        "hydrosheds",
+        "srtm",
+        "water",
+        "wwf"
+    ],
+    "providers": [
+        {
+            "name": "WWF",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.hydrosheds.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/WWF_HydroSHEDS_15ACC"
+        }
+    ],
+    "sci:citation": "Lehner, B., Verdin, K., Jarvis, A. (2008): New global hydrography\nderived from spaceborne elevation data. Eos, Transactions, AGU,\n89(10): 93-94.\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Flow accumulation",
+                "name": "b1"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Flow Accumulation",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "b1"
+                        ],
+                        "max": [
+                            500
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "000000",
+                            "023858",
+                            "006837",
+                            "1a9850",
+                            "66bd63",
+                            "a6d96a",
+                            "d9ef8b",
+                            "ffffbf",
+                            "fee08b",
+                            "fdae61",
+                            "f46d43",
+                            "d73027"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 38.022,
+                    "lon": -121.652,
+                    "zoom": 8
+                }
+            }
+        ],
+        "gsd": [
+            463.83
+        ],
+        "b1": {
+            "minimum": 1,
+            "maximum": 27865051
+        }
+    },
+    "title": "WWF HydroSHEDS Flow Accumulation, 15 Arc-Seconds",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -67.3,
+                    180,
+                    62
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-11T00:00:00Z",
+                    "2000-02-22T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

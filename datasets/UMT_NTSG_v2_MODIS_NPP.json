@@ -1,0 +1,169 @@
+{
+    "type": "Collection",
+    "id": "UMT/NTSG/v2/MODIS/NPP",
+    "stac_version": "1.0.0",
+    "description": "The MODIS Net Primary Production (NPP) CONUS dataset estimates NPP using\nMODIS Surface Reflectance for CONUS. NPP is the amount of\ncarbon captured by plants in an ecosystem, after accounting for losses due to\nrespiration. NPP is calculated using the MOD17 algorithm (see [MOD17 User\nGuide](https://www.ntsg.umt.edu/files/modis/MOD17UsersGuide2015_v3.pdf)) with\nMODIS Surface Reflectance, gridMET, and the National Land Cover Database.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/UMT_NTSG_v2_MODIS_NPP",
+            "type": "text/html",
+            "title": "Run the example for UMT/NTSG/v2/MODIS/NPP in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/UMT/UMT_NTSG_v2_MODIS_NPP_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/UMT_NTSG_v2_MODIS_NPP#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMT/UMT_NTSG_v2_MODIS_NPP.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMT/catalog.json",
+            "type": "application/json",
+            "title": "UMT"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:terms_of_use": "This work is in the public domain and is free of known copyright\nrestrictions. Users should properly cite the source used in the creation of\nany reports and publications resulting from the use of this dataset and note\nthe date when the data was acquired.\n",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "conus",
+        "gridmet_derived",
+        "mod09q1",
+        "mod17",
+        "modis",
+        "nlcd_derived",
+        "npp",
+        "photosynthesis",
+        "production",
+        "productivity",
+        "yearly"
+    ],
+    "providers": [
+        {
+            "name": "University of Montana Numerical Terradynamic Simulation Group (NTSG)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ntsg.umt.edu/project/landsat/landsat-productivity.php"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/UMT_NTSG_v2_MODIS_NPP"
+        }
+    ],
+    "sci:citation": "Robinson, N.P., B.W. Allred, W.K. Smith, M.O. Jones, A. Moreno, T.A.\nErickson, D.E. Naugle, and S.W. Running. 2018. Terrestrial primary\nproduction for the conterminous United States derived from Landsat 30 m and\nMODIS 250 m. Remote Sensing in Ecology and Conservation.\n[doi:10.1002/rse2.74](https://doi.org/10.1002/rse2.74)\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Annual net primary productivity",
+                "gee:scale": 0.0001,
+                "gee:units": "kg*C/m^2",
+                "name": "annualNPP"
+            },
+            {
+                "description": "Percentage of gap-filled NDVI values.",
+                "gee:units": "%",
+                "name": "QC"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "NPP",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "annualNPP"
+                        ],
+                        "max": [
+                            20000
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "bbe029",
+                            "0a9501",
+                            "074b03"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 37.07,
+                    "lon": -94.83,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            250
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Terra"
+        ],
+        "QC": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "annualNPP": {
+            "minimum": 0,
+            "maximum": 65535
+        }
+    },
+    "title": "MODIS Net Primary Production CONUS",
+    "version": "0.2.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -124.84,
+                    24.42,
+                    -64.82,
+                    49.72
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2019-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

@@ -1,0 +1,152 @@
+{
+    "type": "Collection",
+    "id": "CIESIN/GPWv411/GPW_National_Identifier_Grid",
+    "stac_version": "1.0.0",
+    "description": "The Gridded Population of World Version 4 (GPWv4), Revision 11 models the distribution\nof global human population for the years 2000, 2005, 2010, 2015, and 2020\non 30 arc-second (approximately 1km) grid cells. Population is distributed\nto cells using proportional allocation of population from census and\nadministrative units. Population input data are collected at the most\ndetailed spatial resolution available from the results of the 2010 round of\ncensuses, which occurred between 2005 and 2014. The input data are\nextrapolated to produce population estimates for each modeled year.\n\nThe National Identifier Grid Represents the Census Data Source Used to Produce\nthe GPWv4 Populations estimates. Pixels that have the same value reflect the same\ndata source, most often a country or territory.\n\n[General Documentation](https://sedac.ciesin.columbia.edu/data/set/gpw-v4-national-identifier-grid-rev11/docs)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/CIESIN_GPWv411_GPW_National_Identifier_Grid",
+            "type": "text/html",
+            "title": "Run the example for CIESIN/GPWv411/GPW_National_Identifier_Grid in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/CIESIN/CIESIN_GPWv411_GPW_National_Identifier_Grid_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/CIESIN_GPWv411_GPW_National_Identifier_Grid#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.7927/H4TD9VDP"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CIESIN/CIESIN_GPWv411_GPW_National_Identifier_Grid.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CIESIN/catalog.json",
+            "type": "application/json",
+            "title": "CIESIN"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:provider_ids": [
+        "C1597157684-SEDAC"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "ciesin",
+        "gpw",
+        "nasa",
+        "population"
+    ],
+    "providers": [
+        {
+            "name": "NASA SEDAC at the Center for International Earth Science Information Network",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.7927/H4TD9VDP"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/CIESIN_GPWv411_GPW_National_Identifier_Grid"
+        }
+    ],
+    "sci:citation": "Center for International Earth Science Information Network - CIESIN -\nColumbia University. 2018. Gridded Population of the World, Version 4\n(GPWv4): National Identifier Grid, Revision 11. Palisades, NY: NASA Socioeconomic Data\nand Applications Center (SEDAC). [https://doi.org/10.7927/H4F47M2C](https://doi.org/10.7927/H4F47M2C).\nAccessed DAY MONTH YEAR.\n",
+    "sci:doi": "10.7927/H4TD9VDP",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "An integer that represents the census data source used\nto produce the GPWv4.11 population estimates. Pixels (grid cells) that have\nthe same value reflect the same data source, most often a country or\nterritory. Note that these data represent the area covered by the\nstatistical data as provided, and are not official representations of\ncountry or territory boundaries.\n",
+                "name": "national_identifier_grid"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "National Identifier",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "national_identifier_grid"
+                        ],
+                        "max": [
+                            999
+                        ],
+                        "min": [
+                            4
+                        ],
+                        "palette": [
+                            "ffffff",
+                            "000000"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 26.4,
+                    "lon": -88.6,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            927.67
+        ],
+        "national_identifier_grid": {
+            "minimum": 4,
+            "maximum": 999
+        }
+    },
+    "title": "GPWv411: National Identifier Grid (Gridded Population of the World Version 4.11)",
+    "version": "v4.11",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2020-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

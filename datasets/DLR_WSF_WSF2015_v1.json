@@ -1,0 +1,147 @@
+{
+    "type": "Collection",
+    "id": "DLR/WSF/WSF2015/v1",
+    "stac_version": "1.0.0",
+    "description": "The World Settlement Footprint (WSF) 2015 is a 10m resolution binary mask\noutlining the extent of human settlements globally derived by means of\n2014-2015 multitemporal Landsat-8 and Sentinel-1 imagery (of which ~217,000 and\n~107,000 scenes have been processed, respectively).\n\nThe temporal dynamics of human settlements over time are\nsensibly different than those of all other non-settlement information classes.\nHence, given all the multitemporal images available over a region of interest\nin the selected time interval, key temporal statistics (i.e., temporal mean,\nminimum, maximum, etc.) are extracted for:\n\n* the original backscattering value\nin the case of radar data; and\n*  different spectral indices (e.g., vegetation\nindex, built-up index, etc.) derived after performing cloud masking in the case\nof optical imagery.\n\nNext, different classification schemes based on Support\nVector Machines (SVMs) are separately applied to the optical and radar temporal\nfeatures, respectively, and, finally, the two outputs are properly combined\ntogether.\n\nTo quantitatively assess the high accuracy and reliability of the\nlayer, an extensive validation exercise has been carried out in collaboration\nwith Google based on a huge amount of ground-truth samples (i.e., 900,000)\nlabeled by crow-sourcing photo-interpretation. A statistically\nrobust and transparent protocol has been defined following the state-of-the-art\npractices currently recommended in the literature.\n\nFor all technical details, please refer to\n[the publication](https://www.nature.com/articles/s41597-020-00580-5)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/DLR_WSF_WSF2015_v1",
+            "type": "text/html",
+            "title": "Run the example for DLR/WSF/WSF2015/v1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/DLR/DLR_WSF_WSF2015_v1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/DLR_WSF_WSF2015_v1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC0-1.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://springernature.figshare.com/articles/dataset/World_Settlement_Footprint_WSF_2015/10048412"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.1038/s41597-020-00580-5"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/DLR/DLR_WSF_WSF2015_v1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/DLR/catalog.json",
+            "type": "application/json",
+            "title": "DLR"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC0-1.0](https://spdx.org/licenses/CC0-1.0.html)",
+    "gee:type": "image",
+    "keywords": [
+        "landcover",
+        "landsat_derived",
+        "sentinel1_derived",
+        "settlement",
+        "urban"
+    ],
+    "providers": [
+        {
+            "name": "Deutsches Zentrum f\u00fcr Luft- und Raumfahrt (DLR)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.dlr.de/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/DLR_WSF_WSF2015_v1"
+        }
+    ],
+    "sci:citation": "Marconcini, M., Metz-Marconcini, A., \u00dcreyen, S., Palacios-Lopez, D., Hanke, W., Bachofer, F.,\nZeidler, J., Esch, T., Gorelick, N., Kakarla, A., Paganini, M., Strano, E. (2020).\nOutlining where humans live, the World Settlement Footprint 2015. Scientific Data, 7(1), 1-14.\n[doi:10.1038/s41597-020-00580-5](https://doi.org/10.1038/s41597-020-00580-5)\n",
+    "sci:doi": "10.1038/s41597-020-00580-5",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "A human settlement area",
+                "gsd": 10,
+                "name": "settlement"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "A human settlement area",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "settlement"
+                        ],
+                        "max": [
+                            255
+                        ],
+                        "min": [
+                            255
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 23.7,
+                    "lon": 90.45,
+                    "zoom": 10
+                }
+            }
+        ],
+        "settlement": {
+            "minimum": 255,
+            "maximum": 255
+        }
+    },
+    "title": "World Settlement Footprint 2015",
+    "version": "v1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-01-01T00:00:00Z",
+                    "2016-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0"
+}

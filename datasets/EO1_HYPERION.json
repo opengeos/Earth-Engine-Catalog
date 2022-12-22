@@ -1,0 +1,245 @@
+{
+    "type": "Collection",
+    "id": "EO1/HYPERION",
+    "stac_version": "1.0.0",
+    "description": "Hyperion is a high resolution hyperspectral imager producing 220 unique\nspectral channels ranging from 0.357 to 2.576 micrometers with a 10-nm\nbandwidth. The instrument operates in a pushbroom fashion, with a spatial\nresolution of 30 meters for all bands and a standard scene width of 7.7\nkilometers.\n\nThis dataset contains level 1A radiance images, radiometrically calibrated\nand orthorectified. The SWIR bands have a scaling factor of 80 and the VNIR\nbands have a scaling factor of 40 applied.\n\n- VNIR bands (B008-B057, 426.82nm - 925.41nm): L = Digital Number / 40\n\n- SWIR bands (B077-B224, 912.45nm - 2395.50nm): L = Digital Number / 80\n\nNote that bands B001-B007, B058-B076, and B225-242 are not calibrated,\nhave no valid values and are not included into EE assets. See the\n[detailed spectral coverage information](https://doi.org/10.5066/P9JXHMO2).\n\nThis is a preview dataset; only a portion of the data from the\noriginal source have been downloaded.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/EO1_HYPERION",
+            "type": "text/html",
+            "title": "Run the example for EO1/HYPERION in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/EO1/EO1_HYPERION_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/EO1_HYPERION#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/EO1/EO1_HYPERION.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/EO1/catalog.json",
+            "type": "application/json",
+            "title": "EO1"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 200,
+        "type": "revisit_interval",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "Hyperion data are in the public domain. Once a scene has been\ndownloaded from the USGS, it can be redistributed as desired.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "eo_1",
+        "hyperion",
+        "hyperspectral",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "USGS",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://eo1.usgs.gov/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/EO1_HYPERION"
+        }
+    ],
+    "sci:citation": "Data available from the U.S. Geological Survey.",
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Indicator of whether image was corrected for abnormal pixels: 'Y' or 'N'",
+                "name": "ABNORMAL_PIXELS",
+                "type": "STRING"
+            },
+            {
+                "description": "Correction method used by L1G in creating image: 'CPF' (for CPF bias) or\n'NONE' (for no bias used)",
+                "name": "CORRECTION_METHOD_BIAS",
+                "type": "STRING"
+            },
+            {
+                "description": "Correction method used by L1G in creating the image: 'CPF' (for CPF bias)\nor 'NONE' (for no bias used)",
+                "name": "CORRECTION_METHOD_GAIN",
+                "type": "STRING"
+            },
+            {
+                "description": "Archive-generated external element file name for Calibration Parameter File",
+                "name": "CPF_FILE_NAME",
+                "type": "STRING"
+            },
+            {
+                "description": "Date and hour of contact period start",
+                "name": "DATEHOUR_CONTACT_PERIOD",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "DPS processing version number",
+                "name": "DPS_VERSION_NUMBER",
+                "type": "STRING"
+            },
+            {
+                "description": "Indicates the primary source (if any) of Digital Elevation Model (DEM)\nused in the correction process: 'N' (no correction applied), 'SRTM-2',\n'SRTM-1', 'NED', 'DTED', or 'GTOPO30'\n",
+                "name": "ELEVATION_SOURCE",
+                "type": "STRING"
+            },
+            {
+                "description": "EO-1 X-band used to downlink data to LGS",
+                "name": "EO1_XBAND",
+                "type": "STRING"
+            },
+            {
+                "description": "Identifier to inform user of orbital ephemeris type used: 'ACS',\n'DEFINITIVE', 'GPS', or 'PREDICTIVE'",
+                "name": "EPHEMERIS_TYPE",
+                "type": "STRING"
+            },
+            {
+                "description": "Ground station that received data",
+                "name": "GROUND_STATION",
+                "type": "STRING"
+            },
+            {
+                "description": "Indicator of whether image was corrected for inoperable or out of spec\ndetectors: 'Y' or 'N'",
+                "name": "INOPERABLE_DETECTORS",
+                "type": "STRING"
+            },
+            {
+                "description": "L1G processing system and software version",
+                "name": "PROCESSING_SOFTWARE",
+                "type": "STRING"
+            },
+            {
+                "description": "L1G system date and time when metadata file for L1G product set was created.",
+                "name": "PRODUCT_CREATION_TIME",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Identifier to inform user of product type: 'L1GS' or 'L1GST'",
+                "name": "PRODUCT_TYPE",
+                "type": "STRING"
+            },
+            {
+                "description": "Resampling option used in creating image: 'NN' or 'CC'",
+                "name": "RESAMPLING_OPTION",
+                "type": "STRING"
+            },
+            {
+                "description": "Scaling factor used to convert calibrated DN to radiance units for bands 77-224",
+                "name": "SCALING_FACTOR_SWIR",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Scaling factor used to convert calibrated DN to radiance units for bands 8-57",
+                "name": "SCALING_FACTOR_VNIR",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "The look angle is the angle between nadir and the center of the\ncollected image. It is zero when the collected data are centered at the\nnadir point. The angle when descending is positive when the sensor is\npointing east, negative when the sensor is pointing west of nadir.\n-90 - 90\n",
+                "name": "SENSOR_LOOK_ANGLE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Indicator of whether image was corrected for striping: 'Y' or 'N'",
+                "name": "STRIPING",
+                "type": "STRING"
+            },
+            {
+                "description": "Sun azimuth angle in degrees for image center location at image\ncenter acquisition time. -180 through 180 where a\npositive value indicates angles to the east or clockwise from north and a\nnegative value indicates angles to the west or counterclockwise from\nnorth.\n",
+                "name": "SUN_AZIMUTH",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Sun elevation angle in degrees for image center location at\nimage center acquisition time. -90 through 90 where a\npositive value indicates a daytime scene and a negative value indicates a\nnighttime scene.\n",
+                "name": "SUN_ELEVATION",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "RGB",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "B050",
+                            "B023",
+                            "B015"
+                        ],
+                        "gamma": [
+                            2.5
+                        ],
+                        "max": [
+                            14000
+                        ],
+                        "min": [
+                            1000
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -77.3463,
+                    "lon": 162.0044,
+                    "zoom": 9
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ],
+        "instruments": [
+            "Hyperion"
+        ],
+        "platform": [
+            "EO-1"
+        ]
+    },
+    "title": "EO-1 Hyperion Hyperspectral Imager",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-05-01T00:00:00Z",
+                    "2017-03-13T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

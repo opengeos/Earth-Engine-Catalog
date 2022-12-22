@@ -1,0 +1,300 @@
+{
+    "type": "Collection",
+    "id": "GLOBAL_FLOOD_DB/MODIS_EVENTS/V1",
+    "stac_version": "1.0.0",
+    "description": "The Global Flood Database contains maps of the extent and\ntemporal distribution of 913 flood events occurring between 2000-2018. For more\ninformation, see\n[the associated journal article](https://doi.org/10.1038/s41586-021-03695-w).\n\nFlood events were collected from\nthe [Dartmouth Flood Observatory](https://floodobservatory.colorado.edu/)\nand used to collect MODIS imagery. The selected\n913 events are those that were successfully mapped (passed quality control as\nhaving significant inundation beyond permanent water) using 12,719 scenes from\nTerra and Aqua MODIS sensors. Each pixel was classified as water or non-water\nat 250-meter resolution during the full date range of each flood event and\nsubsequent data products were generated including maximum flood extent\n(\"flooded\" band) and the duration of inundation in days (\"duration\" band).\nWater and non-water classifications during a flood event include permanent\nwater (here resampling the 30-meter\n[JRC Global Surface Water dataset](https://global-surface-water.appspot.com/)\nrepresenting permanent water to 250-meter resolution), which can be\nmasked out to isolate flood water using the \"jrc_perm_water\" band.\nExtra data quality\nbands were added representing cloud conditions during the flood event (e.g.,\n\"clear_views\" representing the number of clear days the flood was observed\nbetween its start and end dates and \"clear_perc\" representing the percentage of\nclear day observation of the total event duration in days).\n\nEach image in the ImageCollection represents the map of an individual flood.\nThe collection can be filtered\nby date, country, or Dartmouth Flood Observatory original ID.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/GLOBAL_FLOOD_DB_MODIS_EVENTS_V1",
+            "type": "text/html",
+            "title": "Run the example for GLOBAL_FLOOD_DB/MODIS_EVENTS/V1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/GLOBAL_FLOOD_DB/GLOBAL_FLOOD_DB_MODIS_EVENTS_V1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/GLOBAL_FLOOD_DB_MODIS_EVENTS_V1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-NC-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://console.cloud.google.com/storage/browser/gfd_v3"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GLOBAL_FLOOD_DB/GLOBAL_FLOOD_DB_MODIS_EVENTS_V1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GLOBAL_FLOOD_DB/catalog.json",
+            "type": "application/json",
+            "title": "GLOBAL_FLOOD_DB"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "This work is licensed under the Creative Commons Attribution Non Commercial 4.0\nInternational license.\n",
+    "gee:type": "image_collection",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true,
+    "keywords": [
+        "c2s",
+        "cloudtostreet",
+        "dartmouth",
+        "dfo",
+        "flood",
+        "gfd",
+        "inundation",
+        "surface",
+        "water"
+    ],
+    "providers": [
+        {
+            "name": "Cloud to Street (C2S) / Dartmouth Flood Observatory (DFO)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "http://global-flood-database.cloudtostreet.info/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/GLOBAL_FLOOD_DB_MODIS_EVENTS_V1"
+        }
+    ],
+    "sci:citation": "Tellman, B., J.A. Sullivan, C. Kuhn, A.J. Kettner, C.S. Doyle, G.R.\nBrakenridge, T. Erickson, D.A. Slayback. (Accepted.)\nSatellites observe increasing proportion of population exposed\nto floods. Nature.\n[doi:10.1038/s41586-021-03695-w](https://doi.org/10.1038/s41586-021-03695-w)\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Maximum extent of flood water during an event.\n\n* 1 - area of surface water\n* 0 - no water",
+                "name": "flooded"
+            },
+            {
+                "description": "Duration of surface water during an event in days. Pixel values indicate\nthe number of composite days a pixel's area was considered water during an\nevent. 3-day MODIS composites were used.\n",
+                "gee:units": "days",
+                "name": "duration"
+            },
+            {
+                "description": "Number of cloud-free observations in days between the start and end day\nof each event. Cloud coverage is determined by the MODIS Quality\nAssurance band ('state_1km').\n",
+                "gee:units": "days",
+                "name": "clear_views"
+            },
+            {
+                "description": "Percentage of clear view observations during a given flood event. This is\nequivalent to the 'clear_views' band but normalized to the number of MODIS\nimages per flood event.  Cloud coverage is determined by the MODIS\nQuality Assurance band ('state_1km').\n",
+                "gee:units": "%",
+                "name": "clear_perc"
+            },
+            {
+                "description": "Permanent water determined by the JRC Global Surface Water dataset using the\n'transition' band.  Resolution is maintained as the original 30-meter\nresolution of the JRC dataset.\n\n* 1 - permanent water\n* 0 - non-water.\n",
+                "name": "jrc_perm_water"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Unique catalog ID of flood event that aligns with the Dartmouth Flood\nObservatory (DFO).",
+                "name": "id",
+                "type": "INT"
+            },
+            {
+                "description": "Three-letter ISO country codes (in a list) for countries for which\nflood water was detected in watersheds intersecting the DFO event polygon.\n",
+                "name": "cc",
+                "type": "STRING"
+            },
+            {
+                "description": "Country names (in a list) for countries for which flood water was\ndetected in watersheds intersecting the DFO event polygon.\n",
+                "name": "countries",
+                "type": "STRING"
+            },
+            {
+                "description": "Centroid longitude of DFO polygon estimating the location of a flood\nevent (DFO database).",
+                "name": "dfo_centroid_x",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Centroid latitude of DFO polygon estimating the location of a flood\nevent (DFO database).",
+                "name": "dfo_centroid_y",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Primary country of flooding (DFO database).",
+                "name": "dfo_country",
+                "type": "STRING"
+            },
+            {
+                "description": "Secondary country of flooding (DFO database).",
+                "name": "dfo_other_country",
+                "type": "STRING"
+            },
+            {
+                "description": "Estimated total number of people left homeless or evacuated after a\nflood event (DFO database).",
+                "name": "dfo_displaced",
+                "type": "INT"
+            },
+            {
+                "description": "The main cause of a flood event in the DFO database. Not normalized.",
+                "name": "dfo_main_cause",
+                "type": "STRING"
+            },
+            {
+                "description": "Severity of a flood event (DFO database):\n\n* 1 - large flood events, significant damage to structure or agriculture,\n  fatalities, and/or 5-15 year reported interval since the last\n  similar event\n* 1.5 - very large events: >15 year but <100 year recurrence interval\n* 2 - extreme events: recurrence interval >100 years)\n",
+                "name": "dfo_severity",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Estimated fatalities due to a flood event (DFO database).",
+                "name": "dfo_dead",
+                "type": "INT"
+            },
+            {
+                "description": "Primary source of flood event confirmation (DFO database). Not normalized.",
+                "name": "dfo_validation_type",
+                "type": "STRING"
+            },
+            {
+                "description": "[GLobal IDEntifier Number](https://glidenumber.net/glide/public/about.jsp).",
+                "name": "glide_index",
+                "type": "STRING"
+            },
+            {
+                "description": "Comma-separated list of two-letter FIPS country codes for countries\nintersecting with the watershed used as the area of interest\nin the water detection algorithm.\n",
+                "name": "gfd_country_code",
+                "type": "STRING"
+            },
+            {
+                "description": "Country names (in a list) for countries intersecting with the watershed\nused as the area of interest in the water detection algorithm.\n",
+                "name": "gfd_country_name",
+                "type": "STRING"
+            },
+            {
+                "description": "Number of days used for compositing in water detection algorithm.",
+                "name": "composite_type",
+                "type": "STRING"
+            },
+            {
+                "description": "Type of thresholds used to classify water/ non-water in water detection\nalgorithm - \"otsu\" or \"standard\".\n",
+                "name": "threshold_type",
+                "type": "STRING"
+            },
+            {
+                "description": "Threshold value applied to the b2b1-ratio used in the water detection\nalgorithm.",
+                "name": "threshold_b1b2",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Threshold value applied to band 7 (SWIR) used in the water detection\nalgorithm.",
+                "name": "threshold_b7",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Spatial resolution (in m) of the reducer used to build MODIS mosaic from\nwhich to then sample and estimate an otsu threshold (only available for flood\nevents which used an otsu and not the default threshold).\n",
+                "name": "otsu_sample_res",
+                "type": "DOUBLE",
+                "units": "m"
+            },
+            {
+                "description": "Value used to mask steep areas from water detection algorithm to\nminimize error from terrain shadows.",
+                "name": "slope_threshold",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Flood duration in days",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "duration"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "d0efff",
+                            "2a9df4",
+                            "187bcd",
+                            "1167b1",
+                            "03254c"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -89.2922,
+                    "lon": 29.4064,
+                    "zoom": 9
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ],
+        "clear_perc": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "clear_views": {
+            "minimum": 0,
+            "maximum": 65535
+        },
+        "duration": {
+            "minimum": 0,
+            "maximum": 65535
+        },
+        "flooded": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "jrc_perm_water": {
+            "minimum": 0,
+            "maximum": 1
+        }
+    },
+    "title": "Global Flood Database v1 (2000-2018)",
+    "version": "V1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-17T00:00:00Z",
+                    "2018-12-10T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-NC-4.0"
+}

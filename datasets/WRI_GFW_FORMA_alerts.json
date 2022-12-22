@@ -1,0 +1,172 @@
+{
+    "type": "Collection",
+    "id": "WRI/GFW/FORMA/alerts",
+    "stac_version": "1.0.0",
+    "description": "**NOTE from WRI**: WRI decided to stop updating FORMA alerts. The goal was\nto simplify the [Global Forest Watch](https://www.globalforestwatch.org)\nuser experience and reduce redundancy.\nWe found that [Terra-i](http://www.terra-i.org/terra-i.html) and\n[GLAD](https://glad-forest-alert.appspot.com/) were more frequently used.\nMoreover, using GLAD as a standard, found that Terra-i outperformed\nFORMA globally.\n\nFORMA alerts are detected using a combination of two MODIS\nproducts: NDVI (Normalized Difference Vegetation Index) and FIRMS\n(Fires Information for Resource Management System). NDVI updates are\nprocessed every 16 days, while fire updates are processed daily. Models\nare developed individually for each ecogroup to relate the two inputs to\nthe area of clearing, using the Hansen annual tree cover loss data to train\nthe model. The minimum threshold to qualify as an alert is 25% of the pixel\ncleared, though thresholds vary by ecogroup to minimize false positives.\nHere is an [example script](https://code.earthengine.google.com/f29b1e4360f3fc36847bd789ceeb20f6)\nfor a quick introduction to the FORMA datasets.\n\nThe percentage of clearing takes a value of 0, no clearing detected,\nor in the range [ecogroup_bound:100), where ecogroup_bound is given by\nWRI/GFW/FORMA/thresholds .\nThe time periods over which data is collected varies by N-days, where N is the number\nof days between the alert_date and the last MODIS NDVI update.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WRI_GFW_FORMA_alerts",
+            "type": "text/html",
+            "title": "Run the example for WRI/GFW/FORMA/alerts in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/WRI/WRI_GFW_FORMA_alerts_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/WRI_GFW_FORMA_alerts#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WRI/WRI_GFW_FORMA_alerts.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WRI/catalog.json",
+            "type": "application/json",
+            "title": "WRI"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The FORMA datasets are available without restriction\non use or distribution. WRI does request that the\nuser give proper attribution and identify WRI and GFW, where applicable,\nas the source of the data.\n",
+    "gee:type": "image",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "daily",
+        "deforestation",
+        "forest",
+        "forma",
+        "gfw",
+        "modis",
+        "monitoring",
+        "wri"
+    ],
+    "providers": [
+        {
+            "name": "World Resources Institute / Global Forest Watch",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.globalforestwatch.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/WRI_GFW_FORMA_alerts"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Percentage of clearing which during the 6 MODIS periods (96 + N days)\npreceding the corresponding alert_date value for the pixel\n",
+                "gee:units": "%",
+                "name": "alert_delta"
+            },
+            {
+                "description": "Timestamp in milliseconds since 1970/01/01",
+                "gee:units": "ms",
+                "name": "alert_date"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Date, in \"YYYY-MM-DD\" format, of the last available data in this dataset",
+                "name": "date",
+                "type": "STRING"
+            },
+            {
+                "description": "Date, in \"YYYY-MM-DD\" format, of the last available FIRMS data included in this dataset",
+                "name": "last_firms_date",
+                "type": "STRING"
+            },
+            {
+                "description": "Date, in \"YYYY-MM-DD\" format, of the last available MODIS NDVI data included in this dataset",
+                "name": "last_modis_date",
+                "type": "STRING"
+            },
+            {
+                "description": "Number of days since last MODIS NDVI update",
+                "name": "nday",
+                "type": "INT"
+            },
+            {
+                "description": "Year of the most recent data included in the dataset",
+                "name": "year",
+                "type": "INT"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "FORMA Alerts",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "alert_delta"
+                        ],
+                        "max": [
+                            75
+                        ],
+                        "min": [
+                            25
+                        ],
+                        "palette": [
+                            "d65898",
+                            "da68a2"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 39,
+                    "lon": 6.746,
+                    "zoom": 6
+                }
+            }
+        ],
+        "gsd": [
+            250
+        ],
+        "alert_delta": {
+            "minimum": 0,
+            "maximum": 100
+        }
+    },
+    "title": "FORMA Alerts",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -120,
+                    -50,
+                    180,
+                    40
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-01-01T00:00:00Z",
+                    "2019-05-18T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

@@ -1,0 +1,164 @@
+{
+    "type": "Collection",
+    "id": "ISDASOIL/Africa/v1/ph",
+    "stac_version": "1.0.0",
+    "description": "pH at soil depths of 0-20 cm and 20-50 cm,\npredicted mean and standard deviation.\n\nPixel values must be back-transformed with `x/10`.\n\nIn areas of dense jungle (generally over central Africa), model accuracy is\nlow and therefore artifacts such as banding (striping) might be seen.\n\nSoil property predictions were made by\n[Innovative Solutions for Decision Agriculture Ltd. (iSDA)](https://isda-africa.com/)\nat 30 m pixel size using machine learning coupled with remote sensing data\nand a training set of over 100,000 analyzed soil samples.\n\nFurther information can be found in the\n[FAQ](https://www.isda-africa.com/isdasoil/faq/) and\n[technical information documentation](https://www.isda-africa.com/isdasoil/technical-information/). To submit an issue or request support, please visit\n[the iSDAsoil site](https://isda-africa.com/isdasoil).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/ISDASOIL_Africa_v1_ph",
+            "type": "text/html",
+            "title": "Run the example for ISDASOIL/Africa/v1/ph in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/ISDASOIL/ISDASOIL_Africa_v1_ph_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/ISDASOIL_Africa_v1_ph#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ISDASOIL/ISDASOIL_Africa_v1_ph.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ISDASOIL/catalog.json",
+            "type": "application/json",
+            "title": "ISDASOIL"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "africa",
+        "isda",
+        "ph",
+        "soil"
+    ],
+    "providers": [
+        {
+            "name": "iSDA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://isda-africa.com/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/ISDASOIL_Africa_v1_ph"
+        }
+    ],
+    "sci:citation": "Hengl, T., Miller, M.A.E., Kri\u017ean, J., et al. African soil properties and nutrients\nmapped at 30 m spatial resolution using two-scale ensemble machine learning.\nSci Rep 11, 6130 (2021).\n[doi:10.1038/s41598-021-85639-y](https://doi.org/10.1038/s41598-021-85639-y)\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "pH, predicted mean at 0-20 cm depth",
+                "name": "mean_0_20"
+            },
+            {
+                "description": "pH, predicted mean at 20-50 cm depth",
+                "name": "mean_20_50"
+            },
+            {
+                "description": "pH, standard deviation at 0-20 cm depth",
+                "name": "stdev_0_20"
+            },
+            {
+                "description": "pH, standard deviation at 20-50 cm depth",
+                "name": "stdev_20_50"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "pH, predicted mean at 0-20 cm depth",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "mean_0_20"
+                        ],
+                        "max": [
+                            8
+                        ],
+                        "min": [
+                            3
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 25,
+                    "lon": -3,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ],
+        "mean_0_20": {
+            "minimum": 35,
+            "maximum": 103
+        },
+        "mean_20_50": {
+            "minimum": 35,
+            "maximum": 102
+        },
+        "stdev_0_20": {
+            "minimum": 0,
+            "maximum": 18
+        },
+        "stdev_20_50": {
+            "minimum": 0,
+            "maximum": 18
+        }
+    },
+    "title": "iSDAsoil pH",
+    "version": "v1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -31.46,
+                    -35.22,
+                    57.08,
+                    37.98
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2017-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

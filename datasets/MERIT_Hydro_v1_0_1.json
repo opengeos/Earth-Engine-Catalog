@@ -1,0 +1,168 @@
+{
+    "type": "Collection",
+    "id": "MERIT/Hydro/v1_0_1",
+    "stac_version": "1.0.0",
+    "description": "MERIT Hydro is a new global flow direction map at 3 arc-second resolution (~90\nm at the equator) derived from the version 1.0.3 of the MERIT DEM elevation data\nand water body datasets (G1WBM, GSWO and OpenStreetMap).\n\nMERIT Hydro contains the output of a new algorithm that\nextracts river networks near-automatically by separating actual inland basins from\nnoise caused by the errors in input elevation data. After a minimum\namount of hand-editing, the constructed hydrography map shows good agreement with\nexisting quality-controlled river network datasets in terms of flow accumulation\narea and river basin shape (see Figure 9a in the paper). The location of river\nstreamlines was realistically aligned with existing satellite-based global\nriver channel data (see Figure 10a in the paper). Relative error\nin the drainage area was smaller than 0.05 for 90% of GRDC gauges, confirming\nthe accuracy of the delineated global river networks. Discrepancies in flow accumulation\narea were found mostly in arid river basins containing depressions that are occasionally\nconnected at high water levels and thus resulting in uncertain watershed boundaries.\n\nMERIT Hydro improves on existing global hydrography datasets in terms of spatial\ncoverage (between 90N and 60S) and representation of small streams, mainly due\nto increased availability of high-quality baseline geospatial datasets.\n\n[You can use this web app to visualize MERIT Hydro data.](https://meritdataset.users.earthengine.app/view/merit-hydro-visualization-and-interactive-map)\n[The app's source code is available.](https://github.com/google/earthengine-community/blob/master/datasets/scripts/Hydro_Visualization.js)\n\nKnown Problems:\n\n* River width (Update from GWD-LR v1): Width algorithm was updated to consider\n  sub-pixel water fraction. Now, 30 m water map is used for width calculation at\n  90 m resolution. Currently river width is calculated for each channel separately\n  in braided/anabranching sections. Merged river width should be calculated.\n* Water body map: There are some inconsistencies between the DEM land sea mask and\n  wate body data (such as new islands along the coast). The quality of OpenStreeetMap\n  water body layer is not uniform in all areas.\n* Channel bifurcations: Channel bifurcation is not well represented in the current\n  version. Each pixel is assumed to have only one downstream direction. Secondary\n  (or multiple) downstream direction should be considered, to represent complex\n  river networks in the delta regions, floodplains, and braided rivers.\n* Underground rivers/tunnels: Major underground rivers/tunnels should be implemented\n  to improve large-scale water balance.\n* River/lake separation: Rivers and lakes need to be separated better for some applications.\n* Below-sea-level areas: The areas below sea level in coastal regions are not well\n  represented in adjusted elevation data.\n* Flow direction over glaciers: Flow direction over glaciers is not well represented,\n  because the elevation of glacier centerline is higher than glacier edge.\n* Supplementary data: It would be better to add location of GRDC gauging stations, water\n  falls, reservoirs, etc.\n\nData Sources:\n\n* [U-Tokyo MERIT DEM](http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/index.html)\n* [U-Tokyo G1WBM water body data](http://hydro.iis.u-tokyo.ac.jp/~yamadai/G3WBM/index.html)\n* [OpenStreetMap water body layer](http://hydro.iis.u-tokyo.ac.jp/~yamadai/OSM_water/index.html)\n* [EC-JRC Global Surface Water Occurrence](http://hydro.iis.u-tokyo.ac.jp/~yamadai/G3WBM/index.html)\n* [U-Maryland Landsat forest cover data](https://glad.earthengine.app/view/global-forest-change)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MERIT_Hydro_v1_0_1",
+            "type": "text/html",
+            "title": "Run the example for MERIT/Hydro/v1_0_1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MERIT/MERIT_Hydro_v1_0_1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MERIT_Hydro_v1_0_1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_Hydro/index.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MERIT/MERIT_Hydro_v1_0_1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MERIT/catalog.json",
+            "type": "application/json",
+            "title": "MERIT"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "Citation to the paper is adequate if you simply use MERIT Hydro. If you\nasked for help for additional handling/editing of the dataset, or if your research\noutcome highly depends on the product, the developer would request co-authorship.\n\nMERIT Hydro is licensed under a Creative Commons \"CC-BY-NC 4.0\" or Open\nData Commons \"Open Database License (ODbL 1.0)\".  With a dual license, you can\nchoose an appropriate license for you.\n\nTo view a copy of these license, please visit:\n\n* [CC-BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/):\nNon-Commercial Use with less restriction.\n* [ODbL 1.0 license](https://opendatacommons.org/licenses/odbl/summary/):\nCommectial Use is OK, but the derived data based on MERIT Hydro should be made\npublicly available under the same ODbL license.  For example, if you create a\nflood hazard map using MERIT Hydro and you would like to provide a COMMERCIAL\nservice based on that, you have to make the hazard map PUBLICLY AVAILABLE under\nOdBL license.\n\nNote that the above license terms are applied to the \"derived data\" based\non MERIT Hydro, while they are not applied to \"produced work / artwork\" created\nwith MERIT Hydro (such as figures in a journal paper). The users may have a\ncopyright of the artwork and may assign any license, when the produced work\nis not considered as \"derived data\".\n\nBy downloading and using the data the user agrees to the terms and\nconditions of the license. Notwithstanding this free license, we ask users to\nrefrain from redistributing the data in whole in its original format on other\nwebsites without the explicit written permission from the authors.\n\nThe copyright of MERIT Hydro is held by the developers, 2019, all rights reserved.\n",
+    "gee:type": "image",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true,
+    "keywords": [
+        "dem",
+        "elevation",
+        "flow_direction",
+        "hand",
+        "hydrography",
+        "hydrosheds",
+        "merit",
+        "river_width",
+        "upstream_drainage_area"
+    ],
+    "providers": [
+        {
+            "name": "Dai Yamazaki (University of Tokyo)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_Hydro/index.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MERIT_Hydro_v1_0_1"
+        }
+    ],
+    "sci:citation": "Yamazaki D., D. Ikeshima, J. Sosa, P.D. Bates, G.H. Allen, T.M. Pavelsky.\nMERIT Hydro: A high-resolution global hydrography map based on latest\ntopography datasets\nWater Resources Research, vol.55, pp.5053-5073, 2019,\n[doi:10.1029/2019WR024873](https://doi.org/10.1029/2019WR024873]\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Elevation",
+                "gee:units": "m",
+                "name": "elv"
+            },
+            {
+                "description": "Flow Direction (Local Drainage Direction)\n\n* 1: east\n* 2: southeast\n* 4: south\n* 8: southwest\n* 16: west\n* 32: northwest\n* 64: north\n* 128: northeast\n* 0: river mouth\n* -1: inland depression\n",
+                "name": "dir"
+            },
+            {
+                "description": "River channel width at the channel centerlines. River channel width is\ncalculated by the method described in [Yamazaki et al. 2012, WRR], with some\nimprovements/changes on the algorithm.\n",
+                "name": "wth"
+            },
+            {
+                "description": "Land and permanent water\n\n* 0: Land\n* 1: permanent water",
+                "name": "wat"
+            },
+            {
+                "description": "Upstream drainage area (flow accumulation area)",
+                "gee:units": "km^2",
+                "name": "upa"
+            },
+            {
+                "description": "Upstream drainage pixel (flow accumulation grid).",
+                "gee:units": "Number of upstream pixels",
+                "name": "upg"
+            },
+            {
+                "description": "Hydrologically adjusted elevations, also know as \"hand\" (height above\nthe nearest drainage). The elevations are adjusted to\nsatisfy the condition \"downstream is not higher than its upstream\" while\nminimizing the required modifications from the original DEM.  The elevation\nabove EGM96 geoid is represented in meters, and the vertical increment is set to\n10cm. For detailed method, see [Yamazaki et al., 2012, WRR].\n",
+                "gee:units": "m",
+                "name": "hnd"
+            },
+            {
+                "description": "Visualization of the river channel width.",
+                "name": "viswth"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "River width",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "viswth"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 23.052,
+                    "lon": 90.301,
+                    "zoom": 10
+                }
+            }
+        ],
+        "gsd": [
+            92.77
+        ]
+    },
+    "title": "MERIT Hydro: Global Hydrography Datasets",
+    "version": "1.0.1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1987-01-01T00:00:00Z",
+                    "2017-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "ODbL-1.0"
+}

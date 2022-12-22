@@ -1,0 +1,168 @@
+{
+    "type": "Collection",
+    "id": "JRC/GSW1_0/Metadata",
+    "stac_version": "1.0.0",
+    "description": "This dataset contains maps of the location and temporal\ndistribution of surface water from 1984 to 2015 and provides\nstatistics on the extent and change of those water surfaces.\nFor more information see the associated journal article: [High-resolution\nmapping of global surface water and its long-term changes](https://www.nature.com/nature/journal/v540/n7633/full/nature20584.html)\n(Nature, 2016) and the online [Data Users Guide](https://storage.googleapis.com/global-surface-water/downloads_ancillary/DataUsersGuidev2.pdf).\n\nThese data were generated using 3,066,102 scenes from Landsat\n5, 7, and 8 acquired between 16 March 1984 and 10 October 2015.\nEach pixel was individually classified into water / non-water\nusing an expert system and the results were collated into a monthly\nhistory for the entire time period and two epochs (1984-1999,\n2000-2015) for change detection.\n\nThis product contains metadata about the observations that went into\ncomputing The Global Surface Water dataset. Areas where water has never\nbeen detected are masked.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JRC_GSW1_0_Metadata",
+            "type": "text/html",
+            "title": "Run the example for JRC/GSW1_0/Metadata in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/JRC/JRC_GSW1_0_Metadata_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GSW1_0_Metadata#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GSW1_4_Metadata.json",
+            "type": "application/json",
+            "title": "JRC/GSW1_4/Metadata"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GSW1_1_Metadata.json",
+            "type": "application/json",
+            "title": "JRC/GSW1_1/Metadata"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GSW1_0_Metadata.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/catalog.json",
+            "type": "application/json",
+            "title": "JRC"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "deprecated": true,
+    "gee:terms_of_use": "All data here is produced under the Copernicus Programme and is provided\nfree of charge, without restriction of use. For the full license\ninformation see the Copernicus Regulation.\n\nPublications, models, and data products that make use of these datasets\nmust include proper acknowledgement, including citing datasets and the\njournal article as in the following citation.\n\nIf you are using the data as a layer in a published map, please include the\nfollowing attribution text: 'Source: EC JRC/Google'\n",
+    "gee:type": "image",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "geophysical",
+        "google",
+        "jrc",
+        "landsat_derived",
+        "surface",
+        "water"
+    ],
+    "providers": [
+        {
+            "name": "EC JRC / Google",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://global-surface-water.appspot.com"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GSW1_0_Metadata"
+        }
+    ],
+    "sci:citation": "Jean-Francois Pekel, Andrew Cottam, Noel Gorelick, Alan S. Belward,\nHigh-resolution mapping of global surface water and its long-term changes.\nNature 540, 418-422 (2016). ([doi:10.1038/nature20584](https://doi.org/10.1038/nature20584))\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "The number of water detections in the study period.",
+                "name": "detections"
+            },
+            {
+                "description": "The number of valid observations in the study period.",
+                "name": "valid_obs"
+            },
+            {
+                "description": "The total number of available observations (i.e. scenes) in the study period.",
+                "name": "total_obs"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Detections/Observations",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "detections",
+                            "valid_obs",
+                            "total_obs"
+                        ],
+                        "max": [
+                            900
+                        ],
+                        "min": [
+                            100
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 52.48,
+                    "lon": 71.72,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ],
+        "detections": {
+            "minimum": 0,
+            "maximum": 2007
+        },
+        "total_obs": {
+            "minimum": 0,
+            "maximum": 2417
+        },
+        "valid_obs": {
+            "minimum": 0,
+            "maximum": 2076
+        }
+    },
+    "title": "JRC Global Surface Water Metadata, v1.0 [deprecated]",
+    "version": "1.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1984-03-16T00:00:00Z",
+                    "2015-10-18T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

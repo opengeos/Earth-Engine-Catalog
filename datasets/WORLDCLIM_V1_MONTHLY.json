@@ -1,0 +1,194 @@
+{
+    "type": "Collection",
+    "id": "WORLDCLIM/V1/MONTHLY",
+    "stac_version": "1.0.0",
+    "description": "WorldClim version 1 has average monthly global climate data for minimum,\nmean, and maximum temperature and for precipitation.\n\nWorldClim version 1 was developed by Robert J. Hijmans, Susan Cameron,\nand Juan Parra, at the Museum of Vertebrate Zoology, University\nof California, Berkeley, in collaboration with Peter Jones and\nAndrew Jarvis (CIAT), and with Karen Richardson (Rainforest CRC).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WORLDCLIM_V1_MONTHLY",
+            "type": "text/html",
+            "title": "Run the example for WORLDCLIM/V1/MONTHLY in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/WORLDCLIM/WORLDCLIM_V1_MONTHLY_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/WORLDCLIM_V1_MONTHLY#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-SA-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WORLDCLIM/WORLDCLIM_V1_MONTHLY.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WORLDCLIM/catalog.json",
+            "type": "application/json",
+            "title": "WORLDCLIM"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "climatological_interval",
+        "unit": "month"
+    },
+    "gee:terms_of_use": "[CC-BY-SA-4.0](https://spdx.org/licenses/CC-BY-SA-4.0.html)",
+    "gee:type": "image_collection",
+    "gee:unusual_terms_of_use": true,
+    "keywords": [
+        "berkeley",
+        "climate",
+        "monthly",
+        "precipitation",
+        "temperature",
+        "weather",
+        "worldclim"
+    ],
+    "providers": [
+        {
+            "name": "University of California, Berkeley",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.worldclim.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/WORLDCLIM_V1_MONTHLY"
+        }
+    ],
+    "sci:citation": "Hijmans, R.J., S.E. Cameron, J.L. Parra, P.G. Jones and A. Jarvis,\n2005. Very High Resolution Interpolated Climate Surfaces for Global Land\nAreas. International Journal of Climatology 25: 1965-1978.\n[doi:10.1002/joc.1276](https://doi.org/10.1002/joc.1276).\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Mean temperature",
+                "gee:scale": 0.1,
+                "gee:units": "\u00b0C",
+                "name": "tavg"
+            },
+            {
+                "description": "Minimum temperature",
+                "gee:scale": 0.1,
+                "gee:units": "\u00b0C",
+                "name": "tmin"
+            },
+            {
+                "description": "Maximum temperature",
+                "gee:scale": 0.1,
+                "gee:units": "\u00b0C",
+                "name": "tmax"
+            },
+            {
+                "description": "Precipitation",
+                "gee:units": "mm",
+                "name": "prec"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Month",
+                "name": "month",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Mean Temperature",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "tavg"
+                        ],
+                        "max": [
+                            300
+                        ],
+                        "min": [
+                            -400
+                        ],
+                        "palette": [
+                            "blue",
+                            "purple",
+                            "cyan",
+                            "green",
+                            "yellow",
+                            "red"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 52.48,
+                    "lon": 71.72,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            927.67
+        ],
+        "prec": {
+            "minimum": 0,
+            "maximum": 2949
+        },
+        "tavg": {
+            "minimum": -536,
+            "maximum": 394
+        },
+        "tmax": {
+            "minimum": -500,
+            "maximum": 490
+        },
+        "tmin": {
+            "minimum": -573,
+            "maximum": 325
+        }
+    },
+    "title": "WorldClim Climatology V1",
+    "version": "V1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1960-01-01T00:00:00Z",
+                    "1991-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-SA-4.0"
+}

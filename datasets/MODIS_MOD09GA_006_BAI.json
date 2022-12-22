@@ -1,0 +1,129 @@
+{
+    "type": "Collection",
+    "id": "MODIS/MOD09GA_006_BAI",
+    "stac_version": "1.0.0",
+    "description": "The Burn Area Index (BAI) is generated from the Red and\nNear-IR bands, and measures the spectral distance of each pixel from a\nreference spectral point (the measured reflectance of charcoal).  This\nindex is intended to emphasize the charcoal signal in post-fire\nimages. See\n[Chuvieco et al. (2002)](https://www.tandfonline.com/doi/abs/10.1080/01431160210153129)\nfor details. This product is generated from the MODIS/006/MOD09GA surface reflectance composites.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_MOD09GA_006_BAI",
+            "type": "text/html",
+            "title": "Run the example for MODIS/MOD09GA_006_BAI in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_MOD09GA_006_BAI_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MOD09GA_006_BAI#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MOD09GA_006_BAI.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:is_derived": true,
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC have no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "bai",
+        "modis",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "Google",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://earthengine.google.com/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MOD09GA_006_BAI"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Burn Area Index",
+                "gsd": 463.312716528,
+                "name": "BAI"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Scaled",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "BAI"
+                        ],
+                        "max": [
+                            100
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 31.052933985705163,
+                    "lon": -7.03125,
+                    "zoom": 2
+                }
+            }
+        ]
+    },
+    "title": "MODIS Terra Daily BAI",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-24T00:00:00Z",
+                    "2022-11-30T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

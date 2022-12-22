@@ -1,0 +1,548 @@
+{
+    "type": "Collection",
+    "id": "OpenLandMap/SOL/SOL_TEXTURE-CLASS_USDA-TT_M/v02",
+    "stac_version": "1.0.0",
+    "description": "Soil texture classes (USDA system) for 6 soil depths (0, 10, 30, 60, 100 and 200 cm) at 250 m\n\nDerived from predicted soil texture fractions using the soiltexture package in R.\nProcessing steps are described in detail [here](https://gitlab.com/openlandmap/global-layers/tree/master/soil)\n. Antartica is not included.\n\nTo access and visualize maps outside of Earth Engine, use [this page](https://opengeohub.org/about-openlandmap).\n\nIf you discover a bug, artifact or inconsistency in the LandGIS maps\nor if you have a question please use the following channels:\n\n *  [Technical issues and questions about the code](https://gitlab.com/openlandmap/global-layers/issues)\n *  [General questions and comments](https://disqus.com/home/forums/landgis/)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OpenLandMap_SOL_SOL_TEXTURE-CLASS_USDA-TT_M_v02",
+            "type": "text/html",
+            "title": "Run the example for OpenLandMap/SOL/SOL_TEXTURE-CLASS_USDA-TT_M/v02 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/OpenLandMap/OpenLandMap_SOL_SOL_TEXTURE-CLASS_USDA-TT_M_v02_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_SOL_SOL_TEXTURE-CLASS_USDA-TT_M_v02#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-SA-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5281/zenodo.1475451"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenLandMap/OpenLandMap_SOL_SOL_TEXTURE-CLASS_USDA-TT_M_v02.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenLandMap/catalog.json",
+            "type": "application/json",
+            "title": "OpenLandMap"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-SA-4.0](https://spdx.org/licenses/CC-BY-SA-4.0.html)",
+    "gee:type": "image",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true,
+    "keywords": [
+        "envirometrix",
+        "opengeohub",
+        "openlandmap",
+        "soil",
+        "texture",
+        "usda"
+    ],
+    "providers": [
+        {
+            "name": "EnvirometriX Ltd",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5281/zenodo.1475451"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_SOL_SOL_TEXTURE-CLASS_USDA-TT_M_v02"
+        }
+    ],
+    "sci:citation": "Tomislav Hengl. (2018). Soil texture classes (USDA system) for 6 soil depths (0, 10, 30, 60, 100 and 200 cm) at 250 m (Version v02) [Data set]. Zenodo.\n[10.5281/zenodo.1475451](https://doi.org/10.5281/zenodo.1475451)\n",
+    "sci:doi": "10.5281/zenodo.1475451",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Soil texture class (USDA system) at 0 cm depth",
+                "gee:classes": [
+                    {
+                        "color": "d5c36b",
+                        "description": "Cl",
+                        "value": 1
+                    },
+                    {
+                        "color": "b96947",
+                        "description": "SiCl",
+                        "value": 2
+                    },
+                    {
+                        "color": "9d3706",
+                        "description": "SaCl",
+                        "value": 3
+                    },
+                    {
+                        "color": "ae868f",
+                        "description": "ClLo",
+                        "value": 4
+                    },
+                    {
+                        "color": "f86714",
+                        "description": "SiClLo",
+                        "value": 5
+                    },
+                    {
+                        "color": "46d143",
+                        "description": "SaClLo",
+                        "value": 6
+                    },
+                    {
+                        "color": "368f20",
+                        "description": "Lo",
+                        "value": 7
+                    },
+                    {
+                        "color": "3e5a14",
+                        "description": "SiLo",
+                        "value": 8
+                    },
+                    {
+                        "color": "ffd557",
+                        "description": "SaLo",
+                        "value": 9
+                    },
+                    {
+                        "color": "fff72e",
+                        "description": "Si",
+                        "value": 10
+                    },
+                    {
+                        "color": "ff5a9d",
+                        "description": "LoSa",
+                        "value": 11
+                    },
+                    {
+                        "color": "ff005b",
+                        "description": "Sa",
+                        "value": 12
+                    }
+                ],
+                "name": "b0"
+            },
+            {
+                "description": "Soil texture class (USDA system) at 10 cm depth",
+                "gee:classes": [
+                    {
+                        "color": "d5c36b",
+                        "description": "Cl",
+                        "value": 1
+                    },
+                    {
+                        "color": "b96947",
+                        "description": "SiCl",
+                        "value": 2
+                    },
+                    {
+                        "color": "9d3706",
+                        "description": "SaCl",
+                        "value": 3
+                    },
+                    {
+                        "color": "ae868f",
+                        "description": "ClLo",
+                        "value": 4
+                    },
+                    {
+                        "color": "f86714",
+                        "description": "SiClLo",
+                        "value": 5
+                    },
+                    {
+                        "color": "46d143",
+                        "description": "SaClLo",
+                        "value": 6
+                    },
+                    {
+                        "color": "368f20",
+                        "description": "Lo",
+                        "value": 7
+                    },
+                    {
+                        "color": "3e5a14",
+                        "description": "SiLo",
+                        "value": 8
+                    },
+                    {
+                        "color": "ffd557",
+                        "description": "SaLo",
+                        "value": 9
+                    },
+                    {
+                        "color": "fff72e",
+                        "description": "Si",
+                        "value": 10
+                    },
+                    {
+                        "color": "ff5a9d",
+                        "description": "LoSa",
+                        "value": 11
+                    },
+                    {
+                        "color": "ff005b",
+                        "description": "Sa",
+                        "value": 12
+                    }
+                ],
+                "name": "b10"
+            },
+            {
+                "description": "Soil texture class (USDA system) at 30 cm depth",
+                "gee:classes": [
+                    {
+                        "color": "d5c36b",
+                        "description": "Cl",
+                        "value": 1
+                    },
+                    {
+                        "color": "b96947",
+                        "description": "SiCl",
+                        "value": 2
+                    },
+                    {
+                        "color": "9d3706",
+                        "description": "SaCl",
+                        "value": 3
+                    },
+                    {
+                        "color": "ae868f",
+                        "description": "ClLo",
+                        "value": 4
+                    },
+                    {
+                        "color": "f86714",
+                        "description": "SiClLo",
+                        "value": 5
+                    },
+                    {
+                        "color": "46d143",
+                        "description": "SaClLo",
+                        "value": 6
+                    },
+                    {
+                        "color": "368f20",
+                        "description": "Lo",
+                        "value": 7
+                    },
+                    {
+                        "color": "3e5a14",
+                        "description": "SiLo",
+                        "value": 8
+                    },
+                    {
+                        "color": "ffd557",
+                        "description": "SaLo",
+                        "value": 9
+                    },
+                    {
+                        "color": "fff72e",
+                        "description": "Si",
+                        "value": 10
+                    },
+                    {
+                        "color": "ff5a9d",
+                        "description": "LoSa",
+                        "value": 11
+                    },
+                    {
+                        "color": "ff005b",
+                        "description": "Sa",
+                        "value": 12
+                    }
+                ],
+                "name": "b30"
+            },
+            {
+                "description": "Soil texture class (USDA system) at 60 cm depth",
+                "gee:classes": [
+                    {
+                        "color": "d5c36b",
+                        "description": "Cl",
+                        "value": 1
+                    },
+                    {
+                        "color": "b96947",
+                        "description": "SiCl",
+                        "value": 2
+                    },
+                    {
+                        "color": "9d3706",
+                        "description": "SaCl",
+                        "value": 3
+                    },
+                    {
+                        "color": "ae868f",
+                        "description": "ClLo",
+                        "value": 4
+                    },
+                    {
+                        "color": "f86714",
+                        "description": "SiClLo",
+                        "value": 5
+                    },
+                    {
+                        "color": "46d143",
+                        "description": "SaClLo",
+                        "value": 6
+                    },
+                    {
+                        "color": "368f20",
+                        "description": "Lo",
+                        "value": 7
+                    },
+                    {
+                        "color": "3e5a14",
+                        "description": "SiLo",
+                        "value": 8
+                    },
+                    {
+                        "color": "ffd557",
+                        "description": "SaLo",
+                        "value": 9
+                    },
+                    {
+                        "color": "fff72e",
+                        "description": "Si",
+                        "value": 10
+                    },
+                    {
+                        "color": "ff5a9d",
+                        "description": "LoSa",
+                        "value": 11
+                    },
+                    {
+                        "color": "ff005b",
+                        "description": "Sa",
+                        "value": 12
+                    }
+                ],
+                "name": "b60"
+            },
+            {
+                "description": "Soil texture class (USDA system) at 100 cm depth",
+                "gee:classes": [
+                    {
+                        "color": "d5c36b",
+                        "description": "Cl",
+                        "value": 1
+                    },
+                    {
+                        "color": "b96947",
+                        "description": "SiCl",
+                        "value": 2
+                    },
+                    {
+                        "color": "9d3706",
+                        "description": "SaCl",
+                        "value": 3
+                    },
+                    {
+                        "color": "ae868f",
+                        "description": "ClLo",
+                        "value": 4
+                    },
+                    {
+                        "color": "f86714",
+                        "description": "SiClLo",
+                        "value": 5
+                    },
+                    {
+                        "color": "46d143",
+                        "description": "SaClLo",
+                        "value": 6
+                    },
+                    {
+                        "color": "368f20",
+                        "description": "Lo",
+                        "value": 7
+                    },
+                    {
+                        "color": "3e5a14",
+                        "description": "SiLo",
+                        "value": 8
+                    },
+                    {
+                        "color": "ffd557",
+                        "description": "SaLo",
+                        "value": 9
+                    },
+                    {
+                        "color": "fff72e",
+                        "description": "Si",
+                        "value": 10
+                    },
+                    {
+                        "color": "ff5a9d",
+                        "description": "LoSa",
+                        "value": 11
+                    },
+                    {
+                        "color": "ff005b",
+                        "description": "Sa",
+                        "value": 12
+                    }
+                ],
+                "name": "b100"
+            },
+            {
+                "description": "Soil texture class (USDA system) at 200 cm depth",
+                "gee:classes": [
+                    {
+                        "color": "d5c36b",
+                        "description": "Cl",
+                        "value": 1
+                    },
+                    {
+                        "color": "b96947",
+                        "description": "SiCl",
+                        "value": 2
+                    },
+                    {
+                        "color": "9d3706",
+                        "description": "SaCl",
+                        "value": 3
+                    },
+                    {
+                        "color": "ae868f",
+                        "description": "ClLo",
+                        "value": 4
+                    },
+                    {
+                        "color": "f86714",
+                        "description": "SiClLo",
+                        "value": 5
+                    },
+                    {
+                        "color": "46d143",
+                        "description": "SaClLo",
+                        "value": 6
+                    },
+                    {
+                        "color": "368f20",
+                        "description": "Lo",
+                        "value": 7
+                    },
+                    {
+                        "color": "3e5a14",
+                        "description": "SiLo",
+                        "value": 8
+                    },
+                    {
+                        "color": "ffd557",
+                        "description": "SaLo",
+                        "value": 9
+                    },
+                    {
+                        "color": "fff72e",
+                        "description": "Si",
+                        "value": 10
+                    },
+                    {
+                        "color": "ff5a9d",
+                        "description": "LoSa",
+                        "value": 11
+                    },
+                    {
+                        "color": "ff005b",
+                        "description": "Sa",
+                        "value": 12
+                    }
+                ],
+                "name": "b200"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Soil texture class (USDA system)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "b0"
+                        ],
+                        "max": [
+                            12
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "d5c36b",
+                            "b96947",
+                            "9d3706",
+                            "ae868f",
+                            "f86714",
+                            "46d143",
+                            "368f20",
+                            "3e5a14",
+                            "ffd557",
+                            "fff72e",
+                            "ff5a9d",
+                            "ff005b"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 30.7,
+                    "lon": -5.6,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            250
+        ]
+    },
+    "title": "OpenLandMap Soil Texture Class (USDA System)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1950-01-01T00:00:00Z",
+                    "2018-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-SA-4.0"
+}

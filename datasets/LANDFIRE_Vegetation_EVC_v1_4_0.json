@@ -1,0 +1,513 @@
+{
+    "type": "Collection",
+    "id": "LANDFIRE/Vegetation/EVC/v1_4_0",
+    "stac_version": "1.0.0",
+    "description": "LANDFIRE (LF), Landscape Fire and Resource Management Planning Tools, is a\nshared program between the wildland fire management programs of the U.S.\nDepartment of Agriculture's Forest Service, U.S. Department of the Interior's\nGeological Survey, and The Nature Conservancy.\n\nLANDFIRE (LF) layers are created using predictive landscape models based on\nextensive field-referenced data, satellite imagery and biophysical gradient\nlayers using classification and regression trees.\n\nLANDFIRE's (LF) Existing Vegetation Cover (EVC) represents the vertically projected percent cover of the live canopy layer for a 30-m cell.\nEVC is generated separately for tree, shrub, and herbaceous cover lifeforms using training data and other geospatial layers. Percentage tree, shrub, and herbaceous canopy cover training data are generated using plot-level ground-based visual assessments and lidar observations.\n* Once the training data are developed, relationships are then established separately for each lifeform between the training data and combination of Landsat and ancillary data. Each of the derived data layers (tree, shrub, herbaceous) has a potential range from 0-100 percent which are merged into a single composite EVC layer.\n* Disturbance data were used to develop LF Remap products for LFRDB plot filtering and to ensure 2015 and 2016 disturbances were included that were not visible in the source imagery.\n* The EVC product is then reconciled through QA/QC measures to ensure life-form is synchronized with both Existing Vegetation Height and Existing Vegetation Type products.\nLF uses EVC in several subsequent layers, including the development of the fuel layers.\n\nThe LANDIFRE Vegetation datasets include:\n\n* Biophysical Settings (BPS)\n* Environmental Site Potential (ESP)\n* Existing Vegetation Canopy Cover (EVC)\n* Existing Vegetation Height (EVH).\n* Existing Vegetation Type (EVT)\nThese layers are created using predictive landscape models based on extensive\nfield-referenced data, satellite imagery and biophysical gradient layers using\nclassification and regression trees.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/LANDFIRE_Vegetation_EVC_v1_4_0",
+            "type": "text/html",
+            "title": "Run the example for LANDFIRE/Vegetation/EVC/v1_4_0 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/LANDFIRE/LANDFIRE_Vegetation_EVC_v1_4_0_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/LANDFIRE_Vegetation_EVC_v1_4_0#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDFIRE/LANDFIRE_Vegetation_EVC_v1_4_0.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDFIRE/catalog.json",
+            "type": "application/json",
+            "title": "LANDFIRE"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "LANDFIRE data are public domain data with no use restrictions, though if modifications\nor derivatives of the product(s) are created, then please add some descriptive modifier\nto the data set to avoid confusion.\n",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "doi",
+        "fire",
+        "landfire",
+        "nature_conservancy",
+        "usda",
+        "usgs",
+        "vegetation",
+        "wildfire"
+    ],
+    "providers": [
+        {
+            "name": "U.S. Department of Agriculture's (USDA), U.S. Forest Service (USFS), U.S.\nDepartment of the Interior's Geological Survey (USGS), and The Nature Conservancy.",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://landfire.gov/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/LANDFIRE_Vegetation_EVC_v1_4_0"
+        }
+    ],
+    "sci:citation": "The suggested way to cite LANDFIRE products is specific to each product,\nso the model for citation is provided, with an example for a particular product.\nProducer. Year released. Product xxxxx:\n\n- Individual model name.\n- BpS Models and Descriptions, Online. LANDFIRE. Washington, DC. U.S. Department of\n  Agriculture, Forest Service\n- U.S. Department of the Interior; U.S. Geological Survey; Arlington, VA\n- The Nature Conservancy (Producers). Available- URL. Access date.\n\nExample Citation: LANDFIRE Biophysical Settings. 2018. Biophysical setting 14420:\nSouth Texas sand sheet grassland. In: LANDFIRE Biophysical Setting Model: Map zone 36,\n[Online]. In: BpS Models and Descriptions. In: LANDFIRE. Washington, DC:\nU.S. Department of Agriculture, Forest Service; U.S. Department of the Interior;\nU.S. Geological Survey; Arlington, VA: The Nature Conservancy (Producers).\nAvailable: [https://www.landfire.gov/bps-models.php](https://www.landfire.gov/bps-models.php) [2018, June 27].\nAdditional guidance on citation of LANDFIRE products can be found\n[here](https://www.landfire.gov/landfire_citation.php)\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Existing Vegetation Cover",
+                "gee:classes": [
+                    {
+                        "color": "0000ff",
+                        "description": "Open Water",
+                        "value": 11
+                    },
+                    {
+                        "color": "9fa1f0",
+                        "description": "Snow/Ice",
+                        "value": 12
+                    },
+                    {
+                        "color": "403da8",
+                        "description": "Developed-Upland Deciduous Forest",
+                        "value": 13
+                    },
+                    {
+                        "color": "444f89",
+                        "description": "Developed-Upland Evergreen Forest",
+                        "value": 14
+                    },
+                    {
+                        "color": "6677cd",
+                        "description": "Developed-Upland Mixed Forest",
+                        "value": 15
+                    },
+                    {
+                        "color": "7a8ef5",
+                        "description": "Developed-Upland Herbaceous",
+                        "value": 16
+                    },
+                    {
+                        "color": "9eaad7",
+                        "description": "Developed-Upland Shrubland",
+                        "value": 17
+                    },
+                    {
+                        "color": "343434",
+                        "description": "Developed-Herbaceous Wetland Vegetation",
+                        "value": 18
+                    },
+                    {
+                        "color": "343434",
+                        "description": "Developed-Woody Wetland Vegetation",
+                        "value": 19
+                    },
+                    {
+                        "color": "ffebe0",
+                        "description": "Developed - General",
+                        "value": 20
+                    },
+                    {
+                        "color": "fdccd3",
+                        "description": "Developed - Open Space",
+                        "value": 21
+                    },
+                    {
+                        "color": "ff7a8f",
+                        "description": "Developed - Low Intensity",
+                        "value": 22
+                    },
+                    {
+                        "color": "fd2c4f",
+                        "description": "Developed - Medium Intensity",
+                        "value": 23
+                    },
+                    {
+                        "color": "ad001c",
+                        "description": "Developed - High Intensity",
+                        "value": 24
+                    },
+                    {
+                        "color": "010101",
+                        "description": "Developed-Roads",
+                        "value": 25
+                    },
+                    {
+                        "color": "bfbfbf",
+                        "description": "Barren",
+                        "value": 31
+                    },
+                    {
+                        "color": "e6e8fa",
+                        "description": "Quarries-Strip Mines-Gravel Pits",
+                        "value": 32
+                    },
+                    {
+                        "color": "d21c5e",
+                        "description": "NASS-Orchard",
+                        "value": 60
+                    },
+                    {
+                        "color": "a80084",
+                        "description": "NASS-Vineyard",
+                        "value": 61
+                    },
+                    {
+                        "color": "d21c77",
+                        "description": "NASS-Bush fruit and berries",
+                        "value": 62
+                    },
+                    {
+                        "color": "fff58c",
+                        "description": "NASS-Row Crop-Close Grown Crop",
+                        "value": 63
+                    },
+                    {
+                        "color": "faff77",
+                        "description": "NASS-Row Crop",
+                        "value": 64
+                    },
+                    {
+                        "color": "ffed77",
+                        "description": "NASS-Close Grown Crop",
+                        "value": 65
+                    },
+                    {
+                        "color": "ffff77",
+                        "description": "NASS-Fallow/Idle Cropland",
+                        "value": 66
+                    },
+                    {
+                        "color": "e3d41c",
+                        "description": "NASS-Pasture and Hayland",
+                        "value": 67
+                    },
+                    {
+                        "color": "fae3a3",
+                        "description": "NASS-Wheat",
+                        "value": 68
+                    },
+                    {
+                        "color": "d2ffed",
+                        "description": "NASS-Aquaculture",
+                        "value": 69
+                    },
+                    {
+                        "color": "7f38ff",
+                        "description": "Herbaceous Semi-dry",
+                        "value": 75
+                    },
+                    {
+                        "color": "7f38ff",
+                        "description": "Herbaceous Semi-wet",
+                        "value": 76
+                    },
+                    {
+                        "color": "7f382b",
+                        "description": "Recently Disturbed Forest",
+                        "value": 78
+                    },
+                    {
+                        "color": "ffffbf",
+                        "description": "Agriculture - General",
+                        "value": 80
+                    },
+                    {
+                        "color": "ffff9c",
+                        "description": "Pasture/Hay",
+                        "value": 81
+                    },
+                    {
+                        "color": "ffff78",
+                        "description": "Cultivated Crops",
+                        "value": 82
+                    },
+                    {
+                        "color": "ffff54",
+                        "description": "Small Grains",
+                        "value": 83
+                    },
+                    {
+                        "color": "ffff2b",
+                        "description": "Fallow",
+                        "value": 84
+                    },
+                    {
+                        "color": "ffff00",
+                        "description": "Urban-Recreational Grasses",
+                        "value": 85
+                    },
+                    {
+                        "color": "7f8fff",
+                        "description": "Herbaceous Wetlands",
+                        "value": 95
+                    },
+                    {
+                        "color": "7a7f75",
+                        "description": "Sparse Vegetation Canopy",
+                        "value": 100
+                    },
+                    {
+                        "color": "ccff99",
+                        "description": "Tree Cover >= 10 and < 20%",
+                        "value": 101
+                    },
+                    {
+                        "color": "aee082",
+                        "description": "Tree Cover >= 20 and < 30%",
+                        "value": 102
+                    },
+                    {
+                        "color": "91c46c",
+                        "description": "Tree Cover >= 30 and < 40%",
+                        "value": 103
+                    },
+                    {
+                        "color": "77ab57",
+                        "description": "Tree Cover >= 40 and < 50%",
+                        "value": 104
+                    },
+                    {
+                        "color": "5e9144",
+                        "description": "Tree Cover >= 50 and < 60%",
+                        "value": 105
+                    },
+                    {
+                        "color": "467832",
+                        "description": "Tree Cover >= 60 and < 70%",
+                        "value": 106
+                    },
+                    {
+                        "color": "336324",
+                        "description": "Tree Cover >= 70 and < 80%",
+                        "value": 107
+                    },
+                    {
+                        "color": "204f16",
+                        "description": "Tree Cover >= 80 and < 90%",
+                        "value": 108
+                    },
+                    {
+                        "color": "003300",
+                        "description": "Tree Cover >= 90 and <= 100%",
+                        "value": 109
+                    },
+                    {
+                        "color": "d4b27d",
+                        "description": "Shrub Cover >= 10 and < 20%",
+                        "value": 111
+                    },
+                    {
+                        "color": "d1a171",
+                        "description": "Shrub Cover >= 20 and < 30%",
+                        "value": 112
+                    },
+                    {
+                        "color": "cc9166",
+                        "description": "Shrub Cover >= 30 and < 40%",
+                        "value": 113
+                    },
+                    {
+                        "color": "c77e5a",
+                        "description": "Shrub Cover >= 40 and < 50%",
+                        "value": 114
+                    },
+                    {
+                        "color": "c26e4f",
+                        "description": "Shrub Cover >= 50 and < 60%",
+                        "value": 115
+                    },
+                    {
+                        "color": "bd5e46",
+                        "description": "Shrub Cover >= 60 and < 70%",
+                        "value": 116
+                    },
+                    {
+                        "color": "b54c3c",
+                        "description": "Shrub Cover >= 70 and < 80%",
+                        "value": 117
+                    },
+                    {
+                        "color": "b03b33",
+                        "description": "Shrub Cover >= 80 and < 90%",
+                        "value": 118
+                    },
+                    {
+                        "color": "9e0020",
+                        "description": "Shrub Cover >= 90 and <= 100%",
+                        "value": 119
+                    },
+                    {
+                        "color": "ffcc66",
+                        "description": "Herb Cover >= 10 and < 20%",
+                        "value": 121
+                    },
+                    {
+                        "color": "ffba59",
+                        "description": "Herb Cover >= 20 and < 30%",
+                        "value": 122
+                    },
+                    {
+                        "color": "ffa94d",
+                        "description": "Herb Cover >= 30 and < 40%",
+                        "value": 123
+                    },
+                    {
+                        "color": "ff9a42",
+                        "description": "Herb Cover >= 40 and < 50%",
+                        "value": 124
+                    },
+                    {
+                        "color": "ff8636",
+                        "description": "Herb Cover >= 50 and < 60%",
+                        "value": 125
+                    },
+                    {
+                        "color": "ff752b",
+                        "description": "Herb Cover >= 60 and < 70%",
+                        "value": 126
+                    },
+                    {
+                        "color": "ff6421",
+                        "description": "Herb Cover >= 70 and < 80%",
+                        "value": 127
+                    },
+                    {
+                        "color": "ff5517",
+                        "description": "Herb Cover >= 80 and < 90%",
+                        "value": 128
+                    },
+                    {
+                        "color": "ff3300",
+                        "description": "Herb Cover >= 90 and <= 100%",
+                        "value": 129
+                    },
+                    {
+                        "color": "7a7f75",
+                        "description": "Sparse Vegetation Canopy",
+                        "value": 150
+                    },
+                    {
+                        "color": "ccff99",
+                        "description": "Tree Canopy >= 10 and < 25%",
+                        "value": 151
+                    },
+                    {
+                        "color": "467832",
+                        "description": "Tree Canopy >= 25 and < 60%",
+                        "value": 152
+                    },
+                    {
+                        "color": "003300",
+                        "description": "Tree Canopy >= 60 and <= 100%",
+                        "value": 153
+                    },
+                    {
+                        "color": "d4b27d",
+                        "description": "Shrub Canopy >= 10 and < 25%",
+                        "value": 161
+                    },
+                    {
+                        "color": "c26e4f",
+                        "description": "Shrub Canopy >= 25 and < 60%",
+                        "value": 162
+                    },
+                    {
+                        "color": "9e0020",
+                        "description": "Shrub Canopy >= 60 and <= 100%",
+                        "value": 163
+                    },
+                    {
+                        "color": "ffa94d",
+                        "description": "Herb Canopy >= 10 and < 60%",
+                        "value": 171
+                    },
+                    {
+                        "color": "ff752b",
+                        "description": "Herb Canopy >= 60 and <= 100%",
+                        "value": 172
+                    }
+                ],
+                "name": "EVC"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Class values of the Existing Vegetation Cover.",
+                "name": "EVC_classes",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Descriptive names of the Existing Vegetation Cover.",
+                "name": "EVC_names",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "EVC",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "EVC"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 40.699,
+                    "lon": -121.671,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    },
+    "title": "LANDFIRE EVC (Existing Vegetation Cover) v1.4.0",
+    "version": "1.4.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -175.1,
+                    17.52,
+                    -63.66,
+                    71.48
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-09-01T00:00:00Z",
+                    "2014-09-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

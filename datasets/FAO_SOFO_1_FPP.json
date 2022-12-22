@@ -1,0 +1,163 @@
+{
+    "type": "Collection",
+    "id": "FAO/SOFO/1/FPP",
+    "stac_version": "1.0.0",
+    "description": "The \"Forest Proximate People\" (FPP) dataset is one of the data layers\ncontributing to the development of indicator #13, \"number of\nforest-dependent people in extreme poverty,\" of the Collaborative\nPartnership on Forests (CPF) Global Core Set of forest-related\nindicators (GCS). The FPP dataset provides an estimate of the number of\npeople living in or within 1 kilometer of forests\n(forest-proximate people) for the year 2019 with a pixel size of 100 meters\nat a global level.\n[Find out more about the dataset.](https://data.apps.fao.org/catalog/dcat/forest-proximate-people)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/FAO_SOFO_1_FPP",
+            "type": "text/html",
+            "title": "Run the example for FAO/SOFO/1/FPP in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/FAO/FAO_SOFO_1_FPP_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/FAO_SOFO_1_FPP#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/FAO/FAO_SOFO_1_FPP.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/FAO/catalog.json",
+            "type": "application/json",
+            "title": "FAO"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "agriculture",
+        "fao",
+        "forest",
+        "global",
+        "population",
+        "rural_area"
+    ],
+    "providers": [
+        {
+            "name": "FAO Forestry Division (FPP 1km)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://data.apps.fao.org/catalog/iso/8ed893bd-842a-4866-a655-a0a0c02b79b4"
+        },
+        {
+            "name": "FAO Forestry Division (FPP 5km)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://data.apps.fao.org/catalog/iso/8ed893bd-842a-4866-a655-a0a0c02b79b5"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/FAO_SOFO_1_FPP"
+        }
+    ],
+    "sci:citation": "[FAO 2022. The State of the World's Forests (SOFO) - Forest pathways for green recovery and building inclusive, resilient and sustainable economies. FAO, Rome.](https://www.fao.org/documents/card/en/c/cb9360en)\n",
+    "sci:publications": [
+        {
+            "citation": "Newton, P., Castle, S.E., Kinzer, A.T., Miller, D.C., Oldekop, J.A.,\nLinhares-Juvenal, T., Pina, L., Madrid, M., & de Lamo, J. 2022.\nThe number of forest- and tree-proximate people: a new methodology\nand global estimates, One Earth, 2020\n[10.1016/j.oneear.2020.08.016](https://doi.org/10.1016/j.oneear.2020.08.016),\n",
+            "doi": "10.1016/j.oneear.2020.08.016"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Number of people living in or within 1 kilometer of forests.\n",
+                "gee:units": "Number of people/ha",
+                "name": "FPP_1km"
+            },
+            {
+                "description": "Number of people living in or within 5 kilometer of forests.\n",
+                "gee:units": "Number of people/ha",
+                "name": "FPP_5km"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Forest proximate people - 1km cutoff distance",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "FPP_1km"
+                        ],
+                        "max": [
+                            12
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "blue",
+                            "yellow",
+                            "red"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -0.4,
+                    "lon": 108,
+                    "zoom": 4
+                }
+            }
+        ],
+        "gsd": [
+            0.0009
+        ]
+    },
+    "title": "Forest proximate people (FPP)",
+    "version": "1.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-01-01T00:00:00Z",
+                    "2019-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

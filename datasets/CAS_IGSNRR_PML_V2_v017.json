@@ -1,0 +1,214 @@
+{
+    "type": "Collection",
+    "id": "CAS/IGSNRR/PML/V2_v017",
+    "stac_version": "1.0.0",
+    "description": "Penman-Monteith-Leuning Evapotranspiration V2 (PML_V2) products include\nevapotranspiration (ET), its three components, and\ngross primary product (GPP) at 500m and 8-day resolution during 2000-2017\nand with spatial range from -60\u00b0S to 90\u00b0N. The major advantages of the\nPML_V2 products are:\n\n  1. coupled estimates of transpiration and GPP via canopy\n  conductance (Gan et al., 2018; Zhang et al., 2019)\n  2. partitioning ET into three components: transpiration from vegetation,\n  direct evaporation from the soil and vaporization of intercepted\n   rainfall from vegetation (Zhang et al., 2016).\n\nThe PML_V2 products perform well against observations\nat 95 flux sites across globe, and are similar to or noticeably better than\nmajor state-of-the-art ET and GPP products widely used by water and ecology\nscience communities (Zhang et al., 2019).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/CAS_IGSNRR_PML_V2_v017",
+            "type": "text/html",
+            "title": "Run the example for CAS/IGSNRR/PML/V2_v017 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/CAS/CAS_IGSNRR_PML_V2_v017_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/CAS_IGSNRR_PML_V2_v017#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CAS/CAS_IGSNRR_PML_V2_v017.json",
+            "type": "application/json",
+            "title": "CAS/IGSNRR/PML/V2_v017"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CAS/CAS_IGSNRR_PML_V2.json",
+            "type": "application/json",
+            "title": "CAS/IGSNRR/PML/V2"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CAS/CAS_IGSNRR_PML_V2_v017.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CAS/catalog.json",
+            "type": "application/json",
+            "title": "CAS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 8,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "Acknowledgements\n\nWhenever PML datasets are used in a scientific publication, the given\nreferences should be cited.\n\nLicense\n\nThe dataset is licensed under the\n[CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).\n",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "cas",
+        "evapotranspiration",
+        "gpp",
+        "gross_primary_product",
+        "igsnrr",
+        "pml"
+    ],
+    "providers": [
+        {
+            "name": "PML_V2",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://github.com/kongdd/PML"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/CAS_IGSNRR_PML_V2_v017"
+        }
+    ],
+    "sci:citation": "Zhang, Y., Kong, D., Gan, R., Chiew, F.H.S., McVicar, T.R., Zhang, Q.,\nand Yang, Y., 2019. Coupled estimation of 500m and 8-day resolution global\nevapotranspiration and gross primary production in 2002-2017.\nRemote Sens. Environ. 222, 165-182,\n[doi:10.1016/j.rse.2018.12.031](https://doi.org/10.1016/j.rse.2018.12.031)\n",
+    "sci:publications": [
+        {
+            "citation": "Gan, R., Zhang, Y.Q., Shi, H., Yang, Y.T., Eamus, D., Cheng, L.,\nChiew, F.H.S., Yu, Q., 2018. Use of satellite leaf area index estimating\nevapotranspiration and gross assimilation for Australian ecosystems.\nEcohydrology, [doi:10.1002/eco.1974](https://doi.org/10.1002/eco.1974)\n",
+            "doi": "10.1002/eco.1974"
+        },
+        {
+            "citation": "Zhang, Y., Pe\u00f1a-Arancibia, J.L., McVicar, T.R., Chiew, F.H.S., Vaze, J.,\nLiu, C., Lu, X., Zheng, H., Wang, Y., Liu, Y.Y., Miralles, D.G., Pan,\nM., 2016. Multi-decadal trends in global terrestrial evapotranspiration\nand its components. Sci. Rep. 6, 19124.\n[doi:10.1038/srep19124](https://doi.org/10.1038/srep19124)\n",
+            "doi": "10.1038/srep19124"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Gross primary product",
+                "gee:units": "gC m-2 d-1",
+                "name": "GPP"
+            },
+            {
+                "description": "Vegetation transpiration",
+                "gee:units": "mm d-1",
+                "name": "Ec"
+            },
+            {
+                "description": "Soil evaporation",
+                "gee:units": "mm d-1",
+                "name": "Es"
+            },
+            {
+                "description": "Interception from vegetation canopy",
+                "gee:units": "mm d-1",
+                "name": "Ei"
+            },
+            {
+                "description": "Water body, snow and ice evaporation. Penman evapotranspiration is\nregarded as actual evaporation for them.\n",
+                "gee:units": "mm d-1",
+                "name": "ET_water"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "PML_V2 0.1.7 Gross Primary Product (GPP)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "GPP"
+                        ],
+                        "max": [
+                            9
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "a50026",
+                            "d73027",
+                            "f46d43",
+                            "fdae61",
+                            "fee08b",
+                            "ffffbf",
+                            "d9ef8b",
+                            "a6d96a",
+                            "66bd63",
+                            "1a9850",
+                            "006837"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 15,
+                    "lon": 66.3,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            500
+        ],
+        "ET_water": {
+            "minimum": 0,
+            "maximum": 20.11
+        },
+        "Ec": {
+            "minimum": 0,
+            "maximum": 15.33
+        },
+        "Ei": {
+            "minimum": 0,
+            "maximum": 12.56
+        },
+        "Es": {
+            "minimum": 0,
+            "maximum": 8.2
+        },
+        "GPP": {
+            "minimum": 0,
+            "maximum": 39.01
+        }
+    },
+    "title": "PML_V2 0.1.7: Coupled Evapotranspiration and Gross Primary Product (GPP)",
+    "version": "0.1.7",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-26T00:00:00Z",
+                    "2020-12-26T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

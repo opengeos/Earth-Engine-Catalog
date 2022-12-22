@@ -1,0 +1,414 @@
+{
+    "type": "Collection",
+    "id": "LANDSAT/LC8_L1T_8DAY_RAW",
+    "stac_version": "1.0.0",
+    "description": "These Landsat 8 composites are made from Level L1T orthorectified scenes, using the DN values, representing scaled, calibrated at-sensor radiance.\n\nAs of May 1, 2017, the USGS is no longer producing Pre-Collection Landsat, and therefore this collection is complete. Please switch to a Collection 1-based dataset. See [this documentation page](https://developers.google.com/earth-engine/landsat) for more information.\n\nThese composites are created from\nall the scenes in each\n8-day period beginning from the first day of the year and continuing\nto the 360th day of the year.  The last composite of the year,\nbeginning on day 361, will overlap the first composite of the\nfollowing year by 3 days.  All the images from each 8-day period are\nincluded in the composite, with the most recent pixel as the composite value.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/LANDSAT_LC8_L1T_8DAY_RAW",
+            "type": "text/html",
+            "title": "Run the example for LANDSAT/LC8_L1T_8DAY_RAW in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/LANDSAT/LANDSAT_LC8_L1T_8DAY_RAW_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC8_L1T_8DAY_RAW#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_LC08_C01_T1_8DAY_RAW.json",
+            "type": "application/json",
+            "title": "LANDSAT/LC08/C01/T1_8DAY_RAW"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_LC8_L1T_8DAY_RAW.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/catalog.json",
+            "type": "application/json",
+            "title": "LANDSAT"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "deprecated": true,
+    "gee:interval": {
+        "interval": 8,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:is_derived": true,
+    "gee:min_zoom_level": 4,
+    "gee:terms_of_use": "Landsat datasets are federally created data\nand therefore reside in the public domain and may be used, transferred, or reproduced without copyright restriction.\n\nAcknowledgement or credit of the USGS as data source should be provided\nby including a line of text citation such as the example shown below.\n\n(Product, Image, Photograph, or Dataset Name) courtesy of\nthe U.S. Geological Survey\n\nExample: Landsat-7 image courtesy of the U.S. Geological Survey\n\nSee the\n[USGS Visual Identity System Guidance](https://www.usgs.gov/information-policies-and-instructions/usgs-visual-identity-system)\nfor further details on proper citation and acknowledgement of USGS products.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "landsat",
+        "raw",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "Google",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://earthengine.google.com"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC8_L1T_8DAY_RAW"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "center_wavelength": 0.44,
+                "description": "Coastal aerosol",
+                "gee:wavelength": "0.43 - 0.45 &mu;m",
+                "gsd": 30,
+                "name": "B1"
+            },
+            {
+                "center_wavelength": 0.48,
+                "description": "Blue",
+                "gee:wavelength": "0.45 - 0.51 &mu;m",
+                "gsd": 30,
+                "name": "B2"
+            },
+            {
+                "center_wavelength": 0.56,
+                "description": "Green",
+                "gee:wavelength": "0.53 - 0.59 &mu;m",
+                "gsd": 30,
+                "name": "B3"
+            },
+            {
+                "center_wavelength": 0.655,
+                "description": "Red",
+                "gee:wavelength": "0.64 - 0.67 &mu;m",
+                "gsd": 30,
+                "name": "B4"
+            },
+            {
+                "center_wavelength": 0.865,
+                "description": "Near infrared",
+                "gee:wavelength": "0.85 - 0.88 &mu;m",
+                "gsd": 30,
+                "name": "B5"
+            },
+            {
+                "center_wavelength": 1.61,
+                "description": "Shortwave infrared 1",
+                "gee:wavelength": "1.57 - 1.65 &mu;m",
+                "gsd": 30,
+                "name": "B6"
+            },
+            {
+                "center_wavelength": 2.2,
+                "description": "Shortwave infrared 2",
+                "gee:wavelength": "2.11 - 2.29 &mu;m",
+                "gsd": 30,
+                "name": "B7"
+            },
+            {
+                "center_wavelength": 0.71,
+                "description": "Band 8 Panchromatic",
+                "gee:wavelength": "0.52 - 0.90 &mu;m",
+                "gsd": 15,
+                "name": "B8"
+            },
+            {
+                "center_wavelength": 1.37,
+                "description": "Cirrus",
+                "gee:wavelength": "1.36 - 1.38 &mu;m",
+                "gsd": 15,
+                "name": "B9"
+            },
+            {
+                "center_wavelength": 10.895,
+                "description": "Thermal infrared 1, resampled from 100m to 30m",
+                "gee:wavelength": "10.60 - 11.19 &mu;m",
+                "gsd": 30,
+                "name": "B10"
+            },
+            {
+                "center_wavelength": 12.005,
+                "description": "Thermal infrared 2, resampled from 100m to 30m",
+                "gee:wavelength": "11.50 - 12.51 &mu;m",
+                "gsd": 30,
+                "name": "B11"
+            },
+            {
+                "description": "Landsat Collection 1 QA Bitmask ([See Landsat QA page](https://www.usgs.gov/land-resources/nli/landsat/landsat-collection-1-level-1-quality-assessment-band))\n",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Designated Fill",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Terrain Occlusion",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Radiometric Saturation",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "No bands contain saturation",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "1-2 bands contain saturation",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "3-4 bands contain saturation",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "5 or more bands contain saturation",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Cloud",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Cloud Confidence",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "Not Determined / Condition does not exist.",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Low, (0-33 percent confidence)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Medium, (34-66 percent confidence)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High, (67-100 percent confidence)",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Cloud Shadow Confidence",
+                            "first_bit": 7,
+                            "values": [
+                                {
+                                    "description": "Not Determined / Condition does not exist.",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Low, (0-33 percent confidence)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Medium, (34-66 percent confidence)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High, (67-100 percent confidence)",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Snow / Ice Confidence",
+                            "first_bit": 9,
+                            "values": [
+                                {
+                                    "description": "Not Determined / Condition does not exist.",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Low, (0-33 percent confidence)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Medium, (34-66 percent confidence)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High, (67-100 percent confidence)",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Cirrus Confidence",
+                            "first_bit": 11,
+                            "values": [
+                                {
+                                    "description": "Not Determined / Condition does not exist.",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Low, (0-33 percent confidence)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Medium, (34-66 percent confidence)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High, (67-100 percent confidence)",
+                                    "value": 3
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 13
+                },
+                "gsd": 30,
+                "name": "BQA"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "True Color (432)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "B4",
+                            "B3",
+                            "B2"
+                        ],
+                        "max": [
+                            30000
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "display_name": "Near Infrared (543)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "B5",
+                            "B4",
+                            "B3"
+                        ],
+                        "max": [
+                            30000
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "display_name": "Shortwave Infrared (753)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "B7",
+                            "B5",
+                            "B3"
+                        ],
+                        "max": [
+                            30000
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    "title": "Landsat 8 8-Day Raw Composite [deprecated]",
+    "version": "Unknown",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2013-04-07T00:00:00Z",
+                    "2017-04-23T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "PDDL-1.0"
+}

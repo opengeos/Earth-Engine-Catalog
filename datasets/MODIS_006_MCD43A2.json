@@ -1,0 +1,795 @@
+{
+    "type": "Collection",
+    "id": "MODIS/006/MCD43A2",
+    "stac_version": "1.0.0",
+    "description": "The MCD43A2 V6 Bidirectional Reflectance Distribution\nFunction and Albedo (BRDF/Albedo) Quality dataset is a 500 meter\ndaily 16-day product. It contains all the quality information\nfor the corresponding 16-day MCD43A3 Albedo and the MCD43A4 Nadir-BRDF\n(NBAR) products.\n\nThe MCD43A2 contains individual band quality\nand observation information for the MODIS land bands\n1-7, along with the overall BRDF/Albedo quality information.\n\nSee\n[dataset user guide](https://www.umb.edu/spectralmass/terra_aqua_modis/v006/mcd43a2_albedo_product)\nfor more information.\n\nDocumentation:\n\n* [User's Guide](https://www.umb.edu/spectralmass/terra_aqua_modis/v006)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/97/MCD43_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MCD43A2)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_006_MCD43A2",
+            "type": "text/html",
+            "title": "Run the example for MODIS/006/MCD43A2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_006_MCD43A2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MCD43A2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/MODIS/MCD43A2.006"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MCD43A2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C1000000454-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "albedo",
+        "brdf",
+        "daily",
+        "global",
+        "mcd43a2",
+        "modis",
+        "nasa",
+        "quality",
+        "reflectance",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/MODIS/MCD43A2.006"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MCD43A2"
+        }
+    ],
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/MODIS/MCD43A2.006",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Snow-free or snow BRDF/albedo retrieved",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Mandatory QA",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Snow-free albedo retrieved",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Snow albedo retrieved",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 1
+                },
+                "name": "Snow_BRDF_Albedo"
+            },
+            {
+                "description": "BRDF albedo platform information",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 2,
+                            "description": "Platform",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Terra",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Terra/Aqua",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Aqua",
+                                    "value": 2
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 2
+                },
+                "name": "BRDF_Albedo_Platform"
+            },
+            {
+                "description": "Land/water type",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 3,
+                            "description": "Land/water type",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Shallow ocean",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Land (nothing else but land)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Ocean coastlines and lake shorelines",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Shallow inland water",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Ephemeral water",
+                                    "value": 4
+                                },
+                                {
+                                    "description": "Deep inland water",
+                                    "value": 5
+                                },
+                                {
+                                    "description": "Moderate or continental ocean",
+                                    "value": 6
+                                },
+                                {
+                                    "description": "Deep ocean",
+                                    "value": 7
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 3
+                },
+                "name": "BRDF_Albedo_LandWaterType"
+            },
+            {
+                "description": "Solar zenith angle of local solar noon",
+                "gee:units": "Degrees",
+                "name": "BRDF_Albedo_LocalSolarNoon"
+            },
+            {
+                "description": "Valid observation for band 1",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Day 1 reflectance quality",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Observation not used",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Valid clear observation",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Day 2 reflectance quality",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "Observation not used",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Valid clear observation",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Day 3 reflectance quality",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "Observation not used",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Valid clear observation",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Day 4 reflectance quality",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "Observation not used",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Valid clear observation",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Day 5 reflectance quality",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "Observation not used",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Valid clear observation",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Day 6 reflectance quality",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "Observation not used",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Valid clear observation",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Day 7 reflectance quality",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "Observation not used",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Valid clear observation",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Day 8 reflectance quality",
+                            "first_bit": 7,
+                            "values": [
+                                {
+                                    "description": "Observation not used",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Valid clear observation",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Day 9 reflectance quality",
+                            "first_bit": 8,
+                            "values": [
+                                {
+                                    "description": "Observation not used",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Valid clear observation",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Day 10 reflectance quality",
+                            "first_bit": 9,
+                            "values": [
+                                {
+                                    "description": "Observation not used",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Valid clear observation",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Day 11 reflectance quality",
+                            "first_bit": 10,
+                            "values": [
+                                {
+                                    "description": "Observation not used",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Valid clear observation",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Day 12 reflectance quality",
+                            "first_bit": 11,
+                            "values": [
+                                {
+                                    "description": "Observation not used",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Valid clear observation",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Day 13 reflectance quality",
+                            "first_bit": 12,
+                            "values": [
+                                {
+                                    "description": "Observation not used",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Valid clear observation",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Day 14 reflectance quality",
+                            "first_bit": 13,
+                            "values": [
+                                {
+                                    "description": "Observation not used",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Valid clear observation",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Day 15 reflectance quality",
+                            "first_bit": 14,
+                            "values": [
+                                {
+                                    "description": "Observation not used",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Valid clear observation",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Day 16 reflectance quality",
+                            "first_bit": 15,
+                            "values": [
+                                {
+                                    "description": "Observation not used",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Valid clear observation",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 16
+                },
+                "name": "BRDF_Albedo_ValidObs_Band1"
+            },
+            {
+                "description": "Valid observation for band 2 (same bit meaning as in band 1)",
+                "name": "BRDF_Albedo_ValidObs_Band2"
+            },
+            {
+                "description": "Valid observation for band 3 (same bit meaning as in band 1)",
+                "name": "BRDF_Albedo_ValidObs_Band3"
+            },
+            {
+                "description": "Valid observation for band 4 (same bit meaning as in band 1)",
+                "name": "BRDF_Albedo_ValidObs_Band4"
+            },
+            {
+                "description": "Valid observation for band 5 (same bit meaning as in band 1)",
+                "name": "BRDF_Albedo_ValidObs_Band5"
+            },
+            {
+                "description": "Valid observation for band 6 (same bit meaning as in band 1)",
+                "name": "BRDF_Albedo_ValidObs_Band6"
+            },
+            {
+                "description": "Valid observation for band 7 (same bit meaning as in band 1)",
+                "name": "BRDF_Albedo_ValidObs_Band7"
+            },
+            {
+                "description": "BRDF inversion information for band 1",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 3,
+                            "description": "BRDF inversion information for band 1",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Best quality, full inversion (WoDs and RMSE are good)",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Good quality, full inversion (also including\nthe cases with no clear sky observations over the day of\ninterest and those with a Solar Zenith Angle that is >\n70 degrees even though WoDs and RMSE majority are good)\n",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Magnitude inversion (numobs >= 7)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Magnitude inversion (numobs >= 2 & < 7)",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Fill value",
+                                    "value": 4
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 3
+                },
+                "name": "BRDF_Albedo_Band_Quality_Band1"
+            },
+            {
+                "description": "BRDF inversion information for band 2",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 3,
+                            "description": "BRDF inversion information for band 2",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Best quality, full inversion (WoDs and RMSE are good)",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Good quality, full inversion (also including\nthe cases with no clear sky observations over the day of\ninterest and those with a Solar Zenith Angle that is >\n70 degrees even though WoDs and RMSE majority are good)\n",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Magnitude inversion (numobs >= 7)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Magnitude inversion (numobs >= 2 & < 7)",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Fill value",
+                                    "value": 4
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 3
+                },
+                "name": "BRDF_Albedo_Band_Quality_Band2"
+            },
+            {
+                "description": "BRDF inversion information for band 3",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 3,
+                            "description": "BRDF inversion information for band 3",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Best quality, full inversion (WoDs and RMSE are good)",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Good quality, full inversion (also including\nthe cases with no clear sky observations over the day of\ninterest and those with a Solar Zenith Angle that is >\n70 degrees even though WoDs and RMSE majority are good)\n",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Magnitude inversion (numobs >= 7)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Magnitude inversion (numobs >= 2 & < 7)",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Fill value",
+                                    "value": 4
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 3
+                },
+                "name": "BRDF_Albedo_Band_Quality_Band3"
+            },
+            {
+                "description": "BRDF inversion information for band 4",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 3,
+                            "description": "BRDF inversion information for band 4",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Best quality, full inversion (WoDs and RMSE are good)",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Good quality, full inversion (also including\nthe cases with no clear sky observations over the day of\ninterest and those with a Solar Zenith Angle that is >\n70 degrees even though WoDs and RMSE majority are good)\n",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Magnitude inversion (numobs >= 7)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Magnitude inversion (numobs >= 2 & < 7)",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Fill value",
+                                    "value": 4
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 3
+                },
+                "name": "BRDF_Albedo_Band_Quality_Band4"
+            },
+            {
+                "description": "BRDF inversion information for band 5",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 3,
+                            "description": "BRDF inversion information for band 5",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Best quality, full inversion (WoDs and RMSE are good)",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Good quality, full inversion (also including\nthe cases with no clear sky observations over the day of\ninterest and those with a Solar Zenith Angle that is >\n70 degrees even though WoDs and RMSE majority are good)\n",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Magnitude inversion (numobs >= 7)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Magnitude inversion (numobs >= 2 & < 7)",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Fill value",
+                                    "value": 4
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 3
+                },
+                "name": "BRDF_Albedo_Band_Quality_Band5"
+            },
+            {
+                "description": "BRDF inversion information for band 6",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 3,
+                            "description": "BRDF inversion information for band 6",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Best quality, full inversion (WoDs and RMSE are good)",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Good quality, full inversion (also including\nthe cases with no clear sky observations over the day of\ninterest and those with a Solar Zenith Angle that is >\n70 degrees even though WoDs and RMSE majority are good)\n",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Magnitude inversion (numobs >= 7)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Magnitude inversion (numobs >= 2 & < 7)",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Fill value",
+                                    "value": 4
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 3
+                },
+                "name": "BRDF_Albedo_Band_Quality_Band6"
+            },
+            {
+                "description": "BRDF inversion information for band 7",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 3,
+                            "description": "BRDF inversion information for band 7",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Best quality, full inversion (WoDs and RMSE are good)",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Good quality, full inversion (also including\nthe cases with no clear sky observations over the day of\ninterest and those with a Solar Zenith Angle that is >\n70 degrees even though WoDs and RMSE majority are good)\n",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Magnitude inversion (numobs >= 7)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Magnitude inversion (numobs >= 2 and < 7)",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Fill value",
+                                    "value": 4
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 3
+                },
+                "name": "BRDF_Albedo_Band_Quality_Band7"
+            },
+            {
+                "description": "BRDF inversion information",
+                "gee:scale": 0.001,
+                "name": "BRDF_Albedo_Uncertainty"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Default visualization",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Snow_BRDF_Albedo"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 0,
+                    "lon": 0,
+                    "zoom": 0
+                }
+            }
+        ],
+        "gsd": [
+            500
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Aqua",
+            "Terra"
+        ],
+        "BRDF_Albedo_LocalSolarNoon": {
+            "minimum": 0,
+            "maximum": 254
+        },
+        "BRDF_Albedo_Uncertainty": {
+            "minimum": 0,
+            "maximum": 32766
+        }
+    },
+    "title": "MCD43A2.006 MODIS BRDF-Albedo Quality Daily 500m",
+    "version": "V006",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-24T00:00:00Z",
+                    "2022-11-23T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

@@ -1,0 +1,131 @@
+{
+    "type": "Collection",
+    "id": "BLM/AIM/v1/TerrADat/TerrestrialAIM",
+    "stac_version": "1.0.0",
+    "description": "Since 2011, the Bureau of Land Management (BLM) has collected field information\nto inform land health through its Assessment Inventory and Monitoring (AIM)\nstrategy. To date, more than 6,000 terrestrial AIM field plots have been\ncollected over BLM lands.  The BLM AIM data archive is updated annually.\nStandardized core indicators are collected at each plot that are known to be\nboth ecologically relevant and clearly tied to rangeland health. These\nindicators inform biotic integrity, soil and site stability, and hydrologic\nfunction. The terrestrial plot measurements include fractional bare ground\ncover, vegetation composition and height, plants of management concern,\nNon-native invasive species, plant canopy gaps, species richness, and soil\naggregate stability. AIM represents one of the most extensive, publicly\navailable plot measurement datasets across Western US federal lands, which can\nbe integrated with remotely sensed imagery and other geospatial information for\na range of analysis, classification, and validation purposes.\n\nThis dataset was created to monitor the status, condition and trend\nof national BLM resources in accordance with BLM policies.  The\nmethodology used for the collection of these data can be found on\nhttps://landscapetoolbox.org and the Monitoring Manual, 2nd Edition.  These\ndata should not be used for statistical or spatial inferences without\nknowledge of how the sample design was drawn or without calculating\nspatial weights for the points based on the sample design.\n\nThis feature class includes monitoring data collected nationally to\nunderstand the status, condition, and trend of resources on BLM\nlands. Data are collected in accordance with the BLM Assessment,\nInventory, and Monitoring (AIM) Strategy. The AIM Strategy specifies\na probabilistic sampling design, standard core indicators and\nmethods, electronic data capture and management, and integration with\nremote sensing. Attributes include the BLM terrestrial core\nindicators: bare ground, vegetation composition, plant species of\nmanagement concern, non-native invasive species, and percent canopy\ngaps (see Entity/Attribute Section for exact details on attributes).\nData were collected and managed by BLM Field Offices, BLM Districts,\nand/or affiliated field crews with support from the BLM National\nOperations Center. Data are stored in a centralized database\n(TerrADat) at the BLM National Operations Center.\n\nData were collected by trained data collectors with the BLM and\npartner organizations. They followed the BLM core terrestrial data\n[collection protocols](https://www.ntc.blm.gov/krc/viewresource.php?courseID=281&programAreaId=148).\nData were captured electronically using the [Database for Inventory,\nMonitoring, and Assessment](https://jornada.nmsu.edu/monit-assess/dima).\nThey were managed by the\ndata collectors, with oversight from BLM field offices, state\noffices, and the National Operations Center. This dataset has\nundergone rigorous QA/QC to ensure data quality.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/BLM_AIM_v1_TerrADat_TerrestrialAIM",
+            "type": "text/html",
+            "title": "Run the example for BLM/AIM/v1/TerrADat/TerrestrialAIM in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/BLM/BLM_AIM_v1_TerrADat_TerrestrialAIM_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/BLM_AIM_v1_TerrADat_TerrestrialAIM#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://gis.blm.gov/AIMdownload/layerpackages/BLM_AIM_Terrestrial.zip"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/BLM/BLM_AIM_v1_TerrADat_TerrestrialAIM.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/BLM/catalog.json",
+            "type": "application/json",
+            "title": "BLM"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "These data are considered public domain.\n\nThese data are provided by Bureau of Land Management\n(BLM) \\\"as is\\\" and might contain errors or omissions. The User assumes\nthe entire risk associated with its use of these data and bears all\nresponsibility in determining whether these data are fit for the\nUser's intended use. The information contained in these data is\ndynamic and may change over time. The data are not better than the\nsources from which they were derived, and both scale and accuracy may\nvary across the data set. These data might not have the accuracy,\nresolution, completeness, timeliness, or other characteristics\nappropriate for applications that potential users of the data may\ncontemplate. The User is encouraged to carefully consider the content\nof the metadata file associated with these data. These data are\nneither legal documents nor land surveys, and must not be used as\nsuch. Official records may be referenced at most BLM offices. Please\nreport any errors in the data to the BLM office from which it was\nobtained. The BLM should be cited as the data source in any products\nderived from these data. Any Users wishing to modify the data should\ndescribe the types of modifications they have performed. The User\nshould not misrepresent the data, nor imply that changes made were\napproved or endorsed by BLM. This data may be updated by the BLM\nwithout notification.\n\nThe BLM assumes no responsibility for errors or omissions. No\nwarranty is made by the BLM as to the accuracy, reliability, or\ncompleteness of these data for individual use or aggregate use with\nother data; nor shall the act of distribution to contractors,\npartners, or beyond, constitute any such warranty for individual or\naggregate data use with other data. Although these data have been\nprocessed successfully on computers of BLM, no warranty, expressed or\nimplied, is made by BLM regarding the use of these data on any other\nsystem, or for general or scientific purposes, nor does the fact of\ndistribution constitute or imply any such warranty. In no event shall\nthe BLM have any liability whatsoever for payment of any\nconsequential, incidental, indirect, special, or tort damages of any\nkind, including, but not limited to, any loss of profits arising out\nof the use or reliance on the geographic data or arising out of the\ndelivery, installation, operation, or support by BLM.\n",
+    "gee:type": "table",
+    "keywords": [
+        "aim",
+        "biota",
+        "blm",
+        "endangered",
+        "environment",
+        "grsg",
+        "health",
+        "hydrology",
+        "landscape",
+        "range",
+        "terradat",
+        "terrestrialaim",
+        "vegetation",
+        "wildlife"
+    ],
+    "providers": [
+        {
+            "name": "US Department of Interior Bureau of Land Management (BLM)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://gbp-blm-egis.hub.arcgis.com/pages/aim"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/BLM_AIM_v1_TerrADat_TerrestrialAIM"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "BLM AIM points",
+                "lookat": {
+                    "lat": 40,
+                    "lon": -110,
+                    "zoom": 6
+                },
+                "table_visualization": {
+                    "color": "489734"
+                }
+            },
+            {
+                "display_name": "BLM AIM points",
+                "visualize_as": "FeatureView"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 7000,
+            "prerender_tiles": true,
+            "thinning_strategy": "HIGHER_DENSITY"
+        }
+    },
+    "title": "BLM AIM TerrADat TerrestrialAIM Point v1",
+    "version": "2016",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2011-05-10T00:00:00Z",
+                    "2016-12-06T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0"
+}

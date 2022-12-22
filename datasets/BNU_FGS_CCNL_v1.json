@@ -1,0 +1,135 @@
+{
+    "type": "Collection",
+    "id": "BNU/FGS/CCNL/v1",
+    "stac_version": "1.0.0",
+    "description": "The Consistent and Corrected Nighttime Lights (CCNL) dataset is\na reprocessed version of the [Defense Meteorological Program (DMSP)\nOperational Line-Scan System (OLS) Version 4](NOAA_DMSP-OLS_NIGHTTIME_LIGHTS).\nA series of methods was used to mitigate the impact of inter-annual\ninconsistency, saturation, and blooming effects and to improve data quality.\n\nCCNL Version 1 spans the globe from 75N to 65S and has 1km pixel size.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/BNU_FGS_CCNL_v1",
+            "type": "text/html",
+            "title": "Run the example for BNU/FGS/CCNL/v1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/BNU/BNU_FGS_CCNL_v1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/BNU_FGS_CCNL_v1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/BNU/BNU_FGS_CCNL_v1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/BNU/catalog.json",
+            "type": "application/json",
+            "title": "BNU"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "bnu",
+        "dmsp",
+        "eog",
+        "imagery",
+        "lights",
+        "nighttime",
+        "ols",
+        "visible",
+        "yearly"
+    ],
+    "providers": [
+        {
+            "name": "Beijng Normal University",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5281/zenodo.6644980"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/BNU_FGS_CCNL_v1"
+        }
+    ],
+    "sci:citation": "Zhao,Chenchen, Cao,Xin, Chen,Xuehong, & Cui,Xihong. (2020). A Consistent\nand Corrected Nighttime Light dataset (CCNL 1992-2013) from DMSP-OLS data\n(Version 1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.6644980\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Corrected nighttime light intensity.",
+                "name": "b1"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Nighttime Lights",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "b1"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 31.4,
+                    "lon": 30,
+                    "zoom": 6
+                }
+            }
+        ],
+        "gsd": [
+            1000
+        ]
+    },
+    "title": "CCNL: Consistent And Corrected Nighttime Light Dataset from DMSP-OLS (1992-2013)",
+    "version": "v1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -65,
+                    180,
+                    75
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1992-01-01T00:00:00Z",
+                    "2014-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0"
+}

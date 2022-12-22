@@ -1,0 +1,190 @@
+{
+    "type": "Collection",
+    "id": "WHBU/NBAR_2YEAR",
+    "stac_version": "1.0.0",
+    "description": "The mosaics are created by using the MODIS 8-Day 500 meter\nBRDF-Albedo Quality product.  Data Quality flags are used to select\nthe best observations from the MODIS 8-day 500 meter Nadir\nBRDF-Adjusted Reflectance imagery product.  This specific mosaic picks\nobservations from the three highest quality categories over\na 2-year period of MODIS data.\n\nThe MODIS NBAR annual mosaics have been used by government\nagencies and NGOs in tropical countries as input to generate\naboveground biomass/carbon maps. The Woods Hole Research Center has\nbeen using the dataset for country capacity building and technical\ntraining workshops in tropical countries.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WHBU_NBAR_2YEAR",
+            "type": "text/html",
+            "title": "Run the example for WHBU/NBAR_2YEAR in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/WHBU/WHBU_NBAR_2YEAR_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/WHBU_NBAR_2YEAR#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.1088/1748-9326/3/4/045011"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WHBU/WHBU_NBAR_2YEAR.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WHBU/catalog.json",
+            "type": "application/json",
+            "title": "WHBU"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:is_derived": true,
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC have no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "albedo",
+        "bu",
+        "mcd43a4",
+        "modis_derived",
+        "nbar",
+        "reflectance",
+        "whrc"
+    ],
+    "providers": [
+        {
+            "name": "Baccini, A. (Woods Hole Research Center), Sulla-Menashe, D. (Boston University)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.1088/1748-9326/3/4/045011"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/WHBU_NBAR_2YEAR"
+        }
+    ],
+    "sci:citation": "Baccini, A., Laporte, N., Goetz, S. J., Sun, M., & Dong, H. (2008). A first map of tropical Africa's above-ground biomass derived from satellite imagery. Environmental Research Letters, 3(4), 045011. [doi:10.1088/1748-9326/3/4/045011](https://doi.org/10.1088/1748-9326/3/4/045011)\n",
+    "sci:doi": "10.1088/1748-9326/3/4/045011",
+    "summaries": {
+        "eo:bands": [
+            {
+                "center_wavelength": 0.645,
+                "description": "Best NBAR at local solar noon for band 1",
+                "gee:wavelength": "620-670nm",
+                "gsd": 463,
+                "name": "Nadir_Reflectance_Band1"
+            },
+            {
+                "center_wavelength": 0.8585,
+                "description": "Best NBAR at local solar noon for band 2",
+                "gee:wavelength": "841-876nm",
+                "gsd": 463,
+                "name": "Nadir_Reflectance_Band2"
+            },
+            {
+                "center_wavelength": 0.469,
+                "description": "Best NBAR at local solar noon for band 3",
+                "gee:wavelength": "459-479nm",
+                "gsd": 463,
+                "name": "Nadir_Reflectance_Band3"
+            },
+            {
+                "center_wavelength": 0.555,
+                "description": "Best NBAR at local solar noon for band 4",
+                "gee:wavelength": "545-565nm",
+                "gsd": 463,
+                "name": "Nadir_Reflectance_Band4"
+            },
+            {
+                "center_wavelength": 1.24,
+                "description": "Best NBAR at local solar noon for band 5",
+                "gee:wavelength": "1230-1250nm",
+                "gsd": 463,
+                "name": "Nadir_Reflectance_Band5"
+            },
+            {
+                "center_wavelength": 1.64,
+                "description": "Best NBAR at local solar noon for band 6",
+                "gee:wavelength": "1628-1652nm",
+                "gsd": 463,
+                "name": "Nadir_Reflectance_Band6"
+            },
+            {
+                "center_wavelength": 2.13,
+                "description": "Best NBAR at local solar noon for band 7",
+                "gee:wavelength": "2105-2155nm",
+                "gsd": 463,
+                "name": "Nadir_Reflectance_Band7"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "False Color",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Nadir_Reflectance_Band2",
+                            "Nadir_Reflectance_Band6",
+                            "Nadir_Reflectance_Band1"
+                        ],
+                        "max": [
+                            5000,
+                            9000,
+                            7000
+                        ],
+                        "min": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 13.45,
+                    "lon": 51.69,
+                    "zoom": 4
+                }
+            }
+        ]
+    },
+    "title": "MODIS 2-year Nadir BRDF-Adjusted Reflectance (NBAR) Mosaic",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60.1,
+                    180,
+                    60.1
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2017-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

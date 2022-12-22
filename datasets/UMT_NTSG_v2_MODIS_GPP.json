@@ -1,0 +1,168 @@
+{
+    "type": "Collection",
+    "id": "UMT/NTSG/v2/MODIS/GPP",
+    "stac_version": "1.0.0",
+    "description": "The MODIS Gross Primary Production (GPP) CONUS dataset estimates GPP using\nMODIS Surface Reflectance for CONUS. GPP is the amount of\ncarbon captured by plants in an ecosystem and is an essential component in\nthe calculations of Net Primary Production (NPP). GPP is calculated using the\nMOD17 algorithm (see [MOD17 User\nGuide](https://www.ntsg.umt.edu/files/modis/MOD17UsersGuide2015_v3.pdf)) with\nMODIS Surface Reflectance, gridMET, and the National Land Cover Database.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/UMT_NTSG_v2_MODIS_GPP",
+            "type": "text/html",
+            "title": "Run the example for UMT/NTSG/v2/MODIS/GPP in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/UMT/UMT_NTSG_v2_MODIS_GPP_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/UMT_NTSG_v2_MODIS_GPP#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMT/UMT_NTSG_v2_MODIS_GPP.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMT/catalog.json",
+            "type": "application/json",
+            "title": "UMT"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 8,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "This work is in the public domain and is free of known copyright\nrestrictions. Users should properly cite the source used in the creation of\nany reports and publications resulting from the use of this dataset and note\nthe date when the data was acquired.\n",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "8_day",
+        "conus",
+        "gpp",
+        "gridmet_derived",
+        "mod09q1",
+        "mod17",
+        "modis",
+        "nlcd_derived",
+        "photosynthesis",
+        "production",
+        "productivity"
+    ],
+    "providers": [
+        {
+            "name": "University of Montana Numerical Terradynamic Simulation Group (NTSG)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ntsg.umt.edu/project/landsat/landsat-productivity.php"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/UMT_NTSG_v2_MODIS_GPP"
+        }
+    ],
+    "sci:citation": "Robinson, N.P., B.W. Allred, W.K. Smith, M.O. Jones, A. Moreno, T.A.\nErickson, D.E. Naugle, and S.W. Running. 2018. Terrestrial primary\nproduction for the conterminous United States derived from Landsat 30 m and\nMODIS 250 m. Remote Sensing in Ecology and Conservation.\n[doi:10.1002/rse2.74](https://doi.org/10.1002/rse2.74)\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "8-day gross primary production",
+                "gee:scale": 0.0001,
+                "gee:units": "kg*C/m^2/8-day",
+                "name": "GPP"
+            },
+            {
+                "description": "Indicates if the original NDVI value was adjusted through the\nsmoothing algorithm. 0 denotes the value was not adjusted. 1 indicates\nthe value was adjusted.\n",
+                "name": "QC"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "GPP",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "GPP"
+                        ],
+                        "max": [
+                            1000
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "bbe029",
+                            "0a9501",
+                            "074b03"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 37.07,
+                    "lon": -94.83,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            250
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Terra"
+        ],
+        "GPP": {
+            "minimum": 0,
+            "maximum": 65535
+        },
+        "QC": {
+            "minimum": 0,
+            "maximum": 1
+        }
+    },
+    "title": "MODIS Gross Primary Production CONUS",
+    "version": "0.2.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -124.84,
+                    24.42,
+                    -64.82,
+                    49.72
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2021-12-19T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}
