@@ -85,7 +85,7 @@ print("Total datasets: ", len(datasets))
 df = pd.DataFrame(datasets)
 df.sort_values(by=["id"], inplace=True)
 # remove the script and terms_of_use columns because it contains ? and # characters, GitHub can't render it.
-df.drop(["script", "terms_of_use"], axis=1).to_csv(
+df.drop(["script", "terms_of_use", "thumbnail"], axis=1).to_csv(
     "gee_catalog.tsv", index=False, sep="\t"
 )
 
