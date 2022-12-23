@@ -22,7 +22,7 @@ for catalog in catalogs:
     cat = Client.open(catalog, headers=[])
     print(cat.title)
 
-    for collection in cat.get_collections():
+    for collection in cat.get_all_collections():
         data = collection.to_dict()
         print(data["id"])
         dataset = {}
