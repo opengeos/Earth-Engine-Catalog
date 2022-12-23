@@ -1,0 +1,234 @@
+{
+    "type": "Collection",
+    "id": "NOAA/VIIRS/001/VNP09GA",
+    "stac_version": "1.0.0",
+    "description": "The Visible Infrared Imaging Radiometer Suite (VIIRS) daily surface\nreflectance (VNP09GA) product provides an estimate of land\nsurface reflectance from the Suomi National Polar-Orbiting Partnership\n(S-NPP) VIIRS sensor. Data are provided for three imagery bands\n(I1, I2, I3) at nominal 500 meter resolution (~463 meter) and nine\nmoderate-resolution bands (M1, M2, M3, M4, M5, M7, M8, M10, M11) at nominal\n1 kilometer (~926 meter) resolution. The 500 meter and 1 kilometer datasets\nare derived through resampling the native 375 meter and 750 meter VIIRS\nresolutions, respectively, in the L2 input product. These bands are\ncorrected for atmospheric conditions to provide an estimate\nof the surface spectral reflectance as it would be measured at ground level.\n\nThe data is temporally aggregated over each of the 16 possible passes per\nday. When multiple observations are present for each day, only the first\nof the highest-quality observations is included.\n\nFor additional information, visit the VIIRS [Land Product Quality\nAssessment website](https://landweb.modaps.eosdis.nasa.gov/NPP_QA/) and see\nthe [User Guide](https://lpdaac.usgs.gov/documents/124/VNP09_User_Guide_V1.6.pdf).\n\nDocumentation:\n\n* [User's Guide] (https://lpdaac.usgs.gov/documents/124/VNP09_User_Guide_V1.6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)] (https://lpdaac.usgs.gov/documents/122/VNP09_ATBD.pdf)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_VIIRS_001_VNP09GA",
+            "type": "text/html",
+            "title": "Run the example for NOAA/VIIRS/001/VNP09GA in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/VIIRS/NOAA_VIIRS_001_VNP09GA_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP09GA#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/VIIRS/VNP09GA.001"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/VIIRS/NOAA_VIIRS_001_VNP09GA.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/VIIRS/catalog.json",
+            "type": "application/json",
+            "title": "VIIRS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C1373412034-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "daily",
+        "nasa",
+        "noaa",
+        "npp",
+        "reflectance",
+        "sr",
+        "viirs",
+        "vnp09ga"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/VIIRS/VNP09GA.001"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP09GA"
+        }
+    ],
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)",
+    "sci:doi": "10.5067/VIIRS/VNP09GA.001",
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "RGB",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "M5",
+                            "M4",
+                            "M3"
+                        ],
+                        "max": [
+                            3000
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 7.71,
+                    "lon": 17.93,
+                    "zoom": 2
+                }
+            }
+        ],
+        "instruments": [
+            "VIIRS"
+        ],
+        "platform": [
+            "Suomi NPP"
+        ],
+        "I1": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "I2": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "I3": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "M1": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "M10": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "M11": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "M2": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "M3": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "M4": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "M5": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "M7": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "M8": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "SensorAzimuth": {
+            "minimum": -18000,
+            "maximum": 18000
+        },
+        "SensorZenith": {
+            "minimum": 0,
+            "maximum": 18000
+        },
+        "SolarAzimuth": {
+            "minimum": -18000,
+            "maximum": 18000
+        },
+        "SolarZenith": {
+            "minimum": 0,
+            "maximum": 18000
+        },
+        "iobs_res": {
+            "minimum": 0,
+            "maximum": 254
+        },
+        "num_observations_1km": {
+            "minimum": 0,
+            "maximum": 127
+        },
+        "num_observations_500m": {
+            "minimum": 0,
+            "maximum": 127
+        },
+        "obscov_1km": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "obscov_500m": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "orbit_pnt": {
+            "minimum": 0,
+            "maximum": 15
+        }
+    },
+    "title": "VNP09GA: VIIRS Surface Reflectance Daily 500m and 1km",
+    "version": "V001",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-01-19T00:00:00Z",
+                    "2022-12-14T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

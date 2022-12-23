@@ -1,0 +1,221 @@
+{
+    "type": "Collection",
+    "id": "NOAA/CDR/SST_WHOI/V2",
+    "stac_version": "1.0.0",
+    "description": "The Sea Surface Temperature - WHOI dataset is part of the NOAA Ocean Surface\nBundle (OSB) and provides a high quality Climate Data Record (CDR) of sea\nsurface temperature over ice-free oceans.\n\nThe SST values are found through modeling the diurnal variability in\ncombination with AVHRR observations of sea surface temperature.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_CDR_SST_WHOI_V2",
+            "type": "text/html",
+            "title": "Run the example for NOAA/CDR/SST_WHOI/V2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/CDR/NOAA_CDR_SST_WHOI_V2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_SST_WHOI_V2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.7289/V5FB510W"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CDR/NOAA_CDR_SST_WHOI_V2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CDR/catalog.json",
+            "type": "application/json",
+            "title": "CDR"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 3,
+        "type": "cadence",
+        "unit": "hour"
+    },
+    "gee:terms_of_use": "The NOAA CDR Program's official distribution point for CDRs is NOAA's\nNational Climatic Data Center which provides sustained, open access and\nactive data management of the CDR packages and related information in\nkeeping with the United States' open data policies and practices as\ndescribed in the President's Memorandum on \\\"Open Data Policy\\\" and pursuant\nto the Executive Order of May 9, 2013, \\\"Making Open and Machine Readable\nthe New Default for Government Information\\\". In line with these policies,\nthe CDR data sets are nonproprietary, publicly available, and no\nrestrictions are placed upon their use. For more information, see the\n[Fair Use of NOAA's CDR Data Sets, Algorithms and Documentation](https://www1.ncdc.noaa.gov/pub/data/sds/cdr/CDRs/Aerosol_Optical_Thickness/UseAgreement_01B-04.pdf)\npdf.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "atmospheric",
+        "cdr",
+        "hourly",
+        "noaa",
+        "ocean",
+        "oisst",
+        "osb",
+        "sst",
+        "whoi"
+    ],
+    "providers": [
+        {
+            "name": "NOAA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ncdc.noaa.gov/cdr/oceanic/sea-surface-temperature-whoi"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_SST_WHOI_V2"
+        }
+    ],
+    "sci:citation": "Clayson, Carol Anne, Brown, Jeremiah, and NOAA CDR Program (2016). NOAA\nClimate Data Record Ocean Surface Bundle (OSB) Climate Data Record (CDR) of\nSea Surface Temperature - WHOI, Version 2. [indicate subset used]. NOAA\nNational Climatic Data Center. [doi:10.7289/V5FB510W](https://doi.org/10.7289/V5FB510W).\n",
+    "sci:doi": "10.7289/V5FB510W",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Optimum Interpolation Sea Surface Temperature (OISST), with a diurnal warming correction",
+                "gee:units": "\u00b0C",
+                "name": "sea_surface_temperature"
+            },
+            {
+                "description": "Quality control flags",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 3,
+                            "description": "Quality control flags",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Pixel values from neural network",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Unused flag",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Snow/ice",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Over land",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Over lake",
+                                    "value": 4
+                                },
+                                {
+                                    "description": "SST missing, SST unresolved",
+                                    "value": 5
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 3
+                },
+                "name": "fill_missing_qc"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Sea Surface Temperature",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "sea_surface_temperature"
+                        ],
+                        "max": [
+                            30
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "040274",
+                            "040281",
+                            "0502a3",
+                            "0502b8",
+                            "0502ce",
+                            "0502e6",
+                            "0602ff",
+                            "235cb1",
+                            "307ef3",
+                            "269db1",
+                            "30c8e2",
+                            "32d3ef",
+                            "3be285",
+                            "3ff38f",
+                            "86e26f",
+                            "3ae237",
+                            "b5e22e",
+                            "d6e21f",
+                            "fff705",
+                            "ffd611",
+                            "ffb613",
+                            "ff8b13",
+                            "ff6e08",
+                            "ff500d",
+                            "ff0000",
+                            "de0101",
+                            "c21301",
+                            "a71001",
+                            "911003"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -21.09,
+                    "lon": -4.92,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            27830
+        ],
+        "sea_surface_temperature": {
+            "minimum": -1.79,
+            "maximum": 35
+        }
+    },
+    "title": "NOAA CDR WHOI: Sea Surface Temperature, Version 2",
+    "version": "V2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1988-01-01T00:00:00Z",
+                    "2021-08-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

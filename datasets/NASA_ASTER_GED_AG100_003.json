@@ -1,0 +1,325 @@
+{
+    "type": "Collection",
+    "id": "NASA/ASTER_GED/AG100_003",
+    "stac_version": "1.0.0",
+    "description": "The Advanced Spaceborne Thermal Emission and Reflection Radiometer Global\nEmissivity Database (ASTER-GED) was developed by the National Aeronautics\nand Space Administration's (NASA) Jet Propulsion Laboratory (JPL),\nCalifornia Institute of Technology. This product includes the mean\nemissivity and standard deviation for all 5 ASTER Thermal Infrared bands,\nmean land surface temperature (LST) and standard deviation, a re-sampled\nASTER GDEM, land-water mask, mean Normalized Difference Vegetation Index\n(NDVI) and standard deviation, and observation count.\n\nASTER-GED land surface temperature and emissivity (LST&E) are generated\nusing the ASTER Temperature Emissivity Separation (TES) algorithm in\ncombination with a Water Vapor Scaling (WVS) atmospheric correction method\nusing MODIS MOD07 atmospheric profiles and the MODTRAN 5.2 radiative\ntransfer model.\n\nThis product was derived from clear-sky pixels for all available ASTER data\n(2000-2008).\n\n[User's Guide] (https://lpdaac.usgs.gov/documents/120/ASTERGED_User_Guide_V3.pdf)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA_ASTER_GED_AG100_003",
+            "type": "text/html",
+            "title": "Run the example for NASA/ASTER_GED/AG100_003 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/ASTER_GED/NASA_ASTER_GED_AG100_003_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_ASTER_GED_AG100_003#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/COMMUNITY/ASTER_GED/AG100.003"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/ASTER_GED/NASA_ASTER_GED_AG100_003.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/ASTER_GED/catalog.json",
+            "type": "application/json",
+            "title": "ASTER_GED"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:provider_ids": [
+        "C1000000362-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "ASTER data and products distributed by the LP DAAC, with the exception of\nthe ASTER Global Digital Elevation Model (GDEM) dataset (ASTGTM) version 2\n(v2), have no restrictions on data use, sale, or subsequent redistribution.\nFor more information visit the [ASTER Policies]\n(https://lpdaac.usgs.gov/data/data-citation-and-policies/) site.\n",
+    "gee:type": "image",
+    "keywords": [
+        "aster",
+        "caltech",
+        "elevation",
+        "emissivity",
+        "ged",
+        "geophysical",
+        "infrared",
+        "jpl",
+        "lst",
+        "nasa",
+        "ndvi",
+        "temperature",
+        "thermal"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/COMMUNITY/ASTER_GED/AG100.003"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_ASTER_GED_AG100_003"
+        }
+    ],
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/COMMUNITY/ASTER_GED/AG100.003",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Mean band 10",
+                "gee:scale": 0.001,
+                "name": "emissivity_band10"
+            },
+            {
+                "description": "Mean band 11",
+                "gee:scale": 0.001,
+                "name": "emissivity_band11"
+            },
+            {
+                "description": "Mean band 12",
+                "gee:scale": 0.001,
+                "name": "emissivity_band12"
+            },
+            {
+                "description": "Mean band 13",
+                "gee:scale": 0.001,
+                "name": "emissivity_band13"
+            },
+            {
+                "description": "Mean band 14",
+                "gee:scale": 0.001,
+                "name": "emissivity_band14"
+            },
+            {
+                "description": "Standard deviation band 10",
+                "gee:scale": 0.0001,
+                "name": "emissivity_sdev_band10"
+            },
+            {
+                "description": "Standard deviation band 11",
+                "gee:scale": 0.0001,
+                "name": "emissivity_sdev_band11"
+            },
+            {
+                "description": "Standard deviation band 12",
+                "gee:scale": 0.0001,
+                "name": "emissivity_sdev_band12"
+            },
+            {
+                "description": "Standard deviation band 13",
+                "gee:scale": 0.0001,
+                "name": "emissivity_sdev_band13"
+            },
+            {
+                "description": "Standard deviation band 14",
+                "gee:scale": 0.0001,
+                "name": "emissivity_sdev_band14"
+            },
+            {
+                "description": "Temperature mean",
+                "gee:scale": 0.01,
+                "gee:units": "K",
+                "name": "temperature"
+            },
+            {
+                "description": "Temperature standard deviation",
+                "gee:scale": 0.01,
+                "gee:units": "K",
+                "name": "temperature_sdev"
+            },
+            {
+                "description": "NDVI mean",
+                "gee:scale": 0.01,
+                "name": "ndvi"
+            },
+            {
+                "description": "NDVI standard deviation",
+                "gee:scale": 0.01,
+                "name": "ndvi_sdev"
+            },
+            {
+                "description": "ASTER Global Digital Elevation Model V002",
+                "gee:units": "m",
+                "name": "elevation"
+            },
+            {
+                "description": "Land water map",
+                "gee:classes": [
+                    {
+                        "color": "brown",
+                        "description": "Land",
+                        "value": 1
+                    },
+                    {
+                        "color": "blue",
+                        "description": "Water",
+                        "value": 2
+                    }
+                ],
+                "name": "land_water_map"
+            },
+            {
+                "description": "Number of observations",
+                "gee:units": "Number per pixel",
+                "name": "num_obs"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Elevation",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "elevation"
+                        ],
+                        "max": [
+                            5000
+                        ],
+                        "min": [
+                            -15
+                        ],
+                        "palette": [
+                            "0602ff",
+                            "235cb1",
+                            "307ef3",
+                            "269db1",
+                            "30c8e2",
+                            "32d3ef",
+                            "3ae237",
+                            "b5e22e",
+                            "d6e21f",
+                            "fff705",
+                            "ffd611",
+                            "ffb613",
+                            "ff8b13",
+                            "ff6e08",
+                            "ff500d",
+                            "ff0000",
+                            "de0101",
+                            "c21301"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 37.72,
+                    "lon": 89.12,
+                    "zoom": 3
+                }
+            }
+        ],
+        "gsd": [
+            100
+        ],
+        "elevation": {
+            "minimum": -500,
+            "maximum": 9000
+        },
+        "emissivity_band10": {
+            "minimum": 0,
+            "maximum": 1000
+        },
+        "emissivity_band11": {
+            "minimum": 0,
+            "maximum": 1000
+        },
+        "emissivity_band12": {
+            "minimum": 0,
+            "maximum": 1000
+        },
+        "emissivity_band13": {
+            "minimum": 0,
+            "maximum": 1000
+        },
+        "emissivity_band14": {
+            "minimum": 0,
+            "maximum": 1000
+        },
+        "emissivity_sdev_band10": {
+            "minimum": -1000,
+            "maximum": 1000
+        },
+        "emissivity_sdev_band11": {
+            "minimum": -1000,
+            "maximum": 1000
+        },
+        "emissivity_sdev_band12": {
+            "minimum": -1000,
+            "maximum": 1000
+        },
+        "emissivity_sdev_band13": {
+            "minimum": -1000,
+            "maximum": 1000
+        },
+        "emissivity_sdev_band14": {
+            "minimum": -1000,
+            "maximum": 1000
+        },
+        "ndvi": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "ndvi_sdev": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "num_obs": {
+            "minimum": 0,
+            "maximum": 120
+        },
+        "temperature": {
+            "minimum": 0,
+            "maximum": 65535
+        },
+        "temperature_sdev": {
+            "minimum": 0,
+            "maximum": 65535
+        }
+    },
+    "title": "AG100: ASTER Global Emissivity Dataset 100-meter V003",
+    "version": "V003",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -59,
+                    180,
+                    80
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2008-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

@@ -1,0 +1,188 @@
+{
+    "type": "Collection",
+    "id": "NASA/GIMMS/3GV0",
+    "stac_version": "1.0.0",
+    "description": "GIMMS NDVI is generated from several NOAA's AVHRR sensors for a global\n1/12-degree lat/lon grid. The latest version of the GIMMS NDVI dataset\nis named NDVI3g (third generation GIMMS NDVI from AVHRR sensors).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA_GIMMS_3GV0",
+            "type": "text/html",
+            "title": "Run the example for NASA/GIMMS/3GV0 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/GIMMS/NASA_GIMMS_3GV0_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GIMMS_3GV0#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GIMMS/NASA_GIMMS_3GV0.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GIMMS/catalog.json",
+            "type": "application/json",
+            "title": "GIMMS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 15,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "avhrr",
+        "gimms",
+        "nasa",
+        "ndvi",
+        "noaa",
+        "vegetation"
+    ],
+    "providers": [
+        {
+            "name": "NASA/NOAA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://nex.nasa.gov/nex/projects/1349/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GIMMS_3GV0"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "NDVI",
+                "name": "ndvi"
+            },
+            {
+                "description": "QA flag",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 3,
+                            "description": "QA flag values",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Good value",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Good value",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "NDVI retrieved from spline interpolation",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "NDVI retrieved from spline interpolation, possibly snow",
+                                    "value": 4
+                                },
+                                {
+                                    "description": "NDVI retrieved from average seasonal profile",
+                                    "value": 5
+                                },
+                                {
+                                    "description": "NDVI retrieved from average seasonal profile, possibly snow",
+                                    "value": 6
+                                },
+                                {
+                                    "description": "Missing data",
+                                    "value": 7
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 3
+                },
+                "name": "qa"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "NDVI",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "ndvi"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            -1
+                        ],
+                        "palette": [
+                            "000000",
+                            "f5f5f5",
+                            "119701"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 26.4,
+                    "lon": -88.6,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            9277
+        ],
+        "ndvi": {
+            "minimum": -1,
+            "maximum": 1
+        }
+    },
+    "title": "GIMMS NDVI From AVHRR Sensors (3rd Generation)",
+    "version": "3g.v0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1981-07-01T00:00:00Z",
+                    "2013-12-16T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

@@ -1,0 +1,175 @@
+{
+    "type": "Collection",
+    "id": "USGS/GFSAD1000_V1",
+    "stac_version": "1.0.0",
+    "description": "The GFSAD is a NASA-funded project to provide high-resolution global\ncropland data and their water use that contributes towards global food\nsecurity in the twenty-first century. The GFSAD products are derived\nthrough multi-sensor remote sensing data (e.g., Landsat, MODIS, AVHRR),\nsecondary data, and field-plot data and aims at documenting cropland\ndynamics.\n\nAt a nominal 1km scale, V0.1 provides the spatial distribution of a\ndisaggregated five-class global cropland extent map derived from four\nmajor studies: Thenkabail et al. (2009a, 2011), Pittman et al. (2010),\nYu et al. (2013), and Friedl et al. (2010). V1.0 is a 5-class product that\nprovides information on global cropland extent and irrigated versus rainfed\ncropping. There is no crop type or crop type dominance information. Cropping\nintensity (single, double, triple, and continuous crops) can be obtained for\nevery pixel using time-series remote sensing data. The GFSAD1000 nominal\n2010 product was created with data from 2007 to 2012.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/USGS_GFSAD1000_V1",
+            "type": "text/html",
+            "title": "Run the example for USGS/GFSAD1000_V1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/GFSAD1000/USGS_GFSAD1000_V1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/USGS_GFSAD1000_V1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/GFSAD1000/USGS_GFSAD1000_V1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/GFSAD1000/catalog.json",
+            "type": "application/json",
+            "title": "GFSAD1000"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "Most U.S. Geological Survey (USGS) information resides\nin the public domain and may be used without restriction. Additional\ninformation on [Acknowledging or Crediting USGS as Information\nSource](https://www2.usgs.gov/visual-id/credit_usgs.html) is available.\n",
+    "gee:type": "image",
+    "keywords": [
+        "crop",
+        "cropland",
+        "gfsad",
+        "landcover",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "Global Food Security-support Analysis Data at 30m Project (GFSAD30)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://geography.wr.usgs.gov/science/croplands/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_GFSAD1000_V1"
+        }
+    ],
+    "sci:citation": "[Teluguntla, P., Thenkabail, P.S., Xiong, J., Gumma, M.K., Giri, C., Milesi,\nC., Ozdogan, M., Congalton, R., Tilton, J., Sankey, T.R., Massey, R.,\nPhalke, A., and Yadav, K. 2014. Global Cropland Area Database (GCAD)\nderived from Remote Sensing in Support of Food Security in the Twenty-first\nCentury: Current Achievements and Future Possibilities. Chapter 7, Vol. II.\nLand Resources: Monitoring, Modelling, and Mapping, Remote Sensing Handbook\nedited by Prasad S. Thenkabail. In Press.]\n(https://lpdaac.usgs.gov/documents/173/GFSAD1K_ATBD.pdf)\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Crop mask class descriptions",
+                "gee:classes": [
+                    {
+                        "color": "black",
+                        "description": "Non-croplands",
+                        "value": 0
+                    },
+                    {
+                        "color": "orange",
+                        "description": "Croplands: irrigation major",
+                        "value": 1
+                    },
+                    {
+                        "color": "brown",
+                        "description": "Croplands: irrigation minor",
+                        "value": 2
+                    },
+                    {
+                        "color": "02a50f",
+                        "description": "Croplands: rainfed",
+                        "value": 3
+                    },
+                    {
+                        "color": "green",
+                        "description": "Croplands: rainfed, minor fragments",
+                        "value": 4
+                    },
+                    {
+                        "color": "yellow",
+                        "description": "Croplands: rainfed, very minor fragments",
+                        "value": 5
+                    }
+                ],
+                "name": "landcover"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Crop Mask",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "landcover"
+                        ],
+                        "max": [
+                            5
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "black",
+                            "orange",
+                            "brown",
+                            "02a50f",
+                            "green",
+                            "yellow"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 26.4,
+                    "lon": -88.6,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            1000
+        ],
+        "landcover": {
+            "minimum": 0,
+            "maximum": 9
+        }
+    },
+    "title": "GFSAD1000: Cropland Extent 1km Multi-Study Crop Mask, Global Food-Support Analysis Data",
+    "version": "V1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-01-01T00:00:00Z",
+                    "2010-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

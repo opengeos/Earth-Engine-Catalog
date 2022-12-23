@@ -1,0 +1,315 @@
+{
+    "type": "Collection",
+    "id": "NOAA/CDR/PATMOSX/V53",
+    "stac_version": "1.0.0",
+    "description": "This dataset provides high quality Climate Data Record (CDR) of multiple\ncloud properties along with Advanced Very High Resolution Radiometer (AVHRR)\nPathfinder Atmospheres Extended (PATMOS-x) brightness temperatures and\nreflectances. These data have been fitted to a 0.1 x 0.1 equal angle-grid\nwith both ascending and descending assets generated daily from two to ten\nNOAA and MetOp satellite passes per day.\n\nThis dataset includes 48 bands, 11 of which are deemed CDR quality\n(marked with \"CDR variable\" in the band list).\nThe cloud products are derived using the ABI (Advanced Baseline Imager)\nCloud Height Algorithm (ACHA), and the Daytime Cloud Optical Properties\n(DCOMP) algorithm. For more detail on the processing see the\n[Climate Algorithm Theoretical Basis Document (C-ATBD)](\nhttps://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/AVHRR-HIRS_Reflectance_PATMOS-x/AlgorithmDescription%20_01B-1c.pdf).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_CDR_PATMOSX_V53",
+            "type": "text/html",
+            "title": "Run the example for NOAA/CDR/PATMOSX/V53 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/CDR/NOAA_CDR_PATMOSX_V53_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_PATMOSX_V53#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.7289/V5348HCK"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CDR/NOAA_CDR_PATMOSX_V53.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CDR/catalog.json",
+            "type": "application/json",
+            "title": "CDR"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "The NOAA CDR Program's official distribution point for CDRs is NOAA's\nNational Climatic Data Center which provides sustained, open access and\nactive data management of the CDR packages and related information in\nkeeping with the United States' open data policies and practices as\ndescribed in the President's Memorandum on \\\"Open Data Policy\\\" and pursuant\nto the Executive Order of May 9, 2013, \\\"Making Open and Machine Readable\nthe New Default for Government Information\\\". In line with these policies,\nthe CDR data sets are nonproprietary, publicly available, and no\nrestrictions are placed upon their use. For more information, see the\n[Fair Use of NOAA's CDR Data Sets, Algorithms and Documentation](https://www1.ncdc.noaa.gov/pub/data/sds/cdr/CDRs/Aerosol_Optical_Thickness/UseAgreement_01B-04.pdf)\npdf.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "atmospheric",
+        "avhrr",
+        "brightness",
+        "cdr",
+        "cloud",
+        "metop",
+        "noaa",
+        "optical",
+        "poes",
+        "reflectance",
+        "temperature"
+    ],
+    "providers": [
+        {
+            "name": "NOAA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ncdc.noaa.gov/cdr/atmospheric/avhrr-cloud-properties-patmos-x"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_PATMOSX_V53"
+        }
+    ],
+    "sci:citation": "For the TOA Reflectances and Brightness Temperatures users must cite:\nAndrew K. Heidinger, Michael J. Foster, Andi Walther, Xuepeng Zhao, and\nNOAA CDR Program (2014): NOAA Climate Data Record (CDR) of Reflectance\nand Brightness Temperatures from AVHRR Pathfinder Atmospheres - Extended\n(PATMOS-x), Version 5.3. [indicate subset used]. NOAA National Centers for\nEnvironmental Information.\n[doi:10.7289/V56W982J](https://doi.org/10.7289/V56W982J)\n[access date].\n",
+    "sci:doi": "10.7289/V5348HCK",
+    "sci:publications": [
+        {
+            "citation": "For the cloud properties users must cite: Andrew K. Heidinger, Michael J.\nFoster, Andi Walther, Xuepeng Zhao, and NOAA CDR Program (2014): NOAA\nClimate Data Record (CDR) of Cloud Properties from AVHRR Pathfinder\nAtmospheres - Extended (PATMOS-x), Version 5.3. [indicate subset used].\nNOAA National Centers for Environmental Information.\n[doi:10.7289/V5348HCK](https://doi.org/10.7289/V5348HCK)\n[access date].\n",
+            "doi": "10.7289/V5348HCK"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "'ascending' or 'descending'",
+                "name": "orbit_node",
+                "type": "STRING"
+            },
+            {
+                "description": "Name of platform",
+                "name": "platform",
+                "type": "STRING"
+            },
+            {
+                "description": "'provisional' or 'permanent'",
+                "name": "status",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Cloud Emissivity and Height",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "cld_emiss_acha",
+                            "cld_height_acha",
+                            "cld_height_uncer_acha"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 71.72,
+                    "lon": 52.48,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            11132
+        ],
+        "instruments": [
+            "AVHRR"
+        ],
+        "platform": [
+            "MetOP",
+            "NOAA"
+        ],
+        "cld_emiss_acha": {
+            "minimum": -127,
+            "maximum": 127
+        },
+        "cld_height_acha": {
+            "minimum": -32767,
+            "maximum": 32767
+        },
+        "cld_height_uncer_acha": {
+            "minimum": -127,
+            "maximum": 127
+        },
+        "cld_opd_acha": {
+            "minimum": -127,
+            "maximum": 127
+        },
+        "cld_opd_dcomp": {
+            "minimum": -32685,
+            "maximum": 32149
+        },
+        "cld_opd_dcomp_unc": {
+            "minimum": -32685,
+            "maximum": -32276
+        },
+        "cld_press_acha": {
+            "minimum": -32767,
+            "maximum": 32767
+        },
+        "cld_reff_acha": {
+            "minimum": -127,
+            "maximum": 127
+        },
+        "cld_reff_dcomp": {
+            "minimum": -32767,
+            "maximum": 32767
+        },
+        "cld_reff_dcomp_unc": {
+            "minimum": -32767,
+            "maximum": -32357
+        },
+        "cld_temp_acha": {
+            "minimum": -32767,
+            "maximum": 32767
+        },
+        "cloud_fraction": {
+            "minimum": -127,
+            "maximum": 127
+        },
+        "cloud_fraction_uncertainty": {
+            "minimum": -127,
+            "maximum": 0
+        },
+        "cloud_probability": {
+            "minimum": -127,
+            "maximum": 127
+        },
+        "cloud_transmission_0_65um": {
+            "minimum": -127,
+            "maximum": 127
+        },
+        "cloud_water_path": {
+            "minimum": -127,
+            "maximum": 127
+        },
+        "refl_0_65um": {
+            "minimum": -32767,
+            "maximum": 32767
+        },
+        "refl_0_65um_counts": {
+            "minimum": -21,
+            "maximum": 1017
+        },
+        "refl_0_65um_stddev_3x3": {
+            "minimum": -127,
+            "maximum": 127
+        },
+        "refl_0_86um": {
+            "minimum": -32767,
+            "maximum": 32767
+        },
+        "refl_0_86um_counts": {
+            "minimum": -21,
+            "maximum": 1016
+        },
+        "refl_1_60um": {
+            "minimum": -32767,
+            "maximum": 32767
+        },
+        "refl_1_60um_counts": {
+            "minimum": -12,
+            "maximum": 1629
+        },
+        "refl_3_75um": {
+            "minimum": -32767,
+            "maximum": 32767
+        },
+        "relative_azimuth_angle": {
+            "minimum": -127,
+            "maximum": 127
+        },
+        "scan_element_number": {
+            "minimum": -999,
+            "maximum": 409
+        },
+        "scan_line_number": {
+            "minimum": -999,
+            "maximum": 13835
+        },
+        "scan_line_time": {
+            "minimum": 0,
+            "maximum": 23.99
+        },
+        "sensor_zenith_angle": {
+            "minimum": -127,
+            "maximum": 68
+        },
+        "solar_azimuth_angle": {
+            "minimum": -127,
+            "maximum": 127
+        },
+        "solar_zenith_angle": {
+            "minimum": -101,
+            "maximum": 101
+        },
+        "surface_temperature_retrieved": {
+            "minimum": -127,
+            "maximum": 127
+        },
+        "temp_11_0um": {
+            "minimum": -32767,
+            "maximum": 32767
+        },
+        "temp_11_0um_clear_sky": {
+            "minimum": -30853,
+            "maximum": 32767
+        },
+        "temp_11_0um_stddev_3x3": {
+            "minimum": -127,
+            "maximum": 127
+        },
+        "temp_12_0um": {
+            "minimum": -32767,
+            "maximum": 32767
+        },
+        "temp_3_75um": {
+            "minimum": -32767,
+            "maximum": 32767
+        }
+    },
+    "title": "NOAA CDR PATMOSX: Cloud Properties, Reflectance, and Brightness Temperatures, Version 5.3",
+    "version": "V5.3",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1979-01-01T00:00:00Z",
+                    "2022-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

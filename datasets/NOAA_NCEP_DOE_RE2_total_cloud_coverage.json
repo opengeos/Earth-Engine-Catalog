@@ -1,0 +1,152 @@
+{
+    "type": "Collection",
+    "id": "NOAA/NCEP_DOE_RE2/total_cloud_coverage",
+    "stac_version": "1.0.0",
+    "description": "NCEP-DOE Reanalysis 2 project is using a state-of-the-art analysis/forecast system to perform\ndata assimilation using past data from 1979 through the previous year.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_NCEP_DOE_RE2_total_cloud_coverage",
+            "type": "text/html",
+            "title": "Run the example for NOAA/NCEP_DOE_RE2/total_cloud_coverage in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NCEP_DOE_RE2/NOAA_NCEP_DOE_RE2_total_cloud_coverage_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_NCEP_DOE_RE2_total_cloud_coverage#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NCEP_DOE_RE2/NOAA_NCEP_DOE_RE2_total_cloud_coverage.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NCEP_DOE_RE2/catalog.json",
+            "type": "application/json",
+            "title": "NCEP_DOE_RE2"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 6,
+        "type": "cadence",
+        "unit": "hour"
+    },
+    "gee:terms_of_use": "There are no restrictions on the use of these datasets.",
+    "gee:type": "image_collection",
+    "keywords": [
+        "atmosphere",
+        "climate",
+        "cloud",
+        "geophysical",
+        "ncep",
+        "noaa",
+        "reanalysis"
+    ],
+    "providers": [
+        {
+            "name": "NOAA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://psl.noaa.gov/data/gridded/data.ncep.reanalysis2.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_NCEP_DOE_RE2_total_cloud_coverage"
+        }
+    ],
+    "sci:citation": "[NCEP-DOE AMIP-II Reanalysis (R-2): M. Kanamitsu, W. Ebisuzaki, J. Woollen, S-K Yang,\nJ.J. Hnilo, M. Fiorino, and G. L. Potter. 1631-1643, Nov 2002, Bulletin of the American\nMeteorological Society.](https://journals.ametsoc.org/view/journals/bams/83/11/bams-83-11-1631.xml).\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Total cloud cover",
+                "gee:units": "%",
+                "name": "tcdc"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Total Cloud Coverage",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "tcdc"
+                        ],
+                        "max": [
+                            100
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "black",
+                            "blue",
+                            "purple",
+                            "cyan",
+                            "green",
+                            "yellow",
+                            "red"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 26.4,
+                    "lon": -88.6,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            278300
+        ],
+        "tcdc": {
+            "minimum": 0,
+            "maximum": 100
+        }
+    },
+    "title": "NCEP-DOE Reanalysis 2 (Gaussian Grid), Total Cloud Coverage",
+    "version": "1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1979-01-01T00:00:00Z",
+                    "2022-11-30T18:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

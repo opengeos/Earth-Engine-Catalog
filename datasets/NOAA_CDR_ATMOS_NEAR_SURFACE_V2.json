@@ -1,0 +1,239 @@
+{
+    "type": "Collection",
+    "id": "NOAA/CDR/ATMOS_NEAR_SURFACE/V2",
+    "stac_version": "1.0.0",
+    "description": "The Ocean Near-Surface Atmospheric Properties dataset is part of the NOAA\nOcean Surface Bundle (OSB) and provides a high quality Climate Data Record\n(CDR) of air temperature, wind speed, and specific humidity over ice-free\nocean surfaces.\n\nThese atmospheric properties are calculated based on brightness temperature\ndata from the Special Sensor Microwave/Imager (SSM/I) and the Special Sensor\nMicrowave/Imager Sounder (SSMIS) on the Defense Meteorological Satellite\nProgram (DMSP) spacecraft, using a neural network.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_CDR_ATMOS_NEAR_SURFACE_V2",
+            "type": "text/html",
+            "title": "Run the example for NOAA/CDR/ATMOS_NEAR_SURFACE/V2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/CDR/NOAA_CDR_ATMOS_NEAR_SURFACE_V2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_ATMOS_NEAR_SURFACE_V2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.7289/V55T3HH0"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CDR/NOAA_CDR_ATMOS_NEAR_SURFACE_V2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CDR/catalog.json",
+            "type": "application/json",
+            "title": "CDR"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 3,
+        "type": "cadence",
+        "unit": "hour"
+    },
+    "gee:terms_of_use": "The NOAA CDR Program's official distribution point for CDRs is NOAA's\nNational Climatic Data Center which provides sustained, open access and\nactive data management of the CDR packages and related information in\nkeeping with the United States' open data policies and practices as\ndescribed in the President's Memorandum on \\\"Open Data Policy\\\" and pursuant\nto the Executive Order of May 9, 2013, \\\"Making Open and Machine Readable\nthe New Default for Government Information\\\". In line with these policies,\nthe CDR data sets are nonproprietary, publicly available, and no\nrestrictions are placed upon their use. For more information, see the\n[Fair Use of NOAA's CDR Data Sets, Algorithms and Documentation](https://www1.ncdc.noaa.gov/pub/data/sds/cdr/CDRs/Aerosol_Optical_Thickness/UseAgreement_01B-04.pdf)\npdf.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "air_temperature",
+        "atmospheric",
+        "cdr",
+        "hourly",
+        "humidity",
+        "noaa",
+        "ocean",
+        "osb",
+        "wind"
+    ],
+    "providers": [
+        {
+            "name": "NOAA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ncdc.noaa.gov/cdr/atmospheric/ocean-near-surface-atmospheric-properties"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_ATMOS_NEAR_SURFACE_V2"
+        }
+    ],
+    "sci:citation": "Clayson, Carol Anne, Brown, Jeremiah, and NOAA CDR Program (2016). NOAA\nClimate Data Record Ocean Surface Bundle (OSB) Climate Data Record\n(CDR) of Near-surface Atmospheric Properties, Version 2. [indicate subset\nused]. NOAA National ClimaticData Center. [doi:10.7289/V55T3HH0](https://doi.org/10.7289/V55T3HH0).\n",
+    "sci:doi": "10.7289/V55T3HH0",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Air temperature at 10m",
+                "gee:units": "\u00b0C",
+                "name": "air_temperature"
+            },
+            {
+                "description": "Specific humidity at 10m",
+                "gee:units": "g/kg",
+                "name": "specific_humidity"
+            },
+            {
+                "description": "Wind speed at 10m",
+                "gee:units": "m/s",
+                "name": "wind_speed"
+            },
+            {
+                "description": "Quality control flags",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 3,
+                            "description": "Quality control flags",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Pixel values from neural network",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Unused flag",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Snow/ice",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Over land",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Over lake",
+                                    "value": 4
+                                },
+                                {
+                                    "description": "Failed interpolation",
+                                    "value": 5
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 3
+                },
+                "name": "fill_missing_qc"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Air Temperature",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "air_temperature"
+                        ],
+                        "max": [
+                            30
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "040274",
+                            "040281",
+                            "0502a3",
+                            "0502b8",
+                            "0502ce",
+                            "0502e6",
+                            "0602ff",
+                            "235cb1",
+                            "307ef3",
+                            "269db1",
+                            "30c8e2",
+                            "32d3ef",
+                            "3be285",
+                            "3ff38f",
+                            "86e26f",
+                            "3ae237",
+                            "b5e22e",
+                            "d6e21f",
+                            "fff705",
+                            "ffd611",
+                            "ffb613",
+                            "ff8b13",
+                            "ff6e08",
+                            "ff500d",
+                            "ff0000",
+                            "de0101",
+                            "c21301",
+                            "a71001",
+                            "911003"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -28.1,
+                    "lon": 28.3,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            27830
+        ],
+        "air_temperature": {
+            "minimum": -42.16,
+            "maximum": 42.77
+        },
+        "specific_humidity": {
+            "minimum": 0.07,
+            "maximum": 37.06
+        },
+        "wind_speed": {
+            "minimum": 0.13,
+            "maximum": 71.45
+        }
+    },
+    "title": "NOAA CDR: Ocean Near-Surface Atmospheric Properties, Version 2",
+    "version": "V2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1988-01-01T00:00:00Z",
+                    "2021-08-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

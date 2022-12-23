@@ -1,0 +1,134 @@
+{
+    "type": "Collection",
+    "id": "USGS/GAP/PAD-US/v20/easement",
+    "stac_version": "1.0.0",
+    "description": "PAD-US is America's official national inventory of U.S. terrestrial and\nmarine protected areas that are dedicated to the preservation of biological\ndiversity and to other natural, recreation and cultural uses, managed for these\npurposes through legal or other effective means.  This database is separated\ninto 4 separate table assets: designation, easement, fee, and proclamation.\n\nThe 'Easement' asset contains non-sensitive data provided directly from the\n[National Conservation Easement Database (NCED)](https://conservationeasement.us)\nsuitable for distribution in the public domain. The FLWG provides all Federal\neasements. NCED estimates 5 percent of all easements are withheld from PAD-US\nas sensitive. The 'Easement' feature class contains some attributes unique to\nNCED (e.g. Easement Holder Name).\n\nThe PAD-US database strives to be a complete inventory of areas dedicated to\nthe preservation of biological diversity, and other natural (including\nextraction), recreational or cultural uses, managed for these purposes through\nlegal or other effective means.  PAD-US is an aggregation of \\\"best available\\\"\nspatial data provided by agencies and organizations at a point in time.  This\nincludes both fee ownership of lands as well as management through leases,\neasements, or other binding agreements.  The data also tracks Congressional\ndesignations, Executive designations, and administrative designations\nidentified in management plans (e.g. Bureau of Land Management's 'Area of\nEnvironmental Concern').  These factors provide for a robust dataset offering a\nspatial representation of the complex U.S. protected areas network.  It is\nimportant to have in mind a specific analysis question when approaching how to\nwork with the data.  As a full inventory of areas aggregated from authoritative\nsource data, PAD-US includes overlapping designation types and small boundary\ndiscrepancies between agency datasets.  Overlapping designations largely occur\nin the Federal estate of the 'Designation' or 'Combined' feature classes (e.g.\n'Wilderness Area' over a 'Wild and Scenic River' and 'National Forest').\n\nIt is important to note the presence of overlaps, especially when trying to\ncalculate area statistics; overlapping boundaries count the same area of ground\nmultiple times.  While minor boundary discrepancies remain, most major overlaps\nhave been removed from the 'Fee' asset and this is the best source for\noverall land area calculations by land manager ('Manager Name') within the\nPAD-US database (data gaps limit calculations by fee ownership or 'Owner\nName').  Statistics summarizing 'Public Access' or Protection Status ('GAP\nStatus Code') by managing agency or organization from an analysis of the PAD-US\n1.4 'Combined' feature class are [available](https://www.usgs.gov/core-science-systems/science-analytics-and-synthesis/gap/science/pad-us-statistics-and-reports)\nand will be updated with PAD-US 2.0.  As the PAD-US database is a direct\naggregation of source data, the PAD-US development team does not alter spatial\nlinework.  The exception is to \\\"clip\\\" lands data along State boundary lines\n(using the authoritative State boundary file provided by the U.S. Census\nBureau) and remove the small segments of boundaries created by this process\nassociated with State or local lands (not Federal or nonprofit lands).  Some\nboundary discrepancies (or slivers) remain in the dataset.  Data overlaps have\nbeen identified and are shared, along with the U.S. Census Bureau State\njurisdictional boundary file, with agency data stewards to facilitate edits in\nsource files that will then be incorporated in subsequent PAD-US versions over\ntime. The PAD-US database is built in collaboration with many partners and\ndata stewards.\n[Information regarding data stewards is available](https://www.usgs.gov/core-science-systems/science-analytics-and-synthesis/gap/science/pad-us-data-stewards).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/USGS_GAP_PAD-US_v20_easement",
+            "type": "text/html",
+            "title": "Run the example for USGS/GAP/PAD-US/v20/easement in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/GAP/USGS_GAP_PAD-US_v20_easement_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/USGS_GAP_PAD-US_v20_easement#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5066/P955KPLE"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/GAP/USGS_GAP_PAD-US_v20_easement.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/GAP/catalog.json",
+            "type": "application/json",
+            "title": "GAP"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The Digital Object Identifier [doi:10.5066/P955KPLE](https://doi.org/10.5066/P955KPLE) for PAD-US 2.0\nprovides the persistent reference that should be used to obtain the data for\nuse. The U.S. Geological Survey and all contributing data partners shall not be\nheld liable for improper or incorrect use of the data described and (or)\ncontained herein. All information is created with a specific end use or uses in\nmind. This is especially true for GIS data, which is expensive to produce and\nmust be directed to meet the immediate program needs. These data were created\nwith the expectation that they would be used for other applications; however,\ninappropriate uses are listed below. This list is in no way exhaustive but\nshould serve as a guide to assess whether a proposed use can or cannot be\nsupported by these data. For many uses, it is unlikely that PAD-US will provide\nthe only data needed, and for uses with a regulatory outcome, authoritative\nagency data and field surveys should verify the result. PAD-US is recommended\nfor users seeking basic information about more than one agency or organizations\nlands. Users should seek authoritative source data directly to answer questions\nregarding one agency or those requiring more frequent updates. Ultimately, it\nwill be the responsibility of each data user to determine if these data can\nanswer the question being asked. Inappropriate uses include: Using PAD-US for\napplications or analyses associated with one agency or a particular unit\n(agencies are always the best and authoritative source of their lands data and\nmany publish updates more frequently than PAD-US). Using some data to map small\nareas (less than thousands of hectares), typically requiring mapping resolution\nat 1:24,000 scale (as boundary quality varies by data source) and using aerial\nphotographs or ground surveys in areas where data are incomplete. Combining\nthese data with other data finer than 1:100,000 scale to produce new hybrid\nmaps or answer queries. Generating specific areal measurements from the data\nfiner than the nearest thousand hectares. Representing boundaries as a legal\nrepresentation for regulation or acquisition. Establishing definite occurrence\nor non-occurrence of any feature for an exact geographic area. Determining\nabundance, health, or condition of any feature. Using the data without\nacquiring and reviewing the metadata.\n",
+    "gee:type": "table",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "conservation_easements",
+        "designation",
+        "management",
+        "ownership",
+        "protected_areas",
+        "public_lands",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "US Geological Survey",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.usgs.gov/core-science-systems/science-analytics-and-synthesis/gap/science/protected-areas"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_GAP_PAD-US_v20_easement"
+        }
+    ],
+    "sci:citation": "U.S. Geological Survey (USGS) Gap Analysis Project (GAP), 2018,\nProtected Areas Database of the United States (PAD-US): U.S.\nGeological Survey data release, [doi:10.5066/P955KPLE](https://doi.org/10.5066/P955KPLE).\n",
+    "sci:doi": "10.5066/P955KPLE",
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Features",
+                "lookat": {
+                    "lat": 43,
+                    "lon": -73,
+                    "zoom": 8
+                },
+                "table_visualization": {
+                    "color": "0000be",
+                    "fill_color": "000070",
+                    "width": 3
+                }
+            },
+            {
+                "display_name": "Features",
+                "visualize_as": "FeatureView"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 16000,
+            "prerender_tiles": true,
+            "thinning_ranking": [
+                "GIS_Acres DESC"
+            ],
+            "thinning_strategy": "HIGHER_DENSITY",
+            "z_order_ranking": [
+                "GIS_Acres DESC"
+            ]
+        }
+    },
+    "title": "Easement: USGS GAP PAD-US v2.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-09-01T00:00:00Z",
+                    "2018-09-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

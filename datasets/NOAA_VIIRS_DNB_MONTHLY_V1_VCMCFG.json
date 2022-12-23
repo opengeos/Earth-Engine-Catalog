@@ -1,0 +1,150 @@
+{
+    "type": "Collection",
+    "id": "NOAA/VIIRS/DNB/MONTHLY_V1/VCMCFG",
+    "stac_version": "1.0.0",
+    "description": "Monthly average radiance composite images using nighttime data from the\nVisible Infrared Imaging Radiometer Suite (VIIRS) Day/Night Band (DNB).\n\nAs these data are composited monthly, there are many areas of the globe\nwhere it is impossible to get good quality data coverage for that month.\nThis can be due to cloud cover, especially in the tropical regions, or due\nto solar illumination, as happens toward the poles in their respective\nsummer months. Therefore it is recommended that users of these data utilize\nthe 'cf_cvg' band and not assume a value of zero in the average radiance\nimage means that no lights were observed.\n\nCloud cover is determined using the VIIRS Cloud\nMask product (VCM). In addition, data near the edges of the swath are not\nincluded in the composites (aggregation zones 29-32). Version 1 has NOT\nbeen filtered to screen out lights from aurora, fires, boats, and other\ntemporal lights. This separation is under development and will be included\nin a later version of this time series. Also in development is a method to\nseparate lights from background (non-light) values.\n\nPrior to averaging, the DNB data is filtered to exclude data impacted by\nstray light, lightning, lunar illumination, and cloud-cover.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_VIIRS_DNB_MONTHLY_V1_VCMCFG",
+            "type": "text/html",
+            "title": "Run the example for NOAA/VIIRS/DNB/MONTHLY_V1/VCMCFG in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/VIIRS/NOAA_VIIRS_DNB_MONTHLY_V1_VCMCFG_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_DNB_MONTHLY_V1_VCMCFG#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/VIIRS/NOAA_VIIRS_DNB_MONTHLY_V1_VCMCFG.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/VIIRS/catalog.json",
+            "type": "application/json",
+            "title": "VIIRS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "month"
+    },
+    "gee:terms_of_use": "Colorado School of Mines data, information, and products,\nregardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use. The\nforgoing data is in the public domain and is being provided without\nrestriction on use and distribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "dnb",
+        "eog",
+        "lights",
+        "monthly",
+        "nighttime",
+        "noaa",
+        "viirs",
+        "visible"
+    ],
+    "providers": [
+        {
+            "name": "Earth Observation Group, Payne Institute for Public Policy, Colorado School of Mines",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://eogdata.mines.edu/download_dnb_composites.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_DNB_MONTHLY_V1_VCMCFG"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Average DNB radiance values.",
+                "gee:units": "nanoWatts/cm2/sr",
+                "name": "avg_rad"
+            },
+            {
+                "description": "Cloud-free coverages; the total number of observations that\nwent into each pixel. This band can be used to identify areas with low\nnumbers of observations where the quality is reduced.\n",
+                "name": "cf_cvg"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Nighttime",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "avg_rad"
+                        ],
+                        "max": [
+                            60
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 45.83,
+                    "lon": 1.76,
+                    "zoom": 4
+                }
+            }
+        ],
+        "gsd": [
+            463.83
+        ],
+        "avg_rad": {
+            "minimum": -1.5,
+            "maximum": 340572.84
+        },
+        "cf_cvg": {
+            "minimum": 0,
+            "maximum": 58
+        }
+    },
+    "title": "VIIRS Nighttime Day/Night Band Composites Version 1",
+    "version": "Version 1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -65,
+                    180,
+                    75
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-04-01T00:00:00Z",
+                    "2022-06-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

@@ -1,0 +1,161 @@
+{
+    "type": "Collection",
+    "id": "USGS/3DEP/1m",
+    "stac_version": "1.0.0",
+    "description": "This is a tiled collection of images with 1m pixel size from the 3D\nElevation Program (3DEP). The 3DEP data holdings serve as the elevation\nlayer of The National Map and provide foundational elevation information for\nearth science studies and mapping applications in the United States.\n\nThe elevations in this DEM represent the topographic bare-earth surface.\nUSGS standard 1m pixel size DEMs are produced exclusively from high\nresolution light detection and ranging (lidar) source data of images with 1m\npixel size or higher resolution. 1m pixel size DEM surfaces are seamless\nwithin collection projects but not necessarily seamless across projects.\nThe spatial reference used for tiles of the 1m pixel size DEM within the\nconterminous United States (CONUS) is Universal Transverse Mercator (UTM) in\nunits of meters and in conformance with the North American Datum of 1983\n(NAD83). All bare earth elevation values are in meters and are referenced to\nthe North American Vertical Datum of 1988 (NAVD88). Each tile is distributed\nin the UTM Zone in which it lies. If a tile crosses two UTM zones, it is\ndelivered in both zones.\nIn this and other cases of image overlaps, elevation values might be\nslightly different in different images covering the same area.\n\nThe 1m pixel size DEM is the highest resolution standard DEM offered in the\n3DEP product suite. The 10m 3DEP dataset is available at\n[USGS_3DEP_10m](USGS_3DEP_10m).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/USGS_3DEP_1m",
+            "type": "text/html",
+            "title": "Run the example for USGS/3DEP/1m in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/3DEP/USGS_3DEP_1m_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/USGS_3DEP_1m#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://www.usgs.gov/information-policies-and-instructions/crediting-usgs",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "s3://prd-tnm/StagedProducts/Elevation/1m/Projects"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/3DEP/USGS_3DEP_1m.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/3DEP/catalog.json",
+            "type": "application/json",
+            "title": "3DEP"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "Most U.S. Geological Survey (USGS) information resides\nin the public domain and may be used without restriction. Additional\ninformation on [Acknowledging or Crediting USGS as Information\nSource](https://www.usgs.gov/information-policies-and-instructions/crediting-usgs)\nis available.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "3dep",
+        "dem",
+        "elevation",
+        "geophysical",
+        "topography",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "United States Geological Survey",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.sciencebase.gov/catalog/item/543e6b86e4b0fd76af69cf4c"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_3DEP_1m"
+        }
+    ],
+    "sci:citation": "U.S. Geological Survey, 3D Elevation Program 1-Meter Resolution Digital\nElevation Model.\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Elevation (NAVD88)",
+                "gee:units": "m",
+                "gsd": 1,
+                "name": "elevation"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Elevation",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "elevation"
+                        ],
+                        "max": [
+                            3000
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "3ae237",
+                            "b5e22e",
+                            "d6e21f",
+                            "fff705",
+                            "ffd611",
+                            "ffb613",
+                            "ff8b13",
+                            "ff6e08",
+                            "ff500d",
+                            "ff0000",
+                            "de0101",
+                            "c21301",
+                            "0602ff",
+                            "235cb1",
+                            "307ef3",
+                            "269db1",
+                            "30c8e2",
+                            "32d3ef",
+                            "3be285",
+                            "3ff38f",
+                            "86e26f"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 35.87,
+                    "lon": -115.11,
+                    "zoom": 10
+                }
+            }
+        ]
+    },
+    "title": "USGS 3DEP 1m National Map",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -171,
+                    -16.6,
+                    164,
+                    76.9
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1998-08-16T00:00:00Z",
+                    "2020-05-06T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

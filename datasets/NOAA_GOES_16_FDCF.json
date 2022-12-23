@@ -1,0 +1,293 @@
+{
+    "type": "Collection",
+    "id": "NOAA/GOES/16/FDCF",
+    "stac_version": "1.0.0",
+    "description": "[GOES](https://www.goes.noaa.gov) satellites are geostationary weather satellites run by NOAA.\n\nThe Fire (HSC) product contains four images: one in the form\nof a fire mask and the other three with pixel values identifying fire temperature, fire area,\nand fire radiative power.\n\nThe ABI L2+ FHS metadata mask assigns a flag to every earth-navigated pixel\nthat indicates its disposition with respect to the FHS algorithm. Operational users who have\nthe lowest tolerance for false alarms should focus on the \"processed\" and\n\"saturated\" categories (mask codes 10, 11, 30, and 31), but within these categories there\ncan still be false alarms.\n\n[README](https://www.ncdc.noaa.gov/data-access/satellite-data/goes-r-series-satellites#FDC)\n\nNOAA provides the following scripts for suggested categories,\ncolor maps, and visualizations:\n\n - [GOES-16-17_FireDetection.js](https://github.com/google/earthengine-community/blob/master/datasets/scripts/GOES-16-17_FireDetection.js)\n - [GOES-16-17_FireReclassification.js](https://github.com/google/earthengine-community/blob/master/datasets/scripts/GOES-16-17_FireReclassification.js)\n\nNOAA's Office of Satellite and Product Operations has a\n[General Satellite Messages](https://www.ospo.noaa.gov/Operations/messages.html](https://www.ospo.noaa.gov/Operations/messages.html)\nchannel with status updates.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_GOES_16_FDCF",
+            "type": "text/html",
+            "title": "Run the example for NOAA/GOES/16/FDCF in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/GOES/NOAA_GOES_16_FDCF_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_GOES_16_FDCF#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://console.cloud.google.com/storage/browser/gcp-public-data-goes-16/ABI-L2-FDCF/"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/GOES/NOAA_GOES_16_FDCF.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/GOES/catalog.json",
+            "type": "application/json",
+            "title": "GOES"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 10,
+        "type": "cadence",
+        "unit": "minute"
+    },
+    "gee:terms_of_use": "NOAA data, information, and products, regardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "abi",
+        "climate",
+        "fdc",
+        "fire",
+        "goes",
+        "goes_16",
+        "goes_east",
+        "goes_r",
+        "hotspot",
+        "nesdis",
+        "noaa",
+        "ospo",
+        "wildfire"
+    ],
+    "providers": [
+        {
+            "name": "NOAA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://data.noaa.gov/dataset/dataset/noaa-goes-r-series-advanced-baseline-imager-abi-level-2-fire-hot-spot-characterization-fdc"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_GOES_16_FDCF"
+        }
+    ],
+    "sci:citation": "Early characterization of the active fire detection products derived from the next generation\nNPOESS/VIIRS and GOES-R/ABI instruments.  Schroeder, W., Csiszar, I., et al, (2010), Early\ncharacterization of the active fire detection products derived from the next generation\nNPOESS/VIIRS and GOES-R/ABI instruments, paper presented at 2010 IEEE International Geoscience\nand Remote Sensing Symposium (IGARSS), Honolulu, HI.\n[doi:10.1109/IGARSS.2010.5650863](https://doi.org/10.1109/IGARSS.2010.5650863)\n",
+    "sci:publications": [
+        {
+            "citation": "Schmit, T., Griffith, P., et al, (2016), A closer look at the ABI on the GOES-R series, Bull.\nAmer. Meteor. Soc., 98(4), 681-698.\n[doi:10.1175/BAMS-D-15-00230.1](https://doi.org/10.1175/BAMS-D-15-00230.1)\n",
+            "doi": "10.1175/BAMS-D-15-00230.1"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Fire area",
+                "gee:offset": 4000,
+                "gee:scale": 60.98,
+                "gee:units": "m^2",
+                "name": "Area"
+            },
+            {
+                "description": "Fire temperature",
+                "gee:offset": 400,
+                "gee:scale": 0.05493667,
+                "gee:units": "K",
+                "name": "Temp"
+            },
+            {
+                "description": "Fire mask categories.  Pixel values in the fire mask image\nidentify a fire category and diagnostic information associated\nwith algorithm execution. The six fire categories include: Good\nquality or temporally filtered good quality fire pixel;\nSaturated fire pixel or temporally filtered saturated fire\npixel; Cloud contaminated or temporally filtered cloud\ncontaminated fire pixel; High probability or temporally filtered\nhigh probability fire pixel; Medium probability or temporally\nfiltered high probability fire pixel; Low probability or\ntemporally filtered high probability fire. Temporally filtered\nfire pixels are those resulting from fire pixels that are in\nclose proximity in both space and time.\n",
+                "gee:classes": [
+                    {
+                        "color": "red",
+                        "description": "Processed fire",
+                        "value": 10
+                    },
+                    {
+                        "color": "white",
+                        "description": "Saturated fire",
+                        "value": 11
+                    },
+                    {
+                        "color": "slategray",
+                        "description": "Cloud contaminated fire",
+                        "value": 12
+                    },
+                    {
+                        "color": "orange",
+                        "description": "High probability fire",
+                        "value": 13
+                    },
+                    {
+                        "color": "violet",
+                        "description": "Medium probability fire",
+                        "value": 14
+                    },
+                    {
+                        "color": "blue",
+                        "description": "Low probability fire",
+                        "value": 15
+                    },
+                    {
+                        "color": "darkred",
+                        "description": "Processed fire, filtered",
+                        "value": 30
+                    },
+                    {
+                        "color": "ghostwhite",
+                        "description": "Saturated fire, filtered",
+                        "value": 31
+                    },
+                    {
+                        "color": "darkslategray",
+                        "description": "Cloud contaminated fire, filtered",
+                        "value": 32
+                    },
+                    {
+                        "color": "darkorange",
+                        "description": "High probability fire, filtered",
+                        "value": 33
+                    },
+                    {
+                        "color": "darkviolet",
+                        "description": "Medium probability fire, filtered",
+                        "value": 34
+                    },
+                    {
+                        "color": "darkblue",
+                        "description": "Low probability fire, filtered",
+                        "value": 35
+                    }
+                ],
+                "name": "Mask"
+            },
+            {
+                "description": "Fire radiative power",
+                "gee:units": "MW",
+                "name": "Power"
+            },
+            {
+                "description": "Data quality flags",
+                "gee:classes": [
+                    {
+                        "color": "ffffff",
+                        "description": "Good quality fire",
+                        "value": 0
+                    },
+                    {
+                        "color": "ff00ff",
+                        "description": "Good quality fire-free land",
+                        "value": 1
+                    },
+                    {
+                        "color": "0000ff",
+                        "description": "Invalid due to opaque cloud",
+                        "value": 2
+                    },
+                    {
+                        "color": "00ffff",
+                        "description": "Invalid due to surface type or sunglint or LZA threshold exceeded or off earth or missing input data",
+                        "value": 3
+                    },
+                    {
+                        "color": "ffff00",
+                        "description": "Invalid due to bad input data",
+                        "value": 4
+                    },
+                    {
+                        "color": "ff0000",
+                        "description": "Invalid due to algorithm failure",
+                        "value": 5
+                    }
+                ],
+                "name": "DQF"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Data Quality Flags (DQF)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "DQF"
+                        ],
+                        "max": [
+                            5
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "blanchedalmond",
+                            "olive",
+                            "teal",
+                            "darkslateblue",
+                            "lemonchiffon",
+                            "burlywood"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 15.61,
+                    "lon": -75,
+                    "zoom": 3
+                }
+            }
+        ],
+        "gsd": [
+            2000
+        ],
+        "Area": {
+            "minimum": 0,
+            "maximum": 16723
+        },
+        "DQF": {
+            "minimum": 0,
+            "maximum": 5
+        },
+        "Power": {
+            "minimum": 0,
+            "maximum": 200000
+        },
+        "Temp": {
+            "minimum": 0,
+            "maximum": 32642
+        }
+    },
+    "title": "GOES-16 FDCF Series ABI Level 2 Fire/Hot Spot Characterization Full Disk",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-05-24T00:00:00Z",
+                    "2022-12-22T22:20:20Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

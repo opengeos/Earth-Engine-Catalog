@@ -1,0 +1,312 @@
+{
+    "type": "Collection",
+    "id": "NASA/GLDAS/V20/NOAH/G025/T3H",
+    "stac_version": "1.0.0",
+    "description": "NASA Global Land Data Assimilation System Version 2 (GLDAS-2) has three\ncomponents: GLDAS-2.0, GLDAS-2.1, and GLDAS-2.2. GLDAS-2.0 is forced entirely\nwith the Princeton meteorological forcing input data and provides a temporally\nconsistent series from 1948 through 2014. GLDAS-2.1 is forced with a combination\nof model and observation data from 2000 to present. GLDAS-2.2 product suites use\ndata assimilation (DA), whereas the GLDAS-2.0 and GLDAS-2.1 products are\n\"open-loop\" (i.e., no data assimilation). The choice of forcing data, as well as\nDA observation source, variable, and scheme, vary for different GLDAS-2.2\nproducts.GLDAS-2.0 is one of two components of the GLDAS Version 2 (GLDAS-2)\ndataset, the second being GLDAS-2.1. GLDAS-2.0 is reprocessed with\nthe updated Princeton Global Meteorological Forcing Dataset\n(Sheffield et al., 2006) and upgraded Land Information System\nVersion 7 (LIS-7). It covers the period 1948-2010, and will be extended\nto more recent years as corresponding forcing data become available.\n\nThe model simulation was initialized on January 1, 1948, using soil\nmoisture and other state fields from the LSM climatology for\nthat day of the year. The simulation used the common GLDAS datasets\nfor land cover (MCD12Q1: Friedl et al., 2010), land water mask\n(MOD44W: Carroll et al., 2009), soil texture (Reynolds, 1999), and\nelevation (GTOPO30). The MODIS based land surface parameters are used in\nthe current GLDAS-2.x products while the AVHRR base parameters were used\nin GLDAS-1 and previous GLDAS-2 products (prior to October 2012).\n\nDocumentation:\n\n* [Readme](https://hydro1.gesdisc.eosdis.nasa.gov/data/GLDAS/GLDAS_NOAH025_3H.2.0/doc/README_GLDAS2.pdf)\n\n* [How-to](https://disc.gsfc.nasa.gov/information/howto?tags=hydrology)\n\n* [GES DISC Hydrology Documentation](https://disc.gsfc.nasa.gov/information/documents?title=Hydrology%20Documentation)\n\nProvider's Note: the names with extension _tavg are variables\naveraged over the past 3-hours, the names with extension '_acc' are\nvariables accumulated over the past 3-hours, the names with extension\n'_inst' are instantaneous variables, and the names with '_f' are\nforcing variables.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA_GLDAS_V20_NOAH_G025_T3H",
+            "type": "text/html",
+            "title": "Run the example for NASA/GLDAS/V20/NOAH/G025/T3H in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/GLDAS/NASA_GLDAS_V20_NOAH_G025_T3H_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GLDAS_V20_NOAH_G025_T3H#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GLDAS/NASA_GLDAS_V20_NOAH_G025_T3H.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GLDAS/catalog.json",
+            "type": "application/json",
+            "title": "GLDAS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 3,
+        "type": "cadence",
+        "unit": "hour"
+    },
+    "gee:provider_ids": [
+        "C1233767545-GES_DISC"
+    ],
+    "gee:terms_of_use": "Distribution of data from the Goddard Earth Sciences\nData and Information Services Center (GES DISC) is funded by NASA's\nScience Mission Directorate (SMD). Consistent with NASA [Earth\nScience Data and Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy/),\ndata from the GES DISC archive are available free to the user community.\nFor more information visit the GES DISC [Data Policy](https://disc.sci.gsfc.nasa.gov/citing)\npage.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "3_hourly",
+        "climate",
+        "evaporation",
+        "forcing",
+        "geophysical",
+        "gldas",
+        "humidity",
+        "ldas",
+        "nasa",
+        "precipitation",
+        "pressure",
+        "radiation",
+        "soil",
+        "soil_moisture",
+        "surface",
+        "temperature",
+        "wind"
+    ],
+    "providers": [
+        {
+            "name": "NASA GES DISC at NASA Goddard Space Flight Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/342OHQM9AK6Q"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GLDAS_V20_NOAH_G025_T3H"
+        }
+    ],
+    "sci:citation": "Rodell, M., P.R. Houser, U. Jambor, J. Gottschalck, K. Mitchell,\nC.-J. Meng, K. Arsenault, B. Cosgrove, J. Radakovich, M. Bosilovich,\nJ.K. Entin, J.P. Walker, D. Lohmann, and D. Toll, The Global Land Data\nAssimilation System, Bull. Amer. Meteor. Soc., 85(3), 381-394, 2004.\n",
+    "sci:publications": [
+        {
+            "citation": "[Additional references](https://ldas.gsfc.nasa.gov/gldas/GLDASpublications.php)"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "End hour",
+                "name": "end_hour",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Start hour",
+                "name": "start_hour",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Average Surface Skin Temperature [K]",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "AvgSurfT_inst"
+                        ],
+                        "max": [
+                            300
+                        ],
+                        "min": [
+                            250
+                        ],
+                        "palette": [
+                            "1303ff",
+                            "42fff6",
+                            "f3ff40",
+                            "ff5d0f"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 52.48,
+                    "lon": 71.72,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            27830
+        ],
+        "Albedo_inst": {
+            "minimum": 4.99,
+            "maximum": 82.25
+        },
+        "AvgSurfT_inst": {
+            "minimum": 194.55,
+            "maximum": 351.63
+        },
+        "CanopInt_inst": {
+            "minimum": 0,
+            "maximum": 0.5
+        },
+        "ECanop_tavg": {
+            "minimum": 0,
+            "maximum": 671.88
+        },
+        "ESoil_tavg": {
+            "minimum": 0,
+            "maximum": 592.64
+        },
+        "Evap_tavg": {
+            "minimum": 0,
+            "maximum": 0.0002
+        },
+        "LWdown_f_tavg": {
+            "minimum": 44.62,
+            "maximum": 561.46
+        },
+        "Lwnet_tavg": {
+            "minimum": -359.07,
+            "maximum": 130.59
+        },
+        "PotEvap_tavg": {
+            "minimum": -241.88,
+            "maximum": 1513.78
+        },
+        "Psurf_f_inst": {
+            "minimum": 47824.13,
+            "maximum": 109036.41
+        },
+        "Qair_f_inst": {
+            "minimum": 0,
+            "maximum": 0.06
+        },
+        "Qg_tavg": {
+            "minimum": -517.58,
+            "maximum": 485.13
+        },
+        "Qh_tavg": {
+            "minimum": -872.46,
+            "maximum": 797.71
+        },
+        "Qle_tavg": {
+            "minimum": -243.71,
+            "maximum": 716.69
+        },
+        "Qs_acc": {
+            "minimum": 0,
+            "maximum": 131.39
+        },
+        "Qsb_acc": {
+            "minimum": 0,
+            "maximum": 42.3
+        },
+        "Qsm_acc": {
+            "minimum": 0,
+            "maximum": 27.58
+        },
+        "Rainf_f_tavg": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "Rainf_tavg": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "RootMoist_inst": {
+            "minimum": 2,
+            "maximum": 943.52
+        },
+        "SWE_inst": {
+            "minimum": 0,
+            "maximum": 117283.5
+        },
+        "SWdown_f_tavg": {
+            "minimum": 0,
+            "maximum": 1329.22
+        },
+        "SnowDepth_inst": {
+            "minimum": 0,
+            "maximum": 293.2
+        },
+        "Snowf_tavg": {
+            "minimum": 0,
+            "maximum": 0.004
+        },
+        "SoilMoi0_10cm_inst": {
+            "minimum": 1.99,
+            "maximum": 47.59
+        },
+        "SoilMoi100_200cm_inst": {
+            "minimum": 20,
+            "maximum": 476
+        },
+        "SoilMoi10_40cm_inst": {
+            "minimum": 5.99,
+            "maximum": 142.8
+        },
+        "SoilMoi40_100cm_inst": {
+            "minimum": 11.99,
+            "maximum": 285.6
+        },
+        "SoilTMP0_10cm_inst": {
+            "minimum": 218.75,
+            "maximum": 329.55
+        },
+        "SoilTMP100_200cm_inst": {
+            "minimum": 234.5,
+            "maximum": 311.86
+        },
+        "SoilTMP10_40cm_inst": {
+            "minimum": 227.3,
+            "maximum": 317.08
+        },
+        "SoilTMP40_100cm_inst": {
+            "minimum": 232.59,
+            "maximum": 313.47
+        },
+        "Swnet_tavg": {
+            "minimum": 0,
+            "maximum": 1128.86
+        },
+        "Tair_f_inst": {
+            "minimum": 197.03,
+            "maximum": 326.2
+        },
+        "Tveg_tavg": {
+            "minimum": 0,
+            "maximum": 611.89
+        },
+        "Wind_f_inst": {
+            "minimum": 0.06,
+            "maximum": 30.31
+        }
+    },
+    "title": "Reprocessed GLDAS-2.0: Global Land Data Assimilation System",
+    "version": "V20",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1948-01-01T03:00:00Z",
+                    "2014-12-31T21:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

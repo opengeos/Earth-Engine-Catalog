@@ -1,0 +1,260 @@
+{
+    "type": "Collection",
+    "id": "NOAA/NWS/RTMA",
+    "stac_version": "1.0.0",
+    "description": "The Real-Time Mesoscale Analysis (RTMA) is a high-spatial and temporal\nresolution analysis for near-surface weather conditions.  This dataset\nincludes hourly analyses at 2.5 km for CONUS.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_NWS_RTMA",
+            "type": "text/html",
+            "title": "Run the example for NOAA/NWS/RTMA in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NWS/NOAA_NWS_RTMA_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_NWS_RTMA#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NWS/NOAA_NWS_RTMA.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NWS/catalog.json",
+            "type": "application/json",
+            "title": "NWS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "hour"
+    },
+    "gee:terms_of_use": "NOAA data, information, and products, regardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use. The\nforgoing data is in the public domain and is being provided without\nrestriction on use and distribution. For more information visit the\n[NWS disclaimer site](https://www.weather.gov/disclaimer/).\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "climate",
+        "cloud",
+        "geophysical",
+        "humidity",
+        "noaa",
+        "nws",
+        "precipitation",
+        "pressure",
+        "rtma",
+        "surface",
+        "temperature",
+        "visibility",
+        "weather",
+        "wind"
+    ],
+    "providers": [
+        {
+            "name": "NOAA/NWS",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.nco.ncep.noaa.gov/pmb/products/rtma/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_NWS_RTMA"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Model terrain elevation",
+                "gee:units": "m",
+                "name": "HGT"
+            },
+            {
+                "description": "Pressure",
+                "gee:units": "Pa",
+                "name": "PRES"
+            },
+            {
+                "description": "Temperature",
+                "gee:units": "\u00b0C",
+                "name": "TMP"
+            },
+            {
+                "description": "Dew point temperature",
+                "gee:units": "\u00b0C",
+                "name": "DPT"
+            },
+            {
+                "description": "U-component of wind",
+                "gee:units": "m/s",
+                "name": "UGRD"
+            },
+            {
+                "description": "V-component of wind",
+                "gee:units": "m/s",
+                "name": "VGRD"
+            },
+            {
+                "description": "Specific humidity",
+                "gee:units": "kg/kg",
+                "name": "SPFH"
+            },
+            {
+                "description": "Wind direction (from which blowing)",
+                "gee:units": "deg true",
+                "name": "WDIR"
+            },
+            {
+                "description": "Wind speed",
+                "gee:units": "m/s",
+                "name": "WIND"
+            },
+            {
+                "description": "Wind speed (gust)",
+                "gee:units": "m/s",
+                "name": "GUST"
+            },
+            {
+                "description": "Visibility",
+                "gee:units": "m",
+                "name": "VIS"
+            },
+            {
+                "description": "Total cloud cover",
+                "gee:units": "%",
+                "name": "TCDC"
+            },
+            {
+                "description": "Total precipitation",
+                "gee:units": "kg/(m^2)",
+                "name": "ACPC01"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Wind Speed",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "WIND"
+                        ],
+                        "max": [
+                            12
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "001137",
+                            "01abab",
+                            "e7eb05",
+                            "620500"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 39.91,
+                    "lon": -95.62,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            2500
+        ],
+        "ACPC01": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "DPT": {
+            "minimum": -81.41,
+            "maximum": 30.92
+        },
+        "GUST": {
+            "minimum": 0,
+            "maximum": 58.02
+        },
+        "HGT": {
+            "minimum": -81,
+            "maximum": 4226
+        },
+        "PRES": {
+            "minimum": 60848,
+            "maximum": 105183
+        },
+        "SPFH": {
+            "minimum": 0,
+            "maximum": 0.02
+        },
+        "TCDC": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "TMP": {
+            "minimum": -43.2,
+            "maximum": 43.73
+        },
+        "UGRD": {
+            "minimum": -32.93,
+            "maximum": 34.04
+        },
+        "VGRD": {
+            "minimum": -28.44,
+            "maximum": 39.21
+        },
+        "VIS": {
+            "minimum": 0,
+            "maximum": 20000
+        },
+        "WDIR": {
+            "minimum": 0,
+            "maximum": 360
+        },
+        "WIND": {
+            "minimum": 0,
+            "maximum": 42.46
+        }
+    },
+    "title": "RTMA: Real-Time Mesoscale Analysis",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -130.17,
+                    20.15,
+                    -60.81,
+                    52.91
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2011-01-01T00:00:00Z",
+                    "2022-12-22T18:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

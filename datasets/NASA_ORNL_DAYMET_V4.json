@@ -1,0 +1,228 @@
+{
+    "type": "Collection",
+    "id": "NASA/ORNL/DAYMET_V4",
+    "stac_version": "1.0.0",
+    "description": "Daymet V4 provides gridded estimates of daily weather parameters for\nContinental North America, Hawaii, and Puerto Rico (Data for Puerto Rico is available starting\nin 1950). It is derived from selected meteorological station data and various supporting data\nsources.\n\nCompared to the previous version, Daymet V4 provides effective solutions to known issues and\nfurther considers improvements to what were believed to be input weather station biases.\nImprovements include:\n\n- Reductions in the timing bias of input reporting weather station measurements.\n\n- Improvement to the three-dimensional regression model techniques in the core algorithm.\n\n- A novel approach to handling high elevation temperature measurement biases.\n\nDocumentation:\n\n* [ORNL DAAC Dataset Documentation](https://daac.ornl.gov/DAYMET/guides/Daymet_Daily_V4.html)\n\n* [Dataset Documentation](https://daac.ornl.gov/daacdata/daymet/Daymet_Daily_V4/comp/Daymet_Daily_V4.pdf)\n\n* [The THREDDS location for this Collection](https://thredds.daac.ornl.gov/thredds/catalog/ornldaac/1840/catalog.html)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA_ORNL_DAYMET_V4",
+            "type": "text/html",
+            "title": "Run the example for NASA/ORNL/DAYMET_V4 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/ORNL/NASA_ORNL_DAYMET_V4_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_ORNL_DAYMET_V4#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.3334/ORNLDAAC/1840"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/ORNL/NASA_ORNL_DAYMET_V4.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/ORNL/catalog.json",
+            "type": "application/json",
+            "title": "ORNL"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C2031536952-ORNL_CLOUD"
+    ],
+    "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "climate",
+        "daily",
+        "daylight",
+        "daymet",
+        "flux",
+        "geophysical",
+        "nasa",
+        "ornl",
+        "precipitation",
+        "radiation",
+        "snow",
+        "temperature",
+        "vapor",
+        "water",
+        "weather"
+    ],
+    "providers": [
+        {
+            "name": "NASA ORNL DAAC at Oak Ridge National Laboratory",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.3334/ORNLDAAC/1840"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_ORNL_DAYMET_V4"
+        }
+    ],
+    "sci:citation": "Thornton, M.M., R. Shrestha, Y. Wei, P.E. Thornton, S. Kao, and B.E. Wilson. {YEAR}.\nDaymet: Daily Surface Weather Data on a 1-km Grid for North America, Version 4. ORNL DAAC, Oak\nRidge, Tennessee, USA\n",
+    "sci:doi": "10.3334/ORNLDAAC/1840",
+    "sci:publications": [
+        {
+            "citation": "Other Citation Details - Thornton, M.M., R. Shrestha, Y. Wei, P.E. Thornton, S. Kao, and B.E. Wilson. 2020.\nDaymet: Daily Surface Weather Data on a 1-km Grid for North America, Version 4. ORNL DAAC, Oak Ridge, Tennessee, USA.\n[doi:10.3334/ORNLDAAC/1840](https://doi.org/10.3334/ORNLDAAC/1840)\n",
+            "doi": "10.3334/ORNLDAAC/1840"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Duration of the daylight period. Based on the period\nof the day during which the sun is above a hypothetical flat horizon.\n",
+                "gee:units": "seconds",
+                "name": "dayl"
+            },
+            {
+                "description": "Daily total precipitation, sum of all forms converted to\nwater-equivalent.",
+                "gee:units": "mm",
+                "name": "prcp"
+            },
+            {
+                "description": "Incident shortwave radiation flux density, taken as an average\nover the daylight period of the day.",
+                "gee:units": "W/m^2",
+                "name": "srad"
+            },
+            {
+                "description": "Snow water equivalent, the amount of water contained within\nthe snowpack.",
+                "gee:units": "kg/m^2",
+                "name": "swe"
+            },
+            {
+                "description": "Daily maximum 2-meter air temperature.",
+                "gee:units": "\u00b0C",
+                "name": "tmax"
+            },
+            {
+                "description": "Daily minimum 2-meter air temperature.",
+                "gee:units": "\u00b0C",
+                "name": "tmin"
+            },
+            {
+                "description": "Daily average partial pressure of water vapor.",
+                "gee:units": "Pa",
+                "name": "vp"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Maximum Temperature",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "tmax"
+                        ],
+                        "max": [
+                            30
+                        ],
+                        "min": [
+                            -40
+                        ],
+                        "palette": [
+                            "1621A2",
+                            "white",
+                            "cyan",
+                            "green",
+                            "yellow",
+                            "orange",
+                            "red"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 35.1,
+                    "lon": -110.21,
+                    "zoom": 4
+                }
+            }
+        ],
+        "gsd": [
+            1000
+        ],
+        "dayl": {
+            "minimum": 0,
+            "maximum": 86400
+        },
+        "prcp": {
+            "minimum": 0,
+            "maximum": 544
+        },
+        "srad": {
+            "minimum": 0,
+            "maximum": 1051
+        },
+        "swe": {
+            "minimum": 0,
+            "maximum": 13931
+        },
+        "tmax": {
+            "minimum": -60,
+            "maximum": 60
+        },
+        "tmin": {
+            "minimum": -60,
+            "maximum": 42
+        },
+        "vp": {
+            "minimum": 0,
+            "maximum": 8230
+        }
+    },
+    "title": "Daymet V4: Daily Surface Weather and Climatological Summaries",
+    "version": "V4",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -150.8,
+                    1.6,
+                    -1.1,
+                    84
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1980-01-01T00:00:00Z",
+                    "2021-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

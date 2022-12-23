@@ -1,0 +1,275 @@
+{
+    "type": "Collection",
+    "id": "NOAA/GOES/17/MCMIPC",
+    "stac_version": "1.0.0",
+    "description": "[GOES](https://www.goes.noaa.gov) satellites are geostationary weather satellites run by NOAA.\n\nThe Cloud and Moisture Imagery products are all at 2km\nresolution. Bands 1-6 are reflective. The dimensionless \"reflectance factor\" quantity is\nnormalized by the solar zenith angle. These bands support the characterization of clouds,\nvegetation, snow/ice, and aerosols. Bands 7-16 are emissive. The brightness temperature at the\nTop-Of-Atmosphere (TOA) is measured in Kelvin. These bands support the characterization of the\nsurface, clouds, water vapor, ozone, volcanic ash, and dust based on emissive properties.\n\n[README](https://www.ncei.noaa.gov/products/satellite/goes-r-series)\n\nNOAA's Office of Satellite and Product Operations has a\n[General Satellite Messages](https://www.ospo.noaa.gov/Operations/messages.html](https://www.ospo.noaa.gov/Operations/messages.html)\nchannel with status updates.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_GOES_17_MCMIPC",
+            "type": "text/html",
+            "title": "Run the example for NOAA/GOES/17/MCMIPC in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/GOES/NOAA_GOES_17_MCMIPC_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_GOES_17_MCMIPC#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://console.cloud.google.com/storage/browser/gcp-public-data-goes-17/ABI-L2-MCMIPC/"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/GOES/NOAA_GOES_17_MCMIPC.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/GOES/catalog.json",
+            "type": "application/json",
+            "title": "GOES"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 10,
+        "type": "cadence",
+        "unit": "minute"
+    },
+    "gee:terms_of_use": "NOAA data, information, and products, regardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "abi",
+        "climate",
+        "goes",
+        "goes_17",
+        "goes_s",
+        "goes_west",
+        "mcmip",
+        "nesdis",
+        "noaa",
+        "ospo",
+        "weather"
+    ],
+    "providers": [
+        {
+            "name": "NOAA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://data.noaa.gov/dataset/dataset/noaa-goes-r-series-advanced-baseline-imager-abi-level-2-cloud-and-moisture-imagery-products-cmi1"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_GOES_17_MCMIPC"
+        }
+    ],
+    "sci:citation": "Bah, Gunshor, Schmit, Generation of GOES-16 True Color Imagery without a\nGreen Band, 2018. [doi:10.1029/2018EA000379](https://doi.org/10.1029/2018EA000379)\n",
+    "sci:publications": [
+        {
+            "citation": "Product User Guide (PUG) Volume 5, [L2+ Products](\nhttps://www.goes-r.gov/products/docs/PUG-L2+-vol5.pdf).\n"
+        },
+        {
+            "citation": "Schmit, T., Griffith, P., et al, (2016), A closer look at the ABI on the GOES-R series, Bull.\nAmer. Meteor. Soc., 98(4), 681-698.\n[doi:10.1175/BAMS-D-15-00230.1](https://doi.org/10.1175/BAMS-D-15-00230.1)\n",
+            "doi": "10.1175/BAMS-D-15-00230.1"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Blue band",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "CMI_C01"
+                        ],
+                        "max": [
+                            3000
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 43,
+                    "lon": -120,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            2000
+        ],
+        "CMI_C01": {
+            "minimum": 0,
+            "maximum": 1.3
+        },
+        "CMI_C02": {
+            "minimum": 0,
+            "maximum": 1.3
+        },
+        "CMI_C03": {
+            "minimum": 0,
+            "maximum": 1.3
+        },
+        "CMI_C04": {
+            "minimum": 0,
+            "maximum": 1.3
+        },
+        "CMI_C05": {
+            "minimum": 0,
+            "maximum": 1.3
+        },
+        "CMI_C06": {
+            "minimum": 0,
+            "maximum": 1.3
+        },
+        "CMI_C07": {
+            "minimum": 197.31,
+            "maximum": 411.86
+        },
+        "CMI_C08": {
+            "minimum": 138.05,
+            "maximum": 311.06
+        },
+        "CMI_C09": {
+            "minimum": 137.7,
+            "maximum": 311.08
+        },
+        "CMI_C10": {
+            "minimum": 126.91,
+            "maximum": 331.2
+        },
+        "CMI_C11": {
+            "minimum": 127.69,
+            "maximum": 341.3
+        },
+        "CMI_C12": {
+            "minimum": 117.49,
+            "maximum": 311.06
+        },
+        "CMI_C13": {
+            "minimum": 89.62,
+            "maximum": 341.27
+        },
+        "CMI_C14": {
+            "minimum": 96.19,
+            "maximum": 341.28
+        },
+        "CMI_C15": {
+            "minimum": 97.38,
+            "maximum": 341.28
+        },
+        "CMI_C16": {
+            "minimum": 92.7,
+            "maximum": 318.26
+        },
+        "DQF_C01": {
+            "minimum": 0,
+            "maximum": 4
+        },
+        "DQF_C02": {
+            "minimum": 0,
+            "maximum": 4
+        },
+        "DQF_C03": {
+            "minimum": 0,
+            "maximum": 4
+        },
+        "DQF_C04": {
+            "minimum": 0,
+            "maximum": 4
+        },
+        "DQF_C05": {
+            "minimum": 0,
+            "maximum": 4
+        },
+        "DQF_C06": {
+            "minimum": 0,
+            "maximum": 4
+        },
+        "DQF_C07": {
+            "minimum": 0,
+            "maximum": 4
+        },
+        "DQF_C08": {
+            "minimum": 0,
+            "maximum": 4
+        },
+        "DQF_C09": {
+            "minimum": 0,
+            "maximum": 4
+        },
+        "DQF_C10": {
+            "minimum": 0,
+            "maximum": 4
+        },
+        "DQF_C11": {
+            "minimum": 0,
+            "maximum": 4
+        },
+        "DQF_C12": {
+            "minimum": 0,
+            "maximum": 4
+        },
+        "DQF_C13": {
+            "minimum": 0,
+            "maximum": 4
+        },
+        "DQF_C14": {
+            "minimum": 0,
+            "maximum": 4
+        },
+        "DQF_C15": {
+            "minimum": 0,
+            "maximum": 4
+        },
+        "DQF_C16": {
+            "minimum": 0,
+            "maximum": 4
+        }
+    },
+    "title": "GOES-17 MCMIPC Series ABI Level 2 Cloud and Moisture Imagery CONUS",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    14.57,
+                    180,
+                    53.51
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-12-04T16:30:38Z",
+                    "2022-12-22T22:31:17Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

@@ -1,0 +1,201 @@
+{
+    "type": "Collection",
+    "id": "NASA/GRACE/MASS_GRIDS/OCEAN_EOFR",
+    "stac_version": "1.0.0",
+    "description": "GRACE Tellus Monthly Mass Grids provides monthly\ngravitational anomalies relative to a 2004-2010 time-mean baseline.\nThe data contained in this dataset are units of \\\"Equivalent Water Thickness\\\"\nwhich represent the deviations of mass in terms of vertical extent\nof water in centimeters. See the provider's [Monthly Mass\nGrids Overview](https://grace.jpl.nasa.gov/data/monthly-mass-grids/)\nfor more details.\n\nThis dataset is a filtered version of the GRACE Tellus (GRCTellus)\nOcean dataset. The 'EOFR' bottom pressure (OBP) grids are obtained by\nprojecting the data from the regular GRC Ocean grids product\nonto the Empirical Orthogonal Functions (EOFs) of the\nOcean Model for Circulation and Tides (OMCT). This effectively\nfilters out signals in the GRACE data that are inconsistent\nwith the physics and OBP variations in the OMCT ocean model.\n\nThe EOFR filtered reconstructed OBP fields agree\nbetter with radar altimetric sea surface height,\nreduce leakage around ice sheets and glaciers, and reduce\nnoise in the mid latitudes where OBP variability is lower.\n[(Chambers and Willis, 2010)](https://doi.org/10.1175/2010JTECHO738.1)\n\n**Note**\n\n* The GRCTellus Ocean datasets are optimized to examine regional\n  ocean bottom pressure, but NOT intended to be spatially\n  averaged to determine global mean ocean mass.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA_GRACE_MASS_GRIDS_OCEAN_EOFR",
+            "type": "text/html",
+            "title": "Run the example for NASA/GRACE/MASS_GRIDS/OCEAN_EOFR in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/GRACE/NASA_GRACE_MASS_GRIDS_OCEAN_EOFR_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GRACE_MASS_GRIDS_OCEAN_EOFR#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GRACE/NASA_GRACE_MASS_GRIDS_OCEAN_EOFR.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GRACE/catalog.json",
+            "type": "application/json",
+            "title": "GRACE"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "All NASA-produced data from the GRACE mission is made freely available\nfor the public to use. When using any of the GRCTellus data, please\nadd an acknowledgment: \"GRACE land are available at\n[https://grace.jpl.nasa.gov](https://grace.jpl.nasa.gov),\nsupported by the NASA MEaSUREs Program.\" and cite with the\ncitations provided.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "crs",
+        "gfz",
+        "grace",
+        "gravity",
+        "jpl",
+        "mass",
+        "nasa",
+        "ocean",
+        "tellus",
+        "water"
+    ],
+    "providers": [
+        {
+            "name": "NASA Jet Propulsion Laboratory",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://grace.jpl.nasa.gov/data/get-data/monthly-mass-grids-ocean/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GRACE_MASS_GRIDS_OCEAN_EOFR"
+        }
+    ],
+    "sci:citation": "D.P. Chambers. 2012. GRACE MONTHLY OCEAN MASS GRIDS NETCDF\nRELEASE 5.0. Ver. 5.0. PO.DAAC, CA, USA. Dataset accessed\n[YYYY-MM-DD] at [doi:10.5067/TEOCN-0N005](https://doi.org/10.5067/TEOCN-0N005).\n",
+    "sci:publications": [
+        {
+            "citation": "Chambers, D.P. and J.A. Bonin: Evaluation of Release 05\ntime-variable gravity coefficients over the ocean. Ocean Science 8,\n859-868, 2012. [doi:10.5194/os-8-859-2012](https://doi.org/10.5194/os-8-859-2012).\n",
+            "doi": "10.5194/os-8-859-2012"
+        },
+        {
+            "citation": "Chambers D.P. and J. K. Willis: A Global Evaluation of Ocean Bottom\nPressure from GRACE, OMCT, and Steric-Corrected Altimetry. J.\nof Oceanic and Atmosph. Technology, vol 27, pp 1395-1402, 2010..\n[doi:10.1175/2010JTECHO738.1](https://doi.org/10.1175/2010JTECHO738.1)\n",
+            "doi": "10.1175/2010JTECHO738.1"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Equivalent liquid water thickness in centimeters calculated by CSR.",
+                "gee:units": "cm",
+                "name": "lwe_thickness_csr"
+            },
+            {
+                "description": "Equivalent liquid water thickness in centimeters calculated by GFZ.",
+                "gee:units": "cm",
+                "name": "lwe_thickness_gfz"
+            },
+            {
+                "description": "Equivalent liquid water thickness in centimeters calculated by JPL.",
+                "gee:units": "cm",
+                "name": "lwe_thickness_jpl"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "End date in milliseconds of spherical harmonics solution from CSR.",
+                "name": "CSR_END_TIME",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Start date in milliseconds of spherical harmonics solution from CSR.",
+                "name": "CSR_START_TIME",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "End date in milliseconds of spherical harmonics solution from GFZ.",
+                "name": "GFZ_END_TIME",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Start date in milliseconds of spherical harmonics solution from GFZ.",
+                "name": "GFZ_START_TIME",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "End date in milliseconds of spherical harmonics solution from JPL.",
+                "name": "JPL_END_TIME",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Start date in milliseconds of spherical harmonics solution from JPL.",
+                "name": "JPL_START_TIME",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Equivalent Water Thickness CSR",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "lwe_thickness_csr"
+                        ],
+                        "max": [
+                            10
+                        ],
+                        "min": [
+                            -10
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 46.529,
+                    "lon": 6.746,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            111320
+        ],
+        "lwe_thickness_csr": {
+            "minimum": -18.46,
+            "maximum": 12.29
+        },
+        "lwe_thickness_gfz": {
+            "minimum": -15.37,
+            "maximum": 14.56
+        },
+        "lwe_thickness_jpl": {
+            "minimum": -16.59,
+            "maximum": 11.7
+        }
+    },
+    "title": "GRACE Monthly Mass Grids - Ocean EOFR",
+    "version": "Release 05",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-12-31T00:00:00Z",
+                    "2016-12-10T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

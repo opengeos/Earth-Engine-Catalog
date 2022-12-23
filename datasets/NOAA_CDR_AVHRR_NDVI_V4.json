@@ -1,0 +1,430 @@
+{
+    "type": "Collection",
+    "id": "NOAA/CDR/AVHRR/NDVI/V4",
+    "stac_version": "1.0.0",
+    "description": "The NOAA Climate Data Record (CDR) of AVHRR Normalized Difference Vegetation\nIndex (NDVI) contains gridded daily NDVI derived from the NOAA AVHRR Surface\nReflectance product. It provides a measurement of surface vegetation\ncoverage activity, gridded at a resolution of 0.05\u00b0 and computed globally\nover land surfaces.\n\nKnown issues with this dataset include:\n\n- TIMEOFDAY variable contains values that are too large by 1 day\n\n- Latitude values are not correctly associated with the center of\n  the grid cell, error is < 0.002 degrees\n\n- Longitude values are not correctly associated with the center of\n  the grid cell, error is < 0.02 degrees\n\nSee [technical note from the data provider](https://www1.ncdc.noaa.gov/pub/data/sds/cdr/CDRs/AVHRR%20Surface%20Reflectance/TechNote.pdf).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_CDR_AVHRR_NDVI_V4",
+            "type": "text/html",
+            "title": "Run the example for NOAA/CDR/AVHRR/NDVI/V4 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/CDR/NOAA_CDR_AVHRR_NDVI_V4_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_AVHRR_NDVI_V4#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CDR/NOAA_CDR_AVHRR_NDVI_V5.json",
+            "type": "application/json",
+            "title": "NOAA/CDR/AVHRR/NDVI/V5"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.7289/V5PZ56R6"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CDR/NOAA_CDR_AVHRR_NDVI_V4.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CDR/catalog.json",
+            "type": "application/json",
+            "title": "CDR"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "deprecated": true,
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "The NOAA CDR Program's official distribution point for CDRs is NOAA's\nNational Climatic Data Center which provides sustained, open access and\nactive data management of the CDR packages and related information in\nkeeping with the United States' open data policies and practices as\ndescribed in the President's Memorandum on \\\"Open Data Policy\\\" and pursuant\nto the Executive Order of May 9, 2013, \\\"Making Open and Machine Readable\nthe New Default for Government Information\\\". In line with these policies,\nthe CDR data sets are nonproprietary, publicly available, and no\nrestrictions are placed upon their use. For more information, see the\n[Fair Use of NOAA's CDR Data Sets, Algorithms and Documentation](https://www1.ncdc.noaa.gov/pub/data/sds/cdr/CDRs/Aerosol_Optical_Thickness/UseAgreement_01B-04.pdf)\npdf.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "avhrr",
+        "cdr",
+        "daily",
+        "land",
+        "ndvi",
+        "noaa"
+    ],
+    "providers": [
+        {
+            "name": "NOAA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ncdc.noaa.gov/cdr/terrestrial/normalized-difference-vegetation-index"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_AVHRR_NDVI_V4"
+        }
+    ],
+    "sci:citation": "Eric Vermote, Chris Justice, Ivan Csiszar, Jeff Eidenshink, Ranga Myneni,\nFrederic Baret, Ed Masuoka, Robert Wolfe, Martin Claverie and NOAA CDR\nProgram (2014): NOAA Climate Data Record (CDR) of Normalized Difference\nVegetation Index (NDVI), Version 4. [indicate subset used]. NOAA National\nClimatic Data Center.\n[doi:10.7289/V5PZ56R6](https://data.nodc.noaa.gov/cgi-bin/iso?id=gov.noaa.ncdc:C00813)\n",
+    "sci:doi": "10.7289/V5PZ56R6",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Normalized difference vegetation index",
+                "gee:scale": 0.0001,
+                "name": "NDVI"
+            },
+            {
+                "description": "Hours since start of day",
+                "gee:scale": 0.01,
+                "gee:units": "hours",
+                "name": "TIMEOFDAY"
+            },
+            {
+                "description": "Quality control bit flags",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Unused",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Pixel is cloudy",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Pixel contains cloud shadow",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Pixel is over water",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Pixel is over sunglint",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Pixel is over dense dark vegetation",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Pixel is at night (high solar zenith)",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Channels 1-5 are valid",
+                            "first_bit": 7,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Channel 1 value is invalid",
+                            "first_bit": 8,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Channel 2 value is invalid",
+                            "first_bit": 9,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Channel 3 value is invalid",
+                            "first_bit": 10,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Channel 4 value is invalid",
+                            "first_bit": 11,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Channel 5 value is invalid",
+                            "first_bit": 12,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "RHO3 value is invalid",
+                            "first_bit": 13,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "BRDF correction is invalid",
+                            "first_bit": 14,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Polar flag, latitude over 60 degrees (land) or 50 degrees (ocean)",
+                            "first_bit": 15,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 16
+                },
+                "name": "QA"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "'provisional' or 'permanent'",
+                "name": "status",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "NDVI",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "NDVI"
+                        ],
+                        "max": [
+                            5000
+                        ],
+                        "min": [
+                            -1000
+                        ],
+                        "palette": [
+                            "ffffff",
+                            "ce7e45",
+                            "fcd163",
+                            "c6ca02",
+                            "22cc04",
+                            "99b718",
+                            "207401",
+                            "012e01"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 17.93,
+                    "lon": 7.71,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            5566
+        ],
+        "NDVI": {
+            "minimum": -9998,
+            "maximum": 9998
+        },
+        "TIMEOFDAY": {
+            "minimum": 0,
+            "maximum": 2400
+        }
+    },
+    "title": "NOAA CDR AVHRR NDVI: Normalized Difference Vegetation Index, Version 4 [deprecated]",
+    "version": "4",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1981-06-24T00:00:00Z",
+                    "2019-05-16T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

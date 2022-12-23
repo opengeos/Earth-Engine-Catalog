@@ -1,0 +1,136 @@
+{
+    "type": "Collection",
+    "id": "USGS/3DEP/10m_metadata",
+    "stac_version": "1.0.0",
+    "description": "This is a table with metadata [for the 3DEP 10m DEM asset](USGS_3DEP_10m).\n\nThe Work unit Extent Spatial Metadata (WESM) contains current lidar data\navailability and basic information about lidar projects, including lidar\nquality level, data acquisition dates, and links to project-level metadata.\n\nSee more details\n[in this document](https://prd-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/atoms/files/3DEP_Spatial_Metadata_Glossary_0.pdf) (taken from\n[this page](https://www.usgs.gov/media/files/3dep-spatial-metadata-glossary)).\n\nDataset uploaded by [Farmers Business Network](https://fbn.com).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/USGS_3DEP_10m_metadata",
+            "type": "text/html",
+            "title": "Run the example for USGS/3DEP/10m_metadata in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/3DEP/USGS_3DEP_10m_metadata_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/USGS_3DEP_10m_metadata#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://www.usgs.gov/information-policies-and-instructions/crediting-usgs",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/3DEP/USGS_3DEP_10m_metadata.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/3DEP/catalog.json",
+            "type": "application/json",
+            "title": "3DEP"
+        }
+    ],
+    "stac_extensions": [],
+    "gee:terms_of_use": "Most U.S. Geological Survey (USGS) information resides\nin the public domain and may be used without restriction. Additional\ninformation on [Acknowledging or Crediting USGS as Information\nSource](https://www.usgs.gov/information-policies-and-instructions/crediting-usgs)\nis available.\n",
+    "gee:type": "table",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "3dep",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "United States Geological Survey",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.usgs.gov/core-science-systems/ngp/ss/3dep-spatial-metadata"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_3DEP_10m_metadata"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Mean Source DEM Elevation",
+                "lookat": {
+                    "lat": 37.649,
+                    "lon": -99.844,
+                    "zoom": 5
+                },
+                "polygon_visualization": {
+                    "property_name": "zmean",
+                    "property_vis": {
+                        "max": [
+                            2000
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "0000ff",
+                            "00ffff",
+                            "ffff00",
+                            "ff0000",
+                            "ffffff"
+                        ]
+                    }
+                }
+            },
+            {
+                "display_name": "Mean Source DEM Elevation",
+                "visualize_as": "FeatureView"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 12000,
+            "prerender_tiles": true,
+            "thinning_strategy": "HIGHER_DENSITY",
+            "z_order_ranking": [
+                ".minZoomLevel DESC"
+            ]
+        }
+    },
+    "title": "USGS 3DEP National Map Spatial Metadata 1/3 Arc-Second (10m)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -171,
+                    -16.6,
+                    164,
+                    76.9
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1998-08-16T00:00:00Z",
+                    "2020-05-06T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

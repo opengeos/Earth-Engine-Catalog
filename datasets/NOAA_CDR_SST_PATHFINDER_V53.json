@@ -1,0 +1,361 @@
+{
+    "type": "Collection",
+    "id": "NOAA/CDR/SST_PATHFINDER/V53",
+    "stac_version": "1.0.0",
+    "description": "The AVHRR Pathfinder Version 5.3 Sea Surface Temperature dataset (PFV53)\nis a collection of global, twice-daily 4km sea surface temperature data\nproduced in a partnership by the NOAA National Oceanographic Data Center\nand the University of Miami's Rosenstiel School of Marine and Atmospheric\nScience. PFV53 was computed from data from the AVHRR instruments\non board NOAA's polar orbiting satellite series using an entirely\nmodernized system based on SeaDAS. PFV53 data are nearly 100%\ncompliant with the GHRSST Data Specification Version 2.0 for L3C\nproducts and only deviate from that standard in that 'sses_bias',\n'sses_standard_deviation', and 'sst_dtime' variables are empty and hence\nnot included into EE assets. PFV53 data were collected through the\noperational periods of the NOAA-7 through NOAA-19 Polar Operational\nEnvironmental Satellites (POES), and are available from 1981 to 2014.\nAdditional information is available at the [NOAA Pathfinder site]\n(https://www.nodc.noaa.gov/satellitedata/pathfinder4km53/).\n\nAdditional band details can be found in the [Tech Specs]\n(https://data.nodc.noaa.gov/pathfinder/Version5.2/GDS_TechSpecs_v2.0.pdf) page.\n\nThese data were provided by GHRSST and the US NOAA National\nCenters for Environmental Information (NCEI). This project was\nsupported in part by a grant from the NOAA Climate Data Record (CDR)\nProgram for satellites.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_CDR_SST_PATHFINDER_V53",
+            "type": "text/html",
+            "title": "Run the example for NOAA/CDR/SST_PATHFINDER/V53 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/CDR/NOAA_CDR_SST_PATHFINDER_V53_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_SST_PATHFINDER_V53#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.7289/V52J68XX"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CDR/NOAA_CDR_SST_PATHFINDER_V53.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CDR/catalog.json",
+            "type": "application/json",
+            "title": "CDR"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 12,
+        "type": "cadence",
+        "unit": "hour"
+    },
+    "gee:terms_of_use": "NOAA data, information, and products, regardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use. The\nforgoing data is in the public domain and is being provided without\nrestriction on use and distribution. For more information see the\n'constraints' section in [https://data.nodc.noaa.gov/cgi-bin/iso?id=gov.noaa.nodc:AVHRR_Pathfinder-NCEI-L3C-v5.3]\n(https://data.nodc.noaa.gov/cgi-bin/iso?id=gov.noaa.nodc:AVHRR_Pathfinder-NCEI-L3C-v5.3).\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "avhrr",
+        "noaa",
+        "pathfinder",
+        "sea_ice",
+        "sst",
+        "temperature",
+        "wind"
+    ],
+    "providers": [
+        {
+            "name": "NOAA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ncdc.noaa.gov/cdr/oceanic/sea-surface-temperature-pathfinder"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_SST_PATHFINDER_V53"
+        }
+    ],
+    "sci:citation": "Baker-Yeboah, S., K. Saha, D. Zhang, K. S. Casey, R. Evans,\nand K. A. Kilpatrick (2016). 'Pathfinder Version 5.3 AVHRR Sea Surface\nTemperature Climate Data Record', Fall AGU 2016 Poster\n(manuscript in progress)\n",
+    "sci:doi": "10.7289/V52J68XX",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Skin temperature of the ocean",
+                "gee:offset": 273.15,
+                "gee:scale": 0.01,
+                "gee:units": "K",
+                "name": "sea_surface_temperature"
+            },
+            {
+                "description": "The difference between this SST and the previous day's.",
+                "gee:scale": 0.1,
+                "gee:units": "K",
+                "name": "dt_analysis"
+            },
+            {
+                "description": "These wind speeds were created by NCEP-DOE Atmospheric Model\nIntercomparison Project (AMIP-II) reanalysis (R-2) and represent winds at\n10 meters above the sea surface.\n",
+                "gee:units": "m/s",
+                "name": "wind_speed"
+            },
+            {
+                "description": "Sea ice concentration data are taken from the EUMETSAT Ocean\nand Sea Ice Satellite Application Facility (OSISAF) [Global Daily Sea Ice\nConcentration Reprocessing Data Set\naccession.nodc.noaa.gov/0068294](https://data.cnra.ca.gov/dataset/global-daily-sea-ice-concentration-reprocessing-data-set-for-1978-2007-from-the-eumetsat-ocean-) when these data are available.\nThe data are reprojected and interpolated from their original polar\nstereographic projection at 10km spatial resolution to the 4km Pathfinder\nVersion 5.3 grid. When the OSISAF data are not available for both\nhemispheres on a given day, the sea ice concentration data are taken from\nthe sea_ice_fraction variable found in the L4 GHRSST DailyOI SST product\nfrom NOAA/NCDC, and are interpolated from the 25km DailyOI grid to the 4km\nPathfinder Version 5.3 grid.\n",
+                "gee:scale": 0.01,
+                "name": "sea_ice_fraction"
+            },
+            {
+                "description": "Aerosol optical thickness (100 KM) data are taken from the\nCLASS AERO100 products, which are created from AVHRR channel 1 optical\nthickness retrievals from AVHRR global area coverage (GAC) data. The\naerosol optical thickness measurements are interpolated from their\noriginal 1 degree x 1 degree resolution to the 4km Pathfinder Version\n5.3 grid.\n",
+                "gee:offset": 1.1,
+                "gee:scale": 0.01,
+                "name": "aerosol_dynamic_indicator"
+            },
+            {
+                "description": "Note, the native Pathfinder processing system returns\nquality levels ranging from 0 to 7 (7 is best quality; -1 represents\nmissing data) and has been converted to the extent possible into\nthe six levels required by the GDS2 (ranging from 0 to 5, where 5\nis best). Below is the conversion table:\n\n- GDS2 required quality_level 5 = native Pathfinder quality\n  level 7 == best_quality\n\n- GDS2 required quality_level 4 = native Pathfinder quality\n  level 4-6 == acceptable_quality\n\n- GDS2 required quality_level 3 = native Pathfinder quality\n  level 2-3 == low_quality\n\n- GDS2 required quality_level 2 = native Pathfinder\n  quality level 1 == worst_quality\n\n- GDS2 required quality_level 1 = native Pathfinder quality\n  level 0 = bad_data\n\n- GDS2 required quality_level 0 = native Pathfinder quality\n  level -1 = missing_data\n\nThe original Pathfinder quality level is recorded in the optional\nvariable pathfinder_quality_level.\n",
+                "name": "quality_level"
+            },
+            {
+                "description": "The native Pathfinder processing system quality levels,\nranging from 0 to 7, where 0 is worst and 7 is best.\n",
+                "name": "pathfinder_quality_level"
+            },
+            {
+                "description": "Used to specify the type of input SST data and pass\nthrough native flags from the input L2 SST data set.\n",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Type of input SST data.",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Always set to zero to indicate infrared data.",
+                                    "value": 0
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Land",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "Input pixel is classified as over ocean.",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Pixel area is >= 50% land as determined by\nrasterizing the Global Self-consistent Hierarchical High-resolution\nShoreline (GSHHS) Database from the NOAA National Geophysical Data\nCenter.\n",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Sea ice fraction",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "'sea_ice_fraction' is less than 0.15.",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "'sea_ice_fraction' is 0.15 or greater.",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Lake",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "Pixel area is < 50% lake covered.",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Pixel area is >= 50% lake covered as determined from\nrasterizing US World Wildlife Fund's Global Lakes and Wetlands\nDatabase.\n",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "River",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "Pixel area is < 50% river covered.",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Pixel area is >= 50% river covered as determined form\nrasterizing US World Wildlife Fund's Global Lakes and Wetlands\nDatabase.\n",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 5
+                },
+                "name": "l2p_flags"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Aerosol dynamic indicator offset",
+                "name": "aerosol_dynamic_indicator_offset",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Aerosol dynamic indicator scale",
+                "name": "aerosol_dynamic_indicator_scale",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Date created",
+                "name": "date_created",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Day or night",
+                "name": "day_or_night",
+                "type": "STRING"
+            },
+            {
+                "description": "Dt analysis scale",
+                "name": "dt_analysis_scale",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Orbit node",
+                "name": "orbit_node",
+                "type": "STRING"
+            },
+            {
+                "description": "Platform",
+                "name": "platform",
+                "type": "STRING"
+            },
+            {
+                "description": "Principal day for collated orbits",
+                "name": "principal_day_for_collated_orbits",
+                "type": "STRING"
+            },
+            {
+                "description": "Principal year for collated orbits",
+                "name": "principal_year_for_collated_orbits",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Sea ice fraction scale",
+                "name": "sea_ice_fraction_scale",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Sea surface temperature offset",
+                "name": "sea_surface_temperature_offset",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Sea surface temperature scale",
+                "name": "sea_surface_temperature_scale",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Universal unique identifier",
+                "name": "uuid",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Sea Surface Temperature",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "sea_surface_temperature"
+                        ],
+                        "max": [
+                            2500
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "030d81",
+                            "0519ff",
+                            "05e8ff",
+                            "11ff01",
+                            "fbff01",
+                            "ff9901",
+                            "ff0000",
+                            "ad0000"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -2.11,
+                    "lon": -121.99,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            4000
+        ],
+        "aerosol_dynamic_indicator": {
+            "minimum": -127,
+            "maximum": 127
+        },
+        "dt_analysis": {
+            "minimum": -127,
+            "maximum": 127
+        },
+        "pathfinder_quality_level": {
+            "minimum": 0,
+            "maximum": 7
+        },
+        "quality_level": {
+            "minimum": 0,
+            "maximum": 5
+        },
+        "sea_ice_fraction": {
+            "minimum": 8,
+            "maximum": 100
+        },
+        "sea_surface_temperature": {
+            "minimum": -300,
+            "maximum": 3999
+        },
+        "wind_speed": {
+            "minimum": 0,
+            "maximum": 47
+        }
+    },
+    "title": "NOAA AVHRR Pathfinder Version 5.3 Collated Global 4km Sea Surface Temperature",
+    "version": "5.3",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1981-08-24T00:00:00Z",
+                    "2022-09-29T21:03:53Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

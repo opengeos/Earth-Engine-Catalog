@@ -1,0 +1,417 @@
+{
+    "type": "Collection",
+    "id": "USGS/GAP/PR/2001",
+    "stac_version": "1.0.0",
+    "description": "The GAP/LANDFIRE National Terrestrial Ecosystems data represents a detailed\nvegetation and land cover classification for the Conterminous U.S., Alaska,\nHawaii, and Puerto Rico.GAP/LF 2011 Ecosystems for the Conterminous U.S. is\nan update of the National Gap Analysis Program Land Cover Data - Version 2.2.\nAlaska ecosystems have been updated by LANDFIRE to 2012 conditions (LANDFIRE 2012).\nHawaii and Puerto Rico data represent the 2001 time-frame (Gon et al. 2006, Gould et al. 2008).\nThe classification scheme used for the Alaska and the lower 48 states is based\non NatureServe's Ecological System Classification (Comer et al. 2003), while\nPuerto Rico and Hawaii's map legend are based on island specific classification\nsystems (Gon et al. 2006, Gould et al. 2008).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/USGS_GAP_PR_2001",
+            "type": "text/html",
+            "title": "Run the example for USGS/GAP/PR/2001 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/GAP/USGS_GAP_PR_2001_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/USGS_GAP_PR_2001#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/GAP/USGS_GAP_PR_2001.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/GAP/catalog.json",
+            "type": "application/json",
+            "title": "GAP"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "Most U.S. Geological Survey (USGS) information resides\nin the public domain and may be used without restriction. Additional\ninformation on [Acknowledging or Crediting USGS as Information\nSource](https://www.usgs.gov/information-policies-and-instructions/crediting-usgs) is available.\n",
+    "gee:type": "image",
+    "keywords": [
+        "gap",
+        "landcover",
+        "landfire",
+        "usgs",
+        "vegetation"
+    ],
+    "providers": [
+        {
+            "name": "USGS",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://gapanalysis.usgs.gov/gaplandcover/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_GAP_PR_2001"
+        }
+    ],
+    "sci:citation": "Gould, W. A. C. Alarcon, B. Fevold, M.E. Jimenez, S. Martinuzzi, G. Potts, M. Quinones,\nM. Solorzona, E. Ventosa.  2008.  The Puerto Rico Gap Analysis Project. Volume 1: Land cover,\nvertebrate species distribution, and land stewardship.  Gen. Tech. Rep. IITF-GRT-39. Rio\nPiedras, Pr.  USDA, Forest Service, International Institute of Tropical Forestery.  165. p.\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Landcover class descriptions",
+                "gee:classes": [
+                    {
+                        "description": "Mature secondary lowland dry alluvial semideciduous forest",
+                        "value": 1
+                    },
+                    {
+                        "description": "Young secondary lowland dry alluvial semideciduous forest",
+                        "value": 2
+                    },
+                    {
+                        "description": "Lowland dry alluvial shrubland and woodland",
+                        "value": 3
+                    },
+                    {
+                        "description": "Mature secondary lowland dry limestone evergreen forest",
+                        "value": 4
+                    },
+                    {
+                        "description": "Mature secondary lowland dry limestone semideciduous forest",
+                        "value": 5
+                    },
+                    {
+                        "description": "Young secondary lowland dry limestone semideciduous forest",
+                        "value": 6
+                    },
+                    {
+                        "description": "Lowland dry limestone woodland and shrubland",
+                        "value": 7
+                    },
+                    {
+                        "description": "Lowland dry limestone shrubland",
+                        "value": 8
+                    },
+                    {
+                        "description": "Lowland dry cactus shrubland",
+                        "value": 9
+                    },
+                    {
+                        "description": "Coastal dwarf woodland and shrubland",
+                        "value": 10
+                    },
+                    {
+                        "description": "Lowland dry limestone cliffside semideciduous forest",
+                        "value": 11
+                    },
+                    {
+                        "description": "Lowland dry limestone cliffside shrubland and woodland",
+                        "value": 12
+                    },
+                    {
+                        "description": "Mature secondary lowland dry noncalcareous semideciduous forest",
+                        "value": 13
+                    },
+                    {
+                        "description": "Young secondary lowland dry noncalcareous semideciduous forest",
+                        "value": 14
+                    },
+                    {
+                        "description": "Lowland dry noncalcareous shrubland and woodland",
+                        "value": 15
+                    },
+                    {
+                        "description": "Mature secondary dry and moist serpentine semideciduous forest",
+                        "value": 16
+                    },
+                    {
+                        "description": "Young secondary dry and moist serpentine semideciduous forest",
+                        "value": 17
+                    },
+                    {
+                        "description": "Dry and moist serpentine woodland and shrubland",
+                        "value": 18
+                    },
+                    {
+                        "description": "Abandoned dry forest plantation",
+                        "value": 19
+                    },
+                    {
+                        "description": "Mature secondary lowland moist evergreen alluvial forest",
+                        "value": 20
+                    },
+                    {
+                        "description": "Young secondary lowland moist evergreen alluvial forest",
+                        "value": 21
+                    },
+                    {
+                        "description": "Lowland moist alluvium shrubland and woodland",
+                        "value": 22
+                    },
+                    {
+                        "description": "Mature secondary moist limestone evergreen and semideciduous forest",
+                        "value": 23
+                    },
+                    {
+                        "description": "Young secondary moist limestone evergreen and semideciduous forest",
+                        "value": 24
+                    },
+                    {
+                        "description": "Moist limestone shrubland and woodland",
+                        "value": 25
+                    },
+                    {
+                        "description": "Mature secondary lowland moist evergreen noncalcareous forest",
+                        "value": 26
+                    },
+                    {
+                        "description": "Young secondary lowland moist evergreen noncalcareous forest",
+                        "value": 27
+                    },
+                    {
+                        "description": "Lowland moist noncalcareous shrubland and woodland",
+                        "value": 28
+                    },
+                    {
+                        "description": "Lowland moist abandoned and active coffee plantations",
+                        "value": 29
+                    },
+                    {
+                        "description": "Mature secondary montane wet alluvial evergreen forest",
+                        "value": 30
+                    },
+                    {
+                        "description": "Young secondary montane wet alluvial evergreen forest",
+                        "value": 31
+                    },
+                    {
+                        "description": "Montane wet alluvial shrubland and woodland",
+                        "value": 32
+                    },
+                    {
+                        "description": "Mature secondary montane wet noncalcareous evergreen forest",
+                        "value": 33
+                    },
+                    {
+                        "description": "Mature primary and secondary montane wet noncalcareous evergreen Tabonuco forest",
+                        "value": 34
+                    },
+                    {
+                        "description": "Mature primary and secondary montane wet noncalcareous evergreen Palo Colorado cloud forest",
+                        "value": 35
+                    },
+                    {
+                        "description": "Mature primary and secondary montane wet noncalcareous evergreen Sierra Palm forest",
+                        "value": 36
+                    },
+                    {
+                        "description": "Mature primary and secondary montane wet noncalcareous evergreen elfin woodland cloud forest",
+                        "value": 37
+                    },
+                    {
+                        "description": "Young secondary montane wet noncalcareous evergreen forest",
+                        "value": 38
+                    },
+                    {
+                        "description": "Montane wet evergreen noncalcareous shrubland and woodland",
+                        "value": 39
+                    },
+                    {
+                        "description": "Mature secondary montane wet serpentine evergreen forest",
+                        "value": 40
+                    },
+                    {
+                        "description": "Young secondary montane wet serpentine evergreen forest",
+                        "value": 41
+                    },
+                    {
+                        "description": "Wet serpentine shrubland and woodland",
+                        "value": 42
+                    },
+                    {
+                        "description": "Montane wet evergreen abandoned and active coffee plantation",
+                        "value": 43
+                    },
+                    {
+                        "description": "Mangrove forest and shrubland",
+                        "value": 44
+                    },
+                    {
+                        "description": "Freshwater Pterocarpus swamp",
+                        "value": 45
+                    },
+                    {
+                        "description": "Lowland dry riparian forest",
+                        "value": 46
+                    },
+                    {
+                        "description": "Lowland dry riparian shrubland and woodland",
+                        "value": 47
+                    },
+                    {
+                        "description": "Dry grasslands and pastures",
+                        "value": 48
+                    },
+                    {
+                        "description": "Dry cactus grassland and shrubland",
+                        "value": 49
+                    },
+                    {
+                        "description": "Moist grasslands and pastures",
+                        "value": 50
+                    },
+                    {
+                        "description": "Emergent herbaceous nonsaline wetlands",
+                        "value": 51
+                    },
+                    {
+                        "description": "Emergent herbaceous saline wetlands",
+                        "value": 52
+                    },
+                    {
+                        "description": "Seasonally flooded herbaceous nonsaline wetlands",
+                        "value": 53
+                    },
+                    {
+                        "description": "Seasonally flooded herbaceous saline wetlands",
+                        "value": 54
+                    },
+                    {
+                        "description": "Hay and row crops",
+                        "value": 55
+                    },
+                    {
+                        "description": "Woody agriculture and plantations: Palm plantations",
+                        "value": 56
+                    },
+                    {
+                        "description": "Rocky cliffs and shelves",
+                        "value": 57
+                    },
+                    {
+                        "description": "Gravel beaches and stony shoreline",
+                        "value": 58
+                    },
+                    {
+                        "description": "Fine to coarse sandy beaches@ mixed sand and gravel beaches",
+                        "value": 59
+                    },
+                    {
+                        "description": "Riparian and other natural barrens",
+                        "value": 60
+                    },
+                    {
+                        "description": "Salt and mudflats",
+                        "value": 61
+                    },
+                    {
+                        "description": "Salt production",
+                        "value": 62
+                    },
+                    {
+                        "description": "High-density urban development",
+                        "value": 63
+                    },
+                    {
+                        "description": "Low-density urban development",
+                        "value": 64
+                    },
+                    {
+                        "description": "Artificial barrens",
+                        "value": 65
+                    },
+                    {
+                        "description": "Freshwater",
+                        "value": 66
+                    },
+                    {
+                        "description": "Salt water",
+                        "value": 67
+                    },
+                    {
+                        "description": "Lowland moist riparian forest",
+                        "value": 68
+                    },
+                    {
+                        "description": "Lowland moist riparian shrubland and woodland",
+                        "value": 69
+                    },
+                    {
+                        "description": "Aquaculture",
+                        "value": 70
+                    }
+                ],
+                "name": "landcover"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "GAP Purto Rico",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "landcover"
+                        ],
+                        "max": [
+                            70
+                        ],
+                        "min": [
+                            1
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 18.23,
+                    "lon": -66.51,
+                    "zoom": 8
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ],
+        "landcover": {
+            "minimum": 1,
+            "maximum": 70
+        }
+    },
+    "title": "USGS GAP Puerto Rico 2001",
+    "version": "2001",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -67.96,
+                    17.87,
+                    -65.22,
+                    18.53
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2002-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

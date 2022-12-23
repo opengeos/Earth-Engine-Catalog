@@ -1,0 +1,166 @@
+{
+    "type": "Collection",
+    "id": "NASA/NASADEM_HGT/001",
+    "stac_version": "1.0.0",
+    "description": "NASADEM is a reprocessing of STRM data, with improved accuracy by incorporating auxiliary data\nfrom ASTER GDEM, ICESat GLAS, and PRISM datasets.\n\nThe most significant processing improvements involve void reduction through improved\nphase unwrapping and using ICESat GLAS data for control.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/592/NASADEM_User_Guide_V1.pdf)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA_NASADEM_HGT_001",
+            "type": "text/html",
+            "title": "Run the example for NASA/NASADEM_HGT/001 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASADEM_HGT/NASA_NASADEM_HGT_001_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_NASADEM_HGT_001#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASADEM_HGT/NASA_NASADEM_HGT_001.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASADEM_HGT/catalog.json",
+            "type": "application/json",
+            "title": "NASADEM_HGT"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "Unless otherwise noted, all NASA-produced data may be used for any purpose without\nprior permission. For more information and exceptions visit the\n[NASA Data & Information Policy page](https://earthdata.nasa.gov/collaborate/open-data-services-and-software/data-information-policy).\n",
+    "gee:type": "image",
+    "keywords": [
+        "dem",
+        "elevation",
+        "geophysical",
+        "nasa",
+        "nasadem",
+        "srtm",
+        "topography",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "NASA / USGS / JPL-Caltech",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://cmr.earthdata.nasa.gov/search/concepts/C1546314043-LPDAAC_ECS.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_NASADEM_HGT_001"
+        }
+    ],
+    "sci:citation": "NASA JPL (2020). NASADEM Merged DEM Global 1 arc second V001 [Data set]. NASA EOSDIS Land\nProcesses DAAC. Accessed 2020-12-30 from [doi:10.5067/MEaSUREs/NASADEM/NASADEM_HGT.001](https://doi.org/10.5067/MEaSUREs/NASADEM/NASADEM_HGT.001)\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Integer heights in the merged void-free DEM files are relative to the\nEGM96 geoid (whereas the floating-point heights in the SRTM-only DEM files are relative to\nthe WGS84 ellipsoid).\n",
+                "gee:units": "m",
+                "gsd": 30,
+                "name": "elevation"
+            },
+            {
+                "description": "Index indicating the data source and the number of source scenes.\n\n  * 0: Water in corrected SRTM water body data\n  * 1-23: SRTM 1-23 (max known is 23)\n  * 41-94: PRISM 1-50 (54 max polar, 37 max elsewhere)\n  * 110-160: GDEM3 (saturated at 50)\n  * 170-220: GDEM2 (saturated at 50)\n  * 231: SRTMv3 from GDEM3\n  * 232: SRTMv2 from GDEM3\n  * 233: SRTMv2 from GDEM2\n  * 234: SRTM-with-NGA-fill from GDEM2\n  * 241: NED from GDEM2 (USA)\n  * 242: NED from GDEM3 (USA)\n  * 243: CDED from GDEM2 (Canada)\n  * 244: CDED from GDEM3 (Canada)\n  * 245: Alaska from GDEM2 (Alaska)\n  * 246: Alaska from GDEM3 (Alaska)\n  * 250: Interpolation\n  * 251: Quad edge averaged where two neighboring quads disagreed (generally a GDEM error)\n  * 255: ERROR (if NUM IS MISSING - none known to exist)\n",
+                "gee:units": "Class",
+                "gsd": 30,
+                "name": "num"
+            },
+            {
+                "description": "Updated SRTM water body data\n\n  * 0: Land\n  * 255: Water",
+                "gee:units": "Class",
+                "gsd": 30,
+                "name": "swb"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Elevation",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "elevation"
+                        ],
+                        "gamma": [
+                            1.6
+                        ],
+                        "max": [
+                            6000
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 7.71,
+                    "lon": 17.93,
+                    "zoom": 2
+                }
+            }
+        ],
+        "instruments": [
+            "Shuttle Imaging Radar-C (SIR-C)"
+        ],
+        "platform": [
+            "Space Shuttle Endeavour"
+        ],
+        "elevation": {
+            "minimum": -512,
+            "maximum": 8768
+        },
+        "num": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "swb": {
+            "minimum": 0,
+            "maximum": 255
+        }
+    },
+    "title": "NASADEM: NASA NASADEM Digital Elevation 30m",
+    "version": "1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -56,
+                    180,
+                    60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-11T00:00:00Z",
+                    "2000-02-22T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

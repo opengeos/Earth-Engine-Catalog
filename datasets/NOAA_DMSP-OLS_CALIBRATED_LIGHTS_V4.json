@@ -1,0 +1,146 @@
+{
+    "type": "Collection",
+    "id": "NOAA/DMSP-OLS/CALIBRATED_LIGHTS_V4",
+    "stac_version": "1.0.0",
+    "description": "The Defense Meteorological Program (DMSP) Operational Line-Scan System\n(OLS) has a unique capability to detect visible and near-infrared (VNIR)\nemission sources at night.\n\nThis collection contains global nighttime lights images with no sensor\nsaturation. The sensor is typically operated at a high-gain setting to\nenable the detection of moonlit clouds. However, with six bit quantization\nand limited dynamic range, the recorded data are saturated in the bright\ncores of urban centers. A limited set of observations at low lunar\nillumination were obtained where the gain of the detector was set\nsignificantly lower than its typical operational setting (sometimes by a\nfactor of 100). Sparse data acquired at low-gain settings were combined\nwith the operational data acquired at high-gain settings to produce the set\nof global nighttime lights images with no sensor saturation. Data from\ndifferent satellites were merged and blended into the final product in order\nto gain maximum coverage. For more information, see this\n[readme](https://eogdata.mines.edu/dmsp/radcal_readme.txt)\nfile from the provider.\n\nImage and data processing by NOAA's National Geophysical Data Center.\nDMSP data collected by US Air Force Weather Agency.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_DMSP-OLS_CALIBRATED_LIGHTS_V4",
+            "type": "text/html",
+            "title": "Run the example for NOAA/DMSP-OLS/CALIBRATED_LIGHTS_V4 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/DMSP-OLS/NOAA_DMSP-OLS_CALIBRATED_LIGHTS_V4_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_DMSP-OLS_CALIBRATED_LIGHTS_V4#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/DMSP-OLS/NOAA_DMSP-OLS_CALIBRATED_LIGHTS_V4.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/DMSP-OLS/catalog.json",
+            "type": "application/json",
+            "title": "DMSP-OLS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "NOAA data, information, and products, regardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use. The\nforgoing data is in the public domain and is being provided without\nrestriction on use and distribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "calibrated",
+        "dmsp",
+        "eog",
+        "imagery",
+        "lights",
+        "nighttime",
+        "ols",
+        "radiance",
+        "visible",
+        "yearly"
+    ],
+    "providers": [
+        {
+            "name": "Earth Observation Group, Payne Institute for Public Policy, Colorado School of Mines",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://eogdata.mines.edu/dmsp/download_radcal.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_DMSP-OLS_CALIBRATED_LIGHTS_V4"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Average digital band numbers from observations with cloud-free light detection.",
+                "name": "avg_vis"
+            },
+            {
+                "description": "Cloud-free coverages, the total number of observations that\nwent into each 30-arc second grid cell. This image can be used to identify\nareas with low numbers of observations where the quality is reduced.\n",
+                "name": "cf_cvg"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Nighttime Lights",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "avg_vis"
+                        ],
+                        "max": [
+                            60
+                        ],
+                        "min": [
+                            3
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 49.1,
+                    "lon": 7.82,
+                    "zoom": 4
+                }
+            }
+        ],
+        "gsd": [
+            927.67
+        ],
+        "avg_vis": {
+            "minimum": 0,
+            "maximum": 6060.6
+        },
+        "cf_cvg": {
+            "minimum": 0,
+            "maximum": 175
+        }
+    },
+    "title": "DMSP OLS: Global Radiance-Calibrated Nighttime Lights Version 4, Defense Meteorological Program Operational Linescan System",
+    "version": "Version 4",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -65,
+                    180,
+                    75
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1996-03-16T00:00:00Z",
+                    "2011-07-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

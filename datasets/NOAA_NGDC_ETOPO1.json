@@ -1,0 +1,161 @@
+{
+    "type": "Collection",
+    "id": "NOAA/NGDC/ETOPO1",
+    "stac_version": "1.0.0",
+    "description": "ETOPO1 is a 1 arc-minute global relief model of Earth''s\nsurface that integrates land topography and ocean bathymetry. It\nwas built from numerous global and regional data sets. It contains\ntwo elevation bands: ice_surface and bedrock.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_NGDC_ETOPO1",
+            "type": "text/html",
+            "title": "Run the example for NOAA/NGDC/ETOPO1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NGDC/NOAA_NGDC_ETOPO1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_NGDC_ETOPO1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO1/data/"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.7289/V5C8276M"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NGDC/NOAA_NGDC_ETOPO1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NGDC/catalog.json",
+            "type": "application/json",
+            "title": "NGDC"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "It is not necessary to obtain written permission to\nuse ETOPO1 or other NOAA products that are in the public domain,\nnor are there any fees for using them. We ask only that you cite\nNCEI as source.\n",
+    "gee:type": "image",
+    "keywords": [
+        "bedrock",
+        "dem",
+        "elevation",
+        "geophysical",
+        "ice",
+        "noaa",
+        "topography"
+    ],
+    "providers": [
+        {
+            "name": "NOAA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ngdc.noaa.gov/mgg/global/global.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_NGDC_ETOPO1"
+        }
+    ],
+    "sci:citation": "Amante, C. and B. W. Eakins, ETOPO1 1 Arc-Minute Global Relief\nModel: Procedures, Data Sources and Analysis. NOAA Technical Memorandum\nNESDIS NGDC-24, 19 pp, March 2009.\n",
+    "sci:doi": "10.7289/V5C8276M",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Elevation at ground level and at the base of the Antarctic and Greenland ice sheets",
+                "gee:units": "m",
+                "name": "bedrock"
+            },
+            {
+                "description": "Elevation at ground level and at the top of the Antarctic and Greenland ice sheets",
+                "gee:units": "m",
+                "name": "ice_surface"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Elevation",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "bedrock"
+                        ],
+                        "max": [
+                            3000
+                        ],
+                        "min": [
+                            -7000
+                        ],
+                        "palette": [
+                            "011de2",
+                            "afafaf",
+                            "3603ff",
+                            "fff477",
+                            "b42109"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 25.8,
+                    "lon": -37.62,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            1855
+        ],
+        "bedrock": {
+            "minimum": -10898,
+            "maximum": 8271
+        },
+        "ice_surface": {
+            "minimum": -10898,
+            "maximum": 8271
+        }
+    },
+    "title": "ETOPO1: Global 1 Arc-Minute Elevation",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2008-08-01T00:00:00Z",
+                    "2008-08-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

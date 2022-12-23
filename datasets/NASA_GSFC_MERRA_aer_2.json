@@ -1,0 +1,145 @@
+{
+    "type": "Collection",
+    "id": "NASA/GSFC/MERRA/aer/2",
+    "stac_version": "1.0.0",
+    "description": "M2T1NXAER (or tavg1_2d_aer_Nx) is an hourly time-averaged 2-dimensional data\ncollection in Modern-Era Retrospective analysis for Research and\nApplications version 2 (MERRA-2). This collection consists of assimilated\naerosol diagnostics, such as column mass density of aerosol components\n(black carbon, dust, sea-salt, sulfate, and organic carbon), surface mass\nconcentration of aerosol components, and total extinction (and scattering)\naerosol optical thickness (AOT) at 550 nm. The total PM1.0, PM2.5, and PM10\nmay be derived with the formula described in the\n[in the FAQ] (https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/FAQ/)\n\nThe data field is time-stamped with the\ncentral time of an hour starting from 00:30 UTC,\ne.g.: 00:30, 01:30, ... , 23:30 UTC.\n\nMERRA-2 is the latest version of global atmospheric reanalysis for the\nsatellite era produced by NASA Global Modeling and Assimilation Office\n(GMAO) using the Goddard Earth Observing System Model (GEOS) version 5.12.4.\nThe dataset covers the period of 1980-present with the latency of ~3 weeks\nafter the end of a month.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA_GSFC_MERRA_aer_2",
+            "type": "text/html",
+            "title": "Run the example for NASA/GSFC/MERRA/aer/2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/GSFC/NASA_GSFC_MERRA_aer_2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GSFC_MERRA_aer_2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://earthdata.nasa.gov/collaborate/open-data-services-and-software/data-information-policy",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GSFC/NASA_GSFC_MERRA_aer_2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GSFC/catalog.json",
+            "type": "application/json",
+            "title": "GSFC"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "hour"
+    },
+    "gee:terms_of_use": "NASA promotes the full and open sharing of all data with research and\napplications communities, private industry, academia, and the general\npublic.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "aer",
+        "aerosol",
+        "carbon",
+        "dust",
+        "mass",
+        "merra",
+        "nasa",
+        "sea_salt",
+        "so2",
+        "so4"
+    ],
+    "providers": [
+        {
+            "name": "NASA/MERRA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GSFC_MERRA_aer_2"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Black carbon column u-wind mass flux",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "BCFLUXU"
+                        ],
+                        "max": [
+                            1.65e-05
+                        ],
+                        "min": [
+                            -1.15e-05
+                        ],
+                        "palette": [
+                            "001137",
+                            "01abab",
+                            "e7eb05",
+                            "620500"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 39.91,
+                    "lon": -95.62,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            69375,
+            55000
+        ]
+    },
+    "title": "MERRA-2 M2T1NXAER: Aerosol Diagnostics V5.12.4",
+    "version": "V5.12.4",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1980-01-01T00:00:00Z",
+                    "2022-11-30T23:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

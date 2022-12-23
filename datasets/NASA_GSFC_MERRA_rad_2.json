@@ -1,0 +1,284 @@
+{
+    "type": "Collection",
+    "id": "NASA/GSFC/MERRA/rad/2",
+    "stac_version": "1.0.0",
+    "description": "M2T1NXRAD (or tavg1_2d_rad_Nx) is an hourly time-averaged data\ncollection in Modern-Era Retrospective analysis for Research and\nApplications version 2 (MERRA-2). This collection consists of radiation\ndiagnostics, such as surface albedo, cloud area fraction, in cloud\noptical thickness, surface incoming shortwave flux (i.e. solar\nradiation), surface net downward shortwave flux, and upwelling longwave\nflux at TOA (top of atmosphere) (i.e. outgoing longwave radiation (OLR)\nat TOA). The data field is time-stamped with the central time of an hour\nstarting from 00:30 UTC, e.g.: 00:30, 01:30, ... , 23:30 UTC.\n\nMERRA-2 is the latest version of global atmospheric reanalysis for the\nsatellite era produced by NASA Global Modeling and Assimilation Office\n(GMAO) using the Goddard Earth Observing System Model (GEOS) version\n5.12.4. The dataset covers the period of 1980-present with the latency\nof ~3 weeks after the end of a month.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA_GSFC_MERRA_rad_2",
+            "type": "text/html",
+            "title": "Run the example for NASA/GSFC/MERRA/rad/2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/GSFC/NASA_GSFC_MERRA_rad_2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GSFC_MERRA_rad_2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://earthdata.nasa.gov/collaborate/open-data-services-and-software/data-information-policy",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GSFC/NASA_GSFC_MERRA_rad_2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GSFC/catalog.json",
+            "type": "application/json",
+            "title": "GSFC"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "hour"
+    },
+    "gee:terms_of_use": "NASA promotes the full and open sharing of all data with research and\napplications communities, private industry, academia, and the general\npublic.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "albedo",
+        "emissivity",
+        "merra",
+        "shortwave",
+        "temperature"
+    ],
+    "providers": [
+        {
+            "name": "NASA/MERRA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GSFC_MERRA_rad_2"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Surface albedo",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "ALBEDO"
+                        ],
+                        "max": [
+                            0.83335
+                        ],
+                        "min": [
+                            -0.428147
+                        ],
+                        "palette": [
+                            "001137",
+                            "01abab",
+                            "e7eb05",
+                            "620500"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 39.91,
+                    "lon": -95.62,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            69375,
+            55000
+        ],
+        "ALBEDO": {
+            "minimum": 0.01,
+            "maximum": 0.898471
+        },
+        "ALBNIRDF": {
+            "minimum": 0.017455,
+            "maximum": 0.820016
+        },
+        "ALBNIRDR": {
+            "minimum": 0.018709,
+            "maximum": 0.82001
+        },
+        "ALBVISDF": {
+            "minimum": 0.016788,
+            "maximum": 0.959771
+        },
+        "ALBVISDR": {
+            "minimum": 0.01853,
+            "maximum": 0.959762
+        },
+        "CLDHGH": {
+            "minimum": 0,
+            "maximum": 0.999236
+        },
+        "CLDLOW": {
+            "minimum": 0,
+            "maximum": 0.999997
+        },
+        "CLDMID": {
+            "minimum": 0,
+            "maximum": 0.998779
+        },
+        "CLDTOT": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "EMIS": {
+            "minimum": 0.943074,
+            "maximum": 0.999993
+        },
+        "LWGAB": {
+            "minimum": 41.144592,
+            "maximum": 482.397766
+        },
+        "LWGABCLR": {
+            "minimum": 41.141357,
+            "maximum": 465.928528
+        },
+        "LWGABCLRCLN": {
+            "minimum": 41.140797,
+            "maximum": 458.522949
+        },
+        "LWGEM": {
+            "minimum": 67.529724,
+            "maximum": 630.289917
+        },
+        "LWGNT": {
+            "minimum": -268.861694,
+            "maximum": 77.254967
+        },
+        "LWGNTCLR": {
+            "minimum": -248.65271,
+            "maximum": 62.279442
+        },
+        "LWGNTCLRCLN": {
+            "minimum": -248.74791,
+            "maximum": 61.073635
+        },
+        "LWTUP": {
+            "minimum": 80.650604,
+            "maximum": 370.868256
+        },
+        "LWTUPCLR": {
+            "minimum": 80.676796,
+            "maximum": 372.229187
+        },
+        "LWTUPCLRCLN": {
+            "minimum": 80.676796,
+            "maximum": 372.229187
+        },
+        "SWGDN": {
+            "minimum": 0,
+            "maximum": 1127.491943
+        },
+        "SWGDNCLR": {
+            "minimum": -0.008217,
+            "maximum": 1155.5
+        },
+        "SWGNT": {
+            "minimum": 0,
+            "maximum": 1083.949097
+        },
+        "SWGNTCLN": {
+            "minimum": 0,
+            "maximum": 1088.418091
+        },
+        "SWGNTCLR": {
+            "minimum": -0.001333,
+            "maximum": 1083.949097
+        },
+        "SWGNTCLRCLN": {
+            "minimum": -3.2e-05,
+            "maximum": 1088.418091
+        },
+        "SWTDN": {
+            "minimum": 0,
+            "maximum": 1404.283936
+        },
+        "SWTNT": {
+            "minimum": 0,
+            "maximum": 1313.333008
+        },
+        "SWTNTCLN": {
+            "minimum": 0,
+            "maximum": 1315.887085
+        },
+        "SWTNTCLR": {
+            "minimum": 0,
+            "maximum": 1316.5
+        },
+        "SWTNTCLRCLN": {
+            "minimum": 0,
+            "maximum": 1317.5
+        },
+        "TAUHGH": {
+            "minimum": 0,
+            "maximum": 142.1875
+        },
+        "TAULOW": {
+            "minimum": 0,
+            "maximum": 318.21756
+        },
+        "TAUMID": {
+            "minimum": 0,
+            "maximum": 252.995132
+        },
+        "TAUTOT": {
+            "minimum": 0,
+            "maximum": 348.125
+        },
+        "TS": {
+            "minimum": 185.729706,
+            "maximum": 328.863831
+        }
+    },
+    "title": "MERRA-2 M2T1NXRAD: Radiation Diagnostics V5.12.4",
+    "version": "5.12.4",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1980-01-01T00:00:00Z",
+                    "2022-11-30T23:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

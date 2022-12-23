@@ -1,0 +1,309 @@
+{
+    "type": "Collection",
+    "id": "NOAA/VIIRS/001/VNP22Q2",
+    "stac_version": "1.0.0",
+    "description": "The Suomi National Polar-Orbiting Partnership (Suomi NPP) NASA Visible\nInfrared Imaging Radiometer Suite (VIIRS) Land Cover Dynamics data product\nprovides global land surface phenology (GLSP) metrics at yearly intervals.\nThe VNP22Q2 data product is derived from time series of the two-band\nEnhanced Vegetation Index (EVI2) calculated from VIIRS Nadir Bidirectional\nReflectance Distribution Function (BRDF)-Adjusted Reflectance (NBAR).\nVegetation phenology metrics at 500 meter spatial resolution are identified\nfor up to two detected growing cycles per year.\n\nThe product contains six phenological transition dates: onset of greenness\nincrease, onset of greenness maximum, onset of greenness decrease, onset of\ngreenness minimum, dates of mid-greenup, and senescence phases. The product\nalso includes the growing season length. The greenness-related metrics\nconsist of EVI2 onset of greenness increase, EVI2 onset of greenness\nmaximum, EVI2 growing season, rate of greenness increase, and rate of\ngreenness decrease. The confidence of phenology detection is provided as\ngreenness agreement growing season, proportion of good quality (PGQ)\ngrowing season, PGQ onset greenness increase, PGQ onset greenness maximum,\nPGQ onset greenness decrease, and PGQ onset greenness minimum.\nThe final layer is quality control specifying the overall quality of the\nproduct.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/637/VNP22_User_Guide_V1.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/637/VNP22_User_Guide_V1.pdf)\n\n* [General Documentation](https://lpdaac.usgs.gov/products/vnp22q2v001/)\n\n* [Land Product Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/NPP_QA/)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_VIIRS_001_VNP22Q2",
+            "type": "text/html",
+            "title": "Run the example for NOAA/VIIRS/001/VNP22Q2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/VIIRS/NOAA_VIIRS_001_VNP22Q2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP22Q2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/VIIRS/VNP22Q2.001"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/VIIRS/NOAA_VIIRS_001_VNP22Q2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/VIIRS/catalog.json",
+            "type": "application/json",
+            "title": "VIIRS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 8,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C1711966127-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "land",
+        "nasa",
+        "ndvi",
+        "noaa",
+        "npp",
+        "phenology",
+        "surface",
+        "vegetation",
+        "viirs"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/VIIRS/VNP22Q2.001"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP22Q2"
+        }
+    ],
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/VIIRS/VNP22Q2.001",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Date at a mid-greenup phase",
+                "name": "Date_Mid_Greenup_Phase"
+            },
+            {
+                "description": "Date at a mid-senescence phase",
+                "name": "Date_Mid_Senescence_Phase"
+            },
+            {
+                "description": "Integrated EVI2 during a growing season",
+                "name": "EVI2_Growing_Season_Area"
+            },
+            {
+                "description": "EVI2 value at greenup onset",
+                "name": "EVI2_Onset_Greenness_Increase"
+            },
+            {
+                "description": "EVI2 value at maturity onset",
+                "name": "EVI2_Onset_Greenness_Maximum"
+            },
+            {
+                "description": "Global Land Surface Phenology Quality Control",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 3,
+                            "description": "Mandatory Quality",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "processed, good quality",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "processed, other quality",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "processed, backup algorithm",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "not processed, bad quality",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "not processed, other",
+                                    "value": 4
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "TBD",
+                            "first_bit": 3
+                        },
+                        {
+                            "bit_count": 3,
+                            "description": "Land/Water mask",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "Shallow ocean",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Land (Nothing else but land)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Ocean coastlines and lake shorelines",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Shallow inland water",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Ephemeral water",
+                                    "value": 4
+                                },
+                                {
+                                    "description": "Deep inland water",
+                                    "value": 5
+                                },
+                                {
+                                    "description": "Moderate or continental ocean",
+                                    "value": 6
+                                },
+                                {
+                                    "description": "Deep ocean",
+                                    "value": 7
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 8
+                },
+                "name": "GLSP_QC"
+            },
+            {
+                "description": "EVI2 agreement between modeled values and raw observations",
+                "name": "Greenness_Agreement_Growing_Season"
+            },
+            {
+                "description": "Growing Season Length",
+                "name": "Growing_Season_Length"
+            },
+            {
+                "description": "Date at which canopy greenness begins to decrease",
+                "name": "Onset_Greenness_Decrease"
+            },
+            {
+                "description": "Date of onset of greenness increase",
+                "name": "Onset_Greenness_Increase"
+            },
+            {
+                "description": "Date at which canopy greenness approaches its seasonal maximum",
+                "name": "Onset_Greenness_Maximum"
+            },
+            {
+                "description": "Date at which canopy greenness reaches a minimum",
+                "name": "Onset_Greenness_Minimum"
+            },
+            {
+                "description": "Proportion of good quality of VIIRS observations during a vegetation growing season",
+                "name": "PGQ_Growing_Season"
+            },
+            {
+                "description": "Proportion of good quality around senescence onset",
+                "name": "PGQ_Onset_Greenness_Decrease"
+            },
+            {
+                "description": "Proportion of good quality around greenup onset",
+                "name": "PGQ_Onset_Greenness_Increase"
+            },
+            {
+                "description": "Proportion of good quality around maturity onset",
+                "name": "PGQ_Onset_Greenness_Maximum"
+            },
+            {
+                "description": "Proportion of good quality around dormancy onset",
+                "name": "PGQ_Onset_Greenness_Minimum"
+            },
+            {
+                "description": "Rates of change in EVI2 values during a senescence phase",
+                "name": "Rate_Greenness_Decrease"
+            },
+            {
+                "description": "Rates of change in EVI2 values during a greenup phase",
+                "name": "Rate_Greenness_Increase"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Default visualization",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "EVI2_Growing_Season_Area"
+                        ],
+                        "max": [
+                            10000
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "000000",
+                            "004400",
+                            "008800",
+                            "00BB00",
+                            "00FF00"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 27.808,
+                    "lon": 95.571,
+                    "zoom": 8
+                }
+            }
+        ],
+        "gsd": [
+            500
+        ],
+        "instruments": [
+            "VIIRS"
+        ],
+        "platform": [
+            "Suomi NPP"
+        ]
+    },
+    "title": "VNP22Q2: Land Surface Phenology Yearly L3 Global 500m SIN Grid",
+    "version": "V001",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2013-01-01T00:00:00Z",
+                    "2021-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

@@ -1,0 +1,146 @@
+{
+    "type": "Collection",
+    "id": "NASA/GSFC/MERRA/slv/2",
+    "stac_version": "1.0.0",
+    "description": "M2T1NXSLV (or tavg1_2d_slv_Nx) is an hourly time-averaged 2-dimensional data\ncollection in Modern-Era Retrospective analysis for Research and\nApplications version 2 (MERRA-2). This collection consists of meteorology\ndiagnostics at popularly used vertical levels, such as air temperature at\n2-meter (or at 10-meter, 850hPa, 500 hPa, 250hPa), wind components at\n50-meter (or at 2-meter, 10-meter, 850 hPa, 500hPa, 250 hPa), sea level\npressure, surface pressure, and total precipitable water vapor (or ice\nwater, liquid water). The data field is time-stamped with the central time\nof an hour starting from 00:30 UTC, e.g.: 00:30, 01:30, ... , 23:30 UTC.\n\nMERRA-2 is the latest version of global atmospheric reanalysis for\nthe satellite era produced by NASA Global Modeling and Assimilation\nOffice (GMAO) using the Goddard Earth Observing System Model (GEOS)\nversion 5.12.4. The dataset covers the period of 1980-present with the\nlatency of ~3 weeks after the end of a month.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA_GSFC_MERRA_slv_2",
+            "type": "text/html",
+            "title": "Run the example for NASA/GSFC/MERRA/slv/2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/GSFC/NASA_GSFC_MERRA_slv_2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GSFC_MERRA_slv_2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://earthdata.nasa.gov/collaborate/open-data-services-and-software/data-information-policy",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GSFC/NASA_GSFC_MERRA_slv_2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GSFC/catalog.json",
+            "type": "application/json",
+            "title": "GSFC"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "hour"
+    },
+    "gee:terms_of_use": "NASA promotes the full and open sharing of all data with research and\napplications communities, private industry, academia, and the general\npublic.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "condensation",
+        "humidity",
+        "merra",
+        "nasa",
+        "omega",
+        "pressure",
+        "slv",
+        "temperature",
+        "vapor",
+        "water",
+        "wind"
+    ],
+    "providers": [
+        {
+            "name": "NASA/MERRA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GSFC_MERRA_slv_2"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Surface Pressure",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "PS"
+                        ],
+                        "max": [
+                            116812.8627263942
+                        ],
+                        "min": [
+                            81189.96666965343
+                        ],
+                        "palette": [
+                            "001137",
+                            "01abab",
+                            "e7eb05",
+                            "620500"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 39.91,
+                    "lon": -95.62,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            69375,
+            55000
+        ]
+    },
+    "title": "MERRA-2 M2T1NXSLV: Single-Level Diagnostics V5.12.4",
+    "version": "V5.12.4",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1980-01-01T00:00:00Z",
+                    "2022-11-30T23:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

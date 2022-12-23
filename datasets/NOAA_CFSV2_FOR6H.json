@@ -1,0 +1,365 @@
+{
+    "type": "Collection",
+    "id": "NOAA/CFSV2/FOR6H",
+    "stac_version": "1.0.0",
+    "description": "The National Centers for Environmental Prediction (NCEP) Climate Forecast\nSystem (CFS) is a fully coupled model representing the interaction between\nthe Earth's atmosphere, oceans, land, and sea ice. CFS was developed at the\nEnvironmental Modeling Center (EMC) at NCEP. The operational CFS was\nupgraded to version 2 (CFSv2) on March 30, 2011.\n\nForecasts are initialized four times per day (0000, 0600, 1200, and 1800\nUTC). This is the same model that was used to create the NCEP Climate\nForecast System Reanalysis (CFSR), and the purpose of the CFSv2 dataset is\nto extend CFSR. We ingest only a subset of bands from files matching\ncdas1.t??z.sfluxgrbf**06**.grib2.\n\nFor more information about CFS, please see the [CFS NOAA site](https://cfs.ncep.noaa.gov/).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_CFSV2_FOR6H",
+            "type": "text/html",
+            "title": "Run the example for NOAA/CFSV2/FOR6H in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/CFSV2/NOAA_CFSV2_FOR6H_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CFSV2_FOR6H#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5065/D61C1TXF"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CFSV2/NOAA_CFSV2_FOR6H.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CFSV2/catalog.json",
+            "type": "application/json",
+            "title": "CFSV2"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 6,
+        "type": "cadence",
+        "unit": "hour"
+    },
+    "gee:terms_of_use": "NOAA data, information, and products, regardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use. The\nforgoing data is in the public domain and is being provided without\nrestriction on use and distribution. For more information visit the\n[NWS disclaimer site](https://www.weather.gov/disclaimer/).\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "climate",
+        "daylight",
+        "flux",
+        "forecast",
+        "geophysical",
+        "ncep",
+        "noaa",
+        "nws",
+        "precipitation",
+        "radiation",
+        "snow",
+        "temperature",
+        "vapor",
+        "water",
+        "weather"
+    ],
+    "providers": [
+        {
+            "name": "NOAA NWS National Centers for Environmental Prediction (NCEP)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/climate-forecast-system-version2-cfsv2"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CFSV2_FOR6H"
+        }
+    ],
+    "sci:citation": "Saha, S., et al. 2011, updated daily. NCEP Climate Forecast System\nVersion 2 (CFSv2) 6-hourly Products. Research Data Archive at the National\nCenter for Atmospheric Research, Computational and Information Systems\nLaboratory. [https://doi.org/10.5065/D61C1TXF](https://doi.org/10.5065/D61C1TXF).\nAccessed dd mmm yyyy.\n",
+    "sci:doi": "10.5065/D61C1TXF",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Downward long-wave radiation flux at surface, 6-hour average",
+                "gee:units": "W/m^2",
+                "name": "Downward_Long-Wave_Radp_Flux_surface_6_Hour_Average"
+            },
+            {
+                "description": "Downward short-wave radiation flux at surface, 6-hour average",
+                "gee:units": "W/m^2",
+                "name": "Downward_Short-Wave_Radiation_Flux_surface_6_Hour_Average"
+            },
+            {
+                "description": "Geopotential height at surface",
+                "gee:units": "gpm",
+                "name": "Geopotential_height_surface"
+            },
+            {
+                "description": "Latent heat net flux at surface, 6-hour average",
+                "gee:units": "W/m^2",
+                "name": "Latent_heat_net_flux_surface_6_Hour_Average"
+            },
+            {
+                "description": "Maximum specific humidity 2m above ground, 6-hour interval",
+                "gee:units": "kg/kg",
+                "name": "Maximum_specific_humidity_at_2m_height_above_ground_6_Hour_Interval"
+            },
+            {
+                "description": "Maximum temperature 2m above ground, 6-hour interval",
+                "gee:units": "K",
+                "name": "Maximum_temperature_height_above_ground_6_Hour_Interval"
+            },
+            {
+                "description": "Minimum specific humidity 2m above ground, 6-hour interval",
+                "gee:units": "kg/kg",
+                "name": "Minimum_specific_humidity_at_2m_height_above_ground_6_Hour_Interval"
+            },
+            {
+                "description": "Minimum temperature 2m above ground, 6-hour interval",
+                "gee:units": "K",
+                "name": "Minimum_temperature_height_above_ground_6_Hour_Interval"
+            },
+            {
+                "description": "Potential evaporation rate at surface, 6-hour average",
+                "gee:units": "W/m^2",
+                "name": "Potential_Evaporation_Rate_surface_6_Hour_Average"
+            },
+            {
+                "description": "Precipitation rate at surface, 6-hour average",
+                "gee:units": "kg/m^2/s^1",
+                "name": "Precipitation_rate_surface_6_Hour_Average"
+            },
+            {
+                "description": "Pressure at surface",
+                "gee:units": "Pa",
+                "name": "Pressure_surface"
+            },
+            {
+                "description": "Sensible heat net flux at surface, 6-hour average",
+                "gee:units": "W/m^2",
+                "name": "Sensible_heat_net_flux_surface_6_Hour_Average"
+            },
+            {
+                "description": "Specific humidity 2m above ground",
+                "gee:units": "kg/kg",
+                "name": "Specific_humidity_height_above_ground"
+            },
+            {
+                "description": "Temperature 2m above ground",
+                "gee:units": "K",
+                "name": "Temperature_height_above_ground"
+            },
+            {
+                "description": "U-component of wind 10m above ground",
+                "gee:units": "m/s",
+                "name": "u-component_of_wind_height_above_ground"
+            },
+            {
+                "description": "Upward long-wave radiation flux at surface, 6-hour average",
+                "gee:units": "W/m^2",
+                "name": "Upward_Long-Wave_Radp_Flux_surface_6_Hour_Average"
+            },
+            {
+                "description": "Upward short-wave radiation flux at surface, 6-hour average",
+                "gee:units": "W/m^2",
+                "name": "Upward_Short-Wave_Radiation_Flux_surface_6_Hour_Average"
+            },
+            {
+                "description": "V-component of wind 10m above ground",
+                "gee:units": "m/s",
+                "name": "v-component_of_wind_height_above_ground"
+            },
+            {
+                "description": "Volumetric soil moisture content 5cm below surface layer",
+                "gee:units": "fraction",
+                "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_5_cm"
+            },
+            {
+                "description": "Volumetric soil moisture content 25cm below surface layer",
+                "gee:units": "fraction",
+                "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_25_cm"
+            },
+            {
+                "description": "Volumetric soil moisture content 70cm below surface layer",
+                "gee:units": "fraction",
+                "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_70_cm"
+            },
+            {
+                "description": "Volumetric soil moisture content 150cm below surface layer",
+                "gee:units": "fraction",
+                "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_150_cm"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "End hour",
+                "name": "end_hour",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Start hour",
+                "name": "start_hour",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Temperature Above Ground",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Temperature_height_above_ground"
+                        ],
+                        "max": [
+                            310
+                        ],
+                        "min": [
+                            220
+                        ],
+                        "palette": [
+                            "blue",
+                            "purple",
+                            "cyan",
+                            "green",
+                            "yellow",
+                            "red"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 26.4,
+                    "lon": -88.6,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            22264
+        ],
+        "Downward_Long-Wave_Radp_Flux_surface_6_Hour_Average": {
+            "minimum": 41.76,
+            "maximum": 532.67
+        },
+        "Downward_Short-Wave_Radiation_Flux_surface_6_Hour_Average": {
+            "minimum": 0,
+            "maximum": 1125.23
+        },
+        "Geopotential_height_surface": {
+            "minimum": -292,
+            "maximum": 5938.65
+        },
+        "Latent_heat_net_flux_surface_6_Hour_Average": {
+            "minimum": -628,
+            "maximum": 2357
+        },
+        "Maximum_specific_humidity_at_2m_height_above_ground_6_Hour_Interval": {
+            "minimum": 0,
+            "maximum": 0.1
+        },
+        "Maximum_temperature_height_above_ground_6_Hour_Interval": {
+            "minimum": 189.8,
+            "maximum": 334.89
+        },
+        "Minimum_specific_humidity_at_2m_height_above_ground_6_Hour_Interval": {
+            "minimum": 0,
+            "maximum": 0.02
+        },
+        "Minimum_temperature_height_above_ground_6_Hour_Interval": {
+            "minimum": 188.39,
+            "maximum": 324.39
+        },
+        "Potential_Evaporation_Rate_surface_6_Hour_Average": {
+            "minimum": -202,
+            "maximum": 6277
+        },
+        "Precipitation_rate_surface_6_Hour_Average": {
+            "minimum": 0,
+            "maximum": 0.03
+        },
+        "Pressure_surface": {
+            "minimum": 47200,
+            "maximum": 109180
+        },
+        "Sensible_heat_net_flux_surface_6_Hour_Average": {
+            "minimum": -2295,
+            "maximum": 3112
+        },
+        "Specific_humidity_height_above_ground": {
+            "minimum": 0,
+            "maximum": 0.06
+        },
+        "Temperature_height_above_ground": {
+            "minimum": 188.96,
+            "maximum": 328.68
+        },
+        "Upward_Long-Wave_Radp_Flux_surface_6_Hour_Average": {
+            "minimum": 59,
+            "maximum": 757
+        },
+        "Upward_Short-Wave_Radiation_Flux_surface_6_Hour_Average": {
+            "minimum": 0,
+            "maximum": 812
+        },
+        "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_150_cm": {
+            "minimum": 0.02,
+            "maximum": 1
+        },
+        "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_25_cm": {
+            "minimum": 0.02,
+            "maximum": 1
+        },
+        "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_5_cm": {
+            "minimum": 0.02,
+            "maximum": 1
+        },
+        "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_70_cm": {
+            "minimum": 0.02,
+            "maximum": 1
+        },
+        "u-component_of_wind_height_above_ground": {
+            "minimum": -57.2,
+            "maximum": 57.99
+        },
+        "v-component_of_wind_height_above_ground": {
+            "minimum": -53.09,
+            "maximum": 57.11
+        }
+    },
+    "title": "CFSV2: NCEP Climate Forecast System Version 2, 6-Hourly Products",
+    "version": "V2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1979-01-01T00:00:00Z",
+                    "2022-12-22T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

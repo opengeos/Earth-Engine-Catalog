@@ -1,0 +1,204 @@
+{
+    "type": "Collection",
+    "id": "NOAA/CDR/HEAT_FLUXES/V2",
+    "stac_version": "1.0.0",
+    "description": "The Ocean Heat Fluxes dataset is part of the NOAA Ocean Surface Bundle (OSB)\nand provides a high quality Climate Data Record (CDR) of the air/ocean heat\nfluxes over ice-free oceans.\n\nThis dataset is calculated from the OSB CDR parameters of near-surface\natmospheric and sea surface temperature using a neural-network\nemulator of the TOGA-COARE Bulk Air-Sea Flux Algorithm.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_CDR_HEAT_FLUXES_V2",
+            "type": "text/html",
+            "title": "Run the example for NOAA/CDR/HEAT_FLUXES/V2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/CDR/NOAA_CDR_HEAT_FLUXES_V2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_HEAT_FLUXES_V2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.7289/V59K4885"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CDR/NOAA_CDR_HEAT_FLUXES_V2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CDR/catalog.json",
+            "type": "application/json",
+            "title": "CDR"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 3,
+        "type": "cadence",
+        "unit": "hour"
+    },
+    "gee:terms_of_use": "The NOAA CDR Program's official distribution point for CDRs is NOAA's\nNational Climatic Data Center which provides sustained, open access and\nactive data management of the CDR packages and related information in\nkeeping with the United States' open data policies and practices as\ndescribed in the President's Memorandum on \\\"Open Data Policy\\\" and pursuant\nto the Executive Order of May 9, 2013, \\\"Making Open and Machine Readable\nthe New Default for Government Information\\\". In line with these policies,\nthe CDR data sets are nonproprietary, publicly available, and no\nrestrictions are placed upon their use. For more information, see the\n[Fair Use of NOAA's CDR Data Sets, Algorithms and Documentation](https://www1.ncdc.noaa.gov/pub/data/sds/cdr/CDRs/Aerosol_Optical_Thickness/UseAgreement_01B-04.pdf)\npdf.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "atmospheric",
+        "cdr",
+        "flux",
+        "heat",
+        "hourly",
+        "noaa",
+        "ocean",
+        "osb"
+    ],
+    "providers": [
+        {
+            "name": "NOAA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ncdc.noaa.gov/cdr/atmospheric/ocean-heat-fluxes"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_HEAT_FLUXES_V2"
+        }
+    ],
+    "sci:citation": "Clayson, Carol Anne, Brown, Jeremiah, and NOAA CDR Program (2016). NOAA\nClimate Data Record Ocean Surface Bundle (OSB) Climate Data Record (CDR) of\nOcean Heat Fluxes, Version 2. [indicate subset used]. NOAA National Climatic\nData Center. [doi:10.7289/V59K4885](https://doi.org/10.7289/V59K4885).\n",
+    "sci:doi": "10.7289/V59K4885",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Flux of heat from the Earth's surface to the atmosphere which causes a\nchange in phase of matter, e.g. evaporation of water at the surface and\nsubsequent condensation of water vapor in the troposphere\n",
+                "gee:units": "W/m^2",
+                "name": "surface_upward_latent_heat_flux"
+            },
+            {
+                "description": "Flux of heat from the Earth's surface to the atmosphere which causes a\nchange in air temperature, primarily through conduction and convection\n",
+                "gee:units": "W/m^2",
+                "name": "surface_upward_sensible_heat_flux"
+            },
+            {
+                "description": "Quality control flags",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 3,
+                            "description": "Quality control flags",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Pixel values from neural network",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Unused flag",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Snow/ice",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Over land",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Over lake",
+                                    "value": 4
+                                },
+                                {
+                                    "description": "High winds; wind speed greater than 45 m/s is clamped to 45 m/s",
+                                    "value": 5
+                                },
+                                {
+                                    "description": "Failed interpolation, fluxes unresolved",
+                                    "value": 6
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 3
+                },
+                "name": "fill_missing_qc"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Heat Flux",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "surface_upward_sensible_heat_flux",
+                            "surface_upward_sensible_heat_flux",
+                            "surface_upward_latent_heat_flux"
+                        ],
+                        "max": [
+                            500
+                        ],
+                        "min": [
+                            -50
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -18.98,
+                    "lon": 28.61,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            27830
+        ],
+        "surface_upward_latent_heat_flux": {
+            "minimum": -50,
+            "maximum": 500
+        },
+        "surface_upward_sensible_heat_flux": {
+            "minimum": -299.99,
+            "maximum": 1499.93
+        }
+    },
+    "title": "NOAA CDR: Ocean Heat Fluxes, Version 2",
+    "version": "V2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1988-01-01T00:00:00Z",
+                    "2021-08-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

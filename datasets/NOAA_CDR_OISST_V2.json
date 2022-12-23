@@ -1,0 +1,227 @@
+{
+    "type": "Collection",
+    "id": "NOAA/CDR/OISST/V2",
+    "stac_version": "1.0.0",
+    "description": "The NOAA 1/4 degree daily Optimum Interpolation Sea Surface Temperature\n(OISST) provides complete ocean temperature fields constructed by combining\nbias-adjusted observations from different platforms (satellite, ships,\nbuoys) on a regular global grid, with gaps filled in by interpolation.\nSatellite data from the Advanced Very High Resolution Radiometer (AVHRR)\nprovides the main input which permits the high temporal-spatial coverage\nbeginning in late 1981 to the present.\n\nThe OISST dataset has a single day's data processed twice. First a near\nreal-time preliminary version is released with a lag of 1 day, and a final\nversion with a lag of 14 days. The final version uses extra days for\nsmoothing, and zonal bias correction in addition to replacing the\npreliminary version.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_CDR_OISST_V2",
+            "type": "text/html",
+            "title": "Run the example for NOAA/CDR/OISST/V2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/CDR/NOAA_CDR_OISST_V2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_OISST_V2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CDR/NOAA_CDR_OISST_V2_1.json",
+            "type": "application/json",
+            "title": "NOAA/CDR/OISST/V2_1"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.7289/V5SQ8XB5"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CDR/NOAA_CDR_OISST_V2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CDR/catalog.json",
+            "type": "application/json",
+            "title": "CDR"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "deprecated": true,
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "The NOAA CDR Program's official distribution point for CDRs is NOAA's\nNational Climatic Data Center which provides sustained, open access and\nactive data management of the CDR packages and related information in\nkeeping with the United States' open data policies and practices as\ndescribed in the President's Memorandum on \\\"Open Data Policy\\\" and pursuant\nto the Executive Order of May 9, 2013, \\\"Making Open and Machine Readable\nthe New Default for Government Information\\\". In line with these policies,\nthe CDR data sets are nonproprietary, publicly available, and no\nrestrictions are placed upon their use. For more information, see the\n[Fair Use of NOAA's CDR Data Sets, Algorithms and Documentation](https://www1.ncdc.noaa.gov/pub/data/sds/cdr/CDRs/Aerosol_Optical_Thickness/UseAgreement_01B-04.pdf)\npdf.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "avhrr",
+        "cdr",
+        "daily",
+        "ice",
+        "noaa",
+        "ocean",
+        "oisst",
+        "real_time",
+        "sst",
+        "temperature"
+    ],
+    "providers": [
+        {
+            "name": "NOAA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ncdc.noaa.gov/cdr/oceanic/sea-surface-temperature-optimum-interpolation"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_OISST_V2"
+        }
+    ],
+    "sci:citation": "Richard W. Reynolds, Viva F. Banzon, and NOAA CDR Program (2008): NOAA\nOptimum Interpolation 1/4 Degree Daily Sea Surface Temperature (OISST)\nAnalysis, Version 2. [indicate subset used]. NOAA National Centers for\nEnvironmental Information. [doi:10.7289/V5SQ8XB5](https://doi.org/10.7289/V5SQ8XB5)\n[access date].\n",
+    "sci:doi": "10.7289/V5SQ8XB5",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Daily sea surface temperature",
+                "gee:scale": 0.01,
+                "gee:units": "\u00b0C",
+                "name": "sst"
+            },
+            {
+                "description": "Temperature anomaly; the daily OISST minus a 30-year climatological mean.",
+                "gee:scale": 0.01,
+                "gee:units": "\u00b0C",
+                "name": "anom"
+            },
+            {
+                "description": "Seven-day median of daily sea ice concentrations.",
+                "gee:scale": 0.01,
+                "gee:units": "%",
+                "name": "ice"
+            },
+            {
+                "description": "Estimated error; standard deviation of analyzed sea surface temperature.",
+                "gee:scale": 0.01,
+                "gee:units": "\u00b0C",
+                "name": "err"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "'provisional' or 'permanent'",
+                "name": "status",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Sea Surface Temperature",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "sst"
+                        ],
+                        "max": [
+                            3000
+                        ],
+                        "min": [
+                            -180
+                        ],
+                        "palette": [
+                            "040274",
+                            "040281",
+                            "0502a3",
+                            "0502b8",
+                            "0502ce",
+                            "0502e6",
+                            "0602ff",
+                            "235cb1",
+                            "307ef3",
+                            "269db1",
+                            "30c8e2",
+                            "32d3ef",
+                            "3be285",
+                            "3ff38f",
+                            "86e26f",
+                            "3ae237",
+                            "b5e22e",
+                            "d6e21f",
+                            "fff705",
+                            "ffd611",
+                            "ffb613",
+                            "ff8b13",
+                            "ff6e08",
+                            "ff500d",
+                            "ff0000",
+                            "de0101",
+                            "c21301",
+                            "a71001",
+                            "911003"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -20.39,
+                    "lon": 20.3,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            27830
+        ],
+        "anom": {
+            "minimum": -1887,
+            "maximum": 1902
+        },
+        "err": {
+            "minimum": 11,
+            "maximum": 171
+        },
+        "ice": {
+            "minimum": 1,
+            "maximum": 100
+        },
+        "sst": {
+            "minimum": -180,
+            "maximum": 3764
+        }
+    },
+    "title": "NOAA CDR OISST v2: Optimum Interpolation Sea Surface Temperature [deprecated]",
+    "version": "v2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1981-09-01T00:00:00Z",
+                    "2020-04-26T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

@@ -1,0 +1,146 @@
+{
+    "type": "Collection",
+    "id": "NASA/JPL/global_forest_canopy_height_2005",
+    "stac_version": "1.0.0",
+    "description": "This dataset represents global tree heights based on a fusion of\nspaceborne-lidar data (2005) from the Geoscience Laser Altimeter\nSystem (GLAS) and ancillary geospatial data. See [Simard et al. (2011)]\n(https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2011JG001708)\nfor details.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA_JPL_global_forest_canopy_height_2005",
+            "type": "text/html",
+            "title": "Run the example for NASA/JPL/global_forest_canopy_height_2005 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/JPL/NASA_JPL_global_forest_canopy_height_2005_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_JPL_global_forest_canopy_height_2005#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/JPL/NASA_JPL_global_forest_canopy_height_2005.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/JPL/catalog.json",
+            "type": "application/json",
+            "title": "JPL"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "Most materials published on the Earth Observatory, including images, are\nfreely available for re-publication or re-use, including commercial\npurposes, except for where copyright is indicated.\n\nNASA's Earth Observatory must be given credit for its original materials;\nthe only mandatory credit is NASA.\n\nFor more information about using NASA imagery visit the [Earth Observatory\nImage Use Policy](https://earthobservatory.nasa.gov/ImageUse/) site.\n",
+    "gee:type": "image",
+    "keywords": [
+        "canopy",
+        "forest",
+        "geophysical",
+        "glas",
+        "jpl",
+        "nasa"
+    ],
+    "providers": [
+        {
+            "name": "NASA/JPL",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://earthobservatory.nasa.gov"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_JPL_global_forest_canopy_height_2005"
+        }
+    ],
+    "sci:citation": "Simard, M., Pinto, N., Fisher, J., Baccini, A. 2011. Mapping forest\ncanopy height globally with spaceborne lidar. Journal of Geophysical\nResearch. 116: G04021. [doi:10.1029/2011JG001708]\n(https://doi.org/10.1029/2011JG001708)\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Tree heights",
+                "gee:units": "m",
+                "name": "1"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Forest Canopy Height",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "1"
+                        ],
+                        "max": [
+                            30
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "ffffff",
+                            "fcd163",
+                            "99b718",
+                            "66a000",
+                            "3e8601",
+                            "207401",
+                            "056201",
+                            "004c00",
+                            "011301"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 28.3,
+                    "lon": -28.1,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            927.67
+        ],
+        "1": {
+            "minimum": 0,
+            "maximum": 73
+        }
+    },
+    "title": "Global Forest Canopy Height, 2005",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2005-05-20T00:00:00Z",
+                    "2005-06-23T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

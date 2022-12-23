@@ -1,0 +1,324 @@
+{
+    "type": "Collection",
+    "id": "NASA/GSFC/MERRA/flx/2",
+    "stac_version": "1.0.0",
+    "description": "M2T1NXFLX (or tavg1_2d_flx_Nx) is an hourly time-averaged data\ncollection in Modern-Era Retrospective analysis for Research and\nApplications version 2 (MERRA-2). This collection consists of\nassimilated surface flux diagnostics, such as total precipitation, bias\ncorrected total precipitation, surface air temperature, surface specific\nhumidity, surface wind speed, and evaporation from turbulence. The\n\"surface\" in this data collection is the model surface layer. The\nheights of the model surface layer (HLML) vary with time and location,\nwith the value of ~60 meters above ground. The data field is time-stamped\nwith the central time of an hour starting from 00:30 UTC, e.g.: 00:30,\n01:30, ... , 23:30 UTC.\n\nMERRA-2 is the latest version of global atmospheric reanalysis for the\nsatellite era produced by [NASA Global Modeling and Assimilation Office\n(GMAO)](https://gmao.gsfc.nasa.gov/) using the [Goddard Earth Observing\nSystem Model (GEOS)](https://gmao.gsfc.nasa.gov/GEOS_systems/) version\n5.12.4. The dataset covers the period of 1980-present with the latency\nof ~3 weeks after the end of a month.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA_GSFC_MERRA_flx_2",
+            "type": "text/html",
+            "title": "Run the example for NASA/GSFC/MERRA/flx/2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/GSFC/NASA_GSFC_MERRA_flx_2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GSFC_MERRA_flx_2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://earthdata.nasa.gov/collaborate/open-data-services-and-software/data-information-policy",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GSFC/NASA_GSFC_MERRA_flx_2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GSFC/catalog.json",
+            "type": "application/json",
+            "title": "GSFC"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "hour"
+    },
+    "gee:terms_of_use": "NASA promotes the full and open sharing of all data with research and\napplications communities, private industry, academia, and the general\npublic.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "merra",
+        "sea_salt",
+        "so2",
+        "so4",
+        "soil_moisture"
+    ],
+    "providers": [
+        {
+            "name": "NASA/MERRA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GSFC_MERRA_flx_2"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Surface bouyancy scale",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "BSTAR"
+                        ],
+                        "max": [
+                            0.01174
+                        ],
+                        "min": [
+                            -0.00998
+                        ],
+                        "palette": [
+                            "001137",
+                            "01abab",
+                            "e7eb05",
+                            "620500"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 39.91,
+                    "lon": -95.62,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            69375,
+            55000
+        ],
+        "BSTAR": {
+            "minimum": -0.021035,
+            "maximum": 0.791739
+        },
+        "CDH": {
+            "minimum": 8e-06,
+            "maximum": 0.522482
+        },
+        "CDM": {
+            "minimum": 5e-06,
+            "maximum": 0.518079
+        },
+        "CDQ": {
+            "minimum": 8e-06,
+            "maximum": 0.522482
+        },
+        "CN": {
+            "minimum": 0.000646,
+            "maximum": 0.032227
+        },
+        "DISPH": {
+            "minimum": 0,
+            "maximum": 23.078125
+        },
+        "EFLUX": {
+            "minimum": -308.948822,
+            "maximum": 1655.850464
+        },
+        "EVAP": {
+            "minimum": -0.00011,
+            "maximum": 0.000673
+        },
+        "FRCAN": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "FRCCN": {
+            "minimum": 0,
+            "maximum": 0.423096
+        },
+        "FRCLS": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "FRSEAICE": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "GHTSKIN": {
+            "minimum": -245.078445,
+            "maximum": 999999986991104
+        },
+        "HFLUX": {
+            "minimum": -1181.242188,
+            "maximum": 686.74231
+        },
+        "HLML": {
+            "minimum": 42.364204,
+            "maximum": 71.059944
+        },
+        "NIRDF": {
+            "minimum": 0,
+            "maximum": 282.49527
+        },
+        "NIRDR": {
+            "minimum": 0,
+            "maximum": 592.216736
+        },
+        "PBLH": {
+            "minimum": 42.362129,
+            "maximum": 5780.884766
+        },
+        "PGENTOT": {
+            "minimum": 0,
+            "maximum": 0.017593
+        },
+        "PRECANV": {
+            "minimum": 0,
+            "maximum": 0.000968
+        },
+        "PRECCON": {
+            "minimum": 0,
+            "maximum": 0.002629
+        },
+        "PRECLSC": {
+            "minimum": 0,
+            "maximum": 0.014614
+        },
+        "PRECSNO": {
+            "minimum": 0,
+            "maximum": 0.006308
+        },
+        "PRECTOT": {
+            "minimum": 0,
+            "maximum": 0.017509
+        },
+        "PRECTOTCORR": {
+            "minimum": 0,
+            "maximum": 0.110565
+        },
+        "PREVTOT": {
+            "minimum": 0,
+            "maximum": 0.001474
+        },
+        "QLML": {
+            "minimum": 0,
+            "maximum": 0.034333
+        },
+        "QSH": {
+            "minimum": 0,
+            "maximum": 0.044069
+        },
+        "QSTAR": {
+            "minimum": -0.000139,
+            "maximum": 0.005463
+        },
+        "RHOA": {
+            "minimum": 0.658498,
+            "maximum": 1.682832
+        },
+        "RISFC": {
+            "minimum": -318.273376,
+            "maximum": 578.049988
+        },
+        "SPEED": {
+            "minimum": 0.061141,
+            "maximum": 49.354137
+        },
+        "SPEEDMAX": {
+            "minimum": 0.074227,
+            "maximum": 49.47673
+        },
+        "TAUGWX": {
+            "minimum": -3.06294,
+            "maximum": 5.871597
+        },
+        "TAUGWY": {
+            "minimum": -5.106486,
+            "maximum": 4.995545
+        },
+        "TAUX": {
+            "minimum": -5.488647,
+            "maximum": 5.093781
+        },
+        "TAUY": {
+            "minimum": -6.190365,
+            "maximum": 4.191915
+        },
+        "TCZPBL": {
+            "minimum": 6.55864,
+            "maximum": 2837115.25
+        },
+        "TLML": {
+            "minimum": 191.832565,
+            "maximum": 320.173889
+        },
+        "TSH": {
+            "minimum": 185.729675,
+            "maximum": 328.859314
+        },
+        "TSTAR": {
+            "minimum": -11.07605,
+            "maximum": 5.744015
+        },
+        "ULML": {
+            "minimum": -48.808193,
+            "maximum": 42.823917
+        },
+        "USTAR": {
+            "minimum": 0.000667,
+            "maximum": 2.31844
+        },
+        "VLML": {
+            "minimum": -41.940773,
+            "maximum": 44.377689
+        },
+        "Z0H": {
+            "minimum": 1e-05,
+            "maximum": 4.546224
+        },
+        "Z0M": {
+            "minimum": 1e-05,
+            "maximum": 4.546224
+        }
+    },
+    "title": "MERRA-2 M2T1NXFLX: Surface Flux Diagnostics V5.12.4",
+    "version": "5.12.4",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1980-01-01T00:00:00Z",
+                    "2022-11-30T23:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

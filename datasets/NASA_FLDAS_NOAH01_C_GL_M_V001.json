@@ -1,0 +1,160 @@
+{
+    "type": "Collection",
+    "id": "NASA/FLDAS/NOAH01/C/GL/M/V001",
+    "stac_version": "1.0.0",
+    "description": "The FLDAS dataset (McNally et al. 2017), was designed to assist with food\nsecurity assessments in data-sparse, developing country settings. It\nincludes information on many climate-related variables including moisture\ncontent, humidity, evapotranspiration, average soil temperature, total\nprecipitation rate, etc.\n\nThere are multiple different FLDAS datasets; this one uses Noah version\n3.6.1 surface model with CHIRPS-6 hourly rainfall that has been\ndownscaled using the [NASA Land Surface Data Toolkit](https://lis.gsfc.nasa.gov/software/ldt).\nwhich is part of the [Land Information System\nframework](LIS; [https://lis.gsfc.nasa.gov/](https://lis.gsfc.nasa.gov/)). Temporal desegregation is required so that daily\nrainfall inputs can be used in both energy and water balance calculations\n\nFor forcing data, this simulation uses a combination of the new version of Modern-Era\nRetrospective analysis for Research and Applications version 2 (MERRA-2) data and Climate\nHazards Group InfraRed Precipitation with Station data (CHIRPS), a quasi-global rainfall\ndataset designed for seasonal drought monitoring and trend analysis (Funk et al., 2015).\n\nDocumentation:\n\n* [Readme](https://hydro1.gesdisc.eosdis.nasa.gov/data/FLDAS/FLDAS_NOAH01_C_GL_M.001/doc/README_FLDAS.pdf)\n\n* [How-to](https://disc.gsfc.nasa.gov/information/howto?tags=hydrology)\n\n* [GES DISC Hydrology Documentation](https://disc.gsfc.nasa.gov/information/documents?title=Hydrology%20Documentation)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA_FLDAS_NOAH01_C_GL_M_V001",
+            "type": "text/html",
+            "title": "Run the example for NASA/FLDAS/NOAH01/C/GL/M/V001 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/FLDAS/NASA_FLDAS_NOAH01_C_GL_M_V001_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_FLDAS_NOAH01_C_GL_M_V001#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://hydro1.gesdisc.eosdis.nasa.gov/data/FLDAS/FLDAS_NOAH01_C_GL_M.001/"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/FLDAS/NASA_FLDAS_NOAH01_C_GL_M_V001.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/FLDAS/catalog.json",
+            "type": "application/json",
+            "title": "FLDAS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "month"
+    },
+    "gee:provider_ids": [
+        "C1563089663-GES_DISC"
+    ],
+    "gee:terms_of_use": "Distribution of data from the Goddard Earth Sciences\nData and Information Services Center (GES DISC) is funded by NASA's\nScience Mission Directorate (SMD). Consistent with NASA [Earth\nScience Data and Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy/),\ndata from the GES DISC archive are available free to the user community.\nFor more information visit the GES DISC [Data Policy](https://disc.sci.gsfc.nasa.gov/citing)\npage.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "climate",
+        "evapotranspiration",
+        "famine",
+        "fldas",
+        "humidity",
+        "ldas",
+        "monthly",
+        "nasa",
+        "runoff",
+        "snow",
+        "soil_moisture",
+        "soil_temperature",
+        "temperature",
+        "wind"
+    ],
+    "providers": [
+        {
+            "name": "NASA GES DISC at NASA Goddard Space Flight Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/5NHC22T9375G"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_FLDAS_NOAH01_C_GL_M_V001"
+        }
+    ],
+    "sci:citation": "If you use these data in your research or applications, please include a\nreference in your publication(s) similar to the following example:\nAmy McNally NASA/GSFC/HSL (2018), FLDAS Noah Land Surface Model L4 Global\nMonthly 0.1 x 0.1 degree (MERRA-2 and CHIRPS), Greenbelt, MD, USA, Goddard\nEarth Sciences Data and Information Services Center (GES DISC), Accessed:\n[Data Access Date], [doi:10.5067/5NHC22T9375G](https://doi.org/10.5067/5NHC22T9375G)\n",
+    "sci:publications": [
+        {
+            "citation": "McNally, A., Arsenault, K., Kumar, S., Shukla, S., Peterson, P., Wang, S., Funk, C.,\nPeters-Lidard, C.D., & Verdin, J. P. (2017). A land data assimilation system for\nsub-Saharan Africa food and water security applications. Scientific Data, 4, 170012.\n"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Average Evapotranspiration",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Evap_tavg"
+                        ],
+                        "max": [
+                            5e-05
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "black",
+                            "blue",
+                            "purple",
+                            "cyan",
+                            "green",
+                            "yellow",
+                            "red"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 30,
+                    "lon": 30,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            11132
+        ]
+    },
+    "title": "FLDAS: Famine Early Warning Systems Network (FEWS NET) Land Data Assimilation System",
+    "version": "V001",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1982-01-01T00:00:00Z",
+                    "2022-10-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

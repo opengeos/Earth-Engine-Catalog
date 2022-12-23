@@ -1,0 +1,175 @@
+{
+    "type": "Collection",
+    "id": "USGS/LIMA/SR",
+    "stac_version": "1.0.0",
+    "description": "The Landsat Image Mosaic of Antarctica (LIMA) is a seamless\nand virtually cloudless mosaic created from processed\nLandsat 7 ETM+ scenes.\n\nProcessed Landsat Scenes (16 bit) are Level 1Gt NLAPS\nscenes converted to 16 bit, processed with sun-angle\ncorrection, and converted to reflectance values\n([Bindschadler 2008](https://lima.usgs.gov/LIMA_paper.pdf)).\n\nEach Landsat scene is processed with elevation\ndata and sun-angle correction to ensure surface features\nwere accurately represented. The sun's angle in Antarctica\ngives the appearance of a setting sun. Because of the low\nsun angle, as Landsat passes over Antarctica, the outer\nedges of the continent appear brighter than areas closer\nto the South Pole, so scenes have bright and dark areas.\nInconsistent sun angles and shadows where corrected for\nthese scenes. Without this process, mosaicking would produce\na patchwork of scenes since each scene would have a brighter\nand a darker side.\n\nUsers can find individual image metadata available as a table at:\n[USGS/LIMA/SR_METADATA](https://code.earthengine.google.com/?asset=USGS/LIMA/SR_METADATA)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/USGS_LIMA_SR",
+            "type": "text/html",
+            "title": "Run the example for USGS/LIMA/SR in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/LIMA/USGS_LIMA_SR_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/USGS_LIMA_SR#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/LIMA/USGS_LIMA_SR.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/LIMA/catalog.json",
+            "type": "application/json",
+            "title": "LIMA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "These images are in the public domain and can be used freely\nand without acknowledgement. However, credit to the Landsat\nImage Mosaic of Antarctica (LIMA) Project is greatly appreciated.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "antarctica",
+        "ice",
+        "landsat_derived",
+        "lima",
+        "mosaic",
+        "sr",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "USGS",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://lima.usgs.gov/index.php"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_LIMA_SR"
+        }
+    ],
+    "sci:citation": "Bindschadler, R., Vornberger, P., Fleming, A., Fox, A., Mullins, J.,\nBinnie, D., Paulson, S., Granneman, B., and Gorodetzky, D., 2008,\nThe Landsat Image Mosaic of Antarctica, Remote Sensing of\nEnvironment, 112, pp. 4214-4226.\n[PDF](https://lima.usgs.gov/LIMA_paper.pdf)\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "center_wavelength": 0.485,
+                "description": "Blue",
+                "gee:wavelength": "0.45 - 0.52 &mu;m",
+                "gsd": 30,
+                "name": "B1"
+            },
+            {
+                "center_wavelength": 0.56,
+                "description": "Green",
+                "gee:wavelength": "0.52 - 0.60 &mu;m",
+                "gsd": 30,
+                "name": "B2"
+            },
+            {
+                "center_wavelength": 0.66,
+                "description": "Red",
+                "gee:wavelength": "0.63 - 0.69 &mu;m",
+                "gsd": 30,
+                "name": "B3"
+            },
+            {
+                "center_wavelength": 0.835,
+                "description": "Near infrared",
+                "gee:wavelength": "0.77 - 0.90 &mu;m",
+                "gsd": 30,
+                "name": "B4"
+            },
+            {
+                "center_wavelength": 1.65,
+                "description": "Shortwave infrared 1",
+                "gee:wavelength": "1.55 - 1.75 &mu;m",
+                "gsd": 30,
+                "name": "B5"
+            },
+            {
+                "center_wavelength": 2.215,
+                "description": "Shortwave infrared 2",
+                "gee:wavelength": "2.08 - 2.35 &mu;m",
+                "gsd": 30,
+                "name": "B7"
+            },
+            {
+                "center_wavelength": 0.71,
+                "description": "Panchromatic",
+                "gee:wavelength": "0.52 - 0.90 &mu;m",
+                "gsd": 15,
+                "name": "B8"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Antarctica",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "B3",
+                            "B2",
+                            "B1"
+                        ],
+                        "max": [
+                            10000
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -77.99,
+                    "lon": 164.619,
+                    "zoom": 7
+                }
+            }
+        ]
+    },
+    "title": "Landsat Image Mosaic of Antarctica (LIMA) - Processed Landsat Scenes (16 bit)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    -55
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1999-06-30T00:00:00Z",
+                    "2002-09-04T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

@@ -1,0 +1,318 @@
+{
+    "type": "Collection",
+    "id": "NASA/OCEANDATA/MODIS-Terra/L3SMI",
+    "stac_version": "1.0.0",
+    "description": "This level 3 product includes ocean color and satellite ocean biology data\nproduced or collected under [EOSDIS](https://earthdata.nasa.gov/about).\n\nThis dataset may be used for studying the biology and hydrology of\ncoastal zones, changes in the diversity and geographical distribution of\ncoastal marine habitats, biogeochemical fluxes and their influence in\nEarth's oceans and climate over time, and finally the impact of\nclimate and environmental variability and change on ocean ecosystems\nand the biodiversity they support.\n\nScale factor and offset are already applied.\n\nDocumentation:\n\n* [Ocean Color Forum](https://oceancolor.gsfc.nasa.gov/forum/oceancolor/forum_show.pl)\n\n* [Chlorophyll Forum](https://oceancolor.gsfc.nasa.gov/forum/oceancolor/forum_show.pl)\n\n* [Algorithm Theoretical Basis Document (Chlorophyll)](https://oceancolor.gsfc.nasa.gov/atbd/chlor_a)\n\n* [Algorithm Theoretical Basis Document (Fluorescence Line Height)](https://oceancolor.gsfc.nasa.gov/atbd/nflh)\n\n* [Algorithm Theoretical Basis Document (Particulate Organic Carbon)](https://oceancolor.gsfc.nasa.gov/atbd/poc)\n\n* [Algorithm Theoretical Basis Document (Remote-Sensing Reflectance)](https://oceancolor.gsfc.nasa.gov/atbd/rrs)\n\n* [Processing History](https://oceancolor.gsfc.nasa.gov/reprocessing)\n\n* [MODIS-Terra OceanData](https://oceancolor.gsfc.nasa.gov/data/terra)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA_OCEANDATA_MODIS-Terra_L3SMI",
+            "type": "text/html",
+            "title": "Run the example for NASA/OCEANDATA/MODIS-Terra/L3SMI in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/OCEANDATA/NASA_OCEANDATA_MODIS-Terra_L3SMI_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_OCEANDATA_MODIS-Terra_L3SMI#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/GHMDT-2PJ19"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/TERRA/MODIS/L3M/CHL/2018"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/TERRA/MODIS/L3M/FLH/2018"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/TERRA/MODIS/L3M/POC/2018"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/TERRA/MODIS/L3M/RRS/2018"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/OCEANDATA/NASA_OCEANDATA_MODIS-Terra_L3SMI.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/OCEANDATA/catalog.json",
+            "type": "application/json",
+            "title": "OCEANDATA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:extra_dois": [
+        "10.5067/TERRA/MODIS/L3M/CHL/2018",
+        "10.5067/TERRA/MODIS/L3M/FLH/2018",
+        "10.5067/TERRA/MODIS/L3M/POC/2018",
+        "10.5067/TERRA/MODIS/L3M/RRS/2018"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C1200034429-OB_DAAC",
+        "C1458097478-OB_DAAC",
+        "C1458097483-OB_DAAC",
+        "C1458097505-OB_DAAC",
+        "C1615934288-OB_DAAC"
+    ],
+    "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "biology",
+        "chlorophyll",
+        "climate",
+        "modis",
+        "nasa",
+        "ocean",
+        "oceandata",
+        "reflectance",
+        "sst",
+        "temperature",
+        "weather"
+    ],
+    "providers": [
+        {
+            "name": "NASA OB.DAAC at NASA Goddard Space Flight Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://oceancolor.gsfc.nasa.gov/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_OCEANDATA_MODIS-Terra_L3SMI"
+        }
+    ],
+    "sci:citation": "NASA Goddard Space Flight Center, Ocean Ecology Laboratory, Ocean Biology\nProcessing Group. Moderate-resolution Imaging Spectroradiometer\n(MODIS) Aqua Ocean Color Data, NASA OB.DAAC, Greenbelt, MD, USA.\n",
+    "sci:doi": "10.5067/GHMDT-2PJ19",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Chlorophyll a concentration",
+                "gee:units": "mg m-3",
+                "name": "chlor_a"
+            },
+            {
+                "description": "Normalized fluorescence line height",
+                "gee:units": "mW cm-2 &mu;m-1 sr-1",
+                "name": "nflh"
+            },
+            {
+                "description": "Particulate organic carbon",
+                "gee:units": "mg m-3",
+                "name": "poc"
+            },
+            {
+                "center_wavelength": 0.412,
+                "description": "Remote sensing reflectance at band 412nm",
+                "gee:units": "sr-1",
+                "gee:wavelength": "412nm",
+                "name": "Rrs_412"
+            },
+            {
+                "center_wavelength": 0.443,
+                "description": "Remote sensing reflectance at band 443nm",
+                "gee:units": "sr-1",
+                "gee:wavelength": "443nm",
+                "name": "Rrs_443"
+            },
+            {
+                "center_wavelength": 0.469,
+                "description": "Remote sensing reflectance at band 469nm",
+                "gee:units": "sr-1",
+                "gee:wavelength": "469nm",
+                "name": "Rrs_469"
+            },
+            {
+                "center_wavelength": 0.488,
+                "description": "Remote sensing reflectance at band 488nm",
+                "gee:units": "sr-1",
+                "gee:wavelength": "488nm",
+                "name": "Rrs_488"
+            },
+            {
+                "center_wavelength": 0.531,
+                "description": "Remote sensing reflectance at band 531nm",
+                "gee:units": "sr-1",
+                "gee:wavelength": "531nm",
+                "name": "Rrs_531"
+            },
+            {
+                "center_wavelength": 0.547,
+                "description": "Remote sensing reflectance at band 547nm",
+                "gee:units": "sr-1",
+                "gee:wavelength": "547nm",
+                "name": "Rrs_547"
+            },
+            {
+                "center_wavelength": 0.555,
+                "description": "Remote sensing reflectance at band 555nm",
+                "gee:units": "sr-1",
+                "gee:wavelength": "555nm",
+                "name": "Rrs_555"
+            },
+            {
+                "center_wavelength": 0.645,
+                "description": "Remote sensing reflectance at band 645nm",
+                "gee:units": "sr-1",
+                "gee:wavelength": "645nm",
+                "name": "Rrs_645"
+            },
+            {
+                "center_wavelength": 0.667,
+                "description": "Remote sensing reflectance at band 667nm",
+                "gee:units": "sr-1",
+                "gee:wavelength": "667nm",
+                "name": "Rrs_667"
+            },
+            {
+                "center_wavelength": 0.678,
+                "description": "Remote sensing reflectance at band 678nm",
+                "gee:units": "sr-1",
+                "gee:wavelength": "678nm",
+                "name": "Rrs_678"
+            },
+            {
+                "description": "Sea surface temperature",
+                "gee:units": "\u00b0C",
+                "name": "sst"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Remote Sensing Reflectance",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Rrs_645",
+                            "Rrs_555",
+                            "Rrs_443"
+                        ],
+                        "max": [
+                            0.02
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -46.13,
+                    "lon": -52.12,
+                    "zoom": 4
+                }
+            }
+        ],
+        "gsd": [
+            4616
+        ],
+        "Rrs_412": {
+            "minimum": 0,
+            "maximum": 0.11
+        },
+        "Rrs_443": {
+            "minimum": 0,
+            "maximum": 0.11
+        },
+        "Rrs_469": {
+            "minimum": 0,
+            "maximum": 0.11
+        },
+        "Rrs_488": {
+            "minimum": 0,
+            "maximum": 0.11
+        },
+        "Rrs_531": {
+            "minimum": 0,
+            "maximum": 0.1
+        },
+        "Rrs_547": {
+            "minimum": 0,
+            "maximum": 0.09
+        },
+        "Rrs_555": {
+            "minimum": 0,
+            "maximum": 0.08
+        },
+        "Rrs_645": {
+            "minimum": 0,
+            "maximum": 0.04
+        },
+        "Rrs_667": {
+            "minimum": 0,
+            "maximum": 0.04
+        },
+        "Rrs_678": {
+            "minimum": 0,
+            "maximum": 0.04
+        },
+        "chlor_a": {
+            "minimum": 0,
+            "maximum": 99.99
+        },
+        "nflh": {
+            "minimum": -0.5,
+            "maximum": 5.03
+        },
+        "poc": {
+            "minimum": 4,
+            "maximum": 12953.4
+        },
+        "sst": {
+            "minimum": -2,
+            "maximum": 45
+        }
+    },
+    "title": "Ocean Color SMI: Standard Mapped Image MODIS Terra Data",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-24T00:05:01Z",
+                    "2022-02-28T21:00:01Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}
