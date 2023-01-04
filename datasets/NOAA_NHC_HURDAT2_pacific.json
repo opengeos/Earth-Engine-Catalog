@@ -28,6 +28,13 @@
             "type": "text/html"
         },
         {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_NHC_HURDAT2_pacific_FeatureView",
+            "type": "text/html",
+            "title": "Run the example for NOAA/NHC/HURDAT2/pacific in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
             "rel": "source",
             "href": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-nepac-1949-2018-071519.txt"
         },

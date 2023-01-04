@@ -32,6 +32,18 @@
             "href": "https://doi.org/10.5067/MODIS/MCD12Q2.006"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MCD12Q2.json",
+            "type": "application/json",
+            "title": "MODIS/061/MCD12Q2"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MCD12Q2.json",
+            "type": "application/json",
+            "title": "MODIS/061/MCD12Q2"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MCD12Q2.json",
             "type": "application/json"
@@ -48,6 +60,7 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.0.0/schema.json"
     ],
+    "deprecated": true,
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -58,7 +71,6 @@
     "keywords": [
         "evi",
         "global",
-        "mcd12q2",
         "modis",
         "onset_greenness",
         "phenology",
@@ -216,7 +228,7 @@
             "maximum": 32766
         }
     },
-    "title": "MCD12Q2.006 Land Cover Dynamics Yearly Global 500m",
+    "title": "MCD12Q2.006 Land Cover Dynamics Yearly Global 500m [deprecated]",
     "version": "V006",
     "extent": {
         "spatial": {

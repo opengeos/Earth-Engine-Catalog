@@ -1,0 +1,234 @@
+{
+    "type": "Collection",
+    "id": "MODIS/061/MCD43A3",
+    "stac_version": "1.0.0",
+    "description": "The MCD43A3 V6.1 Albedo Model dataset is a daily 16-day\nproduct. It provides both directional hemispherical reflectance\n(black sky albedo) and bihemispherical reflectance (white sky albedo)\nfor each of the MODIS surface reflectance bands (band 1 through\nband 7) as well as 3 broad spectrum bands (visible, near infrared,\nand shortwave).  Each 500m/pixel daily image is generated using\n16 days of data, centered on the given day.  A quality band is\nalso provided for each of the 10 albedo bands.\n\nDocumentation:\n\n* [User's Guide](https://www.umb.edu/spectralmass/terra_aqua_modis/v006)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/97/MCD43_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MCD43A3)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_061_MCD43A3",
+            "type": "text/html",
+            "title": "Run the example for MODIS/061/MCD43A3 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MCD43A3_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD43A3#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/MODIS/MCD43A3.061"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MCD43A3.json",
+            "type": "application/json",
+            "title": "MODIS/006/MCD43A3"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MCD43A3.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C2278860820-LPCLOUD"
+    ],
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "albedo",
+        "black_sky",
+        "daily",
+        "global",
+        "modis",
+        "nasa",
+        "usgs",
+        "white_sky"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/MODIS/MCD43A3.061"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD43A3"
+        }
+    ],
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/MODIS/MCD43A3.061",
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Black-Sky Albedo",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Albedo_BSA_Band1"
+                        ],
+                        "max": [
+                            400
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 0,
+                    "lon": 0,
+                    "zoom": 0
+                }
+            }
+        ],
+        "gsd": [
+            500
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Aqua",
+            "Terra"
+        ],
+        "Albedo_BSA_Band1": {
+            "minimum": 0,
+            "maximum": 32766
+        },
+        "Albedo_BSA_Band2": {
+            "minimum": 0,
+            "maximum": 32766
+        },
+        "Albedo_BSA_Band3": {
+            "minimum": 0,
+            "maximum": 32766
+        },
+        "Albedo_BSA_Band4": {
+            "minimum": 0,
+            "maximum": 32766
+        },
+        "Albedo_BSA_Band5": {
+            "minimum": 0,
+            "maximum": 32766
+        },
+        "Albedo_BSA_Band6": {
+            "minimum": 0,
+            "maximum": 32766
+        },
+        "Albedo_BSA_Band7": {
+            "minimum": 0,
+            "maximum": 32766
+        },
+        "Albedo_BSA_nir": {
+            "minimum": 0,
+            "maximum": 32766
+        },
+        "Albedo_BSA_shortwave": {
+            "minimum": 0,
+            "maximum": 32766
+        },
+        "Albedo_BSA_vis": {
+            "minimum": 0,
+            "maximum": 32766
+        },
+        "Albedo_WSA_Band1": {
+            "minimum": 0,
+            "maximum": 32766
+        },
+        "Albedo_WSA_Band2": {
+            "minimum": 0,
+            "maximum": 32766
+        },
+        "Albedo_WSA_Band3": {
+            "minimum": 0,
+            "maximum": 32766
+        },
+        "Albedo_WSA_Band4": {
+            "minimum": 0,
+            "maximum": 32766
+        },
+        "Albedo_WSA_Band5": {
+            "minimum": 0,
+            "maximum": 32766
+        },
+        "Albedo_WSA_Band6": {
+            "minimum": 0,
+            "maximum": 32766
+        },
+        "Albedo_WSA_Band7": {
+            "minimum": 0,
+            "maximum": 32766
+        },
+        "Albedo_WSA_nir": {
+            "minimum": 0,
+            "maximum": 32766
+        },
+        "Albedo_WSA_shortwave": {
+            "minimum": 0,
+            "maximum": 32766
+        },
+        "Albedo_WSA_vis": {
+            "minimum": 0,
+            "maximum": 32766
+        }
+    },
+    "title": "MCD43A3.061 MODIS Albedo Daily 500m",
+    "version": "V061",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-24T00:00:00Z",
+                    "2022-12-19T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

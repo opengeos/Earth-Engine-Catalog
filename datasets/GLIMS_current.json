@@ -28,6 +28,13 @@
             "type": "text/html"
         },
         {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/GLIMS_current_FeatureView",
+            "type": "text/html",
+            "title": "Run the example for GLIMS/current in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
             "rel": "latest-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/GLIMS/GLIMS_20210914.json",
             "type": "application/json",

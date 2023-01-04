@@ -28,6 +28,13 @@
             "type": "text/html"
         },
         {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/BLM_AIM_v1_TerrADat_TerrestrialAIM_FeatureView",
+            "type": "text/html",
+            "title": "Run the example for BLM/AIM/v1/TerrADat/TerrestrialAIM in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
             "rel": "source",
             "href": "https://gis.blm.gov/AIMdownload/layerpackages/BLM_AIM_Terrestrial.zip"
         },

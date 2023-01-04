@@ -28,6 +28,22 @@
             "type": "text/html"
         },
         {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/MODIS/MCD43C3.006"
+        },
+        {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MCD43C3.json",
+            "type": "application/json",
+            "title": "MODIS/061/MCD43C3"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MCD43C3.json",
+            "type": "application/json",
+            "title": "MODIS/061/MCD43C3"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MCD43C3.json",
             "type": "application/json"
@@ -44,6 +60,7 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.0.0/schema.json"
     ],
+    "deprecated": true,
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -57,7 +74,6 @@
         "brdf",
         "daily",
         "global",
-        "mcd43c3",
         "modis",
         "nasa",
         "usgs",
@@ -212,7 +228,7 @@
             "maximum": 100
         }
     },
-    "title": "MCD43C3.00C BRDF/Albedo Daily L3 0.05 Deg CMG",
+    "title": "MCD43C3.006 BRDF/Albedo Daily L3 0.05 Deg CMG [deprecated]",
     "version": "V006",
     "extent": {
         "spatial": {

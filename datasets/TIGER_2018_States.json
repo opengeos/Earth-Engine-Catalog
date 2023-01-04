@@ -28,6 +28,13 @@
             "type": "text/html"
         },
         {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/TIGER_2018_States_FeatureView",
+            "type": "text/html",
+            "title": "Run the example for TIGER/2018/States in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
             "rel": "source",
             "href": "ftp://ftp2.census.gov/geo/tiger/TIGER2018/STATE/tl_2018_us_state.zip"
         },

@@ -1,0 +1,245 @@
+{
+    "type": "Collection",
+    "id": "MODIS/061/MOD09CMG",
+    "stac_version": "1.0.0",
+    "description": "The MOD09CMG Version 6.1 product provides an estimate of the surface\nspectral reflectance of Terra Moderate Resolution Imaging Spectroradiometer\n(MODIS) Bands 1 through 7, resampled to 5600 meter pixel resolution and\ncorrected for atmospheric conditions such as gasses, aerosols, and Rayleigh\nscattering. The MOD09CMG data product provides 25 layers including MODIS\nbands 1 through 7; Brightness Temperature data from thermal bands 20, 21,\n31, and 32; along with Quality Assurance (QA) and observation bands.\nThis product is based on a Climate Modeling Grid (CMG) for use in climate\nsimulation models.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/925/MOD09_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/305/MOD09_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MOD09CMG)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_061_MOD09CMG",
+            "type": "text/html",
+            "title": "Run the example for MODIS/061/MOD09CMG in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MOD09CMG_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD09CMG#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/MODIS/MOD09CMG.061"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MOD09CMG.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C1621091621-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "brightness_temperature",
+        "ozone",
+        "surface_reflectance",
+        "terra"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/MODIS/MOD09CMG.061"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD09CMG"
+        }
+    ],
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/MODIS/MOD09CMG.061",
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "True Color",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Coarse_Resolution_Surface_Reflectance_Band_1",
+                            "Coarse_Resolution_Surface_Reflectance_Band_2",
+                            "Coarse_Resolution_Surface_Reflectance_Band_3"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            -0.4
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 46.529,
+                    "lon": 6.746,
+                    "zoom": 6
+                }
+            }
+        ],
+        "gsd": [
+            500
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Terra"
+        ],
+        "Coarse_Resolution_Band_3_Path_Radiance": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "Coarse_Resolution_Brightness_Temperature_Band_20": {
+            "minimum": 1,
+            "maximum": 40000
+        },
+        "Coarse_Resolution_Brightness_Temperature_Band_21": {
+            "minimum": 1,
+            "maximum": 40000
+        },
+        "Coarse_Resolution_Brightness_Temperature_Band_31": {
+            "minimum": 1,
+            "maximum": 40000
+        },
+        "Coarse_Resolution_Brightness_Temperature_Band_32": {
+            "minimum": 1,
+            "maximum": 40000
+        },
+        "Coarse_Resolution_Granule_Time": {
+            "minimum": 1,
+            "maximum": 2355
+        },
+        "Coarse_Resolution_Internal_CM": {
+            "minimum": 1,
+            "maximum": 8191
+        },
+        "Coarse_Resolution_Number_Mapping": {
+            "minimum": 1,
+            "maximum": 2097151
+        },
+        "Coarse_Resolution_Ozone": {
+            "minimum": 1,
+            "maximum": 255
+        },
+        "Coarse_Resolution_QA": {
+            "minimum": 1,
+            "maximum": 1073741824
+        },
+        "Coarse_Resolution_Relative_Azimuth_Angle": {
+            "minimum": -18000,
+            "maximum": 18000
+        },
+        "Coarse_Resolution_Solar_Zenith_Angle": {
+            "minimum": 0,
+            "maximum": 18000
+        },
+        "Coarse_Resolution_State_QA": {
+            "minimum": 1,
+            "maximum": 65535
+        },
+        "Coarse_Resolution_Surface_Reflectance_Band_1": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "Coarse_Resolution_Surface_Reflectance_Band_2": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "Coarse_Resolution_Surface_Reflectance_Band_3": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "Coarse_Resolution_Surface_Reflectance_Band_4": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "Coarse_Resolution_Surface_Reflectance_Band_5": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "Coarse_Resolution_Surface_Reflectance_Band_6": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "Coarse_Resolution_Surface_Reflectance_Band_7": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "Coarse_Resolution_View_Zenith_Angle": {
+            "minimum": 0,
+            "maximum": 18000
+        },
+        "n_pixels_averaged": {
+            "minimum": 1,
+            "maximum": 40
+        },
+        "number_of_250m_pixels_averaged_b1-2": {
+            "minimum": 1,
+            "maximum": 640
+        },
+        "number_of_500m_pixels_averaged_b3": {
+            "minimum": 1,
+            "maximum": 200
+        },
+        "number_of_500m_rej_detector": {
+            "minimum": 1,
+            "maximum": 100
+        }
+    },
+    "title": "MOD09CMG.061 Surface Reflectance Daily L3 Global 0.05 Deg CMG",
+    "version": "V061",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-24T00:00:00Z",
+                    "2022-12-26T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

@@ -28,6 +28,13 @@
             "type": "text/html"
         },
         {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/USFS_GTAC_MTBS_burned_area_boundaries_v1_FeatureView",
+            "type": "text/html",
+            "title": "Run the example for USFS/GTAC/MTBS/burned_area_boundaries/v1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/USFS/USFS_GTAC_MTBS_burned_area_boundaries_v1.json",
             "type": "application/json"

@@ -28,6 +28,13 @@
             "type": "text/html"
         },
         {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/USDOS_LSIB_2017_FeatureView",
+            "type": "text/html",
+            "title": "Run the example for USDOS/LSIB/2017 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/USDOS/USDOS_LSIB_2017.json",
             "type": "application/json"

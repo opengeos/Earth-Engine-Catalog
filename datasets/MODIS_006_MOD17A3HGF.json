@@ -32,6 +32,18 @@
             "href": "https://doi.org/10.5067/MODIS/MOD17A3HGF.006"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MOD17A3HGF.json",
+            "type": "application/json",
+            "title": "MODIS/061/MOD17A3HGF"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MOD17A3HGF.json",
+            "type": "application/json",
+            "title": "MODIS/061/MOD17A3HGF"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MOD17A3HGF.json",
             "type": "application/json"
@@ -48,6 +60,7 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.0.0/schema.json"
     ],
+    "deprecated": true,
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -61,9 +74,6 @@
     "keywords": [
         "global",
         "gpp",
-        "mod17a3",
-        "mod17a3gf",
-        "modis",
         "nasa",
         "npp",
         "photosynthesis",
@@ -152,7 +162,7 @@
             "maximum": 100
         }
     },
-    "title": "MOD17A3HGF.006: Terra Net Primary Production  Gap-Filled Yearly Global 500m",
+    "title": "MOD17A3HGF.006: Terra Net Primary Production  Gap-Filled Yearly Global 500m [deprecated]",
     "version": "V006",
     "extent": {
         "spatial": {

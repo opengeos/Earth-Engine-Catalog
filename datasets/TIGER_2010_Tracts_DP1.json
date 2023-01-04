@@ -28,6 +28,13 @@
             "type": "text/html"
         },
         {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/TIGER_2010_Tracts_DP1_FeatureView",
+            "type": "text/html",
+            "title": "Run the example for TIGER/2010/Tracts_DP1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/TIGER/TIGER_2010_Tracts_DP1.json",
             "type": "application/json"

@@ -28,6 +28,13 @@
             "type": "text/html"
         },
         {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WCMC_WDPA_current_polygons_FeatureView",
+            "type": "text/html",
+            "title": "Run the example for WCMC/WDPA/current/polygons in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/WCMC/WCMC_WDPA_current_polygons.json",
             "type": "application/json"
