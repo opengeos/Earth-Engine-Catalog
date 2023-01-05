@@ -1,0 +1,278 @@
+{
+    "type": "Collection",
+    "id": "MODIS/061/MYD21C1",
+    "stac_version": "1.0.0",
+    "description": "The MYD21C1 dataset is produced daily in a 0.05 degree (5,600 meters at the\nequator) Climate Modeling Grid (CMG) from daytime Level 2 Gridded (L2G)\nintermediate LST products. The L2G process maps the daily MYD21 swath\ngranules onto a sinusoidal MODIS grid and stores all observations falling\nover a gridded cell for a given day. The MYD21C1 algorithm sorts through\nthese observations for each cell and estimates the final LST value as an\naverage from all observations that are cloud free and have good LST&E\naccuracies. The daytime average is weighted by the observation coverage for\nthat cell. Only observations having an observation coverage greater than a\n15% threshold are considered. The MYD21C1 product contains the calculated\nLST as well as quality control, the three emissivity bands, view zenith\nangle, and time of observation.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1398/MOD21_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/1399/MOD21_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MYD21C1)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_061_MYD21C1",
+            "type": "text/html",
+            "title": "Run the example for MODIS/061/MYD21C1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MYD21C1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD21C1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/MODIS/MYD21C1.061"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MYD21C1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C1646692274-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "aqua",
+        "daily",
+        "emissivity",
+        "global",
+        "lst",
+        "nasa",
+        "surface_temperature",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/MODIS/MYD21C1.061"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD21C1"
+        }
+    ],
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/MODIS/MYD21C1.061",
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Average Daytime Land Surface Temperature",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "LST_Day"
+                        ],
+                        "max": [
+                            348
+                        ],
+                        "min": [
+                            216
+                        ],
+                        "palette": [
+                            "040274",
+                            "040281",
+                            "0502a3",
+                            "0502b8",
+                            "0502ce",
+                            "0502e6",
+                            "0602ff",
+                            "235cb1",
+                            "307ef3",
+                            "269db1",
+                            "30c8e2",
+                            "32d3ef",
+                            "3be285",
+                            "3ff38f",
+                            "86e26f",
+                            "3ae237",
+                            "b5e22e",
+                            "d6e21f",
+                            "fff705",
+                            "ffd611",
+                            "ffb613",
+                            "ff8b13",
+                            "ff6e08",
+                            "ff500d",
+                            "ff0000",
+                            "de0101",
+                            "c21301",
+                            "a71001",
+                            "911003"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 46.529,
+                    "lon": 6.746,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            1000
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Aqua"
+        ],
+        "Count_Day": {
+            "minimum": 1,
+            "maximum": 65535
+        },
+        "Count_Night": {
+            "minimum": 1,
+            "maximum": 65535
+        },
+        "Day_view_angle": {
+            "minimum": 0,
+            "maximum": 130
+        },
+        "Day_view_time": {
+            "minimum": 0,
+            "maximum": 120
+        },
+        "Emis_29_Day": {
+            "minimum": 1,
+            "maximum": 255
+        },
+        "Emis_29_Day_err": {
+            "minimum": 1,
+            "maximum": 65535
+        },
+        "Emis_29_Night": {
+            "minimum": 1,
+            "maximum": 255
+        },
+        "Emis_29_Night_err": {
+            "minimum": 1,
+            "maximum": 65535
+        },
+        "Emis_31_Day": {
+            "minimum": 1,
+            "maximum": 255
+        },
+        "Emis_31_Day_err": {
+            "minimum": 1,
+            "maximum": 65535
+        },
+        "Emis_31_Night": {
+            "minimum": 1,
+            "maximum": 255
+        },
+        "Emis_31_Night_err": {
+            "minimum": 1,
+            "maximum": 65535
+        },
+        "Emis_32_Day": {
+            "minimum": 1,
+            "maximum": 255
+        },
+        "Emis_32_Day_err": {
+            "minimum": 1,
+            "maximum": 65535
+        },
+        "Emis_32_Night": {
+            "minimum": 1,
+            "maximum": 255
+        },
+        "Emis_32_Night_err": {
+            "minimum": 1,
+            "maximum": 65535
+        },
+        "LST_Day": {
+            "minimum": 7500,
+            "maximum": 65535
+        },
+        "LST_Day_err": {
+            "minimum": 1,
+            "maximum": 255
+        },
+        "LST_Night": {
+            "minimum": 7500,
+            "maximum": 65535
+        },
+        "LST_Night_err": {
+            "minimum": 1,
+            "maximum": 255
+        },
+        "Night_view_angle": {
+            "minimum": 0,
+            "maximum": 130
+        },
+        "Night_view_time": {
+            "minimum": 0,
+            "maximum": 120
+        },
+        "Percent_land_in_grid": {
+            "minimum": 1,
+            "maximum": 100
+        },
+        "QC_Day": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "QC_Night": {
+            "minimum": 0,
+            "maximum": 255
+        }
+    },
+    "title": "MYD21C1.061 Aqua Land Surface Temperature and 3-Band Emissivity Daily L3 Global 0.05 Deg CMG",
+    "version": "V061",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-24T00:00:00Z",
+                    "2022-12-25T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}
