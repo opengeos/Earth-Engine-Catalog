@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MODIS/061/MYD21A1N",
     "stac_version": "1.0.0",
-    "description": "The MYD21A1N dataset is produced daily from nighttime Level 2 Gridded (L2G)\nintermediate LST products at a spatial resolution of 1,000 meters. The L2G\nprocess maps the daily MOD21 swath granules onto a sinusoidal MODIS grid and\nstores all observations falling over a gridded cell for a given day. The\nMOD21A1 algorithm sorts through these observations for each cell and\nestimates the final LST value as an average from all observations that are\ncloud free and have good LST&E accuracies. The nighttime average is weighted\nby the observation coverage for that cell. Only observations having an\nobservation coverage greater than a 15% threshold are considered. The\nMYD21A1N product contains the calculated LST as well as quality control, the\nthree emissivity bands, view zenith angle, and time of observation.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1398/MOD21_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/1399/MOD21_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MYD21A1N)\n",
+    "description": "The MYD21A1N dataset is produced daily from nighttime Level 2 Gridded (L2G)\nintermediate LST products at a spatial resolution of 1,000 meters. The L2G\nprocess maps the daily MOD21 swath granules onto a sinusoidal MODIS grid and\nstores all observations falling over a gridded cell for a given day. The\nMOD21A1 algorithm sorts through these observations for each cell and\nestimates the final LST value as an average from all observations that are\ncloud free and have good LST&E accuracies. The nighttime average is weighted\nby the observation coverage for that cell. Only observations having an\nobservation coverage greater than a 15% threshold are considered. The\nMYD21A1N product contains the calculated LST as well as quality control, the\nthree emissivity bands, view zenith angle, and time of observation.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1398/MOD21_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/1399/MOD21_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD21A1N)\n",
     "links": [
         {
             "rel": "root",
@@ -428,7 +428,7 @@
             "interval": [
                 [
                     "2000-02-24T00:00:00Z",
-                    "2022-12-26T00:00:00Z"
+                    "2022-12-30T00:00:00Z"
                 ]
             ]
         }

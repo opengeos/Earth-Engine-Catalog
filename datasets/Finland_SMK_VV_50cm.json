@@ -1,0 +1,151 @@
+{
+    "type": "Collection",
+    "id": "Finland/SMK/VV/50cm",
+    "stac_version": "1.0.0",
+    "description": "NLS Orthophotos are an aerial photo dataset covering the whole of Finland.\nThis data is provided by SMK([The Energy Agency](https://energiavirasto.fi/etusivu),\nformerly abbreviated SMK). An orthophoto is a combination of several\nindividual aerial photos. The aerial photo dataset in orthophoto format is\navailable as the most recent dataset consisting of the most recent aerial\nphotos available. The most recent data is usually 1-3 years old. NLS\nOrthophotos are updated every 3 years (in Northern Lapland 12 years).\n\nIn these images, the bands are near-infrared, red, and green.\n\n(In Dataset id, VV stands for \"v&auml;&auml;r&auml;v&auml;ri\", false color)\nFor more information, please see the [NLS orthophotos documentation]\n(https://www.maanmittauslaitos.fi/en/maps-and-spatial-data/expert-users/product-descriptions/orthophotos)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/Finland_SMK_VV_50cm",
+            "type": "text/html",
+            "title": "Run the example for Finland/SMK/VV/50cm in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/Finland/Finland_SMK_VV_50cm_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/Finland_SMK_VV_50cm#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Finland/Finland_SMK_VV_50cm.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Finland/catalog.json",
+            "type": "application/json",
+            "title": "Finland"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "Mention the name of the Licensor (the National Land Survey of Finland),\nthe name of the dataset(s) and the time when the National Land Survey has\ndelivered the dataset(s) (e.g.: contains data from the National Land Survey\nof Finland Topographic Database 06/2014).\nplease see the [Terms of use](\nhttps://creativecommons.org/licenses/by/4.0/)\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "falsecolor",
+        "finland",
+        "nrg",
+        "orthophoto",
+        "smk"
+    ],
+    "providers": [
+        {
+            "name": "NLS orthophotos",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.maanmittauslaitos.fi/en/maps-and-spatial-data/expert-users/product-descriptions/orthophotos"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/Finland_SMK_VV_50cm"
+        }
+    ],
+    "sci:citation": "the National Land Survey of Finland",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Near-Infrared",
+                "name": "N"
+            },
+            {
+                "description": "Red",
+                "name": "R"
+            },
+            {
+                "description": "Green",
+                "name": "G"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "NRG",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "N",
+                            "R",
+                            "G"
+                        ],
+                        "max": [
+                            190
+                        ],
+                        "min": [
+                            11
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 25.7416,
+                    "lon": 62.2446,
+                    "zoom": 16
+                }
+            }
+        ],
+        "gsd": [
+            0.5
+        ],
+        "G": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "N": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "R": {
+            "minimum": 0,
+            "maximum": 255
+        }
+    },
+    "title": "Finland NRG NLS orthophotos 50 cm by SMK",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    59,
+                    18,
+                    69.4,
+                    29.2
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-01-01T00:00:00Z",
+                    "2022-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

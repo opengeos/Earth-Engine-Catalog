@@ -47,7 +47,9 @@
     "gee:type": "image_collection",
     "keywords": [
         "orthophoto",
-        "rgb"
+        "rgb",
+        "swissimage",
+        "swisstopo"
     ],
     "providers": [
         {
@@ -115,9 +117,6 @@
         ],
         "gsd": [
             0.1
-        ],
-        "platform": [
-            "SwissImage"
         ],
         "B": {
             "minimum": 0,

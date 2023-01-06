@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MODIS/061/MOD21C2",
     "stac_version": "1.0.0",
-    "description": "The MOD21C2 dataset is an 8-day composite LST product that uses an algorithm\nbased on a simple averaging method. The algorithm calculates the average\nfrom all the cloud free MOD21A1D and MOD21A1N daily acquisitions from the\n8-day period. Unlike the MOD21A1 data sets where the daytime and nighttime\nacquisitions are separate products, the MOD21A2 contains both daytime and\nnighttime acquisitions. The LST, Quality Control (QC), view zenith angle,\nand viewing time have separate day and night bands, while the values for the\nMODIS emissivity bands 29, 31, and 32 are the average of both the nighttime\nand daytime acquisitions.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1398/MOD21_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/1399/MOD21_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MOD21C2)\n",
+    "description": "The MOD21C2 dataset is an 8-day composite LST product that uses an algorithm\nbased on a simple averaging method. The algorithm calculates the average\nfrom all the cloud free MOD21A1D and MOD21A1N daily acquisitions from the\n8-day period. Unlike the MOD21A1 data sets where the daytime and nighttime\nacquisitions are separate products, the MOD21A2 contains both daytime and\nnighttime acquisitions. The LST, Quality Control (QC), view zenith angle,\nand viewing time have separate day and night bands, while the values for the\nMODIS emissivity bands 29, 31, and 32 are the average of both the nighttime\nand daytime acquisitions.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1398/MOD21_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/1399/MOD21_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MOD21C2)\n",
     "links": [
         {
             "rel": "root",
@@ -276,7 +276,7 @@
             "interval": [
                 [
                     "2000-02-24T00:00:00Z",
-                    "2022-12-11T00:00:00Z"
+                    "2022-12-19T00:00:00Z"
                 ]
             ]
         }
