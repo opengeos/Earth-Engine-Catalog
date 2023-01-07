@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MODIS/006/MYD17A3HGF",
     "stac_version": "1.0.0",
-    "description": "The MYD17A3HGF V6 product provides information about\nannual Net Primary Productivity (NPP) at 500m pixel resolution.\n Annual NPP is derived from the sum of all 8-day Net Photosynthesis\n(PSN) products (MYD17A2H) from the given year.  The PSN value\nis the difference of the Gross Primary Productivity (GPP) and the\nMaintenance Respiration (MR) (GPP-MR).\n",
+    "description": "Version 6 MODIS data products. Users are advised to transition to the\nimproved Version 6.1.\n\nThe MYD17A3HGF V6 product provides information about\nannual Net Primary Productivity (NPP) at 500m pixel resolution.\n Annual NPP is derived from the sum of all 8-day Net Photosynthesis\n(PSN) products (MYD17A2H) from the given year.  The PSN value\nis the difference of the Gross Primary Productivity (GPP) and the\nMaintenance Respiration (MR) (GPP-MR).\n",
     "links": [
         {
             "rel": "root",
@@ -32,6 +32,18 @@
             "href": "https://doi.org/10.5067/MODIS/MYD17A3HGF.006"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MYD17A3HGF.json",
+            "type": "application/json",
+            "title": "MODIS/061/MYD17A3HGF"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MYD17A3HGF.json",
+            "type": "application/json",
+            "title": "MODIS/061/MYD17A3HGF"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MYD17A3HGF.json",
             "type": "application/json"
@@ -48,6 +60,7 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.0.0/schema.json"
     ],
+    "deprecated": true,
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -152,7 +165,7 @@
             "maximum": 100
         }
     },
-    "title": "MYD17A3HGF.006: Aqua Net Primary Production  Gap-Filled Yearly Global 500m",
+    "title": "MYD17A3HGF.006: Aqua Net Primary Production  Gap-Filled Yearly Global 500m [deprecated]",
     "version": "V006",
     "extent": {
         "spatial": {
