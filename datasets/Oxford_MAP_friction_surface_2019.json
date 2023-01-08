@@ -77,13 +77,11 @@
             {
                 "description": "Land-based travel speed.",
                 "gee:units": "minutes/meter",
-                "gsd": 927.67,
                 "name": "friction"
             },
             {
                 "description": "Land-based travel speed using non-motorized transport.",
                 "gee:units": "minutes/meter",
-                "gsd": 927.67,
                 "name": "friction_walking_only"
             }
         ],
@@ -112,6 +110,9 @@
                     "zoom": 2
                 }
             }
+        ],
+        "gsd": [
+            927.67
         ],
         "friction": {
             "minimum": 0.000429,

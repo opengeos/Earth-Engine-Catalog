@@ -73,42 +73,36 @@
                 "center_wavelength": 0.485,
                 "description": "Blue",
                 "gee:wavelength": "0.45 - 0.52 &mu;m",
-                "gsd": 30,
                 "name": "10"
             },
             {
                 "center_wavelength": 0.56,
                 "description": "Green",
                 "gee:wavelength": "0.52 - 0.60 &mu;m",
-                "gsd": 30,
                 "name": "20"
             },
             {
                 "center_wavelength": 0.66,
                 "description": "Red",
                 "gee:wavelength": "0.63 - 0.69 &mu;m",
-                "gsd": 30,
                 "name": "30"
             },
             {
                 "center_wavelength": 0.835,
                 "description": "Near infrared",
                 "gee:wavelength": "0.76 - 0.90 &mu;m",
-                "gsd": 30,
                 "name": "40"
             },
             {
                 "center_wavelength": 1.65,
                 "description": "Shortwave infrared 1",
                 "gee:wavelength": "1.55 - 1.75 &mu;m",
-                "gsd": 30,
                 "name": "50"
             },
             {
                 "center_wavelength": 2.215,
                 "description": "Shortwave infrared 2",
                 "gee:wavelength": "2.08 - 2.35 &mu;m",
-                "gsd": 30,
                 "name": "70"
             }
         ],
@@ -179,6 +173,9 @@
                     "zoom": 6
                 }
             }
+        ],
+        "gsd": [
+            30
         ]
     },
     "title": "Landsat Global Land Survey 2005, Landsat 5+7 scenes",

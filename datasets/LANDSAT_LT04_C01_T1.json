@@ -98,49 +98,42 @@
                 "center_wavelength": 0.485,
                 "description": "Blue",
                 "gee:wavelength": "0.45 - 0.52 &mu;m",
-                "gsd": 30,
                 "name": "B1"
             },
             {
                 "center_wavelength": 0.56,
                 "description": "Green",
                 "gee:wavelength": "0.52 - 0.60 &mu;m",
-                "gsd": 30,
                 "name": "B2"
             },
             {
                 "center_wavelength": 0.66,
                 "description": "Red",
                 "gee:wavelength": "0.63 - 0.69 &mu;m",
-                "gsd": 30,
                 "name": "B3"
             },
             {
                 "center_wavelength": 0.835,
                 "description": "Near infrared",
                 "gee:wavelength": "0.76 - 0.90 &mu;m",
-                "gsd": 30,
                 "name": "B4"
             },
             {
                 "center_wavelength": 1.65,
                 "description": "Shortwave infrared 1",
                 "gee:wavelength": "1.55 - 1.75 &mu;m",
-                "gsd": 30,
                 "name": "B5"
             },
             {
                 "center_wavelength": 11.45,
                 "description": "Thermal Infrared 1. Resampled from 60m to 30m.",
                 "gee:wavelength": "10.40 - 12.50 &mu;m",
-                "gsd": 30,
                 "name": "B6"
             },
             {
                 "center_wavelength": 2.215,
                 "description": "Shortwave infrared 2",
                 "gee:wavelength": "2.08 - 2.35 &mu;m",
-                "gsd": 30,
                 "name": "B7"
             },
             {
@@ -287,7 +280,6 @@
                     ],
                     "total_bit_count": 11
                 },
-                "gsd": 30,
                 "name": "BQA"
             }
         ],
@@ -358,6 +350,9 @@
                     "zoom": 6
                 }
             }
+        ],
+        "gsd": [
+            30
         ]
     },
     "title": "USGS Landsat 4 TM Collection 1 Tier 1 Raw Scenes [deprecated]",

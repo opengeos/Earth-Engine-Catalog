@@ -80,28 +80,24 @@
                 "center_wavelength": 0.55,
                 "description": "Green",
                 "gee:wavelength": "0.50 - 0.60 &mu;m",
-                "gsd": 60,
                 "name": "10"
             },
             {
                 "center_wavelength": 0.65,
                 "description": "Red",
                 "gee:wavelength": "600-700 &mu;m",
-                "gsd": 60,
                 "name": "20"
             },
             {
                 "center_wavelength": 0.75,
                 "description": "Near infrared",
                 "gee:wavelength": "0.70-0.80 &mu;m",
-                "gsd": 60,
                 "name": "30"
             },
             {
                 "center_wavelength": 0.95,
                 "description": "Short-wavelength infrared",
                 "gee:wavelength": "0.80-1.10 &mu;m",
-                "gsd": 60,
                 "name": "40"
             }
         ],
@@ -129,6 +125,9 @@
                     "zoom": 5
                 }
             }
+        ],
+        "gsd": [
+            60
         ]
     },
     "title": "Landsat Global Land Survey 1975 Mosaic",

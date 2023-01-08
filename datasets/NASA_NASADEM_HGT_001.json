@@ -79,19 +79,16 @@
             {
                 "description": "Integer heights in the merged void-free DEM files are relative to the\nEGM96 geoid (whereas the floating-point heights in the SRTM-only DEM files are relative to\nthe WGS84 ellipsoid).\n",
                 "gee:units": "m",
-                "gsd": 30,
                 "name": "elevation"
             },
             {
                 "description": "Index indicating the data source and the number of source scenes.\n\n  * 0: Water in corrected SRTM water body data\n  * 1-23: SRTM 1-23 (max known is 23)\n  * 41-94: PRISM 1-50 (54 max polar, 37 max elsewhere)\n  * 110-160: GDEM3 (saturated at 50)\n  * 170-220: GDEM2 (saturated at 50)\n  * 231: SRTMv3 from GDEM3\n  * 232: SRTMv2 from GDEM3\n  * 233: SRTMv2 from GDEM2\n  * 234: SRTM-with-NGA-fill from GDEM2\n  * 241: NED from GDEM2 (USA)\n  * 242: NED from GDEM3 (USA)\n  * 243: CDED from GDEM2 (Canada)\n  * 244: CDED from GDEM3 (Canada)\n  * 245: Alaska from GDEM2 (Alaska)\n  * 246: Alaska from GDEM3 (Alaska)\n  * 250: Interpolation\n  * 251: Quad edge averaged where two neighboring quads disagreed (generally a GDEM error)\n  * 255: ERROR (if NUM IS MISSING - none known to exist)\n",
                 "gee:units": "Class",
-                "gsd": 30,
                 "name": "num"
             },
             {
                 "description": "Updated SRTM water body data\n\n  * 0: Land\n  * 255: Water",
                 "gee:units": "Class",
-                "gsd": 30,
                 "name": "swb"
             }
         ],
@@ -120,6 +117,9 @@
                     "zoom": 2
                 }
             }
+        ],
+        "gsd": [
+            30
         ],
         "instruments": [
             "Shuttle Imaging Radar-C (SIR-C)"

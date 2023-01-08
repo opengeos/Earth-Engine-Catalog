@@ -78,28 +78,24 @@
                 "center_wavelength": 0.485,
                 "description": "Blue",
                 "gee:wavelength": "0.45 - 0.52 &mu;m",
-                "gsd": 15,
                 "name": "B1"
             },
             {
                 "center_wavelength": 0.56,
                 "description": "Green",
                 "gee:wavelength": "0.52 - 0.60 &mu;m",
-                "gsd": 15,
                 "name": "B2"
             },
             {
                 "center_wavelength": 0.66,
                 "description": "Red",
                 "gee:wavelength": "0.63 - 0.69 &mu;m",
-                "gsd": 15,
                 "name": "B3"
             },
             {
                 "center_wavelength": 0.835,
                 "description": "Near infrared",
                 "gee:wavelength": "0.77 - 0.90 &mu;m",
-                "gsd": 15,
                 "name": "B4"
             }
         ],
@@ -127,6 +123,9 @@
                     "zoom": 7
                 }
             }
+        ],
+        "gsd": [
+            15
         ]
     },
     "title": "Landsat Image Mosaic of Antarctica (LIMA) 16-Bit Pan-Sharpened Mosaic",

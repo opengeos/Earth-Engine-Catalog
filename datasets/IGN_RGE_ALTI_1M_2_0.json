@@ -74,18 +74,15 @@
             {
                 "description": "Terrain elevation in meters.",
                 "gee:units": "m",
-                "gsd": 1,
                 "name": "MNT"
             },
             {
                 "description": "The main source of the data used to calculate the altitude\nof the node. See Appendix B page 26 in the\n[user guide](https://geoservices.ign.fr/sites/default/files/2021-07/DC_RGEALTI_2-0.pdf).\n",
-                "gsd": 1,
                 "name": "SRC"
             },
             {
                 "description": "The distance in meters between the node and the nearest point used to\ncalculate its altitude.\n",
                 "gee:units": "m",
-                "gsd": 1,
                 "name": "DST"
             }
         ],
@@ -119,6 +116,9 @@
                     "zoom": 5
                 }
             }
+        ],
+        "gsd": [
+            1
         ],
         "DST": {
             "minimum": 0,

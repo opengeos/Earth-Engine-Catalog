@@ -76,13 +76,11 @@
             {
                 "description": "Travel time to the nearest hospital or clinic.",
                 "gee:units": "minutes",
-                "gsd": 927.67,
                 "name": "accessibility"
             },
             {
                 "description": "Travel time to the nearest hospital or clinic using non-motorized transport.",
                 "gee:units": "minutes",
-                "gsd": 927.67,
                 "name": "accessibility_walking_only"
             }
         ],
@@ -111,6 +109,9 @@
                     "zoom": 2
                 }
             }
+        ],
+        "gsd": [
+            927.67
         ],
         "accessibility": {
             "minimum": 0,

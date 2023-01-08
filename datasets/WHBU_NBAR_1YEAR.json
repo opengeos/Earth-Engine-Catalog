@@ -89,49 +89,42 @@
                 "center_wavelength": 0.645,
                 "description": "Best NBAR at local solar noon for band 1",
                 "gee:wavelength": "620-670nm",
-                "gsd": 463,
                 "name": "Nadir_Reflectance_Band1"
             },
             {
                 "center_wavelength": 0.8585,
                 "description": "Best NBAR at local solar noon for band 2",
                 "gee:wavelength": "841-876nm",
-                "gsd": 463,
                 "name": "Nadir_Reflectance_Band2"
             },
             {
                 "center_wavelength": 0.469,
                 "description": "Best NBAR at local solar noon for band 3",
                 "gee:wavelength": "459-479nm",
-                "gsd": 463,
                 "name": "Nadir_Reflectance_Band3"
             },
             {
                 "center_wavelength": 0.555,
                 "description": "Best NBAR at local solar noon for band 4",
                 "gee:wavelength": "545-565nm",
-                "gsd": 463,
                 "name": "Nadir_Reflectance_Band4"
             },
             {
                 "center_wavelength": 1.24,
                 "description": "Best NBAR at local solar noon for band 5",
                 "gee:wavelength": "1230-1250nm",
-                "gsd": 463,
                 "name": "Nadir_Reflectance_Band5"
             },
             {
                 "center_wavelength": 1.64,
                 "description": "Best NBAR at local solar noon for band 6",
                 "gee:wavelength": "1628-1652nm",
-                "gsd": 463,
                 "name": "Nadir_Reflectance_Band6"
             },
             {
                 "center_wavelength": 2.13,
                 "description": "Best NBAR at local solar noon for band 7",
                 "gee:wavelength": "2105-2155nm",
-                "gsd": 463,
                 "name": "Nadir_Reflectance_Band7"
             }
         ],
@@ -163,6 +156,9 @@
                     "zoom": 4
                 }
             }
+        ],
+        "gsd": [
+            463
         ]
     },
     "title": "MODIS 1-year Nadir BRDF-Adjusted Reflectance (NBAR) Mosaic",
