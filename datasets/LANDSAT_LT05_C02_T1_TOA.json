@@ -168,11 +168,11 @@
                             "first_bit": 3,
                             "values": [
                                 {
-                                    "description": "Cloud is not dilated or no cloud",
+                                    "description": "Cloud confidence is not high",
                                     "value": 0
                                 },
                                 {
-                                    "description": "cloud dilation",
+                                    "description": "High confidence cloud",
                                     "value": 1
                                 }
                             ]

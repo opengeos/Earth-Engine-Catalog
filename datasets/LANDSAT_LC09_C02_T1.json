@@ -202,11 +202,11 @@
                             "first_bit": 3,
                             "values": [
                                 {
-                                    "description": "Cloud is not dilated or no cloud",
+                                    "description": "Cloud confidence is not high",
                                     "value": 0
                                 },
                                 {
-                                    "description": "cloud dilation",
+                                    "description": "High confidence cloud",
                                     "value": 1
                                 }
                             ]
@@ -553,7 +553,7 @@
             "interval": [
                 [
                     "2021-10-31T00:00:00Z",
-                    "2023-01-09T07:10:56Z"
+                    "2023-01-10T06:16:30Z"
                 ]
             ]
         }

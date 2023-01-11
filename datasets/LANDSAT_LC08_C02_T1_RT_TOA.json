@@ -199,11 +199,11 @@
                             "first_bit": 3,
                             "values": [
                                 {
-                                    "description": "Cloud is not dilated or no cloud",
+                                    "description": "Cloud confidence is not high",
                                     "value": 0
                                 },
                                 {
-                                    "description": "cloud dilation",
+                                    "description": "High confidence cloud",
                                     "value": 1
                                 }
                             ]
@@ -550,7 +550,7 @@
             "interval": [
                 [
                     "2013-03-18T15:58:14Z",
-                    "2023-01-08T15:49:27Z"
+                    "2023-01-09T07:23:17Z"
                 ]
             ]
         }
