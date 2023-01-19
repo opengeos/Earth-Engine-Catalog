@@ -1,0 +1,278 @@
+{
+    "type": "Collection",
+    "id": "NASA/SMAP/SPL3SMP_E/005",
+    "stac_version": "1.0.0",
+    "description": "This Level-3 (L3) soil moisture product provides a daily composite of global\nland surface conditions retrieved by the Soil Moisture Active Passive (SMAP)\nL-Band radiometer. The daily data here were collected from the descending\n(local solar time of 6 am) and ascending (local solar time of 6 pm) passes.\n\nThe SMAP mission is an orbiting observatory that measures the amount of\nwater in the surface soil everywhere on Earth. A detailed description can be\nfound in the [SMAP Handbook]\n(https://smap.jpl.nasa.gov/system/internal_resources/details/original/178_SMAP_Handbook_FINAL_1_JULY_2014_Web.pdf).\nIt was launched in January 2015 and started operation in April 2015. The\nradar instrument, ceasing operation in early 2015 due to failure of radar\npower supply, collected close to 3 months of science data. The prime mission\nphase of three years was completed in 2018, and since then SMAP has been in\nextended operation phase.\n\nSMAP measures soil moisture every 2-3 days. This permits changes around\nthe world to be observed over time scales ranging from major storms to\nrepeated measurements of changes over the seasons.\n\nEverywhere on Earth not covered with water or not frozen, SMAP measures how\nmuch water is in the top layer of soil. It also distinguishes between ground\nthat is frozen or thawed. Where the ground is not frozen, SMAP measures the\namount of water found between the minerals, rocky material, and organic\nparticles found in soil everywhere in the world (SMAP measures liquid water\nin the top layer of ground but is not able to measure the ice.)\n\nSee the\n[SMAP L3 Soil Moisture User Guide](https://nsidc.org/sites/default/files/spl3smp_e-v005-userguide.pdf)\nand references therein for additional documentation and algorithm details.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA_SMAP_SPL3SMP_E_005",
+            "type": "text/html",
+            "title": "Run the example for NASA/SMAP/SPL3SMP_E/005 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/SMAP/NASA_SMAP_SPL3SMP_E_005_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_SMAP_SPL3SMP_E_005#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/SMAP/NASA_SMAP_SPL3SMP_E_005.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/SMAP/catalog.json",
+            "type": "application/json",
+            "title": "SMAP"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C2136471727-NSIDC_ECS"
+    ],
+    "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "drought",
+        "nasa",
+        "smap",
+        "soil_moisture",
+        "surface",
+        "weather"
+    ],
+    "providers": [
+        {
+            "name": "Google and NSIDC",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://nsidc.org/data/spl3smp_e/versions/5"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_SMAP_SPL3SMP_E_005"
+        }
+    ],
+    "sci:citation": "**O'Neill, P. E., S. Chan, E. G. Njoku, T. Jackson, R. Bindlish,\nJ. Chaubell, and A. Colliander. 2021. SMAP Enhanced L3 Radiometer Global\nand Polar Grid Daily 9 km EASE-Grid Soil Moisture, Version 5.\n[Indicate subset used]. Boulder, Colorado USA. NASA National Snow and Ice\nData Center Distributed Active Archive Center.\n[doi:10.5067/4DQ54OUIJ9DL](https://doi.org/10.5067/4DQ54OUIJ9DL)\n",
+    "sci:publications": [
+        {
+            "citation": "Entekhabi et al., 2014\nD. Entekhabi, S. Yueh, P. O'Neill, K. Kellogg et al. SMAP Handbook \u2013\nSoil Moisture Active Passive: Mapping Soil Moisture and Freeze/thaw From\nSpace. SMAP Project, Jet Propulsion Laboratory, Pasadena, CA (2014)\n[SMAP Handbook](https://smap.jpl.nasa.gov/system/internal_resources/details/original/178_SMAP_Handbook_FINAL_1_JULY_2014_Web.pdf)\n"
+        },
+        {
+            "citation": "Chan, S. K., R. Bindlish, P. E. O'Neill, E. Njoku, T. Jackson,\nA. Colliander, F. Chen, M. Burgin, S. Dunbar, J. Piepmeier, S. Yueh,\nD. Entekhabi, M. H. Cosh, T. Caldwell, J. Walker, X. Wu, A. Berg,\nT. Rowlandson, A. Pacheco, H. McNairn, M. Thibeault, J. Martinez-Fernandez,\nA. Gonzalez-Zamora, M. Seyfried, D. Bosch, P. Starks, D. Goodrich,\nJ. Prueger, M. Palecki, E. E. Small, M. Zreda, J.-C. Calvet, W. T. Crow,\nand Y. Kerr. 2016. \"Assessment of the SMAP Passive Soil Moisture Product\"\nIEEE Transactions on Geoscience and Remote Sensing, 54 (8): 4994-5007\n[10.1109/tgrs.2016.2561938](https://doi.org/10.1109/tgrs.2016.2561938)\n",
+            "doi": "10.1109/tgrs.2016.2561938"
+        },
+        {
+            "citation": "Chan, S., R. Bindlish, P. O'Neill, T. Jackson, E. Njoku, S. Dunbar,\nJ. Chaubell, J. Piepmeier, S. Yueh, D. Entekhabi, A. Colliander, F. Chen,\nM. Cosh, T. Caldwell, J. Walker, A. Berg, H. McNairn, M. Thibeault,\nJ. Mart\u00ednez-Fern\u00e1ndez, F. Uldall, M. Seyfried, D. Bosch, P. Starks,\nC. Holifield Collins, J. Prueger, R. van der Velde, J. Asanuma,\nM. Palecki, E. Small, M. Zreda, J. Calvet, W. Crow, and Y. Kerr. 2018.\n\"Development and assessment of the SMAP enhanced passive soil moisture\nproduct.\" Remote Sensing of Environment, 204: 931-941\n[10.1016/j.rse.2017.08.025](https://doi.org/10.1016/j.rse.2017.08.025)\n",
+            "doi": "10.1016/j.rse.2017.08.025"
+        },
+        {
+            "citation": "Chaubell, M. J., J. Asanuma, A. A. Berg, D. D. Bosch, T. Caldwell,\nM. H. Cosh, C. H. Collins, J. Martinez-Fernandez, M. Seyfried,\nP. J. Starks, Z. Su, S. H. Yueh, M. Thibeault, J. Walker, R. S. Dunbar,\nA. Colliander, F. Chen, S. K. Chan, D. Entekhabi, R. Bindlish, and\nP. E. O'Neill. 2020. \"Improved SMAP Dual-Channel Algorithm for the\nRetrieval of Soil Moisture.\" IEEE Transactions on Geoscience and Remote\nSensing, 1-12\n[10.1109/tgrs.2019.2959239](https://doi.org/10.1109/tgrs.2019.2959239)\n",
+            "doi": "10.1109/tgrs.2019.2959239"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Retrieved soil moisture estimate from the\ndisaggregated/downscaled vertical polarization brightness temperature\nat 9-km grid cell; AM overpass\n",
+                "gee:units": "cm^3/cm^3",
+                "name": "soil_moisture_am"
+            },
+            {
+                "description": "Weighted average of horizontally polarized brightness\ntemperatures. This value represents the corrected land brightness\ntemperature if the water fraction is lower than 0.9\n(otherwise no correction is applied) or represents the corrected water\nbrightness temperature if the water fraction is greater than 0.1\n(otherwise no correction is applied); AM overpass\n",
+                "gee:units": "Kelvin",
+                "name": "tb_h_corrected_am"
+            },
+            {
+                "description": "Weighted average of vertically polarized brightness\ntemperatures. This value represents the corrected land brightness\ntemperature if the water fraction is lower than 0.9\n(otherwise no correction is applied) or represents the corrected water\nbrightness temperature if the water fraction is greater than 0.1\n(otherwise no correction is applied); AM overpass\n",
+                "gee:units": "Kelvin",
+                "name": "tb_v_corrected_am"
+            },
+            {
+                "description": "Vegetation water content at 9-km spatial scale. This\nparameter is used as input ancillary data parameter to the SPL2SMAP\nprocessing software when the baseline algorithm is used. The valid\nminimum and maximum below are subject to further analysis. AM overpass\n",
+                "gee:units": "kg/m2",
+                "name": "vegetation_water_content_am"
+            },
+            {
+                "description": "0 = Pass: Soil moisture  with acceptable quality;\n1 = Fail: Soil moisture does  with unacceptable quality; AM overpass\n",
+                "gee:units": "thematic",
+                "name": "retrieval_qual_flag_am"
+            },
+            {
+                "description": "0= brightness temperatures with unacceptable quality;\n1= brightness temperatures with acceptable quality; AM overpass\n",
+                "gee:units": "thematic",
+                "name": "tb_qual_flag_h_am"
+            },
+            {
+                "description": "0= brightness temperatures with unacceptable quality;\n1= brightness temperatures with acceptable quality; AM overpass\n",
+                "gee:units": "thematic",
+                "name": "tb_qual_flag_v_am"
+            },
+            {
+                "description": "Retrieved soil moisture estimate from the\ndisaggregated/downscaled vertical polarization brightness temperature\nat 9-km grid cell; PM overpass\n",
+                "gee:units": "cm^3/cm^3",
+                "name": "soil_moisture_pm"
+            },
+            {
+                "description": "Weighted average of horizontally polarized brightness\ntemperatures. This value represents the corrected land brightness\ntemperature if the water fraction is lower than 0.9 (otherwise no\ncorrection is applied) or represents the corrected water brightness\ntemperature if the water fraction is greater than 0.1 (otherwise no\ncorrection is applied); PM overpass\n",
+                "gee:units": "Kelvin",
+                "name": "tb_h_corrected_pm"
+            },
+            {
+                "description": "Weighted average of vertically polarized brightness\ntemperatures. This value represents the corrected land brightness\ntemperature if the water fraction is lower than 0.9 (otherwise no\ncorrection is applied) or represents the corrected water brightness\ntemperature if the water fraction is greater than 0.1 (otherwise no\ncorrection is applied); PM overpass\n",
+                "gee:units": "Kelvin",
+                "name": "tb_v_corrected_pm"
+            },
+            {
+                "description": "Vegetation water content at 9-km spatial scale. This\nparameter is used as input ancillary data parameter to the SPL2SMAP\nprocessing software when the baseline algorithm is used. The valid\nminimum and maximum below are subject to further analysis. PM overpass\n",
+                "gee:units": "kg/m^2",
+                "name": "vegetation_water_content_pm"
+            },
+            {
+                "description": "0 = Pass: Soil moisture  with acceptable quality;\n1 = Fail: Soil moisture does  with unacceptable quality;  PM overpass\n",
+                "gee:units": "thematic",
+                "name": "retrieval_qual_flag_pm"
+            },
+            {
+                "description": "0= brightness temperatures with unacceptable quality;\n1= brightness temperatures with acceptable quality; PM overpass\n",
+                "gee:units": "thematic",
+                "name": "tb_qual_flag_h_pm"
+            },
+            {
+                "description": "0= brightness temperatures with unacceptable quality;\n1= brightness temperatures with acceptable quality; PM overpass\n",
+                "gee:units": "thematic",
+                "name": "tb_qual_flag_v_pm"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Soil Moisture",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "soil_moisture_am"
+                        ],
+                        "max": [
+                            0.5
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "0300ff",
+                            "418504",
+                            "efff07",
+                            "efff07",
+                            "ff0303"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -6.746,
+                    "lon": 46.529,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            9000
+        ],
+        "retrieval_qual_flag_am": {
+            "minimum": 0,
+            "maximum": 65536
+        },
+        "retrieval_qual_flag_pm": {
+            "minimum": 0,
+            "maximum": 65536
+        },
+        "tb_h_corrected_am": {
+            "minimum": 0,
+            "maximum": 330
+        },
+        "tb_h_corrected_pm": {
+            "minimum": 0,
+            "maximum": 330
+        },
+        "tb_qual_flag_h_am": {
+            "minimum": 0,
+            "maximum": 65536
+        },
+        "tb_qual_flag_h_pm": {
+            "minimum": 0,
+            "maximum": 65536
+        },
+        "tb_qual_flag_v_am": {
+            "minimum": 0,
+            "maximum": 65536
+        },
+        "tb_qual_flag_v_pm": {
+            "minimum": 0,
+            "maximum": 65536
+        },
+        "tb_v_corrected_am": {
+            "minimum": 0,
+            "maximum": 330
+        },
+        "tb_v_corrected_pm": {
+            "minimum": 0,
+            "maximum": 330
+        },
+        "vegetation_water_content_am": {
+            "minimum": 0,
+            "maximum": 30
+        },
+        "vegetation_water_content_pm": {
+            "minimum": 0,
+            "maximum": 30
+        }
+    },
+    "title": "SPL3SMP_E.005 SMAP L3 Radiometer Global Daily 9 km Soil Moisture",
+    "version": "5",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -84,
+                    180,
+                    84
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-03-31T12:00:00Z",
+                    "2023-01-15T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}
