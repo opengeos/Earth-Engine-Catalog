@@ -1,0 +1,309 @@
+{
+    "type": "Collection",
+    "id": "USGS/NLCD_RELEASES/2019_REL/RCMAP/V5/COVER",
+    "stac_version": "1.0.0",
+    "description": "Rangeland ecosystems in the western United States have a dynamic response\nto climate change, fire, and other anthropogenic disturbances. The Rangeland\nCondition, Monitoring, Assessment, and Projection (RCMAP) product aims to\ncapture this response by quantifying the percent cover of rangeland\ncomponents, associated error, and trends across the western U.S. using\nLandsat imagery from 1985-2020.\n\nRCMAP quantifies the percent cover of components across the western U.S.\nrangelands (after Rigge et al. 2020) using Landsat imagery from 1985-2020.\nThe RCMAP timeseries consists of eight fractional components: annual\nherbaceous, bare ground, herbaceous, litter, non-sagebrush shrub, perennial\nherbaceous, sagebrush and shrub, and the temporal trends of each. The four\nprimary components (bare ground, shrub, litter, and herbaceous) are designed\nto sum to 100% in each pixel when added to tree canopy cover. The secondary\ncomponents annual herbaceous and perennial herbaceous are subsets of the\nprimary component herbaceous, while non-sagebrush shrub and sagebrush are\nsubsets of shrub. Secondary components cannot have cover greater than their\nrespective primary component. One year, 2012, was excluded from\nthe timeseries due to a lack of quality imagery.\n\nMRLC developed an automated method to identify change in spectral\nconditions between each year in the Landsat archive and the circa 2016 base\nmap. Regression tree models were trained from the unchanged portions of each\nyear in the time series. Post-processing models corrected post-burn\ntrajectories and eliminated noise and illogical change in the predictions.\nThe current generation of RCMAP has been improved with more training data,\nregional-scale Landsat composites, and more robust change detection. MRLC\nassessed the temporal patterns in each component with a linear model and\nstructural change method which determines break points in the timeseries\nusing an 8-year temporal moving window. The linear and structural change\nmethods generally agreed on gross patterns of change, but the latter found\nbreaks more often with most pixels having at least one break point. Data\nprovide spatiotemporal information on the occurrence of breaks, but even\nmore critically, attribute those change events to specific component(s).\nThe spatially, temporally, and thematically (i.e., multi-component) detailed\nspecific information on rangeland condition can contribute to understanding\nmajor patterns of change at local, regional, and continental levels.\n\nSee also:\n\n* Rigge, M., C. Homer, L. Cleeves, D. K. Meyer, B. Bunde, H. Shi, G. Xian,\n  S. Schell, and M. Bobo. 2020. Quantifying western U.S. rangelands as\n  fractional components with multi-resolution remote sensing and in situ\n  data. Remote Sensing 12.\n  [doi:10.3390/rs12030412](https://doi.org/10.3390/rs12030412)\n\n* Rigge, M., C. Homer, H. Shi, D. Meyer, B.\n  Bunde, B. Granneman, K. Postma, P. Danielson, A. Case, and G. Xian. 2021.\n  Rangeland Fractional Components Across the Western United States\n  from 1985 to 2018. Remote Sensing 13:813.\n  [doi:10.3390/rs13040813](https://doi.org/10.3390/rs13040813)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/USGS_NLCD_RELEASES_2019_REL_RCMAP_V5_COVER",
+            "type": "text/html",
+            "title": "Run the example for USGS/NLCD_RELEASES/2019_REL/RCMAP/V5/COVER in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/NLCD_RELEASES/USGS_NLCD_RELEASES_2019_REL_RCMAP_V5_COVER_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/USGS_NLCD_RELEASES_2019_REL_RCMAP_V5_COVER#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/NLCD_RELEASES/USGS_NLCD_RELEASES_2019_REL_RCMAP_V5_COVER.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/NLCD_RELEASES/catalog.json",
+            "type": "application/json",
+            "title": "NLCD_RELEASES"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:terms_of_use": "This work was authored as part of the Contributor's official duties as an Employee of the United States Government and is therefore a work of the United States Government. In accordance with 17 U.S.C. 105, no copyright protection is available for such works under U.S. Law. This is an Open Access article that has been identified as being free of known restrictions under copyright law, including all related and neighboring rights (https://creativecommons.org/publicdomain/mark/1.0/). You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.\n",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "climate_change",
+        "disturbance",
+        "landsat_derived",
+        "nlcd",
+        "rangeland",
+        "trends"
+    ],
+    "providers": [
+        {
+            "name": "United States Geological Survey and Bureau of Land Management",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.mrlc.gov/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_NLCD_RELEASES_2019_REL_RCMAP_V5_COVER"
+        }
+    ],
+    "sci:citation": "Rigge, M.B., Bunde, B., Shi, H., Postma, K., 2021, Rangeland Condition Monitoring Assessment and Projection (RCMAP) Fractional Component Time-Series Across the Western U.S. 1985-2020 (ver. 2.0, October 2021): U.S. Geological Survey data release.\n[doi:10.5066/P95IQ4BT](https://doi.org/10.5066/P95IQ4BT)\n",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Percent of the pixel covered by annual herbaceous vegetation.\n",
+                "gee:units": "%",
+                "name": "rangeland_annual_herbaceous"
+            },
+            {
+                "description": "Percent of the pixel covered by bare ground.\n",
+                "gee:units": "%",
+                "name": "rangeland_bare_ground"
+            },
+            {
+                "description": "Percent of the pixel covered by non-sagebrush shrubs.\n",
+                "gee:units": "%",
+                "name": "rangeland_non_sagebrush_shrub"
+            },
+            {
+                "description": "Percent of the pixel covered by herbaceous vegetation.\n",
+                "gee:units": "%",
+                "name": "rangeland_herbaceous"
+            },
+            {
+                "description": "Percent of the pixel covered by litter.\n",
+                "gee:units": "%",
+                "name": "rangeland_litter"
+            },
+            {
+                "description": "Percent of the pixel covered by sagebrush (*Artemisia* spp).\n",
+                "gee:units": "%",
+                "name": "rangeland_sagebrush"
+            },
+            {
+                "description": "Percent of the pixel covered by shrub.\n",
+                "gee:units": "%",
+                "name": "rangeland_shrub"
+            },
+            {
+                "description": "Percent of the pixel covered by perennial herbaceous vegetation.\n",
+                "gee:units": "%",
+                "name": "rangeland_perennial_herbaceous"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Rangeland Annual Herbaceous %",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "rangeland_annual_herbaceous"
+                        ],
+                        "max": [
+                            100
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "000000",
+                            "f9e8b7",
+                            "f7e3ac",
+                            "f0dfa3",
+                            "eedf9c",
+                            "eada91",
+                            "e8d687",
+                            "e0d281",
+                            "ddd077",
+                            "d6cc6d",
+                            "d3c667",
+                            "d0c55e",
+                            "cfc555",
+                            "c6bd4f",
+                            "c4ba46",
+                            "bdb83a",
+                            "bbb534",
+                            "b7b02c",
+                            "b0ad1f",
+                            "adac17",
+                            "aaaa0a",
+                            "a3a700",
+                            "9fa700",
+                            "9aa700",
+                            "92a700",
+                            "8fa700",
+                            "87a700",
+                            "85a700",
+                            "82aa00",
+                            "7aaa00",
+                            "77aa00",
+                            "70aa00",
+                            "6caa00",
+                            "67aa00",
+                            "5fa700",
+                            "57a700",
+                            "52a700",
+                            "4fa700",
+                            "4aa700",
+                            "42a700",
+                            "3ca700",
+                            "37a700",
+                            "37a300",
+                            "36a000",
+                            "369f00",
+                            "349d00",
+                            "339900",
+                            "339900",
+                            "2f9200",
+                            "2d9100",
+                            "2d8f00",
+                            "2c8a00",
+                            "2c8800",
+                            "2c8500",
+                            "2c8400",
+                            "2b8200",
+                            "297d00",
+                            "297a00",
+                            "297900",
+                            "277700",
+                            "247400",
+                            "247000",
+                            "29700f",
+                            "2c6d1c",
+                            "2d6d24",
+                            "336d2d",
+                            "366c39",
+                            "376c44",
+                            "396a4a",
+                            "396a55",
+                            "3a6a5f",
+                            "3a696a",
+                            "396774",
+                            "3a6782",
+                            "39668a",
+                            "376292",
+                            "34629f",
+                            "2f62ac",
+                            "2c5fb7",
+                            "245ec4",
+                            "1e5ed0",
+                            "115cdd",
+                            "005ae0",
+                            "0057dd",
+                            "0152d6",
+                            "0151d0",
+                            "014fcc",
+                            "014ac4",
+                            "0147bd",
+                            "0144b8",
+                            "0142b0",
+                            "0141ac",
+                            "013da7",
+                            "013aa0",
+                            "01399d",
+                            "013693",
+                            "013491",
+                            "012f8a",
+                            "012d85",
+                            "012c82",
+                            "01297a"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 38,
+                    "lon": -114,
+                    "zoom": 6
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ],
+        "rangeland_annual_herbaceous": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "rangeland_bare_ground": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "rangeland_herbaceous": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "rangeland_litter": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "rangeland_non_sagebrush_shrub": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "rangeland_perennial_herbaceous": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "rangeland_sagebrush": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "rangeland_shrub": {
+            "minimum": 0,
+            "maximum": 100
+        }
+    },
+    "title": "RCMAP Rangeland Component Timeseries v5 (1985-2021)",
+    "version": "v5",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125.0683594,
+                    28.45903302,
+                    -101.0742188,
+                    49.32512199
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1985-01-01T00:00:00Z",
+                    "2020-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0"
+}
