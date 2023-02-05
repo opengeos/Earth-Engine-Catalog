@@ -1,0 +1,182 @@
+{
+    "type": "Collection",
+    "id": "Germany/Brandenburg/orthos/20cm",
+    "stac_version": "1.0.0",
+    "description": "Orthophotos are an aerial photo dataset covering the Brandenburg state of\nGermany.\nThis data is provided by State government of\nBrandenburg ([LGB](https://geobasis-bb.de/lgb/de/)).\nDigital orthophotos are digitally corrected aerial photos and show all\nobjects that are visible from the air at the time of recording in a parallel\nperspective. They have a high density of information on ecological,\nphenological, geographical and other topics.\n\nFor more information, please see the [Brandenburg orthophotos documentation]\n(https://geobasis-bb.de/lgb/de/geodaten/luftbilder/luftbilder-aktuell/)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/Germany_Brandenburg_orthos_20cm",
+            "type": "text/html",
+            "title": "Run the example for Germany/Brandenburg/orthos/20cm in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/Germany/Germany_Brandenburg_orthos_20cm_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/Germany_Brandenburg_orthos_20cm#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Germany/Germany_Brandenburg_orthos_20cm.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Germany/catalog.json",
+            "type": "application/json",
+            "title": "Germany"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The user must ensure that the source note contains the following\ninformation:\n\n  1. the name of the provider,\n  2. the annotation \"Data licence Germany - attribution - Version 2.0\" or\n     \"dl-de/by-2-0\" referring to the licence text available at\n     www.govdata.de/dl-de/by-2-0, and\n  3. a reference to the dataset (URI).\nThis applies only if the entity keeping the data provides the pieces of\ninformation 1-3 for the source note.\n\nChanges, editing, new designs or other amendments must be marked as such\nin the source note.\n\nFor more details please see the\n[Terms of use](https://www.govdata.de/dl-de/by-2-0)\n",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "brandenburg",
+        "germany",
+        "orthophoto",
+        "rgbn"
+    ],
+    "providers": [
+        {
+            "name": "Brandenburg orthophotos",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://geobasis-bb.de/lgb/de/geodaten/luftbilder/luftbilder-aktuell"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/Germany_Brandenburg_orthos_20cm"
+        }
+    ],
+    "sci:citation": "Data License Germany - Attribution - Version 2.0",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Near infrared",
+                "name": "N"
+            },
+            {
+                "description": "Red",
+                "name": "R"
+            },
+            {
+                "description": "Green",
+                "name": "G"
+            },
+            {
+                "description": "Blue",
+                "name": "B"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "RGB",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "R",
+                            "G",
+                            "B"
+                        ],
+                        "max": [
+                            255
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 13.4,
+                    "lon": 52.5,
+                    "zoom": 18
+                }
+            },
+            {
+                "display_name": "NRG",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "N",
+                            "R",
+                            "G"
+                        ],
+                        "max": [
+                            255
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 13.4,
+                    "lon": 52.5,
+                    "zoom": 18
+                }
+            }
+        ],
+        "gsd": [
+            0.2
+        ],
+        "B": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "G": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "N": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "R": {
+            "minimum": 0,
+            "maximum": 255
+        }
+    },
+    "title": "Brandenburg (Germany) RGBN orthophotos 20 cm",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    51.28,
+                    11,
+                    53.7,
+                    15
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-08-23T00:00:00Z",
+                    "2023-01-20T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}
