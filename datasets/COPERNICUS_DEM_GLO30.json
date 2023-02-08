@@ -1,0 +1,287 @@
+{
+    "type": "Collection",
+    "id": "COPERNICUS/DEM/GLO30",
+    "stac_version": "1.0.0",
+    "description": "The Copernicus DEM is a Digital Surface Model (DSM) which represents the\nsurface of the Earth including buildings, infrastructure and vegetation.\nThis DEM is derived from an edited DSM named WorldDEM&trade, i.e. flattening of\nwater bodies and consistent flow of rivers has been included. Editing of\nshore- and coastlines, special features such as airports and implausible\nterrain structures has also been applied.\n\nThe WorldDEM product is based on the radar satellite data acquired during\nthe TanDEM-X Mission, which is funded by a Public Private Partnership\nbetween the German State, represented by the German Aerospace Centre (DLR)\nand Airbus Defence and Space. More details are available in the dataset\n[documentation](https://spacedata.copernicus.eu/documents/20123/121239/GEO1988-CopernicusDEM-SPE-002_ProductHandbook_I4.0.pdf).\n\nEarth Engine asset has been ingested from the DGED files.\n\nNote: See the code example for the recommended way of computing slope.\nUnlike most DEMs in Earth Engine, this is an image collection due to\nmultiple resolutions of source files that make it impossible to mosaic them\ninto a single asset, so the slope computations need a reprojection.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/COPERNICUS_DEM_GLO30",
+            "type": "text/html",
+            "title": "Run the example for COPERNICUS/DEM/GLO30 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/COPERNICUS/COPERNICUS_DEM_GLO30_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_DEM_GLO30#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_DEM_GLO30.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/catalog.json",
+            "type": "application/json",
+            "title": "COPERNICUS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The GLO-30 dataset is available worldwide with a free license with the\nexception of two countries (Armenia and Azerbaijan). [License for Copernicus\nDEM](https://docs.sentinel-hub.com/api/latest/static/files/data/dem/resources/license/License-COPDEM-30.pdf).\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "copernicus",
+        "dem",
+        "elevation",
+        "geophysical"
+    ],
+    "providers": [
+        {
+            "name": "Copernicus",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://spacedata.copernicus.eu/collections/copernicus-digital-elevation-model"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_DEM_GLO30"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Digital Surface Model",
+                "name": "DEM"
+            },
+            {
+                "description": "The Edit Data Mask indicates all DEM pixels that were modified\nduring the terrain and hydro editing process.\n",
+                "gee:classes": [
+                    {
+                        "description": "Void (no data)",
+                        "value": 0
+                    },
+                    {
+                        "description": "Not edited",
+                        "value": 1
+                    },
+                    {
+                        "description": "Infill of external elevation data",
+                        "value": 2
+                    },
+                    {
+                        "description": "Interpolated pixels",
+                        "value": 3
+                    },
+                    {
+                        "description": "Smoothed pixels",
+                        "value": 4
+                    },
+                    {
+                        "description": "Airport editing",
+                        "value": 5
+                    },
+                    {
+                        "description": "Raised negative elevation pixels",
+                        "value": 6
+                    },
+                    {
+                        "description": "Flattened pixels",
+                        "value": 7
+                    },
+                    {
+                        "description": "Ocean pixels",
+                        "value": 8
+                    },
+                    {
+                        "description": "Lake pixels",
+                        "value": 9
+                    },
+                    {
+                        "description": "River pixels",
+                        "value": 10
+                    },
+                    {
+                        "description": "Shoreline pixels",
+                        "value": 11
+                    },
+                    {
+                        "description": "Morphed pixels (series of pixels manually set)",
+                        "value": 12
+                    },
+                    {
+                        "description": "Shifted pixels",
+                        "value": 13
+                    }
+                ],
+                "name": "EDM"
+            },
+            {
+                "description": "The Filling Mask is created primarily during the terrain\nediting process.\n",
+                "gee:classes": [
+                    {
+                        "description": "Void (no data)",
+                        "value": 0
+                    },
+                    {
+                        "description": "Edited (except filled pixels)",
+                        "value": 1
+                    },
+                    {
+                        "description": "Not edited / not filled",
+                        "value": 2
+                    },
+                    {
+                        "description": "ASTER",
+                        "value": 3
+                    },
+                    {
+                        "description": "SRTM90",
+                        "value": 4
+                    },
+                    {
+                        "description": "SRTM30",
+                        "value": 5
+                    },
+                    {
+                        "description": "GMTED2010",
+                        "value": 6
+                    },
+                    {
+                        "description": "SRTM30plus",
+                        "value": 7
+                    },
+                    {
+                        "description": "TerraSAR-X Radargrammetric DEM",
+                        "value": 8
+                    },
+                    {
+                        "description": "AW3D30",
+                        "value": 9
+                    },
+                    {
+                        "description": "Norway DEM",
+                        "value": 100
+                    },
+                    {
+                        "description": "DSM05 Spain",
+                        "value": 101
+                    }
+                ],
+                "name": "FLM"
+            },
+            {
+                "description": "The Height Error Mask represents the corresponding height error\nfor each DEM pixel in the form of the standard deviation derived from\nthe interferometric coherence and geometrical considerations.\n",
+                "name": "HEM"
+            },
+            {
+                "description": "The Water Body Mask shows all DEM pixels which are classified as water\nand edited according to the categories Ocean, Lake or River.\n",
+                "gee:classes": [
+                    {
+                        "description": "No water",
+                        "value": 0
+                    },
+                    {
+                        "description": "Ocean",
+                        "value": 1
+                    },
+                    {
+                        "description": "Lake",
+                        "value": 2
+                    },
+                    {
+                        "description": "River",
+                        "value": 3
+                    }
+                ],
+                "name": "WBM"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Elevation",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "DEM"
+                        ],
+                        "max": [
+                            1000
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "0000ff",
+                            "00ffff",
+                            "ffff00",
+                            "ff0000",
+                            "ffffff"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -6.746,
+                    "lon": 46.529,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ],
+        "EDM": {
+            "minimum": 0,
+            "maximum": 13
+        },
+        "FLM": {
+            "minimum": 0,
+            "maximum": 101
+        },
+        "WBM": {
+            "minimum": 0,
+            "maximum": 3
+        }
+    },
+    "title": "Copernicus DEM GLO-30: Global 30m Digital Elevation Model",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-12-01T00:00:00Z",
+                    "2015-01-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}
