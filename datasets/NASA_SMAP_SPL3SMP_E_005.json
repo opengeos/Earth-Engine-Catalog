@@ -121,17 +121,14 @@
             },
             {
                 "description": "0 = Pass: Soil moisture  with acceptable quality;\n1 = Fail: Soil moisture does  with unacceptable quality; AM overpass\n",
-                "gee:units": "thematic",
                 "name": "retrieval_qual_flag_am"
             },
             {
                 "description": "0= brightness temperatures with unacceptable quality;\n1= brightness temperatures with acceptable quality; AM overpass\n",
-                "gee:units": "thematic",
                 "name": "tb_qual_flag_h_am"
             },
             {
                 "description": "0= brightness temperatures with unacceptable quality;\n1= brightness temperatures with acceptable quality; AM overpass\n",
-                "gee:units": "thematic",
                 "name": "tb_qual_flag_v_am"
             },
             {
@@ -156,18 +153,23 @@
             },
             {
                 "description": "0 = Pass: Soil moisture  with acceptable quality;\n1 = Fail: Soil moisture does  with unacceptable quality;  PM overpass\n",
-                "gee:units": "thematic",
                 "name": "retrieval_qual_flag_pm"
             },
             {
                 "description": "0= brightness temperatures with unacceptable quality;\n1= brightness temperatures with acceptable quality; PM overpass\n",
-                "gee:units": "thematic",
                 "name": "tb_qual_flag_h_pm"
             },
             {
                 "description": "0= brightness temperatures with unacceptable quality;\n1= brightness temperatures with acceptable quality; PM overpass\n",
-                "gee:units": "thematic",
                 "name": "tb_qual_flag_v_pm"
+            },
+            {
+                "description": "Experimental. Difference of the 30-day average of 'soil_moisture_am',\ncentered on asset date, relative to the same 30-day period averaged\nacross years from 2015 to present, excluding asset year.\n\nSee\n[this script](https://github.com/google/earthengine-community/blob/master/datasets/smap_anomaly_l3.py)\nfor anomaly computations.\n",
+                "name": "soil_moisture_am_anomaly"
+            },
+            {
+                "description": "Experimental. Difference of the 30-day average of 'soil_moisture_pm',\ncentered on asset date, relative to the same 30-day period averaged\nacross years from 2015 to present, excluding asset year.\n\nSee\n[this script](https://github.com/google/earthengine-community/blob/master/datasets/smap_anomaly_l3.py)\nfor anomaly computations.\n",
+                "name": "soil_moisture_pm_anomaly"
             }
         ],
         "gee:visualizations": [
