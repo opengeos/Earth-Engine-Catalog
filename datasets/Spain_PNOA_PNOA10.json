@@ -1,0 +1,150 @@
+{
+    "type": "Collection",
+    "id": "Spain/PNOA/PNOA10",
+    "stac_version": "1.0.0",
+    "description": "Mosaics of orthophotos from flights carried out between 2007 and 2018 by\nvarious public administration bodies at 10cm pixel resolution.\nThis data is provided by National Plan for Aerial Orthophotography Spain\n([PNOA](https://pnoa.ign.es)).\n\nFor more information, please see the [Spain orthophotos documentation]\n(https://pnoa.ign.es/web/portal/pnoa-imagen/proceso-fotogrametrico)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/Spain_PNOA_PNOA10",
+            "type": "text/html",
+            "title": "Run the example for Spain/PNOA/PNOA10 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/Spain/Spain_PNOA_PNOA10_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/Spain_PNOA_PNOA10#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Spain/Spain_PNOA_PNOA10.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Spain/catalog.json",
+            "type": "application/json",
+            "title": "Spain"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The data is free and free use for any legitimate purpose,\nthe only strict obligation being that of acknowledging and mentioning the\norigin and ownership of the geographic information products and services\nlicensed as National Geographic Institute.\n\nFor more details, see [Terms of use](http://www.ign.es/resources/licencia/Condiciones_licenciaUso_IGN.pdf)\n",
+    "gee:type": "image_collection",
+    "keywords": [
+        "orthophoto",
+        "pnoa",
+        "rgb",
+        "spain"
+    ],
+    "providers": [
+        {
+            "name": "Spain orthophotos",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://pnoa.ign.es/web/portal/pnoa-imagen/productos-a-descarga"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/Spain_PNOA_PNOA10"
+        }
+    ],
+    "sci:citation": "National Geographic Institute Spain",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Red",
+                "name": "R"
+            },
+            {
+                "description": "Green",
+                "name": "G"
+            },
+            {
+                "description": "Blue",
+                "name": "B"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "RGB",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "R",
+                            "G",
+                            "B"
+                        ],
+                        "max": [
+                            255
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -1.85,
+                    "lon": 38.98,
+                    "zoom": 19
+                }
+            }
+        ],
+        "gsd": [
+            0.1
+        ],
+        "B": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "G": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "R": {
+            "minimum": 0,
+            "maximum": 255
+        }
+    },
+    "title": "Spain RGB orthophotos 10 cm",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    36.11,
+                    -9.32,
+                    43.48,
+                    4.7
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2007-01-01T00:00:00Z",
+                    "2019-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}
