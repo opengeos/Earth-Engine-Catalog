@@ -141,7 +141,7 @@
                 "center_wavelength": 10.895,
                 "description": "Band 10 brightness temperature. This band, while originally\ncollected with a resolution of 100m / pixel, has been resampled using\ncubic convolution to 30m.\n",
                 "gee:scale": 0.1,
-                "gee:units": "Kelvin",
+                "gee:units": "K",
                 "gee:wavelength": "10.60-11.19 &mu;m",
                 "name": "B10"
             },
@@ -149,7 +149,7 @@
                 "center_wavelength": 12.005,
                 "description": "Band 11 brightness temperature. This band, while originally\ncollected with a resolution of 100m / pixel, has been resampled using\ncubic convolution to 30m.\n",
                 "gee:scale": 0.1,
-                "gee:units": "Kelvin",
+                "gee:units": "K",
                 "gee:wavelength": "11.50-12.51 &mu;m",
                 "name": "B11"
             },

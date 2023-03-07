@@ -100,7 +100,7 @@
             {
                 "description": "Day land surface temperature",
                 "gee:scale": 0.02,
-                "gee:units": "Kelvin",
+                "gee:units": "K",
                 "name": "LST_Day_1km"
             },
             {
@@ -219,7 +219,7 @@
             {
                 "description": "Night land surface temperature",
                 "gee:scale": 0.02,
-                "gee:units": "Kelvin",
+                "gee:units": "K",
                 "name": "LST_Night_1km"
             },
             {

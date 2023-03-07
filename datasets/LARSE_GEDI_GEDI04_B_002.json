@@ -102,7 +102,7 @@
             },
             {
                 "description": "Standard error as a fraction of the estimated mean AGBD (PE).\nIf >100%, the cell values are truncated to 100.\n",
-                "gee:units": "Percent",
+                "gee:units": "%",
                 "name": "PE"
             },
             {

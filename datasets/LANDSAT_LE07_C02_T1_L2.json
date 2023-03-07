@@ -184,7 +184,7 @@
                 "description": "Band 6 surface temperature. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
                 "gee:offset": 149,
                 "gee:scale": 0.00341802,
-                "gee:units": "Kelvin",
+                "gee:units": "K",
                 "gee:wavelength": "10.40-12.50 &mu;m",
                 "name": "ST_B6"
             },
@@ -606,7 +606,7 @@
             "interval": [
                 [
                     "1999-05-28T01:02:17Z",
-                    "2023-02-04T01:41:07Z"
+                    "2023-02-07T02:00:08Z"
                 ]
             ]
         }

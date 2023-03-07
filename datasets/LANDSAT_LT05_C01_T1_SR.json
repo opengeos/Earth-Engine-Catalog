@@ -127,7 +127,7 @@
                 "center_wavelength": 11.45,
                 "description": "Band 6 brightness temperature. While originally collected with a\nresolution of 120m / pixel (60m / pixel for Landsat 7), this band has\nbeen resampled using cubic convolution to 30m.\n",
                 "gee:scale": 0.1,
-                "gee:units": "Kelvin",
+                "gee:units": "K",
                 "gee:wavelength": "10.40-12.50 &mu;m",
                 "name": "B6"
             },

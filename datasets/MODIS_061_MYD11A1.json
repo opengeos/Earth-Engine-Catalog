@@ -100,7 +100,7 @@
             {
                 "description": "Daytime Land Surface Temperature",
                 "gee:scale": 0.02,
-                "gee:units": "Kelvin",
+                "gee:units": "K",
                 "name": "LST_Day_1km"
             },
             {
@@ -219,7 +219,7 @@
             {
                 "description": "Nighttime Land Surface Temperature",
                 "gee:scale": 0.02,
-                "gee:units": "Kelvin",
+                "gee:units": "K",
                 "name": "LST_Night_1km"
             },
             {
@@ -485,7 +485,7 @@
             "interval": [
                 [
                     "2002-07-04T00:00:00Z",
-                    "2023-02-28T00:00:00Z"
+                    "2023-03-01T00:00:00Z"
                 ]
             ]
         }
