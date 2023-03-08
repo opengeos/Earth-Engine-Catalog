@@ -56,6 +56,30 @@
     "gee:type": "image",
     "gee:unusual_terms_of_use": true,
     "gee:user_uploaded": true,
+    "sci:citation": "Long-term MODIS LST day-time and night-time temperatures, sd and differences\nat 1 km based on the 2000-2017 time series\n[10.5281/zenodo.1420114](https://doi.org/10.5281/zenodo.1420114)\n",
+    "sci:doi": "10.5281/zenodo.1420114",
+    "title": "OpenLandMap Long-term Land Surface Temperature Daytime Monthly Median",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2018-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-SA-4.0",
     "keywords": [
         "envirometrix",
         "lst",
@@ -82,8 +106,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_CLM_CLM_LST_MOD11A2-DAY_M_v01"
         }
     ],
-    "sci:citation": "Long-term MODIS LST day-time and night-time temperatures, sd and differences\nat 1 km based on the 2000-2017 time series\n[10.5281/zenodo.1420114](https://doi.org/10.5281/zenodo.1420114)\n",
-    "sci:doi": "10.5281/zenodo.1420114",
     "summaries": {
         "eo:bands": [
             {
@@ -239,27 +261,5 @@
             "minimum": 11989,
             "maximum": 16700
         }
-    },
-    "title": "OpenLandMap Long-term Land Surface Temperature Daytime Monthly Median",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2000-01-01T00:00:00Z",
-                    "2018-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-SA-4.0"
+    }
 }

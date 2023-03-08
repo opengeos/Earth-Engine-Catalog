@@ -57,6 +57,29 @@
     },
     "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC have no restrictions on subsequent use, sale, or redistribution.\n",
     "gee:type": "image_collection",
+    "version": "Unknown",
+    "title": "MOD09GA.005 Terra Surface Reflectance Daily L2G Global 1km and 500m [deprecated]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-24T00:00:00Z",
+                    "2017-03-30T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "daily",
         "global",
@@ -155,28 +178,5 @@
                 }
             }
         ]
-    },
-    "title": "MOD09GA.005 Terra Surface Reflectance Daily L2G Global 1km and 500m [deprecated]",
-    "version": "Unknown",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2000-02-24T00:00:00Z",
-                    "2017-03-30T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

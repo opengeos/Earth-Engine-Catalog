@@ -58,6 +58,31 @@
     ],
     "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/VIIRS/VNP21A1N.001",
+    "version": "1",
+    "title": "VNP21A1N: Night Land Surface Temperature and Emissivity Daily 1km",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-01-19T00:00:00Z",
+                    "2023-02-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "daily",
         "land",
@@ -85,8 +110,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP21A1N"
         }
     ],
-    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
-    "sci:doi": "10.5067/VIIRS/VNP21A1N.001",
     "summaries": {
         "eo:bands": [
             {
@@ -364,28 +387,5 @@
         "platform": [
             "Suomi NPP"
         ]
-    },
-    "title": "VNP21A1N: Night Land Surface Temperature and Emissivity Daily 1km",
-    "version": "1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2012-01-19T00:00:00Z",
-                    "2023-02-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

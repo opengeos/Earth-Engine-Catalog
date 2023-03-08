@@ -52,6 +52,29 @@
     "gee:type": "image_collection",
     "gee:unusual_terms_of_use": true,
     "gee:user_uploaded": true,
+    "sci:citation": "Planet Team (2017). Planet Application Program Interface: In Space for Life\non Earth. San Francisco, CA. [https://api.planet.com](https://api.planet.com)\n",
+    "title": "Planet & NICFI Basemaps for Tropical Forest Monitoring - Tropical Americas",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -118.5,
+                    -30.4,
+                    -34.5,
+                    30.4
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-12-01T00:00:00Z",
+                    "2021-06-29T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "basemaps",
         "forest",
@@ -78,7 +101,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_planet-nicfi_assets_basemaps_americas"
         }
     ],
-    "sci:citation": "Planet Team (2017). Planet Application Program Interface: In Space for Life\non Earth. San Francisco, CA. [https://api.planet.com](https://api.planet.com)\n",
     "summaries": {
         "eo:bands": [
             {
@@ -156,27 +178,5 @@
             "minimum": 0,
             "maximum": 10000
         }
-    },
-    "title": "Planet & NICFI Basemaps for Tropical Forest Monitoring - Tropical Americas",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -118.5,
-                    -30.4,
-                    -34.5,
-                    30.4
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2015-12-01T00:00:00Z",
-                    "2021-06-29T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

@@ -52,6 +52,36 @@
     "gee:terms_of_use": "The Food and Agriculture Organization of the United Nations (FAO) is mandated to collect, analyze,\ninterpret, and disseminate information related to nutrition, food, and agriculture. In this regard,\nit publishes a number of databases on topics related to FAO's mandate, and encourages the use of\nthem for scientific and research purposes. Consistent with the principles of openness and sharing\nenvisioned under the Open Data Licensing For Statistical Databases, and consistent with the mandate\nof FAO, data on GHG emissions from agriculture activities on organic soils as part of FAOSTAT\n- FAO's database on Food and Agriculture data, is available free to the user community.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "sci:citation": "[FAO 2020. Drained organic soils 1990 - 2019. Global, regional and country trends.\nFAOSTAT Analytical Brief Series No 4, FAO, Rome.](http://www.fao.org/3/cb0489en/cb0489en.pdf)\n",
+    "sci:publications": [
+        {
+            "citation": "Conchedda, G. and Tubiello, F. N.: Drainage of organic soils and GHG emissions:\nValidation with country data, Earth Syst. Sci. Data Discuss.\n[10.5194/essd-12-3113-2020](https://doi.org/10.5194/essd-12-3113-2020), 2020\n",
+            "doi": "10.5194/essd-12-3113-2020"
+        }
+    ],
+    "version": "1.0",
+    "title": "Drained Organic Soils Emissions (Annual)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1992-01-01T00:00:00Z",
+                    "2018-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "agriculture",
         "climate_change",
@@ -75,13 +105,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/FAO_GHG_1_DROSE_A"
-        }
-    ],
-    "sci:citation": "[FAO 2020. Drained organic soils 1990 - 2019. Global, regional and country trends.\nFAOSTAT Analytical Brief Series No 4, FAO, Rome.](http://www.fao.org/3/cb0489en/cb0489en.pdf)\n",
-    "sci:publications": [
-        {
-            "citation": "Conchedda, G. and Tubiello, F. N.: Drainage of organic soils and GHG emissions:\nValidation with country data, Earth Syst. Sci. Data Discuss.\n[10.5194/essd-12-3113-2020](https://doi.org/10.5194/essd-12-3113-2020), 2020\n",
-            "doi": "10.5194/essd-12-3113-2020"
         }
     ],
     "summaries": {
@@ -137,28 +160,5 @@
         "gsd": [
             927.67
         ]
-    },
-    "title": "Drained Organic Soils Emissions (Annual)",
-    "version": "1.0",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1992-01-01T00:00:00Z",
-                    "2018-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

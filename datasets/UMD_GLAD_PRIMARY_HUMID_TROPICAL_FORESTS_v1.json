@@ -47,6 +47,30 @@
     "gee:terms_of_use": "The data may be used by anyone, anywhere, anytime without permission,\nlicense or royalty payment.\nAttribution using the recommended citation is requested.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "sci:citation": "Turubanova S., Potapov P., Tyukavina, A., and Hansen M. (2018) Ongoing primary forest\nloss in Brazil, Democratic Republic of the Congo, and Indonesia. Environmental\nResearch Letters.\n[https://doi.org/10.1088/1748-9326/aacd1c](https://doi.org/10.1088/1748-9326/aacd1c)\n",
+    "version": "v1",
+    "title": "Primary Humid Tropical Forests",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2002-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "forest",
         "glad",
@@ -71,7 +95,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/UMD_GLAD_PRIMARY_HUMID_TROPICAL_FORESTS_v1"
         }
     ],
-    "sci:citation": "Turubanova S., Potapov P., Tyukavina, A., and Hansen M. (2018) Ongoing primary forest\nloss in Brazil, Democratic Republic of the Congo, and Indonesia. Environmental\nResearch Letters.\n[https://doi.org/10.1088/1748-9326/aacd1c](https://doi.org/10.1088/1748-9326/aacd1c)\n",
     "summaries": {
         "eo:bands": [
             {
@@ -115,28 +138,5 @@
         "gsd": [
             30
         ]
-    },
-    "title": "Primary Humid Tropical Forests",
-    "version": "v1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2001-01-01T00:00:00Z",
-                    "2002-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

@@ -51,6 +51,34 @@
     "gee:terms_of_use": "[CC-BY-NC-SA-4.0](https://spdx.org/licenses/CC-BY-NC-SA-4.0.html)",
     "gee:type": "image_collection",
     "gee:unusual_terms_of_use": true,
+    "sci:citation": "Weiss, D.J., P.M. Atkinson, S. Bhatt, B. Mappin, S.I. Hay & P.W. Gething\n(2014) An effective approach for gap-filling continental scale remotely\nsensed time-series. ISPRS Journal of Photogrammetry and Remote Sensing,\n98, 106-118.\n",
+    "sci:publications": [
+        {
+            "citation": "Lobser, S.E. & Cohen, W.B. (2007) MODIS tasselled cap: land cover\ncharacteristics expressed through transformed MODIS data. International\nJournal of Remote Sensing, 28, 5079-5101.\n"
+        }
+    ],
+    "title": "Oxford MAP TCB: Malaria Atlas Project Gap-Filled Tasseled Cap Brightness",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-02-01T00:00:00Z",
+                    "2015-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-NC-SA-4.0",
     "keywords": [
         "brightness",
         "map",
@@ -73,12 +101,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/Oxford_MAP_TCB_5km_Monthly"
-        }
-    ],
-    "sci:citation": "Weiss, D.J., P.M. Atkinson, S. Bhatt, B. Mappin, S.I. Hay & P.W. Gething\n(2014) An effective approach for gap-filling continental scale remotely\nsensed time-series. ISPRS Journal of Photogrammetry and Remote Sensing,\n98, 106-118.\n",
-    "sci:publications": [
-        {
-            "citation": "Lobser, S.E. & Cohen, W.B. (2007) MODIS tasselled cap: land cover\ncharacteristics expressed through transformed MODIS data. International\nJournal of Remote Sensing, 28, 5079-5101.\n"
         }
     ],
     "summaries": {
@@ -138,27 +160,5 @@
             "minimum": 0,
             "maximum": 1.99
         }
-    },
-    "title": "Oxford MAP TCB: Malaria Atlas Project Gap-Filled Tasseled Cap Brightness",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2001-02-01T00:00:00Z",
-                    "2015-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-NC-SA-4.0"
+    }
 }

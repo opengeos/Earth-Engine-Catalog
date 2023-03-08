@@ -61,6 +61,35 @@
     ],
     "gee:terms_of_use": "'The HydroATLAS database is licensed under a Creative Commons Attribution\n(CC-BY) 4.0 International License. Please also refer to the HydroATLAS\n[Technical Documentation](https://data.hydrosheds.org/file/technical-documentation/HydroATLAS_TechDoc_v10.pdf)\nfor more details on the license and requested citations.\n\nBy downloading and using the data the user agrees to the terms and\nconditions of this license.'\n",
     "gee:type": "table",
+    "sci:citation": "'Linke, S., Lehner, B., Ouellet Dallaire, C., Ariwi, J., Grill, G.,\nAnand, M., Beames, P., Burchard-Levine, V., Maxwell, S., Moidu, H., Tan, F.,\nThieme, M. (2019). Global hydro-environmental sub-basin and river reach\ncharacteristics at high spatial resolution. Scientific Data 6: 283.\n[DOI:10.1038/s41597-019-0300-6](https://doi.org/10.1038/s41597-019-0300-6).'\n",
+    "sci:publications": [
+        {
+            "citation": "[doi:10.6084/m9.figshare.9890531](https://doi.org/10.6084/m9.figshare.9890531)"
+        }
+    ],
+    "version": "v1",
+    "title": "WWF HydroATLAS Basins Level 12",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-22T00:00:00Z",
+                    "2000-02-22T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
     "keywords": [
         "geophysical",
         "hydroatlas",
@@ -89,12 +118,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/WWF_HydroATLAS_v1_Basins_level12"
         }
     ],
-    "sci:citation": "'Linke, S., Lehner, B., Ouellet Dallaire, C., Ariwi, J., Grill, G.,\nAnand, M., Beames, P., Burchard-Levine, V., Maxwell, S., Moidu, H., Tan, F.,\nThieme, M. (2019). Global hydro-environmental sub-basin and river reach\ncharacteristics at high spatial resolution. Scientific Data 6: 283.\n[DOI:10.1038/s41597-019-0300-6](https://doi.org/10.1038/s41597-019-0300-6).'\n",
-    "sci:publications": [
-        {
-            "citation": "[doi:10.6084/m9.figshare.9890531](https://doi.org/10.6084/m9.figshare.9890531)"
-        }
-    ],
     "summaries": {
         "gee:visualizations": [
             {
@@ -121,28 +144,5 @@
                 }
             }
         ]
-    },
-    "title": "WWF HydroATLAS Basins Level 12",
-    "version": "v1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2000-02-22T00:00:00Z",
-                    "2000-02-22T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-4.0"
+    }
 }

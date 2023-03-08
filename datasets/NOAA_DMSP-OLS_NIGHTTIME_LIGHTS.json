@@ -45,6 +45,29 @@
     ],
     "gee:terms_of_use": "NOAA data, information, and products, regardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use. The\nforgoing data is in the public domain and is being provided without\nrestriction on use and distribution.\n",
     "gee:type": "image_collection",
+    "version": "Version 4",
+    "title": "DMSP OLS: Nighttime Lights Time Series Version 4, Defense Meteorological Program Operational Linescan System",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -65,
+                    180,
+                    75
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1992-01-01T00:00:00Z",
+                    "2014-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "dmsp",
         "eog",
@@ -133,28 +156,5 @@
             "minimum": 0,
             "maximum": 63
         }
-    },
-    "title": "DMSP OLS: Nighttime Lights Time Series Version 4, Defense Meteorological Program Operational Linescan System",
-    "version": "Version 4",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -65,
-                    180,
-                    75
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1992-01-01T00:00:00Z",
-                    "2014-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

@@ -57,6 +57,29 @@
     },
     "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC have no restrictions on subsequent use, sale, or redistribution.\n",
     "gee:type": "image_collection",
+    "version": "Unknown",
+    "title": "MOD09A1.005 Surface Reflectance 8-Day Global 500m [deprecated]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-18T00:00:00Z",
+                    "2017-03-22T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "8_day",
         "global",
@@ -154,28 +177,5 @@
                 }
             }
         ]
-    },
-    "title": "MOD09A1.005 Surface Reflectance 8-Day Global 500m [deprecated]",
-    "version": "Unknown",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2000-02-18T00:00:00Z",
-                    "2017-03-22T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

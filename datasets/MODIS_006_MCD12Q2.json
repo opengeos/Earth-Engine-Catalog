@@ -68,6 +68,31 @@
     },
     "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/MODIS/MCD12Q2.006",
+    "version": "V006",
+    "title": "MCD12Q2.006 Land Cover Dynamics Yearly Global 500m [deprecated]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2019-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "evi",
         "global",
@@ -94,8 +119,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MCD12Q2"
         }
     ],
-    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
-    "sci:doi": "10.5067/MODIS/MCD12Q2.006",
     "summaries": {
         "gee:visualizations": [
             {
@@ -227,28 +250,5 @@
             "minimum": 11138,
             "maximum": 32766
         }
-    },
-    "title": "MCD12Q2.006 Land Cover Dynamics Yearly Global 500m [deprecated]",
-    "version": "V006",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2001-01-01T00:00:00Z",
-                    "2019-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

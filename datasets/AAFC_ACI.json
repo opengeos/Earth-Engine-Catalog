@@ -59,6 +59,29 @@
     },
     "gee:terms_of_use": "Contains information licensed under the [Open Government Licence - Canada,\nversion 2.0](https://open.canada.ca/en/open-government-licence-canada)\n",
     "gee:type": "image_collection",
+    "sci:citation": "Agriculture and Agri-Food Canada Annual Crop Inventory. {YEAR}",
+    "title": "Canada AAFC Annual Crop Inventory",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -135.17,
+                    36.83,
+                    -51.24,
+                    62.25
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2009-01-01T00:00:00Z",
+                    "2020-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "OGL-Canada-2.0",
     "keywords": [
         "aafc",
         "canada",
@@ -82,7 +105,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/AAFC_ACI"
         }
     ],
-    "sci:citation": "Agriculture and Agri-Food Canada Annual Crop Inventory. {YEAR}",
     "summaries": {
         "eo:bands": [
             {
@@ -573,27 +595,5 @@
             "minimum": 1,
             "maximum": 255
         }
-    },
-    "title": "Canada AAFC Annual Crop Inventory",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -135.17,
-                    36.83,
-                    -51.24,
-                    62.25
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2009-01-01T00:00:00Z",
-                    "2020-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "OGL-Canada-2.0"
+    }
 }

@@ -51,6 +51,30 @@
     },
     "gee:terms_of_use": "This datasets are in the public domain. To the extent possible under law,\n[Pete Peterson](https://chc.ucsb.edu/people/pete-peterson)\nhas waived all copyright and related or neighboring rights to\nClimate Hazards Group Infrared Precipitation with Stations (CHIRPS).\n",
     "gee:type": "image_collection",
+    "sci:citation": "Funk, Chris, Pete Peterson, Martin Landsfeld, Diego Pedreros, James\nVerdin, Shraddhanand Shukla, Gregory Husak, James Rowland, Laura Harrison,\nAndrew Hoell & Joel Michaelsen. \"The climate hazards infrared precipitation\nwith stations-a new environmental record for monitoring extremes\".\nScientific Data 2, 150066. [doi:10.1038/sdata.2015.66](https://doi.org/10.1038/sdata.2015.66)\n2015.\n",
+    "version": "2.0",
+    "title": "CHIRPS Daily: Climate Hazards Group InfraRed Precipitation With Station Data (Version 2.0 Final)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -50,
+                    180,
+                    50
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1981-01-01T00:00:00Z",
+                    "2023-01-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "chg",
         "climate",
@@ -76,7 +100,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/UCSB-CHG_CHIRPS_DAILY"
         }
     ],
-    "sci:citation": "Funk, Chris, Pete Peterson, Martin Landsfeld, Diego Pedreros, James\nVerdin, Shraddhanand Shukla, Gregory Husak, James Rowland, Laura Harrison,\nAndrew Hoell & Joel Michaelsen. \"The climate hazards infrared precipitation\nwith stations-a new environmental record for monitoring extremes\".\nScientific Data 2, 150066. [doi:10.1038/sdata.2015.66](https://doi.org/10.1038/sdata.2015.66)\n2015.\n",
     "summaries": {
         "eo:bands": [
             {
@@ -122,28 +145,5 @@
             "minimum": 0,
             "maximum": 1444.34
         }
-    },
-    "title": "CHIRPS Daily: Climate Hazards Group InfraRed Precipitation With Station Data (Version 2.0 Final)",
-    "version": "2.0",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -50,
-                    180,
-                    50
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1981-01-01T00:00:00Z",
-                    "2023-01-31T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

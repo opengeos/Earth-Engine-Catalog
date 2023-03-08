@@ -46,6 +46,30 @@
     ],
     "gee:terms_of_use": "Most U.S. Geological Survey (USGS) information resides\nin the public domain and may be used without restriction. Additional\ninformation on [Acknowledging or Crediting USGS as Information\nSource](https://www.usgs.gov/information-policies-and-instructions/crediting-usgs) is available.\n",
     "gee:type": "image",
+    "sci:citation": "Gon, S.M., A. Allison, R. J. Cannarella, J. D. Jacobi, K. Y. Kaneshiro,\nM. H. Kido, M. Lane-Kamehele, S. E. Miller.  2006.  The Hawaii Gap Analysis\nProject Final Report. 487 pp.\n",
+    "version": "2001",
+    "title": "USGS GAP Hawaii 2001",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -160.2665484663998,
+                    18.851697692492277,
+                    -154.669588436752,
+                    22.295218441899475
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2002-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "gap",
         "landcover",
@@ -70,7 +94,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_GAP_HI_2001"
         }
     ],
-    "sci:citation": "Gon, S.M., A. Allison, R. J. Cannarella, J. D. Jacobi, K. Y. Kaneshiro,\nM. H. Kido, M. Lane-Kamehele, S. E. Miller.  2006.  The Hawaii Gap Analysis\nProject Final Report. 487 pp.\n",
     "summaries": {
         "eo:bands": [
             {
@@ -295,28 +318,5 @@
             "minimum": 1,
             "maximum": 9
         }
-    },
-    "title": "USGS GAP Hawaii 2001",
-    "version": "2001",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -160.2665484663998,
-                    18.851697692492277,
-                    -154.669588436752,
-                    22.295218441899475
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2001-01-01T00:00:00Z",
-                    "2002-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

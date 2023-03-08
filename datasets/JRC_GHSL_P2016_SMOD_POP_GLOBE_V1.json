@@ -47,6 +47,30 @@
     "gee:terms_of_use": "The GHSL has been produced by the EC JRC as open and free data. Reuse is\nauthorised, provided the source is acknowledged. For more information,\nplease read the use conditions ([European Commission Reuse and Copyright\nNotice](https://ec.europa.eu/info/legal-notice_en)).\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "sci:citation": "Pesaresi, Martino; Freire, Sergio (2016): GHS Settlement grid following the\nREGIO model 2014 in application to GHSL Landsat and CIESIN GPW\nv4-multitemporal (1975-1990-2000-2015). European Commission, Joint Research\nCentre (JRC) [Dataset]\nPID: [https://data.europa.eu/89h/jrc-ghsl-ghs_smod_pop_globe_r2016a](https://data.europa.eu/89h/jrc-ghsl-ghs_smod_pop_globe_r2016a)\n",
+    "version": "v1",
+    "title": "GHSL: Global Human Settlement Layers, Settlement Grid 1975-1990-2000-2014 (P2016)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1975-01-01T00:00:00Z",
+                    "2015-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "jrc",
         "settlement",
@@ -69,7 +93,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GHSL_P2016_SMOD_POP_GLOBE_V1"
         }
     ],
-    "sci:citation": "Pesaresi, Martino; Freire, Sergio (2016): GHS Settlement grid following the\nREGIO model 2014 in application to GHSL Landsat and CIESIN GPW\nv4-multitemporal (1975-1990-2000-2015). European Commission, Joint Research\nCentre (JRC) [Dataset]\nPID: [https://data.europa.eu/89h/jrc-ghsl-ghs_smod_pop_globe_r2016a](https://data.europa.eu/89h/jrc-ghsl-ghs_smod_pop_globe_r2016a)\n",
     "summaries": {
         "eo:bands": [
             {
@@ -131,28 +154,5 @@
         "gsd": [
             1000
         ]
-    },
-    "title": "GHSL: Global Human Settlement Layers, Settlement Grid 1975-1990-2000-2014 (P2016)",
-    "version": "v1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1975-01-01T00:00:00Z",
-                    "2015-12-31T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

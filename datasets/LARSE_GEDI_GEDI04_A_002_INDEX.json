@@ -45,6 +45,30 @@
     ],
     "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy]\n(https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
     "gee:type": "table",
+    "sci:citation": "GEDI L4A Footprint Level Aboveground Biomass Density, Version 2.1.\nDubayah, R.O., J. Armston, J.R. Kellner, L. Duncanson, S.P. Healey,\nP.L. Patterson, S. Hancock, H. Tang, J. Bruening, M.A. Hofton, J.B. Blair,\nand S.B. Luthcke. 2022. ORNL DAAC, Oak Ridge, Tennessee, USA.\n[doi:10.3334/ORNLDAAC/2056](https://doi.org/10.3334/ORNLDAAC/2056)\n",
+    "version": "2.1",
+    "title": "GEDI L4A table index",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -51.6,
+                    180,
+                    51.6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-04-18T00:00:00Z",
+                    "2022-06-09T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "elevation",
         "gedi",
@@ -77,7 +101,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/LARSE_GEDI_GEDI04_A_002_INDEX"
         }
     ],
-    "sci:citation": "GEDI L4A Footprint Level Aboveground Biomass Density, Version 2.1.\nDubayah, R.O., J. Armston, J.R. Kellner, L. Duncanson, S.P. Healey,\nP.L. Patterson, S. Hancock, H. Tang, J. Bruening, M.A. Hofton, J.B. Blair,\nand S.B. Luthcke. 2022. ORNL DAAC, Oak Ridge, Tennessee, USA.\n[doi:10.3334/ORNLDAAC/2056](https://doi.org/10.3334/ORNLDAAC/2056)\n",
     "summaries": {
         "gee:schema": [
             {
@@ -120,28 +143,5 @@
                 "time_start DESC"
             ]
         }
-    },
-    "title": "GEDI L4A table index",
-    "version": "2.1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -51.6,
-                    180,
-                    51.6
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2019-04-18T00:00:00Z",
-                    "2022-06-09T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

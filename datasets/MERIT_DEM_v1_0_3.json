@@ -53,6 +53,30 @@
     "gee:type": "image",
     "gee:unusual_terms_of_use": true,
     "gee:user_uploaded": true,
+    "sci:citation": "Yamazaki D., D. Ikeshima, R. Tawatari, T. Yamaguchi, F. O'Loughlin, J.C. Neal,\nC.C. Sampson, S. Kanae & P.D. Bates. A high accuracy map of global\nterrain elevations.  Geophysical Research Letters, vol.44, pp.5844-5853, 2017.\n\n[doi:10.1002/2017GL072874](https://doi.org/10.1002/2017GL072874)\n",
+    "version": "1.0.3",
+    "title": "MERIT DEM: Multi-Error-Removed Improved-Terrain DEM",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1987-01-01T00:00:00Z",
+                    "2017-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "ODbL-1.0",
     "keywords": [
         "dem",
         "elevation",
@@ -76,7 +100,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/MERIT_DEM_v1_0_3"
         }
     ],
-    "sci:citation": "Yamazaki D., D. Ikeshima, R. Tawatari, T. Yamaguchi, F. O'Loughlin, J.C. Neal,\nC.C. Sampson, S. Kanae & P.D. Bates. A high accuracy map of global\nterrain elevations.  Geophysical Research Letters, vol.44, pp.5844-5853, 2017.\n\n[doi:10.1002/2017GL072874](https://doi.org/10.1002/2017GL072874)\n",
     "summaries": {
         "eo:bands": [
             {
@@ -118,28 +141,5 @@
                 }
             }
         ]
-    },
-    "title": "MERIT DEM: Multi-Error-Removed Improved-Terrain DEM",
-    "version": "1.0.3",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -60,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1987-01-01T00:00:00Z",
-                    "2017-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "ODbL-1.0"
+    }
 }

@@ -52,6 +52,30 @@
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image",
     "gee:user_uploaded": true,
+    "sci:citation": "Chakraborty, T., & Lee, X. (2019). A simplified urban-extent algorithm\nto characterize surface urban heat islands on a global scale and examine\nvegetation control on their spatiotemporal variability. International\nJournal of Applied Earth Observation and Geoinformation, 74, 269-280.\n[doi:10.1016/j.jag.2018.09.015](https://doi.org/10.1016/j.jag.2018.09.015)\n",
+    "version": "4",
+    "title": "YCEO Surface Urban Heat Islands: Spatially-Averaged Monthly Composites of Daytime and Nighttime Intensity",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -49.98,
+                    180,
+                    69.7
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2003-01-01T00:00:00Z",
+                    "2018-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
     "keywords": [
         "climate",
         "uhi",
@@ -75,7 +99,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/YALE_YCEO_UHI_UHI_monthly_averaged_v4"
         }
     ],
-    "sci:citation": "Chakraborty, T., & Lee, X. (2019). A simplified urban-extent algorithm\nto characterize surface urban heat islands on a global scale and examine\nvegetation control on their spatiotemporal variability. International\nJournal of Applied Earth Observation and Geoinformation, 74, 269-280.\n[doi:10.1016/j.jag.2018.09.015](https://doi.org/10.1016/j.jag.2018.09.015)\n",
     "summaries": {
         "eo:bands": [
             {
@@ -235,28 +258,5 @@
         "gsd": [
             300
         ]
-    },
-    "title": "YCEO Surface Urban Heat Islands: Spatially-Averaged Monthly Composites of Daytime and Nighttime Intensity",
-    "version": "4",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -49.98,
-                    180,
-                    69.7
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2003-01-01T00:00:00Z",
-                    "2018-12-31T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-4.0"
+    }
 }

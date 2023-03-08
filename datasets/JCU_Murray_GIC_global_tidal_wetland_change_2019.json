@@ -52,6 +52,31 @@
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image",
     "gee:user_uploaded": true,
+    "sci:citation": "Murray, N.J., Worthington, T.A., Bunting, P., Duce, S., Hagger, V.,\nLovelock, C.E., Lucas, R., Saunders, M.I., Sheaves, M., Spalding, M.,\nWaltham, N.J., Lyons, M.B., 2022. High-resolution mapping of losses and\ngains of Earth's tidal wetlands. *Science*.\n[doi:10.1126/science.abm9583](https://doi.org/10.1126/science.abm9583)\n",
+    "sci:doi": "10.1126/science.abm9583",
+    "version": "1.0",
+    "title": "Murray Global Tidal Wetland Change v1.0 (1999-2019)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1999-01-01T00:00:00Z",
+                    "2019-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
     "keywords": [
         "coastal",
         "ecosystem",
@@ -80,8 +105,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/JCU_Murray_GIC_global_tidal_wetland_change_2019"
         }
     ],
-    "sci:citation": "Murray, N.J., Worthington, T.A., Bunting, P., Duce, S., Hagger, V.,\nLovelock, C.E., Lucas, R., Saunders, M.I., Sheaves, M., Spalding, M.,\nWaltham, N.J., Lyons, M.B., 2022. High-resolution mapping of losses and\ngains of Earth's tidal wetlands. *Science*.\n[doi:10.1126/science.abm9583](https://doi.org/10.1126/science.abm9583)\n",
-    "sci:doi": "10.1126/science.abm9583",
     "summaries": {
         "eo:bands": [
             {
@@ -143,28 +166,5 @@
         "gsd": [
             30
         ]
-    },
-    "title": "Murray Global Tidal Wetland Change v1.0 (1999-2019)",
-    "version": "1.0",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1999-01-01T00:00:00Z",
-                    "2019-12-31T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-4.0"
+    }
 }

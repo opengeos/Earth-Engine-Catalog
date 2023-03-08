@@ -54,6 +54,29 @@
     ],
     "gee:terms_of_use": "This dataset is licensed under\n[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).'\n",
     "gee:type": "image",
+    "version": "202201",
+    "title": "LandScan High Definition Data for Ukraine, January 2022",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    22.125,
+                    44.175,
+                    40.225,
+                    52.4
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-01-01T00:00:00Z",
+                    "2022-02-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
     "keywords": [
         "landscan",
         "population",
@@ -121,28 +144,5 @@
             "minimum": 0,
             "maximum": 1020
         }
-    },
-    "title": "LandScan High Definition Data for Ukraine, January 2022",
-    "version": "202201",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    22.125,
-                    44.175,
-                    40.225,
-                    52.4
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2022-01-01T00:00:00Z",
-                    "2022-02-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-4.0"
+    }
 }

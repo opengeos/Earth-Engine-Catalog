@@ -59,6 +59,37 @@
     },
     "gee:terms_of_use": "CDR data sets are nonproprietary, publicly available,\nand no restrictions are placed upon their use. For additional information,\nsee the [Fair Use of NOAA's CDR Data Sets, Algorithms and Documentation](https://www.ncdc.noaa.gov/sites/default/files/cdr-documentation/UseAgreement_0.pdf)\ndocument.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Cite this dataset when used as a source: Sorooshian, Soroosh;\nHsu, Kuolin; Braithwaite, Dan; Ashouri, Hamed; and NOAA CDR Program\n(2014): NOAA Climate Data Record (CDR) of Precipitation Estimation\nfrom Remotely Sensed Information using Artificial Neural Networks\n(PERSIANN-CDR), Version 1 Revision 1. [indicate subset used]. NOAA\nNational Centers for Environmental Information. doi:\n[doi:10.7289/V51V5BWQ](https://doi.org/10.7289/V51V5BWQ)\n[access date].\n",
+    "sci:doi": "10.7289/V51V5BWQ",
+    "sci:publications": [
+        {
+            "citation": "Publications using this dataset should also cite the following\njournal article: Ashouri H., K. Hsu, S. Sorooshian, D. K. Braithwaite,\nK. R. Knapp, L. D. Cecil, B. R. Nelson, and O. P. Prat, 2015: PERSIANN-CDR:\nDaily Precipitation Climate Data Record from Multi-Satellite Observations\nfor Hydrological and Climate Studies. Bull. Amer. Meteor. Soc.,\n[doi:10.1175/BAMS-D-13-00068.1](https://doi.org/10.1175/BAMS-D-13-00068.1).\n",
+            "doi": "10.1175/BAMS-D-13-00068.1"
+        }
+    ],
+    "version": "Version 1 Revision 1",
+    "title": "PERSIANN-CDR: Precipitation Estimation From Remotely Sensed Information Using Artificial Neural Networks-Climate Data Record",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60,
+                    180,
+                    60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1983-01-01T00:00:00Z",
+                    "2022-09-30T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "cdr",
         "climate",
@@ -84,14 +115,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_PERSIANN-CDR"
-        }
-    ],
-    "sci:citation": "Cite this dataset when used as a source: Sorooshian, Soroosh;\nHsu, Kuolin; Braithwaite, Dan; Ashouri, Hamed; and NOAA CDR Program\n(2014): NOAA Climate Data Record (CDR) of Precipitation Estimation\nfrom Remotely Sensed Information using Artificial Neural Networks\n(PERSIANN-CDR), Version 1 Revision 1. [indicate subset used]. NOAA\nNational Centers for Environmental Information. doi:\n[doi:10.7289/V51V5BWQ](https://doi.org/10.7289/V51V5BWQ)\n[access date].\n",
-    "sci:doi": "10.7289/V51V5BWQ",
-    "sci:publications": [
-        {
-            "citation": "Publications using this dataset should also cite the following\njournal article: Ashouri H., K. Hsu, S. Sorooshian, D. K. Braithwaite,\nK. R. Knapp, L. D. Cecil, B. R. Nelson, and O. P. Prat, 2015: PERSIANN-CDR:\nDaily Precipitation Climate Data Record from Multi-Satellite Observations\nfor Hydrological and Climate Studies. Bull. Amer. Meteor. Soc.,\n[doi:10.1175/BAMS-D-13-00068.1](https://doi.org/10.1175/BAMS-D-13-00068.1).\n",
-            "doi": "10.1175/BAMS-D-13-00068.1"
         }
     ],
     "summaries": {
@@ -139,28 +162,5 @@
             "minimum": 0,
             "maximum": 718.62
         }
-    },
-    "title": "PERSIANN-CDR: Precipitation Estimation From Remotely Sensed Information Using Artificial Neural Networks-Climate Data Record",
-    "version": "Version 1 Revision 1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -60,
-                    180,
-                    60
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1983-01-01T00:00:00Z",
-                    "2022-09-30T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

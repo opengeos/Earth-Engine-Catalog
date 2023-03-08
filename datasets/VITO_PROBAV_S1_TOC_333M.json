@@ -58,6 +58,30 @@
     },
     "gee:terms_of_use": "PROBA-V 300m and 100m data are freely available for data older than 1 month.",
     "gee:type": "image_collection",
+    "sci:citation": "Copyright ESA-BELSPO, produced by Vito",
+    "version": "C0",
+    "title": "PROBA-V C0 Top Of Canopy Daily Synthesis 333m [deprecated]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2013-10-17T00:00:00Z",
+                    "2016-12-14T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "esa",
         "multispectral",
@@ -84,7 +108,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/VITO_PROBAV_S1_TOC_333M"
         }
     ],
-    "sci:citation": "Copyright ESA-BELSPO, produced by Vito",
     "summaries": {
         "eo:bands": [
             {
@@ -366,28 +389,5 @@
         "gsd": [
             333
         ]
-    },
-    "title": "PROBA-V C0 Top Of Canopy Daily Synthesis 333m [deprecated]",
-    "version": "C0",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2013-10-17T00:00:00Z",
-                    "2016-12-14T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

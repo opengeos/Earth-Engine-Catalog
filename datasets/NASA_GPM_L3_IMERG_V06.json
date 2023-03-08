@@ -73,6 +73,31 @@
     ],
     "gee:terms_of_use": "All NASA-produced data from the GPM mission is made\nfreely available for the public to use.",
     "gee:type": "image_collection",
+    "sci:citation": "Huffman, G.J., E.F. Stocker, D.T. Bolvin, E.J. Nelkin, Jackson Tan (2019),\nGPM IMERG Final Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V06,\nGreenbelt, MD, Goddard Earth Sciences Data and Information Services Center\n(GES DISC), Accessed: [Data Access Date],\n[doi:10.5067/GPM/IMERG/3B-HH/06](https://doi.org/10.5067/GPM/IMERG/3B-HH/06)\n",
+    "sci:doi": "10.5067/GPM/IMERG/3B-HH-L/06",
+    "version": "V06",
+    "title": "GPM: Global Precipitation Measurement (GPM) v6",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-06-01T00:00:00Z",
+                    "2023-03-07T02:30:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "climate",
         "geophysical",
@@ -101,8 +126,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GPM_L3_IMERG_V06"
         }
     ],
-    "sci:citation": "Huffman, G.J., E.F. Stocker, D.T. Bolvin, E.J. Nelkin, Jackson Tan (2019),\nGPM IMERG Final Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V06,\nGreenbelt, MD, Goddard Earth Sciences Data and Information Services Center\n(GES DISC), Accessed: [Data Access Date],\n[doi:10.5067/GPM/IMERG/3B-HH/06](https://doi.org/10.5067/GPM/IMERG/3B-HH/06)\n",
-    "sci:doi": "10.5067/GPM/IMERG/3B-HH-L/06",
     "summaries": {
         "eo:bands": [
             {
@@ -280,28 +303,5 @@
             "minimum": 0.24,
             "maximum": 250
         }
-    },
-    "title": "GPM: Global Precipitation Measurement (GPM) v6",
-    "version": "V06",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2000-06-01T00:00:00Z",
-                    "2023-03-02T03:30:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

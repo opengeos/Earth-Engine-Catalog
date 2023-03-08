@@ -47,6 +47,30 @@
     "gee:terms_of_use": "LANDFIRE data are public domain data with no use restrictions, though if modifications\nor derivatives of the product(s) are created, then please add some descriptive modifier\nto the data set to avoid confusion.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "sci:citation": "The suggested way to cite LANDFIRE products is specific to each product,\nso the model for citation is provided, with an example for a particular product.\nProducer. Year released. Product xxxxx:\n\n- Individual model name.\n- BpS Models and Descriptions, Online. LANDFIRE. Washington, DC. U.S. Department of\n  Agriculture, Forest Service\n- U.S. Department of the Interior; U.S. Geological Survey; Arlington, VA\n- The Nature Conservancy (Producers). Available- URL. Access date.\n\nExample Citation: LANDFIRE Biophysical Settings. 2018. Biophysical setting 14420:\nSouth Texas sand sheet grassland. In: LANDFIRE Biophysical Setting Model: Map zone 36,\n[Online]. In: BpS Models and Descriptions. In: LANDFIRE. Washington, DC:\nU.S. Department of Agriculture, Forest Service; U.S. Department of the Interior;\nU.S. Geological Survey; Arlington, VA: The Nature Conservancy (Producers).\nAvailable: [https://www.landfire.gov/bps-models.php](https://www.landfire.gov/bps-models.php) [2018, June 27].\nAdditional guidance on citation of LANDFIRE products can be found\n[here](https://www.landfire.gov/landfire_citation.php)\n",
+    "version": "1.4.0",
+    "title": "LANDFIRE EVH (Existing Vegetation Height) v1.4.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -175.1,
+                    17.52,
+                    -63.66,
+                    71.48
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-09-01T00:00:00Z",
+                    "2014-09-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "doi",
         "fire",
@@ -74,7 +98,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/LANDFIRE_Vegetation_EVH_v1_4_0"
         }
     ],
-    "sci:citation": "The suggested way to cite LANDFIRE products is specific to each product,\nso the model for citation is provided, with an example for a particular product.\nProducer. Year released. Product xxxxx:\n\n- Individual model name.\n- BpS Models and Descriptions, Online. LANDFIRE. Washington, DC. U.S. Department of\n  Agriculture, Forest Service\n- U.S. Department of the Interior; U.S. Geological Survey; Arlington, VA\n- The Nature Conservancy (Producers). Available- URL. Access date.\n\nExample Citation: LANDFIRE Biophysical Settings. 2018. Biophysical setting 14420:\nSouth Texas sand sheet grassland. In: LANDFIRE Biophysical Setting Model: Map zone 36,\n[Online]. In: BpS Models and Descriptions. In: LANDFIRE. Washington, DC:\nU.S. Department of Agriculture, Forest Service; U.S. Department of the Interior;\nU.S. Geological Survey; Arlington, VA: The Nature Conservancy (Producers).\nAvailable: [https://www.landfire.gov/bps-models.php](https://www.landfire.gov/bps-models.php) [2018, June 27].\nAdditional guidance on citation of LANDFIRE products can be found\n[here](https://www.landfire.gov/landfire_citation.php)\n",
     "summaries": {
         "eo:bands": [
             {
@@ -114,28 +137,5 @@
         "gsd": [
             30
         ]
-    },
-    "title": "LANDFIRE EVH (Existing Vegetation Height) v1.4.0",
-    "version": "1.4.0",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -175.1,
-                    17.52,
-                    -63.66,
-                    71.48
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2014-09-01T00:00:00Z",
-                    "2014-09-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

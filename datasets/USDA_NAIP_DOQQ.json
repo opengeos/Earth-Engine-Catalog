@@ -45,6 +45,29 @@
     ],
     "gee:terms_of_use": "Most information presented on the FSA Web site is considered public domain\ninformation. Public domain information may be freely distributed or copied,\nbut use of appropriate byline/photo/image credits is requested. For more\ninformation visit the [FSA Policies and Links](https://www.fsa.usda.gov/help/policies-and-links)\nwebsite.\n\nUsers should acknowledge USDA Farm Production and Conservation -\nBusiness Center, Geospatial Enterprise Operations when using or\ndistributing this data set.\n",
     "gee:type": "image_collection",
+    "sci:citation": "USDA Farm Production and Conservation - Business Center, Geospatial Enterprise Operations",
+    "title": "NAIP: National Agriculture Imagery Program",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -124.84,
+                    24.42,
+                    -64.82,
+                    49.72
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-06-15T00:00:00Z",
+                    "2020-12-17T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "aerial",
         "agriculture",
@@ -71,7 +94,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/USDA_NAIP_DOQQ"
         }
     ],
-    "sci:citation": "USDA Farm Production and Conservation - Business Center, Geospatial Enterprise Operations",
     "summaries": {
         "eo:bands": [
             {
@@ -123,27 +145,5 @@
         "gsd": [
             0.6
         ]
-    },
-    "title": "NAIP: National Agriculture Imagery Program",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -124.84,
-                    24.42,
-                    -64.82,
-                    49.72
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2002-06-15T00:00:00Z",
-                    "2020-12-17T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

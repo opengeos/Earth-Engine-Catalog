@@ -49,6 +49,28 @@
     },
     "gee:terms_of_use": "The use of Sentinel data is governed by the [Copernicus\nSentinel Data Terms and Conditions.](https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice)\n",
     "gee:type": "image_collection",
+    "title": "Sentinel-5P OFFL O3 TCL: Offline Tropospheric Ozone",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-04-30T10:50:26Z",
+                    "2023-02-20T11:41:08Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "air_quality",
         "copernicus",
@@ -250,27 +272,5 @@
         "platform": [
             "Sentinel-5P"
         ]
-    },
-    "title": "Sentinel-5P OFFL O3 TCL: Offline Tropospheric Ozone",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2018-04-30T10:50:26Z",
-                    "2023-02-18T12:19:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

@@ -46,6 +46,40 @@
     ],
     "gee:terms_of_use": "All NASA-produced data from the GRACE mission is made freely available\nfor the public to use. When using any of the GRCTellus data, please\nadd an acknowledgment: \"GRACE land are available at\n[https://grace.jpl.nasa.gov](https://grace.jpl.nasa.gov),\nsupported by the NASA MEaSUREs Program.\" and cite with the\ncitations provided.\n",
     "gee:type": "image_collection",
+    "sci:citation": "S.C. Swenson. 2012. GRACE monthly land water mass grids NETCDF\nRELEASE 5.0. Ver. 5.0. PO.DAAC, CA, USA. Dataset accessed\n[YYYY-MM-DD] at\n[https://doi.org/10.5067/TELND-NC005](https://doi.org/10.5067/TELND-NC005).\n",
+    "sci:publications": [
+        {
+            "citation": "Landerer F.W. and S. C. Swenson, Accuracy of scaled GRACE terrestrial\nwater storage estimates. Water Resources Research, Vol 48, W04531, 11 PP,\n[doi:10.1029/2011WR011453](https://doi.org/10.1029/2011WR011453), 2012.\n",
+            "doi": "10.1029/2011WR011453"
+        },
+        {
+            "citation": "Swenson, S. C. and J. Wahr, Post-processing removal of correlated\nerrors in GRACE data, Geophys. Res. Lett., 33, L08402,\n[doi:10.1029/2005GL025285](https://doi.org/10.1029/2005GL025285), 2006.\n",
+            "doi": "10.1029/2005GL025285"
+        }
+    ],
+    "version": "Release 05",
+    "title": "GRACE Monthly Mass Grids - Land",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-04-01T00:00:00Z",
+                    "2017-01-07T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "crs",
         "gfz",
@@ -73,17 +107,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GRACE_MASS_GRIDS_LAND"
-        }
-    ],
-    "sci:citation": "S.C. Swenson. 2012. GRACE monthly land water mass grids NETCDF\nRELEASE 5.0. Ver. 5.0. PO.DAAC, CA, USA. Dataset accessed\n[YYYY-MM-DD] at\n[https://doi.org/10.5067/TELND-NC005](https://doi.org/10.5067/TELND-NC005).\n",
-    "sci:publications": [
-        {
-            "citation": "Landerer F.W. and S. C. Swenson, Accuracy of scaled GRACE terrestrial\nwater storage estimates. Water Resources Research, Vol 48, W04531, 11 PP,\n[doi:10.1029/2011WR011453](https://doi.org/10.1029/2011WR011453), 2012.\n",
-            "doi": "10.1029/2011WR011453"
-        },
-        {
-            "citation": "Swenson, S. C. and J. Wahr, Post-processing removal of correlated\nerrors in GRACE data, Geophys. Res. Lett., 33, L08402,\n[doi:10.1029/2005GL025285](https://doi.org/10.1029/2005GL025285), 2006.\n",
-            "doi": "10.1029/2005GL025285"
         }
     ],
     "summaries": {
@@ -174,28 +197,5 @@
             "minimum": -137.94,
             "maximum": 71.86
         }
-    },
-    "title": "GRACE Monthly Mass Grids - Land",
-    "version": "Release 05",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2002-04-01T00:00:00Z",
-                    "2017-01-07T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

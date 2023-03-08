@@ -52,6 +52,35 @@
     "gee:terms_of_use": "The Food and Agriculture Organization of the United Nations (FAO) is mandated to\ncollect, analyze, interpret, and disseminate information related to nutrition,\nfood, and agriculture. In this regard, it publishes a number of databases on topics\nrelated to FAO's mandate, and encourages the use of them for scientific and research purposes.\nConsistent with the principles of openness and sharing envisioned under the [Open Data Licensing\nFor Statistical Databases](http://www.fao.org/3/ca7570en/ca7570en.pdf), and consistent with the mandate of FAO, data from the [Water\nProductivity Open Access Portal (WaPOR)](https://wapor.apps.fao.org/home/WAPOR_2/1), as part of [AQUASTAT](http://www.fao.org/aquastat/en/)\n- FAO's Global Information System on Water and Agriculture, is available free to the user community.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "sci:citation": "FAO 2018. WaPOR Database Methodology: Level 1. Remote Sensing for Water Productivity\nTechnical Report: Methodology Series. Rome, FAO. 72 pages.\n",
+    "sci:publications": [
+        {
+            "citation": "FAO 2020. WaPOR V2 Database Methodology. Remote Sensing for Water Productivity\nTechnical Report: Methodology Series. Rome, FAO. (in press)\n"
+        }
+    ],
+    "version": "2.0",
+    "title": "WAPOR Dekadal Net Primary Production",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -30.0044643,
+                    -40.0044644,
+                    65.0044644,
+                    40.0044643
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2009-01-01T00:00:00Z",
+                    "2023-02-11T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "agriculture",
         "fao",
@@ -73,12 +102,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/FAO_WAPOR_2_L1_NPP_D"
-        }
-    ],
-    "sci:citation": "FAO 2018. WaPOR Database Methodology: Level 1. Remote Sensing for Water Productivity\nTechnical Report: Methodology Series. Rome, FAO. 72 pages.\n",
-    "sci:publications": [
-        {
-            "citation": "FAO 2020. WaPOR V2 Database Methodology. Remote Sensing for Water Productivity\nTechnical Report: Methodology Series. Rome, FAO. (in press)\n"
         }
     ],
     "summaries": {
@@ -116,28 +139,5 @@
         "gsd": [
             248.2
         ]
-    },
-    "title": "WAPOR Dekadal Net Primary Production",
-    "version": "2.0",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -30.0044643,
-                    -40.0044644,
-                    65.0044644,
-                    40.0044643
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2009-01-01T00:00:00Z",
-                    "2023-02-11T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

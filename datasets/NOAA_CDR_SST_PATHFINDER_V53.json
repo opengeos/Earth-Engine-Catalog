@@ -55,6 +55,31 @@
     },
     "gee:terms_of_use": "NOAA data, information, and products, regardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use. The\nforgoing data is in the public domain and is being provided without\nrestriction on use and distribution. For more information see the\n'constraints' section in [https://data.nodc.noaa.gov/cgi-bin/iso?id=gov.noaa.nodc:AVHRR_Pathfinder-NCEI-L3C-v5.3]\n(https://data.nodc.noaa.gov/cgi-bin/iso?id=gov.noaa.nodc:AVHRR_Pathfinder-NCEI-L3C-v5.3).\n",
     "gee:type": "image_collection",
+    "sci:citation": "Baker-Yeboah, S., K. Saha, D. Zhang, K. S. Casey, R. Evans,\nand K. A. Kilpatrick (2016). 'Pathfinder Version 5.3 AVHRR Sea Surface\nTemperature Climate Data Record', Fall AGU 2016 Poster\n(manuscript in progress)\n",
+    "sci:doi": "10.7289/V52J68XX",
+    "version": "5.3",
+    "title": "NOAA AVHRR Pathfinder Version 5.3 Collated Global 4km Sea Surface Temperature",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1981-08-24T00:00:00Z",
+                    "2022-12-30T21:13:18Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "avhrr",
         "noaa",
@@ -81,8 +106,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_SST_PATHFINDER_V53"
         }
     ],
-    "sci:citation": "Baker-Yeboah, S., K. Saha, D. Zhang, K. S. Casey, R. Evans,\nand K. A. Kilpatrick (2016). 'Pathfinder Version 5.3 AVHRR Sea Surface\nTemperature Climate Data Record', Fall AGU 2016 Poster\n(manuscript in progress)\n",
-    "sci:doi": "10.7289/V52J68XX",
     "summaries": {
         "eo:bands": [
             {
@@ -334,28 +357,5 @@
             "minimum": 0,
             "maximum": 47
         }
-    },
-    "title": "NOAA AVHRR Pathfinder Version 5.3 Collated Global 4km Sea Surface Temperature",
-    "version": "5.3",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1981-08-24T00:00:00Z",
-                    "2022-12-30T21:13:18Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

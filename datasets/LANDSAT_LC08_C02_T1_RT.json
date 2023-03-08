@@ -49,6 +49,28 @@
     },
     "gee:terms_of_use": "Landsat datasets are federally created data\nand therefore reside in the public domain and may be used, transferred, or reproduced without copyright restriction.\n\nAcknowledgement or credit of the USGS as data source should be provided\nby including a line of text citation such as the example shown below.\n\n(Product, Image, Photograph, or Dataset Name) courtesy of\nthe U.S. Geological Survey\n\nExample: Landsat-7 image courtesy of the U.S. Geological Survey\n\nSee the\n[USGS Visual Identity System Guidance](https://www.usgs.gov/information-policies-and-instructions/usgs-visual-identity-system)\nfor further details on proper citation and acknowledgement of USGS products.\n",
     "gee:type": "image_collection",
+    "title": "USGS Landsat 8 Collection 2 Tier 1 and Real-Time data Raw Scenes",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2013-03-18T15:58:14Z",
+                    "2023-03-07T07:16:43Z"
+                ]
+            ]
+        }
+    },
+    "license": "PDDL-1.0",
     "keywords": [
         "c2",
         "global",
@@ -538,27 +560,5 @@
                 }
             }
         ]
-    },
-    "title": "USGS Landsat 8 Collection 2 Tier 1 and Real-Time data Raw Scenes",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2013-03-18T15:58:14Z",
-                    "2023-03-05T07:28:42Z"
-                ]
-            ]
-        }
-    },
-    "license": "PDDL-1.0"
+    }
 }

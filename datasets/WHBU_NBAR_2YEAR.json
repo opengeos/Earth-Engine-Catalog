@@ -55,6 +55,30 @@
     "gee:is_derived": true,
     "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC have no restrictions on subsequent use, sale, or redistribution.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Baccini, A., Laporte, N., Goetz, S. J., Sun, M., & Dong, H. (2008). A first map of tropical Africa's above-ground biomass derived from satellite imagery. Environmental Research Letters, 3(4), 045011. [doi:10.1088/1748-9326/3/4/045011](https://doi.org/10.1088/1748-9326/3/4/045011)\n",
+    "sci:doi": "10.1088/1748-9326/3/4/045011",
+    "title": "MODIS 2-year Nadir BRDF-Adjusted Reflectance (NBAR) Mosaic",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60.1,
+                    180,
+                    60.1
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2017-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "albedo",
         "bu",
@@ -81,8 +105,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/WHBU_NBAR_2YEAR"
         }
     ],
-    "sci:citation": "Baccini, A., Laporte, N., Goetz, S. J., Sun, M., & Dong, H. (2008). A first map of tropical Africa's above-ground biomass derived from satellite imagery. Environmental Research Letters, 3(4), 045011. [doi:10.1088/1748-9326/3/4/045011](https://doi.org/10.1088/1748-9326/3/4/045011)\n",
-    "sci:doi": "10.1088/1748-9326/3/4/045011",
     "summaries": {
         "eo:bands": [
             {
@@ -160,27 +182,5 @@
         "gsd": [
             463
         ]
-    },
-    "title": "MODIS 2-year Nadir BRDF-Adjusted Reflectance (NBAR) Mosaic",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -60.1,
-                    180,
-                    60.1
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2001-01-01T00:00:00Z",
-                    "2017-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

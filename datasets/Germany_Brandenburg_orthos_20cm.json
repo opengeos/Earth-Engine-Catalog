@@ -46,6 +46,29 @@
     "gee:terms_of_use": "The user must ensure that the source note contains the following\ninformation:\n\n  1. the name of the provider,\n  2. the annotation \"Data licence Germany - attribution - Version 2.0\" or\n     \"dl-de/by-2-0\" referring to the licence text available at\n     www.govdata.de/dl-de/by-2-0, and\n  3. a reference to the dataset (URI).\nThis applies only if the entity keeping the data provides the pieces of\ninformation 1-3 for the source note.\n\nChanges, editing, new designs or other amendments must be marked as such\nin the source note.\n\nFor more details please see the\n[Terms of use](https://www.govdata.de/dl-de/by-2-0)\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "sci:citation": "Data License Germany - Attribution - Version 2.0",
+    "title": "Brandenburg (Germany) RGBN orthophotos 20 cm",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    51.28,
+                    11,
+                    53.7,
+                    15
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-08-23T00:00:00Z",
+                    "2023-01-20T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "brandenburg",
         "germany",
@@ -69,7 +92,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/Germany_Brandenburg_orthos_20cm"
         }
     ],
-    "sci:citation": "Data License Germany - Attribution - Version 2.0",
     "summaries": {
         "eo:bands": [
             {
@@ -156,27 +178,5 @@
             "minimum": 0,
             "maximum": 255
         }
-    },
-    "title": "Brandenburg (Germany) RGBN orthophotos 20 cm",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    51.28,
-                    11,
-                    53.7,
-                    15
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2021-08-23T00:00:00Z",
-                    "2023-01-20T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

@@ -65,6 +65,40 @@
     "gee:terms_of_use": "Acknowledgements\n\nWhenever PML datasets are used in a scientific publication, the given\nreferences should be cited.\n\nLicense\n\nThe dataset is licensed under the\n[CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "sci:citation": "Zhang, Y., Kong, D., Gan, R., Chiew, F.H.S., McVicar, T.R., Zhang, Q.,\nand Yang, Y., 2019. Coupled estimation of 500m and 8-day resolution global\nevapotranspiration and gross primary production in 2002-2017.\nRemote Sens. Environ. 222, 165-182,\n[doi:10.1016/j.rse.2018.12.031](https://doi.org/10.1016/j.rse.2018.12.031)\n",
+    "sci:publications": [
+        {
+            "citation": "Gan, R., Zhang, Y.Q., Shi, H., Yang, Y.T., Eamus, D., Cheng, L.,\nChiew, F.H.S., Yu, Q., 2018. Use of satellite leaf area index estimating\nevapotranspiration and gross assimilation for Australian ecosystems.\nEcohydrology, [doi:10.1002/eco.1974](https://doi.org/10.1002/eco.1974)\n",
+            "doi": "10.1002/eco.1974"
+        },
+        {
+            "citation": "Zhang, Y., Pe\u00f1a-Arancibia, J.L., McVicar, T.R., Chiew, F.H.S., Vaze, J.,\nLiu, C., Lu, X., Zheng, H., Wang, Y., Liu, Y.Y., Miralles, D.G., Pan,\nM., 2016. Multi-decadal trends in global terrestrial evapotranspiration\nand its components. Sci. Rep. 6, 19124.\n[doi:10.1038/srep19124](https://doi.org/10.1038/srep19124)\n",
+            "doi": "10.1038/srep19124"
+        }
+    ],
+    "version": "0.1.4",
+    "title": "PML_V2 0.1.4: Coupled Evapotranspiration and Gross Primary Product (GPP) [deprecated]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-04T00:00:00Z",
+                    "2017-12-27T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
     "keywords": [
         "cas",
         "evapotranspiration",
@@ -88,17 +122,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/CAS_IGSNRR_PML_V2"
-        }
-    ],
-    "sci:citation": "Zhang, Y., Kong, D., Gan, R., Chiew, F.H.S., McVicar, T.R., Zhang, Q.,\nand Yang, Y., 2019. Coupled estimation of 500m and 8-day resolution global\nevapotranspiration and gross primary production in 2002-2017.\nRemote Sens. Environ. 222, 165-182,\n[doi:10.1016/j.rse.2018.12.031](https://doi.org/10.1016/j.rse.2018.12.031)\n",
-    "sci:publications": [
-        {
-            "citation": "Gan, R., Zhang, Y.Q., Shi, H., Yang, Y.T., Eamus, D., Cheng, L.,\nChiew, F.H.S., Yu, Q., 2018. Use of satellite leaf area index estimating\nevapotranspiration and gross assimilation for Australian ecosystems.\nEcohydrology, [doi:10.1002/eco.1974](https://doi.org/10.1002/eco.1974)\n",
-            "doi": "10.1002/eco.1974"
-        },
-        {
-            "citation": "Zhang, Y., Pe\u00f1a-Arancibia, J.L., McVicar, T.R., Chiew, F.H.S., Vaze, J.,\nLiu, C., Lu, X., Zheng, H., Wang, Y., Liu, Y.Y., Miralles, D.G., Pan,\nM., 2016. Multi-decadal trends in global terrestrial evapotranspiration\nand its components. Sci. Rep. 6, 19124.\n[doi:10.1038/srep19124](https://doi.org/10.1038/srep19124)\n",
-            "doi": "10.1038/srep19124"
         }
     ],
     "summaries": {
@@ -188,28 +211,5 @@
             "minimum": 0,
             "maximum": 39.01
         }
-    },
-    "title": "PML_V2 0.1.4: Coupled Evapotranspiration and Gross Primary Product (GPP) [deprecated]",
-    "version": "0.1.4",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -60,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2002-07-04T00:00:00Z",
-                    "2017-12-27T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-4.0"
+    }
 }

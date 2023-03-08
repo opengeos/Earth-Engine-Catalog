@@ -56,6 +56,30 @@
     },
     "gee:terms_of_use": "This dataset is free to use without any restrictions (including commercial use). Anyone wishing\nto publish analyzed results or value added data products should properly credit the original\nG-Portal data, e.g., \\\"PR data by Japan Aerospace Exploration Agency\\\". For value added data\nproducts, please indicate the credit of the original G-Portal data, e.g., \\\"Original data for\nthis value added data product was provided by Japan Aerospace Exploration Agency.\\\"\n\nSee [G-Portal's terms of service (Article 7)](https://gportal.jaxa.jp/gpr/index/eula?lang=en)\nfor additional information.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Moriyama, M. (Sep. 2014). GCOM-C1/SGLI Land Surface Temperature Product Algorithm Theoretical\nBasis Document (Version 1). Retrieved from [https://suzaku.eorc.jaxa.jp/GCOM_C/data/ATBD/ver1/LST-ATBD_2014.pdf](https://suzaku.eorc.jaxa.jp/GCOM_C/data/ATBD/ver1/LST-ATBD_2014.pdf)\n",
+    "version": "V1",
+    "title": "GCOM-C/SGLI L3 Land Surface Temperature (V1)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-01-01T00:00:00Z",
+                    "2020-06-28T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "climate",
         "g_portal",
@@ -83,7 +107,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/JAXA_GCOM-C_L3_LAND_LST_V1"
         }
     ],
-    "sci:citation": "Moriyama, M. (Sep. 2014). GCOM-C1/SGLI Land Surface Temperature Product Algorithm Theoretical\nBasis Document (Version 1). Retrieved from [https://suzaku.eorc.jaxa.jp/GCOM_C/data/ATBD/ver1/LST-ATBD_2014.pdf](https://suzaku.eorc.jaxa.jp/GCOM_C/data/ATBD/ver1/LST-ATBD_2014.pdf)\n",
     "summaries": {
         "eo:bands": [
             {
@@ -247,28 +270,5 @@
             "minimum": 0,
             "maximum": 65531
         }
-    },
-    "title": "GCOM-C/SGLI L3 Land Surface Temperature (V1)",
-    "version": "V1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2018-01-01T00:00:00Z",
-                    "2020-06-28T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

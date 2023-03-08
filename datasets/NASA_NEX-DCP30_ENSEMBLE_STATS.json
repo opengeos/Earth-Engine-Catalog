@@ -51,6 +51,30 @@
     },
     "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Thrasher, B., J. Xiong, W. Wang, F. Melton, A. Michaelis and R. Nemani\n(2013), Downscaled Climate Projections Suitable for Resource Management,\nEos Trans. AGU, 94(37), 321.\n[doi:10.1002/2013EO370002](https://doi.org/10.1002/2013EO370002)\n",
+    "version": "1",
+    "title": "NEX-DCP30: Ensemble Stats for NASA Earth Exchange Downscaled Climate Projections",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125.03,
+                    24.07,
+                    -66.47,
+                    49.93
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1950-01-01T00:00:00Z",
+                    "2099-12-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "climate",
         "cmip5",
@@ -78,7 +102,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_NEX-DCP30_ENSEMBLE_STATS"
         }
     ],
-    "sci:citation": "Thrasher, B., J. Xiong, W. Wang, F. Melton, A. Michaelis and R. Nemani\n(2013), Downscaled Climate Projections Suitable for Resource Management,\nEos Trans. AGU, 94(37), 321.\n[doi:10.1002/2013EO370002](https://doi.org/10.1002/2013EO370002)\n",
     "summaries": {
         "eo:bands": [
             {
@@ -236,28 +259,5 @@
             "minimum": 248.42,
             "maximum": 312.59
         }
-    },
-    "title": "NEX-DCP30: Ensemble Stats for NASA Earth Exchange Downscaled Climate Projections",
-    "version": "1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -125.03,
-                    24.07,
-                    -66.47,
-                    49.93
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1950-01-01T00:00:00Z",
-                    "2099-12-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

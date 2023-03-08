@@ -55,6 +55,29 @@
     },
     "gee:terms_of_use": "NASA promotes the full and open sharing of all data with research and\napplications communities, private industry, academia, and the general\npublic.\n",
     "gee:type": "image_collection",
+    "version": "5.12.4",
+    "title": "MERRA-2 M2T1NXRAD: Radiation Diagnostics V5.12.4",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1980-01-01T00:00:00Z",
+                    "2023-02-01T23:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "albedo",
         "emissivity",
@@ -257,28 +280,5 @@
             "minimum": 185.729706,
             "maximum": 328.863831
         }
-    },
-    "title": "MERRA-2 M2T1NXRAD: Radiation Diagnostics V5.12.4",
-    "version": "5.12.4",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1980-01-01T00:00:00Z",
-                    "2023-02-01T23:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

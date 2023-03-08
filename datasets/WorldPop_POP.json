@@ -53,6 +53,42 @@
     "deprecated": true,
     "gee:terms_of_use": "WorldPop datasets are licensed under the Creative Commons Attribution 4.0\nInternational License. Users are free to use, copy, distribute, transmit,\nand adapt the work for commercial and non-commercial purposes, without\nrestriction, as long as clear attribution of the source is provided.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Please cite the WorldPop website as the source: [www.worldpop.org]\n(www.worldpop.org).",
+    "sci:publications": [
+        {
+            "citation": "Americas population data: Alessandro Sorichetta, Graeme M. Hornby,\nForrest R. Stevens, Andrea E. Gaughan, Catherine Linard, Andrew J. Tatem,\n2015, High-resolution gridded population datasets for Latin America and the\nCaribbean in 2010, 2015, and 2020, Scientific Data,\n[doi:10.1038/sdata.2015.45]\n(https://doi.org/10.1038/sdata.2015.45)\n",
+            "doi": "10.1038/sdata.2015.45"
+        },
+        {
+            "citation": "Africa population count data: Linard, C., Gilbert, M., Snow, R.W., Noor,\nA.M. and Tatem, A.J., 2012, Population distribution, settlement patterns\nand accessibility across Africa in 2010, PLoS ONE, 7(2): e31743.\n"
+        },
+        {
+            "citation": "Asia population count data: Gaughan AE, Stevens FR, Linard C, Jia P and\nTatem AJ, 2013, High resolution population distribution maps for Southeast\nAsia in 2010 and 2015, PLoS ONE, 8(2): e55882.\n"
+        }
+    ],
+    "version": "Unknown",
+    "title": "WorldPop Project Population Data: Estimated Residential Population per 100x100m Grid Square [deprecated]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -59.94,
+                    180,
+                    54.08
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-01-01T00:00:00Z",
+                    "2016-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
     "keywords": [
         "demography",
         "population",
@@ -73,19 +109,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/WorldPop_POP"
-        }
-    ],
-    "sci:citation": "Please cite the WorldPop website as the source: [www.worldpop.org]\n(www.worldpop.org).",
-    "sci:publications": [
-        {
-            "citation": "Americas population data: Alessandro Sorichetta, Graeme M. Hornby,\nForrest R. Stevens, Andrea E. Gaughan, Catherine Linard, Andrew J. Tatem,\n2015, High-resolution gridded population datasets for Latin America and the\nCaribbean in 2010, 2015, and 2020, Scientific Data,\n[doi:10.1038/sdata.2015.45]\n(https://doi.org/10.1038/sdata.2015.45)\n",
-            "doi": "10.1038/sdata.2015.45"
-        },
-        {
-            "citation": "Africa population count data: Linard, C., Gilbert, M., Snow, R.W., Noor,\nA.M. and Tatem, A.J., 2012, Population distribution, settlement patterns\nand accessibility across Africa in 2010, PLoS ONE, 7(2): e31743.\n"
-        },
-        {
-            "citation": "Asia population count data: Gaughan AE, Stevens FR, Linard C, Jia P and\nTatem AJ, 2013, High resolution population distribution maps for Southeast\nAsia in 2010 and 2015, PLoS ONE, 8(2): e55882.\n"
         }
     ],
     "summaries": {
@@ -147,28 +170,5 @@
             "minimum": 0,
             "maximum": 21171
         }
-    },
-    "title": "WorldPop Project Population Data: Estimated Residential Population per 100x100m Grid Square [deprecated]",
-    "version": "Unknown",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -59.94,
-                    180,
-                    54.08
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2010-01-01T00:00:00Z",
-                    "2016-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-4.0"
+    }
 }

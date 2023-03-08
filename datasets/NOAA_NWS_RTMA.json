@@ -49,6 +49,28 @@
     },
     "gee:terms_of_use": "NOAA data, information, and products, regardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use. The\nforgoing data is in the public domain and is being provided without\nrestriction on use and distribution. For more information visit the\n[NWS disclaimer site](https://www.weather.gov/disclaimer/).\n",
     "gee:type": "image_collection",
+    "title": "RTMA: Real-Time Mesoscale Analysis",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -130.17,
+                    20.15,
+                    -60.81,
+                    52.91
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2011-01-01T00:00:00Z",
+                    "2023-03-07T18:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "climate",
         "cloud",
@@ -234,27 +256,5 @@
             "minimum": 0,
             "maximum": 42.46
         }
-    },
-    "title": "RTMA: Real-Time Mesoscale Analysis",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -130.17,
-                    20.15,
-                    -60.81,
-                    52.91
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2011-01-01T00:00:00Z",
-                    "2023-03-06T18:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

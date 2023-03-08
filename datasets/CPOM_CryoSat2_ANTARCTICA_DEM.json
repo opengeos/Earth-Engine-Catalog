@@ -50,6 +50,31 @@
     ],
     "gee:terms_of_use": "[proprietary](DO NOT USE THIS - use a custom URL)",
     "gee:type": "image",
+    "sci:citation": "Slater, T., Shepherd, A., McMillan, M., Muir, A., Gilbert, L.,\nHogg, A. E., Konrad, H. and Parrinello, T.: A new Digital Elevation\nModel of Antarctica derived from CryoSat-2 altimetry, The Cryosphere,\n[doi:10.5194/tc-2017-223](https://doi.org/10.5194/tc-2017-223), 2018\n",
+    "sci:doi": "10.5194/tc-2017-223",
+    "version": "1.0",
+    "title": "CryoSat-2 Antarctica 1km DEM",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -88,
+                    180,
+                    -60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-07-01T00:00:00Z",
+                    "2016-07-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "antarctica",
         "cpom",
@@ -75,8 +100,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/CPOM_CryoSat2_ANTARCTICA_DEM"
         }
     ],
-    "sci:citation": "Slater, T., Shepherd, A., McMillan, M., Muir, A., Gilbert, L.,\nHogg, A. E., Konrad, H. and Parrinello, T.: A new Digital Elevation\nModel of Antarctica derived from CryoSat-2 altimetry, The Cryosphere,\n[doi:10.5194/tc-2017-223](https://doi.org/10.5194/tc-2017-223), 2018\n",
-    "sci:doi": "10.5194/tc-2017-223",
     "summaries": {
         "eo:bands": [
             {
@@ -158,28 +181,5 @@
         "gsd": [
             1000
         ]
-    },
-    "title": "CryoSat-2 Antarctica 1km DEM",
-    "version": "1.0",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -88,
-                    180,
-                    -60
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2010-07-01T00:00:00Z",
-                    "2016-07-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

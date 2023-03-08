@@ -51,6 +51,30 @@
     },
     "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Thrasher, B., Maurer, E. P., McKellar, C., & Duffy, P. B., 2012:\nTechnical Note: Bias correcting climate model simulated daily temperature\nextremes with quantile mapping. Hydrology and Earth System Sciences,\n16(9), 3309-3314.\n[doi:10.5194/hess-16-3309-2012](https://doi.org/10.5194/hess-16-3309-2012)\n",
+    "version": "1",
+    "title": "NEX-GDDP: NASA Earth Exchange Global Daily Downscaled Climate Projections",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1950-01-01T00:00:00Z",
+                    "2100-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "climate",
         "cmip5",
@@ -79,7 +103,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_NEX-GDDP"
         }
     ],
-    "sci:citation": "Thrasher, B., Maurer, E. P., McKellar, C., & Duffy, P. B., 2012:\nTechnical Note: Bias correcting climate model simulated daily temperature\nextremes with quantile mapping. Hydrology and Earth System Sciences,\n16(9), 3309-3314.\n[doi:10.5194/hess-16-3309-2012](https://doi.org/10.5194/hess-16-3309-2012)\n",
     "summaries": {
         "eo:bands": [
             {
@@ -171,28 +194,5 @@
             "minimum": 165.31,
             "maximum": 318.89
         }
-    },
-    "title": "NEX-GDDP: NASA Earth Exchange Global Daily Downscaled Climate Projections",
-    "version": "1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1950-01-01T00:00:00Z",
-                    "2100-12-31T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

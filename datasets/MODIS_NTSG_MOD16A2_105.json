@@ -55,6 +55,30 @@
     },
     "gee:terms_of_use": "All NTSG data distributed through this [site](http://files.ntsg.umt.edu/)\nhas no restrictions on subsequent use, sale, or redistribution.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Qiaozhen Mu, Maosheng Zhao, Steven W. Running and Numerical Terradynamic\nSimulation Group (2014): MODIS Global Terrestrial Evapotranspiration\n(ET) Product MOD16A2 Collection 5.\n",
+    "version": "V105",
+    "title": "MOD16A2: MODIS Global Terrestrial Evapotranspiration 8-Day Global 1km",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2014-12-27T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "8_day",
         "evapotranspiration",
@@ -79,7 +103,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_NTSG_MOD16A2_105"
         }
     ],
-    "sci:citation": "Qiaozhen Mu, Maosheng Zhao, Steven W. Running and Numerical Terradynamic\nSimulation Group (2014): MODIS Global Terrestrial Evapotranspiration\n(ET) Product MOD16A2 Collection 5.\n",
     "summaries": {
         "eo:bands": [
             {
@@ -276,28 +299,5 @@
             "minimum": -40,
             "maximum": 3174
         }
-    },
-    "title": "MOD16A2: MODIS Global Terrestrial Evapotranspiration 8-Day Global 1km",
-    "version": "V105",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2000-01-01T00:00:00Z",
-                    "2014-12-27T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

@@ -54,6 +54,29 @@
     ],
     "gee:terms_of_use": "Most U.S. Geological Survey (USGS) information resides\nin the public domain and may be used without restriction. Additional\ninformation on [Acknowledging or Crediting USGS as Information\nSource](https://www.usgs.gov/information-policies-and-instructions/crediting-usgs)\nis available.\n",
     "gee:type": "image_collection",
+    "sci:citation": "U.S. Geological Survey, 3D Elevation Program 1-Meter Resolution Digital\nElevation Model.\n",
+    "title": "USGS 3DEP 1m National Map",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -171,
+                    -16.6,
+                    164,
+                    76.9
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1998-08-16T00:00:00Z",
+                    "2020-05-06T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "3dep",
         "dem",
@@ -79,7 +102,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_3DEP_1m"
         }
     ],
-    "sci:citation": "U.S. Geological Survey, 3D Elevation Program 1-Meter Resolution Digital\nElevation Model.\n",
     "summaries": {
         "eo:bands": [
             {
@@ -135,27 +157,5 @@
                 }
             }
         ]
-    },
-    "title": "USGS 3DEP 1m National Map",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -171,
-                    -16.6,
-                    164,
-                    76.9
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1998-08-16T00:00:00Z",
-                    "2020-05-06T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

@@ -45,6 +45,29 @@
     ],
     "gee:terms_of_use": "The free geodata and geoservices of swisstopo may be used, distributed and\nmade accessible. Furthermore, they may be enriched and processed and also\nused commercially.\n\nA reference to the source is mandatory.\nplease see the [Terms of use](\nhttps://www.swisstopo.admin.ch/en/home/meta/conditions/geodata/ogd.html)\n",
     "gee:type": "image_collection",
+    "sci:citation": "Copyright Federal Office of Topography swisstopo",
+    "title": "SWISSIMAGE 10 cm RGB imagery",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    45.8,
+                    5.9,
+                    47.8,
+                    10.6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-01-01T00:00:00Z",
+                    "2021-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "orthophoto",
         "rgb",
@@ -68,7 +91,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/ORTHO_Switzerland_SWISSIMAGE_10cm"
         }
     ],
-    "sci:citation": "Copyright Federal Office of Topography swisstopo",
     "summaries": {
         "eo:bands": [
             {
@@ -130,27 +152,5 @@
             "minimum": 0,
             "maximum": 255
         }
-    },
-    "title": "SWISSIMAGE 10 cm RGB imagery",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    45.8,
-                    5.9,
-                    47.8,
-                    10.6
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2017-01-01T00:00:00Z",
-                    "2021-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

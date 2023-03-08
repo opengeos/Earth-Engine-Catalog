@@ -62,6 +62,31 @@
     "gee:terms_of_use": "As official product of the global component of the Copernicus Land Service,\naccess to this land cover dataset is fully free and open to all users.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "sci:citation": "Buchhorn, M. ; Smets, B. ; Bertels, L. ; Lesiv, M. ; Tsendbazar, N. - E. ; Herold, M. ;\nFritz, S. Copernicus Global Land Service: Land Cover 100m: epoch 2015: Globe. Dataset of the\nglobal component of the Copernicus Land Monitoring Service 2019.\n[doi:10.5281/zenodo.3243509](https://doi.org/10.5281/zenodo.3243509)\n",
+    "sci:doi": "10.5281/zenodo.3243509",
+    "version": "V2.02",
+    "title": "Copernicus Global Land Cover Layers: CGLS-LC100 Collection 2 [deprecated]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-01-01T00:00:00Z",
+                    "2015-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "copernicus",
         "eea",
@@ -89,8 +114,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_Landcover_100m_Proba-V_Global"
         }
     ],
-    "sci:citation": "Buchhorn, M. ; Smets, B. ; Bertels, L. ; Lesiv, M. ; Tsendbazar, N. - E. ; Herold, M. ;\nFritz, S. Copernicus Global Land Service: Land Cover 100m: epoch 2015: Globe. Dataset of the\nglobal component of the Copernicus Land Monitoring Service 2019.\n[doi:10.5281/zenodo.3243509](https://doi.org/10.5281/zenodo.3243509)\n",
-    "sci:doi": "10.5281/zenodo.3243509",
     "summaries": {
         "eo:bands": [
             {
@@ -472,28 +495,5 @@
             "minimum": 0,
             "maximum": 100
         }
-    },
-    "title": "Copernicus Global Land Cover Layers: CGLS-LC100 Collection 2 [deprecated]",
-    "version": "V2.02",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2015-01-01T00:00:00Z",
-                    "2015-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

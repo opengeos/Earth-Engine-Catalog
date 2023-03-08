@@ -50,6 +50,29 @@
     },
     "gee:terms_of_use": "This work (METDATA, by John Abatzoglou) is in the public\ndomain and is free of known copyright restrictions. Users should\nproperly cite the source used in the creation of any reports and\npublications resulting from the use of this dataset and note the\ndate when the data was acquired.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Abatzoglou J. T., Development of gridded surface meteorological data for\necological applications and modelling, International Journal of\nClimatology. (2012)\n[doi:10.1002/joc.3413](https://doi.org/10.1002/joc.3413)\n",
+    "title": "GRIDMET DROUGHT: CONUS Drought Indices",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -124.9,
+                    24.9,
+                    -66.8,
+                    49.6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1980-01-05T00:00:00Z",
+                    "2023-02-24T06:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "climate",
         "climatic_water_balance",
@@ -85,7 +108,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/GRIDMET_DROUGHT"
         }
     ],
-    "sci:citation": "Abatzoglou J. T., Development of gridded surface meteorological data for\necological applications and modelling, International Journal of\nClimatology. (2012)\n[doi:10.1002/joc.3413](https://doi.org/10.1002/joc.3413)\n",
     "summaries": {
         "gee:schema": [
             {
@@ -231,27 +253,5 @@
             "minimum": -15,
             "maximum": 15
         }
-    },
-    "title": "GRIDMET DROUGHT: CONUS Drought Indices",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -124.9,
-                    24.9,
-                    -66.8,
-                    49.6
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1980-01-05T00:00:00Z",
-                    "2023-02-24T06:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

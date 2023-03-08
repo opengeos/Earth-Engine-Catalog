@@ -56,6 +56,30 @@
     "gee:terms_of_use": "The Digital Object Identifier [doi:10.5066/P955KPLE](https://doi.org/10.5066/P955KPLE) for PAD-US 2.0\nprovides the persistent reference that should be used to obtain the data for\nuse. The U.S. Geological Survey and all contributing data partners shall not be\nheld liable for improper or incorrect use of the data described and (or)\ncontained herein. All information is created with a specific end use or uses in\nmind. This is especially true for GIS data, which is expensive to produce and\nmust be directed to meet the immediate program needs. These data were created\nwith the expectation that they would be used for other applications; however,\ninappropriate uses are listed below. This list is in no way exhaustive but\nshould serve as a guide to assess whether a proposed use can or cannot be\nsupported by these data. For many uses, it is unlikely that PAD-US will provide\nthe only data needed, and for uses with a regulatory outcome, authoritative\nagency data and field surveys should verify the result. PAD-US is recommended\nfor users seeking basic information about more than one agency or organizations\nlands. Users should seek authoritative source data directly to answer questions\nregarding one agency or those requiring more frequent updates. Ultimately, it\nwill be the responsibility of each data user to determine if these data can\nanswer the question being asked. Inappropriate uses include: Using PAD-US for\napplications or analyses associated with one agency or a particular unit\n(agencies are always the best and authoritative source of their lands data and\nmany publish updates more frequently than PAD-US). Using some data to map small\nareas (less than thousands of hectares), typically requiring mapping resolution\nat 1:24,000 scale (as boundary quality varies by data source) and using aerial\nphotographs or ground surveys in areas where data are incomplete. Combining\nthese data with other data finer than 1:100,000 scale to produce new hybrid\nmaps or answer queries. Generating specific areal measurements from the data\nfiner than the nearest thousand hectares. Representing boundaries as a legal\nrepresentation for regulation or acquisition. Establishing definite occurrence\nor non-occurrence of any feature for an exact geographic area. Determining\nabundance, health, or condition of any feature. Using the data without\nacquiring and reviewing the metadata.\n",
     "gee:type": "table",
     "gee:user_uploaded": true,
+    "sci:citation": "U.S. Geological Survey (USGS) Gap Analysis Project (GAP), 2018,\nProtected Areas Database of the United States (PAD-US): U.S.\nGeological Survey data release, [doi:10.5066/P955KPLE](https://doi.org/10.5066/P955KPLE).\n",
+    "sci:doi": "10.5066/P955KPLE",
+    "title": "Proclamation: USGS GAP PAD-US v2.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-09-01T00:00:00Z",
+                    "2018-09-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "conservation_easements",
         "designation",
@@ -82,8 +106,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_GAP_PAD-US_v20_proclamation"
         }
     ],
-    "sci:citation": "U.S. Geological Survey (USGS) Gap Analysis Project (GAP), 2018,\nProtected Areas Database of the United States (PAD-US): U.S.\nGeological Survey data release, [doi:10.5066/P955KPLE](https://doi.org/10.5066/P955KPLE).\n",
-    "sci:doi": "10.5066/P955KPLE",
     "summaries": {
         "gee:visualizations": [
             {
@@ -120,27 +142,5 @@
                 "GIS_Acres DESC"
             ]
         }
-    },
-    "title": "Proclamation: USGS GAP PAD-US v2.0",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2018-09-01T00:00:00Z",
-                    "2018-09-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

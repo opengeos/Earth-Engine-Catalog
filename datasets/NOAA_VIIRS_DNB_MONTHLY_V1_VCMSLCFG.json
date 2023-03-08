@@ -50,6 +50,29 @@
     },
     "gee:terms_of_use": "Colorado School of Mines data, information, and products,\nregardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use. The\nforgoing data is in the public domain and is being provided without\nrestriction on use and distribution.\n",
     "gee:type": "image_collection",
+    "version": "Version 1",
+    "title": "VIIRS Stray Light Corrected Nighttime Day/Night Band Composites Version 1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -65,
+                    180,
+                    75
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-01-01T00:00:00Z",
+                    "2022-06-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "dnb",
         "eog",
@@ -124,28 +147,5 @@
             "minimum": 0,
             "maximum": 84
         }
-    },
-    "title": "VIIRS Stray Light Corrected Nighttime Day/Night Band Composites Version 1",
-    "version": "Version 1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -65,
-                    180,
-                    75
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2014-01-01T00:00:00Z",
-                    "2022-06-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

@@ -59,6 +59,29 @@
     "gee:min_zoom_level": 4,
     "gee:terms_of_use": "Landsat datasets are federally created data\nand therefore reside in the public domain and may be used, transferred, or reproduced without copyright restriction.\n\nAcknowledgement or credit of the USGS as data source should be provided\nby including a line of text citation such as the example shown below.\n\n(Product, Image, Photograph, or Dataset Name) courtesy of\nthe U.S. Geological Survey\n\nExample: Landsat-7 image courtesy of the U.S. Geological Survey\n\nSee the\n[USGS Visual Identity System Guidance](https://www.usgs.gov/information-policies-and-instructions/usgs-visual-identity-system)\nfor further details on proper citation and acknowledgement of USGS products.\n",
     "gee:type": "image_collection",
+    "version": "Unknown",
+    "title": "Landsat 4 TM 8-Day NDSI Composite [deprecated]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1982-08-21T00:00:00Z",
+                    "1993-12-11T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "PDDL-1.0",
     "keywords": [
         "landsat",
         "ndsi",
@@ -107,28 +130,5 @@
                 }
             }
         ]
-    },
-    "title": "Landsat 4 TM 8-Day NDSI Composite [deprecated]",
-    "version": "Unknown",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1982-08-21T00:00:00Z",
-                    "1993-12-11T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "PDDL-1.0"
+    }
 }

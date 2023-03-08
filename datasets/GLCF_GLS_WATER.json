@@ -48,6 +48,35 @@
     ],
     "gee:terms_of_use": "Intellectual property rights to this dataset belong to University of\nMaryland, Department of Geographical Sciences and NASA. Usage is free if\nacklowedgement is made.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Data Citation: Global Inland Water, {Year, ...}, Global Land Cover\nFacility.\n",
+    "sci:publications": [
+        {
+            "citation": "Paper/Methods Citation: Feng, Min, Joseph O. Sexton, Saurabh Channan,\nand John R. Townshend. 2015. [A Global, High-Resolution (30-M) Inland Water\nBody Dataset for 2000: First Results of a Topographic-Spectral\nClassification Algorithm](https://www.tandfonline.com/doi/pdf/10.1080/17538947.2015.1026420).\nInternational Journal of Digital Earth.\n[doi:10.1080/17538947.2015.1026420](https://doi.org/10.1080/17538947.2015.1026420).\n",
+            "doi": "10.1080/17538947.2015.1026420"
+        }
+    ],
+    "title": "GLCF: Landsat Global Inland Water",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2000-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "glcf",
         "landsat_derived",
@@ -70,13 +99,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/GLCF_GLS_WATER"
-        }
-    ],
-    "sci:citation": "Data Citation: Global Inland Water, {Year, ...}, Global Land Cover\nFacility.\n",
-    "sci:publications": [
-        {
-            "citation": "Paper/Methods Citation: Feng, Min, Joseph O. Sexton, Saurabh Channan,\nand John R. Townshend. 2015. [A Global, High-Resolution (30-M) Inland Water\nBody Dataset for 2000: First Results of a Topographic-Spectral\nClassification Algorithm](https://www.tandfonline.com/doi/pdf/10.1080/17538947.2015.1026420).\nInternational Journal of Digital Earth.\n[doi:10.1080/17538947.2015.1026420](https://doi.org/10.1080/17538947.2015.1026420).\n",
-            "doi": "10.1080/17538947.2015.1026420"
         }
     ],
     "summaries": {
@@ -186,27 +208,5 @@
             "Landsat-5",
             "Landsat-7"
         ]
-    },
-    "title": "GLCF: Landsat Global Inland Water",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2000-01-01T00:00:00Z",
-                    "2000-12-31T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

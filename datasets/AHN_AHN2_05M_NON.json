@@ -44,6 +44,28 @@
     ],
     "gee:terms_of_use": "The datasets of the AHN are available as Open Data.\nThis means that the data can be used by anyone for free and without\nrestrictions. For more information visit the\n[Open Data](https://www.ahn.nl/open-data/) page. Downloads are available\nunder the terms of the\n[CC-0 license](https://data.overheid.nl/licenties-voor-hergebruik).\n",
     "gee:type": "image",
+    "title": "AHN Netherlands 0.5m DEM, Non-Interpolated",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    3.35,
+                    50.74,
+                    7.24,
+                    53.55
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-01-01T00:00:00Z",
+                    "2012-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
     "keywords": [
         "ahn",
         "dem",
@@ -103,27 +125,5 @@
         "gsd": [
             0.5
         ]
-    },
-    "title": "AHN Netherlands 0.5m DEM, Non-Interpolated",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    3.35,
-                    50.74,
-                    7.24,
-                    53.55
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2012-01-01T00:00:00Z",
-                    "2012-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC0-1.0"
+    }
 }

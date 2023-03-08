@@ -45,6 +45,29 @@
     ],
     "gee:terms_of_use": "These images are in the public domain and can be used freely\nand without acknowledgement. However, credit to the Landsat\nImage Mosaic of Antarctica (LIMA) Project is greatly appreciated.\n",
     "gee:type": "image",
+    "sci:citation": "Bindschadler, R., Vornberger, P., Fleming, A., Fox, A., Mullins, J.,\nBinnie, D., Paulson, S., Granneman, B., and Gorodetzky, D., 2008,\nThe Landsat Image Mosaic of Antarctica, Remote Sensing of\nEnvironment, 112, pp. 4214-4226.\n[PDF](https://lima.usgs.gov/LIMA_paper.pdf)\n",
+    "title": "Landsat Image Mosaic of Antarctica (LIMA) 16-Bit Pan-Sharpened Mosaic",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    -55
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1999-06-30T00:00:00Z",
+                    "2002-09-04T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "antarctica",
         "ice",
@@ -71,7 +94,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_LIMA_MOSAIC"
         }
     ],
-    "sci:citation": "Bindschadler, R., Vornberger, P., Fleming, A., Fox, A., Mullins, J.,\nBinnie, D., Paulson, S., Granneman, B., and Gorodetzky, D., 2008,\nThe Landsat Image Mosaic of Antarctica, Remote Sensing of\nEnvironment, 112, pp. 4214-4226.\n[PDF](https://lima.usgs.gov/LIMA_paper.pdf)\n",
     "summaries": {
         "eo:bands": [
             {
@@ -127,27 +149,5 @@
         "gsd": [
             15
         ]
-    },
-    "title": "Landsat Image Mosaic of Antarctica (LIMA) 16-Bit Pan-Sharpened Mosaic",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    -55
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1999-06-30T00:00:00Z",
-                    "2002-09-04T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

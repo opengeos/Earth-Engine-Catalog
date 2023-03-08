@@ -50,6 +50,28 @@
     },
     "gee:terms_of_use": "The use of Sentinel data is governed by the [Copernicus\nSentinel Data Terms and Conditions.](https://scihub.copernicus.eu/twiki/pub/SciHubWebPortal/TermsConditions/Sentinel_Data_Terms_and_Conditions.pdf)\n",
     "gee:type": "image_collection",
+    "title": "Sentinel-1 SAR GRD: C-band Synthetic Aperture Radar Ground Range Detected, log scaling",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-10-03T00:00:00Z",
+                    "2023-03-07T15:25:17Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "backscatter",
         "copernicus",
@@ -193,27 +215,5 @@
             "minimum": 0,
             "maximum": 90
         }
-    },
-    "title": "Sentinel-1 SAR GRD: C-band Synthetic Aperture Radar Ground Range Detected, log scaling",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2014-10-03T00:00:00Z",
-                    "2023-03-05T13:28:28Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

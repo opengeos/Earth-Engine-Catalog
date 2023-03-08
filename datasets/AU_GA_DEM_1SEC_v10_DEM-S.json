@@ -51,6 +51,30 @@
     ],
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image",
+    "sci:citation": "Geoscience Australia, 2015. Digital Elevation Model (DEM) of Australia\nderived from LiDAR 5 Metre Grid. Geoscience Australia, Canberra.\n",
+    "version": "1.0",
+    "title": "DEM-S: Australian Smoothed Digital Elevation Model",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    112.99,
+                    -44.06,
+                    154,
+                    -9.99
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-02-01T00:00:00Z",
+                    "2010-02-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
     "keywords": [
         "australia",
         "dem",
@@ -78,7 +102,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/AU_GA_DEM_1SEC_v10_DEM-S"
         }
     ],
-    "sci:citation": "Geoscience Australia, 2015. Digital Elevation Model (DEM) of Australia\nderived from LiDAR 5 Metre Grid. Geoscience Australia, Canberra.\n",
     "summaries": {
         "eo:bands": [
             {
@@ -140,28 +163,5 @@
             "minimum": -73.31,
             "maximum": 2224.32
         }
-    },
-    "title": "DEM-S: Australian Smoothed Digital Elevation Model",
-    "version": "1.0",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    112.99,
-                    -44.06,
-                    154,
-                    -9.99
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2010-02-01T00:00:00Z",
-                    "2010-02-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-4.0"
+    }
 }

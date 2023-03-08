@@ -53,6 +53,31 @@
     ],
     "gee:terms_of_use": "ASTER data and products distributed by the LP DAAC, with the exception of\nthe ASTER Global Digital Elevation Model (GDEM) dataset (ASTGTM) version 2\n(v2), have no restrictions on data use, sale, or subsequent redistribution.\nFor more information visit the [ASTER Policies]\n(https://lpdaac.usgs.gov/data/data-citation-and-policies/) site.\n",
     "gee:type": "image",
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/COMMUNITY/ASTER_GED/AG100.003",
+    "version": "V003",
+    "title": "AG100: ASTER Global Emissivity Dataset 100-meter V003",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -59,
+                    180,
+                    80
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2008-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "aster",
         "caltech",
@@ -85,8 +110,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_ASTER_GED_AG100_003"
         }
     ],
-    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
-    "sci:doi": "10.5067/COMMUNITY/ASTER_GED/AG100.003",
     "summaries": {
         "eo:bands": [
             {
@@ -298,28 +321,5 @@
             "minimum": 0,
             "maximum": 65535
         }
-    },
-    "title": "AG100: ASTER Global Emissivity Dataset 100-meter V003",
-    "version": "V003",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -59,
-                    180,
-                    80
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2000-01-01T00:00:00Z",
-                    "2008-12-31T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

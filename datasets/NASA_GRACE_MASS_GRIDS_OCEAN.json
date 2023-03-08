@@ -46,6 +46,39 @@
     ],
     "gee:terms_of_use": "All NASA-produced data from the GRACE mission is made freely available\nfor the public to use. When using any of the GRCTellus data, please\nadd an acknowledgment: \"GRACE land are available at\n[https://grace.jpl.nasa.gov](https://grace.jpl.nasa.gov),\nsupported by the NASA MEaSUREs Program.\" and cite with the\ncitations provided.\n",
     "gee:type": "image_collection",
+    "sci:citation": "D.P. Chambers. 2012. GRACE MONTHLY OCEAN MASS GRIDS NETCDF\nRELEASE 5.0. Ver. 5.0. PO.DAAC, CA, USA. Dataset accessed\n[YYYY-MM-DD] at [https://doi.org/10.5067/TEOCN-0N005](https://doi.org/10.5067/TEOCN-0N005).\n",
+    "sci:publications": [
+        {
+            "citation": "Chambers, D.P. and J.A. Bonin: Evaluation of Release 05\ntime-variable gravity coefficients over the ocean. Ocean Science 8,\n859-868, 2012.\n[https://www.ocean-sci.net/8/859/2012](https://www.ocean-sci.net/8/859/2012).\n"
+        },
+        {
+            "citation": "Chambers D.P. and J. K. Willis: A Global Evaluation of Ocean Bottom\nPressure from GRACE, OMCT, and Steric-Corrected Altimetry. J.\nof Oceanic and Atmosph. Technology, vol 27, pp 1395-1402.\n[doi:10.1175/2010JTECHO738.1](https://doi.org/10.1175/2010JTECHO738.1),\n2010.\n",
+            "doi": "10.1175/2010JTECHO738.1"
+        }
+    ],
+    "version": "Release 05",
+    "title": "GRACE Monthly Mass Grids - Ocean",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-31T00:00:00Z",
+                    "2016-12-10T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "crs",
         "gfz",
@@ -73,16 +106,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GRACE_MASS_GRIDS_OCEAN"
-        }
-    ],
-    "sci:citation": "D.P. Chambers. 2012. GRACE MONTHLY OCEAN MASS GRIDS NETCDF\nRELEASE 5.0. Ver. 5.0. PO.DAAC, CA, USA. Dataset accessed\n[YYYY-MM-DD] at [https://doi.org/10.5067/TEOCN-0N005](https://doi.org/10.5067/TEOCN-0N005).\n",
-    "sci:publications": [
-        {
-            "citation": "Chambers, D.P. and J.A. Bonin: Evaluation of Release 05\ntime-variable gravity coefficients over the ocean. Ocean Science 8,\n859-868, 2012.\n[https://www.ocean-sci.net/8/859/2012](https://www.ocean-sci.net/8/859/2012).\n"
-        },
-        {
-            "citation": "Chambers D.P. and J. K. Willis: A Global Evaluation of Ocean Bottom\nPressure from GRACE, OMCT, and Steric-Corrected Altimetry. J.\nof Oceanic and Atmosph. Technology, vol 27, pp 1395-1402.\n[doi:10.1175/2010JTECHO738.1](https://doi.org/10.1175/2010JTECHO738.1),\n2010.\n",
-            "doi": "10.1175/2010JTECHO738.1"
         }
     ],
     "summaries": {
@@ -173,28 +196,5 @@
             "minimum": -26.03,
             "maximum": 37.36
         }
-    },
-    "title": "GRACE Monthly Mass Grids - Ocean",
-    "version": "Release 05",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2002-07-31T00:00:00Z",
-                    "2016-12-10T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

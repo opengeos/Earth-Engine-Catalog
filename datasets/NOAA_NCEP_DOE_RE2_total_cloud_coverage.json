@@ -51,6 +51,30 @@
     },
     "gee:terms_of_use": "There are no restrictions on the use of these datasets.",
     "gee:type": "image_collection",
+    "sci:citation": "[NCEP-DOE AMIP-II Reanalysis (R-2): M. Kanamitsu, W. Ebisuzaki, J. Woollen, S-K Yang,\nJ.J. Hnilo, M. Fiorino, and G. L. Potter. 1631-1643, Nov 2002, Bulletin of the American\nMeteorological Society.](https://journals.ametsoc.org/view/journals/bams/83/11/bams-83-11-1631.xml).\n",
+    "version": "1",
+    "title": "NCEP-DOE Reanalysis 2 (Gaussian Grid), Total Cloud Coverage",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1979-01-01T00:00:00Z",
+                    "2023-02-28T18:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "atmosphere",
         "climate",
@@ -77,7 +101,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_NCEP_DOE_RE2_total_cloud_coverage"
         }
     ],
-    "sci:citation": "[NCEP-DOE AMIP-II Reanalysis (R-2): M. Kanamitsu, W. Ebisuzaki, J. Woollen, S-K Yang,\nJ.J. Hnilo, M. Fiorino, and G. L. Potter. 1631-1643, Nov 2002, Bulletin of the American\nMeteorological Society.](https://journals.ametsoc.org/view/journals/bams/83/11/bams-83-11-1631.xml).\n",
     "summaries": {
         "eo:bands": [
             {
@@ -125,28 +148,5 @@
             "minimum": 0,
             "maximum": 100
         }
-    },
-    "title": "NCEP-DOE Reanalysis 2 (Gaussian Grid), Total Cloud Coverage",
-    "version": "1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1979-01-01T00:00:00Z",
-                    "2023-01-31T18:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

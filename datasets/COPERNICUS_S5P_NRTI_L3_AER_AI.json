@@ -49,6 +49,28 @@
     },
     "gee:terms_of_use": "The use of Sentinel data is governed by the [Copernicus\nSentinel Data Terms and Conditions.](https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice)\n",
     "gee:type": "image_collection",
+    "title": "Sentinel-5P NRTI AER AI: Near Real-Time UV Aerosol Index",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-07-10T11:17:44Z",
+                    "2023-03-07T02:38:01Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "aai",
         "aerosol",
@@ -279,27 +301,5 @@
             "minimum": 8,
             "maximum": 88
         }
-    },
-    "title": "Sentinel-5P NRTI AER AI: Near Real-Time UV Aerosol Index",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2018-07-10T11:17:44Z",
-                    "2023-03-05T03:13:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

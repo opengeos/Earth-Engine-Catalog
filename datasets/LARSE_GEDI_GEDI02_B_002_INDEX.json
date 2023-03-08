@@ -45,6 +45,30 @@
     ],
     "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy]\n(https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
     "gee:type": "table",
+    "sci:citation": "GEDI L2B Canopy Cover and Vertical Profile Metrics Data Global Footprint\nLevel - GEDI02_B Dubayah, R., H. Tang, J. Armston, S. Luthcke, M. Hofton,\nJ. Blair. GEDI L2B Canopy Cover and Vertical Profile Metrics Data Global\nFootprint Level V002. 2021, distributed by NASA EOSDIS Land Processes DAAC.\nAccessed YYYY-MM-DD.\n",
+    "version": "2",
+    "title": "GEDI L2B table index",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -51.6,
+                    180,
+                    51.6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-03-25T00:00:00Z",
+                    "2023-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "elevation",
         "gedi",
@@ -77,7 +101,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/LARSE_GEDI_GEDI02_B_002_INDEX"
         }
     ],
-    "sci:citation": "GEDI L2B Canopy Cover and Vertical Profile Metrics Data Global Footprint\nLevel - GEDI02_B Dubayah, R., H. Tang, J. Armston, S. Luthcke, M. Hofton,\nJ. Blair. GEDI L2B Canopy Cover and Vertical Profile Metrics Data Global\nFootprint Level V002. 2021, distributed by NASA EOSDIS Land Processes DAAC.\nAccessed YYYY-MM-DD.\n",
     "summaries": {
         "gee:schema": [
             {
@@ -120,28 +143,5 @@
                 "time_start DESC"
             ]
         }
-    },
-    "title": "GEDI L2B table index",
-    "version": "2",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -51.6,
-                    180,
-                    51.6
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2019-03-25T00:00:00Z",
-                    "2023-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

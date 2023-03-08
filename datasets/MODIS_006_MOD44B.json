@@ -54,6 +54,30 @@
     ],
     "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "version": "V006",
+    "title": "MOD44B.006 Terra Vegetation Continuous Fields Yearly Global 250m",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-03-05T00:00:00Z",
+                    "2020-03-05T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "annual",
         "geophysical",
@@ -82,7 +106,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD44B"
         }
     ],
-    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
     "summaries": {
         "eo:bands": [
             {
@@ -428,28 +451,5 @@
             "minimum": 0,
             "maximum": 32767
         }
-    },
-    "title": "MOD44B.006 Terra Vegetation Continuous Fields Yearly Global 250m",
-    "version": "V006",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2000-03-05T00:00:00Z",
-                    "2020-03-05T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

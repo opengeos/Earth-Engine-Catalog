@@ -51,6 +51,30 @@
     },
     "gee:terms_of_use": "The MACA datasets were created with funding from the\nUS government and are in the public domain in the United States.\nFor further clarity, unless otherwise noted, the MACA datasets\nare made available with a Creative Commons CC0 1.0 Universal dedication.\nIn short, John Abatzoglou waives all rights to the work worldwide\nunder copyright law, including all related and neighboring rights,\nto the extent allowed by law. You can copy, modify, distribute,\nand perform the work, even for commercial purposes, all without\nasking permission. John Abatzoglou makes no warranties about the\nwork, and disclaims liability for all uses of the work, to the\nfullest extent permitted by applicable law. Users should properly\ncite the source used in the creation of any reports and publications\nresulting from the use of this dataset and note the date when the\ndata was acquired. For more information refer to the [MACA References\nand License](https://climate.northwestknowledge.net/MACA/MACAreferences.php)\npage.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Abatzoglou J.T. and Brown T.J., A comparison of statistical downscaling\nmethods suited for wildfire applications, International Journal\nof Climatology(2012) [doi:10.1002/joc.2312](https://doi.org/10.1002/joc.2312).\n",
+    "version": "2",
+    "title": "MACAv2-METDATA Monthly Summaries: University of Idaho, Multivariate Adaptive Constructed Analogs Applied to Global  Climate Models",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -124.9,
+                    24.9,
+                    -67,
+                    49.6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1900-01-01T00:00:00Z",
+                    "2099-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
     "keywords": [
         "climate",
         "conus",
@@ -76,7 +100,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/IDAHO_EPSCOR_MACAv2_METDATA_MONTHLY"
         }
     ],
-    "sci:citation": "Abatzoglou J.T. and Brown T.J., A comparison of statistical downscaling\nmethods suited for wildfire applications, International Journal\nof Climatology(2012) [doi:10.1002/joc.2312](https://doi.org/10.1002/joc.2312).\n",
     "summaries": {
         "eo:bands": [
             {
@@ -189,28 +212,5 @@
             "minimum": 0.23,
             "maximum": 14.16
         }
-    },
-    "title": "MACAv2-METDATA Monthly Summaries: University of Idaho, Multivariate Adaptive Constructed Analogs Applied to Global  Climate Models",
-    "version": "2",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -124.9,
-                    24.9,
-                    -67,
-                    49.6
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1900-01-01T00:00:00Z",
-                    "2099-12-31T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC0-1.0"
+    }
 }

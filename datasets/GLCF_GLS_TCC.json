@@ -58,6 +58,36 @@
     },
     "gee:terms_of_use": "Intellectual property rights to this dataset belong to\nUniversity of Maryland, Department of Geographical Sciences and NASA. Usage\nis free if acklowedgement is made.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Data citation: Tree Canopy Cover, {Year, ...}, Global Land Cover Facility.\n",
+    "sci:publications": [
+        {
+            "citation": "Paper/Methods Citation: Sexton, J. O., Song, X.-P., Feng, M., Noojipady,\nP., Anand, A., Huang, C., Kim, D.-H., Collins, K.M., Channan, S.,\nDiMiceli, C., Townshend, J.R.G. (2013). Global, 30-m resolution\ncontinuous fields of tree cover: Landsat-based rescaling of MODIS\nVegetation Continuous Fields with lidar-based estimates of error.\nInternational Journal of Digital Earth, 130321031236007.\n[doi:10.1080/17538947.2013.786146](https://doi.org/10.1080/17538947.2013.786146).\n",
+            "doi": "10.1080/17538947.2013.786146"
+        }
+    ],
+    "version": "Unknown",
+    "title": "GLCF: Landsat Tree Cover Continuous Fields [deprecated]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2010-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "forest",
         "glcf",
@@ -80,13 +110,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/GLCF_GLS_TCC"
-        }
-    ],
-    "sci:citation": "Data citation: Tree Canopy Cover, {Year, ...}, Global Land Cover Facility.\n",
-    "sci:publications": [
-        {
-            "citation": "Paper/Methods Citation: Sexton, J. O., Song, X.-P., Feng, M., Noojipady,\nP., Anand, A., Huang, C., Kim, D.-H., Collins, K.M., Channan, S.,\nDiMiceli, C., Townshend, J.R.G. (2013). Global, 30-m resolution\ncontinuous fields of tree cover: Landsat-based rescaling of MODIS\nVegetation Continuous Fields with lidar-based estimates of error.\nInternational Journal of Digital Earth, 130321031236007.\n[doi:10.1080/17538947.2013.786146](https://doi.org/10.1080/17538947.2013.786146).\n",
-            "doi": "10.1080/17538947.2013.786146"
         }
     ],
     "summaries": {
@@ -187,28 +210,5 @@
             "minimum": 0,
             "maximum": 100
         }
-    },
-    "title": "GLCF: Landsat Tree Cover Continuous Fields [deprecated]",
-    "version": "Unknown",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2000-01-01T00:00:00Z",
-                    "2010-12-31T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

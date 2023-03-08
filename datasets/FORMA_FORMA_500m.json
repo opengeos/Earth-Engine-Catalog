@@ -53,6 +53,30 @@
     "deprecated": true,
     "gee:terms_of_use": "The FORMA datasets are available without restriction on use or distribution.\nWRI does request that the user give proper attribution and identify WRI and\nGFW, where applicable, as the source of the data.\n",
     "gee:type": "image",
+    "sci:citation": "Hammer, Dan, Robin Kraft, and David Wheeler. 2013. FORMA Alerts. World\nResources Institute and Center for Global Development.\n[www.globalforestwatch.org](www.globalforestwatch.org).\n",
+    "version": "Unknown",
+    "title": "FORMA Global Forest Watch Deforestation Alerts, 500m [deprecated]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-01-01T00:00:00Z",
+                    "2015-06-10T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "alerts",
         "deforestation",
@@ -81,7 +105,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/FORMA_FORMA_500m"
         }
     ],
-    "sci:citation": "Hammer, Dan, Robin Kraft, and David Wheeler. 2013. FORMA Alerts. World\nResources Institute and Center for Global Development.\n[www.globalforestwatch.org](www.globalforestwatch.org).\n",
     "summaries": {
         "eo:bands": [
             {
@@ -124,28 +147,5 @@
             "minimum": 1134979200,
             "maximum": 1433919600
         }
-    },
-    "title": "FORMA Global Forest Watch Deforestation Alerts, 500m [deprecated]",
-    "version": "Unknown",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2006-01-01T00:00:00Z",
-                    "2015-06-10T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

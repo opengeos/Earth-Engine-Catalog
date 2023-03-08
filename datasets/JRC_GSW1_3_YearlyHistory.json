@@ -71,6 +71,30 @@
     "gee:terms_of_use": "All data here is produced under the Copernicus Programme and is provided\nfree of charge, without restriction of use. For the full license\ninformation see the Copernicus Regulation.\n\nPublications, models, and data products that make use of these datasets\nmust include proper acknowledgement, including citing datasets and the\njournal article as in the following citation.\n\nIf you are using the data as a layer in a published map, please include the\nfollowing attribution text: 'Source: EC JRC/Google'\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "sci:citation": "Jean-Francois Pekel, Andrew Cottam, Noel Gorelick, Alan S. Belward,\nHigh-resolution mapping of global surface water and its long-term changes.\nNature 540, 418-422 (2016). ([doi:10.1038/nature20584](https://doi.org/10.1038/nature20584))\n",
+    "version": "1.3",
+    "title": "JRC Yearly Water Classification History, v1.3 [deprecated]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -59,
+                    180,
+                    78
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1984-03-16T00:00:00Z",
+                    "2021-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "annual",
         "geophysical",
@@ -99,7 +123,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GSW1_3_YearlyHistory"
         }
     ],
-    "sci:citation": "Jean-Francois Pekel, Andrew Cottam, Noel Gorelick, Alan S. Belward,\nHigh-resolution mapping of global surface water and its long-term changes.\nNature 540, 418-422 (2016). ([doi:10.1038/nature20584](https://doi.org/10.1038/nature20584))\n",
     "summaries": {
         "eo:bands": [
             {
@@ -168,28 +191,5 @@
         "gsd": [
             30
         ]
-    },
-    "title": "JRC Yearly Water Classification History, v1.3 [deprecated]",
-    "version": "1.3",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -59,
-                    180,
-                    78
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1984-03-16T00:00:00Z",
-                    "2021-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

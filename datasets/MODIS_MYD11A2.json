@@ -57,6 +57,29 @@
     },
     "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC have no restrictions on subsequent use, sale, or redistribution.\n",
     "gee:type": "image_collection",
+    "version": "Unknown",
+    "title": "MYD11A2.005 Land Surface Temperature and Emissivity 8-Day L3 Global 1km [deprecated]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-04T00:00:00Z",
+                    "2017-03-22T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "8_day",
         "aqua",
@@ -108,28 +131,5 @@
                 }
             }
         ]
-    },
-    "title": "MYD11A2.005 Land Surface Temperature and Emissivity 8-Day L3 Global 1km [deprecated]",
-    "version": "Unknown",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2002-07-04T00:00:00Z",
-                    "2017-03-22T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

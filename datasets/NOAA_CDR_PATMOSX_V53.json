@@ -55,6 +55,37 @@
     },
     "gee:terms_of_use": "The NOAA CDR Program's official distribution point for CDRs is NOAA's\nNational Climatic Data Center which provides sustained, open access and\nactive data management of the CDR packages and related information in\nkeeping with the United States' open data policies and practices as\ndescribed in the President's Memorandum on \\\"Open Data Policy\\\" and pursuant\nto the Executive Order of May 9, 2013, \\\"Making Open and Machine Readable\nthe New Default for Government Information\\\". In line with these policies,\nthe CDR data sets are nonproprietary, publicly available, and no\nrestrictions are placed upon their use. For more information, see the\n[Fair Use of NOAA's CDR Data Sets, Algorithms and Documentation](https://www1.ncdc.noaa.gov/pub/data/sds/cdr/CDRs/Aerosol_Optical_Thickness/UseAgreement_01B-04.pdf)\npdf.\n",
     "gee:type": "image_collection",
+    "sci:citation": "For the TOA Reflectances and Brightness Temperatures users must cite:\nAndrew K. Heidinger, Michael J. Foster, Andi Walther, Xuepeng Zhao, and\nNOAA CDR Program (2014): NOAA Climate Data Record (CDR) of Reflectance\nand Brightness Temperatures from AVHRR Pathfinder Atmospheres - Extended\n(PATMOS-x), Version 5.3. [indicate subset used]. NOAA National Centers for\nEnvironmental Information.\n[doi:10.7289/V56W982J](https://doi.org/10.7289/V56W982J)\n[access date].\n",
+    "sci:doi": "10.7289/V5348HCK",
+    "sci:publications": [
+        {
+            "citation": "For the cloud properties users must cite: Andrew K. Heidinger, Michael J.\nFoster, Andi Walther, Xuepeng Zhao, and NOAA CDR Program (2014): NOAA\nClimate Data Record (CDR) of Cloud Properties from AVHRR Pathfinder\nAtmospheres - Extended (PATMOS-x), Version 5.3. [indicate subset used].\nNOAA National Centers for Environmental Information.\n[doi:10.7289/V5348HCK](https://doi.org/10.7289/V5348HCK)\n[access date].\n",
+            "doi": "10.7289/V5348HCK"
+        }
+    ],
+    "version": "V5.3",
+    "title": "NOAA CDR PATMOSX: Cloud Properties, Reflectance, and Brightness Temperatures, Version 5.3",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1979-01-01T00:00:00Z",
+                    "2022-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "atmospheric",
         "avhrr",
@@ -83,14 +114,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_PATMOSX_V53"
-        }
-    ],
-    "sci:citation": "For the TOA Reflectances and Brightness Temperatures users must cite:\nAndrew K. Heidinger, Michael J. Foster, Andi Walther, Xuepeng Zhao, and\nNOAA CDR Program (2014): NOAA Climate Data Record (CDR) of Reflectance\nand Brightness Temperatures from AVHRR Pathfinder Atmospheres - Extended\n(PATMOS-x), Version 5.3. [indicate subset used]. NOAA National Centers for\nEnvironmental Information.\n[doi:10.7289/V56W982J](https://doi.org/10.7289/V56W982J)\n[access date].\n",
-    "sci:doi": "10.7289/V5348HCK",
-    "sci:publications": [
-        {
-            "citation": "For the cloud properties users must cite: Andrew K. Heidinger, Michael J.\nFoster, Andi Walther, Xuepeng Zhao, and NOAA CDR Program (2014): NOAA\nClimate Data Record (CDR) of Cloud Properties from AVHRR Pathfinder\nAtmospheres - Extended (PATMOS-x), Version 5.3. [indicate subset used].\nNOAA National Centers for Environmental Information.\n[doi:10.7289/V5348HCK](https://doi.org/10.7289/V5348HCK)\n[access date].\n",
-            "doi": "10.7289/V5348HCK"
         }
     ],
     "summaries": {
@@ -288,28 +311,5 @@
             "minimum": -32767,
             "maximum": 32767
         }
-    },
-    "title": "NOAA CDR PATMOSX: Cloud Properties, Reflectance, and Brightness Temperatures, Version 5.3",
-    "version": "V5.3",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1979-01-01T00:00:00Z",
-                    "2022-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

@@ -53,6 +53,37 @@
     ],
     "gee:terms_of_use": "Landsat datasets are federally created data\nand therefore reside in the public domain and may be used, transferred, or reproduced without copyright restriction.\n\nAcknowledgement or credit of the USGS as data source should be provided\nby including a line of text citation such as the example shown below.\n\n(Product, Image, Photograph, or Dataset Name) courtesy of\nthe U.S. Geological Survey\n\nExample: Landsat-7 image courtesy of the U.S. Geological Survey\n\nSee the\n[USGS Visual Identity System Guidance](https://www.usgs.gov/information-policies-and-instructions/usgs-visual-identity-system)\nfor further details on proper citation and acknowledgement of USGS products.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Giri, C., E. Ochieng, L.L.Tieszen, Z. Zhu, A. Singh, T. Loveland, J. Masek, and N. Duke. 2013. Global Mangrove Forests Distribution, 2000. Palisades, NY: NASA Socioeconomic Data and Applications Center (SEDAC). [https://doi.org/10.7927/H4J67DW8](https://doi.org/10.7927/H4J67DW8). Accessed DAY MONTH YEAR\n",
+    "sci:doi": "10.7927/H4J67DW8",
+    "sci:publications": [
+        {
+            "citation": "Giri, C., E. Ochieng, L. L. Tieszen, Z. Zhu, A. Singh, T. Loveland, J. Masek, and N. Duke. 2010. Status and Distribution of Mangrove Forests of the World Using Earth Observation Satellite Data. Global Ecology and Biogeography: A Journal of Macroecology 20(1): 154-159. [https://doi.org/10.1111/j.1466-8238.2010.00584.x](https://doi.org/10.1111/j.1466-8238.2010.00584.x).\n",
+            "doi": "10.1111/j.1466-8238.2010.00584.x"
+        }
+    ],
+    "version": "v1",
+    "title": "Global Mangrove Forests Distribution, v1 (2000)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2001-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "annual",
         "ciesin",
@@ -77,14 +108,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_MANGROVE_FORESTS"
-        }
-    ],
-    "sci:citation": "Giri, C., E. Ochieng, L.L.Tieszen, Z. Zhu, A. Singh, T. Loveland, J. Masek, and N. Duke. 2013. Global Mangrove Forests Distribution, 2000. Palisades, NY: NASA Socioeconomic Data and Applications Center (SEDAC). [https://doi.org/10.7927/H4J67DW8](https://doi.org/10.7927/H4J67DW8). Accessed DAY MONTH YEAR\n",
-    "sci:doi": "10.7927/H4J67DW8",
-    "sci:publications": [
-        {
-            "citation": "Giri, C., E. Ochieng, L. L. Tieszen, Z. Zhu, A. Singh, T. Loveland, J. Masek, and N. Duke. 2010. Status and Distribution of Mangrove Forests of the World Using Earth Observation Satellite Data. Global Ecology and Biogeography: A Journal of Macroecology 20(1): 154-159. [https://doi.org/10.1111/j.1466-8238.2010.00584.x](https://doi.org/10.1111/j.1466-8238.2010.00584.x).\n",
-            "doi": "10.1111/j.1466-8238.2010.00584.x"
         }
     ],
     "summaries": {
@@ -136,28 +159,5 @@
         "platform": [
             "Landsat"
         ]
-    },
-    "title": "Global Mangrove Forests Distribution, v1 (2000)",
-    "version": "v1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2000-01-01T00:00:00Z",
-                    "2001-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

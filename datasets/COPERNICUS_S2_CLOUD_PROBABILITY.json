@@ -49,6 +49,28 @@
     },
     "gee:terms_of_use": "The use of Sentinel data is governed by the [Copernicus\nSentinel Data Terms and Conditions.](https://scihub.copernicus.eu/twiki/pub/SciHubWebPortal/TermsConditions/Sentinel_Data_Terms_and_Conditions.pdf)\n",
     "gee:type": "image_collection",
+    "title": "Sentinel-2: Cloud Probability",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -56,
+                    180,
+                    83
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-06-23T00:00:00Z",
+                    "2023-03-07T13:12:49Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "cloud",
         "copernicus",
@@ -118,27 +140,5 @@
             "minimum": 0,
             "maximum": 100
         }
-    },
-    "title": "Sentinel-2: Cloud Probability",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -56,
-                    180,
-                    83
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2015-06-23T00:00:00Z",
-                    "2023-03-05T18:02:21Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

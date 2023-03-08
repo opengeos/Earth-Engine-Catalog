@@ -56,6 +56,31 @@
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "sci:citation": "Adri\u00e0, Descals, Serge, Wich, Erik, Meijaard, David, Gaveau, Stephen, Peedell, & Zoltan, Szantoi. (2021, January 27).\nHigh resolution global industrial and smallholder oil palm map for 2019 (Version v1). *Zenodo.*\n[doi:10.5281/zenodo.4473715](https://doi.org/10.5281/zenodo.4473715)\n",
+    "sci:doi": "10.5281/zenodo.4473715",
+    "version": "v1",
+    "title": "Global Map of Oil Palm Plantations",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-01-01T00:00:00Z",
+                    "2019-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
     "keywords": [
         "biodiversity",
         "biopama",
@@ -83,8 +108,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/BIOPAMA_GlobalOilPalm_v1"
         }
     ],
-    "sci:citation": "Adri\u00e0, Descals, Serge, Wich, Erik, Meijaard, David, Gaveau, Stephen, Peedell, & Zoltan, Szantoi. (2021, January 27).\nHigh resolution global industrial and smallholder oil palm map for 2019 (Version v1). *Zenodo.*\n[doi:10.5281/zenodo.4473715](https://doi.org/10.5281/zenodo.4473715)\n",
-    "sci:doi": "10.5281/zenodo.4473715",
     "summaries": {
         "eo:bands": [
             {
@@ -138,28 +161,5 @@
                 }
             }
         ]
-    },
-    "title": "Global Map of Oil Palm Plantations",
-    "version": "v1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2019-01-01T00:00:00Z",
-                    "2019-12-31T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-4.0"
+    }
 }

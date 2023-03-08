@@ -54,6 +54,38 @@
     },
     "gee:terms_of_use": "NOAA data, information, and products, regardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Bah, Gunshor, Schmit, Generation of GOES-16 True Color Imagery without a\nGreen Band, 2018. [doi:10.1029/2018EA000379](https://doi.org/10.1029/2018EA000379)\n",
+    "sci:publications": [
+        {
+            "citation": "Product User Guide (PUG) Volume 5, [L2+ Products](\nhttps://www.goes-r.gov/products/docs/PUG-L2+-vol5.pdf).\n"
+        },
+        {
+            "citation": "Schmit, T., Griffith, P., et al, (2016), A closer look at the ABI on the GOES-R series, Bull.\nAmer. Meteor. Soc., 98(4), 681-698.\n[doi:10.1175/BAMS-D-15-00230.1](https://doi.org/10.1175/BAMS-D-15-00230.1)\n",
+            "doi": "10.1175/BAMS-D-15-00230.1"
+        }
+    ],
+    "title": "GOES-16 MCMIPC Series ABI Level 2 Cloud and Moisture Imagery CONUS",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -152.11,
+                    14,
+                    -49.18,
+                    56.77
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-07-10T00:00:00Z",
+                    "2023-03-07T22:11:17Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "abi",
         "climate",
@@ -82,16 +114,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_GOES_16_MCMIPC"
-        }
-    ],
-    "sci:citation": "Bah, Gunshor, Schmit, Generation of GOES-16 True Color Imagery without a\nGreen Band, 2018. [doi:10.1029/2018EA000379](https://doi.org/10.1029/2018EA000379)\n",
-    "sci:publications": [
-        {
-            "citation": "Product User Guide (PUG) Volume 5, [L2+ Products](\nhttps://www.goes-r.gov/products/docs/PUG-L2+-vol5.pdf).\n"
-        },
-        {
-            "citation": "Schmit, T., Griffith, P., et al, (2016), A closer look at the ABI on the GOES-R series, Bull.\nAmer. Meteor. Soc., 98(4), 681-698.\n[doi:10.1175/BAMS-D-15-00230.1](https://doi.org/10.1175/BAMS-D-15-00230.1)\n",
-            "doi": "10.1175/BAMS-D-15-00230.1"
         }
     ],
     "summaries": {
@@ -249,27 +271,5 @@
             "minimum": 0,
             "maximum": 4
         }
-    },
-    "title": "GOES-16 MCMIPC Series ABI Level 2 Cloud and Moisture Imagery CONUS",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -152.11,
-                    14,
-                    -49.18,
-                    56.77
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2017-07-10T00:00:00Z",
-                    "2023-03-05T22:51:17Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

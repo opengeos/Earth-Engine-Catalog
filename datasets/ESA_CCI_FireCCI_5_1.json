@@ -56,6 +56,37 @@
     "gee:terms_of_use": "This dataset is free and open to all users for any purpose, with the following\nterms and conditions:\n\n* Users of the data are required to acknowledge the ESA\nClimate Change Initiative and the Fire CCI project together with the individual\ndata providers if the data are used in a presentation or publication. Please\nalso cite any relevant dataset DOIs.\n\n* Intellectual property rights (IPR) in the CCI data lie with the researchers and\norganisations producing the data.\n\n* Liability: no warranty is given as to the quality or the accuracy of the CCI\ndata or its suitability for any use. All implied conditions relating to the\nquality or suitability of the information, and all liabilities arising from the\nsupply of the information (including any liability arising in negligence) are\nexcluded to the fullest extent permitted by law.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "sci:citation": "Product: Chuvieco, E.; Pettinari, M.L.; Lizundia-Loiola, J.; Storm, T.;\nPadilla Parellada, M. (2018): ESA Fire Climate Change Initiative\n(Fire_cci): MODIS Fire_cci Burned Area Pixel product, version 5.1. Centre for\nEnvironmental Data Analysis, 01 November 2018.\n[https://doi.org/10.5285/58f00d8814064b79a0c49662ad3af537](https://doi.org/10.5285/58f00d8814064b79a0c49662ad3af537).\n",
+    "sci:doi": "10.5285/58f00d8814064b79a0c49662ad3af537",
+    "sci:publications": [
+        {
+            "citation": "Related publication: Lizundia-Loiola, J., Ot&oacute;n, G., Ramo, R., Chuvieco, E.\n(2020): A spatio-temporal active-fire clustering approach for global burned\narea mapping at 250m from MODIS data. Remote Sensing of Environment, 236,\n111493. [https://doi.org/10.1016/j.rse.2019.111493](https://doi.org/10.1016/j.rse.2019.111493)\n",
+            "doi": "10.1016/j.rse.2019.111493"
+        }
+    ],
+    "version": "5.1",
+    "title": "FireCCI51: MODIS Fire_cci Burned Area Pixel Product, Version 5.1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2020-12-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "burn",
         "c3s",
@@ -92,14 +123,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/ESA_CCI_FireCCI_5_1"
-        }
-    ],
-    "sci:citation": "Product: Chuvieco, E.; Pettinari, M.L.; Lizundia-Loiola, J.; Storm, T.;\nPadilla Parellada, M. (2018): ESA Fire Climate Change Initiative\n(Fire_cci): MODIS Fire_cci Burned Area Pixel product, version 5.1. Centre for\nEnvironmental Data Analysis, 01 November 2018.\n[https://doi.org/10.5285/58f00d8814064b79a0c49662ad3af537](https://doi.org/10.5285/58f00d8814064b79a0c49662ad3af537).\n",
-    "sci:doi": "10.5285/58f00d8814064b79a0c49662ad3af537",
-    "sci:publications": [
-        {
-            "citation": "Related publication: Lizundia-Loiola, J., Ot&oacute;n, G., Ramo, R., Chuvieco, E.\n(2020): A spatio-temporal active-fire clustering approach for global burned\narea mapping at 250m from MODIS data. Remote Sensing of Environment, 236,\n111493. [https://doi.org/10.1016/j.rse.2019.111493](https://doi.org/10.1016/j.rse.2019.111493)\n",
-            "doi": "10.1016/j.rse.2019.111493"
         }
     ],
     "summaries": {
@@ -269,28 +292,5 @@
             "minimum": 1,
             "maximum": 100
         }
-    },
-    "title": "FireCCI51: MODIS Fire_cci Burned Area Pixel Product, Version 5.1",
-    "version": "5.1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2001-01-01T00:00:00Z",
-                    "2020-12-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

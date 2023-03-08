@@ -49,6 +49,28 @@
     },
     "gee:terms_of_use": "The use of Sentinel data is governed by the [Copernicus\nSentinel Data Terms and Conditions.](https://scihub.copernicus.eu/twiki/pub/SciHubWebPortal/TermsConditions/Sentinel_Data_Terms_and_Conditions.pdf)\n",
     "gee:type": "image_collection",
+    "title": "Harmonized Sentinel-2 MSI: MultiSpectral Instrument, Level-2A",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -56,
+                    180,
+                    83
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-03-28T00:00:00Z",
+                    "2023-03-07T12:37:02Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "copernicus",
         "esa",
@@ -373,27 +395,5 @@
             "minimum": 1,
             "maximum": 11
         }
-    },
-    "title": "Harmonized Sentinel-2 MSI: MultiSpectral Instrument, Level-2A",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -56,
-                    180,
-                    83
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2017-03-28T00:00:00Z",
-                    "2023-03-05T15:37:03Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

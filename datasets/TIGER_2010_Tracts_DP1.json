@@ -52,6 +52,30 @@
     ],
     "gee:terms_of_use": "The U.S. Census Bureau offers some of its public data\nin machine-readable format via an Application Programming Interface\n(API). All of the content, documentation, code and related materials\nmade available to you through the API are subject to [these terms and\nconditions](https://www.census.gov/data/developers/about/terms-of-service.html).\n",
     "gee:type": "table",
+    "sci:citation": "For the creation of any reports, publications, new data sets, derived\nproducts, or services resulting from the data set, users should\n[cite the US Census Bureau](https://www.census.gov/about/policies/citation.html).\n",
+    "version": "2010",
+    "title": "TIGER: US Census Tracts Demographic - Profile 1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -14.69,
+                    -64.435,
+                    71.567
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-01-01T00:00:00Z",
+                    "2010-01-02T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "census",
         "demographic",
@@ -77,7 +101,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/TIGER_2010_Tracts_DP1"
         }
     ],
-    "sci:citation": "For the creation of any reports, publications, new data sets, derived\nproducts, or services resulting from the data set, users should\n[cite the US Census Bureau](https://www.census.gov/about/policies/citation.html).\n",
     "summaries": {
         "gee:schema": [
             {
@@ -161,28 +184,5 @@
             "prerender_tiles": true,
             "thinning_strategy": "HIGHER_DENSITY"
         }
-    },
-    "title": "TIGER: US Census Tracts Demographic - Profile 1",
-    "version": "2010",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -14.69,
-                    -64.435,
-                    71.567
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2010-01-01T00:00:00Z",
-                    "2010-01-02T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

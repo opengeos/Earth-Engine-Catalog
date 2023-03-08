@@ -83,6 +83,30 @@
     ],
     "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
     "gee:type": "image_collection",
+    "sci:citation": "NASA Goddard Space Flight Center, Ocean Ecology Laboratory, Ocean Biology\nProcessing Group. Moderate-resolution Imaging Spectroradiometer\n(MODIS) Aqua Ocean Color Data, NASA OB.DAAC, Greenbelt, MD, USA.\n",
+    "sci:doi": "10.5067/AQUA/MODIS/L3M/CHL/2018",
+    "title": "Ocean Color SMI: Standard Mapped Image MODIS Aqua Data",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-03T23:40:05Z",
+                    "2022-02-28T00:20:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "biology",
         "chlorophyll",
@@ -113,8 +137,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_OCEANDATA_MODIS-Aqua_L3SMI"
         }
     ],
-    "sci:citation": "NASA Goddard Space Flight Center, Ocean Ecology Laboratory, Ocean Biology\nProcessing Group. Moderate-resolution Imaging Spectroradiometer\n(MODIS) Aqua Ocean Color Data, NASA OB.DAAC, Greenbelt, MD, USA.\n",
-    "sci:doi": "10.5067/AQUA/MODIS/L3M/CHL/2018",
     "summaries": {
         "eo:bands": [
             {
@@ -292,27 +314,5 @@
             "minimum": -2,
             "maximum": 40
         }
-    },
-    "title": "Ocean Color SMI: Standard Mapped Image MODIS Aqua Data",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2002-07-03T23:40:05Z",
-                    "2022-02-28T00:20:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

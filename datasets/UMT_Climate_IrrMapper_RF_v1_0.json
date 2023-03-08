@@ -52,6 +52,30 @@
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "sci:citation": "Ketchum, D.; Jencso, K.; Maneta, M.P.; Melton, F.; Jones, M.O.; Huntington, J.\nIrrMapper: A Machine Learning Approach for High Resolution Mapping of\nIrrigated Agriculture Across the Western U.S.,\nRemote Sens. 2020, 12, 2328. [doi:10.3390/rs12142328](https://doi.org/10.3390/rs12142328)\n",
+    "version": "1.0",
+    "title": "IrrMapper Irrigated Lands",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -124.5,
+                    31.3,
+                    -99,
+                    49
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1986-01-01T00:00:00Z",
+                    "2020-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
     "keywords": [
         "irrigated_land",
         "landsat_derived"
@@ -73,7 +97,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/UMT_Climate_IrrMapper_RF_v1_0"
         }
     ],
-    "sci:citation": "Ketchum, D.; Jencso, K.; Maneta, M.P.; Melton, F.; Jones, M.O.; Huntington, J.\nIrrMapper: A Machine Learning Approach for High Resolution Mapping of\nIrrigated Agriculture Across the Western U.S.,\nRemote Sens. 2020, 12, 2328. [doi:10.3390/rs12142328](https://doi.org/10.3390/rs12142328)\n",
     "summaries": {
         "eo:bands": [
             {
@@ -110,28 +133,5 @@
         "gsd": [
             30
         ]
-    },
-    "title": "IrrMapper Irrigated Lands",
-    "version": "1.0",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -124.5,
-                    31.3,
-                    -99,
-                    49
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1986-01-01T00:00:00Z",
-                    "2020-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-4.0"
+    }
 }

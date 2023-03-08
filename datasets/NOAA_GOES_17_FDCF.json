@@ -54,6 +54,35 @@
     },
     "gee:terms_of_use": "NOAA data, information, and products, regardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Early characterization of the active fire detection products derived from the next generation\nNPOESS/VIIRS and GOES-R/ABI instruments.  Schroeder, W., Csiszar, I., et al, (2010), Early\ncharacterization of the active fire detection products derived from the next generation\nNPOESS/VIIRS and GOES-R/ABI instruments, paper presented at 2010 IEEE International Geoscience\nand Remote Sensing Symposium (IGARSS), Honolulu, HI.\n[doi:10.1109/IGARSS.2010.5650863](https://doi.org/10.1109/IGARSS.2010.5650863)\n",
+    "sci:publications": [
+        {
+            "citation": "Schmit, T., Griffith, P., et al, (2016), A closer look at the ABI on the GOES-R series, Bull.\nAmer. Meteor. Soc., 98(4), 681-698.\n[doi:10.1175/BAMS-D-15-00230.1](https://doi.org/10.1175/BAMS-D-15-00230.1)\n",
+            "doi": "10.1175/BAMS-D-15-00230.1"
+        }
+    ],
+    "title": "GOES-17 FDCF Series ABI Level 2 Fire/Hot Spot Characterization Full Disk",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-08-27T00:00:00Z",
+                    "2023-01-10T16:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "abi",
         "climate",
@@ -83,13 +112,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_GOES_17_FDCF"
-        }
-    ],
-    "sci:citation": "Early characterization of the active fire detection products derived from the next generation\nNPOESS/VIIRS and GOES-R/ABI instruments.  Schroeder, W., Csiszar, I., et al, (2010), Early\ncharacterization of the active fire detection products derived from the next generation\nNPOESS/VIIRS and GOES-R/ABI instruments, paper presented at 2010 IEEE International Geoscience\nand Remote Sensing Symposium (IGARSS), Honolulu, HI.\n[doi:10.1109/IGARSS.2010.5650863](https://doi.org/10.1109/IGARSS.2010.5650863)\n",
-    "sci:publications": [
-        {
-            "citation": "Schmit, T., Griffith, P., et al, (2016), A closer look at the ABI on the GOES-R series, Bull.\nAmer. Meteor. Soc., 98(4), 681-698.\n[doi:10.1175/BAMS-D-15-00230.1](https://doi.org/10.1175/BAMS-D-15-00230.1)\n",
-            "doi": "10.1175/BAMS-D-15-00230.1"
         }
     ],
     "summaries": {
@@ -266,27 +288,5 @@
             "minimum": 0,
             "maximum": 32642
         }
-    },
-    "title": "GOES-17 FDCF Series ABI Level 2 Fire/Hot Spot Characterization Full Disk",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2018-08-27T00:00:00Z",
-                    "2023-01-10T16:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

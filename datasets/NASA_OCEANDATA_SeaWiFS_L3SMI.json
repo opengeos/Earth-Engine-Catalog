@@ -71,6 +71,30 @@
     ],
     "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
     "gee:type": "image_collection",
+    "sci:citation": "NASA Goddard Space Flight Center, Ocean Ecology Laboratory, Ocean Biology\nProcessing Group. Sea-viewing Wide Field-of-view Sensor (SeaWiFS) Data,\nNASA OB.DAAC, Greenbelt, MD, USA.\n[doi:10.5067/ORBVIEW-2/SEAWIFS/L1/DATA/1](https://doi.org/10.5067/ORBVIEW-2/SEAWIFS/L1/DATA/1)\n",
+    "sci:doi": "10.5067/ORBVIEW-2/SEAWIFS/L3M/CHL/2018",
+    "title": "Ocean Color SMI: Standard Mapped Image SeaWiFS Data",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1997-09-04T15:26:33Z",
+                    "2010-12-10T19:42:17Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "biology",
         "chlorophyll",
@@ -100,8 +124,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_OCEANDATA_SeaWiFS_L3SMI"
         }
     ],
-    "sci:citation": "NASA Goddard Space Flight Center, Ocean Ecology Laboratory, Ocean Biology\nProcessing Group. Sea-viewing Wide Field-of-view Sensor (SeaWiFS) Data,\nNASA OB.DAAC, Greenbelt, MD, USA.\n[doi:10.5067/ORBVIEW-2/SEAWIFS/L1/DATA/1](https://doi.org/10.5067/ORBVIEW-2/SEAWIFS/L1/DATA/1)\n",
-    "sci:doi": "10.5067/ORBVIEW-2/SEAWIFS/L3M/CHL/2018",
     "summaries": {
         "eo:bands": [
             {
@@ -335,27 +357,5 @@
             "minimum": 0,
             "maximum": 99.99
         }
-    },
-    "title": "Ocean Color SMI: Standard Mapped Image SeaWiFS Data",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1997-09-04T15:26:33Z",
-                    "2010-12-10T19:42:17Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

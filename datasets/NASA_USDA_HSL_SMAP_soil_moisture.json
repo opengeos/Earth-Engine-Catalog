@@ -59,6 +59,52 @@
     "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "sci:citation": "**Bolten, J., W.T. Crow, X. Zhan, T.J. Jackson, and C.A. Reynolds (2010).**\nEvaluating the Utility of Remotely Sensed Soil Moisture Retrievals for\nOperational Agricultural Drought Monitoring, *IEEE Transactions on\nGeoscience and Remote Sensing*, 3(1): 57-66.\n[doi:10.1109/JSTARS.2009.2037163](https://doi.org/10.1109/JSTARS.2009.2037163)\n[Google Scholar](https://scholar.google.com/scholar?as_sdt=0%2C21&q=Improved+prediction+of+quasi-global+vegetation+conditions+using+remotely-sensed+surface+soil+moisture%2C+&btnG=)\n",
+    "sci:publications": [
+        {
+            "citation": "**Bolten, J., and W. T. Crow (2012).** Improved prediction of quasi-global\nvegetation conditions using remotely-sensed surface soil moisture,\n*Geophysical Research Letters*, 39: (L19406).\n[doi:10.1029/2012GL053470](https://doi.org/10.1029/2012GL053470)\n[Google Scholar](https://scholar.google.com/scholar?as_sdt=0%2C21&q=Improved+prediction+of+quasi-global+vegetation+conditions+using+remotely-sensed+surface+soil+moisture%2C+&btnG=)\n",
+            "doi": "10.1029/2012GL053470"
+        },
+        {
+            "citation": "**I. E. Mladenova, J.D. Bolten, W.T. Crow, M.C. Anderson, C.R. Hain,\nD.M. Johnson, R. Mueller (2017).** Intercomparison of Soil Moisture,\nEvaporative Stress, and Vegetation Indices for Estimating Corn and Soybean\nYields Over the U.S., *IEEE Journal of Selected Topics in Applied Earth\nObservations and Remote Sensing*, 10(4): 1328-1343,\n[doi:10.1109/JSTARS.2016.2639338](https://doi.org/10.1109/JSTARS.2016.2639338)\n",
+            "doi": "10.1109/JSTARS.2016.2639338"
+        },
+        {
+            "citation": "**Sazib, N., I. E. Mladenova, J.D. Bolten (2018).** Leveraging the Google Earth Engine for Drought Assessment Using Global Soil Moisture Data. *Remote Sensing*, 10(8), p.1265.\n[doi:10.3390/rs10081265](https://doi.org/10.3390/rs10081265)\n[Google Scholar](https://scholar.google.com/scholar_lookup?title=Leveraging%20the%20Google%20Earth%20Engine%20for%20Drought%20Assessment%20Using%20Global%20Soil%20Moisture%20Data&author=N.%20Sazib&author=I.%20Mladenova&author=J.%20Bolten&journal=Remote%20Sens&volume=10&issue=8&pages=1265&publication_year=2018)\n",
+            "doi": "10.3390/rs10081265"
+        },
+        {
+            "citation": "**Entekhabi, D, Njoku, EG, O'Neill, PE, Kellogg, KH, Crow, WT, Edelstein,\nWN, Entin, JK, Goodman, SD, Jackson, TJ, Johnson, J, Kimball, J, Piepmeier,\nJR, Koster, RD, Martin, N, McDonald, KC, Moghaddam, M, Moran, S, Reichle,\nR, Shi, JC, Spencer, MW, Thurman, SW, Tsang, L & Van Zyl, J (2010).**\nThe soil moisture active passive (SMAP) mission, *Proceedings of the IEEE*,\n98(5): 704-716.\n[doi:10.1109/JPROC.2010.2043918](https://doi.org/10.1109/JPROC.2010.2043918)\n[Article](https://ieeexplore.ieee.org/document/5460980)\n",
+            "doi": "10.1109/JPROC.2010.2043918"
+        },
+        {
+            "citation": "**O'Neill, P. E., S. Chan, E. G. Njoku, T. Jackson, and R. Bindlish\n(2016).**\n SMAP L3 Radiometer Global Daily 36 km EASE-Grid Soil Moisture, Version 4.\n Boulder, Colorado USA. NASA National Snow and Ice Data Center Distributed\n Active Archive Center.\n [doi:10.5067/ZX7YX2Y2LHEB](https://doi.org/10.5067/ZX7YX2Y2LHEB)\n",
+            "doi": "10.5067/ZX7YX2Y2LHEB"
+        }
+    ],
+    "version": "Unknown",
+    "title": "NASA-USDA SMAP Global Soil Moisture Data [deprecated]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-04-02T12:00:00Z",
+                    "2020-12-31T12:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "geophysical",
         "hsl",
@@ -83,29 +129,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_USDA_HSL_SMAP_soil_moisture"
-        }
-    ],
-    "sci:citation": "**Bolten, J., W.T. Crow, X. Zhan, T.J. Jackson, and C.A. Reynolds (2010).**\nEvaluating the Utility of Remotely Sensed Soil Moisture Retrievals for\nOperational Agricultural Drought Monitoring, *IEEE Transactions on\nGeoscience and Remote Sensing*, 3(1): 57-66.\n[doi:10.1109/JSTARS.2009.2037163](https://doi.org/10.1109/JSTARS.2009.2037163)\n[Google Scholar](https://scholar.google.com/scholar?as_sdt=0%2C21&q=Improved+prediction+of+quasi-global+vegetation+conditions+using+remotely-sensed+surface+soil+moisture%2C+&btnG=)\n",
-    "sci:publications": [
-        {
-            "citation": "**Bolten, J., and W. T. Crow (2012).** Improved prediction of quasi-global\nvegetation conditions using remotely-sensed surface soil moisture,\n*Geophysical Research Letters*, 39: (L19406).\n[doi:10.1029/2012GL053470](https://doi.org/10.1029/2012GL053470)\n[Google Scholar](https://scholar.google.com/scholar?as_sdt=0%2C21&q=Improved+prediction+of+quasi-global+vegetation+conditions+using+remotely-sensed+surface+soil+moisture%2C+&btnG=)\n",
-            "doi": "10.1029/2012GL053470"
-        },
-        {
-            "citation": "**I. E. Mladenova, J.D. Bolten, W.T. Crow, M.C. Anderson, C.R. Hain,\nD.M. Johnson, R. Mueller (2017).** Intercomparison of Soil Moisture,\nEvaporative Stress, and Vegetation Indices for Estimating Corn and Soybean\nYields Over the U.S., *IEEE Journal of Selected Topics in Applied Earth\nObservations and Remote Sensing*, 10(4): 1328-1343,\n[doi:10.1109/JSTARS.2016.2639338](https://doi.org/10.1109/JSTARS.2016.2639338)\n",
-            "doi": "10.1109/JSTARS.2016.2639338"
-        },
-        {
-            "citation": "**Sazib, N., I. E. Mladenova, J.D. Bolten (2018).** Leveraging the Google Earth Engine for Drought Assessment Using Global Soil Moisture Data. *Remote Sensing*, 10(8), p.1265.\n[doi:10.3390/rs10081265](https://doi.org/10.3390/rs10081265)\n[Google Scholar](https://scholar.google.com/scholar_lookup?title=Leveraging%20the%20Google%20Earth%20Engine%20for%20Drought%20Assessment%20Using%20Global%20Soil%20Moisture%20Data&author=N.%20Sazib&author=I.%20Mladenova&author=J.%20Bolten&journal=Remote%20Sens&volume=10&issue=8&pages=1265&publication_year=2018)\n",
-            "doi": "10.3390/rs10081265"
-        },
-        {
-            "citation": "**Entekhabi, D, Njoku, EG, O'Neill, PE, Kellogg, KH, Crow, WT, Edelstein,\nWN, Entin, JK, Goodman, SD, Jackson, TJ, Johnson, J, Kimball, J, Piepmeier,\nJR, Koster, RD, Martin, N, McDonald, KC, Moghaddam, M, Moran, S, Reichle,\nR, Shi, JC, Spencer, MW, Thurman, SW, Tsang, L & Van Zyl, J (2010).**\nThe soil moisture active passive (SMAP) mission, *Proceedings of the IEEE*,\n98(5): 704-716.\n[doi:10.1109/JPROC.2010.2043918](https://doi.org/10.1109/JPROC.2010.2043918)\n[Article](https://ieeexplore.ieee.org/document/5460980)\n",
-            "doi": "10.1109/JPROC.2010.2043918"
-        },
-        {
-            "citation": "**O'Neill, P. E., S. Chan, E. G. Njoku, T. Jackson, and R. Bindlish\n(2016).**\n SMAP L3 Radiometer Global Daily 36 km EASE-Grid Soil Moisture, Version 4.\n Boulder, Colorado USA. NASA National Snow and Ice Data Center Distributed\n Active Archive Center.\n [doi:10.5067/ZX7YX2Y2LHEB](https://doi.org/10.5067/ZX7YX2Y2LHEB)\n",
-            "doi": "10.5067/ZX7YX2Y2LHEB"
         }
     ],
     "summaries": {
@@ -184,28 +207,5 @@
             "minimum": -4,
             "maximum": 4
         }
-    },
-    "title": "NASA-USDA SMAP Global Soil Moisture Data [deprecated]",
-    "version": "Unknown",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -60,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2015-04-02T12:00:00Z",
-                    "2020-12-31T12:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

@@ -45,6 +45,29 @@
     ],
     "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy]\n(https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
     "gee:type": "image_collection",
+    "version": "2.1",
+    "title": "GEDI L4A Raster Aboveground Biomass Density, Version 2.1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -51.6,
+                    180,
+                    51.6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-03-25T00:00:00Z",
+                    "2022-08-01T08:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "elevation",
         "gedi",
@@ -111,28 +134,5 @@
         "gsd": [
             25
         ]
-    },
-    "title": "GEDI L4A Raster Aboveground Biomass Density, Version 2.1",
-    "version": "2.1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -51.6,
-                    180,
-                    51.6
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2019-03-25T00:00:00Z",
-                    "2022-08-01T08:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

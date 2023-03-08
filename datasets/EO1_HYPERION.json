@@ -50,6 +50,29 @@
     },
     "gee:terms_of_use": "Hyperion data are in the public domain. Once a scene has been\ndownloaded from the USGS, it can be redistributed as desired.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Data available from the U.S. Geological Survey.",
+    "title": "EO-1 Hyperion Hyperspectral Imager",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-05-01T00:00:00Z",
+                    "2017-03-13T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "eo_1",
         "hyperion",
@@ -73,7 +96,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/EO1_HYPERION"
         }
     ],
-    "sci:citation": "Data available from the U.S. Geological Survey.",
     "summaries": {
         "gee:schema": [
             {
@@ -219,27 +241,5 @@
         "platform": [
             "EO-1"
         ]
-    },
-    "title": "EO-1 Hyperion Hyperspectral Imager",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2001-05-01T00:00:00Z",
-                    "2017-03-13T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

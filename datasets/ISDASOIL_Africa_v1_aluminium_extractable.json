@@ -52,6 +52,36 @@
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image",
     "gee:user_uploaded": true,
+    "sci:citation": "Hengl, T., Miller, M.A.E., Kri\u017ean, J., et al. African soil properties and nutrients\nmapped at 30 m spatial resolution using two-scale ensemble machine learning.\nSci Rep 11, 6130 (2021).\n[doi:10.1038/s41598-021-85639-y](https://doi.org/10.1038/s41598-021-85639-y)\n",
+    "sci:publications": [
+        {
+            "citation": "Hengl, T., Miller, M.A.E., Kri\u017ean, J., et al. African soil properties and nutrients\nmapped at 30 m spatial resolution using two-scale ensemble machine learning.\nSci Rep 11, 6130 (2021).\n[doi:10.1038/s41598-021-85639-y](https://doi.org/10.1038/s41598-021-85639-y)\n",
+            "doi": "10.1038/s41598-021-85639-y"
+        }
+    ],
+    "version": "v1",
+    "title": "iSDAsoil extractable Aluminium",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -31.46,
+                    -35.22,
+                    57.08,
+                    37.98
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2017-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
     "keywords": [
         "africa",
         "aluminium",
@@ -73,13 +103,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/ISDASOIL_Africa_v1_aluminium_extractable"
-        }
-    ],
-    "sci:citation": "Hengl, T., Miller, M.A.E., Kri\u017ean, J., et al. African soil properties and nutrients\nmapped at 30 m spatial resolution using two-scale ensemble machine learning.\nSci Rep 11, 6130 (2021).\n[doi:10.1038/s41598-021-85639-y](https://doi.org/10.1038/s41598-021-85639-y)\n",
-    "sci:publications": [
-        {
-            "citation": "Hengl, T., Miller, M.A.E., Kri\u017ean, J., et al. African soil properties and nutrients\nmapped at 30 m spatial resolution using two-scale ensemble machine learning.\nSci Rep 11, 6130 (2021).\n[doi:10.1038/s41598-021-85639-y](https://doi.org/10.1038/s41598-021-85639-y)\n",
-            "doi": "10.1038/s41598-021-85639-y"
         }
     ],
     "summaries": {
@@ -147,28 +170,5 @@
             "minimum": 1,
             "maximum": 51
         }
-    },
-    "title": "iSDAsoil extractable Aluminium",
-    "version": "v1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -31.46,
-                    -35.22,
-                    57.08,
-                    37.98
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2001-01-01T00:00:00Z",
-                    "2017-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-4.0"
+    }
 }

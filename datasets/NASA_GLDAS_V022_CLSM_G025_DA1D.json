@@ -54,6 +54,35 @@
     ],
     "gee:terms_of_use": "Distribution of data from the Goddard Earth Sciences\nData and Information Services Center (GES DISC) is funded by NASA's\nScience Mission Directorate (SMD). Consistent with NASA [Earth\nScience Data and Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy/),\ndata from the GES DISC archive are available free to the user community.\nFor more information visit the GES DISC [Data Policy](https://disc.sci.gsfc.nasa.gov/citing)\npage.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Li, B., M. Rodell, S. Kumar, H. Beaudoing, A. Getirana, B. F. Zaitchik, et\nal. (2019) Global GRACE data assimilation for groundwater and drought\nmonitoring: Advances and challenges. Water Resources Research, 55,\n7564-7586.\n",
+    "sci:publications": [
+        {
+            "citation": "[Additional references](https://ldas.gsfc.nasa.gov/gldas/GLDASpublications.php)"
+        }
+    ],
+    "version": "V022",
+    "title": "GLDAS-2.2: Global Land Data Assimilation System",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2003-01-01T03:00:00Z",
+                    "2022-10-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "3_hourly",
         "climate",
@@ -88,12 +117,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GLDAS_V022_CLSM_G025_DA1D"
-        }
-    ],
-    "sci:citation": "Li, B., M. Rodell, S. Kumar, H. Beaudoing, A. Getirana, B. F. Zaitchik, et\nal. (2019) Global GRACE data assimilation for groundwater and drought\nmonitoring: Advances and challenges. Water Resources Research, 55,\n7564-7586.\n",
-    "sci:publications": [
-        {
-            "citation": "[Additional references](https://ldas.gsfc.nasa.gov/gldas/GLDASpublications.php)"
         }
     ],
     "summaries": {
@@ -359,28 +382,5 @@
             "minimum": 109.394104,
             "maximum": 5084.162598
         }
-    },
-    "title": "GLDAS-2.2: Global Land Data Assimilation System",
-    "version": "V022",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2003-01-01T03:00:00Z",
-                    "2022-10-31T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

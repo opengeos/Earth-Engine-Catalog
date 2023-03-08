@@ -65,6 +65,37 @@
     ],
     "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Thornton, P.E., M.M. Thornton, B.W. Mayer, Y. Wei, R. Devarakonda,\nR.S.Vose, and R.B. Cook. {YEAR}. Daymet: Daily Surface Weather Data on a\n1-km Grid for North America, Version3. ORNL DAAC, Oak Ridge, Tennessee, USA\n",
+    "sci:doi": "10.3334/ORNLDAAC/1328",
+    "sci:publications": [
+        {
+            "citation": "Other Citation Details - Thornton, P.E., M.M. Thornton, B.W. Mayer, Y. Wei, R. Devarakonda, R.S. Vose, and R.B. Cook. 2016.\nDaymet: Daily Surface Weather Data on a 1-km Grid for North America, Version 3. ORNL DAAC, Oak Ridge, Tennessee, USA.\n[doi:10.3334/ORNLDAAC/1328](https://doi.org/10.3334/ORNLDAAC/1328)\n",
+            "doi": "10.3334/ORNLDAAC/1328"
+        }
+    ],
+    "version": "V3",
+    "title": "Daymet V3: Daily Surface Weather and Climatological Summaries [deprecated]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -150.8,
+                    1.6,
+                    -1.1,
+                    84
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1980-01-01T00:00:00Z",
+                    "2019-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "climate",
         "daily",
@@ -97,14 +128,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_ORNL_DAYMET_V3"
-        }
-    ],
-    "sci:citation": "Thornton, P.E., M.M. Thornton, B.W. Mayer, Y. Wei, R. Devarakonda,\nR.S.Vose, and R.B. Cook. {YEAR}. Daymet: Daily Surface Weather Data on a\n1-km Grid for North America, Version3. ORNL DAAC, Oak Ridge, Tennessee, USA\n",
-    "sci:doi": "10.3334/ORNLDAAC/1328",
-    "sci:publications": [
-        {
-            "citation": "Other Citation Details - Thornton, P.E., M.M. Thornton, B.W. Mayer, Y. Wei, R. Devarakonda, R.S. Vose, and R.B. Cook. 2016.\nDaymet: Daily Surface Weather Data on a 1-km Grid for North America, Version 3. ORNL DAAC, Oak Ridge, Tennessee, USA.\n[doi:10.3334/ORNLDAAC/1328](https://doi.org/10.3334/ORNLDAAC/1328)\n",
-            "doi": "10.3334/ORNLDAAC/1328"
         }
     ],
     "summaries": {
@@ -208,28 +231,5 @@
             "minimum": 0,
             "maximum": 10000
         }
-    },
-    "title": "Daymet V3: Daily Surface Weather and Climatological Summaries [deprecated]",
-    "version": "V3",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -150.8,
-                    1.6,
-                    -1.1,
-                    84
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1980-01-01T00:00:00Z",
-                    "2019-12-31T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

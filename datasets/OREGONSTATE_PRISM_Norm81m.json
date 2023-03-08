@@ -69,6 +69,36 @@
     },
     "gee:terms_of_use": "These PRISM datasets are available without restriction\non use or distribution. PRISM Climate Group does request that the\nuser give proper attribution and identify PRISM, where applicable,\nas the source of the data.\n[https://prism.oregonstate.edu/terms/](https://prism.oregonstate.edu/terms/)\n",
     "gee:type": "image_collection",
+    "sci:citation": "Daly, C., Halbleib, M., Smith, J.I., Gibson, W.P., Doggett, M.K.,\nTaylor, G.H., Curtis, J., and Pasteris, P.A. 2008. Physiographically-sensitive\nmapping of temperature and precipitation across the conterminous\nUnited States. International Journal of Climatology, 28: 2031-2064\n[doi:10.1002/joc.1688](https://doi.org/10.1002/joc.1688)\n[pdf](https://www.prism.oregonstate.edu/documents/pubs/2008intjclim_physiographicMapping_daly.pdf)\n",
+    "sci:publications": [
+        {
+            "citation": "[Daly, C., J.I. Smith, and K.V. Olson. 2015. Mapping atmospheric\nmoisture climatologies across the conterminous United States. PloS\nONE 10(10):e0141140.\n[doi:10.1371/journal.pone.0141140](https://doi.org/10.1371/journal.pone.0141140).\n",
+            "doi": "10.1371/journal.pone.0141140"
+        }
+    ],
+    "version": "81m",
+    "title": "PRISM Long-Term Average Climate Dataset Norm81m [deprecated]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    24,
+                    -66,
+                    50
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1981-01-01T00:00:00Z",
+                    "2010-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "30_year",
         "climate",
@@ -96,13 +126,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/OREGONSTATE_PRISM_Norm81m"
-        }
-    ],
-    "sci:citation": "Daly, C., Halbleib, M., Smith, J.I., Gibson, W.P., Doggett, M.K.,\nTaylor, G.H., Curtis, J., and Pasteris, P.A. 2008. Physiographically-sensitive\nmapping of temperature and precipitation across the conterminous\nUnited States. International Journal of Climatology, 28: 2031-2064\n[doi:10.1002/joc.1688](https://doi.org/10.1002/joc.1688)\n[pdf](https://www.prism.oregonstate.edu/documents/pubs/2008intjclim_physiographicMapping_daly.pdf)\n",
-    "sci:publications": [
-        {
-            "citation": "[Daly, C., J.I. Smith, and K.V. Olson. 2015. Mapping atmospheric\nmoisture climatologies across the conterminous United States. PloS\nONE 10(10):e0141140.\n[doi:10.1371/journal.pone.0141140](https://doi.org/10.1371/journal.pone.0141140).\n",
-            "doi": "10.1371/journal.pone.0141140"
         }
     ],
     "summaries": {
@@ -226,28 +249,5 @@
             "minimum": 0,
             "maximum": 33.11
         }
-    },
-    "title": "PRISM Long-Term Average Climate Dataset Norm81m [deprecated]",
-    "version": "81m",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -125,
-                    24,
-                    -66,
-                    50
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1981-01-01T00:00:00Z",
-                    "2010-12-31T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

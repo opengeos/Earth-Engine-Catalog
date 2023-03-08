@@ -58,6 +58,30 @@
     },
     "gee:terms_of_use": "This work (METDATA, by John Abatzoglou) is in the public\ndomain and is free of known copyright restrictions. Users should\nproperly cite the source used in the creation of any reports and\npublications resulting from the use of this dataset and note the\ndate when the data was acquired.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Abatzoglou J.T., R. Barbero, J.W. Wolf, Z. Holden (2014), Tracking\ninterannual streamflow variability with drought indices in the\nPacific Northwest, US, Journal of Hydrometeorology, 15, 1900-1912.\n",
+    "version": "Unknown",
+    "title": "PDSI: University of Idaho Palmer Drought Severity Index [deprecated]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -124.9,
+                    24.9,
+                    -66.8,
+                    49.6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1979-03-01T00:00:00Z",
+                    "2020-06-20T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "climate",
         "conus",
@@ -85,7 +109,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/IDAHO_EPSCOR_PDSI"
         }
     ],
-    "sci:citation": "Abatzoglou J.T., R. Barbero, J.W. Wolf, Z. Holden (2014), Tracking\ninterannual streamflow variability with drought indices in the\nPacific Northwest, US, Journal of Hydrometeorology, 15, 1900-1912.\n",
     "summaries": {
         "eo:bands": [
             {
@@ -137,28 +160,5 @@
             "minimum": -11.94,
             "maximum": 17.92
         }
-    },
-    "title": "PDSI: University of Idaho Palmer Drought Severity Index [deprecated]",
-    "version": "Unknown",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -124.9,
-                    24.9,
-                    -66.8,
-                    49.6
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1979-03-01T00:00:00Z",
-                    "2020-06-20T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

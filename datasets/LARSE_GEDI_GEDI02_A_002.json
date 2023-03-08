@@ -45,6 +45,31 @@
     ],
     "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy]\n(https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
     "gee:type": "table_collection",
+    "sci:citation": "GEDI L2A Elevation and Height Metrics Data Global Footprint Level - GEDI02_A\nDubayah, R., M. Hofton, J. Blair, J. Armston, H. Tang, S. Luthcke. GEDI L2A\nElevation and Height Metrics Data Global Footprint Level V002. 2021,\ndistributed by NASA EOSDIS Land Processes DAAC. Accessed YYYY-MM-DD.\n",
+    "sci:doi": "10.5067/GEDI/GEDI02_A.002",
+    "version": "2",
+    "title": "GEDI L2A Vector Canopy Top Height (Version 2)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -51.6,
+                    180,
+                    51.6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-03-25T00:00:00Z",
+                    "2023-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "elevation",
         "gedi",
@@ -77,8 +102,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/LARSE_GEDI_GEDI02_A_002"
         }
     ],
-    "sci:citation": "GEDI L2A Elevation and Height Metrics Data Global Footprint Level - GEDI02_A\nDubayah, R., M. Hofton, J. Blair, J. Armston, H. Tang, S. Luthcke. GEDI L2A\nElevation and Height Metrics Data Global Footprint Level V002. 2021,\ndistributed by NASA EOSDIS Land Processes DAAC. Accessed YYYY-MM-DD.\n",
-    "sci:doi": "10.5067/GEDI/GEDI02_A.002",
     "summaries": {
         "gee:visualizations": [
             {
@@ -94,28 +117,5 @@
                 }
             }
         ]
-    },
-    "title": "GEDI L2A Vector Canopy Top Height (Version 2)",
-    "version": "2",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -51.6,
-                    180,
-                    51.6
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2019-03-25T00:00:00Z",
-                    "2023-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

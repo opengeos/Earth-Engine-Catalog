@@ -57,6 +57,47 @@
     ],
     "gee:terms_of_use": "There are no restrictions on use of this US public domain data.",
     "gee:type": "table",
+    "sci:citation": "Commission for Environmental Cooperation. 1997. Ecological regions\nof North America: toward a common perspective. Commission for Environmental\nCooperation, Montreal, Quebec, Canada. 71p. Map (scale 1:12,500,000).\nRevised 2006.\n",
+    "sci:publications": [
+        {
+            "citation": "McMahon, G., S.M. Gregonis, S.W. Waltman, J.M. Omernik, T.D. Thorson,\nJ.A. Freeouf, A.H. Rorick, and J.E. Keys. 2001. Developing a spatial\nframework of common ecological regions for the conterminous United\nStates. Environmental Management 28(3):293-316.\n"
+        },
+        {
+            "citation": "Omernik, J.M. 1987. Ecoregions of the conterminous United States.\nMap (scale 1:7,500,000). Annals of the Association of American\nGeographers 77(1):118-125.\n"
+        },
+        {
+            "citation": "Omernik, J.M. 1995. Ecoregions: A spatial framework for environmental\nmanagement. In: Biological Assessment and Criteria: Tools for Water\nResource Planning and Decision Making. Davis, W.S. and T.P. Simon\n(eds.),   Lewis Publishers, Boca Raton, FL. p. 49-62.\n"
+        },
+        {
+            "citation": "Omernik, J.M. 2004. Perspectives on the nature and definition of\necological regions. Environmental Management 34(Supplement 1):S27-S38.\n"
+        },
+        {
+            "citation": "Omernik, J.M. and G.E. Griffith. 2014. Ecoregions of the conterminous\nUnited States: evolution of a hierarchical spatial framework. Environmental\nManagement 54(6):1249-1266.\n"
+        }
+    ],
+    "version": "2013",
+    "title": "US EPA Ecoregions (Level IV)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -124.8,
+                    24.5,
+                    -66.9,
+                    49.4
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2013-04-16T00:00:00Z",
+                    "2013-04-17T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "ecoregions",
         "epa"
@@ -76,24 +117,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/EPA_Ecoregions_2013_L4"
-        }
-    ],
-    "sci:citation": "Commission for Environmental Cooperation. 1997. Ecological regions\nof North America: toward a common perspective. Commission for Environmental\nCooperation, Montreal, Quebec, Canada. 71p. Map (scale 1:12,500,000).\nRevised 2006.\n",
-    "sci:publications": [
-        {
-            "citation": "McMahon, G., S.M. Gregonis, S.W. Waltman, J.M. Omernik, T.D. Thorson,\nJ.A. Freeouf, A.H. Rorick, and J.E. Keys. 2001. Developing a spatial\nframework of common ecological regions for the conterminous United\nStates. Environmental Management 28(3):293-316.\n"
-        },
-        {
-            "citation": "Omernik, J.M. 1987. Ecoregions of the conterminous United States.\nMap (scale 1:7,500,000). Annals of the Association of American\nGeographers 77(1):118-125.\n"
-        },
-        {
-            "citation": "Omernik, J.M. 1995. Ecoregions: A spatial framework for environmental\nmanagement. In: Biological Assessment and Criteria: Tools for Water\nResource Planning and Decision Making. Davis, W.S. and T.P. Simon\n(eds.),   Lewis Publishers, Boca Raton, FL. p. 49-62.\n"
-        },
-        {
-            "citation": "Omernik, J.M. 2004. Perspectives on the nature and definition of\necological regions. Environmental Management 34(Supplement 1):S27-S38.\n"
-        },
-        {
-            "citation": "Omernik, J.M. and G.E. Griffith. 2014. Ecoregions of the conterminous\nUnited States: evolution of a hierarchical spatial framework. Environmental\nManagement 54(6):1249-1266.\n"
         }
     ],
     "summaries": {
@@ -222,28 +245,5 @@
             ],
             "thinning_strategy": "HIGHER_DENSITY"
         }
-    },
-    "title": "US EPA Ecoregions (Level IV)",
-    "version": "2013",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -124.8,
-                    24.5,
-                    -66.9,
-                    49.4
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2013-04-16T00:00:00Z",
-                    "2013-04-17T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

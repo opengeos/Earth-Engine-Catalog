@@ -46,6 +46,30 @@
     ],
     "gee:terms_of_use": "Unless otherwise noted, all NASA-produced data may be used for any purpose without\nprior permission. For more information and exceptions visit the\n[NASA Data & Information Policy page](https://earthdata.nasa.gov/collaborate/open-data-services-and-software/data-information-policy).\n",
     "gee:type": "image",
+    "sci:citation": "NASA JPL (2020). NASADEM Merged DEM Global 1 arc second V001 [Data set]. NASA EOSDIS Land\nProcesses DAAC. Accessed 2020-12-30 from [doi:10.5067/MEaSUREs/NASADEM/NASADEM_HGT.001](https://doi.org/10.5067/MEaSUREs/NASADEM/NASADEM_HGT.001)\n",
+    "version": "1",
+    "title": "NASADEM: NASA NASADEM Digital Elevation 30m",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -56,
+                    180,
+                    60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-11T00:00:00Z",
+                    "2000-02-22T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "dem",
         "elevation",
@@ -73,7 +97,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_NASADEM_HGT_001"
         }
     ],
-    "sci:citation": "NASA JPL (2020). NASADEM Merged DEM Global 1 arc second V001 [Data set]. NASA EOSDIS Land\nProcesses DAAC. Accessed 2020-12-30 from [doi:10.5067/MEaSUREs/NASADEM/NASADEM_HGT.001](https://doi.org/10.5067/MEaSUREs/NASADEM/NASADEM_HGT.001)\n",
     "summaries": {
         "eo:bands": [
             {
@@ -139,28 +162,5 @@
             "minimum": 0,
             "maximum": 255
         }
-    },
-    "title": "NASADEM: NASA NASADEM Digital Elevation 30m",
-    "version": "1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -56,
-                    180,
-                    60
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2000-02-11T00:00:00Z",
-                    "2000-02-22T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

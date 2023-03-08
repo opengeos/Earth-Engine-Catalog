@@ -58,6 +58,31 @@
     ],
     "gee:terms_of_use": "ASTER data and products distributed by the LP DAAC, with the exception of\nthe ASTER Global Digital Elevation Model (GDEM) dataset (ASTGTM) version 2\n(v2), have no restrictions on data use, sale, or subsequent redistribution.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/ASTER/AST_L1T.003",
+    "version": "V003",
+    "title": "ASTER L1T Radiance",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-03-04T00:00:00Z",
+                    "2022-10-11T19:47:32Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "aster",
         "eos",
@@ -90,8 +115,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/ASTER_AST_L1T_003"
         }
     ],
-    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
-    "sci:doi": "10.5067/ASTER/AST_L1T.003",
     "summaries": {
         "eo:bands": [
             {
@@ -280,28 +303,5 @@
             "minimum": 1,
             "maximum": 255
         }
-    },
-    "title": "ASTER L1T Radiance",
-    "version": "V003",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2000-03-04T00:00:00Z",
-                    "2022-10-11T19:47:32Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

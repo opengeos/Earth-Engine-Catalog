@@ -49,6 +49,29 @@
     ],
     "gee:terms_of_use": "This work is licensed under a Creative Commons Attribution 4.0 International License.\n[https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)\n",
     "gee:type": "image",
+    "sci:citation": "Gong, P., Li, X., Wang, J., Bai, Y., Chen, B., Hu, T., ... & Zhou, Y. (2020).\nAnnual maps of global artificial impervious area (GAIA) between 1985 and 2018.\nRemote Sensing of Environment, 236, 111510.\n",
+    "title": "Tsinghua FROM-GLC Year of Change to Impervious Surface",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1985-01-01T00:00:00Z",
+                    "2018-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
     "keywords": [
         "built",
         "development",
@@ -73,7 +96,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/Tsinghua_FROM-GLC_GAIA_v10"
         }
     ],
-    "sci:citation": "Gong, P., Li, X., Wang, J., Bai, Y., Chen, B., Hu, T., ... & Zhou, Y. (2020).\nAnnual maps of global artificial impervious area (GAIA) between 1985 and 2018.\nRemote Sensing of Environment, 236, 111510.\n",
     "summaries": {
         "eo:bands": [
             {
@@ -319,27 +341,5 @@
             "minimum": 1,
             "maximum": 34
         }
-    },
-    "title": "Tsinghua FROM-GLC Year of Change to Impervious Surface",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1985-01-01T00:00:00Z",
-                    "2018-12-31T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-4.0"
+    }
 }

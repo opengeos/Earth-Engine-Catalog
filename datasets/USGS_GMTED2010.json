@@ -45,6 +45,29 @@
     ],
     "gee:terms_of_use": "Most U.S. Geological Survey (USGS) information resides\nin the public domain and may be used without restriction. Additional\ninformation on [Acknowledging or Crediting USGS as Information\nSource](https://www.usgs.gov/information-policies-and-instructions/crediting-usgs) is available.\n",
     "gee:type": "image",
+    "sci:citation": "Global Multi-resolution Terrain Elevation Data 2010 courtesy of\nthe U.S. Geological Survey",
+    "title": "GMTED2010: Global Multi-resolution Terrain Elevation Data 2010",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -56,
+                    180,
+                    84
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-01-01T00:00:00Z",
+                    "2010-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "dem",
         "elevation",
@@ -70,7 +93,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_GMTED2010"
         }
     ],
-    "sci:citation": "Global Multi-resolution Terrain Elevation Data 2010 courtesy of\nthe U.S. Geological Survey",
     "summaries": {
         "eo:bands": [
             {
@@ -112,27 +134,5 @@
             "minimum": -457,
             "maximum": 8746
         }
-    },
-    "title": "GMTED2010: Global Multi-resolution Terrain Elevation Data 2010",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -56,
-                    180,
-                    84
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2010-01-01T00:00:00Z",
-                    "2010-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

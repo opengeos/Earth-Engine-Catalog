@@ -71,6 +71,31 @@
     ],
     "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/MODIS/MYD09GQ.006",
+    "version": "V006",
+    "title": "MYD09GQ.006 Aqua Surface Reflectance Daily Global 250m [deprecated]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-04T00:00:00Z",
+                    "2023-02-25T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "aqua",
         "daily",
@@ -99,8 +124,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MYD09GQ"
         }
     ],
-    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
-    "sci:doi": "10.5067/MODIS/MYD09GQ.006",
     "summaries": {
         "eo:bands": [
             {
@@ -379,28 +402,5 @@
             "minimum": -100,
             "maximum": 16000
         }
-    },
-    "title": "MYD09GQ.006 Aqua Surface Reflectance Daily Global 250m [deprecated]",
-    "version": "V006",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2002-07-04T00:00:00Z",
-                    "2023-02-25T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

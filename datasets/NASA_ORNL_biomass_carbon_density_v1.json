@@ -56,6 +56,36 @@
     "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "sci:citation": "Spawn, S.A., Sullivan, C.C., Lark, T.J. et al. Harmonized global maps of above and\nbelowground biomass carbon density in the year 2010. Sci Data 7, 112 (2020).\n[doi:10.1038/s41597-020-0444-4](https://doi.org/10.1038/s41597-020-0444-4)\n",
+    "sci:doi": "10.3334/ORNLDAAC/1763",
+    "sci:publications": [
+        {
+            "citation": "Spawn, S.A., and H.K. Gibbs. 2020. Global Aboveground and Belowground\nBiomass Carbon Density Maps for the Year 2010. ORNL DAAC, Oak Ridge, Tennessee, USA.\n"
+        }
+    ],
+    "version": "V1",
+    "title": "Global Aboveground and Belowground Biomass Carbon Density Maps",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -61.1,
+                    180,
+                    84
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-01-01T00:00:00Z",
+                    "2010-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "aboveground",
         "belowground",
@@ -82,13 +112,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_ORNL_biomass_carbon_density_v1"
-        }
-    ],
-    "sci:citation": "Spawn, S.A., Sullivan, C.C., Lark, T.J. et al. Harmonized global maps of above and\nbelowground biomass carbon density in the year 2010. Sci Data 7, 112 (2020).\n[doi:10.1038/s41597-020-0444-4](https://doi.org/10.1038/s41597-020-0444-4)\n",
-    "sci:doi": "10.3334/ORNLDAAC/1763",
-    "sci:publications": [
-        {
-            "citation": "Spawn, S.A., and H.K. Gibbs. 2020. Global Aboveground and Belowground\nBiomass Carbon Density Maps for the Year 2010. ORNL DAAC, Oak Ridge, Tennessee, USA.\n"
         }
     ],
     "summaries": {
@@ -164,28 +187,5 @@
             "minimum": 0,
             "maximum": 37
         }
-    },
-    "title": "Global Aboveground and Belowground Biomass Carbon Density Maps",
-    "version": "V1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -61.1,
-                    180,
-                    84
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2010-01-01T00:00:00Z",
-                    "2010-12-31T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

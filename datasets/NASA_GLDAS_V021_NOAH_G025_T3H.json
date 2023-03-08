@@ -55,6 +55,35 @@
     ],
     "gee:terms_of_use": "Distribution of data from the Goddard Earth Sciences\nData and Information Services Center (GES DISC) is funded by NASA's\nScience Mission Directorate (SMD). Consistent with NASA [Earth\nScience Data and Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy/),\ndata from the GES DISC archive are available free to the user community.\nFor more information visit the GES DISC [Data Policy](https://disc.sci.gsfc.nasa.gov/citing)\npage.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Rodell, M., P.R. Houser, U. Jambor, J. Gottschalck, K. Mitchell,\nC.-J. Meng, K. Arsenault, B. Cosgrove, J. Radakovich, M. Bosilovich,\nJ.K. Entin, J.P. Walker, D. Lohmann, and D. Toll, The Global Land Data\nAssimilation System, Bull. Amer. Meteor. Soc., 85(3), 381-394, 2004.\n",
+    "sci:publications": [
+        {
+            "citation": "[Additional references](https://ldas.gsfc.nasa.gov/gldas/GLDASpublications.php)"
+        }
+    ],
+    "version": "V021",
+    "title": "GLDAS-2.1: Global Land Data Assimilation System",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T03:00:00Z",
+                    "2023-02-09T21:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "3_hourly",
         "climate",
@@ -89,12 +118,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GLDAS_V021_NOAH_G025_T3H"
-        }
-    ],
-    "sci:citation": "Rodell, M., P.R. Houser, U. Jambor, J. Gottschalck, K. Mitchell,\nC.-J. Meng, K. Arsenault, B. Cosgrove, J. Radakovich, M. Bosilovich,\nJ.K. Entin, J.P. Walker, D. Lohmann, and D. Toll, The Global Land Data\nAssimilation System, Bull. Amer. Meteor. Soc., 85(3), 381-394, 2004.\n",
-    "sci:publications": [
-        {
-            "citation": "[Additional references](https://ldas.gsfc.nasa.gov/gldas/GLDASpublications.php)"
         }
     ],
     "summaries": {
@@ -286,28 +309,5 @@
             "minimum": 0,
             "maximum": 57.7
         }
-    },
-    "title": "GLDAS-2.1: Global Land Data Assimilation System",
-    "version": "V021",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2000-01-01T03:00:00Z",
-                    "2023-02-09T21:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

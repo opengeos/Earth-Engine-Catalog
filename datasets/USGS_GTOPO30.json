@@ -45,6 +45,29 @@
     ],
     "gee:terms_of_use": "There are no restrictions on the use of data received\nfrom the U.S. Geological Survey's Earth Resources Observation and\nScience (EROS) Center. For more information, visit the USGS' [Data\nUse and Citation](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-data-use-and-citation) page.\n",
     "gee:type": "image",
+    "sci:citation": "GTOPO30 DEM courtesy of the U.S. Geological Survey",
+    "title": "GTOPO30: Global 30 Arc-Second Elevation",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1996-01-01T00:00:00Z",
+                    "1996-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "dem",
         "elevation",
@@ -71,7 +94,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_GTOPO30"
         }
     ],
-    "sci:citation": "GTOPO30 DEM courtesy of the U.S. Geological Survey",
     "summaries": {
         "eo:bands": [
             {
@@ -111,27 +133,5 @@
             "minimum": -407,
             "maximum": 8752
         }
-    },
-    "title": "GTOPO30: Global 30 Arc-Second Elevation",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1996-01-01T00:00:00Z",
-                    "1996-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

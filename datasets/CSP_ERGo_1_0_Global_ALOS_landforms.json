@@ -48,6 +48,30 @@
     "gee:type": "image",
     "gee:unusual_terms_of_use": true,
     "gee:user_uploaded": true,
+    "sci:citation": "Theobald, D. M., Harrison-Atlas, D., Monahan, W. B., & Albano, C. M.\n(2015). Ecologically-relevant maps of landforms and physiographic diversity\nfor climate adaptation planning. PloS one, 10(12),\n[e0143619](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0143619)\n",
+    "version": "1.0",
+    "title": "Global ALOS Landforms",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-01-24T00:00:00Z",
+                    "2011-05-13T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-NC-SA-4.0",
     "keywords": [
         "aspect",
         "csp",
@@ -76,7 +100,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/CSP_ERGo_1_0_Global_ALOS_landforms"
         }
     ],
-    "sci:citation": "Theobald, D. M., Harrison-Atlas, D., Monahan, W. B., & Albano, C. M.\n(2015). Ecologically-relevant maps of landforms and physiographic diversity\nfor climate adaptation planning. PloS one, 10(12),\n[e0143619](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0143619)\n",
     "summaries": {
         "eo:bands": [
             {
@@ -204,28 +227,5 @@
         "gsd": [
             90
         ]
-    },
-    "title": "Global ALOS Landforms",
-    "version": "1.0",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2006-01-24T00:00:00Z",
-                    "2011-05-13T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-NC-SA-4.0"
+    }
 }

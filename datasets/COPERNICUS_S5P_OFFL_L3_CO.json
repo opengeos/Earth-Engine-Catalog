@@ -49,6 +49,28 @@
     },
     "gee:terms_of_use": "The use of Sentinel data is governed by the [Copernicus\nSentinel Data Terms and Conditions.](https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice)\n",
     "gee:type": "image_collection",
+    "title": "Sentinel-5P OFFL CO: Offline Carbon Monoxide",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-06-28T10:24:07Z",
+                    "2023-03-05T10:58:04Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "air_quality",
         "carbon_monoxide",
@@ -297,27 +319,5 @@
             "minimum": 9,
             "maximum": 80
         }
-    },
-    "title": "Sentinel-5P OFFL CO: Offline Carbon Monoxide",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2018-06-28T10:24:07Z",
-                    "2023-03-03T09:54:24Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

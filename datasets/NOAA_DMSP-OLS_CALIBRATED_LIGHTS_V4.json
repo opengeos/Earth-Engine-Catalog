@@ -45,6 +45,29 @@
     ],
     "gee:terms_of_use": "NOAA data, information, and products, regardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use. The\nforgoing data is in the public domain and is being provided without\nrestriction on use and distribution.\n",
     "gee:type": "image_collection",
+    "version": "Version 4",
+    "title": "DMSP OLS: Global Radiance-Calibrated Nighttime Lights Version 4, Defense Meteorological Program Operational Linescan System",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -65,
+                    180,
+                    75
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1996-03-16T00:00:00Z",
+                    "2011-07-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "calibrated",
         "dmsp",
@@ -119,28 +142,5 @@
             "minimum": 0,
             "maximum": 175
         }
-    },
-    "title": "DMSP OLS: Global Radiance-Calibrated Nighttime Lights Version 4, Defense Meteorological Program Operational Linescan System",
-    "version": "Version 4",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -65,
-                    180,
-                    75
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1996-03-16T00:00:00Z",
-                    "2011-07-31T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

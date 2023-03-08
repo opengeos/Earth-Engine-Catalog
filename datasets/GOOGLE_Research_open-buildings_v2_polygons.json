@@ -70,6 +70,30 @@
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "table",
     "gee:user_uploaded": true,
+    "sci:citation": "W. Sirko, S. Kashubin, M. Ritter, A. Annkah, Y.S.E. Bouchareb, Y. Dauphin,\nD. Keysers, M. Neumann, M. Cisse, J.A. Quinn. Continental-scale building\ndetection from high resolution satellite imagery.\n[arXiv:2107.12283](https://arxiv.org/abs/2107.12283), 2021.\n",
+    "version": "2.0.0",
+    "title": "Open Buildings V2 Polygons",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-08-30T00:00:00Z",
+                    "2022-08-30T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
     "keywords": [
         "africa",
         "asia",
@@ -97,7 +121,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_Research_open-buildings_v2_polygons"
         }
     ],
-    "sci:citation": "W. Sirko, S. Kashubin, M. Ritter, A. Annkah, Y.S.E. Bouchareb, Y. Dauphin,\nD. Keysers, M. Neumann, M. Cisse, J.A. Quinn. Continental-scale building\ndetection from high resolution satellite imagery.\n[arXiv:2107.12283](https://arxiv.org/abs/2107.12283), 2021.\n",
     "summaries": {
         "gee:schema": [
             {
@@ -145,28 +168,5 @@
             "prerender_tiles": true,
             "thinning_strategy": "HIGHER_DENSITY"
         }
-    },
-    "title": "Open Buildings V2 Polygons",
-    "version": "2.0.0",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2022-08-30T00:00:00Z",
-                    "2022-08-30T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-4.0"
+    }
 }

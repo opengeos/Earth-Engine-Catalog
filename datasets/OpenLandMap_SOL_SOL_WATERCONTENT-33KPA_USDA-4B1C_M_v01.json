@@ -56,6 +56,30 @@
     "gee:type": "image",
     "gee:unusual_terms_of_use": true,
     "gee:user_uploaded": true,
+    "sci:citation": "Tomislav Hengl, & Surya Gupta. (2019). Soil water content (volumetric %) for 33kPa and 1500kPa suctions predicted at 6 standard depths (0, 10, 30, 60, 100 and 200 cm) at 250 m resolution (Version v01) [Data set]. Zenodo.\n[10.5281/zenodo.2629589](https://doi.org/10.5281/zenodo.2629589)\n",
+    "sci:doi": "10.5281/zenodo.2629589",
+    "title": "OpenLandMap Soil Water Content at 33kPa (Field Capacity)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1950-01-01T00:00:00Z",
+                    "2018-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-SA-4.0",
     "keywords": [
         "envirometrix",
         "opengeohub",
@@ -80,8 +104,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_SOL_SOL_WATERCONTENT-33KPA_USDA-4B1C_M_v01"
         }
     ],
-    "sci:citation": "Tomislav Hengl, & Surya Gupta. (2019). Soil water content (volumetric %) for 33kPa and 1500kPa suctions predicted at 6 standard depths (0, 10, 30, 60, 100 and 200 cm) at 250 m resolution (Version v01) [Data set]. Zenodo.\n[10.5281/zenodo.2629589](https://doi.org/10.5281/zenodo.2629589)\n",
-    "sci:doi": "10.5281/zenodo.2629589",
     "summaries": {
         "eo:bands": [
             {
@@ -174,27 +196,5 @@
             "minimum": 0,
             "maximum": 52.9740182135385
         }
-    },
-    "title": "OpenLandMap Soil Water Content at 33kPa (Field Capacity)",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1950-01-01T00:00:00Z",
-                    "2018-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-SA-4.0"
+    }
 }

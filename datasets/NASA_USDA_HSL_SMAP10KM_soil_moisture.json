@@ -51,32 +51,6 @@
     "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
-    "keywords": [
-        "geophysical",
-        "hsl",
-        "nasa",
-        "smap",
-        "soil",
-        "soil_moisture",
-        "usda"
-    ],
-    "providers": [
-        {
-            "name": "NASA GSFC",
-            "roles": [
-                "licensor",
-                "producer"
-            ],
-            "url": "https://gimms.gsfc.nasa.gov/SMOS/SMAP/"
-        },
-        {
-            "name": "Google Earth Engine",
-            "roles": [
-                "host"
-            ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_USDA_HSL_SMAP10KM_soil_moisture"
-        }
-    ],
     "sci:citation": "\n**Sazib, N., J. D. Bolten, and I. E. Mladenova. 2021.**\nLeveraging NASA Soil Moisture Active Passive for Assessing Fire\nSusceptibility and Potential Impacts Over Australia and California.\n*IEEE Journal of Selected Topics in Applied Earth Observations and\nRemote Sensing*, 15: 779-787.\n[doi:10.1109/jstars.2021.3136756](https://doi.org/10.1109/jstars.2021.3136756)\n\n**Mladenova, I.E., Bolten, J.D., Crow, W., Sazib, N. and Reynolds, C., 2020.**\nAgricultural drought monitoring via the assimilation of SMAP soil moisture retrievals into a\nglobal soil water balance model. *Front. Big Data*,\n3(10).\n[doi:10.3389/fdata.2020.00010](https://doi.org/10.3389/fdata.2020.00010)\n",
     "sci:publications": [
         {
@@ -114,6 +88,54 @@
         {
             "citation": "**O'Neill, P. E., S. Chan, E. G. Njoku, T. Jackson, and R. Bindlish\n(2016).**\n SMAP L3 Radiometer Global Daily 36 km EASE-Grid Soil Moisture, Version 4.\n Boulder, Colorado USA. NASA National Snow and Ice Data Center Distributed\n Active Archive Center.\n [doi:10.5067/ZX7YX2Y2LHEB](https://doi.org/10.5067/ZX7YX2Y2LHEB)\n",
             "doi": "10.5067/ZX7YX2Y2LHEB"
+        }
+    ],
+    "title": "NASA-USDA Enhanced SMAP Global Soil Moisture Data",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-04-02T12:00:00Z",
+                    "2022-08-02T12:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "geophysical",
+        "hsl",
+        "nasa",
+        "smap",
+        "soil",
+        "soil_moisture",
+        "usda"
+    ],
+    "providers": [
+        {
+            "name": "NASA GSFC",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://gimms.gsfc.nasa.gov/SMOS/SMAP/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_USDA_HSL_SMAP10KM_soil_moisture"
         }
     ],
     "summaries": {
@@ -197,27 +219,5 @@
             "minimum": -4,
             "maximum": 4
         }
-    },
-    "title": "NASA-USDA Enhanced SMAP Global Soil Moisture Data",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -60,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2015-04-02T12:00:00Z",
-                    "2022-08-02T12:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

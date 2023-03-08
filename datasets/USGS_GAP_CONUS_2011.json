@@ -46,6 +46,30 @@
     ],
     "gee:terms_of_use": "Most U.S. Geological Survey (USGS) information resides\nin the public domain and may be used without restriction. Additional\ninformation on [Acknowledging or Crediting USGS as Information\nSource](https://www.usgs.gov/information-policies-and-instructions/crediting-usgs) is available.\n",
     "gee:type": "image",
+    "sci:citation": "Homer, C.G., Dewitz, J.A., Yang, L., Jin, S., Danielson, P., Xian, G., Coulston, J.,\nHerold, N.D., Wickham, J.D., and Megown, K., 2015,Completion of the 2011 National Land Cover\nDatabase for the conterminous United States-Representing a decade of land cover change\ninformation. Photogrammetric Engineering and Remote Sensing, v. 81, no. 5, p. 345-354.\n[https://www.asprs.org/a/publications/pers/2015journals/PERS_May_2015/HTML/index.html](https://www.asprs.org/a/publications/pers/2015journals/PERS_May_2015/HTML/index.html)\n",
+    "version": "2012",
+    "title": "USGS GAP CONUS 2011",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -127.98,
+                    22.79,
+                    -65.27,
+                    52.57
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2011-01-01T00:00:00Z",
+                    "2012-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "gap",
         "landcover",
@@ -70,7 +94,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_GAP_CONUS_2011"
         }
     ],
-    "sci:citation": "Homer, C.G., Dewitz, J.A., Yang, L., Jin, S., Danielson, P., Xian, G., Coulston, J.,\nHerold, N.D., Wickham, J.D., and Megown, K., 2015,Completion of the 2011 National Land Cover\nDatabase for the conterminous United States-Representing a decade of land cover change\ninformation. Photogrammetric Engineering and Remote Sensing, v. 81, no. 5, p. 345-354.\n[https://www.asprs.org/a/publications/pers/2015journals/PERS_May_2015/HTML/index.html](https://www.asprs.org/a/publications/pers/2015journals/PERS_May_2015/HTML/index.html)\n",
     "summaries": {
         "eo:bands": [
             {
@@ -3030,28 +3053,5 @@
             "minimum": 1,
             "maximum": 584
         }
-    },
-    "title": "USGS GAP CONUS 2011",
-    "version": "2012",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -127.98,
-                    22.79,
-                    -65.27,
-                    52.57
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2011-01-01T00:00:00Z",
-                    "2012-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

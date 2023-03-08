@@ -52,6 +52,31 @@
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "sci:citation": "Melton, F., Huntington, J., Grimm, R., Herring, J., Hall, M., Rollison, D.,\nErickson, T., Allen, R., Anderson, M., Fisher, J., Kilic, A., Senay, G.,\nvolk, J., Hain, C., Johnson, L., Ruhoff, A., Blanenau, P., Bromley, M.,\nCarrara, W., Daudert, B., Doherty, C., Dunkerly, C., Friedrichs, M., Guzman,\nA., Halverson, G., Hansen, J., Harding, J., Kang, Y., Ketchum, D., Minor,\nB., Morton, C., Ortega-Salazar, S., Ott, T., Ozdogon, M., Schull, M., Wang,\nT., Yang, Y., Anderson, R., 2021.  OpenET: Filling a Critical Data Gap in\nWater Management for the Western United States.  Journal of the American\nWater Resources Association, 2021 Nov 2.\n[doi:10.1111/1752-1688.12956](https://doi.org/10.1111/1752-1688.12956)\n",
+    "sci:doi": "10.1111/1752-1688.12956",
+    "version": "2.0",
+    "title": "OpenET CONUS Ensemble Monthly Evapotranspiration v2.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -126,
+                    25,
+                    -66,
+                    50
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-01-01T00:00:00Z",
+                    "2021-12-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
     "keywords": [
         "conus",
         "evapotranspiration",
@@ -77,8 +102,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/OpenET_ENSEMBLE_CONUS_GRIDMET_MONTHLY_v2_0"
         }
     ],
-    "sci:citation": "Melton, F., Huntington, J., Grimm, R., Herring, J., Hall, M., Rollison, D.,\nErickson, T., Allen, R., Anderson, M., Fisher, J., Kilic, A., Senay, G.,\nvolk, J., Hain, C., Johnson, L., Ruhoff, A., Blanenau, P., Bromley, M.,\nCarrara, W., Daudert, B., Doherty, C., Dunkerly, C., Friedrichs, M., Guzman,\nA., Halverson, G., Hansen, J., Harding, J., Kang, Y., Ketchum, D., Minor,\nB., Morton, C., Ortega-Salazar, S., Ott, T., Ozdogon, M., Schull, M., Wang,\nT., Yang, Y., Anderson, R., 2021.  OpenET: Filling a Critical Data Gap in\nWater Management for the Western United States.  Journal of the American\nWater Resources Association, 2021 Nov 2.\n[doi:10.1111/1752-1688.12956](https://doi.org/10.1111/1752-1688.12956)\n",
-    "sci:doi": "10.1111/1752-1688.12956",
     "summaries": {
         "eo:bands": [
             {
@@ -253,28 +276,5 @@
         "gsd": [
             30
         ]
-    },
-    "title": "OpenET CONUS Ensemble Monthly Evapotranspiration v2.0",
-    "version": "2.0",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -126,
-                    25,
-                    -66,
-                    50
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2016-01-01T00:00:00Z",
-                    "2021-12-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-4.0"
+    }
 }

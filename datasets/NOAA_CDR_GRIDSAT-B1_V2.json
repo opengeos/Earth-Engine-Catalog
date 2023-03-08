@@ -55,6 +55,37 @@
     },
     "gee:terms_of_use": "The NOAA CDR Program's official distribution point for CDRs is NOAA's\nNational Climatic Data Center which provides sustained, open access and\nactive data management of the CDR packages and related information in\nkeeping with the United States' open data policies and practices as\ndescribed in the President's Memorandum on \\\"Open Data Policy\\\" and pursuant\nto the Executive Order of May 9, 2013, \\\"Making Open and Machine Readable\nthe New Default for Government Information\\\". In line with these policies,\nthe CDR data sets are nonproprietary, publicly available, and no\nrestrictions are placed upon their use. For more information, see the\n[Fair Use of NOAA's CDR Data Sets, Algorithms and Documentation](https://www1.ncdc.noaa.gov/pub/data/sds/cdr/CDRs/Aerosol_Optical_Thickness/UseAgreement_01B-04.pdf)\npdf.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Kenneth R. Knapp, and NOAA CDR Program (2014): NOAA Climate Data Record\n(CDR) of Gridded Satellite Data from ISCCP B1 (GridSat-B1) 11 micron\nBrightness Temperature, Version 2. [indicate subset used]. NOAA National\nClimatic Data Center. [doi:10.7289/V59P2ZKR](https://doi.org/10.7289/V59P2ZKR)\n[access date].\n",
+    "sci:doi": "10.7289/V59P2ZKR",
+    "sci:publications": [
+        {
+            "citation": "Knapp, K. R., S. Ansari, C. L. Bain, M. A. Bourassa, M. J. Dickinson,\nC. Funk, C. N. Helms, C. C. Hennon, C. D. Holmes, G. J. Huffman, J. P.\nKossin, H.-T. Lee, A. Loew, and G. Magnusdottir, 2011: Globally gridded\nsatellite (GridSat) observations for climate studies. Bulletin of the\nAmerican Meteorological Society, 92, 893-907.\n[doi:10.1175/2011BAMS3039.1](https://doi.org/10.1175/2011BAMS3039.1)\n",
+            "doi": "10.1175/2011BAMS3039.1"
+        }
+    ],
+    "version": "V2",
+    "title": "NOAA CDR GRIDSAT-B1: Geostationary IR Channel Brightness Temperature",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1980-01-01T00:00:00Z",
+                    "2022-09-30T21:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "brightness",
         "cdr",
@@ -81,14 +112,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_GRIDSAT-B1_V2"
-        }
-    ],
-    "sci:citation": "Kenneth R. Knapp, and NOAA CDR Program (2014): NOAA Climate Data Record\n(CDR) of Gridded Satellite Data from ISCCP B1 (GridSat-B1) 11 micron\nBrightness Temperature, Version 2. [indicate subset used]. NOAA National\nClimatic Data Center. [doi:10.7289/V59P2ZKR](https://doi.org/10.7289/V59P2ZKR)\n[access date].\n",
-    "sci:doi": "10.7289/V59P2ZKR",
-    "sci:publications": [
-        {
-            "citation": "Knapp, K. R., S. Ansari, C. L. Bain, M. A. Bourassa, M. J. Dickinson,\nC. Funk, C. N. Helms, C. C. Hennon, C. D. Holmes, G. J. Huffman, J. P.\nKossin, H.-T. Lee, A. Loew, and G. Magnusdottir, 2011: Globally gridded\nsatellite (GridSat) observations for climate studies. Bulletin of the\nAmerican Meteorological Society, 92, 893-907.\n[doi:10.1175/2011BAMS3039.1](https://doi.org/10.1175/2011BAMS3039.1)\n",
-            "doi": "10.1175/2011BAMS3039.1"
         }
     ],
     "summaries": {
@@ -296,28 +319,5 @@
             "minimum": -25000,
             "maximum": 3800
         }
-    },
-    "title": "NOAA CDR GRIDSAT-B1: Geostationary IR Channel Brightness Temperature",
-    "version": "V2",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1980-01-01T00:00:00Z",
-                    "2022-09-30T21:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

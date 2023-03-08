@@ -51,10 +51,31 @@
             "title": "3DEP"
         }
     ],
-    "stac_extensions": [],
     "gee:terms_of_use": "Most U.S. Geological Survey (USGS) information resides\nin the public domain and may be used without restriction. Additional\ninformation on [Acknowledging or Crediting USGS as Information\nSource](https://www.usgs.gov/information-policies-and-instructions/crediting-usgs)\nis available.\n",
     "gee:type": "table",
     "gee:user_uploaded": true,
+    "title": "USGS 3DEP National Map Spatial Metadata 1/3 Arc-Second (10m)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -171,
+                    -16.6,
+                    164,
+                    76.9
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1998-08-16T00:00:00Z",
+                    "2020-05-06T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "3dep",
         "usgs"
@@ -117,27 +138,5 @@
                 ".minZoomLevel DESC"
             ]
         }
-    },
-    "title": "USGS 3DEP National Map Spatial Metadata 1/3 Arc-Second (10m)",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -171,
-                    -16.6,
-                    164,
-                    76.9
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1998-08-16T00:00:00Z",
-                    "2020-05-06T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

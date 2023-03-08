@@ -46,6 +46,30 @@
     ],
     "gee:terms_of_use": "Most U.S. Geological Survey (USGS) information resides\nin the public domain and may be used without restriction. Additional\ninformation on [Acknowledging or Crediting USGS as Information\nSource](https://www.usgs.gov/information-policies-and-instructions/crediting-usgs) is available.\n",
     "gee:type": "image",
+    "sci:citation": "Gould, W. A. C. Alarcon, B. Fevold, M.E. Jimenez, S. Martinuzzi, G. Potts, M. Quinones,\nM. Solorzona, E. Ventosa.  2008.  The Puerto Rico Gap Analysis Project. Volume 1: Land cover,\nvertebrate species distribution, and land stewardship.  Gen. Tech. Rep. IITF-GRT-39. Rio\nPiedras, Pr.  USDA, Forest Service, International Institute of Tropical Forestery.  165. p.\n",
+    "version": "2001",
+    "title": "USGS GAP Puerto Rico 2001",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -67.96,
+                    17.87,
+                    -65.22,
+                    18.53
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2002-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "gap",
         "landcover",
@@ -70,7 +94,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_GAP_PR_2001"
         }
     ],
-    "sci:citation": "Gould, W. A. C. Alarcon, B. Fevold, M.E. Jimenez, S. Martinuzzi, G. Potts, M. Quinones,\nM. Solorzona, E. Ventosa.  2008.  The Puerto Rico Gap Analysis Project. Volume 1: Land cover,\nvertebrate species distribution, and land stewardship.  Gen. Tech. Rep. IITF-GRT-39. Rio\nPiedras, Pr.  USDA, Forest Service, International Institute of Tropical Forestery.  165. p.\n",
     "summaries": {
         "eo:bands": [
             {
@@ -390,28 +413,5 @@
             "minimum": 1,
             "maximum": 70
         }
-    },
-    "title": "USGS GAP Puerto Rico 2001",
-    "version": "2001",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -67.96,
-                    17.87,
-                    -65.22,
-                    18.53
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2001-01-01T00:00:00Z",
-                    "2002-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

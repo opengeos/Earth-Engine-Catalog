@@ -56,6 +56,30 @@
     "gee:type": "image",
     "gee:unusual_terms_of_use": true,
     "gee:user_uploaded": true,
+    "sci:citation": "Tomislav Hengl. (2018). Soil pH in H2O at 6 standard depths (0, 10, 30, 60, 100 and 200 cm) at 250 m resolution (Version v02) [Data set]. Zenodo.\n[10.5281/zenodo.1475459](https://doi.org/10.5281/zenodo.1475459)\n",
+    "sci:doi": "10.5281/zenodo.1475459",
+    "title": "OpenLandMap Soil pH in H2O",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1950-01-01T00:00:00Z",
+                    "2018-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-SA-4.0",
     "keywords": [
         "envirometrix",
         "opengeohub",
@@ -80,8 +104,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_SOL_SOL_PH-H2O_USDA-4C1A2A_M_v02"
         }
     ],
-    "sci:citation": "Tomislav Hengl. (2018). Soil pH in H2O at 6 standard depths (0, 10, 30, 60, 100 and 200 cm) at 250 m resolution (Version v02) [Data set]. Zenodo.\n[10.5281/zenodo.1475459](https://doi.org/10.5281/zenodo.1475459)\n",
-    "sci:doi": "10.5281/zenodo.1475459",
     "summaries": {
         "eo:bands": [
             {
@@ -207,27 +229,5 @@
             "minimum": 42,
             "maximum": 110
         }
-    },
-    "title": "OpenLandMap Soil pH in H2O",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1950-01-01T00:00:00Z",
-                    "2018-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-SA-4.0"
+    }
 }

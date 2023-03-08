@@ -45,6 +45,29 @@
     ],
     "gee:terms_of_use": "HydroSHEDS data are free for non-commercial and commercial\nuse. For more information, please refer to the [License Agreement](https://www.hydrosheds.org/page/license).\n",
     "gee:type": "image",
+    "sci:citation": "Lehner, B., Verdin, K., Jarvis, A. (2008): New global hydrography\nderived from spaceborne elevation data. Eos, Transactions, AGU,\n89(10): 93-94.\n",
+    "title": "WWF HydroSHEDS Hydrologically Conditioned DEM, 30 Arc-Seconds",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -67.3,
+                    180,
+                    60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-11T00:00:00Z",
+                    "2000-02-22T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "conditioned",
         "dem",
@@ -75,7 +98,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/WWF_HydroSHEDS_30CONDEM"
         }
     ],
-    "sci:citation": "Lehner, B., Verdin, K., Jarvis, A. (2008): New global hydrography\nderived from spaceborne elevation data. Eos, Transactions, AGU,\n89(10): 93-94.\n",
     "summaries": {
         "eo:bands": [
             {
@@ -117,27 +139,5 @@
             "minimum": -415,
             "maximum": 8247
         }
-    },
-    "title": "WWF HydroSHEDS Hydrologically Conditioned DEM, 30 Arc-Seconds",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -67.3,
-                    180,
-                    60
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2000-02-11T00:00:00Z",
-                    "2000-02-22T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

@@ -52,6 +52,30 @@
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "sci:citation": "d'Andrimont, R., Verhegghen, A., Lemoine, G., Kempeneers, P., Meroni, M.,\n& Van der Velde, M. (2021). From parcel to continental scale-A first\nEuropean crop type map based on Sentinel-1 and LUCAS Copernicus in-situ\nobservations. Remote sensing of environment, 266, 112708.\n",
+    "version": "V1",
+    "title": "EUCROPMAP 2018",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -16.171875,
+                    34.313433,
+                    36.386719,
+                    72.182526
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-01-01T00:00:00Z",
+                    "2019-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
     "keywords": [
         "crop",
         "eu",
@@ -76,7 +100,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/JRC_D5_EUCROPMAP_V1"
         }
     ],
-    "sci:citation": "d'Andrimont, R., Verhegghen, A., Lemoine, G., Kempeneers, P., Meroni, M.,\n& Van der Velde, M. (2021). From parcel to continental scale-A first\nEuropean crop type map based on Sentinel-1 and LUCAS Copernicus in-situ\nobservations. Remote sensing of environment, 266, 112708.\n",
     "summaries": {
         "eo:bands": [
             {
@@ -234,28 +257,5 @@
         "gsd": [
             10
         ]
-    },
-    "title": "EUCROPMAP 2018",
-    "version": "V1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -16.171875,
-                    34.313433,
-                    36.386719,
-                    72.182526
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2018-01-01T00:00:00Z",
-                    "2019-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-4.0"
+    }
 }

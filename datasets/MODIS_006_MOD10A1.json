@@ -58,6 +58,31 @@
     ],
     "gee:terms_of_use": "You may download and use photographs, imagery, or text\nfrom the NSIDC web site, unless limitations for its use are specifically\nstated. For more information on usage and citing NSIDC datasets,\nplease visit the [NSIDC 'Use and Copyright' page](https://nsidc.org/about/use_copyright.html).\n",
     "gee:type": "image_collection",
+    "sci:citation": "Hall, D. K., V. V. Salomonson, and G. A. Riggs. 2016. MODIS/Terra\nSnow Cover Daily L3 Global 500m Grid. Version 6. Boulder, Colorado\nUSA: NASA National Snow and Ice Data Center Distributed Active\nArchive Center.\n",
+    "sci:doi": "10.5067/MODIS/MOD10A1.006",
+    "version": "V006",
+    "title": "MOD10A1.006 Terra Snow Cover Daily Global 500m",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-24T00:00:00Z",
+                    "2023-02-17T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "albedo",
         "daily",
@@ -87,8 +112,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD10A1"
         }
     ],
-    "sci:citation": "Hall, D. K., V. V. Salomonson, and G. A. Riggs. 2016. MODIS/Terra\nSnow Cover Daily L3 Global 500m Grid. Version 6. Boulder, Colorado\nUSA: NASA National Snow and Ice Data Center Distributed Active\nArchive Center.\n",
-    "sci:doi": "10.5067/MODIS/MOD10A1.006",
     "summaries": {
         "eo:bands": [
             {
@@ -404,28 +427,5 @@
             "minimum": 1,
             "maximum": 100
         }
-    },
-    "title": "MOD10A1.006 Terra Snow Cover Daily Global 500m",
-    "version": "V006",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2000-02-24T00:00:00Z",
-                    "2023-02-17T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

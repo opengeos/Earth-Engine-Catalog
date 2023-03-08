@@ -61,6 +61,30 @@
     },
     "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "version": "V061",
+    "title": "MCD43C3.061 BRDF/Albedo Daily L3 0.05 Deg CMG",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-24T00:00:00Z",
+                    "2023-02-22T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "albedo",
         "black_sky",
@@ -89,7 +113,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD43C3"
         }
     ],
-    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
     "summaries": {
         "gee:visualizations": [
             {
@@ -220,28 +243,5 @@
             "minimum": 0,
             "maximum": 100
         }
-    },
-    "title": "MCD43C3.061 BRDF/Albedo Daily L3 0.05 Deg CMG",
-    "version": "V061",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2000-02-24T00:00:00Z",
-                    "2023-02-22T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

@@ -53,6 +53,30 @@
     "gee:type": "image_collection",
     "gee:unusual_terms_of_use": true,
     "gee:user_uploaded": true,
+    "sci:citation": "Global Fishing Watch, \"Tracking the Global Footprint of Fisheries.\" Science 361.6378 (2018).",
+    "version": "V1",
+    "title": "GFW (Global Fishing Watch) Daily Vessel Hours",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-01-01T00:00:00Z",
+                    "2017-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-SA-4.0",
     "keywords": [
         "fishing",
         "gfw",
@@ -77,7 +101,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/GFW_GFF_V1_vessel_hours"
         }
     ],
-    "sci:citation": "Global Fishing Watch, \"Tracking the Global Footprint of Fisheries.\" Science 361.6378 (2018).",
     "summaries": {
         "eo:bands": [
             {
@@ -144,28 +167,5 @@
         "gsd": [
             1113.2
         ]
-    },
-    "title": "GFW (Global Fishing Watch) Daily Vessel Hours",
-    "version": "V1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2012-01-01T00:00:00Z",
-                    "2017-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-SA-4.0"
+    }
 }

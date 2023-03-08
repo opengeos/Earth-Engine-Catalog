@@ -51,6 +51,29 @@
     "gee:terms_of_use": "[CC-BY-NC-SA-4.0](https://spdx.org/licenses/CC-BY-NC-SA-4.0.html)",
     "gee:type": "image_collection",
     "gee:unusual_terms_of_use": true,
+    "sci:citation": "Weiss, D.J., P.M. Atkinson, S. Bhatt, B. Mappin, S.I. Hay & P.W. Gething\n(2014) An effective approach for gap-filling continental scale remotely\nsensed time-series. ISPRS Journal of Photogrammetry and Remote Sensing,\n98, 106-118.\n",
+    "title": "Oxford MAP EVI: Malaria Atlas Project Gap-Filled Enhanced Vegetation Index",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-02-01T00:00:00Z",
+                    "2015-06-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-NC-SA-4.0",
     "keywords": [
         "evi",
         "map",
@@ -74,7 +97,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/Oxford_MAP_EVI_5km_Monthly"
         }
     ],
-    "sci:citation": "Weiss, D.J., P.M. Atkinson, S. Bhatt, B. Mappin, S.I. Hay & P.W. Gething\n(2014) An effective approach for gap-filling continental scale remotely\nsensed time-series. ISPRS Journal of Photogrammetry and Remote Sensing,\n98, 106-118.\n",
     "summaries": {
         "eo:bands": [
             {
@@ -132,27 +154,5 @@
             "minimum": 0,
             "maximum": 1
         }
-    },
-    "title": "Oxford MAP EVI: Malaria Atlas Project Gap-Filled Enhanced Vegetation Index",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2001-02-01T00:00:00Z",
-                    "2015-06-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-NC-SA-4.0"
+    }
 }

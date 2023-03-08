@@ -53,6 +53,30 @@
     ],
     "gee:terms_of_use": "It is not necessary to obtain written permission to\nuse ETOPO1 or other NOAA products that are in the public domain,\nnor are there any fees for using them. We ask only that you cite\nNCEI as source.\n",
     "gee:type": "image",
+    "sci:citation": "Amante, C. and B. W. Eakins, ETOPO1 1 Arc-Minute Global Relief\nModel: Procedures, Data Sources and Analysis. NOAA Technical Memorandum\nNESDIS NGDC-24, 19 pp, March 2009.\n",
+    "sci:doi": "10.7289/V5C8276M",
+    "title": "ETOPO1: Global 1 Arc-Minute Elevation",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2008-08-01T00:00:00Z",
+                    "2008-08-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "bedrock",
         "dem",
@@ -79,8 +103,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_NGDC_ETOPO1"
         }
     ],
-    "sci:citation": "Amante, C. and B. W. Eakins, ETOPO1 1 Arc-Minute Global Relief\nModel: Procedures, Data Sources and Analysis. NOAA Technical Memorandum\nNESDIS NGDC-24, 19 pp, March 2009.\n",
-    "sci:doi": "10.7289/V5C8276M",
     "summaries": {
         "eo:bands": [
             {
@@ -135,27 +157,5 @@
             "minimum": -10898,
             "maximum": 8271
         }
-    },
-    "title": "ETOPO1: Global 1 Arc-Minute Elevation",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2008-08-01T00:00:00Z",
-                    "2008-08-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

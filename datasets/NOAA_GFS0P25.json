@@ -50,41 +50,6 @@
     },
     "gee:terms_of_use": "NOAA data, information, and products, regardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use. The\nforgoing data is in the public domain and is being provided without\nrestriction on use and distribution.\n",
     "gee:type": "image_collection",
-    "keywords": [
-        "climate",
-        "cloud",
-        "emc",
-        "flux",
-        "forecast",
-        "geophysical",
-        "gfs",
-        "humidity",
-        "ncep",
-        "noaa",
-        "precipitation",
-        "radiation",
-        "temperature",
-        "vapor",
-        "weather",
-        "wind"
-    ],
-    "providers": [
-        {
-            "name": "NOAA/NCEP/EMC",
-            "roles": [
-                "licensor",
-                "producer"
-            ],
-            "url": "https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-forcast-system-gfs"
-        },
-        {
-            "name": "Google Earth Engine",
-            "roles": [
-                "host"
-            ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_GFS0P25"
-        }
-    ],
     "sci:citation": "Alpert, J., 2006 Sub-Grid Scale Mountain Blocking at NCEP, 20th Conf.\nWAF/16 Conf. NWP P2.4.",
     "sci:publications": [
         {
@@ -162,6 +127,63 @@
         },
         {
             "citation": "Yang, F., K. Mitchell, Y. Hou, Y. Dai, X. Zeng, Z. Wang, and X. Liang,\n2008: Dependence of land surface albedo on solar zenith angle: observations\nand model parameterizations. Journal of Applied Meteorology and\nClimatology.No.11, Vol 47, 2963-2982.\n"
+        }
+    ],
+    "title": "GFS: Global Forecast System 384-Hour Predicted Atmosphere Data",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-07-01T00:00:00Z",
+                    "2023-03-07T12:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "climate",
+        "cloud",
+        "emc",
+        "flux",
+        "forecast",
+        "geophysical",
+        "gfs",
+        "humidity",
+        "ncep",
+        "noaa",
+        "precipitation",
+        "radiation",
+        "temperature",
+        "vapor",
+        "weather",
+        "wind"
+    ],
+    "providers": [
+        {
+            "name": "NOAA/NCEP/EMC",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-forcast-system-gfs"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_GFS0P25"
         }
     ],
     "summaries": {
@@ -299,27 +321,5 @@
             "minimum": -63.78,
             "maximum": 59.39
         }
-    },
-    "title": "GFS: Global Forecast System 384-Hour Predicted Atmosphere Data",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2015-07-01T00:00:00Z",
-                    "2023-03-06T12:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

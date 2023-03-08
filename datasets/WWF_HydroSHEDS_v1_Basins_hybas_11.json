@@ -52,6 +52,34 @@
     "gee:terms_of_use": "HydroSHEDS data are free for non-commercial and commercial\nuse. For more information, please refer to the [License Agreement](https://www.hydrosheds.org/page/license).\n",
     "gee:type": "table",
     "gee:user_uploaded": true,
+    "sci:citation": "Lehner, B., Verdin, K., Jarvis, A. (2008): New global hydrography\nderived from spaceborne elevation data. Eos, Transactions, AGU,\n89(10): 93-94.\n",
+    "sci:publications": [
+        {
+            "citation": "Lehner, B., Grill G. (2013): Global river hydrography and network routing: baseline data and\nnew approaches to study the world's large river systems. Hydrological Processes, 27(15):\n2171-2186. Data is available at www.hydrosheds.org\n"
+        }
+    ],
+    "title": "WWF HydroSHEDS Basins Level 11",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-11T00:00:00Z",
+                    "2000-02-22T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "geophysical",
         "hydrography",
@@ -77,12 +105,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/WWF_HydroSHEDS_v1_Basins_hybas_11"
-        }
-    ],
-    "sci:citation": "Lehner, B., Verdin, K., Jarvis, A. (2008): New global hydrography\nderived from spaceborne elevation data. Eos, Transactions, AGU,\n89(10): 93-94.\n",
-    "sci:publications": [
-        {
-            "citation": "Lehner, B., Grill G. (2013): Global river hydrography and network routing: baseline data and\nnew approaches to study the world's large river systems. Hydrological Processes, 27(15):\n2171-2186. Data is available at www.hydrosheds.org\n"
         }
     ],
     "summaries": {
@@ -179,27 +201,5 @@
             ],
             "thinning_strategy": "HIGHER_DENSITY"
         }
-    },
-    "title": "WWF HydroSHEDS Basins Level 11",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2000-02-11T00:00:00Z",
-                    "2000-02-22T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

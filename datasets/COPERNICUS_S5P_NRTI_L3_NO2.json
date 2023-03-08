@@ -49,6 +49,28 @@
     },
     "gee:terms_of_use": "The use of Sentinel data is governed by the [Copernicus\nSentinel Data Terms and Conditions.](https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice)\n",
     "gee:type": "image_collection",
+    "title": "Sentinel-5P NRTI NO2: Near Real-Time Nitrogen Dioxide",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-07-10T10:05:44Z",
+                    "2023-03-07T02:38:01Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "air_quality",
         "copernicus",
@@ -333,27 +355,5 @@
             "minimum": -0.00064,
             "maximum": 0.0096
         }
-    },
-    "title": "Sentinel-5P NRTI NO2: Near Real-Time Nitrogen Dioxide",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2018-07-10T10:05:44Z",
-                    "2023-03-05T03:13:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

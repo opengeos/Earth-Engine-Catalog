@@ -50,6 +50,29 @@
     },
     "gee:terms_of_use": "This dataset is freely available with no restrictions.",
     "gee:type": "image_collection",
+    "sci:citation": "J. A. Cummings and O. M. Smedstad. 2013: Variational Data Assimilation for\nthe Global Ocean. Data Assimilation for Atmospheric, Oceanic and Hydrologic\nApplications vol II, chapter 13, 303-343.\n",
+    "title": "HYCOM: Hybrid Coordinate Ocean Model, Water Velocity",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -80.48,
+                    180,
+                    80.48
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1992-10-02T00:00:00Z",
+                    "2023-03-07T09:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "hycom",
         "nopp",
@@ -74,7 +97,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/HYCOM_sea_water_velocity"
         }
     ],
-    "sci:citation": "J. A. Cummings and O. M. Smedstad. 2013: Variational Data Assimilation for\nthe Global Ocean. Data Assimilation for Atmospheric, Oceanic and Hydrologic\nApplications vol II, chapter 13, 303-343.\n",
     "summaries": {
         "gee:schema": [
             {
@@ -431,27 +453,5 @@
             "minimum": -2577,
             "maximum": 20958
         }
-    },
-    "title": "HYCOM: Hybrid Coordinate Ocean Model, Water Velocity",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -80.48,
-                    180,
-                    80.48
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1992-10-02T00:00:00Z",
-                    "2023-03-05T09:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

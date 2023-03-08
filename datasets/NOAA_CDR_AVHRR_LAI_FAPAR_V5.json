@@ -55,6 +55,31 @@
     },
     "gee:terms_of_use": "The NOAA CDR Program's official distribution point for CDRs is NOAA's\nNational Climatic Data Center which provides sustained, open access and\nactive data management of the CDR packages and related information in\nkeeping with the United States' open data policies and practices as\ndescribed in the President's Memorandum on \\\"Open Data Policy\\\" and pursuant\nto the Executive Order of May 9, 2013, \\\"Making Open and Machine Readable\nthe New Default for Government Information\\\". In line with these policies,\nthe CDR data sets are nonproprietary, publicly available, and no\nrestrictions are placed upon their use. For more information, see the\n[Fair Use of NOAA's CDR Data Sets, Algorithms and Documentation](https://www1.ncdc.noaa.gov/pub/data/sds/cdr/CDRs/Aerosol_Optical_Thickness/UseAgreement_01B-04.pdf)\npdf.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Martin Claverie, Eric Vermote, and NOAA CDR Program (2014): NOAA Climate\nData Record (CDR) of Leaf Area Index (LAI) and Fraction of Absorbed\nPhotosynthetically Active Radiation (FAPAR), Version 4. [indicate subset\nused]. NOAA National Climatic Data Center.\n[doi:10.7289/V5M043BX](https://data.nodc.noaa.gov/cgi-bin/iso?id=gov.noaa.ncdc:C00898)\n",
+    "sci:doi": "10.7289/V5M043BX",
+    "version": "5",
+    "title": "NOAA CDR AVHRR LAI FAPAR: Leaf Area Index and Fraction of Absorbed Photosynthetically Active Radiation, Version 5",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1981-06-24T00:00:00Z",
+                    "2013-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "avhrr",
         "cdr",
@@ -81,8 +106,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_AVHRR_LAI_FAPAR_V5"
         }
     ],
-    "sci:citation": "Martin Claverie, Eric Vermote, and NOAA CDR Program (2014): NOAA Climate\nData Record (CDR) of Leaf Area Index (LAI) and Fraction of Absorbed\nPhotosynthetically Active Radiation (FAPAR), Version 4. [indicate subset\nused]. NOAA National Climatic Data Center.\n[doi:10.7289/V5M043BX](https://data.nodc.noaa.gov/cgi-bin/iso?id=gov.noaa.ncdc:C00898)\n",
-    "sci:doi": "10.7289/V5M043BX",
     "summaries": {
         "eo:bands": [
             {
@@ -238,28 +261,5 @@
             "minimum": 0,
             "maximum": 6205
         }
-    },
-    "title": "NOAA CDR AVHRR LAI FAPAR: Leaf Area Index and Fraction of Absorbed Photosynthetically Active Radiation, Version 5",
-    "version": "5",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1981-06-24T00:00:00Z",
-                    "2013-12-31T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

@@ -53,6 +53,28 @@
     ],
     "gee:terms_of_use": "Licensed under the\n[Open Government Licence - Canada](https://open.canada.ca/en/open-government-licence-canada).\n",
     "gee:type": "image_collection",
+    "title": "Canadian Digital Elevation Model",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -142,
+                    41,
+                    -52,
+                    84
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1945-01-01T00:00:00Z",
+                    "2011-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "OGL-Canada-2.0",
     "keywords": [
         "canada",
         "cdem",
@@ -122,27 +144,5 @@
             "minimum": -226,
             "maximum": 5944
         }
-    },
-    "title": "Canadian Digital Elevation Model",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -142,
-                    41,
-                    -52,
-                    84
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1945-01-01T00:00:00Z",
-                    "2011-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "OGL-Canada-2.0"
+    }
 }

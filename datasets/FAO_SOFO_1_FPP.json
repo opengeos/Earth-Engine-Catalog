@@ -52,6 +52,36 @@
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "sci:citation": "[FAO 2022. The State of the World's Forests (SOFO) - Forest pathways for green recovery and building inclusive, resilient and sustainable economies. FAO, Rome.](https://www.fao.org/documents/card/en/c/cb9360en)\n",
+    "sci:publications": [
+        {
+            "citation": "Newton, P., Castle, S.E., Kinzer, A.T., Miller, D.C., Oldekop, J.A.,\nLinhares-Juvenal, T., Pina, L., Madrid, M., & de Lamo, J. 2022.\nThe number of forest- and tree-proximate people: a new methodology\nand global estimates, One Earth, 2020\n[10.1016/j.oneear.2020.08.016](https://doi.org/10.1016/j.oneear.2020.08.016),\n",
+            "doi": "10.1016/j.oneear.2020.08.016"
+        }
+    ],
+    "version": "1.0",
+    "title": "Forest proximate people (FPP)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-01-01T00:00:00Z",
+                    "2019-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
     "keywords": [
         "agriculture",
         "fao",
@@ -83,13 +113,6 @@
                 "host"
             ],
             "url": "https://developers.google.com/earth-engine/datasets/catalog/FAO_SOFO_1_FPP"
-        }
-    ],
-    "sci:citation": "[FAO 2022. The State of the World's Forests (SOFO) - Forest pathways for green recovery and building inclusive, resilient and sustainable economies. FAO, Rome.](https://www.fao.org/documents/card/en/c/cb9360en)\n",
-    "sci:publications": [
-        {
-            "citation": "Newton, P., Castle, S.E., Kinzer, A.T., Miller, D.C., Oldekop, J.A.,\nLinhares-Juvenal, T., Pina, L., Madrid, M., & de Lamo, J. 2022.\nThe number of forest- and tree-proximate people: a new methodology\nand global estimates, One Earth, 2020\n[10.1016/j.oneear.2020.08.016](https://doi.org/10.1016/j.oneear.2020.08.016),\n",
-            "doi": "10.1016/j.oneear.2020.08.016"
         }
     ],
     "summaries": {
@@ -136,28 +159,5 @@
         "gsd": [
             0.0009
         ]
-    },
-    "title": "Forest proximate people (FPP)",
-    "version": "1.0",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2019-01-01T00:00:00Z",
-                    "2019-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-4.0"
+    }
 }

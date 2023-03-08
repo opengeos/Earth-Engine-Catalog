@@ -50,6 +50,29 @@
     },
     "gee:terms_of_use": "The data set is in the public domain as licensed under the Creative Commons\nPublic Domain (CC0) license.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch, 2018,\nTerraclimate, a high-resolution global dataset of monthly climate and\nclimatic water balance from 1958-2015, Scientific Data 5:170191,\n[doi:10.1038/sdata.2017.191](https://doi.org/10.1038/sdata.2017.191)\n",
+    "title": "TerraClimate:  Monthly Climate and Climatic Water Balance for Global Terrestrial Surfaces, University of Idaho",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1958-01-01T00:00:00Z",
+                    "2021-12-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
     "keywords": [
         "climate",
         "drought",
@@ -83,7 +106,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/IDAHO_EPSCOR_TERRACLIMATE"
         }
     ],
-    "sci:citation": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch, 2018,\nTerraclimate, a high-resolution global dataset of monthly climate and\nclimatic water balance from 1958-2015, Scientific Data 5:170191,\n[doi:10.1038/sdata.2017.191](https://doi.org/10.1038/sdata.2017.191)\n",
     "summaries": {
         "eo:bands": [
             {
@@ -273,27 +295,5 @@
             "minimum": 0,
             "maximum": 2923
         }
-    },
-    "title": "TerraClimate:  Monthly Climate and Climatic Water Balance for Global Terrestrial Surfaces, University of Idaho",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1958-01-01T00:00:00Z",
-                    "2021-12-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC0-1.0"
+    }
 }

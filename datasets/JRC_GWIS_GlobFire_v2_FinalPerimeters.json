@@ -60,6 +60,31 @@
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "table",
     "gee:user_uploaded": true,
+    "sci:citation": "Art\u00e9s, T., Oom, D., De Rigo, D., Durrant, T. H., Maianti, P., Libert\u00e0, G., &\nSan-Miguel-Ayanz, J. (2019). A global wildfire dataset for the analysis of\nfire regimes and fire behaviour. Scientific data, 6(1), 1-11.\n[doi:10.1038/s41597-019-0312-2](https://doi.org/10.1038/s41597-019-0312-2)\n",
+    "sci:doi": "10.1038/s41597-019-0312-2",
+    "version": "v2",
+    "title": "GlobFire Final Fire Event Detection Based on MCD64A1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2021-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
     "keywords": [
         "area",
         "burnt",
@@ -87,8 +112,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GWIS_GlobFire_v2_FinalPerimeters"
         }
     ],
-    "sci:citation": "Art\u00e9s, T., Oom, D., De Rigo, D., Durrant, T. H., Maianti, P., Libert\u00e0, G., &\nSan-Miguel-Ayanz, J. (2019). A global wildfire dataset for the analysis of\nfire regimes and fire behaviour. Scientific data, 6(1), 1-11.\n[doi:10.1038/s41597-019-0312-2](https://doi.org/10.1038/s41597-019-0312-2)\n",
-    "sci:doi": "10.1038/s41597-019-0312-2",
     "summaries": {
         "gee:schema": [
             {
@@ -146,28 +169,5 @@
             "max_features_per_tile": 1500,
             "thinning_strategy": "HIGHER_DENSITY"
         }
-    },
-    "title": "GlobFire Final Fire Event Detection Based on MCD64A1",
-    "version": "v2",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2001-01-01T00:00:00Z",
-                    "2021-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-4.0"
+    }
 }

@@ -56,6 +56,30 @@
     ],
     "gee:terms_of_use": "This dataset is licensed under\n[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) and requires the\nfollowing attribution: \"This dataset is produced for the Dynamic World\nProject by Google in partnership with National Geographic Society and the\nWorld Resources Institute.\"\n\nContains modified Copernicus Sentinel data [2015-present].\nSee the\n[Sentinel Data Legal Notice](https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice).\n",
     "gee:type": "image_collection",
+    "sci:citation": "Brown, C.F., Brumby, S.P., Guzder-Williams, B. et al. Dynamic World, Near\nreal-time global 10 m land use land cover mapping. Sci Data 9, 251 (2022).\n[doi:10.1038/s41597-022-01307-4](https://doi.org/10.1038/s41597-022-01307-4)\n",
+    "version": "V1",
+    "title": "Dynamic World V1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-06-23T00:00:00Z",
+                    "2023-03-07T13:13:36Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
     "keywords": [
         "global",
         "google",
@@ -89,7 +113,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_DYNAMICWORLD_V1"
         }
     ],
-    "sci:citation": "Brown, C.F., Brumby, S.P., Guzder-Williams, B. et al. Dynamic World, Near\nreal-time global 10 m land use land cover mapping. Sci Data 9, 251 (2022).\n[doi:10.1038/s41597-022-01307-4](https://doi.org/10.1038/s41597-022-01307-4)\n",
     "summaries": {
         "eo:bands": [
             {
@@ -269,28 +292,5 @@
             "minimum": 0,
             "maximum": 1
         }
-    },
-    "title": "Dynamic World V1",
-    "version": "V1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2015-06-23T00:00:00Z",
-                    "2023-03-06T12:23:51Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-4.0"
+    }
 }

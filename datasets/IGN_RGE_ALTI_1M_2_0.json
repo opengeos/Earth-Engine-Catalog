@@ -46,6 +46,30 @@
     ],
     "gee:terms_of_use": "[etalab-2.0](https://spdx.org/licenses/etalab-2.0.html)",
     "gee:type": "image_collection",
+    "sci:citation": "IGN (2021). RGE ALTI 1m [Data set]. Accessed 2022-07-01 from\n[IGN website](https://geoservices.ign.fr/rgealti#telechargement1m)\n",
+    "version": "2.0",
+    "title": "RGE ALTI: IGN RGE ALTI Digital Elevation 1m",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -5.2,
+                    41.35,
+                    9.85,
+                    51.14
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2009-01-01T00:00:00Z",
+                    "2021-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "etalab-2.0",
     "keywords": [
         "dem",
         "elevation",
@@ -68,7 +92,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/IGN_RGE_ALTI_1M_2_0"
         }
     ],
-    "sci:citation": "IGN (2021). RGE ALTI 1m [Data set]. Accessed 2022-07-01 from\n[IGN website](https://geoservices.ign.fr/rgealti#telechargement1m)\n",
     "summaries": {
         "eo:bands": [
             {
@@ -128,28 +151,5 @@
             "minimum": -40,
             "maximum": 4810
         }
-    },
-    "title": "RGE ALTI: IGN RGE ALTI Digital Elevation 1m",
-    "version": "2.0",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -5.2,
-                    41.35,
-                    9.85,
-                    51.14
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2009-01-01T00:00:00Z",
-                    "2021-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "etalab-2.0"
+    }
 }

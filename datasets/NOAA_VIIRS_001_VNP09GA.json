@@ -58,6 +58,31 @@
     ],
     "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)",
+    "sci:doi": "10.5067/VIIRS/VNP09GA.001",
+    "version": "V001",
+    "title": "VNP09GA: VIIRS Surface Reflectance Daily 500m and 1km",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-01-19T00:00:00Z",
+                    "2023-03-06T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "daily",
         "nasa",
@@ -85,8 +110,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP09GA"
         }
     ],
-    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)",
-    "sci:doi": "10.5067/VIIRS/VNP09GA.001",
     "summaries": {
         "gee:visualizations": [
             {
@@ -207,28 +230,5 @@
             "minimum": 0,
             "maximum": 15
         }
-    },
-    "title": "VNP09GA: VIIRS Surface Reflectance Daily 500m and 1km",
-    "version": "V001",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2012-01-19T00:00:00Z",
-                    "2023-03-05T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

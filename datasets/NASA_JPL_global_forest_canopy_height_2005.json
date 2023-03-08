@@ -45,6 +45,29 @@
     ],
     "gee:terms_of_use": "Most materials published on the Earth Observatory, including images, are\nfreely available for re-publication or re-use, including commercial\npurposes, except for where copyright is indicated.\n\nNASA's Earth Observatory must be given credit for its original materials;\nthe only mandatory credit is NASA.\n\nFor more information about using NASA imagery visit the [Earth Observatory\nImage Use Policy](https://earthobservatory.nasa.gov/ImageUse/) site.\n",
     "gee:type": "image",
+    "sci:citation": "Simard, M., Pinto, N., Fisher, J., Baccini, A. 2011. Mapping forest\ncanopy height globally with spaceborne lidar. Journal of Geophysical\nResearch. 116: G04021. [doi:10.1029/2011JG001708]\n(https://doi.org/10.1029/2011JG001708)\n",
+    "title": "Global Forest Canopy Height, 2005",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2005-05-20T00:00:00Z",
+                    "2005-06-23T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "canopy",
         "forest",
@@ -70,7 +93,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_JPL_global_forest_canopy_height_2005"
         }
     ],
-    "sci:citation": "Simard, M., Pinto, N., Fisher, J., Baccini, A. 2011. Mapping forest\ncanopy height globally with spaceborne lidar. Journal of Geophysical\nResearch. 116: G04021. [doi:10.1029/2011JG001708]\n(https://doi.org/10.1029/2011JG001708)\n",
     "summaries": {
         "eo:bands": [
             {
@@ -120,27 +142,5 @@
             "minimum": 0,
             "maximum": 73
         }
-    },
-    "title": "Global Forest Canopy Height, 2005",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2005-05-20T00:00:00Z",
-                    "2005-06-23T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

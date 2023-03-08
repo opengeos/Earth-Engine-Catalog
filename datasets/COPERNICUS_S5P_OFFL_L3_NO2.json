@@ -49,6 +49,28 @@
     },
     "gee:terms_of_use": "The use of Sentinel data is governed by the [Copernicus\nSentinel Data Terms and Conditions.](https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice)\n",
     "gee:type": "image_collection",
+    "title": "Sentinel-5P OFFL NO2: Offline Nitrogen Dioxide",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-06-28T10:24:07Z",
+                    "2023-02-26T21:38:06Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "air_quality",
         "copernicus",
@@ -333,27 +355,5 @@
             "minimum": -0.0005375,
             "maximum": 0.0192044
         }
-    },
-    "title": "Sentinel-5P OFFL NO2: Offline Nitrogen Dioxide",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2018-06-28T10:24:07Z",
-                    "2023-02-24T20:34:27Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

@@ -55,6 +55,29 @@
     },
     "gee:terms_of_use": "NASA promotes the full and open sharing of all data with research and\napplications communities, private industry, academia, and the general\npublic.\n",
     "gee:type": "image_collection",
+    "version": "5.12.4",
+    "title": "MERRA-2 M2T1NXLND: Land Surface Diagnostics V5.12.4",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1980-01-01T00:00:00Z",
+                    "2023-02-01T23:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "evaporation",
         "ice",
@@ -312,28 +335,5 @@
             "minimum": -0.001769,
             "maximum": 0.012293
         }
-    },
-    "title": "MERRA-2 M2T1NXLND: Land Surface Diagnostics V5.12.4",
-    "version": "5.12.4",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1980-01-01T00:00:00Z",
-                    "2023-02-01T23:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

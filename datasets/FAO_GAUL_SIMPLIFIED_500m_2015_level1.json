@@ -46,10 +46,31 @@
             "title": "FAO"
         }
     ],
-    "stac_extensions": [],
     "gee:terms_of_use": "The GAUL dataset is distributed to the United Nations and other authorized\ninternational and national institutions/agencies. FAO grants a license to\nuse, download and print the materials contained in the GAUL dataset solely\nfor non-commercial purposes and in accordance with the conditions specified\nin the data license.\n[The full GAUL Data License document](https://developers.google.com/earth-engine/datasets/catalog/DataLicenseGAUL2015.pdf)\nis available for downloading. See also\n[the disclaimer](https://developers.google.com/earth-engine/datasets/catalog/DisclaimerGAUL2015.pdf).\n",
     "gee:type": "table",
     "gee:unusual_terms_of_use": true,
+    "title": "FAO GAUL 500m: Global Administrative Unit Layers 2015, First-Level Administrative Units",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-12-19T16:45:00Z",
+                    "2014-12-19T16:45:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "borders",
         "departments",
@@ -201,27 +222,5 @@
             ],
             "thinning_strategy": "HIGHER_DENSITY"
         }
-    },
-    "title": "FAO GAUL 500m: Global Administrative Unit Layers 2015, First-Level Administrative Units",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2014-12-19T16:45:00Z",
-                    "2014-12-19T16:45:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

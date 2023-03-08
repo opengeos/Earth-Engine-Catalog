@@ -53,6 +53,31 @@
     "gee:terms_of_use": "Most U.S. Geological Survey (USGS) information is federally created data and\ntherefore reside in the public domain and may be used, transferred, or\nreproduced without copyright restriction.\nAdditional information on [Acknowledging or Crediting USGS as Information\nSource](https://www.usgs.gov/centers/eros/data-citation) is available.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "sci:citation": "Dewitz, J., and U.S. Geological Survey, 2021, National Land Cover Database (NLCD)\n2019 Products (ver. 2.0, June 2021): U.S. Geological Survey data release,\n[doi:10.5066/P9KZCM54](https://doi.org/10.5066/P9KZCM54)\n",
+    "sci:doi": "10.5066/P9KZCM54",
+    "version": "2.0",
+    "title": "NLCD 2019: USGS National Land Cover Database, 2019 release",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -130.24,
+                    21.75,
+                    -63.66,
+                    50
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2019-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
     "keywords": [
         "blm",
         "landcover",
@@ -77,8 +102,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_NLCD_RELEASES_2019_REL_NLCD"
         }
     ],
-    "sci:citation": "Dewitz, J., and U.S. Geological Survey, 2021, National Land Cover Database (NLCD)\n2019 Products (ver. 2.0, June 2021): U.S. Geological Survey data release,\n[doi:10.5066/P9KZCM54](https://doi.org/10.5066/P9KZCM54)\n",
-    "sci:doi": "10.5066/P9KZCM54",
     "summaries": {
         "eo:bands": [
             {
@@ -346,28 +369,5 @@
             "minimum": 11,
             "maximum": 95
         }
-    },
-    "title": "NLCD 2019: USGS National Land Cover Database, 2019 release",
-    "version": "2.0",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -130.24,
-                    21.75,
-                    -63.66,
-                    50
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2001-01-01T00:00:00Z",
-                    "2019-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC0-1.0"
+    }
 }

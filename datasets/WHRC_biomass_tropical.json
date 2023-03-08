@@ -45,6 +45,29 @@
     ],
     "gee:terms_of_use": "- The national level dataset is freely available for use for\n  scientific, conservation, and educational purposes.\n- Users acknowledge that they themselves are responsible for determining\n  whether the dataset is of sufficient quality and appropriateness for\n  their objectives.\n- Users agree that they will make reasonable efforts to provide appropriate\n  feedbacks and notification of any significant errors that they identify\n  in the dataset.\n",
     "gee:type": "image",
+    "sci:citation": "A. Baccini, S J. Goetz, W.S. Walker, N. T. Laporte, M. Sun, D.\nSulla-Menashe, J. Hackler, P.S.A. Beck, R. Dubayah, M.A. Friedl,\nS. Samanta and R. A. Houghton. Estimated carbon dioxide emissions\nfrom tropical deforestation improved by carbon-density maps. 2012\nNature Climate Change, [https://doi.org/10.1038/NCLIMATE1354]\n(https://doi.org/10.1038/NCLIMATE1354)\n",
+    "title": "WHRC Pantropical National Level Carbon Stock Dataset",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-01-29T00:00:00Z",
+                    "2012-01-29T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "aboveground",
         "biomass",
@@ -72,7 +95,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/WHRC_biomass_tropical"
         }
     ],
-    "sci:citation": "A. Baccini, S J. Goetz, W.S. Walker, N. T. Laporte, M. Sun, D.\nSulla-Menashe, J. Hackler, P.S.A. Beck, R. Dubayah, M.A. Friedl,\nS. Samanta and R. A. Houghton. Estimated carbon dioxide emissions\nfrom tropical deforestation improved by carbon-density maps. 2012\nNature Climate Change, [https://doi.org/10.1038/NCLIMATE1354]\n(https://doi.org/10.1038/NCLIMATE1354)\n",
     "summaries": {
         "eo:bands": [
             {
@@ -130,27 +152,5 @@
             "minimum": 0,
             "maximum": 503
         }
-    },
-    "title": "WHRC Pantropical National Level Carbon Stock Dataset",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2012-01-29T00:00:00Z",
-                    "2012-01-29T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

@@ -53,6 +53,30 @@
     "gee:type": "image",
     "gee:unusual_terms_of_use": true,
     "gee:user_uploaded": true,
+    "sci:citation": "Yamazaki D., D. Ikeshima, J. Sosa, P.D. Bates, G.H. Allen, T.M. Pavelsky.\nMERIT Hydro: A high-resolution global hydrography map based on latest\ntopography datasets\nWater Resources Research, vol.55, pp.5053-5073, 2019,\n[doi:10.1029/2019WR024873](https://doi.org/10.1029/2019WR024873]\n",
+    "version": "1.0.1",
+    "title": "MERIT Hydro: Global Hydrography Datasets",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1987-01-01T00:00:00Z",
+                    "2017-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "ODbL-1.0",
     "keywords": [
         "dem",
         "elevation",
@@ -81,7 +105,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/MERIT_Hydro_v1_0_1"
         }
     ],
-    "sci:citation": "Yamazaki D., D. Ikeshima, J. Sosa, P.D. Bates, G.H. Allen, T.M. Pavelsky.\nMERIT Hydro: A high-resolution global hydrography map based on latest\ntopography datasets\nWater Resources Research, vol.55, pp.5053-5073, 2019,\n[doi:10.1029/2019WR024873](https://doi.org/10.1029/2019WR024873]\n",
     "summaries": {
         "eo:bands": [
             {
@@ -141,28 +164,5 @@
         "gsd": [
             92.77
         ]
-    },
-    "title": "MERIT Hydro: Global Hydrography Datasets",
-    "version": "1.0.1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1987-01-01T00:00:00Z",
-                    "2017-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "ODbL-1.0"
+    }
 }

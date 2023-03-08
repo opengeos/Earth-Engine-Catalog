@@ -55,6 +55,30 @@
     "gee:terms_of_use": "Licensed under the Creative Commons Attribution 4.0 International License.\n",
     "gee:type": "table",
     "gee:user_uploaded": true,
+    "sci:citation": "d'Andrimont, R., Verhegghen, A., Meroni, M., Lemoine, G., Strobl, P.,\nEiselt, B., Yordanov, M., Martinez-Sanchez, L. and van der Velde, M., 2020.\nLUCAS Copernicus 2018: Earth Observation relevant in-situ data on land cover\nthroughout the European Union. Earth System Science Data Discussions, 2020,\npp.1-19.\n[doi:10.5194/essd-13-1119-2021](https://doi.org/10.5194/essd-13-1119-2021)\n",
+    "version": "V1",
+    "title": "LUCAS Copernicus (Polygons with attributes, 2018) V1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -13.359375,
+                    34.307144,
+                    34.804688,
+                    71.187754
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-02-05T00:00:00Z",
+                    "2019-03-14T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
     "keywords": [
         "copernicus",
         "eu",
@@ -80,7 +104,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/JRC_LUCAS_HARMO_COPERNICUS_POLYGONS_V1_2018"
         }
     ],
-    "sci:citation": "d'Andrimont, R., Verhegghen, A., Meroni, M., Lemoine, G., Strobl, P.,\nEiselt, B., Yordanov, M., Martinez-Sanchez, L. and van der Velde, M., 2020.\nLUCAS Copernicus 2018: Earth Observation relevant in-situ data on land cover\nthroughout the European Union. Earth System Science Data Discussions, 2020,\npp.1-19.\n[doi:10.5194/essd-13-1119-2021](https://doi.org/10.5194/essd-13-1119-2021)\n",
     "summaries": {
         "gee:visualizations": [
             {
@@ -109,28 +132,5 @@
             "max_features_per_tile": 150,
             "thinning_strategy": "HIGHER_DENSITY"
         }
-    },
-    "title": "LUCAS Copernicus (Polygons with attributes, 2018) V1",
-    "version": "V1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -13.359375,
-                    34.307144,
-                    34.804688,
-                    71.187754
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2006-02-05T00:00:00Z",
-                    "2019-03-14T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-4.0"
+    }
 }

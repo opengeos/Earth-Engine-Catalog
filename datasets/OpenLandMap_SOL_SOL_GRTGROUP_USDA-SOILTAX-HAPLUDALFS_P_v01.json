@@ -56,6 +56,30 @@
     "gee:type": "image",
     "gee:unusual_terms_of_use": true,
     "gee:user_uploaded": true,
+    "sci:citation": "Tomislav Hengl, & Travis Nauman. (2018). Predicted USDA soil great groups at 250 m (probabilities) (Version v01) [Data set]. Zenodo.\n[10.5281/zenodo.1476844](https://doi.org/10.5281/zenodo.1476844)\n",
+    "sci:doi": "10.5281/zenodo.1476844",
+    "title": "OpenLandMap Predicted Hapludalfs Probability",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1950-01-01T00:00:00Z",
+                    "2018-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-SA-4.0",
     "keywords": [
         "argillic",
         "envirometrix",
@@ -80,8 +104,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_SOL_SOL_GRTGROUP_USDA-SOILTAX-HAPLUDALFS_P_v01"
         }
     ],
-    "sci:citation": "Tomislav Hengl, & Travis Nauman. (2018). Predicted USDA soil great groups at 250 m (probabilities) (Version v01) [Data set]. Zenodo.\n[10.5281/zenodo.1476844](https://doi.org/10.5281/zenodo.1476844)\n",
-    "sci:doi": "10.5281/zenodo.1476844",
     "summaries": {
         "eo:bands": [
             {
@@ -127,27 +149,5 @@
             "minimum": 0,
             "maximum": 35
         }
-    },
-    "title": "OpenLandMap Predicted Hapludalfs Probability",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1950-01-01T00:00:00Z",
-                    "2018-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-SA-4.0"
+    }
 }

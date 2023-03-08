@@ -65,6 +65,29 @@
     ],
     "gee:terms_of_use": "Access to data is based on a principle of full, open, and free access as\nestablished by the Copernicus data and information policy Regulation (EU)\nNo 1159/2013 of 12 July 2013. For more information visit:\n[https://land.copernicus.eu/pan-european/corine-land-cover/clc2018?tab=metadata](https://land.copernicus.eu/pan-european/corine-land-cover/clc2018?tab=metadata).\n",
     "gee:type": "image_collection",
+    "version": "V20",
+    "title": "Copernicus CORINE Land Cover",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -81.77,
+                    -29.2,
+                    94.13,
+                    73.81
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1986-01-01T00:00:00Z",
+                    "2018-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "clc",
         "copernicus",
@@ -409,28 +432,5 @@
         "gsd": [
             100
         ]
-    },
-    "title": "Copernicus CORINE Land Cover",
-    "version": "V20",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -81.77,
-                    -29.2,
-                    94.13,
-                    73.81
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1986-01-01T00:00:00Z",
-                    "2018-12-31T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

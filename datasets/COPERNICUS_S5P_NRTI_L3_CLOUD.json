@@ -49,6 +49,28 @@
     },
     "gee:terms_of_use": "The use of Sentinel data is governed by the [Copernicus\nSentinel Data Terms and Conditions.](https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice)\n",
     "gee:type": "image_collection",
+    "title": "Sentinel-5P NRTI CLOUD: Near Real-Time Cloud",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-07-05T23:24:16Z",
+                    "2023-03-07T02:38:01Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "climate",
         "cloud",
@@ -331,27 +353,5 @@
             "minimum": 0,
             "maximum": 1
         }
-    },
-    "title": "Sentinel-5P NRTI CLOUD: Near Real-Time Cloud",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2018-07-05T23:24:16Z",
-                    "2023-03-05T03:13:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

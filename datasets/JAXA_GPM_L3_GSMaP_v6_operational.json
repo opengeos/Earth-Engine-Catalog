@@ -51,32 +51,6 @@
     },
     "gee:terms_of_use": "Anyone wishing to publish any results using the data\nfrom the JAXA Global Rainfall Watch System should clearly acknowledge\nthe ownership of the data in the publication (for example, ' Global\nRainfall Map in Near-Real-Time (GSMaP_NRT) by JAXA Global Rainfall\nWatch' was produced and distributed by the Earth Observation Research\nCenter, Japan Aerospace Exploration Agency). If you have benefited\nfrom GSMaP rainfall products, please cite the major papers listed\nbelow. For additional information, please visit the [JAXA Site\nPolicy](https://global.jaxa.jp/policy.html) and the [Users Guide](https://sharaku.eorc.jaxa.jp/GSMaP/guide.html).\n",
     "gee:type": "image_collection",
-    "keywords": [
-        "climate",
-        "geophysical",
-        "gpm",
-        "hourly",
-        "jaxa",
-        "precipitation",
-        "weather"
-    ],
-    "providers": [
-        {
-            "name": "JAXA Earth Observation Research Center",
-            "roles": [
-                "licensor",
-                "producer"
-            ],
-            "url": "https://sharaku.eorc.jaxa.jp/GSMaP/"
-        },
-        {
-            "name": "Google Earth Engine",
-            "roles": [
-                "host"
-            ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/JAXA_GPM_L3_GSMaP_v6_operational"
-        }
-    ],
     "sci:citation": "K. Okamoto, T. Iguchi, N. Takahashi, K. Iwanami and T. Ushio,\n2005: The global satellite mapping of precipitation (GSMaP) project,\n25th IGARSS Proceedings, pp. 3414-3416.\n",
     "sci:publications": [
         {
@@ -150,6 +124,55 @@
         },
         {
             "citation": "M.K. Yamamoto, and S. Shige, 2014: Implementation of an orographic/nonorographic\nrainfall classification scheme in the GSMaP algorithm for microwave\nradiometers. Atmos. Res. (in print).\n"
+        }
+    ],
+    "version": "v6",
+    "title": "GSMaP Operational: Global Satellite Mapping of Precipitation",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60,
+                    180,
+                    60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-03-01T00:00:00Z",
+                    "2023-03-07T14:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "climate",
+        "geophysical",
+        "gpm",
+        "hourly",
+        "jaxa",
+        "precipitation",
+        "weather"
+    ],
+    "providers": [
+        {
+            "name": "JAXA Earth Observation Research Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://sharaku.eorc.jaxa.jp/GSMaP/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/JAXA_GPM_L3_GSMaP_v6_operational"
         }
     ],
     "summaries": {
@@ -707,28 +730,5 @@
             "minimum": -124.72,
             "maximum": 16.06
         }
-    },
-    "title": "GSMaP Operational: Global Satellite Mapping of Precipitation",
-    "version": "v6",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -60,
-                    180,
-                    60
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2014-03-01T00:00:00Z",
-                    "2023-03-02T14:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

@@ -45,6 +45,29 @@
     ],
     "gee:terms_of_use": "This dataset is made available publicly under the Creative Commons by\nAttribution license(CC-BY-4.0).\n",
     "gee:type": "image_collection",
+    "sci:citation": "\u00a9 \\<year\\> Planet Labs Inc.",
+    "title": "Planet SkySat Public Ortho Imagery, Multispectral",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -70,
+                    180,
+                    53
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-07-03T00:00:00Z",
+                    "2016-12-24T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
     "keywords": [
         "highres",
         "multispectral",
@@ -69,7 +92,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/SKYSAT_GEN-A_PUBLIC_ORTHO_MULTISPECTRAL"
         }
     ],
-    "sci:citation": "\u00a9 \\<year\\> Planet Labs Inc.",
     "summaries": {
         "eo:bands": [
             {
@@ -261,27 +283,5 @@
             "minimum": 107,
             "maximum": 63393
         }
-    },
-    "title": "Planet SkySat Public Ortho Imagery, Multispectral",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -70,
-                    180,
-                    53
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2014-07-03T00:00:00Z",
-                    "2016-12-24T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-4.0"
+    }
 }

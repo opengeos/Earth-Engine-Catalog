@@ -73,6 +73,31 @@
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image",
     "gee:user_uploaded": true,
+    "sci:citation": "Allen Coral Atlas (2020). Imagery, maps and monitoring of the world's tropical coral reefs. Zenodo. [doi:10.5281/zenodo.3833242](https://doi.org/10.5281/zenodo.3833242)\n",
+    "sci:doi": "10.5281/zenodo.3833242",
+    "version": "v1.0",
+    "title": "Allen Coral Atlas (ACA) - Geomorphic Zonation and Benthic Habitat - v1.0 [deprecated]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -33,
+                    180,
+                    33
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-01-01T00:00:00Z",
+                    "2021-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
     "keywords": [
         "coral",
         "ocean",
@@ -137,8 +162,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/ACA_reef_habitat_v1_0"
         }
     ],
-    "sci:citation": "Allen Coral Atlas (2020). Imagery, maps and monitoring of the world's tropical coral reefs. Zenodo. [doi:10.5281/zenodo.3833242](https://doi.org/10.5281/zenodo.3833242)\n",
-    "sci:doi": "10.5281/zenodo.3833242",
     "summaries": {
         "eo:bands": [
             {
@@ -299,28 +322,5 @@
         "gsd": [
             5
         ]
-    },
-    "title": "Allen Coral Atlas (ACA) - Geomorphic Zonation and Benthic Habitat - v1.0 [deprecated]",
-    "version": "v1.0",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -33,
-                    180,
-                    33
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2018-01-01T00:00:00Z",
-                    "2021-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-4.0"
+    }
 }

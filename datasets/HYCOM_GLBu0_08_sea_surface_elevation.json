@@ -58,6 +58,30 @@
     },
     "gee:terms_of_use": "This dataset is freely available with no restrictions.",
     "gee:type": "image_collection",
+    "sci:citation": "J. A. Cummings and O. M. Smedstad. 2013: Variational Data Assimilation for\nthe Global Ocean. Data Assimilation for Atmospheric, Oceanic and Hydrologic\nApplications vol II, chapter 13, 303-343.\n",
+    "version": "Unknown",
+    "title": "HYCOM: Hybrid Coordinate Ocean Model, Sea Surface Elevation [deprecated]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -80.48,
+                    180,
+                    80.48
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1992-10-02T00:00:00Z",
+                    "2018-12-09T12:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "elevation",
         "hycom",
@@ -83,7 +107,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/HYCOM_GLBu0_08_sea_surface_elevation"
         }
     ],
-    "sci:citation": "J. A. Cummings and O. M. Smedstad. 2013: Variational Data Assimilation for\nthe Global Ocean. Data Assimilation for Atmospheric, Oceanic and Hydrologic\nApplications vol II, chapter 13, 303-343.\n",
     "summaries": {
         "eo:bands": [
             {
@@ -136,28 +159,5 @@
             "minimum": -5681,
             "maximum": 5965
         }
-    },
-    "title": "HYCOM: Hybrid Coordinate Ocean Model, Sea Surface Elevation [deprecated]",
-    "version": "Unknown",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -80.48,
-                    180,
-                    80.48
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1992-10-02T00:00:00Z",
-                    "2018-12-09T12:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

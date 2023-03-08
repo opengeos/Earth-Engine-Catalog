@@ -54,6 +54,28 @@
     },
     "gee:terms_of_use": "Landsat datasets are federally created data\nand therefore reside in the public domain and may be used, transferred, or reproduced without copyright restriction.\n\nAcknowledgement or credit of the USGS as data source should be provided\nby including a line of text citation such as the example shown below.\n\n(Product, Image, Photograph, or Dataset Name) courtesy of\nthe U.S. Geological Survey\n\nExample: Landsat-7 image courtesy of the U.S. Geological Survey\n\nSee the\n[USGS Visual Identity System Guidance](https://www.usgs.gov/information-policies-and-instructions/usgs-visual-identity-system)\nfor further details on proper citation and acknowledgement of USGS products.\n",
     "gee:type": "image_collection",
+    "title": "USGS Landsat 4 Level 2, Collection 2, Tier 1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1982-08-22T14:19:55Z",
+                    "1993-06-24T14:26:23Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "cfmask",
         "cloud",
@@ -589,27 +611,5 @@
             "minimum": 0,
             "maximum": 28000
         }
-    },
-    "title": "USGS Landsat 4 Level 2, Collection 2, Tier 1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1982-08-22T14:19:55Z",
-                    "1993-06-24T14:26:23Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

@@ -68,6 +68,30 @@
     "gee:terms_of_use": "The USDA Forest Service makes no warranty, expressed or implied, including the warranties of\nmerchantability and fitness for a particular purpose, nor assumes any legal liability or\nresponsibility for the accuracy, reliability, completeness or utility of these geospatial data,\nor for the improper or incorrect use of these geospatial data. These geospatial data and\nrelated maps or graphics are not legal documents and are not intended to be used as such. The\ndata and maps may not be used to determine title, ownership, legal descriptions or boundaries,\nlegal jurisdiction, or restrictions that may be in place on either public or private land.\nNatural hazards may or may not be depicted on the data and maps, and land users should exercise\ndue caution. The data are dynamic and may change over time. The user is responsible to verify\nthe limitations of the geospatial data and to use the data accordingly.\n\nThese data were collected using funding from the U.S. Government and can be used\nwithout additional permissions or fees. If you use these data in a publication, presentation, or\nother research product please use the following citation:\n\nUSDA Forest Service. 2022. USFS Landscape Change Monitoring System v2021.7\n(Conterminous United States and Southeastern Alaska). Salt Lake City, Utah.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "sci:citation": "USDA Forest Service. 2022. USFS Landscape Change Monitoring System\nv2021.7 (Conterminous United States and Southeastern Alaska).\nSalt Lake City, Utah.\n",
+    "version": "v2021.7",
+    "title": "USFS Landscape Change Monitoring System v2021.7 (Conterminous United States and Southeastern Alaska)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -135.286387,
+                    20.38379,
+                    -56.446306,
+                    52.459364
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1985-06-01T00:00:00Z",
+                    "2021-09-30T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "change",
         "change_detection",
@@ -101,7 +125,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/USFS_GTAC_LCMS_v2021-7"
         }
     ],
-    "sci:citation": "USDA Forest Service. 2022. USFS Landscape Change Monitoring System\nv2021.7 (Conterminous United States and Southeastern Alaska).\nSalt Lake City, Utah.\n",
     "summaries": {
         "gee:schema": [
             {
@@ -210,28 +233,5 @@
         "gsd": [
             30
         ]
-    },
-    "title": "USFS Landscape Change Monitoring System v2021.7 (Conterminous United States and Southeastern Alaska)",
-    "version": "v2021.7",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -135.286387,
-                    20.38379,
-                    -56.446306,
-                    52.459364
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1985-06-01T00:00:00Z",
-                    "2021-09-30T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

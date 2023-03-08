@@ -49,6 +49,28 @@
     },
     "gee:terms_of_use": "The use of Sentinel data is governed by the [Copernicus\nSentinel Data Terms and Conditions.](https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice)\n",
     "gee:type": "image_collection",
+    "title": "Sentinel-3 OLCI EFR: Ocean and Land Color Instrument Earth Observation Full Resolution",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-10-18T19:25:42Z",
+                    "2023-03-06T07:07:28Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "copernicus",
         "esa",
@@ -772,27 +794,5 @@
         "platform": [
             "Sentinel-3A"
         ]
-    },
-    "title": "Sentinel-3 OLCI EFR: Ocean and Land Color Instrument Earth Observation Full Resolution",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2016-10-18T19:25:42Z",
-                    "2023-03-04T06:57:59Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

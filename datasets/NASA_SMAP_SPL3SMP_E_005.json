@@ -54,6 +54,47 @@
     ],
     "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
     "gee:type": "image_collection",
+    "sci:citation": "**O'Neill, P. E., S. Chan, E. G. Njoku, T. Jackson, R. Bindlish,\nJ. Chaubell, and A. Colliander. 2021. SMAP Enhanced L3 Radiometer Global\nand Polar Grid Daily 9 km EASE-Grid Soil Moisture, Version 5.\n[Indicate subset used]. Boulder, Colorado USA. NASA National Snow and Ice\nData Center Distributed Active Archive Center.\n[doi:10.5067/4DQ54OUIJ9DL](https://doi.org/10.5067/4DQ54OUIJ9DL)\n",
+    "sci:publications": [
+        {
+            "citation": "Entekhabi et al., 2014\nD. Entekhabi, S. Yueh, P. O'Neill, K. Kellogg et al. SMAP Handbook \u2013\nSoil Moisture Active Passive: Mapping Soil Moisture and Freeze/thaw From\nSpace. SMAP Project, Jet Propulsion Laboratory, Pasadena, CA (2014)\n[SMAP Handbook](https://smap.jpl.nasa.gov/system/internal_resources/details/original/178_SMAP_Handbook_FINAL_1_JULY_2014_Web.pdf)\n"
+        },
+        {
+            "citation": "Chan, S. K., R. Bindlish, P. E. O'Neill, E. Njoku, T. Jackson,\nA. Colliander, F. Chen, M. Burgin, S. Dunbar, J. Piepmeier, S. Yueh,\nD. Entekhabi, M. H. Cosh, T. Caldwell, J. Walker, X. Wu, A. Berg,\nT. Rowlandson, A. Pacheco, H. McNairn, M. Thibeault, J. Martinez-Fernandez,\nA. Gonzalez-Zamora, M. Seyfried, D. Bosch, P. Starks, D. Goodrich,\nJ. Prueger, M. Palecki, E. E. Small, M. Zreda, J.-C. Calvet, W. T. Crow,\nand Y. Kerr. 2016. \"Assessment of the SMAP Passive Soil Moisture Product\"\nIEEE Transactions on Geoscience and Remote Sensing, 54 (8): 4994-5007\n[10.1109/tgrs.2016.2561938](https://doi.org/10.1109/tgrs.2016.2561938)\n",
+            "doi": "10.1109/tgrs.2016.2561938"
+        },
+        {
+            "citation": "Chan, S., R. Bindlish, P. O'Neill, T. Jackson, E. Njoku, S. Dunbar,\nJ. Chaubell, J. Piepmeier, S. Yueh, D. Entekhabi, A. Colliander, F. Chen,\nM. Cosh, T. Caldwell, J. Walker, A. Berg, H. McNairn, M. Thibeault,\nJ. Mart\u00ednez-Fern\u00e1ndez, F. Uldall, M. Seyfried, D. Bosch, P. Starks,\nC. Holifield Collins, J. Prueger, R. van der Velde, J. Asanuma,\nM. Palecki, E. Small, M. Zreda, J. Calvet, W. Crow, and Y. Kerr. 2018.\n\"Development and assessment of the SMAP enhanced passive soil moisture\nproduct.\" Remote Sensing of Environment, 204: 931-941\n[10.1016/j.rse.2017.08.025](https://doi.org/10.1016/j.rse.2017.08.025)\n",
+            "doi": "10.1016/j.rse.2017.08.025"
+        },
+        {
+            "citation": "Chaubell, M. J., J. Asanuma, A. A. Berg, D. D. Bosch, T. Caldwell,\nM. H. Cosh, C. H. Collins, J. Martinez-Fernandez, M. Seyfried,\nP. J. Starks, Z. Su, S. H. Yueh, M. Thibeault, J. Walker, R. S. Dunbar,\nA. Colliander, F. Chen, S. K. Chan, D. Entekhabi, R. Bindlish, and\nP. E. O'Neill. 2020. \"Improved SMAP Dual-Channel Algorithm for the\nRetrieval of Soil Moisture.\" IEEE Transactions on Geoscience and Remote\nSensing, 1-12\n[10.1109/tgrs.2019.2959239](https://doi.org/10.1109/tgrs.2019.2959239)\n",
+            "doi": "10.1109/tgrs.2019.2959239"
+        }
+    ],
+    "version": "5",
+    "title": "SPL3SMP_E.005 SMAP L3 Radiometer Global Daily 9 km Soil Moisture",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -84,
+                    180,
+                    84
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-03-31T12:00:00Z",
+                    "2023-03-05T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "drought",
         "nasa",
@@ -79,24 +120,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_SMAP_SPL3SMP_E_005"
         }
     ],
-    "sci:citation": "**O'Neill, P. E., S. Chan, E. G. Njoku, T. Jackson, R. Bindlish,\nJ. Chaubell, and A. Colliander. 2021. SMAP Enhanced L3 Radiometer Global\nand Polar Grid Daily 9 km EASE-Grid Soil Moisture, Version 5.\n[Indicate subset used]. Boulder, Colorado USA. NASA National Snow and Ice\nData Center Distributed Active Archive Center.\n[doi:10.5067/4DQ54OUIJ9DL](https://doi.org/10.5067/4DQ54OUIJ9DL)\n",
-    "sci:publications": [
-        {
-            "citation": "Entekhabi et al., 2014\nD. Entekhabi, S. Yueh, P. O'Neill, K. Kellogg et al. SMAP Handbook \u2013\nSoil Moisture Active Passive: Mapping Soil Moisture and Freeze/thaw From\nSpace. SMAP Project, Jet Propulsion Laboratory, Pasadena, CA (2014)\n[SMAP Handbook](https://smap.jpl.nasa.gov/system/internal_resources/details/original/178_SMAP_Handbook_FINAL_1_JULY_2014_Web.pdf)\n"
-        },
-        {
-            "citation": "Chan, S. K., R. Bindlish, P. E. O'Neill, E. Njoku, T. Jackson,\nA. Colliander, F. Chen, M. Burgin, S. Dunbar, J. Piepmeier, S. Yueh,\nD. Entekhabi, M. H. Cosh, T. Caldwell, J. Walker, X. Wu, A. Berg,\nT. Rowlandson, A. Pacheco, H. McNairn, M. Thibeault, J. Martinez-Fernandez,\nA. Gonzalez-Zamora, M. Seyfried, D. Bosch, P. Starks, D. Goodrich,\nJ. Prueger, M. Palecki, E. E. Small, M. Zreda, J.-C. Calvet, W. T. Crow,\nand Y. Kerr. 2016. \"Assessment of the SMAP Passive Soil Moisture Product\"\nIEEE Transactions on Geoscience and Remote Sensing, 54 (8): 4994-5007\n[10.1109/tgrs.2016.2561938](https://doi.org/10.1109/tgrs.2016.2561938)\n",
-            "doi": "10.1109/tgrs.2016.2561938"
-        },
-        {
-            "citation": "Chan, S., R. Bindlish, P. O'Neill, T. Jackson, E. Njoku, S. Dunbar,\nJ. Chaubell, J. Piepmeier, S. Yueh, D. Entekhabi, A. Colliander, F. Chen,\nM. Cosh, T. Caldwell, J. Walker, A. Berg, H. McNairn, M. Thibeault,\nJ. Mart\u00ednez-Fern\u00e1ndez, F. Uldall, M. Seyfried, D. Bosch, P. Starks,\nC. Holifield Collins, J. Prueger, R. van der Velde, J. Asanuma,\nM. Palecki, E. Small, M. Zreda, J. Calvet, W. Crow, and Y. Kerr. 2018.\n\"Development and assessment of the SMAP enhanced passive soil moisture\nproduct.\" Remote Sensing of Environment, 204: 931-941\n[10.1016/j.rse.2017.08.025](https://doi.org/10.1016/j.rse.2017.08.025)\n",
-            "doi": "10.1016/j.rse.2017.08.025"
-        },
-        {
-            "citation": "Chaubell, M. J., J. Asanuma, A. A. Berg, D. D. Bosch, T. Caldwell,\nM. H. Cosh, C. H. Collins, J. Martinez-Fernandez, M. Seyfried,\nP. J. Starks, Z. Su, S. H. Yueh, M. Thibeault, J. Walker, R. S. Dunbar,\nA. Colliander, F. Chen, S. K. Chan, D. Entekhabi, R. Bindlish, and\nP. E. O'Neill. 2020. \"Improved SMAP Dual-Channel Algorithm for the\nRetrieval of Soil Moisture.\" IEEE Transactions on Geoscience and Remote\nSensing, 1-12\n[10.1109/tgrs.2019.2959239](https://doi.org/10.1109/tgrs.2019.2959239)\n",
-            "doi": "10.1109/tgrs.2019.2959239"
-        }
-    ],
     "summaries": {
         "eo:bands": [
             {
@@ -106,12 +129,12 @@
             },
             {
                 "description": "Weighted average of horizontally polarized brightness\ntemperatures. This value represents the corrected land brightness\ntemperature if the water fraction is lower than 0.9\n(otherwise no correction is applied) or represents the corrected water\nbrightness temperature if the water fraction is greater than 0.1\n(otherwise no correction is applied); AM overpass\n",
-                "gee:units": "Kelvin",
+                "gee:units": "K",
                 "name": "tb_h_corrected_am"
             },
             {
                 "description": "Weighted average of vertically polarized brightness\ntemperatures. This value represents the corrected land brightness\ntemperature if the water fraction is lower than 0.9\n(otherwise no correction is applied) or represents the corrected water\nbrightness temperature if the water fraction is greater than 0.1\n(otherwise no correction is applied); AM overpass\n",
-                "gee:units": "Kelvin",
+                "gee:units": "K",
                 "name": "tb_v_corrected_am"
             },
             {
@@ -138,12 +161,12 @@
             },
             {
                 "description": "Weighted average of horizontally polarized brightness\ntemperatures. This value represents the corrected land brightness\ntemperature if the water fraction is lower than 0.9 (otherwise no\ncorrection is applied) or represents the corrected water brightness\ntemperature if the water fraction is greater than 0.1 (otherwise no\ncorrection is applied); PM overpass\n",
-                "gee:units": "Kelvin",
+                "gee:units": "K",
                 "name": "tb_h_corrected_pm"
             },
             {
                 "description": "Weighted average of vertically polarized brightness\ntemperatures. This value represents the corrected land brightness\ntemperature if the water fraction is lower than 0.9 (otherwise no\ncorrection is applied) or represents the corrected water brightness\ntemperature if the water fraction is greater than 0.1 (otherwise no\ncorrection is applied); PM overpass\n",
-                "gee:units": "Kelvin",
+                "gee:units": "K",
                 "name": "tb_v_corrected_pm"
             },
             {
@@ -253,28 +276,5 @@
             "minimum": 0,
             "maximum": 30
         }
-    },
-    "title": "SPL3SMP_E.005 SMAP L3 Radiometer Global Daily 9 km Soil Moisture",
-    "version": "5",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -84,
-                    180,
-                    84
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2015-03-31T12:00:00Z",
-                    "2023-02-27T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

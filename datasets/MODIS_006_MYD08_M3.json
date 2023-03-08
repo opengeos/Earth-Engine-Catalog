@@ -62,6 +62,31 @@
     },
     "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA\\'s\nEarth Science Data & Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Platnick, S., M. King, P. Hubanks, 2015. MODIS Atmosphere L3 Monthly\nProduct. NASA MODIS Adaptive Processing System, Goddard Space Flight\nCenter, [doi:10.5067/MODIS/MYD08_M3.006](https://doi.org/10.5067/MODIS/MYD08_M3.006)\n",
+    "sci:doi": "10.5067/MODIS/MYD08_M3.006",
+    "version": "V006",
+    "title": "MYD08_M3.006 Aqua Aerosol Cloud Water Vapor Ozone Monthly Global Product 1Deg CMG [deprecated]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-01T00:00:00Z",
+                    "2018-04-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "aqua",
         "atmosphere",
@@ -92,8 +117,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MYD08_M3"
         }
     ],
-    "sci:citation": "Platnick, S., M. King, P. Hubanks, 2015. MODIS Atmosphere L3 Monthly\nProduct. NASA MODIS Adaptive Processing System, Goddard Space Flight\nCenter, [doi:10.5067/MODIS/MYD08_M3.006](https://doi.org/10.5067/MODIS/MYD08_M3.006)\n",
-    "sci:doi": "10.5067/MODIS/MYD08_M3.006",
     "summaries": {
         "eo:bands": [
             {
@@ -225,28 +248,5 @@
             "minimum": 0,
             "maximum": 2000
         }
-    },
-    "title": "MYD08_M3.006 Aqua Aerosol Cloud Water Vapor Ozone Monthly Global Product 1Deg CMG [deprecated]",
-    "version": "V006",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2002-07-01T00:00:00Z",
-                    "2018-04-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

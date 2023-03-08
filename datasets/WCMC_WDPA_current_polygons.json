@@ -53,6 +53,30 @@
     "gee:terms_of_use": "Please visit the [full terms and conditions page](https://www.protectedplanet.net/c/terms-and-conditions)\nof Protected Planet. Select highlights below:\n\n**No Commercial Use.** Neither (a) the WDPA Materials nor (b) any work\nderived from or based upon the WDPA Materials (\\\"Derivative Works\\\")\nmay be put to Commercial Use without the prior written permission\nof UNEP-WCMC. \\\"Commercial Use\\\" means a) any use by, on behalf\nof, or to inform or assist the activities of, a commercial entity\n(an entity that operates 'for profit') or b) use by any individual\nor non-profit entity for the purposes of revenue generation.\n\n**Disclaimer.** The designations of geographical entities\nin any Data Set do not imply the expression of any view or opinion\nwhatsoever on the part of UNEP or WCMC concerning the legal status\nof any country, territory, or area, or of its authorities, or\nconcerning the delimitation of its frontiers or boundaries.\n\n**Attribution.** You must ensure that the citation is always\nclearly reproduced in any publication or analysis involving the\nWDPA Materials in any derived form or format.\n",
     "gee:type": "table",
     "gee:unusual_terms_of_use": true,
+    "sci:citation": "UNEP-WCMC and IUCN (year), Protected Planet: The World Database\non Protected Areas (WDPA) [On-line], [insert month/year of the\nversion used], Cambridge, UK: UNEP-WCMC and IUCN Available at:\nwww.protectedplanet.net.\n",
+    "version": "June 2020",
+    "title": "WDPA: World Database on Protected Areas (polygons)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-07-01T00:00:00Z",
+                    "2030-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "boundaries",
         "iucn",
@@ -79,7 +103,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/WCMC_WDPA_current_polygons"
         }
     ],
-    "sci:citation": "UNEP-WCMC and IUCN (year), Protected Planet: The World Database\non Protected Areas (WDPA) [On-line], [insert month/year of the\nversion used], Cambridge, UK: UNEP-WCMC and IUCN Available at:\nwww.protectedplanet.net.\n",
     "summaries": {
         "gee:visualizations": [
             {
@@ -125,28 +148,5 @@
                 "REP_AREA DESC"
             ]
         }
-    },
-    "title": "WDPA: World Database on Protected Areas (polygons)",
-    "version": "June 2020",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2017-07-01T00:00:00Z",
-                    "2030-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

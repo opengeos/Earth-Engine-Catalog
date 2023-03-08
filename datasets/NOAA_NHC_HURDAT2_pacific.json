@@ -55,6 +55,29 @@
     ],
     "gee:terms_of_use": "NOAA data, information, and products, regardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use.\n",
     "gee:type": "table",
+    "version": "2019-07-15",
+    "title": "NOAA NHC HURDAT2 Pacific Hurricane Catalog",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    0.4,
+                    180,
+                    63.1
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1949-06-11T00:00:00Z",
+                    "2018-11-09T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "hurricane",
         "nhc",
@@ -244,28 +267,5 @@
                 "seq ASC"
             ]
         }
-    },
-    "title": "NOAA NHC HURDAT2 Pacific Hurricane Catalog",
-    "version": "2019-07-15",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    0.4,
-                    180,
-                    63.1
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1949-06-11T00:00:00Z",
-                    "2018-11-09T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

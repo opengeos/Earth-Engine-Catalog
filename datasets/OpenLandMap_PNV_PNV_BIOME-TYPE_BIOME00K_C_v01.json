@@ -56,6 +56,30 @@
     "gee:type": "image",
     "gee:unusual_terms_of_use": true,
     "gee:user_uploaded": true,
+    "sci:citation": "Hengl T, Walsh MG, Sanderman J, Wheeler I, Harrison SP, Prentice IC. (2018) Global Mapping of Potential Natural Vegetation: An Assessment of Machine Learning Algorithms for Estimating Land Potential. PeerJ Preprints.\n[10.7287/peerj.preprints.26811v1](https://doi.org/10.7910/DVN/QQHCIK)\n",
+    "sci:doi": "10.7910/DVN/QQHCIK",
+    "title": "OpenLandMap Potential Distribution of Biomes",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2002-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-SA-4.0",
     "keywords": [
         "biome",
         "envirometrix",
@@ -80,8 +104,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_PNV_PNV_BIOME-TYPE_BIOME00K_C_v01"
         }
     ],
-    "sci:citation": "Hengl T, Walsh MG, Sanderman J, Wheeler I, Harrison SP, Prentice IC. (2018) Global Mapping of Potential Natural Vegetation: An Assessment of Machine Learning Algorithms for Estimating Land Potential. PeerJ Preprints.\n[10.7287/peerj.preprints.26811v1](https://doi.org/10.7910/DVN/QQHCIK)\n",
-    "sci:doi": "10.7910/DVN/QQHCIK",
     "summaries": {
         "eo:bands": [
             {
@@ -239,27 +261,5 @@
         "gsd": [
             1000
         ]
-    },
-    "title": "OpenLandMap Potential Distribution of Biomes",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2001-01-01T00:00:00Z",
-                    "2002-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-SA-4.0"
+    }
 }

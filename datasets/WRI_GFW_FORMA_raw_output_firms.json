@@ -45,6 +45,28 @@
     "gee:terms_of_use": "The FORMA datasets are available without restriction\non use or distribution. WRI does request that the\nuser give proper attribution and identify WRI and GFW, where applicable,\nas the source of the data.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "title": "FORMA Raw Output FIRMS",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -120,
+                    -50,
+                    180,
+                    40
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-04-08T00:00:00Z",
+                    "2019-05-18T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "daily",
         "deforestation",
@@ -155,27 +177,5 @@
             "minimum": 0,
             "maximum": 100
         }
-    },
-    "title": "FORMA Raw Output FIRMS",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -120,
-                    -50,
-                    180,
-                    40
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2017-04-08T00:00:00Z",
-                    "2019-05-18T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

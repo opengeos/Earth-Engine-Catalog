@@ -45,6 +45,28 @@
     "gee:terms_of_use": "The FORMA datasets are available without restriction\non use or distribution. WRI does request that the\nuser give proper attribution and identify WRI and GFW, where applicable,\nas the source of the data.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "title": "FORMA Vegetation T-Statistics",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -120,
+                    -50,
+                    180,
+                    40
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-01-01T00:00:00Z",
+                    "2019-04-23T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "daily",
         "deforestation",
@@ -126,27 +148,5 @@
             "minimum": 0,
             "maximum": 25.41
         }
-    },
-    "title": "FORMA Vegetation T-Statistics",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -120,
-                    -50,
-                    180,
-                    40
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2012-01-01T00:00:00Z",
-                    "2019-04-23T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

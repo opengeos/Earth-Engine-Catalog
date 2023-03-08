@@ -57,6 +57,30 @@
     "gee:type": "image_collection",
     "gee:unusual_terms_of_use": true,
     "gee:user_uploaded": true,
+    "sci:citation": "Kennedy, C.M., J.R. Oakleaf, D.M. Theobald, S. Baurch-Murdo, and J. Kiesecker. 2019. Managing\nthe middle: A shift in conservation priorities based on the global human modification gradient.\nGlobal Change Biology 00:1-16. [doi:10.1111/gcb.14549](https://doi.org/10.1111/gcb.14549)\n",
+    "version": "1.0",
+    "title": "CSP gHM: Global Human Modification",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-01-01T00:00:00Z",
+                    "2016-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-NC-SA-4.0",
     "keywords": [
         "csp",
         "fragmentation",
@@ -83,7 +107,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/CSP_HM_GlobalHumanModification"
         }
     ],
-    "sci:citation": "Kennedy, C.M., J.R. Oakleaf, D.M. Theobald, S. Baurch-Murdo, and J. Kiesecker. 2019. Managing\nthe middle: A shift in conservation priorities based on the global human modification gradient.\nGlobal Change Biology 00:1-16. [doi:10.1111/gcb.14549](https://doi.org/10.1111/gcb.14549)\n",
     "summaries": {
         "eo:bands": [
             {
@@ -130,28 +153,5 @@
             "minimum": 0,
             "maximum": 1
         }
-    },
-    "title": "CSP gHM: Global Human Modification",
-    "version": "1.0",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2016-01-01T00:00:00Z",
-                    "2016-12-31T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-NC-SA-4.0"
+    }
 }

@@ -58,6 +58,31 @@
     "gee:terms_of_use": "[proprietary](DO NOT USE THIS - use a custom URL)",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "sci:citation": "Demuzere M.; Kittner J.; Martilli A.; Mills, G.; Moede, C.; Stewart, I.D.; van Vliet, J.; Bechtel, B.\nA global map of local climate zones to support earth system modelling and urban-scale environmental science.\nEarth System Science Data 2022, 14 Volume 8: 3835-3873.\n[doi:10.5194/essd-14-3835-2022](https://doi.org/10.5194/essd-14-3835-2022)\n",
+    "sci:doi": "10.5281/zenodo.6364593",
+    "version": "v1",
+    "title": "Global map of Local Climate Zones",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-01-01T00:00:00Z",
+                    "2019-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "climate",
         "landcover",
@@ -80,8 +105,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/RUB_RUBCLIM_LCZ_global_lcz_map_v1"
         }
     ],
-    "sci:citation": "Demuzere M.; Kittner J.; Martilli A.; Mills, G.; Moede, C.; Stewart, I.D.; van Vliet, J.; Bechtel, B.\nA global map of local climate zones to support earth system modelling and urban-scale environmental science.\nEarth System Science Data 2022, 14 Volume 8: 3835-3873.\n[doi:10.5194/essd-14-3835-2022](https://doi.org/10.5194/essd-14-3835-2022)\n",
-    "sci:doi": "10.5281/zenodo.6364593",
     "summaries": {
         "eo:bands": [
             {
@@ -317,28 +340,5 @@
         "gsd": [
             100
         ]
-    },
-    "title": "Global map of Local Climate Zones",
-    "version": "v1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2018-01-01T00:00:00Z",
-                    "2019-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

@@ -45,6 +45,29 @@
     ],
     "gee:terms_of_use": "The BigEarthNet Archive is licensed under the Community Data License\nAgreement - Permissive, Version 1.0.  For more information,\nplease refer to the (http://bigearth.net/downloads/documents/License.pdf).\n",
     "gee:type": "image_collection",
+    "sci:citation": "G. Sumbul, M. Charfuelan, B. Demir, V. Markl, BigEarthNet: A Large-Scale\nBenchmark Archive for Remote Sensing Image Understanding, IEEE International\nConference on Geoscience and Remote Sensing Symposium, pp. 5901-5904,\nYokohama, Japan, 2019.\n",
+    "title": "TUBerlin/BigEarthNet/v1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -9,
+                    36.9,
+                    31.6,
+                    68.1
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-06-01T00:00:00Z",
+                    "2018-05-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "chip",
         "copernicus",
@@ -71,7 +94,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/TUBerlin_BigEarthNet_v1"
         }
     ],
-    "sci:citation": "G. Sumbul, M. Charfuelan, B. Demir, V. Markl, BigEarthNet: A Large-Scale\nBenchmark Archive for Remote Sensing Image Understanding, IEEE International\nConference on Geoscience and Remote Sensing Symposium, pp. 5901-5904,\nYokohama, Japan, 2019.\n",
     "summaries": {
         "eo:bands": [
             {
@@ -226,27 +248,5 @@
                 }
             }
         ]
-    },
-    "title": "TUBerlin/BigEarthNet/v1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -9,
-                    36.9,
-                    31.6,
-                    68.1
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2017-06-01T00:00:00Z",
-                    "2018-05-31T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

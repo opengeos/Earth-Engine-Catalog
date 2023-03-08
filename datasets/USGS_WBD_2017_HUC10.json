@@ -55,6 +55,29 @@
     ],
     "gee:terms_of_use": "Most U.S. Geological Survey (USGS) information resides\nin the public domain and may be used without restriction. Additional\ninformation on [Acknowledging or Crediting USGS as Information\nSource](https://www.usgs.gov/information-policies-and-instructions/crediting-usgs) is available.\n",
     "gee:type": "table",
+    "sci:citation": "Coordinated effort between the United States Department of Agriculture-Natural\nResources Conservation Service (USDA-NRCS), the United States Geological\nSurvey (USGS), and the Environmental Protection Agency (EPA). The\nWatershed Boundary Dataset (WBD) was created from a variety of\nsources from each state and aggregated into a standard national\nlayer for use in strategic planning and accountability. Watershed\nBoundary Dataset for HUC# [Online WWW]. Available URL: (https://datagateway.nrcs.usda.gov)\n[Accessed 22/04/2017].\n",
+    "title": "HUC10: USGS Watershed Boundary Dataset of Watersheds",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -14.69,
+                    180,
+                    71.567
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-04-22T00:00:00Z",
+                    "2017-04-23T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "hydrology",
         "usgs",
@@ -79,7 +102,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_WBD_2017_HUC10"
         }
     ],
-    "sci:citation": "Coordinated effort between the United States Department of Agriculture-Natural\nResources Conservation Service (USDA-NRCS), the United States Geological\nSurvey (USGS), and the Environmental Protection Agency (EPA). The\nWatershed Boundary Dataset (WBD) was created from a variety of\nsources from each state and aggregated into a standard national\nlayer for use in strategic planning and accountability. Watershed\nBoundary Dataset for HUC# [Online WWW]. Available URL: (https://datagateway.nrcs.usda.gov)\n[Accessed 22/04/2017].\n",
     "summaries": {
         "gee:schema": [
             {
@@ -190,27 +212,5 @@
             ],
             "thinning_strategy": "HIGHER_DENSITY"
         }
-    },
-    "title": "HUC10: USGS Watershed Boundary Dataset of Watersheds",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -14.69,
-                    180,
-                    71.567
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2017-04-22T00:00:00Z",
-                    "2017-04-23T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

@@ -51,6 +51,29 @@
     ],
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "table",
+    "sci:citation": "[Bioscience, An Ecoregions-Based Approach to Protecting Half the\nTerrestrial Realm](https://academic.oup.com/bioscience/article/67/6/534/3102935)\n[doi:10.1093/biosci/bix014](https://doi.org/10.1093/biosci/bix014)\n",
+    "title": "RESOLVE Ecoregions 2017",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-04-05T00:00:00Z",
+                    "2017-04-05T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
     "keywords": [
         "biodiversity",
         "conservation",
@@ -77,7 +100,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/RESOLVE_ECOREGIONS_2017"
         }
     ],
-    "sci:citation": "[Bioscience, An Ecoregions-Based Approach to Protecting Half the\nTerrestrial Realm](https://academic.oup.com/bioscience/article/67/6/534/3102935)\n[doi:10.1093/biosci/bix014](https://doi.org/10.1093/biosci/bix014)\n",
     "summaries": {
         "gee:schema": [
             {
@@ -200,27 +222,5 @@
             "max_features_per_tile": 500,
             "thinning_strategy": "HIGHER_DENSITY"
         }
-    },
-    "title": "RESOLVE Ecoregions 2017",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2017-04-05T00:00:00Z",
-                    "2017-04-05T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-4.0"
+    }
 }

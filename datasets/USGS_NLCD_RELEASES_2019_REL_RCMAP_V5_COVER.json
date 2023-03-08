@@ -52,6 +52,30 @@
     "gee:terms_of_use": "This work was authored as part of the Contributor's official duties as an\nEmployee of the United States Government and is therefore a work of the\nUnited States Government. In accordance with 17 U.S.C. 105, no copyright\nprotection is available for such works under U.S. Law. This is an Open\nAccess article that has been identified as being free of known restrictions\nunder copyright law, including all related and neighboring rights\n(https://creativecommons.org/publicdomain/mark/1.0/). You can copy, modify,\ndistribute and perform the work, even for commercial purposes, all without\nasking permission.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "sci:citation": "\nRigge, M.B., Bunde, B., Postma, K., Shi, H., 2022, Rangeland Condition\nMonitoring Assessment and Projection (RCMAP) Fractional Component\nTime-Series Across the Western U.S. 1985-2021: U.S. Geological Survey data\nrelease.\n[doi:10.5066/P9ODAZHC](https://doi.org/10.5066/P9ODAZHC)\n",
+    "version": "v5",
+    "title": "RCMAP Rangeland Component Timeseries v5 (1985-2021)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125.0683594,
+                    28.45903302,
+                    -101.0742188,
+                    49.32512199
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1985-01-01T00:00:00Z",
+                    "2021-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
     "keywords": [
         "climate_change",
         "disturbance",
@@ -77,7 +101,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_NLCD_RELEASES_2019_REL_RCMAP_V5_COVER"
         }
     ],
-    "sci:citation": "\nRigge, M.B., Bunde, B., Postma, K., Shi, H., 2022, Rangeland Condition\nMonitoring Assessment and Projection (RCMAP) Fractional Component\nTime-Series Across the Western U.S. 1985-2021: U.S. Geological Survey data\nrelease.\n[doi:10.5066/P9ODAZHC](https://doi.org/10.5066/P9ODAZHC)\n",
     "summaries": {
         "eo:bands": [
             {
@@ -291,28 +314,5 @@
             "minimum": 0,
             "maximum": 100
         }
-    },
-    "title": "RCMAP Rangeland Component Timeseries v5 (1985-2021)",
-    "version": "v5",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -125.0683594,
-                    28.45903302,
-                    -101.0742188,
-                    49.32512199
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1985-01-01T00:00:00Z",
-                    "2021-12-31T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC0-1.0"
+    }
 }

@@ -50,6 +50,29 @@
     },
     "gee:terms_of_use": "The NASS Cropland Data Layer has no copyright restrictions. The CDL is\nconsidered public domain and free to redistribute. However, NASS would\nappreciate acknowledgment for the usage of our CDL product.\n",
     "gee:type": "image_collection",
+    "sci:citation": "USDA National Agricultural Statistics Service Cropland Data Layer. {YEAR}.\nPublished crop-specific data layer [Online]. Available at\n[https://nassgeodata.gmu.edu/CropScape/](https://nassgeodata.gmu.edu/CropScape/)\n(accessed {DATE}; verified {DATE}). USDA-NASS, Washington, DC.\n",
+    "title": "USDA NASS Cropland Data Layers",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -127,
+                    24,
+                    -65,
+                    51
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1997-01-01T00:00:00Z",
+                    "2022-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "cdl",
         "cropland",
@@ -74,7 +97,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/USDA_NASS_CDL"
         }
     ],
-    "sci:citation": "USDA National Agricultural Statistics Service Cropland Data Layer. {YEAR}.\nPublished crop-specific data layer [Online]. Available at\n[https://nassgeodata.gmu.edu/CropScape/](https://nassgeodata.gmu.edu/CropScape/)\n(accessed {DATE}; verified {DATE}). USDA-NASS, Washington, DC.\n",
     "summaries": {
         "eo:bands": [
             {
@@ -972,27 +994,5 @@
             "minimum": 1,
             "maximum": 2
         }
-    },
-    "title": "USDA NASS Cropland Data Layers",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -127,
-                    24,
-                    -65,
-                    51
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1997-01-01T00:00:00Z",
-                    "2022-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

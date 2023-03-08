@@ -56,6 +56,30 @@
     },
     "gee:terms_of_use": "This dataset is free to use without any restrictions (including commercial use). Anyone wishing\nto publish analyzed results or value added data products should properly credit the original\nG-Portal data, e.g., \\\"PR data by Japan Aerospace Exploration Agency\\\". For value added data\nproducts, please indicate the credit of the original G-Portal data, e.g., \\\"Original data for\nthis value added data product was provided by Japan Aerospace Exploration Agency.\\\"\n\nSee [G-Portal's terms of service (Article 7)](https://gportal.jaxa.jp/gpr/index/eula?lang=en)\nfor additional information.\n",
     "gee:type": "image_collection",
+    "sci:citation": "Kurihara, Y. (Jun. 2020). GCOM-C/SGLI Sea Surface Temperature (SST) ATBD (Version 2).\nRetrieved from [https://suzaku.eorc.jaxa.jp/GCOM_C/data/ATBD/ver2/V2ATBD_O1AB_SST_Kurihara_r1.pdf](https://suzaku.eorc.jaxa.jp/GCOM_C/data/ATBD/ver2/V2ATBD_O1AB_SST_Kurihara_r1.pdf)\n",
+    "version": "V3",
+    "title": "GCOM-C/SGLI L3 Sea Surface Temperature (V3)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-11-29T00:00:00Z",
+                    "2023-03-05T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "climate",
         "g_portal",
@@ -83,7 +107,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/JAXA_GCOM-C_L3_OCEAN_SST_V3"
         }
     ],
-    "sci:citation": "Kurihara, Y. (Jun. 2020). GCOM-C/SGLI Sea Surface Temperature (SST) ATBD (Version 2).\nRetrieved from [https://suzaku.eorc.jaxa.jp/GCOM_C/data/ATBD/ver2/V2ATBD_O1AB_SST_Kurihara_r1.pdf](https://suzaku.eorc.jaxa.jp/GCOM_C/data/ATBD/ver2/V2ATBD_O1AB_SST_Kurihara_r1.pdf)\n",
     "summaries": {
         "eo:bands": [
             {
@@ -246,28 +269,5 @@
             "minimum": 0,
             "maximum": 65531
         }
-    },
-    "title": "GCOM-C/SGLI L3 Sea Surface Temperature (V3)",
-    "version": "V3",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2021-11-29T00:00:00Z",
-                    "2023-02-28T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

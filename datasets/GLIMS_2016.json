@@ -73,6 +73,30 @@
     "deprecated": true,
     "gee:terms_of_use": "For the creation of any reports, publications, new\ndata sets, derived products, or services resulting from the data\nset, users should cite: GLIMS and NSIDC (2005, updated 2013): Global\nLand Ice Measurements from Space glacier database.  Compiled and\nmade available by the international GLIMS community and the National\nSnow and Ice Data Center, Boulder CO, U.S.A.,\n[doi:10.7265/N5V98602](https://doi.org/10.7265/N5V98602)\n",
     "gee:type": "table",
+    "sci:doi": "10.7265/N5V98602",
+    "version": "2016",
+    "title": "GLIMS 2016: Global Land Ice Measurements From Space [deprecated]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1870-01-01T00:00:00Z",
+                    "2011-11-09T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "glacier",
         "glims",
@@ -99,7 +123,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/GLIMS_2016"
         }
     ],
-    "sci:doi": "10.7265/N5V98602",
     "summaries": {
         "gee:visualizations": [
             {
@@ -142,28 +165,5 @@
                 "area DESC"
             ]
         }
-    },
-    "title": "GLIMS 2016: Global Land Ice Measurements From Space [deprecated]",
-    "version": "2016",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1870-01-01T00:00:00Z",
-                    "2011-11-09T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

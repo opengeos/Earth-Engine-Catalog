@@ -51,6 +51,30 @@
     },
     "gee:terms_of_use": "There are no restrictions on the use of these datasets.",
     "gee:type": "image_collection",
+    "sci:citation": "Kalnay et al., 1996, The NCEP/NCAR 40-Year Reanalysis Project. Bull. Amer.\nMeteor. Soc., 77, 437-471.\n[doi:10.1175/1520-0477(1996)077<0437:TNYRP\\\\>2.0.CO;2](https://doi.org/10.1175/1520-0477(1996)077<0437:TNYRP>2.0.CO;2).\n",
+    "version": "1",
+    "title": "NCEP/NCAR Reanalysis Data, Water Vapor",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1948-01-01T00:00:00Z",
+                    "2023-03-04T18:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "atmosphere",
         "climate",
@@ -78,7 +102,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/NCEP_RE_surface_wv"
         }
     ],
-    "sci:citation": "Kalnay et al., 1996, The NCEP/NCAR 40-Year Reanalysis Project. Bull. Amer.\nMeteor. Soc., 77, 437-471.\n[doi:10.1175/1520-0477(1996)077<0437:TNYRP\\\\>2.0.CO;2](https://doi.org/10.1175/1520-0477(1996)077<0437:TNYRP>2.0.CO;2).\n",
     "summaries": {
         "eo:bands": [
             {
@@ -124,28 +147,5 @@
             "minimum": -8.2,
             "maximum": 89.8
         }
-    },
-    "title": "NCEP/NCAR Reanalysis Data, Water Vapor",
-    "version": "1",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1948-01-01T00:00:00Z",
-                    "2023-03-02T18:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

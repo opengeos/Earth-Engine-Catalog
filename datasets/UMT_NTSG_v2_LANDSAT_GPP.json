@@ -52,6 +52,30 @@
     "gee:terms_of_use": "This work is in the public domain and is free of known copyright\nrestrictions. Users should properly cite the source used in the creation of\nany reports and publications resulting from the use of this dataset and note\nthe date when the data was acquired.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "sci:citation": "Robinson, N.P., B.W. Allred, W.K. Smith, M.O. Jones, A. Moreno, T.A.\nErickson, D.E. Naugle, and S.W. Running. 2018. Terrestrial primary\nproduction for the conterminous United States derived from Landsat 30 m and\nMODIS 250 m. Remote Sensing in Ecology and Conservation.\n[doi:10.1002/rse2.74](https://doi.org/10.1002/rse2.74)\n",
+    "version": "0.2.0",
+    "title": "Landsat Gross Primary Production CONUS",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -124.84,
+                    24.42,
+                    -64.82,
+                    49.72
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1986-01-01T00:00:00Z",
+                    "2021-12-19T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "16_day",
         "conus",
@@ -81,7 +105,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/UMT_NTSG_v2_LANDSAT_GPP"
         }
     ],
-    "sci:citation": "Robinson, N.P., B.W. Allred, W.K. Smith, M.O. Jones, A. Moreno, T.A.\nErickson, D.E. Naugle, and S.W. Running. 2018. Terrestrial primary\nproduction for the conterminous United States derived from Landsat 30 m and\nMODIS 250 m. Remote Sensing in Ecology and Conservation.\n[doi:10.1002/rse2.74](https://doi.org/10.1002/rse2.74)\n",
     "summaries": {
         "eo:bands": [
             {
@@ -182,28 +205,5 @@
             "minimum": 0,
             "maximum": 65535
         }
-    },
-    "title": "Landsat Gross Primary Production CONUS",
-    "version": "0.2.0",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -124.84,
-                    24.42,
-                    -64.82,
-                    49.72
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1986-01-01T00:00:00Z",
-                    "2021-12-19T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }

@@ -52,6 +52,30 @@
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
+    "sci:citation": "Juan P. Guerschman, Tim R. McVicar, Jamie Vleeshower, Thomas G. Van Niel,\nJorge L. Pe\u00f1a-Arancibia, Yun Chen. Estimating actual evapotranspiration at\nfield-to-continent scales by calibrating the CMRSET algorithm with MODIS,\nVIIRS, Landsat and Sentinel-2 data, Journal of Hydrology, Volume 605, 2022,\n127318,\n[doi:10.1016/j.jhydrol.2021.127318](https://doi.org/10.1016/j.jhydrol.2021.127318).\n",
+    "version": "V2.2",
+    "title": "Actual Evapotranspiration for Australia (CMRSET Landsat V2.2)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    110,
+                    -45,
+                    155,
+                    -10
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-01T00:00:00Z",
+                    "2022-11-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
     "keywords": [
         "agriculture",
         "australia",
@@ -80,7 +104,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/TERN_AET_CMRSET_LANDSAT_V2_2"
         }
     ],
-    "sci:citation": "Juan P. Guerschman, Tim R. McVicar, Jamie Vleeshower, Thomas G. Van Niel,\nJorge L. Pe\u00f1a-Arancibia, Yun Chen. Estimating actual evapotranspiration at\nfield-to-continent scales by calibrating the CMRSET algorithm with MODIS,\nVIIRS, Landsat and Sentinel-2 data, Journal of Hydrology, Volume 605, 2022,\n127318,\n[doi:10.1016/j.jhydrol.2021.127318](https://doi.org/10.1016/j.jhydrol.2021.127318).\n",
     "summaries": {
         "eo:bands": [
             {
@@ -189,28 +212,5 @@
         "gsd": [
             30
         ]
-    },
-    "title": "Actual Evapotranspiration for Australia (CMRSET Landsat V2.2)",
-    "version": "V2.2",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    110,
-                    -45,
-                    155,
-                    -10
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2000-02-01T00:00:00Z",
-                    "2022-11-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-4.0"
+    }
 }

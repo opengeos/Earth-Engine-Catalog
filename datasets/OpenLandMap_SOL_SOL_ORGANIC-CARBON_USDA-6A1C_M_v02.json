@@ -56,6 +56,30 @@
     "gee:type": "image",
     "gee:unusual_terms_of_use": true,
     "gee:user_uploaded": true,
+    "sci:citation": "Tomislav Hengl, & Ichsani Wheeler. (2018). Soil organic carbon content in x 5 g / kg at 6 standard depths (0, 10, 30, 60, 100 and 200 cm) at 250 m resolution (Version v02) [Data set]. Zenodo.\n[10.5281/zenodo.1475457](https://doi.org/10.5281/zenodo.1475457)\n",
+    "sci:doi": "10.5281/zenodo.1475457",
+    "title": "OpenLandMap Soil Organic Carbon Content",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1950-01-01T00:00:00Z",
+                    "2018-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-SA-4.0",
     "keywords": [
         "carbon",
         "envirometrix",
@@ -81,8 +105,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_SOL_SOL_ORGANIC-CARBON_USDA-6A1C_M_v02"
         }
     ],
-    "sci:citation": "Tomislav Hengl, & Ichsani Wheeler. (2018). Soil organic carbon content in x 5 g / kg at 6 standard depths (0, 10, 30, 60, 100 and 200 cm) at 250 m resolution (Version v02) [Data set]. Zenodo.\n[10.5281/zenodo.1475457](https://doi.org/10.5281/zenodo.1475457)\n",
-    "sci:doi": "10.5281/zenodo.1475457",
     "summaries": {
         "eo:bands": [
             {
@@ -185,27 +207,5 @@
             "minimum": 0,
             "maximum": 120
         }
-    },
-    "title": "OpenLandMap Soil Organic Carbon Content",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    -90,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "1950-01-01T00:00:00Z",
-                    "2018-01-01T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "CC-BY-SA-4.0"
+    }
 }

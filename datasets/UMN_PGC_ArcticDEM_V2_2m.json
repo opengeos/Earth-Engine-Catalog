@@ -53,6 +53,30 @@
     "deprecated": true,
     "gee:terms_of_use": "National Science Foundation (PGC's primary funding source) policy requires\nresearchers to acknowledge NSF support in all publications, web pages, and\nmedia interviews.\n\nBy using PGC data in Earth Engine, users agree to cite PGC\nand its sponsorship by the NSF. The original source of any third-party data\nsupplied by PGC must also be properly attributed.\n\nFor more information see the PGC's\n[Acknowledgement Policy](https://www.pgc.umn.edu/guides/user-services/acknowledgement-policy/).\n",
     "gee:type": "image_collection",
+    "sci:citation": "DEM(s) created by the Polar Geospatial Center from DigitalGlobe, Inc. imagery.",
+    "version": "V2",
+    "title": "ArcticDEM Strips [deprecated]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    50,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2009-08-16T00:00:00Z",
+                    "2017-03-12T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
     "keywords": [
         "arctic",
         "dem",
@@ -77,7 +101,6 @@
             "url": "https://developers.google.com/earth-engine/datasets/catalog/UMN_PGC_ArcticDEM_V2_2m"
         }
     ],
-    "sci:citation": "DEM(s) created by the Polar Geospatial Center from DigitalGlobe, Inc. imagery.",
     "summaries": {
         "eo:bands": [
             {
@@ -147,28 +170,5 @@
             "WorldView-2",
             "WorldView-3"
         ]
-    },
-    "title": "ArcticDEM Strips [deprecated]",
-    "version": "V2",
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    -180,
-                    50,
-                    180,
-                    90
-                ]
-            ]
-        },
-        "temporal": {
-            "interval": [
-                [
-                    "2009-08-16T00:00:00Z",
-                    "2017-03-12T00:00:00Z"
-                ]
-            ]
-        }
-    },
-    "license": "proprietary"
+    }
 }
