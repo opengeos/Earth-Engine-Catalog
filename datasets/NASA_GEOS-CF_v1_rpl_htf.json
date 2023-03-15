@@ -65,7 +65,7 @@
             "interval": [
                 [
                     "2018-01-01T00:00:00Z",
-                    "2023-03-11T12:00:00Z"
+                    "2023-03-13T11:30:00Z"
                 ]
             ]
         }
@@ -124,7 +124,7 @@
             },
             {
                 "description": "Specific humidity",
-                "gee:units": "kg kg-1",
+                "gee:units": "1 (mass fraction)",
                 "name": "Q"
             },
             {
@@ -148,12 +148,12 @@
             },
             {
                 "description": "Eastward wind",
-                "gee:units": "m s-1",
+                "gee:units": "m/s",
                 "name": "U"
             },
             {
                 "description": "Northward wind",
-                "gee:units": "m s-1",
+                "gee:units": "m/s",
                 "name": "V"
             }
         ],

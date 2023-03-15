@@ -65,7 +65,7 @@
             "interval": [
                 [
                     "2011-01-01T00:00:00Z",
-                    "2023-03-13T07:00:00Z"
+                    "2023-03-14T18:00:00Z"
                 ]
             ]
         }
@@ -138,7 +138,7 @@
             },
             {
                 "description": "Specific humidity",
-                "gee:units": "kg/kg",
+                "gee:units": "1 (mass fraction)",
                 "name": "SPFH"
             },
             {

@@ -89,7 +89,7 @@
             "interval": [
                 [
                     "2015-03-31T12:00:00Z",
-                    "2023-03-10T00:00:00Z"
+                    "2023-03-12T00:00:00Z"
                 ]
             ]
         }
@@ -124,7 +124,7 @@
         "eo:bands": [
             {
                 "description": "Retrieved soil moisture estimate from the\ndisaggregated/downscaled vertical polarization brightness temperature\nat 9-km grid cell; AM overpass\n",
-                "gee:units": "cm^3/cm^3",
+                "gee:units": "1 (volume fraction)",
                 "name": "soil_moisture_am"
             },
             {
@@ -156,7 +156,7 @@
             },
             {
                 "description": "Retrieved soil moisture estimate from the\ndisaggregated/downscaled vertical polarization brightness temperature\nat 9-km grid cell; PM overpass\n",
-                "gee:units": "cm^3/cm^3",
+                "gee:units": "1 (volume fraction)",
                 "name": "soil_moisture_pm"
             },
             {

@@ -67,7 +67,7 @@
             "interval": [
                 [
                     "1978-11-01T00:00:00Z",
-                    "2023-03-10T00:00:00Z"
+                    "2023-03-11T00:00:00Z"
                 ]
             ]
         }
@@ -106,7 +106,7 @@
         "eo:bands": [
             {
                 "description": "Total column ozone",
-                "gee:units": "Dobson units",
+                "gee:units": "Dobson",
                 "name": "ozone"
             }
         ],
