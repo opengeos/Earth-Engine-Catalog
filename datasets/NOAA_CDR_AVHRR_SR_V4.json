@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/CDR/NOAA_CDR_AVHRR_SR_V4_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_CDR_AVHRR_SR_V4_sample.png",
             "type": "image/png"
         },
         {
@@ -29,7 +29,7 @@
         },
         {
             "rel": "successor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CDR/NOAA_CDR_AVHRR_SR_V5.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_CDR_AVHRR_SR_V5.json",
             "type": "application/json",
             "title": "NOAA/CDR/AVHRR/SR/V5"
         },
@@ -39,14 +39,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CDR/NOAA_CDR_AVHRR_SR_V4.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_CDR_AVHRR_SR_V4.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CDR/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/catalog.json",
             "type": "application/json",
-            "title": "CDR"
+            "title": "NOAA"
         }
     ],
     "stac_extensions": [
@@ -163,7 +163,7 @@
             {
                 "description": "Hours since start of day",
                 "gee:scale": 0.01,
-                "gee:units": "hours",
+                "gee:units": "h",
                 "name": "TIMEOFDAY"
             },
             {

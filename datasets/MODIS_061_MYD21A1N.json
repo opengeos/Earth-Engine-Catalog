@@ -77,7 +77,7 @@
             "interval": [
                 [
                     "2000-02-24T00:00:00Z",
-                    "2023-03-11T00:00:00Z"
+                    "2023-03-12T00:00:00Z"
                 ]
             ]
         }
@@ -338,7 +338,7 @@
             {
                 "description": "Time of MODIS observation",
                 "gee:scale": 0.1,
-                "gee:units": "Hours",
+                "gee:units": "h",
                 "name": "View_Time"
             }
         ],

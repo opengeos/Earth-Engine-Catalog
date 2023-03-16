@@ -117,12 +117,12 @@
             },
             {
                 "description": "Duration of surface water during an event in days. Pixel values indicate\nthe number of composite days a pixel's area was considered water during an\nevent. 3-day MODIS composites were used.\n",
-                "gee:units": "days",
+                "gee:units": "d",
                 "name": "duration"
             },
             {
                 "description": "Number of cloud-free observations in days between the start and end day\nof each event. Cloud coverage is determined by the MODIS Quality\nAssurance band ('state_1km').\n",
-                "gee:units": "days",
+                "gee:units": "d",
                 "name": "clear_views"
             },
             {

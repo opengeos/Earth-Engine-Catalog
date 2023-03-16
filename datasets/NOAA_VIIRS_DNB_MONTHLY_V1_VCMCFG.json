@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/VIIRS/NOAA_VIIRS_DNB_MONTHLY_V1_VCMCFG_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_VIIRS_DNB_MONTHLY_V1_VCMCFG_sample.png",
             "type": "image/png"
         },
         {
@@ -29,14 +29,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/VIIRS/NOAA_VIIRS_DNB_MONTHLY_V1_VCMCFG.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_VIIRS_DNB_MONTHLY_V1_VCMCFG.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/VIIRS/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/catalog.json",
             "type": "application/json",
-            "title": "VIIRS"
+            "title": "NOAA"
         }
     ],
     "stac_extensions": [
@@ -67,7 +67,7 @@
             "interval": [
                 [
                     "2012-04-01T00:00:00Z",
-                    "2022-10-01T00:00:00Z"
+                    "2022-11-01T00:00:00Z"
                 ]
             ]
         }

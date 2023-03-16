@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NWS/NOAA_NWS_RTMA_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_NWS_RTMA_sample.png",
             "type": "image/png"
         },
         {
@@ -29,14 +29,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NWS/NOAA_NWS_RTMA.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_NWS_RTMA.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NWS/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/catalog.json",
             "type": "application/json",
-            "title": "NWS"
+            "title": "NOAA"
         }
     ],
     "stac_extensions": [
@@ -65,7 +65,7 @@
             "interval": [
                 [
                     "2011-01-01T00:00:00Z",
-                    "2023-03-14T18:00:00Z"
+                    "2023-03-15T18:00:00Z"
                 ]
             ]
         }

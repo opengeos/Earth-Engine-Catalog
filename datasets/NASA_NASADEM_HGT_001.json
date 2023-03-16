@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASADEM_HGT/NASA_NASADEM_HGT_001_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_NASADEM_HGT_001_sample.png",
             "type": "image/png"
         },
         {
@@ -29,14 +29,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASADEM_HGT/NASA_NASADEM_HGT_001.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_NASADEM_HGT_001.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASADEM_HGT/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
             "type": "application/json",
-            "title": "NASADEM_HGT"
+            "title": "NASA"
         }
     ],
     "stac_extensions": [

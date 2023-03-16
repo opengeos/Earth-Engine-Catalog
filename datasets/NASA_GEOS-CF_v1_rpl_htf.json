@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/GEOS-CF/NASA_GEOS-CF_v1_rpl_htf_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_GEOS-CF_v1_rpl_htf_sample.png",
             "type": "image/png"
         },
         {
@@ -29,14 +29,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GEOS-CF/NASA_GEOS-CF_v1_rpl_htf.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_GEOS-CF_v1_rpl_htf.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GEOS-CF/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
             "type": "application/json",
-            "title": "GEOS-CF"
+            "title": "NASA"
         }
     ],
     "stac_extensions": [
@@ -65,7 +65,7 @@
             "interval": [
                 [
                     "2018-01-01T00:00:00Z",
-                    "2023-03-13T11:30:00Z"
+                    "2023-03-14T12:00:00Z"
                 ]
             ]
         }

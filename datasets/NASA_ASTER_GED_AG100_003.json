@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/ASTER_GED/NASA_ASTER_GED_AG100_003_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_ASTER_GED_AG100_003_sample.png",
             "type": "image/png"
         },
         {
@@ -33,14 +33,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/ASTER_GED/NASA_ASTER_GED_AG100_003.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_ASTER_GED_AG100_003.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/ASTER_GED/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
             "type": "application/json",
-            "title": "ASTER_GED"
+            "title": "NASA"
         }
     ],
     "stac_extensions": [

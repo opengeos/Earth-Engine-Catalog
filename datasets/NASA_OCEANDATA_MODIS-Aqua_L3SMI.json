@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/OCEANDATA/NASA_OCEANDATA_MODIS-Aqua_L3SMI_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_OCEANDATA_MODIS-Aqua_L3SMI_sample.png",
             "type": "image/png"
         },
         {
@@ -49,14 +49,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/OCEANDATA/NASA_OCEANDATA_MODIS-Aqua_L3SMI.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_OCEANDATA_MODIS-Aqua_L3SMI.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/OCEANDATA/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
             "type": "application/json",
-            "title": "OCEANDATA"
+            "title": "NASA"
         }
     ],
     "stac_extensions": [

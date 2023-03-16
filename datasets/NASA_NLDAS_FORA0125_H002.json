@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NLDAS/NASA_NLDAS_FORA0125_H002_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_NLDAS_FORA0125_H002_sample.png",
             "type": "image/png"
         },
         {
@@ -33,14 +33,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NLDAS/NASA_NLDAS_FORA0125_H002.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_NLDAS_FORA0125_H002.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NLDAS/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
             "type": "application/json",
-            "title": "NLDAS"
+            "title": "NASA"
         }
     ],
     "stac_extensions": [
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1979-01-01T13:00:00Z",
-                    "2023-03-11T12:00:00Z"
+                    "2023-03-12T12:00:00Z"
                 ]
             ]
         }

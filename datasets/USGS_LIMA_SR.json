@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/LIMA/USGS_LIMA_SR_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/USGS_LIMA_SR_sample.png",
             "type": "image/png"
         },
         {
@@ -29,14 +29,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/LIMA/USGS_LIMA_SR.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_LIMA_SR.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/LIMA/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/catalog.json",
             "type": "application/json",
-            "title": "LIMA"
+            "title": "USGS"
         }
     ],
     "stac_extensions": [

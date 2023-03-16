@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/CFSV2/NOAA_CFSV2_FOR6H_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_CFSV2_FOR6H_sample.png",
             "type": "image/png"
         },
         {
@@ -33,14 +33,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CFSV2/NOAA_CFSV2_FOR6H.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_CFSV2_FOR6H.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CFSV2/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/catalog.json",
             "type": "application/json",
-            "title": "CFSV2"
+            "title": "NOAA"
         }
     ],
     "stac_extensions": [
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1979-01-01T00:00:00Z",
-                    "2023-03-14T12:00:00Z"
+                    "2023-03-15T00:00:00Z"
                 ]
             ]
         }

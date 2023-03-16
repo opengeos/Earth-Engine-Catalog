@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/GSFC/NASA_GSFC_MERRA_aer_2_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_GSFC_MERRA_aer_2_sample.png",
             "type": "image/png"
         },
         {
@@ -34,14 +34,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GSFC/NASA_GSFC_MERRA_aer_2.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_GSFC_MERRA_aer_2.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GSFC/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
             "type": "application/json",
-            "title": "GSFC"
+            "title": "NASA"
         }
     ],
     "stac_extensions": [

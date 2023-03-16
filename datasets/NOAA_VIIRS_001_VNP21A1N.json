@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/VIIRS/NOAA_VIIRS_001_VNP21A1N_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_VIIRS_001_VNP21A1N_sample.png",
             "type": "image/png"
         },
         {
@@ -33,14 +33,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/VIIRS/NOAA_VIIRS_001_VNP21A1N.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_VIIRS_001_VNP21A1N.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/VIIRS/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/catalog.json",
             "type": "application/json",
-            "title": "VIIRS"
+            "title": "NOAA"
         }
     ],
     "stac_extensions": [
@@ -338,7 +338,7 @@
             {
                 "description": "Time of LST observation",
                 "gee:scale": 0.1,
-                "gee:units": "Hours",
+                "gee:units": "h",
                 "name": "View_Time"
             }
         ],

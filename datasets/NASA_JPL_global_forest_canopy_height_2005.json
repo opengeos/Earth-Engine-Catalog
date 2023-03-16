@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/JPL/NASA_JPL_global_forest_canopy_height_2005_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_JPL_global_forest_canopy_height_2005_sample.png",
             "type": "image/png"
         },
         {
@@ -29,14 +29,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/JPL/NASA_JPL_global_forest_canopy_height_2005.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_JPL_global_forest_canopy_height_2005.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/JPL/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
             "type": "application/json",
-            "title": "JPL"
+            "title": "NASA"
         }
     ],
     "stac_extensions": [

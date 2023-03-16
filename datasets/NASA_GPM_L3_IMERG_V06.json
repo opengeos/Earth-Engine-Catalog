@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/GPM_L3/NASA_GPM_L3_IMERG_V06_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_GPM_L3_IMERG_V06_sample.png",
             "type": "image/png"
         },
         {
@@ -45,14 +45,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GPM_L3/NASA_GPM_L3_IMERG_V06.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_GPM_L3_IMERG_V06.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GPM_L3/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
             "type": "application/json",
-            "title": "GPM_L3"
+            "title": "NASA"
         }
     ],
     "stac_extensions": [
@@ -92,7 +92,7 @@
             "interval": [
                 [
                     "2000-06-01T00:00:00Z",
-                    "2023-03-14T03:30:00Z"
+                    "2023-03-15T03:30:00Z"
                 ]
             ]
         }

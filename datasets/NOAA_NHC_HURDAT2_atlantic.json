@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NHC/NOAA_NHC_HURDAT2_atlantic_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_NHC_HURDAT2_atlantic_sample.png",
             "type": "image/png"
         },
         {
@@ -40,14 +40,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NHC/NOAA_NHC_HURDAT2_atlantic.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_NHC_HURDAT2_atlantic.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NHC/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/catalog.json",
             "type": "application/json",
-            "title": "NHC"
+            "title": "NOAA"
         }
     ],
     "stac_extensions": [

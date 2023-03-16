@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/WBD/USGS_WBD_2017_HUC06_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/USGS_WBD_2017_HUC06_sample.png",
             "type": "image/png"
         },
         {
@@ -40,14 +40,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/WBD/USGS_WBD_2017_HUC06.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_WBD_2017_HUC06.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/WBD/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/catalog.json",
             "type": "application/json",
-            "title": "WBD"
+            "title": "USGS"
         }
     ],
     "stac_extensions": [

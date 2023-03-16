@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/3DEP/USGS_3DEP_1m_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/USGS_3DEP_1m_sample.png",
             "type": "image/png"
         },
         {
@@ -38,14 +38,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/3DEP/USGS_3DEP_1m.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_3DEP_1m.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/3DEP/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/catalog.json",
             "type": "application/json",
-            "title": "3DEP"
+            "title": "USGS"
         }
     ],
     "stac_extensions": [

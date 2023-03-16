@@ -230,7 +230,7 @@
             {
                 "description": "Local time of day observation",
                 "gee:scale": 0.1,
-                "gee:units": "Hours",
+                "gee:units": "h",
                 "name": "Day_view_time"
             },
             {
@@ -349,7 +349,7 @@
             {
                 "description": "Local time of night observation",
                 "gee:scale": 0.1,
-                "gee:units": "Hours",
+                "gee:units": "h",
                 "name": "Night_view_time"
             },
             {

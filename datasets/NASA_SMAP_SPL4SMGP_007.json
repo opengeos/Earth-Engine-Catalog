@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/SMAP/NASA_SMAP_SPL4SMGP_007_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_SMAP_SPL4SMGP_007_sample.png",
             "type": "image/png"
         },
         {
@@ -29,14 +29,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/SMAP/NASA_SMAP_SPL4SMGP_007.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_SMAP_SPL4SMGP_007.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/SMAP/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
             "type": "application/json",
-            "title": "SMAP"
+            "title": "NASA"
         }
     ],
     "stac_extensions": [
@@ -72,7 +72,7 @@
             "interval": [
                 [
                     "2015-03-31T12:00:00Z",
-                    "2023-03-10T22:30:00Z"
+                    "2023-03-12T22:30:00Z"
                 ]
             ]
         }

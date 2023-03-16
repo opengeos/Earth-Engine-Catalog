@@ -1,0 +1,271 @@
+{
+    "type": "Collection",
+    "id": "NASA/GDDP-CMIP6",
+    "stac_version": "1.0.0",
+    "description": "The NEX-GDDP-CMIP6 dataset is comprised of global downscaled climate\nscenarios derived from the General Circulation Model (GCM) runs conducted\nunder the Coupled Model Intercomparison Project Phase 6 (CMIP6, see\n[Thrasher et al. 2022](https://doi.org/10.7917/OFSG3345)) and across two of\nthe four \u201cTier 1\u201d greenhouse gas emissions scenarios known as Shared\nSocioeconomic Pathways (SSPs).\n\nThe CMIP6 GCM runs were developed in support of the Sixth Assessment Report\nof the Intergovernmental Panel on Climate Change (IPCC AR6). This dataset\nincludes downscaled projections from ScenarioMIP model runs for which daily\nscenarios were produced and distributed through the Earth System Grid\nFederation.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA_GDDP-CMIP6",
+            "type": "text/html",
+            "title": "Run the example for NASA/GDDP-CMIP6 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_GDDP-CMIP6_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GDDP-CMIP6#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://pcmdi.llnl.gov/CMIP6/TermsOfUse/TermsOfUse6-1.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_GDDP-CMIP6.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "All CMIP6 GCM model inputs and any derivatives work, such as this dataset,\nare governed by the original\n[Terms of use](https://pcmdi.llnl.gov/CMIP6/TermsOfUse/TermsOfUse6-1.html)\nand may have some restrictions on usage. See the \"license\" property on\neach EE Image that notes the specific license the data may fall under.\n\n(Note that while the official Terms of Use mention that some models are\nrestricted under 'CC-BY-SA-4.0' (Creative Commons Attribution Share Alike 4.0 International), models available in EarthEngine either fall\nunder 'CC-BY-4.0' (Creative Commons Attribution 4.0 International) or 'CC0-1.0' (Creative Commons Zero v1.0 Universal).)\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Thrasher, B., Maurer, E. P., McKellar, C., & Duffy, P. B., 2012:\nTechnical Note: Bias correcting climate model simulated daily temperature\nextremes with quantile mapping. Hydrology and Earth System Sciences,\n16(9), 3309-3314.\n[doi:10.5194/hess-16-3309-2012](https://doi.org/10.5194/hess-16-3309-2012)\n",
+    "version": "1",
+    "title": "NEX-GDDP-CMIP6: NASA Earth Exchange Global Daily Downscaled Climate Projections",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1950-01-01T00:00:00Z",
+                    "2100-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "various",
+    "keywords": [
+        "climate",
+        "csu",
+        "gddp",
+        "geophysical",
+        "nasa",
+        "nex",
+        "precipitation",
+        "temperature"
+    ],
+    "providers": [
+        {
+            "name": "NASA / CSU",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://cds.nccs.nasa.gov/nex-gddp/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GDDP-CMIP6"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Near-surface relative humidity. Not present in these models:\n'BCC-CSM2-MR', 'NESM3', 'KIOST-ESM' (only for scenario 'ssp245' in\n2058).\n",
+                "gee:units": "%",
+                "name": "hurs"
+            },
+            {
+                "description": "Near-surface specific humidity. Not present in these models:\n'IPSL-CM6A-LR', 'MIROC6', 'NESM3'.\n",
+                "gee:units": "1 (mass fraction)",
+                "name": "huss"
+            },
+            {
+                "description": "Precipitation (mean of the daily precipitation rate)",
+                "gee:units": "kg/(m^2*s)",
+                "name": "pr"
+            },
+            {
+                "description": "Surface downwelling longwave radiation",
+                "gee:units": "W/m^2",
+                "name": "rlds"
+            },
+            {
+                "description": "Surface downwelling shortwave radiation",
+                "gee:units": "W/m^2",
+                "name": "rsds"
+            },
+            {
+                "description": "Daily-mean near-surface wind speed",
+                "gee:units": "m/s",
+                "name": "sfcWind"
+            },
+            {
+                "description": "Daily near-surface air temperature. Not present in these models:\n'NorESM2-LM' (only for scenario 'ssp585' in 2096).\n",
+                "gee:units": "K",
+                "name": "tas"
+            },
+            {
+                "description": "Daily minimum near-surface air temperature. Not present in these\nmodels: 'CESM2', 'CESM2-WACCM', 'IITM-ESM', 'TaiESM1' (only for\nscenario 'ssp585' in 2093).\n",
+                "gee:units": "K",
+                "name": "tasmin"
+            },
+            {
+                "description": "Daily maximum near-surface air temperature. Not present in these\nmodels: 'CESM2', 'CESM2-WACCM', 'IITM-ESM'.\n",
+                "gee:units": "K",
+                "name": "tasmax"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Name of the CMIP6 model. It is one of: 'ACCESS-CM2', 'ACCESS-ESM1-5',\n'BCC-CSM2-MR', 'CESM2', 'CESM2-WACCM', 'CMCC-CM2-SR5', 'CMCC-ESM2',\n'CNRM-CM6-1', 'CNRM-ESM2-1', 'CanESM5', 'EC-Earth3',\n'EC-Earth3-Veg-LR', 'FGOALS-g3', 'GFDL-CM4', 'GFDL-ESM4',\n'GISS-E2-1-G', 'HadGEM3-GC31-LL', 'HadGEM3-GC31-MM', 'IITM-ESM',\n'INM-CM4-8', 'INM-CM5-0', 'IPSL-CM6A-LR', 'KACE-1-0-G', 'KIOST-ESM',\n'MIROC-ES2L', 'MIROC6', 'MPI-ESM1-2-HR', 'MPI-ESM1-2-LR',\n'MRI-ESM2-0', 'NESM3', 'NorESM2-LM', 'NorESM2-MM', 'TaiESM1',\n'UKESM1-0-LL'.\n",
+                "name": "model",
+                "type": "STRING"
+            },
+            {
+                "description": "Name of the CMIP6 scenario. It is one of: 'historical', 'ssp245',\n'ssp585', where 'historical' designates retrospective model runs\n(pre-2015).\n",
+                "name": "scenario",
+                "type": "STRING"
+            },
+            {
+                "description": "Calendar year",
+                "name": "year",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Calendar month",
+                "name": "month",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Calendar day",
+                "name": "day",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "The grid label, which is only set when differentiating simulation\nresults for the 'GFDL-CM4' model.\n",
+                "name": "grid_label",
+                "type": "STRING"
+            },
+            {
+                "description": "The license under which a model is released. This will either be\n'CC-BY-4.0' (Creative Commons Attribution 4.0 International) or 'CC0-1.0' (Creative Commons Zero v1.0 Universal).\n",
+                "name": "license",
+                "type": "STRING"
+            },
+            {
+                "description": "Present and 'true' if data for a particular day has been filled in\nusing the value from the previous day. This happens when the\nsimulation does not produce a data band for every day in the year.\n\nThe following models always duplicate the last day in leap years\nbecause they only yield 365 bands: 'BCC-CSM2-MR', 'CanESM5', 'CESM2',\n'CESM2-WACCM', 'CMCC-CM2-SR5', 'CMCC-ESM2', 'FGOALS-g3', 'GFDL-CM4',\n'GFDL-ESM4', 'GISS-E2-1-G', 'INM-CM4-8', 'INM-CM5-0', 'KIOST-ESM',\n'NorESM2-LM', 'NorESM2-MM', 'TaiESM1'.\n\nThese models yield 360 bands per year and have the outstanding 5 or 6\ndays filled by duplicating one every 60-70 days: 'HadGEM3-GC31-LL',\n'HadGEM3-GC31-MM', 'KACE-1-0-G', 'UKESM1-0-LL'.\n\n'IITM-ESM' only has 364 bands in years divisible by 5 (and does not\nhave data for 2100 at all), so the final day is always duplicated,\nplus the midpoint day in leap years.\n",
+                "name": "interpolated",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Minimum Air Temperature (K)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "tasmin"
+                        ],
+                        "max": [
+                            300
+                        ],
+                        "min": [
+                            240
+                        ],
+                        "palette": [
+                            "blue",
+                            "purple",
+                            "cyan",
+                            "green",
+                            "yellow",
+                            "red"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 52,
+                    "lon": 71,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            27830
+        ],
+        "hurs": {
+            "minimum": -101.85,
+            "maximum": 179.44
+        },
+        "huss": {
+            "minimum": -0.007,
+            "maximum": 11.76
+        },
+        "pr": {
+            "minimum": 0,
+            "maximum": 0.0083
+        },
+        "rlds": {
+            "minimum": -481.17,
+            "maximum": 908.96
+        },
+        "rsds": {
+            "minimum": -702710.19,
+            "maximum": 553087.44
+        },
+        "sfcWind": {
+            "minimum": -4.98,
+            "maximum": 28.29
+        },
+        "tas": {
+            "minimum": 192.15,
+            "maximum": 336.94
+        },
+        "tasmax": {
+            "minimum": 202.09,
+            "maximum": 352.77
+        },
+        "tasmin": {
+            "minimum": 163.66,
+            "maximum": 334.92
+        }
+    }
+}

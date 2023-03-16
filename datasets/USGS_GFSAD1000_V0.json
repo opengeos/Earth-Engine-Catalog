@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/GFSAD1000/USGS_GFSAD1000_V0_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/USGS_GFSAD1000_V0_sample.png",
             "type": "image/png"
         },
         {
@@ -29,20 +29,20 @@
         },
         {
             "rel": "successor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/GFSAD1000/USGS_GFSAD1000_V1.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_GFSAD1000_V1.json",
             "type": "application/json",
             "title": "USGS/GFSAD1000_V1"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/GFSAD1000/USGS_GFSAD1000_V0.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_GFSAD1000_V0.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/GFSAD1000/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/catalog.json",
             "type": "application/json",
-            "title": "GFSAD1000"
+            "title": "USGS"
         }
     ],
     "stac_extensions": [

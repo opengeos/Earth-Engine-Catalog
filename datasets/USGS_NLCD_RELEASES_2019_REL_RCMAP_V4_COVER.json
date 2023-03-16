@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/NLCD_RELEASES/USGS_NLCD_RELEASES_2019_REL_RCMAP_V4_COVER_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/USGS_NLCD_RELEASES_2019_REL_RCMAP_V4_COVER_sample.png",
             "type": "image/png"
         },
         {
@@ -29,14 +29,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/NLCD_RELEASES/USGS_NLCD_RELEASES_2019_REL_RCMAP_V4_COVER.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2019_REL_RCMAP_V4_COVER.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/NLCD_RELEASES/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/catalog.json",
             "type": "application/json",
-            "title": "NLCD_RELEASES"
+            "title": "USGS"
         }
     ],
     "stac_extensions": [

@@ -633,7 +633,7 @@
             },
             {
                 "description": "Relative time from the starting time of the file\nto the time of microwave radiometer (imager/sounder) observing.\nIf no observation exists within the hourly window, the time\nwill be the negative number of hours since the last observation.\n",
-                "gee:units": "Hours",
+                "gee:units": "h",
                 "name": "observationTimeFlag"
             },
             {

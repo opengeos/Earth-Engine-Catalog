@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/GIMMS/NASA_GIMMS_3GV0_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_GIMMS_3GV0_sample.png",
             "type": "image/png"
         },
         {
@@ -29,14 +29,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GIMMS/NASA_GIMMS_3GV0.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_GIMMS_3GV0.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GIMMS/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
             "type": "application/json",
-            "title": "GIMMS"
+            "title": "NASA"
         }
     ],
     "stac_extensions": [

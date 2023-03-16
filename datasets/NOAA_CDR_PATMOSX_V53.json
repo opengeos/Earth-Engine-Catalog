@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/CDR/NOAA_CDR_PATMOSX_V53_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_CDR_PATMOSX_V53_sample.png",
             "type": "image/png"
         },
         {
@@ -33,14 +33,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CDR/NOAA_CDR_PATMOSX_V53.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_CDR_PATMOSX_V53.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/CDR/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/catalog.json",
             "type": "application/json",
-            "title": "CDR"
+            "title": "NOAA"
         }
     ],
     "stac_extensions": [

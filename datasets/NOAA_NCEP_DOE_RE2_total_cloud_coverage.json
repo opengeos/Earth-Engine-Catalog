@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NCEP_DOE_RE2/NOAA_NCEP_DOE_RE2_total_cloud_coverage_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_NCEP_DOE_RE2_total_cloud_coverage_sample.png",
             "type": "image/png"
         },
         {
@@ -29,14 +29,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NCEP_DOE_RE2/NOAA_NCEP_DOE_RE2_total_cloud_coverage.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_NCEP_DOE_RE2_total_cloud_coverage.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NCEP_DOE_RE2/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/catalog.json",
             "type": "application/json",
-            "title": "NCEP_DOE_RE2"
+            "title": "NOAA"
         }
     ],
     "stac_extensions": [

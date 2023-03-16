@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/GLDAS/NASA_GLDAS_V20_NOAH_G025_T3H_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_GLDAS_V20_NOAH_G025_T3H_sample.png",
             "type": "image/png"
         },
         {
@@ -29,14 +29,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GLDAS/NASA_GLDAS_V20_NOAH_G025_T3H.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_GLDAS_V20_NOAH_G025_T3H.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/GLDAS/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
             "type": "application/json",
-            "title": "GLDAS"
+            "title": "NASA"
         }
     ],
     "stac_extensions": [

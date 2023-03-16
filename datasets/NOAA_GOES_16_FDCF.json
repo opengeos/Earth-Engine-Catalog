@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/GOES/NOAA_GOES_16_FDCF_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_GOES_16_FDCF_sample.png",
             "type": "image/png"
         },
         {
@@ -33,14 +33,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/GOES/NOAA_GOES_16_FDCF.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_GOES_16_FDCF.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/GOES/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/catalog.json",
             "type": "application/json",
-            "title": "GOES"
+            "title": "NOAA"
         }
     ],
     "stac_extensions": [
@@ -77,7 +77,7 @@
             "interval": [
                 [
                     "2017-05-24T00:00:00Z",
-                    "2023-03-14T21:50:20Z"
+                    "2023-03-15T22:40:20Z"
                 ]
             ]
         }

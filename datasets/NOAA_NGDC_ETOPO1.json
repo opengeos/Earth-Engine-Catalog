@@ -19,7 +19,7 @@
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NGDC/NOAA_NGDC_ETOPO1_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_NGDC_ETOPO1_sample.png",
             "type": "image/png"
         },
         {
@@ -37,14 +37,14 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NGDC/NOAA_NGDC_ETOPO1.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_NGDC_ETOPO1.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NGDC/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/catalog.json",
             "type": "application/json",
-            "title": "NGDC"
+            "title": "NOAA"
         }
     ],
     "stac_extensions": [
