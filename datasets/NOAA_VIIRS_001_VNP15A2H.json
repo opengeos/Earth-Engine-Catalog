@@ -329,12 +329,12 @@
             },
             {
                 "description": "Leaf Area Index",
-                "gee:units": "m^2/m^2",
+                "gee:units": "1 (area fraction)",
                 "name": "Lai"
             },
             {
                 "description": "Standard deviation for LAI",
-                "gee:units": "m^2/m^2",
+                "gee:units": "1 (area fraction)",
                 "name": "LaiStdDev"
             }
         ],

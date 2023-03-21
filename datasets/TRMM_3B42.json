@@ -208,7 +208,7 @@
             },
             {
                 "description": "Satellite observation time minus the time of the granule.\nIn case of overlapping satellite observations, the two or more\nobservation times are equal-weighting averaged.\n",
-                "gee:units": "Minutes",
+                "gee:units": "min",
                 "name": "satObservationTime"
             }
         ],

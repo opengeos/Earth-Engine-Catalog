@@ -97,12 +97,12 @@
         "eo:bands": [
             {
                 "description": "Travel time to the nearest hospital or clinic.",
-                "gee:units": "minutes",
+                "gee:units": "min",
                 "name": "accessibility"
             },
             {
                 "description": "Travel time to the nearest hospital or clinic using non-motorized transport.",
-                "gee:units": "minutes",
+                "gee:units": "min",
                 "name": "accessibility_walking_only"
             }
         ],
