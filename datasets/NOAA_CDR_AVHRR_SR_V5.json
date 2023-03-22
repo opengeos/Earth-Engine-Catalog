@@ -162,19 +162,19 @@
             {
                 "description": "Relative sensor azimuth angle",
                 "gee:scale": 0.01,
-                "gee:units": "Degrees",
+                "gee:units": "degrees",
                 "name": "RELAZ"
             },
             {
                 "description": "Solar zenith angle",
                 "gee:scale": 0.01,
-                "gee:units": "Degrees",
+                "gee:units": "degrees",
                 "name": "SZEN"
             },
             {
                 "description": "View zenith angle, scale 0.01",
                 "gee:scale": 0.01,
-                "gee:units": "Degrees",
+                "gee:units": "degrees",
                 "name": "VZEN"
             },
             {

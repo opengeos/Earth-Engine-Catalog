@@ -388,19 +388,19 @@
             {
                 "description": "View zenith angle",
                 "gee:scale": 0.01,
-                "gee:units": "Degrees",
+                "gee:units": "degrees",
                 "name": "ViewZenith"
             },
             {
                 "description": "Solar zenith angle",
                 "gee:scale": 0.01,
-                "gee:units": "Degrees",
+                "gee:units": "degrees",
                 "name": "SolarZenith"
             },
             {
                 "description": "Relative azimuth angle",
                 "gee:scale": 0.01,
-                "gee:units": "Degrees",
+                "gee:units": "degrees",
                 "name": "RelativeAzimuth"
             },
             {

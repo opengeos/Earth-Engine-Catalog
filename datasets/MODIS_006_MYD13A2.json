@@ -388,19 +388,19 @@
             {
                 "description": "View zenith angle of VI Pixel",
                 "gee:scale": 0.01,
-                "gee:units": "Degrees",
+                "gee:units": "degrees",
                 "name": "ViewZenith"
             },
             {
                 "description": "Sun zenith angle of VI pixel",
                 "gee:scale": 0.01,
-                "gee:units": "Degrees",
+                "gee:units": "degrees",
                 "name": "SolarZenith"
             },
             {
                 "description": "Relative azimuth angle of VI pixel",
                 "gee:scale": 0.01,
-                "gee:units": "Degrees",
+                "gee:units": "degrees",
                 "name": "RelativeAzimuth"
             },
             {

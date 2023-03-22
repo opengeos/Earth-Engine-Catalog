@@ -83,7 +83,7 @@
             "interval": [
                 [
                     "2000-02-24T00:00:00Z",
-                    "2023-03-10T00:00:00Z"
+                    "2023-03-12T00:00:00Z"
                 ]
             ]
         }
@@ -221,7 +221,7 @@
             },
             {
                 "description": "Solar zenith angle of local solar noon",
-                "gee:units": "Degrees",
+                "gee:units": "degrees",
                 "name": "BRDF_Albedo_LocalSolarNoon"
             },
             {

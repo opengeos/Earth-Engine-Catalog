@@ -562,19 +562,19 @@
             {
                 "description": "MODIS Solar zenith angle",
                 "gee:scale": 0.01,
-                "gee:units": "Degrees",
+                "gee:units": "degrees",
                 "name": "SolarZenith"
             },
             {
                 "description": "MODIS view zenith angle",
                 "gee:scale": 0.01,
-                "gee:units": "Degrees",
+                "gee:units": "degrees",
                 "name": "ViewZenith"
             },
             {
                 "description": "MODIS relative azimuth angle",
                 "gee:scale": 0.01,
-                "gee:units": "Degrees",
+                "gee:units": "degrees",
                 "name": "RelativeAzimuth"
             },
             {

@@ -83,7 +83,7 @@
             "interval": [
                 [
                     "2002-07-04T00:00:00Z",
-                    "2023-03-14T00:00:00Z"
+                    "2023-03-18T00:00:00Z"
                 ]
             ]
         }
@@ -350,14 +350,14 @@
             {
                 "description": "Sensor zenith angle",
                 "gee:scale": 0.01,
-                "gee:units": "Degrees",
+                "gee:units": "degrees",
                 "gsd": 1000,
                 "name": "SensorZenith"
             },
             {
                 "description": "Sensor azimuth angle",
                 "gee:scale": 0.01,
-                "gee:units": "Degrees",
+                "gee:units": "degrees",
                 "gsd": 1000,
                 "name": "SensorAzimuth"
             },
@@ -371,14 +371,14 @@
             {
                 "description": "Solar zenith angle",
                 "gee:scale": 0.01,
-                "gee:units": "Degrees",
+                "gee:units": "degrees",
                 "gsd": 1000,
                 "name": "SolarZenith"
             },
             {
                 "description": "Solar azimuth angle",
                 "gee:scale": 0.01,
-                "gee:units": "Degrees",
+                "gee:units": "degrees",
                 "gsd": 1000,
                 "name": "SolarAzimuth"
             },
