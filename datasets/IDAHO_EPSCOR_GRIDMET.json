@@ -67,7 +67,7 @@
             "interval": [
                 [
                     "1979-01-01T00:00:00Z",
-                    "2023-03-19T06:00:00Z"
+                    "2023-03-20T06:00:00Z"
                 ]
             ]
         }
@@ -156,8 +156,8 @@
                 "name": "erc"
             },
             {
-                "description": "Daily reference evapotranspiration",
-                "gee:units": "grass, mm",
+                "description": "Daily grass reference evapotranspiration",
+                "gee:units": "mm",
                 "name": "eto"
             },
             {
@@ -176,8 +176,8 @@
                 "name": "fm1000"
             },
             {
-                "description": "Daily reference evapotranspiration",
-                "gee:units": "Alfalfa, mm",
+                "description": "Daily alfalfa reference evapotranspiration",
+                "gee:units": "mm",
                 "name": "etr"
             },
             {
