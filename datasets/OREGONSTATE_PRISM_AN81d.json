@@ -73,7 +73,7 @@
             "interval": [
                 [
                     "1981-01-01T00:00:00Z",
-                    "2023-03-20T12:00:00Z"
+                    "2023-03-21T12:00:00Z"
                 ]
             ]
         }
@@ -117,22 +117,22 @@
             },
             {
                 "description": "Daily mean temperature (calculated as (tmin+tmax)/2)",
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "tmean"
             },
             {
                 "description": "Daily minimum temperature",
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "tmin"
             },
             {
                 "description": "Daily maximum temperature",
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "tmax"
             },
             {
                 "description": "Daily mean dew point temperature",
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "tdmean"
             },
             {

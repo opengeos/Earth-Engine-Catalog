@@ -121,13 +121,13 @@
             {
                 "description": "Daily sea surface temperature",
                 "gee:scale": 0.01,
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "sst"
             },
             {
                 "description": "Temperature anomaly; the daily OISST minus a 30-year climatological mean.",
                 "gee:scale": 0.01,
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "anom"
             },
             {
@@ -139,7 +139,7 @@
             {
                 "description": "Estimated error; standard deviation of analyzed sea surface temperature.",
                 "gee:scale": 0.01,
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "err"
             }
         ],

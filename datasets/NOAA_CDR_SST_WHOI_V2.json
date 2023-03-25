@@ -112,7 +112,7 @@
         "eo:bands": [
             {
                 "description": "Optimum Interpolation Sea Surface Temperature (OISST), with a diurnal warming correction",
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "sea_surface_temperature"
             },
             {

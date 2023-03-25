@@ -136,22 +136,22 @@
             },
             {
                 "description": "30-year average of monthly mean temperature (calculated as (tmin+tmax)/2)",
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "tmean"
             },
             {
                 "description": "30-year average of monthly minimum temperature",
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "tmin"
             },
             {
                 "description": "30-year average of monthly maximum temperature",
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "tmax"
             },
             {
                 "description": "30-year average of monthly mean dew point temperature",
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "tdmean"
             },
             {

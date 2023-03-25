@@ -101,7 +101,7 @@
         "eo:bands": [
             {
                 "description": "The mean value of daytime land surface temperature for each aggregated pixel.",
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "Mean"
             },
             {

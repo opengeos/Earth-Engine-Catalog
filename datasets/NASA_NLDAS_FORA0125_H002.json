@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1979-01-01T13:00:00Z",
-                    "2023-03-20T04:00:00Z"
+                    "2023-03-21T11:00:00Z"
                 ]
             ]
         }
@@ -117,7 +117,7 @@
         "eo:bands": [
             {
                 "description": "Air temperature at 2 meters above the surface",
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "temperature"
             },
             {

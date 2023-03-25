@@ -112,19 +112,19 @@
             {
                 "description": "Mean temperature",
                 "gee:scale": 0.1,
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "tavg"
             },
             {
                 "description": "Minimum temperature",
                 "gee:scale": 0.1,
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "tmin"
             },
             {
                 "description": "Maximum temperature",
                 "gee:scale": 0.1,
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "tmax"
             },
             {

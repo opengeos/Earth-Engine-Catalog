@@ -117,22 +117,22 @@
             },
             {
                 "description": "Monthly average of daily mean temperature (calculated as (tmin+tmax)/2)",
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "tmean"
             },
             {
                 "description": "Monthly minimum temperature",
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "tmin"
             },
             {
                 "description": "Monthly average of daily maximum temperature",
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "tmax"
             },
             {
                 "description": "Monthly average of daily mean dew point temperature",
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "tdmean"
             },
             {

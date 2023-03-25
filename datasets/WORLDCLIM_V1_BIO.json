@@ -115,13 +115,13 @@
             {
                 "description": "Annual mean temperature",
                 "gee:scale": 0.1,
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "bio01"
             },
             {
                 "description": "Mean diurnal range (mean of monthly (max temp - min temp))",
                 "gee:scale": 0.1,
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "bio02"
             },
             {
@@ -132,49 +132,49 @@
             {
                 "description": "Temperature seasonality (Standard deviation * 100)",
                 "gee:scale": 0.01,
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "bio04"
             },
             {
                 "description": "Max temperature of warmest month",
                 "gee:scale": 0.1,
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "bio05"
             },
             {
                 "description": "Min temperature of coldest month",
                 "gee:scale": 0.1,
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "bio06"
             },
             {
                 "description": "Temperature annual range (bio05-bio06)",
                 "gee:scale": 0.1,
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "bio07"
             },
             {
                 "description": "Mean temperature of wettest quarter",
                 "gee:scale": 0.1,
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "bio08"
             },
             {
                 "description": "Mean temperature of driest quarter",
                 "gee:scale": 0.1,
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "bio09"
             },
             {
                 "description": "Mean temperature of warmest quarter",
                 "gee:scale": 0.1,
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "bio10"
             },
             {
                 "description": "Mean temperature of coldest quarter",
                 "gee:scale": 0.1,
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "bio11"
             },
             {

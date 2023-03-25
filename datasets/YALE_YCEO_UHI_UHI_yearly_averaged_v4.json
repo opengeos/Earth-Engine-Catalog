@@ -103,12 +103,12 @@
         "eo:bands": [
             {
                 "description": "Daytime UHI",
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "Daytime"
             },
             {
                 "description": "Nighttime UHI",
-                "gee:units": "\u00b0C",
+                "gee:units": "&deg;C",
                 "name": "Nighttime"
             }
         ],
