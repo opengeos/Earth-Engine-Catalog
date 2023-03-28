@@ -107,7 +107,7 @@
     "summaries": {
         "eo:bands": [
             {
-                "description": "Net Primary Production [g/m\u00b2]",
+                "description": "Net Primary Production",
                 "gee:scale": 0.001,
                 "gee:units": "g/m^2",
                 "name": "L1_NPP_D"
@@ -115,7 +115,7 @@
         ],
         "gee:visualizations": [
             {
-                "display_name": "Net Primary Production [g/m\u00b2]",
+                "display_name": "Net Primary Production",
                 "image_visualization": {
                     "band_vis": {
                         "bands": [

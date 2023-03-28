@@ -133,22 +133,22 @@
             },
             {
                 "description": "Vegetation transpiration",
-                "gee:units": "mm d-1",
+                "gee:units": "mm/d",
                 "name": "Ec"
             },
             {
                 "description": "Soil evaporation",
-                "gee:units": "mm d-1",
+                "gee:units": "mm/d",
                 "name": "Es"
             },
             {
                 "description": "Interception from vegetation canopy",
-                "gee:units": "mm d-1",
+                "gee:units": "mm/d",
                 "name": "Ei"
             },
             {
                 "description": "Water body, snow and ice evaporation. Penman evapotranspiration is\nregarded as actual evaporation for them.\n",
-                "gee:units": "mm d-1",
+                "gee:units": "mm/d",
                 "name": "ET_water"
             }
         ],

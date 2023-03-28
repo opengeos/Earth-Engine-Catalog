@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "Oxford/MAP/EVI_5km_Monthly",
     "stac_version": "1.0.0",
-    "description": "The underlying dataset for this Enhanced Vegetation Index (EVI)\nproduct is MODIS BRDF-corrected imagery (MCD43B4), which was gap-filled\nusing the approach outlined in Weiss et al. (2014) to eliminate missing\ndata caused by factors such as cloud cover. Gap-free outputs were then\naggregated temporally and spatially to produce the monthly \u22485km product.\n\nThis dataset was produced by Harry Gibson and Daniel Weiss of the\nMalaria Atlas Project (Big Data Institute, University of Oxford,\nUnited Kingdom, [https://malariaatlas.org/](https://malariaatlas.org/)).\n",
+    "description": "The underlying dataset for this Enhanced Vegetation Index (EVI)\nproduct is MODIS BRDF-corrected imagery (MCD43B4), which was gap-filled\nusing the approach outlined in Weiss et al. (2014) to eliminate missing\ndata caused by factors such as cloud cover. Gap-free outputs were then\naggregated temporally and spatially to produce the monthly &asymp;5km product.\n\nThis dataset was produced by Harry Gibson and Daniel Weiss of the\nMalaria Atlas Project (Big Data Institute, University of Oxford,\nUnited Kingdom, [https://malariaatlas.org/](https://malariaatlas.org/)).\n",
     "links": [
         {
             "rel": "root",

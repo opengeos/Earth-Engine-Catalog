@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "Oxford/MAP/LST_Night_5km_Monthly",
     "stac_version": "1.0.0",
-    "description": "The underlying dataset for this nighttime product is MODIS land surface\ntemperature data (MOD11A2), which was gap-filled using the approach outlined\nin Weiss et al. (2014) to eliminate missing data caused by factors such as\ncloud cover. Gap-free outputs were then aggregated temporally and spatially\nto produce the monthly \u22485km product.\n\nThis dataset was produced by Harry Gibson and Daniel Weiss of the\nMalaria Atlas Project (Big Data Institute, University of Oxford,\nUnited Kingdom, [https://malariaatlas.org/](https://malariaatlas.org/)).\n",
+    "description": "The underlying dataset for this nighttime product is MODIS land surface\ntemperature data (MOD11A2), which was gap-filled using the approach outlined\nin Weiss et al. (2014) to eliminate missing data caused by factors such as\ncloud cover. Gap-free outputs were then aggregated temporally and spatially\nto produce the monthly &asymp;5km product.\n\nThis dataset was produced by Harry Gibson and Daniel Weiss of the\nMalaria Atlas Project (Big Data Institute, University of Oxford,\nUnited Kingdom, [https://malariaatlas.org/](https://malariaatlas.org/)).\n",
     "links": [
         {
             "rel": "root",

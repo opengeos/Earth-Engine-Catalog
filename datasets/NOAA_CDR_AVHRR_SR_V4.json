@@ -133,7 +133,7 @@
                 "center_wavelength": 3.75,
                 "description": "Bidirectional surface reflectance",
                 "gee:scale": 0.0001,
-                "gee:wavelength": "3.75\u03bcm",
+                "gee:wavelength": "3.75&micro;m",
                 "name": "SREFL_CH3"
             },
             {
@@ -141,7 +141,7 @@
                 "description": "Brightness temperature",
                 "gee:scale": 0.1,
                 "gee:units": "K",
-                "gee:wavelength": "3.75\u03bcm",
+                "gee:wavelength": "3.75&micro;m",
                 "name": "BT_CH3"
             },
             {
@@ -149,7 +149,7 @@
                 "description": "Brightness temperature",
                 "gee:scale": 0.1,
                 "gee:units": "K",
-                "gee:wavelength": "11.0\u03bcm",
+                "gee:wavelength": "11.0&micro;m",
                 "name": "BT_CH4"
             },
             {
@@ -157,7 +157,7 @@
                 "description": "Brightness temperature",
                 "gee:scale": 0.1,
                 "gee:units": "K",
-                "gee:wavelength": "12.0\u03bcm",
+                "gee:wavelength": "12.0&micro;m",
                 "name": "BT_CH5"
             },
             {

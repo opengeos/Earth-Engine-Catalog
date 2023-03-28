@@ -723,11 +723,11 @@
                         "value": 5
                     },
                     {
-                        "description": "Omitted snow/ice: land according to the water mask that\nwas classified as something other than snow but with a maximum annual\ntemperature below 1\u25e6C, relabeled as snow/ice.\n",
+                        "description": "Omitted snow/ice: land according to the water mask that\nwas classified as something other than snow but with a maximum annual\ntemperature below 1&deg;C, relabeled as snow/ice.\n",
                         "value": 6
                     },
                     {
-                        "description": "Misclassified snow/ice: land according to the water mask\nthat was classified as snow but with a minimum annual temperature\ngreater than 1\u25e6C, relabeled as barren.\n",
+                        "description": "Misclassified snow/ice: land according to the water mask\nthat was classified as snow but with a minimum annual temperature\ngreater than 1&deg;C, relabeled as barren.\n",
                         "value": 7
                     },
                     {

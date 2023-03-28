@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "COPERNICUS/S3/OLCI",
     "stac_version": "1.0.0",
-    "description": "The Ocean and Land Color Instrument (OLCI) Earth Observation\nFull Resolution (EFR) dataset contains top of atmosphere radiances\nat 21 spectral bands with center wavelengths ranging between\n0.4\u03bcm and 1.02\u03bcm at spatial resolution of 300m with\nworldwide coverage every ~2 days.\n\nOLCI is one of the instruments\nin the ESA/EUMETSAT Sentinel-3 mission for measuring sea-surface\ntopography, sea- and land-surface temperature, ocean color and\nland color with high-end accuracy and reliability to support\nocean forecasting systems, as well as environmental and climate\nmonitoring.\n\nThe Sentinel-3 OLCI instrument is based on the\noptomechanical and imaging design of ENVISAT's MERIS. It is designed\nto retrieve the spectral distribution of upwelling radiance just\nabove the sea surface (the water-leaving radiance).\n\nOLCI observation is performed simultaneously in 21 spectral bands\nranging from the visible to the near-infrared (400 to 1029nm).\n",
+    "description": "The Ocean and Land Color Instrument (OLCI) Earth Observation\nFull Resolution (EFR) dataset contains top of atmosphere radiances\nat 21 spectral bands with center wavelengths ranging between\n0.4&micro;m and 1.02&micro;m at spatial resolution of 300m with\nworldwide coverage every ~2 days.\n\nOLCI is one of the instruments\nin the ESA/EUMETSAT Sentinel-3 mission for measuring sea-surface\ntopography, sea- and land-surface temperature, ocean color and\nland color with high-end accuracy and reliability to support\nocean forecasting systems, as well as environmental and climate\nmonitoring.\n\nThe Sentinel-3 OLCI instrument is based on the\noptomechanical and imaging design of ENVISAT's MERIS. It is designed\nto retrieve the spectral distribution of upwelling radiance just\nabove the sea surface (the water-leaving radiance).\n\nOLCI observation is performed simultaneously in 21 spectral bands\nranging from the visible to the near-infrared (400 to 1029nm).\n",
     "links": [
         {
             "rel": "root",
@@ -65,7 +65,7 @@
             "interval": [
                 [
                     "2016-10-18T19:25:42Z",
-                    "2023-03-25T07:11:57Z"
+                    "2023-03-26T06:48:46Z"
                 ]
             ]
         }
@@ -103,7 +103,7 @@
                 "center_wavelength": 0.4,
                 "description": "Aerosol correction, improved water constituent retrieval",
                 "gee:scale": 0.01394646,
-                "gee:units": "W m^-2 sr^-1 \u03bcm^-1",
+                "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "400nm/15nm",
                 "name": "Oa01_radiance"
             },
@@ -111,7 +111,7 @@
                 "center_wavelength": 0.4125,
                 "description": "Yellow substance and detrital pigments (turbidity)",
                 "gee:scale": 0.01338726,
-                "gee:units": "W m^-2 sr^-1 \u03bcm^-1",
+                "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "412.5nm/10nm",
                 "name": "Oa02_radiance"
             },
@@ -119,7 +119,7 @@
                 "center_wavelength": 0.4425,
                 "description": "Chl absorption max., biogeochemistry, vegetation",
                 "gee:scale": 0.01214812,
-                "gee:units": "W m^-2 sr^-1 \u03bcm^-1",
+                "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "442.5nm/10nm",
                 "name": "Oa03_radiance"
             },
@@ -127,7 +127,7 @@
                 "center_wavelength": 0.49,
                 "description": "High Chl, other pigments",
                 "gee:scale": 0.01151982,
-                "gee:units": "W m^-2 sr^-1 \u03bcm^-1",
+                "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "490nm/10nm",
                 "name": "Oa04_radiance"
             },
@@ -135,7 +135,7 @@
                 "center_wavelength": 0.51,
                 "description": "Chl, sediment, turbidity, red tide",
                 "gee:scale": 0.01009526,
-                "gee:units": "W m^-2 sr^-1 \u03bcm^-1",
+                "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "510nm/10nm",
                 "name": "Oa05_radiance"
             },
@@ -143,7 +143,7 @@
                 "center_wavelength": 0.56,
                 "description": "Chlorophyll reference (Chl minimum)",
                 "gee:scale": 0.0123538,
-                "gee:units": "W m^-2 sr^-1 \u03bcm^-1",
+                "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "560nm/10nm",
                 "name": "Oa06_radiance"
             },
@@ -151,7 +151,7 @@
                 "center_wavelength": 0.62,
                 "description": "Sediment loading",
                 "gee:scale": 0.00879161,
-                "gee:units": "W m^-2 sr^-1 \u03bcm^-1",
+                "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "620nm/10nm",
                 "name": "Oa07_radiance"
             },
@@ -159,7 +159,7 @@
                 "center_wavelength": 0.665,
                 "description": "Chl (2^nd Chl abs. max.), sediment, yellow substance/vegetation",
                 "gee:scale": 0.00876539,
-                "gee:units": "W m^-2 sr^-1 \u03bcm^-1",
+                "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "665nm/10nm",
                 "name": "Oa08_radiance"
             },
@@ -167,7 +167,7 @@
                 "center_wavelength": 0.67375,
                 "description": "For improved fluorescence retrieval and to better\naccount for [smile](https://sentinels.copernicus.eu/web/sentinel/technical-guides/sentinel-3-olci/level-2/smile-correction)\ntogether with the bands 665 and 680nm\n",
                 "gee:scale": 0.0095103,
-                "gee:units": "W m^-2 sr^-1 \u03bcm^-1",
+                "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "673.75nm/7.5nm",
                 "name": "Oa09_radiance"
             },
@@ -175,7 +175,7 @@
                 "center_wavelength": 0.68125,
                 "description": "Chl fluorescence peak, red edge",
                 "gee:scale": 0.00773378,
-                "gee:units": "W m^-2 sr^-1 \u03bcm^-1",
+                "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "681.25nm/7.5nm",
                 "name": "Oa10_radiance"
             },
@@ -183,7 +183,7 @@
                 "center_wavelength": 0.70875,
                 "description": "Chl fluorescence baseline, red edge transition",
                 "gee:scale": 0.00675523,
-                "gee:units": "W m^-2 sr^-1 \u03bcm^-1",
+                "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "708.75nm/10nm",
                 "name": "Oa11_radiance"
             },
@@ -191,7 +191,7 @@
                 "center_wavelength": 0.75375,
                 "description": "O2 absorption/clouds, vegetation",
                 "gee:scale": 0.0071996,
-                "gee:units": "W m^-2 sr^-1 \u03bcm^-1",
+                "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "753.75nm/7.5nm",
                 "name": "Oa12_radiance"
             },
@@ -199,7 +199,7 @@
                 "center_wavelength": 0.76125,
                 "description": "O2 absorption band/aerosol correction",
                 "gee:scale": 0.00749684,
-                "gee:units": "W m^-2 sr^-1 \u03bcm^-1",
+                "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "761.25nm/7.5nm",
                 "name": "Oa13_radiance"
             },
@@ -207,7 +207,7 @@
                 "center_wavelength": 0.764375,
                 "description": "Atmospheric correction",
                 "gee:scale": 0.0086512,
-                "gee:units": "W m^-2 sr^-1 \u03bcm^-1",
+                "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "764.375nm/3.75nm",
                 "name": "Oa14_radiance"
             },
@@ -215,7 +215,7 @@
                 "center_wavelength": 0.7675,
                 "description": "O2A used for cloud top pressure, fluorescence over land",
                 "gee:scale": 0.00526779,
-                "gee:units": "W m^-2 sr^-1 \u03bcm^-1",
+                "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "767.5nm/2.5nm",
                 "name": "Oa15_radiance"
             },
@@ -223,7 +223,7 @@
                 "center_wavelength": 0.77875,
                 "description": "Atmospheric correction/aerosol correction",
                 "gee:scale": 0.00530267,
-                "gee:units": "W m^-2 sr^-1 \u03bcm^-1",
+                "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "778.75nm/15nm",
                 "name": "Oa16_radiance"
             },
@@ -231,7 +231,7 @@
                 "center_wavelength": 0.865,
                 "description": "Atmospheric correction/aerosol correction, clouds, pixel co-registration",
                 "gee:scale": 0.00493004,
-                "gee:units": "W m^-2 sr^-1 \u03bcm^-1",
+                "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "865nm/20nm",
                 "name": "Oa17_radiance"
             },
@@ -239,7 +239,7 @@
                 "center_wavelength": 0.885,
                 "description": "Water vapor absorption reference band. Common reference\nband with SLSTR instrument. Vegetation monitoring\n",
                 "gee:scale": 0.00549962,
-                "gee:units": "W m^-2 sr^-1 \u03bcm^-1",
+                "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "885nm/10nm",
                 "name": "Oa18_radiance"
             },
@@ -247,7 +247,7 @@
                 "center_wavelength": 0.9,
                 "description": "Water vapor absorption/vegetation monitoring (max. reflectance)",
                 "gee:scale": 0.00502847,
-                "gee:units": "W m^-2 sr^-1 \u03bcm^-1",
+                "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "900nm/10nm",
                 "name": "Oa19_radiance"
             },
@@ -255,7 +255,7 @@
                 "center_wavelength": 0.94,
                 "description": "Water vapor absorption, atmospheric/aerosol correction",
                 "gee:scale": 0.00326378,
-                "gee:units": "W m^-2 sr^-1 \u03bcm^-1",
+                "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "940nm/20nm",
                 "name": "Oa20_radiance"
             },
@@ -263,7 +263,7 @@
                 "center_wavelength": 1.029,
                 "description": "Atmospheric/aerosol correction",
                 "gee:scale": 0.00324118,
-                "gee:units": "W m^-2 sr^-1 \u03bcm^-1",
+                "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "1029nm/40nm",
                 "name": "Oa21_radiance"
             },

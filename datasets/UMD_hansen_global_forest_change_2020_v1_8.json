@@ -177,49 +177,49 @@
             {
                 "center_wavelength": 0.66,
                 "description": "Landsat 7 band 3 (red) cloud-free image composite. Reference\nmultispectral imagery from the first available year, typically 2000.\n",
-                "gee:wavelength": "0.63-0.69\u03bcm",
+                "gee:wavelength": "0.63-0.69&micro;m",
                 "name": "first_b30"
             },
             {
                 "center_wavelength": 0.835,
                 "description": "Landsat 7 band 4 (NIR) cloud-free image composite. Reference\nmultispectral imagery from the first available year, typically 2000.\n",
-                "gee:wavelength": "0.77-0.90\u03bcm",
+                "gee:wavelength": "0.77-0.90&micro;m",
                 "name": "first_b40"
             },
             {
                 "center_wavelength": 1.65,
                 "description": "Landsat 7 band 5 (SWIR) cloud-free image composite. Reference\nmultispectral imagery from the first available year, typically 2000.\n",
-                "gee:wavelength": "1.55-1.75\u03bcm",
+                "gee:wavelength": "1.55-1.75&micro;m",
                 "name": "first_b50"
             },
             {
                 "center_wavelength": 2.22,
                 "description": "Landsat 7 band 7 (SWIR) cloud-free image composite. Reference\nmultispectral imagery from the first available year, typically 2000.\n",
-                "gee:wavelength": "2.09-2.35\u03bcm",
+                "gee:wavelength": "2.09-2.35&micro;m",
                 "name": "first_b70"
             },
             {
                 "center_wavelength": 0.66,
                 "description": "Landsat 7 band 3 (red) cloud-free image composite. Reference\nmultispectral imagery from the last available year, typically the last\nyear of the study period.\n",
-                "gee:wavelength": "0.63-0.69\u03bcm",
+                "gee:wavelength": "0.63-0.69&micro;m",
                 "name": "last_b30"
             },
             {
                 "center_wavelength": 0.835,
                 "description": "Landsat 7 band 4 (NIR) cloud-free image composite. Reference\nmultispectral imagery from the last available year, typically the last\nyear of the study period.\n",
-                "gee:wavelength": "0.77-0.90\u03bcm",
+                "gee:wavelength": "0.77-0.90&micro;m",
                 "name": "last_b40"
             },
             {
                 "center_wavelength": 1.65,
                 "description": "Landsat 7 band 5 (SWIR) cloud-free image composite. Reference\nmultispectral imagery from the last available year, typically the last\nyear of the study period.\n",
-                "gee:wavelength": "1.55-1.75\u03bcm",
+                "gee:wavelength": "1.55-1.75&micro;m",
                 "name": "last_b50"
             },
             {
                 "center_wavelength": 2.22,
                 "description": "Landsat 7 band 7 (SWIR) cloud-free image composite. Reference\nmultispectral imagery from the last available year, typically the last\nyear of the study period.\n",
-                "gee:wavelength": "2.09-2.35\u03bcm",
+                "gee:wavelength": "2.09-2.35&micro;m",
                 "name": "last_b70"
             },
             {

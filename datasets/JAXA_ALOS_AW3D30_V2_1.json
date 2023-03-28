@@ -133,7 +133,7 @@
     "summaries": {
         "eo:bands": [
             {
-                "description": "Height above sea level. Signed 16 bits (Little endian) raster data.\nElevation (in meter) converted from the ellipsoidal height based on ITRF97\nand GRS80, using EGM96\u20201 geoid model.\n",
+                "description": "Height above sea level. Signed 16 bits (Little endian) raster data.\nElevation (in meter) converted from the ellipsoidal height based on ITRF97\nand GRS80, using EGM96&#8224;1 geoid model.\n",
                 "name": "AVE_DSM"
             },
             {
