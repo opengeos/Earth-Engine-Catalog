@@ -106,22 +106,22 @@
         "eo:bands": [
             {
                 "description": "Monthly mean of the daily precipitation rate at surface;\nincludes both liquid and solid phases from all types of clouds\n(both large-scale and convective)\n",
-                "gee:units": "kg/(m^2*s)",
+                "gee:units": "kg/m^2/s",
                 "name": "pr_mean"
             },
             {
                 "description": "25th quartile of the precipitation at surface; includes both\nliquid and solid phases from all types of clouds (both large-scale\nand convective)\n",
-                "gee:units": "kg/(m^2*s)",
+                "gee:units": "kg/m^2/s",
                 "name": "pr_quartile25"
             },
             {
                 "description": "Median of precipitation at surface; includes both liquid and\nsolid phases from all types of clouds (both large-scale and convective)\n",
-                "gee:units": "kg/(m^2*s)",
+                "gee:units": "kg/m^2/s",
                 "name": "pr_median"
             },
             {
                 "description": "75th quartile of the precipitation at surface; includes both\nliquid and solid phases from all types of clouds (both large-scale\nand convective)\n",
-                "gee:units": "kg/(m^2*s)",
+                "gee:units": "kg/m^2/s",
                 "name": "pr_quartile75"
             },
             {

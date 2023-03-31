@@ -106,7 +106,7 @@
         "eo:bands": [
             {
                 "description": "Monthly mean of the daily precipitation rate at surface;\nincludes both liquid and solid phases from all types of clouds\n(both large-scale and convective)\n",
-                "gee:units": "kg/(m^2*s)",
+                "gee:units": "kg/m^2/s",
                 "name": "pr"
             },
             {

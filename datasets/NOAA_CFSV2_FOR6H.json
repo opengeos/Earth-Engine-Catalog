@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1979-01-01T00:00:00Z",
-                    "2023-03-28T12:00:00Z"
+                    "2023-03-30T12:00:00Z"
                 ]
             ]
         }
@@ -163,7 +163,7 @@
             },
             {
                 "description": "Precipitation rate at surface, 6-hour average",
-                "gee:units": "kg/m^2/s^1",
+                "gee:units": "kg/m^2/s",
                 "name": "Precipitation_rate_surface_6_Hour_Average"
             },
             {
