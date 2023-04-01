@@ -638,7 +638,7 @@
             },
             {
                 "description": "Existence of gauge adjustment when the status is\n'provisional', 1 indicates adjusted and 0 is non-adjusted.\nWhen the status is 'permanent', the pixel value is the daily\naverage of number of gauges used for adjustment in the pixel.\n",
-                "gee:units": "counts/day",
+                "gee:units": "count/d",
                 "name": "gaugeQualityInfo"
             }
         ],
