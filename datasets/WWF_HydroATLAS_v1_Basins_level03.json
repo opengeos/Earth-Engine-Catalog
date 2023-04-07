@@ -1,6 +1,6 @@
 {
     "type": "Collection",
-    "id": "WWF/HydroATLAS/v1/Basins/level12",
+    "id": "WWF/HydroATLAS/v1/Basins/level03",
     "stac_version": "1.0.0",
     "description": "BasinATLAS is a component of the\n[HydroATLAS database](https://www.hydrosheds.org/page/hydroatlas),\nwhich is a component of [HydroSHEDS](https://www.hydrosheds.org).\n\nBasinATLAS provides a standardized compendium of hydro-environmental\nattribute information for all watersheds of the world at high\nspatial resolution. This dataset includes data for 56 variables,\npartitioned into 281 attributes and organized in six categories: hydrology;\nphysiography; climate; land cover & use; soils & geology; and anthropogenic\ninfluences (see Table 1 in the HydroATLAS documentation linked below).\n\nWatersheds range from level 1 (coarse) to level 12 (detailed), using\nPfastetter codes. The underlying watershed deleniation uses the NASA\nSRTM Digital Elevatin Map (DEM) below 60oN latitude and the\nUSGS HYDRO1k DEM above 60oN.\n\nTechnical documentation:\n\n[https://www.hydrosheds.org/images/inpages/HydroATLAS_TechDoc_v10.pdf](https://www.hydrosheds.org/images/inpages/HydroATLAS_TechDoc_v10.pdf)\n\nNote that the quality of HydroATLAS data is significantly lower for regions\nabove 60 degrees northern latitude as there is no underlying SRTM elevation\ndata available and thus a coarser-resolution DEM was used\n(HYDRO1k provided by USGS).\n\nHydroSHEDS was developed by the World Wildlife Fund (WWF)\nConservation Science Program in partnership with the U.S. Geological\nSurvey, the International Centre for Tropical Agriculture, The\nNature Conservancy, and the Center for Environmental Systems Research\nof the University of Kassel, Germany.\n",
     "links": [
@@ -12,19 +12,19 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WWF_HydroATLAS_v1_Basins_level12",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WWF_HydroATLAS_v1_Basins_level03",
             "type": "text/html",
-            "title": "Run the example for WWF/HydroATLAS/v1/Basins/level12 in the Earth Engine Code Editor",
+            "title": "Run the example for WWF/HydroATLAS/v1/Basins/level03 in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/WWF/WWF_HydroATLAS_v1_Basins_level12_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/WWF/WWF_HydroATLAS_v1_Basins_level03_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/WWF_HydroATLAS_v1_Basins_level12#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/WWF_HydroATLAS_v1_Basins_level03#terms-of-use",
             "type": "text/html"
         },
         {
@@ -38,7 +38,7 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WWF/WWF_HydroATLAS_v1_Basins_level12.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WWF/WWF_HydroATLAS_v1_Basins_level03.json",
             "type": "application/json"
         },
         {
@@ -62,7 +62,7 @@
         }
     ],
     "version": "v1",
-    "title": "WWF HydroATLAS Basins Level 12",
+    "title": "WWF HydroATLAS Basins Level 03",
     "extent": {
         "spatial": {
             "bbox": [
@@ -109,7 +109,7 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/WWF_HydroATLAS_v1_Basins_level12"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/WWF_HydroATLAS_v1_Basins_level03"
         }
     ],
     "summaries": {
