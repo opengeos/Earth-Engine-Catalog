@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "NASA/GDDP-CMIP6",
     "stac_version": "1.0.0",
-    "description": "The NEX-GDDP-CMIP6 dataset is comprised of global downscaled climate\nscenarios derived from the General Circulation Model (GCM) runs conducted\nunder the Coupled Model Intercomparison Project Phase 6 (CMIP6, see\n[Thrasher et al. 2022](https://doi.org/10.7917/OFSG3345)) and across two of\nthe four \"Tier 1\" greenhouse gas emissions scenarios known as Shared\nSocioeconomic Pathways (SSPs).\n\nThe CMIP6 GCM runs were developed in support of the Sixth Assessment Report\nof the Intergovernmental Panel on Climate Change (IPCC AR6). This dataset\nincludes downscaled projections from ScenarioMIP model runs for which daily\nscenarios were produced and distributed through the Earth System Grid\nFederation.\n",
+    "description": "The NEX-GDDP-CMIP6 dataset is comprised of global downscaled climate\nscenarios derived from the General Circulation Model (GCM) runs conducted\nunder the Coupled Model Intercomparison Project Phase 6 (CMIP6, see\n[Thrasher et al. 2022](https://doi.org/10.7917/OFSG3345)) and across two of\nthe four \"Tier 1\" greenhouse gas emissions scenarios known as Shared\nSocioeconomic Pathways (SSPs).\n\nThe CMIP6 GCM runs were developed in support of the Sixth Assessment Report\nof the Intergovernmental Panel on Climate Change (IPCC AR6). This dataset\nincludes downscaled projections from ScenarioMIP model runs for which daily\nscenarios were produced and distributed through the Earth System Grid\nFederation.\n\nSee also\n[the provider tech note](https://www.nccs.nasa.gov/sites/default/files/NEX-GDDP-CMIP6-Tech_Note.pdf).\n",
     "links": [
         {
             "rel": "root",
@@ -81,8 +81,8 @@
     },
     "license": "various",
     "keywords": [
+        "cag",
         "climate",
-        "csu",
         "gddp",
         "geophysical",
         "nasa",
@@ -92,12 +92,12 @@
     ],
     "providers": [
         {
-            "name": "NASA / CSU",
+            "name": "NASA / Climate Analytics Group",
             "roles": [
                 "licensor",
                 "producer"
             ],
-            "url": "https://cds.nccs.nasa.gov/nex-gddp/"
+            "url": "https://www.nccs.nasa.gov/services/data-collections/land-based-products/nex-gddp-cmip6"
         },
         {
             "name": "Google Earth Engine",

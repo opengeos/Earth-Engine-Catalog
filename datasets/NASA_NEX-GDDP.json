@@ -76,9 +76,9 @@
     },
     "license": "proprietary",
     "keywords": [
+        "cag",
         "climate",
         "cmip5",
-        "csu",
         "gddp",
         "geophysical",
         "nasa",
@@ -88,12 +88,12 @@
     ],
     "providers": [
         {
-            "name": "NASA / CSU",
+            "name": "NASA /  Climate Analytics Group",
             "roles": [
                 "licensor",
                 "producer"
             ],
-            "url": "https://cds.nccs.nasa.gov/nex-gddp/"
+            "url": "https://www.nccs.nasa.gov/services/data-collections/land-based-products/nex-gddp"
         },
         {
             "name": "Google Earth Engine",

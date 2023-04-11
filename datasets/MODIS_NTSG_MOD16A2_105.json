@@ -113,7 +113,7 @@
             },
             {
                 "description": "Latent heat flux, averaged daily over the period of coverage.",
-                "gee:scale": 0.0001,
+                "gee:scale": 10000,
                 "gee:units": "J/m^2/day",
                 "name": "LE"
             },
@@ -125,7 +125,7 @@
             },
             {
                 "description": "Potential Latent Heat Flux, averaged daily over the period ofcoverage.",
-                "gee:scale": 0.0001,
+                "gee:scale": 10000,
                 "gee:units": "J/m^2/day",
                 "name": "PLE"
             },
