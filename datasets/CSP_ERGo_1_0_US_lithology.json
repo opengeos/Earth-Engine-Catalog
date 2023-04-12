@@ -106,17 +106,17 @@
                 "description": "Lithology classes",
                 "gee:classes": [
                     {
-                        "color": "356EFF",
+                        "color": "356eff",
                         "description": "Water",
                         "value": 0
                     },
                     {
-                        "color": "ACB6DA",
+                        "color": "acb6da",
                         "description": "Carbonate",
                         "value": 1
                     },
                     {
-                        "color": "D6B879",
+                        "color": "d6b879",
                         "description": "Non-carbonate",
                         "value": 3
                     },
@@ -126,7 +126,7 @@
                         "value": 4
                     },
                     {
-                        "color": "EDA800",
+                        "color": "eda800",
                         "description": "Silicic residual",
                         "value": 5
                     },
@@ -136,22 +136,22 @@
                         "value": 7
                     },
                     {
-                        "color": "D6D6D6",
+                        "color": "d6d6d6",
                         "description": "Colluvial sediment",
                         "value": 8
                     },
                     {
-                        "color": "D0DDAE",
+                        "color": "d0ddae",
                         "description": "Glacial till clay",
                         "value": 9
                     },
                     {
-                        "color": "B8D279",
+                        "color": "b8d279",
                         "description": "Glacial till loam",
                         "value": 10
                     },
                     {
-                        "color": "D5D378",
+                        "color": "d5d378",
                         "description": "Glacial till coarse",
                         "value": 11
                     },
@@ -161,37 +161,37 @@
                         "value": 13
                     },
                     {
-                        "color": "6DB155",
+                        "color": "6db155",
                         "description": "Glacial outwash coarse",
                         "value": 14
                     },
                     {
-                        "color": "9B6D55",
+                        "color": "9b6d55",
                         "description": "Hydric",
                         "value": 15
                     },
                     {
-                        "color": "FEEEC9",
+                        "color": "feeec9",
                         "description": "Eolian sediment coarse",
                         "value": 16
                     },
                     {
-                        "color": "D6B879",
+                        "color": "d6b879",
                         "description": "Eolian sediment fine",
                         "value": 17
                     },
                     {
-                        "color": "00B7EC",
+                        "color": "00b7ec",
                         "description": "Saline lake sediment",
                         "value": 18
                     },
                     {
-                        "color": "FFDA90",
+                        "color": "ffda90",
                         "description": "Alluvium and coastal sediment fine",
                         "value": 19
                     },
                     {
-                        "color": "F8B28C",
+                        "color": "f8b28c",
                         "description": "Coastal sediment coarse",
                         "value": 20
                     }
@@ -214,24 +214,24 @@
                             0
                         ],
                         "palette": [
-                            "356EFF",
-                            "ACB6DA",
-                            "D6B879",
+                            "356eff",
+                            "acb6da",
+                            "d6b879",
                             "313131",
-                            "EDA800",
+                            "eda800",
                             "616161",
-                            "D6D6D6",
-                            "D0DDAE",
-                            "B8D279",
-                            "D5D378",
+                            "d6d6d6",
+                            "d0ddae",
+                            "b8d279",
+                            "d5d378",
                             "141414",
-                            "6DB155",
-                            "9B6D55",
-                            "FEEEC9",
-                            "D6B879",
-                            "00B7EC",
-                            "FFDA90",
-                            "F8B28C"
+                            "6db155",
+                            "9b6d55",
+                            "feeec9",
+                            "d6b879",
+                            "00b7ec",
+                            "ffda90",
+                            "f8b28c"
                         ]
                     }
                 },

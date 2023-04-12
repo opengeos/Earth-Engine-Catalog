@@ -107,17 +107,17 @@
                 "description": "Water classification",
                 "gee:classes": [
                     {
-                        "color": "FAFAFA",
+                        "color": "fafafa",
                         "description": "Land",
                         "value": 1
                     },
                     {
-                        "color": "00C5FF",
+                        "color": "00c5ff",
                         "description": "Water",
                         "value": 2
                     },
                     {
-                        "color": "DF73FF",
+                        "color": "df73ff",
                         "description": "Snow/ice",
                         "value": 4
                     },
@@ -127,7 +127,7 @@
                         "value": 200
                     },
                     {
-                        "color": "CCCCCC",
+                        "color": "cccccc",
                         "description": "Cloud",
                         "value": 201
                     }
@@ -182,11 +182,11 @@
                             1
                         ],
                         "palette": [
-                            "FAFAFA",
-                            "00C5FF",
-                            "DF73FF",
+                            "fafafa",
+                            "00c5ff",
+                            "df73ff",
                             "828282",
-                            "CCCCCC"
+                            "cccccc"
                         ]
                     }
                 },
