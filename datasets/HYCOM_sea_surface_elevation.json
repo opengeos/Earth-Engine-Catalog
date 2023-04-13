@@ -12,7 +12,7 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/HYCOM_sea_surface_elevation",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/HYCOM/HYCOM_sea_surface_elevation",
             "type": "text/html",
             "title": "Run the example for HYCOM/sea_surface_elevation in the Earth Engine Code Editor",
             "code": "JavaScript"
@@ -67,7 +67,7 @@
             "interval": [
                 [
                     "1992-10-02T00:00:00Z",
-                    "2023-04-10T09:00:00Z"
+                    "2023-04-11T21:00:00Z"
                 ]
             ]
         }

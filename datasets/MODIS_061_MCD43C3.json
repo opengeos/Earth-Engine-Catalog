@@ -12,7 +12,7 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS_061_MCD43C3",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_061_MCD43C3",
             "type": "text/html",
             "title": "Run the example for MODIS/061/MCD43C3 in the Earth Engine Code Editor",
             "code": "JavaScript"
@@ -79,7 +79,7 @@
             "interval": [
                 [
                     "2000-02-24T00:00:00Z",
-                    "2023-04-01T00:00:00Z"
+                    "2023-04-02T00:00:00Z"
                 ]
             ]
         }

@@ -12,7 +12,7 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JAXA_GPM_L3_GSMaP_v6_operational",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JAXA/JAXA_GPM_L3_GSMaP_v6_operational",
             "type": "text/html",
             "title": "Run the example for JAXA/GPM_L3/GSMaP/v6/operational in the Earth Engine Code Editor",
             "code": "JavaScript"
@@ -143,7 +143,7 @@
             "interval": [
                 [
                     "2014-03-01T00:00:00Z",
-                    "2023-04-10T14:00:00Z"
+                    "2023-04-12T14:00:00Z"
                 ]
             ]
         }

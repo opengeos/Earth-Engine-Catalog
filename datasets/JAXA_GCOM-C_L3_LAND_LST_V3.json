@@ -12,7 +12,7 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JAXA_GCOM-C_L3_LAND_LST_V3",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JAXA/JAXA_GCOM-C_L3_LAND_LST_V3",
             "type": "text/html",
             "title": "Run the example for JAXA/GCOM-C/L3/LAND/LST/V3 in the Earth Engine Code Editor",
             "code": "JavaScript"
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2021-11-29T00:00:00Z",
-                    "2023-04-09T00:00:00Z"
+                    "2023-04-11T00:00:00Z"
                 ]
             ]
         }

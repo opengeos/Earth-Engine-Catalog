@@ -12,7 +12,7 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_CFSV2_FOR6H",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_CFSV2_FOR6H",
             "type": "text/html",
             "title": "Run the example for NOAA/CFSV2/FOR6H in the Earth Engine Code Editor",
             "code": "JavaScript"
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1979-01-01T00:00:00Z",
-                    "2023-04-10T12:00:00Z"
+                    "2023-04-11T12:00:00Z"
                 ]
             ]
         }

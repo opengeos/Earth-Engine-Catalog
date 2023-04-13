@@ -12,7 +12,7 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_GFS0P25",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_GFS0P25",
             "type": "text/html",
             "title": "Run the example for NOAA/GFS0P25 in the Earth Engine Code Editor",
             "code": "JavaScript"
@@ -145,7 +145,7 @@
             "interval": [
                 [
                     "2015-07-01T00:00:00Z",
-                    "2023-04-11T12:00:00Z"
+                    "2023-04-12T12:00:00Z"
                 ]
             ]
         }

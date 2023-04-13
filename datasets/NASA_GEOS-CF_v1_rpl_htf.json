@@ -12,7 +12,7 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA_GEOS-CF_v1_rpl_htf",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_GEOS-CF_v1_rpl_htf",
             "type": "text/html",
             "title": "Run the example for NASA/GEOS-CF/v1/rpl/htf in the Earth Engine Code Editor",
             "code": "JavaScript"
@@ -65,7 +65,7 @@
             "interval": [
                 [
                     "2018-01-01T00:00:00Z",
-                    "2023-04-09T12:00:00Z"
+                    "2023-04-10T12:00:00Z"
                 ]
             ]
         }

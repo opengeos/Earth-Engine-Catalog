@@ -12,7 +12,7 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/TOMS_MERGED",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/TOMS/TOMS_MERGED",
             "type": "text/html",
             "title": "Run the example for TOMS/MERGED in the Earth Engine Code Editor",
             "code": "JavaScript"
@@ -67,7 +67,7 @@
             "interval": [
                 [
                     "1978-11-01T00:00:00Z",
-                    "2023-04-08T00:00:00Z"
+                    "2023-04-09T00:00:00Z"
                 ]
             ]
         }

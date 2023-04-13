@@ -12,7 +12,7 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_CDR_OISST_V2_1",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_CDR_OISST_V2_1",
             "type": "text/html",
             "title": "Run the example for NOAA/CDR/OISST/V2_1 in the Earth Engine Code Editor",
             "code": "JavaScript"
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1981-09-01T00:00:00Z",
-                    "2023-04-08T00:00:00Z"
+                    "2023-04-09T00:00:00Z"
                 ]
             ]
         }

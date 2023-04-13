@@ -12,7 +12,7 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NCEP_RE_surface_temp",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NCEP_RE/NCEP_RE_surface_temp",
             "type": "text/html",
             "title": "Run the example for NCEP_RE/surface_temp in the Earth Engine Code Editor",
             "code": "JavaScript"
@@ -69,7 +69,7 @@
             "interval": [
                 [
                     "1948-01-01T00:00:00Z",
-                    "2023-04-07T18:00:00Z"
+                    "2023-04-08T18:00:00Z"
                 ]
             ]
         }

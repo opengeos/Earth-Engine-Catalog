@@ -12,7 +12,7 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_GOES_16_MCMIPF",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_GOES_16_MCMIPF",
             "type": "text/html",
             "title": "Run the example for NOAA/GOES/16/MCMIPF in the Earth Engine Code Editor",
             "code": "JavaScript"
@@ -80,7 +80,7 @@
             "interval": [
                 [
                     "2017-07-10T00:00:00Z",
-                    "2023-04-11T21:40:20Z"
+                    "2023-04-12T21:20:20Z"
                 ]
             ]
         }

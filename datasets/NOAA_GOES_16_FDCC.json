@@ -12,7 +12,7 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_GOES_16_FDCC",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_GOES_16_FDCC",
             "type": "text/html",
             "title": "Run the example for NOAA/GOES/16/FDCC in the Earth Engine Code Editor",
             "code": "JavaScript"
@@ -77,7 +77,7 @@
             "interval": [
                 [
                     "2017-05-24T00:00:00Z",
-                    "2023-04-11T21:56:17Z"
+                    "2023-04-12T21:41:17Z"
                 ]
             ]
         }

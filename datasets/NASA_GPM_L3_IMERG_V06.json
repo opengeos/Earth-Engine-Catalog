@@ -12,7 +12,7 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA_GPM_L3_IMERG_V06",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_GPM_L3_IMERG_V06",
             "type": "text/html",
             "title": "Run the example for NASA/GPM_L3/IMERG_V06 in the Earth Engine Code Editor",
             "code": "JavaScript"
@@ -92,7 +92,7 @@
             "interval": [
                 [
                     "2000-06-01T00:00:00Z",
-                    "2023-04-10T04:30:00Z"
+                    "2023-04-11T07:30:00Z"
                 ]
             ]
         }

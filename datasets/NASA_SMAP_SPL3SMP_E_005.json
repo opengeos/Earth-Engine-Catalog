@@ -12,7 +12,7 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA_SMAP_SPL3SMP_E_005",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_SMAP_SPL3SMP_E_005",
             "type": "text/html",
             "title": "Run the example for NASA/SMAP/SPL3SMP_E/005 in the Earth Engine Code Editor",
             "code": "JavaScript"
@@ -89,7 +89,7 @@
             "interval": [
                 [
                     "2015-03-31T12:00:00Z",
-                    "2023-04-08T00:00:00Z"
+                    "2023-04-10T00:00:00Z"
                 ]
             ]
         }

@@ -12,7 +12,7 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_NWS_RTMA",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_NWS_RTMA",
             "type": "text/html",
             "title": "Run the example for NOAA/NWS/RTMA in the Earth Engine Code Editor",
             "code": "JavaScript"
@@ -65,7 +65,7 @@
             "interval": [
                 [
                     "2011-01-01T00:00:00Z",
-                    "2023-04-10T18:00:00Z"
+                    "2023-04-11T22:00:00Z"
                 ]
             ]
         }

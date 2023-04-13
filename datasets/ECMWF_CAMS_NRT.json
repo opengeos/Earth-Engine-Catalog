@@ -12,7 +12,7 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/ECMWF_CAMS_NRT",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/ECMWF/ECMWF_CAMS_NRT",
             "type": "text/html",
             "title": "Run the example for ECMWF/CAMS/NRT in the Earth Engine Code Editor",
             "code": "JavaScript"
@@ -80,7 +80,7 @@
             "interval": [
                 [
                     "2016-06-21T00:00:00Z",
-                    "2023-04-10T12:00:00Z"
+                    "2023-04-11T12:00:00Z"
                 ]
             ]
         }

@@ -12,7 +12,7 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/UTOKYO_WTLAB_KBDI_v1",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/UTOKYO/UTOKYO_WTLAB_KBDI_v1",
             "type": "text/html",
             "title": "Run the example for UTOKYO/WTLAB/KBDI/v1 in the Earth Engine Code Editor",
             "code": "JavaScript"
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2007-01-01T00:00:00Z",
-                    "2023-04-09T00:00:00Z"
+                    "2023-04-11T00:00:00Z"
                 ]
             ]
         }

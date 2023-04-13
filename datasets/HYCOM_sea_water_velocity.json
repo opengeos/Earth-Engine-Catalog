@@ -12,7 +12,7 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/HYCOM_sea_water_velocity",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/HYCOM/HYCOM_sea_water_velocity",
             "type": "text/html",
             "title": "Run the example for HYCOM/sea_water_velocity in the Earth Engine Code Editor",
             "code": "JavaScript"
@@ -67,7 +67,7 @@
             "interval": [
                 [
                     "1992-10-02T00:00:00Z",
-                    "2023-04-10T09:00:00Z"
+                    "2023-04-11T09:00:00Z"
                 ]
             ]
         }
