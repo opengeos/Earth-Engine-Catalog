@@ -459,17 +459,17 @@
             },
             {
                 "description": "Relative azimuth angle for each pixel",
-                "gee:units": "degrees",
+                "gee:units": "deg",
                 "name": "relative_azimuth_angle"
             },
             {
                 "description": "Sun zenith angle for each pixel",
-                "gee:units": "degrees",
+                "gee:units": "deg",
                 "name": "sun_zenith_angle"
             },
             {
                 "description": "View zenith angle for each pixel",
-                "gee:units": "degrees",
+                "gee:units": "deg",
                 "name": "view_zenith_angle"
             }
         ],

@@ -77,7 +77,7 @@
             "interval": [
                 [
                     "2000-02-24T00:00:00Z",
-                    "2023-04-09T00:00:00Z"
+                    "2023-04-10T00:00:00Z"
                 ]
             ]
         }
@@ -332,7 +332,7 @@
             {
                 "description": "MODIS view zenith angle",
                 "gee:offset": -65,
-                "gee:units": "degrees",
+                "gee:units": "deg",
                 "name": "View_Angle"
             },
             {

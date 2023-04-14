@@ -144,32 +144,32 @@
             },
             {
                 "description": "Solar zenith angle",
-                "gee:units": "degrees",
+                "gee:units": "deg",
                 "name": "SZA"
             },
             {
                 "description": "Solar azimuth angle",
-                "gee:units": "degrees",
+                "gee:units": "deg",
                 "name": "SAA"
             },
             {
                 "description": "Viewing azimuth angles SWIR detector",
-                "gee:units": "degrees",
+                "gee:units": "deg",
                 "name": "SWIRVAA"
             },
             {
                 "description": "Viewing zenith angle SWIR detector",
-                "gee:units": "degree",
+                "gee:units": "deg",
                 "name": "SWIRVZA"
             },
             {
                 "description": "Viewing azimuth angle VNIR detector",
-                "gee:units": "degrees",
+                "gee:units": "deg",
                 "name": "VNIRVAA"
             },
             {
                 "description": "Viewing zenith angle VNIR detector",
-                "gee:units": "degrees",
+                "gee:units": "deg",
                 "name": "VNIRVZA"
             },
             {

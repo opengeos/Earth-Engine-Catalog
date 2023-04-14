@@ -65,7 +65,7 @@
             "interval": [
                 [
                     "2018-12-05T11:53:01Z",
-                    "2023-04-09T05:01:19Z"
+                    "2023-04-11T04:23:33Z"
                 ]
             ]
         }
@@ -130,22 +130,22 @@
             },
             {
                 "description": "Azimuth angle of the satellite at the ground pixel location (WGS84); angle\nmeasured East-of-North.",
-                "gee:units": "degrees",
+                "gee:units": "deg",
                 "name": "sensor_azimuth_angle"
             },
             {
                 "description": "Zenith angle of the satellite at the ground pixel location (WGS84); angle\nmeasured away from the vertical.\n",
-                "gee:units": "degrees",
+                "gee:units": "deg",
                 "name": "sensor_zenith_angle"
             },
             {
                 "description": "Azimuth angle of the Sun at the ground pixel location (WGS84); angle\nmeasured East-of-North.",
-                "gee:units": "degrees",
+                "gee:units": "deg",
                 "name": "solar_azimuth_angle"
             },
             {
                 "description": "Zenith angle of the satellite at the ground pixel location (WGS84); angle\nmeasured away from the vertical.\n",
-                "gee:units": "degrees",
+                "gee:units": "deg",
                 "name": "solar_zenith_angle"
             },
             {

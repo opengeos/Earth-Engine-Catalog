@@ -243,7 +243,7 @@
             {
                 "description": "View zenith angle of day observation",
                 "gee:offset": -65,
-                "gee:units": "degrees",
+                "gee:units": "deg",
                 "name": "Day_view_angle"
             },
             {
@@ -362,7 +362,7 @@
             {
                 "description": "View zenith angle of night observation",
                 "gee:offset": -65,
-                "gee:units": "degrees",
+                "gee:units": "deg",
                 "name": "Night_view_angle"
             },
             {

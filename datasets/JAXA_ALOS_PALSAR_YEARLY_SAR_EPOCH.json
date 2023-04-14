@@ -107,7 +107,8 @@
                 "name": "HV"
             },
             {
-                "description": "Local incidence angle (degrees).",
+                "description": "Local incidence angle.",
+                "gee:units": "deg",
                 "name": "angle"
             },
             {
