@@ -146,12 +146,12 @@
             },
             {
                 "description": "Surface soil moisture anomaly",
-                "gee:units": "-",
+                "gee:units": "1 (dimensionless)",
                 "name": "ssma"
             },
             {
                 "description": "Subsurface soil moisture anomaly",
-                "gee:units": "-",
+                "gee:units": "1 (dimensionless)",
                 "name": "susma"
             }
         ],

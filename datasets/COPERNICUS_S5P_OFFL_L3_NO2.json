@@ -65,7 +65,7 @@
             "interval": [
                 [
                     "2018-06-28T10:24:07Z",
-                    "2023-04-04T21:49:19Z"
+                    "2023-04-05T21:30:27Z"
                 ]
             ]
         }
@@ -130,7 +130,7 @@
             },
             {
                 "description": "Aerosol index (at wavelengths 354/388, i.e. the OMI pair) from the AER_AI\nlevel 2 product.  See [Level 2 Algorithms - Aerosol Index](https://earth.esa.int/web/sentinel/technical-guides/sentinel-5p/level-2/aerosol-index).\n",
-                "gee:units": "Dimensionless",
+                "gee:units": "1 (dimensionless)",
                 "name": "absorbing_aerosol_index"
             },
             {
