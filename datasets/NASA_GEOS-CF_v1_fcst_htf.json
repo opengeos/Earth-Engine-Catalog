@@ -99,17 +99,17 @@
         "eo:bands": [
             {
                 "description": "Carbon monoxide (CO, MW = 28.00 g mol-1) volume mixing ratio dry air",
-                "gee:units": "mol mol-1",
+                "gee:units": "1 (mol fraction)",
                 "name": "CO"
             },
             {
                 "description": "Nitrogen dioxide (NO2, MW = 46.00 g mol-1) volume mixing ratio dry air",
-                "gee:units": "mol mol-1",
+                "gee:units": "1 (mol fraction)",
                 "name": "NO2"
             },
             {
                 "description": "Ozone (O3, MW = 48.00 g mol-1) volume mixing ratio dry air",
-                "gee:units": "mol mol-1",
+                "gee:units": "1 (mol fraction)",
                 "name": "O3"
             },
             {
@@ -138,7 +138,7 @@
             },
             {
                 "description": "Sulfur dioxide (SO2, MW = 64.00 g mol-1) volume mixing ratio dry air",
-                "gee:units": "mol mol-1",
+                "gee:units": "1 (mol fraction)",
                 "name": "SO2"
             },
             {
