@@ -65,7 +65,7 @@
             "interval": [
                 [
                     "2019-02-08T08:13:16Z",
-                    "2023-04-18T02:11:17Z"
+                    "2023-04-19T01:52:23Z"
                 ]
             ]
         }
@@ -117,22 +117,22 @@
                 "name": "aerosol_optical_depth"
             },
             {
-                "description": "Azimuth angle of the satellite at the ground pixel location (WGS84);\nangle measured East-of-North.\n",
+                "description": "Azimuth angle of the satellite at the ground pixel location (WGS84); angle\nmeasured East-of-North.",
                 "gee:units": "deg",
                 "name": "sensor_azimuth_angle"
             },
             {
-                "description": "Zenith angle of the satellite at the ground pixel location (WGS84);\nangle measured away from the vertical.\n",
+                "description": "Zenith angle of the satellite at the ground pixel location (WGS84); angle\nmeasured away from the vertical.\n",
                 "gee:units": "deg",
                 "name": "sensor_zenith_angle"
             },
             {
-                "description": "Azimuth angle of the Sun at the ground pixel location (WGS84); angle\nmeasured East-of-North.\n",
+                "description": "Azimuth angle of the Sun at the ground pixel location (WGS84); angle\nmeasured East-of-North.",
                 "gee:units": "deg",
                 "name": "solar_azimuth_angle"
             },
             {
-                "description": "Zenith angle of the satellite at the ground pixel location (WGS84);\nangle measured away from the vertical.\n",
+                "description": "Zenith angle of the satellite at the ground pixel location (WGS84); angle\nmeasured away from the vertical.\n",
                 "gee:units": "deg",
                 "name": "solar_zenith_angle"
             },
