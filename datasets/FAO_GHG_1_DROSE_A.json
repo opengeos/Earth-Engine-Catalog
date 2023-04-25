@@ -111,22 +111,22 @@
         "eo:bands": [
             {
                 "description": "C emissions from cropland organic soils",
-                "gee:units": "gigagrams",
+                "gee:units": "Gg",
                 "name": "croplandc"
             },
             {
                 "description": "N2O emissions from cropland organic soils",
-                "gee:units": "gigagrams",
+                "gee:units": "Gg",
                 "name": "croplandn2o"
             },
             {
                 "description": "C emissions from grassland organic soils",
-                "gee:units": "gigagrams",
+                "gee:units": "Gg",
                 "name": "grasslandc"
             },
             {
                 "description": "N2O emissions from grassland organic soils",
-                "gee:units": "gigagrams",
+                "gee:units": "Gg",
                 "name": "grasslandn2o"
             }
         ],
