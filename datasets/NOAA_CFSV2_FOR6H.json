@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1979-01-01T00:00:00Z",
-                    "2023-04-24T12:00:00Z"
+                    "2023-04-25T06:00:00Z"
                 ]
             ]
         }
@@ -208,22 +208,22 @@
             },
             {
                 "description": "Volumetric soil moisture content 5cm below surface layer",
-                "gee:units": "fraction",
+                "gee:units": "1 (unspecified fraction)",
                 "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_5_cm"
             },
             {
                 "description": "Volumetric soil moisture content 25cm below surface layer",
-                "gee:units": "fraction",
+                "gee:units": "1 (unspecified fraction)",
                 "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_25_cm"
             },
             {
                 "description": "Volumetric soil moisture content 70cm below surface layer",
-                "gee:units": "fraction",
+                "gee:units": "1 (unspecified fraction)",
                 "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_70_cm"
             },
             {
                 "description": "Volumetric soil moisture content 150cm below surface layer",
-                "gee:units": "fraction",
+                "gee:units": "1 (unspecified fraction)",
                 "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_150_cm"
             }
         ],
