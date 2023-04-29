@@ -1,0 +1,202 @@
+{
+    "type": "Collection",
+    "id": "OpenET/EEMETRIC/CONUS/GRIDMET/MONTHLY/v2_0",
+    "stac_version": "1.0.0",
+    "description": "Google Earth Engine implementation of the Mapping Evapotranspiration\nat high Resolution with Internalized Calibration model (eeMETRIC)\n\neeMETRIC applies the advanced METRIC algorithms and process of Allen\net al. (2007; 2015) and Allen et al. (2013b), where a singular\nrelationship between the near surface air temperature difference (dT)\nand delapsed land surface temperature (TsDEM) is used to estimate sensible\nheat flux (H) and is applied to each Landsat scene. Automated selection of\nthe hot and cold pixels for an image generally follows a statistical\nisolation procedure described by Allen et al. (2013a) and ReVelle, Kilic\nand Allen (2019a,b). The calibration of H in eeMETRIC utilizes alfalfa\nreference ET calculated from the NLDAS gridded weather dataset using a\nfixed 15% reduction in computed reference ET to account for known biases\nin the gridded data set. The fixed reduction does not impact the\ncalibration accuracy of eeMETRIC and mostly reduces impacts of boundary\nlayer buoyancy correction.\n\nThe identification of candidates for pools of hot and cold pixels has\nevolved in the eeMETRIC implementation of METRIC. The new automated\ncalibration process incorporates the combination of methodologies and\napproaches that stem from two development branches of EEFlux (Allen\net al., 2015). The first branch focused on improving the automated pixel\nselection process using standard lapse rates for land surface temperature\n(LST) without any further spatial delapsing (ReVelle et al., 2019b). The\nsecond branch incorporated a secondary spatial delapsing of LST as well as\nchanges to the pixel selection process (ReVelle et al., 2019a). The final,\ncombined approach is described by Kilic et al. (2021).\n\neeMETRIC employs the aerodynamic-related functions in complex terrain\n(mountains) developed by Allen et al. (2013b) to improve estimates for\naerodynamic roughness, wind speed and boundary layer stability as related\nto estimated terrain roughness, position on a slope and wind direction.\nThese functions tend to increase estimates for H (and reduce ET) on\nwindward slopes and may reduce H (and increase ET) on leeward slopes.\nOther METRIC functions employed in eeMETRIC that have been added since\nthe descriptions provided in Allen et al. (2007 and 2011) include\nreduction in soil heat flux (G) in the presence of organic mulch on the\nground surface, use of an excess aerodynamic resistance for shrublands,\nuse of the Perrier function for trees identified as forest (Allen et\nal., 2018; Santos et al., 2012) and aerodynamic estimation of evaporation\nfrom open water rather than using energy balance (Jensen and Allen 2016;\nAllen et al., 2018). In 2022, the Perrier function was applied to tree\n(orchard) crops and a 3-source partitioning of bulk surface temperature\ninto canopy temperature, shaded soil temperature and sunlit soil\ntemperature was applied to both orchards and vineyards. These latter\napplications were made where orchards and vineyards are identified by\nCDL or, in California, by a state-sponsored land use system. These\nfunctions and other enhancements to the original METRIC model are described\nin the most current METRIC users manual (Allen et al., 2018). eeMETRIC uses\nthe atmospherically corrected surface reflectance and LST from Landsat\nCollection 2 Level 2, with fallback to Collection 2 Level 1 when needed for\nnear real-time estimates.\n\n[Additional information](https://openetdata.org/methodologies/)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OpenET/OpenET_EEMETRIC_CONUS_GRIDMET_MONTHLY_v2_0",
+            "type": "text/html",
+            "title": "Run the example for OpenET/EEMETRIC/CONUS/GRIDMET/MONTHLY/v2_0 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/OpenET/OpenET_EEMETRIC_CONUS_GRIDMET_MONTHLY_v2_0_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/OpenET_EEMETRIC_CONUS_GRIDMET_MONTHLY_v2_0#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/OpenET_EEMETRIC_CONUS_GRIDMET_MONTHLY_v2_0.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/catalog.json",
+            "type": "application/json",
+            "title": "OpenET"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "month"
+    },
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "sci:citation": "Kilic, A., Allen, R.G., Blankenau, P., ReVelle, P., Ozturk, D. and\nHuntington, J., 2021. Global production and free access to Landsat-scale\nEvapotranspiration with EEFlux and eeMETRIC. In 6th Decennial National\nIrrigation Symposium, 6-8, December 2021, San Diego, California\n(p. 1). American Society of Agricultural and Biological Engineers.\n[doi:10.13031/irrig.2020-038](https://doi.org/10.13031/irrig.2020-038)\n",
+    "sci:doi": "10.13031/irrig.2020-038",
+    "sci:publications": [
+        {
+            "citation": "Allen, R.G., Tasumi, M., Morse, A. and Trezza, R., 2005. A Landsat-based\nenergy balance and evapotranspiration model in Western US water rights\nregulation and planning. Irrigation and Drainage systems, 19,\npp.251-268.\n[doi:10.1007/s10795-005-5187-z](https://doi.org/10.1007/s10795-005-5187-z)\n"
+        },
+        {
+            "citation": "Allen, R.G., Tasumi, M. and Trezza, R., 2007. Satellite-based energy\nbalance for mapping evapotranspiration with internalized calibration\n(METRIC)\u2014Model. Journal of irrigation and drainage engineering, 133(4),\npp.380-394.\n[doi:10.1029/2006JD007506](https://doi.org/10.1029/2006JD007506)\n"
+        },
+        {
+            "citation": "Allen, R., Irmak, A., Trezza, R., Hendrickx, J.M., Bastiaanssen, W.  and\nKjaersgaard, J., 2011. Satellite-based ET estimation in agriculture\nusing SEBAL and METRIC. Hydrological Processes, 25(26), pp.4011-4027.\n[doi:10.1002/hyp.8408](https://doi.org/10.1002/hyp.8408)\n"
+        },
+        {
+            "citation": "Allen, R.G., Burnett, B., Kramber, W., Huntington, J., Kjaersgaard, J.,\nKilic, A., Kelly, C. and Trezza, R., 2013a. Automated calibration of the\nmetric-landsat evapotranspiration process. JAWRA Journal of the American\nWater Resources Association, 49(3), pp.563-576.\n[doi:10.1111/jawr.12056](https://doi.org/10.1111/jawr.12056)\n"
+        },
+        {
+            "citation": "Allen, R.G., Trezza, R., Kilic, A., Tasumi, M. and Li, H., 2013b.\nSensitivity of Landsat-scale energy balance to aerodynamic variability\nin mountains and complex terrain. JAWRA Journal of the American Water\nResources Association, 49(3), pp.592-604.\n[doi:10.1111/jawr.12055](https://doi.org/10.1111/jawr.12055)\n"
+        },
+        {
+            "citation": "Allen, R.G., Morton, C., Kamble, B., Kilic, A., Huntington, J., Thau,\nD., Gorelick, N., Erickson, T., Moore, R., Trezza, R. and Ratcliffe, I.,\n2015. EEFlux: A Landsat-based evapotranspiration mapping tool on the\nGoogle Earth Engine. In 2015 ASABE/IA Irrigation Symposium: Emerging\nTechnologies for Sustainable Irrigation-A Tribute to the Career of Terry\nHowell, Sr. Conference Proceedings (pp. 1-11). American Society of\nAgricultural and Biological Engineers.\n[doi:10.13031/irrig.20152143511](https://doi.org/10.13031/irrig.20152143511)\n"
+        },
+        {
+            "citation": "Jensen, M.E. and R.G. Allen (ed.). 2016. Evaporation,\nevapotranspiration, and irrigation water requirements. Manuals of\nPractice no. 70 (2nd edition). Task Committee on Revision of Manual 70,\n2016, April. American Society of Civil Engineers. Reston, VA.  744 p.\n[doi:10.1061/9780784414057](https://doi.org/10.1061/9780784414057)\n"
+        },
+        {
+            "citation": "Kilic, A., Allen, R., Trezza, R., Ratcliffe, I., Kamble, B., Robison,\nC. and Ozturk, D., 2016. Sensitivity of evapotranspiration retrievals\nfrom the METRIC processing algorithm to improved radiometric\nresolution of Landsat 8 thermal data and to calibration bias in\nLandsat 7 and 8 surface temperature. Remote Sensing of Environment,\n185, pp.198-209.\n[doi:10.1016/j.rse.2016.07.011](https://doi.org/10.1016/j.rse.2016.07.011)\n"
+        },
+        {
+            "citation": "ReVelle, P., A. Kilic and R.G. Allen. 2019a. Updated Calibration\nDescription: Spatial Delapsing in eeMETRIC. Research Note. School of\nNatural Resources, University of Nebraska-Lincoln and University of\nIdaho. 9 p.\n"
+        },
+        {
+            "citation": "ReVelle, P., A. Kilic and R.G. Allen. 2019b. Updated Calibration\nDescription: Automated Pixel Selection Method in eeMETRIC. Research\nNote. School of Natural Resources, University of Nebraska-Lincoln and\nUniversity of Idaho. 20 p.\n"
+        },
+        {
+            "citation": "Santos, C., Lorite, I.J., Allen, R.G. and Tasumi, M., 2012.  Aerodynamic\nparameterization of the satellite-based energy balance (METRIC) model\nfor ET estimation in rainfed olive orchards of Andalusia, Spain. Water\nResources Management, 26, pp.3267-3283.\n[doi:10.1007/s11269-012-0071-8](https://doi.org/10.1007/s11269-012-0071-8)\n"
+        }
+    ],
+    "version": "2.0",
+    "title": "OpenET CONUS eeMETRIC Monthly Evapotranspiration v2.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -126,
+                    25,
+                    -66,
+                    50
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-01-01T00:00:00Z",
+                    "2021-12-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "conus",
+        "evapotranspiration",
+        "gridmet_derived",
+        "landsat_derived",
+        "monthly",
+        "water"
+    ],
+    "providers": [
+        {
+            "name": "OpenET, Inc.",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://openetdata.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/OpenET_EEMETRIC_CONUS_GRIDMET_MONTHLY_v2_0"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "eeMETRIC ET value",
+                "gee:units": "mm",
+                "name": "et"
+            },
+            {
+                "description": "Number of cloud free values",
+                "gee:units": "count",
+                "name": "count"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "OpenET eeMETRIC Monthly ET",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "et"
+                        ],
+                        "max": [
+                            1400
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "9e6212",
+                            "ac7d1d",
+                            "ba9829",
+                            "c8b434",
+                            "d6cf40",
+                            "bed44b",
+                            "9fcb51",
+                            "80c256",
+                            "61b95c",
+                            "42b062",
+                            "45b677",
+                            "49bc8d",
+                            "4dc2a2",
+                            "51c8b8",
+                            "55cece",
+                            "4db4ba",
+                            "459aa7",
+                            "3d8094",
+                            "356681",
+                            "2d4c6e"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 38,
+                    "lon": -100,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    }
+}

@@ -1,0 +1,181 @@
+{
+    "type": "Collection",
+    "id": "OpenET/SIMS/CONUS/GRIDMET/MONTHLY/v2_0",
+    "stac_version": "1.0.0",
+    "description": "Satellite Irrigation Management Support\n\nThe NASA Satellite Irrigation Management Support (SIMS) model was originally\ndeveloped to support satellite mapping of crop coefficients and\nevapotranspiration (ET) from irrigated lands and to increase access to this\ndata to support use in irrigation scheduling and regional assessment of\nagricultural water needs (Melton et al., 2012). SIMS uses a reflectance\nbased approach and incorporates the density coefficient described by Allen\nand Pereira (2009) and Pereira et al. (2020) to compute basal crop\ncoefficients for each 30 x 30 m pixel. The primary change from the most\nrecent SIMS publication (Pereira et al., 2020) for implementation in OpenET\nis the integration of a gridded soil water balance model to account for soil\nevaporation following precipitation events. Results of the OpenET Phase I\nintercomparison and accuracy assessment (Melton et al., 2022) showed that\nSIMS generally performed well for cropland sites during the growing season,\nbut had a persistent low bias during the winter months or other time periods\nwith frequent precipitation. This result was anticipated, since the\nreflectance-based approach used by SIMS is not sensitive to soil\nevaporation. To correct for this underestimation, a soil water balance model\nbased on FAO-56 (Allen et al., 1998) was implemented on Google Earth Engine\nand driven with gridded precipitation data from gridMET to estimate soil\nevaporation coefficients. These coefficients were then combined with the\nbasal crop coefficients calculated by SIMS to calculate total crop\nevapotranspiration using the dual crop coefficient approach. In addition,\na modest positive bias was observed in the SIMS data for periods with low\nor sparse vegetative cover. To correct for this bias, updates were made to\nthe equations that calculate the minimum basal crop coefficient to allow\nlower minimum basal crop coefficient values to be achieved. Full\ndocumentation of the SIMS model, current algorithms, and details and\nequations used in the soil water balance model are included in the\nSIMS user manual.\n\nThe SIMS model calculates ET under well-watered conditions for the current\ncrop growth stage and condition as measured by the satellite data, and SIMS\nis generally expected to have a positive bias for deficit irrigated crops\nand croplands with short-term or intermittent crop water stress. At\npresent, SIMS is only implemented for croplands, and non-agricultural lands\nare masked out in this data collection. Future research will extend the\nvegetation density-crop coefficient approach used within SIMS to other land\ncover types.\n[Additional information](https://openetdata.org/methodologies/)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OpenET/OpenET_SIMS_CONUS_GRIDMET_MONTHLY_v2_0",
+            "type": "text/html",
+            "title": "Run the example for OpenET/SIMS/CONUS/GRIDMET/MONTHLY/v2_0 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/OpenET/OpenET_SIMS_CONUS_GRIDMET_MONTHLY_v2_0_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/OpenET_SIMS_CONUS_GRIDMET_MONTHLY_v2_0#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/OpenET_SIMS_CONUS_GRIDMET_MONTHLY_v2_0.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/catalog.json",
+            "type": "application/json",
+            "title": "OpenET"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "month"
+    },
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "sci:citation": "Melton, F., Huntington, J., Grimm, R., Herring, J., Hall, M., Rollison, D.,\nErickson, T., Allen, R., Anderson, M., Fisher, J., Kilic, A., Senay, G.,\nvolk, J., Hain, C., Johnson, L., Ruhoff, A., Blanenau, P., Bromley, M.,\nCarrara, W., Daudert, B., Doherty, C., Dunkerly, C., Friedrichs, M., Guzman,\nA., Halverson, G., Hansen, J., Harding, J., Kang, Y., Ketchum, D., Minor,\nB., Morton, C., Revelle, P., Ortega-Salazar, S., Ott, T., Ozdogon, M.,\nSchull, M., Wang, T., Yang, Y., Anderson, R., 2021. \"OpenET: Filling a\nCritical Data Gap in Water Management for the Western United\nStates. \"Journal of the American Water Resources Association, 58(6),\npp.971-994.\n[doi:10.1111/1752-1688.12956](https://doi.org/10.1111/1752-1688.12956)\n",
+    "sci:doi": "10.1111/1752-1688.12956",
+    "sci:publications": [
+        {
+            "citation": "Pereira, L.S., P. Paredes, F.S. Melton, L.F. Johnson, R. L\u00f3pez-Urrea,\nJ. Cancela, and R.G. Allen. 2020. \"Prediction of Basal Crop\nCoefficients from Fraction of Ground Cover and Height.\"  Agricultural\nWater Management, Special Issue on Updates to the FAO56 Crop Water\nRequirements Method 241, 106197.\n[doi:10.1016/j.agwat.2020.106197](https://doi.org/10.1016/j.agwat.2020.106197)\n"
+        },
+        {
+            "citation": "Melton, F.S., L.F. Johnson, C.P. Lund, L.L. Pierce, A.R. Michaelis,\nS.H. Hiatt, A. Guzman et al. 2012. \"Satellite Irrigation Management\nSupport with the Terrestrial Observation and Prediction System: A\nFramework for Integration of Satellite and Surface Observations to\nSupport Improvements in Agricultural Water Resource Management.IEEE\nJournal of Selected Topics in Applied Earth Observations and Remote\nSensing 5 (6): 1709\u201321.\n[doi:10.1109/JSTARS.2012.2214474](https://doi.org/10.1109/JSTARS.2012.2214474)\n"
+        },
+        {
+            "citation": "Allen, R.G. and Pereira, L.S., 2009. Estimating crop coefficients from\nfraction of ground cover and height. Irrigation Science, 28, pp.17-34.\n[doi:10.1007/s00271-009-0182-z](https://doi.org/10.1007/s00271-009-0182-z)\n"
+        },
+        {
+            "citation": "Allen, R.G., Pereira, L.S., Raes, D. and Smith, M., 1998. Crop\nevapotranspiration-Guidelines for computing crop water requirements-FAO\nIrrigation and drainage paper 56. Fao, Rome, 300 (9), p.D05109.\n[https://www.fao.org/3/x0490e/x0490e00.htm](https://www.fao.org/3/x0490e/x0490e00.htm)\n"
+        }
+    ],
+    "version": "2.0",
+    "title": "OpenET CONUS SIMS Monthly Evapotranspiration v2.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -126,
+                    25,
+                    -66,
+                    50
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-01-01T00:00:00Z",
+                    "2021-12-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "conus",
+        "evapotranspiration",
+        "gridmet_derived",
+        "landsat_derived",
+        "monthly",
+        "water"
+    ],
+    "providers": [
+        {
+            "name": "OpenET, Inc.",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://openetdata.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/OpenET_SIMS_CONUS_GRIDMET_MONTHLY_v2_0"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "SIMS ET value",
+                "gee:units": "mm",
+                "name": "et"
+            },
+            {
+                "description": "Number of cloud free values",
+                "gee:units": "count",
+                "name": "count"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "OpenET SIMS Monthly ET",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "et"
+                        ],
+                        "max": [
+                            1400
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "9e6212",
+                            "ac7d1d",
+                            "ba9829",
+                            "c8b434",
+                            "d6cf40",
+                            "bed44b",
+                            "9fcb51",
+                            "80c256",
+                            "61b95c",
+                            "42b062",
+                            "45b677",
+                            "49bc8d",
+                            "4dc2a2",
+                            "51c8b8",
+                            "55cece",
+                            "4db4ba",
+                            "459aa7",
+                            "3d8094",
+                            "356681",
+                            "2d4c6e"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 38,
+                    "lon": -100,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    }
+}

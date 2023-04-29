@@ -1,0 +1,172 @@
+{
+    "type": "Collection",
+    "id": "OpenET/DISALEXI/CONUS/GRIDMET/MONTHLY/v2_0",
+    "stac_version": "1.0.0",
+    "description": "Atmosphere-Land Exchange Inverse / Disaggregation of the Atmosphere-Land\nExchange Inverse (ALEXI/DisALEXI)\n\nDisALEXI was recently ported to Google Earth Engine as part of the OpenET\nframework and the baseline ALEXI/DisALEXI model structure is described by\nAnderson et al. (2012, 2018). The ALEXI evapotranspiration (ET) model\nspecifically uses time differential land surface temperature (LST)\nmeasurements from geostationary or moderate resolution polar orbiting\nplatforms to generate regional ET maps. DisALEXI then disaggregates the\nregional ALEXI ET to finer scales using Landsat data (30 m; biweekly) to\nresolve individual farm fields and other landscape features.\n[Additional information](https://openetdata.org/methodologies/)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OpenET/OpenET_DISALEXI_CONUS_GRIDMET_MONTHLY_v2_0",
+            "type": "text/html",
+            "title": "Run the example for OpenET/DISALEXI/CONUS/GRIDMET/MONTHLY/v2_0 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/OpenET/OpenET_DISALEXI_CONUS_GRIDMET_MONTHLY_v2_0_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/OpenET_DISALEXI_CONUS_GRIDMET_MONTHLY_v2_0#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/OpenET_DISALEXI_CONUS_GRIDMET_MONTHLY_v2_0.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/catalog.json",
+            "type": "application/json",
+            "title": "OpenET"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "month"
+    },
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "sci:citation": "Anderson, M., Gao, F., Knipper, K., Hain, C., Dulaney, W., Baldocchi, D .,\nEichelmann, E., Hemes, K., Yang, Y., Medellin-Azuara, J. and Kustas, W.,\n2018. Field-scale assessment of land and water use change over the\nCalifornia Delta using remote sensing. Remote Sensing, 10(6), p.889.\n[doi:10.3390/rs10060889](https://doi.org/10.3390/rs10060889)\n",
+    "sci:doi": "10.3390/rs10060889",
+    "sci:publications": [
+        {
+            "citation": "Anderson, M.C., Norman, J.M., Mecikalski, J.R., Otkin, J.A. and Kustas,\nW.P., 2007. A climatological study of evapotranspiration and moisture\nstress across the continental United States based on thermal remote\nsensing: 1. Model formulation. Journal of Geophysical Research:\nAtmospheres, 112(D10).\n[doi:10.1029/2006JD007506](https://doi.org/10.1029/2006JD007506)\n"
+        }
+    ],
+    "version": "2.0",
+    "title": "OpenET CONUS DisALEXI Monthly Evapotranspiration v2.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -126,
+                    25,
+                    -66,
+                    50
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-01-01T00:00:00Z",
+                    "2021-12-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "conus",
+        "evapotranspiration",
+        "gridmet_derived",
+        "landsat_derived",
+        "monthly",
+        "water"
+    ],
+    "providers": [
+        {
+            "name": "OpenET, Inc.",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://openetdata.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/OpenET_DISALEXI_CONUS_GRIDMET_MONTHLY_v2_0"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "DisALEXI ET value",
+                "gee:units": "mm",
+                "name": "et"
+            },
+            {
+                "description": "Number of cloud free values",
+                "gee:units": "count",
+                "name": "count"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "OpenET DisALEXI Monthly ET",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "et"
+                        ],
+                        "max": [
+                            1400
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "9e6212",
+                            "ac7d1d",
+                            "ba9829",
+                            "c8b434",
+                            "d6cf40",
+                            "bed44b",
+                            "9fcb51",
+                            "80c256",
+                            "61b95c",
+                            "42b062",
+                            "45b677",
+                            "49bc8d",
+                            "4dc2a2",
+                            "51c8b8",
+                            "55cece",
+                            "4db4ba",
+                            "459aa7",
+                            "3d8094",
+                            "356681",
+                            "2d4c6e"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 38,
+                    "lon": -100,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    }
+}

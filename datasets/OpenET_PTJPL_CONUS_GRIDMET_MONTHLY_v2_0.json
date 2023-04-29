@@ -1,0 +1,172 @@
+{
+    "type": "Collection",
+    "id": "OpenET/PTJPL/CONUS/GRIDMET/MONTHLY/v2_0",
+    "stac_version": "1.0.0",
+    "description": "Priestley-Taylor Jet Propulsion Laboratory (PT-JPL)\n\nThe core formulation of the PT-JPL model within the OpenET framework has\nnot changed from the original formulation detailed in Fisher et al. (2008).\nHowever, enhancements and updates to model inputs and time integration for\nPT-JPL were made to take advantage of contemporary gridded weather datasets,\nprovide consistency with other models, improve open water evaporation\nestimates, and account for advection over crop and wetland areas in\nsemiarid and arid environments. These changes include the use of\nLandsat surface reflectance and thermal radiation for calculating net\nradiation, photosynthetically active radiation, plant canopy and moisture\nvariables, and use of NLDAS, Spatial CIMIS, and gridMET weather data for\nestimating insolation and ASCE reference ET. Similar to the implementation\nof other OpenET models, estimation of daily and monthly time integrated\nET is based on the fraction of ASCE reference ET. Open water evaporation\nis estimated following a surface energy balance approach of Abdelrady\net al. (2016) that is specific for water bodies by accounting for water\nheat flux as opposed to soil heat flux.\n\n[Additional information](https://openetdata.org/methodologies/)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OpenET/OpenET_PTJPL_CONUS_GRIDMET_MONTHLY_v2_0",
+            "type": "text/html",
+            "title": "Run the example for OpenET/PTJPL/CONUS/GRIDMET/MONTHLY/v2_0 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/OpenET/OpenET_PTJPL_CONUS_GRIDMET_MONTHLY_v2_0_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/OpenET_PTJPL_CONUS_GRIDMET_MONTHLY_v2_0#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/OpenET_PTJPL_CONUS_GRIDMET_MONTHLY_v2_0.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/catalog.json",
+            "type": "application/json",
+            "title": "OpenET"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "month"
+    },
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "sci:citation": "Fisher, J.B., Tu, K.P. and Baldocchi, D.D., 2008. Global estimates of the\nland\u2013atmosphere water flux based on monthly AVHRR and ISLSCP-II data,\nvalidated at 16 FLUXNET sites. Remote Sensing of Environment, 112(3),\npp.901-919.\n[doi:10.1016/j.rse.2007.06.025](https://doi.org/10.1016/j.rse.2007.06.025)\n",
+    "sci:doi": "10.1016/j.rse.2007.06.025",
+    "sci:publications": [
+        {
+            "citation": "Abdelrady, A., Timmermans, J., Vekerdy, Z. and Salama, M., 2016.\nSurface energy balance of fresh and saline waters: AquaSEBS. Remote\nsensing, 8(7), p.583.\n[doi:10.3390/rs8070583](https://doi.org/10.3390/rs8070583)\n"
+        }
+    ],
+    "version": "2.0",
+    "title": "OpenET CONUS PT-JPL Monthly Evapotranspiration v2.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -126,
+                    25,
+                    -66,
+                    50
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-01-01T00:00:00Z",
+                    "2021-12-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "conus",
+        "evapotranspiration",
+        "gridmet_derived",
+        "landsat_derived",
+        "monthly",
+        "water"
+    ],
+    "providers": [
+        {
+            "name": "OpenET, Inc.",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://openetdata.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/OpenET_PTJPL_CONUS_GRIDMET_MONTHLY_v2_0"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "PT-JPL ET value",
+                "gee:units": "mm",
+                "name": "et"
+            },
+            {
+                "description": "Number of cloud free values\n",
+                "gee:units": "count",
+                "name": "count"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "OpenET PT-JPL Monthly ET",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "et"
+                        ],
+                        "max": [
+                            1400
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "9e6212",
+                            "ac7d1d",
+                            "ba9829",
+                            "c8b434",
+                            "d6cf40",
+                            "bed44b",
+                            "9fcb51",
+                            "80c256",
+                            "61b95c",
+                            "42b062",
+                            "45b677",
+                            "49bc8d",
+                            "4dc2a2",
+                            "51c8b8",
+                            "55cece",
+                            "4db4ba",
+                            "459aa7",
+                            "3d8094",
+                            "356681",
+                            "2d4c6e"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 38,
+                    "lon": -100,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    }
+}
