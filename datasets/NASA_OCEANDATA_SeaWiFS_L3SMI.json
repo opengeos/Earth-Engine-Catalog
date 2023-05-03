@@ -128,12 +128,12 @@
         "eo:bands": [
             {
                 "description": "Chlorophyll a concentration",
-                "gee:units": "mg m-3",
+                "gee:units": "mg/m^3",
                 "name": "chlor_a"
             },
             {
                 "description": "Particulate organic carbon",
-                "gee:units": "mg m-3",
+                "gee:units": "mg/m^3",
                 "name": "poc"
             },
             {

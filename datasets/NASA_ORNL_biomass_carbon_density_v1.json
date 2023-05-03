@@ -118,22 +118,22 @@
         "eo:bands": [
             {
                 "description": "Aboveground living biomass carbon stock density of combined woody and herbaceous\ncover in 2010. This includes carbon stored in living plant tissues that are located above\nthe earth's surface (stems, bark, branches, twigs). This does not include leaf litter or\ncoarse woody debris that were once attached to living plants but have since been deposited\nand are no longer living.\n",
-                "gee:units": "Mg C/ha",
+                "gee:units": "Mg/ha",
                 "name": "agb"
             },
             {
                 "description": "Uncertainty of estimated aboveground living biomass carbon density of combined\nwoody and herbaceous cover in 2010. Uncertainty represents the cumulative standard error\nthat has been propagated through the harmonization process using summation in quadrature.\n",
-                "gee:units": "Mg C/ha",
+                "gee:units": "Mg/ha",
                 "name": "agb_uncertainty"
             },
             {
                 "description": "Belowground living biomass carbon stock density of combined woody and herbaceous\ncover in 2010. This includes carbon stored in living plant tissues that are located below\nthe earth's surface (roots). This does not include dead and/or dislocated root tissue, nor\ndoes it include soil organic matter.\n",
-                "gee:units": "Mg C/ha",
+                "gee:units": "Mg/ha",
                 "name": "bgb"
             },
             {
                 "description": "Uncertainty of estimated belowground living biomass carbon density of combined\nwoody and herbaceous cover in 2010. Uncertainty represents the cumulative standard error\nthat has been propagated through the harmonization process using summation in quadrature.\n",
-                "gee:units": "Mg C/ha",
+                "gee:units": "Mg/ha",
                 "name": "bgb_uncertainty"
             }
         ],

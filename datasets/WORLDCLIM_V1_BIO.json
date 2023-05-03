@@ -53,7 +53,7 @@
     "gee:type": "image",
     "gee:unusual_terms_of_use": true,
     "sci:citation": "Hijmans, R.J., S.E. Cameron, J.L. Parra, P.G. Jones and A. Jarvis,\n2005. Very High Resolution Interpolated Climate Surfaces for Global Land\nAreas. International Journal of Climatology 25: 1965-1978.\n[doi:10.1002/joc.1276](https://doi.org/10.1002/joc.1276).\n",
-    "version": "V1",
+    "version": "1",
     "title": "WorldClim BIO Variables V1",
     "extent": {
         "spatial": {
@@ -125,7 +125,7 @@
                 "name": "bio02"
             },
             {
-                "description": "Isothermality (bio02/bio07)",
+                "description": "Isothermality (bio02/bio07 * 100)",
                 "gee:units": "%",
                 "name": "bio03"
             },
@@ -220,17 +220,20 @@
         ],
         "gee:visualizations": [
             {
-                "display_name": "Annual Mean Temperature",
+                "display_name": "Annual Mean Temperature (C)",
                 "image_visualization": {
                     "band_vis": {
                         "bands": [
                             "bio01"
                         ],
+                        "gain": [
+                            0.1
+                        ],
                         "max": [
-                            300
+                            30
                         ],
                         "min": [
-                            -230
+                            -23
                         ],
                         "palette": [
                             "blue",
@@ -243,9 +246,9 @@
                     }
                 },
                 "lookat": {
-                    "lat": 52.48,
-                    "lon": 71.72,
-                    "zoom": 1
+                    "lat": 52.4,
+                    "lon": 71.7,
+                    "zoom": 3
                 }
             }
         ],
@@ -253,48 +256,48 @@
             927.67
         ],
         "bio01": {
-            "minimum": -290,
-            "maximum": 320
+            "minimum": -29,
+            "maximum": 32
         },
         "bio02": {
-            "minimum": 9,
-            "maximum": 214
+            "minimum": 0.9,
+            "maximum": 21.4
         },
         "bio03": {
             "minimum": 7,
             "maximum": 96
         },
         "bio04": {
-            "minimum": 62,
-            "maximum": 22721
+            "minimum": 0.62,
+            "maximum": 227.21
         },
         "bio05": {
-            "minimum": -96,
-            "maximum": 490
+            "minimum": -9.6,
+            "maximum": 49
         },
         "bio06": {
-            "minimum": -573,
-            "maximum": 258
+            "minimum": -57.3,
+            "maximum": 25.8
         },
         "bio07": {
-            "minimum": 53,
-            "maximum": 725
+            "minimum": 5.3,
+            "maximum": 72.5
         },
         "bio08": {
-            "minimum": -285,
-            "maximum": 378
+            "minimum": -28.5,
+            "maximum": 37.8
         },
         "bio09": {
-            "minimum": -521,
-            "maximum": 366
+            "minimum": -52.1,
+            "maximum": 36.6
         },
         "bio10": {
-            "minimum": -143,
-            "maximum": 383
+            "minimum": -14.3,
+            "maximum": 38.3
         },
         "bio11": {
-            "minimum": -521,
-            "maximum": 289
+            "minimum": -52.1,
+            "maximum": 28.9
         },
         "bio12": {
             "minimum": 0,

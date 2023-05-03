@@ -107,7 +107,7 @@
         "eo:bands": [
             {
                 "description": "Mean aboveground biomass density (MU): Estimated mean AGBD for the\n1 km grid cell, including forest and non-forest.\n",
-                "gee:units": "Mg ha^-1",
+                "gee:units": "Mg/ha",
                 "name": "MU"
             },
             {
@@ -120,7 +120,7 @@
             },
             {
                 "description": "Mean aboveground biomass density standard error (SE): Standard Error\nof the mean estimate, combining sampling and modeling uncertainty.\n",
-                "gee:units": "Mg ha^-1",
+                "gee:units": "Mg/ha",
                 "name": "SE"
             },
             {

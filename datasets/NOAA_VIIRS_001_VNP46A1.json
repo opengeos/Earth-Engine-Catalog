@@ -1,0 +1,248 @@
+{
+    "type": "Collection",
+    "id": "NOAA/VIIRS/001/VNP46A1",
+    "stac_version": "1.0.0",
+    "description": "The Suomi National Polar-orbiting Partnership (SNPP) Visible Infrared\nImaging Radiometer Suite (VIIRS) supports a Day-Night Band (DNB) sensor\nthat provides global daily measurements of nocturnal visible and\nnear-infrared (NIR) light that are suitable for Earth system science and\napplications. The VIIRS DNB's ultra-sensitivity in lowlight conditions\nenables us to generate a new set of science-quality nighttime products that\nmanifest substantial improvements in sensor resolution and calibration when\ncompared to the previous era of Defense Meteorological Satellite\nProgram/Operational Linescan System's (DMSP/OLS) nighttime lights image\nproducts.\n\nVNP46A1 is a daily, top-of-atmosphere, at-sensor nighttime radiance product\ncalled VIIRS/NPP Daily Gridded Day Night Band 15 arc-second Linear Lat Lon\nGrid Night. The product contains 26 Science Data Sets (SDS) that include\nsensor radiance, zenith and azimuth angles (at-sensor, solar, and lunar),\ncloud-mask flags, time, shortwave IR radiance, brightness temperatures,\nVIIRS quality flags, moon phase angle, and moon illumination fraction. It\nalso provides Quality Flag (QF) information specific to the cloud-mask,\nVIIRS moderate-resolution bands M10, M11, M12, M13, M15, M16, and DNB.\n\nDocumentation:\n\n* [User's Guide](https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/Document%20Archive/Science%20Data%20Product%20Documentation/VIIRS_Black_Marble_UG_v1.1_July_2020.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/Document%20Archive/Science%20Data%20Product%20Documentation/Product%20Generation%20Algorithms/VIIRS_Black_Marble_ATBD_v1.1_July_2020.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/VNP46A1/)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_VIIRS_001_VNP46A1",
+            "type": "text/html",
+            "title": "Run the example for NOAA/VIIRS/001/VNP46A1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_VIIRS_001_VNP46A1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP46A1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/VIIRS/VNP46A1.001"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_VIIRS_001_VNP46A1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/catalog.json",
+            "type": "application/json",
+            "title": "NOAA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C1373412048-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)",
+    "sci:doi": "10.5067/VIIRS/VNP46A1.001",
+    "version": "1",
+    "title": "VNP46A2: VIIRS Daily Gridded Day Night Band 500m Linear Lat Lon Grid Night",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-01-19T00:00:00Z",
+                    "2023-04-26T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "daily",
+        "dnb",
+        "nasa",
+        "noaa",
+        "viirs"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/VIIRS/VNP46A1.001"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP46A1"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "dnb",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "DNB_At_Sensor_Radiance_500m"
+                        ],
+                        "max": [
+                            100
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 7.71,
+                    "lon": 17.93,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            500
+        ],
+        "instruments": [
+            "VIIRS"
+        ],
+        "platform": [
+            "Suomi NPP"
+        ],
+        "BrightnessTemperature_M12": {
+            "minimum": 0,
+            "maximum": 163.835
+        },
+        "BrightnessTemperature_M13": {
+            "minimum": 0,
+            "maximum": 163.835
+        },
+        "BrightnessTemperature_M15": {
+            "minimum": 0,
+            "maximum": 163.835
+        },
+        "BrightnessTemperature_M16": {
+            "minimum": 0,
+            "maximum": 163.835
+        },
+        "DNB_At_Sensor_Radiance_500m": {
+            "minimum": 0,
+            "maximum": 6553.4
+        },
+        "Glint_Angle": {
+            "minimum": -180,
+            "maximum": 180
+        },
+        "Granule": {
+            "minimum": 0,
+            "maximum": 254
+        },
+        "Lunar_Azimuth": {
+            "minimum": -180,
+            "maximum": 180
+        },
+        "Lunar_Zenith": {
+            "minimum": 0,
+            "maximum": 180
+        },
+        "Moon_Illumination_Fraction": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Moon_Phase_Angle": {
+            "minimum": 0,
+            "maximum": 180
+        },
+        "QF_Cloud_Mask": {
+            "minimum": 0,
+            "maximum": 65534
+        },
+        "QF_DNB": {
+            "minimum": 0,
+            "maximum": 65534
+        },
+        "QF_VIIRS_M10": {
+            "minimum": 0,
+            "maximum": 65534
+        },
+        "QF_VIIRS_M11": {
+            "minimum": 0,
+            "maximum": 65534
+        },
+        "QF_VIIRS_M12": {
+            "minimum": 0,
+            "maximum": 65534
+        },
+        "QF_VIIRS_M13": {
+            "minimum": 0,
+            "maximum": 65534
+        },
+        "QF_VIIRS_M15": {
+            "minimum": 0,
+            "maximum": 65534
+        },
+        "QF_VIIRS_M16": {
+            "minimum": 0,
+            "maximum": 65534
+        },
+        "Radiance_M10": {
+            "minimum": 0,
+            "maximum": 85.1942
+        },
+        "Radiance_M11": {
+            "minimum": 0,
+            "maximum": 38.00972
+        },
+        "Sensor_Azimuth": {
+            "minimum": -180,
+            "maximum": 180
+        },
+        "Sensor_Zenith": {
+            "minimum": -90,
+            "maximum": 90
+        },
+        "Solar_Azimuth": {
+            "minimum": -180,
+            "maximum": 180
+        },
+        "Solar_Zenith": {
+            "minimum": 0,
+            "maximum": 180
+        },
+        "UTC_Time": {
+            "minimum": 0,
+            "maximum": 24
+        }
+    }
+}

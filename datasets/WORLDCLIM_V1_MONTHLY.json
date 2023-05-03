@@ -58,7 +58,7 @@
     "gee:type": "image_collection",
     "gee:unusual_terms_of_use": true,
     "sci:citation": "Hijmans, R.J., S.E. Cameron, J.L. Parra, P.G. Jones and A. Jarvis,\n2005. Very High Resolution Interpolated Climate Surfaces for Global Land\nAreas. International Journal of Climatology 25: 1965-1978.\n[doi:10.1002/joc.1276](https://doi.org/10.1002/joc.1276).\n",
-    "version": "V1",
+    "version": "1",
     "title": "WorldClim Climatology V1",
     "extent": {
         "spatial": {
@@ -142,17 +142,20 @@
         ],
         "gee:visualizations": [
             {
-                "display_name": "Mean Temperature",
+                "display_name": "Mean Temperature (C)",
                 "image_visualization": {
                     "band_vis": {
                         "bands": [
                             "tavg"
                         ],
+                        "gain": [
+                            0.1
+                        ],
                         "max": [
-                            300
+                            30
                         ],
                         "min": [
-                            -400
+                            -40
                         ],
                         "palette": [
                             "blue",
@@ -165,9 +168,9 @@
                     }
                 },
                 "lookat": {
-                    "lat": 52.48,
-                    "lon": 71.72,
-                    "zoom": 1
+                    "lat": 52.4,
+                    "lon": 71.7,
+                    "zoom": 3
                 }
             }
         ],
@@ -179,16 +182,16 @@
             "maximum": 2949
         },
         "tavg": {
-            "minimum": -536,
-            "maximum": 394
+            "minimum": -53.6,
+            "maximum": 39.4
         },
         "tmax": {
-            "minimum": -500,
-            "maximum": 490
+            "minimum": -50,
+            "maximum": 49
         },
         "tmin": {
-            "minimum": -573,
-            "maximum": 325
+            "minimum": -57.3,
+            "maximum": 32.5
         }
     }
 }
