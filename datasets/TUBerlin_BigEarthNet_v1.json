@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "TUBerlin/BigEarthNet/v1",
     "stac_version": "1.0.0",
-    "description": "BigEarthNet is a new large-scale Sentinel-2 benchmark archive, consisting of\n590,326 Sentinel-2 image patches.\nTo construct BigEarthNet, 125 Sentinel-2 tiles acquired between June 2017 and\nMay 2018 over the 10 countries (Austria, Belgium, Finland, Ireland, Kosovo,\nLithuania, Luxembourg, Portugal, Serbia, Switzerland) of Europe were initially\nselected. All the tiles were atmospherically corrected by the Sentinel-2 Level\n2A product generation and formatting tool (sen2cor).\nThen, they were divided into 590,326 non-overlapping image patches. Each image\npatch was annotated by the multiple land-cover classes (i.e., multi-labels) that\nwere provided from the CORINE Land Cover database of the year 2018 (CLC 2018).\n",
+    "description": "BigEarthNet is a new large-scale Sentinel-2 benchmark archive, consisting of\n590,326 Sentinel-2 image patches.  To construct BigEarthNet, 125 Sentinel-2\ntiles were acquired between June 2017 and May 2018 over the 10 countries\n(Austria, Belgium, Finland, Ireland, Kosovo, Lithuania, Luxembourg,\nPortugal, Serbia, Switzerland) of Europe. All the tiles were atmospherically\ncorrected by the Sentinel-2 Level 2A product generation and formatting tool\n(sen2cor).  Then, they were divided into 590,326 non-overlapping image\npatches. Each image patch was annotated by the multiple land-cover classes\n(i.e., multi-labels) that were provided from the CORINE Land Cover database\nof the year 2018 (CLC 2018).\n",
     "links": [
         {
             "rel": "root",
@@ -41,11 +41,13 @@
     ],
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
     ],
     "gee:terms_of_use": "The BigEarthNet Archive is licensed under the Community Data License\nAgreement - Permissive, Version 1.0.  For more information,\nplease refer to the (http://bigearth.net/downloads/documents/License.pdf).\n",
     "gee:type": "image_collection",
     "sci:citation": "G. Sumbul, M. Charfuelan, B. Demir, V. Markl, BigEarthNet: A Large-Scale\nBenchmark Archive for Remote Sensing Image Understanding, IEEE International\nConference on Geoscience and Remote Sensing Symposium, pp. 5901-5904,\nYokohama, Japan, 2019.\n",
+    "version": "1",
     "title": "TUBerlin/BigEarthNet/v1",
     "extent": {
         "spatial": {

@@ -110,7 +110,7 @@
     "summaries": {
         "gee:visualizations": [
             {
-                "display_name": "dnb",
+                "display_name": "Day-Night Band (DNB) at sensor radiance 500m",
                 "image_visualization": {
                     "band_vis": {
                         "bands": [
@@ -125,9 +125,9 @@
                     }
                 },
                 "lookat": {
-                    "lat": 7.71,
-                    "lon": 17.93,
-                    "zoom": 2
+                    "lat": -79.4,
+                    "lon": 43.1,
+                    "zoom": 8
                 }
             }
         ],
