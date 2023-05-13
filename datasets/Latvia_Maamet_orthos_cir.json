@@ -1,0 +1,149 @@
+{
+    "type": "Collection",
+    "id": "Latvia/Maamet/orthos/cir",
+    "stac_version": "1.0.0",
+    "description": "In Latvia, orthophoto maps are prepared in the Latvian coordinate system\nLKS-92 TM according to the TKS-93 map sheet division (scale 1:10000 map\nsheet corresponds to 5 x 5 kilometers in nature). Orthophoto maps are\nprepared for the whole territory of Latvia at the scale of 1:10000, but for\nseparate territories - for cities and densely populated areas - at the scale\nof 1:2000 or 1:1000.\n\nThe CIR dataset has three bands: Near-Infrared, Red, and Green.\n\nFor more information, please see the [Latvia orthophotos documentation]\n(https://www.lgia.gov.lv/lv/ortofotokartes-1)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/Latvia/Latvia_Maamet_orthos_cir",
+            "type": "text/html",
+            "title": "Run the example for Latvia/Maamet/orthos/cir in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/Latvia/Latvia_Maamet_orthos_cir_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/Latvia_Maamet_orthos_cir#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Latvia/Latvia_Maamet_orthos_cir.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Latvia/catalog.json",
+            "type": "application/json",
+            "title": "Latvia"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)\nThis dataset is licensed similar to Creative Commons Attribution\n4.0 International License\n\nFor more details please see the\n[Terms of use](https://www.lgia.gov.lv/sites/lgia/files/document/Atverto%20datu%20licence%20CC%20BY_0.pdf)\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Latvijas Geospatial Information Agency",
+    "title": "Latvia Color InfraRed (CIR) orthophotos",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    55.5,
+                    20.5,
+                    58.5,
+                    28.6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2007-01-01T00:00:00Z",
+                    "2018-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "latvia",
+        "nrg",
+        "orthophoto"
+    ],
+    "providers": [
+        {
+            "name": "Latvia orthophotos",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.lgia.gov.lv/lv/ortofotokartes-1"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/Latvia_Maamet_orthos_cir"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Near-Infrared",
+                "name": "N"
+            },
+            {
+                "description": "Red",
+                "name": "R"
+            },
+            {
+                "description": "Green",
+                "name": "G"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "NRG",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "N",
+                            "R",
+                            "G"
+                        ],
+                        "max": [
+                            255
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 24.737,
+                    "lon": 56.861,
+                    "zoom": 18
+                }
+            }
+        ],
+        "gsd": [
+            0.2
+        ],
+        "G": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "N": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "R": {
+            "minimum": 0,
+            "maximum": 255
+        }
+    }
+}
