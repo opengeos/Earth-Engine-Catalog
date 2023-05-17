@@ -94,20 +94,23 @@
         "eo:bands": [
             {
                 "description": "Near-Infrared",
+                "gee:units": "dn",
                 "name": "N"
             },
             {
                 "description": "Red",
+                "gee:units": "dn",
                 "name": "R"
             },
             {
                 "description": "Green",
+                "gee:units": "dn",
                 "name": "G"
             }
         ],
         "gee:visualizations": [
             {
-                "display_name": "NRG",
+                "display_name": "Near-Infrared, Red, and Green (NRG)",
                 "image_visualization": {
                     "band_vis": {
                         "bands": [

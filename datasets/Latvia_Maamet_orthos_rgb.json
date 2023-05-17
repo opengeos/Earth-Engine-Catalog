@@ -94,14 +94,17 @@
         "eo:bands": [
             {
                 "description": "Red",
+                "gee:units": "dn",
                 "name": "R"
             },
             {
                 "description": "Green",
+                "gee:units": "dn",
                 "name": "G"
             },
             {
                 "description": "Blue",
+                "gee:units": "dn",
                 "name": "B"
             }
         ],

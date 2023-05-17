@@ -98,22 +98,22 @@
         "eo:bands": [
             {
                 "description": "Red",
-                "gee:units": "DN",
+                "gee:units": "dn",
                 "name": "R"
             },
             {
                 "description": "Green",
-                "gee:units": "DN",
+                "gee:units": "dn",
                 "name": "G"
             },
             {
                 "description": "Blue",
-                "gee:units": "DN",
+                "gee:units": "dn",
                 "name": "B"
             },
             {
                 "description": "Near infrared",
-                "gee:units": "DN",
+                "gee:units": "dn",
                 "name": "N"
             }
         ],

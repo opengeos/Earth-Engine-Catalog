@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "NOAA/CFSR",
     "stac_version": "1.0.0",
-    "description": "The National Centers for Environmental Prediction (NCEP) Climate Forecast System Reanalysis\n(CFSR) was designed and executed as a global, high-resolution, coupled atmosphere-ocean-land\nsurface-sea ice system to provide the best estimate of the state of these coupled domains over\nthe 32-year period of record from January 1979 to March 2011. It has been extended as an\noperational real-time product. The data in Earth Engine are only present\nstarting from December 13, 2018.\n\nForecasts are initialized four times per day (0000, 0600, 1200, and 1800\nUTC). We ingest only a subset of bands from files matching\ncdas1.t??z.pgrbh**03|00**.grib2 i.e. files of only 0-hour and 3-hour forecasts as the others are\nomitted. The forecast length is indicated by the 'forecast_hour' metadata field.\n\nSome images contain only a subset of bands. Using this dataset with both \\\"00\\\" and \\\"03\\\" forecast\ntypes will require you to cast the bands across the collection.\n",
+    "description": "The National Centers for Environmental Prediction (NCEP) Climate Forecast\nSystem Reanalysis (CFSR) was designed and executed as a global,\nhigh-resolution, coupled atmosphere-ocean-land surface-sea ice system to\nprovide the best estimate of the state of these coupled domains over the\n32-year period of record from January 1979 to March 2011. It has been\nextended as an operational real-time product. The data in Earth Engine are\nonly present starting from December 13, 2018.\n\nForecasts are initialized four times per day (0000, 0600, 1200, and 1800\nUTC). We ingest only a subset of bands from files matching\n`cdas1.t??z.pgrbh**03|00**.grib2`, i.e. files of only 0-hour and 3-hour\nforecasts as the others are omitted. The forecast length is indicated by the\n'forecast_hour' metadata field.\n\nSome images contain only a subset of bands. Using this dataset with both\n\"00\" and \"03\" forecast types will require you to cast the bands across\nthe collection.\n",
     "links": [
         {
             "rel": "root",
@@ -55,7 +55,7 @@
     },
     "gee:terms_of_use": "NOAA data, information, and products, regardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use. The\nforgoing data is in the public domain and is being provided without\nrestriction on use and distribution. For more information visit the\n[NWS disclaimer site](https://www.weather.gov/disclaimer/).\n",
     "gee:type": "image_collection",
-    "sci:citation": "Saha, S., S. Moorthi, H. Pan, X. Wu, J. Wang, and Coauthors, 2010: The NCEP Climate\nForecast System Reanalysis. Bulletin of the American Meteorological Society, 91, 1015-1057.\n[doi:10.1175/2010BAMS3001.1](https://doi.org/10.1175/2010BAMS3001.1)\n",
+    "sci:citation": "Saha, S., S. Moorthi, H. Pan, X. Wu, J. Wang, and Coauthors, 2010: The NCEP\nClimate Forecast System Reanalysis. Bulletin of the American Meteorological\nSociety, 91, 1015-1057.\n[doi:10.1175/2010BAMS3001.1](https://doi.org/10.1175/2010BAMS3001.1)\n",
     "sci:doi": "10.5065/D6513W89",
     "version": "V1",
     "title": "CFSR: Climate Forecast System Reanalysis",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2018-12-13T00:00:00Z",
-                    "2023-05-14T12:00:00Z"
+                    "2023-05-15T12:00:00Z"
                 ]
             ]
         }
@@ -119,12 +119,13 @@
             {
                 "description": "Duration of forecast in hours",
                 "name": "forecast_hour",
-                "type": "INT"
+                "type": "INT",
+                "units": "h"
             }
         ],
         "gee:visualizations": [
             {
-                "display_name": "Temperature Surface",
+                "display_name": "Temperature at surface (K)",
                 "image_visualization": {
                     "band_vis": {
                         "bands": [
@@ -149,7 +150,7 @@
                 "lookat": {
                     "lat": 26.4,
                     "lon": -88.6,
-                    "zoom": 1
+                    "zoom": 2
                 }
             }
         ],
@@ -158,7 +159,7 @@
         ],
         "Albedo_surface_3_Hour_Average": {
             "minimum": 0,
-            "maximum": 91.59999847
+            "maximum": 91.6
         },
         "Canopy_water_evaporation_surface_3_Hour_Average": {
             "minimum": 0,
