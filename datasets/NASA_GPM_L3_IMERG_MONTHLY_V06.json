@@ -53,11 +53,11 @@
         "type": "cadence",
         "unit": "month"
     },
-    "gee:terms_of_use": "All NASA-produced data from the GPM mission is made\nfreely available for the public to use.",
+    "gee:terms_of_use": "All NASA-produced data from the GPM mission is made freely available for the public to use.",
     "gee:type": "image_collection",
     "sci:citation": "Huffman, G.J., E.F. Stocker, D.T. Bolvin, E.J. Nelkin, Jackson Tan (2019),\nGPM IMERG Final Precipitation L3 1 month 0.1 degree x 0.1 degree V06,\nGreenbelt, MD, Goddard Earth Sciences Data and Information Services Center\n(GES DISC), Accessed: [Data Access Date], 10.5067/GPM/IMERG/3B-MONTH/06\n",
     "sci:doi": "10.5067/GPM/IMERG/3B-MONTH/06",
-    "version": "V06",
+    "version": "6",
     "title": "GPM: Monthly Global Precipitation Measurement (GPM) v6",
     "extent": {
         "spatial": {
@@ -138,14 +138,14 @@
         ],
         "gee:visualizations": [
             {
-                "display_name": "Precipitation",
+                "display_name": "Precipitation (mm/hr)",
                 "image_visualization": {
                     "band_vis": {
                         "bands": [
                             "precipitation"
                         ],
                         "max": [
-                            1
+                            1.5
                         ],
                         "min": [
                             0
@@ -153,9 +153,9 @@
                     }
                 },
                 "lookat": {
-                    "lat": 26.12,
-                    "lon": -90.7,
-                    "zoom": 2
+                    "lat": 33,
+                    "lon": -76,
+                    "zoom": 3
                 }
             }
         ],
