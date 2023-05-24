@@ -1,0 +1,244 @@
+{
+    "type": "Collection",
+    "id": "NOAA/VIIRS/001/VNP43IA1",
+    "stac_version": "1.0.0",
+    "description": "The Suomi National Polar-Orbiting Partnership (Suomi NPP) NASA Visible\nInfrared Imaging Radiometer Suite (VIIRS) Bidirectional Reflectance\nDistribution Function (BRDF) and Albedo Model Parameters (VNP43IA1) Version\n1 product provides kernel weights (parameters) at 500 resolution. The\nVNP43IA1 product is produced daily using 16 days of VIIRS data, temporally\nweighted to the ninth day, which is reflected in the file name. The VNP43IA1\nproduct provides three spectrally dependent kernel weights, also known as\nmodel parameters: isotropic (fiso), volumetric (fvol), and geometric (fgeo),\nwhich can be used to model anisotropic effects of the Earth's surface.\nAll VNP43 data products are designed to promote the continuity of\nNASA's Moderate Resolution Imaging Spectroradiometer (MODIS)\nBRDF/Albedo data product suite.\n\nDocumentation:\n\n* [User's Guide](https://www.umb.edu/spectralmass/viirs_user_guide/vnp43ia1_and_vnp43ma1_brdf_albedo_model_parameters_product)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/194/VNP43_ATBD_V1.pdf)\n\n* [General Documentation](https://lpdaac.usgs.gov/products/vnp43ia1v001/)\n\n* [Land Product Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/NPP_QA/)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_VIIRS_001_VNP43IA1",
+            "type": "text/html",
+            "title": "Run the example for NOAA/VIIRS/001/VNP43IA1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_VIIRS_001_VNP43IA1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP43IA1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/VIIRS/VNP43IA1.001"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_VIIRS_001_VNP43IA1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/catalog.json",
+            "type": "application/json",
+            "title": "NOAA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C1407099489-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Please visit\n[LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/VIIRS/VNP43IA1.001",
+    "version": "1",
+    "title": "VNP43IA1: BRDF/Albedo Model Parameters Daily L3 Global 500m SIN Grid",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-01-17T00:00:00Z",
+                    "2023-05-14T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "land",
+        "nasa",
+        "noaa",
+        "surface",
+        "viirs"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/VIIRS/VNP43IA1.001"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP43IA1"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "BRDF/Albedo mandatory quality for band I1",
+                "gee:classes": [
+                    {
+                        "description": "Full BRDF inversions",
+                        "value": 0
+                    },
+                    {
+                        "description": "Magnitude BRDF inversions",
+                        "value": 1
+                    }
+                ],
+                "name": "BRDF_Albedo_Band_Mandatory_Quality_I1"
+            },
+            {
+                "description": "BRDF/Albedo mandatory quality for band I2",
+                "gee:classes": [
+                    {
+                        "description": "Full BRDF inversions",
+                        "value": 0
+                    },
+                    {
+                        "description": "Magnitude BRDF inversions",
+                        "value": 1
+                    }
+                ],
+                "name": "BRDF_Albedo_Band_Mandatory_Quality_I2"
+            },
+            {
+                "description": "BRDF/Albedo mandatory quality for band I3",
+                "gee:classes": [
+                    {
+                        "description": "Full BRDF inversions",
+                        "value": 0
+                    },
+                    {
+                        "description": "Magnitude BRDF inversions",
+                        "value": 1
+                    }
+                ],
+                "name": "BRDF_Albedo_Band_Mandatory_Quality_I3"
+            },
+            {
+                "description": "Isotropic parameter for band I1",
+                "name": "BRDF_Albedo_Parameters_fiso_I1"
+            },
+            {
+                "description": "Volumetric parameter for band I1",
+                "name": "BRDF_Albedo_Parameters_fvol_I1"
+            },
+            {
+                "description": "Geometric parameter for band I1",
+                "name": "BRDF_Albedo_Parameters_fgeo_I1"
+            },
+            {
+                "description": "Isotropic parameter for band I2",
+                "name": "BRDF_Albedo_Parameters_fiso_I2"
+            },
+            {
+                "description": "Volumetric parameter for band I2",
+                "name": "BRDF_Albedo_Parameters_fvol_I2"
+            },
+            {
+                "description": "Geometric parameter for band I2",
+                "name": "BRDF_Albedo_Parameters_fgeo_I2"
+            },
+            {
+                "description": "Isotropic parameter for band I3",
+                "name": "BRDF_Albedo_Parameters_fiso_I3"
+            },
+            {
+                "description": "Volumetric parameter for band I3",
+                "name": "BRDF_Albedo_Parameters_fvol_I3"
+            },
+            {
+                "description": "Geometric parameter for band I3",
+                "name": "BRDF_Albedo_Parameters_fgeo_I3"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Isotropic parameter for band I1",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "BRDF_Albedo_Parameters_fiso_I1"
+                        ],
+                        "max": [
+                            255
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "000080",
+                            "0000d9",
+                            "4000ff",
+                            "8000ff",
+                            "0080ff",
+                            "00ffff",
+                            "00ff80",
+                            "80ff00",
+                            "daff00",
+                            "ffff00",
+                            "fff500",
+                            "ffda00",
+                            "ffb000",
+                            "ffa400",
+                            "ff4f00",
+                            "ff2500",
+                            "ff0a00",
+                            "ff00ff"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 58,
+                    "lon": 89,
+                    "zoom": 3
+                }
+            }
+        ],
+        "gsd": [
+            500
+        ],
+        "instruments": [
+            "VIIRS"
+        ],
+        "platform": [
+            "Suomi NPP"
+        ]
+    }
+}
