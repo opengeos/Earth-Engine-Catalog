@@ -60,9 +60,6 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.0.0/schema.json"
     ],
-    "gee:extra_dois": [
-        "10.5067/GPM/IMERG/3B-HH/06"
-    ],
     "gee:interval": {
         "interval": 30,
         "type": "cadence",
@@ -92,7 +89,7 @@
             "interval": [
                 [
                     "2000-06-01T00:00:00Z",
-                    "2023-05-24T02:30:00Z"
+                    "2023-05-26T03:30:00Z"
                 ]
             ]
         }

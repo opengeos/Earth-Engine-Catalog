@@ -48,11 +48,16 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.0.0/schema.json"
     ],
-    "gee:terms_of_use": "This work is licensed under a Creative Commons Attribution 4.0\nInternational License.\n\nAny use of the intertidal data must include proper acknowledgement,\nincluding citing the associated journal article.\n",
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)\n\nThis work is licensed under a Creative Commons Attribution 4.0\nInternational License.\n\nAny use of the intertidal data must include proper acknowledgement,\nincluding citing the associated journal article.\n",
     "gee:type": "image",
     "gee:user_uploaded": true,
-    "sci:citation": "Murray, N.J., Phinn, S.R., DeWitt, M., Ferrari, R., Johnston, R., Lyons, M.B.,\nClinton, N., Thau, D. & Fuller, R.A. (2019) The global distribution and\ntrajectory of tidal flats. Nature, 565, 222-225.\n",
+    "sci:citation": "Murray, N.J., Phinn, S.R., DeWitt, M., Ferrari, R., Johnston, R., Lyons, M.B.,\nClinton, N., Thau, D. & Fuller, R.A. (2019) The global distribution and\ntrajectory of tidal flats. Nature, 565, 222-225.\n[doi:10.1038/s41586-018-0805-8](https://doi.org/10.1038/s41586-018-0805-8),\n",
     "sci:doi": "10.1038/s41586-018-0805-8",
+    "sci:publications": [
+        {
+            "citation": "Murray, N. J., Phinn, S. P., Fuller, R. A., DeWitt, M., Ferrari, R.,\nJohnston, R., Clinton, N., & Lyons, M. B. (2022). High-resolution global\nmaps of tidal flat ecosystems from 1984 to 2019. Scientific Data,\n9(1).\n[doi:10.1038/s41597-022-01635-5](https://doi.org/10.1038/s41597-022-01635-5),\n"
+        }
+    ],
     "version": "v1.1",
     "title": "Murray Global Intertidal Change Data Mask",
     "extent": {
