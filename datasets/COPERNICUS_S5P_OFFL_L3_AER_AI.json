@@ -65,7 +65,7 @@
             "interval": [
                 [
                     "2018-07-04T13:34:21Z",
-                    "2023-05-26T17:15:26Z"
+                    "2023-05-27T18:37:56Z"
                 ]
             ]
         }
@@ -105,7 +105,7 @@
     "summaries": {
         "eo:bands": [
             {
-                "description": "A measure of the prevalence of aerosols in the atmosphere, calculated by\n[this equation](https://earth.esa.int/web/sentinel/technical-guides/sentinel-5p/level-2/aerosol-index) using the 354/388 wavelength pair.\n",
+                "description": "A measure of the prevalence of aerosols in the atmosphere.\n\nThe UVAI index is based on spectral contrast in the ultraviolet (UV)\nspectral range for a given wavelength pair, where the difference\nbetween observed and modeled reflectance results in a residual value.\nWhen this residual is positive it indicates the presence of\nUV-absorbing aerosols, like dust and smoke, and is often referred\nto as the Absorbing Aerosol Index (AAI). Clouds yield near-zero\nresidual values and strongly negative residual values can be\nindicative of the presence of non-absorbing aerosols including\nsulfate aerosols.\n\nUnlike satellite-based aerosol optical thickness\nmeasurements, AAI can also be calculated in the presence of clouds\nso that daily, global coverage is possible. This is ideal for tracking\nthe evolution of episodic aerosol plumes consisting of desert dust,\nash from volcanic eruptions, and smoke from biomass burning.\n\nSee further details in the\n[ATBD](https://sentinel.esa.int/documents/247904/2476257/Sentinel-5P-TROPOMI-ATBD-UV-Aerosol-Index.pdf).\n",
                 "name": "absorbing_aerosol_index"
             },
             {

@@ -1,0 +1,156 @@
+{
+    "type": "Collection",
+    "id": "Switzerland/SWISSIMAGE/orthos/10cm",
+    "stac_version": "1.0.0",
+    "description": "The SWISSIMAGE 10 cm orthophoto mosaic is an assembly of new color digital\naerial images over the whole of Switzerland with a ground resolution of\n10 cm in the plains and the main alpine valleys and 25 cm in the Alps. It\nis updated annually.\n\nFor more information, please see the [SWISSIMAGE10cm_FR documentation]\n(https://www.swisstopo.admin.ch/content/swisstopo-internet/fr/geodata/images/ortho/swissimage10/_jcr_content/contentPar/tabs_copy_copy/items/60_1569482292365/tabPar/downloadlist/downloadItems/67_1588752711524.download/Produktinfo_SWISSIMAGE10cm_FR.pdf)\n\nThis RGB collection contains digital aerial images with three bands.\nStandard deviation for the precision in position: +/- 0.15 m for the ground\nsample distance of 0.1 m.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/Switzerland/Switzerland_SWISSIMAGE_orthos_10cm",
+            "type": "text/html",
+            "title": "Run the example for Switzerland/SWISSIMAGE/orthos/10cm in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/Switzerland/Switzerland_SWISSIMAGE_orthos_10cm_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/Switzerland_SWISSIMAGE_orthos_10cm#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Switzerland/Switzerland_SWISSIMAGE_orthos_10cm.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Switzerland/catalog.json",
+            "type": "application/json",
+            "title": "Switzerland"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The free geodata and geoservices of swisstopo may be used, distributed and\nmade accessible. Furthermore, they may be enriched and processed and also\nused commercially.\n\nA reference to the source is mandatory.\nplease see the [Terms of use](\nhttps://www.swisstopo.admin.ch/en/home/meta/conditions/geodata/ogd.html)\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Copyright Federal Office of Topography swisstopo",
+    "title": "SWISSIMAGE 10 cm RGB imagery",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    45.8,
+                    5.9,
+                    47.8,
+                    10.6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-01-01T00:00:00Z",
+                    "2021-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "orthophoto",
+        "rgb",
+        "swissimage",
+        "swisstopo"
+    ],
+    "providers": [
+        {
+            "name": "Topography swisstopo",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.swisstopo.admin.ch/en/geodata/images/ortho/swissimage10.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/Switzerland_SWISSIMAGE_orthos_10cm"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "center_wavelength": 0.63,
+                "description": "Red",
+                "gee:wavelength": "619-651nm",
+                "name": "R"
+            },
+            {
+                "center_wavelength": 0.56,
+                "description": "Green",
+                "gee:wavelength": "525-585nm",
+                "name": "G"
+            },
+            {
+                "center_wavelength": 0.47,
+                "description": "Blue",
+                "gee:wavelength": "435-495nm",
+                "name": "B"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "RGB",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "R",
+                            "G",
+                            "B"
+                        ],
+                        "max": [
+                            190
+                        ],
+                        "min": [
+                            11
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 7.4,
+                    "lon": 46.3,
+                    "zoom": 19
+                }
+            }
+        ],
+        "gsd": [
+            0.1
+        ],
+        "B": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "G": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "R": {
+            "minimum": 0,
+            "maximum": 255
+        }
+    }
+}
