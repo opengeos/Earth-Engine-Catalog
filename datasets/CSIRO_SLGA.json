@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "CSIRO/SLGA",
     "stac_version": "1.0.0",
-    "description": "The Soil and Landscape Grid of Australia (SLGA) is a comprehensive dataset\nof soil attributes across Australia at 3 arc-second resolution (~90m\npixels). The surfaces are the outcomes from modelling that describe the\nspatial distribution of the soil attributes using existing soil data and\nenvironmental covariates. See [Viscarra Rossel et al (2015)](https://www.publish.csiro.au/sr/SR14366)\nfor further details. The SLGA can be used in studies of vadose zone\nprocesses, including solute transport, groundwater and nutrient fluxes\nbeyond the root zone, as well as a wide spectrum of ecological,\nhydrological, and broader environmental applications.\n\nEach product contains six digital soil attribute maps and their upper and\nlower confidence limits, representing the soil attribute at six depths:\n0-5cm, 5-15cm, 15-30cm, 30-60cm, 60-100cm, and 100-200cm. These depths and\nsoil attributes are consistent with the specifications of\n[GlobalSoilMap](https://www.isric.org/projects/globalsoilmapnet).\n\nThis collection has 12 images. Ten of them contain data for GSM primary\nsoil attributes; the other two contain regolith depth and soil depth GSM\nattributes.\n\n| Attribute                              | Description                                                                                                                   | Code | # of Bands |\n|----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------|------------|\n| Bulk Density (whole earth)             | Bulk density of the whole soil (including coarse fragments) in mass per unit volume by a method equivalent to the core method | BDW  | 18         |\n| Organic Carbon                         | Mass fraction of carbon by weight in the < 2mm soil material as determined by dry combustion at 900 Celsius                   | SOC  | 18         |\n| Clay                                   | < 2&micro;m mass fraction of the <2mm soil material determined using the pipette method                                             | CLY  | 18         |\n| Silt                                   | 2-20&micro;m mass fraction of the < 2mm soil material determined using the pipette method                                           | SLT  | 18         |\n| Sand                                   | 20&micro;m - 2mm mass fraction of the < 2mm soil material determined using the pipette method                                       | SND  | 18         |\n| pH (CaCl2)                             | pH of 1:5 soil/0.01M calcium chloride extract                                                                                 | pHc  | 18         |\n| Available Water Capacity               | Available water capacity computed for each of the specified depth increments                                                  | AWC  | 18         |\n| Total Nitrogen                         | Mass fraction of total nitrogen in the soil by weight                                                                         | NTO  | 18         |\n| Total Phosphorus                       | Mass fraction of total phosphorus in the soil by weight                                                                       | PTO  | 18         |\n| Effective Cation Exchange Capacity     | Cations extracted using barium chloride (BaCl2) plus exchangeable H + Al                                                      | ECE  | 18         |\n| Depth of Regolith                      | Depth to hard rock. Depth is inclusive of all regolith.                                                                       | DER  | 3          |\n| Depth of Soil                          | Depth of soil profile (A & B horizons)                                                                                        | DES  | 3          |\n",
+    "description": "The Soil and Landscape Grid of Australia (SLGA) is a comprehensive dataset\nof soil attributes across Australia at 3 arc-second resolution (~90m\npixels). The surfaces are the outcomes from modelling that describe the\nspatial distribution of the soil attributes using existing soil data and\nenvironmental covariates. See [Viscarra Rossel et al (2015)](https://www.publish.csiro.au/sr/SR14366)\nfor further details. The SLGA can be used in studies of vadose zone\nprocesses, including solute transport, groundwater and nutrient fluxes\nbeyond the root zone, as well as a wide spectrum of ecological,\nhydrological, and broader environmental applications.\n\nEach product contains six digital soil attribute maps and their upper and\nlower confidence limits, representing the soil attribute at six depths:\n0-5cm, 5-15cm, 15-30cm, 30-60cm, 60-100cm, and 100-200cm. These depths and\nsoil attributes are consistent with the specifications of\n[GlobalSoilMap](https://www.isric.org/projects/globalsoilmapnet).\n\nThis collection has 12 images. Ten of them contain data for GSM primary\nsoil attributes; the other two contain regolith depth and soil depth GSM\nattributes.\n\n| Attribute                              | Description                                                                                                                   | Code | # of Bands |\n|----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------|------------|\n| Bulk Density (whole earth)             | Bulk density of the whole soil (including coarse fragments) in mass per unit volume by a method equivalent to the core method | BDW  | 18         |\n| Organic Carbon                         | Mass fraction of carbon by weight in the < 2mm soil material as determined by dry combustion at 900 Celsius                   | SOC  | 18         |\n| Clay                                   | < 2&micro;m mass fraction of the <2mm soil material determined using the pipette method                                       | CLY  | 18         |\n| Silt                                   | 2-20&micro;m mass fraction of the < 2mm soil material determined using the pipette method                                     | SLT  | 18         |\n| Sand                                   | 20&micro;m - 2mm mass fraction of the < 2mm soil material determined using the pipette method                                 | SND  | 18         |\n| pH (CaCl2)                             | pH of 1:5 soil/0.01M calcium chloride extract                                                                                 | pHc  | 18         |\n| Available Water Capacity               | Available water capacity computed for each of the specified depth increments                                                  | AWC  | 18         |\n| Total Nitrogen                         | Mass fraction of total nitrogen in the soil by weight                                                                         | NTO  | 18         |\n| Total Phosphorus                       | Mass fraction of total phosphorus in the soil by weight                                                                       | PTO  | 18         |\n| Effective Cation Exchange Capacity     | Cations extracted using barium chloride (BaCl2) plus exchangeable H + Al                                                      | ECE  | 18         |\n| Depth of Regolith                      | Depth to hard rock. Depth is inclusive of all regolith.                                                                       | DER  | 3          |\n| Depth of Soil                          | Depth of soil profile (A & B horizons)                                                                                        | DES  | 3          |\n",
     "links": [
         {
             "rel": "root",
@@ -102,23 +102,56 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.0.0/schema.json"
     ],
-    "gee:extra_dois": [
-        "10.4225/08/546EE212B0048",
-        "10.4225/08/546EEE35164BF",
-        "10.4225/08/546F091C11777",
-        "10.4225/08/546F17EC6AB6E",
-        "10.4225/08/546F29646877E",
-        "10.4225/08/546F48D6A6D48",
-        "10.4225/08/546F540FE10AA",
-        "10.4225/08/546F564AE11F9",
-        "10.4225/08/546F617719CAF",
-        "10.4225/08/547523BB0801A",
-        "10.4225/08/55C9472F05295"
-    ],
     "gee:terms_of_use": "All products developed by the Soil and Landscape Grid of Australia are\navailable at no cost under a\n[Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/)\n(CC BY) and users should read the\n[Disclaimer](https://www.clw.csiro.au/aclep/soilandlandscapegrid/About-Disclaimer.html).\n",
     "gee:type": "image_collection",
     "sci:citation": "Viscarra Rossel, Raphael; Chen, Charlie; Grundy, Mike; Searle, Ross;\nClifford, David; Odgers, Nathan; Holmes, Karen; Griffin, Ted; Liddicoat,\nCraig; Kidd, Darren (2014): Soil and Landscape Grid National Soil Attribute\nMaps - SOIL ATTRIBUTE Release 1. v2. CSIRO. Data Collection\n[doi:10.1071/SR14366](https://doi.org/10.1071/SR14366).\n",
     "sci:doi": "10.4225/08/546ED604ADD8A",
+    "sci:publications": [
+        {
+            "citation": "Viscarra Rossel, R., Chen, C., Grundy, M., Searle, R., Clifford, D.,\nOdgers, N., Holmes, K., Griffin, T., Liddicoat, C., &amp; Kidd,\nD. (2014). <i>Soil and Landscape Grid National Soil Attribute Maps -\nBulk Density - Whole Earth (3\" resolution) - Release 1</i> [Data\nset]. CSIRO.\n",
+            "doi": "10.4225/08/546EE212B0048"
+        },
+        {
+            "citation": "Viscarra Rossel, R., Chen, C., Grundy, M., Searle, R., Odgers, N.,\nHolmes, K., Griffin, T., Liddicoat, C., Kidd, D., &amp; Clifford,\nD. (2014). <i>Soil and Landscape Grid National Soil Attribute Maps -\nClay (3\" resolution) - Release 1</i> [Data set]. CSIRO.\n",
+            "doi": "10.4225/08/546EEE35164BF"
+        },
+        {
+            "citation": "Viscarra Rossel, R., Chen, C., Grundy, M., Searle, R., Clifford, D.,\nOdgers, N., Holmes, K., Griffin, T., Liddicoat, C., &amp; Kidd,\nD. (2014). <i>Soil and Landscape Grid National Soil Attribute Maps -\nEffective Cation Exchange Capacity (3\" resolution) - Release 1</i> [Data\nset]. CSIRO.\n",
+            "doi": "10.4225/08/546F091C11777"
+        },
+        {
+            "citation": "Viscarra Rossel, R., Chen, C., Grundy, M., Searle, R., Clifford, D.,\nOdgers, N., Holmes, K., Griffin, T., Liddicoat, C., &amp; Kidd,\nD. (2014). <i>Soil and Landscape Grid National Soil Attribute Maps - pH\n- CaCl2 (3\" resolution) - Release 1</i> [Data set]. CSIRO.\n",
+            "doi": "10.4225/08/546F17EC6AB6E"
+        },
+        {
+            "citation": "Viscarra Rossel, R., Chen, C., Grundy, M., Searle, R., Odgers, N.,\nHolmes, K., Griffin, T., Liddicoat, C., Kidd, D., &amp; Clifford,\nD. (2014). <i>Soil and Landscape Grid National Soil Attribute Maps -\nSand (3\" resolution) - Release 1</i> [Data set]. CSIRO.\n",
+            "doi": "10.4225/08/546F29646877E"
+        },
+        {
+            "citation": "Viscarra Rossel, R., Chen, C., Grundy, M., Searle, R., Odgers, N.,\nHolmes, K., Griffin, T., Liddicoat, C., Kidd, D., &amp; Clifford,\nD. (2014). <i>Soil and Landscape Grid National Soil Attribute Maps -\nSilt (3\" resolution) - Release 1</i> [Data set]. CSIRO.\n",
+            "doi": "10.4225/08/546F48D6A6D48"
+        },
+        {
+            "citation": "Viscarra Rossel, R., Chen, C., Grundy, M., Searle, R., Clifford, D.,\nOdgers, N., Holmes, K., Griffin, T., Liddicoat, C., &amp; Kidd,\nD. (2014). <i>Soil and Landscape Grid National Soil Attribute Maps -\nSoil Depth (3\" resolution) - Release 1</i> [Data set]. CSIRO.\n",
+            "doi": "10.4225/08/546F540FE10AA"
+        },
+        {
+            "citation": "Viscarra Rossel, R., Chen, C., Grundy, M., Searle, R., Clifford, D.,\nOdgers, N., Holmes, K., Griffin, T., Liddicoat, C., &amp; Kidd,\nD. (2014). <i>Soil and Landscape Grid National Soil Attribute Maps -\nTotal Nitrogen (3\" resolution) - Release 1</i> [Data set]. CSIRO.\n",
+            "doi": "10.4225/08/546F564AE11F9"
+        },
+        {
+            "citation": "Viscarra Rossel, R., Chen, C., Grundy, M., Searle, R., Clifford, D.,\nOdgers, N., Holmes, K., Griffin, T., Liddicoat, C., &amp; Kidd,\nD. (2014). <i>Soil and Landscape Grid National Soil Attribute Maps -\nTotal Phosphorus (3\" resolution) - Release 1</i> [Data set]. CSIRO.\n",
+            "doi": "10.4225/08/546F617719CAF"
+        },
+        {
+            "citation": "Viscarra Rossel, R., Chen, C., Grundy, M., Searle, R., Clifford, D.,\nOdgers, N., Holmes, K., Griffin, T., Liddicoat, C., &amp; Kidd,\nD. (2014). <i>Soil and Landscape Grid National Soil Attribute Maps -\nOrganic Carbon (3\" resolution) - Release 1</i> [Data set]. CSIRO.\n",
+            "doi": "10.4225/08/547523BB0801A"
+        },
+        {
+            "citation": "Wilford, J., Searle, R., Thomas, M., &amp; Grundy, M. (2015). <i>Soil\nand Landscape Grid National Soil Attribute Maps - Depth of Regolith (3\"\nresolution) - Release 2</i> [Data set]. CSIRO.\n",
+            "doi": "10.4225/08/55C9472F05295"
+        }
+    ],
     "version": "1",
     "title": "SLGA: Soil and Landscape Grid of Australia (Soil Attributes)",
     "extent": {
