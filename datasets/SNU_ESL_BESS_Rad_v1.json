@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "SNU/ESL/BESS/Rad/v1",
     "stac_version": "1.0.0",
-    "description": "Breathing Earth System Simulator (BESS) is a simplified process-based model\nthat couples atmosphere and canopy radiative transfers, canopy photosynthesis,\ntranspiration, and energy balance. It couples an atmospheric radiative transfer\nmodel and artificial neural network with forcings from MODIS atmospheric products\nto generate 5-km daily products.\n\nPublications:\n\n* Ryu Youngryel, Chongya Jiang, Hideki Kobayashi, Matteo Detto, MODIS-derived global land products of shortwave radiation and diffuse and total photosynthetically active radiation at 5km resolution from 2000.  Remote Sensing of Environment, Volume 204, 2018. [doi:10.1016/j.rse.2017.09.021](https://doi.org/10.1016/j.rse.2017.09.021)\n",
+    "description": "Breathing Earth System Simulator (BESS) is a simplified process-based model\nthat couples atmosphere and canopy radiative transfers, canopy\nphotosynthesis, transpiration, and energy balance. It couples an atmospheric\nradiative transfer model and artificial neural network with forcings from\nMODIS atmospheric products to generate 5-km daily products.\n\nPublications:\n\n* Ryu Youngryel, Chongya Jiang, Hideki Kobayashi, Matteo Detto,\n  MODIS-derived global land products of shortwave radiation and diffuse and\n  total photosynthetically active radiation at 5km resolution from 2000.\n  Remote Sensing of Environment, Volume 204,\n  2018.\n  [doi:10.1016/j.rse.2017.09.021](https://doi.org/10.1016/j.rse.2017.09.021)\n",
     "links": [
         {
             "rel": "root",
@@ -60,7 +60,7 @@
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
-    "version": "v1",
+    "version": "1",
     "title": "Breathing Earth System Simulator (BESS) Radiation v1",
     "extent": {
         "spatial": {
@@ -128,14 +128,14 @@
         ],
         "gee:visualizations": [
             {
-                "display_name": "Surface downwelling photosynthetic radiative flux",
+                "display_name": "Surface downwelling photosynthetic radiative flux (W/m^2)",
                 "image_visualization": {
                     "band_vis": {
                         "bands": [
                             "PAR_Daily"
                         ],
                         "max": [
-                            200
+                            70
                         ],
                         "min": [
                             0
@@ -145,7 +145,7 @@
                 "lookat": {
                     "lat": 24.9,
                     "lon": 2.1,
-                    "zoom": 1
+                    "zoom": 3
                 }
             }
         ],
