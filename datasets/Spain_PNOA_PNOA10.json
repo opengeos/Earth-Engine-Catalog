@@ -43,7 +43,7 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
     ],
-    "gee:terms_of_use": "The data is free and free use for any legitimate purpose,\nthe only strict obligation being that of acknowledging and mentioning the\norigin and ownership of the geographic information products and services\nlicensed as National Geographic Institute.\n\nFor more details, see [Terms of use](http://www.ign.es/resources/licencia/Condiciones_licenciaUso_IGN.pdf)\n",
+    "gee:terms_of_use": "The data is free and free use for any legitimate purpose,\nthe only strict obligation being that of acknowledging and mentioning the\norigin and ownership of the geographic information products and services\nlicensed as National Geographic Institute.\n\nFor more details, see [Terms of use](\n  http://www.ign.es/resources/licencia/Condiciones_licenciaUso_IGN.pdf)\n",
     "gee:type": "image_collection",
     "sci:citation": "National Geographic Institute Spain",
     "title": "Spain RGB orthophotos 10 cm",
@@ -95,20 +95,23 @@
         "eo:bands": [
             {
                 "description": "Red",
+                "gee:units": "dn",
                 "name": "R"
             },
             {
                 "description": "Green",
+                "gee:units": "dn",
                 "name": "G"
             },
             {
                 "description": "Blue",
+                "gee:units": "dn",
                 "name": "B"
             }
         ],
         "gee:visualizations": [
             {
-                "display_name": "RGB",
+                "display_name": "Spain RGB (10cm)",
                 "image_visualization": {
                     "band_vis": {
                         "bands": [
