@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "MODIS/006/MOD10A1",
+    "id": "MODIS/061/MYD10A1",
     "stac_version": "1.0.0",
-    "description": "The MOD10A1 V6 Snow Cover Daily Global 500m product\ncontains snow cover, snow albedo, fractional snow cover, and quality\nassessment (QA) data. Snow cover data are based on a snow mapping\nalgorithm that employs a Normalized Difference Snow Index (NDSI)\nand other criteria tests.\n\n[General documentation](https://doi.org/10.5067/MODIS/MOD10A1.006)\n",
+    "description": "The MYD10A1 V6 Snow Cover Daily Global 500m product\ncontains snow cover, snow albedo, fractional snow cover, and quality\nassessment (QA) data. Snow cover data are based on a snow mapping\nalgorithm that employs a Normalized Difference Snow Index (NDSI)\nand other criteria tests.\n\n[General documentation](https://doi.org/10.5067/MODIS/MYD10A1.061)\n",
     "links": [
         {
             "rel": "root",
@@ -12,40 +12,28 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_006_MOD10A1",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_061_MYD10A1",
             "type": "text/html",
-            "title": "Run the example for MODIS/006/MOD10A1 in the Earth Engine Code Editor",
+            "title": "Run the example for MODIS/061/MYD10A1 in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_006_MOD10A1_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MYD10A1_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD10A1#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD10A1#terms-of-use",
             "type": "text/html"
         },
         {
             "rel": "cite-as",
-            "href": "https://doi.org/10.5067/MODIS/MOD10A1.006"
-        },
-        {
-            "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MOD10A1.json",
-            "type": "application/json",
-            "title": "MODIS/061/MOD10A1"
-        },
-        {
-            "rel": "successor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MOD10A1.json",
-            "type": "application/json",
-            "title": "MODIS/061/MOD10A1"
+            "href": "https://doi.org/10.5067/MODIS/MYD10A1.061"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MOD10A1.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MYD10A1.json",
             "type": "application/json"
         },
         {
@@ -60,21 +48,20 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.0.0/schema.json"
     ],
-    "deprecated": true,
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
         "unit": "day"
     },
     "gee:provider_ids": [
-        "C1000001167-NSIDC_ECS"
+        "C1000001204-NSIDC_ECS"
     ],
-    "gee:terms_of_use": "You may download and use photographs, imagery, or text\nfrom the NSIDC web site, unless limitations for its use are specifically\nstated. For more information on usage and citing NSIDC datasets,\nplease visit the [NSIDC 'Use and Copyright' page](https://nsidc.org/about/data-use-and-copyright).\n",
+    "gee:terms_of_use": "You may download and use photographs, imagery, or text\nfrom the NSIDC web site, unless limitations for its use are specifically\nstated. For more information on usage and citing NSIDC datasets,\nplease visit the [NSIDC 'Use and Copyright' page]\n(https://nsidc.org/about/data-use-and-copyright).\n",
     "gee:type": "image_collection",
     "sci:citation": "Hall, D. K., V. V. Salomonson, and G. A. Riggs. 2016. MODIS/Terra\nSnow Cover Daily L3 Global 500m Grid. Version 6. Boulder, Colorado\nUSA: NASA National Snow and Ice Data Center Distributed Active\nArchive Center.\n",
-    "sci:doi": "10.5067/MODIS/MOD10A1.006",
+    "sci:doi": "10.5067/MODIS/MYD10A1.061",
     "version": "6",
-    "title": "MOD10A1.006 Terra Snow Cover Daily Global 500m [deprecated]",
+    "title": "MYD10A1.061 Aqua Snow Cover Daily Global 500m",
     "extent": {
         "spatial": {
             "bbox": [
@@ -89,8 +76,8 @@
         "temporal": {
             "interval": [
                 [
-                    "2000-02-24T00:00:00Z",
-                    "2023-02-17T00:00:00Z"
+                    "2002-07-04T00:00:00Z",
+                    "2023-06-06T00:00:00Z"
                 ]
             ]
         }
@@ -98,15 +85,15 @@
     "license": "proprietary",
     "keywords": [
         "albedo",
+        "aqua",
         "daily",
         "geophysical",
         "global",
-        "mod10a1",
         "modis",
+        "myd10a1",
         "nasa",
         "nsidc",
-        "snow",
-        "terra"
+        "snow"
     ],
     "providers": [
         {
@@ -115,14 +102,14 @@
                 "licensor",
                 "producer"
             ],
-            "url": "https://doi.org/10.5067/MODIS/MOD10A1.006"
+            "url": "https://doi.org/10.5067/MODIS/MYD10A1.061"
         },
         {
             "name": "Google Earth Engine",
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD10A1"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD10A1"
         }
     ],
     "summaries": {
@@ -426,7 +413,7 @@
             "MODIS"
         ],
         "platform": [
-            "Terra"
+            "Aqua"
         ],
         "NDSI": {
             "minimum": 0,
