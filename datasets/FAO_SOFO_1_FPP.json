@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "FAO/SOFO/1/FPP",
     "stac_version": "1.0.0",
-    "description": "The \"Forest Proximate People\" (FPP) dataset is one of the data layers\ncontributing to the development of indicator #13, \"number of\nforest-dependent people in extreme poverty,\" of the Collaborative\nPartnership on Forests (CPF) Global Core Set of forest-related\nindicators (GCS). The FPP dataset provides an estimate of the number of\npeople living in or within 1 kilometer of forests\n(forest-proximate people) for the year 2019 with a pixel size of 100 meters\nat a global level.\n[Find out more about the dataset.](https://data.apps.fao.org/catalog/dcat/forest-proximate-people)\n",
+    "description": "The \"Forest Proximate People\" (FPP) dataset is one of the data layers\ncontributing to the development of indicator #13, \"number of\nforest-dependent people in extreme poverty,\" of the Collaborative\nPartnership on Forests (CPF) Global Core Set of forest-related\nindicators (GCS). The FPP dataset provides an estimate of the number of\npeople living in or within 1 kilometer of forests\n(forest-proximate people) for the year 2019 with a pixel size of 100 meters\nat a global level.\n[Find out more about the dataset.](\n  https://data.apps.fao.org/catalog/dcat/forest-proximate-people)\n",
     "links": [
         {
             "rel": "root",
@@ -52,15 +52,16 @@
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
-    "sci:citation": "[FAO 2022. The State of the World's Forests (SOFO) - Forest pathways for green recovery and building inclusive, resilient and sustainable economies. FAO, Rome.](https://www.fao.org/documents/card/en/c/cb9360en)\n",
+    "sci:citation": "FAO 2022. The State of the World's Forests (SOFO) - Forest pathways for\ngreen recovery and building inclusive, resilient and sustainable\neconomies. FAO, Rome.\n[https://www.fao.org/documents/card/en/c/cb9360en](\n  https://www.fao.org/documents/card/en/c/cb9360en)\n",
+    "sci:doi": "10.1016/j.oneear.2020.08.016",
     "sci:publications": [
         {
-            "citation": "Newton, P., Castle, S.E., Kinzer, A.T., Miller, D.C., Oldekop, J.A.,\nLinhares-Juvenal, T., Pina, L., Madrid, M., & de Lamo, J. 2022.\nThe number of forest- and tree-proximate people: a new methodology\nand global estimates, One Earth, 2020\n[10.1016/j.oneear.2020.08.016](https://doi.org/10.1016/j.oneear.2020.08.016),\n",
+            "citation": "Newton, P., Castle, S.E., Kinzer, A.T., Miller, D.C., Oldekop, J.A.,\nLinhares-Juvenal, T., Pina, L., Madrid, M., & de Lamo, J. 2022.  The\nnumber of forest- and tree-proximate people: a new methodology and\nglobal estimates, One Earth, 2020\n[doi:10.1016/j.oneear.2020.08.016](\n  https://doi.org/10.1016/j.oneear.2020.08.016),\n",
             "doi": "10.1016/j.oneear.2020.08.016"
         }
     ],
     "version": "1.0",
-    "title": "Forest proximate people (FPP)",
+    "title": "Forest proximate people (FPP) 1.0",
     "extent": {
         "spatial": {
             "bbox": [

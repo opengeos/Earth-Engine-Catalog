@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "FAO/SOFO/1/TPP",
     "stac_version": "1.0.0",
-    "description": "The \"Tree Proximate People\" (TPP) is one of the datasets contributing to the\ndevelopment of indicator #13, number of forest-dependent people in extreme\npoverty, of the Collaborative Partnership on Forests (CPF) Global Core Set\nof forest-related indicators (GCS). The TPP dataset provides 4 different\nestimates of tree proximate people (trees outside forests), all of them for\nthe year 2019 with a pixel size of 100 meters at a global level.\n[Find out more about the dataset.](https://data.apps.fao.org/catalog/dcat/tree-proximate-people)\n",
+    "description": "The \"Tree Proximate People\" (TPP) is one of the datasets contributing to the\ndevelopment of indicator #13, number of forest-dependent people in extreme\npoverty, of the Collaborative Partnership on Forests (CPF) Global Core Set\nof forest-related indicators (GCS). The TPP dataset provides 4 different\nestimates of tree proximate people (trees outside forests), all of them for\nthe year 2019 with a pixel size of 100 meters at a global level.\n[Find out more about the dataset.](\n  https://data.apps.fao.org/catalog/dcat/tree-proximate-people)\n",
     "links": [
         {
             "rel": "root",
@@ -52,15 +52,16 @@
     "gee:terms_of_use": "[proprietary](DO NOT USE THIS - use a custom URL)",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
-    "sci:citation": "[FAO 2022. The State of the World's Forests (SOFO) - Forest pathways for green recovery and building inclusive, resilient and sustainable economies. FAO, Rome.](https://www.fao.org/documents/card/en/c/cb9360en)\n",
+    "sci:citation": "FAO 2022. The State of the World's Forests (SOFO) - Forest pathways for\ngreen recovery and building inclusive, resilient and sustainable\neconomies. FAO, Rome.\n[https://www.fao.org/documents/card/en/c/cb9360en](\n  https://www.fao.org/documents/card/en/c/cb9360en)\n",
+    "sci:doi": "10.1016/j.oneear.2020.08.016",
     "sci:publications": [
         {
-            "citation": "Newton, P., Castle, S.E., Kinzer, A.T., Miller, D.C., Oldekop, J.A.,\nLinhares-Juvenal, T., Pina, L., Madrid, M., & de Lamo, J. 2022.\nThe number of forest- and tree-proximate people: a new methodology\nand global estimates, One Earth, 2020\n[10.1016/j.oneear.2020.08.016](https://doi.org/10.1016/j.oneear.2020.08.016),\n",
+            "citation": "Newton, P., Castle, S.E., Kinzer, A.T., Miller, D.C., Oldekop, J.A.,\nLinhares-Juvenal, T., Pina, L., Madrid, M., & de Lamo, J. 2022.  The\nnumber of forest- and tree-proximate people: a new methodology and\nglobal estimates, One Earth, 2020\n[doi:10.1016/j.oneear.2020.08.016](\n  https://doi.org/10.1016/j.oneear.2020.08.016),\n",
             "doi": "10.1016/j.oneear.2020.08.016"
         }
     ],
     "version": "1.0",
-    "title": "Tree proximate people (TPP)",
+    "title": "Tree proximate people (TPP) 1.0",
     "extent": {
         "spatial": {
             "bbox": [
