@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "GOOGLE/Research/open-buildings/v1/polygons",
+    "id": "GOOGLE/Research/open-buildings/v3/polygons",
     "stac_version": "1.0.0",
-    "description": "This large-scale open dataset consists of outlines of buildings derived\nfrom high-resolution 50 cm satellite imagery. It contains 516M building\ndetections across an area of 19.4M km2 (64% of the African continent).\n\nFor each building in this dataset we include the polygon describing its\nfootprint on the ground, a confidence score indicating how sure we are that\nthis is a building, and a [Plus Code](https://plus.codes/) corresponding to\nthe center of the building. There is no information about the type of\nbuilding, its street address, or any details other than its geometry.\n\nBuilding footprints are useful for a range of important applications: from\npopulation estimation, urban planning and humanitarian response to\nenvironmental and climate science. The project being based in Ghana, the\ncurrent focus is on the continent of Africa.\n\nInference was carried out during April 2021.\n\nFor more details see the official\n[website](https://sites.research.google/open-buildings/) of the Open\nBuildings dataset.\n\nNote that updated versions of this data are available. The newest version,\nVersion 3.0 (with inference carried out on May 2023), is available as\n[GOOGLE/Research/open-buildings/v3/polygons](GOOGLE_Research_open-buildings_v3_polygons).\n",
+    "description": "This large-scale open dataset consists of outlines of buildings derived\nfrom high-resolution 50 cm satellite imagery. It contains 1.8B building\ndetections in Africa, Latin America, Caribbean, South Asia and Southeast\nAsia. The inference spanned an area of 58M km&#178;.\n\nFor each building in this dataset we include the polygon describing its\nfootprint on the ground, a confidence score indicating how sure we are that\nthis is a building, and a [Plus Code](https://plus.codes/) corresponding to\nthe center of the building. There is no information about the type of\nbuilding, its street address, or any details other than its geometry.\n\nBuilding footprints are useful for a range of important applications: from\npopulation estimation, urban planning and humanitarian response to\nenvironmental and climate science. The project being based in Ghana, the\ncurrent focus is on the continent of Africa.\n\nInference was carried out during May 2023.\n\nFor more details see the official\n[website](https://sites.research.google/open-buildings/) of the Open\nBuildings dataset.\n",
     "links": [
         {
             "rel": "root",
@@ -12,26 +12,26 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/GOOGLE/GOOGLE_Research_open-buildings_v1_polygons",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/GOOGLE/GOOGLE_Research_open-buildings_v3_polygons",
             "type": "text/html",
-            "title": "Run the example for GOOGLE/Research/open-buildings/v1/polygons in the Earth Engine Code Editor",
+            "title": "Run the example for GOOGLE/Research/open-buildings/v3/polygons in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/GOOGLE/GOOGLE_Research_open-buildings_v1_polygons_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/GOOGLE/GOOGLE_Research_open-buildings_v3_polygons_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_Research_open-buildings_v1_polygons#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_Research_open-buildings_v3_polygons#terms-of-use",
             "type": "text/html"
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/GOOGLE/GOOGLE_Research_open-buildings_v1_polygons_FeatureView",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/GOOGLE/GOOGLE_Research_open-buildings_v3_polygons_FeatureView",
             "type": "text/html",
-            "title": "Run the example for GOOGLE/Research/open-buildings/v1/polygons in the Earth Engine Code Editor",
+            "title": "Run the example for GOOGLE/Research/open-buildings/v3/polygons in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
@@ -46,14 +46,14 @@
             "title": "GOOGLE/Research/open-buildings/v3/polygons"
         },
         {
-            "rel": "successor-version",
+            "rel": "predecessor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/GOOGLE/GOOGLE_Research_open-buildings_v2_polygons.json",
             "type": "application/json",
             "title": "GOOGLE/Research/open-buildings/v2/polygons"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GOOGLE/GOOGLE_Research_open-buildings_v1_polygons.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GOOGLE/GOOGLE_Research_open-buildings_v3_polygons.json",
             "type": "application/json"
         },
         {
@@ -67,13 +67,12 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.0.0/schema.json"
     ],
-    "deprecated": true,
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "table",
     "gee:user_uploaded": true,
     "sci:citation": "W. Sirko, S. Kashubin, M. Ritter, A. Annkah, Y.S.E. Bouchareb, Y. Dauphin,\nD. Keysers, M. Neumann, M. Cisse, J.A. Quinn. Continental-scale building\ndetection from high resolution satellite imagery.\n[arXiv:2107.12283](https://arxiv.org/abs/2107.12283), 2021.\n",
-    "version": "v1.0",
-    "title": "Open Buildings V1 Polygons [deprecated]",
+    "version": "3.0.0",
+    "title": "Open Buildings V2 Polygons",
     "extent": {
         "spatial": {
             "bbox": [
@@ -88,8 +87,8 @@
         "temporal": {
             "interval": [
                 [
-                    "2021-04-30T00:00:00Z",
-                    "2021-04-30T00:00:00Z"
+                    "2023-05-30T00:00:00Z",
+                    "2023-05-30T00:00:00Z"
                 ]
             ]
         }
@@ -97,9 +96,12 @@
     "license": "CC-BY-4.0",
     "keywords": [
         "africa",
+        "asia",
         "building",
         "built_up",
         "open_buildings",
+        "south_asia",
+        "southeast_asia",
         "structure"
     ],
     "providers": [
@@ -116,7 +118,7 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_Research_open-buildings_v1_polygons"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_Research_open-buildings_v3_polygons"
         }
     ],
     "summaries": {
@@ -128,7 +130,7 @@
                 "units": "m^2"
             },
             {
-                "description": "Confidence score [0.5;1.0] assigned by the model.",
+                "description": "Confidence score [0.65;1.0] assigned by the model.",
                 "name": "confidence",
                 "type": "DOUBLE"
             },
@@ -145,7 +147,7 @@
         ],
         "gee:visualizations": [
             {
-                "display_name": "Open Buildings V1",
+                "display_name": "Open Buildings V3",
                 "lookat": {
                     "lat": 6.492,
                     "lon": 3.389,
@@ -157,7 +159,7 @@
                 }
             },
             {
-                "display_name": "Open Buildings V1",
+                "display_name": "Open Buildings V3",
                 "visualize_as": "FeatureView"
             }
         ],
