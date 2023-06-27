@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "GOOGLE/Research/open-buildings/v3/polygons",
     "stac_version": "1.0.0",
-    "description": "This large-scale open dataset consists of outlines of buildings derived\nfrom high-resolution 50 cm satellite imagery. It contains 1.8B building\ndetections in Africa, Latin America, Caribbean, South Asia and Southeast\nAsia. The inference spanned an area of 58M km&#178;.\n\nFor each building in this dataset we include the polygon describing its\nfootprint on the ground, a confidence score indicating how sure we are that\nthis is a building, and a [Plus Code](https://plus.codes/) corresponding to\nthe center of the building. There is no information about the type of\nbuilding, its street address, or any details other than its geometry.\n\nBuilding footprints are useful for a range of important applications: from\npopulation estimation, urban planning and humanitarian response to\nenvironmental and climate science. The project being based in Ghana, the\ncurrent focus is on the continent of Africa.\n\nInference was carried out during May 2023.\n\nFor more details see the official\n[website](https://sites.research.google/open-buildings/) of the Open\nBuildings dataset.\n",
+    "description": "This large-scale open dataset consists of outlines of buildings derived\nfrom high-resolution 50 cm satellite imagery. It contains 1.8B building\ndetections in Africa, Latin America, Caribbean, South Asia and Southeast\nAsia. The inference spanned an area of 58M km&#178;.\n\nFor each building in this dataset we include the polygon describing its\nfootprint on the ground, a confidence score indicating how sure we are that\nthis is a building, and a [Plus Code](https://plus.codes/) corresponding to\nthe center of the building. There is no information about the type of\nbuilding, its street address, or any details other than its geometry.\n\nBuilding footprints are useful for a range of important applications: from\npopulation estimation, urban planning and humanitarian response to\nenvironmental and climate science. The project is based in Ghana, with an\ninitial focus on the continent of Africa and new updates on South Asia,\nSouth-East Asia, Latin America and the Caribbean.\n\nInference was carried out during May 2023.\n\nFor more details see the official\n[website](https://sites.research.google/open-buildings/) of the Open\nBuildings dataset.\n",
     "links": [
         {
             "rel": "root",
@@ -72,7 +72,7 @@
     "gee:user_uploaded": true,
     "sci:citation": "W. Sirko, S. Kashubin, M. Ritter, A. Annkah, Y.S.E. Bouchareb, Y. Dauphin,\nD. Keysers, M. Neumann, M. Cisse, J.A. Quinn. Continental-scale building\ndetection from high resolution satellite imagery.\n[arXiv:2107.12283](https://arxiv.org/abs/2107.12283), 2021.\n",
     "version": "3.0.0",
-    "title": "Open Buildings V2 Polygons",
+    "title": "Open Buildings V3 Polygons",
     "extent": {
         "spatial": {
             "bbox": [
