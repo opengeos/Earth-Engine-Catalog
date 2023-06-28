@@ -107,12 +107,12 @@
         "eo:bands": [
             {
                 "description": "Average DNB radiance values.",
-                "gee:units": "nanoWatts/cm2/sr",
+                "gee:units": "nanoWatts/sr/cm^2",
                 "name": "average"
             },
             {
                 "description": "Average Masked DNB radiance values",
-                "gee:units": "nanoWatts/cm2/sr",
+                "gee:units": "nanoWatts/sr/cm^2",
                 "name": "average_masked"
             },
             {
@@ -125,22 +125,22 @@
             },
             {
                 "description": "Maximum DNB radiance values.",
-                "gee:units": "nanoWatts/cm2/sr",
+                "gee:units": "nanoWatts/sr/cm^2",
                 "name": "maximum"
             },
             {
                 "description": "Median DNB radiance values",
-                "gee:units": "nanoWatts/cm2/sr",
+                "gee:units": "nanoWatts/sr/cm^2",
                 "name": "median"
             },
             {
                 "description": "Median masked DNB radiance values.",
-                "gee:units": "nanoWatts/cm2/sr",
+                "gee:units": "nanoWatts/sr/cm^2",
                 "name": "median_masked"
             },
             {
                 "description": "Minimum DNB radiance values",
-                "gee:units": "nanoWatts/cm2/sr",
+                "gee:units": "nanoWatts/sr/cm^2",
                 "name": "minimum"
             }
         ],

@@ -105,7 +105,7 @@
         "eo:bands": [
             {
                 "description": "Average DNB radiance values.",
-                "gee:units": "nanoWatts/cm2/sr",
+                "gee:units": "nanoWatts/sr/cm^2",
                 "name": "avg_rad"
             },
             {
