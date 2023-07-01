@@ -1,0 +1,151 @@
+{
+    "type": "Collection",
+    "id": "Slovakia/orthos/25cm",
+    "stac_version": "1.0.0",
+    "description": "Orthophotomosaic of the Slovak Republic is a set of color orthoimages\nwithout overlaps, gaps and visible brightness and color differences along\nthe connecting lines.\n\nFor more information, please see the [Slovakia orthophotos documentation]\n(https://www.geoportal.sk/files/zbgis/orto/technicka_sprava_ortofotomozaika_sr_2017-2019.pdf)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/Slovakia/Slovakia_orthos_25cm",
+            "type": "text/html",
+            "title": "Run the example for Slovakia/orthos/25cm in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/Slovakia/Slovakia_orthos_25cm_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/Slovakia_orthos_25cm#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Slovakia/Slovakia_orthos_25cm.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Slovakia/catalog.json",
+            "type": "application/json",
+            "title": "Slovakia"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The User is entitled to combine the Source Data with other data, use it in\nthe creation of his/her own work for commercial and non-commercial purposes,\ncreate a new work, publish the work on the Internet, publish the Source Data\nas a base map, publish the Source Data in connection with other\ndata/thematic layers through web apps. The User is obliged to provide the\nname of the Author of the Source Data when creating his/her own work and\nwhen publishing it as follows: \"GK&Uacute; Bratislava, NLC\".\n\nFor more details, see [Terms of use](\n   https://www.geoportal.sk/files/zbgis/orto/licencne_podmienky_orto.zip)\n",
+    "gee:type": "image_collection",
+    "sci:citation": "GKU Bratislava, NLC",
+    "title": "Slovakia orthophotos",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    47.44,
+                    16.5,
+                    49.36,
+                    22.33
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-01-01T00:00:00Z",
+                    "2020-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "orthophoto",
+        "rgb"
+    ],
+    "providers": [
+        {
+            "name": "Slovakia orthophotomosaic",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.geoportal.sk/en/zbgis/orthophotomosaic/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/Slovakia_orthos_25cm"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Red",
+                "gee:units": "dn",
+                "name": "R"
+            },
+            {
+                "description": "Green",
+                "gee:units": "dn",
+                "name": "G"
+            },
+            {
+                "description": "Blue",
+                "gee:units": "dn",
+                "name": "B"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Slovakia orthophotos RGB",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "R",
+                            "G",
+                            "B"
+                        ],
+                        "max": [
+                            255
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 19.2,
+                    "lon": 48.8,
+                    "zoom": 18
+                }
+            }
+        ],
+        "gsd": [
+            0.25
+        ],
+        "B": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "G": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "R": {
+            "minimum": 0,
+            "maximum": 255
+        }
+    }
+}
