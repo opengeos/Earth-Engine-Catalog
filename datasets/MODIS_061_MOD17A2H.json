@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "MODIS/006/MOD17A2H",
+    "id": "MODIS/061/MOD17A2H",
     "stac_version": "1.0.0",
-    "description": "The MOD17A2H V6 Gross Primary Productivity (GPP) product\nis a cumulative 8-day composite with a 500m pixel size. The product\nis based on the radiation-use efficiency concept and can be potentially\nused as inputs to data models to calculate terrestrial energy,\ncarbon, water cycle processes, and biogeochemistry of vegetation.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/495/MOD17_User_Guide_V6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/95/MOD17_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MOD17A2H)\n",
+    "description": "The MOD17A2H V6.1 Gross Primary Productivity (GPP) product\nis a cumulative 8-day composite with a 500m pixel size. The product\nis based on the radiation-use efficiency concept and can be potentially\nused as inputs to data models to calculate terrestrial energy,\ncarbon, water cycle processes, and biogeochemistry of vegetation.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/972/MOD17_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/95/MOD17_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MOD17A2H)\n",
     "links": [
         {
             "rel": "root",
@@ -12,28 +12,28 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_006_MOD17A2H",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_061_MOD17A2H",
             "type": "text/html",
-            "title": "Run the example for MODIS/006/MOD17A2H in the Earth Engine Code Editor",
+            "title": "Run the example for MODIS/061/MOD17A2H in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_006_MOD17A2H_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MOD17A2H_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD17A2H#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD17A2H#terms-of-use",
             "type": "text/html"
         },
         {
             "rel": "cite-as",
-            "href": "https://doi.org/10.5067/MODIS/MOD17A2H.006"
+            "href": "https://doi.org/10.5067/MODIS/MOD17A2H.061"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MOD17A2H.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MOD17A2H.json",
             "type": "application/json"
         },
         {
@@ -59,9 +59,9 @@
     "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
     "gee:type": "image_collection",
     "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
-    "sci:doi": "10.5067/MODIS/MOD17A2H.006",
-    "version": "6",
-    "title": "MOD17A2H.006: Terra Gross Primary Productivity 8-Day Global 500m",
+    "sci:doi": "10.5067/MODIS/MOD17A2H.061",
+    "version": "61",
+    "title": "MOD17A2H.061: Terra Gross Primary Productivity 8-Day Global 500m",
     "extent": {
         "spatial": {
             "bbox": [
@@ -76,8 +76,8 @@
         "temporal": {
             "interval": [
                 [
-                    "2000-02-18T00:00:00Z",
-                    "2023-02-10T00:00:00Z"
+                    "2021-01-01T00:00:00Z",
+                    "2023-06-18T00:00:00Z"
                 ]
             ]
         }
@@ -103,14 +103,14 @@
                 "licensor",
                 "producer"
             ],
-            "url": "https://doi.org/10.5067/MODIS/MOD17A2H.006"
+            "url": "https://doi.org/10.5067/MODIS/MOD17A2H.061"
         },
         {
             "name": "Google Earth Engine",
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD17A2H"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD17A2H"
         }
     ],
     "summaries": {
