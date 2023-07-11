@@ -32,6 +32,18 @@
             "href": "https://doi.org/10.5067/MODIS/MYD17A2H.006"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MYD17A2H.json",
+            "type": "application/json",
+            "title": "MODIS/061/MYD17A2H"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MYD17A2H.json",
+            "type": "application/json",
+            "title": "MODIS/061/MYD17A2H"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MYD17A2H.json",
             "type": "application/json"
@@ -48,6 +60,7 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.0.0/schema.json"
     ],
+    "deprecated": true,
     "gee:interval": {
         "interval": 8,
         "type": "cadence",
@@ -61,7 +74,7 @@
     "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
     "sci:doi": "10.5067/MODIS/MYD17A2H.006",
     "version": "6",
-    "title": "MYD17A2H.006: Aqua Gross Primary Productivity 8-Day Global 500M 500m",
+    "title": "MYD17A2H.006: Aqua Gross Primary Productivity 8-Day Global 500m [deprecated]",
     "extent": {
         "spatial": {
             "bbox": [
