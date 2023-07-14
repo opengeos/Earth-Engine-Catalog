@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "ECMWF/ERA5_LAND/DAILY_AGGR",
     "stac_version": "1.0.0",
-    "description": "ERA5-Land is a reanalysis dataset providing a consistent view of the\nevolution of land variables over several decades at an enhanced resolution\ncompared to ERA5. ERA5-Land has been produced by replaying the land\ncomponent of the ECMWF ERA5 climate reanalysis. Reanalysis combines model\ndata with observations from across the world into a globally complete and\nconsistent dataset using the laws of physics. Reanalysis produces data that\ngoes several decades back in time, providing an accurate description of the\nclimate of the past. This dataset includes all 50 variables as available on\nCDS.\n\nThe asset is a daily aggregate of ECMWF ERA5 Land hourly assets which\nincludes both flow and non-flow bands. Flow bands are formed by collecting\nthe first hour's data of the following day which holds aggregated sum of\nprevious day and while the non-flow bands are created by averaging all\nhourly data of the day. The flow bands are labeled with the \"_sum\"\nidentifier, which approach is different from the daily data produced by\nCopernicus Climate Data Store, where flow bands are averaged\ntoo.\n\nDaily aggregates have been pre-calculated to facilitate many applications\nrequiring easy and fast access to the data.\n\nERA5-Land daily aggregated data is available from july 1963 to three months\nfrom real-time. More information can be found at the\n[Copernicus Climate Data Store](https://cds.climate.copernicus.eu).\n",
+    "description": "ERA5-Land is a reanalysis dataset providing a consistent view of the\nevolution of land variables over several decades at an enhanced resolution\ncompared to ERA5. ERA5-Land has been produced by replaying the land\ncomponent of the ECMWF ERA5 climate reanalysis. Reanalysis combines model\ndata with observations from across the world into a globally complete and\nconsistent dataset using the laws of physics. Reanalysis produces data that\ngoes several decades back in time, providing an accurate description of the\nclimate of the past. This dataset includes all 50 variables as available on\nCDS.\n\nThe asset is a daily aggregate of ECMWF ERA5 Land hourly assets which\nincludes both flow and non-flow bands. Flow bands are formed by collecting\nthe first hour's data of the following day which holds aggregated sum of\nprevious day and while the non-flow bands are created by averaging all\nhourly data of the day. The flow bands are labeled with the \"_sum\"\nidentifier, which approach is different from the daily data produced by\nCopernicus Climate Data Store, where flow bands are averaged\ntoo.\n\nDaily aggregates have been pre-calculated to facilitate many applications\nrequiring easy and fast access to the data.\n\nERA5-Land daily aggregated data is available from 1950 to three months\nfrom real-time. More information can be found at the\n[Copernicus Climate Data Store](https://cds.climate.copernicus.eu).\n",
     "links": [
         {
             "rel": "root",
@@ -68,8 +68,8 @@
         "temporal": {
             "interval": [
                 [
-                    "1963-07-11T00:00:00Z",
-                    "2023-07-03T00:00:00Z"
+                    "1950-01-02T00:00:00Z",
+                    "2023-07-04T00:00:00Z"
                 ]
             ]
         }

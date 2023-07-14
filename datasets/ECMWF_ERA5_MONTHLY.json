@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "ECMWF/ERA5/MONTHLY",
     "stac_version": "1.0.0",
-    "description": "ERA5 is the fifth generation ECMWF atmospheric reanalysis of the global climate.\nReanalysis combines model data with observations from across the world into\na globally complete and consistent dataset. ERA5 replaces its predecessor,\nthe ERA-Interim reanalysis.\n\nERA5 MONTHLY provides aggregated values for each month for seven ERA5\nclimate reanalysis  parameters: 2m air temperature, 2m dewpoint temperature,\ntotal precipitation,\nmean sea level pressure, surface pressure, 10m u-component of wind and\n10m v-component of wind. Additionally, monthly minimum and maximum air\ntemperature at 2m has been calculated based on the hourly 2m air temperature\ndata. Monthly total precipitation values are given as monthly sums.\nAll other parameters are provided as monthly averages.\n\nERA5 data is available from 1979 to three months from real-time. More information\nand more ERA5 atmospheric parameters can be found at the\n[Copernicus Climate Data Store](https://cds.climate.copernicus.eu).\n\nProvider's Note: Monthly aggregates have been calculated based on the ERA5 hourly values\nof each parameter.\n",
+    "description": "ERA5 is the fifth generation ECMWF atmospheric reanalysis of the global climate.\nReanalysis combines model data with observations from across the world into\na globally complete and consistent dataset. ERA5 replaces its predecessor,\nthe ERA-Interim reanalysis.\n\nERA5 MONTHLY provides aggregated values for each month for seven ERA5\nclimate reanalysis  parameters: 2m air temperature, 2m dewpoint temperature,\ntotal precipitation,\nmean sea level pressure, surface pressure, 10m u-component of wind and\n10m v-component of wind. Additionally, monthly minimum and maximum air\ntemperature at 2m has been calculated based on the hourly 2m air temperature\ndata. Monthly total precipitation values are given as monthly sums.\nAll other parameters are provided as monthly averages.\n\nERA5 data is available from 1940 to three months from real-time, the version in the EE Data Catalog is available from 1979. More information\nand more ERA5 atmospheric parameters can be found at the\n[Copernicus Climate Data Store](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview).\n\nProvider's Note: Monthly aggregates have been calculated based on the ERA5 hourly values\nof each parameter.\n",
     "links": [
         {
             "rel": "root",
@@ -94,7 +94,7 @@
                 "licensor",
                 "producer"
             ],
-            "url": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels"
+            "url": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview"
         },
         {
             "name": "Google Earth Engine",
