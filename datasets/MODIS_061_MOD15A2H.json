@@ -128,7 +128,7 @@
             {
                 "description": "Leaf Area Index",
                 "gee:scale": 0.1,
-                "gee:units": "1 (area fraction)",
+                "gee:units": "Area fraction",
                 "name": "Lai_500m"
             },
             {
@@ -148,7 +148,7 @@
             {
                 "description": "Standard deviation of LAI",
                 "gee:scale": 0.1,
-                "gee:units": "1 (area fraction)",
+                "gee:units": "Area fraction",
                 "name": "LaiStdDev_500m"
             }
         ],

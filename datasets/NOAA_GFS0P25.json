@@ -145,7 +145,7 @@
             "interval": [
                 [
                     "2015-07-01T00:00:00Z",
-                    "2023-07-17T12:00:00Z"
+                    "2023-07-18T12:00:00Z"
                 ]
             ]
         }
@@ -195,7 +195,7 @@
             },
             {
                 "description": "Specific humidity 2m above ground",
-                "gee:units": "1 (mass fraction)",
+                "gee:units": "Mass fraction",
                 "name": "specific_humidity_2m_above_ground"
             },
             {

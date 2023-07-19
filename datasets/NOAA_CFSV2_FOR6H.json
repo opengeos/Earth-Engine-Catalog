@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1979-01-01T00:00:00Z",
-                    "2023-07-17T12:00:00Z"
+                    "2023-07-18T06:00:00Z"
                 ]
             ]
         }
@@ -138,7 +138,7 @@
             },
             {
                 "description": "Maximum specific humidity 2m above ground, 6-hour interval",
-                "gee:units": "1 (mass fraction)",
+                "gee:units": "Mass fraction",
                 "name": "Maximum_specific_humidity_at_2m_height_above_ground_6_Hour_Interval"
             },
             {
@@ -148,7 +148,7 @@
             },
             {
                 "description": "Minimum specific humidity 2m above ground, 6-hour interval",
-                "gee:units": "1 (mass fraction)",
+                "gee:units": "Mass fraction",
                 "name": "Minimum_specific_humidity_at_2m_height_above_ground_6_Hour_Interval"
             },
             {
@@ -178,7 +178,7 @@
             },
             {
                 "description": "Specific humidity 2m above ground",
-                "gee:units": "1 (mass fraction)",
+                "gee:units": "Mass fraction",
                 "name": "Specific_humidity_height_above_ground"
             },
             {
@@ -208,22 +208,22 @@
             },
             {
                 "description": "Volumetric soil moisture content 5cm below surface layer",
-                "gee:units": "1 (unspecified fraction)",
+                "gee:units": "Fraction",
                 "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_5_cm"
             },
             {
                 "description": "Volumetric soil moisture content 25cm below surface layer",
-                "gee:units": "1 (unspecified fraction)",
+                "gee:units": "Fraction",
                 "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_25_cm"
             },
             {
                 "description": "Volumetric soil moisture content 70cm below surface layer",
-                "gee:units": "1 (unspecified fraction)",
+                "gee:units": "Fraction",
                 "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_70_cm"
             },
             {
                 "description": "Volumetric soil moisture content 150cm below surface layer",
-                "gee:units": "1 (unspecified fraction)",
+                "gee:units": "Fraction",
                 "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_150_cm"
             }
         ],

@@ -65,7 +65,7 @@
             "interval": [
                 [
                     "2022-10-01T00:00:00Z",
-                    "2023-07-15T12:00:00Z"
+                    "2023-07-17T12:00:00Z"
                 ]
             ]
         }
@@ -99,17 +99,17 @@
         "eo:bands": [
             {
                 "description": "Carbon monoxide (CO, MW = 28.00 g mol-1) volume mixing ratio dry air",
-                "gee:units": "1 (mol fraction)",
+                "gee:units": "Mol fraction",
                 "name": "CO"
             },
             {
                 "description": "Nitrogen dioxide (NO2, MW = 46.00 g mol-1) volume mixing ratio dry air",
-                "gee:units": "1 (mol fraction)",
+                "gee:units": "Mol fraction",
                 "name": "NO2"
             },
             {
                 "description": "Ozone (O3, MW = 48.00 g mol-1) volume mixing ratio dry air",
-                "gee:units": "1 (mol fraction)",
+                "gee:units": "Mol fraction",
                 "name": "O3"
             },
             {
@@ -124,7 +124,7 @@
             },
             {
                 "description": "Specific humidity",
-                "gee:units": "1 (mass fraction)",
+                "gee:units": "Mass fraction",
                 "name": "Q"
             },
             {
@@ -138,7 +138,7 @@
             },
             {
                 "description": "Sulfur dioxide (SO2, MW = 64.00 g mol-1) volume mixing ratio dry air",
-                "gee:units": "1 (mol fraction)",
+                "gee:units": "Mol fraction",
                 "name": "SO2"
             },
             {

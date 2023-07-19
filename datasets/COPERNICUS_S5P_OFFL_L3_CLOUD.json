@@ -65,7 +65,7 @@
             "interval": [
                 [
                     "2018-07-04T11:34:21Z",
-                    "2023-07-12T15:52:13Z"
+                    "2023-07-15T16:36:25Z"
                 ]
             ]
         }
@@ -103,7 +103,7 @@
         "eo:bands": [
             {
                 "description": "Retrieved effective radiometric cloud fraction",
-                "gee:units": "1 (unspecified fraction)",
+                "gee:units": "Fraction",
                 "name": "cloud_fraction"
             },
             {

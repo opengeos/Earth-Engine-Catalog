@@ -152,17 +152,17 @@
             },
             {
                 "description": "Soil moisture profile",
-                "gee:units": "1 (unspecified fraction)",
+                "gee:units": "Fraction",
                 "name": "smp"
             },
             {
                 "description": "Surface soil moisture anomaly",
-                "gee:units": "1 (dimensionless)",
+                "gee:units": "Dimensionless",
                 "name": "ssma"
             },
             {
                 "description": "Subsurface soil moisture anomaly",
-                "gee:units": "1 (dimensionless)",
+                "gee:units": "Dimensionless",
                 "name": "susma"
             }
         ],

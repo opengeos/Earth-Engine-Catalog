@@ -65,7 +65,7 @@
             "interval": [
                 [
                     "2019-02-08T08:13:16Z",
-                    "2023-07-12T07:24:45Z"
+                    "2023-07-16T01:03:53Z"
                 ]
             ]
         }
@@ -104,7 +104,7 @@
         "eo:bands": [
             {
                 "description": "Column-averaged dry air mixing ratio of methane, as parts-per-billion\n",
-                "gee:units": "1 (mol fraction)",
+                "gee:units": "Mol fraction",
                 "name": "CH4_column_volume_mixing_ratio_dry_air"
             },
             {
@@ -138,12 +138,12 @@
             },
             {
                 "description": "Column-averaged dry air mixing ratio of methane, as parts-per-billion,\ncorrected for surface albedo\n",
-                "gee:units": "1 (mol fraction)",
+                "gee:units": "Mol fraction",
                 "name": "CH4_column_volume_mixing_ratio_dry_air_bias_corrected"
             },
             {
                 "description": "Uncertainty of the column averaged dry air mixing ratio of methane\n(1 sigma error)\n",
-                "gee:units": "1 (mol fraction)",
+                "gee:units": "Mol fraction",
                 "name": "CH4_column_volume_mixing_ratio_dry_air_uncertainty"
             }
         ],

@@ -65,7 +65,7 @@
             "interval": [
                 [
                     "2018-06-28T10:24:07Z",
-                    "2023-07-04T21:47:54Z"
+                    "2023-07-08T15:27:06Z"
                 ]
             ]
         }
@@ -130,12 +130,12 @@
             },
             {
                 "description": "Aerosol index (at wavelengths 354/388, i.e. the OMI pair) from the AER_AI\nlevel 2 product.  See [Level 2 Algorithms - Ultraviolet Aerosol Index](https://sentinel.esa.int/web/sentinel/data-products/-/asset_publisher/fp37fc19FN8F/content/sentinel-5-precursor-level-2-ultraviolet-aerosol-index).\n",
-                "gee:units": "1 (dimensionless)",
+                "gee:units": "Dimensionless",
                 "name": "absorbing_aerosol_index"
             },
             {
                 "description": "Effective cloud fraction.\nSee the [Sentinel 5P L2 Input/Output Data Definition Spec](https://sentinels.copernicus.eu/documents/247904/3119978/Sentinel-5P-Level-2-Input-Output-Data-Definition), p.220.\n",
-                "gee:units": "1 (unspecified fraction)",
+                "gee:units": "Fraction",
                 "name": "cloud_fraction"
             },
             {

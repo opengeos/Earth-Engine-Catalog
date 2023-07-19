@@ -65,7 +65,7 @@
             "interval": [
                 [
                     "2018-07-10T11:02:44Z",
-                    "2023-07-17T01:22:38Z"
+                    "2023-07-18T07:37:38Z"
                 ]
             ]
         }
@@ -124,7 +124,7 @@
             },
             {
                 "description": "Effective cloud fraction.  See the [Sentinel 5P L2 Input/Output Data Definition Spec](https://sentinels.copernicus.eu/documents/247904/3119978/Sentinel-5P-Level-2-Input-Output-Data-Definition),\np.220.\n",
-                "gee:units": "1 (unspecified fraction)",
+                "gee:units": "Fraction",
                 "name": "cloud_fraction"
             },
             {

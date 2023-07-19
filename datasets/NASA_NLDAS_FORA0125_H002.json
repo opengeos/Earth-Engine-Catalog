@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1979-01-01T13:00:00Z",
-                    "2023-07-13T12:00:00Z"
+                    "2023-07-15T12:00:00Z"
                 ]
             ]
         }
@@ -122,7 +122,7 @@
             },
             {
                 "description": "Specific humidity at 2 meters above the surface",
-                "gee:units": "1 (mass fraction)",
+                "gee:units": "Mass fraction",
                 "name": "specific_humidity"
             },
             {
