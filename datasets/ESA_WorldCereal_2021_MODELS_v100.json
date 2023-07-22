@@ -1,0 +1,176 @@
+{
+    "type": "Collection",
+    "id": "ESA/WorldCereal/2021/MODELS/v100",
+    "stac_version": "1.0.0",
+    "description": "The European Space Agency (ESA) WorldCereal 10 m 2021 product suite consists\nof global-scale annual and seasonal crop maps and their related confidence.\nThey were generated as part of the\n[ESA-WorldCereal project](https://esa-worldcereal.org/). More information on\nthe content of these products and the methodology used to generate them is\ndescribed in [1].\n\nThis collection contains up to 106 agro-ecological zone (AEZ) images for\neach product which were all processed with respect to their own regional\nseasonality and should be considered as independent products. These seasons\nare described in the list below and were developed in [2] as part of the\nproject. Note that cereals as described by WorldCereal include wheat,\nbarley, and rye, which belong to the *Triticeae* tribe.\n\nWorldCereal seasons description:\n\n- tc-annual: a one-year cycle being defined in an AEZ by the end of the last\nconsidered growing season\n- tc-wintercereals: the main cereals season defined in an AEZ\n- tc-springcereals: optional springcereals season, only defined in certain\nAEZ\n- tc-maize-main: the main maize season defined in an AEZ\n- tc-maize-second: optional second maize season, only defined in certain AEZ\n\nThe available products in this collection are:\n\n- temporarycrops\n- maize\n- wintercereals\n- springcereals\n- irrigation\n\nEach product (image) has a binary classification (0 or 100) and a confidence\n(0-100) band. Note that AEZs for which no irrigation product is available\nwere not processed because of the unavailability of thermal Landsat data.\n\nThe collection should be filtered using one or more of the following image\nproperties:\n\n- aez_id, holding the ID of the AEZ to which the image belongs\n- product, describing the WorldCereal product name of the image\n- season, describing the season for which the image is valid.\n\nReferences:\n\n- [1] [WorldCereal methodology and products paper](https://doi.org/10.5194/essd-2023-184)\n- [2] [WorldCereal global seasonality paper](https://doi.org/10.1080/15481603.2022.2079273)\n\nWorldCereal datasets:\n\n-  Version 100 for year 2021\n   -  [ESA/WorldCereal/AEZ/v100](ESA_WorldCereal_AEZ_v100)\n   -  [ESA/WorldCereal/2021/MODELS/v100](ESA_WorldCereal_2021_MODELS_v100)\n   -  [ESA/WorldCereal/2021/MARKERS/v100](ESA_WorldCereal_2021_MARKERS_v100)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/ESA/ESA_WorldCereal_2021_MODELS_v100",
+            "type": "text/html",
+            "title": "Run the example for ESA/WorldCereal/2021/MODELS/v100 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/ESA/ESA_WorldCereal_2021_MODELS_v100_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/ESA_WorldCereal_2021_MODELS_v100#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ESA/ESA_WorldCereal_2021_MODELS_v100.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ESA/catalog.json",
+            "type": "application/json",
+            "title": "ESA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "sci:citation": "Van Tricht, K., Degerickx, J., Gilliams, S., Zanaga, D., Battude, M., Grosu,\nA., Brombacher, J., Lesiv, M., Bayas, J. C. L., Karanam, S., Fritz, S.,\nBecker-Reshef, I., Franch, B., Moll\u00e0-Bononad, B., Boogaard, H., Pratihast,\nA. K., and Szantoi, Z.: WorldCereal: a dynamic open-source system for\nglobal-scale, seasonal, and reproducible crop and irrigation mapping, Earth\nSyst. Sci. Data Discuss. [preprint],\n[doi:10.5194/essd-2023-184](https://doi.org/10.5194/essd-2023-184), in\nreview, 2023.,\n",
+    "sci:doi": "10.5194/essd-2023-184",
+    "version": "100",
+    "title": "ESA WorldCereal 10 m v100",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    "2021-12-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "agriculture",
+        "copernicus",
+        "crop",
+        "esa",
+        "global",
+        "landcover",
+        "landsat",
+        "sentinel1_derived",
+        "sentinel2_derived"
+    ],
+    "providers": [
+        {
+            "name": "ESA WorldCereal Consortium",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://esa-worldcereal.org/en"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/ESA_WorldCereal_2021_MODELS_v100"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Classification: 0 or 100",
+                "name": "classification"
+            },
+            {
+                "description": "Confidence, 0 to 100",
+                "name": "confidence"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "ID of the agro-ecological zone (AEZ) to which the product belongs.\n",
+                "name": "aez_id",
+                "type": "INT"
+            },
+            {
+                "description": "WorldCereal product name.",
+                "name": "product",
+                "type": "STRING"
+            },
+            {
+                "description": "Season for which the product is valid.",
+                "name": "season",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Classification confidence",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "confidence"
+                        ],
+                        "max": [
+                            100
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "be0000",
+                            "fff816",
+                            "069711"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 50.631,
+                    "lon": 5.026,
+                    "zoom": 10
+                }
+            }
+        ],
+        "gsd": [
+            10
+        ],
+        "classification": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "confidence": {
+            "minimum": 0,
+            "maximum": 100
+        }
+    }
+}

@@ -1,0 +1,167 @@
+{
+    "type": "Collection",
+    "id": "ESA/WorldCereal/2021/MARKERS/v100",
+    "stac_version": "1.0.0",
+    "description": "The European Space Agency (ESA) WorldCereal Active Cropland 10 m 2021\nproduct suite contains global-scale seasonal active cropland markers. They\nwere generated as part of the\n[ESA-WorldCereal project](https://esa-worldcereal.org/). The active cropland\nproducts indicate whether or not a pixel identified as temporary crops has\nbeen actively cultivated during a specific growing season. In order for a\npixel to be labeled as \u201cactive\u201d during a particular growing season, a full\ncrop growth cycle (sowing, growing, senescence and harvesting) needs to take\nplace within the designated time period. Note that this active marker is not\ncrop-type specific. Any crop grown (slightly) outside the predefined growing\nseasons will not be flagged as active cropland in any of the seasons covered\nby the WorldCereal system. The active marker results from running a growing\nseason detection algorithm [1] on the Sentinel-2 derived enhanced vegetation\nindex (EVI). More information on the methodology used to generate these\nproducts is described in [2].\n\nThis collection contains up to 106 agro-ecological zone (AEZ) images per\ncrop season, where each AEZ has its own seasonality. The seasons for which\nthe active cropland marker is available are described in the list below and\nwere developed in [3] as part of the project.\n\nWorldCereal seasons description:\n\n- tc-wintercereals: the main cereals season defined in an AEZ\n- tc-springcereals: optional springcereals season, only defined in certain\nAEZ\n- tc-maize-main: the main maize season defined in an AEZ\n- tc-maize-second: optional second maize season, only defined in certain AEZ\n\nEach product (image) has a binary classification band where value 0\ncorresponds to inactive cropland and value 100 corresponds to active\ncropland.\n\nThe collection should be filtered using one or more of the following image\nproperties:\n\n- aez_id, holding the ID of the AEZ to which the image belongs\n- season, describing the season for which the image is valid.\n\nReferences:\n\n- [1] Bolton, D. K., Gray, J. M., Melaas, E. K., Moon, M., Eklundh, L., and\nFriedl, M. A.: Continental-scale land surface phenology from harmonized\nLandsat 8 and Sentinel-2 imagery, Remote Sens. Environ., 240, 111685,\nhttps://doi.org/10.1016/j.rse.2020.111685, 2020.\n- [2] [WorldCereal methodology and products paper](https://doi.org/10.5194/essd-2023-184)\n- [3] [WorldCereal global seasonality paper](https://doi.org/10.1080/15481603.2022.2079273)\n\nWorldCereal datasets:\n\n-  Version 100 for year 2021\n   -  [ESA/WorldCereal/AEZ/v100](ESA_WorldCereal_AEZ_v100)\n   -  [ESA/WorldCereal/2021/MODELS/v100](ESA_WorldCereal_2021_MODELS_v100)\n   -  [ESA/WorldCereal/2021/MARKERS/v100](ESA_WorldCereal_2021_MARKERS_v100)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/ESA/ESA_WorldCereal_2021_MARKERS_v100",
+            "type": "text/html",
+            "title": "Run the example for ESA/WorldCereal/2021/MARKERS/v100 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/ESA/ESA_WorldCereal_2021_MARKERS_v100_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/ESA_WorldCereal_2021_MARKERS_v100#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ESA/ESA_WorldCereal_2021_MARKERS_v100.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ESA/catalog.json",
+            "type": "application/json",
+            "title": "ESA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "sci:citation": "Van Tricht, K., Degerickx, J., Gilliams, S., Zanaga, D., Battude, M., Grosu,\nA., Brombacher, J., Lesiv, M., Bayas, J. C. L., Karanam, S., Fritz, S.,\nBecker-Reshef, I., Franch, B., Moll\u00e0-Bononad, B., Boogaard, H., Pratihast,\nA. K., and Szantoi, Z.: WorldCereal: a dynamic open-source system for\nglobal-scale, seasonal, and reproducible crop and irrigation mapping, Earth\nSyst. Sci. Data Discuss. [preprint],\n[doi:10.5194/essd-2023-184](https://doi.org/10.5194/essd-2023-184), in\nreview, 2023.,\n",
+    "sci:doi": "10.5194/essd-2023-184",
+    "version": "100",
+    "title": "ESA WorldCereal Active Cropland 10 m v100",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    "2021-12-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "agriculture",
+        "copernicus",
+        "crop",
+        "esa",
+        "global",
+        "landcover",
+        "landsat",
+        "sentinel1_derived",
+        "sentinel2_derived"
+    ],
+    "providers": [
+        {
+            "name": "ESA WorldCereal Consortium",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://esa-worldcereal.org/en"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/ESA_WorldCereal_2021_MARKERS_v100"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Classification: 0 or 100",
+                "name": "classification"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "ID of the agro-ecological zone (AEZ) to which the product belongs.\n",
+                "name": "aez_id",
+                "type": "INT"
+            },
+            {
+                "description": "WorldCereal product name.",
+                "name": "product",
+                "type": "STRING"
+            },
+            {
+                "description": "Season for which the product is valid.",
+                "name": "season",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "WorldCereal active cropland marker",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "classification"
+                        ],
+                        "max": [
+                            100
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "eb0000",
+                            "37e622"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 38.045,
+                    "lon": -98.987,
+                    "zoom": 11
+                }
+            }
+        ],
+        "gsd": [
+            10
+        ],
+        "classification": {
+            "minimum": 0,
+            "maximum": 100
+        }
+    }
+}
