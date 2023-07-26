@@ -28,6 +28,18 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GHSL_P2023A_GHS_POP.json",
+            "type": "application/json",
+            "title": "JRC/GHSL/P2023A/GHS_POP"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GHSL_P2023A_GHS_POP.json",
+            "type": "application/json",
+            "title": "JRC/GHSL/P2023A/GHS_POP"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GHSL_P2016_POP_GPW_GLOBE_V1.json",
             "type": "application/json"
@@ -44,12 +56,13 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.0.0/schema.json"
     ],
+    "deprecated": true,
     "gee:terms_of_use": "The GHSL has been produced by the EC JRC as open and free data. Reuse is\nauthorised, provided the source is acknowledged. For more information,\nplease read the use conditions ([European Commission Reuse and Copyright\nNotice](https://ec.europa.eu/info/legal-notice_en)).\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
     "sci:citation": "European Commission, Joint Research Centre (JRC); Columbia University,\nCenter for International Earth Science Information Network - CIESIN (2015):\nGHS population grid, derived from GPW4, multitemporal (1975, 1990, 2000,\n2015). European Commission, Joint Research Centre (JRC) [Dataset]\nPID: [https://data.europa.eu/89h/jrc-ghsl-ghs_pop_gpw4_globe_r2015a](https://data.europa.eu/89h/jrc-ghsl-ghs_pop_gpw4_globe_r2015a)\n",
     "version": "v1",
-    "title": "GHSL: Global Human Settlement Layers, Population Grid 1975-1990-2000-2015 (P2016)",
+    "title": "GHSL: Global Human Settlement Layers, Population Grid 1975-1990-2000-2015 (P2016) [deprecated]",
     "extent": {
         "spatial": {
             "bbox": [
@@ -73,6 +86,7 @@
     "license": "proprietary",
     "keywords": [
         "ciesin_derived",
+        "ghsl",
         "jrc",
         "population"
     ],
