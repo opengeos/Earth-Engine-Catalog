@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "NASA/ORNL/DAYMET_V4",
     "stac_version": "1.0.0",
-    "description": "Daymet V4 provides gridded estimates of daily weather parameters for\nContinental North America, Hawaii, and Puerto Rico (Data for Puerto Rico is available starting\nin 1950). It is derived from selected meteorological station data and various supporting data\nsources.\n\nCompared to the previous version, Daymet V4 provides effective solutions to known issues and\nfurther considers improvements to what were believed to be input weather station biases.\nImprovements include:\n\n- Reductions in the timing bias of input reporting weather station measurements.\n\n- Improvement to the three-dimensional regression model techniques in the core algorithm.\n\n- A novel approach to handling high elevation temperature measurement biases.\n\nDocumentation:\n\n* [ORNL DAAC Dataset Documentation](https://daac.ornl.gov/DAYMET/guides/Daymet_Daily_V4.html)\n\n* [Dataset Documentation](https://daac.ornl.gov/daacdata/daymet/Daymet_Daily_V4/comp/Daymet_Daily_V4.pdf)\n\n* [The THREDDS location for this Collection](https://thredds.daac.ornl.gov/thredds/catalog/ornldaac/1840/catalog.html)\n",
+    "description": "Daymet V4 provides gridded estimates of daily weather parameters for\nContinental North America, Hawaii, and Puerto Rico (Data for Puerto Rico is available starting\nin 1950). It is derived from selected meteorological station data and various supporting data\nsources.\n\nCompared to the previous version, Daymet V4 provides effective solutions to known issues and\nfurther considers improvements to what were believed to be input weather station biases.\nImprovements include:\n\n- Reductions in the timing bias of input reporting weather station measurements.\n\n- Improvement to the three-dimensional regression model techniques in the core algorithm.\n\n- A novel approach to handling high elevation temperature measurement biases.\n\n2020 and 2021 data are ingested from V4 R1 sources\n\nDocumentation:\n\n* [ORNL DAAC Dataset Documentation](https://daac.ornl.gov/DAYMET/guides/Daymet_Daily_V4.html)\n\n* [Dataset Documentation](https://daac.ornl.gov/daacdata/daymet/Daymet_Daily_V4/comp/Daymet_Daily_V4.pdf)\n\n* [The THREDDS location for this Collection](https://thredds.daac.ornl.gov/thredds/catalog/ornldaac/1840/catalog.html)\n",
     "links": [
         {
             "rel": "root",
@@ -58,8 +58,8 @@
     ],
     "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
     "gee:type": "image_collection",
-    "sci:citation": "Thornton, M.M., R. Shrestha, Y. Wei, P.E. Thornton, S. Kao, and B.E. Wilson. {YEAR}.\nDaymet: Daily Surface Weather Data on a 1-km Grid for North America, Version 4. ORNL DAAC, Oak\nRidge, Tennessee, USA\n",
-    "sci:doi": "10.3334/ORNLDAAC/1840",
+    "sci:citation": "Thornton, M.M., R. Shrestha, Y. Wei, P.E. Thornton, S-C. Kao, and B.E. Wilson. 2022.\nDaymet: Daily Surface Weather Data on a 1-km Grid for North America, Version 4 R1.\nORNL DAAC, Oak Ridge, Tennessee, USA. https://doi.org/10.3334/ORNLDAAC/2129\n",
+    "sci:doi": "10.3334/ORNLDAAC/2129",
     "sci:publications": [
         {
             "citation": "Other Citation Details - Thornton, M.M., R. Shrestha, Y. Wei, P.E. Thornton, S. Kao, and B.E. Wilson. 2020.\nDaymet: Daily Surface Weather Data on a 1-km Grid for North America, Version 4. ORNL DAAC, Oak Ridge, Tennessee, USA.\n[doi:10.3334/ORNLDAAC/1840](https://doi.org/10.3334/ORNLDAAC/1840)\n",
