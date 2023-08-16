@@ -1,0 +1,138 @@
+{
+    "type": "Collection",
+    "id": "JRC/GHSL/P2023A/GHS_BUILT_H",
+    "stac_version": "1.0.0",
+    "description": "The GHS-BUILT-H spatial raster dataset contains building heights as\nextracted from the filtering of a composite of global digital elevation\nmodels (DEM) and the filtering of satellite imagery using linear regression\ntechniques.\n\nThe used input DEMs are the ALOS World 3D - 30m (AW3D30, 2006-2011) and the\nShuttle Radar Topography Mission 30m (SRTM30, 2000). The building heights\nextracted from these sources are updated using the support of the shadow\nmarkers extracted from the Sentinel2 image data composite of the year 2018\n(GHS-composite-S2 R2020A).\n\nThe Global Human Settlement Layer (GHSL) project is supported by the\nEuropean Commission, Joint Research Center, and Directorate-General for\nRegional and Urban Policy.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JRC/JRC_GHSL_P2023A_GHS_BUILT_H",
+            "type": "text/html",
+            "title": "Run the example for JRC/GHSL/P2023A/GHS_BUILT_H in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/JRC/JRC_GHSL_P2023A_GHS_BUILT_H_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GHSL_P2023A_GHS_BUILT_H#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GHSL_P2023A_GHS_BUILT_H.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/catalog.json",
+            "type": "application/json",
+            "title": "JRC"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The GHSL has been produced by the EC JRC as open and free data. Reuse is\nauthorised, provided the source is acknowledged. For more information,\nplease read the use conditions ([European Commission Reuse and Copyright\nNotice](https://ec.europa.eu/info/legal-notice_en)).\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Pesaresi, Martino; Politis, Panagiotis (2023):\nGHS-BUILT-H R2023A - GHS building height, derived from AW3D30, SRTM30, and\nSentinel2 composite (2018). European Commission, Joint Research Centre (JRC)\nPID: http://data.europa.eu/89h/85005901-3a49-48dd-9d19-6261354f56fe\n[doi:10.2905/85005901-3A49-48DD-9D19-6261354F56FE](https://doi.org/10.2905/85005901-3A49-48DD-9D19-6261354F56FE)\n",
+    "sci:doi": "10.2905/85005901-3A49-48DD-9D19-6261354F56FE",
+    "version": "P2023A",
+    "title": "GHSL: Global Human Settlement Layers, Built-Up Height 2018 (P2023A)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-01-01T00:00:00Z",
+                    "2018-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "built",
+        "builtup",
+        "ghsl",
+        "jrc",
+        "landsat_derived"
+    ],
+    "providers": [
+        {
+            "name": "EC JRC",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://ghsl.jrc.ec.europa.eu/ghs_buH2023.php"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GHSL_P2023A_GHS_BUILT_H"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Multitemporal Built-up Height",
+                "name": "built_height"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Multitemporal Built-up Height",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "built_height"
+                        ],
+                        "max": [
+                            0.5
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "000000",
+                            "400000",
+                            "a00000",
+                            "00ffff"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 74,
+                    "lon": 31,
+                    "zoom": 8
+                }
+            }
+        ],
+        "gsd": [
+            38
+        ]
+    }
+}
