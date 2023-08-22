@@ -1,0 +1,203 @@
+{
+    "type": "Collection",
+    "id": "JRC/GHSL/P2023A/GHS_BUILT_C",
+    "stac_version": "1.0.0",
+    "description": "The GHS-BUILT-C spatial raster dataset delineates the boundaries of the\nhuman settlements at 10m pixel size and describes their inner\ncharacteristics in terms of the morphology of the built environment and the\nfunctional use.\n\nThe Morphological Settlement Zone (MSZ) delineates the spatial domain of all\nthe human settlements at the neighboring scale of approx. 100m, based on the\nspatial generalization of the built-up surface fraction (BUFRAC) function.\nThe objective is to fill the open spaces that are surrounded by large\npatches of built space. MSZ, open spaces, and built spaces basic class\nabstractions are derived by mathematical morphology spatial filtering\n(opening, closing, regional maxima) from the BUFRAC function.\n\nThe Global Human Settlement Layer (GHSL) project is supported by the\nEuropean Commission, Joint Research Center, and Directorate-General for\nRegional and Urban Policy.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JRC/JRC_GHSL_P2023A_GHS_BUILT_C",
+            "type": "text/html",
+            "title": "Run the example for JRC/GHSL/P2023A/GHS_BUILT_C in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/JRC/JRC_GHSL_P2023A_GHS_BUILT_C_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GHSL_P2023A_GHS_BUILT_C#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GHSL_P2023A_GHS_BUILT_C.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/catalog.json",
+            "type": "application/json",
+            "title": "JRC"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The GHSL has been produced by the EC JRC as open and free data. Reuse is\nauthorised, provided the source is acknowledged. For more information,\nplease read the use conditions ([European Commission Reuse and Copyright\nNotice](https://ec.europa.eu/info/legal-notice_en)).\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Pesaresi M., P. Panagiotis (2023):\nGHS-BUILT-C R2023A - GHS Settlement Characteristics, derived from Sentinel2\ncomposite (2018) and other GHS R2023A data.European Commission, Joint\nResearch Centre (JRC)\nPID: http://data.europa.eu/89h/3c60ddf6-0586-4190-854b-f6aa0edc2a30\n[doi:10.2905/3c60ddf6-0586-4190-854b-f6aa0edc2a30](https://doi.org/10.2905/3c60ddf6-0586-4190-854b-f6aa0edc2a30)\n",
+    "sci:doi": "10.2905/3c60ddf6-0586-4190-854b-f6aa0edc2a30",
+    "version": "P2023A",
+    "title": "GHSL: Global Human Settlement Layers, Built-Up Characteristics 2018 (P2023A)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-01-01T00:00:00Z",
+                    "2018-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "built",
+        "builtup",
+        "ghsl",
+        "jrc",
+        "landsat_derived"
+    ],
+    "providers": [
+        {
+            "name": "EC JRC",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://ghsl.jrc.ec.europa.eu/ghs_buC2023.php"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GHSL_P2023A_GHS_BUILT_C"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Multitemporal Built-up Characteristics",
+                "gee:classes": [
+                    {
+                        "color": "718c6c",
+                        "description": "open spaces, low vegetation surfaces",
+                        "value": 1
+                    },
+                    {
+                        "color": "8ad86b",
+                        "description": "open spaces, medium vegetation surfaces",
+                        "value": 2
+                    },
+                    {
+                        "color": "c1ffa1",
+                        "description": "open spaces, high vegetation surfaces",
+                        "value": 3
+                    },
+                    {
+                        "color": "01b7ff",
+                        "description": "open spaces, water surfaces",
+                        "value": 4
+                    },
+                    {
+                        "color": "ffd501",
+                        "description": "open spaces, road surfaces",
+                        "value": 5
+                    },
+                    {
+                        "color": "d28200",
+                        "description": "built spaces, residential, building height <= 3m",
+                        "value": 11
+                    },
+                    {
+                        "color": "fe5900",
+                        "description": "built spaces, residential, 3m < building height <= 6m",
+                        "value": 12
+                    },
+                    {
+                        "color": "ff0101",
+                        "description": "built spaces, residential, 6m < building height <= 15m",
+                        "value": 13
+                    },
+                    {
+                        "color": "ce001b",
+                        "description": "built spaces, residential, 15m < building height <= 30m",
+                        "value": 14
+                    },
+                    {
+                        "color": "7a000a",
+                        "description": "built spaces, residential, building height > 30m",
+                        "value": 15
+                    },
+                    {
+                        "color": "ff9ff4",
+                        "description": "built spaces, non-residential, building height <= 3m",
+                        "value": 21
+                    },
+                    {
+                        "color": "ff67e4",
+                        "description": "built spaces, non-residential, 3m < building height <= 6m",
+                        "value": 22
+                    },
+                    {
+                        "color": "f701ff",
+                        "description": "built spaces, non-residential, 6m < building height <= 15m",
+                        "value": 23
+                    },
+                    {
+                        "color": "a601ff",
+                        "description": "built spaces, non-residential, 15m < building height <= 30m",
+                        "value": 24
+                    },
+                    {
+                        "color": "6e00fe",
+                        "description": "built spaces, non-residential, building height > 30m",
+                        "value": 25
+                    }
+                ],
+                "name": "built_characteristics"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Multitemporal Built-up Characteristics",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "built_characteristics"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 68.99,
+                    "lon": 39.94,
+                    "zoom": 13
+                }
+            }
+        ],
+        "gsd": [
+            38
+        ]
+    }
+}

@@ -56,7 +56,7 @@
             "citation": "Pesaresi, Martino; Ehrlich, Daniele; Florczyk, Aneta J.; Freire, Sergio;\nJulea, Andreea; Kemper, Thomas; Soille, Pierre; Syrris, Vasileios (2015):\nGHS built-up datamask grid derived from Landsat, multitemporal (1975, 1990,\n2000, 2014). European Commission, Joint Research Centre (JRC) [Dataset]\nPID: [https://data.europa.eu/89h/jrc-ghsl-ghs_built_ldsmtdm_globe_r2015b](https://data.europa.eu/89h/jrc-ghsl-ghs_built_ldsmtdm_globe_r2015b)\n"
         }
     ],
-    "version": "v1",
+    "version": "P2016",
     "title": "GHSL: Global Human Settlement Layers, Built-Up Grid 1975-1990-2000-2015 (P2016)",
     "extent": {
         "spatial": {
@@ -83,8 +83,7 @@
         "built",
         "builtup",
         "jrc",
-        "landsat_derived",
-        "multitemporal"
+        "landsat_derived"
     ],
     "providers": [
         {
