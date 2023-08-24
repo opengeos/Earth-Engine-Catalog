@@ -1,0 +1,142 @@
+{
+    "type": "Collection",
+    "id": "JRC/GHSL/P2023A/GHS_BUILT_V",
+    "stac_version": "1.0.0",
+    "description": "The GHS-BUILT-V spatial raster dataset depicts the distribution of the\nbuilt-up volumes, expressed as number in cubic meters. The dataset contains two\nbands: the total built-up volume and the built-up volume allocated to dominant\nnonresidential (NRES).\n\nThe data is made by spatial-temporal interpolation of satellite imagery:\nLandsat (MSS, TM, ETM sensor) data supports the 1975, 1990, 2000, and 2014\nepochs, while a Sentinel-2 (S2) image composite (GHS-composite-S2 R2020A)\nsupports the 2018 epoch. In the intermediate epochs not covered by direct\nsatellite observations, in areas not covered by satellite imagery\n(i.e. satellite data gaps in the 1975 epoch), or in the future epochs 2025\nand 2030, the BU prediction is created by spatial-temporal interpolation\nor extrapolation based on a rank-optimal spatial allocation method.\n\nThe Global Human Settlement Layer (GHSL) project is supported by the\nEuropean Commission, Joint Research Center, and Directorate-General for\nRegional and Urban Policy.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JRC/JRC_GHSL_P2023A_GHS_BUILT_V",
+            "type": "text/html",
+            "title": "Run the example for JRC/GHSL/P2023A/GHS_BUILT_V in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/JRC/JRC_GHSL_P2023A_GHS_BUILT_V_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GHSL_P2023A_GHS_BUILT_V#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GHSL_P2023A_GHS_BUILT_V.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/catalog.json",
+            "type": "application/json",
+            "title": "JRC"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The GHSL has been produced by the EC JRC as open and free data. Reuse is\nauthorised, provided the source is acknowledged. For more information,\nplease read the use conditions ([European Commission Reuse and Copyright\nNotice](https://ec.europa.eu/info/legal-notice_en)).\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Pesaresi, Martino; Politis, Panagiotis (2023):\nGHS-BUILT-V R2023A - GHS built-up volume grids derived from joint assessment\nof Sentinel2, Landsat, and global DEM data, multitemporal (1975-2030).\nEuropean Commission, Joint Research Centre (JRC) [Dataset]\nPID: http://data.europa.eu/89h/ab2f107a-03cd-47a3-85e5-139d8ec63283\n[doi:10.2905/AB2F107A-03CD-47A3-85E5-139D8EC63283](https://doi.org/10.2905/AB2F107A-03CD-47A3-85E5-139D8EC63283)\n",
+    "sci:doi": "10.2905/AB2F107A-03CD-47A3-85E5-139D8EC63283",
+    "version": "P2023A",
+    "title": "GHSL: Global Human Settlement Layers, Built-Up Volume Grid 1975-2030 (P2023A)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1975-01-01T00:00:00Z",
+                    "2030-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "built",
+        "builtup",
+        "ghsl",
+        "jrc",
+        "landsat_derived"
+    ],
+    "providers": [
+        {
+            "name": "EC JRC",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://ghsl.jrc.ec.europa.eu/ghs_buV2023.php"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GHSL_P2023A_GHS_BUILT_V"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Total (Residential and Non-Residential) Built-up Volume",
+                "name": "built_volume_total"
+            },
+            {
+                "description": "Non-Residential Built-up Volume",
+                "name": "built_volume_nres"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Total (Residential and Non-Residential) Built-up Volume",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "built_volume_total"
+                        ],
+                        "max": [
+                            80000
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "000000",
+                            "400000",
+                            "a00000",
+                            "00ffff"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 77.15,
+                    "lon": 28.65,
+                    "zoom": 10
+                }
+            }
+        ],
+        "gsd": [
+            100
+        ]
+    }
+}
