@@ -1,0 +1,558 @@
+{
+    "type": "Collection",
+    "id": "MODIS/061/MCD19A1_GRANULES",
+    "stac_version": "1.0.0",
+    "description": "The MCD19A1 Version 6.1 data product is a Moderate Resolution Imaging\nSpectroradiometer (MODIS) Terra and Aqua combined Land Surface Bidirectional\nReflectance Factor (BRF) gridded Level 2 product produced daily at 500 meter\nand 1 kilometer resolution. For more information see the\n[MAIAC user guide](https://lpdaac.usgs.gov/documents/1500/MCD19_User_Guide_V61.pdf).\n\nNOTE: Full ingestion into Earth Engine is expected to continue through\nwinter 2023.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_061_MCD19A1_GRANULES",
+            "type": "text/html",
+            "title": "Run the example for MODIS/061/MCD19A1_GRANULES in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MCD19A1_GRANULES_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD19A1_GRANULES#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://lpdaac.usgs.gov/products/mcd19a1v061/"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MCD19A1_GRANULES.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C2484086031-LPCLOUD"
+    ],
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "version": "6.1",
+    "title": "MCD19A1.061: Land Surface BRF Daily L2G Global 500m and 1km",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-12-21T00:00:00Z",
+                    "2000-03-25T23:40:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "aerosol",
+        "aod",
+        "aqua",
+        "daily",
+        "global",
+        "maiac",
+        "modis",
+        "nasa",
+        "terra",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://lpdaac.usgs.gov/products/mcd19a1v061/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD19A1_GRANULES"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Surface reflectance at 500m for band 1.\n",
+                "gee:scale": 0.0001,
+                "name": "Sur_refl1"
+            },
+            {
+                "description": "Surface reflectance at 500m for band 2.\n",
+                "gee:scale": 0.0001,
+                "name": "Sur_refl2"
+            },
+            {
+                "description": "Surface reflectance at 500m for band 3.\n",
+                "gee:scale": 0.0001,
+                "name": "Sur_refl3"
+            },
+            {
+                "description": "Surface reflectance at 500m for band 4.\n",
+                "gee:scale": 0.0001,
+                "name": "Sur_refl4"
+            },
+            {
+                "description": "Surface reflectance at 500m for band 5.\n",
+                "gee:scale": 0.0001,
+                "name": "Sur_refl5"
+            },
+            {
+                "description": "Surface reflectance at 500m for band 6.\n",
+                "gee:scale": 0.0001,
+                "name": "Sur_refl6"
+            },
+            {
+                "description": "Surface reflectance at 500m for band 7.\n",
+                "gee:scale": 0.0001,
+                "name": "Sur_refl7"
+            },
+            {
+                "description": "Surface reflectance at 1km for band 8.\n",
+                "gee:scale": 0.0001,
+                "name": "Sur_refl8"
+            },
+            {
+                "description": "Surface reflectance at 1km for band 9.\n",
+                "gee:scale": 0.0001,
+                "name": "Sur_refl9"
+            },
+            {
+                "description": "Surface reflectance at 1km for band 10.\n",
+                "gee:scale": 0.0001,
+                "name": "Sur_refl10"
+            },
+            {
+                "description": "Surface reflectance at 1km for band 11.\n",
+                "gee:scale": 0.0001,
+                "name": "Sur_refl11"
+            },
+            {
+                "description": "Surface reflectance at 1km for band 12.\n",
+                "gee:scale": 0.0001,
+                "name": "Sur_refl12"
+            },
+            {
+                "description": "BRFn uncertainty over time at 1km, for band 1\n",
+                "gee:scale": 0.0001,
+                "name": "Sigma_BRFn1"
+            },
+            {
+                "description": "BRFn uncertainty over time at 1km, for band 2",
+                "gee:scale": 0.0001,
+                "name": "Sigma_BRFn2"
+            },
+            {
+                "description": "QA bits",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 3,
+                            "description": "Cloud mask",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Undefined",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Clear",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Possibly cloudy (detected by AOD filter)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Cloudy (detected by cloud mask algorithm)",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Cloud shadow",
+                                    "value": 5
+                                },
+                                {
+                                    "description": "Hot spot of fire",
+                                    "value": 6
+                                },
+                                {
+                                    "description": "Water sediments",
+                                    "value": 7
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Land water snow/ice mask",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "Land",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Water",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Snow",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Ice",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 3,
+                            "description": "Adjacency mask",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "Normal condition/Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Adjacent to clouds",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Surrounded by more than 4 cloudy pixels",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Adjacent to a single cloudy pixel",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Adjacent to snow",
+                                    "value": 4
+                                },
+                                {
+                                    "description": "Snow was previously detected in this pixel",
+                                    "value": 5
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "AOD level",
+                            "first_bit": 8,
+                            "values": [
+                                {
+                                    "description": "AOD is low  (<=0.6)",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "AOD is high (> 0.6) or undefined",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "AOD Type",
+                            "first_bit": 9,
+                            "values": [
+                                {
+                                    "description": "Background aerosol",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Smoke",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Dust",
+                                    "value": 2
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "BRF retrieved over snow assuming AOD = 0.05",
+                            "first_bit": 11,
+                            "values": [
+                                {
+                                    "description": "no",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Altitude >4.2km (land)/3.5km (water), BRF is retrieved using\nclimatology AOD =0.02\n",
+                            "first_bit": 12,
+                            "values": [
+                                {
+                                    "description": "no",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 3,
+                            "description": "Surface Change Mask",
+                            "first_bit": 13,
+                            "values": [
+                                {
+                                    "description": "No change",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Regular change Green up (Relative change in Red and NIR\nnadir-normalized BRF is more than 5% but less than 15%).\n",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Big change Green up (Relative change in Red and NIR\nnadir-normalized BRF is more than 15%).\n",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Regular change Senescence",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Big change Senescence",
+                                    "value": 4
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 16
+                },
+                "name": "Status_QA"
+            },
+            {
+                "description": "Cosine of Solar zenith angle (5 km resulution)",
+                "gee:scale": 0.0001,
+                "name": "cosSZA"
+            },
+            {
+                "description": "Cosine view zenith angle (5 km resolution)",
+                "gee:scale": 0.0001,
+                "name": "cosVZA"
+            },
+            {
+                "description": "Relative azimuth angle (5 km resolution)",
+                "gee:scale": 0.01,
+                "name": "RelAZ"
+            },
+            {
+                "description": "Scattering angle (5 km resolution)",
+                "gee:scale": 0.01,
+                "name": "Scattering_Angle"
+            },
+            {
+                "description": "Solar Azimuth Angle (5 km resolution)",
+                "gee:scale": 0.01,
+                "name": "SAZ"
+            },
+            {
+                "description": "View Azimuth Angle (5 km resolution)",
+                "gee:scale": 0.01,
+                "name": "VAZ"
+            },
+            {
+                "description": "Glint angle (5 km resolution)",
+                "gee:scale": 0.01,
+                "name": "Glint_Angle"
+            },
+            {
+                "description": "RTLS volumetric kernel (5 km resolution)",
+                "name": "Fv"
+            },
+            {
+                "description": "RTLS geometric kernel (5 km resolution)",
+                "name": "Fg"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Surface Bidirectional Reflectance Factor",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Sur_refl1"
+                        ],
+                        "max": [
+                            500
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "black",
+                            "blue",
+                            "purple",
+                            "cyan",
+                            "green",
+                            "yellow",
+                            "red"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 13,
+                    "lon": 76,
+                    "zoom": 6
+                }
+            }
+        ],
+        "gsd": [
+            1000
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Aqua",
+            "Terra"
+        ],
+        "Fg": {
+            "minimum": -100,
+            "maximum": 100
+        },
+        "Fv": {
+            "minimum": -100,
+            "maximum": 100
+        },
+        "Glint_Angle": {
+            "minimum": -18000,
+            "maximum": 18000
+        },
+        "RelAZ": {
+            "minimum": -18000,
+            "maximum": 18000
+        },
+        "SAZ": {
+            "minimum": -18000,
+            "maximum": 18000
+        },
+        "Scattering_Angle": {
+            "minimum": -18000,
+            "maximum": 18000
+        },
+        "Sigma_BRFn1": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "Sigma_BRFn2": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "Status_QA": {
+            "minimum": 1,
+            "maximum": 65535
+        },
+        "Sur_refl1": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "Sur_refl10": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "Sur_refl11": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "Sur_refl12": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "Sur_refl2": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "Sur_refl3": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "Sur_refl4": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "Sur_refl5": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "Sur_refl6": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "Sur_refl7": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "Sur_refl8": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "Sur_refl9": {
+            "minimum": -100,
+            "maximum": 16000
+        },
+        "VAZ": {
+            "minimum": -18000,
+            "maximum": 18000
+        },
+        "cosSZA": {
+            "minimum": 0,
+            "maximum": 10000
+        },
+        "cosVZA": {
+            "minimum": 0,
+            "maximum": 10000
+        }
+    }
+}
