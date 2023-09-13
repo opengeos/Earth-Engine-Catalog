@@ -34,6 +34,18 @@
             "title": "USGS/NLCD_RELEASES/2016_REL"
         },
         {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2021_REL_NLCD.json",
+            "type": "application/json",
+            "title": "USGS/NLCD_RELEASES/2021_REL/NLCD"
+        },
+        {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2021_REL_NLCD.json",
+            "type": "application/json",
+            "title": "USGS/NLCD_RELEASES/2021_REL/NLCD"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2019_REL_NLCD.json",
             "type": "application/json"
@@ -50,13 +62,14 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.0.0/schema.json"
     ],
+    "deprecated": true,
     "gee:terms_of_use": "Most U.S. Geological Survey (USGS) information is federally created data and\ntherefore reside in the public domain and may be used, transferred, or\nreproduced without copyright restriction.\nAdditional information on [Acknowledging or Crediting USGS as Information\nSource](https://www.usgs.gov/centers/eros/data-citation) is available.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
     "sci:citation": "Dewitz, J., and U.S. Geological Survey, 2021, National Land Cover Database (NLCD)\n2019 Products (ver. 2.0, June 2021): U.S. Geological Survey data release,\n[doi:10.5066/P9KZCM54](https://doi.org/10.5066/P9KZCM54)\n",
     "sci:doi": "10.5066/P9KZCM54",
     "version": "2.0",
-    "title": "NLCD 2019: USGS National Land Cover Database, 2019 release",
+    "title": "NLCD 2019: USGS National Land Cover Database, 2019 release [deprecated]",
     "extent": {
         "spatial": {
             "bbox": [
