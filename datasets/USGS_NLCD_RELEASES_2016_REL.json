@@ -28,10 +28,10 @@
             "type": "text/html"
         },
         {
-            "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2021_REL_NLCD.json",
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2019_REL_NLCD.json",
             "type": "application/json",
-            "title": "USGS/NLCD_RELEASES/2021_REL/NLCD"
+            "title": "USGS/NLCD_RELEASES/2019_REL/NLCD"
         },
         {
             "rel": "self",
@@ -50,11 +50,12 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.0.0/schema.json"
     ],
+    "deprecated": true,
     "gee:terms_of_use": "Most U.S. Geological Survey (USGS) information resides\nin the public domain and may be used without restriction. Additional\ninformation on [Acknowledging or Crediting USGS as Information\nSource](https://www.usgs.gov/information-policies-and-instructions/crediting-usgs) is available.\n",
     "gee:type": "image_collection",
     "sci:citation": "Yang, L., Jin, S., Danielson, P., Homer, C., Gass, L., Case, A.,\nCostello, C., Dewitz, J., Fry, J., Funk, M., Grannemann, B., Rigge,\nM. and G. Xian. 2018,\n[A New Generation of the United States National Land Cover Database: Requirements, Research Priorities, Design, and Implementation Strategies]\n(https://www.sciencedirect.com/science/article/abs/pii/S092427161830251X), p. 108-123.\n",
     "version": "1.0",
-    "title": "NLCD 2016: USGS National Land Cover Database, 2016 release",
+    "title": "NLCD 2016: USGS National Land Cover Database, 2016 release [deprecated]",
     "extent": {
         "spatial": {
             "bbox": [

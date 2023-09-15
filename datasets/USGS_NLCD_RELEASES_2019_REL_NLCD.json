@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "USGS/NLCD_RELEASES/2019_REL/NLCD",
     "stac_version": "1.0.0",
-    "description": "NLCD (the National Land Cover Database) is a 30-m Landsat-based land cover\ndatabase spanning 8 epochs\n(2001, 2004, 2006, 2008, 2011, 2013, 2016, and 2019).\nThe images rely on the imperviousness data layer for the\nurban classes and on a decision-tree classification for the rest.\n\nThis dataset has one image for the continental US for each epoch.\nAlaska, Hawaii, and Puerto Rico data can be found in the previous\n[2016 NLCD release](USGS_NLCD_RELEASES_2016_REL).\n\nNLCD products are created by the Multi-Resolution Land Characteristics\n(MRLC) Consortium, a partnership of federal agencies led by the\nU.S. Geological Survey.\n",
+    "description": "NLCD (the National Land Cover Database) is a 30-m Landsat-based land cover\ndatabase spanning 8 epochs (2001, 2004, 2006, 2008, 2011, 2013, 2016, and\n2019). A ninth epoch for 2021 is also available\n[here](USGS_NLCD_RELEASES_2021_REL_NLCD). The images rely on the\nimperviousness data layer for the urban classes and on a decision-tree\nclassification for the rest.\n\nThis dataset has one image for the continental US for each epoch.\nAlaska, Hawaii, and Puerto Rico data can be found in the previous\n[2016 NLCD release](USGS_NLCD_RELEASES_2016_REL).\n\nNLCD products are created by the Multi-Resolution Land Characteristics\n(MRLC) Consortium, a partnership of federal agencies led by the\nU.S. Geological Survey.\n",
     "links": [
         {
             "rel": "root",
@@ -34,18 +34,6 @@
             "title": "USGS/NLCD_RELEASES/2016_REL"
         },
         {
-            "rel": "successor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2021_REL_NLCD.json",
-            "type": "application/json",
-            "title": "USGS/NLCD_RELEASES/2021_REL/NLCD"
-        },
-        {
-            "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2021_REL_NLCD.json",
-            "type": "application/json",
-            "title": "USGS/NLCD_RELEASES/2021_REL/NLCD"
-        },
-        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2019_REL_NLCD.json",
             "type": "application/json"
@@ -62,14 +50,13 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.0.0/schema.json"
     ],
-    "deprecated": true,
     "gee:terms_of_use": "Most U.S. Geological Survey (USGS) information is federally created data and\ntherefore reside in the public domain and may be used, transferred, or\nreproduced without copyright restriction.\nAdditional information on [Acknowledging or Crediting USGS as Information\nSource](https://www.usgs.gov/centers/eros/data-citation) is available.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
     "sci:citation": "Dewitz, J., and U.S. Geological Survey, 2021, National Land Cover Database (NLCD)\n2019 Products (ver. 2.0, June 2021): U.S. Geological Survey data release,\n[doi:10.5066/P9KZCM54](https://doi.org/10.5066/P9KZCM54)\n",
     "sci:doi": "10.5066/P9KZCM54",
     "version": "2.0",
-    "title": "NLCD 2019: USGS National Land Cover Database, 2019 release [deprecated]",
+    "title": "NLCD 2019: USGS National Land Cover Database, 2019 release",
     "extent": {
         "spatial": {
             "bbox": [
