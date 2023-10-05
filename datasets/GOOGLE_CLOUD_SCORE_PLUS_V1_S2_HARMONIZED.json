@@ -1,0 +1,184 @@
+{
+    "type": "Collection",
+    "id": "GOOGLE/CLOUD_SCORE_PLUS/V1/S2_HARMONIZED",
+    "stac_version": "1.0.0",
+    "description": "Cloud Score+ is a quality assessment (QA) processor for medium-to-high\nresolution optical satellite imagery. Cloud Score+ outputs do not explicitly\nprovide labels, e.g., \"cloud\" and \"cloud shadow\". Instead, QA artifacts are\ndefined on a continuous scale based on ground occlusion with respect to\nsolar radiation or the imaging sensor: if a ray incident to or reflected\nfrom a ground pixel is absorbed or reflected by the atmosphere, the QA score\nis lower. Functionally, Cloud Score+ provides a holistic per-pixel\n\"usability\" score that can be thresholded to mask or even weight\nobservations used for downstream tasks such as time series analysis or\nclassification.\n\nThe Cloud Score+ S2_HARMONIZED dataset is being operationally produced in\nparallel with the [harmonized Sentinel-2 L1C collection](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_HARMONIZED).\nThis dataset includes two QA bands that grade the usability of\nindividual pixels with respect to surface visibility on a scale of [0, 1]\nwhere 0 represents \"not clear\" (occluded) while 1 represents \"clear\"\n(unoccluded) observations. The `cs` band scores QA based on a spectral\ndistance between the observed pixel and a (theoretical) clear reference\nobservation, while the `cs_cdf` band represents the likelihood an observed\npixel is clear based on an estimated cumulative distribution of scores for a\ngiven location through time.\n\nImages in the Cloud Score+ S2_HARMONIZED collection have the same id and\nsystem:index properties as the individual Sentinel-2 L1C assets from which\nthey were produced such that Cloud Score+ bands can be linked to source\nimages based on their shared system:index.\n\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/GOOGLE/GOOGLE_CLOUD_SCORE_PLUS_V1_S2_HARMONIZED",
+            "type": "text/html",
+            "title": "Run the example for GOOGLE/CLOUD_SCORE_PLUS/V1/S2_HARMONIZED in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/GOOGLE/GOOGLE_CLOUD_SCORE_PLUS_V1_S2_HARMONIZED_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_CLOUD_SCORE_PLUS_V1_S2_HARMONIZED#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GOOGLE/GOOGLE_CLOUD_SCORE_PLUS_V1_S2_HARMONIZED.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GOOGLE/catalog.json",
+            "type": "application/json",
+            "title": "GOOGLE"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "sci:citation": "Pasquarella, V. J., Brown, C. F., Czerwinski, W., & Rucklidge, W. J. (2023)\nComprehensive Quality Assessment of Optical Satellite Imagery Using Weakly\nSupervised Video Learning. In Proceedings of the IEEE/CVF Conference on\nComputer Vision and Pattern Recognition (pp. 2124-2134).\n[PDF](https://openaccess.thecvf.com/content/CVPR2023W/EarthVision/html/Pasquarella_Comprehensive_Quality_Assessment_of_Optical_Satellite_Imagery_Using_Weakly_Supervised_CVPRW_2023_paper.html)\n",
+    "version": "1",
+    "title": "Cloud Score+ S2_HARMONIZED V1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-06-23T00:00:00Z",
+                    "2023-10-03T19:59:58Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "google",
+        "cloud",
+        "sentinel2_derived"
+    ],
+    "providers": [
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://earthengine.google.com/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_CLOUD_SCORE_PLUS_V1_S2_HARMONIZED"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Pixel quality score based on spectral distance from a\n        (theoretical) clear reference",
+                "gee:units": "Dimensionless",
+                "name": "cs"
+            },
+            {
+                "description": "Value of the cumulative distribution function of possible\n        `cs` values for the estimated `cs` value",
+                "gee:units": "Dimensionless",
+                "name": "cs_cdf"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Production date.",
+                "name": "DATE_PRODUCT_GENERATED",
+                "type": "STRING"
+            },
+            {
+                "description": "Sentinel-2 Military Grid Reference System ID.",
+                "name": "MGRS_TILE",
+                "type": "STRING"
+            },
+            {
+                "description": "Cloud Score+ model version.",
+                "name": "MODEL_VERSION",
+                "type": "STRING"
+            },
+            {
+                "description": "Fraction of subtiles processed with no temporal context.",
+                "name": "NO_CONTEXT_FRACTION",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Cloud Score+ processing software version.",
+                "name": "PROCESSING_SOFTWARE_VERSION",
+                "type": "STRING"
+            },
+            {
+                "description": "Earth Engine Asset ID for source image.",
+                "name": "SOURCE_ASSET_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "Sentinel-2 Product ID for source image.",
+                "name": "SOURCE_PRODUCT_ID",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Cloud Score Plus (cs_cdf)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "cs_cdf"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "white",
+                            "black"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -16.1377,
+                    "lon": 31.2196,
+                    "zoom": 11
+                }
+            }
+        ],
+        "gsd": [
+            10
+        ],
+        "cs": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "cs_cdf": {
+            "minimum": 0,
+            "maximum": 1
+        }
+    }
+}

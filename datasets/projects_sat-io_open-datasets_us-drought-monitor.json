@@ -1,0 +1,140 @@
+{
+    "type": "Collection",
+    "id": "projects/sat-io/open-datasets/us-drought-monitor",
+    "stac_version": "1.0.0",
+    "description": "The U.S. Drought Monitor is a map released every Thursday, showing parts of the U.S. that are in drought. The map uses five classifications: abnormally dry (D0), showing areas that may be going into or are coming out of drought, and four levels of drought: moderate (D1), severe (D2), extreme (D3) and exceptional (D4). The Drought Monitor has been a team effort since its inception in 1999, produced jointly by the National Drought Mitigation Center (NDMC) at the University of Nebraska-Lincoln, the National Oceanic and Atmospheric Administration (NOAA), and the U.S. Department of Agriculture (USDA). The NDMC hosts the web site of the drought monitor and the associated data, and provides the map and data to NOAA, USDA and other agencies. It is freely available at droughtmonitor.unl.edu.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/sat-io/projects_sat-io_open-datasets_us-drought-monitor",
+            "type": "text/html",
+            "title": "Run the example for projects/sat-io/open-datasets/us-drought-monitor in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/sat-io/projects_sat-io_open-datasets_us-drought-monitor_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_sat-io_open-datasets_us-drought-monitor#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/sat-io/projects_sat-io_open-datasets_us-drought-monitor.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/sat-io/catalog.json",
+            "type": "application/json",
+            "title": "sat-io"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The work is licensed under an Open data license for use. The U.S. Drought Monitor is jointly produced by the National Drought Mitigation Center\nat the University of Nebraska-Lincoln, the United States Department of Agriculture and the National Oceanic and Atmospheric Administration. Map courtesy of NDMC.\n",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "sci:citation": "National Drought Mitigation Center; U.S. Department of Agriculture; National Oceanic and Atmospheric Administration (2023). United States Drought Monitor. University of Nebraska-Lincoln. https://droughtmonitor.unl.edu/. Accessed 2023-09-17\n",
+    "title": "United States Drought Monitor",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-04T00:00:00Z",
+                    "2023-09-19T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "drought",
+        "ndmc",
+        "noaa",
+        "usda"
+    ],
+    "providers": [
+        {
+            "name": "National Drought Mitigation Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://drought.unl.edu/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_sat-io_open-datasets_us-drought-monitor"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Drought classes",
+                "name": "b1"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "USDM Drought Classes",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "b1"
+                        ],
+                        "max": [
+                            4
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "FFFF00",
+                            "FCD37F",
+                            "FFAA00",
+                            "E60000",
+                            "730000"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 39.648,
+                    "lon": -100.576,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            250
+        ],
+        "b1": {
+            "minimum": 0,
+            "maximum": 4
+        }
+    }
+}

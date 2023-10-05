@@ -1,0 +1,141 @@
+{
+    "type": "Collection",
+    "id": "projects/sat-io/open-datasets/ORNL/LANDSCAN_GLOBAL",
+    "stac_version": "1.0.0",
+    "description": "The LandScan dataset, provided by the Oak Ridge National Laboratory (ORNL), offers a comprehensive and high-resolution global population distribution dataset that serves as a valuable resource for a wide range of applications. Leveraging state-of-the-art spatial modeling techniques and advanced geospatial data sources, LandScan provides detailed information on population counts and density at a 30 arc-second resolution, enabling precise and up-to-date insights into human settlement patterns across the globe. With its accuracy and granularity, LandScan supports diverse fields such as urban planning, disaster response, epidemiology, and environmental research, making it an essential tool for decision-makers and researchers seeking to understand and address various societal and environmental challenges on a global scale.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/sat-io/projects_sat-io_open-datasets_ORNL_LANDSCAN_GLOBAL",
+            "type": "text/html",
+            "title": "Run the example for projects/sat-io/open-datasets/ORNL/LANDSCAN_GLOBAL in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/sat-io/projects_sat-io_open-datasets_ORNL_LANDSCAN_GLOBAL_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_sat-io_open-datasets_ORNL_LANDSCAN_GLOBAL#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/sat-io/projects_sat-io_open-datasets_ORNL_LANDSCAN_GLOBAL.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/sat-io/catalog.json",
+            "type": "application/json",
+            "title": "sat-io"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "Landscan datasets are licensed under the Creative Commons Attribution 4.0\nInternational License. Users are free to use, copy, distribute, transmit,\nand adapt the work for commercial and non-commercial purposes, without\nrestriction, as long as clear attribution of the source is provided.\n",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "sci:citation": "Sims, K., Reith, A., Bright, E., Kaufman, J., Pyle, J., Epting, J., Gonzales, J., Adams, D., Powell, E., Urban, M., & Rose, A. (2023). LandScan Global 2022 [Data set]. Oak Ridge National Laboratory. https://doi.org/10.48690/1529167\n",
+    "sci:doi": "10.48690/1529167",
+    "title": "LandScan Population Data Global 1km",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2022-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "demography",
+        "landscan",
+        "population"
+    ],
+    "providers": [
+        {
+            "name": "Oak Ridge National Laboratory",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ornl.gov/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_sat-io_open-datasets_ORNL_LANDSCAN_GLOBAL"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Estimated Population count",
+                "name": "b1"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Population count",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "b1"
+                        ],
+                        "max": [
+                            10
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "lemonchiffon",
+                            "khaki",
+                            "orange",
+                            "orangered",
+                            "red",
+                            "maroon"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 48.2875,
+                    "lon": 31.175,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            1000
+        ],
+        "b1": {
+            "minimum": 0,
+            "maximum": 21171
+        }
+    }
+}
