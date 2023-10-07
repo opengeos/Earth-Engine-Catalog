@@ -1,0 +1,849 @@
+{
+    "type": "Collection",
+    "id": "projects/geoscience-aus-cat/assets/ga_landcover",
+    "stac_version": "1.0.0",
+    "description": "Digital Earth Australia (DEA) Land Cover translates over 30 years of satellite imagery into evidence of how Australia's land, vegetation and waterbodies have changed over time.\n\nFor more information, please see the\n[DEA Land Cover](https://cmi.ga.gov.au/data-products/dea/607/dea-land-cover-landsat#basics)\n\nThis product is part of the [Digital Earth Australia Program](https://www.dea.ga.gov.au/)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/geoscience-aus-cat/projects_geoscience-aus-cat_assets_ga_landcover",
+            "type": "text/html",
+            "title": "Run the example for projects/geoscience-aus-cat/assets/ga_landcover in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/geoscience-aus-cat/projects_geoscience-aus-cat_assets_ga_landcover_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_geoscience-aus-cat_assets_ga_landcover#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.3390/data4040143",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.1080/20964471.2021.1948179",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "http://dea-public-data.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/ga_ls_landcover_class_cyear_2/"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/geoscience-aus-cat/projects_geoscience-aus-cat_assets_ga_landcover.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/geoscience-aus-cat/catalog.json",
+            "type": "application/json",
+            "title": "geoscience-aus-cat"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image",
+    "gee:user_uploaded": true,
+    "sci:citation": "Lucas R, Mueller N, Siggins A, Owers C, Clewley D, Bunting P, Kooymans C, Tissott B, Lewis B, Lymburner L, Metternicht G. Land Cover Mapping using Digital Earth Australia. Data. 2019; 4(4):143.\n[doi:10.3390/data4040143](https://doi.org/10.3390/data4040143).\nChristopher J. Owers, Richard M. Lucas, Daniel Clewley, Carole Planque, Suvarna Punalekar, Belle Tissott, Sean M. T. Chua, Pete Bunting, Norman Mueller & Graciela Metternicht (2021) Living Earth: Implementing national standardised land cover classification systems for Earth Observation in support of sustainable development, Big Earth Data, 5:3, 368-390.\n[doi:10.1080/20964471.2021.1948179](https://doi.org/10.1080/20964471.2021.1948179).\n",
+    "sci:doi": "10.3390/data4040143",
+    "version": "1.0.0",
+    "title": "DEA Land Cover 1.0.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    108.81,
+                    -44.41,
+                    157.82,
+                    -9.13
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1988-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "australia",
+        "ga",
+        "landsat_derived",
+        "landcover"
+    ],
+    "providers": [
+        {
+            "name": "Geoscience Australia",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ga.gov.au/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_geoscience-aus-cat_assets_ga_landcover"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Describes the percentage of bare in naturally bare areas.\n[Band details](https://cmi.ga.gov.au/data-products/dea/607/dea-land-cover-landsat#details)\n",
+                "gee:classes": [
+                    {
+                        "color": "ffffff",
+                        "description": "Not applicable (not a naturally bare area)",
+                        "value": 0
+                    },
+                    {
+                        "color": "622f22",
+                        "description": "Sparsely vegetated (< 20 % bare)",
+                        "value": 10
+                    },
+                    {
+                        "color": "5c3317",
+                        "description": "Very sparsely vegetated (20 to 60 % bare)",
+                        "value": 12
+                    },
+                    {
+                        "color": "804a00",
+                        "description": "Bare areas, unvegetated (> 60 % bare)",
+                        "value": 15
+                    }
+                ],
+                "name": "baregrad_phy_cat_l4d"
+            },
+            {
+                "description": "The measured cover of vegetated areas.\n[Band details](https://cmi.ga.gov.au/data-products/dea/607/dea-land-cover-landsat#details)\n",
+                "gee:classes": [
+                    {
+                        "color": "ffffff",
+                        "description": "Not applicable (such as in bare areas)",
+                        "value": 0
+                    },
+                    {
+                        "color": "8fb31d",
+                        "description": "Closed (>65 %)",
+                        "value": 10
+                    },
+                    {
+                        "color": "b0bf1a",
+                        "description": "Open (40 to 65 %)",
+                        "value": 12
+                    },
+                    {
+                        "color": "9dc209",
+                        "description": "Open (15 to 40 %)",
+                        "value": 13
+                    },
+                    {
+                        "color": "77dd77",
+                        "description": "Sparse (4 to 15 %)",
+                        "value": 15
+                    },
+                    {
+                        "color": "64e986",
+                        "description": "Scattered (1 to 4 %)",
+                        "value": 16
+                    }
+                ],
+                "name": "canopyco_veg_cat_l4d"
+            },
+            {
+                "description": "Delineates the intertidal zone.\n[Band details](https://cmi.ga.gov.au/data-products/dea/607/dea-land-cover-landsat#details)\n",
+                "gee:classes": [
+                    {
+                        "color": "ffffff",
+                        "description": "Not applicable (not intertidal)",
+                        "value": 0
+                    },
+                    {
+                        "color": "151b54",
+                        "description": "Intertidal zone",
+                        "value": 3
+                    }
+                ],
+                "name": "inttidal_wat_cat_l4a"
+            },
+            {
+                "description": "The base Level 3 land cover classification.\n[Band details](https://cmi.ga.gov.au/data-products/dea/607/dea-land-cover-landsat#details)\n",
+                "gee:classes": [
+                    {
+                        "color": "ffffff",
+                        "description": "No data",
+                        "value": 0
+                    },
+                    {
+                        "color": "4aa02c",
+                        "description": "Cultivated Terrestrial Vegetation (CTV)",
+                        "value": 111
+                    },
+                    {
+                        "color": "54c571",
+                        "description": "(Semi-)Natural Terrestrial Vegetation (NTV)",
+                        "value": 112
+                    },
+                    {
+                        "color": "306eff",
+                        "description": "Natural Aquatic Vegetation (NAV)",
+                        "value": 124
+                    },
+                    {
+                        "color": "e6e6fa",
+                        "description": "Artificial Surface (AS)",
+                        "value": 215
+                    },
+                    {
+                        "color": "5c3317",
+                        "description": "Natural Bare Surface (NS)",
+                        "value": 216
+                    },
+                    {
+                        "color": "0020c2",
+                        "description": "Water",
+                        "value": 220
+                    }
+                ],
+                "name": "level3"
+            },
+            {
+                "description": "R band of RGB composite for level 3 data.\n[Band details](https://cmi.ga.gov.au/data-products/dea/607/dea-land-cover-landsat#details)\n",
+                "gee:units": "m",
+                "name": "level3_R"
+            },
+            {
+                "description": "G band of RGB composite for level 3 data.\n[Band details](https://cmi.ga.gov.au/data-products/dea/607/dea-land-cover-landsat#details)\n",
+                "gee:units": "m",
+                "name": "level3_G"
+            },
+            {
+                "description": "B band of RGB composite for level 3 data.\n[Band details](https://cmi.ga.gov.au/data-products/dea/607/dea-land-cover-landsat#details)\n",
+                "gee:units": "m",
+                "name": "level3_B"
+            },
+            {
+                "description": "All level 3 and level 4 classes for a given pixel are combined to give a single classification value.\n[Band details](https://cmi.ga.gov.au/data-products/dea/607/dea-land-cover-landsat#details)\n",
+                "gee:classes": [
+                    {
+                        "color": "ffffff",
+                        "description": "No data",
+                        "value": 0
+                    },
+                    {
+                        "color": "347c17",
+                        "description": "Cultivated Terrestrial Vegetated",
+                        "value": 1
+                    },
+                    {
+                        "color": "347c17",
+                        "description": "Cultivated Terrestrial Vegetated: Herbaceous",
+                        "value": 3
+                    },
+                    {
+                        "color": "347c17",
+                        "description": "Cultivated Terrestrial Vegetated: Closed (> 65 %)",
+                        "value": 4
+                    },
+                    {
+                        "color": "347c17",
+                        "description": "Cultivated Terrestrial Vegetated: Open (40 to 65 %)",
+                        "value": 5
+                    },
+                    {
+                        "color": "347c17",
+                        "description": "Cultivated Terrestrial Vegetated: Open (15 to 40 %)",
+                        "value": 6
+                    },
+                    {
+                        "color": "347c17",
+                        "description": "Cultivated Terrestrial Vegetated: Sparse (4 to 15 %)",
+                        "value": 7
+                    },
+                    {
+                        "color": "347c17",
+                        "description": "Cultivated Terrestrial Vegetated: Scattered (1 to 4 %)",
+                        "value": 8
+                    },
+                    {
+                        "color": "347c17",
+                        "description": " Cultivated Terrestrial Vegetated: Herbaceous Closed (> 65 %)",
+                        "value": 14
+                    },
+                    {
+                        "color": "347c17",
+                        "description": "Cultivated Terrestrial Vegetated: Herbaceous Open (40 to 65 %)",
+                        "value": 15
+                    },
+                    {
+                        "color": "347c17",
+                        "description": "Cultivated Terrestrial Vegetated: Herbaceous Open (15 to 40 %)",
+                        "value": 16
+                    },
+                    {
+                        "color": "347c17",
+                        "description": "Cultivated Terrestrial Vegetated: Herbaceous Sparse (4 to 15 %)",
+                        "value": 17
+                    },
+                    {
+                        "color": "347c17",
+                        "description": "Cultivated Terrestrial Vegetated: Herbaceous Scattered (1 to 4 %)",
+                        "value": 18
+                    },
+                    {
+                        "color": "12ad2b",
+                        "description": "Natural Terrestrial Vegetated",
+                        "value": 19
+                    },
+                    {
+                        "color": "12ad2b",
+                        "description": "Natural Terrestrial Vegetated: Woody",
+                        "value": 20
+                    },
+                    {
+                        "color": "12ad2b",
+                        "description": "Natural Terrestrial Vegetated: Herbaceous",
+                        "value": 21
+                    },
+                    {
+                        "color": "12ad2b",
+                        "description": "Natural Terrestrial Vegetated: Closed (> 65 %)",
+                        "value": 22
+                    },
+                    {
+                        "color": "12ad2b",
+                        "description": "Natural Terrestrial Vegetated: Open (40 to 65 %)",
+                        "value": 23
+                    },
+                    {
+                        "color": "12ad2b",
+                        "description": "Natural Terrestrial Vegetated: Open (15 to 40 %)",
+                        "value": 24
+                    },
+                    {
+                        "color": "12ad2b",
+                        "description": "Natural Terrestrial Vegetated: Sparse (4 to 15 %)",
+                        "value": 25
+                    },
+                    {
+                        "color": "12ad2b",
+                        "description": "Natural Terrestrial Vegetated: Scattered (1 to 4 %)",
+                        "value": 26
+                    },
+                    {
+                        "color": "12ad2b",
+                        "description": "Natural Terrestrial Vegetated: Woody Closed (> 65 %)",
+                        "value": 27
+                    },
+                    {
+                        "color": "12ad2b",
+                        "description": "Natural Terrestrial Vegetated: Woody Open (40 to 65 %)",
+                        "value": 28
+                    },
+                    {
+                        "color": "12ad2b",
+                        "description": "Natural Terrestrial Vegetated: Woody Open (15 to 40 %)",
+                        "value": 29
+                    },
+                    {
+                        "color": "12ad2b",
+                        "description": "Natural Terrestrial Vegetated: Woody Sparse (4 to 15 %)",
+                        "value": 30
+                    },
+                    {
+                        "color": "12ad2b",
+                        "description": "Natural Terrestrial Vegetated: Woody Scattered (1 to 4 %)",
+                        "value": 31
+                    },
+                    {
+                        "color": "12ad2b",
+                        "description": "Natural Terrestrial Vegetated: Herbaceous Closed (> 65 %)",
+                        "value": 32
+                    },
+                    {
+                        "color": "12ad2b",
+                        "description": " Natural Terrestrial Vegetated: Herbaceous Open (40 to 65 %)",
+                        "value": 33
+                    },
+                    {
+                        "color": "12ad2b",
+                        "description": "Natural Terrestrial Vegetated: Herbaceous Open (15 to 40 %)",
+                        "value": 34
+                    },
+                    {
+                        "color": "12ad2b",
+                        "description": "Natural Terrestrial Vegetated: Herbaceous Sparse (4 to 15 %)",
+                        "value": 35
+                    },
+                    {
+                        "color": "12ad2b",
+                        "description": "Natural Terrestrial Vegetated: Herbaceous Scattered (1 to 4 %)",
+                        "value": 36
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated",
+                        "value": 55
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Woody",
+                        "value": 56
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Herbaceous",
+                        "value": 57
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Closed (> 65 %)",
+                        "value": 58
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Open (40 to 65 %)",
+                        "value": 59
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Open (15 to 40 %)",
+                        "value": 60
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Sparse (4 to 15 %)",
+                        "value": 61
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Scattered (1 to 4 %)",
+                        "value": 62
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Woody Closed (> 65 %)",
+                        "value": 63
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Woody Closed (> 65 %) Water > 3 months (semi-) permanent",
+                        "value": 64
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Woody Closed (> 65 %) Water < 3 months (temporary or seasonal)",
+                        "value": 65
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Woody Open (40 to 65 %)",
+                        "value": 66
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Woody Open (40 to 65 %) Water > 3 months (semi-) permanent",
+                        "value": 67
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Woody Open (40 to 65 %) Water < 3 months (temporary or seasonal)",
+                        "value": 68
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Woody Open (15 to 40 %)",
+                        "value": 69
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Woody Open (15 to 40 %) Water > 3 months (semi-) permanent",
+                        "value": 70
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Woody Open (15 to 40 %) Water < 3 months (temporary or seasonal)",
+                        "value": 71
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Woody Sparse (4 to 15 %)",
+                        "value": 72
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Woody Sparse (4 to 15 %) Water > 3 months (semi-) permanent",
+                        "value": 73
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Woody Sparse (4 to 15 %) Water < 3 months (temporary or seasonal)",
+                        "value": 74
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Woody Scattered (1 to 4 %)",
+                        "value": 75
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Woody Scattered (1 to 4 %) Water > 3 months (semi-) permanent",
+                        "value": 76
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Woody Scattered (1 to 4 %) Water < 3 months (temporary or seasonal)",
+                        "value": 77
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Herbaceous Closed (> 65 %)",
+                        "value": 78
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": " Natural Aquatic Vegetated: Herbaceous Closed (> 65 %) Water > 3 months (semi-) permanent",
+                        "value": 79
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Herbaceous Closed (> 65 %) Water < 3 months (temporary or seasonal)",
+                        "value": 80
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Herbaceous Open (40 to 65 %)",
+                        "value": 81
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Herbaceous Open (40 to 65 %) Water > 3 months (semi-) permanent",
+                        "value": 82
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Herbaceous Open (40 to 65 %) Water < 3 months (temporary or seasonal)",
+                        "value": 83
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Herbaceous Open (15 to 40 %)",
+                        "value": 84
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Herbaceous Open (15 to 40 %) Water > 3 months (semi-) permanent",
+                        "value": 85
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Herbaceous Open (15 to 40 %) Water < 3 months (temporary or seasonal)",
+                        "value": 86
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Herbaceous Sparse (4 to 15 %)",
+                        "value": 87
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Herbaceous Sparse (4 to 15 %) Water > 3 months (semi-) permanent",
+                        "value": 88
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Herbaceous Sparse (4 to 15 %) Water < 3 months (temporary or seasonal)",
+                        "value": 89
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Herbaceous Scattered (1 to 4 %)",
+                        "value": 90
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Herbaceous Scattered (1 to 4 %) Water > 3 months (semi-) permanent",
+                        "value": 91
+                    },
+                    {
+                        "color": "a0d6b4",
+                        "description": "Natural Aquatic Vegetated: Herbaceous Scattered (1 to 4 %) Water < 3 months (temporary or seasonal)",
+                        "value": 92
+                    },
+                    {
+                        "color": "e6e6fa",
+                        "description": "Artificial Surface",
+                        "value": 93
+                    },
+                    {
+                        "color": "4b5320",
+                        "description": "Natural Surface",
+                        "value": 94
+                    },
+                    {
+                        "color": "4b5320",
+                        "description": "Natural Surface: Sparsely vegetated",
+                        "value": 95
+                    },
+                    {
+                        "color": "4b5320",
+                        "description": "Natural Surface: Very sparsely vegetated",
+                        "value": 96
+                    },
+                    {
+                        "color": "4b5320",
+                        "description": "Natural Surface: Bare areas, unvegetated",
+                        "value": 97
+                    },
+                    {
+                        "color": "3bb9ff",
+                        "description": "Water",
+                        "value": 98
+                    },
+                    {
+                        "color": "3bb9ff",
+                        "description": "Water: (Water)",
+                        "value": 99
+                    },
+                    {
+                        "color": "3bb9ff",
+                        "description": "Water: (Water) Tidal area",
+                        "value": 100
+                    },
+                    {
+                        "color": "3bb9ff",
+                        "description": "Water: (Water) Perennial (> 9 months)",
+                        "value": 101
+                    },
+                    {
+                        "color": "3bb9ff",
+                        "description": "Water: (Water) Non-perennial (7 to 9 months)",
+                        "value": 102
+                    },
+                    {
+                        "color": "3bb9ff",
+                        "description": "Water: (Water) Non-perennial (4 to 6 months)",
+                        "value": 103
+                    },
+                    {
+                        "color": "3bb9ff",
+                        "description": "Water: (Water) Non-perennial (1 to 3 months)",
+                        "value": 104
+                    }
+                ],
+                "name": "level4"
+            },
+            {
+                "description": "R band of RGB composite for level 4 data.\n[Band details](https://cmi.ga.gov.au/data-products/dea/607/dea-land-cover-landsat#details)\n",
+                "name": "level4_R"
+            },
+            {
+                "description": "G band of RGB composite for level 4 data.\n[Band details](https://cmi.ga.gov.au/data-products/dea/607/dea-land-cover-landsat#details)\n",
+                "name": "level4_G"
+            },
+            {
+                "description": "B  band of RGB composite for level 4 data.\n[Band details](https://cmi.ga.gov.au/data-products/dea/607/dea-land-cover-landsat#details)\n",
+                "name": "level4_B"
+            },
+            {
+                "description": "Describes the detail of vegetated classes, separating woody from herbaceous.\n[Band details](https://cmi.ga.gov.au/data-products/dea/607/dea-land-cover-landsat#details)\n",
+                "gee:classes": [
+                    {
+                        "color": "ffffff",
+                        "description": "Not applicable (such as in water areas)",
+                        "value": 0
+                    },
+                    {
+                        "color": "808000",
+                        "description": "Woody (trees, shrubs)",
+                        "value": 1
+                    },
+                    {
+                        "color": "848b79",
+                        "description": "Herbaceous (grasses, forbs)",
+                        "value": 2
+                    }
+                ],
+                "name": "lifeform_veg_cat_l4a"
+            },
+            {
+                "description": "Describes the number of months a water body contains water.\n[Band details](https://cmi.ga.gov.au/data-products/dea/607/dea-land-cover-landsat#details)\n",
+                "gee:classes": [
+                    {
+                        "color": "ffffff",
+                        "description": "Not applicable (not an aquatic environment)",
+                        "value": 0
+                    },
+                    {
+                        "color": "357ec7",
+                        "description": "> 9 months",
+                        "value": 1
+                    },
+                    {
+                        "color": "6495ed",
+                        "description": "7-9 months",
+                        "value": 7
+                    },
+                    {
+                        "color": "5cb3ff",
+                        "description": "4-6 months",
+                        "value": 8
+                    },
+                    {
+                        "color": "87ceeb",
+                        "description": "1-3 months",
+                        "value": 9
+                    }
+                ],
+                "name": "waterper_wat_cat_l4d"
+            },
+            {
+                "description": "The length of time an aquatic vegetated area was measured as being inundated.\n[Band details](https://cmi.ga.gov.au/data-products/dea/607/dea-land-cover-landsat#details)\n",
+                "gee:classes": [
+                    {
+                        "color": "ffffff",
+                        "description": "Not applicable (not an aquatic environment)",
+                        "value": 0
+                    },
+                    {
+                        "color": "357ec7",
+                        "description": "Semi-permanent or permanent (> 3 months)",
+                        "value": 1
+                    },
+                    {
+                        "color": "00bfff",
+                        "description": "Temporary or seasonal (< 3 months)",
+                        "value": 7
+                    }
+                ],
+                "name": "watersea_veg_cat_l4a"
+            },
+            {
+                "description": "Describes whether the detected water is snow, ice or liquid water. Only liquid water is described in this release.\n[Band details](https://cmi.ga.gov.au/data-products/dea/607/dea-land-cover-landsat#details)\n",
+                "gee:classes": [
+                    {
+                        "color": "ffffff",
+                        "description": "Not applicable (not water)",
+                        "value": 0
+                    },
+                    {
+                        "color": "357ec7",
+                        "description": "Water",
+                        "value": 1
+                    }
+                ],
+                "name": "waterstt_wat_cat_l4a"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "GA Landcover Level 4 RGB",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "level4_R",
+                            "level4_G",
+                            "level4_B"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -23.7,
+                    "lon": 133.88,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            25
+        ],
+        "baregrad_phy_cat_l4d": {
+            "minimum": 0,
+            "maximum": 15
+        },
+        "canopyco_veg_cat_l4d": {
+            "minimum": 0,
+            "maximum": 16
+        },
+        "inttidal_wat_cat_l4a": {
+            "minimum": 0,
+            "maximum": 3
+        },
+        "level3": {
+            "minimum": 0,
+            "maximum": 220
+        },
+        "level3_B": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "level3_G": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "level3_R": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "level4": {
+            "minimum": 0,
+            "maximum": 104
+        },
+        "level4_B": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "level4_G": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "level4_R": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "lifeform_veg_cat_l4a": {
+            "minimum": 0,
+            "maximum": 2
+        },
+        "waterper_wat_cat_l4d": {
+            "minimum": 0,
+            "maximum": 9
+        },
+        "watersea_veg_cat_l4a": {
+            "minimum": 0,
+            "maximum": 7
+        },
+        "waterstt_wat_cat_l4a": {
+            "minimum": 0,
+            "maximum": 1
+        }
+    }
+}

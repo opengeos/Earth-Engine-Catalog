@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "JAXA/GPM_L3/GSMaP/v6/operational",
+    "id": "JAXA/GPM_L3/GSMaP/v7/operational",
     "stac_version": "1.0.0",
-    "description": "Global Satellite Mapping of Precipitation (GSMaP) provides\na global hourly rain rate with a 0.1 x 0.1 degree resolution. GSMaP\nis a product of the Global Precipitation Measurement (GPM) mission,\nwhich provides global precipitation observations at three hour\nintervals.  Values are estimated using multi-band passive microwave\nand infrared radiometers from the GPM Core Observatory satellite\nand with the assistance of a constellation of other satellites.  GPM's\nprecipitation rate retrieval algorithm is based on a radiative\ntransfer model. The gauge-adjusted rate is calculated based on\nthe optimization of the 24h accumulation of GSMaP hourly rain rate\nto daily precipitation by NOAA/CPC gauge measurement.\nThis dataset is processed by GSMaP algorithm version 6 (product version 3).\nSee [GSMaP Technical Documentation](https://www.eorc.jaxa.jp/GPM/doc/product/format/en/07.GPM_GSMaP_Product_Format_V5_E.pdf)\nfor more details.\n\nThis dataset contains provisional products GSMaP_NRT that are\nregularly replaced with updated versions when the GSMaP_MVK data\nbecome available.\nThe products are marked with a metadata property called ''status''.\nWhen a product is initially made available, the property value\nis ''provisional''. Once a provisional product has been updated\nwith the final version, this value is updated to ''permanent''.\nFor more information please refer\n[General Documentation](https://eolp.jaxa.jp/GSMaP_Hourly.html)\n",
+    "description": "Global Satellite Mapping of Precipitation (GSMaP) provides\na global hourly rain rate with a 0.1 x 0.1 degree resolution. GSMaP\nis a product of the Global Precipitation Measurement (GPM) mission,\nwhich provides global precipitation observations at three hour\nintervals.  Values are estimated using multi-band passive microwave\nand infrared radiometers from the GPM Core Observatory satellite\nand with the assistance of a constellation of other satellites.  GPM's\nprecipitation rate retrieval algorithm is based on a radiative\ntransfer model. The gauge-adjusted rate is calculated based on\nthe optimization of the 24h accumulation of GSMaP hourly rain rate\nto daily precipitation by NOAA/CPC gauge measurement.\nThis dataset is processed by GSMaP algorithm version 7 (product version 4).\nSee [GSMaP Technical Documentation](https://www.eorc.jaxa.jp/GPM/doc/product/format/en/07.GPM_GSMaP_Product_Format_V5_E.pdf)\nfor more details.\n\nThis dataset contains provisional products GSMaP_NRT that are\nregularly replaced with updated versions when the GSMaP_MVK data\nbecome available.\nThe products are marked with a metadata property called ''status''.\nWhen a product is initially made available, the property value\nis ''provisional''. Once a provisional product has been updated\nwith the final version, this value is updated to ''permanent''.\nFor more information please refer\n[General Documentation](https://eolp.jaxa.jp/GSMaP_Hourly.html)\n",
     "links": [
         {
             "rel": "root",
@@ -12,24 +12,24 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JAXA/JAXA_GPM_L3_GSMaP_v6_operational",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JAXA/JAXA_GPM_L3_GSMaP_v7_operational",
             "type": "text/html",
-            "title": "Run the example for JAXA/GPM_L3/GSMaP/v6/operational in the Earth Engine Code Editor",
+            "title": "Run the example for JAXA/GPM_L3/GSMaP/v7/operational in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/JAXA/JAXA_GPM_L3_GSMaP_v6_operational_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/JAXA/JAXA_GPM_L3_GSMaP_v7_operational_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/JAXA_GPM_L3_GSMaP_v6_operational#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/JAXA_GPM_L3_GSMaP_v7_operational#terms-of-use",
             "type": "text/html"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JAXA/JAXA_GPM_L3_GSMaP_v6_operational.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JAXA/JAXA_GPM_L3_GSMaP_v7_operational.json",
             "type": "application/json"
         },
         {
@@ -53,8 +53,8 @@
     "gee:type": "image_collection",
     "sci:citation": "Kubota, T., K. Aonashi, T. Ushio, S. Shige, Y. N. Takayabu, M. Kachi,\nY. Arai, T. Tashima, T. Masaki, N. Kawamoto, T. Mega, M. K. Yamamoto,\nA. Hamada, M. Yamaji, G. Liu and R. Oki 2020: Global Satellite Mapping of\nPrecipitation (GSMaP) products in the GPM era, Satellite precipitation\nmeasurement, Springer, https://doi.org/10.1007/978-3-030-24568-9_20.\n",
     "sci:doi": "10.57746/EO.01gs73bkt358gfpy92y2qns5e9",
-    "version": "v6",
-    "title": "GSMaP Operational: Global Satellite Mapping of Precipitation - V6",
+    "version": "v7",
+    "title": "GSMaP Operational: Global Satellite Mapping of Precipitation - V7",
     "extent": {
         "spatial": {
             "bbox": [
@@ -70,7 +70,7 @@
             "interval": [
                 [
                     "2014-03-01T00:00:00Z",
-                    "2023-09-23T14:00:00Z"
+                    "2023-10-05T14:00:00Z"
                 ]
             ]
         }
@@ -99,7 +99,7 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/JAXA_GPM_L3_GSMaP_v6_operational"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/JAXA_GPM_L3_GSMaP_v7_operational"
         }
     ],
     "summaries": {
@@ -588,16 +588,6 @@
             {
                 "description": "The date and time this granule was generated",
                 "name": "GenerationDateTime",
-                "type": "STRING"
-            },
-            {
-                "description": "The start time defining this granule",
-                "name": "StartGranuleDateTime",
-                "type": "STRING"
-            },
-            {
-                "description": "The stop time defining this granule",
-                "name": "StopGranuleDateTime",
                 "type": "STRING"
             },
             {
