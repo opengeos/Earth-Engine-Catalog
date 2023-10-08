@@ -1,0 +1,234 @@
+{
+    "type": "Collection",
+    "id": "projects/geoscience-aus-cat/assets/geomedians_LS8",
+    "stac_version": "1.0.0",
+    "description": "This product provides statistical tools to exploit the time series of Earth observation data available in Digital Earth Australia, providing annual images of general conditions and how much an area changes for a given year.\n\nFor more information, please see the\n[DEA Geometric Median and Median Absolute Deviation](https://cmi.ga.gov.au/data-products/dea/645/dea-geometric-median-and-median-absolute-deviation-landsat#basics)\n\nThis product is part of the [Digital Earth Australia Program](https://www.dea.ga.gov.au/)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/geoscience-aus-cat/projects_geoscience-aus-cat_assets_geomedians_LS8",
+            "type": "text/html",
+            "title": "Run the example for projects/geoscience-aus-cat/assets/geomedians_LS8 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/geoscience-aus-cat/projects_geoscience-aus-cat_assets_geomedians_LS8_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_geoscience-aus-cat_assets_geomedians_LS8#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.1109/TGRS.2017.2723896",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.1109/IGARSS.2018.8518312",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://data.dea.ga.gov.au/?prefix=derivative/ga_ls5t_nbart_gm_cyear_3/"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/geoscience-aus-cat/projects_geoscience-aus-cat_assets_geomedians_LS8.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/geoscience-aus-cat/catalog.json",
+            "type": "application/json",
+            "title": "geoscience-aus-cat"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "sci:citation": "Roberts, D., Mueller, N., & Mcintyre, A. (2017). High-dimensional pixel composites from earth observation time series. IEEE Transactions on Geoscience and Remote Sensing, 55(11), 6254-6264.\n[doi:10.1109/TGRS.2017.2723896](https://doi.org/10.1109/TGRS.2017.2723896).\nRoberts, D., Dunn, B., & Mueller, N. (2018). Open data cube products using high-dimensional statistics of time series. IGARSS 2018 - 2018 IEEE International Geoscience and Remote Sensing Symposium, 8647-8650.\n[doi:10.1109/IGARSS.2018.8518312](https://doi.org/10.1109/IGARSS.2018.8518312).\n",
+    "sci:doi": "10.1109/TGRS.2017.2723896",
+    "version": "3.1.0",
+    "title": "DEA Geometric Median and Median Absolute Deviation - Landsat 8 3.1.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    108.81,
+                    -44.41,
+                    157.82,
+                    -9.13
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2013-01-01T00:00:00Z",
+                    "2022-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "australia",
+        "ga",
+        "landsat_derived"
+    ],
+    "providers": [
+        {
+            "name": "Geoscience Australia",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ga.gov.au/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_geoscience-aus-cat_assets_geomedians_LS8"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Band blue surface reflectance geometric median.\n",
+                "gee:wavelength": "0.450-0.520 &mu;m",
+                "name": "blue"
+            },
+            {
+                "description": "Band green surface reflectance geometric median.\n",
+                "gee:wavelength": "0.520-0.600 &mu;m",
+                "name": "green"
+            },
+            {
+                "description": "Band red surface reflectance geometric median.\n",
+                "gee:wavelength": "0.630-0.690 &mu;m",
+                "name": "red"
+            },
+            {
+                "description": "Band near infrared surface reflectance geometric median.\n",
+                "gee:wavelength": "0.760-0.900 &mu;m",
+                "name": "near_infrared"
+            },
+            {
+                "description": "Band shortwave infrared 1 surface reflectance geometric median.\n",
+                "gee:wavelength": "1.550-1.750 &mu;m",
+                "name": "shortwave_infrared_1"
+            },
+            {
+                "description": "Band shortwave infrared 2 surface reflectance geometric median.\n",
+                "gee:wavelength": "2.080-2.350 &mu;m",
+                "name": "shortwave_infrared_2"
+            },
+            {
+                "description": "The Median Absolute Deviation using Euclidean distance (EMAD). EMAD is more sensitive to changes in target brightness.\n[Band details](https://cmi.ga.gov.au/data-products/dea/645/dea-geometric-median-and-median-absolute-deviation-landsat#details)\n",
+                "name": "Euclidean_distance_median_absolute_deviation"
+            },
+            {
+                "description": "The Median Absolute Deviation using Cosine (spectral) distance (SMAD). SMAD is more sensitive to change in target spectral response.\n[Band details](https://cmi.ga.gov.au/data-products/dea/645/dea-geometric-median-and-median-absolute-deviation-landsat#details)\n",
+                "name": "spectral_distance_median_absolute_deviation"
+            },
+            {
+                "description": "The Median Absolute Deviation using Bray Curtis dissimilarity (BCMAD). BCMAD is more sensitive to the distribution of the observation values through time.\n[Band details](https://cmi.ga.gov.au/data-products/dea/645/dea-geometric-median-and-median-absolute-deviation-landsat#details)\n",
+                "name": "Bray_Curtis_dissimilarity_median_absolute_deviation"
+            },
+            {
+                "description": "The number of the available pixels used for calculation per calendar year.\n[Band details](https://cmi.ga.gov.au/data-products/dea/645/dea-geometric-median-and-median-absolute-deviation-landsat#details)\n",
+                "name": "count"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Geomedians",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "red",
+                            "green",
+                            "blue"
+                        ],
+                        "max": [
+                            255
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -23.7,
+                    "lon": 133.88,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            25
+        ],
+        "Bray_Curtis_dissimilarity_median_absolute_deviation": {
+            "minimum": 0,
+            "maximum": 10000
+        },
+        "Euclidean_distance_median_absolute_deviation": {
+            "minimum": 0,
+            "maximum": 10000
+        },
+        "blue": {
+            "minimum": 0,
+            "maximum": 10000
+        },
+        "count": {
+            "minimum": 0,
+            "maximum": 400
+        },
+        "green": {
+            "minimum": 0,
+            "maximum": 10000
+        },
+        "near_infrared": {
+            "minimum": 0,
+            "maximum": 10000
+        },
+        "red": {
+            "minimum": 0,
+            "maximum": 10000
+        },
+        "shortwave_infrared_1": {
+            "minimum": 0,
+            "maximum": 10000
+        },
+        "shortwave_infrared_2": {
+            "minimum": 0,
+            "maximum": 10000
+        },
+        "spectral_distance_median_absolute_deviation": {
+            "minimum": 0,
+            "maximum": 10000
+        }
+    }
+}
