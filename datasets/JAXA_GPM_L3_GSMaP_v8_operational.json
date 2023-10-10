@@ -1,0 +1,651 @@
+{
+    "type": "Collection",
+    "id": "JAXA/GPM_L3/GSMaP/v8/operational",
+    "stac_version": "1.0.0",
+    "description": "Global Satellite Mapping of Precipitation (GSMaP) provides\na global hourly rain rate with a 0.1 x 0.1 degree resolution. GSMaP\nis a product of the Global Precipitation Measurement (GPM) mission,\nwhich provides global precipitation observations at three hour\nintervals.  Values are estimated using multi-band passive microwave\nand infrared radiometers from the GPM Core Observatory satellite\nand with the assistance of a constellation of other satellites.  GPM's\nprecipitation rate retrieval algorithm is based on a radiative\ntransfer model. The gauge-adjusted rate is calculated based on\nthe optimization of the 24h accumulation of GSMaP hourly rain rate\nto daily precipitation by NOAA/CPC gauge measurement.\nThis dataset is processed by GSMaP algorithm version 8 (product version 5).\nSee [GSMaP Technical Documentation](https://www.eorc.jaxa.jp/GPM/doc/product/format/en/07.GPM_GSMaP_Product_Format_V5_E.pdf)\nfor more details.\n\nThis dataset contains provisional products GSMaP_NRT that are\nregularly replaced with updated versions when the GSMaP_MVK data\nbecome available.\nThe products are marked with a metadata property called ''status''.\nWhen a product is initially made available, the property value\nis ''provisional''. Once a provisional product has been updated\nwith the final version, this value is updated to ''permanent''.\nFor more information please refer\n[General Documentation](https://eolp.jaxa.jp/GSMaP_Hourly.html)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JAXA/JAXA_GPM_L3_GSMaP_v8_operational",
+            "type": "text/html",
+            "title": "Run the example for JAXA/GPM_L3/GSMaP/v8/operational in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/JAXA/JAXA_GPM_L3_GSMaP_v8_operational_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/JAXA_GPM_L3_GSMaP_v8_operational#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JAXA/JAXA_GPM_L3_GSMaP_v8_operational.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JAXA/catalog.json",
+            "type": "application/json",
+            "title": "JAXA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "hour"
+    },
+    "gee:terms_of_use": "Anyone wishing to publish any results using the data\nfrom the JAXA Global Rainfall Watch System should clearly acknowledge\nthe ownership of the data in the publication (for example, ' Global\nRainfall Map in Near-Real-Time (GSMaP_NRT) by JAXA Global Rainfall\nWatch' was produced and distributed by the Earth Observation Research\nCenter, Japan Aerospace Exploration Agency). If you have benefited\nfrom GSMaP rainfall products, please cite the major papers listed\nbelow. For additional information, please visit the [JAXA Site\nPolicy](https://global.jaxa.jp/policy.html) and the [Users Guide](https://sharaku.eorc.jaxa.jp/GSMaP/guide.html).\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Kubota, T., K. Aonashi, T. Ushio, S. Shige, Y. N. Takayabu, M. Kachi,\nY. Arai, T. Tashima, T. Masaki, N. Kawamoto, T. Mega, M. K. Yamamoto,\nA. Hamada, M. Yamaji, G. Liu and R. Oki 2020: Global Satellite Mapping of\nPrecipitation (GSMaP) products in the GPM era, Satellite precipitation\nmeasurement, Springer, https://doi.org/10.1007/978-3-030-24568-9_20.\n",
+    "sci:doi": "10.57746/EO.01gs73bkt358gfpy92y2qns5e9",
+    "version": "v8",
+    "title": "GSMaP Operational: Global Satellite Mapping of Precipitation - V8",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60,
+                    180,
+                    60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1998-01-01T00:00:00Z",
+                    "2023-10-08T14:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "climate",
+        "geophysical",
+        "gpm",
+        "hourly",
+        "jaxa",
+        "precipitation",
+        "weather"
+    ],
+    "providers": [
+        {
+            "name": "JAXA Earth Observation Research Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://sharaku.eorc.jaxa.jp/GSMaP/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/JAXA_GPM_L3_GSMaP_v8_operational"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Snapshot of hourly precipitation rate",
+                "gee:units": "mm/hr",
+                "name": "hourlyPrecipRate"
+            },
+            {
+                "description": "Snapshot of hourly precipitation rate adjusted to rain gauge",
+                "gee:units": "mm/hr",
+                "name": "hourlyPrecipRateGC"
+            },
+            {
+                "description": "Relative time from the starting time of the file\nto the time of microwave radiometer (imager/sounder) observing.\nIf no observation exists within the hourly window, the time\nwill be the negative number of hours since the last observation.\n",
+                "gee:units": "h",
+                "name": "observationTimeFlag"
+            },
+            {
+                "description": "Satellite/sensor used",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "NOAA/CPC Globally Merged IR data",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "TRMM/TMI",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "GPM-Core/GMI",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Megha-Tropiques/MADRAS",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Megha-Tropiques/SAPHIR",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "ADEOS-II/AMSR",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Aqua/AMSR-E",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "GCOM-W1/AMSR2",
+                            "first_bit": 7,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "GCOM-W2/AMSR2",
+                            "first_bit": 8,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "GCOM-W3/AMSR2",
+                            "first_bit": 9,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "DMSP-F11/SSM/I",
+                            "first_bit": 10,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "DMSP-F13/SSM/I",
+                            "first_bit": 11,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "DMSP-F14/SSM/I",
+                            "first_bit": 12,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "DMSP-F15/SSM/I",
+                            "first_bit": 13,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "DMSP-F16/SSM/I",
+                            "first_bit": 14,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "DMSP-F17/SSM/I",
+                            "first_bit": 15,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "DMSP-F18/SSM/I",
+                            "first_bit": 16,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "DMSP-F19/SSM/I",
+                            "first_bit": 17,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "DMSP-F20/SSM/I",
+                            "first_bit": 18,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "NOAA-15/AMSU-A/B",
+                            "first_bit": 19,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "NOAA-16/AMSU-A/B",
+                            "first_bit": 20,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "NOAA-17/AMSU-A/B",
+                            "first_bit": 21,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "NOAA-18/AMSU-A/B",
+                            "first_bit": 22,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "NOAA-19/AMSU-A/B",
+                            "first_bit": 23,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "NPP/ATMS",
+                            "first_bit": 24,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "JPSS-1/ATMS",
+                            "first_bit": 25,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "MetOp-A/AMSU-A/MHS",
+                            "first_bit": 26,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "MetOp-B/AMSU-A/MHS",
+                            "first_bit": 27,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "MetOp-C/AMSU-A/MHS",
+                            "first_bit": 28,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 29
+                },
+                "name": "satelliteInfoFlag"
+            },
+            {
+                "description": "Existence of gauge adjustment when the status is\n'provisional', 1 indicates adjusted and 0 is non-adjusted.\nWhen the status is 'permanent', the pixel value is the daily\naverage of number of gauges used for adjustment in the pixel.\n",
+                "gee:units": "count/d",
+                "name": "gaugeQualityInfo"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "The algorithm that generated this product, e.g., 3GSMAPH",
+                "name": "AlgorithmID",
+                "type": "STRING"
+            },
+            {
+                "description": "The version of the algorithm that generated this product",
+                "name": "AlgorithmVersion",
+                "type": "STRING"
+            },
+            {
+                "description": "The data version assigned by the processing system",
+                "name": "ProductVersion",
+                "type": "STRING"
+            },
+            {
+                "description": "The date and time this granule was generated",
+                "name": "GenerationDateTime",
+                "type": "STRING"
+            },
+            {
+                "description": "Permanent or provisional",
+                "name": "status",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Precipitation",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "hourlyPrecipRate"
+                        ],
+                        "max": [
+                            30
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "1621a2",
+                            "ffffff",
+                            "03ffff",
+                            "13ff03",
+                            "efff00",
+                            "ffb103",
+                            "ff2300"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 26.12,
+                    "lon": -90.7,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            11132
+        ],
+        "gaugeQualityInfo": {
+            "minimum": 0,
+            "maximum": 121
+        },
+        "hourlyPrecipRate": {
+            "minimum": 0,
+            "maximum": 204.88
+        },
+        "hourlyPrecipRateGC": {
+            "minimum": 0,
+            "maximum": 200.36
+        },
+        "observationTimeFlag": {
+            "minimum": -124.72,
+            "maximum": 16.06
+        }
+    }
+}
