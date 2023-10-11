@@ -88,11 +88,13 @@
     "license": "CC-BY-4.0",
     "keywords": [
         "australia",
-        "dem"
+        "ga",
+        "dem",
+        "landsat_derived"
     ],
     "providers": [
         {
-            "name": "Digital Earth Australia",
+            "name": "Geoscience Australia",
             "roles": [
                 "licensor",
                 "producer"
