@@ -1,0 +1,387 @@
+{
+    "type": "Collection",
+    "id": "NASA/HLS/HLSL30/v002",
+    "stac_version": "1.0.0",
+    "description": "The Harmonized Landsat Sentinel-2 (HLS) project provides consistent surface\nreflectance (SR) and top of atmosphere (TOA) brightness data from a virtual\nconstellation of satellite sensors. The Operational Land Imager (OLI) is\nhoused aboard the joint NASA/USGS Landsat 8 and Landsat 9 satellites, while\nthe Multi-Spectral Instrument (MSI) is mounted aboard Europe's Copernicus\nSentinel-2A and Sentinel-2B satellites. The combined measurement enables\nglobal observations of the land every 2 to 3 days at 30m spatial\nresolution. The HLS project uses a set of algorithms to obtain seamless\nproducts from OLI and MSI that include atmospheric correction, cloud and\ncloud-shadow masking, spatial co-registration and common gridding,\nillumination and view angle normalization, and spectral bandpass adjustment.\n\nThe HLSL30 product provides 30m Nadir Bidirectional Reflectance Distribution\nFunction (BRDF), Adjusted Reflectance (NBAR) and is derived from Landsat 8/9\nOLI data products.\n\nNOTE: Full ingestion into Earth Engine is expected to continue until 2023.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1698/HLS_User_Guide_V2.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/769/HLS_ATBD_V15_provisional.pdf)\n\n* [General Documentation](https://lpdaac.usgs.gov/products/hlsl30v002/)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_HLS_HLSL30_v002",
+            "type": "text/html",
+            "title": "Run the example for NASA/HLS/HLSL30/v002 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_HLS_HLSL30_v002_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_HLS_HLSL30_v002#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/HLS/HLSL30.002"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_HLS_HLSL30_v002.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+    ],
+    "gee:provider_ids": [
+        "C2021957657-LPCLOUD"
+    ],
+    "gee:terms_of_use": "NASA promotes the full and open sharing of all data with research and\napplications communities, private industry, academia, and the general\npublic.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Masek, J., Ju, J., Roger, J., Skakun, S., Vermote, E., Claverie, M., Dungan,\nJ., Yin, Z., Freitag, B., Justice, C. (2021). HLS Operational Land Imager\nSurface Reflectance and TOA Brightness Daily Global 30m v2.0 [Data set].\nNASA EOSDIS Land Processes Distributed Active Archive Center.\nAccessed 2023-09-12 from https://doi.org/10.5067/HLS/HLSL30.002\n",
+    "version": "v002",
+    "title": "HLSL30: HLS-2 Landsat Operational Land Imager Surface Reflectance and TOA Brightness Daily Global 30m",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2013-04-11T00:00:00Z",
+                    "2023-09-13T21:24:25Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "landsat",
+        "nasa",
+        "sentinel",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "USGS",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://lpdaac.usgs.gov/products/hlsl30v002/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_HLS_HLSL30_v002"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Coastal Aerosol",
+                "name": "B1"
+            },
+            {
+                "description": "Blue",
+                "name": "B2"
+            },
+            {
+                "description": "Green",
+                "name": "B3"
+            },
+            {
+                "description": "Red",
+                "name": "B4"
+            },
+            {
+                "description": "NIR",
+                "name": "B5"
+            },
+            {
+                "description": "SWIR1",
+                "name": "B6"
+            },
+            {
+                "description": "SWIR2",
+                "name": "B7"
+            },
+            {
+                "description": "Cirrus",
+                "name": "B9"
+            },
+            {
+                "description": "TIRS1",
+                "name": "Band10"
+            },
+            {
+                "description": "TIRS2",
+                "name": "Band11"
+            },
+            {
+                "description": "Quality Bits",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Cirrus",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Reserved but not used",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Reserved but not used",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Cloud",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Adjacent to cloud/shadow",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Cloud shadow",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Snow/ice",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": " No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Water",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Aerosol level",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "Climatology aerosol",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Low aerosol",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Moderate aerosol",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High aerosol",
+                                    "value": 3
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 8
+                },
+                "name": "Fmask"
+            },
+            {
+                "description": "Sun Zenith Angle",
+                "gee:units": "deg",
+                "name": "SZA"
+            },
+            {
+                "description": "Sun Azimuth Angle",
+                "gee:units": "deg",
+                "name": "SAA"
+            },
+            {
+                "description": "View Zenith Angle",
+                "gee:units": "deg",
+                "name": "VZA"
+            },
+            {
+                "description": "View Azimuth Angle",
+                "gee:units": "deg",
+                "name": "VAA"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "LaSRC version, e.g. LaSRCS2AV3.5.5 or LaSRCL8V3.5.5",
+                "name": "ACCODE",
+                "type": "STRING"
+            },
+            {
+                "description": "The percentage of cloud and cloud shadow in observation based\non Fmask.\n",
+                "name": "CLOUD_COVERAGE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "HLS Processing date and time for HLS L30",
+                "name": "HLS_PROCESSING_TIME",
+                "type": "STRING"
+            },
+            {
+                "description": "The Landsat-8 input L1 scene product ID for processing backtracing.\n",
+                "name": "LANDSAT_PRODUCT_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "Mean Sun Azimuth Angle in degree of the input data for HLS L30.\n",
+                "name": "MEAN_SUN_AZIMUTH_ANGLE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Mean Sun Zenith Angle in degree of the input data for HLS L30\n",
+                "name": "MEAN_SUN_ZENITH_ANGLE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Mean View Azimuth Angle in degree of the input data.",
+                "name": "MEAN_VIEW_AZIMUTH_ANGLE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Mean View Zenith Angle in degree of the input data.",
+                "name": "MEAN_VIEW_ZENITH_ANGLE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Mean Sun Zenith Angle in degree of the HLS product after\nBRDFadjustment\n",
+                "name": "NBAR_SOLAR_ZENITH",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "The percentage of the tile with data",
+                "name": "SPATIAL_COVERAGE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "TIRS SSM encoder position model (Preliminary, Final or Actual).\n",
+                "name": "TIRS_SSM_MODEL",
+                "type": "STRING"
+            },
+            {
+                "description": "L30",
+                "name": "TIRS_SSM_POSITION_STATUS",
+                "type": "STRING"
+            },
+            {
+                "description": "LPGS_2.6.2",
+                "name": "USGS_SOFTWARE",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "HLS RGB bands",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "B4",
+                            "B3",
+                            "B2"
+                        ],
+                        "max": [
+                            0.18
+                        ],
+                        "min": [
+                            0.01
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -5.467,
+                    "lon": 141.74,
+                    "zoom": 10
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ],
+        "instruments": [
+            "OLI",
+            "TIRS"
+        ]
+    }
+}
