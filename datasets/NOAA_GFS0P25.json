@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "NOAA/GFS0P25",
     "stac_version": "1.0.0",
-    "description": "The Global Forecast System (GFS) is a weather forecast model produced by\nthe National Centers for Environmental Prediction (NCEP). The GFS dataset\nconsists of selected model outputs (described below) as gridded forecast\nvariables. The 384-hour forecasts, with 1-hour (up to 120 hours)\nand 3-hour (after 120 hours) forecast intervals,\nare made at 6-hour temporal resolution (i.e. updated four times daily).\nUse the 'creation_time' and 'forecast_time' properties to select data of\ninterest.\n\nThe GFS is a coupled model, composed of an atmosphere model, an ocean model,\na land/soil model, and a sea ice model which work together to provide an\naccurate picture of weather conditions. See\n[history of recent modifications to the global forecast/analysis system\n](https://www.emc.ncep.noaa.gov/gmb/STATS/html/model_changes.html)\nand the\n[documentation](https://nomads.ncep.noaa.gov/txt_descriptions/GFS_doc.shtml)\nfor more information.\n",
+    "description": "The Global Forecast System (GFS) is a weather forecast model produced by\nthe National Centers for Environmental Prediction (NCEP). The GFS dataset\nconsists of selected model outputs (described below) as gridded forecast\nvariables. The 384-hour forecasts, with 1-hour (up to 120 hours)\nand 3-hour (after 120 hours) forecast intervals, are made at 6-hour temporal\nresolution (i.e. updated four times daily). Use the 'creation_time' and\n'forecast_time' properties to select data of interest.\n\nThe GFS is a coupled model, composed of an atmosphere model, an ocean model,\na land/soil model, and a sea ice model which work together to provide an\naccurate picture of weather conditions. Note that this model may change;\nsee [history of recent modifications to the global forecast/analysis system](https://www.emc.ncep.noaa.gov/gmb/STATS/html/model_changes.html)\nand the [documentation](https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php)\nfor more information.\n",
     "links": [
         {
             "rel": "root",
@@ -145,7 +145,7 @@
             "interval": [
                 [
                     "2015-07-01T00:00:00Z",
-                    "2023-10-23T12:00:00Z"
+                    "2023-10-24T12:00:00Z"
                 ]
             ]
         }
@@ -214,7 +214,7 @@
                 "name": "v_component_of_wind_10m_above_ground"
             },
             {
-                "description": "Until 2019-11-07 06:00:00, this field represents the precipitation at surface at the\nforecasted time. After that date, this field holds the cumulative precipitation at surface\nadded together from all forecasts starting from hour 0 (only for assets with\nforecast_hours > 0)\n",
+                "description": "Precipitation at surface at the forecasted time.",
                 "gee:units": "kg/m^2",
                 "name": "total_precipitation_surface"
             },

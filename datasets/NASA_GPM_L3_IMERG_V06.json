@@ -58,7 +58,7 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:interval": {
         "interval": 30,
@@ -89,7 +89,7 @@
             "interval": [
                 [
                     "2000-06-01T00:00:00Z",
-                    "2023-10-19T21:30:00Z"
+                    "2023-10-22T20:30:00Z"
                 ]
             ]
         }

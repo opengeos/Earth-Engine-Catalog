@@ -42,7 +42,7 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:terms_of_use": "JAXA retains ownership of the dataset and cannot guarantee\nany problem caused by or possibly caused by using the datasets.\nAnyone wishing to publish any results using the datasets should\nclearly acknowledge the ownership of the data in the publication.\n",
     "gee:type": "image_collection",

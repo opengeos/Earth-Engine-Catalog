@@ -50,7 +50,7 @@
     ],
     "stac_extensions": [
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:skip_featureview_generation": true,
     "gee:terms_of_use": "'The HydroATLAS database is licensed under a Creative Commons Attribution\n(CC-BY) 4.0 International License. Please also refer to the HydroATLAS\n[Technical Documentation](https://data.hydrosheds.org/file/technical-documentation/HydroATLAS_TechDoc_v10.pdf)\nfor more details on the license and requested citations.\n\nBy downloading and using the data the user agrees to the terms and\nconditions of this license.'\n",

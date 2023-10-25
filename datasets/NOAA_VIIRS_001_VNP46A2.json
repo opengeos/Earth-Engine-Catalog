@@ -46,7 +46,7 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:interval": {
         "interval": 1,
@@ -115,7 +115,7 @@
             },
             {
                 "description": "Gap Filled BRDF corrected DNB NTL",
-                "name": "Gap_Filled_DNB_BRDFCorrected_NTL"
+                "name": "Gap_Filled_DNB_BRDF_Corrected_NTL"
             },
             {
                 "description": "DNB Lunar Irradiance",
@@ -344,7 +344,7 @@
             "minimum": 0,
             "maximum": 6553.4
         },
-        "Gap_Filled_DNB_BRDFCorrected_NTL": {
+        "Gap_Filled_DNB_BRDF_Corrected_NTL": {
             "minimum": 0,
             "maximum": 6553.4
         },

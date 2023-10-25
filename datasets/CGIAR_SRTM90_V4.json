@@ -42,7 +42,7 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:terms_of_use": "DISTRIBUTION. Users are prohibited from any commercial, non-free resale, or\nredistribution without explicit written permission from CIAT. Users should\nacknowledge CIAT as the source used in the creation of any reports,\npublications, new datasets, derived products, or services resulting from the\nuse of this dataset. CIAT also request reprints of any publications and\nnotification of any redistributing efforts. For commercial access to\nthe data, send requests to [Andy Jarvis](mailto:a.jarvis@cgiar.org).\n\nNO WARRANTY OR LIABILITY. CIAT provides these data without any warranty of\nany kind whatsoever, either express or implied, including warranties of\nmerchantability and fitness for a particular purpose. CIAT shall not be\nliable for incidental, consequential, or special damages arising out of\nthe use of any data.\n\nACKNOWLEDGMENT AND CITATION. Any users are kindly asked to cite this data\nin any published material produced using this data, and if possible link\nweb pages to the [CIAT-CSI SRTM website](https://srtm.csi.cgiar.org).\n",
     "gee:type": "image",

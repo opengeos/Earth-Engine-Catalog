@@ -57,7 +57,7 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:terms_of_use": "The USDA Forest Service makes no warranty, expressed or implied, including\nthe warranties of merchantability and fitness for a particular purpose, nor\nassumes any legal liability or responsibility for the accuracy, reliability,\ncompleteness or utility of these geospatial data, or for the improper or\nincorrect use of these geospatial data. These geospatial data and related\nmaps or graphics are not legal documents and are not intended to be used as\nsuch. The data and maps may not be used to determine title, ownership, legal\ndescriptions or boundaries, legal jurisdiction, or restrictions that may be\nin place on either public or private land.  Natural hazards may or may not\nbe depicted on the data and maps, and land users should exercise due\ncaution. The data are dynamic and may change over time. The user is\nresponsible to verify the limitations of the geospatial data and to use the\ndata accordingly.\n\nThese data were collected using funding from the U.S. Government and can be\nused without additional permissions or fees. If you use these data in a\npublication, presentation, or other research product please use the\nfollowing citation:\n\nUSDA Forest Service. 2021. USFS Landscape Change Monitoring System v2020.6\n(Puerto Rico - US Virgin Islands only). Salt Lake City, Utah.\n",
     "gee:type": "image_collection",
