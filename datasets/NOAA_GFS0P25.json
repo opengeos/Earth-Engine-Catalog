@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "NOAA/GFS0P25",
     "stac_version": "1.0.0",
-    "description": "The Global Forecast System (GFS) is a weather forecast model produced by\nthe National Centers for Environmental Prediction (NCEP). The GFS dataset\nconsists of selected model outputs (described below) as gridded forecast\nvariables. The 384-hour forecasts, with 1-hour (up to 120 hours)\nand 3-hour (after 120 hours) forecast intervals, are made at 6-hour temporal\nresolution (i.e. updated four times daily). Use the 'creation_time' and\n'forecast_time' properties to select data of interest.\n\nThe GFS is a coupled model, composed of an atmosphere model, an ocean model,\na land/soil model, and a sea ice model which work together to provide an\naccurate picture of weather conditions. Note that this model may change;\nsee [history of recent modifications to the global forecast/analysis system](https://www.emc.ncep.noaa.gov/gmb/STATS/html/model_changes.html)\nand the [documentation](https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php)\nfor more information.\n",
+    "description": "The Global Forecast System (GFS) is a weather forecast model produced by\nthe National Centers for Environmental Prediction (NCEP). The GFS dataset\nconsists of selected model outputs (described below) as gridded forecast\nvariables. The 384-hour forecasts, with 1-hour (up to 120 hours)\nand 3-hour (after 120 hours) forecast intervals, are made at 6-hour temporal\nresolution (i.e. updated four times daily). Use the 'creation_time' and\n'forecast_time' properties to select data of interest.\n\nThe GFS is a coupled model, composed of an atmosphere model, an ocean model,\na land/soil model, and a sea ice model which work together to provide an\naccurate picture of weather conditions. Note that this model may change;\nsee [history of recent modifications to the global forecast/analysis system](https://www.emc.ncep.noaa.gov/gmb/STATS/html/model_changes.html)\nand the [documentation](https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php)\nfor more information. There may be significant hour-to-hour and day-to-day\nfluctuations that require noise-reduction techniques to be applied to bands\nbefore analysis.\n\nNote that the available forecast hours and intervals have also changed:\n\n* From 2015/04/01-2017/07/09: 36-hour forecasts, excluding hour 0, at\n3-hour intervals.\n* From 2017/07/09-2021/06/11: 384-hour forecasts, at 1-hour intervals from\nhours 0-120, at 3-hour intervals from hours 120-240, and 12-hour intervals\nfrom hours 240-384.\n* From 2021/06/12: 384-hour forecasts, at 1-hour intervals from hours 0-120\nand 3-hour intervals from hours 120-384.\n",
     "links": [
         {
             "rel": "root",
@@ -145,7 +145,7 @@
             "interval": [
                 [
                     "2015-07-01T00:00:00Z",
-                    "2023-10-29T12:00:00Z"
+                    "2023-10-30T12:00:00Z"
                 ]
             ]
         }
