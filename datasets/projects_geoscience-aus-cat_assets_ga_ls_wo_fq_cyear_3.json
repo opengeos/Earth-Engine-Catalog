@@ -1,0 +1,170 @@
+{
+    "type": "Collection",
+    "id": "projects/geoscience-aus-cat/assets/ga_ls_wo_fq_cyear_3",
+    "stac_version": "1.0.0",
+    "description": "Digital Earth Australia (DEA) Water Observations uses an algorithm to classify each pixel from Landsat satellite imagery as 'wet', 'dry', or 'invalid'. Water Observations Statistics provides information on how many times each year the Landsat satellites were able to clearly see an area, how many times those observations were wet, and what that means for the percentage of time that water was observed in the landscape.\n\nCombining the classified pixels into summaries covering each year gives the information on where water is usually, and where it is rarely. As no confidence filtering is applied to this product, it is affected by noise where misclassifications have occurred in the input water classifications, and can be difficult to interpret on its own. \n\nFor more information, please see the [DEA Water Observations Statistics Landsat](https://cmi.ga.gov.au/data-products/dea/686/dea-water-observations-statistics-landsat)\n\nThis product is part of the [Digital Earth Australia Program](https://www.dea.ga.gov.au/)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/geoscience-aus-cat/projects_geoscience-aus-cat_assets_ga_ls_wo_fq_cyear_3",
+            "type": "text/html",
+            "title": "Run the example for projects/geoscience-aus-cat/assets/ga_ls_wo_fq_cyear_3 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/geoscience-aus-cat/projects_geoscience-aus-cat_assets_ga_ls_wo_fq_cyear_3_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_geoscience-aus-cat_assets_ga_ls_wo_fq_cyear_3#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.1016/j.rse.2015.11.003",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_cyear_3/"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/geoscience-aus-cat/projects_geoscience-aus-cat_assets_ga_ls_wo_fq_cyear_3.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/geoscience-aus-cat/catalog.json",
+            "type": "application/json",
+            "title": "geoscience-aus-cat"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "sci:citation": "Mueller, N., Lewis, A., Roberts, D., Ring, S., Melrose, R., Sixsmith, J., Lymburner, L., McIntyre, A., Tan, P., Curnow, S., & Ip, A. (2016). Water observations from space: Mapping surface water from 25 years of Landsat imagery across Australia. Remote Sensing of Environment, 174, 341-352\n[doi:10.1016/j.rse.2015.11.003](https://doi.org/10.1016/j.rse.2015.11.003)\n",
+    "sci:doi": "10.1016/j.rse.2015.11.003",
+    "version": "3.1.6",
+    "title": "DEA Water Observations Statistics 3.1.6",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    108.81,
+                    -44.41,
+                    157.82,
+                    -9.13
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1987-01-01T00:00:00Z",
+                    "2022-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "australia",
+        "ga",
+        "landsat_derived",
+        "water"
+    ],
+    "providers": [
+        {
+            "name": "Geoscience Australia",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://cmi.ga.gov.au/data-products/dea/686/dea-water-observations-statistics-landsat"
+        },
+        {
+            "name": "NGIS",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://ngis.com.au/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_geoscience-aus-cat_assets_ga_ls_wo_fq_cyear_3"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Clear count: how many times an area could be clearly seen.\n",
+                "gee:units": "count",
+                "name": "count_clear"
+            },
+            {
+                "description": "Wet count: how many times water was detected in observations that were clear.\n",
+                "gee:units": "count",
+                "name": "count_wet"
+            },
+            {
+                "description": "Water frequency: what percentage of clear observations were detected as wet.\n",
+                "gee:units": "%",
+                "name": "frequency"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Wet count",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "count_wet"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -23.7,
+                    "lon": 133.88,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            25
+        ],
+        "count_clear": {
+            "minimum": -32768,
+            "maximum": 32767
+        },
+        "count_wet": {
+            "minimum": -32768,
+            "maximum": 32767
+        },
+        "frequency": {
+            "minimum": 0,
+            "maximum": 1
+        }
+    }
+}
