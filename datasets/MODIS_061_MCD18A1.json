@@ -1,0 +1,273 @@
+{
+    "type": "Collection",
+    "id": "MODIS/061/MCD18A1",
+    "stac_version": "1.0.0",
+    "description": "The MCD18A1 Version 6.1 is a Moderate Resolution Imaging Spectroradiometer\n(MODIS) Terra and Aqua combined Downward Shortwave Radiation (DSR) gridded\nLevel 3 product produced daily at 1 kilometer pixel resolution with\nestimates of DSR every 3 hours. DSR is incident solar radiation over land\nsurfaces in the shortwave spectrum (300-4,000 nanometers) and is an\nimportant variable in land-surface models that address a variety of\nscientific and application issues. The MCD18 products are based on a\nprototyping algorithm that uses multi-temporal signatures of MODIS data to\nderive surface reflectance and then calculate incident DSR using the look-up\ntable (LUT) approach. The LUTs consider different types of loadings of\naerosols and clouds at a variety of illumination/viewing geometry. Global\nDSR products are generated from MODIS and geostationary satellite data.\nAdditional details regarding the methodology used to create the data are\navailable in the\n[Algorithm Theoretical Basis Document](https://lpdaac.usgs.gov/documents/106/MCD18_ATBD.pdf)\n\nProvided in the MOD18A1 product are layers for instantaneous DSR array for\neach individual MODIS overpass and 3-hour DSR array along with a View Zenith\nAngle layer.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_061_MCD18A1",
+            "type": "text/html",
+            "title": "Run the example for MODIS/061/MCD18A1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MCD18A1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD18A1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/MODIS/MCD18A1.061"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MCD18A1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/MODIS/MCD18A1.061",
+    "version": "6.1",
+    "title": "MCD18A1.061 Surface Radiation Daily/3-Hour",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-24T00:00:00Z",
+                    "2023-10-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "par",
+        "radiation"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://lpdaac.usgs.gov/products/mcd18a1v061/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD18A1"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Instantaneous total DSR at MODIS overpass",
+                "gee:units": "W/m^2",
+                "name": "DSR"
+            },
+            {
+                "description": "Instantaneous direct DSR at MODIS overpass",
+                "gee:units": "W/m^2",
+                "name": "Direct"
+            },
+            {
+                "description": "Instantaneous diffuse DSR at MODIS overpass",
+                "gee:units": "W/m^2",
+                "name": "Diffuse"
+            },
+            {
+                "description": "Total DSR at GMT 00:00",
+                "gee:units": "W/m^2",
+                "name": "GMT_0000_DSR"
+            },
+            {
+                "description": "Total DSR at GMT 03:00",
+                "gee:units": "W/m^2",
+                "name": "GMT_0300_DSR"
+            },
+            {
+                "description": "Total DSR at GMT 06:00",
+                "gee:units": "W/m^2",
+                "name": "GMT_0600_DSR"
+            },
+            {
+                "description": "Total DSR at GMT 09:00",
+                "gee:units": "W/m^2",
+                "name": "GMT_0900_DSR"
+            },
+            {
+                "description": "Total DSR at GMT 12:00",
+                "gee:units": "W/m^2",
+                "name": "GMT_1200_DSR"
+            },
+            {
+                "description": "Total DSR at GMT 15:00",
+                "gee:units": "W/m^2",
+                "name": "GMT_1500_DSR"
+            },
+            {
+                "description": "Total DSR at GMT 18:00",
+                "gee:units": "W/m^2",
+                "name": "GMT_1800_DSR"
+            },
+            {
+                "description": "Total DSR at GMT 21:00",
+                "gee:units": "W/m^2",
+                "name": "GMT_2100_DSR"
+            },
+            {
+                "description": "Quality flag",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 2,
+                            "description": "Input source of surface reflectance data",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "no valid surface reflectance data",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "from the MCD43 product",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "from the climatology data",
+                                    "value": 2
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 2
+                },
+                "name": "DSR_Quality"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Total DSR at GMT 12:00",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "GMT_1200_DSR"
+                        ],
+                        "max": [
+                            350
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "0f17ff",
+                            "b11406",
+                            "f1ff23"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 46.529,
+                    "lon": 6.746,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            500
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Aqua",
+            "Terra"
+        ],
+        "DSR": {
+            "minimum": 0,
+            "maximum": 1400
+        },
+        "Diffuse": {
+            "minimum": 0,
+            "maximum": 1400
+        },
+        "Direct": {
+            "minimum": 0,
+            "maximum": 1400
+        },
+        "GMT_0000_DSR": {
+            "minimum": 0,
+            "maximum": 1400
+        },
+        "GMT_0300_DSR": {
+            "minimum": 0,
+            "maximum": 1400
+        },
+        "GMT_0600_DSR": {
+            "minimum": 0,
+            "maximum": 1400
+        },
+        "GMT_0900_DSR": {
+            "minimum": 0,
+            "maximum": 1400
+        },
+        "GMT_1200_DSR": {
+            "minimum": 0,
+            "maximum": 1400
+        },
+        "GMT_1500_DSR": {
+            "minimum": 0,
+            "maximum": 1400
+        },
+        "GMT_1800_DSR": {
+            "minimum": 0,
+            "maximum": 1400
+        },
+        "GMT_2100_DSR": {
+            "minimum": 0,
+            "maximum": 1400
+        }
+    }
+}
