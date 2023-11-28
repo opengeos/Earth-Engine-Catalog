@@ -145,7 +145,7 @@
             "interval": [
                 [
                     "2015-07-01T00:00:00Z",
-                    "2023-11-26T12:00:00Z"
+                    "2023-11-27T12:00:00Z"
                 ]
             ]
         }
@@ -214,7 +214,7 @@
                 "name": "v_component_of_wind_10m_above_ground"
             },
             {
-                "description": "Cumulative precipitation at surface for the previous 1-6 hours,\ndepending on the value of the \"forecast_hours\" property according to\nthe formula ((F - 1) % 6) + 1.\n\nAs a consequence, to calculate the total precipitation by hour X,\ndouble-counting should be avoid by only summing the values for\nforecast_hours that are multiples of 6 plus any remainder to reach\nX. It also means that to determine the precipitation for just hour\nX, one must subtract the value for the preceding hour unless X is the\nfirst hour in a 6-hour window.\n",
+                "description": "Cumulative precipitation at surface for the previous 1-6 hours,\ndepending on the value of the \"forecast_hours\" property according to\nthe formula ((F - 1) % 6) + 1 (and only for assets with\nforecast_hours > 0).\n\nAs a consequence, to calculate the total precipitation by hour X,\ndouble-counting should be avoided by only summing the values for\nforecast_hours that are multiples of 6 plus any remainder to reach\nX. It also means that to determine the precipitation for just hour\nX, one must subtract the value for the preceding hour unless X is the\nfirst hour in a 6-hour window.\n",
                 "gee:units": "kg/m^2",
                 "name": "total_precipitation_surface"
             },
