@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "NASA/GSFC/MERRA/aer/2",
+    "id": "NASA/GSFC/MERRA/aer_nv/2",
     "stac_version": "1.0.0",
-    "description": "M2T1NXAER (or tavg1_2d_aer_Nx) is an hourly time-averaged 2-dimensional data\ncollection in Modern-Era Retrospective analysis for Research and\nApplications version 2 (MERRA-2). This collection consists of assimilated\naerosol diagnostics, such as column mass density of aerosol components\n(black carbon, dust, sea-salt, sulfate, and organic carbon), surface mass\nconcentration of aerosol components, and total extinction (and scattering)\naerosol optical thickness (AOT) at 550 nm. The total PM1.0, PM2.5, and PM10\nmay be derived with the formula described in the\n[in the FAQ] (https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/FAQ/)\n\nThe data field is time-stamped with the\ncentral time of an hour starting from 00:30 UTC,\ne.g.: 00:30, 01:30, ... , 23:30 UTC.\n\nMERRA-2 is the latest version of global atmospheric reanalysis for the\nsatellite era produced by NASA Global Modeling and Assimilation Office\n(GMAO) using the Goddard Earth Observing System Model (GEOS) version 5.12.4.\nThe dataset covers the period of 1980-present with the latency of ~3 weeks\nafter the end of a month.\n",
+    "description": "M2I3NVAER (or inst3_3d_aer_Nv) is an instantaneous 3-dimensional 3-hourly\ndata collection in Modern-Era Retrospective analysis for Research and\nApplications version 2 (MERRA-2). This collection consists of assimilations\nof aerosol mixing ratio parameters at 72 model layers, such as dust, sulphur\ndioxide, sea salt, black carbon, and organic carbon. The data field is\navailable every three hour starting from 00:00 UTC, e.g.: 00:00, 03:00,...\n,21:00 UTC. Section 4.2 of the [MERRA-2 File Specification document]\n(https://gmao.gsfc.nasa.gov/pubs/docs/Bosilovich785.pdf) provides\npressure values nominal for a 1000 hPa surface pressure and refers to the\ntop edge of the layer. The lev=1 is for the top layer, and lev=72 is for\nthe bottom (or surface) model layer.\n\nMERRA-2 is the latest version of global atmospheric reanalysis for the\nsatellite era produced by NASA Global Modeling and Assimilation Office\n(GMAO) using the Goddard Earth Observing System Model (GEOS) version 5.12.4.\nThe dataset covers the period of 1980-present with the latency of ~3 weeks\nafter the end of a month.\n",
     "links": [
         {
             "rel": "root",
@@ -12,19 +12,19 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_GSFC_MERRA_aer_2",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_GSFC_MERRA_aer_nv_2",
             "type": "text/html",
-            "title": "Run the example for NASA/GSFC/MERRA/aer/2 in the Earth Engine Code Editor",
+            "title": "Run the example for NASA/GSFC/MERRA/aer_nv/2 in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_GSFC_MERRA_aer_2_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_GSFC_MERRA_aer_nv_2_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GSFC_MERRA_aer_2#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GSFC_MERRA_aer_nv_2#terms-of-use",
             "type": "text/html"
         },
         {
@@ -34,7 +34,7 @@
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_GSFC_MERRA_aer_2.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_GSFC_MERRA_aer_nv_2.json",
             "type": "application/json"
         },
         {
@@ -49,14 +49,14 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:interval": {
-        "interval": 1,
+        "interval": 3,
         "type": "cadence",
         "unit": "hour"
     },
     "gee:terms_of_use": "NASA promotes the full and open sharing of all data with research and\napplications communities, private industry, academia, and the general\npublic.\n",
     "gee:type": "image_collection",
     "version": "V5.12.4",
-    "title": "MERRA-2 M2T1NXAER: Aerosol Diagnostics V5.12.4",
+    "title": "MERRA-2 M2I3NVAER: Aerosol Mixing Ratio V5.12.4",
     "extent": {
         "spatial": {
             "bbox": [
@@ -72,7 +72,7 @@
             "interval": [
                 [
                     "1980-01-01T00:00:00Z",
-                    "2023-11-01T23:00:00Z"
+                    "1996-11-24T21:00:00Z"
                 ]
             ]
         }
@@ -80,7 +80,6 @@
     "license": "proprietary",
     "keywords": [
         "aerosol",
-        "carbon",
         "dust",
         "mass",
         "merra",
@@ -96,30 +95,30 @@
                 "licensor",
                 "producer"
             ],
-            "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/"
+            "url": "https://disc.gsfc.nasa.gov/datasets/M2I3NVAER_5.12.4/summary"
         },
         {
             "name": "Google Earth Engine",
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GSFC_MERRA_aer_2"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GSFC_MERRA_aer_nv_2"
         }
     ],
     "summaries": {
         "gee:visualizations": [
             {
-                "display_name": "Black carbon column u-wind mass flux",
+                "display_name": "pressure thickness",
                 "image_visualization": {
                     "band_vis": {
                         "bands": [
-                            "BCFLUXU"
+                            "DELP_72"
                         ],
                         "max": [
-                            1.65e-05
+                            1749.3213800941699
                         ],
                         "min": [
-                            -1.15e-05
+                            1194.9099111470955
                         ],
                         "palette": [
                             "001137",
