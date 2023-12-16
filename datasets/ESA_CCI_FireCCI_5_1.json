@@ -115,7 +115,7 @@
                 "licensor",
                 "producer"
             ],
-            "url": "https://climate.esa.int/en/projects/fire/"
+            "url": "https://climate.esa.int/es/odp/#/project/fire"
         },
         {
             "name": "Google Earth Engine",
@@ -140,9 +140,14 @@
                 "description": "Land cover category of the burned pixels, extracted from the CCI LandCover\nv2.0.7 product. See Defourny, P., Lamarche, C., Bontemps, S., De Maet, T.,\nVan Bogaert, E., Moreau, I., Brockmann, C., Boettcher, M., Kirches, G.,\nWevers, J., Santoro, M., Ramoino, F., &amp; Arino, O.  (2017). Land Cover\nClimate Change Initiative - Product User Guide v2. Issue 2.0. [online]\nAvailable at: [https://maps.elie.ucl.ac.be/CCI/viewer/download/ESACCI-LC-Ph2-PUGv2_2.0.pdf](https://maps.elie.ucl.ac.be/CCI/viewer/download/ESACCI-LC-Ph2-PUGv2_2.0.pdf)\naccessed: July 2020. &copy; ESA Climate Change Initiative - Land Cover led by UCLouvain (2017).\n",
                 "gee:classes": [
                     {
+                        "color": "000000",
+                        "description": "No Data",
+                        "value": 0
+                    },
+                    {
                         "color": "ffff64",
                         "description": "Cropland, rainfed",
-                        "value": 0
+                        "value": 10
                     },
                     {
                         "color": "aaf0f0",
