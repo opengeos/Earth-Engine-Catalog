@@ -1,6 +1,6 @@
 {
     "type": "Collection",
-    "id": "CSIC/SPEI/2_8",
+    "id": "CSIC/SPEI/2_9",
     "stac_version": "1.0.0",
     "description": "The Global SPEI database (SPEIbase) offers long-time robust information\nabout drought conditions at the global scale, with a 0.5 degree pixel size\nand monthly cadence. It provides SPEI time scales from 1 to 48 months.\n\nThe Standardized Precipitatin-Evapotranspiration Index (SPEI) expresses,\nas a standardized variate (mean zero and unit variance), the deviations of\nthe current climatic balance (precipitation minus evapotranspiration\npotential) with respect to the long-term balance. The reference period for\nthe calculation in the SPEIbase corresponds to the whole study period.\nBeing a standardized variate means that the SPEI condition can be compared\nacross space and time.\n\nThe SPEIbase is based on the\n[FAO-56 Penman-Monteith estimation](https://www.fao.org/3/x0490e/x0490e06.htm)\nestimation of potential evapotranspiration.\nThis is a major difference with respect to the SPEI Global Drought Monitor,\nthat uses the Thornthwaite PET estimation.\nThe Penman-Montheith method is considered a superior method, so the\nSPEIbase is recommended for most uses including long-term climatological\nanalysis.\n",
     "links": [
@@ -12,19 +12,19 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/CSIC/CSIC_SPEI_2_8",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/CSIC/CSIC_SPEI_2_9",
             "type": "text/html",
-            "title": "Run the example for CSIC/SPEI/2_8 in the Earth Engine Code Editor",
+            "title": "Run the example for CSIC/SPEI/2_9 in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/CSIC/CSIC_SPEI_2_8_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/CSIC/CSIC_SPEI_2_9_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/CSIC_SPEI_2_8#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/CSIC_SPEI_2_9#terms-of-use",
             "type": "text/html"
         },
         {
@@ -38,14 +38,14 @@
             "title": "CSIC/SPEI/2_9"
         },
         {
-            "rel": "successor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CSIC/CSIC_SPEI_2_9.json",
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CSIC/CSIC_SPEI_2_8.json",
             "type": "application/json",
-            "title": "CSIC/SPEI/2_9"
+            "title": "CSIC/SPEI/2_8"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CSIC/CSIC_SPEI_2_8.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CSIC/CSIC_SPEI_2_9.json",
             "type": "application/json"
         },
         {
@@ -60,16 +60,15 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
         "unit": "month"
     },
-    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)\n\nThe SPEI database is available under the\n[CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).\n\nAny public use of the database or works derived from it must include\nproper attribution.\nAttribution should be given by referencing the document titled:\nBeguer\u00eda, Santiago; Vicente Serrano, Sergio M.; Reig-Gracia, Fergus;\nLatorre Garc\u00e9s, Borja; 2023;\nSPEIbase v.2.8 [Dataset]; DIGITAL.CSIC; Version 2.8.\n[doi:10.20350/digitalCSIC/15121](https://doi.org/10.20350/digitalCSIC/15121)\n",
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)\n\nThe SPEI database is available under the\n[CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).\n\nAny public use of the database or works derived from it must include\nproper attribution.\nAttribution should be given by referencing the document titled:\nBeguer\u00eda, Santiago; Vicente Serrano, Sergio M.; Reig-Gracia, Fergus;\nLatorre Garc\u00e9s, Borja; 2023;\nSPEIbase v.2.9 [Dataset]; DIGITAL.CSIC; Version 2.9.\n[doi:10.20350/digitalCSIC/15470](https://doi.org/10.20350/digitalCSIC/15470)\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
-    "sci:citation": "Product: Beguer\u00eda, Santiago; Vicente Serrano, Sergio M.;\nReig-Gracia, Fergus; Latorre Garc\u00e9s, Borja; 2023;\nSPEIbase v.2.8 [Dataset]; DIGITAL.CSIC; Version 2.8.\n[doi:10.20350/digitalCSIC/15121](https://doi.org/10.20350/digitalCSIC/15121)\n",
+    "sci:citation": "Product: Beguer\u00eda, Santiago; Vicente Serrano, Sergio M.;\nReig-Gracia, Fergus; Latorre Garc\u00e9s, Borja; 2023;\nSPEIbase v.2.9 [Dataset]; DIGITAL.CSIC; Version 2.9.\n[doi:10.20350/digitalCSIC/15470](https://doi.org/10.20350/digitalCSIC/15470)\n",
     "sci:doi": "10.20350/digitalCSIC/15121",
     "sci:publications": [
         {
@@ -77,8 +76,8 @@
             "doi": "10.1175/2009JCLI2909.1"
         }
     ],
-    "version": "2.8",
-    "title": "SPEIbase: Standardised Precipitation-Evapotranspiration Index database, Version 2.8 [deprecated]",
+    "version": "2.9",
+    "title": "SPEIbase: Standardised Precipitation-Evapotranspiration Index database, Version 2.9",
     "extent": {
         "spatial": {
             "bbox": [
@@ -94,7 +93,7 @@
             "interval": [
                 [
                     "1901-01-01T00:00:00Z",
-                    "2021-01-01T00:00:00Z"
+                    "2023-01-01T00:00:00Z"
                 ]
             ]
         }
@@ -125,7 +124,7 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/CSIC_SPEI_2_8"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/CSIC_SPEI_2_9"
         }
     ],
     "summaries": {

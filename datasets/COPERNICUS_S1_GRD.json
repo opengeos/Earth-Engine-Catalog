@@ -44,7 +44,7 @@
         "https://stac-extensions.github.io/sar/v1.0.0/schema.json"
     ],
     "gee:interval": {
-        "interval": 3,
+        "interval": 6,
         "type": "revisit_interval",
         "unit": "day"
     },
@@ -66,7 +66,7 @@
             "interval": [
                 [
                     "2014-10-03T00:00:00Z",
-                    "2024-01-02T19:34:55Z"
+                    "2024-01-03T18:37:55Z"
                 ]
             ]
         }
