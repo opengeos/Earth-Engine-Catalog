@@ -29,7 +29,7 @@
         },
         {
             "rel": "cite-as",
-            "href": "https://lpdaac.usgs.gov/products/mcd19a2v061/"
+            "href": "https://doi.org/10.5067/MODIS/MCD19A2.061"
         },
         {
             "rel": "self",
@@ -59,6 +59,7 @@
     "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
     "gee:type": "image_collection",
     "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/MODIS/MCD19A2.061",
     "version": "6.1",
     "title": "MCD19A2.061: Terra & Aqua MAIAC Land Aerosol Optical Depth Daily 1km",
     "extent": {
@@ -76,7 +77,7 @@
             "interval": [
                 [
                     "2000-02-24T00:00:00Z",
-                    "2024-01-04T23:55:00Z"
+                    "2024-01-07T23:55:00Z"
                 ]
             ]
         }
@@ -102,7 +103,7 @@
                 "licensor",
                 "producer"
             ],
-            "url": "https://lpdaac.usgs.gov/products/mcd19a2v061/"
+            "url": "https://doi.org/10.5067/MODIS/MCD19A2.061"
         },
         {
             "name": "Google Earth Engine",
