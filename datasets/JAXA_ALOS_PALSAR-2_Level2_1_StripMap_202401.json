@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "JAXA/ALOS/PALSAR-2/Level2_1/StripMap_202401",
     "stac_version": "1.0.0",
-    "description": "Starting from the night of January 1st, 2024, based on the request from\nJapanese ministries and related organization, JAXA implemented ALOS-2\nPALSAR-2 emergency observation. Since JAXA expects these emergency\nobservation data to be extremely useful for disaster\nmanagement, JAXA decided to open these data on Google Earth Engine for\npublic and research usage.\n\nJAXA released PALSAR-2 Level 2.1 strip map mode observation data with 3m\nsingle polarization during January 1-3, 2024, together with some archive\ndata. PALSAR-2 Level 2.1 data is orthorectified from level 1.1 data by using\ndigital elevation model. The DN values can be converted to sigma naught\nvalues in decibel unit (dB) using the following equation:\n\n* &sigma;<sub>0</sub> = 10*log<sub>10</sub>(DN<sup>2</sup>) - 83.0 dB\n\nBelow are the dates for which the dataset has data.\n\nObs date                   | Frame     |  Beam     | A/D\n:--------------------------|:----------|:----------|:---------------\n2024/01/01 and 2022/09/26  | 0750, 0760, 0770 | U2-6L | Asc.\n2024/01/02 and 2023/06/06  | 2820, 2830, 2840 | U2-8L | Desc.\n2024/01/03 and 2023/12/06  | 0720, 0730 | U2-9R | Asc.\n",
+    "description": "Starting from the night of January 1st, 2024, based on the request from\nJapanese ministries and related organization, JAXA implemented ALOS-2\nPALSAR-2 emergency observation. Since JAXA expects these emergency\nobservation data to be extremely useful for disaster\nmanagement, JAXA decided to open these data on Google Earth Engine for\npublic and research usage.\n\nJAXA released PALSAR-2 Level 2.1 strip map mode observation data with 3m\nsingle polarization for January 1-3 and January 8 2024, together with\nsome archive\ndata. PALSAR-2 Level 2.1 data is orthorectified from level 1.1 data by using\ndigital elevation model. The DN values can be converted to sigma naught\nvalues in decibel unit (dB) using the following equation:\n\n* &sigma;<sub>0</sub> = 10*log<sub>10</sub>(DN<sup>2</sup>) - 83.0 dB\n\nBelow are the dates for which the dataset has data.\n\nObs date                   | Frame     |  Beam     | A/D\n:--------------------------|:----------|:----------|:---------------\n2024/01/01 and 2022/09/26  | 0750, 0760, 0770 | U2-6L | Asc.\n2024/01/02 and 2023/06/06  | 2820, 2830, 2840 | U2-8L | Desc.\n2024/01/08, 2024/01/03 and 2023/12/06  | 0720, 0730 | U2-9R | Asc.\n",
     "links": [
         {
             "rel": "root",
@@ -64,7 +64,7 @@
             "interval": [
                 [
                     "2022-09-26T00:00:00Z",
-                    "2024-01-03T00:00:00Z"
+                    "2024-01-08T00:00:00Z"
                 ]
             ]
         }
@@ -99,7 +99,7 @@
         "eo:bands": [
             {
                 "description": "HH polarization Terrain-flattened Gamma-Nought backscatter\ncoefficient.\n",
-                "name": "HH"
+                "name": "b1"
             }
         ],
         "gee:visualizations": [
@@ -108,7 +108,7 @@
                 "image_visualization": {
                     "band_vis": {
                         "bands": [
-                            "HH"
+                            "b1"
                         ],
                         "max": [
                             8000
