@@ -1,6 +1,6 @@
 {
     "type": "Collection",
-    "id": "NOAA/CDR/AVHRR/AOT/V3",
+    "id": "NOAA/CDR/AVHRR/AOT/V4",
     "stac_version": "1.0.0",
     "description": "The NOAA Climate Data Record (CDR) of Aerosol Optical Thickness (AOT) is a\ncollection of global daily 0.1 degree derived data from the PATMOS-x AVHRR\nlevel-2b channel 1 (0.63 micron) orbital clear-sky radiance. The aerosol\nproduct is generated from AVHRR imagery in cloud-free conditions during\ndaytime over oceans.\n\nDue to the relatively large uncertainties associated with surface\nreflectance over water glint area and land surface as well as limited\nAVHRR retrieval channels, this dataset only includes retrieval over\nnon-glint water surface (specifically at the anti-solar side of the orbit\nwith viewing angle more than 40 degree away from the specular ray). For\nmore details, see the [Algorithm Description](https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Aerosol_Optical_Thickness/AlgorithmDescription_01B-04.pdf).\n\nImage and data processing by NOAA's National Climatic Data Center.\n",
     "links": [
@@ -12,24 +12,24 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_CDR_AVHRR_AOT_V3",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_CDR_AVHRR_AOT_V4",
             "type": "text/html",
-            "title": "Run the example for NOAA/CDR/AVHRR/AOT/V3 in the Earth Engine Code Editor",
+            "title": "Run the example for NOAA/CDR/AVHRR/AOT/V4 in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_CDR_AVHRR_AOT_V3_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_CDR_AVHRR_AOT_V4_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_AVHRR_AOT_V3#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_AVHRR_AOT_V4#terms-of-use",
             "type": "text/html"
         },
         {
             "rel": "cite-as",
-            "href": "https://doi.org/10.7289/V5BZ642P"
+            "href": "https://doi.org/10.25921/w3zj-4y48"
         },
         {
             "rel": "latest-version",
@@ -38,14 +38,14 @@
             "title": "NOAA/CDR/AVHRR/AOT/V4"
         },
         {
-            "rel": "successor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_CDR_AVHRR_AOT_V4.json",
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_CDR_AVHRR_AOT_V3.json",
             "type": "application/json",
-            "title": "NOAA/CDR/AVHRR/AOT/V4"
+            "title": "NOAA/CDR/AVHRR/AOT/V3"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_CDR_AVHRR_AOT_V3.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_CDR_AVHRR_AOT_V4.json",
             "type": "application/json"
         },
         {
@@ -60,7 +60,6 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -68,10 +67,10 @@
     },
     "gee:terms_of_use": "The NOAA CDR Program's official distribution point for CDRs is NOAA's\nNational Climatic Data Center which provides sustained, open access and\nactive data management of the CDR packages and related information in\nkeeping with the United States' open data policies and practices as\ndescribed in the President's Memorandum on \\\"Open Data Policy\\\" and pursuant\nto the Executive Order of May 9, 2013, \\\"Making Open and Machine Readable\nthe New Default for Government Information\\\". In line with these policies,\nthe CDR data sets are nonproprietary, publicly available, and no\nrestrictions are placed upon their use. For more information, see the\n[Fair Use of NOAA's CDR Data Sets, Algorithms and Documentation](https://www1.ncdc.noaa.gov/pub/data/sds/cdr/CDRs/Aerosol_Optical_Thickness/UseAgreement_01B-04.pdf)\npdf.\n",
     "gee:type": "image_collection",
-    "sci:citation": "Zhao, Xuepeng; and NOAA CDR Program (2017): NOAA Climate Data Record (CDR)\nof AVHRR Daily and Monthly Aerosol Optical Thickness (AOT) over Global\nOceans, Version 3.0. [indicate subset used]. NOAA National Centers for\nEnvironmental Information. [doi:10.7289/V5BZ642P](https://doi.org/10.7289/V5BZ642P)\n[date accessed].\n",
-    "sci:doi": "10.7289/V5BZ642P",
-    "version": "v03",
-    "title": "NOAA CDR AVHRR AOT: Daily Aerosol Optical Thickness Over Global Oceans, v03 [deprecated]",
+    "sci:citation": "Zhao, Xuepeng; and NOAA CDR Program: NOAA Climate Data Record (CDR)\nof AVHRR Daily and Monthly Aerosol Optical Thickness (AOT) over Global\nOceans, Version 4.0. [indicate subset used]. NOAA National Centers for\nEnvironmental Information. [doi:10.25921/w3zj-4y48](https://doi.org/10.25921/w3zj-4y48)\n[date accessed].\n",
+    "sci:doi": "10.25921/w3zj-4y48",
+    "version": "v04",
+    "title": "NOAA CDR AVHRR AOT: Daily Aerosol Optical Thickness Over Global Oceans, v04",
     "extent": {
         "spatial": {
             "bbox": [
@@ -87,7 +86,7 @@
             "interval": [
                 [
                     "1981-01-01T00:00:00Z",
-                    "2022-03-31T00:00:00Z"
+                    "2023-12-31T00:00:00Z"
                 ]
             ]
         }
@@ -111,14 +110,14 @@
                 "licensor",
                 "producer"
             ],
-            "url": "https://www.ncdc.noaa.gov/cdr/atmospheric/avhrr-aerosol-optical-thickness"
+            "url": "https://doi.org/10.25921/w3zj-4y48"
         },
         {
             "name": "Google Earth Engine",
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_AVHRR_AOT_V3"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_AVHRR_AOT_V4"
         }
     ],
     "summaries": {
