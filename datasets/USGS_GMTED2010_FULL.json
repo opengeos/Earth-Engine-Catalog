@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "USGS/GMTED2010",
+    "id": "USGS/GMTED2010_FULL",
     "stac_version": "1.0.0",
-    "description": "The Global Multi-resolution Terrain Elevation Data\n2010 (GMTED2010) dataset contains elevation data for the globe\ncollected from various sources. The version of the dataset available\nhere is Breakline Emphasis, 7.5 arc-seconds resolution. Breakline\nemphasis maintains the critical topographic features (streams or\nridges) within the landscape by maintaining any minimum elevation\nor maximum elevation value on a breakline that passes within the\nspecified analysis window. More details are available in the dataset\n[report](https://pubs.usgs.gov/of/2011/1073/pdf/of2011-1073.pdf).\n\nThe primary source dataset for GMTED2010 is NGA''s SRTM Digital\nTerrain Elevation Data (DTED&reg;, [https://www2.jpl.nasa.gov/srtm/](https://www2.jpl.nasa.gov/srtm/))\n(void-filled) 1-arc-second data. For the geographic areas outside\nthe SRTM coverage area and to fill in remaining holes in the SRTM\ndata, the following sources were used: non-SRTM DTED&reg;, Canadian\nDigital Elevation Data (CDED) at two resolutions, Satellite Pour\nl''Observation de la Terre (SPOT 5) Reference3D, National Elevation\nDataset (NED) for the continental United States and Alaska, GEODATA\n9 second digital elevation model (DEM) for Australia, an Antarctica\nsatellite radar and laser altimeter DEM, and a Greenland satellite\nradar altimeter DEM.\n\nThis dataset replaces the GTOPO30 Elevation Model.\n",
+    "description": "The Global Multi-resolution Terrain Elevation Data\n2010 (GMTED2010) dataset contains elevation data for the globe\ncollected from various sources at 7.5 arc-seconds resolution. More details\nare available in the dataset [report](https://pubs.usgs.gov/of/2011/1073/pdf/of2011-1073.pdf).\n\nThe primary source dataset for GMTED2010 is NGA''s SRTM Digital\nTerrain Elevation Data (DTED&reg;, [https://www2.jpl.nasa.gov/srtm/](https://www2.jpl.nasa.gov/srtm/))\n(void-filled) 1-arc-second data. For the geographic areas outside\nthe SRTM coverage area and to fill in remaining holes in the SRTM\ndata, the following sources were used: non-SRTM DTED&reg;, Canadian\nDigital Elevation Data (CDED) at two resolutions, Satellite Pour\nl''Observation de la Terre (SPOT 5) Reference3D, National Elevation\nDataset (NED) for the continental United States and Alaska, GEODATA\n9 second digital elevation model (DEM) for Australia, an Antarctica\nsatellite radar and laser altimeter DEM, and a Greenland satellite\nradar altimeter DEM.\n\nThis dataset replaces the GTOPO30 Elevation Model.\n",
     "links": [
         {
             "rel": "root",
@@ -12,19 +12,19 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/USGS/USGS_GMTED2010",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/USGS/USGS_GMTED2010_FULL",
             "type": "text/html",
-            "title": "Run the example for USGS/GMTED2010 in the Earth Engine Code Editor",
+            "title": "Run the example for USGS/GMTED2010_FULL in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/USGS_GMTED2010_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/USGS_GMTED2010_FULL_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/USGS_GMTED2010#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/USGS_GMTED2010_FULL#terms-of-use",
             "type": "text/html"
         },
         {
@@ -34,14 +34,14 @@
             "title": "USGS/GMTED2010_FULL"
         },
         {
-            "rel": "successor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_GMTED2010_FULL.json",
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_GMTED2010.json",
             "type": "application/json",
-            "title": "USGS/GMTED2010_FULL"
+            "title": "USGS/GMTED2010"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_GMTED2010.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_GMTED2010_FULL.json",
             "type": "application/json"
         },
         {
@@ -56,12 +56,11 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:terms_of_use": "Most U.S. Geological Survey (USGS) information resides\nin the public domain and may be used without restriction. Additional\ninformation on [Acknowledging or Crediting USGS as Information\nSource](https://www.usgs.gov/information-policies-and-instructions/crediting-usgs) is available.\n",
     "gee:type": "image",
     "sci:citation": "Global Multi-resolution Terrain Elevation Data 2010 courtesy of\nthe U.S. Geological Survey",
-    "version": "1.0",
-    "title": "GMTED2010: Global Multi-resolution Terrain Elevation Data 2010, Breakline Emphasis [deprecated]",
+    "version": "1.1",
+    "title": "GMTED2010: Global Multi-resolution Terrain Elevation Data 2010",
     "extent": {
         "spatial": {
             "bbox": [
@@ -105,24 +104,54 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_GMTED2010"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_GMTED2010_FULL"
         }
     ],
     "summaries": {
         "eo:bands": [
             {
-                "description": "Elevation",
+                "description": "Standard Deviation",
+                "gee:units": "m",
+                "name": "std"
+            },
+            {
+                "description": "Minimum",
+                "gee:units": "m",
+                "name": "min"
+            },
+            {
+                "description": "Median",
+                "gee:units": "m",
+                "name": "med"
+            },
+            {
+                "description": "Mean",
+                "gee:units": "m",
+                "name": "mea"
+            },
+            {
+                "description": "Maximum",
+                "gee:units": "m",
+                "name": "max"
+            },
+            {
+                "description": "Sample",
+                "gee:units": "m",
+                "name": "dsc"
+            },
+            {
+                "description": "Breakline emphasis maintains the critical topographic features\n(streams or ridges) within the landscape by maintaining any minimum\nelevation or maximum elevation value on a breakline that passes within\nthe specified analysis window.\n",
                 "gee:units": "m",
                 "name": "be75"
             }
         ],
         "gee:visualizations": [
             {
-                "display_name": "Elevation",
+                "display_name": "Minimum Elevation",
                 "image_visualization": {
                     "band_vis": {
                         "bands": [
-                            "be75"
+                            "min"
                         ],
                         "gamma": [
                             3.5
@@ -144,10 +173,6 @@
         ],
         "gsd": [
             231.92
-        ],
-        "be75": {
-            "minimum": -457,
-            "maximum": 8746
-        }
+        ]
     }
 }
