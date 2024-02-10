@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "NOAA/VIIRS/001/VNP14A1",
     "stac_version": "1.0.0",
-    "description": "The daily Suomi National Polar-Orbiting Partnership NASA Visible Infrared\nImaging Radiometer Suite (VIIRS) Thermal Anomalies/Fire (VNP14A1) Version 1\ndata product provides daily information about active fires and other thermal\nanomalies. The VNP14A1 data product is a global, 1km gridded composite of\nfire pixels detected from VIIRS 750m bands over a daily (24-hour) period.\nThe VNP14 data products are designed after the Moderate Resolution Imaging\nSpectroradiometer (MODIS) Thermal Anomalies/Fire product suite.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/427/VNP14_User_Guide_V1.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/427/VNP14_User_Guide_V1.pdf)\n\n* [General Documentation](https://lpdaac.usgs.gov/products/vnp14a1v001/)\n\n* [Land Product Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/NPP_QA/)\n",
+    "description": "The daily Suomi National Polar-Orbiting Partnership NASA Visible Infrared\nImaging Radiometer Suite (VIIRS) Thermal Anomalies/Fire (VNP14A1) Version 1\ndata product provides daily information about active fires and other thermal\nanomalies. The VNP14A1 data product is a global, 1km gridded composite of\nfire pixels detected from VIIRS 750m bands over a daily (24-hour) period.\nThe VNP14 data products are designed after the Moderate Resolution Imaging\nSpectroradiometer (MODIS) Thermal Anomalies/Fire product suite.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/427/VNP14_User_Guide_V1.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/427/VNP14_User_Guide_V1.pdf)\n\n* [General Documentation](https://lpdaac.usgs.gov/products/vnp14a1v001/)\n\n* [Land Product Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/browse?sensor=VIIRS&sat=SNPP)\n",
     "links": [
         {
             "rel": "root",
@@ -77,7 +77,7 @@
             "interval": [
                 [
                     "2012-01-19T00:00:00Z",
-                    "2024-02-06T00:00:00Z"
+                    "2024-02-07T00:00:00Z"
                 ]
             ]
         }
