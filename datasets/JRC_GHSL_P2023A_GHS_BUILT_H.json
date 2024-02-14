@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "JRC/GHSL/P2023A/GHS_BUILT_H",
     "stac_version": "1.0.0",
-    "description": "The GHS-BUILT-H spatial raster dataset contains building heights as\nextracted from the filtering of a composite of global digital elevation\nmodels (DEM) and the filtering of satellite imagery using linear regression\ntechniques.\n\nThe used input DEMs are the ALOS World 3D - 30m (AW3D30, 2006-2011) and the\nShuttle Radar Topography Mission 30m (SRTM30, 2000). The building heights\nextracted from these sources are updated using the support of the shadow\nmarkers extracted from the Sentinel2 image data composite of the year 2018\n(GHS-composite-S2 R2020A).\n\nThe Global Human Settlement Layer (GHSL) project is supported by the\nEuropean Commission, Joint Research Center, and Directorate-General for\nRegional and Urban Policy.\n",
+    "description": "This spatial raster dataset depicts the global distribution of building\nheights at a resolution of 100 m, referred to the year 2018. The input data\nused to predict building heights are the ALOS Global Digital Surface Model\n(30 m), the NASA Shuttle Radar Topographic Mission data (30 m), and a global\nSentinel-2 image composite from L1C data for the period 2017-2018.\n\nMore information about the GHSL data products can be found in the\n[GHSL Data Package 2023 report]\n(https://ghsl.jrc.ec.europa.eu/documents/GHSL_Data_Package_2023.pdf?t=1683540422),\nwhere the building height layer is referred to as the Average Net Building\nHeight (ANBH).\n\nThe Global Human Settlement Layer (GHSL) project is supported by the\nEuropean Commission, Joint Research Centre, and Directorate-General for\nRegional and Urban Policy.\n",
     "links": [
         {
             "rel": "root",
@@ -44,12 +44,12 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "gee:terms_of_use": "The GHSL has been produced by the EC JRC as open and free data. Reuse is\nauthorised, provided the source is acknowledged. For more information,\nplease read the use conditions ([European Commission Reuse and Copyright\nNotice](https://ec.europa.eu/info/legal-notice_en)).\n",
+    "gee:terms_of_use": "The GHSL has been produced by the European Commission Joint Research Centre\nas open and free data. Reuse is authorised, provided the source is\nacknowledged. For more information, please read the use conditions ([European\nCommission Reuse and Copyright Notice](https://ec.europa.eu/info/legal-notice_en)).\n",
     "gee:type": "image_collection",
-    "sci:citation": "Pesaresi, Martino; Politis, Panagiotis (2023):\nGHS-BUILT-H R2023A - GHS building height, derived from AW3D30, SRTM30, and\nSentinel2 composite (2018). European Commission, Joint Research Centre (JRC)\nPID: http://data.europa.eu/89h/85005901-3a49-48dd-9d19-6261354f56fe\n[doi:10.2905/85005901-3A49-48DD-9D19-6261354F56FE](https://doi.org/10.2905/85005901-3A49-48DD-9D19-6261354F56FE)\n",
+    "sci:citation": "Pesaresi, Martino; Politis, Panagiotis (2023): GHS-BUILT-H R2023A - GHS\nbuilding height, derived from AW3D30, SRTM30, and Sentinel2 composite\n(2018). European Commission, Joint Research Centre (JRC)\n[PID: http://data.europa.eu/89h/85005901-3a49-48dd-9d19-6261354f56fe](http://data.europa.eu/89h/85005901-3a49-48dd-9d19-6261354f56fe)\n[doi:10.2905/85005901-3A49-48DD-9D19-6261354F56FE](https://doi.org/10.2905/85005901-3A49-48DD-9D19-6261354F56FE)\n\n",
     "sci:doi": "10.2905/85005901-3A49-48DD-9D19-6261354F56FE",
     "version": "P2023A",
-    "title": "GHSL: Global Human Settlement Layers, Built-Up Height 2018 (P2023A)",
+    "title": "GHSL: Global building height 2018 (P2023A)",
     "extent": {
         "spatial": {
             "bbox": [
@@ -76,7 +76,16 @@
         "builtup",
         "ghsl",
         "jrc",
-        "landsat_derived"
+        "dem",
+        "alos",
+        "srtm",
+        "sentinel2_derived",
+        "copernicus",
+        "building",
+        "sdg",
+        "urban",
+        "height",
+        "built_environment"
     ],
     "providers": [
         {
