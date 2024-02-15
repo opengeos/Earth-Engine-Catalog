@@ -1,0 +1,200 @@
+{
+    "type": "Collection",
+    "id": "NASA/LANCE/NOAA20_VIIRS/C2",
+    "stac_version": "1.0.0",
+    "description": "NOAA-20 (JPSS-1) Visible Infrared Imaging Radiometer Suite (VIIRS) Active Fire detection\nproduct is based on the instrument's 375m nominal resolution data. Compared\nto other coarser resolution (&ge; 1km) satellite fire detection products, \nthe improved 375 m data provide greater response over fires of relatively\nsmall areas, as well as improved mapping of large fire perimeters.\nConsequently, the data are well suited for use in support of fire management\n(e.g., near real-time alert systems), as well as other science applications\nrequiring improved fire mapping fidelity.\n\nThe data in the near-real-time dataset are not considered to be of science\nquality.\n\nAdditional information can be found [here](https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_LANCE_NOAA20_VIIRS_C2",
+            "type": "text/html",
+            "title": "Run the example for NASA/LANCE/NOAA20_VIIRS/C2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_LANCE_NOAA20_VIIRS_C2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_LANCE_NOAA20_VIIRS_C2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_LANCE_NOAA20_VIIRS_C2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C1355615368-LANCEMODIS"
+    ],
+    "gee:terms_of_use": "NASA promotes the full and open sharing of all data with the research and\napplications communities, private industry, academia, and the general\npublic. Read the [NASA Data and Information Policy]\n(https://science.nasa.gov/earth-science/earth-science-data/data-information-policy/).\n\nIf you provide the\n[Land, Atmosphere Near real-time Capability for EOS (LANCE) / Fire Information for Resource Management System (FIRMS)](https://earthdata.nasa.gov/earth-observation-data/near-real-time)\ndata to a third party, follow the guidelines in the\n[LANCE Citation, Acknowledgements, and Disclaimer](https://earthdata.nasa.gov/earth-observation-data/near-real-time/citation#ed-lance-disclaimer)\nsite and replicate or provide a link to the\n[disclaimer](https://earthdata.nasa.gov/earth-observation-data/near-real-time/citation#ed-lance-disclaimer).\n",
+    "gee:type": "image_collection",
+    "sci:citation": "NRT VIIRS 375 m Active Fire product VJ114IMGTDL_NRT distributed from NASA\nFIRMS. Available on-line https://earthdata.nasa.gov/firms.\n[doi:10.5067/FIRMS/VIIRS/VJ114IMGT_NRT.002](https://doi:10.5067/FIRMS/VIIRS/VJ114IMGT_NRT.002)\n",
+    "version": "6",
+    "title": "VJ114IMGTDL_NRT Daily Raster: VIIRS (NOAA-20) Band 375m Active Fire",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-10-08T00:00:00Z",
+                    "2023-12-07T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "eosdis",
+        "fire",
+        "firms",
+        "geophysical",
+        "hotspot",
+        "lance",
+        "modis",
+        "nasa",
+        "thermal",
+        "viirs"
+    ],
+    "providers": [
+        {
+            "name": "NASA / LANCE / NOAA20_VIIRS",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.earthdata.nasa.gov/learn/find-data/near-real-time/firms/vj114imgtdlnrt"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_LANCE_NOAA20_VIIRS_C2"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "VIIRS I-4 channel brightness temperature of the fire pixel.\n",
+                "gee:units": "K",
+                "name": "Bright_ti4"
+            },
+            {
+                "description": "VIIRS I-5 Channel brightness temperature of the fire pixel.\n",
+                "gee:units": "K",
+                "name": "Bright_ti5"
+            },
+            {
+                "description": "A detection confidence intended to help users gauge the\nquality of individual active fire pixels. The confidence estimate ranges\nbetween 'low': 0, 'nominal': 1 and 'high': 2 for all fire pixels within\nthe fire mask. Low confidence daytime fire pixels are typically\nassociated with areas of Sun glint and lower relative temperature\nanomaly (&lt;15 K) in the mid-infrared channel I4. Nominal confidence\npixels are those free of potential Sun glint contamination during the\nday and marked by strong (&gt;15 K) temperature anomaly in either day or\nnighttime data. High confidence fire pixels are associated with day or\nnighttime saturated pixels.\n\nPlease note: Low confidence nighttime pixels occur only over the\ngeographic area extending from 11&deg; E to 110&deg; W and 7&deg; N to\n55&deg; S. This area describes the region of influence of the South\nAtlantic Magnetic Anomaly which can cause spurious brightness\ntemperatures in the mid-infrared channel I4 leading to potential false\npositive alarms. These have been removed from the NRT data distributed\nby FIRMS.\n",
+                "name": "confidence"
+            },
+            {
+                "description": "Line number in the FIRMS CSV file that the pixel came from.",
+                "name": "line_number"
+            },
+            {
+                "description": "FRP depicts the pixel-integrated fire radiative power in megawatts (MW).\nGiven the unique spatial and spectral resolution of the data, the VIIRS\n375m fire detection algorithm was customized and tuned to optimize its\nresponse over small fires while balancing the occurrence of false alarms\n. Frequent saturation of the mid-infrared I4 channel (3.55-3.93 &mu;m)\ndriving the detection of active fires requires additional tests and\nprocedures to avoid pixel classification errors. As a result, sub-pixel\nfire characterization (e.g., fire radiative power [FRP] retrieval) is\nonly viable across small and/or low-intensity fires. Systematic FRP\nretrievals are based on a hybrid approach combining 375 and 750m data.\n",
+                "gee:units": "MW",
+                "name": "frp"
+            },
+            {
+                "description": "Acquisation timestamp in seconds",
+                "gee:units": "seconds",
+                "name": "acq_epoch"
+            },
+            {
+                "description": "The time of day in seconds since midnight",
+                "gee:units": "seconds",
+                "name": "acq_time"
+            },
+            {
+                "description": "1= Daytime fire, 0= Nighttime fire",
+                "name": "DayNight"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Fires",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Bright_ti4"
+                        ],
+                        "max": [
+                            400
+                        ],
+                        "min": [
+                            325
+                        ],
+                        "palette": [
+                            "yellow",
+                            "orange",
+                            "red",
+                            "white",
+                            "darkred"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 59.39,
+                    "lon": -113.24,
+                    "zoom": 8
+                }
+            }
+        ],
+        "gsd": [
+            375
+        ],
+        "Bright_ti4": {
+            "minimum": 250,
+            "maximum": 400
+        },
+        "Bright_ti5": {
+            "minimum": 250,
+            "maximum": 400
+        },
+        "confidence": {
+            "minimum": 0,
+            "maximum": 2
+        },
+        "line_number": {
+            "minimum": 1,
+            "maximum": 110000
+        }
+    }
+}
