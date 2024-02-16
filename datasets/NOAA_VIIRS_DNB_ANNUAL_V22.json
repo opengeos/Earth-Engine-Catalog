@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "NOAA/VIIRS/DNB/ANNUAL_V21",
+    "id": "NOAA/VIIRS/DNB/ANNUAL_V22",
     "stac_version": "1.0.0",
-    "description": "Annual global VIIRS nighttime lights dataset is a time series produced from\nmonthly cloud-free average radiance grids spanning 2013 to 2021.\nData for 2022 are available in the\n[NOAA/VIIRS/DNB/ANNUAL_V22](NOAA_VIIRS_DNB_ANNUAL_V22) dataset.\n\nAn initial filtering step removed sunlit, moonlit and cloudy pixels,\nleading to rough composites that contains lights, fires, aurora and\nbackground. The rough annual composites are made on monthly increments and\nthen combined to form rough annual composites.\n\nThe subsequent steps uses the twelve-month median radiance to discard high\nand low radiance outliers, filtering out most fires and isolating the\nbackground. Background areas are zeroed out using the data range (DR)\ncalculated from 3x3 grid cells. The DR threshold for background is indexed\nto cloud-cover levels, with higher DR thresholds in areas having low numbers\nof cloud-free coverages.\n\nNote: 2012 data are not yet included because of differences in processing.\n(A) 201204-201212, and (B) 201204-201303. Only set (B) has masked median\nand average bands which doesn't follow the pattern there in other year\ndatasets.\n",
+    "description": "Annual global VIIRS nighttime lights dataset is a time series produced from\nmonthly cloud-free average radiance grids for 2022. Data for earlier\nyears are available in the\n[NOAA/VIIRS/DNB/ANNUAL_V21](NOAA_VIIRS_DNB_ANNUAL_V21) dataset.\n\nAn initial filtering step removed sunlit, moonlit and cloudy pixels,\nleading to rough composites that contains lights, fires, aurora and\nbackground. The rough annual composites are made on monthly increments and\nthen combined to form rough annual composites.\n\nThe subsequent steps uses the twelve-month median radiance to discard high\nand low radiance outliers, filtering out most fires and isolating the\nbackground. Background areas are zeroed out using the data range (DR)\ncalculated from 3x3 grid cells. The DR threshold for background is indexed\nto cloud-cover levels, with higher DR thresholds in areas having low numbers\nof cloud-free coverages.\n",
     "links": [
         {
             "rel": "root",
@@ -12,24 +12,24 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_VIIRS_DNB_ANNUAL_V21",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_VIIRS_DNB_ANNUAL_V22",
             "type": "text/html",
-            "title": "Run the example for NOAA/VIIRS/DNB/ANNUAL_V21 in the Earth Engine Code Editor",
+            "title": "Run the example for NOAA/VIIRS/DNB/ANNUAL_V22 in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_VIIRS_DNB_ANNUAL_V21_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_VIIRS_DNB_ANNUAL_V22_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_DNB_ANNUAL_V21#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_DNB_ANNUAL_V22#terms-of-use",
             "type": "text/html"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_VIIRS_DNB_ANNUAL_V21.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_VIIRS_DNB_ANNUAL_V22.json",
             "type": "application/json"
         },
         {
@@ -53,8 +53,8 @@
     "gee:type": "image_collection",
     "sci:citation": "Elvidge, C.D, Zhizhin, M., Ghosh T., Hsu FC, Taneja J. Annual time series of\nglobal VIIRS nighttime lights derived from monthly averages:2012 to 2019.\nRemote Sensing 2021, 13(5), p.922, doi:10.3390/rs13050922\n[doi:10.3390/rs13050922](https://doi.org/10.3390/rs13050922)\n",
     "sci:doi": "10.3390/rs13050922",
-    "version": "V2.1",
-    "title": "VIIRS Nighttime Day/Night Annual Band Composites V2.1",
+    "version": "V2.2",
+    "title": "VIIRS Nighttime Day/Night Annual Band Composites V2.2",
     "extent": {
         "spatial": {
             "bbox": [
@@ -70,7 +70,7 @@
             "interval": [
                 [
                     "2012-04-01T00:00:00Z",
-                    "2021-01-01T00:00:00Z"
+                    "2022-01-01T00:00:00Z"
                 ]
             ]
         }
@@ -100,7 +100,7 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_DNB_ANNUAL_V21"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_DNB_ANNUAL_V22"
         }
     ],
     "summaries": {
