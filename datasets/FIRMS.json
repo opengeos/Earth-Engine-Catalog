@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "FIRMS",
     "stac_version": "1.0.0",
-    "description": "The Earth Engine version of the Fire Information for Resource Management\nSystem (FIRMS) dataset contains the LANCE fire detection product in\nrasterized form. The near real-time (NRT) active fire locations are\nprocessed by LANCE using the standard MODIS MOD14/MYD14 Fire and Thermal\nAnomalies product. Each active fire location represents the centroid of a\n1km pixel that is flagged by the algorithm as containing one or more fires\nwithin the pixel. The data are rasterized as follows: for each FIRMS active\nfire point, a 1km bounding box (BB) is defined; pixels in the MODIS\nsinusoidal projection that intersect the FIRMS BB are identified; if\nmultiple FIRMS BBs intersect the same pixel, the one with higher confidence\nis retained; in case of a tie, the brighter one is retained.\n\nThe data in the near-real-time dataset are not considered to be of science\nquality.\n\nAdditional information can be found [here](https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/about-firms).\n",
+    "description": "The Earth Engine version of the Fire Information for Resource Management\nSystem (FIRMS) dataset contains the LANCE fire detection product in\nrasterized form. The near real-time (NRT) active fire locations are\nprocessed by LANCE using the standard MODIS MOD14/MYD14 Fire and Thermal\nAnomalies product. Each active fire location represents the centroid of a\n1km pixel that is flagged by the algorithm as containing one or more fires\nwithin the pixel. The data are rasterized as follows: for each FIRMS active\nfire point, a 1km bounding box (BB) is defined; pixels in the MODIS\nsinusoidal projection that intersect the FIRMS BB are identified; if\nmultiple FIRMS BBs intersect the same pixel, the one with higher confidence\nis retained; in case of a tie, the brighter one is retained.\n\nThe data in the near-real-time dataset are not considered to be of science\nquality.\n\nAdditional information can be found [here](https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/about-firms).\n\nNOTE: VIIRS FIRMS datasets from NOAA20 and SUOMI are also available:\n\n* [NASA/LANCE/NOAA20_VIIRS/C2](NASA_LANCE_NOAA20_VIIRS_C2)\n* [NASA/LANCE/SNPP_VIIRS/C2](NASA_LANCE_SNPP_VIIRS_C2)\n",
     "links": [
         {
             "rel": "root",
@@ -72,7 +72,7 @@
             "interval": [
                 [
                     "2000-11-01T00:00:00Z",
-                    "2024-02-13T00:00:00Z"
+                    "2024-02-14T00:00:00Z"
                 ]
             ]
         }

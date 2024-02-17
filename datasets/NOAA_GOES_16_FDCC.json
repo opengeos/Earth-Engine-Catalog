@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "NOAA/GOES/16/FDCC",
     "stac_version": "1.0.0",
-    "description": "[GOES](https://www.goes.noaa.gov) satellites are geostationary weather satellites run by NOAA.\n\nThe Fire (HSC) product contains four images: one in the form\nof a fire mask and the other three with pixel values identifying fire temperature, fire area,\nand fire radiative power.\n\nThe ABI L2+ FHS metadata mask assigns a flag to every earth-navigated pixel\nthat indicates its disposition with respect to the FHS algorithm. Operational users who have\nthe lowest tolerance for false alarms should focus on the \"processed\" and\n\"saturated\" categories (mask codes 10, 11, 30, and 31), but within these categories there\ncan still be false alarms.\n\n[README](https://www.ncdc.noaa.gov/data-access/satellite-data/goes-r-series-satellites#FDC)\n\nNOAA provides the following scripts for suggested categories,\ncolor maps, and visualizations:\n\n - [GOES-16-17_FireDetection.js](https://github.com/google/earthengine-community/blob/master/datasets/scripts/GOES-16-17_FireDetection.js)\n - [GOES-16-17_FireReclassification.js](https://github.com/google/earthengine-community/blob/master/datasets/scripts/GOES-16-17_FireReclassification.js)\n\nNOAA's Office of Satellite and Product Operations has a\n[General Satellite Messages](https://www.ospo.noaa.gov/Operations/messages.html)\nchannel with status updates.\n",
+    "description": "[GOES](https://www.goes.noaa.gov) satellites are geostationary weather satellites run by NOAA.\n\nThe Fire (HSC) product contains four images: one in the form\nof a fire mask and the other three with pixel values identifying fire temperature, fire area,\nand fire radiative power.\n\nThe ABI L2+ FHS metadata mask assigns a flag to every earth-navigated pixel\nthat indicates its disposition with respect to the FHS algorithm. Operational users who have\nthe lowest tolerance for false alarms should focus on the \"processed\" and\n\"saturated\" categories (mask codes 10, 11, 30, and 31), but within these categories there\ncan still be false alarms.\n\n[README](https://www.ncei.noaa.gov/products/satellite/goes-r)\n\nNOAA provides the following scripts for suggested categories,\ncolor maps, and visualizations:\n\n - [GOES-16-17_FireDetection.js](https://github.com/google/earthengine-community/blob/master/datasets/scripts/GOES-16-17_FireDetection.js)\n - [GOES-16-17_FireReclassification.js](https://github.com/google/earthengine-community/blob/master/datasets/scripts/GOES-16-17_FireReclassification.js)\n\nNOAA's Office of Satellite and Product Operations has a\n[General Satellite Messages](https://www.ospo.noaa.gov/Operations/messages.html)\nchannel with status updates.\n",
     "links": [
         {
             "rel": "root",
@@ -77,7 +77,7 @@
             "interval": [
                 [
                     "2017-05-24T00:00:00Z",
-                    "2024-02-15T22:21:17Z"
+                    "2024-02-16T22:21:17Z"
                 ]
             ]
         }
