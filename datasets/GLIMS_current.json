@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "GLIMS/current",
     "stac_version": "1.0.0",
-    "description": "Global Land Ice Measurements from Space (GLIMS) is\nan international initiative with the goal of repeatedly surveying\nthe world's estimated 200,000 glaciers.\n\nThe project seeks\nto create a globally comprehensive inventory of land ice, including\nmeasurements of glacier area, geometry, surface velocity, and\nsnow line elevation. To perform these analyses, the GLIMS project\nuses satellite data, primarily from the Advanced Spaceborne Thermal\nEmission and Reflection Radiometer (ASTER) and the Landsat Enhanced\nThematic Mapper Plus (ETM+), as well as historical information\nderived from maps and aerial photographs.\n\nEach feature in this dataset is a polygonal boundary of a glacier at the\ntime of analysis.  A few glacier IDs have hundreds of distinct rows over\ntime.\n\nThis dataset is a snapshot of the inventory of glacier boundaries as of\nSeptember 14, 2021, providing over 690,000 rows.\n",
+    "description": "Global Land Ice Measurements from Space (GLIMS) is\nan international initiative with the goal of repeatedly surveying\nthe world's estimated 200,000 glaciers.\n\nThe project seeks\nto create a globally comprehensive inventory of land ice, including\nmeasurements of glacier area, geometry, surface velocity, and\nsnow line elevation. To perform these analyses, the GLIMS project\nuses satellite data, primarily from the Advanced Spaceborne Thermal\nEmission and Reflection Radiometer (ASTER) and the Landsat Enhanced\nThematic Mapper Plus (ETM+), as well as historical information\nderived from maps and aerial photographs.\n\nEach feature in this dataset is a polygonal boundary of a glacier at the\ntime of analysis.  A few glacier IDs have hundreds of distinct rows over\ntime.\n\nThis dataset is a snapshot of the inventory of glacier boundaries as of\nJune 7, 2023, providing over 1,100,000 rows.\n",
     "links": [
         {
             "rel": "root",
@@ -36,19 +36,19 @@
         },
         {
             "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GLIMS/GLIMS_20230607.json",
+            "type": "application/json",
+            "title": "GLIMS/20230607"
+        },
+        {
+            "rel": "predecessor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/GLIMS/GLIMS_20210914.json",
             "type": "application/json",
             "title": "GLIMS/20210914"
         },
         {
-            "rel": "predecessor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GLIMS/GLIMS_20171027.json",
-            "type": "application/json",
-            "title": "GLIMS/20171027"
-        },
-        {
             "rel": "source",
-            "href": "https://www.glims.org/download/glims_db_20210914.zip"
+            "href": "https://daacdata.apps.nsidc.org/pub/DATASETS/nsidc0272_GLIMS_v1/"
         },
         {
             "rel": "cite-as",
@@ -73,7 +73,7 @@
     "gee:terms_of_use": "For the creation of any reports, publications, new\ndata sets, derived products, or services resulting from the data\nset, users should cite: GLIMS and NSIDC (2005, updated 2013): Global\nLand Ice Measurements from Space glacier database.  Compiled and\nmade available by the international GLIMS community and the National\nSnow and Ice Data Center, Boulder CO, U.S.A.,\n[doi:10.7265/N5V98602](https://doi.org/10.7265/N5V98602)\n",
     "gee:type": "table",
     "sci:doi": "10.7265/N5V98602",
-    "version": "20210914",
+    "version": "20230607",
     "title": "GLIMS Current: Global Land Ice Measurements From Space",
     "extent": {
         "spatial": {
@@ -90,7 +90,7 @@
             "interval": [
                 [
                     "1750-01-01T00:00:00Z",
-                    "2019-07-18T00:00:00Z"
+                    "2023-06-07T00:00:00Z"
                 ]
             ]
         }
