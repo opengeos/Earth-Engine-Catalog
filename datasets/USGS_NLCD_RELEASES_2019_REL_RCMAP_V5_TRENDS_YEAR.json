@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "USGS/NLCD_RELEASES/2019_REL/RCMAP/V5/TRENDS_YEAR",
     "stac_version": "1.0.0",
-    "description": "This collection includes RCMAP yearly products from 1985 through 2021.\n\nThe RCMAP product suite includes nine fractional components: annual\nherbaceous, bare ground, herbaceous, litter, non-sagebrush shrub, perennial\nherbaceous, sagebrush, shrub, and tree. It also includes rule-based error\nmaps and the temporal trends of each component. Data characterize the\npercentage of each 30-meter pixel in the Western United States covered by\neach component for each year from 1985-2021, providing change information\nfor 36 years.\n\nThe temporal patterns in each RCMAP component are assessed with two\napproaches:\n1) linear trends and 2) a breaks and stable states method with an 8-year\ntemporal moving window based on structural change at the pixel level.\nLinear trend products include slope and p-value calculated from least\nsquares linear regression. The slope represents the average percent cover\nchange per year over the time series and the p-value reflects the\nconfidence of change in each pixel. The structural change method partitions\nthe time series into segments of similar slope values, with statistically\nsignificant break-points indicating perturbations to the prior trajectory.\nThe break point trends analysis suite relies on structural break methods,\nresulting in the identification of the number and timing of breaks in the\nfollowing statistics are produced: 1) for each component, each year, the\npresence/absence of breaks, 2) the slope, p-value, and standard error of\nthe segment occurring in each year, 3) the overall model R2 (quality of\nmodel fit to the temporal profile), and 4) an index, Total Change Intensity.\nThis index reflects the total amount of change occurring across components\nin that pixel. The linear and structural change methods generally agreed on\npatterns of change, but the latter found breaks more often, with at least\none break point in most pixels. The structural change model provides more\nrobust statistics on the significant minority of pixels with non-monotonic\ntrends, while detrending some interannual signal potentially superfluous\nfrom a long-term perspective.\n",
+    "description": "This collection includes RCMAP yearly products from 1985 through 2021. The RCMAP product suite includes nine fractional components: annual\nherbaceous, bare ground, herbaceous, litter, non-sagebrush shrub, perennial\nherbaceous, sagebrush, shrub, and tree. It also includes rule-based error\nmaps and the temporal trends of each component. Data characterize the\npercentage of each 30-meter pixel in the Western United States covered by\neach component for each year from 1985-2021, providing change information\nfor 36 years.\n\nThe temporal patterns in each RCMAP component are assessed with two\napproaches:\n1) linear trends and 2) a breaks and stable states method with an 8-year\ntemporal moving window based on structural change at the pixel level.\nLinear trend products include slope and p-value calculated from least\nsquares linear regression. The slope represents the average percent cover\nchange per year over the time series and the p-value reflects the\nconfidence of change in each pixel. The structural change method partitions\nthe time series into segments of similar slope values, with statistically\nsignificant break-points indicating perturbations to the prior trajectory.\nThe break point trends analysis suite relies on structural break methods,\nresulting in the identification of the number and timing of breaks in the\nfollowing statistics are produced: 1) for each component, each year, the\npresence/absence of breaks, 2) the slope, p-value, and standard error of\nthe segment occurring in each year, 3) the overall model R2 (quality of\nmodel fit to the temporal profile), and 4) an index, Total Change Intensity.\nThis index reflects the total amount of change occurring across components\nin that pixel. The linear and structural change methods generally agreed on\npatterns of change, but the latter found breaks more often, with at least\none break point in most pixels. The structural change model provides more\nrobust statistics on the significant minority of pixels with non-monotonic\ntrends, while detrending some interannual signal potentially superfluous\nfrom a long-term perspective.\n",
     "links": [
         {
             "rel": "root",
@@ -44,6 +44,7 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "deprecated": true,
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -63,8 +64,8 @@
             "doi": "10.3390/rs13040813"
         }
     ],
-    "version": "V5",
-    "title": "RCMAP Rangeland Trends Year for Component Timeseries V5 (1985-2021)",
+    "version": "v05",
+    "title": "RCMAP Rangeland Trends Year for Component Timeseries (1985-2021), v05 [deprecated]",
     "extent": {
         "spatial": {
             "bbox": [
@@ -103,6 +104,13 @@
                 "producer"
             ],
             "url": "https://www.mrlc.gov/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_NLCD_RELEASES_2019_REL_RCMAP_V5_TRENDS_YEAR"
         },
         {
             "name": "Google Earth Engine",

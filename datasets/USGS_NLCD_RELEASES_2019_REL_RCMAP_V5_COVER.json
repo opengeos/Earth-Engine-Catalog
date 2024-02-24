@@ -44,6 +44,7 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "deprecated": true,
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -53,8 +54,8 @@
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
     "sci:citation": "\nRigge, M.B., Bunde, B., Postma, K., Shi, H., 2022, Rangeland Condition\nMonitoring Assessment and Projection (RCMAP) Fractional Component\nTime-Series Across the Western U.S. 1985-2021: U.S. Geological Survey data\nrelease.\n[doi:10.5066/P9ODAZHC](https://doi.org/10.5066/P9ODAZHC)\n",
-    "version": "v5",
-    "title": "RCMAP Rangeland Component Timeseries v5 (1985-2021)",
+    "version": "v05",
+    "title": "RCMAP Rangeland Component Timeseries (1985-2021), v05 [deprecated]",
     "extent": {
         "spatial": {
             "bbox": [
@@ -92,6 +93,13 @@
                 "producer"
             ],
             "url": "https://www.mrlc.gov/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_NLCD_RELEASES_2019_REL_RCMAP_V5_COVER"
         },
         {
             "name": "Google Earth Engine",
