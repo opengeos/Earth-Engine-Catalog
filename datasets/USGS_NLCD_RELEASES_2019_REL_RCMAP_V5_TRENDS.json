@@ -28,18 +28,6 @@
             "type": "text/html"
         },
         {
-            "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2023_REL_RCMAP_V6_TRENDS.json",
-            "type": "application/json",
-            "title": "USGS/NLCD_RELEASES/2023_REL/RCMAP/V6/TRENDS"
-        },
-        {
-            "rel": "successor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2023_REL_RCMAP_V6_TRENDS.json",
-            "type": "application/json",
-            "title": "USGS/NLCD_RELEASES/2023_REL/RCMAP/V6/TRENDS"
-        },
-        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2019_REL_RCMAP_V5_TRENDS.json",
             "type": "application/json"
@@ -56,7 +44,6 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:terms_of_use": "This work was authored as part of the Contributor's official duties as an\nEmployee of the United States Government and is therefore a work of the\nUnited States Government. In accordance with 17 U.S.C. 105, no copyright\nprotection is available for such works under U.S. Law. This is an Open\nAccess article that has been identified as being free of known restrictions\nunder copyright law, including all related and neighboring rights\n(https://creativecommons.org/publicdomain/mark/1.0/). You can copy, modify,\ndistribute and perform the work, even for commercial purposes, all without\nasking permission.\n",
     "gee:type": "image",
     "gee:user_uploaded": true,
@@ -76,7 +63,7 @@
         }
     ],
     "version": "v05",
-    "title": "RCMAP Rangeland Component Timeseries Trends (1985-2021), v05 [deprecated]",
+    "title": "RCMAP Rangeland Component Timeseries Trends (1985-2021), v05",
     "extent": {
         "spatial": {
             "bbox": [

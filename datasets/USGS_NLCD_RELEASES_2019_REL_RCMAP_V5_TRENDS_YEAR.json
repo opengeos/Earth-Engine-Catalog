@@ -28,18 +28,6 @@
             "type": "text/html"
         },
         {
-            "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2023_REL_RCMAP_V6_TRENDS_YEAR.json",
-            "type": "application/json",
-            "title": "USGS/NLCD_RELEASES/2023_REL/RCMAP/V6/TRENDS_YEAR"
-        },
-        {
-            "rel": "successor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2023_REL_RCMAP_V6_TRENDS_YEAR.json",
-            "type": "application/json",
-            "title": "USGS/NLCD_RELEASES/2023_REL/RCMAP/V6/TRENDS_YEAR"
-        },
-        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2019_REL_RCMAP_V5_TRENDS_YEAR.json",
             "type": "application/json"
@@ -56,7 +44,6 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -81,7 +68,7 @@
         }
     ],
     "version": "v05",
-    "title": "RCMAP Rangeland Trends Year for Component Timeseries (1985-2021), v05 [deprecated]",
+    "title": "RCMAP Rangeland Trends Year for Component Timeseries (1985-2021), v05",
     "extent": {
         "spatial": {
             "bbox": [

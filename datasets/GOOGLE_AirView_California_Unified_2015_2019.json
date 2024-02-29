@@ -1,0 +1,236 @@
+{
+    "type": "Collection",
+    "id": "GOOGLE/AirView/California_Unified_2015_2019",
+    "stac_version": "1.0.0",
+    "description": "This large vector dataset contains high resolution air pollution mapping of\nNO, NO2, O3, CH4, CO2, BC, PN2.5, and UFP concentrations in California\nbetween June 2015 and June 2019.\n\nThe dataset consists of measurements collected using four Google Street View\nvehicles equipped with the Aclima mobile measurement and data integration\nplatform from 2015-05-28 to 2019-06-07.  Not all four cars were actively\nmapping over the entire time frame.  Note that there may be gaps in the data\nwhen an individual car was not mapping due to operational, mechanical, or\nsystem difficulties.\n\nDates of operation for each of the four cars:\n\n* Car A: 2016-05-03 - 2019-04-30\n* Car B: 2016-05-03 - 2018-06-08\n* Car C: 2015-05-28 - 2019-06-07\n* Car D: 2015-06-24 - 2018-11-05\n\nData was collected in several geographic regions of California including the\nSan Francisco Bay Area, Los Angeles, and the northern San Joaquin Valley.\nMapping occurred in targeted neighborhoods or cities within these regions. \nThe data set contains a table titled \"California_Unified_2015_2019\" which\nconsists of the concentration of the pollutants Ozone (O3), Nitrogen Dioxide\n(NO2), Nitrogen Monoxide (NO), Methane (CH4), Carbon Dioxide (CO2),\nBlack Carbon (BC), particle number less than 2.5 micrometers in size\n(PN2.5), and Ultrafine Particles (UFP)  measured using four Google Street\nView cars equipped with fast time-response, laboratory-grade instruments.\nThe data was collected at 1-Hz time resolution from 20150528 to 20190607 for\nroads in three regions of California - the San Francisco Bay area,\nLos Angeles, and the northern San Joaquin Valley.  Specific areas mapped\nvaried by region based on desired spatial data coverage and science\nquestions.  Each data point is geolocated with latitude and longitude as\nwell as the identity and speed of the car.\n\nFor details including methodologies, standards, data providers,\nmetadata field definitions and descriptions, refer to the\n[metadata](https://docs.google.com/document/d/1If15JccoJcN01Jg3ljN3V-qUFS0HywKAd4OsQ-_JXJo/view).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/GOOGLE/GOOGLE_AirView_California_Unified_2015_2019",
+            "type": "text/html",
+            "title": "Run the example for GOOGLE/AirView/California_Unified_2015_2019 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/GOOGLE/GOOGLE_AirView_California_Unified_2015_2019_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_AirView_California_Unified_2015_2019#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GOOGLE/GOOGLE_AirView_California_Unified_2015_2019.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GOOGLE/catalog.json",
+            "type": "application/json",
+            "title": "GOOGLE"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:skip_featureview_generation": true,
+    "gee:terms_of_use": "[CC-BY-NC-4.0](https://spdx.org/licenses/CC-BY-NC-4.0.html)",
+    "gee:type": "table",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true,
+    "sci:citation": "Attribution: Every instance where the data is used must include a notice\nwith the text \"Air Quality Data from Google and Aclima\"\n\nCitation for publications: Google and Aclima 2019: Project Air View California 2015-2019\n",
+    "version": "1",
+    "title": "Google Street View Air Quality: High Resolution Air Pollution Mapping in California",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-05-28T00:00:00Z",
+                    "2019-06-07T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-NC-4.0",
+    "keywords": [
+        "air_quality",
+        "nitrogen_dioxide",
+        "pollution"
+    ],
+    "providers": [
+        {
+            "name": "Google / Aclima",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://medium.com/google-earth/powering-new-research-with-hyperlocal-air-pollution-data-c9947359e87e"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_AirView_California_Unified_2015_2019"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Black carbon concentration",
+                "name": "BC",
+                "type": "DOUBLE",
+                "units": "&mu;g/m&sup3"
+            },
+            {
+                "description": "Methane dry air mixing ratio",
+                "name": "CH4",
+                "type": "DOUBLE",
+                "units": "ppm"
+            },
+            {
+                "description": "Carbon dioxide mixing ratio",
+                "name": "CO2",
+                "type": "DOUBLE",
+                "units": "ppm"
+            },
+            {
+                "description": "Unique identifier for the four vehicles (Car_A/B/C/D)",
+                "name": "Car_Identifier",
+                "type": "STRING"
+            },
+            {
+                "description": "Car speed",
+                "name": "Car_Speed",
+                "type": "DOUBLE",
+                "units": "m/s"
+            },
+            {
+                "description": "Time in UTC, format YYYY-MM-DD hh:mm:ss",
+                "name": "Date_Time",
+                "type": "STRING"
+            },
+            {
+                "description": " Link to the document",
+                "name": "Metadata_Link",
+                "type": "STRING"
+            },
+            {
+                "description": "Nitrogen monoxide mixing ratio",
+                "name": "NO",
+                "type": "DOUBLE",
+                "units": "ppb"
+            },
+            {
+                "description": "Nitrogen dioxide mixing ratio",
+                "name": "NO2",
+                "type": "DOUBLE",
+                "units": "ppb"
+            },
+            {
+                "description": "Boolean flag indicating the measured value was higher than the\noperating range of the instrument's specification. This field can\nbe empty.\n",
+                "name": "NO2_Overrange",
+                "type": "STRING"
+            },
+            {
+                "description": "Boolean flag indicating the measured value was higher than the\noperating range of the instrument's specification. This field can\nbe empty.\n",
+                "name": "NO_Overrange",
+                "type": "STRING"
+            },
+            {
+                "description": "Ozone mixing ratio",
+                "name": "O3",
+                "type": "DOUBLE",
+                "units": "ppb"
+            },
+            {
+                "description": "Particle number concentration between 0.3 and 0.5 &mu;m",
+                "name": "PN1",
+                "type": "DOUBLE",
+                "units": "count"
+            },
+            {
+                "description": "Particle number concentration between 0.5 and 0.7 &mu;m",
+                "name": "PN2",
+                "type": "DOUBLE",
+                "units": "count"
+            },
+            {
+                "description": "Particle number concentration between 0.7 and 1.0 &mu;m",
+                "name": "PN3",
+                "type": "DOUBLE",
+                "units": "count"
+            },
+            {
+                "description": "Particle number concentration between 1.0 and 1.5 &mu;m",
+                "name": "PN4",
+                "type": "DOUBLE",
+                "units": "count"
+            },
+            {
+                "description": "Particle number concentration between 1.5 and 2.5 &mu;m",
+                "name": "PN5",
+                "type": "DOUBLE",
+                "units": "count"
+            },
+            {
+                "description": "Boolean flag indicating the measured value was higher than the\noperating range of the instrument's specification. This field can\nbe empty.\n",
+                "name": "PN_Overrange",
+                "type": "STRING"
+            },
+            {
+                "description": "Total particle number concentration greater than 3 nm",
+                "name": "UFP",
+                "type": "DOUBLE",
+                "units": "count"
+            },
+            {
+                "description": "Boolean flag indicating the measured value was higher than the\noperating range of the instrument's specification. This field can\nbe empty.\n",
+                "name": "UFP_Overrange",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Air Quality",
+                "lookat": {
+                    "lat": 37.7,
+                    "lon": -122.01,
+                    "zoom": 17
+                },
+                "table_visualization": {
+                    "color": "ffffff",
+                    "fill_color": "ffffff88"
+                }
+            },
+            {
+                "display_name": "Air View",
+                "visualize_as": "FeatureCollection"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 2500,
+            "thinning_strategy": "HIGHER_DENSITY"
+        }
+    }
+}
