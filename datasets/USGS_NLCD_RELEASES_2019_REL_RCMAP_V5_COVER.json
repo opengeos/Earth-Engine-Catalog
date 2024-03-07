@@ -28,6 +28,24 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2023_REL_RCMAP_V6_COVER.json",
+            "type": "application/json",
+            "title": "USGS/NLCD_RELEASES/2023_REL/RCMAP/V6/COVER"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2019_REL_RCMAP_V4_COVER.json",
+            "type": "application/json",
+            "title": "USGS/NLCD_RELEASES/2019_REL/RCMAP/V4/COVER"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2023_REL_RCMAP_V6_COVER.json",
+            "type": "application/json",
+            "title": "USGS/NLCD_RELEASES/2023_REL/RCMAP/V6/COVER"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2019_REL_RCMAP_V5_COVER.json",
             "type": "application/json"
@@ -44,6 +62,7 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "deprecated": true,
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -54,7 +73,7 @@
     "gee:user_uploaded": true,
     "sci:citation": "\nRigge, M.B., Bunde, B., Postma, K., Shi, H., 2022, Rangeland Condition\nMonitoring Assessment and Projection (RCMAP) Fractional Component\nTime-Series Across the Western U.S. 1985-2021: U.S. Geological Survey data\nrelease.\n[doi:10.5066/P9ODAZHC](https://doi.org/10.5066/P9ODAZHC)\n",
     "version": "v05",
-    "title": "RCMAP Rangeland Component Timeseries (1985-2021), v05",
+    "title": "RCMAP Rangeland Component Timeseries (1985-2021), v05 [deprecated]",
     "extent": {
         "spatial": {
             "bbox": [

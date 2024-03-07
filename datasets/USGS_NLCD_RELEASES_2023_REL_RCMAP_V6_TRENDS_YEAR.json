@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "USGS/NLCD_RELEASES/2019_REL/RCMAP/V5/TRENDS_YEAR",
+    "id": "USGS/NLCD_RELEASES/2023_REL/RCMAP/V6/TRENDS_YEAR",
     "stac_version": "1.0.0",
-    "description": "This collection includes RCMAP yearly products from 1985 through 2021. The RCMAP product suite includes nine fractional components: annual\nherbaceous, bare ground, herbaceous, litter, non-sagebrush shrub, perennial\nherbaceous, sagebrush, shrub, and tree. It also includes rule-based error\nmaps and the temporal trends of each component. Data characterize the\npercentage of each 30-meter pixel in the Western United States covered by\neach component for each year from 1985-2021, providing change information\nfor 36 years.\n\nThe temporal patterns in each RCMAP component are assessed with two\napproaches:\n1) linear trends and 2) a breaks and stable states method with an 8-year\ntemporal moving window based on structural change at the pixel level.\nLinear trend products include slope and p-value calculated from least\nsquares linear regression. The slope represents the average percent cover\nchange per year over the time series and the p-value reflects the\nconfidence of change in each pixel. The structural change method partitions\nthe time series into segments of similar slope values, with statistically\nsignificant break-points indicating perturbations to the prior trajectory.\nThe break point trends analysis suite relies on structural break methods,\nresulting in the identification of the number and timing of breaks in the\nfollowing statistics are produced: 1) for each component, each year, the\npresence/absence of breaks, 2) the slope, p-value, and standard error of\nthe segment occurring in each year, 3) the overall model R2 (quality of\nmodel fit to the temporal profile), and 4) an index, Total Change Intensity.\nThis index reflects the total amount of change occurring across components\nin that pixel. The linear and structural change methods generally agreed on\npatterns of change, but the latter found breaks more often, with at least\none break point in most pixels. The structural change model provides more\nrobust statistics on the significant minority of pixels with non-monotonic\ntrends, while detrending some interannual signal potentially superfluous\nfrom a long-term perspective.\n",
+    "description": "This collection includes RCMAP yearly products from 1985 through 2023. The RCMAP (Rangeland Condition Monitoring Assessment and Projection)\ndataset quantifies the percent cover of rangeland components across\nwestern North America using Landsat imagery from 1985-2023. The RCMAP\nproduct suite consists of ten fractional components: annual herbaceous,\nbare ground, herbaceous, litter, non-sagebrush shrub, perennial herbaceous,\nsagebrush, shrub, tree, and shrub height in addition to the temporal\ntrends of each component. Several enhancements were made to the RCMAP\nprocess relative to prior generations. First, high-resolution training\nwas revised using an improved neural-net classifier and modelling approach.\nThese data serve as foundation to the RCMAP approach. The training\ndatabase was further improved by incorporating additional datasets. Next,\nthe Landsat compositing approach was improved to better capture the range\nof conditions from across each year and through time. These composites are\nbased on Collection 2 Landsat data with improved geolocation accuracy and\ndynamic range. Finally, the Canadian portion of the sagebrush biome was\nincluded, which expanded the study area by 29,199 km2.\n\nProcessing efficiency has been increased using open-source software and\nUSGS High-Performance Computing (HPC) resources. The mapping area included\neight regions which were subsequently mosaicked. These data can be used to\nanswer critical questions regarding the influence of climate change and\nthe suitability of management practices. Component products can be\ndownloaded at\n[Multi-Resolution Land Characteristics Consortium](https://www.mrlc.gov/data).\n\nThe temporal patterns were assessed in each RCMAP component with two\napproaches, 1) linear trends and 2) a breaks and stable states method\nwith an 8-year temporal moving window based on structural change at the\npixel level. Linear trend products include slope and p-value calculated\nfrom least squares linear regression. The slope represents the average\npercent cover change per year over the times-series and the p-value\nreflects the confidence of change in each pixel. The structural change\nmethod partitions the time-series into segments of similar slope values,\nwith statistically significant breakpoints indicating perturbations to the\nprior trajectory. The break point trends analysis suite relies on\nstructural break methods, resulting in the identification of the number\nand timing of breaks in the time-series, and the significance of each\nsegment. The following statistics were produced: 1) for each component,\neach year, the presence/absence of breaks, 2) the slope, p-value, and\nstandard error of the segment occurring in each year, 3) the overall\nmodel R2 (quality of model fit to the temporal profile), and 4) an index,\nTotal Change Intensity. This index reflects the total amount of change\noccurring across components in that pixel. The linear and structural\nchange methods generally agreed on patterns of change, but the latter\nfound breaks more often, with at least one break point in most pixels.\nThe structural change model provides more robust statistics on the\nsignificant minority of pixels with non-monotonic trends, while\ndetrending some interannual signal potentially superfluous from a\nlong-term perspective.\n",
     "links": [
         {
             "rel": "root",
@@ -12,19 +12,19 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/USGS/USGS_NLCD_RELEASES_2019_REL_RCMAP_V5_TRENDS_YEAR",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/USGS/USGS_NLCD_RELEASES_2023_REL_RCMAP_V6_TRENDS_YEAR",
             "type": "text/html",
-            "title": "Run the example for USGS/NLCD_RELEASES/2019_REL/RCMAP/V5/TRENDS_YEAR in the Earth Engine Code Editor",
+            "title": "Run the example for USGS/NLCD_RELEASES/2023_REL/RCMAP/V6/TRENDS_YEAR in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/USGS_NLCD_RELEASES_2019_REL_RCMAP_V5_TRENDS_YEAR_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/USGS_NLCD_RELEASES_2023_REL_RCMAP_V6_TRENDS_YEAR_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/USGS_NLCD_RELEASES_2019_REL_RCMAP_V5_TRENDS_YEAR#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/USGS_NLCD_RELEASES_2023_REL_RCMAP_V6_TRENDS_YEAR#terms-of-use",
             "type": "text/html"
         },
         {
@@ -34,14 +34,14 @@
             "title": "USGS/NLCD_RELEASES/2023_REL/RCMAP/V6/TRENDS_YEAR"
         },
         {
-            "rel": "successor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2023_REL_RCMAP_V6_TRENDS_YEAR.json",
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2019_REL_RCMAP_V5_TRENDS_YEAR.json",
             "type": "application/json",
-            "title": "USGS/NLCD_RELEASES/2023_REL/RCMAP/V6/TRENDS_YEAR"
+            "title": "USGS/NLCD_RELEASES/2019_REL/RCMAP/V5/TRENDS_YEAR"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2019_REL_RCMAP_V5_TRENDS_YEAR.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2023_REL_RCMAP_V6_TRENDS_YEAR.json",
             "type": "application/json"
         },
         {
@@ -56,7 +56,6 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -65,8 +64,12 @@
     "gee:terms_of_use": "This work was authored as part of the Contributor's official duties as an\nEmployee of the United States Government and is therefore a work of the\nUnited States Government. In accordance with 17 U.S.C. 105, no copyright\nprotection is available for such works under U.S. Law. This is an Open\nAccess article that has been identified as being free of known restrictions\nunder copyright law, including all related and neighboring rights\n(https://creativecommons.org/publicdomain/mark/1.0/). You can copy, modify,\ndistribute and perform the work, even for commercial purposes, all without\nasking permission.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
-    "sci:citation": "Rigge, M.B., Bunde, B., Postma, K., Shi, H., 2022, Rangeland Condition\nMonitoring Assessment and Projection (RCMAP) Fractional Component\nTime-Series Across the Western U.S. 1985-2021: U.S. Geological Survey data\nrelease.\n[doi:10.5066/P9ODAZHC](https://doi.org/10.5066/P9ODAZHC)\n",
+    "sci:citation": "Rigge, M.B., Bunde, B., Postma, K., and Shi, H., 2024,\nRangeland Condition Monitoring Assessment and Projection (RCMAP)\nFractional Component Time-Series Across the Western U.S. 1985-2023:\nU.S. Geological Survey data release,\n[doi:10.5066/P9SJXUI1](https://doi.org/10.5066/P9SJXUI1).\n",
     "sci:publications": [
+        {
+            "citation": "Rigge, M., H. Shi, C. Homer, P. Danielson, and B. Granneman. 2019.\nLong-term trajectories of fractional component change in the Northern\nGreat Basin, USA. Ecosphere 10(6):e02762.\n[doi:10.1002/ecs2.2762](https://doi.org/10.1002/ecs2.2762)\n",
+            "doi": "10.1002/ecs2.2762"
+        },
         {
             "citation": "Rigge, M., C. Homer, L. Cleeves, D. K. Meyer, B. Bunde, H. Shi, G. Xian,\nS. Schell, and M. Bobo. 2020. Quantifying western U.S. rangelands as\nfractional components with multi-resolution remote sensing and in situ\ndata. Remote Sensing 12.\n[doi:10.3390/rs12030412](https://doi.org/10.3390/rs12030412)\n",
             "doi": "10.3390/rs12030412"
@@ -76,16 +79,16 @@
             "doi": "10.3390/rs13040813"
         }
     ],
-    "version": "v05",
-    "title": "RCMAP Rangeland Trends Year for Component Timeseries (1985-2021), v05 [deprecated]",
+    "version": "v06",
+    "title": "RCMAP Rangeland Trends Year for Component Timeseries  (1985-2023), v06",
     "extent": {
         "spatial": {
             "bbox": [
                 [
-                    -125.068,
-                    28.459,
-                    -101.074,
-                    49.325
+                    -128.0026,
+                    26.5157,
+                    -99.6758,
+                    51.5761
                 ]
             ]
         },
@@ -93,7 +96,7 @@
             "interval": [
                 [
                     "1985-01-01T00:00:00Z",
-                    "2022-01-01T00:00:00Z"
+                    "2023-12-31T00:00:00Z"
                 ]
             ]
         }
@@ -105,8 +108,7 @@
         "landsat_derived",
         "nlcd",
         "rangeland",
-        "trends",
-        "usgs"
+        "trends"
     ],
     "providers": [
         {
@@ -122,14 +124,14 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_NLCD_RELEASES_2019_REL_RCMAP_V5_TRENDS_YEAR"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_NLCD_RELEASES_2023_REL_RCMAP_V6_TRENDS_YEAR"
         },
         {
             "name": "Google Earth Engine",
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_NLCD_RELEASES_2019_REL_RCMAP_V5_TRENDS_YEAR"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_NLCD_RELEASES_2023_REL_RCMAP_V6_TRENDS_YEAR"
         }
     ],
     "summaries": {
@@ -349,6 +351,18 @@
         "shrub_break_point": {
             "minimum": 0,
             "maximum": 1
+        },
+        "shrub_height_break_point": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "shrub_height_segment_pvalue": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "shrub_height_segment_slope": {
+            "minimum": -99999,
+            "maximum": 99999
         },
         "shrub_segment_pvalue": {
             "minimum": 0,
