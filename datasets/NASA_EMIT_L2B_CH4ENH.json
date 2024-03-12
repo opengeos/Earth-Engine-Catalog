@@ -1,0 +1,149 @@
+{
+    "type": "Collection",
+    "id": "NASA/EMIT/L2B/CH4ENH",
+    "stac_version": "1.0.0",
+    "description": "The EMIT Project is part of the Earth Venture-Instrument (EV-I) Program\ndirected by the Program Director of the NASA Earth Science Division (ESD).\nEMIT is comprised of a VSWIR Infrared Dyson imaging spectrometer adapted for\ninstallation on the International Space Station (ISS). EMIT measures\nradiance between 380 and 2500 nanometers, with an approximate 7 nm bandpass.\nData are collected in a swath that is approximately 75 km wide at the\nequator, with an approximate ground sampling distance of 60 m. See the\nprovider's [NASA EMIT Overview](https://lpdaac.usgs.gov/documents/1695/EMIT_L2B_GHG_User_Guide_V1.pdf)\nfor more details.\n\nEMIT was a particularly useful tool for mapping out greenhouse gases,\nincluding methane, carbon dioxide, and water vapor. This is consistent with\nprevious findings from airborne data, but global nature, revisit frequency\nand wide swath of EMIT provided an unprecedented opportunity to investigate\ngreenhouse gas retrievals.\n\nThe EMIT Level 2B Methane Enhancement Data (EMITL2BCH4ENH) Version 1 data\nproduct is a total vertical column enhancement estimate of methane in parts\nper million meter (ppm m) based on an adaptive matched filter approach.\nEMITL2BCH4ENH provides per-pixel methane enhancement data used to identify\nmethane plume complexes. The initial release of the EMITL2BCH4ENH data\nproduct will only include granules where methane plume complexes have been\nidentified.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_EMIT_L2B_CH4ENH",
+            "type": "text/html",
+            "title": "Run the example for NASA/EMIT/L2B/CH4ENH in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_EMIT_L2B_CH4ENH_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_EMIT_L2B_CH4ENH#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_EMIT_L2B_CH4ENH.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "NASA EMIT data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Green, R., Thorpe, A., Brodrick, P., Chadwick, D., Elder, C.,\nVillanueva-Weeks, C., Fahlen, J., Coleman, R., Jensen, D., Olsen-Duvall, W.,\nLundeen, S., Lopez, A., Thompson, D. (2023). EMIT L2B Methane Enhancement\nData 60 m V001 [Data set]. NASA EOSDIS Land Processes Distributed Active\nArchive Center. Accessed 2024-02-26 from\n[https://doi.org/10.5067/EMIT/EMITL2BCH4ENH.001](https://doi.org/10.5067/EMIT/EMITL2BCH4ENH.001)\n",
+    "sci:doi": "10.5067/EMIT/EMITL2BCH4ENH.001",
+    "version": "1",
+    "title": "Earth Surface Mineral Dust Source Investigation- Methane Enhancement",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-08-10T00:00:00Z",
+                    "2024-02-27T18:07:57Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "daily",
+        "emit",
+        "nasa",
+        "methane"
+    ],
+    "providers": [
+        {
+            "name": "NASA Jet Propulsion Laboratory",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://earth.jpl.nasa.gov/emit/data/data-products/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_EMIT_L2B_CH4ENH"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Total vertical column enhancement estimate of methane\n",
+                "gee:units": "ppm m",
+                "name": "vertical_column_enhancement"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Unique Orbit Identification Number",
+                "name": "orbit_identification_number",
+                "type": "STRING"
+            },
+            {
+                "description": "Unique scene identification nuber",
+                "name": "scene_identification_number",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Emit Enhancement",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "vertical_column_enhancement"
+                        ],
+                        "max": [
+                            100
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 32.04,
+                    "lon": -100.24,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            72000
+        ]
+    }
+}

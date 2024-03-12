@@ -1,0 +1,194 @@
+{
+    "type": "Collection",
+    "id": "NASA/EMIT/L2B/CH4PLM",
+    "stac_version": "1.0.0",
+    "description": "The EMIT Project is part of the Earth Venture-Instrument (EV-I) Program\ndirected by the Program Director of the NASA Earth Science Division (ESD).\nEMIT is comprised of a VSWIR Infrared Dyson imaging spectrometer adapted for\ninstallation on the International Space Station (ISS). EMIT measures\nradiance between 380 and 2500 nanometers, with an approximate 7 nm bandpass.\nData are collected in a swath that is approximately 75 km wide at the\nequator, with an approximate ground sampling distance of 60 m. See the\nprovider's [NASA EMIT Overview](https://lpdaac.usgs.gov/documents/1695/EMIT_L2B_GHG_User_Guide_V1.pdf)\nfor more details.\n\nEMIT was a particularly useful tool for mapping out greenhouse gases,\nincluding methane, carbon dioxide, and water vapor. This is consistent with\nprevious findings from airborne data, but global nature, revisit frequency\nand wide swath of EMIT provided an unprecedented opportunity to investigate\ngreenhouse gas retrievals.\n\nThe EMIT Level 2B Estimated Methane Plume Complexes (EMITL2BCH4PLM) Version\n1 data product provides estimated methane plume complexes in parts per\nmillion meter (ppm m) along with uncertainty data. The EMITL2BCH4PLM data\nproduct will only be generated where methane plume complexes have been\nidentified.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_EMIT_L2B_CH4PLM",
+            "type": "text/html",
+            "title": "Run the example for NASA/EMIT/L2B/CH4PLM in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_EMIT_L2B_CH4PLM_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_EMIT_L2B_CH4PLM#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_EMIT_L2B_CH4PLM.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "NASA EMIT data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Green, R., Thorpe, A., Brodrick, P., Chadwick, D., Elder, C.,\nVillanueva-Weeks, C., Fahlen, J., Coleman, R., Jensen, D., Olsen-Duvall, W.,\nLundeen, S., Lopez, A., Thompson, D. (2023). EMIT L2B Estimated Methane\nPlume Complexes 60 m V001 [Data set]. NASA EOSDIS Land Processes Distributed\nActive Archive Center. Accessed 2024-03-06 from\n[https://doi.org/10.5067/EMIT/EMITL2BCH4PLM.001](https://doi.org/10.5067/EMIT/EMITL2BCH4PLM.001)\n",
+    "sci:doi": "10.5067/EMIT/EMITL2BCH4PLM.001",
+    "version": "1",
+    "title": "Earth Surface Mineral Dust Source Investigation- Methane Plume Complexes",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-08-10T00:00:00Z",
+                    "2024-02-26T17:01:04Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "daily",
+        "emit",
+        "nasa",
+        "methane"
+    ],
+    "providers": [
+        {
+            "name": "NASA Jet Propulsion Laboratory",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://earth.jpl.nasa.gov/emit/data/data-products/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_EMIT_L2B_CH4PLM"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Estimated Methane plume complex.",
+                "gee:units": "ppm m",
+                "name": "methane_plume_complex"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Global Plume Identification Number",
+                "name": "global_plume_identifier",
+                "type": "STRING"
+            },
+            {
+                "description": "Uncertainity in Concentration",
+                "name": "Concentration_Uncertainty",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "DAAC Scene Names",
+                "name": "DAAC_Scene_Names",
+                "type": "STRING_LIST"
+            },
+            {
+                "description": "DAAC Scene Numbers",
+                "name": "DAAC_Scene_Numbers",
+                "type": "STRING_LIST"
+            },
+            {
+                "description": "Data Collection Identifier",
+                "name": "DCID",
+                "type": "STRING"
+            },
+            {
+                "description": "Latitute with maximum concentration",
+                "name": "Latitude_of_max_concentration",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Longitude with maximum concentration",
+                "name": "Longitude_of_max_concentration",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Maximum Plume Concentration",
+                "name": "Max_Plume_Concentration",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Unique orbit number",
+                "name": "Orbit",
+                "type": "STRING"
+            },
+            {
+                "description": "Unique Plume Identification number",
+                "name": "Plume_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "Scene FIDs",
+                "name": "Scene_FIDs",
+                "type": "STRING_LIST"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Emit Plume Complex",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "methane_plume_complex"
+                        ],
+                        "max": [
+                            100
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 39.11,
+                    "lon": 53.99,
+                    "zoom": 8
+                }
+            }
+        ],
+        "gsd": [
+            72000
+        ]
+    }
+}
