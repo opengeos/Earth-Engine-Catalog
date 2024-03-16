@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "JRC/GHSL/P2023A/GHS_BUILT_S",
     "stac_version": "1.0.0",
-    "description": "These raster datasets depict the distribution of built-up surfaces,\nexpressed in square metres per 100 m grid cell. The datasets measure:\na) the total built-up surface, and b) the built-up surface allocated to grid\ncells of predominant non-residential (NRES) use. Data are\nspatially-temporally interpolated or extrapolated from 1975 to 2030 in 5\nyear intervals.\n\nThe complete information about the GHSL main products can be\nfound in the [GHSL Data Package 2023 report]\n(https://ghsl.jrc.ec.europa.eu/documents/GHSL_Data_Package_2023.pdf?t=1683540422)\n\nThe Global Human Settlement Layer (GHSL) project is supported by the\nEuropean Commission, Joint Research Centre, and Directorate-General for\nRegional and Urban Policy.\n",
+    "description": "These raster datasets depict the distribution of built-up surfaces,\nexpressed in square metres per 100 m grid cell (except 2018 dataset which is\nin square metres per 10 m grid cell).\nThe datasets measure:\na) the total built-up surface, and b) the built-up surface allocated to grid\ncells of predominant non-residential (NRES) use. Data are\nspatially-temporally interpolated or extrapolated from 1975 to 2030 in 5\nyear intervals.\n\nThe complete information about the GHSL main products can be\nfound in the [GHSL Data Package 2023 report]\n(https://ghsl.jrc.ec.europa.eu/documents/GHSL_Data_Package_2023.pdf?t=1683540422)\n\nThe Global Human Settlement Layer (GHSL) project is supported by the\nEuropean Commission, Joint Research Centre, and Directorate-General for\nRegional and Urban Policy.\n",
     "links": [
         {
             "rel": "root",
