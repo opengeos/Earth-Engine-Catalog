@@ -1,0 +1,143 @@
+{
+    "type": "Collection",
+    "id": "WM/geoLab/geoBoundaries/600/ADM1",
+    "stac_version": "1.0.0",
+    "description": "The geoBoundaries Global Database of Political Administrative Boundaries\nDatabase is an online, open license resource of boundaries (i.e., state,\ncounty) for every country in the world. Currently 199 total entities are\ntracked, including all 195 UN member states, Greenland, Taiwan, Niue, and\nKosovo.\n\nComprehensive Global Administrative Zones (CGAZ) is a set of global\ncomposites for administrative boundaries. Disputed areas are removed and\nreplaced with polygons following US Department of State definitions. It has\nthree boundary levels ADM0, ADM1, and ADM2, clipped to international\nboundaries (US Department of State), with gaps filled between borders.\n\nThis dataset is part of CGAZ. It was ingested from\n[version 6.0.0](https://github.com/wmgeolab/geoBoundaries/tree/1289e40e366c7b320550be1ee0614a9472d572d4)\nof Global Composite Files with DBF_DATE_LAST_UPDATE=2023-09-13.\nIt shows boundaries at level \nADM1 (district-level boundaries).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WM/WM_geoLab_geoBoundaries_600_ADM1",
+            "type": "text/html",
+            "title": "Run the example for WM/geoLab/geoBoundaries/600/ADM1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/WM/WM_geoLab_geoBoundaries_600_ADM1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/WM_geoLab_geoBoundaries_600_ADM1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WM/WM_geoLab_geoBoundaries_600_ADM1_FeatureView",
+            "type": "text/html",
+            "title": "Run the example for WM/geoLab/geoBoundaries/600/ADM1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WM/WM_geoLab_geoBoundaries_600_ADM1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WM/catalog.json",
+            "type": "application/json",
+            "title": "WM"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:terms_of_use": "geoBoundaries datasets are provided under the CC BY 4.0 license, which\nallows for most commmercial, noncommercial, and academic uses. See \n[provider terms of use](https://www.geoboundaries.org/index.html#usage).\n",
+    "gee:type": "table",
+    "version": "6.0.0",
+    "title": "geoBoundaries: Political administrative boundaries at District level (ADM1), v6.0.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-01-01T01:00:00Z",
+                    "2017-12-31T16:45:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "borders",
+        "countries"
+    ],
+    "providers": [
+        {
+            "name": "William and Mary geoLab",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.geoboundaries.org/index.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/WM_geoLab_geoBoundaries_600_ADM1"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Unique country code",
+                "name": "shapeGroup",
+                "type": "STRING"
+            },
+            {
+                "description": "Administrative region name",
+                "name": "shapeName",
+                "type": "STRING"
+            },
+            {
+                "description": "Boundary type:\n\n* ADM0: Country level\n* ADM1: District level\n* ADM2: Municipality level\n\n",
+                "name": "shapeType",
+                "type": "STRING"
+            },
+            {
+                "description": "Unique ID assigned to the shape",
+                "name": "shapeID",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Country Boundaries",
+                "lookat": {
+                    "lat": 38.5,
+                    "lon": -100,
+                    "zoom": 4
+                },
+                "table_visualization": {
+                    "color": "black",
+                    "point_size": 1
+                }
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 250,
+            "thinning_ranking": [
+                "Shape_Area DESC"
+            ],
+            "thinning_strategy": "HIGHER_DENSITY"
+        }
+    }
+}
