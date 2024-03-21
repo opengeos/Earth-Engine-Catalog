@@ -28,6 +28,18 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_S2_SR_HARMONIZED.json",
+            "type": "application/json",
+            "title": "COPERNICUS/S2_SR_HARMONIZED"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_S2_SR.json",
+            "type": "application/json",
+            "title": "COPERNICUS/S2_SR"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_S2_SR_HARMONIZED.json",
             "type": "application/json"
@@ -40,7 +52,8 @@
         }
     ],
     "stac_extensions": [
-        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:interval": {
         "interval": 5,
@@ -49,6 +62,7 @@
     },
     "gee:terms_of_use": "The use of Sentinel data is governed by the [Copernicus\nSentinel Data Terms and Conditions.](https://scihub.copernicus.eu/twiki/pub/SciHubWebPortal/TermsConditions/Sentinel_Data_Terms_and_Conditions.pdf)\n",
     "gee:type": "image_collection",
+    "version": "harmonized",
     "title": "Harmonized Sentinel-2 MSI: MultiSpectral Instrument, Level-2A",
     "extent": {
         "spatial": {
@@ -65,7 +79,7 @@
             "interval": [
                 [
                     "2017-03-28T00:00:00Z",
-                    "2024-03-19T17:10:39Z"
+                    "2024-03-20T15:02:42Z"
                 ]
             ]
         }
