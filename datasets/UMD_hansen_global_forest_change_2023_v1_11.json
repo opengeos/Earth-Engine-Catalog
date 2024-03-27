@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "UMD/hansen/global_forest_change_2015",
+    "id": "UMD/hansen/global_forest_change_2023_v1_11",
     "stac_version": "1.0.0",
-    "description": "Results from time-series analysis of Landsat images in characterizing\nglobal forest extent and change.\n\nThe 'first' and 'last' bands are reference multispectral imagery from the\nfirst and last available years for Landsat spectral bands 3, 4, 5, and 7.\nReference composite imagery represents median observations from a set of\nquality-assessed growing-season observations for each of these bands.\n\nPlease see the [User Notes](https://earthenginepartners.appspot.com/science-2013-global-forest/download_v1.2.html)\nfor this Version 1.2 update, as well as the associated journal article:\nHansen, Potapov, Moore, Hancher et al. \"High-resolution global maps of\n21st-century forest cover change.\" Science 342.6160 (2013): 850-853.\n\nNote that updated versions of this data are available. The newest version,\nVersion 1.9 (produced with data through 2021), is available as\nUMD/hansen/global_forest_change_2021_v1_9.\n",
+    "description": "Results from time-series analysis of Landsat images in characterizing\nglobal forest extent and change.\n\nThe 'first' and 'last' bands are reference multispectral imagery from the\nfirst and last available years for Landsat spectral bands corresponding to\nred, NIR, SWIR1, and SWIR2.  Reference composite imagery represents median\nobservations from a set of quality-assessed growing-season observations for\neach of these bands.\n\nPlease see the [User Notes](https://storage.googleapis.com/earthenginepartners-hansen/GFC-2023-v1.11/download.html)\nfor this Version 1.11 update, as well as the associated journal article:\nHansen, Potapov, Moore, Hancher et al. \"High-resolution global maps of\n21st-century forest cover change.\" Science 342.6160 (2013): 850-853.\n",
     "links": [
         {
             "rel": "root",
@@ -12,19 +12,19 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/UMD/UMD_hansen_global_forest_change_2015",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/UMD/UMD_hansen_global_forest_change_2023_v1_11",
             "type": "text/html",
-            "title": "Run the example for UMD/hansen/global_forest_change_2015 in the Earth Engine Code Editor",
+            "title": "Run the example for UMD/hansen/global_forest_change_2023_v1_11 in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/UMD/UMD_hansen_global_forest_change_2015_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/UMD/UMD_hansen_global_forest_change_2023_v1_11_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/UMD_hansen_global_forest_change_2015#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/UMD_hansen_global_forest_change_2023_v1_11#terms-of-use",
             "type": "text/html"
         },
         {
@@ -40,19 +40,13 @@
         },
         {
             "rel": "predecessor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMD/UMD_hansen_global_forest_change_2014.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMD/UMD_hansen_global_forest_change_2022_v1_10.json",
             "type": "application/json",
-            "title": "UMD/hansen/global_forest_change_2014"
-        },
-        {
-            "rel": "successor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMD/UMD_hansen_global_forest_change_2015_v1_3.json",
-            "type": "application/json",
-            "title": "UMD/hansen/global_forest_change_2015_v1_3"
+            "title": "UMD/hansen/global_forest_change_2022_v1_10"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMD/UMD_hansen_global_forest_change_2015.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMD/UMD_hansen_global_forest_change_2023_v1_11.json",
             "type": "application/json"
         },
         {
@@ -67,12 +61,13 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image",
-    "sci:citation": "Hansen, M. C., P. V. Potapov, R. Moore, M. Hancher, S. A. Turubanova, A.\nTyukavina, D. Thau, S. V. Stehman, S. J. Goetz, T. R. Loveland, A.\nKommareddy, A. Egorov, L. Chini, C. O. Justice, and J. R. G. Townshend.\n2013. \"High-Resolution Global Maps of 21st-Century Forest Cover Change.\"\nScience 342 (15 November): 850-53. Data available on-line at:\n[https://glad.earthengine.app/view/global-forest-change](https://glad.earthengine.app/view/global-forest-change).\n",
-    "version": "v1.2",
-    "title": "Hansen Global Forest Change v1.2 (2000-2014) [deprecated]",
+    "gee:user_uploaded": true,
+    "sci:citation": "Hansen, M. C., P. V. Potapov, R. Moore, M. Hancher, S. A. Turubanova, A.\nTyukavina, D. Thau, S. V. Stehman, S. J. Goetz, T. R. Loveland, A.\nKommareddy, A. Egorov, L. Chini, C. O. Justice, and J. R. G. Townshend.\n2013. \"High-Resolution Global Maps of 21st-Century Forest Cover Change.\"\nScience 342 (15 November): 850-53.\n[10.1126/science.1244693](https://doi.org/10.1126/science.1244693)\nData available on-line at:\n[https://glad.earthengine.app/view/global-forest-change](https://glad.earthengine.app/view/global-forest-change).\n",
+    "sci:doi": "10.1126/science.1244693",
+    "version": "v1.11",
+    "title": "Hansen Global Forest Change v1.11 (2000-2023)",
     "extent": {
         "spatial": {
             "bbox": [
@@ -88,7 +83,7 @@
             "interval": [
                 [
                     "2000-01-01T00:00:00Z",
-                    "2015-01-01T00:00:00Z"
+                    "2023-12-31T00:00:00Z"
                 ]
             ]
         }
@@ -115,7 +110,7 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/UMD_hansen_global_forest_change_2015"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/UMD_hansen_global_forest_change_2023_v1_11"
         }
     ],
     "summaries": {
@@ -175,49 +170,49 @@
             },
             {
                 "center_wavelength": 0.66,
-                "description": "Landsat 7 band 3 (red) cloud-free image composite. Reference\nmultispectral imagery from the first available year, typically 2000.\n",
+                "description": "Landsat Red cloud-free image composite (corresponding to Landsat 5/7\nband 3 and Landsat 8/9 band 4). Reference multispectral imagery from\nthe first available year, typically 2000.\n",
                 "gee:wavelength": "0.63-0.69&micro;m",
                 "name": "first_b30"
             },
             {
                 "center_wavelength": 0.835,
-                "description": "Landsat 7 band 4 (NIR) cloud-free image composite. Reference\nmultispectral imagery from the first available year, typically 2000.\n",
+                "description": "Landsat NIR cloud-free image composite (corresponding to Landsat 5/7\nband 4 and Landsat 8/9 band 5). Reference multispectral imagery from\nthe first available year, typically 2000.\n",
                 "gee:wavelength": "0.77-0.90&micro;m",
                 "name": "first_b40"
             },
             {
                 "center_wavelength": 1.65,
-                "description": "Landsat 7 band 5 (SWIR) cloud-free image composite. Reference\nmultispectral imagery from the first available year, typically 2000.\n",
+                "description": "Landsat SWIR1 cloud-free image composite (corresponding to Landsat 5/7\nband 5 and Landsat 8/9 band 6). Reference multispectral imagery from\nthe first available year, typically 2000.\n",
                 "gee:wavelength": "1.55-1.75&micro;m",
                 "name": "first_b50"
             },
             {
                 "center_wavelength": 2.22,
-                "description": "Landsat 7 band 7 (SWIR) cloud-free image composite. Reference\nmultispectral imagery from the first available year, typically 2000.\n",
+                "description": "Landsat SWIR2 cloud-free image composite (corresponding to Landsat 5/7\nband 7 and Landsat 8/9 band 7). Reference multispectral imagery from\nthe first available year, typically 2000.\n",
                 "gee:wavelength": "2.09-2.35&micro;m",
                 "name": "first_b70"
             },
             {
                 "center_wavelength": 0.66,
-                "description": "Landsat 7 band 3 (red) cloud-free image composite. Reference\nmultispectral imagery from the last available year, typically the last\nyear of the study period.\n",
+                "description": "Landsat Red cloud-free image composite (corresponding to Landsat 5/7\nband 3 and Landsat 8/9 band 4). Reference multispectral imagery from\nthe last available year, typically the last year of the study period.\n",
                 "gee:wavelength": "0.63-0.69&micro;m",
                 "name": "last_b30"
             },
             {
                 "center_wavelength": 0.835,
-                "description": "Landsat 7 band 4 (NIR) cloud-free image composite. Reference\nmultispectral imagery from the last available year, typically the last\nyear of the study period.\n",
+                "description": "Landsat NIR cloud-free image composite (corresponding to Landsat 5/7\nband 4 and Landsat 8/9 band 5). Reference multispectral imagery from\nthe last available year, typically the last year of the study period.\n",
                 "gee:wavelength": "0.77-0.90&micro;m",
                 "name": "last_b40"
             },
             {
                 "center_wavelength": 1.65,
-                "description": "Landsat 7 band 5 (SWIR) cloud-free image composite. Reference\nmultispectral imagery from the last available year, typically the last\nyear of the study period.\n",
+                "description": "Landsat SWIR1 cloud-free image composite (corresponding to Landsat 5/7\nband 5 and Landsat 8/9 band 6). Reference multispectral imagery from\nthe last available year, typically the last year of the study period.\n",
                 "gee:wavelength": "1.55-1.75&micro;m",
                 "name": "last_b50"
             },
             {
                 "center_wavelength": 2.22,
-                "description": "Landsat 7 band 7 (SWIR) cloud-free image composite. Reference\nmultispectral imagery from the last available year, typically the last\nyear of the study period.\n",
+                "description": "Landsat SWIR2 cloud-free image composite (corresponding to Landsat 5/7\nband 7 and Landsat 8/9 band 7). Reference multispectral imagery from\nthe last available year, typically the last year of the study period.\n",
                 "gee:wavelength": "2.09-2.35&micro;m",
                 "name": "last_b70"
             },
@@ -250,7 +245,7 @@
                 "name": "datamask"
             },
             {
-                "description": "Year of gross forest cover loss event. A disaggregation of total forest\nloss to annual time scales. Encoded as either 0 (no loss) or else a value\nin the range 1-14, representing loss detected primarily in the year\n2001-2014, respectively.\n",
+                "description": "Year of gross forest cover loss event. Forest loss during the study\nperiod, defined as a stand-replacement disturbance, or a change from a\nforest to non-forest state. Encoded as either 0 (no loss) or else a value\nin the range 1-23, representing loss detected primarily in the year\n2001-2023, respectively.\n",
                 "name": "lossyear"
             }
         ],
@@ -291,7 +286,7 @@
         ],
         "lossyear": {
             "minimum": 0,
-            "maximum": 14
+            "maximum": 23
         },
         "treecover2000": {
             "minimum": 0,
