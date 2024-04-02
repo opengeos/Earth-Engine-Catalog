@@ -32,22 +32,6 @@
             "href": "https://doi.org/10.5067/GHMDT-2PJ19"
         },
         {
-            "rel": "cite-as",
-            "href": "https://doi.org/10.5067/TERRA/MODIS/L3M/CHL/2018"
-        },
-        {
-            "rel": "cite-as",
-            "href": "https://doi.org/10.5067/TERRA/MODIS/L3M/FLH/2018"
-        },
-        {
-            "rel": "cite-as",
-            "href": "https://doi.org/10.5067/TERRA/MODIS/L3M/POC/2018"
-        },
-        {
-            "rel": "cite-as",
-            "href": "https://doi.org/10.5067/TERRA/MODIS/L3M/RRS/2018"
-        },
-        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_OCEANDATA_MODIS-Terra_L3SMI.json",
             "type": "application/json"
@@ -81,20 +65,16 @@
     "sci:doi": "10.5067/GHMDT-2PJ19",
     "sci:publications": [
         {
-            "citation": "NASA Ocean Biology Processing Group. (2018). <i>MODIS-TERRA Level 3\nMapped Chlorophyll Data Version R2018.0</i> [Data set]. NASA Ocean\nBiology DAAC.\n",
-            "doi": "10.5067/TERRA/MODIS/L3M/CHL/2018"
+            "citation": "NASA Ocean Biology Processing Group. (2018). <i>MODIS-TERRA Level 3\nMapped Chlorophyll Data Version R2018.0</i> [Data set]. NASA Ocean\nBiology DAAC.\n\n*   DOI: 10.5067/TERRA/MODIS/L3M/CHL/2018 [unrecoverable]\n"
         },
         {
-            "citation": "NASA Ocean Biology Processing Group. (2018). <i>MODIS-TERRA Level 3\nMapped Fluorescent Line Height Data Version R2018.0</i> [Data set]. NASA\nOcean Biology DAAC.\n",
-            "doi": "10.5067/TERRA/MODIS/L3M/FLH/2018"
+            "citation": "NASA Ocean Biology Processing Group. (2018). <i>MODIS-TERRA Level 3\nMapped Fluorescent Line Height Data Version R2018.0</i> [Data set]. NASA\nOcean Biology DAAC.\n\n*   DOI: 10.5067/TERRA/MODIS/L3M/FLH/2018 [unrecoverable]\n"
         },
         {
-            "citation": "NASA Ocean Biology Processing Group. (2018). <i>MODIS-TERRA Level 3\nMapped Particulate Organic Carbon Data Version R2018.0</i> [Data\nset]. NASA Ocean Biology DAAC.\n",
-            "doi": "10.5067/TERRA/MODIS/L3M/POC/2018"
+            "citation": "NASA Ocean Biology Processing Group. (2018). <i>MODIS-TERRA Level 3\nMapped Particulate Organic Carbon Data Version R2018.0</i> [Data\nset]. NASA Ocean Biology DAAC.\n\n*   DOI: 10.5067/TERRA/MODIS/L3M/POC/2018 [unrecoverable]\n"
         },
         {
-            "citation": "NASA Ocean Biology Processing Group. (2018). <i>MODIS-TERRA Level 3\nMapped Remote-Sensing Reflectance Data Version R2018.0</i> [Data\nset]. NASA Ocean Biology DAAC.\n",
-            "doi": "10.5067/TERRA/MODIS/L3M/RRS/2018"
+            "citation": "NASA Ocean Biology Processing Group. (2018). <i>MODIS-TERRA Level 3\nMapped Remote-Sensing Reflectance Data Version R2018.0</i> [Data\nset]. NASA Ocean Biology DAAC.\n\n*   DOI:  10.5067/TERRA/MODIS/L3M/RRS/2018  [unrecoverable]\n"
         }
     ],
     "title": "Ocean Color SMI: Standard Mapped Image MODIS Terra Data",
