@@ -32,6 +32,12 @@
             "href": "https://doi.org/10.5067/MODIS/MCD15A3H.061"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MCD15A3H.json",
+            "type": "application/json",
+            "title": "MODIS/061/MCD15A3H"
+        },
+        {
             "rel": "predecessor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MCD15A3H.json",
             "type": "application/json",

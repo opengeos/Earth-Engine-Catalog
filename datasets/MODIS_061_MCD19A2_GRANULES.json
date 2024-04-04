@@ -32,6 +32,18 @@
             "href": "https://doi.org/10.5067/MODIS/MCD19A2.061"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MCD19A2_GRANULES.json",
+            "type": "application/json",
+            "title": "MODIS/061/MCD19A2_GRANULES"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MCD19A2_GRANULES.json",
+            "type": "application/json",
+            "title": "MODIS/006/MCD19A2_GRANULES"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MCD19A2_GRANULES.json",
             "type": "application/json"
