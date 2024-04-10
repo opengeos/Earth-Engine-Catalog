@@ -32,6 +32,12 @@
             "href": "https://doi.org/10.5067/MODIS/MCD43A2.061"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MCD43A2.json",
+            "type": "application/json",
+            "title": "MODIS/061/MCD43A2"
+        },
+        {
             "rel": "predecessor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MCD43A2.json",
             "type": "application/json",
@@ -83,7 +89,7 @@
             "interval": [
                 [
                     "2000-02-24T00:00:00Z",
-                    "2024-03-28T00:00:00Z"
+                    "2024-03-29T00:00:00Z"
                 ]
             ]
         }

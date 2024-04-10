@@ -1,0 +1,171 @@
+{
+    "type": "Collection",
+    "id": "WRI/Aqueduct_Flood_Hazard_Maps/V2",
+    "stac_version": "1.0.0",
+    "description": "Aqueduct Floods data measures riverine and coastal food risks under both\ncurrent baseline conditions and future projections in 2030, 2050, and 2080.\nIn addition to providing hazard maps and assessing risks, Aqueduct Floods\nhelps to conduct comprehensive cost-benefit analysis to evaluate the value\nof dike food protection strategies.\n\nAqueduct Floods aims to empower disaster risk analysts and managers with\nquantitative information on food risks and adaptation strategy costs, and to\nhelp inform policy and investment decision-making.\n\n[This](https://files.wri.org/d8/s3fs-public/aqueduct-floods-methodology.pdf)\ntechnical note explains in detail the framework, methodology, and data used\nin developing Aqueduct Floods.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WRI/WRI_Aqueduct_Flood_Hazard_Maps_V2",
+            "type": "text/html",
+            "title": "Run the example for WRI/Aqueduct_Flood_Hazard_Maps/V2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/WRI/WRI_Aqueduct_Flood_Hazard_Maps_V2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/WRI_Aqueduct_Flood_Hazard_Maps_V2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WRI/WRI_Aqueduct_Flood_Hazard_Maps_V2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WRI/catalog.json",
+            "type": "application/json",
+            "title": "WRI"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The WRI datasets are available without restriction\non use or distribution. WRI does request that the\nuser give proper attribution and identify WRI, where applicable,\nas the source of the data. For more information check\n[WRI's open data commitment](https://www.wri.org/data/open-data-commitment),\n",
+    "gee:type": "image_collection",
+    "title": "WRI Aqueduct Floods Hazard Maps Version 2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-01-01T00:00:00Z",
+                    "2080-12-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "flood",
+        "monitoring",
+        "wri"
+    ],
+    "providers": [
+        {
+            "name": "World Resources Institute",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.wri.org/research/aqueduct-floods-methodology"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/WRI_Aqueduct_Flood_Hazard_Maps_V2"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Flood inundation depth",
+                "gee:units": "m",
+                "name": "inundation_depth"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Climate Scenario types:\n\n* historical: Baseline condition/ no climate scenario needed\n* rcp4p5: Representative Concentration Pathway 4.5 (rising carbon emissions)\n* rcp8p5: Representative Concentration Pathway 8.5 (steady carbon emissions)\n",
+                "name": "climatescenario",
+                "type": "STRING"
+            },
+            {
+                "description": "Type of Flood:\n\n* inuncoast: Coastal flood hazard\n* inunriver: Riverine flood hazard\n",
+                "name": "floodtype",
+                "type": "STRING"
+            },
+            {
+                "description": "Sea level rise scenario (in percentile)",
+                "name": "projection",
+                "type": "INT"
+            },
+            {
+                "description": "Return period of flood in years",
+                "name": "returnperiod",
+                "type": "INT"
+            },
+            {
+                "description": "Applies only for inuncoast flood type\n\n* nosub: Subsidence not included in projection\n* wtsub: Subsidence included in projection\n",
+                "name": "subsidence",
+                "type": "STRING"
+            },
+            {
+                "description": "Applies only for inunriver flood type, represents type of model used.\n",
+                "name": "model",
+                "type": "STRING"
+            },
+            {
+                "description": "Flood occurence year",
+                "name": "year",
+                "type": "INT"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Aqueduct Flood Hazard Maps",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "inundation_depth"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "ffffff",
+                            "0000ff"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -6.73,
+                    "lon": -68.36,
+                    "zoom": 4
+                }
+            }
+        ],
+        "gsd": [
+            10000
+        ],
+        "inundation_depth": {
+            "minimum": 0,
+            "maximum": 1
+        }
+    }
+}

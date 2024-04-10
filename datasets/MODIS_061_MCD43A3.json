@@ -32,6 +32,12 @@
             "href": "https://doi.org/10.5067/MODIS/MCD43A3.061"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MCD43A3.json",
+            "type": "application/json",
+            "title": "MODIS/061/MCD43A3"
+        },
+        {
             "rel": "predecessor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MCD43A3.json",
             "type": "application/json",
