@@ -55,7 +55,7 @@
     "sci:citation": "Pesaresi, Martino; Politis, Panagiotis (2023): GHS-BUILT-S R2023A - GHS\nbuilt-up surface grid, derived from Sentinel2 composite and Landsat,\nmultitemporal (1975-2030). European Commission, Joint Research Centre (JRC)\n[PID: http://data.europa.eu/89h/9f06f36f-4b11-47ec-abb0-4f8b7b1d72ea](http://data.europa.eu/89h/9f06f36f-4b11-47ec-abb0-4f8b7b1d72ea)\n[doi:10.2905/9F06F36F-4B11-47EC-ABB0-4F8B7B1D72EA](https://doi.org/10.2905/9F06F36F-4B11-47EC-ABB0-4F8B7B1D72EA)\n",
     "sci:doi": "10.2905/9F06F36F-4B11-47EC-ABB0-4F8B7B1D72EA",
     "version": "P2023A",
-    "title": "GHSL: Global built-Up surface 1975-2030 (P2023A)",
+    "title": "GHSL: Global built-up surface 1975-2030 (P2023A)",
     "extent": {
         "spatial": {
             "bbox": [
@@ -111,17 +111,19 @@
     "summaries": {
         "eo:bands": [
             {
-                "description": "Built-up surface per grid cell in square metres",
+                "description": "Built-up surface per grid cell",
+                "gee:units": "m^2",
                 "name": "built_surface"
             },
             {
-                "description": "Non-residential built-up surface per grid cell in square metres",
+                "description": "Non-residential built-up surface per grid cell",
+                "gee:units": "m^2",
                 "name": "built_surface_nres"
             }
         ],
         "gee:visualizations": [
             {
-                "display_name": "Multitemporal Built-up Surface",
+                "display_name": "Built-up surface per grid cell in square metres",
                 "image_visualization": {
                     "band_vis": {
                         "bands": [

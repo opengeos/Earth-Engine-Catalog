@@ -107,13 +107,14 @@
     "summaries": {
         "eo:bands": [
             {
-                "description": "Multitemporal Built-up Height",
+                "description": "Average building height per grid cell",
+                "gee:units": "m",
                 "name": "built_height"
             }
         ],
         "gee:visualizations": [
             {
-                "display_name": "Multitemporal Built-up Height",
+                "display_name": "Average building height per grid cell in meters",
                 "image_visualization": {
                     "band_vis": {
                         "bands": [
