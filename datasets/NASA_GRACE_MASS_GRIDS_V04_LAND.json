@@ -1,0 +1,201 @@
+{
+    "type": "Collection",
+    "id": "NASA/GRACE/MASS_GRIDS_V04/LAND",
+    "stac_version": "1.0.0",
+    "description": "The monthly land mass grids contain water mass anomalies given as equivalent\nwater thickness derived from GRACE & GRACE-FO time-variable gravity\nobservations during the specified timespan, and relative to the specified\ntime-mean reference period. The equivalent water thickness represents the\ntotal terrestrial water storage anomalies from soil moisture, snow, surface\nwater (incl. rivers, lakes, reservoirs etc.), as well as groundwater and\naquifers. A glacial isostatic adjustment (GIA) correction has been applied,\nand standard corrections for geocenter (degree-1), C20 (degree-20) and\nC30 (degree-30) are incorporated. Post-processing filters have been applied\nto reduce correlated errors. Version 04 (v04) of the terrestrial water\nstorage data uses updated and consistent C20 and Geocenter corrections\n(i.e., Technical Notes TN-14 and TN-13), as well as an ellipsoidal\ncorrection to account for the non-spherical shape of the Earth when mapping\ngravity anomalies to surface mass change.\n\nThe GRACE Tellus (GRCTellus) Monthly Mass Grids dataset is produced\nby three centers: CSR (U. Texas / Center for Space Research),\nGFZ (GeoForschungsZentrum Potsdam), and JPL\n(NASA Jet Propulsion Laboratory). Each center is a part\nof the GRACE Ground System and generates Level-2 data\n(spherical harmonic fields) used in this dataset.\nThe output includes spherical harmonic coefficients\nof the gravity field and of the dealiasing fields used to compute them.\nSince each center independently produces the coefficients, the results\nmay be slightly different. It is recommended for most users to\nuse the mean of all three datasets. See the provider's [choosing a\nsolution](https://grace.jpl.nasa.gov/data/choosing-a-solution/) page\nfor more details.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_GRACE_MASS_GRIDS_V04_LAND",
+            "type": "text/html",
+            "title": "Run the example for NASA/GRACE/MASS_GRIDS_V04/LAND in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_GRACE_MASS_GRIDS_V04_LAND_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GRACE_MASS_GRIDS_V04_LAND#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_GRACE_MASS_GRIDS_V04_LAND.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:terms_of_use": "All NASA-produced data from the GRACE mission is made freely available\nfor the public to use. When using any of the GRCTellus data, please\nadd an acknowledgment: \"GRACE land are available at\n[https://grace.jpl.nasa.gov](https://grace.jpl.nasa.gov),\nsupported by the NASA MEaSUREs Program.\" and cite with the\ncitations provided.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Felix Landerer. 2021. TELLUS_GRAC_L3_JPL_RL06_LND_v04. Ver. RL06 v04.\nPO.DAAC, CA, USA. Dataset accessed [YYYY-MM-DD] at\n[https://doi.org/10.5067/TELND-3AJ64](https://doi.org/10.5067/TELND-3AJ64).\n",
+    "sci:publications": [
+        {
+            "citation": "Landerer F.W. and S. C. Swenson, Accuracy of scaled GRACE terrestrial\nwater storage estimates. Water Resources Research, Vol 48, W04531, 11 PP,\n[doi:10.1029/2011WR011453](https://doi.org/10.1029/2011WR011453), 2012.\n",
+            "doi": "10.1029/2011WR011453"
+        },
+        {
+            "citation": "Swenson, S. C. and J. Wahr, Post-processing removal of correlated\nerrors in GRACE data, Geophys. Res. Lett., 33, L08402,\n[doi:10.1029/2005GL025285](https://doi.org/10.1029/2005GL025285), 2006.\n",
+            "doi": "10.1029/2005GL025285"
+        }
+    ],
+    "version": "Release 06",
+    "title": "GRACE Monthly Mass Grids Release 06 Version 04 - Land",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-04-01T00:00:00Z",
+                    "2017-01-07T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "crs",
+        "gfz",
+        "grace",
+        "gravity",
+        "jpl",
+        "land",
+        "mass",
+        "nasa",
+        "tellus",
+        "water"
+    ],
+    "providers": [
+        {
+            "name": "NASA Jet Propulsion Laboratory",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://grace.jpl.nasa.gov/data/get-data/monthly-mass-grids-land/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GRACE_MASS_GRIDS_V04_LAND"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Equivalent liquid water thickness in centimeters calculated by CSR.",
+                "gee:units": "cm",
+                "name": "lwe_thickness_csr"
+            },
+            {
+                "description": "Equivalent liquid water thickness in centimeters calculated by GFZ.",
+                "gee:units": "cm",
+                "name": "lwe_thickness_gfz"
+            },
+            {
+                "description": "Equivalent liquid water thickness in centimeters calculated by JPL.",
+                "gee:units": "cm",
+                "name": "lwe_thickness_jpl"
+            },
+            {
+                "description": "Error estimation by CSR.",
+                "name": "uncertainty_csr"
+            },
+            {
+                "description": "Error estimation by GFZ.",
+                "name": "uncertainty_gfz"
+            },
+            {
+                "description": "Error estimation by JPL.",
+                "name": "uncertainty_jpl"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "End date in milliseconds of spherical harmonics solution from CSR.",
+                "name": "CSR_END_TIME",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Start date in milliseconds of spherical harmonics solution from CSR.",
+                "name": "CSR_START_TIME",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "End date in milliseconds of spherical harmonics solution from GFZ.",
+                "name": "GFZ_END_TIME",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Start date in milliseconds of spherical harmonics solution from GFZ.",
+                "name": "GFZ_START_TIME",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "End date in milliseconds of spherical harmonics solution from JPL.",
+                "name": "JPL_END_TIME",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Start date in milliseconds of spherical harmonics solution from JPL.",
+                "name": "JPL_START_TIME",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Equivalent Water Thickness CSR",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "lwe_thickness_csr"
+                        ],
+                        "max": [
+                            0.57
+                        ],
+                        "min": [
+                            -0.78
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 46.529,
+                    "lon": 6.746,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            111320
+        ]
+    }
+}

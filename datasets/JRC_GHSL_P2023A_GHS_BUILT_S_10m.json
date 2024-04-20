@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "JRC/GHSL/P2023A/GHS_BUILT_S",
+    "id": "JRC/GHSL/P2023A/GHS_BUILT_S_10m",
     "stac_version": "1.0.0",
-    "description": "This raster dataset depicts the distribution of built-up surfaces,\nexpressed in square metres per 100 m grid cell.\nThe dataset measures:\na) the total built-up surface, and b) the built-up surface allocated to grid\ncells of predominant non-residential (NRES) use. Data are\nspatially-temporally interpolated or extrapolated from 1975 to 2030 in 5\nyear intervals.\n\nThe complete information about the GHSL main products can be\nfound in the [GHSL Data Package 2023 report]\n(https://ghsl.jrc.ec.europa.eu/documents/GHSL_Data_Package_2023.pdf?t=1683540422)\n\nThe Global Human Settlement Layer (GHSL) project is supported by the\nEuropean Commission, Joint Research Centre, and Directorate-General for\nRegional and Urban Policy.\n",
+    "description": "This raster dataset depicts the distribution of built-up surfaces,\nexpressed in square metres per 10 m grid cell, for 2018\nas observed from the S2 image data.\n\nThe datasets measure:\na) the total built-up surface, and b) the built-up surface allocated to grid\ncells of predominant non-residential (NRES) use.\n\nThe complete information about the GHSL main products can be\nfound in the [GHSL Data Package 2023 report]\n(https://ghsl.jrc.ec.europa.eu/documents/GHSL_Data_Package_2023.pdf?t=1683540422)\n\nThe Global Human Settlement Layer (GHSL) project is supported by the\nEuropean Commission, Joint Research Centre, and Directorate-General for\nRegional and Urban Policy.\n",
     "links": [
         {
             "rel": "root",
@@ -12,30 +12,24 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JRC/JRC_GHSL_P2023A_GHS_BUILT_S",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JRC/JRC_GHSL_P2023A_GHS_BUILT_S_10m",
             "type": "text/html",
-            "title": "Run the example for JRC/GHSL/P2023A/GHS_BUILT_S in the Earth Engine Code Editor",
+            "title": "Run the example for JRC/GHSL/P2023A/GHS_BUILT_S_10m in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/JRC/JRC_GHSL_P2023A_GHS_BUILT_S_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/JRC/JRC_GHSL_P2023A_GHS_BUILT_S_10m_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GHSL_P2023A_GHS_BUILT_S#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GHSL_P2023A_GHS_BUILT_S_10m#terms-of-use",
             "type": "text/html"
         },
         {
-            "rel": "predecessor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GHSL_P2016_BUILT_LDSMT_GLOBE_V1.json",
-            "type": "application/json",
-            "title": "JRC/GHSL/P2016/BUILT_LDSMT_GLOBE_V1"
-        },
-        {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GHSL_P2023A_GHS_BUILT_S.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GHSL_P2023A_GHS_BUILT_S_10m.json",
             "type": "application/json"
         },
         {
@@ -55,7 +49,7 @@
     "sci:citation": "Pesaresi, Martino; Politis, Panagiotis (2023): GHS-BUILT-S R2023A - GHS\nbuilt-up surface grid, derived from Sentinel2 composite and Landsat,\nmultitemporal (1975-2030). European Commission, Joint Research Centre (JRC)\n[PID: http://data.europa.eu/89h/9f06f36f-4b11-47ec-abb0-4f8b7b1d72ea](http://data.europa.eu/89h/9f06f36f-4b11-47ec-abb0-4f8b7b1d72ea)\n[doi:10.2905/9F06F36F-4B11-47EC-ABB0-4F8B7B1D72EA](https://doi.org/10.2905/9F06F36F-4B11-47EC-ABB0-4F8B7B1D72EA)\n",
     "sci:doi": "10.2905/9F06F36F-4B11-47EC-ABB0-4F8B7B1D72EA",
     "version": "P2023A",
-    "title": "GHSL: Global built-up surface 1975-2030 (P2023A)",
+    "title": "GHSL: Global built-up surface 10m (P2023A)",
     "extent": {
         "spatial": {
             "bbox": [
@@ -70,8 +64,8 @@
         "temporal": {
             "interval": [
                 [
-                    "1975-01-01T00:00:00Z",
-                    "2030-12-31T00:00:00Z"
+                    "2018-01-01T00:00:00Z",
+                    "2019-01-01T00:00:00Z"
                 ]
             ]
         }
@@ -82,7 +76,6 @@
         "builtup",
         "ghsl",
         "jrc",
-        "landsat_derived",
         "sentinel2_derived",
         "copernicus",
         "landcover",
@@ -105,7 +98,7 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GHSL_P2023A_GHS_BUILT_S"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GHSL_P2023A_GHS_BUILT_S_10m"
         }
     ],
     "summaries": {
@@ -130,7 +123,7 @@
                             "built_surface"
                         ],
                         "max": [
-                            8000
+                            100
                         ],
                         "min": [
                             0
@@ -149,7 +142,7 @@
             }
         ],
         "gsd": [
-            100
+            10
         ]
     }
 }
