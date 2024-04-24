@@ -110,7 +110,18 @@
             },
             {
                 "description": "Non-residential built-up surface per grid cell",
-                "gee:units": "m^2",
+                "gee:classes": [
+                    {
+                        "color": "black",
+                        "description": "Fill",
+                        "value": 0
+                    },
+                    {
+                        "color": "magenta",
+                        "description": "Non-residential",
+                        "value": 1
+                    }
+                ],
                 "name": "built_surface_nres"
             }
         ],
