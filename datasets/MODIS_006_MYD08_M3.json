@@ -28,14 +28,20 @@
             "type": "text/html"
         },
         {
-            "rel": "successor-version",
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/MODIS/MYD08_M3.006"
+        },
+        {
+            "rel": "latest-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MYD08_M3.json",
             "type": "application/json",
             "title": "MODIS/061/MYD08_M3"
         },
         {
-            "rel": "cite-as",
-            "href": "https://doi.org/10.5067/MODIS/MYD08_M3.006"
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MYD08_M3.json",
+            "type": "application/json",
+            "title": "MODIS/061/MYD08_M3"
         },
         {
             "rel": "self",
@@ -64,7 +70,7 @@
     "gee:type": "image_collection",
     "sci:citation": "Platnick, S., M. King, P. Hubanks, 2015. MODIS Atmosphere L3 Monthly\nProduct. NASA MODIS Adaptive Processing System, Goddard Space Flight\nCenter, [doi:10.5067/MODIS/MYD08_M3.006](https://doi.org/10.5067/MODIS/MYD08_M3.006)\n",
     "sci:doi": "10.5067/MODIS/MYD08_M3.006",
-    "version": "6",
+    "version": "6.0",
     "title": "MYD08_M3.006 Aqua Aerosol Cloud Water Vapor Ozone Monthly Global Product 1Deg CMG [deprecated]",
     "extent": {
         "spatial": {

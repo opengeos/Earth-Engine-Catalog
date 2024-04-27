@@ -32,6 +32,12 @@
             "href": "https://doi.org/10.5067/MODIS/MYD13A2.061"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MYD13A2.json",
+            "type": "application/json",
+            "title": "MODIS/061/MYD13A2"
+        },
+        {
             "rel": "predecessor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MYD13A2.json",
             "type": "application/json",

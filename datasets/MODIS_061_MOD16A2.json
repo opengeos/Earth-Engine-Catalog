@@ -32,6 +32,18 @@
             "href": "https://doi.org/10.5067/MODIS/MOD16A2.061"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MOD16A2.json",
+            "type": "application/json",
+            "title": "MODIS/061/MOD16A2"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MOD16A2.json",
+            "type": "application/json",
+            "title": "MODIS/006/MOD16A2"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MOD16A2.json",
             "type": "application/json"
