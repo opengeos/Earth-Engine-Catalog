@@ -28,6 +28,18 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_GRACE_MASS_GRIDS_V04_LAND.json",
+            "type": "application/json",
+            "title": "NASA/GRACE/MASS_GRIDS_V04/LAND"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_GRACE_MASS_GRIDS_V04_LAND.json",
+            "type": "application/json",
+            "title": "NASA/GRACE/MASS_GRIDS_V04/LAND"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_GRACE_MASS_GRIDS_LAND.json",
             "type": "application/json"
@@ -44,6 +56,7 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "deprecated": true,
     "gee:terms_of_use": "All NASA-produced data from the GRACE mission is made freely available\nfor the public to use. When using any of the GRCTellus data, please\nadd an acknowledgment: \"GRACE land are available at\n[https://grace.jpl.nasa.gov](https://grace.jpl.nasa.gov),\nsupported by the NASA MEaSUREs Program.\" and cite with the\ncitations provided.\n",
     "gee:type": "image_collection",
     "sci:citation": "S.C. Swenson. 2012. GRACE monthly land water mass grids NETCDF\nRELEASE 5.0. Ver. 5.0. PO.DAAC, CA, USA. Dataset accessed\n[YYYY-MM-DD] at\n[https://doi.org/10.5067/TELND-NC005](https://doi.org/10.5067/TELND-NC005).\n",
@@ -58,7 +71,7 @@
         }
     ],
     "version": "Release 05",
-    "title": "GRACE Monthly Mass Grids - Land",
+    "title": "GRACE Monthly Mass Grids - Land [deprecated]",
     "extent": {
         "spatial": {
             "bbox": [
