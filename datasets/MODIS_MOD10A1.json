@@ -28,14 +28,20 @@
             "type": "text/html"
         },
         {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/63NQASRDPDB0"
+        },
+        {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MOD10A1.json",
+            "type": "application/json",
+            "title": "MODIS/061/MOD10A1"
+        },
+        {
             "rel": "successor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MOD10A1.json",
             "type": "application/json",
             "title": "MODIS/006/MOD10A1"
-        },
-        {
-            "rel": "cite-as",
-            "href": "https://doi.org/10.5067/63NQASRDPDB0"
         },
         {
             "rel": "self",

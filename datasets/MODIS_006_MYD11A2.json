@@ -38,6 +38,12 @@
             "title": "MODIS/061/MYD11A2"
         },
         {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MYD11A2.json",
+            "type": "application/json",
+            "title": "MODIS/MYD11A2"
+        },
+        {
             "rel": "successor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MYD11A2.json",
             "type": "application/json",

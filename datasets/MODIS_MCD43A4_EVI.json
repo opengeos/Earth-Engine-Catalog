@@ -28,6 +28,12 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MCD43A4_006_EVI.json",
+            "type": "application/json",
+            "title": "MODIS/MCD43A4_006_EVI"
+        },
+        {
             "rel": "successor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MCD43A4_006_EVI.json",
             "type": "application/json",

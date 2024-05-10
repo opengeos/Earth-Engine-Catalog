@@ -38,6 +38,12 @@
             "title": "MODIS/061/MCD43A2"
         },
         {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MCD43A2.json",
+            "type": "application/json",
+            "title": "MODIS/MCD43A2"
+        },
+        {
             "rel": "successor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MCD43A2.json",
             "type": "application/json",

@@ -38,6 +38,12 @@
             "title": "MODIS/061/MYD09GA"
         },
         {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MYD09GA.json",
+            "type": "application/json",
+            "title": "MODIS/MYD09GA"
+        },
+        {
             "rel": "successor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MYD09GA.json",
             "type": "application/json",

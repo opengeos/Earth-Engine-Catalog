@@ -38,6 +38,12 @@
             "title": "MODIS/061/MOD09Q1"
         },
         {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MOD09Q1.json",
+            "type": "application/json",
+            "title": "MODIS/MOD09Q1"
+        },
+        {
             "rel": "successor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MOD09Q1.json",
             "type": "application/json",

@@ -28,6 +28,18 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MYD09GA_006_NDSI.json",
+            "type": "application/json",
+            "title": "MODIS/MYD09GA_006_NDSI"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MYD09GA_NDSI.json",
+            "type": "application/json",
+            "title": "MODIS/MYD09GA_NDSI"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MYD09GA_006_NDSI.json",
             "type": "application/json"
@@ -40,7 +52,8 @@
         }
     ],
     "stac_extensions": [
-        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:interval": {
         "interval": 1,
@@ -50,6 +63,7 @@
     "gee:is_derived": true,
     "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC have no restrictions on subsequent use, sale, or redistribution.\n",
     "gee:type": "image_collection",
+    "version": "6.0",
     "title": "MODIS Aqua Daily NDSI",
     "extent": {
         "spatial": {

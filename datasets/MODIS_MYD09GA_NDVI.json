@@ -28,6 +28,12 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MYD09GA_006_NDVI.json",
+            "type": "application/json",
+            "title": "MODIS/MYD09GA_006_NDVI"
+        },
+        {
             "rel": "successor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MYD09GA_006_NDVI.json",
             "type": "application/json",

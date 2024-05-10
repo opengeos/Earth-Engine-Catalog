@@ -38,6 +38,12 @@
             "title": "MODIS/061/MOD13A1"
         },
         {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MOD13A1.json",
+            "type": "application/json",
+            "title": "MODIS/MOD13A1"
+        },
+        {
             "rel": "successor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MOD13A1.json",
             "type": "application/json",
