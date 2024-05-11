@@ -109,16 +109,16 @@
                 "name": "built_surface"
             },
             {
-                "description": "Non-residential built-up surface per grid cell",
+                "description": "Non-residential built-up class (NRES)",
                 "gee:classes": [
                     {
                         "color": "black",
-                        "description": "Fill",
+                        "description": "non-NRES",
                         "value": 0
                     },
                     {
                         "color": "magenta",
-                        "description": "Non-residential",
+                        "description": "NRES",
                         "value": 1
                     }
                 ],
