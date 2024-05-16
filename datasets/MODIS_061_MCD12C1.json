@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MODIS/061/MCD12C1",
     "stac_version": "1.0.0",
-    "description": "The Terra and Aqua combined Moderate Resolution Imaging Spectroradiometer\n(MODIS) Land Cover Climate Modeling Grid (CMG) (MCD12C1) Version 6.1 data\nproduct provides a spatially aggregated and reprojected version of the tiled\nMCD12Q1 Version 6.1 data product. Maps of the International\nGeosphere-Biosphere Programme (IGBP), University of Maryland (UMD), and Leaf\nArea Index (LAI) classification schemes are provided at yearly intervals at\n0.05 degree (5,600 meter) spatial resolution for the entire globe from 2001\nto 2022. Additionally, sub-pixel proportions of each land cover class in\neach 0.05 degree pixel is provided along with the aggregated quality\nassessment information for each of the three land classification schemes.\n\nProvided in each MCD12C1 Version 6.1 Hierarchical Data Format 4 (HDF4) file\nare layers for Majority Land Cover Type 1-3, Majority Land Cover Type 1-3\nAssessment, and Majority Land Cover Type 1-3 Percent.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1409/MCD12_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/86/MCD12_ATBD.pdf)\n",
+    "description": "The Terra and Aqua combined Moderate Resolution Imaging Spectroradiometer\n(MODIS) Land Cover Climate Modeling Grid (CMG) (MCD12C1) Version 6.1 data\nproduct provides a spatially aggregated and reprojected version of the tiled\nMCD12Q1 Version 6.1 data product. Maps of the International\nGeosphere-Biosphere Programme (IGBP), University of Maryland (UMD), and Leaf\nArea Index (LAI) classification schemes are provided at yearly intervals at\n0.05 degree (5,600 meter) spatial resolution for the entire globe from 2001\nto 2022. Additionally, sub-pixel proportions of each land cover class in\neach 0.05 degree pixel is provided along with the aggregated quality\nassessment information for each of the three land classification schemes.\n\nProvided in each MCD12C1 Version 6.1 Hierarchical Data Format 4 (HDF4) file\nare layers for Majority Land Cover Type 1-3, Majority Land Cover Type 1-3\nAssessment, and Land Cover Type 1-3 Percent for each class.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1409/MCD12_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/86/MCD12_ATBD.pdf)\n",
     "links": [
         {
             "rel": "root",
@@ -108,266 +108,6 @@
         }
     ],
     "summaries": {
-        "eo:bands": [
-            {
-                "description": "Majority Land Cover Type 1: Most likely IGBP class for each 0.05 degree pixel",
-                "gee:classes": [
-                    {
-                        "color": "1c0dff",
-                        "description": "Water Bodies: at least 60% of area is covered by\npermanent water bodies.",
-                        "value": 0
-                    },
-                    {
-                        "color": "05450a",
-                        "description": "Evergreen Needleleaf Forests: dominated by evergreen\nconifer trees (canopy >2m). Tree cover >60%.",
-                        "value": 1
-                    },
-                    {
-                        "color": "086a10",
-                        "description": "Evergreen Broadleaf Forests: dominated by evergreen\nbroadleaf and palmate trees (canopy >2m). Tree cover >60%.\n",
-                        "value": 2
-                    },
-                    {
-                        "color": "54a708",
-                        "description": "Deciduous Needleleaf Forests: dominated by deciduous\nneedleleaf (larch) trees (canopy >2m). Tree cover >60%.\n",
-                        "value": 3
-                    },
-                    {
-                        "color": "78d203",
-                        "description": "Deciduous Broadleaf Forests: dominated by deciduous\nbroadleaf trees (canopy >2m). Tree cover >60%.",
-                        "value": 4
-                    },
-                    {
-                        "color": "009900",
-                        "description": "Mixed Forests: dominated by neither deciduous nor\nevergreen (40-60% of each) tree type (canopy >2m). Tree cover >60%.\n",
-                        "value": 5
-                    },
-                    {
-                        "color": "c6b044",
-                        "description": "Closed Shrublands: dominated by woody perennials\n(1-2m height) >60% cover.",
-                        "value": 6
-                    },
-                    {
-                        "color": "dcd159",
-                        "description": "Open Shrublands: dominated by woody perennials\n(1-2m height) 10-60% cover.",
-                        "value": 7
-                    },
-                    {
-                        "color": "dade48",
-                        "description": "Woody Savannas: tree cover 30-60% (canopy >2m).",
-                        "value": 8
-                    },
-                    {
-                        "color": "fbff13",
-                        "description": "Savannas: tree cover 10-30% (canopy >2m).",
-                        "value": 9
-                    },
-                    {
-                        "color": "b6ff05",
-                        "description": "Grasslands: dominated by herbaceous annuals (<2m).",
-                        "value": 10
-                    },
-                    {
-                        "color": "27ff87",
-                        "description": "Permanent Wetlands: permanently inundated lands with\n30-60% water cover and >10% vegetated cover.",
-                        "value": 11
-                    },
-                    {
-                        "color": "c24f44",
-                        "description": "Croplands: at least 60% of area is cultivated\ncropland.",
-                        "value": 12
-                    },
-                    {
-                        "color": "a5a5a5",
-                        "description": "Urban and Built-up Lands: at least 30% impervious\nsurface area including building materials, asphalt and vehicles.\n",
-                        "value": 13
-                    },
-                    {
-                        "color": "ff6d4c",
-                        "description": "Cropland/Natural Vegetation Mosaics: mosaics of\nsmall-scale cultivation 40-60% with natural tree, shrub, or herbaceous\nvegetation.\n",
-                        "value": 14
-                    },
-                    {
-                        "color": "69fff8",
-                        "description": "Permanent Snow and Ice: at least 60% of area is covered\nby snow and ice for at least 10 months of the year.\n",
-                        "value": 15
-                    },
-                    {
-                        "color": "f9ffa4",
-                        "description": "Barren: at least 60% of area is non-vegetated barren\n(sand, rock, soil) areas with less than 10% vegetation.\n",
-                        "value": 16
-                    }
-                ],
-                "name": "Majority_Land_Cover_Type_1"
-            },
-            {
-                "description": "Majority Land Cover Type 1 Assessment: Majority IGBP class confidence",
-                "gee:units": "%",
-                "name": "Majority_Land_Cover_Type_1_Assessment"
-            },
-            {
-                "description": "Majority Land Cover Type 1 Percent: Percent cover of each IGBP class at each pixel",
-                "gee:units": "%",
-                "name": "Majority_Land_Cover_Type_1_Percent"
-            },
-            {
-                "description": "Majority Land Cover Type 2: Most likely UMD class for each 0.05 degree pixel",
-                "gee:classes": [
-                    {
-                        "color": "1c0dff",
-                        "description": "Water Bodies: at least 60% of area is covered by\npermanent water bodies.",
-                        "value": 0
-                    },
-                    {
-                        "color": "05450a",
-                        "description": "Evergreen Needleleaf Forests: dominated by evergreen\nconifer trees (canopy >2m). Tree cover >60%.",
-                        "value": 1
-                    },
-                    {
-                        "color": "086a10",
-                        "description": "Evergreen Broadleaf Forests: dominated by evergreen\nbroadleaf and palmate trees (canopy >2m). Tree cover >60%.\n",
-                        "value": 2
-                    },
-                    {
-                        "color": "54a708",
-                        "description": "Deciduous Needleleaf Forests: dominated by deciduous\nneedleleaf (larch) trees (canopy >2m). Tree cover >60%.\n",
-                        "value": 3
-                    },
-                    {
-                        "color": "78d203",
-                        "description": "Deciduous Broadleaf Forests: dominated by deciduous\nbroadleaf trees (canopy >2m). Tree cover >60%.",
-                        "value": 4
-                    },
-                    {
-                        "color": "009900",
-                        "description": "Mixed Forests: dominated by neither deciduous nor\nevergreen (40-60% of each) tree type (canopy >2m). Tree cover >60%.\n",
-                        "value": 5
-                    },
-                    {
-                        "color": "c6b044",
-                        "description": "Closed Shrublands: dominated by woody perennials\n(1-2m height) >60% cover.",
-                        "value": 6
-                    },
-                    {
-                        "color": "dcd159",
-                        "description": "Open Shrublands: dominated by woody perennials\n(1-2m height) 10-60% cover.",
-                        "value": 7
-                    },
-                    {
-                        "color": "dade48",
-                        "description": "Woody Savannas: tree cover 30-60% (canopy >2m).",
-                        "value": 8
-                    },
-                    {
-                        "color": "fbff13",
-                        "description": "Savannas: tree cover 10-30% (canopy >2m).",
-                        "value": 9
-                    },
-                    {
-                        "color": "b6ff05",
-                        "description": "Grasslands: dominated by herbaceous annuals (<2m).",
-                        "value": 10
-                    },
-                    {
-                        "color": "c24f44",
-                        "description": "Croplands: at least 60% of area is cultivated\ncropland.",
-                        "value": 12
-                    },
-                    {
-                        "color": "a5a5a5",
-                        "description": "Urban and Built-up Lands: at least 30% impervious\nsurface area including building materials, asphalt and vehicles.\n",
-                        "value": 13
-                    },
-                    {
-                        "color": "f9ffa4",
-                        "description": "Barren: at least 60% of area is\nnon-vegetated barren (sand, rock, soil) or permanent snow and ice with\nless than 10% vegetation.\n",
-                        "value": 15
-                    }
-                ],
-                "name": "Majority_Land_Cover_Type_2"
-            },
-            {
-                "description": "Majority Land Cover Type 2 Assessment: Majority UMD class confidence",
-                "gee:units": "%",
-                "name": "Majority_Land_Cover_Type_2_Assessment"
-            },
-            {
-                "description": "Majority Land Cover Type 2 Percent: Percent cover of each UMD class at each pixel",
-                "gee:units": "%",
-                "name": "Majority_Land_Cover_Type_2_Percent"
-            },
-            {
-                "description": "Majority Land Cover Type 3: Most likely LAI class for each 0.05 degree pixel",
-                "gee:classes": [
-                    {
-                        "color": "1c0dff",
-                        "description": "Water Bodies: at least 60% of area is covered by permanent water bodies.",
-                        "value": 0
-                    },
-                    {
-                        "color": "b6ff05",
-                        "description": "Grasslands: dominated by herbaceous annuals (<2m) including cereal croplands.",
-                        "value": 1
-                    },
-                    {
-                        "color": "dcd159",
-                        "description": "Shrublands: shrub (1-2m) cover >10%.",
-                        "value": 2
-                    },
-                    {
-                        "color": "c24f44",
-                        "description": "Broadleaf Croplands: bominated by herbaceous annuals\n(<2m) that are cultivated with broadleaf crops.",
-                        "value": 3
-                    },
-                    {
-                        "color": "fbff13",
-                        "description": "Savannas: between 10-60% tree cover (>2m).",
-                        "value": 4
-                    },
-                    {
-                        "color": "086a10",
-                        "description": "Evergreen Broadleaf Forests: dominated by evergreen\nbroadleaf and palmate trees (canopy >2m). Tree cover >60%.\n",
-                        "value": 5
-                    },
-                    {
-                        "color": "78d203",
-                        "description": "Deciduous Broadleaf Forests: dominated by deciduous\nbroadleaf trees (canopy >2m). Tree cover >60%.",
-                        "value": 6
-                    },
-                    {
-                        "color": "05450a",
-                        "description": "Evergreen Needleleaf Forests: dominated by evergreen\nconifer trees (canopy >2m). Tree cover >60%.",
-                        "value": 7
-                    },
-                    {
-                        "color": "54a708",
-                        "description": "Deciduous Needleleaf Forests: dominated by deciduous\nneedleleaf (larch) trees (canopy >2m). Tree cover >60%.\n",
-                        "value": 8
-                    },
-                    {
-                        "color": "f9ffa4",
-                        "description": "Unvegetated: at least 60% of area is\nnon-vegetated barren (sand, rock, soil) or permanent snow and ice with\nless than 10% vegetation.\n",
-                        "value": 9
-                    },
-                    {
-                        "color": "a5a5a5",
-                        "description": "Urban and Built-up Lands: at least 30% impervious\nsurface area including building materials, asphalt and vehicles.\n",
-                        "value": 10
-                    }
-                ],
-                "name": "Majority_Land_Cover_Type_3"
-            },
-            {
-                "description": "Majority Land Cover Type 3 Assessment: Majority LAI class confidence",
-                "gee:units": "%",
-                "name": "Majority_Land_Cover_Type_3_Assessment"
-            },
-            {
-                "description": "Majority Land Cover Type 3 Percent: Percent cover of each LAI class at each pixel",
-                "gee:units": "%",
-                "name": "Majority_Land_Cover_Type_3_Percent"
-            }
-        ],
         "gee:visualizations": [
             {
                 "display_name": "IGBP Land Cover",
@@ -420,15 +160,179 @@
             "Aqua",
             "Terra"
         ],
+        "Land_Cover_Type_1_Percent_Class_0": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_1_Percent_Class_1": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_1_Percent_Class_10": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_1_Percent_Class_11": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_1_Percent_Class_12": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_1_Percent_Class_13": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_1_Percent_Class_14": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_1_Percent_Class_15": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_1_Percent_Class_16": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_1_Percent_Class_2": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_1_Percent_Class_3": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_1_Percent_Class_4": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_1_Percent_Class_5": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_1_Percent_Class_6": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_1_Percent_Class_7": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_1_Percent_Class_8": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_1_Percent_Class_9": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_2_Percent_Class_0": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_2_Percent_Class_1": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_2_Percent_Class_10": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_2_Percent_Class_11": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_2_Percent_Class_12": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_2_Percent_Class_13": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_2_Percent_Class_2": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_2_Percent_Class_3": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_2_Percent_Class_4": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_2_Percent_Class_5": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_2_Percent_Class_6": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_2_Percent_Class_7": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_2_Percent_Class_8": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_2_Percent_Class_9": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_3_Percent_Class_0": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_3_Percent_Class_1": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_3_Percent_Class_10": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_3_Percent_Class_2": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_3_Percent_Class_3": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_3_Percent_Class_4": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_3_Percent_Class_5": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_3_Percent_Class_6": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_3_Percent_Class_7": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_3_Percent_Class_8": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Land_Cover_Type_3_Percent_Class_9": {
+            "minimum": 0,
+            "maximum": 100
+        },
         "Majority_Land_Cover_Type_1": {
             "minimum": 0,
             "maximum": 16
         },
         "Majority_Land_Cover_Type_1_Assessment": {
-            "minimum": 0,
-            "maximum": 100
-        },
-        "Majority_Land_Cover_Type_1_Percent": {
             "minimum": 0,
             "maximum": 100
         },
@@ -440,19 +344,11 @@
             "minimum": 0,
             "maximum": 100
         },
-        "Majority_Land_Cover_Type_2_Percent": {
-            "minimum": 0,
-            "maximum": 100
-        },
         "Majority_Land_Cover_Type_3": {
             "minimum": 0,
             "maximum": 10
         },
         "Majority_Land_Cover_Type_3_Assessment": {
-            "minimum": 0,
-            "maximum": 100
-        },
-        "Majority_Land_Cover_Type_3_Percent": {
             "minimum": 0,
             "maximum": 100
         }
