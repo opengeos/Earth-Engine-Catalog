@@ -35,6 +35,14 @@
             "code": "JavaScript"
         },
         {
+            "rel": "source",
+            "href": "https://www.glims.org/download/glims_db_20210914.zip"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.7265/N5V98602"
+        },
+        {
             "rel": "latest-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/GLIMS/GLIMS_20230607.json",
             "type": "application/json",
@@ -47,12 +55,10 @@
             "title": "GLIMS/20171027"
         },
         {
-            "rel": "source",
-            "href": "https://www.glims.org/download/glims_db_20210914.zip"
-        },
-        {
-            "rel": "cite-as",
-            "href": "https://doi.org/10.7265/N5V98602"
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GLIMS/GLIMS_20230607.json",
+            "type": "application/json",
+            "title": "GLIMS/20230607"
         },
         {
             "rel": "self",
@@ -70,11 +76,12 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "deprecated": true,
     "gee:terms_of_use": "For the creation of any reports, publications, new\ndata sets, derived products, or services resulting from the data\nset, users should cite: GLIMS and NSIDC (2005, updated 2013): Global\nLand Ice Measurements from Space glacier database.  Compiled and\nmade available by the international GLIMS community and the National\nSnow and Ice Data Center, Boulder CO, U.S.A.,\n[doi:10.7265/N5V98602](https://doi.org/10.7265/N5V98602)\n",
     "gee:type": "table",
     "sci:doi": "10.7265/N5V98602",
     "version": "20210914",
-    "title": "GLIMS 2021: Global Land Ice Measurements From Space",
+    "title": "GLIMS 2021: Global Land Ice Measurements From Space [deprecated]",
     "extent": {
         "spatial": {
             "bbox": [

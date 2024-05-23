@@ -28,6 +28,12 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GHSL_P2023A_GHS_SMOD.json",
+            "type": "application/json",
+            "title": "JRC/GHSL/P2023A/GHS_SMOD"
+        },
+        {
             "rel": "predecessor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GHSL_P2016_SMOD_POP_GLOBE_V1.json",
             "type": "application/json",
@@ -54,7 +60,7 @@
     "gee:type": "image_collection",
     "sci:citation": "Schiavina, Marcello; Melchiorri, Michele; Pesaresi, Martino (2023): \nGHS-SMOD R2023A - GHS settlement layers, application of the Degree of\nUrbanisation methodology (stage I) to GHS-POP R2023A and GHS-BUILT-S R2023A,\nmultitemporal (1975-2030). European Commission, Joint Research Centre (JRC)\n[PID: http://data.europa.eu/89h/a0df7a6f-49de-46ea-9bde-563437a6e2ba](http://data.europa.eu/89h/a0df7a6f-49de-46ea-9bde-563437a6e2ba)\n[doi:10.2905/A0DF7A6F-49DE-46EA-9BDE-563437A6E2BA](https://doi.org/10.2905/A0DF7A6F-49DE-46EA-9BDE-563437A6E2BA)\n",
     "sci:doi": "10.2905/A0DF7A6F-49DE-46EA-9BDE-563437A6E2BA",
-    "version": "P2023A",
+    "version": "2023",
     "title": "GHSL: Degree of Urbanization 1975-2030 (P2023A)",
     "extent": {
         "spatial": {

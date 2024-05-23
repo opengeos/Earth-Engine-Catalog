@@ -52,6 +52,18 @@
             "href": "https://doi.org/10.5281/zenodo.3939050"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_Landcover_100m_Proba-V-C3_Global.json",
+            "type": "application/json",
+            "title": "COPERNICUS/Landcover/100m/Proba-V-C3/Global"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_Landcover_100m_Proba-V_Global.json",
+            "type": "application/json",
+            "title": "COPERNICUS/Landcover/100m/Proba-V/Global"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_Landcover_100m_Proba-V-C3_Global.json",
             "type": "application/json"
@@ -91,7 +103,7 @@
             "doi": "10.5281/ZENODO.3939050"
         }
     ],
-    "version": "V3.01",
+    "version": "3.01",
     "title": "Copernicus Global Land Cover Layers: CGLS-LC100 Collection 3",
     "extent": {
         "spatial": {

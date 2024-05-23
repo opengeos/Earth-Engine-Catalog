@@ -35,6 +35,14 @@
             "code": "JavaScript"
         },
         {
+            "rel": "source",
+            "href": "https://www.glims.org/download/glims_db_20171027.zip"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.7265/N5V98602"
+        },
+        {
             "rel": "latest-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/GLIMS/GLIMS_20230607.json",
             "type": "application/json",
@@ -51,14 +59,6 @@
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/GLIMS/GLIMS_20210914.json",
             "type": "application/json",
             "title": "GLIMS/20210914"
-        },
-        {
-            "rel": "source",
-            "href": "https://www.glims.org/download/glims_db_20171027.zip"
-        },
-        {
-            "rel": "cite-as",
-            "href": "https://doi.org/10.7265/N5V98602"
         },
         {
             "rel": "self",

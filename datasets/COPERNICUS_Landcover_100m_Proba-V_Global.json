@@ -28,18 +28,24 @@
             "type": "text/html"
         },
         {
-            "rel": "successor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_Landcover_100m_Proba-V-C3_Global.json",
-            "type": "application/json",
-            "title": "COPERNICUS/Landcover/100m/Proba-V-C3/Global"
-        },
-        {
             "rel": "source",
             "href": "https://lcviewer.vito.be/download"
         },
         {
             "rel": "cite-as",
             "href": "https://doi.org/10.5281/zenodo.3243509"
+        },
+        {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_Landcover_100m_Proba-V-C3_Global.json",
+            "type": "application/json",
+            "title": "COPERNICUS/Landcover/100m/Proba-V-C3/Global"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_Landcover_100m_Proba-V-C3_Global.json",
+            "type": "application/json",
+            "title": "COPERNICUS/Landcover/100m/Proba-V-C3/Global"
         },
         {
             "rel": "self",
@@ -64,7 +70,7 @@
     "gee:user_uploaded": true,
     "sci:citation": "Buchhorn, M. ; Smets, B. ; Bertels, L. ; Lesiv, M. ; Tsendbazar, N. - E. ; Herold, M. ;\nFritz, S. Copernicus Global Land Service: Land Cover 100m: epoch 2015: Globe. Dataset of the\nglobal component of the Copernicus Land Monitoring Service 2019.\n[doi:10.5281/zenodo.3243509](https://doi.org/10.5281/zenodo.3243509)\n",
     "sci:doi": "10.5281/zenodo.3243509",
-    "version": "V2.02",
+    "version": "2.02",
     "title": "Copernicus Global Land Cover Layers: CGLS-LC100 Collection 2 [deprecated]",
     "extent": {
         "spatial": {

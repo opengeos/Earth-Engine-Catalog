@@ -28,6 +28,12 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GHSL_P2023A_GHS_POP.json",
+            "type": "application/json",
+            "title": "JRC/GHSL/P2023A/GHS_POP"
+        },
+        {
             "rel": "predecessor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GHSL_P2016_POP_GPW_GLOBE_V1.json",
             "type": "application/json",
@@ -54,7 +60,7 @@
     "gee:type": "image_collection",
     "sci:citation": "Schiavina, Marcello; Freire, Sergio; Alessandra Carioli; MacManus, Kytt (2023):\nGHS-POP R2023A - GHS population grid multitemporal (1975-2030). European\nCommission, Joint Research Centre (JRC)\n[PID: http://data.europa.eu/89h/2ff68a52-5b5b-4a22-8f40-c41da8332cfe](http://data.europa.eu/89h/2ff68a52-5b5b-4a22-8f40-c41da8332cfe)\n[doi:10.2905/2FF68A52-5B5B-4A22-8F40-C41DA8332CFE](https://doi.org/10.2905/2FF68A52-5B5B-4A22-8F40-C41DA8332CFE)\n",
     "sci:doi": "10.2905/2FF68A52-5B5B-4A22-8F40-C41DA8332CFE",
-    "version": "P2023A",
+    "version": "2023",
     "title": "GHSL: Global population surfaces 1975-2030 (P2023A)",
     "extent": {
         "spatial": {

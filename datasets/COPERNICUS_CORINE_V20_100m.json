@@ -48,6 +48,18 @@
             "href": "https://land.copernicus.eu/pan-european/corine-land-cover/clc2018?tab=download"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_CORINE_V20_100m.json",
+            "type": "application/json",
+            "title": "COPERNICUS/CORINE/V20/100m"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_CORINE_V18_5_1_100m.json",
+            "type": "application/json",
+            "title": "COPERNICUS/CORINE/V18_5_1/100m"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_CORINE_V20_100m.json",
             "type": "application/json"
@@ -65,7 +77,7 @@
     ],
     "gee:terms_of_use": "Access to data is based on a principle of full, open, and free access as\nestablished by the Copernicus data and information policy Regulation (EU)\nNo 1159/2013 of 12 July 2013. For more information visit:\n[https://land.copernicus.eu/pan-european/corine-land-cover/clc2018?tab=metadata](https://land.copernicus.eu/pan-european/corine-land-cover/clc2018?tab=metadata).\n",
     "gee:type": "image_collection",
-    "version": "V20",
+    "version": "20.0.0",
     "title": "Copernicus CORINE Land Cover",
     "extent": {
         "spatial": {

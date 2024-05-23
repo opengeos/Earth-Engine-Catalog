@@ -29,15 +29,9 @@
         },
         {
             "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GSW1_4_GlobalSurfaceWater.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GSW1_2_GlobalSurfaceWater.json",
             "type": "application/json",
-            "title": "JRC/GSW1_4/GlobalSurfaceWater"
-        },
-        {
-            "rel": "predecessor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GSW1_0_GlobalSurfaceWater.json",
-            "type": "application/json",
-            "title": "JRC/GSW1_0/GlobalSurfaceWater"
+            "title": "JRC/GSW1_2/GlobalSurfaceWater"
         },
         {
             "rel": "successor-version",

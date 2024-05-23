@@ -40,11 +40,13 @@
         }
     ],
     "stac_extensions": [
-        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:terms_of_use": "The FORMA datasets are available without restriction\non use or distribution. WRI does request that the\nuser give proper attribution and identify WRI and GFW, where applicable,\nas the source of the data.\n",
     "gee:type": "image",
     "gee:user_uploaded": true,
+    "version": "Unknown",
     "title": "FORMA Alerts",
     "extent": {
         "spatial": {

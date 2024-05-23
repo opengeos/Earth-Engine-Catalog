@@ -28,6 +28,18 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/HYCOM/HYCOM_sea_temp_salinity.json",
+            "type": "application/json",
+            "title": "HYCOM/sea_temp_salinity"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/HYCOM/HYCOM_GLBu0_08_sea_temp_salinity.json",
+            "type": "application/json",
+            "title": "HYCOM/GLBu0_08/sea_temp_salinity"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/HYCOM/HYCOM_sea_temp_salinity.json",
             "type": "application/json"
@@ -41,7 +53,8 @@
     ],
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:interval": {
         "interval": 1,
@@ -51,6 +64,7 @@
     "gee:terms_of_use": "This dataset is freely available with no restrictions.",
     "gee:type": "image_collection",
     "sci:citation": "J. A. Cummings and O. M. Smedstad. 2013: Variational Data Assimilation for\nthe Global Ocean. Data Assimilation for Atmospheric, Oceanic and Hydrologic\nApplications vol II, chapter 13, 303-343.\n",
+    "version": "GLBy0.08",
     "title": "HYCOM: Hybrid Coordinate Ocean Model, Water Temperature and Salinity",
     "extent": {
         "spatial": {
@@ -67,7 +81,7 @@
             "interval": [
                 [
                     "1992-10-02T00:00:00Z",
-                    "2024-05-20T09:00:00Z"
+                    "2024-05-21T09:00:00Z"
                 ]
             ]
         }

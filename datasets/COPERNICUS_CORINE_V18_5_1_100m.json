@@ -28,12 +28,6 @@
             "type": "text/html"
         },
         {
-            "rel": "successor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_CORINE_V20_100m.json",
-            "type": "application/json",
-            "title": "COPERNICUS/CORINE/V20/100m"
-        },
-        {
             "rel": "source",
             "href": "https://land.copernicus.eu/pan-european/corine-land-cover/clc-1990?tab=download"
         },
@@ -48,6 +42,18 @@
         {
             "rel": "source",
             "href": "https://land.copernicus.eu/pan-european/corine-land-cover/clc-2012?tab=download"
+        },
+        {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_CORINE_V20_100m.json",
+            "type": "application/json",
+            "title": "COPERNICUS/CORINE/V20/100m"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_CORINE_V20_100m.json",
+            "type": "application/json",
+            "title": "COPERNICUS/CORINE/V20/100m"
         },
         {
             "rel": "self",
@@ -68,7 +74,7 @@
     "deprecated": true,
     "gee:terms_of_use": "Access to data is based on a principle of full, open, and free access as\nestablished by the Copernicus data and information policy Regulation (EU)\nNo 1159/2013 of 12 July 2013. For more information visit:\n[https://land.copernicus.eu/pan-european/corine-land-cover/clc-2012?tab=metadata](https://land.copernicus.eu/pan-european/corine-land-cover/clc-2012?tab=metadata).\n",
     "gee:type": "image_collection",
-    "version": "V18.5.1",
+    "version": "18.5.1",
     "title": "Copernicus CORINE Land Cover [deprecated]",
     "extent": {
         "spatial": {
