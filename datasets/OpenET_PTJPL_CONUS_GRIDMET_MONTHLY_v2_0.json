@@ -116,9 +116,96 @@
                 "name": "et"
             },
             {
-                "description": "Number of cloud free values\n",
+                "description": "Number of cloud free values",
                 "gee:units": "count",
                 "name": "count"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Date assets were built",
+                "name": "build_date",
+                "type": "STRING"
+            },
+            {
+                "description": "Maximum CLOUD_COVER_LAND percent value for Landsat images included in interpolation",
+                "name": "cloud_cover_max",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "List of Landsat collections for Landsat images included in the interpolation",
+                "name": "collections",
+                "type": "STRING"
+            },
+            {
+                "description": "OpenET core library version",
+                "name": "core_version",
+                "type": "STRING"
+            },
+            {
+                "description": "End date of month",
+                "name": "end_date",
+                "type": "STRING"
+            },
+            {
+                "description": "Band in et_reference_source that contains the daily reference ET data",
+                "name": "et_reference_band",
+                "type": "STRING"
+            },
+            {
+                "description": "Spatial interpolation mode to resample daily reference ET data",
+                "name": "et_reference_resample",
+                "type": "STRING"
+            },
+            {
+                "description": "Collection ID for the daily reference ET data",
+                "name": "et_reference_source",
+                "type": "STRING"
+            },
+            {
+                "description": "Maximum number of days before and after each image date to include in interpolation",
+                "name": "interp_days",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Method used to interpolate between Landsat model estimates",
+                "name": "interp_method",
+                "type": "STRING"
+            },
+            {
+                "description": "Number of available images in the interpolation source image collection for the target month",
+                "name": "interp_source_count",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "MGRS grid zone ID",
+                "name": "mgrs_tile",
+                "type": "STRING"
+            },
+            {
+                "description": "OpenET model name",
+                "name": "model_name",
+                "type": "STRING"
+            },
+            {
+                "description": "OpenET model version",
+                "name": "model_version",
+                "type": "STRING"
+            },
+            {
+                "description": "Scaling factor that should be applied to the count band",
+                "name": "scale_factor_count",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Scaling factor that should be applied to the et band",
+                "name": "scale_factor_et",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Start date of month",
+                "name": "start_date",
+                "type": "STRING"
             }
         ],
         "gee:visualizations": [

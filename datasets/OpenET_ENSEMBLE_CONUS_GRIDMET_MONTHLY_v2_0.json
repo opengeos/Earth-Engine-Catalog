@@ -229,6 +229,33 @@
                 "name": "et_ensemble_sam"
             }
         ],
+        "gee:schema": [
+            {
+                "description": "Date assets were built",
+                "name": "build_date",
+                "type": "STRING"
+            },
+            {
+                "description": "OpenET core library version",
+                "name": "core_version",
+                "type": "STRING"
+            },
+            {
+                "description": "End date of month",
+                "name": "end_date",
+                "type": "STRING"
+            },
+            {
+                "description": "MGRS grid zone ID",
+                "name": "mgrs_tile",
+                "type": "STRING"
+            },
+            {
+                "description": "Start date of month",
+                "name": "start_date",
+                "type": "STRING"
+            }
+        ],
         "gee:visualizations": [
             {
                 "display_name": "OpenET Ensemble Monthly ET",
