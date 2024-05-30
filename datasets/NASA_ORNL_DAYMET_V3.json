@@ -28,14 +28,20 @@
             "type": "text/html"
         },
         {
-            "rel": "successor-version",
+            "rel": "cite-as",
+            "href": "https://doi.org/10.3334/ORNLDAAC/1328"
+        },
+        {
+            "rel": "latest-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_ORNL_DAYMET_V4.json",
             "type": "application/json",
             "title": "NASA/ORNL/DAYMET_V4"
         },
         {
-            "rel": "cite-as",
-            "href": "https://doi.org/10.3334/ORNLDAAC/1328"
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_ORNL_DAYMET_V4.json",
+            "type": "application/json",
+            "title": "NASA/ORNL/DAYMET_V4"
         },
         {
             "rel": "self",
@@ -73,7 +79,7 @@
             "doi": "10.3334/ORNLDAAC/1328"
         }
     ],
-    "version": "V3",
+    "version": "3.0",
     "title": "Daymet V3: Daily Surface Weather and Climatological Summaries [deprecated]",
     "extent": {
         "spatial": {

@@ -28,6 +28,18 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/VITO/VITO_PROBAV_C1_S1_TOC_333M.json",
+            "type": "application/json",
+            "title": "VITO/PROBAV/C1/S1_TOC_333M"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/VITO/VITO_PROBAV_S1_TOC_333M.json",
+            "type": "application/json",
+            "title": "VITO/PROBAV/S1_TOC_333M"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/VITO/VITO_PROBAV_C1_S1_TOC_333M.json",
             "type": "application/json"

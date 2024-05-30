@@ -28,6 +28,12 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Oxford/Oxford_MAP_friction_surface_2019.json",
+            "type": "application/json",
+            "title": "Oxford/MAP/friction_surface_2019"
+        },
+        {
             "rel": "successor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/Oxford/Oxford_MAP_friction_surface_2019.json",
             "type": "application/json",
@@ -55,7 +61,7 @@
     "gee:type": "image",
     "gee:user_uploaded": true,
     "sci:citation": "D.J. Weiss, A. Nelson, H.S. Gibson, W. Temperley, S. Peedell, A.\nLieber, M. Hancher, E. Poyart, S. Belchior, N. Fullman, B. Mappin,\nU. Dalrymple, J. Rozier, T.C.D. Lucas, R.E. Howes, L.S. Tusting,\nS.Y. Kang, E. Cameron, D. Bisanzio, K.E. Battle, S. Bhatt, and\nP.W. Gething. A global map of travel time to cities to assess inequalities\nin accessibility in 2015. Nature (2018).\n[doi:10.1038/nature25181](https://doi.org/10.1038/nature25181)\n",
-    "version": "v1.0",
+    "version": "1.0",
     "title": "Global Friction Surface 2015 [deprecated]",
     "extent": {
         "spatial": {

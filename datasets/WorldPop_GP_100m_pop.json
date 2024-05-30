@@ -28,6 +28,18 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WorldPop/WorldPop_GP_100m_pop.json",
+            "type": "application/json",
+            "title": "WorldPop/GP/100m/pop"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WorldPop/WorldPop_POP.json",
+            "type": "application/json",
+            "title": "WorldPop/POP"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/WorldPop/WorldPop_GP_100m_pop.json",
             "type": "application/json"
@@ -41,7 +53,8 @@
     ],
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:terms_of_use": "WorldPop datasets are licensed under the Creative Commons Attribution 4.0\nInternational License. Users are free to use, copy, distribute, transmit,\nand adapt the work for commercial and non-commercial purposes, without\nrestriction, as long as clear attribution of the source is provided.\n",
     "gee:type": "image_collection",
@@ -58,6 +71,7 @@
             "citation": "Asia population count data: Gaughan AE, Stevens FR, Linard C, Jia P and\nTatem AJ, 2013, High resolution population distribution maps for Southeast\nAsia in 2010 and 2015, PLoS ONE, 8(2): e55882.\n"
         }
     ],
+    "version": "0.1",
     "title": "WorldPop Global Project Population Data: Estimated Residential Population per 100x100m Grid Square",
     "extent": {
         "spatial": {

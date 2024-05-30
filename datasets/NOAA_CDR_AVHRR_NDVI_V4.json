@@ -28,14 +28,20 @@
             "type": "text/html"
         },
         {
-            "rel": "successor-version",
+            "rel": "cite-as",
+            "href": "https://doi.org/10.7289/V5PZ56R6"
+        },
+        {
+            "rel": "latest-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_CDR_AVHRR_NDVI_V5.json",
             "type": "application/json",
             "title": "NOAA/CDR/AVHRR/NDVI/V5"
         },
         {
-            "rel": "cite-as",
-            "href": "https://doi.org/10.7289/V5PZ56R6"
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_CDR_AVHRR_NDVI_V5.json",
+            "type": "application/json",
+            "title": "NOAA/CDR/AVHRR/NDVI/V5"
         },
         {
             "rel": "self",
@@ -64,7 +70,7 @@
     "gee:type": "image_collection",
     "sci:citation": "Eric Vermote, Chris Justice, Ivan Csiszar, Jeff Eidenshink, Ranga Myneni,\nFrederic Baret, Ed Masuoka, Robert Wolfe, Martin Claverie and NOAA CDR\nProgram (2014): NOAA Climate Data Record (CDR) of Normalized Difference\nVegetation Index (NDVI), Version 4. [indicate subset used]. NOAA National\nClimatic Data Center.\n[doi:10.7289/V5PZ56R6](https://data.nodc.noaa.gov/cgi-bin/iso?id=gov.noaa.ncdc:C00813)\n",
     "sci:doi": "10.7289/V5PZ56R6",
-    "version": "4",
+    "version": "4.0",
     "title": "NOAA CDR AVHRR NDVI: Normalized Difference Vegetation Index, Version 4 [deprecated]",
     "extent": {
         "spatial": {

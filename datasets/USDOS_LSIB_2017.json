@@ -35,6 +35,18 @@
             "code": "JavaScript"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USDOS/USDOS_LSIB_2017.json",
+            "type": "application/json",
+            "title": "USDOS/LSIB/2017"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USDOS/USDOS_LSIB_2013.json",
+            "type": "application/json",
+            "title": "USDOS/LSIB/2013"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/USDOS/USDOS_LSIB_2017.json",
             "type": "application/json"

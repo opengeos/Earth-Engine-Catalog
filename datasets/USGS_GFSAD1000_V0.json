@@ -28,6 +28,12 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_GFSAD1000_V1.json",
+            "type": "application/json",
+            "title": "USGS/GFSAD1000_V1"
+        },
+        {
             "rel": "successor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_GFSAD1000_V1.json",
             "type": "application/json",
@@ -54,7 +60,7 @@
     "gee:terms_of_use": "Most U.S. Geological Survey (USGS) information resides\nin the public domain and may be used without restriction. Additional\ninformation on [Acknowledging or Crediting USGS as Information\nSource](https://www.usgs.gov/information-policies-and-instructions/crediting-usgs) is available.\n",
     "gee:type": "image",
     "sci:citation": "Thenkabail P.S., Knox J.W., Ozdogan, M., Gumma, M.K., Congalton, R.G., Wu,\nZ., Milesi, C., Finkral, A., Marshall, M., Mariotto, I., You, S. Giri, C.\nand Nagler, P. 2012. Assessing future risks to agricultural productivity,\nwater resources and food security: how can remote sensing help?.\nPhotogrammetric Engineering and Remote Sensing, August 2012 Special Issue\non Global Croplands: Highlight Article. 78(8): 773-782.\n",
-    "version": "V0.0",
+    "version": "0.0",
     "title": "GFSAD1000: Cropland Extent 1km Crop Dominance, Global Food-Support Analysis Data [deprecated]",
     "extent": {
         "spatial": {

@@ -28,6 +28,12 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_3DEP_10m.json",
+            "type": "application/json",
+            "title": "USGS/3DEP/10m"
+        },
+        {
             "rel": "successor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_3DEP_10m.json",
             "type": "application/json",

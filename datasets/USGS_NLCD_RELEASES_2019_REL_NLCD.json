@@ -28,6 +28,12 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2019_REL_NLCD.json",
+            "type": "application/json",
+            "title": "USGS/NLCD_RELEASES/2019_REL/NLCD"
+        },
+        {
             "rel": "predecessor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2016_REL.json",
             "type": "application/json",
@@ -55,7 +61,7 @@
     "gee:user_uploaded": true,
     "sci:citation": "Dewitz, J., and U.S. Geological Survey, 2021, National Land Cover Database (NLCD)\n2019 Products (ver. 2.0, June 2021): U.S. Geological Survey data release,\n[doi:10.5066/P9KZCM54](https://doi.org/10.5066/P9KZCM54)\n",
     "sci:doi": "10.5066/P9KZCM54",
-    "version": "2.0",
+    "version": "2019_REL",
     "title": "NLCD 2019: USGS National Land Cover Database, 2019 release",
     "extent": {
         "spatial": {

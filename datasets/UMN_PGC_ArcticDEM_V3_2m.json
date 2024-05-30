@@ -32,6 +32,18 @@
             "href": "https://doi.org/10.7910/DVN/OHHUKH"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMN/UMN_PGC_ArcticDEM_V3_2m.json",
+            "type": "application/json",
+            "title": "UMN/PGC/ArcticDEM/V3/2m"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMN/UMN_PGC_ArcticDEM_V2_2m.json",
+            "type": "application/json",
+            "title": "UMN/PGC/ArcticDEM/V2/2m"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMN/UMN_PGC_ArcticDEM_V3_2m.json",
             "type": "application/json"
@@ -52,7 +64,7 @@
     "gee:type": "image_collection",
     "sci:citation": "DEM(s) created by the Polar Geospatial Center from DigitalGlobe, Inc. imagery.\nPorter, Claire; Morin, Paul; Howat, Ian; Noh, Myoung-Jon; Bates, Brian;\nPeterman, Kenneth; Keesey, Scott; Schlenk, Matthew; Gardiner, Judith;\nTomko, Karen; Willis, Michael; Kelleher, Cole; Cloutier, Michael; Husby, Eric;\nFoga, Steven; Nakamura, Hitomi; Platson, Melisa; Wethington, Michael, Jr.;\nWilliamson, Cathleen; Bauer, Gregory; Enos, Jeremy; Arnold, Galen; Kramer, William;\nBecker, Peter; Doshi, Abhijit; D'Souza, Cristelle; Cummens, Pat; Laurier, Fabien;\nBojesen, Mikkel, 2018, ArcticDEM, Harvard Dataverse, V1, [Date Accessed].\n",
     "sci:doi": "10.7910/DVN/OHHUKH",
-    "version": "V3",
+    "version": "3.0",
     "title": "ArcticDEM Strips",
     "extent": {
         "spatial": {
