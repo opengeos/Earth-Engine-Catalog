@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "MODIS/061/MOD09CMG",
+    "id": "MODIS/061/MYD09CMG",
     "stac_version": "1.0.0",
-    "description": "The MOD09CMG Version 6.1 product provides an estimate of the surface\nspectral reflectance of Terra Moderate Resolution Imaging Spectroradiometer\n(MODIS) Bands 1 through 7, resampled to 5600 meter pixel resolution and\ncorrected for atmospheric conditions such as gasses, aerosols, and Rayleigh\nscattering. The MOD09CMG data product provides 25 layers including MODIS\nbands 1 through 7; Brightness Temperature data from thermal bands 20, 21,\n31, and 32; along with Quality Assurance (QA) and observation bands.\nThis product is based on a Climate Modeling Grid (CMG) for use in climate\nsimulation models.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/925/MOD09_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/305/MOD09_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MOD09CMG)\n",
+    "description": "The MYD09CMG Version 6.1 product provides an estimate of the surface\nspectral reflectance of Aqua Moderate Resolution Imaging Spectroradiometer\n(MODIS) Bands 1 through 7, resampled to 5600 meter pixel resolution and\ncorrected for atmospheric conditions such as gasses, aerosols, and Rayleigh\nscattering. The MYD09CMG data product provides 25 layers including MODIS\nbands 1 through 7; Brightness Temperature data from thermal bands 20, 21,\n31, and 32; along with Quality Assurance (QA) and observation bands.\nThis product is based on a Climate Modeling Grid (CMG) for use in climate\nsimulation models.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/925/MOD09_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/305/MOD09_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD09CMG)\n",
     "links": [
         {
             "rel": "root",
@@ -12,28 +12,28 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_061_MOD09CMG",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_061_MYD09CMG",
             "type": "text/html",
-            "title": "Run the example for MODIS/061/MOD09CMG in the Earth Engine Code Editor",
+            "title": "Run the example for MODIS/061/MYD09CMG in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MOD09CMG_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MYD09CMG_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD09CMG#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD09CMG#terms-of-use",
             "type": "text/html"
         },
         {
             "rel": "cite-as",
-            "href": "https://doi.org/10.5067/MODIS/MOD09CMG.061"
+            "href": "https://doi.org/10.5067/MODIS/MYD09CMG.061"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MOD09CMG.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MYD09CMG.json",
             "type": "application/json"
         },
         {
@@ -54,14 +54,14 @@
         "unit": "day"
     },
     "gee:provider_ids": [
-        "C2565788876-LPCLOUD"
+        "C2565794001-LPCLOUD"
     ],
     "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
     "gee:type": "image_collection",
     "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
-    "sci:doi": "10.5067/MODIS/MOD09CMG.061",
+    "sci:doi": "10.5067/MODIS/MYD09CMG.061",
     "version": "6.1",
-    "title": "MOD09CMG.061 Terra Surface Reflectance Daily L3 Global 0.05 Deg CMG",
+    "title": "MYD09CMG.061 Aqua Surface Reflectance Daily L3 Global 0.05 Deg CMG",
     "extent": {
         "spatial": {
             "bbox": [
@@ -76,8 +76,8 @@
         "temporal": {
             "interval": [
                 [
-                    "2000-02-24T00:00:00Z",
-                    "2024-05-27T00:00:00Z"
+                    "2002-07-04T00:00:00Z",
+                    "2024-05-26T00:00:00Z"
                 ]
             ]
         }
@@ -87,7 +87,7 @@
         "brightness_temperature",
         "ozone",
         "surface_reflectance",
-        "terra"
+        "aqua"
     ],
     "providers": [
         {
@@ -96,14 +96,14 @@
                 "licensor",
                 "producer"
             ],
-            "url": "https://doi.org/10.5067/MODIS/MOD09CMG.061"
+            "url": "https://doi.org/10.5067/MODIS/MYD09CMG.061"
         },
         {
             "name": "Google Earth Engine",
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD09CMG"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD09CMG"
         }
     ],
     "summaries": {
@@ -139,7 +139,7 @@
             "MODIS"
         ],
         "platform": [
-            "Terra"
+            "Aqua"
         ],
         "Coarse_Resolution_Band_3_Path_Radiance": {
             "minimum": -0.01,
