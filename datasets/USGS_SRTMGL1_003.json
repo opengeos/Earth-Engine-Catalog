@@ -45,7 +45,7 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:provider_ids": [
-        "C1000000240-LPDAAC_ECS"
+        "C2763266362-LPCLOUD"
     ],
     "gee:terms_of_use": "Unless otherwise noted, images and video on JPL public\nweb sites (public sites ending with a jpl.nasa.gov address) may\nbe used for any purpose without prior permission. For more information\nand exceptions visit the [JPL Image Use Policy site](https://www.jpl.nasa.gov/imagepolicy/).\n",
     "gee:type": "image",
@@ -89,7 +89,7 @@
                 "licensor",
                 "producer"
             ],
-            "url": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000240-LPDAAC_ECS.html"
+            "url": "https://doi.org/10.5067/MEaSUREs/SRTM/SRTMGL1_NC.003"
         },
         {
             "name": "Google Earth Engine",
