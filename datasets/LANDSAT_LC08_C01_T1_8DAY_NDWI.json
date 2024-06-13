@@ -28,11 +28,6 @@
             "type": "text/html"
         },
         {
-            "rel": "license",
-            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
-            "type": "text/html"
-        },
-        {
             "rel": "latest-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_COMPOSITES_C02_T1_L2_8DAY_NDWI.json",
             "type": "application/json",
@@ -92,7 +87,7 @@
             ]
         }
     },
-    "license": "CC-BY-4.0",
+    "license": "proprietary",
     "keywords": [
         "landsat",
         "ndwi",
