@@ -1,0 +1,139 @@
+{
+    "type": "Collection",
+    "id": "NOAA/IBTrACS/v4",
+    "stac_version": "1.0.0",
+    "description": "The International Best Track Archive for Climate Stewardship (IBTrACS)\nprovides location and intensity for global tropical cyclones. The data span\nfrom the 1840s to present, generally providing data at 3-hour intervals.\nWhile the best track data is focused on position and intensity\n(maximum sustained wind speed or minimum central pressure), other parameters\nare provided by some agencies (e.g., radius of maximum winds, environmental\npressure, radius of hurricane force winds, etc.) and are likewise provided\nin IBTrACS. Files are available subset by Basin or time period, where basins\ninclude: East Pacific, North Atlantic, North Indian, South Atlantic,\nSouth Indian, South Pacific, and the West Pacific.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_IBTrACS_v4",
+            "type": "text/html",
+            "title": "Run the example for NOAA/IBTrACS/v4 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_IBTrACS_v4_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_IBTrACS_v4#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_IBTrACS_v4_FeatureView",
+            "type": "text/html",
+            "title": "Run the example for NOAA/IBTrACS/v4 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "source",
+            "href": "https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r00/access/csv/ibtracs.ALL.list.v04r00.csv"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_IBTrACS_v4.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/catalog.json",
+            "type": "application/json",
+            "title": "NOAA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:terms_of_use": "NOAA data, information, and products, regardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use.\n",
+    "gee:type": "table",
+    "version": "4.0",
+    "title": "International Best Track Archive for Climate Stewardship Project",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    0.4,
+                    180,
+                    63.1
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1842-10-25T00:00:00Z",
+                    "2024-05-19T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "hurricane",
+        "noaa",
+        "weather"
+    ],
+    "providers": [
+        {
+            "name": "NOAA NCEI",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ncei.noaa.gov/products/international-best-track-archive"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_IBTrACS_v4"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Hurricane locations",
+                "lookat": {
+                    "lat": 30,
+                    "lon": -150,
+                    "zoom": 3
+                },
+                "table_visualization": {
+                    "color": "black",
+                    "point_size": 1
+                }
+            },
+            {
+                "display_name": "Hurricane locations",
+                "lookat": {
+                    "lat": 30,
+                    "lon": -150,
+                    "zoom": 3
+                },
+                "visualize_as": "FeatureView"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 6000,
+            "prerender_tiles": true,
+            "thinning_ranking": [
+                "id DESC"
+            ],
+            "thinning_strategy": "GLOBALLY_CONSISTENT",
+            "z_order_ranking": [
+                "seq ASC"
+            ]
+        }
+    }
+}
