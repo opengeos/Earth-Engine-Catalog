@@ -1,0 +1,121 @@
+{
+    "type": "Collection",
+    "id": "HU_BERLIN/EPFD/V2/points",
+    "stac_version": "1.0.0",
+    "description": "European primary forest data harmonizes 48 different, mostly field-based\ndatasets of primary forests, and contains 18,411 individual patches\n(41.1 Mha) spread across 33 countries. It includes includes mainly\nold-growth, late-successional forests, but also some early seral stages\nand young forests that originated after natural disturbances and natural\nregeneration, without subsequent management.\n\nFor more information, including a complete list of authors and their\naffiliations, please see the\n[dataset documentation](https://www.nature.com/articles/s41597-021-00988-7)\nThis dataset is a point-based, where each point represents the\napproximate center of a primary forest.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/HU_BERLIN/HU_BERLIN_EPFD_V2_points",
+            "type": "text/html",
+            "title": "Run the example for HU_BERLIN/EPFD/V2/points in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/HU_BERLIN/HU_BERLIN_EPFD_V2_points_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/HU_BERLIN_EPFD_V2_points#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/HU_BERLIN/HU_BERLIN_EPFD_V2_points_FeatureView",
+            "type": "text/html",
+            "title": "Run the example for HU_BERLIN/EPFD/V2/points in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/HU_BERLIN/HU_BERLIN_EPFD_V2_points.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/HU_BERLIN/catalog.json",
+            "type": "application/json",
+            "title": "HU_BERLIN"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:terms_of_use": "European primary forest datasets are provided under the CC BY 4.0\nlicense, which allows for most commmercial, noncommercial, and academic\nuses. See [provider terms of use](https://www.nature.com/articles/s41597-021-00988-7#Tab3:~:text=Full%20size%20table-,Rights%20and%20permissions,-Open%20Access%20This).\n",
+    "gee:type": "table",
+    "version": "2.0",
+    "title": "European Primary Forest Dataset - Points",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T01:00:00Z",
+                    "2019-12-31T16:45:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "europe",
+        "forest"
+    ],
+    "providers": [
+        {
+            "name": "Geography Department, Humboldt University of Berlin, Berlin, Germany",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.geographie.hu-berlin.de/en/geography_department"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/HU_BERLIN_EPFD_V2_points"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "European Primary Forest Points",
+                "lookat": {
+                    "lat": 50.11,
+                    "lon": 13.64,
+                    "zoom": 4
+                },
+                "table_visualization": {
+                    "color": "black",
+                    "point_size": 1
+                }
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 250,
+            "thinning_ranking": [
+                "Shape_Area DESC"
+            ],
+            "thinning_strategy": "HIGHER_DENSITY"
+        }
+    }
+}
