@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "NOAA/VIIRS/001/VNP09GA",
+    "id": "NASA/VIIRS/002/VNP09GA",
     "stac_version": "1.0.0",
-    "description": "The Visible Infrared Imaging Radiometer Suite (VIIRS) daily surface\nreflectance (VNP09GA) product provides an estimate of land\nsurface reflectance from the Suomi National Polar-Orbiting Partnership\n(S-NPP) VIIRS sensor. Data are provided for three imagery bands\n(I1, I2, I3) at nominal 500 meter resolution (~463 meter) and nine\nmoderate-resolution bands (M1, M2, M3, M4, M5, M7, M8, M10, M11) at nominal\n1 kilometer (~926 meter) resolution. The 500 meter and 1 kilometer datasets\nare derived through resampling the native 375 meter and 750 meter VIIRS\nresolutions, respectively, in the L2 input product. These bands are\ncorrected for atmospheric conditions to provide an estimate\nof the surface spectral reflectance as it would be measured at ground level.\n\nThe data is temporally aggregated over each of the 16 possible passes per\nday. When multiple observations are present for each day, only the first\nof the highest-quality observations is included.\n\nFor additional information, visit the VIIRS [Land Product Quality\nAssessment website](https://landweb.modaps.eosdis.nasa.gov/browse?sensor=VIIRS&sat=SNPP) and see\nthe [User Guide](https://lpdaac.usgs.gov/documents/124/VNP09_User_Guide_V1.6.pdf).\n\nDocumentation:\n\n* [User's Guide] (https://lpdaac.usgs.gov/documents/124/VNP09_User_Guide_V1.6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)] (https://lpdaac.usgs.gov/documents/122/VNP09_ATBD.pdf)\n",
+    "description": "The Visible Infrared Imaging Radiometer Suite (VIIRS) daily surface\nreflectance (VNP09GA) product provides an estimate of land\nsurface reflectance from the Suomi National Polar-Orbiting Partnership\n(S-NPP) VIIRS sensor. Data are provided for three imagery bands\n(I1, I2, I3) at nominal 500 meter resolution (~463 meter) and nine\nmoderate-resolution bands (M1, M2, M3, M4, M5, M7, M8, M10, M11) at nominal\n1 kilometer (~926 meter) resolution. The 500 meter and 1 kilometer datasets\nare derived through resampling the native 375 meter and 750 meter VIIRS\nresolutions, respectively, in the L2 input product. These bands are\ncorrected for atmospheric conditions to provide an estimate\nof the surface spectral reflectance as it would be measured at ground level.\n\nThe data is temporally aggregated over each of the 16 possible passes per\nday. When multiple observations are present for each day, only the first\nof the highest-quality observations is included.\n\nThe band scale factors are already applied.\n\nFor additional information, visit the VIIRS [Land Product Quality\nAssessment website](https://landweb.modaps.eosdis.nasa.gov/browse?sensor=VIIRS&sat=SNPP)\n\nDocumentation:\n\n* [User's Guide] (https://lpdaac.usgs.gov/documents/1657/VNP09_User_Guide_V2.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)] (https://lpdaac.usgs.gov/documents/122/VNP09_ATBD.pdf)\n",
     "links": [
         {
             "rel": "root",
@@ -12,24 +12,24 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_VIIRS_001_VNP09GA",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_VIIRS_002_VNP09GA",
             "type": "text/html",
-            "title": "Run the example for NOAA/VIIRS/001/VNP09GA in the Earth Engine Code Editor",
+            "title": "Run the example for NASA/VIIRS/002/VNP09GA in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_VIIRS_001_VNP09GA_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_VIIRS_002_VNP09GA_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP09GA#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_VNP09GA#terms-of-use",
             "type": "text/html"
         },
         {
             "rel": "cite-as",
-            "href": "https://doi.org/10.5067/VIIRS/VNP09GA.001"
+            "href": "https://doi.org/10.5067/VIIRS/VNP09GA.002"
         },
         {
             "rel": "latest-version",
@@ -38,21 +38,21 @@
             "title": "NASA/VIIRS/002/VNP09GA"
         },
         {
-            "rel": "successor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_VIIRS_002_VNP09GA.json",
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_VIIRS_001_VNP09GA.json",
             "type": "application/json",
-            "title": "NASA/VIIRS/002/VNP09GA"
+            "title": "NOAA/VIIRS/001/VNP09GA"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_VIIRS_001_VNP09GA.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_VIIRS_002_VNP09GA.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
             "type": "application/json",
-            "title": "NOAA"
+            "title": "NASA"
         }
     ],
     "stac_extensions": [
@@ -60,21 +60,20 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
         "unit": "day"
     },
     "gee:provider_ids": [
-        "C1373412034-LPDAAC_ECS"
+        "C2631841556-LPCLOUD"
     ],
     "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
     "gee:type": "image_collection",
-    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)",
-    "sci:doi": "10.5067/VIIRS/VNP09GA.001",
-    "version": "v001",
-    "title": "VNP09GA: VIIRS Surface Reflectance Daily 500m and 1km [deprecated]",
+    "sci:citation": "Vermote, E., Franch, B., Claverie, M. (2023). VIIRS/NPP Surface Reflectance Daily L2G Global 1km and 500m SIN Grid V002 [Data set]. NASA EOSDIS Land Processes Distributed Active Archive Center.\n",
+    "sci:doi": "10.5067/VIIRS/VNP09GA.002",
+    "version": "v002",
+    "title": "VNP09GA: VIIRS Surface Reflectance Daily 500m and 1km",
     "extent": {
         "spatial": {
             "bbox": [
@@ -90,7 +89,7 @@
             "interval": [
                 [
                     "2012-01-19T00:00:00Z",
-                    "2024-06-16T00:00:00Z"
+                    "2024-06-15T00:00:00Z"
                 ]
             ]
         }
@@ -108,19 +107,19 @@
     ],
     "providers": [
         {
-            "name": "NASA LP DAAC at the USGS EROS Center",
+            "name": "NASA Land SIPS",
             "roles": [
                 "licensor",
                 "producer"
             ],
-            "url": "https://doi.org/10.5067/VIIRS/VNP09GA.001"
+            "url": "https://doi.org/10.5067/VIIRS/VNP09GA.002"
         },
         {
             "name": "Google Earth Engine",
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP09GA"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_VNP09GA"
         }
     ],
     "summaries": {
@@ -135,7 +134,7 @@
                             "M3"
                         ],
                         "max": [
-                            3000
+                            0.3
                         ],
                         "min": [
                             0
@@ -156,72 +155,76 @@
             "Suomi NPP"
         ],
         "I1": {
-            "minimum": -100,
-            "maximum": 16000
+            "minimum": -0.01,
+            "maximum": 1.6
         },
         "I2": {
-            "minimum": -100,
-            "maximum": 16000
+            "minimum": -0.01,
+            "maximum": 1.6
         },
         "I3": {
-            "minimum": -100,
-            "maximum": 16000
+            "minimum": -0.01,
+            "maximum": 1.6
         },
         "M1": {
-            "minimum": -100,
-            "maximum": 16000
+            "minimum": -0.01,
+            "maximum": 1.6
         },
         "M10": {
-            "minimum": -100,
-            "maximum": 16000
+            "minimum": -0.01,
+            "maximum": 1.6
         },
         "M11": {
-            "minimum": -100,
-            "maximum": 16000
+            "minimum": -0.01,
+            "maximum": 1.6
         },
         "M2": {
-            "minimum": -100,
-            "maximum": 16000
+            "minimum": -0.01,
+            "maximum": 1.6
         },
         "M3": {
-            "minimum": -100,
-            "maximum": 16000
+            "minimum": -0.01,
+            "maximum": 1.6
         },
         "M4": {
-            "minimum": -100,
-            "maximum": 16000
+            "minimum": -0.01,
+            "maximum": 1.6
         },
         "M5": {
-            "minimum": -100,
-            "maximum": 16000
+            "minimum": -0.01,
+            "maximum": 1.6
         },
         "M7": {
-            "minimum": -100,
-            "maximum": 16000
+            "minimum": -0.01,
+            "maximum": 1.6
         },
         "M8": {
-            "minimum": -100,
-            "maximum": 16000
+            "minimum": -0.01,
+            "maximum": 1.6
         },
         "SensorAzimuth": {
-            "minimum": -18000,
-            "maximum": 18000
+            "minimum": -180,
+            "maximum": 180
         },
         "SensorZenith": {
             "minimum": 0,
-            "maximum": 18000
+            "maximum": 180
         },
         "SolarAzimuth": {
-            "minimum": -18000,
-            "maximum": 18000
+            "minimum": -180,
+            "maximum": 180
         },
         "SolarZenith": {
             "minimum": 0,
-            "maximum": 18000
+            "maximum": 180
         },
         "iobs_res": {
             "minimum": 0,
             "maximum": 254
+        },
+        "land_water_mask": {
+            "minimum": 0,
+            "maximum": 7
         },
         "num_observations_1km": {
             "minimum": 0,
