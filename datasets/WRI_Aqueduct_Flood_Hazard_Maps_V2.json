@@ -98,7 +98,7 @@
         ],
         "gee:schema": [
             {
-                "description": "Climate Scenario types:\n\n* historical: Baseline condition/ no climate scenario needed\n* rcp4p5: Representative Concentration Pathway 4.5 (rising carbon emissions)\n* rcp8p5: Representative Concentration Pathway 8.5 (steady carbon emissions)\n",
+                "description": "Climate Scenario types:\n\n* historical: Baseline condition/ no climate scenario needed\n* rcp4p5: Representative Concentration Pathway 4.5 (steady carbon emissions)\n* rcp8p5: Representative Concentration Pathway 8.5 (rising carbon emissions)\n",
                 "name": "climatescenario",
                 "type": "STRING"
             },

@@ -56,6 +56,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:provider_ids": [
+        "C2536962485-POCLOUD"
+    ],
     "gee:terms_of_use": "All NASA-produced data from the GRACE mission is made freely available\nfor the public to use. When using any of the GRCTellus data, please\nadd an acknowledgment: \"GRACE land are available at\n[https://grace.jpl.nasa.gov](https://grace.jpl.nasa.gov),\nsupported by the NASA MEaSUREs Program.\" and cite with the\ncitations provided.\n",
     "gee:type": "image_collection",
     "sci:citation": "D.N. Wiese. 2015. GRACE monthly global water mass grids NETCDF\nRELEASE 6.1. Ver. 3.0. PO.DAAC, CA, USA.. Dataset accessed [YYYY-MM-DD] at\n[https://doi.org/10.5067/TEMSC-3JC63](https://doi.org/10.5067/TEMSC-3JC63).\n",

@@ -1,0 +1,129 @@
+{
+    "type": "Collection",
+    "id": "CANADA/NFIS/NTEMS/CA_FOREST_AGE",
+    "stac_version": "1.0.0",
+    "description": "Canadian primary forest dataset is a satellite-based forest age map for\n2019 across Canada's forested ecozones at a 30-m spatial resolution.\nRemotely-sensed data from Landsat (disturbances, surface\nreflectance composites, forest structure) and MODIS (Gross Primary\nProduction) are utilized to determine age.\n\nForest age can be determined where disturbance can be identified directly\n(disturbance approach) or inferred using spectral information (recovery\napproach) or using inverted allometric equations to model age where there\nis no evidence of disturbance (allometric approach). The disturbance\napproach is based upon satellite data and mapped changes and is the most\naccurate. The recovery approach also avails upon satellite data plus logic\nregarding forest succession, with an accuracy that is greater than pure\nmodeling.\n\nGiven the lack of widespread recent disturbance over Canada's forests, the\nallometric approach is required over the greatest area (86.6%). Using\ninformation regarding realized heights and growth and yield modeling, ages\nare estimated where none are otherwise possible. Trees of all ages are\nmapped, with trees >150 years old combined in an \"old tree\" category.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/CANADA/CANADA_NFIS_NTEMS_CA_FOREST_AGE",
+            "type": "text/html",
+            "title": "Run the example for CANADA/NFIS/NTEMS/CA_FOREST_AGE in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/CANADA/CANADA_NFIS_NTEMS_CA_FOREST_AGE_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/CANADA_NFIS_NTEMS_CA_FOREST_AGE#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://opendata.nfis.org/downloads/forest_change/CA_forest_age_2019.zip"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CANADA/CANADA_NFIS_NTEMS_CA_FOREST_AGE.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CANADA/catalog.json",
+            "type": "application/json",
+            "title": "CANADA"
+        }
+    ],
+    "gee:terms_of_use": "\nThe forest age map described herein for Canada's forested ecosystems is\ndeclared open source and supported by the Government of Canada. The dataset\nis licensed under the [CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).\n",
+    "gee:type": "image_collection",
+    "title": "Landsat-derived forest age for Canada 2019",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-01-01T01:00:00Z",
+                    "2020-01-01T01:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "canada",
+        "forest"
+    ],
+    "providers": [
+        {
+            "name": "National Forest Information System",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://opendata.nfis.org/mapserver/nfis-change_eng.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/CANADA_NFIS_NTEMS_CA_FOREST_AGE"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Forest age",
+                "gee:units": "y",
+                "name": "forest"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Forest age",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "forest"
+                        ],
+                        "max": [
+                            1000
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "ff0000"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 58.18,
+                    "lon": -107.94,
+                    "zoom": 3
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    }
+}
