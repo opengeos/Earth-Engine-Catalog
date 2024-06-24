@@ -56,11 +56,6 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "gee:provider_ids": [
-        "C2077042515-POCLOUD",
-        "C2077042566-POCLOUD",
-        "C2077042612-POCLOUD"
-    ],
     "gee:terms_of_use": "All NASA-produced data from the GRACE mission is made freely available\nfor the public to use. When using any of the GRCTellus data, please\nadd an acknowledgment: \"GRACE land are available at\n[https://grace.jpl.nasa.gov](https://grace.jpl.nasa.gov),\nsupported by the NASA MEaSUREs Program.\" and cite with the\ncitations provided.\n",
     "gee:type": "image_collection",
     "sci:citation": "Felix Landerer. 2021. TELLUS_GRAC_L3_JPL_RL06_LND_v04. Ver. RL06 v04.\nPO.DAAC, CA, USA. Dataset accessed [YYYY-MM-DD] at\n[https://doi.org/10.5067/TELND-3AJ64](https://doi.org/10.5067/TELND-3AJ64).\n",

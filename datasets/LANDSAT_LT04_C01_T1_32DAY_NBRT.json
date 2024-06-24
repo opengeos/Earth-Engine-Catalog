@@ -28,18 +28,6 @@
             "type": "text/html"
         },
         {
-            "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_COMPOSITES_C02_T1_L2_32DAY_NBR.json",
-            "type": "application/json",
-            "title": "LANDSAT/COMPOSITES/C02/T1_L2_32DAY_NBR"
-        },
-        {
-            "rel": "successor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_COMPOSITES_C02_T1_L2_32DAY_NBR.json",
-            "type": "application/json",
-            "title": "LANDSAT/COMPOSITES/C02/T1_L2_32DAY_NBR"
-        },
-        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_LT04_C01_T1_32DAY_NBRT.json",
             "type": "application/json"
@@ -52,10 +40,8 @@
         }
     ],
     "stac_extensions": [
-        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
     ],
-    "deprecated": true,
     "gee:interval": {
         "interval": 32,
         "type": "cadence",
@@ -65,8 +51,7 @@
     "gee:min_zoom_level": 4,
     "gee:terms_of_use": "Landsat datasets are federally created data\nand therefore reside in the public domain and may be used, transferred, or reproduced without copyright restriction.\n\nAcknowledgement or credit of the USGS as data source should be provided\nby including a line of text citation such as the example shown below.\n\n(Product, Image, Photograph, or Dataset Name) courtesy of\nthe U.S. Geological Survey\n\nExample: Landsat-7 image courtesy of the U.S. Geological Survey\n\nSee the\n[USGS Visual Identity System Guidance](https://www.usgs.gov/information-policies-and-instructions/usgs-visual-identity-system)\nfor further details on proper citation and acknowledgement of USGS products.\n",
     "gee:type": "image_collection",
-    "version": "LT04/C01",
-    "title": "Landsat 4 TM Collection 1 Tier 1 32-Day NBRT Composite [deprecated]",
+    "title": "Landsat 4 TM Collection 1 Tier 1 32-Day NBRT Composite",
     "extent": {
         "spatial": {
             "bbox": [
