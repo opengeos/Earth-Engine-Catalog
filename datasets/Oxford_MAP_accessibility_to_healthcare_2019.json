@@ -28,18 +28,6 @@
             "type": "text/html"
         },
         {
-            "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Oxford/Oxford_MAP_accessibility_to_healthcare_2019.json",
-            "type": "application/json",
-            "title": "Oxford/MAP/accessibility_to_healthcare_2019"
-        },
-        {
-            "rel": "predecessor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Oxford/Oxford_MAP_accessibility_to_cities_2015_v1_0.json",
-            "type": "application/json",
-            "title": "Oxford/MAP/accessibility_to_cities_2015_v1_0"
-        },
-        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/Oxford/Oxford_MAP_accessibility_to_healthcare_2019.json",
             "type": "application/json"
@@ -53,14 +41,12 @@
     ],
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
     ],
     "gee:terms_of_use": "This work is licensed under a [Creative Commons Attribution\n4.0 International License](https://creativecommons.org/licenses/by/4.0/).\n",
     "gee:type": "image",
     "gee:user_uploaded": true,
     "sci:citation": "D.J. Weiss, A. Nelson, C.A. Vargas-Ruiz, K. Gligori&cacute;, S. Bavadekar,\nE. Gabrilovich, A. Bertozzi-Villa, J. Rozier, H.S. Gibson, T. Shekel,\nC. Kamath, A. Lieber, K. Schulman, Y. Shao, V. Qarkaxhija, A.K. Nandi,\nS.H. Keddie, S. Rumisha, E. Cameron, K.E. Battle, S. Bhatt, P.W. Gething.\nGlobal maps of travel time to healthcare facilities. Nature Medicine (2020).\n",
-    "version": "1.1",
     "title": "Accessibility to Healthcare 2019",
     "extent": {
         "spatial": {
