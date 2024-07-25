@@ -1,0 +1,167 @@
+{
+    "type": "Collection",
+    "id": "NASA/EMIT/L1B/RAD",
+    "stac_version": "1.0.0",
+    "description": "The EMIT Project is part of the Earth Venture-Instrument (EV-I) Program\ndirected by the Program Director of the NASA Earth Science Division (ESD).\nEMIT is comprised of a VSWIR Infrared Dyson imaging spectrometer adapted for\ninstallation on the International Space Station (ISS). EMIT measures\nradiance between 380 and 2500 nanometers, with an approximate 7 nm bandpass.\nData are collected in a swath that is approximately 75 km wide at the\nequator, with an approximate ground sampling distance of 60 m. See the\nprovider's [NASA EMIT Overview](https://lpdaac.usgs.gov/documents/1695/EMIT_L2B_GHG_User_Guide_V1.pdf)\nfor more details.\n\nEMIT was a particularly useful tool for mapping out greenhouse gases,\nincluding methane, carbon dioxide, and water vapor. This is consistent with\nprevious findings from airborne data, but global nature, revisit frequency\nand wide swath of EMIT provided an unprecedented opportunity to investigate\ngreenhouse gas retrievals.\n\nThe EMIT Level 1B At-Sensor Calibrated Radiance and Geolocation\n(EMITL1BRAD) Version 1 data product provides at-sensor calibrated radiance\nvalues along with observation data in a spatially raw, non-orthocorrected\nformat.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_EMIT_L1B_RAD",
+            "type": "text/html",
+            "title": "Run the example for NASA/EMIT/L1B/RAD in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_EMIT_L1B_RAD_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_EMIT_L1B_RAD#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_EMIT_L1B_RAD.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "NASA EMIT data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Green, R. (2022). EMIT L1B At-Sensor Calibrated Radiance and Geolocation\nData 60 m V001 dataset. NASA EOSDIS Land Processes Distributed Active\nArchive Center. Accessed 2024-05-20 from\n[https://doi.org/10.5067/EMIT/EMITL1BRAD.001](https://doi.org/10.5067/EMIT/EMITL1BRAD.001)\n",
+    "sci:doi": "10.5067/EMIT/EMITL1BRAD.001",
+    "version": "1",
+    "title": "EMIT L1B At-Sensor Calibrated Radiance and Geolocation Data 60 m",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-08-09T00:00:00Z",
+                    "2024-07-22T19:09:39Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "daily",
+        "emit",
+        "nasa",
+        "radiance"
+    ],
+    "providers": [
+        {
+            "name": "NASA Jet Propulsion Laboratory",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://earth.jpl.nasa.gov/emit/data/data-products/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_EMIT_L1B_RAD"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Unique Orbit Identification Number",
+                "name": "ORBIT",
+                "type": "STRING"
+            },
+            {
+                "description": "Orbit Segment",
+                "name": "ORBIT_SEGMENT",
+                "type": "STRING"
+            },
+            {
+                "description": "Unique scene identification number",
+                "name": "SCENE",
+                "type": "STRING"
+            },
+            {
+                "description": "Solar Azimuth",
+                "name": "SOLAR_AZIMUTH",
+                "type": "STRING"
+            },
+            {
+                "description": "Solar Zenith",
+                "name": "SOLAR_ZENITH",
+                "type": "STRING"
+            },
+            {
+                "description": "An array of length 285, where the value at index i is the full width\nat half maximum setting for radiance band i.\n",
+                "name": "radiance_fwhm",
+                "type": "DOUBLE_LIST"
+            },
+            {
+                "description": "An array of length 285, where the value at index i is the wavelength\ncenter setting for radiance band i.\n",
+                "name": "radiance_wavelengths",
+                "type": "DOUBLE_LIST"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Emit Radiance",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "radiance_1"
+                        ],
+                        "max": [
+                            10
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 32.04,
+                    "lon": -100.24,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            60
+        ]
+    }
+}
