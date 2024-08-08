@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "NOAA/VIIRS/001/VNP15A2H",
+    "id": "NASA/VIIRS/002/VNP15A2H",
     "stac_version": "1.0.0",
-    "description": "The Visible Infrared Imaging Radiometer Suite (VIIRS) Leaf Area Index (LAI)\nand Fraction of Photosynthetically Active Radiation (FPAR) Version 1 data\nproduct provides information about the vegetative canopy layer at 500 meter\nresolution (VNP15A2H). The VIIRS sensor is located onboard the NOAA/NASA\njoint Suomi National Polar-Orbiting Partnership (Suomi NPP) satellite. LAI\nis an index that quantifies the one-sided leaf area of a canopy, while FPAR\nis the fraction of incoming solar energy absorbed through photosynthesis at\n400 to 700 nanometers. This product is intentionally designed after the\nTerra and Aqua Moderate Resolution Imaging Spectroradiometer (MODIS)\nLAI/FPAR operational algorithm to promote the continuity of the Earth\nObservation System (EOS) mission.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/126/VNP15_User_Guide.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/125/VNP15_ATBD.pdf)\n\n* [General Documentation](https://lpdaac.usgs.gov/products/vnp15a2hv001/)\n\n* [Land Product Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/browse?sensor=VIIRS&sat=SNPP)\n",
+    "description": "The Visible Infrared Imaging Radiometer Suite (VIIRS) Leaf Area Index (LAI)\nand Fraction of Photosynthetically Active Radiation (FPAR) Version 1 data\nproduct provides information about the vegetative canopy layer at 500 meter\nresolution (VNP15A2H). The VIIRS sensor is located onboard the NOAA/NASA\njoint Suomi National Polar-Orbiting Partnership (Suomi NPP) satellite. LAI\nis an index that quantifies the one-sided leaf area of a canopy, while FPAR\nis the fraction of incoming solar energy absorbed through photosynthesis at\n400 to 700 nanometers. This product is intentionally designed after the\nTerra and Aqua Moderate Resolution Imaging Spectroradiometer (MODIS)\nLAI/FPAR operational algorithm to promote the continuity of the Earth\nObservation System (EOS) mission.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/126/VNP15_User_Guide.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/125/VNP15_ATBD.pdf)\n\n* [General Documentation](https://lpdaac.usgs.gov/products/vnp15a2hv002/)\n\n* [Land Product Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/browse?sensor=VIIRS&sat=SNPP)\n",
     "links": [
         {
             "rel": "root",
@@ -12,24 +12,24 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_VIIRS_001_VNP15A2H",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_VIIRS_002_VNP15A2H",
             "type": "text/html",
-            "title": "Run the example for NOAA/VIIRS/001/VNP15A2H in the Earth Engine Code Editor",
+            "title": "Run the example for NASA/VIIRS/002/VNP15A2H in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_VIIRS_001_VNP15A2H_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_VIIRS_002_VNP15A2H_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP15A2H#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_VNP15A2H#terms-of-use",
             "type": "text/html"
         },
         {
             "rel": "cite-as",
-            "href": "https://doi.org/10.5067/VIIRS/VNP15A2H.001"
+            "href": "https://doi.org/10.5067/VIIRS/VNP15A2H.002"
         },
         {
             "rel": "latest-version",
@@ -38,21 +38,21 @@
             "title": "NASA/VIIRS/002/VNP15A2H"
         },
         {
-            "rel": "successor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_VIIRS_002_VNP15A2H.json",
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_VIIRS_001_VNP15A2H.json",
             "type": "application/json",
-            "title": "NASA/VIIRS/002/VNP15A2H"
+            "title": "NOAA/VIIRS/001/VNP15A2H"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_VIIRS_001_VNP15A2H.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_VIIRS_002_VNP15A2H.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
             "type": "application/json",
-            "title": "NOAA"
+            "title": "NASA"
         }
     ],
     "stac_extensions": [
@@ -60,7 +60,6 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:interval": {
         "interval": 8,
         "type": "cadence",
@@ -72,9 +71,9 @@
     "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
     "gee:type": "image_collection",
     "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
-    "sci:doi": "10.5067/VIIRS/VNP15A2H.001",
-    "version": "v001",
-    "title": "VNP15A2H: LAI/FPAR 8-Day L4 Global 500m SIN Grid [deprecated]",
+    "sci:doi": "10.5067/VIIRS/VNP15A2H.002",
+    "version": "v002",
+    "title": "VNP15A2H: LAI/FPAR 8-Day L4 Global 500m SIN Grid",
     "extent": {
         "spatial": {
             "bbox": [
@@ -90,7 +89,7 @@
             "interval": [
                 [
                     "2012-01-17T00:00:00Z",
-                    "2024-06-16T00:00:00Z"
+                    "2024-07-19T00:00:00Z"
                 ]
             ]
         }
@@ -110,14 +109,14 @@
                 "licensor",
                 "producer"
             ],
-            "url": "https://doi.org/10.5067/VIIRS/VNP15A2H.001"
+            "url": "https://doi.org/10.5067/VIIRS/VNP15A2H.002"
         },
         {
             "name": "Google Earth Engine",
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP15A2H"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_VNP15A2H"
         }
     ],
     "summaries": {
