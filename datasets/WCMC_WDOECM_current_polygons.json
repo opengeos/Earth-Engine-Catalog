@@ -1,0 +1,152 @@
+{
+    "type": "Collection",
+    "id": "WCMC/WDOECM/current/polygons",
+    "stac_version": "1.0.0",
+    "description": "A geographically defined area other than a Protected Area, which is governed\nand managed in ways that achieve positive and sustained long-term outcomes\nfor the in situ conservation of biodiversity, with associated ecosystem\nfunctions and services and where applicable, cultural, spiritual,\nsocio-economic, and other locally relevant values.\n\nThe WDOECM has two feature classes with associated spatial\nand tabular data.\nThe World Database on Other Effective Area-based Conservation Measures\n(WDOECM) is a global repository of information on Other Effective\nArea-based Conservation Measures (OECMs). It is managed by the United\nNations Environment Programme's World Conservation Monitoring Centre\n(UNEP-WCMC) with support from the Convention on Biological Diversity\n(CBD).\n\n**WDOECM User Manual.** For details including methodologies,standards, data\nproviders, metadata field definitions and descriptions, refer\nto the [WDOECM User Manual](https://wdpa.s3-eu-west-1.amazonaws.com/WDPA_Manual/English/WDPA_WDOECM_Manual_1_6.pdf).\n\n**Asset Naming Conventions.** WCMC updates the WDOECM on a\nmonthly basis. The most recent version is always available as\nWCMC/WDOECM/current/polygons and WCMC/WDOECM/current/points. Historical\nversions, starting with May 2024, are available in the format\nWCMC/WDOECM/YYYYMM/polygons and WCMC/WDOECM/YYYYMM/points.\n\nPlease see the [WDOECM User Manual](https://wdpa.s3-eu-west-1.amazonaws.com/WDPA_Manual/English/WDPA_WDOECM_Manual_1_6.pdf)\nfor additional details on the field list.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WCMC/WCMC_WDOECM_current_polygons",
+            "type": "text/html",
+            "title": "Run the example for WCMC/WDOECM/current/polygons in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/WCMC/WCMC_WDOECM_current_polygons_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/WCMC_WDOECM_current_polygons#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WCMC/WCMC_WDOECM_current_polygons_FeatureView",
+            "type": "text/html",
+            "title": "Run the example for WCMC/WDOECM/current/polygons in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WCMC/WCMC_WDOECM_current_polygons.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WCMC/catalog.json",
+            "type": "application/json",
+            "title": "WCMC"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:terms_of_use": "Please visit the [full terms and conditions page](https://www.protectedplanet.net/c/terms-and-conditions)\nof Protected Planet. Select highlights below:\n\n**No Commercial Use.** Neither (a) the WDOECM Materials nor (b) any work\nderived from or based upon the WDOECM Materials (\\\"Derivative Works\\\")\nmay be put to Commercial Use without the prior written permission\nof UNEP-WCMC. \\\"Commercial Use\\\" means a) any use by, on behalf\nof, or to inform or assist the activities of, a commercial entity\n(an entity that operates 'for profit') or b) use by any individual\nor non-profit entity for the purposes of revenue generation.\n\n**Disclaimer.** The designations of geographical entities\nin any Data Set do not imply the expression of any view or opinion\nwhatsoever on the part of UNEP or WCMC concerning the legal status\nof any country, territory, or area, or of its authorities, or\nconcerning the delimitation of its frontiers or boundaries.\n\n**Attribution.** You must ensure that the citation is always\nclearly reproduced in any publication or analysis involving the\nWDOECM Materials in any derived form or format.\n",
+    "gee:type": "table",
+    "gee:unusual_terms_of_use": true,
+    "sci:citation": "UNEP-WCMC and IUCN (year), Protected Planet: The World Database\non OECM Database [On-line], [insert month/year of the\nversion used], Cambridge, UK: UNEP-WCMC and IUCN Available at:\nwww.protectedplanet.net.\n",
+    "version": "July 2024",
+    "title": "WDOECM: Other Effective Area-based Conservation Measures (polygons)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2024-05-01T00:00:00Z",
+                    "2030-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "boundaries",
+        "iucn",
+        "marine",
+        "mpa",
+        "protected",
+        "wcmc",
+        "wdpa"
+    ],
+    "providers": [
+        {
+            "name": "UN Environment World Conservation Monitoring Centre (UNEP-WCMC) / Protected Planet",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.protectedplanet.net/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/WCMC_WDOECM_current_polygons"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Total OECMs extent",
+                "lookat": {
+                    "lat": 27.33,
+                    "lon": -4.14,
+                    "zoom": 5
+                },
+                "polygon_visualization": {
+                    "property_name": "REP_AREA",
+                    "property_vis": {
+                        "max": [
+                            800000
+                        ],
+                        "min": [
+                            50000
+                        ],
+                        "palette": [
+                            "2ed033",
+                            "5aff05",
+                            "67b9ff",
+                            "5844ff",
+                            "0a7618",
+                            "2c05ff"
+                        ]
+                    }
+                }
+            },
+            {
+                "display_name": "Total OECMs extent",
+                "visualize_as": "FeatureView"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 16000,
+            "prerender_tiles": true,
+            "thinning_ranking": [
+                "REP_AREA DESC"
+            ],
+            "thinning_strategy": "HIGHER_DENSITY",
+            "z_order_ranking": [
+                "REP_AREA DESC"
+            ]
+        }
+    }
+}

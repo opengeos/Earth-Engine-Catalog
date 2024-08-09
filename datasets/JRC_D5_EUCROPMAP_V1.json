@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "JRC/D5/EUCROPMAP/V1",
     "stac_version": "1.0.0",
-    "description": "European crop type map based on Sentinel-1 and LUCAS Copernicus in-situ\nobservations for 2018.\n\nCapitalizing on the unique\n[LUCAS 2018 Copernicus in-situ survey](JRC_LUCAS_HARMO_THLOC_V1),\nthis dataset is the first continental crop type map with 10m\npixel size for the EU based on S1A and S1B Synthetic Aperture Radar\nobservations for the year 2018.\n",
+    "description": "European crop type map based on Sentinel-1 and LUCAS Copernicus 2018 in-situ\nobservations for 2018; and one based on Sentinel-2 and LUCAS Copernicus 2022 for 2022.\n\nCapitalizing on the unique\n[LUCAS 2018 Copernicus in-situ survey](JRC_LUCAS_HARMO_THLOC_V1),\nthe 2018 dataset is the first continental crop type map with 10m\npixel size for the EU based on S1A and S1B Synthetic Aperture Radar\nobservations for the year 2018; the 2022 dataset is a continuation of\nthe work and is based on optical S2 observations for the year 2022.\n",
     "links": [
         {
             "rel": "root",
@@ -53,8 +53,18 @@
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
     "sci:citation": "d'Andrimont, R., Verhegghen, A., Lemoine, G., Kempeneers, P., Meroni, M.,\n& Van der Velde, M. (2021). From parcel to continental scale-A first\nEuropean crop type map based on Sentinel-1 and LUCAS Copernicus in-situ\nobservations. Remote sensing of environment, 266, 112708.\n",
+    "sci:publications": [
+        {
+            "citation": "d'Andrimont, R., Verhegghen, A., Lemoine, G., Kempeneers, P., Meroni, M.,\n& Van der Velde, M. (2021). From parcel to continental scale-A first\nEuropean crop type map based on Sentinel-1 and LUCAS Copernicus in-situ\nobservations. Remote sensing of environment, 266, 112708.\n[doi:10.1016/j.rse.2021.112708](https://doi.org/10.1016/j.rse.2021.112708).\n",
+            "doi": "10.1016/j.rse.2021.112708"
+        },
+        {
+            "citation": "Ghassemi, B., Dujakovic, A., \u017b\u00f3\u0142tak, M., Immitzer, M., Atzberger, C. and Vuolo, F., 2022. Designing a European-wide crop type mapping approach based on machine learning algorithms using LUCAS field survey and Sentinel-2 data. Remote sensing, 14(3), p.541.\n[10.3390/rs14030541](https://doi.org/10.3390/rs14030541)\n",
+            "doi": "10.3390/rs14030541"
+        }
+    ],
     "version": "V1",
-    "title": "EUCROPMAP 2018",
+    "title": "EUCROPMAP",
     "extent": {
         "spatial": {
             "bbox": [
@@ -70,7 +80,7 @@
             "interval": [
                 [
                     "2018-01-01T00:00:00Z",
-                    "2019-01-01T00:00:00Z"
+                    "2022-01-01T00:00:00Z"
                 ]
             ]
         }
