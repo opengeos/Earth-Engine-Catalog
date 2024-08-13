@@ -28,18 +28,6 @@
             "type": "text/html"
         },
         {
-            "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_LC08_C02_T2_TOA.json",
-            "type": "application/json",
-            "title": "LANDSAT/LC08/C02/T2_TOA"
-        },
-        {
-            "rel": "predecessor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_LC08_C01_T2_TOA.json",
-            "type": "application/json",
-            "title": "LANDSAT/LC08/C01/T2_TOA"
-        },
-        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_LC08_C02_T2_TOA.json",
             "type": "application/json"
@@ -189,7 +177,7 @@
                 "name": "B11"
             },
             {
-                "description": "Landsat Collection 2 QA Bitmask\n",
+                "description": "Landsat Collection 2 OLI/TIRS QA Bitmask\n",
                 "gee:bitmask": {
                     "bitmask_parts": [
                         {
@@ -217,15 +205,25 @@
                                     "value": 0
                                 },
                                 {
-                                    "description": "cloud dilation",
+                                    "description": "Cloud dilation",
                                     "value": 1
                                 }
                             ]
                         },
                         {
                             "bit_count": 1,
-                            "description": "Unused",
-                            "first_bit": 2
+                            "description": "Cirrus",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "Cirrus Confidence: no confidence level set or Low Confidence",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "High confidence cirrus",
+                                    "value": 1
+                                }
+                            ]
                         },
                         {
                             "bit_count": 1,

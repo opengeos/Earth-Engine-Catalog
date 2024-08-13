@@ -28,18 +28,6 @@
             "type": "text/html"
         },
         {
-            "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_COMPOSITES_C02_T1_L2_ANNUAL_NDVI.json",
-            "type": "application/json",
-            "title": "LANDSAT/COMPOSITES/C02/T1_L2_ANNUAL_NDVI"
-        },
-        {
-            "rel": "predecessor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_LC08_C01_T1_ANNUAL_NDVI.json",
-            "type": "application/json",
-            "title": "LANDSAT/LC08/C01/T1_ANNUAL_NDVI"
-        },
-        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_COMPOSITES_C02_T1_L2_ANNUAL_NDVI.json",
             "type": "application/json"

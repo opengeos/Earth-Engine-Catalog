@@ -65,7 +65,7 @@
             "interval": [
                 [
                     "2021-10-31T00:00:00Z",
-                    "2024-08-11T04:59:40Z"
+                    "2024-08-12T07:01:08Z"
                 ]
             ]
         }
@@ -180,7 +180,7 @@
                 "name": "B11"
             },
             {
-                "description": "Landsat Collection 2 QA Bitmask\n",
+                "description": "Landsat Collection 2 OLI/TIRS QA Bitmask\n",
                 "gee:bitmask": {
                     "bitmask_parts": [
                         {
@@ -208,15 +208,25 @@
                                     "value": 0
                                 },
                                 {
-                                    "description": "cloud dilation",
+                                    "description": "Cloud dilation",
                                     "value": 1
                                 }
                             ]
                         },
                         {
                             "bit_count": 1,
-                            "description": "Unused",
-                            "first_bit": 2
+                            "description": "Cirrus",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "Cirrus Confidence: no confidence level set or Low Confidence",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "High confidence cirrus",
+                                    "value": 1
+                                }
+                            ]
                         },
                         {
                             "bit_count": 1,

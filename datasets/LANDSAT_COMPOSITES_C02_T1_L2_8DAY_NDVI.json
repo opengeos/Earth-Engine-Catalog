@@ -28,18 +28,6 @@
             "type": "text/html"
         },
         {
-            "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_COMPOSITES_C02_T1_L2_8DAY_NDVI.json",
-            "type": "application/json",
-            "title": "LANDSAT/COMPOSITES/C02/T1_L2_8DAY_NDVI"
-        },
-        {
-            "rel": "predecessor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_LC08_C01_T1_8DAY_NDVI.json",
-            "type": "application/json",
-            "title": "LANDSAT/LC08/C01/T1_8DAY_NDVI"
-        },
-        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_COMPOSITES_C02_T1_L2_8DAY_NDVI.json",
             "type": "application/json"
@@ -81,7 +69,7 @@
             "interval": [
                 [
                     "1984-01-01T00:00:00Z",
-                    "2024-08-04T00:00:00Z"
+                    "2024-08-12T00:00:00Z"
                 ]
             ]
         }

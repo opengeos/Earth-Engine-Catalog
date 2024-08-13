@@ -33,18 +33,6 @@
             "type": "text/html"
         },
         {
-            "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_LE07_C02_T2_L2.json",
-            "type": "application/json",
-            "title": "LANDSAT/LE07/C02/T2_L2"
-        },
-        {
-            "rel": "predecessor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_LE07_C01_T2_SR.json",
-            "type": "application/json",
-            "title": "LANDSAT/LE07/C01/T2_SR"
-        },
-        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_LE07_C02_T2_L2.json",
             "type": "application/json"

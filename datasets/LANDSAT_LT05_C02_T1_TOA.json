@@ -28,18 +28,6 @@
             "type": "text/html"
         },
         {
-            "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_LT05_C02_T1_TOA.json",
-            "type": "application/json",
-            "title": "LANDSAT/LT05/C02/T1_TOA"
-        },
-        {
-            "rel": "predecessor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_LT05_C01_T1_TOA.json",
-            "type": "application/json",
-            "title": "LANDSAT/LT05/C01/T1_TOA"
-        },
-        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_LT05_C02_T1_TOA.json",
             "type": "application/json"
@@ -160,7 +148,7 @@
                 "name": "B7"
             },
             {
-                "description": "Landsat Collection 2 QA Bitmask\n",
+                "description": "Landsat Collection 2 TM/ETM QA Bitmask\n",
                 "gee:bitmask": {
                     "bitmask_parts": [
                         {
@@ -188,7 +176,7 @@
                                     "value": 0
                                 },
                                 {
-                                    "description": "cloud dilation",
+                                    "description": "Cloud dilation",
                                     "value": 1
                                 }
                             ]
@@ -344,26 +332,8 @@
                         },
                         {
                             "bit_count": 2,
-                            "description": "Cirrus Confidence",
-                            "first_bit": 14,
-                            "values": [
-                                {
-                                    "description": "No confidence level set",
-                                    "value": 0
-                                },
-                                {
-                                    "description": "Low confidence",
-                                    "value": 1
-                                },
-                                {
-                                    "description": "Reserved",
-                                    "value": 2
-                                },
-                                {
-                                    "description": "High confidence",
-                                    "value": 3
-                                }
-                            ]
+                            "description": "Unused",
+                            "first_bit": 14
                         }
                     ],
                     "total_bit_count": 16

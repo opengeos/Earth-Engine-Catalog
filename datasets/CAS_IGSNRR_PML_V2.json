@@ -29,9 +29,9 @@
         },
         {
             "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CAS/CAS_IGSNRR_PML_V2_v017.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CAS/CAS_IGSNRR_PML_V2_v018.json",
             "type": "application/json",
-            "title": "CAS/IGSNRR/PML/V2_v017"
+            "title": "CAS/IGSNRR/PML/V2_v018"
         },
         {
             "rel": "successor-version",
@@ -100,12 +100,8 @@
     },
     "license": "CC-BY-4.0",
     "keywords": [
-        "cas",
         "evapotranspiration",
-        "gpp",
-        "gross_primary_product",
-        "igsnrr",
-        "pml"
+        "gpp"
     ],
     "providers": [
         {

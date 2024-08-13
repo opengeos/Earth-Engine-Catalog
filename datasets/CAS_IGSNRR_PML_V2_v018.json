@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "CAS/IGSNRR/PML/V2_v017",
+    "id": "CAS/IGSNRR/PML/V2_v018",
     "stac_version": "1.0.0",
-    "description": "Penman-Monteith-Leuning Evapotranspiration V2 (PML_V2) products include\nevapotranspiration (ET), its three components, and\ngross primary product (GPP) at 500m and 8-day resolution during 2000-2017\nand with spatial range from -60&deg;S to 90&deg;\u00b0N. The major advantages of the\nPML_V2 products are:\n\n  1. Coupled estimates of transpiration and GPP via canopy\n  conductance (Gan et al., 2018; Zhang et al., 2019)\n  2. Partitioning ET into three components: transpiration from vegetation,\n  direct evaporation from the soil and vaporization of intercepted\n   rainfall from vegetation (Zhang et al., 2016).\n\nThe PML_V2 products perform well against observations\nat 95 flux sites across globe, and are similar to or noticeably better than\nmajor state-of-the-art ET and GPP products widely used by water and ecology\nscience communities (Zhang et al., 2019).\n",
+    "description": "Penman-Monteith-Leuning Evapotranspiration V2 (PML_V2) products include\nevapotranspiration (ET), its three components, and\ngross primary product (GPP) at 500m and 8-day resolution during 2000-2023\nand with spatial range from -60&deg;S to 90&deg;N. The major advantages of the\nPML_V2 products are:\n\n  1. Coupled estimates of transpiration and GPP via canopy\n  conductance (Gan et al., 2018; Zhang et al., 2019)\n  2. Partitioning ET into three components: transpiration from vegetation,\n  direct evaporation from the soil, and vaporization of intercepted\n   rainfall from vegetation (Zhang et al., 2016).\n\nThe PML_V2 products perform well against observations\nat 95 flux sites across globe, and are similar to or noticeably better than\nmajor state-of-the-art ET and GPP products widely used by water and ecology\nscience communities (Zhang et al., 2019).\n\nKey changes in v0.1.8 compared with the original v0.1.4:\n\n1. Temporal coverage is lengthened to the latest (may update annually) with the MODIS C6.1 data.\n2. MODIS Terra LAI (MOD15A2H) is used rather than the composite LAI (MCD15A3H).\n3. Parameters are recalibrated with the change in LAI, while other forcings remain the same.\n",
     "links": [
         {
             "rel": "root",
@@ -12,42 +12,24 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/CAS/CAS_IGSNRR_PML_V2_v017",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/CAS/CAS_IGSNRR_PML_V2_v018",
             "type": "text/html",
-            "title": "Run the example for CAS/IGSNRR/PML/V2_v017 in the Earth Engine Code Editor",
+            "title": "Run the example for CAS/IGSNRR/PML/V2_v018 in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/CAS/CAS_IGSNRR_PML_V2_v017_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/CAS/CAS_IGSNRR_PML_V2_v018_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/CAS_IGSNRR_PML_V2_v017#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/CAS_IGSNRR_PML_V2_v018#terms-of-use",
             "type": "text/html"
         },
         {
-            "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CAS/CAS_IGSNRR_PML_V2_v018.json",
-            "type": "application/json",
-            "title": "CAS/IGSNRR/PML/V2_v018"
-        },
-        {
-            "rel": "predecessor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CAS/CAS_IGSNRR_PML_V2.json",
-            "type": "application/json",
-            "title": "CAS/IGSNRR/PML/V2"
-        },
-        {
-            "rel": "successor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CAS/CAS_IGSNRR_PML_V2_v018.json",
-            "type": "application/json",
-            "title": "CAS/IGSNRR/PML/V2_v018"
-        },
-        {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CAS/CAS_IGSNRR_PML_V2_v017.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CAS/CAS_IGSNRR_PML_V2_v018.json",
             "type": "application/json"
         },
         {
@@ -62,7 +44,6 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:interval": {
         "interval": 8,
         "type": "cadence",
@@ -82,8 +63,8 @@
             "doi": "10.1038/srep19124"
         }
     ],
-    "version": "0.1.7",
-    "title": "PML_V2 0.1.7: Coupled Evapotranspiration and Gross Primary Product (GPP) [deprecated]",
+    "version": "0.1.8",
+    "title": "PML_V2 0.1.8: Coupled Evapotranspiration and Gross Primary Product (GPP)",
     "extent": {
         "spatial": {
             "bbox": [
@@ -99,7 +80,7 @@
             "interval": [
                 [
                     "2000-02-26T00:00:00Z",
-                    "2020-12-26T00:00:00Z"
+                    "2023-12-27T00:00:00Z"
                 ]
             ]
         }
@@ -123,7 +104,7 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/CAS_IGSNRR_PML_V2_v017"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/CAS_IGSNRR_PML_V2_v018"
         }
     ],
     "summaries": {
@@ -156,7 +137,7 @@
         ],
         "gee:visualizations": [
             {
-                "display_name": "PML_V2 0.1.7 Gross Primary Product (GPP)",
+                "display_name": "PML_V2 0.1.8 Gross Primary Product (GPP)",
                 "image_visualization": {
                     "band_vis": {
                         "bands": [

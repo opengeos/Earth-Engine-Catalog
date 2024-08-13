@@ -44,6 +44,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:provider_ids": [
+        "C2763264762-LPCLOUD"
+    ],
     "gee:terms_of_use": "Unless otherwise noted, all NASA-produced data may be used for any purpose without\nprior permission. For more information and exceptions visit the\n[NASA Data & Information Policy page](https://earthdata.nasa.gov/collaborate/open-data-services-and-software/data-information-policy).\n",
     "gee:type": "image",
     "sci:citation": "NASA JPL (2020). NASADEM Merged DEM Global 1 arc second V001 [Data set]. NASA EOSDIS Land\nProcesses DAAC. Accessed 2020-12-30 from [doi:10.5067/MEaSUREs/NASADEM/NASADEM_HGT.001](https://doi.org/10.5067/MEaSUREs/NASADEM/NASADEM_HGT.001)\n",
@@ -87,7 +90,7 @@
                 "licensor",
                 "producer"
             ],
-            "url": "https://cmr.earthdata.nasa.gov/search/concepts/C1546314043-LPDAAC_ECS.html"
+            "url": "https://lpdaac.usgs.gov/products/nasadem_hgtv001/"
         },
         {
             "name": "Google Earth Engine",

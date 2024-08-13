@@ -28,18 +28,6 @@
             "type": "text/html"
         },
         {
-            "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_LT05_C02_T1_L2.json",
-            "type": "application/json",
-            "title": "LANDSAT/LT05/C02/T1_L2"
-        },
-        {
-            "rel": "predecessor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_LT05_C01_T1_SR.json",
-            "type": "application/json",
-            "title": "LANDSAT/LT05/C01/T1_SR"
-        },
-        {
             "rel": "license",
             "href": "https://www.usgs.gov/centers/eros/data-citation",
             "type": "text/html"
