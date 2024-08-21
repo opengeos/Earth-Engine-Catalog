@@ -32,6 +32,18 @@
             "href": "https://doi.org/10.5067/VIIRS/VNP21A1N.001"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_VIIRS_002_VNP21A1N.json",
+            "type": "application/json",
+            "title": "NASA/VIIRS/002/VNP21A1N"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_VIIRS_002_VNP21A1N.json",
+            "type": "application/json",
+            "title": "NASA/VIIRS/002/VNP21A1N"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_VIIRS_001_VNP21A1N.json",
             "type": "application/json"
@@ -48,6 +60,7 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "deprecated": true,
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -61,7 +74,7 @@
     "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
     "sci:doi": "10.5067/VIIRS/VNP21A1N.001",
     "version": "1",
-    "title": "VNP21A1N: Night Land Surface Temperature and Emissivity Daily 1km",
+    "title": "VNP21A1N.001: Night Land Surface Temperature and Emissivity Daily 1km [deprecated]",
     "extent": {
         "spatial": {
             "bbox": [

@@ -1,0 +1,201 @@
+{
+    "type": "Collection",
+    "id": "projects/neon-prod-earthengine/assets/HSI_REFL/002",
+    "stac_version": "1.0.0",
+    "description": "The NEON AOP surface bidirectional reflectance data is an orthorectified \nhyperspectral VSWIR (visible to shortwave infrared) data product, containing \n426 bands spanning wavelengths from ~380 nm to 2510 nm. Wavelengths \nbetween 1340-1445 nm and 1790-1955 nm are set to -100; these are water vapor \nabsorption bands without valid values. The dataset also contains QA\nraster bands (B427 - B442). Data are collected by one of three NEON \nImaging Spectrometer units, AVIRIS-NG sensors built by NASA's Jet Propulsion \nLab (JPL). Major corrections include calibration, orthorectification, \natmospheric, topographic, and Bidirecitonal Reflectance Distribution \nFunction (BRDF). Reflectance is converted to a mosaic using the\nnadir-most pixels from the flight lines observed with the least cloud\ncover. Spatial resolution is 1 m and spectral resolution is ~5 nm. The center \nwavelength and full width half max for each band are provided in the Image Properties.\n\nSee [NEON Data Product\nDP3.30006.001](https://data.neonscience.org/data-products/DP3.30006.002) for\nmore details.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/neon-prod-earthengine/projects_neon-prod-earthengine_assets_HSI_REFL_002",
+            "type": "text/html",
+            "title": "Run the example for projects/neon-prod-earthengine/assets/HSI_REFL/002 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/neon-prod-earthengine/projects_neon-prod-earthengine_assets_HSI_REFL_002_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_neon-prod-earthengine_assets_HSI_REFL_002#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/neon-prod-earthengine/projects_neon-prod-earthengine_assets_HSI_REFL_002.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/neon-prod-earthengine/catalog.json",
+            "type": "application/json",
+            "title": "neon-prod-earthengine"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[proprietary](Use a custom URL for the non-standard license)\n\nAll data collected by NEON and provided as data products, with the exception\nof data related to rare, threatened, or endangered (RTE) species, are\nreleased to the public domain under [Creative Commons CC0 1.0 \"No Rights\nReserved\"](https://creativecommons.org/publicdomain/zero/1.0/). No\ncopyright has been applied to NEON data; any person may copy, modify, or\ndistribute the data, for commercial or non-commercial purposes, without\nasking for permission. NEON data may still be subject to other laws or\nrights such as for privacy, and NEON makes no warranties about the data and\ndisclaims all liability. When using or citing NEON data, no implication\nshould be made about endorsement by NEON. In most countries, data and facts\nare not copyrightable.  By putting NEON data into the public domain, we\nencourage broad use, particularly in scientific analyses and data\naggregations. However, please be aware of the following scholarly norms:\nNEON data should be used in a way that is mindful of the limitations of the\ndata, using the documentation associated with the data packages as a guide. \nPlease refer to [NEON Data Guidelines and Policies](https://www.neonscience.org/data-samples/guidelines-policies)\nfor detailed information on how to properly use and cite NEON data, as well as\nbest practices for publishing research that uses NEON data.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "See [NEON citation guidelines](https://www.neonscience.org/data-samples/guidelines-policies/citing)",
+    "title": "NEON Bidirectional Surface Reflectance",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -170,
+                    16,
+                    -66,
+                    73
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2013-01-01T00:00:00Z",
+                    "2022-07-14T22:27:57Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "airborne",
+        "canopy",
+        "forest",
+        "hyperspectral",
+        "neon",
+        "surface_reflectance",
+        "vegetation"
+    ],
+    "providers": [
+        {
+            "name": "NEON",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://data.neonscience.org/data-products/DP3.30006.002"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_neon-prod-earthengine_assets_HSI_REFL_002"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Unique visit number to the NEON site",
+                "name": "AOP_VISIT_NUMBER",
+                "type": "INT"
+            },
+            {
+                "description": "Data citation. See [NEON Data Policies and Citation Guidelines](https://www.neonscience.org/data-samples/data-policies-citation)",
+                "name": "CITATION",
+                "type": "STRING"
+            },
+            {
+                "description": "Digital Object Identifier. NEON data that have been released are assigned a DOI.",
+                "name": "DOI",
+                "type": "STRING"
+            },
+            {
+                "description": "Year the data were collected",
+                "name": "FLIGHT_YEAR",
+                "type": "INT"
+            },
+            {
+                "description": "NEON eco-climatic domain code, \"D01\" to \"D20\". See [NEON Field Sites and Domains](https://www.neonscience.org/field-sites/about-field-sites)",
+                "name": "NEON_DOMAIN",
+                "type": "STRING"
+            },
+            {
+                "description": "NEON four-digit site code. See [NEON Field Sites](https://www.neonscience.org/field-sites/)",
+                "name": "NEON_SITE",
+                "type": "STRING"
+            },
+            {
+                "description": "NEON data product identification code. Always set to: \"DP3.30006.001\"",
+                "name": "NEON_DATA_PROD_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "NEON data product url. Always set to: [https://data.neonscience.org/data-products/DP3.30010.001](https://data.neonscience.org/data-products/DP3.30010.001)",
+                "name": "NEON_DATA_PROD_URL",
+                "type": "STRING"
+            },
+            {
+                "description": "Whether the data are Provisional or Released. See [https://www.neonscience.org/data-samples/data-management/data-revisions-releases](https://www.neonscience.org/data-samples/data-management/data-revisions-releases)",
+                "name": "PROVISIONAL_RELEASED",
+                "type": "STRING"
+            },
+            {
+                "description": "If data are released, the year of the NEON Release Tag.",
+                "name": "RELEASE_YEAR",
+                "type": "INT"
+            },
+            {
+                "description": "Reflectance scale factor used",
+                "name": "SCALE_FACTOR",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "ID of NEON Imaging Spectrometer (NIS), or Global Airborne Observatory (GAO) sensor has also been used to collect the NEON D20 site: \"NIS1\", \"NIS2\", \"NIS3\", \"GAO\"",
+                "name": "SENSOR_ID",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "RGB",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "B053",
+                            "B035",
+                            "B019"
+                        ],
+                        "gamma": [
+                            2.5
+                        ],
+                        "max": [
+                            14000
+                        ],
+                        "min": [
+                            1000
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 39.8283,
+                    "lon": -98.5795,
+                    "zoom": 9
+                }
+            }
+        ],
+        "gsd": [
+            1
+        ],
+        "instruments": [
+            "GAO",
+            "NIS1",
+            "NIS2",
+            "NIS3"
+        ],
+        "platform": [
+            "NEON"
+        ]
+    }
+}

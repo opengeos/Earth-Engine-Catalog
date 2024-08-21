@@ -1,0 +1,230 @@
+{
+    "type": "Collection",
+    "id": "projects/neon-prod-earthengine/assets/RGB/001",
+    "stac_version": "1.0.0",
+    "description": "High resolution Red-Green-Blue (RGB) orthorectified camera images mosaicked\nand output onto a fixed, uniform spatial grid using nearest-neighbor resampling;\nspatial resolution is 0.1 m.  The digital camera is part of a suite of instruments\non the NEON Airborne Observation Platform (AOP) that also includes a\nfull-waveform LiDAR system and the NEON Imaging Spectrometer. In the\northorectification process, the digital imagery is re-mapped to the same\ngeographic projection as the LiDAR and imaging spectrometer data that is\nacquired simultaneously. The resulting images share the same map projection\ngrid space as the orthorectified spectrometer and LiDAR imagery. Since the\ndigital camera imagery is acquired at higher spatial resolution than the\nimaging spectrometer data, it can aid in identifying features in the\nspectrometer images including manmade features (e.g., roads, fence lines,\nand buildings) that are indicative of land-use change.\n\nSee [NEON Data Product\nDP3.30010.001](https://data.neonscience.org/data-products/DP3.30010.001) for\nmore details.\n\nDocumentation: [NEON DP3.30010.001 Camera imagery mosaic Quick Start\nGuide](https://data.neonscience.org/api/v0/documents/quick-start-guides/NEON.QSG.DP3.30010.001v1?inline=true&fallback=html)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/neon-prod-earthengine/projects_neon-prod-earthengine_assets_RGB_001",
+            "type": "text/html",
+            "title": "Run the example for projects/neon-prod-earthengine/assets/RGB/001 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/neon-prod-earthengine/projects_neon-prod-earthengine_assets_RGB_001_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_neon-prod-earthengine_assets_RGB_001#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC0-1.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/neon-prod-earthengine/projects_neon-prod-earthengine_assets_RGB_001.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/neon-prod-earthengine/catalog.json",
+            "type": "application/json",
+            "title": "neon-prod-earthengine"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC0-1.0](https://spdx.org/licenses/CC0-1.0.html)\n\nAll data collected by NEON and provided as data products, with the exception\nof data related to rare, threatened, or endangered (RTE) species, are\nreleased to the public domain under [Creative Commons CC0 1.0 \"No Rights\nReserved\"](https://creativecommons.org/publicdomain/zero/1.0/). No\ncopyright has been applied to NEON data; any person may copy, modify, or\ndistribute the data, for commercial or non-commercial purposes, without\nasking for permission. NEON data may still be subject to other laws or\nrights such as for privacy, and NEON makes no warranties about the data and\ndisclaims all liability. When using or citing NEON data, no implication\nshould be made about endorsement by NEON. In most countries, data and facts\nare not copyrightable.  By putting NEON data into the public domain, we\nencourage broad use, particularly in scientific analyses and data\naggregations. However, please be aware of the following scholarly norms:\nNEON data should be used in a way that is mindful of the limitations of the\ndata, using the documentation associated with the data packages as a guide. \nPlease refer to [NEON Data Guidelines and Policies](https://www.neonscience.org/data-samples/guidelines-policies)\nfor detailed information on how to properly use and cite NEON data, as well as\nbest practices for publishing research that uses NEON data.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "See [NEON citation guidelines](https://www.neonscience.org/data-samples/guidelines-policies/citing)",
+    "title": "NEON RGB Camera Imagery",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -170,
+                    16,
+                    -66,
+                    73
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2013-01-01T00:00:00Z",
+                    "2023-05-17T15:30:40Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "forest",
+        "highres",
+        "orthophoto",
+        "rgb",
+        "vegetation"
+    ],
+    "providers": [
+        {
+            "name": "NEON",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://data.neonscience.org/data-products/DP3.30010.001"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_neon-prod-earthengine_assets_RGB_001"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Red",
+                "gee:units": "dn",
+                "name": "R"
+            },
+            {
+                "description": "Green",
+                "gee:units": "dn",
+                "name": "G"
+            },
+            {
+                "description": "Blue",
+                "gee:units": "dn",
+                "name": "B"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Unique visit number to the NEON site.",
+                "name": "AOP_VISIT_NUMBER",
+                "type": "INT"
+            },
+            {
+                "description": "Data citation. See [NEON Data Policies and Citation Guidelines](https://www.neonscience.org/data-samples/data-policies-citation).",
+                "name": "CITATION",
+                "type": "STRING"
+            },
+            {
+                "description": "Digital Object Identifier. NEON data that have been released are assigned a DOI.",
+                "name": "DOI",
+                "type": "STRING"
+            },
+            {
+                "description": "Year the data were collected.",
+                "name": "FLIGHT_YEAR",
+                "type": "INT"
+            },
+            {
+                "description": "NEON eco-climatic domain code, \"D01\" to \"D20\". See [NEON Field Sites and Domains](https://www.neonscience.org/field-sites/about-field-sites).",
+                "name": "NEON_DOMAIN",
+                "type": "STRING"
+            },
+            {
+                "description": "NEON four-digit site code. See [NEON Field Sites](https://www.neonscience.org/field-sites/).",
+                "name": "NEON_SITE",
+                "type": "STRING"
+            },
+            {
+                "description": "NEON data product identification code. Always set to: \"DP3.30010.001\".",
+                "name": "NEON_DATA_PROD_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "NEON data product url. Always set to: [https://data.neonscience.org/data-products/DP3.30010.001](https://data.neonscience.org/data-products/DP3.30010.001).",
+                "name": "NEON_DATA_PROD_URL",
+                "type": "STRING"
+            },
+            {
+                "description": "Make and model of the camera sensor: \"Phase One D8900\", \"Phase One IQ180\", \"Phase One iX-RS 1000\", \"Phase One iXM-RS 150F\"",
+                "name": "SENSOR_NAME",
+                "type": "STRING"
+            },
+            {
+                "description": "Serial number of the camera sensor: \"EH021537\", \"EH021656\", \"EH021554\", \"FT010031\", \"MM010175\", \"MM010176\", \"YC030119\", \"YC030129\".",
+                "name": "SENSOR_SERIAL",
+                "type": "STRING"
+            },
+            {
+                "description": "Whether the data are Provisional or Released. See [NEON Data Revisions and Releases](https://www.neonscience.org/data-samples/data-management/data-revisions-releases).",
+                "name": "PROVISIONAL_RELEASED",
+                "type": "STRING"
+            },
+            {
+                "description": "If data are released, the year of the NEON Release Tag.",
+                "name": "RELEASE_YEAR",
+                "type": "INT"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "RGB",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "R",
+                            "G",
+                            "B"
+                        ],
+                        "max": [
+                            255
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 45.75,
+                    "lon": -122.32,
+                    "zoom": 12
+                }
+            }
+        ],
+        "gsd": [
+            0.1
+        ],
+        "instruments": [
+            "Phase One D8900",
+            "Phase One IQ180",
+            "Phase One iX-RS 1000",
+            "Phase One iXM-RS 150F"
+        ],
+        "platform": [
+            "NEON"
+        ],
+        "B": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "G": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "R": {
+            "minimum": 0,
+            "maximum": 255
+        }
+    }
+}

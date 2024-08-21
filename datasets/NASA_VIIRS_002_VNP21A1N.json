@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "NOAA/VIIRS/001/VNP21A1D",
+    "id": "NASA/VIIRS/002/VNP21A1N",
     "stac_version": "1.0.0",
-    "description": "The NASA Suomi National Polar-Orbiting Partnership (Suomi NPP) Visible\nInfrared Imaging Radiometer Suite (VIIRS) Land Surface Temperature and\nEmissivity (LST&E) Day Version 1 product (VNP21A1D) is compiled daily\nfrom daytime Level 2 Gridded (L2G) intermediate products.\n\nThe L2G process maps the daily VNP21 swath granules onto a sinusoidal MODIS\ngrid and stores all observations overlapping a gridded cell for a given\nday. The VNP21A1 algorithm sorts through all these observations for each\ncell and estimates the final LST value as an average from all cloud-free\nobservations that have good LST accuracies. Only observations having\nobservation coverage more than a certain threshold (15%) are considered for\nthis averaging.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/429/VNP21_User_Guide_V1.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/1332/VNP21_ATBD_V1.pdf)\n\n* [General Documentation](https://lpdaac.usgs.gov/products/vnp21a1dv001/)\n\n* [Land Product Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/browse?sensor=VIIRS&sat=SNPP)\n",
+    "description": "The NASA Suomi National Polar-Orbiting Partnership (Suomi NPP) Visible\nInfrared Imaging Radiometer Suite (VIIRS) Land Surface Temperature and\nEmissivity (LST&E) Night Version 1 product (VNP21A1N) is compiled daily\nfrom nighttime Level 2 Gridded (L2G) intermediate products.\n\nThe L2G process maps the daily VNP21 swath granules onto a sinusoidal MODIS\ngrid and stores all observations overlapping a gridded cell for a given\nnight. The VNP21A1 algorithm sorts through all these observations for each\ncell and estimates the final LST value as an average from all cloud-free\nobservations that have good LST accuracies. Only observations having\nobservation coverage more than a certain threshold (15%) are considered for\nthis averaging.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/429/VNP21_User_Guide_V1.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/1332/VNP21_ATBD_V1.pdf)\n\n* [General Documentation](https://lpdaac.usgs.gov/products/vnp21a1nv002/)\n\n* [Land Product Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/browse?sensor=VIIRS&sat=SNPP)\n",
     "links": [
         {
             "rel": "root",
@@ -12,47 +12,47 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_VIIRS_001_VNP21A1D",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_VIIRS_002_VNP21A1N",
             "type": "text/html",
-            "title": "Run the example for NOAA/VIIRS/001/VNP21A1D in the Earth Engine Code Editor",
+            "title": "Run the example for NASA/VIIRS/002/VNP21A1N in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_VIIRS_001_VNP21A1D_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_VIIRS_002_VNP21A1N_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP21A1D#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_VNP21A1N#terms-of-use",
             "type": "text/html"
         },
         {
             "rel": "cite-as",
-            "href": "https://doi.org/10.5067/VIIRS/VNP21A1D.001"
+            "href": "https://doi.org/10.5067/VIIRS/VNP21A1N.002"
         },
         {
             "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_VIIRS_002_VNP21A1D.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_VIIRS_002_VNP21A1N.json",
             "type": "application/json",
-            "title": "NASA/VIIRS/002/VNP21A1D"
+            "title": "NASA/VIIRS/002/VNP21A1N"
         },
         {
-            "rel": "successor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_VIIRS_002_VNP21A1D.json",
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_VIIRS_001_VNP21A1N.json",
             "type": "application/json",
-            "title": "NASA/VIIRS/002/VNP21A1D"
+            "title": "NOAA/VIIRS/001/VNP21A1N"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_VIIRS_001_VNP21A1D.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_VIIRS_002_VNP21A1N.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
             "type": "application/json",
-            "title": "NOAA"
+            "title": "NASA"
         }
     ],
     "stac_extensions": [
@@ -60,21 +60,20 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
         "unit": "day"
     },
     "gee:provider_ids": [
-        "C1442270800-LPDAAC_ECS"
+        "C2545314559-LPCLOUD"
     ],
     "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
     "gee:type": "image_collection",
     "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
-    "sci:doi": "10.5067/VIIRS/VNP21A1D.001",
-    "version": "1",
-    "title": "VNP21A1D.001: Day Land Surface Temperature and Emissivity Daily 1km [deprecated]",
+    "sci:doi": "10.5067/VIIRS/VNP21A1N.002",
+    "version": "2",
+    "title": "VNP21A1N.002: Night Land Surface Temperature and Emissivity Daily 1km",
     "extent": {
         "spatial": {
             "bbox": [
@@ -90,7 +89,7 @@
             "interval": [
                 [
                     "2012-01-19T00:00:00Z",
-                    "2024-05-01T00:00:00Z"
+                    "2024-08-16T00:00:00Z"
                 ]
             ]
         }
@@ -98,9 +97,9 @@
     "license": "proprietary",
     "keywords": [
         "daily",
-        "day",
         "land",
         "nasa",
+        "night",
         "noaa",
         "surface",
         "temperature",
@@ -113,14 +112,14 @@
                 "licensor",
                 "producer"
             ],
-            "url": "https://doi.org/10.5067/VIIRS/VNP21A1D.001"
+            "url": "https://doi.org/10.5067/VIIRS/VNP21A1N.002"
         },
         {
             "name": "Google Earth Engine",
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP21A1D"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_VNP21A1N"
         }
     ],
     "summaries": {
