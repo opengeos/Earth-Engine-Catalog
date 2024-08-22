@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "Estonia/Maamet/orthos/rgb",
+    "id": "Estonia/Maamet/orthos/rgb_low_flying",
     "stac_version": "1.0.0",
-    "description": "Orthophotos are an aerial photo dataset covering Estonia.\n\nAn orthophoto is a processed aerial photo from which distortions caused\nby terrain relief, camera tilt relative to the ground at the moment of\nexposure and camera central projection are removed. A digital orthophoto\nhas a certain pixel size or resolution which shows the smallest\nindivisible exposed area on the ground (Ground Sampling Distance, GSD).\n\nOrthophotos have a nationwide coverage and correspond to the scale of\n1:5000-1:10000 (pixel size 20-40 cm). Orthophotos for densely-populated\nareas are produced with the pixel size of 10-16 cm.\n\nThe RGB dataset has three bands with nationwide coverage: red, green, and\nblue.\n\nFor more information, please see the\n[Estonia orthophotos documentation](https://geoportaal.maaamet.ee/eng/Spatial-Data/Orthophotos-p309.html)\n",
+    "description": "Orthophotos are an aerial photo dataset covering Estonia.\n\nAn orthophoto is a processed aerial photo from which distortions caused\nby terrain relief, camera tilt relative to the ground at the moment of\nexposure and camera central projection are removed. A digital orthophoto\nhas a certain pixel size or resolution which shows the smallest\nindivisible exposed area on the ground (Ground Sampling Distance, GSD).\n\nOrthophotos have a nationwide coverage and correspond to the scale of\n1:5000-1:10000 (pixel size 20-40 cm). Orthophotos for densely-populated\nareas are produced with the pixel size of 10-16 cm.\n\nThe rgb_low_flying dataset has three bands covering densely-populated\nareas: red, green, and blue.\n\nFor more information, please see the\n[Estonia orthophotos documentation](https://geoportaal.maaamet.ee/eng/Spatial-Data/Orthophotos-p309.html)\n",
     "links": [
         {
             "rel": "root",
@@ -12,24 +12,24 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/Estonia/Estonia_Maamet_orthos_rgb",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/Estonia/Estonia_Maamet_orthos_rgb_low_flying",
             "type": "text/html",
-            "title": "Run the example for Estonia/Maamet/orthos/rgb in the Earth Engine Code Editor",
+            "title": "Run the example for Estonia/Maamet/orthos/rgb_low_flying in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/Estonia/Estonia_Maamet_orthos_rgb_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/Estonia/Estonia_Maamet_orthos_rgb_low_flying_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/Estonia_Maamet_orthos_rgb#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/Estonia_Maamet_orthos_rgb_low_flying#terms-of-use",
             "type": "text/html"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Estonia/Estonia_Maamet_orthos_rgb.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Estonia/Estonia_Maamet_orthos_rgb_low_flying.json",
             "type": "application/json"
         },
         {
@@ -46,7 +46,7 @@
     "gee:terms_of_use": "The data is free to use for commercial and non-commercial purposes for a\nnon-specified term, provided that proper attribution is given to the\nlicensor (e.g. Estonian Land Board) along with the title and age of the\ndata.\n\nFor more details please see the\n[Terms of use](https://geoportaal.maaamet.ee/docs/Avaandmed/Licence-of-open-data-of-Estonian-Land-Board.pdf)\n",
     "gee:type": "image_collection",
     "sci:citation": "Map data: Estonian Land Board",
-    "title": "Estonia RGB orthophotos",
+    "title": "Estonia RGB low flying orthophotos",
     "extent": {
         "spatial": {
             "bbox": [
@@ -70,6 +70,7 @@
     "license": "proprietary",
     "keywords": [
         "estonia",
+        "low_flying",
         "orthophoto",
         "rgb"
     ],
@@ -87,7 +88,7 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/Estonia_Maamet_orthos_rgb"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/Estonia_Maamet_orthos_rgb_low_flying"
         }
     ],
     "summaries": {
