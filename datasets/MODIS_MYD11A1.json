@@ -55,15 +55,16 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
         "unit": "day"
     },
+    "gee:status": "deprecated",
     "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC have no restrictions on subsequent use, sale, or redistribution.\n",
     "gee:type": "image_collection",
     "version": "Unknown",
+    "deprecated": true,
     "title": "MYD11A1.005 Land Surface Temperature and Emissivity Daily Global 1 km Grid SIN [deprecated]",
     "extent": {
         "spatial": {

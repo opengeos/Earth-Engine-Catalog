@@ -56,16 +56,17 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
         "unit": "day"
     },
+    "gee:status": "deprecated",
     "gee:terms_of_use": "PROBA-V 300m and 100m data are freely available for data older than 1 month.",
     "gee:type": "image_collection",
     "sci:citation": "Copyright ESA-BELSPO, produced by Vito",
     "version": "C0",
+    "deprecated": true,
     "title": "PROBA-V C0 Top Of Canopy Daily Synthesis 333m [deprecated]",
     "extent": {
         "spatial": {

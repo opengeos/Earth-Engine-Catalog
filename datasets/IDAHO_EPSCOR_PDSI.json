@@ -50,16 +50,17 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:interval": {
         "interval": 10,
         "type": "cadence",
         "unit": "day"
     },
+    "gee:status": "deprecated",
     "gee:terms_of_use": "This work (METDATA, by John Abatzoglou) is in the public\ndomain and is free of known copyright restrictions. Users should\nproperly cite the source used in the creation of any reports and\npublications resulting from the use of this dataset and note the\ndate when the data was acquired.\n",
     "gee:type": "image_collection",
     "sci:citation": "Abatzoglou J.T., R. Barbero, J.W. Wolf, Z. Holden (2014), Tracking\ninterannual streamflow variability with drought indices in the\nPacific Northwest, US, Journal of Hydrometeorology, 15, 1900-1912.\n",
     "version": "Unknown",
+    "deprecated": true,
     "title": "PDSI: University of Idaho Palmer Drought Severity Index [deprecated]",
     "extent": {
         "spatial": {

@@ -72,7 +72,6 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:interval": {
         "interval": 30,
         "type": "cadence",
@@ -81,11 +80,13 @@
     "gee:provider_ids": [
         "C1598621093-GES_DISC"
     ],
+    "gee:status": "deprecated",
     "gee:terms_of_use": "All NASA-produced data from the GPM mission is made freely available for the public to use.",
     "gee:type": "image_collection",
     "sci:citation": "Huffman, G.J., E.F. Stocker, D.T. Bolvin, E.J. Nelkin, Jackson Tan (2019),\nGPM IMERG Final Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V06,\nGreenbelt, MD, Goddard Earth Sciences Data and Information Services Center\n(GES DISC), Accessed: [Data Access Date],\n[doi:10.5067/GPM/IMERG/3B-HH/06](https://doi.org/10.5067/GPM/IMERG/3B-HH/06)\n",
     "sci:doi": "10.5067/GPM/IMERG/3B-HH-L/06",
     "version": "Release 06",
+    "deprecated": true,
     "title": "GPM: Global Precipitation Measurement (GPM) Release 06 [deprecated]",
     "extent": {
         "spatial": {

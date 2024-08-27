@@ -62,12 +62,13 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
+    "gee:status": "deprecated",
     "gee:terms_of_use": "All data here is produced under the Copernicus Programme and is provided\nfree of charge, without restriction of use. For the full license\ninformation see the Copernicus Regulation.\n\nPublications, models, and data products that make use of these datasets\nmust include proper acknowledgement, including citing datasets and the\njournal article as in the following citation.\n\nIf you are using the data as a layer in a published map, please include the\nfollowing attribution text: 'Source: EC JRC/Google'\n",
     "gee:type": "image",
     "gee:user_uploaded": true,
     "sci:citation": "Jean-Francois Pekel, Andrew Cottam, Noel Gorelick, Alan S. Belward,\nHigh-resolution mapping of global surface water and its long-term changes.\nNature 540, 418-422 (2016). ([doi:10.1038/nature20584](https://doi.org/10.1038/nature20584))\n",
     "version": "1.2",
+    "deprecated": true,
     "title": "JRC Global Surface Water Metadata, v1.2 [deprecated]",
     "extent": {
         "spatial": {

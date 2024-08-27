@@ -56,17 +56,18 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
         "unit": "year"
     },
+    "gee:status": "deprecated",
     "gee:terms_of_use": "This work was authored as part of the Contributor's official duties as an Employee of the United States Government and is therefore a work of the United States Government. In accordance with 17 U.S.C. 105, no copyright protection is available for such works under U.S. Law. This is an Open Access article that has been identified as being free of known restrictions under copyright law, including all related and neighboring rights (https://creativecommons.org/publicdomain/mark/1.0/). You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
     "sci:citation": "Rigge, M.B., Bunde, B., Shi, H., Postma, K., 2021, Rangeland Condition Monitoring Assessment and Projection (RCMAP) Fractional Component Time-Series Across the Western U.S. 1985-2020 (ver. 2.0, October 2021): U.S. Geological Survey data release.\n[doi:10.5066/P95IQ4BT](https://doi.org/10.5066/P95IQ4BT)\n",
     "version": "v04",
+    "deprecated": true,
     "title": "RCMAP Rangeland Component Timeseries (1985-2020), v04 [deprecated]",
     "extent": {
         "spatial": {

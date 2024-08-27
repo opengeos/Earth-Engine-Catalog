@@ -56,11 +56,12 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
+    "gee:status": "deprecated",
     "gee:terms_of_use": "Most U.S. Geological Survey (USGS) information resides\nin the public domain and may be used without restriction. Additional\ninformation on [Acknowledging or Crediting USGS as Information\nSource](https://www.usgs.gov/information-policies-and-instructions/crediting-usgs) is available.\n",
     "gee:type": "image",
     "sci:citation": "Global Multi-resolution Terrain Elevation Data 2010 courtesy of\nthe U.S. Geological Survey",
     "version": "1.0",
+    "deprecated": true,
     "title": "GMTED2010: Global Multi-resolution Terrain Elevation Data 2010, Breakline Emphasis [deprecated]",
     "extent": {
         "spatial": {

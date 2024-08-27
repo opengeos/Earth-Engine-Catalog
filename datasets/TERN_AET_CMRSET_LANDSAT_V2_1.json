@@ -61,13 +61,14 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
+    "gee:status": "deprecated",
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
     "sci:citation": "Juan P. Guerschman, Tim R. McVicar, Jamie Vleeshower, Thomas G. Van Niel,\nJorge L. Pe\u00f1a-Arancibia, Yun Chen. Estimating actual evapotranspiration at\nfield-to-continent scales by calibrating the CMRSET algorithm with MODIS,\nVIIRS, Landsat and Sentinel-2 data, Journal of Hydrology, Volume 605, 2022,\n127318,\n[doi:10.1016/j.jhydrol.2021.127318](\n  https://doi.org/10.1016/j.jhydrol.2021.127318).\n",
     "sci:doi": "10.1016/j.jhydrol.2021.127318",
     "version": "2.1",
+    "deprecated": true,
     "title": "Actual Evapotranspiration for Australia (CMRSET Landsat V2.1) [deprecated]",
     "extent": {
         "spatial": {

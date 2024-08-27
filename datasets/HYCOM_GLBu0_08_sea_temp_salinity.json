@@ -56,16 +56,17 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
         "unit": "day"
     },
+    "gee:status": "deprecated",
     "gee:terms_of_use": "This dataset is freely available with no restrictions.",
     "gee:type": "image_collection",
     "sci:citation": "J. A. Cummings and O. M. Smedstad. 2013: Variational Data Assimilation for\nthe Global Ocean. Data Assimilation for Atmospheric, Oceanic and Hydrologic\nApplications vol II, chapter 13, 303-343.\n",
     "version": "GLBu0.08",
+    "deprecated": true,
     "title": "HYCOM: Hybrid Coordinate Ocean Model, Water Temperature and Salinity [deprecated]",
     "extent": {
         "spatial": {

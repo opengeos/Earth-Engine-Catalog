@@ -50,12 +50,12 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:interval": {
         "interval": 5,
         "type": "cadence",
         "unit": "year"
     },
+    "gee:status": "deprecated",
     "gee:terms_of_use": "Intellectual property rights to this dataset belong to\nUniversity of Maryland, Department of Geographical Sciences and NASA. Usage\nis free if acklowedgement is made.\n",
     "gee:type": "image_collection",
     "sci:citation": "Data citation: Tree Canopy Cover, {Year, ...}, Global Land Cover Facility.\n",
@@ -66,6 +66,7 @@
         }
     ],
     "version": "Unknown",
+    "deprecated": true,
     "title": "GLCF: Landsat Tree Cover Continuous Fields [deprecated]",
     "extent": {
         "spatial": {

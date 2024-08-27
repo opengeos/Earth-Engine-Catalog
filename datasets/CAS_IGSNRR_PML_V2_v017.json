@@ -62,12 +62,12 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:interval": {
         "interval": 8,
         "type": "cadence",
         "unit": "day"
     },
+    "gee:status": "deprecated",
     "gee:terms_of_use": "Acknowledgements\n\nWhenever PML datasets are used in a scientific publication, the given\nreferences should be cited.\n\nLicense\n\nThe dataset is licensed under the\n[CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
@@ -83,6 +83,7 @@
         }
     ],
     "version": "0.1.7",
+    "deprecated": true,
     "title": "PML_V2 0.1.7: Coupled Evapotranspiration and Gross Primary Product (GPP) [deprecated]",
     "extent": {
         "spatial": {

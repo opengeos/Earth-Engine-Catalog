@@ -60,7 +60,6 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -69,11 +68,13 @@
     "gee:provider_ids": [
         "C1373412034-LPDAAC_ECS"
     ],
+    "gee:status": "deprecated",
     "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
     "gee:type": "image_collection",
     "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)",
     "sci:doi": "10.5067/VIIRS/VNP09GA.001",
     "version": "v001",
+    "deprecated": true,
     "title": "VNP09GA: VIIRS Surface Reflectance Daily 500m and 1km [deprecated]",
     "extent": {
         "spatial": {

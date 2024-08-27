@@ -67,12 +67,13 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
+    "gee:status": "deprecated",
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "table",
     "gee:user_uploaded": true,
     "sci:citation": "W. Sirko, S. Kashubin, M. Ritter, A. Annkah, Y.S.E. Bouchareb, Y. Dauphin,\nD. Keysers, M. Neumann, M. Cisse, J.A. Quinn. Continental-scale building\ndetection from high resolution satellite imagery.\n[arXiv:2107.12283](https://arxiv.org/abs/2107.12283), 2021.\n",
     "version": "v1.0",
+    "deprecated": true,
     "title": "Open Buildings V1 Polygons [deprecated]",
     "extent": {
         "spatial": {

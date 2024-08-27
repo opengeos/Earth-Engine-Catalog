@@ -56,11 +56,12 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
+    "gee:status": "deprecated",
     "gee:terms_of_use": "Most U.S. Geological Survey (USGS) information resides\nin the public domain and may be used without restriction. Additional\ninformation on [Acknowledging or Crediting USGS as Information\nSource](https://www.usgs.gov/information-policies-and-instructions/crediting-usgs) is available.\n",
     "gee:type": "image",
     "sci:citation": "Thenkabail P.S., Knox J.W., Ozdogan, M., Gumma, M.K., Congalton, R.G., Wu,\nZ., Milesi, C., Finkral, A., Marshall, M., Mariotto, I., You, S. Giri, C.\nand Nagler, P. 2012. Assessing future risks to agricultural productivity,\nwater resources and food security: how can remote sensing help?.\nPhotogrammetric Engineering and Remote Sensing, August 2012 Special Issue\non Global Croplands: Highlight Article. 78(8): 773-782.\n",
     "version": "0.0",
+    "deprecated": true,
     "title": "GFSAD1000: Cropland Extent 1km Crop Dominance, Global Food-Support Analysis Data [deprecated]",
     "extent": {
         "spatial": {

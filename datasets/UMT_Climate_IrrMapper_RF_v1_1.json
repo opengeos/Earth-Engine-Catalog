@@ -61,12 +61,13 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
+    "gee:status": "deprecated",
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
     "sci:citation": "Ketchum, D.; Jencso, K.; Maneta, M.P.; Melton, F.; Jones, M.O.; Huntington, J.\nIrrMapper: A Machine Learning Approach for High Resolution Mapping of\nIrrigated Agriculture Across the Western U.S.,\nRemote Sens. 2020, 12, 2328. [doi:10.3390/rs12142328](https://doi.org/10.3390/rs12142328)\n",
     "version": "1.1",
+    "deprecated": true,
     "title": "IrrMapper Irrigated Lands, Version 1.1 [deprecated]",
     "extent": {
         "spatial": {

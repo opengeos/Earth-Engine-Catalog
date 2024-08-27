@@ -55,15 +55,16 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:interval": {
         "interval": 5,
         "type": "revisit_interval",
         "unit": "day"
     },
+    "gee:status": "deprecated",
     "gee:terms_of_use": "The use of Sentinel data is governed by the [Copernicus\nSentinel Data Terms and Conditions.](https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice)\n",
     "gee:type": "image_collection",
     "version": "raw",
+    "deprecated": true,
     "title": "Sentinel-2 MSI: MultiSpectral Instrument, Level-1C [deprecated]",
     "extent": {
         "spatial": {
@@ -80,7 +81,7 @@
             "interval": [
                 [
                     "2015-06-27T00:00:00Z",
-                    "2024-08-25T16:18:59Z"
+                    "2024-08-26T15:55:09Z"
                 ]
             ]
         }

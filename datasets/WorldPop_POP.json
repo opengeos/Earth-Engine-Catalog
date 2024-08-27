@@ -56,7 +56,7 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
+    "gee:status": "deprecated",
     "gee:terms_of_use": "WorldPop datasets are licensed under the Creative Commons Attribution 4.0\nInternational License. Users are free to use, copy, distribute, transmit,\nand adapt the work for commercial and non-commercial purposes, without\nrestriction, as long as clear attribution of the source is provided.\n",
     "gee:type": "image_collection",
     "sci:citation": "Please cite the WorldPop website as the source: [www.worldpop.org]\n(www.worldpop.org).",
@@ -73,6 +73,7 @@
         }
     ],
     "version": "0.0",
+    "deprecated": true,
     "title": "WorldPop Project Population Data: Estimated Residential Population per 100x100m Grid Square [deprecated]",
     "extent": {
         "spatial": {

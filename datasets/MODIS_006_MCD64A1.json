@@ -60,7 +60,6 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -69,11 +68,13 @@
     "gee:provider_ids": [
         "C1364190927-LPDAAC_ECS"
     ],
+    "gee:status": "deprecated",
     "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
     "gee:type": "image_collection",
     "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
     "sci:doi": "10.5067/MODIS/MCD64A1.006",
     "version": "6.0",
+    "deprecated": true,
     "title": "MCD64A1.006 MODIS Burned Area Monthly Global 500m [deprecated]",
     "extent": {
         "spatial": {

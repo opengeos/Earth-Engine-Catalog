@@ -61,12 +61,12 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:interval": {
         "interval": 1,
         "type": "climatological_interval",
         "unit": "month"
     },
+    "gee:status": "deprecated",
     "gee:terms_of_use": "These PRISM datasets are available without restriction\non use or distribution. PRISM Climate Group does request that the\nuser give proper attribution and identify PRISM, where applicable,\nas the source of the data.\n[https://prism.oregonstate.edu/terms/](https://prism.oregonstate.edu/terms/)\n",
     "gee:type": "image_collection",
     "sci:citation": "Daly, C., Halbleib, M., Smith, J.I., Gibson, W.P., Doggett, M.K.,\nTaylor, G.H., Curtis, J., and Pasteris, P.A. 2008. Physiographically-sensitive\nmapping of temperature and precipitation across the conterminous\nUnited States. International Journal of Climatology, 28: 2031-2064\n[doi:10.1002/joc.1688](https://doi.org/10.1002/joc.1688)\n[pdf](https://www.prism.oregonstate.edu/documents/pubs/2008intjclim_physiographicMapping_daly.pdf)\n",
@@ -77,6 +77,7 @@
         }
     ],
     "version": "81m",
+    "deprecated": true,
     "title": "PRISM Long-Term Average Climate Dataset Norm81m [deprecated]",
     "extent": {
         "spatial": {

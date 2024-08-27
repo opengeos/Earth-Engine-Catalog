@@ -67,7 +67,7 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
+    "gee:status": "deprecated",
     "gee:terms_of_use": "This dataset is available to use with no charge under\nthe conditions specified in the [Terms of use for ALOS Global Digital\nSurface Model](https://www.eorc.jaxa.jp/ALOS/en/aw3d30/).\n",
     "gee:type": "image",
     "sci:citation": "T. Tadono, H. Ishida, F. Oda, S. Naito, K. Minakawa, H. Iwamoto\n: Precise Global DEM Generation By ALOS PRISM, ISPRS Annals of\nthe Photogrammetry, Remote Sensing and Spatial Information Sciences,\nVol.II-4, pp.71-76, 2014. [PDF file](https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/II-4/71/2014/isprsannals-II-4-71-2014.pdf)\n",
@@ -83,6 +83,7 @@
         }
     ],
     "version": "2.1",
+    "deprecated": true,
     "title": "ALOS DSM: Global 30m v2.1 [deprecated]",
     "extent": {
         "spatial": {

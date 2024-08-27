@@ -66,7 +66,6 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -75,11 +74,13 @@
     "gee:provider_ids": [
         "C1000001204-NSIDC_ECS"
     ],
+    "gee:status": "deprecated",
     "gee:terms_of_use": "You may download and use photographs, imagery, or text\nfrom the NSIDC web site, unless limitations for its use are specifically\nstated. For more information on usage and citing NSIDC datasets,\nplease visit the\n[NSIDC 'Use and Copyright' page](https://nsidc.org/about/data-use-and-copyright).\n",
     "gee:type": "image_collection",
     "sci:citation": "Hall, D. K., V. V. Salomonson, and G. A. Riggs. 2016. MODIS/Terra\nSnow Cover Daily L3 Global 500m Grid. Version 6. Boulder, Colorado\nUSA: NASA National Snow and Ice Data Center Distributed Active\nArchive Center.\n",
     "sci:doi": "10.5067/MODIS/MYD10A1.006",
     "version": "6.0",
+    "deprecated": true,
     "title": "MYD10A1.006 Aqua Snow Cover Daily Global 500m [deprecated]",
     "extent": {
         "spatial": {

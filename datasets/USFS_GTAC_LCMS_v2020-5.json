@@ -61,12 +61,13 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "deprecated": true,
+    "gee:status": "deprecated",
     "gee:terms_of_use": "The USDA Forest Service makes no warranty, expressed or implied, including the warranties of\nmerchantability and fitness for a particular purpose, nor assumes any legal liability or\nresponsibility for the accuracy, reliability, completeness or utility of these geospatial data,\nor for the improper or incorrect use of these geospatial data. These geospatial data and\nrelated maps or graphics are not legal documents and are not intended to be used as such. The\ndata and maps may not be used to determine title, ownership, legal descriptions or boundaries,\nlegal jurisdiction, or restrictions that may be in place on either public or private land.\nNatural hazards may or may not be depicted on the data and maps, and land users should exercise\ndue caution. The data are dynamic and may change over time. The user is responsible to verify\nthe limitations of the geospatial data and to use the data accordingly.\n\nThese data were collected using funding from the U.S. Government and can be used\nwithout additional permissions or fees. If you use these data in a publication, presentation, or\nother research product please use the following citation:\n\nUSDA Forest Service. 2021. USFS Landscape Change Monitoring System version 2020.5. Salt Lake\nCity, Utah.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
     "sci:citation": "USDA Forest Service. 2021. USFS Landscape Change Monitoring System\nversion 2020.5. Salt Lake City, Utah.\n",
     "version": "v2020.5",
+    "deprecated": true,
     "title": "USFS Landscape Change Monitoring System v2020.5 (Conterminous United States and Southeastern Alaska) [deprecated]",
     "extent": {
         "spatial": {
