@@ -35,6 +35,18 @@
             "code": "JavaScript"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/EDF/EDF_OGIM_current.json",
+            "type": "application/json",
+            "title": "EDF/OGIM/current"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/EDF/EDF_OGIM_current.json",
+            "type": "application/json",
+            "title": "EDF/OGIM/current"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/EDF/EDF_OGIM_OGIM_v2-4_RF06_RF08.json",
             "type": "application/json"
@@ -50,13 +62,15 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:status": "deprecated",
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "table",
     "gee:user_uploaded": true,
     "sci:citation": "Omara, M., Gautam, R., O'Brien, M., Himmelberger, A., Franco, A.,\nMeisenhelder, K., Hauser, G., Lyon, D., Chulakadaba, A., Miller, C. and\nFranklin, J., 2023. Developing a spatially explicit global oil and gas\ninfrastructure database for characterizing methane emission sources at high\nresolution. Earth System Science Data Discussions, 2023, pp.1-35.\n[doi:10.5194/essd-15-3761-2023](https://doi.org/10.5194/essd-15-3761-2023),\n",
     "sci:doi": "10.5194/essd-15-3761-2023",
     "version": "2.4_RF06_RF08",
-    "title": "OGIM: Oil and Gas Infrastructure Mapping Database v2.4_RF06_RF08",
+    "deprecated": true,
+    "title": "OGIM: Oil and Gas Infrastructure Mapping Database v2.4_RF06_RF08 [deprecated]",
     "extent": {
         "spatial": {
             "bbox": [

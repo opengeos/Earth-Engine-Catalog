@@ -1,0 +1,167 @@
+{
+    "type": "Collection",
+    "id": "NASA/EMIT/L2A/RFL",
+    "stac_version": "1.0.0",
+    "description": "The EMIT Project is part of the Earth Venture-Instrument (EV-I) Program\ndirected by the Program Director of the NASA Earth Science Division (ESD).\nEMIT is comprised of a VSWIR Infrared Dyson imaging spectrometer adapted for\ninstallation on the International Space Station (ISS). EMIT measures\nradiance between 380 and 2500 nanometers, with an approximate 7 nm bandpass.\nData are collected in a swath that is approximately 75 km wide at the\nequator, with an approximate ground sampling distance of 60 m. See the\nprovider's [NASA EMIT Overview](https://lpdaac.usgs.gov/documents/1695/EMIT_L2B_GHG_User_Guide_V1.pdf)\nfor more details.\n\nEMIT was a particularly useful tool for mapping out greenhouse gases,\nincluding methane, carbon dioxide, and water vapor. This is consistent with\nprevious findings from airborne data, but global nature, revisit frequency\nand wide swath of EMIT provided an unprecedented opportunity to investigate\ngreenhouse gas retrievals.\n\nThe Level 2A data product contains estimated surface reflectance,\nuncertainty, and mask data. In addition, the geolocation of all pixel\ncenters is included as well as the calculation of observation geometry and\nillumination angles on a pixel-by-pixel basis.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_EMIT_L2A_RFL",
+            "type": "text/html",
+            "title": "Run the example for NASA/EMIT/L2A/RFL in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_EMIT_L2A_RFL_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_EMIT_L2A_RFL#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_EMIT_L2A_RFL.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "NASA EMIT data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Green, R. (2022). EMIT L2A Estimated Surface Reflectance and Uncertainty and\nMasks 60 m V001 [Data set]. NASA EOSDIS Land Processes Distributed Active\nArchive Center. Accessed 2024-06-14 from\n[https://doi.org/10.5067/EMIT/EMITL2ARFL.001](https://doi.org/10.5067/EMIT/EMITL2ARFL.001)\n",
+    "sci:doi": "10.5067/EMIT/EMITL2ARFL.001",
+    "version": "1",
+    "title": "EMIT L2A Estimated Surface Reflectance and Uncertainty and Masks 60 m",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-08-09T00:00:00Z",
+                    "2024-08-17T03:41:46Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "daily",
+        "emit",
+        "nasa",
+        "reflectance"
+    ],
+    "providers": [
+        {
+            "name": "NASA Jet Propulsion Laboratory",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://earth.jpl.nasa.gov/emit/data/data-products/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_EMIT_L2A_RFL"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Unique Orbit Identification Number",
+                "name": "ORBIT",
+                "type": "STRING"
+            },
+            {
+                "description": "Orbit Segment",
+                "name": "ORBIT_SEGMENT",
+                "type": "STRING"
+            },
+            {
+                "description": "Unique scene identification number",
+                "name": "SCENE",
+                "type": "STRING"
+            },
+            {
+                "description": "Solar Azimuth",
+                "name": "SOLAR_AZIMUTH",
+                "type": "STRING"
+            },
+            {
+                "description": "Solar Zenith",
+                "name": "SOLAR_ZENITH",
+                "type": "STRING"
+            },
+            {
+                "description": "An array of length 285, where the value at index i is the full width\nat half maximum setting for reflectance band i.\n",
+                "name": "reflectance_fwhm",
+                "type": "DOUBLE_LIST"
+            },
+            {
+                "description": "An array of length 285, where the value at index i is the wavelength\ncenter setting for reflectance band i.\n",
+                "name": "reflectance_wavelengths",
+                "type": "DOUBLE_LIST"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Emit Reflectance",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "reflectance_1"
+                        ],
+                        "max": [
+                            0.1
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 38.334,
+                    "lon": -121.4612,
+                    "zoom": 10
+                }
+            }
+        ],
+        "gsd": [
+            60
+        ]
+    }
+}

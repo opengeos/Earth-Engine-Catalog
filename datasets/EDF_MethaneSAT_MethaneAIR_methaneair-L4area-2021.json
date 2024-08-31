@@ -33,6 +33,18 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/EDF/EDF_MethaneSAT_MethaneAIR_L4area.json",
+            "type": "application/json",
+            "title": "EDF/MethaneSAT/MethaneAIR/L4area"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/EDF/EDF_MethaneSAT_MethaneAIR_L4area.json",
+            "type": "application/json",
+            "title": "EDF/MethaneSAT/MethaneAIR/L4area"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/EDF/EDF_MethaneSAT_MethaneAIR_methaneair-L4area-2021.json",
             "type": "application/json"
@@ -48,12 +60,14 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:status": "deprecated",
     "gee:terms_of_use": "Use of this data is subject to [MethaneSAT's Content License Terms of\nUse](https://www.edf.org/sites/default/files/2024-02/MethaneSAT%20-%20Content%20License%20Terms%20of%20Use%202024_0.pdf).\n",
     "gee:type": "image",
     "gee:unusual_terms_of_use": true,
     "gee:user_uploaded": true,
     "version": "2021",
-    "title": "MethaneAIR L4 Area Sources 2021",
+    "deprecated": true,
+    "title": "MethaneAIR L4 Area Sources 2021 [deprecated]",
     "extent": {
         "spatial": {
             "bbox": [

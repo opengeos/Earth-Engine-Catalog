@@ -1,0 +1,199 @@
+{
+    "type": "Collection",
+    "id": "EDF/OGIM/current",
+    "stac_version": "1.0.0",
+    "description": "This dataset provides the locations of oil and gas (O&G) related\ninfrastructure globally.\n\nThe Oil and Gas Infrastructure Mapping (OGIM) database is a project\ndeveloped by the Environmental Defense Fund (EDF) and [MethaneSAT LLC](https://www.methanesat.org/),\na wholly-owned subsidiary of EDF. The primary objective of developing\na standardized O&G infrastructure database such as OGIM is to support\nMethaneSAT's emission quantification, source characterization, and other\nscientific- or advocacy-relevant analyses of methane emissions from the oil\nand gas sector. The OGIM database is developed based on the acquisition,\nanalysis, and quality assurance of publicly available geospatial data\nsources of O&G facilities, which are combined within one standard data\nschema and coordinate reference system.\n\nThis dataset contains the spatial locations of the following types of\ninfrastructure assets:\n\n* oil and natural gas wells,\n* oil and gas pipelines,\n* natural gas compressor stations,\n* gathering and processing facilities,\n* tank batteries,\n* offshore platforms,\n* liquified natural gas (LNG) facilities,\n* crude oil refineries,\n* petroleum terminals,\n* injection and disposal facilities,\n* equipment and component locations,\n* satellite detections of oil and gas flares,\n* and \"other\" oil and gas related infrastructure, such as metering stations\n\n\nRecords in the OGIM are consolidated from numerous publicly-available\ngovernmental and academic sources. This list of sources is available [in the\nOGIM_v2.5.1_Data_Source_References.pdf](https://zenodo.org/records/13259749)\ndocument. For more information on each source, refer to the \"Data_Catalog\"\ntable that accompanies [Omara et al (2023)](https://doi.org/10.5194/essd-15-3761-2023).\n\nImportant notes about the attributes associated with these facility locations:\n\n- Missing values (i.e., values missing or not reported by the original data\nsource) are handled by assigning \"N/A\" to string attributes, -999 to\nnumerical attributes, and a generic date of \"1900-01-01\" to date/datetime\nattributes.\n\n- Facility operator names have not been altered in any way from the original\nsource of data and are assumed to be accurate as of the original source's\npublication date.\n\nFor more information about the OGIM database, including methods used in its\ndevelopment and key applications of the database, please refer to the recent\npublication by [Omara et al, 2023](https://doi.org/10.5194/essd-15-3761-2023).\n\nContact the data provider for more information about the project at this link:\n[https://www.methanesat.org/contact/](https://www.methanesat.org/contact/)\n\nThis dataset will be updated in-place with the new versions.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/EDF/EDF_OGIM_current",
+            "type": "text/html",
+            "title": "Run the example for EDF/OGIM/current in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/EDF/EDF_OGIM_current_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/EDF_OGIM_current#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/EDF/EDF_OGIM_current_FeatureView",
+            "type": "text/html",
+            "title": "Run the example for EDF/OGIM/current in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/EDF/EDF_OGIM_current.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/EDF/catalog.json",
+            "type": "application/json",
+            "title": "EDF"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "table",
+    "gee:user_uploaded": true,
+    "sci:citation": "Omara, M., Gautam, R., O'Brien, M., Himmelberger, A., Franco, A.,\nMeisenhelder, K., Hauser, G., Lyon, D., Chulakadaba, A., Miller, C. and\nFranklin, J., 2023. Developing a spatially explicit global oil and gas\ninfrastructure database for characterizing methane emission sources at high\nresolution. Earth System Science Data Discussions, 2023, pp.1-35.\n[doi:10.5194/essd-15-3761-2023](https://doi.org/10.5194/essd-15-3761-2023),\n",
+    "sci:doi": "10.5194/essd-15-3761-2023",
+    "version": "2.5.1",
+    "title": "OGIM: Oil and Gas Infrastructure Mapping Database v2.5.1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2024-05-15T00:00:00Z",
+                    "2024-05-15T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "climate",
+        "methane",
+        "emissions",
+        "ghg",
+        "edf",
+        "methanesat",
+        "methaneair"
+    ],
+    "providers": [
+        {
+            "name": "Environmental Defense Fund - MethaneSAT",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://methanesat.org"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/EDF_OGIM_current"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Category of O&G infrastructure to which the facility belongs.\n\nValues:\n\n* CRUDE OIL REFINERIES\n* EQUIPMENT AND COMPONENTS\n* INJECTION AND DISPOSAL\n* GATHERING AND PROCESSING\n* LNG FACILITIES\n* NATURAL GAS COMPRESSOR STATION\n* NATURAL GAS FLARING DETECTIONS\n* OFFSHORE PLATFORMS\n* OIL AND NATURAL GAS WELLS\n* OIL AND NATURAL GAS PIPELINES\n* PETROLEUM TERMINALS\n* STATIONS - OTHER\n* TANK BATTERIES\n",
+                "name": "CATEGORY",
+                "type": "STRING"
+            },
+            {
+                "description": "Unique identifier for each facility in the dataset. Values do not\nrepeat across infrastructure categories.\n",
+                "name": "OGIM_ID",
+                "type": "INT"
+            },
+            {
+                "description": "Original publication date of the data source from which the record was\nacquired, in YYYY-MM-DD format.\n",
+                "name": "SRC_DATE",
+                "type": "STRING"
+            },
+            {
+                "description": "ID number(s) linking the record to its corresponding original data\nsource(s). To look up the citation for a given SRC_REF_ID value, refer\nto the Data Source Reference list (PDF) here, or the \"Data_Catalog\"\ntable in the GeoPackage that accompanies [Omara et al (2023)](https://doi.org/10.5194/essd-15-3761-2023).\n",
+                "name": "SRC_REF_ID",
+                "type": "INT"
+            },
+            {
+                "description": "Country in which the record resides. Where possible, country name\nmatches the UN Member State list.\n\nIf features are located in more than one country, COUNTRY field\ncontains a comma-separated list of these countries in alphabetical\norder.\n",
+                "name": "COUNTRY",
+                "type": "STRING"
+            },
+            {
+                "description": "State or province in which the facility resides.",
+                "name": "STATE_PROV",
+                "type": "STRING"
+            },
+            {
+                "description": "Unique ID used by the original source agency to identify the facility.\n",
+                "name": "FAC_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "Name of the facility.",
+                "name": "FAC_NAME",
+                "type": "STRING"
+            },
+            {
+                "description": "Operational status of the infrastructure asset, according to the\noriginal source e.g. 'ACTIVE'; 'SUSPENDED'; 'TEMPORARILY CLOSED'.\n\nFAC_STATUS of \"N/A\" cannot be assumed to mean active or inactive.\n",
+                "name": "FAC_STATUS",
+                "type": "STRING"
+            },
+            {
+                "description": "Detailed information on type of facility.",
+                "name": "FAC_TYPE",
+                "type": "STRING"
+            },
+            {
+                "description": "Standardized version of the facility status reported by the original\ndata source. The original statuses were binned into one of 12\ncategories defined by EDF.\n",
+                "name": "OGIM_STATUS",
+                "type": "STRING"
+            },
+            {
+                "description": "Name of the facility's operator, according to the original source at\ntime of publication.\n",
+                "name": "OPERATOR",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Oil and Gas Infrastructure",
+                "lookat": {
+                    "lat": 40,
+                    "lon": -96,
+                    "zoom": 4
+                },
+                "table_visualization": {
+                    "color": "purple",
+                    "point_size": 1,
+                    "width": 1
+                }
+            },
+            {
+                "display_name": "FeatureView visualization of Oil and Gas Infrastructure",
+                "lookat": {
+                    "lat": 40,
+                    "lon": -96,
+                    "zoom": 4
+                },
+                "visualize_as": "FeatureView"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 1500,
+            "thinning_strategy": "HIGHER_DENSITY"
+        }
+    }
+}

@@ -1,0 +1,204 @@
+{
+    "type": "Collection",
+    "id": "EDF/MethaneSAT/MethaneAIR/L3concentration",
+    "stac_version": "1.0.0",
+    "description": "This dataset provides geospatial data for the total column dry air mole\nfraction of methane in the atmosphere, \"XCH4\", as observed by the MethaneAIR\nimaging spectrometer. XCH4 is defined as the total column amount (number of\nmolecules) of methane (\"CH4\") divided by the total amount of air (number of\nmolecules, water vapor amount removed) along the line of sight from the\nairborne spectrometer to the earth's surface and back up to the sun.\nAdditional data layers are provided for reference: observed albedo at 1622\nnm, surface pressure, and terrain height.\n\n\nMethane is a potent greenhouse gas that has more than 80 times the warming power\nof carbon dioxide over the first 20 years after it reaches the atmosphere. At\nleast 30% of today's global warming is driven by methane from human actions.\nCutting methane emissions associated with human activities - including avoidable\nemissions from oil and gas operations, agriculture, and waste management - is\nthe single fastest way to slow the rate of global warming.\n\nThe aircraft was flown at 11.5 - 13 km altitude (37,000 - 43,000 feet),\nacquiring 10 frames per second with a swath of 4.5 - 4.8 km with a 25 degree\nfield of view and 896 pixels across track, giving a native pixel size at\nnadir of approximately 25m along track and 5 m across track. The\nspectroscopic data are aggregated by 5 across track, giving a mean pixel\nsize of 25m x 25m. Concentrations (XCH4) are retrieved from these high\nresolution (0.1 nm sampling, 0.3nm resolution), spatially distributed\nspectra ([Chan Miller et al. (2024)](https://doi.org/10.5194/egusphere-2023-1962)),\nthen gridded on a 0.0001 x 0.0001 degree grid (approximately 10m x 8m over\nthe US). The precision of the gridded data is approximately 25 parts per\nbillion (1s, about 1.3%), and a spatial correlation length (1/e) of about\n70m. There are some variations from flight-to-flight according to operating\nconditions, look angle and surface albedo.\n\nThe flight pattern was typically a series of oval swaths in a Zamboni\npattern to cover a region, typically about 70 km x 100 km, over a 2 - 3 hour\ninterval. The data presented here are averaged where flight tracks overlap,\ntypically at the edges of each swath and in the urns at the top and bottom\nof the Zamboni pattern.\n\n\nThis dataset was generated using MethaneAIR measurements taken on flights\nbetween 30 July 2021 and 13 October 2023. MethaneAIR is an airborne precursor of\nthe MethaneSAT satellite mission, managed by [MethaneSAT LLC](https://www.methanesat.org/),\na wholly owned subsidiary of Environmental Defense Fund. Methane emission fluxes were produced using a geostatistical inverse\nmodeling framework on each of these Zamboni swaths.\n\n\nFor additional information about the MethaneAIR instrument, instrument\ncalibration and emission detections, please refer to recent publications by\n[Loughner et al. (2021)](https://doi.org/10.1175/JAMC-D-20-0158.1),\n[Staebell et al. (2021)](https://doi.org/10.5194/amt-14-3737-2021),\n[Conway et al. (2023)](https://doi.org/10.5194/amt-2023-111),\n[Chulakadabba et al. (2023)](https://doi.org/10.5194/egusphere-2023-822),\n[Abbadi et al. (2023)](https://doi.org/10.31223/X51D4C),\n[Omara et al. (2023)](https://doi.org/10.5194/essd-15-3761-2023),\nand [Miller et al. (2023)](https://doi.org/10.5194/egusphere-2023-1962).\n\nContact the data provider for more information about the project at this\nlink: [https://www.methanesat.org/contact/](https://www.methanesat.org/contact/)",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/EDF/EDF_MethaneSAT_MethaneAIR_L3concentration",
+            "type": "text/html",
+            "title": "Run the example for EDF/MethaneSAT/MethaneAIR/L3concentration in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/EDF/EDF_MethaneSAT_MethaneAIR_L3concentration_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/EDF_MethaneSAT_MethaneAIR_L3concentration#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://library.edf.org/AssetLink/3u27pb5103r1m825jykd7v0347t4m41y.pdf",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/EDF/EDF_MethaneSAT_MethaneAIR_L3concentration.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/EDF/catalog.json",
+            "type": "application/json",
+            "title": "EDF"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:terms_of_use": "Use of this data is subject to [MethaneSAT's Content License Terms of\nUse](https://library.edf.org/AssetLink/3u27pb5103r1m825jykd7v0347t4m41y.pdf).\n",
+    "gee:type": "image_collection",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true,
+    "sci:citation": "Chan Miller, C., Roche, S., Wilzewski, J. S., Liu, X., Chance, K., Souri,\nA. H., Conway, E., Luo, B., Samra, J., Hawthorne, J., Sun, K., Staebell, C.,\nChulakadabba, A., Sargent, M., Benmergui, J. S., Franklin, J. E., Daube, B.\nC., Li, Y., Laughner, J. L., Baier, B. C., Gautam, R., Omara, M., and Wofsy,\nS. C. 2023. Methane retrieval from MethaneAIR using the CO2 Proxy Approach:\nA demonstration for the upcoming MethaneSAT mission, EGUsphere [preprint].\n[doi:10.5194/egusphere-2023-19623](https://doi.org/10.5194/egusphere-2023-1962),\n",
+    "version": "v1",
+    "title": "MethaneAIR L3 Concentration v1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -118.42,
+                    27.62,
+                    -73.44,
+                    54.6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-05-25T00:00:00Z",
+                    "2023-10-13T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "climate",
+        "emissions",
+        "ghg",
+        "methane",
+        "edf",
+        "methanesat",
+        "methaneair"
+    ],
+    "providers": [
+        {
+            "name": "Environmental Defense Fund - MethaneSAT",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://methanesat.org"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/EDF_MethaneSAT_MethaneAIR_L3concentration"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Retrieved column-averaged dry-air CH4 mole fraction.",
+                "gee:units": "ppb",
+                "name": "XCH4"
+            },
+            {
+                "description": "Ratio of solar radiance at the ground to observed radiance at the sensor.",
+                "name": "albedo"
+            },
+            {
+                "description": "Air pressure at the surface.",
+                "gee:units": "hPa",
+                "name": "surface_pressure"
+            },
+            {
+                "description": "Elevation with respect to WGS84 reference ellipsoid.",
+                "gee:units": "km",
+                "name": "terrain_height"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Research flight number.",
+                "name": "flight_id",
+                "type": "STRING"
+            },
+            {
+                "description": "Oil and Gas basin (e.g. Permian) or area of interest (e.g. New York City).",
+                "name": "basin",
+                "type": "STRING"
+            },
+            {
+                "description": "Data collection start time in YYYY-MM-DDThh:mm:ssZ format STRING (ISO 8601).",
+                "name": "time_coverage_start",
+                "type": "STRING"
+            },
+            {
+                "description": "Data collection end time in YYYY-MM-DDThh:mm:ssZ format STRING (ISO 8601).",
+                "name": "time_coverage_end",
+                "type": "STRING"
+            },
+            {
+                "description": "(internal) Processing run identifier that represents the calculations\nthat led to the features. It is not an attribute describing the\nflight, but the processing pipeline.\n",
+                "name": "processing_id",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Retrieved column-averaged dry-air CH4 mole fraction.",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "XCH4"
+                        ],
+                        "max": [
+                            2030
+                        ],
+                        "min": [
+                            1870
+                        ],
+                        "palette": [
+                            "navy",
+                            "magenta",
+                            "orange",
+                            "yellow"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 32,
+                    "lon": -102.9,
+                    "zoom": 8
+                }
+            }
+        ],
+        "gsd": [
+            10.2
+        ],
+        "XCH4": {
+            "minimum": 1894,
+            "maximum": 2114.65
+        },
+        "albedo": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "surface_pressure": {
+            "minimum": 725.95,
+            "maximum": 1011.33
+        },
+        "terrain_height": {
+            "minimum": 0.026,
+            "maximum": 2.915
+        }
+    }
+}
