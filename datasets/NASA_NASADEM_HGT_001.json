@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "NASA/NASADEM_HGT/001",
     "stac_version": "1.0.0",
-    "description": "NASADEM is a reprocessing of STRM data, with improved accuracy by incorporating auxiliary data\nfrom ASTER GDEM, ICESat GLAS, and PRISM datasets.\n\nThe most significant processing improvements involve void reduction through improved\nphase unwrapping and using ICESat GLAS data for control.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/592/NASADEM_User_Guide_V1.pdf)\n",
+    "description": "NASADEM is a reprocessing of SRTM data, with improved accuracy by incorporating auxiliary data\nfrom ASTER GDEM, ICESat GLAS, and PRISM datasets.\n\nThe most significant processing improvements involve void reduction through improved\nphase unwrapping and using ICESat GLAS data for control.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/592/NASADEM_User_Guide_V1.pdf)\n",
     "links": [
         {
             "rel": "root",

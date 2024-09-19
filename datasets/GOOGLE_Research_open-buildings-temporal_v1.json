@@ -1,0 +1,188 @@
+{
+    "type": "Collection",
+    "id": "GOOGLE/Research/open-buildings-temporal/v1",
+    "stac_version": "1.0.0",
+    "description": "The Open Buildings 2.5D Temporal Dataset contains data about building\npresence, fractional building counts, and building heights at an effective<sup>1</sup>\nspatial resolution of 4m (rasters are provided at 0.5m resolution) at an\nannual cadence from 2016-2023. It is produced from open-source,\nlow-resolution imagery from the [Sentinel-2](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2)\ncollection.\n\nThe dataset is available across Africa, South Asia, South-East Asia, Latin\nAmerica and the Caribbean. The goal of this data is to support organizations\n(e.g., governmental, non-profits, commercial) focusing on a range of\napplications for social good.\n\nExplore the data interactively with the demo Earth Engine [app](https://goo.gle/open-buildings-temporal-demo-app).\n\nIn case you encounter performance issues with the Earth Engine app please\ntry [this](https://goo.gle/open-buildings-temporal-demo) Earth Engine script\ninstead.\n\nAlternatively, if you are not an Earth Engine user, you can download the\ndata directly from Google Cloud Storage using [this notebook](https://colab.research.google.com/github/google-research/google-research/blob/master/building_detection/open_buildings_temporal_download_region_geotiffs.ipynb).\n\n<code>\n  Other example scripts:\n\n  [How to get building count for a given AOI](https://code.earthengine.google.com/e3d238ecbad4b49a6e58036bb99d999e)\n\n  [How to get building density (area occupied by buildings) for a given AOI](https://code.earthengine.google.com/938d9dc22d72c9b97b29e386a5e5ce1c)\n\n  [How to see two years side by side and compare](https://code.earthengine.google.com/28d757213da9cbafab5a359613cf1728)\n</code>\n\nFor more details on the project and FAQs about the data checkout our\n[website](https://sites.research.google/gr/open-buildings/temporal/)\n\n<sup>1</sup> equivalent to what could be achieved by a high-resolution model\nusing a single frame of 4 m resolution imagery.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/GOOGLE/GOOGLE_Research_open-buildings-temporal_v1",
+            "type": "text/html",
+            "title": "Run the example for GOOGLE/Research/open-buildings-temporal/v1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/GOOGLE/GOOGLE_Research_open-buildings-temporal_v1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_Research_open-buildings-temporal_v1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/ODbL-1.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GOOGLE/GOOGLE_Research_open-buildings-temporal_v1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GOOGLE/catalog.json",
+            "type": "application/json",
+            "title": "GOOGLE"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)\n\nThe data is shared under the Creative Commons Attribution\n([CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)) license and the\nOpen Data Commons Open Database License (ODbL) v1.0 license. As the user,\nyou can pick which of the two licenses you prefer and use the data under the\nterms of that license.\n\nLeverages the Copernicus Sentinel-2 data [2015-present]. See the [Sentinel Data\nLegal Notice](https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice)\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Wojciech Sirko, Emmanuel Asiedu Brempong, Juliana T. C. Marcos, Abigail\nAnnkah, Abel Korme, Mohammed Alewi Hassen, Krishna Sapkota, Tomer Shekel,\nAbdoulaye Diack, Sella Nevo, Jason Hickey, John Quinn. [High-Resolution \nBuilding and Road Detection from Sentinel-2](https://arxiv.org/abs/2310.11622), 2023.\n",
+    "version": "1",
+    "title": "Open Buildings Temporal V1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-06-30T07:00:00Z",
+                    "2023-06-30T07:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "building_height",
+        "height",
+        "annual",
+        "built_up",
+        "open_buildings",
+        "africa",
+        "asia",
+        "south_asia",
+        "southeast_asia",
+        "high_resolution"
+    ],
+    "providers": [
+        {
+            "name": "Google Research - Open Buildings",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://sites.research.google/gr/open-buildings/temporal/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_Research_open-buildings-temporal_v1"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Source data for deriving building counts for a given AOI. Please see\naccompanying example scripts.\n",
+                "name": "building_fractional_count"
+            },
+            {
+                "description": "Building height relative to the terrain in range [0m, 100m].",
+                "gee:units": "m",
+                "name": "building_height"
+            },
+            {
+                "description": "Model confidence values (i.e. how confident a model is that the pixel is\npart of a building) in range [0.0, 1.0]. Note that model confidence\nvalues are uncalibrated, meaning, if model confidence for a certain\npixel is 0.8, it doesn't mean the actual likelihood of building\npresence is 80%. As such, confidence values can only be used for\nrelative ranking (eg. thresholding) of pixels. Also, the model\nconfidence can vary across location and time based on a number\nof factors such as cloud cover, imagery misalignment, etc.\n",
+                "name": "building_presence"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Oldest Sentinel-2 imagery used to produce these rasters.",
+                "name": "imagery_start_time_epoch_s",
+                "type": "DOUBLE",
+                "units": "seconds"
+            },
+            {
+                "description": "Newest Sentinel-2 imagery used to produce these rasters",
+                "name": "imagery_end_time_epoch_s",
+                "type": "DOUBLE",
+                "units": "seconds"
+            },
+            {
+                "description": "Time the rasters are supposed to predict the state of the world for, in\nseconds since epoch.\n",
+                "name": "inference_time_epoch_s",
+                "type": "DOUBLE",
+                "units": "seconds"
+            },
+            {
+                "description": "Token of the S2 cell this tile belongs to. Due to UTM zone boundaries,\na single S2 cell that spans multiple zones may have multiple\ncorresponding tiles in different projection zones.\nSee [http://s2geometry.io/](http://s2geometry.io/).\n",
+                "name": "s2cell_token",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Open Buildings Temporal V1",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "building_fractional_count",
+                            "building_height",
+                            "building_presence"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 6.492,
+                    "lon": 3.389,
+                    "zoom": 17
+                }
+            }
+        ],
+        "gsd": [
+            4
+        ],
+        "building_fractional_count": {
+            "minimum": 0,
+            "maximum": 0.0216
+        },
+        "building_height": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "building_presence": {
+            "minimum": 0,
+            "maximum": 1
+        }
+    }
+}
