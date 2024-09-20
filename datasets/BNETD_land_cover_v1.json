@@ -1,0 +1,255 @@
+{
+    "type": "Collection",
+    "id": "BNETD/land_cover/v1",
+    "stac_version": "1.0.0",
+    "description": "The Cote d'Ivoire BNETD 2020 Land Cover Map was produced by the Ivorian\nGovernment through a national institution, the Center for Geographic\nInformation and Digital from the National Study Office Techniques and\nDevelopment (BNETD-CIGN), with technical and financial support from the\nEuropean Union. The methodology used to produce the map was transparent,\nparticipatory and in line with international standards.\n\nTo develop this map, a mosaic of satellite images (Sentinel 2) from 2020 was\nprocessed via Google Earth Engine and supplemented with data collected in the\nfield, to train a supervised classification algorithm (Random Forest).\nTwo field campaigns were conducted, from 10 November to 9 December 2022 and\nfrom 26 January to 13 February 2023, throughout the country. These missions\nmobilized 33 people, census or inventory because the data collection methods,\ndefinitions used and purpose of the exercise are different.\n\nAs part of the EUDR due diligence process, geolocation data for plots of\nland producing EUDR-relevant products could be overlaid with 2020 forest\ncover data in order to assess the risk that the plot is located in an area\nthat was forested before the 2020 cut-off date. To do this, forest cover\ndata aligned with the FAO definition of forests and the 2020 cut-off date\nis required. The 2020 land cover map of Cote d'Ivoire meets these needs.\nIndeed, the classes in the land cover map can be combined to create a\nforest/non-forest map that is aligned with the FAO definition of forests.\n\nA platform for accessing 2020 land cover data has been developed using ESRI\nsolutions, from Africa GeoPortal, for data analysis and visualisation.\nThe address is: [https://bit.ly/carte-ci-2020](https://bit.ly/carte-ci-2020)\n\nDocumentation:\n\n* [Detailed documentation](https://drive.google.com/file/d/1c2ej637TRmbwvJqzdElf64-aahb1Sbw2/view)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/BNETD/BNETD_land_cover_v1",
+            "type": "text/html",
+            "title": "Run the example for BNETD/land_cover/v1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/BNETD/BNETD_land_cover_v1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/BNETD_land_cover_v1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://africageoportal.maps.arcgis.com/home/item.html?id=46348aa12a3d46e592584737de64f72a"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/BNETD/BNETD_land_cover_v1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/BNETD/catalog.json",
+            "type": "application/json",
+            "title": "BNETD"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:status": "beta",
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "sci:citation": "BNETD Land Cover Map 2020.\n",
+    "version": "v1",
+    "title": "Cote d'Ivoire BNETD 2020 Land Cover Map",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -8.602,
+                    4.3603,
+                    -2.493,
+                    10.74
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    "2021-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "landcover",
+        "forest",
+        "classification",
+        "deforestation"
+    ],
+    "providers": [
+        {
+            "name": "BNETD-CIGN",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://africageoportal.maps.arcgis.com/home/user.html?user=bnetdcignCI"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/BNETD_land_cover_v1"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Land Cover class\n",
+                "gee:classes": [
+                    {
+                        "color": "276300",
+                        "description": "Dense forest (For&ecirc;t dense)",
+                        "value": 1
+                    },
+                    {
+                        "color": "59D757",
+                        "description": "Light forest (For&ecirc;t claire)",
+                        "value": 2
+                    },
+                    {
+                        "color": "569D6E",
+                        "description": "Forest gallery (For&ecirc;t galerie)",
+                        "value": 3
+                    },
+                    {
+                        "color": "79CFAD",
+                        "description": "Secondary forest/degraded forest (For&ecirc;t secondaire/for&ecirc;t d&eacute;grad&eacute;e)",
+                        "value": 4
+                    },
+                    {
+                        "color": "34734C",
+                        "description": "Mangrove",
+                        "value": 5
+                    },
+                    {
+                        "color": "B4FFAD",
+                        "description": "Forest plantation/Reforestation (Plantation foresti&egrave;re/Reboisement)",
+                        "value": 6
+                    },
+                    {
+                        "color": "6EFA9A",
+                        "description": "Swamp forest/Forest on hydromorphic soil (For&ecirc;t mar&eacute;cageuse/For&ecirc;t sur sol hydromorphe)",
+                        "value": 7
+                    },
+                    {
+                        "color": "D68589",
+                        "description": "Coffee Plantation (Plantation de Caf&eacute;)",
+                        "value": 8
+                    },
+                    {
+                        "color": "EBD37F",
+                        "description": "Cocoa Plantation (Plantation de Cacao)",
+                        "value": 9
+                    },
+                    {
+                        "color": "D0E09D",
+                        "description": "Rubber plantation (Plantation d&#39;H&eacute;v&eacute;a)",
+                        "value": 10
+                    },
+                    {
+                        "color": "E8BEFF",
+                        "description": "Oil palm plantation (Plantation de Palmier &agrave; huile)",
+                        "value": 11
+                    },
+                    {
+                        "color": "E751FE",
+                        "description": "Coconut Plantation (Plantation de Coco)",
+                        "value": 12
+                    },
+                    {
+                        "color": "F3BFF2",
+                        "description": "Cashew plantation (Plantation d&#39;Anacarde)",
+                        "value": 13
+                    },
+                    {
+                        "color": "9DFD00",
+                        "description": "Fruit plantation / Arboriculture (Plantation fruiti&egrave;re / Arboricultures)",
+                        "value": 14
+                    },
+                    {
+                        "color": "F2F38D",
+                        "description": "Agricultural development/Other crops/Orchards/Fallow land (Am&eacute;nagement agricole/Autres cultures/Vergers/Jach&egrave;res)",
+                        "value": 15
+                    },
+                    {
+                        "color": "B6D322",
+                        "description": "Tree savannah (Savane arbor&eacute;e)",
+                        "value": 16
+                    },
+                    {
+                        "color": "E2FE5F",
+                        "description": "Shrub formations/ Thickets (Formations arbustives/ Fourr&eacute;s)",
+                        "value": 17
+                    },
+                    {
+                        "color": "F9FDCC",
+                        "description": "Herbaceous formations (Formations herbac&eacute;es)",
+                        "value": 18
+                    },
+                    {
+                        "color": "4A70C0",
+                        "description": "Body of water, Courses and waterways (Plan d&#39;eau, Cours et voies deau)",
+                        "value": 19
+                    },
+                    {
+                        "color": "BEFFE8",
+                        "description": "Swampy area (Zone mar&eacute;cageuse)",
+                        "value": 20
+                    },
+                    {
+                        "color": "D20A02",
+                        "description": "Human habitat, Infrastructure (Habitat humain, Infrastructures)",
+                        "value": 21
+                    },
+                    {
+                        "color": "DBECEF",
+                        "description": "Rocky outcrop (Affleurement rocheux)",
+                        "value": 22
+                    },
+                    {
+                        "color": "DCDCDC",
+                        "description": "Bare ground (Sol nu)",
+                        "value": 23
+                    }
+                ],
+                "name": "classification"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Cote d'Ivoire Land Cover Map 2020",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "classification"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 7.55,
+                    "lon": -5.44,
+                    "zoom": 7
+                }
+            }
+        ],
+        "gsd": [
+            10
+        ],
+        "classification": {
+            "minimum": 1,
+            "maximum": 23
+        }
+    }
+}

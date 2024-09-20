@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "GOOGLE/Research/open-buildings-temporal/v1",
     "stac_version": "1.0.0",
-    "description": "The Open Buildings 2.5D Temporal Dataset contains data about building\npresence, fractional building counts, and building heights at an effective<sup>1</sup>\nspatial resolution of 4m (rasters are provided at 0.5m resolution) at an\nannual cadence from 2016-2023. It is produced from open-source,\nlow-resolution imagery from the [Sentinel-2](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2)\ncollection.\n\nThe dataset is available across Africa, South Asia, South-East Asia, Latin\nAmerica and the Caribbean. The goal of this data is to support organizations\n(e.g., governmental, non-profits, commercial) focusing on a range of\napplications for social good.\n\nExplore the data interactively with the demo Earth Engine [app](https://goo.gle/open-buildings-temporal-demo-app).\n\nIn case you encounter performance issues with the Earth Engine app please\ntry [this](https://goo.gle/open-buildings-temporal-demo) Earth Engine script\ninstead.\n\nAlternatively, if you are not an Earth Engine user, you can download the\ndata directly from Google Cloud Storage using [this notebook](https://colab.research.google.com/github/google-research/google-research/blob/master/building_detection/open_buildings_temporal_download_region_geotiffs.ipynb).\n\n<code>\n  Other example scripts:\n\n  [How to get building count for a given AOI](https://code.earthengine.google.com/e3d238ecbad4b49a6e58036bb99d999e)\n\n  [How to get building density (area occupied by buildings) for a given AOI](https://code.earthengine.google.com/938d9dc22d72c9b97b29e386a5e5ce1c)\n\n  [How to see two years side by side and compare](https://code.earthengine.google.com/28d757213da9cbafab5a359613cf1728)\n</code>\n\nFor more details on the project and FAQs about the data checkout our\n[website](https://sites.research.google/gr/open-buildings/temporal/)\n\n<sup>1</sup> equivalent to what could be achieved by a high-resolution model\nusing a single frame of 4 m resolution imagery.\n",
+    "description": "The Open Buildings 2.5D Temporal Dataset contains data about building\npresence, fractional building counts, and building heights at an effective<sup>1</sup>\nspatial resolution of 4m (rasters are provided at 0.5m resolution) at an\nannual cadence from 2016-2023. It is produced from open-source,\nlow-resolution imagery from the [Sentinel-2](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2)\ncollection.\n\nThe dataset is available across Africa, South Asia, South-East Asia, Latin\nAmerica and the Caribbean. The goal of this data is to support organizations\n(e.g., governmental, non-profits, commercial) focusing on a range of\napplications for social good.\n\nExplore the data interactively with the demo Earth Engine [app](https://goo.gle/open-buildings-temporal-demo-app). (In case you encounter performance issues with the Earth Engine app please try [this](https://goo.gle/open-buildings-temporal-demo) Earth Engine script instead.)\n\nAlternatively, if you are not an Earth Engine user, you can download the\ndata directly from Google Cloud Storage using [this notebook](https://colab.research.google.com/github/google-research/google-research/blob/master/building_detection/open_buildings_temporal_download_region_geotiffs.ipynb).\n\nFor more details on the project and FAQs about the data checkout the project\n[website](https://sites.research.google/gr/open-buildings/temporal/).\n\nExample scripts:\n\n* <code>[How to compute building count for a given AOI](https://code.earthengine.google.com/31ca8ccee65887ed2a152c8ea920bbd2)</code>\n* <code>[How to compute built-up area for a given AOI](https://code.earthengine.google.com/46468628f66eb57c79753ae4c1c09f54)</code>\n* <code>[How to see two years side-by-side and compare](https://code.earthengine.google.com/e9e5a84d279d4b5669872a560e8329a2?hideCode=true)</code>\n\n<small><sup>1</sup>equivalent to what could be achieved by a high-resolution model\nusing a single frame of 4 m resolution imagery.</small>\n",
     "links": [
         {
             "rel": "root",
@@ -54,9 +54,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)\n\nThe data is shared under the Creative Commons Attribution\n([CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)) license and the\nOpen Data Commons Open Database License (ODbL) v1.0 license. As the user,\nyou can pick which of the two licenses you prefer and use the data under the\nterms of that license.\n\nLeverages the Copernicus Sentinel-2 data [2015-present]. See the [Sentinel Data\nLegal Notice](https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice)\n",
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)\n\nThe data is shared under the Creative Commons Attribution\n([CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)) license and the\nOpen Data Commons Open Database License (ODbL) v1.0 license. As the user,\nyou can pick which of the two licenses you prefer and use the data under the\nterms of that license.\n\nLeverages the Copernicus Sentinel-2 data (2015-present). See the [Sentinel Data\nLegal Notice](https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice)\n",
     "gee:type": "image_collection",
-    "sci:citation": "Wojciech Sirko, Emmanuel Asiedu Brempong, Juliana T. C. Marcos, Abigail\nAnnkah, Abel Korme, Mohammed Alewi Hassen, Krishna Sapkota, Tomer Shekel,\nAbdoulaye Diack, Sella Nevo, Jason Hickey, John Quinn. [High-Resolution \nBuilding and Road Detection from Sentinel-2](https://arxiv.org/abs/2310.11622), 2023.\n",
+    "sci:citation": "Wojciech Sirko, Emmanuel Asiedu Brempong, Juliana T. C. Marcos, Abigail\nAnnkah, Abel Korme, Mohammed Alewi Hassen, Krishna Sapkota, Tomer Shekel,\nAbdoulaye Diack, Sella Nevo, Jason Hickey, John Quinn. [High-Resolution\nBuilding and Road Detection from Sentinel-2](https://arxiv.org/abs/2310.11622), 2023.\n",
     "version": "1",
     "title": "Open Buildings Temporal V1",
     "extent": {
@@ -127,13 +127,13 @@
         ],
         "gee:schema": [
             {
-                "description": "Oldest Sentinel-2 imagery used to produce these rasters.",
+                "description": "Oldest possible date for source Sentinel-2 imagery used to produce these rasters.",
                 "name": "imagery_start_time_epoch_s",
                 "type": "DOUBLE",
                 "units": "seconds"
             },
             {
-                "description": "Newest Sentinel-2 imagery used to produce these rasters",
+                "description": "Newest possible date for source Sentinel-2 imagery used to produce these rasters.",
                 "name": "imagery_end_time_epoch_s",
                 "type": "DOUBLE",
                 "units": "seconds"
@@ -163,9 +163,9 @@
                     }
                 },
                 "lookat": {
-                    "lat": 6.492,
-                    "lon": 3.389,
-                    "zoom": 17
+                    "lat": -5.178058074165919,
+                    "lon": 9.261976832473348,
+                    "zoom": 4
                 }
             }
         ],
