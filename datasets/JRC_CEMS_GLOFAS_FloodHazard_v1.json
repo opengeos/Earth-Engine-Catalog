@@ -1,0 +1,153 @@
+{
+    "type": "Collection",
+    "id": "JRC/CEMS_GLOFAS/FloodHazard/v1",
+    "stac_version": "1.0.0",
+    "description": "The global river flood hazard maps are a gridded data set representing\ninundation along the river network, for seven different flood return periods\n(from 1-in-10-years to 1-in-500-years). The input river flow data for the\nnew maps are produced by means of the open-source hydrological model\nLISFLOOD, while inundation simulations are performed with the hydrodynamic\nmodel LISFLOOD-FP. The extent comprises the entire world with the exception\nof Greenland and Antarctica and small islands with river basins smaller than\n500 km^2.\n\nCell values indicate water depth (in meters). The maps can be used to assess\nthe exposure of population and economic assets to river floods, and to\nperform flood risk assessments. The dataset is created as part of the\nCopernicus Emergency Management Service.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JRC/JRC_CEMS_GLOFAS_FloodHazard_v1",
+            "type": "text/html",
+            "title": "Run the example for JRC/CEMS_GLOFAS/FloodHazard/v1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/JRC/JRC_CEMS_GLOFAS_FloodHazard_v1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/JRC_CEMS_GLOFAS_FloodHazard_v1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_CEMS_GLOFAS_FloodHazard_v1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/catalog.json",
+            "type": "application/json",
+            "title": "JRC"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The JRC datasets are available without restriction\non use or distribution. For more information check\n[access rights](https://data.jrc.ec.europa.eu/access-rights/no-limitations),\n",
+    "gee:type": "image_collection",
+    "sci:publications": [
+        {
+            "citation": "Baugh, Calum; Colonese, Juan; D'Angelo, Claudia; Dottori, Francesco;\nNeal, Jeffrey; Prudhomme, Christel; Salamon, Peter (2024): Global river\nflood hazard maps. European Commission, Joint Research Centre (JRC)\n[Dataset] PID:\n[http://data.europa.eu/89h/jrc-floods-floodmapgl_rp50y-tif](http://data.europa.eu/89h/jrc-floods-floodmapgl_rp50y-tif)\n",
+            "doi": "10.1016/j.advwatres.2016.05.002"
+        }
+    ],
+    "title": "JRC Global River Flood Hazard Maps Version 1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2024-03-16T00:00:00Z",
+                    "2024-03-16T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "flood",
+        "monitoring",
+        "wri"
+    ],
+    "providers": [
+        {
+            "name": "Joint Research Centre",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://data.jrc.ec.europa.eu/dataset/jrc-floods-floodmapgl_rp50y-tif"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/JRC_CEMS_GLOFAS_FloodHazard_v1"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Flood inundation depth",
+                "gee:units": "m",
+                "name": "depth"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Return period of flood in years.\n\nNote: This property is not present for images that just show the\npermanent water bodies.\n",
+                "name": "return_period",
+                "type": "INT"
+            },
+            {
+                "description": "Unique identifier for the latitude/longitude grid cell.\n",
+                "name": "id",
+                "type": "INT"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "JRC Flood Hazard Maps",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "depth"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "ffffff",
+                            "0000ff"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 47.28,
+                    "lon": -86.47,
+                    "zoom": 4
+                }
+            }
+        ],
+        "gsd": [
+            1000
+        ],
+        "depth": {
+            "minimum": 0.1,
+            "maximum": 9494.89
+        }
+    }
+}

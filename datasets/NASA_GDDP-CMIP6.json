@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "NASA/GDDP-CMIP6",
     "stac_version": "1.0.0",
-    "description": "The NEX-GDDP-CMIP6 dataset is comprised of global downscaled climate\nscenarios derived from the General Circulation Model (GCM) runs conducted\nunder the Coupled Model Intercomparison Project Phase 6 (CMIP6, see\n[Thrasher et al. 2022](https://doi.org/10.7917/OFSG3345)) and across two of\nthe four \"Tier 1\" greenhouse gas emissions scenarios known as Shared\nSocioeconomic Pathways (SSPs).\n\nThe CMIP6 GCM runs were developed in support of the Sixth Assessment Report\nof the Intergovernmental Panel on Climate Change (IPCC AR6). This dataset\nincludes downscaled projections from ScenarioMIP model runs for which daily\nscenarios were produced and distributed through the Earth System Grid\nFederation.\n\nSee also\n[the provider tech note](https://www.nccs.nasa.gov/sites/default/files/NEX-GDDP-CMIP6-Tech_Note.pdf).\n\n[You can submit data questions about CMIP6 to the provider](https://airtable.com/shr01weJfA7DYq6jf)\nand\n[see their answers](https://airtable.com/shrX4mj20TLSH0r2y/tblUMAYpCfCCwucSV).\n",
+    "description": "The NEX-GDDP-CMIP6 dataset is comprised of global downscaled climate\nscenarios derived from the General Circulation Model (GCM) runs conducted\nunder the Coupled Model Intercomparison Project Phase 6 (CMIP6, see\n[Thrasher et al. 2022](https://doi.org/10.7917/OFSG3345)) and across two of\nthe four \"Tier 1\" greenhouse gas emissions scenarios known as Shared\nSocioeconomic Pathways (SSPs).\n\nThe CMIP6 GCM runs were developed in support of the Sixth Assessment Report\nof the Intergovernmental Panel on Climate Change (IPCC AR6). This dataset\nincludes downscaled projections from ScenarioMIP model runs for which daily\nscenarios were produced and distributed through the Earth System Grid\nFederation.\n\nThis collection contains 34 different models. One model, \"GFDL-CM4,\" has\ndata for two different configurations that can be differentiated by further\nfiltering on the *grid_label* property.\n\nSee also\n[the provider tech note](https://www.nccs.nasa.gov/sites/default/files/NEX-GDDP-CMIP6-Tech_Note.pdf).\n\n[You can submit data questions about CMIP6 to the provider](https://airtable.com/shr01weJfA7DYq6jf)\nand\n[see their answers](https://airtable.com/shrX4mj20TLSH0r2y/tblUMAYpCfCCwucSV).\n",
     "links": [
         {
             "rel": "root",
@@ -157,12 +157,12 @@
         ],
         "gee:schema": [
             {
-                "description": "Name of the CMIP6 model. It is one of: 'ACCESS-CM2', 'ACCESS-ESM1-5',\n'BCC-CSM2-MR', 'CESM2', 'CESM2-WACCM', 'CMCC-CM2-SR5', 'CMCC-ESM2',\n'CNRM-CM6-1', 'CNRM-ESM2-1', 'CanESM5', 'EC-Earth3',\n'EC-Earth3-Veg-LR', 'FGOALS-g3', 'GFDL-CM4', 'GFDL-ESM4',\n'GISS-E2-1-G', 'HadGEM3-GC31-LL', 'HadGEM3-GC31-MM', 'IITM-ESM',\n'INM-CM4-8', 'INM-CM5-0', 'IPSL-CM6A-LR', 'KACE-1-0-G', 'KIOST-ESM',\n'MIROC-ES2L', 'MIROC6', 'MPI-ESM1-2-HR', 'MPI-ESM1-2-LR',\n'MRI-ESM2-0', 'NESM3', 'NorESM2-LM', 'NorESM2-MM', 'TaiESM1',\n'UKESM1-0-LL'.\n",
+                "description": "Name of the CMIP6 model. It is one of:\n\n* ACCESS-CM2\n* ACCESS-ESM1-5\n* BCC-CSM2-MR\n* CESM2\n* CESM2-WACCM\n* CMCC-CM2-SR5\n* CMCC-ESM2\n* CNRM-CM6-1\n* CNRM-ESM2-1\n* CanESM5\n* EC-Earth3\n* EC-Earth3-Veg-LR\n* FGOALS-g3\n* GFDL-CM4 (see *grid_label* for additional information)\n* GFDL-ESM4\n* GISS-E2-1-G\n* HadGEM3-GC31-LL\n* HadGEM3-GC31-MM\n* IITM-ESM\n* INM-CM4-8\n* INM-CM5-0\n* IPSL-CM6A-LR\n* KACE-1-0-G\n* KIOST-ESM\n* MIROC-ES2L\n* MIROC6\n* MPI-ESM1-2-HR\n* MPI-ESM1-2-LR\n* MRI-ESM2-0\n* NESM3\n* NorESM2-LM\n* NorESM2-MM\n* TaiESM1\n* UKESM1-0-LL\n",
                 "name": "model",
                 "type": "STRING"
             },
             {
-                "description": "Name of the CMIP6 scenario. It is one of: 'historical', 'ssp245',\n'ssp585', where 'historical' designates retrospective model runs\n(pre-2015).\n",
+                "description": "Name of the CMIP6 scenario. It is one of:\n\n* historical (retrospective model runs pre-2015)\n* ssp245\n* ssp585\n",
                 "name": "scenario",
                 "type": "STRING"
             },
@@ -182,12 +182,12 @@
                 "type": "DOUBLE"
             },
             {
-                "description": "The grid label, which is only set when differentiating simulation\nresults for the 'GFDL-CM4' model.\n",
+                "description": "The grid label, which is only set when differentiating simulation\nresults for the 'GFDL-CM4' model. It is one of:\n\n* gr1\n* gr2\n",
                 "name": "grid_label",
                 "type": "STRING"
             },
             {
-                "description": "The license under which a model is released. This will either be\n'CC-BY-4.0' (Creative Commons Attribution 4.0 International) or 'CC0-1.0' (Creative Commons Zero v1.0 Universal).\n",
+                "description": "The license under which a model is released. It will be one of:\n\n* CC-BY-4.0 (Creative Commons Attribution 4.0 International)\n* CC0-1.0 (Creative Commons Zero v1.0 Universal)\n",
                 "name": "license",
                 "type": "STRING"
             },

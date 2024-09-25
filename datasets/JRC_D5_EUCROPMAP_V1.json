@@ -116,6 +116,11 @@
                 "description": "Main crop-specific land cover classification.",
                 "gee:classes": [
                     {
+                        "color": "ff130f",
+                        "description": "Artificial",
+                        "value": 100
+                    },
+                    {
                         "color": "a57000",
                         "description": "Common wheat",
                         "value": 211
@@ -219,6 +224,21 @@
                         "color": "e8ffbf",
                         "description": "Grasslands",
                         "value": 500
+                    },
+                    {
+                        "color": "a89e7f",
+                        "description": "Bare land/lichens moss",
+                        "value": 600
+                    },
+                    {
+                        "color": "0793de",
+                        "description": "Water",
+                        "value": 700
+                    },
+                    {
+                        "color": "7cafaf",
+                        "description": "Wetlands",
+                        "value": 800
                     }
                 ],
                 "name": "classification"
