@@ -1,0 +1,146 @@
+{
+    "type": "Collection",
+    "id": "UK/NHM/BII/V1",
+    "stac_version": "1.0.0",
+    "description": "The Biodiversity Intactness Index (BII) indicates the average abundance\nof a large, taxonomically, and ecologically diverse set of naturally-occurring\nspecies in a terrestrial area, relative to a baseline with minimal human\nimpacts. BII was first proposed by Scholes & Biggs (2005). BII estimates the\nstatus of local terrestrial biodiversity; average BII is meaningful at any\nspatial scale, making it easy to estimate status and trends within any\ndesired region (e.g. UN subregion, country or biome).\n\nBII was first estimated globally by Newbold et al. (2016) as part of the\n[PREDICTS project](www.nhm.ac.uk/our-science/research/projects/predicts.html)\nby combining models of overall abundance with models of abundance-based\ncompositional similarity and global fine-scale (1km) estimates of land use\nand other pressures. The modelling framework has now been refined,\nespecially for compositional similarity, improving the ability to detect human\nimpacts on assemblage composition. This approach to BII estimation is\ndiscussed in detail by Purvis et al. (2018).\n\nBII is estimated based on statistical models of how local biodiversity\nresponds to land use and related pressures, it can be projected for any\npast or future date for which estimates of pressures are available.\nAs a result, BII can report not only on current status and recent\ntrends (using observed data on pressures), but also on the longer history\nof biodiversity change; and it can be used for policy screening of scenarios.\n\nMore information is available in the provider's\n[Dataset Description](https://www.bipindicators.net/indicators/biodiversity-intactness-index).\n\nNote:\n\n*   It is a global dataset, though at present, only data for the year 2005 is\n    available.\n\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/UK/UK_NHM_BII_V1",
+            "type": "text/html",
+            "title": "Run the example for UK/NHM/BII/V1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/UK/UK_NHM_BII_V1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/UK_NHM_BII_V1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UK/UK_NHM_BII_V1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UK/catalog.json",
+            "type": "application/json",
+            "title": "UK"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:terms_of_use": "The data may be used for non commercial purpose by anyone, anywhere,\nanytime without permission, license or royalty payment.\nAttribution using the recommended citation is requested.\n",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "sci:citation": "Katia Sanchez-Ortiz; Ricardo E Gonzalez; Adriana De Palma;\nTim Newbold et al. (2019). Global maps of Biodiversity Intactness Index\n(Sanchez-Ortiz et al., 2019 - bioRxiv ) [Data set].\nNatural History Museum. https://doi.org/10.5519/0000082\n",
+    "version": "V1",
+    "title": "Biodiversity Intactness Index, V1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2005-01-01T00:00:00Z",
+                    "2005-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "uk",
+        "biodiversity",
+        "conservation",
+        "global"
+    ],
+    "providers": [
+        {
+            "name": "Biodiversity Intactness Index",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://data.nhm.ac.uk/dataset/global-map-of-the-biodiversity-intactness-index-from-newbold-et-al-2016-science"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/UK_NHM_BII_V1"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Biodiversity Intactness Index",
+                "gee:classes": [
+                    {
+                        "color": "4d9221",
+                        "description": "BII",
+                        "value": 1
+                    }
+                ],
+                "name": "b1"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "BII",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "b1"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "4d9221"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 0,
+                    "lon": 0,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            10
+        ]
+    }
+}
