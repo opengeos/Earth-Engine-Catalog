@@ -1,0 +1,161 @@
+{
+    "type": "Collection",
+    "id": "LARSE/GEDI/GRIDDEDVEG_002/COUNTS/V1/6KM",
+    "stac_version": "1.0.0",
+    "description": "This dataset consists of near-global, analysis-ready, multi-resolution\ngridded vegetation structure metrics derived from NASA Global Ecosystem\nDynamics Investigation (GEDI) Level 2 and 4A products associated with 25-m\ndiameter lidar footprints. This dataset provides a comprehensive\nrepresentation of near-global vegetation structure that is inclusive of\nthe entire vertical profile, based solely on GEDI lidar, and validated with\nindependent data.\n\nThe GEDI sensor, mounted on the International Space\nStation (ISS), uses eight laser beams spaced by 60 m along-track and 600 m\nacross-track on the Earth surface to measure ground elevation and vegetation\nstructure between approximately 52 degrees North and South latitude.\nBetween April 17th 2019 and March 16th 2023, GEDI acquired 11 and 7.7\nbillion quality waveforms suitable for measuring ground elevation and\nvegetation structure, respectively.\n\nIn addition to many of the standard L2 and L4A shot metrics, several\nadditional metrics have been derived which may be particularly useful for\napplications in carbon and water cycling processes in earth system models,\nas well as forest management, biodiversity modeling, and habitat assessment.\nVariables include canopy height, canopy cover, plant area index, foliage\nheight diversity, and plant area volume density at 5 m strata. Refer to the\n[Gridded GEDI Vegetation Structure Metrics and Biomass Density]\n(https://daac.ornl.gov/VEGETATION/guides/GEDI_HighQuality_Shots_Rasters.html)\nfor more information.\n\nEight statistics are included for each GEDI shot metric: mean, bootstrapped\nstandard error of the mean, median, standard deviation, interquartile range,\n95th percentile, Shannon's diversity index, and shot count.\nQuality shot filtering methodology that aligns with the GEDI L4B Gridded\nAboveground Biomass Density, Version 2.1 was used. In comparison to the\ncorresponding GEDI L3 dataset, this dataset provides additional gridded metrics at\nmultiple spatial resolutions and over several temporal periods (annual and\nthe full mission duration).\n\nThis dataset provides GEDI shot metrics aggregated into raster grids at\nthree spatial resolutions: 1 km, 6 km, and 12 km.\nThis dataset uses the pixel size of 6KM with counts metrics.",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/LARSE/LARSE_GEDI_GRIDDEDVEG_002_COUNTS_V1_6KM",
+            "type": "text/html",
+            "title": "Run the example for LARSE/GEDI/GRIDDEDVEG_002/COUNTS/V1/6KM in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/LARSE/LARSE_GEDI_GRIDDEDVEG_002_COUNTS_V1_6KM_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/LARSE_GEDI_GRIDDEDVEG_002_COUNTS_V1_6KM#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LARSE/LARSE_GEDI_GRIDDEDVEG_002_COUNTS_V1_6KM.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LARSE/catalog.json",
+            "type": "application/json",
+            "title": "LARSE"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy]\n(https://www.earthdata.nasa.gov/engage/open-data-services-and-software/data-and-information-policy)\nfor additional information.\n",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "sci:citation": "Burns, P., Hakkenberg, C.R. & Goetz, S.J. Multi-resolution gridded maps of\nvegetation structure from GEDI. Sci Data 11, 881 (2024).\n[doi:10.1038/s41597-024-03668-4](https://doi.org/10.1038/s41597-024-03668-4)\n",
+    "version": "1",
+    "title": "Gridded GEDI Vegetation Structure Metrics and Biomass Density with COUNTS metrics, 6KM pixel size",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -52,
+                    180,
+                    52
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-04-17T00:00:00Z",
+                    "2023-03-16T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "gedi",
+        "larse",
+        "nasa",
+        "vegetation",
+        "lidar",
+        "forest",
+        "biomass",
+        "canopy"
+    ],
+    "providers": [
+        {
+            "name": "Rasterization: Google and USFS Laboratory for Applications of Remote Sensing in Ecology (LARSE)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.fs.usda.gov/"
+        },
+        {
+            "name": "Gridded GEDI Vegetation Structure Metrics and Biomass Density",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://daac.ornl.gov/VEGETATION/guides/GEDI_HighQuality_Shots_Rasters.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/LARSE_GEDI_GRIDDEDVEG_002_COUNTS_V1_6KM"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "The number of shots. For a shot to be counted in this layer the\nfollowing fields need to be valid: longitude, latitude, elevation of the\nlowest mode, decimal date, and orbit.\n",
+                "name": "shots_count"
+            },
+            {
+                "description": "The number of unique orbits.\n",
+                "name": "orbits_uniq"
+            },
+            {
+                "description": "The number of unique tracks. A track is the combination of orbit and\nbeam.\n",
+                "name": "tracks_uniq"
+            },
+            {
+                "description": "The Nearest Neighbor Index (Evans et al. 2023).\n",
+                "name": "shots_nni"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "shots_count",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "shots_count"
+                        ],
+                        "max": [
+                            60
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "darkred",
+                            "red",
+                            "orange",
+                            "green",
+                            "darkgreen"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -46.46,
+                    "lon": -11,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            6000
+        ]
+    }
+}
