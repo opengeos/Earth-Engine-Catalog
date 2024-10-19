@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "ECMWF/CAMS/NRT",
     "stac_version": "1.0.0",
-    "description": "NOTE (2024-04-19): Due to modernization work impacting the Copernicus\nClimate Data Store, production of ECMWF datasets may be disrupted. The\nprovider did not specify a planned completion date, so for more details,\nsee the\n[user forum](https://forum.ecmwf.int/t/a-new-cds-soon-to-be-launched-expect-some-disruptions/1607).\n\nThe Copernicus Atmosphere Monitoring Service provides the capacity to\ncontinuously monitor the composition of the Earth's atmosphere at global and\nregional scales. The main global near-real-time production system is a data\nassimilation and forecasting suite providing two 5-day forecasts per day for\naerosols and chemical compounds that are part of the chemical scheme.\n\nPrior to 2021-07-01 only two parameters were available,\n1. Total Aerosol Optical Depth at 550 nm surface\n2. Particulate matter d < 25 um surface\nNote that system:time_start refers to forecast time.\n",
+    "description": "The Copernicus Atmosphere Monitoring Service provides the capacity to\ncontinuously monitor the composition of the Earth's atmosphere at global and\nregional scales. The main global near-real-time production system is a data\nassimilation and forecasting suite providing two 5-day forecasts per day for\naerosols and chemical compounds that are part of the chemical scheme.\n\nPrior to 2021-07-01 only two parameters were available,\n1. Total Aerosol Optical Depth at 550 nm surface\n2. Particulate matter d < 25 um surface\nNote that system:time_start refers to forecast time.\n",
     "links": [
         {
             "rel": "root",
@@ -81,7 +81,7 @@
             "interval": [
                 [
                     "2016-06-22T12:00:00Z",
-                    "2024-10-17T21:00:00Z"
+                    "2024-10-18T21:00:00Z"
                 ]
             ]
         }
