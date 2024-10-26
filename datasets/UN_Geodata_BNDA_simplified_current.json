@@ -1,0 +1,219 @@
+{
+    "type": "Collection",
+    "id": "UN/Geodata/BNDA_simplified/current",
+    "stac_version": "1.0.0",
+    "description": "The United Nations Geospatial Data, or Geodata, is a worldwide geospatial\ndataset of the United Nations.\n\nThe United Nations Geodata is provided to facilitate the preparation of\ncartographic materials in the United Nations includes geometry, attributes\nand labels to facilitate the adequate depiction and naming of geographic\nfeatures for the preparation of maps in accordance with United Nations\npolicies and practices.\n\nThe geospatial dataset include polygons/areas of countries\n(BNDA_simplified). Please refer this [page](https://geoportal.un.org/arcgis/home/item.html?id=e4ee80edac9d4e08b8303522dd4a5fc1)\nfor more information.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/UN/UN_Geodata_BNDA_simplified_current",
+            "type": "text/html",
+            "title": "Run the example for UN/Geodata/BNDA_simplified/current in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/UN/UN_Geodata_BNDA_simplified_current_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/UN_Geodata_BNDA_simplified_current#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/UN/UN_Geodata_BNDA_simplified_current_FeatureView",
+            "type": "text/html",
+            "title": "Run the example for UN/Geodata/BNDA_simplified/current in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UN/UN_Geodata_BNDA_simplified_current.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UN/catalog.json",
+            "type": "application/json",
+            "title": "UN"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:terms_of_use": "The UN Geodata is a global geospatial database available for use by the UN\nSecretariat and external users. It can be used for various purposes, but\ncommercial use is prohibited. The UN retains ownership of the data, and\nusers must credit the UN as the source in their creations. The data is\nprovided \"as is\" without warranties, and the UN is not liable for any\ndamages or losses arising from its use. Please refer this\n[page](https://drive.google.com/file/d/1ADChwVCVwgaNwIo9OTMwATp9b21iOpI3/view?resourcekey=0-8loAZp_t-wTzafeASPXy4g)\nfor more information.\n\nNote:\nUsers of the Data that are not subject to the administrative instruction\n(\"Outside Users\") may only use the Data for the purpose for which the Data\nis suitable, as identified by the Geospatial Information Section upon\ntransmission of or granting access to the Data. Intellectual property over\nthe Data shall at all times vest with the United Nations. Intellectual\nproperty over the products created using the Data shall vest with the\nOutside User. The United Nations shall be recognized as the source of the\nData in any products created by Outside Users using the Data, unless the\nOutside Users alter the Data or combine the Data with other data sets. In\ncase of doubt regarding crediting the United Nations as the Data source,\nplease contact: geospatial@un.org. Outside Users acknowledge that any right\nto access and use the Data is revocable and non-transferable. Under no\ncircumstances may the Data be used for commercial purposes.\n",
+    "gee:type": "table",
+    "gee:unusual_terms_of_use": true,
+    "version": "20230210",
+    "title": "United Nations Geospatial Data: BNDA_simplified",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-02-11T00:00:00Z",
+                    "2023-02-12T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary_non_commercial",
+    "keywords": [
+        "borders",
+        "countries"
+    ],
+    "providers": [
+        {
+            "name": "United Nations Geospatial",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://geoportal.un.org/arcgis/home/user.html?user=United_Nations_Geospatial"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/UN_Geodata_BNDA_simplified_current"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "ISO-3166 alpha-3 code of the area's administrator.",
+                "name": "admiso",
+                "type": "STRING"
+            },
+            {
+                "description": "UN M49 geographical region code",
+                "name": "geo_cd",
+                "type": "INT"
+            },
+            {
+                "description": "UN M49 geographic region",
+                "name": "georeg",
+                "type": "STRING"
+            },
+            {
+                "description": "GlobalID",
+                "name": "globalid",
+                "type": "STRING"
+            },
+            {
+                "description": "GlobalID_1",
+                "name": "globalid_1",
+                "type": "STRING"
+            },
+            {
+                "description": "UN M49 intermediary region code; 0 if unset",
+                "name": "int_cd",
+                "type": "STRING"
+            },
+            {
+                "description": "UN M49 intermediary region; empty if \"int_cd\" is 0",
+                "name": "intreg",
+                "type": "STRING"
+            },
+            {
+                "description": "ISO-3166 alpha-2 code",
+                "name": "iso2cd",
+                "type": "STRING"
+            },
+            {
+                "description": "ISO-3166 alpha-3 code",
+                "name": "iso3cd",
+                "type": "STRING"
+            },
+            {
+                "description": "Cartographic label (English)",
+                "name": "lbl_en",
+                "type": "STRING"
+            },
+            {
+                "description": "Cartographic label (French)",
+                "name": "lbl_fr",
+                "type": "STRING"
+            },
+            {
+                "description": "UN M49 country or area code",
+                "name": "m49_cd",
+                "type": "STRING"
+            },
+            {
+                "description": "Name (English)",
+                "name": "nam_en",
+                "type": "STRING"
+            },
+            {
+                "description": "Name (French)",
+                "name": "name_fr",
+                "type": "STRING"
+            },
+            {
+                "description": "Internal object ID number",
+                "name": "objectid",
+                "type": "STRING"
+            },
+            {
+                "description": "Total area of the geometry",
+                "name": "st_area_sh",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Sovereignty status code:\n\n* 0: Antarctica\n* 1: State\n* 2: Occupied Palestinian Territory\n* 3: Non-Self Governing Territory\n* 4: Territory\n* 5: Special Region or Province\n* 99: Undetermined\n",
+                "name": "stscod",
+                "type": "INT"
+            },
+            {
+                "description": "UN M49 sub-region code",
+                "name": "sub_cd",
+                "type": "INT"
+            },
+            {
+                "description": "UN M49 sub-region",
+                "name": "subreg",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "BNDA simplified",
+                "lookat": {
+                    "lat": 38.5,
+                    "lon": -100,
+                    "zoom": 4
+                },
+                "table_visualization": {
+                    "color": "black",
+                    "point_size": 1
+                }
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 250,
+            "thinning_ranking": [
+                "st_area_sh DESC"
+            ],
+            "thinning_strategy": "HIGHER_DENSITY"
+        }
+    }
+}
