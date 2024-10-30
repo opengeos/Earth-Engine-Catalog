@@ -108,12 +108,12 @@
                 "type": "STRING"
             },
             {
-                "description": "Sea level rise scenario (in percentile)",
+                "description": "Sea level rise scenario (in percentile)\n\n* 5: A low sea level rise scenario\n* 50: The median sea level rise projection\n* 95: A high sea level rise scenario\n",
                 "name": "projection",
                 "type": "INT"
             },
             {
-                "description": "Return period of flood in years",
+                "description": "Return period is the average time interval expected between hazard\nevents of a given magnitude or greater (in years). The flood hazard\nmaps are generated for return periods of 1, 2, 5, 10, 25, 50, 100,\n250, 500, and 1000 years.\n",
                 "name": "returnperiod",
                 "type": "INT"
             },
@@ -123,7 +123,7 @@
                 "type": "STRING"
             },
             {
-                "description": "Applies only for inunriver flood type, represents type of model used.\n",
+                "description": "Applies only for inunriver flood type, represents type of model used.\n\n* 000000000WATCH: Baseline condition\n* 00000NorESM1-M: (GCM model) Bjerknes Centre for Climate Research,\n  Norwegian Meteorological Institute\n* 0000GFDL_ESM2M: (GCM model) Geophysical Fluid Dynamics Laboratory\n  (NOAA)\n* 0000HadGEM2-ES: (GCM model) Met Office Hadley Centre\n* 00IPSL-CM5A-LR: (GCM model) Institut Pierre Simon Laplace\n",
                 "name": "model",
                 "type": "STRING"
             },

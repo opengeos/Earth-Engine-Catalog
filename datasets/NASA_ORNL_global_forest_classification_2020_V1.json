@@ -1,0 +1,163 @@
+{
+    "type": "Collection",
+    "id": "NASA/ORNL/global_forest_classification_2020/V1",
+    "stac_version": "1.0.0",
+    "description": "This dataset provides classes of global forests delineated by\nstatus/condition in 2020 at approximately 30m resolution. The data support\ngenerating Tier 1 estimates for Aboveground dry woody Biomass Density (AGBD)\nin natural forests in the 2019 Refinement to the 2006 IPCC Guidelines for\nNational Greenhouse Gas Inventories. Forest classes include primary, young\nsecondary (<=20 years), and old secondary forests (>20 years). Classification\nwas based on a Boolean combination of a suite of existing Earth Observation\n(EO) products of forest tree cover, height, age, and land use classification\nlayers representing years 2000 to 2020. This forest status/condition\nclassification prioritizes the reduction of potential errors of commission in\nthe delineations by minimizing the inclusion of ambiguous pixels. Hence, it\nprovides a conservative estimate of global forest area, identifying\napproximately 3.26 billion ha of forests worldwide.\n\n### Quality Assessment\n\nThese data provide a comprehensive compilation of the latest published\ndatasets on forest conditions, but the nonexistence of any independent sample\nof global data that would enable the validation of these delineations is a\nconstraint. Hence, the global forest status/condition classification has not\nbeen validated.\n\n### Data Acquisition, Materials, and Methods\n\nThe forest status/condition classification is created by conducting a\nBoolean analysis of a suite of existing datasets (see Table 1, Hunka et al.,\n2024, in review), including satellite-derived forest tree cover, height, age,\nand land use classification layers. In this approach, layers that\nidentify a potential forest status/condition class (e.g. primary forests) are\nmerged, and layers that identify sources of disagreement (e.g. presence of\nplantations or deforestation detected in the delineated primary forests) are\nused to remove areas of potential commission errors.\n\nThe primary forest class is established using datasets identifying\nintact/primary forests, with a high forest integrity index, the presence of\ntree cover and forest heights \u22655 m and no known forest loss events, planted\nforests or plantations.\n\nThe young secondary forest class captures pixels that had changes in\nforest height or cover between 2000 and 2020, excluding planted forests and\nplantations. These forests were identified by heights \u22655 m in 2020 and either\n(a) heights <5 m in 2000 or (b) heights \u22655 m in 2000 but having experienced\ntree cover loss after 2000.\n\nThe old secondary forest class captures the remainder of pixels with\nforests after excluding the primary and young secondary forest classes. These\npixels had forest heights \u22655 m in both 2000 and 2020 with no tree cover loss\nnor forest disturbances detected after 2000, nor any planted forests or\nplantations.\n\n[Schematic of analysis workflow](https://daac.ornl.gov/CMS/guides/CMS_Global_Forest_Age_Fig2.jpg)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_ORNL_global_forest_classification_2020_V1",
+            "type": "text/html",
+            "title": "Run the example for NASA/ORNL/global_forest_classification_2020/V1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_ORNL_global_forest_classification_2020_V1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_ORNL_global_forest_classification_2020_V1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.3334/ORNLDAAC/2345"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_ORNL_global_forest_classification_2020_V1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy](https://www.earthdata.nasa.gov/engage/open-data-services-and-software/data-and-information-policy)\nfor additional information.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Hunka, N., L. Duncanson, J. Armston, R.O. Dubayah, S.P. Healey, M.\nSantoro, P. May, A. Araza, C. Bourgain, P.M. Montesano, C.S. Neigh, H.\nGrantham, V. Potapov, S. Turubanova, A. Tyukavina, J. Richter, N. Harris, M.\nUrbazaev, A. Pascual, D. Requena Suarez, M. Herold, B. Poulter, S.N. Wilson,\nG. Grassi, S. Federici, M.J. Sanz Sanchez, and J. Melo. 2024. Classification\nof Global Forests for IPCC Aboveground Biomass Tier 1 Estimates, 2020. ORNL\nDAAC, Oak Ridge, Tennessee, USA.\n[https://doi.org/10.3334/ORNLDAAC/2345](https://doi.org/10.3334/ORNLDAAC/2345)\n",
+    "sci:doi": "10.3334/ORNLDAAC/2345",
+    "version": "V1",
+    "title": "Global 2020 Forest Classification for IPCC Aboveground Biomass Tier 1 Estimates, V1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    "2020-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "aboveground",
+        "biomass",
+        "carbon",
+        "classification",
+        "forest",
+        "ipcc",
+        "nasa",
+        "primary_forest",
+        "secondary_forest"
+    ],
+    "providers": [
+        {
+            "name": "NASA ORNL DAAC at Oak Ridge National Laboratory",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.3334/ORNLDAAC/2345"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_ORNL_global_forest_classification_2020_V1"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Forest Type",
+                "gee:classes": [
+                    {
+                        "color": "00ff00",
+                        "description": "Primary Forest",
+                        "value": 1
+                    },
+                    {
+                        "color": "ff0000",
+                        "description": "Young Secondary Forest",
+                        "value": 2
+                    },
+                    {
+                        "color": "6666ff",
+                        "description": "Old Secondary Forest",
+                        "value": 3
+                    }
+                ],
+                "name": "classification"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Forest Type",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "classification"
+                        ],
+                        "max": [
+                            3
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "00ff00",
+                            "ff0000",
+                            "6666ff"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -1.94,
+                    "lon": 29.87,
+                    "zoom": 8
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    }
+}
