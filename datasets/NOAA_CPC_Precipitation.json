@@ -1,0 +1,157 @@
+{
+    "type": "Collection",
+    "id": "NOAA/CPC/Precipitation",
+    "stac_version": "1.0.0",
+    "description": "The CPC Unified Gauge-Based Analysis of Global Daily Precipitation dataset\noffers daily precipitation estimates over land from 1979 to the present.\nDeveloped by NOAA's Climate Prediction Center (CPC), it leverages an optimal\ninterpolation technique to combine data from a global network of rain\ngauges, with over 30,000 gauges contributing to the retrospective version\n(1979-2005) and around 17,000 to the real-time version (2006-present).\nData is provided at a 0.5-degree resolution and includes both precipitation\namounts (in 0.1 mm) and the number of gauges used for each grid cell,\nallowing users to assess data quality.\n\nThe dataset's quality is acknowledged to be poor over tropical Africa and\nAntarctica, and generally varies with gauge density. Real-time data is\nsubject to revision as more complete station data becomes available.\n\n[This](https://ftp.cpc.ncep.noaa.gov/precip/CPC_UNI_PRCP/GAUGE_GLB/DOCU/)\nfolder has all the technical documentation.\n\nNOTE: The historical data spanning from 1979 to 2005 is not available in the\ncurrent version of the dataset.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_CPC_Precipitation",
+            "type": "text/html",
+            "title": "Run the example for NOAA/CPC/Precipitation in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_CPC_Precipitation_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CPC_Precipitation#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_CPC_Precipitation.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/catalog.json",
+            "type": "application/json",
+            "title": "NOAA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The NOAA CPC datasets are available without restriction\non use or distribution. NOAA PSL does request that the\nuser give proper attribution and identify NOAA PSL, where applicable,\nas the source of the data.\n",
+    "gee:type": "image_collection",
+    "sci:publications": [
+        {
+            "citation": "(Interpolation algorithm) Xie_et_al_2007_JHM_EAG.pdf Xie,\nP., A. Yatagai, M. Chen, T. Hayasaka, Y. Fukushima, C. Liu, and\nS. Yang (2007), A gauge-based analysis of daily precipitation over East\nAsia, J. Hydrometeorol., 8, 607. 626.\n"
+        },
+        {
+            "citation": "(Gauge Algorithm Evaluation) Chen_et_al_2008_JGR_Gauge_Algo.pdf\nChen, M., W. Shi, P. Xie, V. B. S. Silva, V E. Kousky, R. Wayne Higgins,\nand J. E. Janowiak (2008), Assessing objective techniques for\ngauge-based analyses of global daily precipitation,\nJ. Geophys. Res., 113, D04110,\n[doi:10.1029/2007JD009132](https://doi.org/10.1029/2007JD009132)\n",
+            "doi": "10.1029/2007JD009132"
+        }
+    ],
+    "title": "CPC Global Unified Gauge-Based Analysis of Daily Precipitation",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-01-01T00:00:00Z",
+                    "2024-11-06T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "daily",
+        "noaa",
+        "precipitation",
+        "weather"
+    ],
+    "providers": [
+        {
+            "name": "NOAA Physical Sciences Laboratory",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://psl.noaa.gov/data/gridded/data.cpc.globalprecip.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CPC_Precipitation"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Daily total precipitation estimate in 0.1 mm",
+                "gee:units": "mm",
+                "name": "precipitation"
+            },
+            {
+                "description": "Number of rain gauges contributing to the precipitation estimate\nwithin the 0.5-degree grid cell\n",
+                "name": "num_gauges"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "NOAA CPC Precipitation",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "precipitation"
+                        ],
+                        "max": [
+                            150
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "ADD8E6",
+                            "008000",
+                            "FFFF00",
+                            "FFA500",
+                            "FF0000",
+                            "800080"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -6.73,
+                    "lon": -68.36,
+                    "zoom": 4
+                }
+            }
+        ],
+        "gsd": [
+            55500
+        ],
+        "num_gauges": {
+            "minimum": 0,
+            "maximum": 121
+        },
+        "precipitation": {
+            "minimum": 0,
+            "maximum": 10671.53
+        }
+    }
+}
