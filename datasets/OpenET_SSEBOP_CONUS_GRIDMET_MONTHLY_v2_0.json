@@ -69,7 +69,7 @@
         }
     ],
     "version": "2.0",
-    "title": "OpenET CONUS SSEBop Monthly Evapotranspiration v2.0",
+    "title": "OpenET SSEBop Monthly Evapotranspiration v2.0",
     "extent": {
         "spatial": {
             "bbox": [
@@ -84,7 +84,7 @@
         "temporal": {
             "interval": [
                 [
-                    "2013-01-01T00:00:00Z",
+                    "2008-01-01T00:00:00Z",
                     "2023-12-01T00:00:00Z"
                 ]
             ]
@@ -92,7 +92,6 @@
     },
     "license": "CC-BY-4.0",
     "keywords": [
-        "conus",
         "evapotranspiration",
         "gridmet_derived",
         "landsat_derived",
