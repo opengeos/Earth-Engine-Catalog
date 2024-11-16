@@ -46,8 +46,17 @@
     ],
     "gee:terms_of_use": "The GHSL has been produced by the European Commission Joint Research Centre\nas open and free data. Reuse is authorised, provided the source is\nacknowledged. For more information, please read the use conditions ([European\nCommission Reuse and Copyright Notice](https://ec.europa.eu/info/legal-notice_en)).\n",
     "gee:type": "image_collection",
-    "sci:citation": "Pesaresi, Martino; Politis, Panagiotis (2023): GHS-BUILT-H R2023A - GHS\nbuilding height, derived from AW3D30, SRTM30, and Sentinel2 composite\n(2018). European Commission, Joint Research Centre (JRC)\n[PID: http://data.europa.eu/89h/85005901-3a49-48dd-9d19-6261354f56fe](http://data.europa.eu/89h/85005901-3a49-48dd-9d19-6261354f56fe)\n[doi:10.2905/85005901-3A49-48DD-9D19-6261354F56FE](https://doi.org/10.2905/85005901-3A49-48DD-9D19-6261354F56FE)\n\n",
     "sci:doi": "10.2905/85005901-3A49-48DD-9D19-6261354F56FE",
+    "sci:publications": [
+        {
+            "citation": "Dataset : Pesaresi, Martino; Politis, Panagiotis (2023): GHS-BUILT-H\nR2023A - GHS building height, derived from AW3D30, SRTM30, and Sentinel2\ncomposite (2018). European Commission, Joint Research Centre (JRC)\n[PID: http://data.europa.eu/89h/85005901-3a49-48dd-9d19-6261354f56fe](http://data.europa.eu/89h/85005901-3a49-48dd-9d19-6261354f56fe)\n[doi:10.2905/85005901-3A49-48DD-9D19-6261354F56FE](https://doi.org/10.2905/85005901-3A49-48DD-9D19-6261354F56FE)\n",
+            "doi": "10.2905/85005901-3A49-48DD-9D19-6261354F56FE"
+        },
+        {
+            "citation": "Methodology : Pesaresi, Martino, Marcello Schiavina, Panagiotis Politis,\nSergio Freire, Katarzyna Krasnodebska,\nJohannes H. Uhl, Alessandra Carioli, et al. (2024). Advances on the\nGlobal Human Settlement Layer by Joint Assessment of Earth Observation\nand Population Survey Data. International Journal of Digital Earth 17(1).\n[doi:10.1080/17538947.2024.2390454](https://doi.org/10.1080/17538947.2024.2390454).\n",
+            "doi": "10.1080/17538947.2024.2390454"
+        }
+    ],
     "version": "P2023A",
     "title": "GHSL: Global building height 2018 (P2023A)",
     "extent": {

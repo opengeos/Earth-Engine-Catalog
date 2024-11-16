@@ -58,8 +58,17 @@
     ],
     "gee:terms_of_use": "The GHSL has been produced by the European Commission Joint Research Centre\nas open and free data. Reuse is authorised, provided the source is\nacknowledged. For more information, please read the use conditions ([European\nCommission Reuse and Copyright Notice](https://ec.europa.eu/info/legal-notice_en)).\n",
     "gee:type": "image_collection",
-    "sci:citation": "Schiavina, Marcello; Melchiorri, Michele; Pesaresi, Martino (2023): \nGHS-SMOD R2023A - GHS settlement layers, application of the Degree of\nUrbanisation methodology (stage I) to GHS-POP R2023A and GHS-BUILT-S R2023A,\nmultitemporal (1975-2030). European Commission, Joint Research Centre (JRC)\n[PID: http://data.europa.eu/89h/a0df7a6f-49de-46ea-9bde-563437a6e2ba](http://data.europa.eu/89h/a0df7a6f-49de-46ea-9bde-563437a6e2ba)\n[doi:10.2905/A0DF7A6F-49DE-46EA-9BDE-563437A6E2BA](https://doi.org/10.2905/A0DF7A6F-49DE-46EA-9BDE-563437A6E2BA)\n",
     "sci:doi": "10.2905/A0DF7A6F-49DE-46EA-9BDE-563437A6E2BA",
+    "sci:publications": [
+        {
+            "citation": "Dataset : Schiavina, Marcello; Melchiorri, Michele; Pesaresi,\nMartino (2023): GHS-SMOD R2023A - GHS settlement layers, application of\nthe Degree of Urbanisation methodology (stage I) to GHS-POP R2023A and\nGHS-BUILT-S R2023A, multitemporal (1975-2030).\nEuropean Commission, Joint Research Centre (JRC)\n[PID: http://data.europa.eu/89h/a0df7a6f-49de-46ea-9bde-563437a6e2ba](http://data.europa.eu/89h/a0df7a6f-49de-46ea-9bde-563437a6e2ba)\n[doi:10.2905/A0DF7A6F-49DE-46EA-9BDE-563437A6E2BA](https://doi.org/10.2905/A0DF7A6F-49DE-46EA-9BDE-563437A6E2BA)\n",
+            "doi": "10.2905/A0DF7A6F-49DE-46EA-9BDE-563437A6E2BA"
+        },
+        {
+            "citation": "Methodology : Pesaresi, Martino, Marcello Schiavina, Panagiotis Politis,\nSergio Freire, Katarzyna Krasnodebska,\nJohannes H. Uhl, Alessandra Carioli, et al. (2024). Advances on the\nGlobal Human Settlement Layer by Joint Assessment of Earth Observation\nand Population Survey Data. International Journal of Digital Earth 17(1).\n[doi:10.1080/17538947.2024.2390454](https://doi.org/10.1080/17538947.2024.2390454).\n",
+            "doi": "10.1080/17538947.2024.2390454"
+        }
+    ],
     "version": "2023 V2-0",
     "title": "GHSL: Degree of Urbanization 1975-2030 V2-0 (P2023A)",
     "extent": {
