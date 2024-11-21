@@ -28,18 +28,6 @@
             "type": "text/html"
         },
         {
-            "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2023_REL_RCMAP_V6_COVER.json",
-            "type": "application/json",
-            "title": "USGS/NLCD_RELEASES/2023_REL/RCMAP/V6/COVER"
-        },
-        {
-            "rel": "predecessor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2019_REL_RCMAP_V5_COVER.json",
-            "type": "application/json",
-            "title": "USGS/NLCD_RELEASES/2019_REL/RCMAP/V5/COVER"
-        },
-        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/USGS/USGS_NLCD_RELEASES_2023_REL_RCMAP_V6_COVER.json",
             "type": "application/json"
