@@ -122,7 +122,7 @@
                 "type": "STRING"
             },
             {
-                "description": "ID number(s) linking the record to its corresponding original data\nsource(s). To look up the citation for a given SRC_REF_ID value, refer\nto the Data Source Reference list (PDF) here, or the \"Data_Catalog\"\ntable in the GeoPackage that accompanies [Omara et al (2023)](https://doi.org/10.5194/essd-15-3761-2023).\n",
+                "description": "ID number(s) linking the record to its corresponding original data\nsource(s). To look up the citation for a given SRC_REF_ID value, refer\nto the [Data Source Reference list](https://zenodo.org/records/13259749), or the \"Data_Catalog\"\ntable in the GeoPackage that accompanies [Omara et al (2023)](https://doi.org/10.5194/essd-15-3761-2023).\n",
                 "name": "SRC_REF_ID",
                 "type": "INT"
             },
