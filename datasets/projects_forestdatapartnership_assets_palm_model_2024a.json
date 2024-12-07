@@ -33,6 +33,18 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/forestdatapartnership/projects_forestdatapartnership_assets_palm_model_2024a.json",
+            "type": "application/json",
+            "title": "projects/forestdatapartnership/assets/palm/model_2024a"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/forestdatapartnership/projects_forestdatapartnership_assets_community_palm_20240312.json",
+            "type": "application/json",
+            "title": "projects/forestdatapartnership/assets/community_palm/20240312"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/forestdatapartnership/projects_forestdatapartnership_assets_palm_model_2024a.json",
             "type": "application/json"
