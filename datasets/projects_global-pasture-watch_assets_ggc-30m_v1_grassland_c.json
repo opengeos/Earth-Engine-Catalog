@@ -1,0 +1,175 @@
+{
+    "type": "Collection",
+    "id": "projects/global-pasture-watch/assets/ggc-30m/v1/grassland_c",
+    "stac_version": "1.0.0",
+    "description": "This dataset provides global annual dominant class maps of grasslands \n(cultivated and natural/semi-natural) from 2000 to 2022 at 30-m spatial \nresolution. \nProduced by Land &#38;\nCarbon Lab Global Pasture Watch initiative, the mapped grassland extent\nincludes any land cover type, which contains at least 30% of dry or wet\nlow vegetation, dominated by grasses and forbs (less than 3 meters) \nand a:\n\n- maximum of 50% tree canopy cover (greater than 5 meters),\n- maximum of 70% of other woody vegetation (scrubs and open shrubland), and\n- maximum of 50% active cropland cover in mosaic landscapes of cropland\n &#38; other vegetation.\n\nThe grassland extent is classified into two classes:\n- **Cultivated grassland**: Areas where grasses and other forage plants have\nbeen intentionally planted and managed, as well as areas of native \ngrassland-type vegetation where they clearly exhibit active and\nheavy management for specific human-directed uses, such as directed\ngrazing of livestock.\n- **Natural/Semi-natural grassland**: Relatively undisturbed native\ngrasslands/short-height vegetation, such as steppes and tundra, \nas well as areas that have experienced varying degrees of human \nactivity in the past, which may contain a mix of native and \nintroduced species due to historical land use and natural processes. \nIn general, they exhibit natural-looking patterns of varied vegetation \nand clearly ordered hydrological relationships throughout the landscape.\n\nThe implemented methodology considered [GLAD Landsat ARD-2 images \n](https://glad.umd.edu/ard) (processed into cloud-free bi-monthly \naggregates, see [Consoli et al, 2024](https://doi.org/10.7717/peerj.18585)\n), accompanied by climatic, landform and proximity covariates, \nspatiotemporal machine learning (per-class Random Forest) and over \n2.3 million reference samples (visually interpreted in Very High \nResolution imagery). Custom probability thresholds (based on five-fold \nspatial cross-validation and balanced precision and recall values) \nwere used to derive dominant class maps, 0.32 and 0.42 for \ncultivated and natural/semi-natural grassland probability thresholds, respectively.\n\n**Limitations:** Grassland extent is partly under-predicted in southeastern\nAfrica (Zimbabwe and Mozambique) and in eastern Australia (shrublands and\nwoodlands of the Mulga ecoregion). Cropland is misclassified as grassland\nin parts of northern Africa, the Arabian Peninsula, Western Australia, \nNew Zealand, the center of Bolivia, and Mato Grosso state (Brazil). Due \nto the Landsat 7 SLC failure, regular stripes of grassland probabilities \nare visible at parcel-level, particularly in the year 2012. The usage of \ncoarser resolution layers (accessibility maps and MODIS products) \nintroduced curvilinear macroscopic errors (due to the downscaling \nstrategy based on cubicspline) in Uruguay, Southwest Argentina, South \nof Angola and in the Sahel region in Africa. Users need to be aware \nof the limitations and known issues; whilst considering them \ncarefully to ensure appropriate use of maps at this initial prediction \nstage. GPW is working actively to collect systematic feedback [Geo-Wiki \nplatform](https://www.geo-wiki.org), validate the current version \nand improve future versions of the dataset.\n\n**For more information see [Parente et. al, 2024](http://doi.org/10.1038/s41597-024-04139-6),\n[Zenodo](https://zenodo.org/records/13890401) and \n[https://github.com/wri/global-pasture-watch](https://github.com/wri/global-pasture-watch)**",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/global-pasture-watch/projects_global-pasture-watch_assets_ggc-30m_v1_grassland_c",
+            "type": "text/html",
+            "title": "Run the example for projects/global-pasture-watch/assets/ggc-30m/v1/grassland_c in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/global-pasture-watch/projects_global-pasture-watch_assets_ggc-30m_v1_grassland_c_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_global-pasture-watch_assets_ggc-30m_v1_grassland_c#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/global-pasture-watch/projects_global-pasture-watch_assets_ggc-30m_v1_grassland_c.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/global-pasture-watch/catalog.json",
+            "type": "application/json",
+            "title": "global-pasture-watch"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:status": "beta",
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "sci:citation": "Parente, L., Sloat, L., Mesquita, V., et al. (2024) \nGlobal Pasture Watch - Annual grassland class and extent \nmaps at 30-m spatial resolution (2000\u20142022) (Version v1) \n[Data set]. Zenodo\n[doi:https://doi.org/10.5281/zenodo.13890401](https://doi.org/10.5281/zenodo.13890401)\n",
+    "sci:doi": "10.5281/zenodo.13890401",
+    "sci:publications": [
+        {
+            "citation": "Parente, L., Sloat, L., Mesquita, V., et al. (2024).\nAnnual 30-m maps of global grassland class and extent (2000\u20132022) \nbased on spatiotemporal Machine Learning, Scientific Data.\n[doi: http://doi.org/10.1038/s41597-024-04139-6](http://doi.org/10.1038/s41597-024-04139-6)\n",
+            "doi": "10.1038/s41597-024-04139-6"
+        }
+    ],
+    "version": "1",
+    "title": "GPW Annual Dominant Class of Crasslands v1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2023-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "land",
+        "landcover",
+        "landuse",
+        "global",
+        "vegetation"
+    ],
+    "providers": [
+        {
+            "name": "Land and Carbon Lab Global Pasture Watch",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://landcarbonlab.org/data/global-grassland-and-livestock-monitoring"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_global-pasture-watch_assets_ggc-30m_v1_grassland_c"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Dominant class derived through Random Forest and probability maps.",
+                "gee:classes": [
+                    {
+                        "color": "ffffff",
+                        "description": "Other",
+                        "value": 0
+                    },
+                    {
+                        "color": "ff9916",
+                        "description": "Cultivated grassland ",
+                        "value": 1
+                    },
+                    {
+                        "color": "ffcd73",
+                        "description": "Natural/Semi-natural grassland",
+                        "value": 2
+                    }
+                ],
+                "gsd": 30,
+                "name": "dominant_class"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Product version",
+                "name": "version",
+                "type": "INT"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Dominant grassland class",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "dominant_class"
+                        ],
+                        "max": [
+                            2
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "ffffff",
+                            "ff9916",
+                            "ffcd73"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -12.2,
+                    "lon": -55.5,
+                    "zoom": 4
+                }
+            }
+        ],
+        "dominant_class": {
+            "minimum": 0,
+            "maximum": 2
+        }
+    }
+}
