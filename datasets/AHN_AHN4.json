@@ -1,0 +1,134 @@
+{
+    "type": "Collection",
+    "id": "AHN/AHN4",
+    "stac_version": "1.0.0",
+    "description": "The Actueel Hoogtebestand Nederland (AHN) is a dataset with detailed and\nprecise elevation data for the whole of the Netherlands. Elevation\ninformation was collected from helicopters and aircraft using laser\ntechnology with vertical accuracy of 5 cm.\n\nAHN4 Dataset contains the Netherlands AHN 0.5m DSM and DTM variables.\nThe data cover the period between 2020 and 2022.\n\nThe Digital Terrain Model (DTM) product represents the elevation of the\nground, while the Digital Surface Model (DSM) product represents the\nelevation of the tallest surfaces at that point.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/AHN/AHN_AHN4",
+            "type": "text/html",
+            "title": "Run the example for AHN/AHN4 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/AHN/AHN_AHN4_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/AHN_AHN4#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/AHN/AHN_AHN4.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/AHN/catalog.json",
+            "type": "application/json",
+            "title": "AHN"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "gee:terms_of_use": "The datasets of the AHN are available as Open Data.\nThis means that the data can be used by anyone for free and without\nrestrictions. For more information visit the\n[Open Data](https://www.ahn.nl/open-data/) page. Downloads are available\nunder the terms of the\n[CC-0 license](https://data.overheid.nl/licenties-voor-hergebruik).\n",
+    "gee:type": "image_collection",
+    "title": "AHN4: Netherlands AHN 0.5m",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    3.35,
+                    50.74,
+                    7.24,
+                    53.55
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    "2022-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "ahn",
+        "dem",
+        "elevation",
+        "geophysical",
+        "lidar",
+        "netherlands"
+    ],
+    "providers": [
+        {
+            "name": "AHN",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ahn.nl"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/AHN_AHN4"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Elevation of the ground",
+                "gee:units": "m",
+                "name": "dtm"
+            },
+            {
+                "description": "Elevation of the tallest surfaces at that point",
+                "gee:units": "m",
+                "name": "dsm"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "AHN Netherlands",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "dsm"
+                        ],
+                        "max": [
+                            30
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 52.39,
+                    "lon": 4.78,
+                    "zoom": 12
+                }
+            }
+        ],
+        "gsd": [
+            0.5
+        ]
+    }
+}
