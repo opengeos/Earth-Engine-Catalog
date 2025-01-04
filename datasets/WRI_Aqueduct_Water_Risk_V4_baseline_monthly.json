@@ -1,0 +1,140 @@
+{
+    "type": "Collection",
+    "id": "WRI/Aqueduct_Water_Risk/V4/baseline_monthly",
+    "stac_version": "1.0.0",
+    "description": "Aqueduct 4.0 is the latest iteration of WRI's water risk framework designed\nto translate complex hydrological data into intuitive indicators of water\nrelated risk. This dataset has curated 13 water risk indicators for\nquantity, quality and reputational concerns into a comprehensive framework.\nFor 5 of the 13 indicators, a global hydrological model called PCR-GLOBWB 2\nhas been used to generate novel datasets on sub-basic water supply.\nThe PCR-GLOBWB 2 model is also used to project future sub-basin water\nconditions using CMIP6 climate forcings. The projections center around\nthree periods (2030, 2050, and 2080) under three future scenarios\n(business-as-usual SSP 3 RCP 7.0, optimistic SSP 1 RCP 2.6, and\npessimistic SSP 5 RCP 8.5).\n\nThe water risk indicators have been aggregated by category (quantity,\nquality, reputational, and overall) into composite risk scores using\nsector-specific weighting schemes. In addition, select sub-basin scores have\nbeen aggregated into country and provincial administrative boundaries using\na weighted average approach, where sub-basins with more demand have a higher\ninfluence over the final administrative score.\n\nThe WRI Aqueduct baseline monthly dataset provides monthly data on key water\nrisk indicators which includes indicators such as baseline water stress,\nbaseline water depletion and interannual variability.This monthly data\nallows for a more detailed analysis of water risk dynamics throughout the\nyear, which is crucial for understanding seasonal water scarcity, planning\nfor water management interventions, and adapting to changing water\navailability patterns.\n\nThis [technical note](https://www.wri.org/research/aqueduct-40-updated-decision-relevant-global-water-risk-indicators)\nexplains in detail the framework, methodology, and data used\nin developing Aqueduct Floods.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WRI/WRI_Aqueduct_Water_Risk_V4_baseline_monthly",
+            "type": "text/html",
+            "title": "Run the example for WRI/Aqueduct_Water_Risk/V4/baseline_monthly in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/WRI/WRI_Aqueduct_Water_Risk_V4_baseline_monthly_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/WRI_Aqueduct_Water_Risk_V4_baseline_monthly#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WRI/WRI_Aqueduct_Water_Risk_V4_baseline_monthly_FeatureView",
+            "type": "text/html",
+            "title": "Run the example for WRI/Aqueduct_Water_Risk/V4/baseline_monthly in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "source",
+            "href": "https://www.wri.org/data/aqueduct-global-maps-40-data"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WRI/WRI_Aqueduct_Water_Risk_V4_baseline_monthly.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WRI/catalog.json",
+            "type": "application/json",
+            "title": "WRI"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:terms_of_use": "The WRI datasets are available without restriction\non use or distribution. WRI does request that the\nuser give proper attribution and identify WRI, where applicable,\nas the source of the data. For more information check\n[WRI's open data commitment](https://www.wri.org/data/open-data-commitment),\n",
+    "gee:type": "table",
+    "version": "4.0",
+    "title": "WRI Aqueduct Baseline Monthly Version 4.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-01-01T00:00:00Z",
+                    "2080-12-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "monitoring",
+        "wri",
+        "aqueduct",
+        "flood"
+    ],
+    "providers": [
+        {
+            "name": "World Resources Institute",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.wri.org/data/aqueduct-global-maps-40-data"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/WRI_Aqueduct_Water_Risk_V4_baseline_monthly"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Low Water Stress",
+                "lookat": {
+                    "lat": -6.73,
+                    "lon": -68.36,
+                    "zoom": 3
+                },
+                "table_visualization": {
+                    "color": "black",
+                    "point_size": 1
+                }
+            },
+            {
+                "display_name": "Low Water Stress",
+                "lookat": {
+                    "lat": -6.73,
+                    "lon": -68.36,
+                    "zoom": 3
+                },
+                "visualize_as": "FeatureView"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 6000,
+            "prerender_tiles": true,
+            "thinning_ranking": [
+                "pfaf_id DESC"
+            ],
+            "thinning_strategy": "GLOBALLY_CONSISTENT",
+            "z_order_ranking": [
+                "pfaf_id ASC"
+            ]
+        }
+    }
+}

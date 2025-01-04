@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MODIS/061/MYD09CMG",
     "stac_version": "1.0.0",
-    "description": "The MYD09CMG Version 6.1 product provides an estimate of the surface\nspectral reflectance of Aqua Moderate Resolution Imaging Spectroradiometer\n(MODIS) Bands 1 through 7, resampled to 5600 meter pixel resolution and\ncorrected for atmospheric conditions such as gasses, aerosols, and Rayleigh\nscattering. The MYD09CMG data product provides 25 layers including MODIS\nbands 1 through 7; Brightness Temperature data from thermal bands 20, 21,\n31, and 32; along with Quality Assurance (QA) and observation bands.\nThis product is based on a Climate Modeling Grid (CMG) for use in climate\nsimulation models.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/925/MOD09_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/305/MOD09_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD09CMG)\n",
+    "description": "The MYD09CMG Version 6.1 product provides an estimate of the surface\nspectral reflectance of Aqua Moderate Resolution Imaging Spectroradiometer\n(MODIS) Bands 1 through 7, resampled to 5600 meter pixel resolution and\ncorrected for atmospheric conditions such as gasses, aerosols, and Rayleigh\nscattering. The MYD09CMG data product provides 25 layers including MODIS\nbands 1 through 7; Brightness Temperature data from thermal bands 20, 21,\n31, and 32; along with Quality Assurance (QA) and observation bands.\nThis product is based on a Climate Modeling Grid (CMG) for use in climate\nsimulation models.\n\nThis dataset has a striping issue originating from Band 5\u2019s dead\ndetector 20. The MYD09/Band 5 show the dead detector striping in band 5, but\nit has been properly flagged in the QA layer. The science team has been\nnotified and the issue will be addressed in the Collection 7.\nMore details can be found on\n[the known issue page](https://landweb.modaps.eosdis.nasa.gov/displayissue?id=939).\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/925/MOD09_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/305/MOD09_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD09CMG)\n",
     "links": [
         {
             "rel": "root",
@@ -77,7 +77,7 @@
             "interval": [
                 [
                     "2002-07-04T00:00:00Z",
-                    "2024-12-29T00:00:00Z"
+                    "2025-01-01T00:00:00Z"
                 ]
             ]
         }
