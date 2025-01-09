@@ -63,12 +63,14 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:status": "deprecated",
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
     "sci:citation": "Roberts, D., Mueller, N., & Mcintyre, A. (2017). High-dimensional pixel composites from earth observation time series. IEEE Transactions on Geoscience and Remote Sensing, 55(11), 6254-6264.\n[doi:10.1109/TGRS.2017.2723896](https://doi.org/10.1109/TGRS.2017.2723896).\nRoberts, D., Dunn, B., & Mueller, N. (2018). Open data cube products using high-dimensional statistics of time series. IGARSS 2018 - 2018 IEEE International Geoscience and Remote Sensing Symposium, 8647-8650.\n[doi:10.1109/IGARSS.2018.8518312](https://doi.org/10.1109/IGARSS.2018.8518312).\n",
     "sci:doi": "10.1109/TGRS.2017.2723896",
     "version": "3.1.0",
-    "title": "DEA Geometric Median and Median Absolute Deviation - Landsat 5 3.1.0",
+    "deprecated": true,
+    "title": "DEA Geometric Median and Median Absolute Deviation - Landsat 5 3.1.0 [deprecated]",
     "extent": {
         "spatial": {
             "bbox": [
