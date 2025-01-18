@@ -64,7 +64,7 @@
             "interval": [
                 [
                     "2020-01-01T00:00:00Z",
-                    "2025-01-16T06:00:00Z"
+                    "2025-01-17T06:00:00Z"
                 ]
             ]
         }
@@ -103,7 +103,7 @@
                 "type": "STRING"
             },
             {
-                "description": "The valid time for this specific forecast. Calculated as\nstart_time + forecast_hour\n",
+                "description": "The valid time for this specific forecast. Calculated as\nstart_time + forecast_hour.\n",
                 "name": "end_time",
                 "type": "STRING"
             },
