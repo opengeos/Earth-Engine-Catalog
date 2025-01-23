@@ -1,0 +1,254 @@
+{
+    "type": "Collection",
+    "id": "MODIS/061/MOD10A2",
+    "stac_version": "1.0.0",
+    "description": "MOD10A2 is a snow cover dataset from the MODIS on the Terra satellite.\nThe dataset reports the maximum snow cover extent during an eight-day\nperiod at the resolution of 500 m.\n\nAn eight-day compositing period was chosen because that is the exact ground\ntrack repeat period of the Terra and Aqua platforms. Snow cover over eight\ndays is mapped as maximum snow extent in one SDS and as a chronology of\nobservations in the other SDS. Eight-day periods begin on the first day of\nthe year and extend into the next year. The product can be produced with\ntwo to eight days of input. There may not always be eight days of input,\nbecause of various reasons, so the user should check the attributes to\ndetermine on what days observations were obtained.\n\n* [General documentation](https://doi.org/10.5067/MODIS/MOD10A2.061)\n* [User's Guide]( https://modis-snow-ice.gsfc.nasa.gov/uploads/snow_user_guide_C6.1_final_revised_april.pdf),\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_061_MOD10A2",
+            "type": "text/html",
+            "title": "Run the example for MODIS/061/MOD10A2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MOD10A2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD10A2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/MODIS/MOD10A1.061"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MOD10A2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/catalog.json",
+            "type": "application/json",
+            "title": "MODIS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C1646610415-NSIDC_ECS"
+    ],
+    "gee:terms_of_use": "You may download and use photographs, imagery, or text\nfrom the NSIDC web site, unless limitations for its use are specifically\nstated. For more information on usage and citing NSIDC datasets,\nplease visit the\n[NSIDC 'Use and Copyright' page](https://nsidc.org/about/data-use-and-copyright).\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Hall, D. K., V. V. Salomonson, and G. A. Riggs. 2016. MODIS/Terra\nSnow Cover Daily L3 Global 500m Grid. Version 6. Boulder, Colorado\nUSA: NASA National Snow and Ice Data Center Distributed Active\nArchive Center.\n",
+    "sci:doi": "10.5067/MODIS/MOD10A2.061",
+    "version": "6.1",
+    "title": "MOD10A2.061 Terra Snow Cover 8-Day L3 Global 500m",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-18T00:00:00Z",
+                    "2025-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "daily",
+        "geophysical",
+        "global",
+        "modis",
+        "nasa",
+        "nsidc",
+        "snow",
+        "terra"
+    ],
+    "providers": [
+        {
+            "name": "NASA NSIDC DAAC at CIRES",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/MODIS/MOD10A2.061"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD10A2"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Maximum snow extent observed over an eight-day period.\n",
+                "gee:classes": [
+                    {
+                        "description": "Missing data",
+                        "value": 0
+                    },
+                    {
+                        "description": "No decision",
+                        "value": 1
+                    },
+                    {
+                        "description": "Night",
+                        "value": 11
+                    },
+                    {
+                        "description": "No snow",
+                        "value": 25
+                    },
+                    {
+                        "description": "Lake",
+                        "value": 37
+                    },
+                    {
+                        "description": "Ocean",
+                        "value": 39
+                    },
+                    {
+                        "description": "Cloud",
+                        "value": 50
+                    },
+                    {
+                        "description": "Lake ice",
+                        "value": 100
+                    },
+                    {
+                        "description": "Snow",
+                        "value": 200
+                    },
+                    {
+                        "description": "Detector saturated",
+                        "value": 254
+                    }
+                ],
+                "name": "Maximum_Snow_Extent"
+            },
+            {
+                "description": "Snow chronology bit flags for each day in the eight-day\nobservation period.\n",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "day 1",
+                            "first_bit": 0
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "day 2",
+                            "first_bit": 1
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "day 3",
+                            "first_bit": 2
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "day 4",
+                            "first_bit": 3
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "day 5",
+                            "first_bit": 4
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "day 6",
+                            "first_bit": 5
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "day 7",
+                            "first_bit": 6
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "day 8",
+                            "first_bit": 7
+                        }
+                    ],
+                    "total_bit_count": 8
+                },
+                "name": "Eight_Day_Snow_Cover"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Maximum Snow Extent",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Maximum_Snow_Extent"
+                        ],
+                        "max": [
+                            150
+                        ],
+                        "min": [
+                            50
+                        ],
+                        "palette": [
+                            "000000",
+                            "0dffff",
+                            "0524ff",
+                            "ffffff"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 65.99,
+                    "lon": -3.69,
+                    "zoom": 4
+                }
+            }
+        ],
+        "gsd": [
+            500
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Terra"
+        ],
+        "Maximum_Snow_Extent": {
+            "minimum": 0,
+            "maximum": 255
+        }
+    }
+}
