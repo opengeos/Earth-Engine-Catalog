@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "USDA/NAIP/DOQQ",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The National Agriculture Imagery Program (NAIP) acquires aerial imagery\nduring the agricultural growing seasons in the continental U.S.\n\nNAIP projects are contracted each year based upon available funding and the\nimagery acquisition cycle. Beginning in 2003, NAIP was acquired on\na 5-year cycle. 2008 was a transition year, and a three-year cycle began\nin 2009.\n\nNAIP imagery is acquired at a one-meter ground sample distance (GSD) with a\nhorizontal accuracy that matches within six meters of photo-identifiable\nground control points, which are used during image inspection.\n\nOlder images were collected using 3 bands (Red, Green, and Blue: RGB), but\nnewer imagery is usually collected with an additional near-infrared band\n(RGBN). RGB asset ids begin with 'n_', NRG asset ids begin with 'c_', RGBN\nasset ids begin with 'm_'.\n\nSome older images have GSD of 2 meters.\n",
     "links": [
         {
@@ -67,7 +67,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "aerial",
         "agriculture",

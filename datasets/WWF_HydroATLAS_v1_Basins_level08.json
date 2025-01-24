@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "WWF/HydroATLAS/v1/Basins/level08",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "BasinATLAS is a component of the\n[HydroATLAS database](https://www.hydrosheds.org/page/hydroatlas),\nwhich is a component of [HydroSHEDS](https://www.hydrosheds.org).\n\nBasinATLAS provides a standardized compendium of hydro-environmental\nattribute information for all watersheds of the world at high\nspatial resolution. This dataset includes data for 56 variables,\npartitioned into 281 attributes and organized in six categories: hydrology;\nphysiography; climate; land cover & use; soils & geology; and anthropogenic\ninfluences (see Table 1 in the HydroATLAS documentation linked below).\n\nWatersheds range from level 1 (coarse) to level 12 (detailed), using\nPfastetter codes. The underlying watershed deleniation uses the NASA\nSRTM Digital Elevatin Map (DEM) below 60oN latitude and the\nUSGS HYDRO1k DEM above 60oN.\n\nTechnical documentation:\n\n[https://www.hydrosheds.org/images/inpages/HydroATLAS_TechDoc_v10.pdf](https://www.hydrosheds.org/images/inpages/HydroATLAS_TechDoc_v10.pdf)\n\nNote that the quality of HydroATLAS data is significantly lower for regions\nabove 60 degrees northern latitude as there is no underlying SRTM elevation\ndata available and thus a coarser-resolution DEM was used\n(HYDRO1k provided by USGS).\n\nHydroSHEDS was developed by the World Wildlife Fund (WWF)\nConservation Science Program in partnership with the U.S. Geological\nSurvey, the International Centre for Tropical Agriculture, The\nNature Conservancy, and the Center for Environmental Systems Research\nof the University of Kassel, Germany.\n",
     "links": [
         {

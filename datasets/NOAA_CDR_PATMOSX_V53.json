@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NOAA/CDR/PATMOSX/V53",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This dataset provides high quality Climate Data Record (CDR) of multiple\ncloud properties along with Advanced Very High Resolution Radiometer (AVHRR)\nPathfinder Atmospheres Extended (PATMOS-x) brightness temperatures and\nreflectances. These data have been fitted to a 0.1 x 0.1 equal angle-grid\nwith both ascending and descending assets generated daily from two to ten\nNOAA and MetOp satellite passes per day.\n\nThis dataset includes 48 bands, 11 of which are deemed CDR quality\n(marked with \"CDR variable\" in the band list).\nThe cloud products are derived using the ABI (Advanced Baseline Imager)\nCloud Height Algorithm (ACHA), and the Daytime Cloud Optical Properties\n(DCOMP) algorithm. For more detail on the processing see the\n[Climate Algorithm Theoretical Basis Document (C-ATBD)](\nhttps://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/AVHRR-HIRS_Reflectance_PATMOS-x/AlgorithmDescription%20_01B-1c.pdf).\n",
     "links": [
         {
@@ -85,7 +85,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "atmospheric",
         "avhrr",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "WWF/HydroSHEDS/03CONDEM",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "HydroSHEDS is a mapping product that provides hydrographic\ninformation for regional and global-scale applications in a consistent\nformat. It offers a suite of geo-referenced datasets (vector and\nraster) at various scales, including river networks, watershed\nboundaries, drainage directions, and flow accumulations. HydroSHEDS\nis based on elevation data obtained in 2000 by NASA's Shuttle Radar\nTopography Mission (SRTM).\n\nThis hydrologically conditioned elevation dataset is\nthe result of an iterative conditioning and correction process.\nNote that the conditioning process alters the original DEM and\nmay render it incorrect for applications other than deriving drainage\ndirections. Endorheic basins (inland sinks) are ''seeded'' with\na no-data cell at their lowest point in order to terminate the\nflow. Full details of the underlying digital elevation model are\navailable in the HydroSHEDS website and documentation.\n\nThis dataset is at 3 arc-second resolution. The datasets available\nat 3 arc-seconds are the Void-Filled DEM, Hydrologically Conditioned\nDEM, and Drainage (Flow) Direction.\n\nThere are two areas with incorrect negative values of -100\nclose to Vancouver, Canada around (50.16, -123.85) and Australia\n(-14.96, 129.62)\n",
     "links": [
         {
@@ -67,7 +67,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "conditioned",
         "dem",

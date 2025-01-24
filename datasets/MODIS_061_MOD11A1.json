@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/061/MOD11A1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MOD11A1 V6.1 product provides daily land surface temperature\n(LST) and emissivity values in a 1200 x 1200 kilometer grid. The\ntemperature value is derived from the MOD11_L2 swath product. Above\n30 degrees latitude, some pixels may have multiple observations\nwhere the criteria for clear-sky are met. When this occurs, the\npixel value is the average of all qualifying observations. Provided\nalong with both the day-time and night-time surface temperature\nbands and their quality indicator layers are MODIS bands 31 and\n32 and six observation layers.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/118/MOD11_User_Guide_V6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/119/MOD11_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MOD11A1)\n",
     "links": [
         {
@@ -89,12 +89,12 @@
             "interval": [
                 [
                     "2000-02-24T00:00:00Z",
-                    "2025-01-15T00:00:00Z"
+                    "2025-01-21T00:00:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "daily",
         "emissivity",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NOAA/CDR/GRIDSAT-B1/V2",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This dataset provides a high quality Climate Data\nRecord (CDR) of global infrared measurements from geostationary satellites.\n\nThe geostationary satellite data (GridSat-B1) provides data from 3\nchannels: the CDR-quality infrared window (IRWIN) channel (near 11&micro;m),\nthe visible channel (near 0.6&micro;m) and the infrared water vapor (IRWVP)\nchannel (near 6.7&micro;m). The GridSat-B1 data is projected onto a global\n0.07 degree latitude equal-angle grid with date coverage spanning from\n1980-present. This data is sourced from the 3-hourly International Satellite\nCloud Climatology Project (ISCCP) B1 data. The satellites included in this\ndataset with their longitudinal coverage over time can be seen [here](https://www.ncdc.noaa.gov/gridsat/images/isccp_coverage_VZA60_nolegend.png).\nIn regions of overlap the CDR methodology merges satellites by selecting\nthe nadir-most observations for each grid point.\n\nNotes:\n\n- Mappings from satid to satellite name are contained in the image's\n  properties as satid_number: \\\"satellite_name\\\", e.g. satid_0: GOES-13,\n  satid_1: GOES-15, and satid_2: GOES-16.\n\n- IRWIN data has been corrected for view zenith angle, but this correction\n  is not perfect. It also treats all satellites the same way, whereas the\n  view zenith angle dependence will vary by satellite. Some VZA residual\n  will be apparent.\n\n- IRWVP data has no view zenith angle correction and is not CDR quality.\n\n- VSCHN data has no view zenith angle corrections and is not CDR quality.\n\n- Removing the View Zenigth Angle correction for the IRWIN channels can be\n  done with the following:\n  Original_temperature_observed = irwin_cdr - irwin_vza_adj\n",
     "links": [
         {
@@ -85,7 +85,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "brightness",
         "cdr",

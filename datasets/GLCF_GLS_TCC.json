@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "GLCF/GLS_TCC",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Landsat Vegetation Continuous Fields (VCF) tree cover layers contain\nestimates of the percentage of horizontal ground in each 30-m pixel covered\nby woody vegetation greater than 5 meters in height. The data represent\nthree nominal epochs, 2000, 2005 and 2010, compiled from the NASA/USGS\nGlobal Land Survey (GLS) collection of Landsat data. The product is derived\nfrom all seven bands of Landsat-5 Thematic Mapper (TM) and/or Landsat-7\nEnhanced Thematic Mapper Plus (ETM+), depending on the GLS image selection.\n\nTree cover, the proportional, vertically projected area of vegetation\n(including leaves, stems, branches, etc.) of woody plants above a given\nheight, affects terrestrial energy and water exchanges, photosynthesis and\ntranspiration, net primary production, and carbon and nutrient fluxes. Tree\ncover also affects habitat quality and movements of wildlife, residential\nproperty value for humans, and other ecosystem services. The continuous\nclassification scheme of the VCF product enables better depiction of land\ncover gradients than traditional discrete classification schemes.\nImportantly for detection and monitoring of forest changes (e.g.,\ndeforestation and degradation), tree cover provides a measurable attribute\nupon which to define forest cover and its changes. Changes in tree cover\nover time can be used to monitor and retrieve site-specific histories of\nforest change.\n\nThe dataset has been produced for three year epochs: 2000, 2005, 2010, with\nan image in the collection for each available WRS2 path/row.\n",
     "links": [
         {
@@ -88,7 +88,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "forest",
         "glcf",

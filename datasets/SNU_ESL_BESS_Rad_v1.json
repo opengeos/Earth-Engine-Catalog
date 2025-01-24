@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "SNU/ESL/BESS/Rad/v1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Breathing Earth System Simulator (BESS) is a simplified process-based model\nthat couples atmosphere and canopy radiative transfers, canopy\nphotosynthesis, transpiration, and energy balance. It couples an atmospheric\nradiative transfer model and artificial neural network with forcings from\nMODIS atmospheric products to generate 5-km daily products.\n\nPublications:\n\n* Ryu Youngryel, Chongya Jiang, Hideki Kobayashi, Matteo Detto,\n  MODIS-derived global land products of shortwave radiation and diffuse and\n  total photosynthetically active radiation at 5km resolution from 2000.\n  Remote Sensing of Environment, Volume 204,\n  2018.\n  [doi:10.1016/j.rse.2017.09.021](https://doi.org/10.1016/j.rse.2017.09.021)\n",
     "links": [
         {

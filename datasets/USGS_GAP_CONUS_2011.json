@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "USGS/GAP/CONUS/2011",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The GAP/LANDFIRE National Terrestrial Ecosystems data represents a detailed\nvegetation and land cover classification for the Conterminous U.S., Alaska,\nHawaii, and Puerto Rico.GAP/LF 2011 Ecosystems for the Conterminous U.S. is\nan update of the National Gap Analysis Program Land Cover Data - Version 2.2.\nAlaska ecosystems have been updated by LANDFIRE to 2012 conditions (LANDFIRE 2012).\nHawaii and Puerto Rico data represent the 2001 time-frame (Gon et al. 2006, Gould et al. 2008).\nThe classification scheme used for the Alaska and the lower 48 states is based\non NatureServe's Ecological System Classification (Comer et al. 2003), while\nPuerto Rico and Hawaii's map legend are based on island specific classification\nsystems (Gon et al. 2006, Gould et al. 2008).\n",
     "links": [
         {
@@ -69,7 +69,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "gap",
         "landcover",

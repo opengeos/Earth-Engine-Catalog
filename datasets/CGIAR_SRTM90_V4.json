@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "CGIAR/SRTM90_V4",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Shuttle Radar Topography Mission (SRTM) digital\nelevation dataset was originally produced to provide consistent,\nhigh-quality elevation data at near global scope. This version\nof the SRTM digital elevation data has been processed to fill data\nvoids, and to facilitate its ease of use.\n",
     "links": [
         {
@@ -69,7 +69,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "cgiar",
         "dem",

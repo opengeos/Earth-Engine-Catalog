@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "projects/sat-io/open-datasets/us-drought-monitor",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The U.S. Drought Monitor is a map released every Thursday, showing parts of the U.S. that are in drought. The map uses five classifications: abnormally dry (D0), showing areas that may be going into or are coming out of drought, and four levels of drought: moderate (D1), severe (D2), extreme (D3) and exceptional (D4). The Drought Monitor has been a team effort since its inception in 1999, produced jointly by the National Drought Mitigation Center (NDMC) at the University of Nebraska-Lincoln, the National Oceanic and Atmospheric Administration (NOAA), and the U.S. Department of Agriculture (USDA). The NDMC hosts the web site of the drought monitor and the associated data, and provides the map and data to NOAA, USDA and other agencies. It is freely available at droughtmonitor.unl.edu.\n",
     "links": [
         {
@@ -62,12 +62,12 @@
             "interval": [
                 [
                     "2000-01-04T00:00:00Z",
-                    "2024-12-31T00:00:00Z"
+                    "2025-01-14T00:00:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "drought",
         "ndmc",

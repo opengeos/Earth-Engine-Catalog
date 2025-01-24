@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NASA/NEX-DCP30",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The NASA NEX-DCP30 dataset is comprised of downscaled climate scenarios\nfor the conterminous United States that are derived from the General\nCirculation Model (GCM) runs conducted under the Coupled Model\nIntercomparison Project Phase 5 (CMIP5, see [Taylor et al. 2012](https://journals.ametsoc.org/doi/abs/10.1175/BAMS-D-11-00094.1))\nand across the four greenhouse gas emissions scenarios known as\nRepresentative Concentration Pathways (RCPs, see [Meinshausen et al. 2011](https://rd.springer.com/article/10.1007%2Fs10584-011-0156-z#page-1))\ndeveloped for the Fifth Assessment Report of the Intergovernmental Panel\non Climate Change (IPCC AR5). The purpose of these datasets is to provide\na set of high resolution, bias-corrected climate change projections that\ncan be used to evaluate climate change impacts on processes that are\nsensitive to finer-scale climate gradients and the effects of local\ntopography on climate conditions.\n\nThe dataset contains monthly projections covering the periods from 1950\nthrough 2005 (Retrospective Run) and from 2006 to 2099 (Prospective Run).\nIt includes downscaled projections from 33 models. Not every\nscenario contains projections from every model.\n\nNEX-DCP30 was prepared by the Climate Analytics Group and NASA Ames\nResearch Center using the NASA Earth Exchange, and distributed by the NASA\nCenter for Climate Simulation (NCCS).\n",
     "links": [
         {
@@ -74,7 +74,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "cag",
         "climate",

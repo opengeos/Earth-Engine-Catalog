@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NOAA/CDR/OISST/V2",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The NOAA 1/4 degree daily Optimum Interpolation Sea Surface Temperature\n(OISST) provides complete ocean temperature fields constructed by combining\nbias-adjusted observations from different platforms (satellite, ships,\nbuoys) on a regular global grid, with gaps filled in by interpolation.\nSatellite data from the Advanced Very High Resolution Radiometer (AVHRR)\nprovides the main input which permits the high temporal-spatial coverage\nbeginning in late 1981 to the present.\n\nThe OISST dataset has a single day's data processed twice. First a near\nreal-time preliminary version is released with a lag of 1 day, and a final\nversion with a lag of 14 days. The final version uses extra days for\nsmoothing, and zonal bias correction in addition to replacing the\npreliminary version.\n",
     "links": [
         {
@@ -93,7 +93,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "avhrr",
         "cdr",

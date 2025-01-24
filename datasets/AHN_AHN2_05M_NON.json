@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "AHN/AHN2_05M_NON",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The AHN DEM is a 0.5m DEM covering the Netherlands. It was generated from\nLIDAR data taken in the spring between 2007 and 2012.\n\nIt contains ground level samples with all other items above ground (such as\nbuildings, bridges, trees etc.) removed. This version is non-interpolated; the\nareas where objects have been removed are left blank and not filled with\ninterpolated values. The point cloud was converted to a 0.5m grid using a\nsquared inverse distance weighting method.\n",
     "links": [
         {

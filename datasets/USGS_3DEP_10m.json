@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "USGS/3DEP/10m",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This is the seamless 3DEP DEM dataset for the U.S.\nwith full coverage of the 48 conterminous states, Hawaii, and\nU.S. territories. Alaska coverage is partially available now and is being\nexpanded to statewide coverage as part of the Alaska Mapping Initiative.\nGround spacing is approximately 10 meters north/south, but variable\neast/west due to convergence of meridians with latitude.\n\nSpatial metadata dataset is ingested as a separate asset\n[USGS_3DEP_10m_metadata](USGS_3DEP_10m_metadata).\n\nThe 1m dataset is ingested\nas [USGS_3DEP_1m](USGS_3DEP_1m).\n\nDataset uploaded by [Farmers Business Network](https://fbn.com).\n",
     "links": [
         {
@@ -87,7 +87,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "3dep",
         "dem",

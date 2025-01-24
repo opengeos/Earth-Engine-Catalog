@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NOAA/CFSR",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The National Centers for Environmental Prediction (NCEP) Climate Forecast\nSystem Reanalysis (CFSR) was designed and executed as a global,\nhigh-resolution, coupled atmosphere-ocean-land surface-sea ice system to\nprovide the best estimate of the state of these coupled domains over the\n32-year period of record from January 1979 to March 2011. It has been\nextended as an operational real-time product. The data in Earth Engine are\nonly present starting from December 13, 2018.\n\nForecasts are initialized four times per day (0000, 0600, 1200, and 1800\nUTC). We ingest only a subset of bands from files matching\n`cdas1.t??z.pgrbh**03|00**.grib2`, i.e. files of only 0-hour and 3-hour\nforecasts as the others are omitted. The forecast length is indicated by the\n'forecast_hour' metadata field.\n\nSome images contain only a subset of bands. Using this dataset with both\n\"00\" and \"03\" forecast types will require you to cast the bands across\nthe collection.\n",
     "links": [
         {
@@ -74,12 +74,12 @@
             "interval": [
                 [
                     "2018-12-13T00:00:00Z",
-                    "2025-01-22T12:00:00Z"
+                    "2025-01-23T00:00:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "climate",
         "daylight",

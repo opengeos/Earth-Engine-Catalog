@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "TIGER/2020/BG",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The United States Census Bureau regularly releases\na geodatabase named TIGER. This dataset contains the 2020 census\n[block groups](https://www.census.gov/programs-surveys/geography/about/glossary.html#par_textimage_4),\nwhich is a cluster of blocks within the same census tract that have the same\nfirst digit of their four-digit census block number. There are just over\n240,000 polygon features covering the United States, the District\nof Columbia, Puerto Rico, and the\nIsland areas.\n\nFor full technical details on all TIGER 2020 products, see the\n[TIGER technical documentation](https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2020/TGRSHP2020_TechDoc.pdf).\n",
     "links": [
         {
@@ -75,7 +75,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "census",
         "city",

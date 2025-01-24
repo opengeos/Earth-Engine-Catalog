@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "FAO/WAPOR/2/L1_AETI_D",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The actual evapotranspiration and interception (ETIa) (dekadal, in mm/day)\nis the sum of the soil evaporation (E), canopy transpiration (T), and\nevaporation from rainfall intercepted by leaves (I). The value of each pixel\nrepresents the average daily ETIa in a given dekad.\n",
     "links": [
         {
@@ -80,7 +80,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "agriculture",
         "fao",

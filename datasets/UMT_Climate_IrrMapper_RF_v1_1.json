@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "UMT/Climate/IrrMapper_RF/v1_1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "IrrMapper is an annual classification of irrigation status in the 11\nWestern United States made at Landsat scale (i.e., 30 m) using the\nRandom Forest algorithm, covering years 1986 - present.\n\nWhile the [IrrMapper paper](https://www.mdpi.com/2072-4292/12/14/2328)\ndescribes classification of four classes (i.e., irrigated, dryland,\nuncultivated, wetland), the dataset is converted to a binary\nclassification of irrigated and non-irrigated.\n\n'Irrigated' refers to the detection of any irrigation during the year.\nThe IrrMapper random forest model was trained using an extensive\ngeospatial database of land cover from each of four irrigated- and\nnon-irrigated classes, including over 50,000 human-verified irrigated\nfields, 38,000 dryland fields, and over 500,000 square kilometers of\nuncultivated lands.\n\nFor version 1.1, the original training data was re-run on Landsat\nCollection 2 and brought up-to-date.\n",
     "links": [
         {

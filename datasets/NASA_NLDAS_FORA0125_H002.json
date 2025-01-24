@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NASA/NLDAS/FORA0125_H002",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Land Data Assimilation System (LDAS) combines multiple\nsources of observations (such as precipitation gauge data, satellite\ndata, and radar precipitation measurements) to produce estimates\nof climatological properties at or near the Earth''s surface.\n\nThis dataset is the primary (default) forcing file (File A) for\nPhase 2 of the North American Land Data Assimilation System (NLDAS-2).\nThe data are in 1/8th-degree grid spacing; the temporal resolution\nis hourly.\n\nNLDAS is a collaboration project among several groups: NOAA/NCEP''s\nEnvironmental Modeling Center (EMC), NASA''s Goddard Space Flight\nCenter (GSFC), Princeton University, the University of Washington,\nthe NOAA/NWS Office of Hydrological Development (OHD), and the\nNOAA/NCEP Climate Prediction Center (CPC). NLDAS is a core project\nwith support from NOAA''s Climate Prediction Program for the Americas\n(CPPA).\n\nDocumentation:\n\n* [Readme](https://hydro1.gesdisc.eosdis.nasa.gov/data/NLDAS/README.NLDAS2.pdf)\n\n* [How-To](https://disc.gsfc.nasa.gov/information/howto?tags=hydrology)\n\n* [GES DISC Hydrology Documentation](https://disc.gsfc.nasa.gov/information/documents?title=Hydrology%20Documentation)\n\n* [GES DISC Data Rods Documentation](https://disc.gsfc.nasa.gov/information/tools?title=Hydrology%20Data%20Rods)\n",
     "links": [
         {
@@ -74,12 +74,12 @@
             "interval": [
                 [
                     "1979-01-01T13:00:00Z",
-                    "2025-01-18T12:00:00Z"
+                    "2025-01-19T12:00:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "climate",
         "evaporation",

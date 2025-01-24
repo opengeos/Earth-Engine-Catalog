@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NOAA/CDR/AVHRR/AOT/V3",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The NOAA Climate Data Record (CDR) of Aerosol Optical Thickness (AOT) is a\ncollection of global daily 0.1 degree derived data from the PATMOS-x AVHRR\nlevel-2b channel 1 (0.63 micron) orbital clear-sky radiance. The aerosol\nproduct is generated from AVHRR imagery in cloud-free conditions during\ndaytime over oceans.\n\nDue to the relatively large uncertainties associated with surface\nreflectance over water glint area and land surface as well as limited\nAVHRR retrieval channels, this dataset only includes retrieval over\nnon-glint water surface (specifically at the anti-solar side of the orbit\nwith viewing angle more than 40 degree away from the specular ray). For\nmore details, see the [Algorithm Description](https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Aerosol_Optical_Thickness/AlgorithmDescription_01B-04.pdf).\n\nImage and data processing by NOAA's National Climatic Data Center.\n",
     "links": [
         {
@@ -93,7 +93,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "aerosol",
         "aot",

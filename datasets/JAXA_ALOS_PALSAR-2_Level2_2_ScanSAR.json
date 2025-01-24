@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "JAXA/ALOS/PALSAR-2/Level2_2/ScanSAR",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The 25 m PALSAR-2 ScanSAR is normalized backscatter data\nof PALSAR-2 broad area observation mode with observation width of 350 km.\nThe SAR imagery was ortho-rectificatied and slope corrected\nusing the ALOS World 3D - 30 m (AW3D30) Digital Surface Model.\nPolarization data are stored as 16-bit digital numbers (DN).\nThe DN values can be converted to gamma naught values in decibel unit (dB)\nusing the following equation:\n\n* &gamma;<sub>0</sub> = 10*log<sub>10</sub>(DN<sup>2</sup>) - 83.0 dB\n\nLevel 2.2 data are ortho-rectified and radiometrically terrain-corrected.\n\nThis dataset is compatible with the\n[Committee on Earth Observation (CEOS)](https://ceos.org/)\n[Analysis Ready Data for LAND (CARD4L)](https://ceos.org/ard/files/PFS/NRB/v5.5/CARD4L-PFS_NRB_v5.5.pdf) standard.\n",
     "links": [
         {
@@ -63,12 +63,12 @@
             "interval": [
                 [
                     "2014-08-04T00:00:00Z",
-                    "2024-12-01T00:41:17Z"
+                    "2024-12-31T21:08:39Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "alos2",
         "eroc",

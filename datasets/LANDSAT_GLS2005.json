@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "LANDSAT/GLS2005",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The GLS2005 data set is a collection of 9500\northorectified leaf-on medium-resolution satellite images collected between\n2004 and 2007 and covering the Earth's land masses. GLS2005 uses mainly Landsat\n5 and gap-filled Landsat 7 data with EO-1 ALI and Terra ASTER data filling in\nany data holes.\n\nThis dataset contains images from just the L5 TM and L7 ETM+ sensors, and only the 6 bands that those two sensors have in common: 10, 20, 30, 40, 50, and 70.\n",
     "links": [
         {

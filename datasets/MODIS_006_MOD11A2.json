@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/006/MOD11A2",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MOD11A2 V6 product provides an average 8-day land\nsurface temperature (LST)  in a 1200 x 1200 kilometer grid.  Each\npixel value in MOD11A2 is a simple average of all the corresponding\nMOD11A1 LST pixels collected within that 8 day period.  The 8 day\ncompositing period was chosen because twice that period is the\nexact ground track repeat period of the Terra and Aqua platforms.\nIn this product, along with both the day- and night-time surface\ntemperature bands and their quality indicator (QC) layers, are\nalso MODIS bands 31 and 32 and eight observation layers.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/118/MOD11_User_Guide_V6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/119/MOD11_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MOD11A2)\n",
     "links": [
         {
@@ -102,7 +102,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "8_day",
         "emissivity",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NOAA/PERSIANN-CDR",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "PERSIANN-CDR is a daily quasi-global precipitation product\nthat spans the period from 1983-01-01 to present.  The data is\nproduced quarterly, with a typical lag of three months. The product\nis developed by the Center for Hydrometeorology and Remote Sensing\nat the University of California, Irvine (UC-IRVINE/CHRS) using\nGridded Satellite (GridSat-B1) IR data that are derived from merging\nISCCP B1 IR data, along with GPCP version 2.2.\n",
     "links": [
         {
@@ -89,7 +89,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "cdr",
         "climate",

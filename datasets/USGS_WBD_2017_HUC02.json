@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "USGS/WBD/2017/HUC02",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Watershed Boundary Dataset (WBD) is a comprehensive\naggregated collection of hydrologic unit (HU) data consistent\nwith the national criteria for delineation and resolution. It\ndefines the areal extent of surface water drainage to a point\nexcept in coastal or lake front areas where there could be multiple\noutlets as stated by the [Federal Standards and Procedures for\nthe National Watershed Boundary Dataset](https://pubs.usgs.gov/tm/11/a3).\nWatershed boundaries are determined solely upon science-based\nhydrologic principles, not favoring any administrative boundaries\nor special projects, nor particular program or agency. The intent\nof defining HUs for the WBD is to establish a baseline drainage\nboundary framework, accounting for all land and surface areas.\n\nThe HUs are delineated at 1:24,000-scale in the conterminous\nUnited States, 1:25,000-scale in Hawaii and the Caribbean, and\n1:63,360-scale in Alaska, meeting the National Map Accuracy Standards\n(NMAS). WBDs are represented as polygons that define the boundary\nof the HUs. The HUs are given a Hydrologic Unit Code (HUC) that\nranges from 2 digits to 12 digits. These codes describe where\nthe unit is in the country and the level of the unit. The number\nof digits in a HUC is related to 6 levels of detail for the WBD:\nthe lower level polygons cover larger areas than higher level\nones. The higher the level, the more digits to the HUC, since\nprevious levels are nested in it.\n\nThe WBD polygons attributes\ninclude HUCs, size (in the form of acres and square kilometers),\nname, downstream HUC, type of watershed, non-contributing areas,\nand flow modifications. WBD line attributes contain the highest\nlevel of hydrologic unit for each boundary, line source information\nand flow modifications.\n\n| Name         | Level | Digit | HU Code |\n|--------------|-------|-------|---------|\n| Region       | 1     | 2     | 2       |\n| Subregion    | 2     | 4     | 4       |\n| Basin        | 3     | 6     | 6       |\n| Subbasin     | 4     | 8     | 8       |\n| Watershed    | 5     | 10    | 10      |\n| Subwatershed | 6     | 12    | 12      |\n\n*Calculated by the data provider.\n",
     "links": [
         {
@@ -77,7 +77,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "hydrology",
         "usgs",

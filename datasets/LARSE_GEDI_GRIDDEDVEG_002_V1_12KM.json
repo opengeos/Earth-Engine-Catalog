@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "LARSE/GEDI/GRIDDEDVEG_002/V1/12KM",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This dataset consists of near-global, analysis-ready, multi-resolution\ngridded vegetation structure metrics derived from NASA Global Ecosystem\nDynamics Investigation (GEDI) Level 2 and 4A products associated with 25-m\ndiameter lidar footprints. This dataset provides a comprehensive\nrepresentation of near-global vegetation structure that is inclusive of\nthe entire vertical profile, based solely on GEDI lidar, and validated with\nindependent data.\n\nThe GEDI sensor, mounted on the International Space\nStation (ISS), uses eight laser beams spaced by 60 m along-track and 600 m\nacross-track on the Earth surface to measure ground elevation and vegetation\nstructure between approximately 52 degrees North and South latitude.\nBetween April 17th 2019 and March 16th 2023, GEDI acquired 11 and 7.7\nbillion quality waveforms suitable for measuring ground elevation and\nvegetation structure, respectively.\n\nIn addition to many of the standard L2 and L4A shot metrics, several\nadditional metrics have been derived which may be particularly useful for\napplications in carbon and water cycling processes in earth system models,\nas well as forest management, biodiversity modeling, and habitat assessment.\nVariables include canopy height, canopy cover, plant area index, foliage\nheight diversity, and plant area volume density at 5 m strata. Refer to the\n[Gridded GEDI Vegetation Structure Metrics and Biomass Density]\n(https://daac.ornl.gov/VEGETATION/guides/GEDI_HighQuality_Shots_Rasters.html)\nfor more information.\n\nEight statistics are included for each GEDI shot metric: mean, bootstrapped\nstandard error of the mean, median, standard deviation, interquartile range,\n95th percentile, Shannon's diversity index, and shot count.\nQuality shot filtering methodology that aligns with the GEDI L4B Gridded\nAboveground Biomass Density, Version 2.1 was used. In comparison to the\ncorresponding GEDI L3 dataset, this dataset provides additional gridded metrics at\nmultiple spatial resolutions and over several temporal periods (annual and\nthe full mission duration).\n\nThis dataset provides GEDI shot metrics aggregated into raster grids at\nthree spatial resolutions: 1 km, 6 km, and 12 km.\nThis dataset uses the pixel size of 12KM.",
     "links": [
         {
@@ -70,7 +70,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "gedi",
         "larse",

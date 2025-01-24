@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NASA/GRACE/MASS_GRIDS_V03/MASCON",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This dataset contains gridded monthly global water storage/height anomalies\nrelative to a time-mean, derived from GRACE and GRACE-FO and processed at\nJPL using the Mascon approach (RL06.1Mv03). These data are provided in a\nsingle data file in netCDF format, and can be used for analysis for ocean,\nice, and hydrology phenomena. The water storage/height anomalies are given\nin equivalent water thickness units (cm). The solution provided here is\nderived from solving for monthly gravity field variations in terms of\ngeolocated spherical cap mass concentration functions, rather than global\nspherical harmonic coefficients. Additionally, realistic geophysical\ninformation is introduced during the solution inversion to intrinsically\nremove correlated error. Thus, these Mascon grids do not need to be\ndestriped or smoothed, like traditional spherical harmonic gravity\nsolutions. The complete Mascon solution consists of 4,551 relatively\nindependent estimates of surface mass change that have been derived using an\nequal-area 3-degree grid of individual mascons. It should be noted that this\ndataset does not correct for leakage errors across coastlines; it is\ntherefore recommended only for users who want to apply their own algorithm\nto separate between land and ocean mass very near coastlines.\nThis RL06.1Mv03 is an updated version of the previous [Tellus JPL Mascon\nRL06Mv02](https://doi.org/10.5067/TEMSC-3JC62). RL06.1Mv03 differs from RL06Mv02 only\nin the Level-1B accelerometer transplant data that is used for the GF2\n(GRACE-FO 2) satellite; RL06.1Mv03 uses the ACH data product.\nFor more information,\nplease visit [GRACE page](https://grace.jpl.nasa.gov/data/get-data/jpl_global_mascons/).\nFor a detailed description on the Mascon solution, including\nthe mathematical derivation, implementation of geophysical constraints, and\nsolution validation, please see [Watkins et al., 2015](https://doi.org/10.1002/2014JB011547).\nThis product is intended for expert use only; other users are encouraged to\nuse the [CRI-filtered Mascon dataset](https://podaac.jpl.nasa.gov/dataset/TELLUS_GRAC-GRFO_MASCON_GRID_RL06.1_V3).\n",
     "links": [
         {
@@ -94,7 +94,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "grace",
         "gravity",

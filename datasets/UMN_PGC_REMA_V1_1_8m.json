@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "UMN/PGC/REMA/V1_1/8m",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Reference Elevation Model of Antarctica (REMA) is a high resolution,\ntime-stamped Digital Surface Model (DSM) of Antarctica at 2-meter and 8-meter\nspatial resolutions.\n\nMosaicked DEM files are compiled from multiple strips that have been\nco-registered, blended, and feathered to reduce edge-matching artifacts.\n",
     "links": [
         {
@@ -74,7 +74,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "dem",
         "geophysical",

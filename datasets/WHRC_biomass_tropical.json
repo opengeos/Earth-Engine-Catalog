@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "WHRC/biomass/tropical",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "A national-level map of above-ground live woody biomass density for\ntropical countries at 500m. This dataset was assembled from a combination\nof co-located field measurements, LiDAR observations, and imagery recorded\nfrom the Moderate Resolution Imaging Spectroradiometer (MODIS).\n",
     "links": [
         {
@@ -67,7 +67,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "aboveground",
         "biomass",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "USGS/NLCD_RELEASES/2019_REL/NLCD",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "NLCD (the National Land Cover Database) is a 30-m Landsat-based land cover\ndatabase spanning 8 epochs (2001, 2004, 2006, 2008, 2011, 2013, 2016, and\n2019). A ninth epoch for 2021 is also available\n[here](USGS_NLCD_RELEASES_2021_REL_NLCD). The images rely on the\nimperviousness data layer for the urban classes and on a decision-tree\nclassification for the rest.\n\nThis dataset has one image for the continental US for each epoch.\nAlaska, Hawaii, and Puerto Rico data can be found in the previous\n[2016 NLCD release](USGS_NLCD_RELEASES_2016_REL).\n\nNLCD products are created by the Multi-Resolution Land Characteristics\n(MRLC) Consortium, a partnership of federal agencies led by the\nU.S. Geological Survey.\n",
     "links": [
         {

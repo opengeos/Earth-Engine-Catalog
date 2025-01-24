@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "IDAHO_EPSCOR/GRIDMET",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Gridded Surface Meteorological dataset provides\nhigh spatial resolution (~4-km) daily surface fields of temperature,\nprecipitation, winds, humidity and radiation across the contiguous\nUnited States from 1979. The dataset blends the high resolution\nspatial data from PRISM with the high temporal resolution data\nfrom the National Land Data Assimilation System (NLDAS) to produce\nspatially and temporally continuous fields that lend themselves\nto additional land surface modeling.\n\nThis dataset contains provisional products that are replaced with\nupdated versions when the complete source data become available.\nProducts can be distinguished by the value of the 'status' property.\nAt first, assets are ingested with status='early'. After several\ndays, they are replaced by assets with status='provisional'.\nAfter about 2 months, they are replaced by the final assets with\nstatus='permanent'.\n",
     "links": [
         {
@@ -67,12 +67,12 @@
             "interval": [
                 [
                     "1979-01-01T00:00:00Z",
-                    "2025-01-20T06:00:00Z"
+                    "2025-01-21T06:00:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "climate",
         "fireburning",

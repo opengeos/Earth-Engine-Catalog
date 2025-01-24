@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NOAA/DMSP-OLS/CALIBRATED_LIGHTS_V4",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Defense Meteorological Program (DMSP) Operational Line-Scan System\n(OLS) has a unique capability to detect visible and near-infrared (VNIR)\nemission sources at night.\n\nThis collection contains global nighttime lights images with no sensor\nsaturation. The sensor is typically operated at a high-gain setting to\nenable the detection of moonlit clouds. However, with six bit quantization\nand limited dynamic range, the recorded data are saturated in the bright\ncores of urban centers. A limited set of observations at low lunar\nillumination were obtained where the gain of the detector was set\nsignificantly lower than its typical operational setting (sometimes by a\nfactor of 100). Sparse data acquired at low-gain settings were combined\nwith the operational data acquired at high-gain settings to produce the set\nof global nighttime lights images with no sensor saturation. Data from\ndifferent satellites were merged and blended into the final product in order\nto gain maximum coverage. For more information, see this\n[readme](https://eogdata.mines.edu/dmsp/radcal_readme.txt)\nfile from the provider.\n\nImage and data processing by NOAA's National Geophysical Data Center.\nDMSP data collected by US Air Force Weather Agency.\n",
     "links": [
         {
@@ -67,7 +67,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "calibrated",
         "dmsp",

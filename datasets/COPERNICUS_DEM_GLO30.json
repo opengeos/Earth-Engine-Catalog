@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "COPERNICUS/DEM/GLO30",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Copernicus DEM is a Digital Surface Model (DSM) which represents the\nsurface of the Earth including buildings, infrastructure and vegetation.\nThis DEM is derived from an edited DSM named WorldDEM&trade, i.e. flattening of\nwater bodies and consistent flow of rivers has been included. Editing of\nshore- and coastlines, special features such as airports and implausible\nterrain structures has also been applied.\n\nThe WorldDEM product is based on the radar satellite data acquired during\nthe TanDEM-X Mission, which is funded by a Public Private Partnership\nbetween the German State, represented by the German Aerospace Centre (DLR)\nand Airbus Defence and Space. More details are available in the dataset\n[documentation](https://spacedata.copernicus.eu/documents/20123/121239/GEO1988-CopernicusDEM-SPE-002_ProductHandbook_I4.0.pdf).\n\nEarth Engine asset has been ingested from the DGED files.\n\nNote: See the code example for the recommended way of computing slope.\nUnlike most DEMs in Earth Engine, this is an image collection due to\nmultiple resolutions of source files that make it impossible to mosaic them\ninto a single asset, so the slope computations need a reprojection.\n",
     "links": [
         {
@@ -65,7 +65,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "copernicus",
         "dem",

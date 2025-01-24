@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "TIGER/2018/Counties",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The United States Census Bureau TIGER dataset contains the 2018 boundaries\nfor primary legal divisions of US states.  In most states, these entities\nare termed \"counties\". In Louisiana, these divisions are known as\n\"parishes\".\n\nAlaska has governmental entities called \"boroughs\" which fill a similar\ngovernmental role to counties, but in some areas those governmental\nresponsibilities are handled directly by the state and sometimes by a city.\nFor Alaska, county equivalent entities thus include\n\n1. organized boroughs,\n1. combined city and borough entities (e.g. Juneau),\n1. municipalities, and\n1. census areas.\n\nThe census areas are delineated cooperatively for statistical purposes by\nthe State of Alaska and the Census Bureau.\n\nIn four states (Maryland, Missouri, Nevada, and Virginia), there are one\nor more incorporated places that are independent of any county\norganization and thus constitute primary divisions of their states. These\nincorporated places are known as independent cities and are treated as\ncounty-equivalent entities for purposes of data presentation.\n\nThe District of Columbia and Guam have no primary divisions and each area is\nconsidered a county-equivalent entity for purposes of data presentation.\nThe Census Bureau treats the following entities as equivalents of counties\nfor purposes of data presentation: municipios in Puerto Rico, districts\nand islands in America Samoa, municipalities in the Commonwealth of the\nNorthern Mariana Islands, and islands in the U.S. Virgin Islands.\n\nFor full technical details on all TIGER 2018 products, see the [TIGER\ntechnical documentation](https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2018/TGRSHP2018_TechDoc.pdf).\n",
     "links": [
         {
@@ -79,7 +79,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "census",
         "county",

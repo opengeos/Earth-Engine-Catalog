@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NASA/JPL/global_forest_canopy_height_2005",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This dataset represents global tree heights based on a fusion of\nspaceborne-lidar data (2005) from the Geoscience Laser Altimeter\nSystem (GLAS) and ancillary geospatial data. See\n[Simard et al. (2011)](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2011JG001708)\nfor details.\n",
     "links": [
         {
@@ -67,7 +67,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "canopy",
         "forest",

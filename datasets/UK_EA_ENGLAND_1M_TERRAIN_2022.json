@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "UK/EA/ENGLAND_1M_TERRAIN/2022",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The LIDAR Composite DTM/DSM is a raster terrain model covering ~99% of\nEngland at 1m spatial resolution, produced by the UK Environment Agency in\n2022. The model contains 3 bands of terrain data: a Digital Terrain Model\n(DTM), a first return Digital Surface Model (DSM), and a last return DSM.\n\nThe DTM is produced from the last or only laser pulse returned to the\nsensor. Surface objects are removed from the DSM, using bespoke algorithms\nand manual editing of the data, to produce a terrain model of just the\nsurface. The DTM is derived from a combination of EA Time Stamped archive\nand National LIDAR Program surveys, which have been merged and re-sampled\nto give the best possible coverage. Where repeat surveys have been\nundertaken the newest, best resolution data is used. Where data was\nresampled a bilinear interpolation was used before being merged. The 2022\nLIDAR Composite contains surveys undertaken between 6th June 2000 and 2nd\nApril 2022.\n\nThe first return DSM is produced from the first or only laser pulse returned\nto the sensor and includes heights of objects, such as vehicles, buildings\nand vegetation, as well as the terrain surface where the first or only\nreturn was the ground. The first return DSM is derived from data captured as\npart of the National LIDAR Program between 11 November 2016 and 5th May\n2022. This program divided England into ~300 blocks for survey over\ncontinuous winters from 2016 onwards. These surveys are merged together to\ncreate the first return LIDAR composite using a feathering technique along\nthe overlaps to remove any small differences in elevation between surveys.\nPlease refer to the data provider's metadata index catalogs which show for\nany location which survey was used in the production of the LIDAR composite.\nThe first return DSM will not match in coverage or extent of the last return\nDSM, as the last return DSM composite is produced from both the National\nLIDAR Program and Timeseries surveys.\n\nThe last return DSM is produced from the last or only laser pulse returned\nto the sensor and includes heights of objects, such as vehicles, buildings\nand vegetation, as well as the terrain surface. The last return DTM is\nderived from a combination of EA Time Stamped archive and National LIDAR\nProgram surveys, which have been merged and re-sampled to give the best\npossible coverage. Where repeat surveys have been undertaken the newest,\nbest resolution data is used. Where data was resampled a bilinear\ninterpolation was used before being merged. The 2022 LIDAR Composite\ncontains surveys undertaken between 6th June 2000 and 2nd April 2022. Please\nrefer to the data provider's metadata index catalogs which show for any\nlocation which survey was used in the production of the LIDAR composite.\n\nThe data is aligned to the OS National grid and presented in metres,\nreferenced to Ordinance Survey Newlyn and using the OSTN'15 transformation\nmethod. All individual LIDAR surveys going into the production of the\ncomposites had a vertical accuracy of +/-15cm root-mean-square error.\n",
     "links": [
         {
@@ -77,7 +77,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "lidar",
         "elevation",

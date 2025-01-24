@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NOAA/VIIRS/001/VNP46A2",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Suomi National Polar-orbiting Partnership (SNPP) Visible Infrared\nImaging Radiometer Suite (VIIRS) supports a Day-Night Band (DNB) sensor\nthat provides global daily measurements of nocturnal visible and\nnear-infrared (NIR) light that are suitable for Earth system science and\napplications. The VIIRS DNB's ultra-sensitivity in lowlight conditions\nenables us to generate a new set of science-quality nighttime products that\nmanifest substantial improvements in sensor resolution and calibration when\ncompared to the previous era of Defense Meteorological Satellite\nProgram/Operational Linescan System's (DMSP/OLS) nighttime lights image\nproducts.\n\nVNP46A2 dataset is a daily moonlight- and atmosphere-corrected Nighttime\nLights (NTL) product using the Bidirectional Reflectance Distribution\nFunction (BRDF).\n\nDocumentation:\n\n* [User's Guide](https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/Document%20Archive/Science%20Data%20Product%20Documentation/VIIRS_Black_Marble_UG_v1.3_Sep_2022.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/Document%20Archive/Science%20Data%20Product%20Documentation/Product%20Generation%20Algorithms/VIIRS_Black_Marble_ATBD_v1.1_July_2020.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/VNP46A2/)\n",
     "links": [
         {
@@ -82,7 +82,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "brdf",
         "daily",

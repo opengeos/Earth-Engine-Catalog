@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "UMN/PGC/ArcticDEM/V2/2m",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "ArcticDEM is a digital surface model (DSM) that portrays first-return\nelevation values that include vegetation, tree canopy, buildings, and other\nman-made surface features. The 2m asset is a collection of strips rather\nthan a single mosaic due to projection differences between strips.\n\nStrip DEM files correspond to the overlapping area of the input stereopair\nimage swaths as they are collected by DigitalGlobe's constellation of\npolar-orbiting satellites. Strip DEM dimensions will vary according to the\nsatellite sensor that acquired the images and the off-nadir angle of\ncollection. Most strips are between 16km and 18km in width, and 110km and\n120km in length.\n",
     "links": [
         {
@@ -83,7 +83,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "arctic",
         "dem",

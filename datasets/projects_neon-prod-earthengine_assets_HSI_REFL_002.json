@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "projects/neon-prod-earthengine/assets/HSI_REFL/002",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The NEON AOP surface bidirectional reflectance data is a hyperspectral \nVSWIR (visible to shortwave infrared) data product, containing \n426 bands spanning wavelengths from ~380 nm to 2510 nm. Wavelengths \nbetween 1340-1445 nm and 1790-1955 nm are set to -100; these are water vapor \nabsorption bands without valid values. The dataset also contains QA\nraster bands (B427 - B442). Major processing steps include orthorectification, \nplus atmospheric, topographic, and Bidirecitonal Reflectance Distribution \nFunction (BRDF) corrections. Data are collected by one of three NEON \nImaging Spectrometer units, AVIRIS-NG sensors built by NASA's Jet Propulsion \nLab (JPL). Reflectance is converted to a mosaic using the nadir-most pixels \nfrom the flight lines observed with the least cloud cover. Spatial resolution \nis 1 m and spectral resolution is ~5 nm. The center wavelength and full width \nhalf max (FWHM) for each band are provided in the Image Properties.\n\nSee [NEON Data Product\nDP3.30006.002](https://data.neonscience.org/data-products/DP3.30006.002) for\nmore details.\n\nGet started by exploring the [Intro to AOP Data in Google Earth Engine Tutorial Series](\nhttps://www.neonscience.org/resources/learning-hub/tutorials/intro-aop-data-google-earth-engine-tutorial-series)\n\nBrowse and interact with AOP data in the [NEON AOP GEE Data Viewer App](\nhttps://neon-prod-earthengine.projects.earthengine.app/view/neon-aop-gee-data-viewer---desktop)\n",
     "links": [
         {
@@ -67,7 +67,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "airborne",
         "forest",

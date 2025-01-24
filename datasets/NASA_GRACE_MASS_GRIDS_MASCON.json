@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NASA/GRACE/MASS_GRIDS/MASCON",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "GRACE Tellus Monthly Mass Grids provides monthly\ngravitational anomalies relative to a 2004-2010 time-mean baseline.\nThe data contained in this dataset are units of \\\"Equivalent Water Thickness\\\"\nwhich represent the deviations of mass in terms of vertical extent\nof water in centimeters. See the provider's [Monthly Mass\nGrids Overview](https://grace.jpl.nasa.gov/data/monthly-mass-grids/)\nfor more details.\n\nThe GRACE Tellus (GRCTellus) Global Mascon dataset\nis based on Level-1 GRACE observations and processed\nat NASA Jet Propulsion Laboratory (JPL).\n\nThis dataset uses a-priori constraints in space and time to\nestimate global, monthly gravity fields in terms of equal-area\n3&deg;x3&deg; spherical cap mass concentration (mascon) functions to minimize the\neffect of measurement errors. No additional empirical destriping\nfilter has been applied to the data. This results in better S/N\nratios of the mascon fields compared to the conventional\nspherical-harmonic solutions.\n\n**Note**\n\n* Mascons which lie on coastlines contain mixed land and ocean signals.\n  A version of this dataset with the Coastline Resolution Improvement\n  (CRI) filter applied to separate the land and ocean portions of mass\n  within each land/ocean mascon in a post-processing step. This\n  dataset is available at\n  [NASA/GRACE/MASS_GRIDS/MASCON_CRI](https://developers.google.com/earth-engine/datasets/catalog/NASA_GRACE_MASS_GRIDS_MASCON_CRI).\n\n* The data are represented on a 1/2 degree lon-lat grid, but they\n  represent the 3x3 degree equal-area caps, which is the current\n  native resolution of JPL-RL05M.\n",
     "links": [
         {
@@ -93,7 +93,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "grace",
         "gravity",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NOAA/NGDC/ETOPO1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "ETOPO1 is a 1 arc-minute global relief model of Earth''s\nsurface that integrates land topography and ocean bathymetry. It\nwas built from numerous global and regional data sets. It contains\ntwo elevation bands: ice_surface and bedrock.\n",
     "links": [
         {
@@ -76,7 +76,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "bedrock",
         "dem",

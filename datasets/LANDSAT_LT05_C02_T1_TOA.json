@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "LANDSAT/LT05/C02/T1_TOA",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Landsat 5 TM Collection 2 Tier 1\n  calibrated top-of-atmosphere (TOA) reflectance.\n  Calibration coefficients are extracted from the image metadata.\n  See [Chander et al. (2009)](https://www.sciencedirect.com/science/article/pii/S0034425709000169)\n  for details on the TOA computation.\n",
     "links": [
         {

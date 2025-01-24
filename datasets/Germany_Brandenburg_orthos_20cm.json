@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "Germany/Brandenburg/orthos/20cm",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Orthophotos are an aerial photo dataset covering the Brandenburg state of\nGermany.\nThis data is provided by State government of\nBrandenburg ([LGB](https://geobasis-bb.de/lgb/de/)).\nDigital orthophotos are digitally corrected aerial photos and show all\nobjects that are visible from the air at the time of recording in a parallel\nperspective. They have a high density of information on ecological,\nphenological, geographical and other topics.\n\nFor more information, please see the\n[Brandenburg orthophotos documentation](https://geobasis-bb.de/lgb/de/geodaten/luftbilder/luftbilder-aktuell/)\n",
     "links": [
         {
@@ -68,7 +68,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "brandenburg",
         "germany",

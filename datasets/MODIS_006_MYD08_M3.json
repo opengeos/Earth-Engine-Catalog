@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/006/MYD08_M3",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "MYD08_M3 V6 is an atmosphere global product that contains\nmonthly 1 x 1 degree grid average values of atmospheric parameters.\nThese parameters are related to atmospheric aerosol particle properties,\ntotal ozone burden, atmospheric water vapor, cloud optical and\nphysical properties, and atmospheric stability indices. The product\nalso provides means, standard deviations, QA weighted statistics,\nlog-normal distributions, uncertainty estimates, and statistics\nfor fractions of pixels that satisfy some condition. Below is a\nsubset of the bands, for a complete list see the [MOD08 Band List](https://developers.google.com/earth-engine/MOD08_bands.html).\n\nDocumentation:\n\n* [User's Guide](https://modis-atmos.gsfc.nasa.gov/sites/default/files/ModAtmo/L3_ATBD_C6_C61_2019_02_20.pdf)\n\n* [Science Data Product Software Documentation](https://modis-atmos.gsfc.nasa.gov/sites/default/files/ModAtmo/L3_C61_Changes_v2.pdf)\n\n* [MYD08_M3 product description](https://modis-atmos.gsfc.nasa.gov/products/monthly)\n\n* [File specification document](https://modis-atmos.gsfc.nasa.gov/sites/default/files/ModAtmo/MOD08_M3_fs_3045.txt)\n",
     "links": [
         {
@@ -93,7 +93,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "aqua",
         "atmosphere",

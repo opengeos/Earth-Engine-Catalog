@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "FAO/WAPOR/2/L1_I_D",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The interception (I) data component (dekadal, in mm/day) represents the evaporation\nof intercepted rainfall from the vegetation canopy. Interception is the process\nwhere rainfall is captured by the leaves. Part of this captured rainfall will\nevaporate again. The value of each pixel represents the average daily evaporated\ninterception for that specific dekad.\n",
     "links": [
         {
@@ -80,7 +80,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "agriculture",
         "fao",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/006/MCD12Q2",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MCD12Q2 V6 Land Cover Dynamics product (informally\ncalled the MODIS Global Vegetation Phenology product) provides\nestimates of the timing of vegetation phenology at global scales.\nAdditionally, it provides information related to the range and\nsummation of the enhanced vegetation index (EVI) computed from\nMODIS surface reflectance data at each pixel. It identifies the\nonset of greenness, greenup midpoint, maturity, peak greenness,\nsenescence, greendown midpoint, dormancy, EVI2 minimum, EVI2 amplitude,\nintegrated EVI2 over a vegetation cycle, as well as overall and phenology\nmetric-specific quality information.\n\nThe MCD12Q2 Version 6 data product is derived from time series of the\n2-band Enhanced Vegetation Index (EVI2) calculated from MODIS Nadir\nBidirectional Reflectance Distribution Function (BRDF)-Adjusted Reflectance\n(NBAR). Vegetation phenology metrics are identified for up to two detected\ngrowing cycles per year. For pixels with more than two valid vegetation\ncycles, the data represent the two cycles with the largest NBAR-EVI2\namplitudes.\n",
     "links": [
         {
@@ -93,7 +93,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "evi",
         "global",

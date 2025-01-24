@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "HYCOM/GLBu0_08/sea_water_velocity",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Hybrid Coordinate Ocean Model (HYCOM) is a data-assimilative hybrid\nisopycnal-sigma-pressure (generalized) coordinate ocean model. The subset\nof HYCOM data hosted in EE contains the variables salinity, temperature,\nvelocity, and elevation. They have been interpolated to a uniform\n0.08 degree lat/long grid between 80.48\u00b0S and 80.48\u00b0N. The salinity,\ntemperature, and velocity variables have been interpolated to 40\nstandard z-levels.\n\nThe HYCOM Consortium, which includes the National Ocean Partnership\nProgram (NOPP), is part of the U.S. Global Ocean Data Assimilation\nExperiment (GODAE).\n\nFunded by the National Ocean Partnership Program, the Office of Naval\nResearch (ONR), and DoD High Performance Computing Modernization Program.\n\nFor more information, see:\n\n- [hycom.org](https://www.hycom.org/)\n- [GIS StackExchange hycom](https://gis.stackexchange.com/questions/tagged/hycom)\n- Wikipedia [HyCOM](https://en.wikipedia.org/wiki/HyCOM)\n- Wikipedia [List of ocean circulation models](https://en.wikipedia.org/wiki/List_of_ocean_circulation_models)\n- Wikipedia [Ocean general circulation model (OGCM)](https://en.wikipedia.org/wiki/Ocean_general_circulation_model)\n",
     "links": [
         {
@@ -88,7 +88,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "hycom",
         "nopp",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "WWF/HydroSHEDS/v1/FreeFlowingRivers",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "HydroSHEDS is a mapping product that provides hydrographic\ninformation for regional and global-scale applications in a consistent\nformat. It offers a suite of geo-referenced datasets (vector and\nraster) at various scales, including river networks, watershed\nboundaries, drainage directions, and flow accumulations. HydroSHEDS\nis based on elevation data obtained in 2000 by NASA's Shuttle Radar\nTopography Mission (SRTM).\n\nThis dataset provides polylines that represent river networks, derived from and consistent\nwith other HydroSHEDS datasets. These data are based on 15 arc-seconds\n(approx. 500 m at the equator) resolution raster data.\n\n[Mapping the world's free-flowing rivers: data set and technical documentation](\nhttps://figshare.com/articles/Mapping_the_world_s_free-flowing_rivers_data_set_and_technical_documentation/7688801)\n\nNote that the quality of the HydroSHEDS data is significantly lower for regions above\n60 degrees northern latitude as there is no underlying SRTM elevation data available\nand thus a coarser-resolution DEM was (HYDRO1k provided by USGS).\n\nHydroSHEDS was developed by the World Wildlife Fund (WWF)\nConservation Science Program in partnership with the U.S. Geological\nSurvey, the International Centre for Tropical Agriculture, The\nNature Conservancy, and the Center for Environmental Systems Research\nof the University of Kassel, Germany.\n",
     "links": [
         {
@@ -79,7 +79,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "flow_regulation",
         "geophysical",

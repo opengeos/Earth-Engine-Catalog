@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "TRMM/3B43V7",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "**This collection is no longer being updated. See\n[IMERG monthly](https://developers.google.com/earth-engine/datasets/catalog/NASA_GPM_L3_IMERG_MONTHLY_V06)**\n\nThis dataset algorithmically merges microwave data from multiple satellites,\nincluding SSMI, SSMIS, MHS, AMSU-B and AMSR-E, each inter-calibrated to the\nTRMM Combined Instrument.\n\nAlgorithm 3B43 is executed once per calendar month to produce the single,\nbest-estimate precipitation rate and RMS precipitation-error estimate field\n(3B43) by combining the 3-hourly merged high-quality/IR estimates (3B42)\nwith the monthly accumulated Global Precipitation Climatology Centre (GPCC)\nrain gauge analysis.\n\nAll of the global precipitation datasets have some calibrating data source,\nwhich is necessary to control bias differences between contributing\nsatellites.  The multi-satellite data are averaged to the monthly scale and\ncombined with the Global Precipitation Climatology Centre's (GPCC) monthly\nsurface precipitation gauge analysis. In each case the multi-satellite data\nare adjusted to the large-area mean of the gauge analysis, where available\n(mostly over land), and then combined with the gauge analysis using a\nsimple inverse estimated-random-error variance weighting.  Regions with poor\ngauge coverage, like central Africa and the oceans, have a higher weighting\non the satellite input.\n\nSee the [algorithm description](https://trmm.gsfc.nasa.gov/3b43.html)\nand the [file specification](https://pps.gsfc.nasa.gov/Documents/filespec.TRMM.V7.pdf)\nfor details.\n",
     "links": [
         {
@@ -96,7 +96,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "climate",
         "geophysical",

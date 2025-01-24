@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "OSU/GIMP/DEM",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This Digital Elevation Model (DEM) is constructed from a combination\nof ASTER and SPOT-5 DEM's for the ice sheet periphery and margin\n(i.e. below the equilbrium line elevation) south of\napproximately 82.5&deg;N and AVHRR photoclinometry in the ice sheet\ninterior and far north (Scambos and Haran, 2002).\n\nSPOT-5 DEM's were produced and distributed as part of the Spot5\nstereoscopic survey of Polar Ice: Reference Images & Topographies\n(SPIRIT) project (Korona et al., 2009). Ocean surfaces were masked\nusing the GIMP Land Classification mask and replaced with the\nCNES CLS11 mean sea surface height (Schaeffer et al., 2012).\n\n**Note**\n\n*   All land elevation data is horizontally and vertically registered\nto average ICESat elevations for the 2003-2009 time period, and\ntherefore the DEM has a nominal date of 2007, although care must\nbe taken when using the DEM in areas of rapid change, such as\nmajor outlet glaciers south of 70&deg;0N.\n*   The DEM has a resolution of 30 m, although the \\\"true\\\" resolution of the\nDEM will vary from 40 m in areas of SPOT-5 coverage\n(see Korona et al. 2009) to 500 m in areas of photoclinometry.\n*   The ice-sheet-wide root-mean-squared validation error\nrelative to ICESat is +/-10 m, rangining from close to +/- 1 m\nover most ice surfaces to +/- 30 m in areas of high relief.\n\n[General documentation](https://doi.org/10.5067/NV34YUIXLP9W)\n",
     "links": [
         {
@@ -77,7 +77,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "arctic",
         "gimp",

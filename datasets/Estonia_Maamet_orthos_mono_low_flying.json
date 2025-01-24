@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "Estonia/Maamet/orthos/mono_low_flying",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Orthophotos are an aerial photo dataset covering Estonia.\n\nAn orthophoto is a processed aerial photo from which distortions caused\nby terrain relief, camera tilt relative to the ground at the moment of\nexposure and camera central projection are removed. A digital orthophoto\nhas a certain pixel size or resolution which shows the smallest\nindivisible exposed area on the ground (Ground Sampling Distance, GSD).\n\nOrthophotos have a nationwide coverage and correspond to the scale of\n1:5000-1:10000 (pixel size 20-40 cm). Orthophotos for densely-populated\nareas are produced with the pixel size of 10-16 cm.\n\nThe mono_low_flying dataset has a single grayscale band for\ndensely-populated areas.\n\nFor more information, please see the\n[Estonia orthophotos documentation](https://geoportaal.maaamet.ee/eng/Spatial-Data/Orthophotos-p309.html)\n",
     "links": [
         {
@@ -67,7 +67,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "estonia",
         "low_flying",

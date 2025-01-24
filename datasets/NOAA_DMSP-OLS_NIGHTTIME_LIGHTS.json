@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NOAA/DMSP-OLS/NIGHTTIME_LIGHTS",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Defense Meteorological Program (DMSP) Operational Line-Scan System\n(OLS) has a unique capability to detect visible and near-infrared (VNIR)\nemission sources at night.\n\nVersion 4 of the DMSP-OLS Nighttime Lights Time Series consists of\ncloud-free composites made using all the available archived DMSP-OLS smooth\nresolution data for calendar years. In cases where two satellites were\ncollecting data, two composites were produced.\n\nImage and data processing by NOAA's National Geophysical Data Center.\nDMSP data collected by US Air Force Weather Agency.\n",
     "links": [
         {
@@ -67,7 +67,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "dmsp",
         "eog",

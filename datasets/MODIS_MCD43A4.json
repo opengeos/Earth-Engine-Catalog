@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/MCD43A4",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MODerate-resolution Imaging\nSpectroradiometer (MODIS) Reflectance product MCD43A4 provides\n500-meter reflectance data adjusted using a bidirectional reflectance\ndistribution function (BRDF) to model the values as if they were taken\nfrom nadir view. The MCD43A4 product contains 16 days of data provided\nin a level-3 gridded data set in Sinusoidal projection.\n\nBoth Terra and Aqua data are used in the generation of this product, providing\nthe highest probability for quality input data and designating it as\nan MCD, meaning Combined, product.\n\nVersion-5 MODIS/Terra+Aqua BRDF/Albedo\nproducts are Validated Stage 1, meaning that accuracy has been\nestimated using a small number of independent measurements obtained\nfrom selected locations and time periods and ground-truth/field\nprogram efforts. Although there may be later improved versions, these\ndata are ready for use in scientific publications.\n\nPlease visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data) for information on citing LP DAAC datasets.\n",
     "links": [
         {
@@ -86,7 +86,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "16_day",
         "brdf",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "IPCC/AR6/SLP",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The dataset provided by the IPCC features comprehensive global and\nregional sea level projections from the IPCC 6th Assessment Report (AR6).\nThis collection contains assets for the medium confidence sea level\nrise projections. The dataset spans from 2020 to 2150 and includes\nprojections for various future scenarios outlined in the AR6. It offers a\ndetailed breakdown of individual processes contributing to sea level\nchanges, alongside globally averaged projections, regional projections on a\nregular global grid. These projections align with those in the IPCC AR6\nreport, ensuring consistency and reliability. (Local projections at specific\ntide gauge locations are not included because they are not on a regular\ngrid.)\n\nThe following are summaries of the future scenarios included in the dataset:\n\n- SSP1-1.9 holds warming to approximately 1.5&deg;C above 1850-1900 in 2100\n  after slight overshoot (median) and implies net zero CO2 emissions around\n  the middle of the century.\n- SSP1-2.6 stays below 2.0&deg;C warming relative to 1850-1900 (median) with\n  implied net zero emissions in the second half of the century.\n- SSP2-4.5 is approximately in line with the upper end of aggregate\n  Nationally Determined Contribution emission levels by 2030. SR1.5 assessed\n  temperature projections for NDCs to be between 2.7 and 3.4&deg;C by 2100,\n  corresponding to the upper half of projected warming under SSP2-4.5.\n- SSP3-7.0 is a medium to high reference scenario resulting from no\n  additional climate policy under the SSP3 socioeconomic development\n  narrative. SSP3-7.0 has particularly high non-CO2 emissions, including\n  high aerosols emissions.\n- SSP5-8.5 is a high reference scenario with no additional climate policy.\n  Emission levels as high as SSP5-8.5 are not obtained by Integrated\n  Assessment Models (IAMs) under any of the SSPs other than the fossil\n  fueled SSP5 socioeconomic development pathway.\n\nEach component of the sea level projection scenarios is provided as a\nseparate band, as detailed in the table below.\n\nComponent               | Description\n:---------------------  | :----------------------------------------------\nTotal                   | Total integrated over all components\nAIS                     | Antarctic Ice Sheet\nGIS                     | Greenland Ice Sheet\nglaciers                | Glaciers\nlandwaterstorage        | Land Water Storage\noceandynamics           | Ocean Dynamics (includes Thermal Expansion)\nverticallandmotion      | Vertical Land Motion (non-climatic processes)",
     "links": [
         {
@@ -93,7 +93,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "ipcc",
         "ocean",

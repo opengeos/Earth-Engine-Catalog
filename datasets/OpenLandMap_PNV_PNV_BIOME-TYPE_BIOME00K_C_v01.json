@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "OpenLandMap/PNV/PNV_BIOME-TYPE_BIOME00K_C/v01",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Potential Natural Vegetation biomes global predictions of classes\n(based on predictions using the BIOMES 6000 dataset's 'current biomes' category.)\n\nPotential Natural Vegetation (PNV) is the vegetation cover in equilibrium with climate\nthat would exist at a given location non-impacted by human activities. PNV is useful for raising\npublic awareness about land degradation and for estimating land potential.\nThis dataset contains results of predictions of\n- (1) global distribution of biomes based on the BIOME 6000 data set (8057 modern pollen-based site reconstructions),\n- (2) distribution of forest tree species in Europe based on detailed occurrence records (1,546,435 ground observations), and\n- (3) global monthly Fraction of Absorbed Photosynthetically Active Radiation (FAPAR) values (30,301 randomly-sampled points).\n\nTo report an issue or artifact in data, please use [this link](https://github.com/envirometrix/PNVmaps/issues).\n\nTo access and visualize maps outside of Earth Engine, use [this page](https://opengeohub.org/about-openlandmap).\n\nIf you discover a bug, artifact or inconsistency in the LandGIS maps\nor if you have a question please use the following channels:\n\n *  [Technical issues and questions about the code](https://gitlab.com/openlandmap/global-layers/issues)\n *  [General questions and comments](https://disqus.com/home/forums/landgis/)\n",
     "links": [
         {

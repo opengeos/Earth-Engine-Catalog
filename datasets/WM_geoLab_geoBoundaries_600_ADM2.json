@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "WM/geoLab/geoBoundaries/600/ADM2",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The geoBoundaries Global Database of Political Administrative Boundaries\nDatabase is an online, open license resource of boundaries (i.e., state,\ncounty) for every country in the world. Currently 199 total entities are\ntracked, including all 195 UN member states, Greenland, Taiwan, Niue, and\nKosovo.\n\nComprehensive Global Administrative Zones (CGAZ) is a set of global\ncomposites for administrative boundaries. Disputed areas are removed and\nreplaced with polygons following US Department of State definitions. It has\nthree boundary levels ADM0, ADM1, and ADM2, clipped to international\nboundaries (US Department of State), with gaps filled between borders.\n\nThis dataset is part of CGAZ. It was ingested from\n[version 6.0.0](https://github.com/wmgeolab/geoBoundaries/tree/1289e40e366c7b320550be1ee0614a9472d572d4)\nof Global Composite Files with DBF_DATE_LAST_UPDATE=2023-09-13.\nIt shows boundaries at level \nADM2 (municipality-level boundaries).\n",
     "links": [
         {

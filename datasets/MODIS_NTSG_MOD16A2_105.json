@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/NTSG/MOD16A2/105",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MOD16A2 V105 product provides information about\n8-day global terrestrial evapotranspiration at 1km pixel resolution.\nEvapotranspiration (ET) is the sum of evaporation and plant transpiration\nfrom the Earth's surface to the atmosphere. With long-term ET\ndata, the effects of changes in climate, land use, and ecosystems\ndisturbances can be quantified.\n\nThe MOD16A2 product is produced by the Numerical Terradynamic Simulation\nGroup [NTSG](https://www.ntsg.umt.edu/),\nUniversity of Montana (UMT) in conjunction with NASA Earth Observing\nSystem. For more details about the algorithm used see the [algorithm\ntheoretical basis document](https://scholarworks.umt.edu/cgi/viewcontent.cgi?article=1267&context=ntsg_pubs).\n\n* The period of coverage is 8 days with the exception of\nthe last period at the end of the year which is either 5 or 6 days.\nET/PET units are 0.1mm/5-day for December 27-31 of 2001, 2002,\n2003, 2005, 2006, 2007, 2009, 2010, and 0.1mm/6-day for December\n26-31 of 2000, 2004, 2008 (leap years).\n\n** For some pixels in African\nrainforest, the MODIS albedo data from MCD43B2/MCD43B3 have no\ncloud-free data throughout an entire year. As a result, pixels\nfor that year in all data bands are masked out.\n",
     "links": [
         {
@@ -78,7 +78,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "8_day",
         "evapotranspiration",

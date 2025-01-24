@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/006/MOD10A1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MOD10A1 V6 Snow Cover Daily Global 500m product\ncontains snow cover, snow albedo, fractional snow cover, and quality\nassessment (QA) data. Snow cover data are based on a snow mapping\nalgorithm that employs a Normalized Difference Snow Index (NDSI)\nand other criteria tests.\n\n[General documentation](https://doi.org/10.5067/MODIS/MOD10A1.006)\n",
     "links": [
         {
@@ -102,7 +102,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "albedo",
         "daily",

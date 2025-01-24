@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/061/MYD15A2H",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MYD15A2H V6.1 MODIS combined Leaf Area Index (LAI) and\nFraction of Photosynthetically Active Radiation (FPAR) product is an 8-day\ncomposite dataset at 500m resolution. The algorithm chooses the \\\"best\\\" pixel\navailable from all the acquisitions of the Aqua sensor from within the 8-day period.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/624/MOD15_User_Guide_V6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/90/MOD15_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD15A2H)\n",
     "links": [
         {
@@ -89,12 +89,12 @@
             "interval": [
                 [
                     "2002-07-04T00:00:00Z",
-                    "2025-01-01T00:00:00Z"
+                    "2025-01-09T00:00:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "8_day",
         "aqua",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "TIGER/2010/ZCTA5",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "ZIP Code tabulation areas (ZCTAs) are approximate area representations of\nU.S. Postal Service (USPS) 5-digit ZIP Codes.\nThe Census Bureau defines ZCTAs by allocating each\nCensus block that contains addresses to a single ZIP Code tabulation area, usually\nto the ZCTA that reflects the most frequently occurring ZIP Code for the\naddresses within that block. Blocks that do not contain addresses but that\nare completely surrounded by a single ZIP Code tabulation area (enclaves)\nare assigned to the surrounding ZCTA; those surrounded by multiple ZCTAs\nwill be added to a single ZCTA based on the longest shared border.\n\nThe Census Bureau identifies 5-digit ZIP Code tabulation areas using a 5-\ncharacter numeric code that represents the most frequently occurring USPS\nZIP Code within that ZCTA.  This code may contain leading zeros.\n\nData users should not use ZCTAs to identify the official USPS ZIP Code for\nmail delivery. The USPS makes periodic changes to ZIP Codes to support more\nefficient mail delivery. ZIP Codes that cover primarily nonresidential or\npost office box addresses may not have a corresponding ZCTA because the\ndelineation process uses primarily residential addresses, resulting in a\nbias towards ZIP Codes used for city-style mail delivery.\n\nFor full technical details on all TIGER 2010 products, see the [TIGER\ntechnical documentation](https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2010/TGRSHP10SF1.pdf).\n",
     "links": [
         {
@@ -75,7 +75,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "census",
         "tiger",

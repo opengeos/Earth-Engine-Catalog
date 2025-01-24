@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "GFW/GFF/V1/vessel_hours",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Fishing vessel presence, measured in hours per square km. Each asset\nis the vessel presence for a given flag state and day, with one band for the\npresence of each gear type.\n\nSee [sample Earth Engine\nscripts](https://globalfishingwatch.org/research/global-footprint-of-fisheries/).\nAlso see [the main GFW site](https://GlobalFishingWatch.org) for program\ninformation, fully interactive visualization maps, and impacts.\n",
     "links": [
         {

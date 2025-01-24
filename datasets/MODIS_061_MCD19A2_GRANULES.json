@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/061/MCD19A2_GRANULES",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MCD19A2 V6.1 data product is a MODIS Terra and Aqua combined Multi-angle\nImplementation of Atmospheric Correction (MAIAC) Land Aerosol Optical Depth\n(AOD) gridded Level 2 product produced daily at 1 km resolution. For more\ninformation see the [MAIAC user guide](https://lpdaac.usgs.gov/documents/1500/MCD19_User_Guide_V61.pdf).\n\nNOTE: This product has been released with the caveat that the reprocessing\nfor the full mission is expected to continue through summer 2023.\n",
     "links": [
         {
@@ -89,12 +89,12 @@
             "interval": [
                 [
                     "2000-02-24T00:00:00Z",
-                    "2025-01-16T23:55:00Z"
+                    "2025-01-21T23:55:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "aerosol",
         "aod",

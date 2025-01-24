@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "WHBU/NBAR_1YEAR",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The mosaics are created by using the MODIS 8-Day 500 meter\nBRDF-Albedo Quality product.  Data Quality flags are used to select\nthe best observations from the MODIS 8-day 500 meter Nadir\nBRDF-Adjusted Reflectance imagery product.  This specific mosaic picks\nobservations from the three highest quality categories over\na 1-year period of MODIS data.\n\nThe MODIS NBAR annual mosaics have been used by government\nagencies and NGOs in tropical countries as input to generate\naboveground biomass/carbon maps. The Woods Hole Research Center has\nbeen using the dataset for country capacity building and technical\ntraining workshops in tropical countries.\n",
     "links": [
         {
@@ -78,7 +78,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "albedo",
         "bu",

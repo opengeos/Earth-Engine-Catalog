@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "LANDFIRE/Vegetation/EVT/v1_4_0",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "LANDFIRE (LF), Landscape Fire and Resource Management Planning Tools, is a\nshared program between the wildland fire management programs of the U.S.\nDepartment of Agriculture's Forest Service, U.S. Department of the Interior's\nGeological Survey, and The Nature Conservancy.\n\nLANDFIRE (LF) layers are created using predictive landscape models based on\nextensive field-referenced data, satellite imagery and biophysical gradient\nlayers using classification and regression trees.\n\nLANDFIRE's (LF) Existing Vegetation Type (EVT) represents the current distribution of the terrestrial ecological systems classification, developed by NatureServe for the western hemisphere, through 2016. A terrestrial ecological system is defined as a group of plant community types (associations) that tend to co-occur within landscapes with similar ecological processes, substrates, and/or environmental gradients.\n\n*The LF Ecological Systems Descriptions for CONUS provides descriptions for each Ecological System including species, distribution and classification information.\n\nEVT also includes ruderal or semi-natural vegetation types within the U.S. National Vegetation Classification.\nThe LF Ruderal NVC Groups Descriptions for CONUS provides descriptions for each ruderal NVC Group including species, distribution, and classification information.\n\nEVT is mapped using decision tree models, field data, Landsat imagery, elevation, and biophysical gradient data.\n\n* Decision tree models are developed separately for each of the three lifeforms-tree, shrub, and herbaceous and are then used to generate lifeform specific EVT layers.\n\n* Disturbance products are included in LF Remap products to describe areas on the landscape that have experienced change within the previous 10-year period.\n\n* The EVT product is reconciled through QA/QC measures to ensure life-form is synchronized with both Existing Vegetation Cover and Existing Vegetation Height.\n\nThe LANDIFRE Vegetation datasets include:\n\n* Biophysical Settings (BPS)\n* Environmental Site Potential (ESP)\n* Existing Vegetation Canopy Cover (EVC)\n* Existing Vegetation Height (EVH).\n* Existing Vegetation Type (EVT)\nThese layers are created using predictive landscape models based on extensive\nfield-referenced data, satellite imagery and biophysical gradient layers using\nclassification and regression trees.\n",
     "links": [
         {
@@ -70,7 +70,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "doi",
         "fire",

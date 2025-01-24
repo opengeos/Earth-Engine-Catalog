@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NASA/GSFC/MERRA/slv/2",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "M2T1NXSLV (or tavg1_2d_slv_Nx) is an hourly time-averaged 2-dimensional data\ncollection in Modern-Era Retrospective analysis for Research and\nApplications version 2 (MERRA-2). This collection consists of meteorology\ndiagnostics at popularly used vertical levels, such as air temperature at\n2-meter (or at 10-meter, 850hPa, 500 hPa, 250hPa), wind components at\n50-meter (or at 2-meter, 10-meter, 850 hPa, 500hPa, 250 hPa), sea level\npressure, surface pressure, and total precipitable water vapor (or ice\nwater, liquid water). The data field is time-stamped with the central time\nof an hour starting from 00:30 UTC, e.g.: 00:30, 01:30, ... , 23:30 UTC.\n\nMERRA-2 is the latest version of global atmospheric reanalysis for\nthe satellite era produced by NASA Global Modeling and Assimilation\nOffice (GMAO) using the Goddard Earth Observing System Model (GEOS)\nversion 5.12.4. The dataset covers the period of 1980-present with the\nlatency of ~3 weeks after the end of a month.\n",
     "links": [
         {
@@ -77,7 +77,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "condensation",
         "humidity",

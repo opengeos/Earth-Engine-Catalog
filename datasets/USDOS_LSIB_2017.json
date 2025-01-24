@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "USDOS/LSIB/2017",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The United States Office of the Geographer provides\nthe Large Scale International Boundary (LSIB) dataset. It is derived\nfrom two other datasets: a LSIB line vector file and the World\nVector Shorelines (WVS) from the National Geospatial-Intelligence\nAgency (NGA). The interior boundaries reflect U.S. government policies\non boundaries, boundary disputes, and sovereignty. The exterior\nboundaries are derived from the WVS; however, the WVS coastline\ndata is outdated and generally shifted from between several hundred\nmeters to over a kilometer. Each feature is the polygonal area\nenclosed by interior boundaries and exterior coastlines where applicable,\nand many countries consist of multiple features, one per disjoint\nregion. Each of the 180,741 features is a part of the geometry\nof one of the 284 countries described in this dataset.\n",
     "links": [
         {
@@ -85,7 +85,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "borders",
         "countries",

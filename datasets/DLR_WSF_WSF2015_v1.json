@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "DLR/WSF/WSF2015/v1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The World Settlement Footprint (WSF) 2015 is a 10m resolution binary mask\noutlining the extent of human settlements globally derived by means of\n2014-2015 multitemporal Landsat-8 and Sentinel-1 imagery (of which ~217,000 and\n~107,000 scenes have been processed, respectively).\n\nThe temporal dynamics of human settlements over time are\nsensibly different than those of all other non-settlement information classes.\nHence, given all the multitemporal images available over a region of interest\nin the selected time interval, key temporal statistics (i.e., temporal mean,\nminimum, maximum, etc.) are extracted for:\n\n* the original backscattering value\nin the case of radar data; and\n*  different spectral indices (e.g., vegetation\nindex, built-up index, etc.) derived after performing cloud masking in the case\nof optical imagery.\n\nNext, different classification schemes based on Support\nVector Machines (SVMs) are separately applied to the optical and radar temporal\nfeatures, respectively, and, finally, the two outputs are properly combined\ntogether.\n\nTo quantitatively assess the high accuracy and reliability of the\nlayer, an extensive validation exercise has been carried out in collaboration\nwith Google based on a huge amount of ground-truth samples (i.e., 900,000)\nlabeled by crow-sourcing photo-interpretation. A statistically\nrobust and transparent protocol has been defined following the state-of-the-art\npractices currently recommended in the literature.\n\nFor all technical details, please refer to\n[the publication](https://www.nature.com/articles/s41597-020-00580-5)\n",
     "links": [
         {

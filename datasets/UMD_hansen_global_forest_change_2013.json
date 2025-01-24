@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "UMD/hansen/global_forest_change_2013",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Results from time-series analysis of Landsat images in characterizing\nglobal forest extent and change.\n\nThe 'first' and 'last' bands are reference multispectral imagery from the\nfirst and last available years for Landsat spectral bands 3, 4, 5, and 7.\nReference composite imagery represents median observations from a set of\nquality-assessed growing-season observations for each of these bands.\n\nPlease see the [User Notes](https://earthenginepartners.appspot.com/science-2013-global-forest/download_v1.0.html)\nfor this Version 1.0, as well as the associated journal article:\nHansen, Potapov, Moore, Hancher et al. \"High-resolution global maps of\n21st-century forest cover change.\" Science 342.6160 (2013): 850-853.\n\nNote that updated versions of this data are available. The newest version,\nVersion 1.9 (produced with data through 2021), is available as\nUMD/hansen/global_forest_change_2021_v1_9.\n",
     "links": [
         {

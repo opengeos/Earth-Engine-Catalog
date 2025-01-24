@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "GOOGLE/Research/open-buildings/v1/polygons",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This large-scale open dataset consists of outlines of buildings derived\nfrom high-resolution 50 cm satellite imagery. It contains 516M building\ndetections across an area of 19.4M km2 (64% of the African continent).\n\nFor each building in this dataset we include the polygon describing its\nfootprint on the ground, a confidence score indicating how sure we are that\nthis is a building, and a [Plus Code](https://plus.codes/) corresponding to\nthe center of the building. There is no information about the type of\nbuilding, its street address, or any details other than its geometry.\n\nBuilding footprints are useful for a range of important applications: from\npopulation estimation, urban planning and humanitarian response to\nenvironmental and climate science. The project being based in Ghana, the\ncurrent focus is on the continent of Africa.\n\nInference was carried out during April 2021.\n\nFor more details see the official\n[website](https://sites.research.google/open-buildings/) of the Open\nBuildings dataset.\n\nNote that updated versions of this data are available. The newest version,\nVersion 3.0 (with inference carried out on May 2023), is available as\n[GOOGLE/Research/open-buildings/v3/polygons](GOOGLE_Research_open-buildings_v3_polygons).\n",
     "links": [
         {

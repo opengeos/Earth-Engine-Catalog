@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "IDAHO_EPSCOR/MACAv2_METDATA_MONTHLY",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MACAv2-METDATA dataset is a collection of 20 global\nclimate models covering the conterminous USA. The Multivariate Adaptive\nConstructed Analogs (MACA) method is a statistical downscaling\nmethod which utilizes a training dataset (i.e. a meteorological\nobservation dataset) to remove historical biases and match spatial\npatterns in climate model output.\n\nThe MACA method was used to downscale the model output from 20\nglobal climate models (GCMs) of the Coupled Model Inter-Comparison\nProject 5 (CMIP5) for the historical GCM forcings (1950-2005) and\nthe future Representative Concentration Pathways (RCPs) RCP 4.5\nand RCP 8.5 scenarios (2006-2100) from the native resolution of\nthe GCMS to 4km.\n\nThis version contains monthly summaries.\n\nThe full list of models can be found at:\n[https://climate.northwestknowledge.net/MACA/GCMs.php](https://climate.northwestknowledge.net/MACA/GCMs.php)\n",
     "links": [
         {

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "GOOGLE/CLOUD_SCORE_PLUS/V1/S2_HARMONIZED",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Cloud Score+ is a quality assessment (QA) processor for medium-to-high\nresolution optical satellite imagery. The Cloud Score+ S2_HARMONIZED\ndataset is being operationally produced from the\n[harmonized Sentinel-2 L1C collection](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_HARMONIZED),\nand Cloud Score+ outputs can be used to identify relatively clear pixels and\neffectively remove clouds and cloud shadows from [L1C (Top-of-Atmosphere)](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_HARMONIZED)\nor [L2A (Surface Reflectance)](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR_HARMONIZED)\nimagery.\n\nThe Cloud Score+ S2_HARMONIZED dataset includes two QA bands, `cs` and\n`cs_cdf`, that both grade the usability of individual pixels with respect to\nsurface visibility on a continuous scale between 0 and 1, where 0 represents\n\"not clear\" (occluded), while 1 represents \"clear\" (unoccluded) observations.\nThe `cs` band scores QA based on a spectral distance between the observed\npixel and a (theoretical) clear reference observation, while the `cs_cdf` band\nrepresents the likelihood an observed pixel is clear based on an estimated\ncumulative distribution of scores for a given location through time. In\nother words, `cs` can be thought of as a more instantaneous atmospheric\nsimilarity score (i.e., how similar is this pixel to what we'd expect to\nsee in a perfectly a clear reference), while `cs_cdf` captures an expectation\nof the estimated score through time (i.e., if we had all the scores for this\npixel through time, how would this score rank?).\n\nImages in the Cloud Score+ S2_HARMONIZED collection have the same id and\n`system:index` properties as the individual [Sentinel-2 L1C](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_HARMONIZED)\nassets from which they were produced such that Cloud Score+ bands can be\nlinked to source images based on their shared `system:index`.\n\nCloud Score+ backfill for the entire Sentinel-2 archive is currently in\nprogress and Dataset Availability dates will be updated periodically as new\nresults are added to the Cloud Score+ collection.\n\nFor more information about the Cloud Score+ dataset and modelling\napproach, see\n[this Medium post](https://medium.com/google-earth/all-clear-with-cloud-score-bd6ee2e2235e).\n",
     "links": [
         {
@@ -64,7 +64,7 @@
             "interval": [
                 [
                     "2015-06-27T00:00:00Z",
-                    "2025-01-22T14:24:15Z"
+                    "2025-01-23T14:14:21Z"
                 ]
             ]
         }

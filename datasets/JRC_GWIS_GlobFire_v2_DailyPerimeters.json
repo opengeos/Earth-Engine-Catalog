@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "JRC/GWIS/GlobFire/v2/DailyPerimeters",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Fire boundaries based on the MODIS dataset MCD64A1. The data were computed\nbased on an algorithm that relies on encoding in a graph structure\na space-time relationship among patches of burned areas.\n\nEach fire has a unique number identifying the event.\n",
     "links": [
         {

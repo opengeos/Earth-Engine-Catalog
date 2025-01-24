@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "COPERNICUS/S5P/OFFL/L3_CLOUD",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "### OFFL/L3_CLOUD\n\nThis dataset provides offline high-resolution imagery of cloud parameters.\n\nThe TROPOMI/S5P cloud properties retrieval is based on the OCRA and ROCINN\nalgorithms currently being used in the operational GOME and GOME-2 products.\nOCRA retrieves the cloud fraction using measurements in the UV/VIS spectral\nregions and ROCINN retrieves the cloud height (pressure) and optical thickness\n(albedo) using measurements in and around the oxygen A-band at 760 nm. Version 3.0\nof the algorithms are used, which are based on a more realistic\ntreatment of clouds as optically uniform layers of light-scattering particles.\nAdditionally, the cloud parameters are also provided for a cloud model which\nassumes the cloud to be a Lambertian reflecting boundary.\n[More information.](http://www.tropomi.eu/data-products/cloud)\n\n### OFFL L3 Product\n\nTo make our OFFL L3 products, we find which areas within the product's\nbounding box contain data by using a command like this:\n\n```\nharpconvert --format hdf5 --hdf5-compression 9\n-a 'cloud_fraction>50;derive(datetime_stop {time})'\nS5P_OFFL_L2__CLOUD__20180705T095218_20180705T113348_03760_01_010000_20180712T082510.nc\ngrid_info.h5\n```\n\nWe then merge all the data into one large mosaic (area-averaging values for\npixels that may have different values for different times).  From the\nmosaic, we create a set of tiles containing orthorectified raster data.\n\nExample harpconvert invocation for one tile:\n```\nharpconvert --format hdf5 --hdf5-compression 9\n-a 'cloud_fraction>50;derive(datetime_stop {time});\nbin_spatial(2001, 50.000000, 0.01, 2001, -120.000000, 0.01);\nkeep(cloud_fraction,cloud_top_pressure,cloud_top_height,\ncloud_base_pressure,cloud_base_height,cloud_optical_depth,surface_albedo,\nsensor_azimuth_angle,sensor_zenith_angle,solar_azimuth_angle,\nsolar_zenith_angle)'\nS5P_OFFL_L2__CLOUD__20180705T095218_20180705T113348_03760_01_010000_20180712T082510.nc\noutput.h5\n```\n\n### Sentinel-5 Precursor\n\nSentinel-5 Precursor is a satellite launched on 13 October 2017\nby the European Space Agency to monitor air pollution.  The onboard sensor\nis frequently referred to as Tropomi (TROPOspheric Monitoring Instrument).\n\nAll of the S5P datasets, except CH<sub>4</sub>, have two versions: Near \nReal-Time (NRTI) and Offline (OFFL). CH<sub>4</sub> is available as OFFL only. \nThe NRTI assets cover a smaller area than the OFFL assets, but appear more \nquickly after acquisition.  The OFFL assets contain data from a single orbit \n(which, due to half the earth being dark, contains data only for a single \nhemisphere).\n\nBecause of noise on the data, negative vertical column values are often\nobserved in particular over clean regions or for low SO2 emissions. It is\nrecommended not to filter these values except for outliers, i.e.\nfor vertical columns lower than -0.001 mol/m^2.\n\nThe original Sentinel 5P Level 2 (L2) data is binned\nby time, not by latitude/longitude.  To make it possible to ingest the data\ninto Earth Engine, each Sentinel 5P L2 product is converted to L3, keeping\na single grid per orbit (that is, no aggregation across products\nis performed).\n\nSource products spanning the antimeridian are ingested as two Earth Engine\nassets, with suffixes _1 and _2.\n\nThe conversion to L3 is done by the [harpconvert](https://cdn.rawgit.com/stcorp/harp/master/doc/html/harpconvert.html)\ntool using the `bin_spatial` operation.  The source data is filtered to\nremove pixels with QA values less than:\n\n*  80% for AER_AI\n*  75% for the tropospheric_NO2_column_number_density band of NO2\n*  50% for all other datasets except for O3 and SO2\n\nThe O3_TCL product is ingested directly (without running harpconvert).\n",
     "links": [
         {
@@ -65,12 +65,12 @@
             "interval": [
                 [
                     "2018-07-04T11:34:21Z",
-                    "2025-01-20T16:16:28Z"
+                    "2025-01-21T17:38:59Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "climate",
         "cloud",

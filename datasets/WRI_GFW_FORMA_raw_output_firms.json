@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "WRI/GFW/FORMA/raw_output_firms",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "**NOTE from WRI**: WRI decided to stop updating FORMA alerts. The goal was\nto simplify the [Global Forest Watch](https://www.globalforestwatch.org)\nuser experience and reduce redundancy.\nWe found that [Terra-i](http://www.terra-i.org/terra-i.html) and\n[GLAD](https://glad-forest-alert.appspot.com/) were more frequently used.\nMoreover, using GLAD as a standard, found that Terra-i outperformed\nFORMA globally.\n\nFORMA alerts are detected using a combination of two MODIS\nproducts: NDVI (Normalized Difference Vegetation Index) and FIRMS\n(Fires Information for Resource Management System). NDVI updates are\nprocessed every 16 days, while fire updates are processed daily. Models\nare developed individually for each ecogroup to relate the two inputs to\nthe area of clearing, using the Hansen annual tree cover loss data to train\nthe model. The minimum threshold to qualify as an alert is 25% of the pixel\ncleared, though thresholds vary by ecogroup to minimize false positives.\nHere is an [example script](https://code.earthengine.google.com/f29b1e4360f3fc36847bd789ceeb20f6)\nfor a quick introduction to the FORMA datasets.\n\nThe images in this ImageCollection contain the raw FORMA data calculated after new\nMODIS FIRMS data becomes available, approximately every day.\n\nEach band gives a percentage of clearing (from 0 to 100) for\ndifferent accumulation periods. \"N\" is the number of days between the latest FIRMS update\nand the previous NDVI update. N is given by the 'date_delta' property.\n",
     "links": [
         {
@@ -66,7 +66,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "daily",
         "deforestation",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "UQ/murray/Intertidal/v1_1/qa_pixel_count",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Murray Global Intertidal Change Dataset contains global maps of tidal flat\necosystems produced via a supervised classification of 707,528 Landsat\nArchive images. Each pixel was classified into tidal flat, permanent water\nor other with reference to a globally distributed set of training data.\n\nThe classification was implemented along the entire global coastline\nbetween 60\u00b0 North and 60\u00b0 South from 1 January 1984 to 31 December 2016.\nThe image collection consists consists of a time-series of 11 global maps\nof tidal flats at 30m pixel resolution for set time-periods (1984-1986;\n1987-1989; 1990-1992; 1993-1995; 1996-1998; 1999-2001; 2002-2004;\n2005-2007; 2008-2010; 2011-2013; 2014-2016)\n\nThe number of Landsat images used to develop the Landsat covariate layers\nin each time step of the tidal flat classification. Each image in the image\ncollection refers to a single time step.\n",
     "links": [
         {

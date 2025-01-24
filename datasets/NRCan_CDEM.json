@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NRCan/CDEM",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Canadian Digital Elevation Model (CDEM) is part of Natural Resources\nCanada's (NRCan) altimetry system and stems from the existing Canadian\nDigital Elevation Data (CDED). In these data, elevations can be either\nground or reflective surface elevations.\n\nThe CDEM is comprised of multiple DEMs with varying resolutions. These\nvary according to latitude and have a base resolution of 0.75 arc-seconds.\nFor more information see the [Product Specifications](https://ftp.geogratis.gc.ca/pub/nrcan_rncan/elevation/cdem_mnec/doc/CDEM_product_specs.pdf)\n\nContains information licensed under the\n[Open Government Licence - Canada](https://open.canada.ca/en/open-government-licence-canada).\n",
     "links": [
         {

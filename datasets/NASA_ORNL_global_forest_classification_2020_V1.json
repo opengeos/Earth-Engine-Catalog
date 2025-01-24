@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NASA/ORNL/global_forest_classification_2020/V1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This dataset provides classes of global forests delineated by\nstatus/condition in 2020 at approximately 30m resolution. The data support\ngenerating Tier 1 estimates for Aboveground dry woody Biomass Density (AGBD)\nin natural forests in the 2019 Refinement to the 2006 IPCC Guidelines for\nNational Greenhouse Gas Inventories. Forest classes include primary, young\nsecondary (<=20 years), and old secondary forests (>20 years). Classification\nwas based on a Boolean combination of a suite of existing Earth Observation\n(EO) products of forest tree cover, height, age, and land use classification\nlayers representing years 2000 to 2020. This forest status/condition\nclassification prioritizes the reduction of potential errors of commission in\nthe delineations by minimizing the inclusion of ambiguous pixels. Hence, it\nprovides a conservative estimate of global forest area, identifying\napproximately 3.26 billion ha of forests worldwide.\n\n### Quality Assessment\n\nThese data provide a comprehensive compilation of the latest published\ndatasets on forest conditions, but the nonexistence of any independent sample\nof global data that would enable the validation of these delineations is a\nconstraint. Hence, the global forest status/condition classification has not\nbeen validated.\n\n### Data Acquisition, Materials, and Methods\n\nThe forest status/condition classification is created by conducting a\nBoolean analysis of a suite of existing datasets (see Table 1,\n[Hunka et al., 2024](https://doi.org/10.1038/s41597-024-03930-9)),\nincluding satellite-derived forest tree cover, height, age,\nand land use classification layers. In this approach, layers that\nidentify a potential forest status/condition class (e.g. primary forests) are\nmerged, and layers that identify sources of disagreement (e.g. presence of\nplantations or deforestation detected in the delineated primary forests) are\nused to remove areas of potential commission errors.\n\nThe primary forest class is established using datasets identifying\nintact/primary forests, with a high forest integrity index, the presence of\ntree cover and forest heights \u22655 m and no known forest loss events, planted\nforests or plantations.\n\nThe young secondary forest class captures pixels that had changes in\nforest height or cover between 2000 and 2020, excluding planted forests and\nplantations. These forests were identified by heights \u22655 m in 2020 and either\n(a) heights <5 m in 2000 or (b) heights \u22655 m in 2000 but having experienced\ntree cover loss after 2000.\n\nThe old secondary forest class captures the remainder of pixels with\nforests after excluding the primary and young secondary forest classes. These\npixels had forest heights \u22655 m in both 2000 and 2020 with no tree cover loss\nnor forest disturbances detected after 2000, nor any planted forests or\nplantations.\n\n[Schematic of analysis workflow](https://daac.ornl.gov/CMS/guides/CMS_Global_Forest_Age_Fig2.jpg)\n",
     "links": [
         {
@@ -80,7 +80,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "aboveground",
         "biomass",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "IUCN/GlobalEcosystemTypology/current",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Global Ecosystem Typology is a taxonomy of ecosystems based on\ntheir unique characteristics. It is a global classification system\nthat provides a consistent framework for describing and classifying\necological ecosystems.\n\nThe Global Ecosystem Typology has six levels. The top three levels\n(realms, functional biomes, and ecosystem functional groups) classify\necosystems based on their overall characteristics, such as their location,\ndominant plant life, and ecological processes. The bottom three levels\n(regional ecosystem subgroups, global ecosystem types, and subglobal\necosystem types) focus on specific geographic variants within ecosystem\nfunctional groups and complexes of organisms and their associated physical\nenvironment, providing a more detailed understanding of particular\necosystems.\n\nThis dataset focuses on the third level of the Global Ecosystem Typology:\nEcosystem Functional Group. It's defined as a group of related ecosystems\nwithin a biome that share common ecological drivers, which in turn promote\nsimilar biotic traits that characterise the group. Derived from the\ntop-down by subdivision of biomes.\n\nNOTE: Due to the size of some geometries, a simpification algorithm was\napplied to each one to reduce their complexity. As many vertices as\npossible were discarded without moving the distance from the original\nshape more than 100 m. As a result, approximately two dozen rows in the\ntable collapsed into geometries with 0 area and were removed.\n",
     "links": [
         {

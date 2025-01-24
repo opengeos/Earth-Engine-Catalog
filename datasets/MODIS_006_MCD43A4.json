@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/006/MCD43A4",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MCD43A4 V6 Nadir Bidirectional Reflectance Distribution\nFunction Adjusted Reflectance (NBAR) product provides 500 meter\nreflectance data of the MODIS \\\"land\\\" bands 1-7. These are adjusted\nusing a bidirectional reflectance distribution function to model\nthe values as if they were collected from a nadir view.  The data\nare produced daily based on a 16-day retrieval period, with the\nimage's date occurring on the 9th day. This product combines data\nfrom both the Terra and Aqua spacecrafts, choosing the best representative\npixel from the 16-day period.\n\nDocumentation:\n\n* [User's Guide](https://www.umb.edu/spectralmass/terra_aqua_modis/v006)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/97/MCD43_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MCD43A4)\n",
     "links": [
         {
@@ -102,7 +102,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "albedo",
         "brdf",

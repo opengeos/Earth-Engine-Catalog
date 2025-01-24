@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NOAA/NWS/RTMA",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Real-Time Mesoscale Analysis (RTMA) is a high-spatial and temporal\nresolution analysis for near-surface weather conditions.  This dataset\nincludes hourly analyses at 2.5 km for CONUS.\n",
     "links": [
         {
@@ -65,12 +65,12 @@
             "interval": [
                 [
                     "2011-01-01T00:00:00Z",
-                    "2025-01-22T18:00:00Z"
+                    "2025-01-23T18:00:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "climate",
         "cloud",

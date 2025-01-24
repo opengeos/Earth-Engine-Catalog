@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "JRC/GHSL/P2023A/GHS_BUILT_C",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This spatial raster dataset delineates human settlements at 10 m resolution,\nand describes their inner characteristics in terms of the functional and\nheight-related components of the built environment.\n\nMore information about the GHSL data products can be found in the [GHSL Data\nPackage 2023 report]\n(https://ghsl.jrc.ec.europa.eu/documents/GHSL_Data_Package_2023.pdf?t=1683540422)\n\nThe Global Human Settlement Layer (GHSL) project is supported by the European\nCommission, Joint Research Centre, and Directorate-General for Regional and\nUrban Policy.\n",
     "links": [
         {
@@ -79,7 +79,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "built",
         "builtup",

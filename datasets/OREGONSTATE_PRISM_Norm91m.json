@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "OREGONSTATE/PRISM/Norm91m",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The PRISM daily and monthly datasets are gridded climate\ndatasets for the conterminous United States, produced by the\nPRISM Climate Group at Oregon State University.\n\nGrids are\ndeveloped using PRISM (Parameter-elevation Regressions on Independent\nSlopes Model). PRISM interpolation routines simulate how weather\nand climate vary with elevation, and account for coastal effects,\ntemperature inversions, and terrain barriers that can cause rain\nshadows. Station data are assimilated from many networks across\nthe country. For more information, see the [Descriptions of PRISM\nSpatial Climate Datasets](https://www.prism.oregonstate.edu/documents/PRISM_datasets.pdf).\n",
     "links": [
         {
@@ -97,7 +97,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "30_year",
         "climate",

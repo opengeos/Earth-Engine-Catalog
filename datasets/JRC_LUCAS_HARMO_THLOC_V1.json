@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "JRC/LUCAS_HARMO/THLOC/V1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The\n[Land Use/Cover Area frame Survey (LUCAS)](https://ec.europa.eu/eurostat/web/lucas)\nin the European Union (EU) was set up to provide statistical information.\nIt represents a triennial in-situ landcover and land-use data-collection\nexercise that extends over the whole of the EU's territory.  LUCAS collects\ninformation on land cover and land use, agro-environmental variables, soil,\nand grassland. The surveys also provide spatial information to analyse the\nmutual influences between agriculture, environment, and countryside, such as\nirrigation and land management.\n\nThe dataset presented here is the harmonized version of all yearly LUCAS\nsurveys with a total of 106 attributes. Each point's location is using\nthe fields 'th_lat' and 'th_lon', that is, the LUCAS theoretical location\n(THLOC), as prescribed by the LUCAS grid.  For more information please\nsee Citations. Note that not every field is present for every year - see\nthe \\\"Years\\\" section in property descriptions.\n\nThe text \\\"C1 (Instructions)\\\" in the table schema descriptions refers to\n[this document](https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_harmonised/3_supporting/LUCAS2018-C1-Instructions.pdf).\n\nSee also\n[the 2018 LUCAS polygons dataset](JRC_LUCAS_HARMO_COPERNICUS_POLYGONS_V1_2018).\n",
     "links": [
         {

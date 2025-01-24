@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/061/MCD19A1_GRANULES",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MCD19A1 Version 6.1 data product is a Moderate Resolution Imaging\nSpectroradiometer (MODIS) Terra and Aqua combined Land Surface Bidirectional\nReflectance Factor (BRF) gridded Level 2 product produced daily at 500 meter\nand 1 kilometer resolution. For more information see the\n[MAIAC user guide](https://lpdaac.usgs.gov/documents/1500/MCD19_User_Guide_V61.pdf).\n",
     "links": [
         {
@@ -77,12 +77,12 @@
             "interval": [
                 [
                     "2000-12-21T00:00:00Z",
-                    "2025-01-16T23:55:00Z"
+                    "2025-01-21T23:55:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "aerosol",
         "aod",

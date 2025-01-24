@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "JAXA/GPM_L3/GSMaP/v6/operational",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Global Satellite Mapping of Precipitation (GSMaP) provides\na global hourly rain rate with a 0.1 x 0.1 degree resolution. GSMaP\nis a product of the Global Precipitation Measurement (GPM) mission,\nwhich provides global precipitation observations at three hour\nintervals.  Values are estimated using multi-band passive microwave\nand infrared radiometers from the GPM Core Observatory satellite\nand with the assistance of a constellation of other satellites.  GPM's\nprecipitation rate retrieval algorithm is based on a radiative\ntransfer model. The gauge-adjusted rate is calculated based on\nthe optimization of the 24h accumulation of GSMaP hourly rain rate\nto daily precipitation by NOAA/CPC gauge measurement.\nThis dataset is processed by GSMaP algorithm version 6 (product version 3).\nSee [GSMaP Technical Documentation](https://www.eorc.jaxa.jp/GPM/doc/product/format/en/07.GPM_GSMaP_Product_Format_V5_E.pdf)\nfor more details.\n\nThis dataset contains provisional products GSMaP_NRT that are\nregularly replaced with updated versions when the GSMaP_MVK data\nbecome available.\nThe products are marked with a metadata property called ''status''.\nWhen a product is initially made available, the property value\nis ''provisional''. Once a provisional product has been updated\nwith the final version, this value is updated to ''permanent''.\nFor more information please refer\n[General Documentation](https://eolp.jaxa.jp/GSMaP_Hourly.html)\n",
     "links": [
         {
@@ -70,12 +70,12 @@
             "interval": [
                 [
                     "2014-03-01T00:00:00Z",
-                    "2025-01-22T14:00:00Z"
+                    "2025-01-23T14:00:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "climate",
         "geophysical",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NASA/LANCE/SNPP_VIIRS/C2",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Suomi NPP Visible Infrared Imaging Radiometer Suite (VIIRS) Active Fire detection\nproduct is based on the instrument's 375m nominal resolution data. Compared\nto other coarser resolution (&ge; 1km) satellite fire detection products, \nthe improved 375 m data provide greater response over fires of relatively\nsmall areas, as well as improved mapping of large fire perimeters.\nConsequently, the data are well suited for use in support of fire management\n(e.g., near real-time alert systems), as well as other science applications\nrequiring improved fire mapping fidelity.\n\nThe data in the near-real-time dataset are not considered to be of science\nquality.\n\nAdditional information can be found [here](https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms).\n",
     "links": [
         {
@@ -72,12 +72,12 @@
             "interval": [
                 [
                     "2023-09-03T00:00:00Z",
-                    "2025-01-20T00:00:00Z"
+                    "2025-01-22T00:00:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "eosdis",
         "fire",

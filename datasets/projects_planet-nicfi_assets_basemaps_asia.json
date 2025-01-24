@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "projects/planet-nicfi/assets/basemaps/asia",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This image collection provides access to high-resolution satellite\nmonitoring of the tropics for the primary purpose of reducing and reversing the\nloss of tropical forests, contributing to combating climate change, conserving\nbiodiversity, contributing to forest regrowth, restoration and enhancement, and\nfacilitating sustainable development, all of which must be Non-Commercial Use.\n\nTo learn how to access the Basemaps, follow the\n[sign up instructions here](https://developers.planet.com/docs/integrations/gee/nicfi/).\n\nThe NICFI Satellite Data Program mosaics (also referred to as Planet-NICFI\nmosaics) contain both monthly and biannual collections generated every\n6 months.  The type of the mosaic is stored in the image metadata field\n'cadence'. Use that field along with the start and end date for each mosaic\nto find the desired imagery.\n\nFull details about the Basemaps are available in\n[NICFI Satellite Data Program Basemap spec](https://assets.planet.com/docs/NICFI_Basemap_Spec_Addendum.pdf).\n\nFor more information about the NICFI (Norway's International Climate\nand Forest Initiative) Satellite Data Program and the data offered,\nplease visit\n[the Program's website](https://assets.planet.com/docs/NICFI_General_FAQs.pdf).\n\nIn support of NICFI's mission, you can use this data for a number of projects\nincluding, but not limited to:\n\n* Advance scientific research about the world's tropical forests and the\n  critical services they provide.\n* Implement and improve policies for sustainable forest management and land\n  use in developing tropical forest countries and jurisdictions.\n* Increase transparency and accountability in the tropics.\n* Protect and improve the rights of indigenous peoples and local communities\n  in tropical forest countries.\n* Innovate solutions towards reducing pressure on forests from global\n  commodities and financial markets.\n",
     "links": [
         {
@@ -73,7 +73,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "basemaps",
         "forest",

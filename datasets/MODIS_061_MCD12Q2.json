@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/061/MCD12Q2",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Terra and Aqua combined Moderate Resolution Imaging Spectroradiometer\n(MODIS) Land Cover Dynamics (MCD12Q2) Version 6.1 data product provides\nglobal land surface phenology metrics at yearly intervals. The MCD12Q2\nVersion 6.1 data product is derived from time series of the 2-band Enhanced\nVegetation Index (EVI2) calculated from MODIS Nadir Bidirectional\nReflectance Distribution Function (BRDF)-Adjusted Reflectance(NBAR).\nVegetation phenology metrics at 500 meter spatial resolution are identified\nfor up to two detected growing cycles per year. For pixels with more than\ntwo valid vegetation cycles, the data represent the two cycles with the\nlargest NBAR-EVI2 amplitudes.\n\nEach asset contains bands are layers for the total number of vegetation\ncycles detected for the product year, the onset of greenness, greenup\nmidpoint, maturity, peak greenness, senescence, greendown midpoint,\ndormancy, EVI2 minimum, EVI2 amplitude, integrated EVI2 over a vegetation\ncycle, as well as overall and phenology metric-specific quality information.\n\nFor areas where the NBAR-EVI2 values are missing due to cloud cover or other\nreasons, the data gaps are filled with good quality NBAR-EVI2 values from\nthe year directly preceding or following the product year.\n",
     "links": [
         {
@@ -91,7 +91,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "evi",
         "global",

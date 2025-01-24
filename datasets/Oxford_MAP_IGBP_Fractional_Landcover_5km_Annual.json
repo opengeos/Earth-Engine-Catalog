@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "Oxford/MAP/IGBP_Fractional_Landcover_5km_Annual",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The underlying dataset for this landcover product is the IGBP layer found\nwithin the MODIS annual landcover product (MCD12Q1). This data was\nconverted from its categorical format, which has a &asymp;500 meter resolution,\nto a fractional product indicating the integer percentage (0-100) of the\noutput pixel covered by each of the 17 landcover classes (1 per band).\n\nThis dataset was produced by Harry Gibson and Daniel Weiss of the\nMalaria Atlas Project (Big Data Institute, University of Oxford,\nUnited Kingdom, [https://malariaatlas.org/](https://malariaatlas.org/)).\n",
     "links": [
         {

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NOAA/CPC/Precipitation",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The CPC Unified Gauge-Based Analysis of Global Daily Precipitation dataset\noffers daily precipitation estimates over land from 1979 to the present.\nDeveloped by NOAA's Climate Prediction Center (CPC), it leverages an optimal\ninterpolation technique to combine data from a global network of rain\ngauges, with over 30,000 gauges contributing to the retrospective version\n(1979-2005) and around 17,000 to the real-time version (2006-present).\nData is provided at a 0.5-degree resolution and includes both precipitation\namounts (in 0.1 mm) and the number of gauges used for each grid cell,\nallowing users to assess data quality.\n\nThe dataset's quality is acknowledged to be poor over tropical Africa and\nAntarctica, and generally varies with gauge density. Real-time data is\nsubject to revision as more complete station data becomes available.\n\n[This](https://ftp.cpc.ncep.noaa.gov/precip/CPC_UNI_PRCP/GAUGE_GLB/DOCU/)\nfolder has all the technical documentation.\n\nNOTE: The historical data spanning from 1979 to 2005 is not available in the\ncurrent version of the dataset.\n",
     "links": [
         {
@@ -70,12 +70,12 @@
             "interval": [
                 [
                     "2006-01-01T00:00:00Z",
-                    "2025-01-20T00:00:00Z"
+                    "2025-01-21T00:00:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "daily",
         "noaa",

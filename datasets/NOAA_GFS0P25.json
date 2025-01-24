@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NOAA/GFS0P25",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Global Forecast System (GFS) is a weather forecast model produced by\nthe National Centers for Environmental Prediction (NCEP). The GFS dataset\nconsists of selected model outputs (described below) as gridded forecast\nvariables. The 384-hour forecasts, with 1-hour (up to 120 hours)\nand 3-hour (after 120 hours) forecast intervals, are made at 6-hour temporal\nresolution (i.e. updated four times daily). Use the 'creation_time' and\n'forecast_time' properties to select data of interest.\n\nThe GFS is a coupled model, composed of an atmosphere model, an ocean model,\na land/soil model, and a sea ice model which work together to provide an\naccurate picture of weather conditions. Note that this model may change;\nsee [history of recent modifications to the global forecast/analysis system](https://www.emc.ncep.noaa.gov/gmb/STATS/html/model_changes.html)\nand the [documentation](https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php)\nfor more information. There may be significant hour-to-hour and day-to-day\nfluctuations that require noise-reduction techniques to be applied to bands\nbefore analysis.\n\nNote that the available forecast hours and intervals have also changed:\n\n* From 2015/04/01-2017/07/09: 36-hour forecasts, excluding hour 0, at\n3-hour intervals.\n* From 2017/07/09-2021/06/11: 384-hour forecasts, at 1-hour intervals from\nhours 0-120, at 3-hour intervals from hours 120-240, and 12-hour intervals\nfrom hours 240-384.\n* From 2021/06/12: 384-hour forecasts, at 1-hour intervals from hours 0-120\nand 3-hour intervals from hours 120-384.\n",
     "links": [
         {
@@ -145,12 +145,12 @@
             "interval": [
                 [
                     "2015-07-01T00:00:00Z",
-                    "2025-01-22T18:00:00Z"
+                    "2025-01-23T18:00:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "climate",
         "cloud",
@@ -199,9 +199,24 @@
                 "name": "specific_humidity_2m_above_ground"
             },
             {
+                "description": "Dew point temperature 2m above ground (available starting from January 2025)",
+                "gee:units": "&deg;C",
+                "name": "dew_point_temperature_2m_above_ground"
+            },
+            {
                 "description": "Relative humidity 2m above ground",
                 "gee:units": "%",
                 "name": "relative_humidity_2m_above_ground"
+            },
+            {
+                "description": "Maximum temperature 2m above ground (only for assets with forecast_hours > 0 and available starting from January 2025)",
+                "gee:units": "&deg;C",
+                "name": "maximum_temperature_2m_above_ground"
+            },
+            {
+                "description": "Minimum temperature 2m above ground (only for assets with forecast_hours > 0 and available starting from January 2025)",
+                "gee:units": "&deg;C",
+                "name": "minimum_temperature_2m_above_ground"
             },
             {
                 "description": "U component of wind 10m above ground",
@@ -224,7 +239,36 @@
                 "name": "precipitable_water_entire_atmosphere"
             },
             {
-                "description": "Total cloud cover for entire atmosphere (only for assets with forecast_hours > 0)",
+                "description": "U component of wind planetary boundary layer (available starting from January 2025)",
+                "gee:units": "m/s",
+                "name": "u_component_of_wind_planetary_boundary_layer"
+            },
+            {
+                "description": "V component of wind planetary boundary layer (available starting from January 2025)",
+                "gee:units": "m/s",
+                "name": "v_component_of_wind_planetary_boundary_layer"
+            },
+            {
+                "description": "Wind Speed (Gust) (available starting from January 2025)",
+                "gee:units": "m/s",
+                "name": "gust"
+            },
+            {
+                "description": "Precipitation Rate (available starting from January 2025)",
+                "gee:units": "kg/m^2/s",
+                "name": "precipitation_rate"
+            },
+            {
+                "description": "Haines Index (available starting from January 2025)",
+                "name": "haines_index"
+            },
+            {
+                "description": "Ventilation Rate (available starting from January 2025)",
+                "gee:units": "m^2/s",
+                "name": "ventilation_rate"
+            },
+            {
+                "description": "Total cloud cover for entire atmosphere (previously only for assets with forecast_hours > 0, but available for those with forecast_hours == 0 starting from January 2025)",
                 "gee:units": "%",
                 "name": "total_cloud_cover_entire_atmosphere"
             },
@@ -232,6 +276,26 @@
                 "description": "Downward shortwave radiation flux (only for assets with forecast_hours > 0)",
                 "gee:units": "W/m^2",
                 "name": "downward_shortwave_radiation_flux"
+            },
+            {
+                "description": "Downward longwave radiation flux (only for assets with forecast_hours > 0 and available starting from January 2025)",
+                "gee:units": "W/m^2",
+                "name": "downward_longwave_radiation_flux"
+            },
+            {
+                "description": "Upward shortwave radiation flux (only for assets with forecast_hours > 0 and available starting from January 2025)",
+                "gee:units": "W/m^2",
+                "name": "upward_shortwave_radiation_flux"
+            },
+            {
+                "description": "Upward longwave radiation flux (only for assets with forecast_hours > 0 and available starting from January 2025)",
+                "gee:units": "W/m^2",
+                "name": "upward_longwave_radiation_flux"
+            },
+            {
+                "description": "Planetary boundary layer height (available starting from January 2025)",
+                "gee:units": "m",
+                "name": "planetary_boundary_layer_height"
             }
         ],
         "gee:schema": [
@@ -285,13 +349,45 @@
         "gsd": [
             27830
         ],
+        "dew_point_temperature_2m_above_ground": {
+            "minimum": -81.05,
+            "maximum": 29.05
+        },
+        "downward_longwave_radiation_flux": {
+            "minimum": 0,
+            "maximum": 100
+        },
         "downward_shortwave_radiation_flux": {
             "minimum": 0,
             "maximum": 1230
         },
+        "gust": {
+            "minimum": 0,
+            "maximum": 57.41
+        },
+        "haines_index": {
+            "minimum": 2,
+            "maximum": 6
+        },
+        "maximum_temperature_2m_above_ground": {
+            "minimum": -60.73,
+            "maximum": 59.28
+        },
+        "minimum_temperature_2m_above_ground": {
+            "minimum": -63.78,
+            "maximum": 59.39
+        },
+        "planetary_boundary_layer_height": {
+            "minimum": 7.77,
+            "maximum": 6312.67
+        },
         "precipitable_water_entire_atmosphere": {
             "minimum": 0,
             "maximum": 100
+        },
+        "precipitation_rate": {
+            "minimum": 0,
+            "maximum": 0.032
         },
         "relative_humidity_2m_above_ground": {
             "minimum": 1,
@@ -317,9 +413,29 @@
             "minimum": -60.73,
             "maximum": 59.28
         },
+        "u_component_of_wind_planetary_boundary_layer": {
+            "minimum": -66.8,
+            "maximum": 62.18
+        },
+        "upward_longwave_radiation_flux": {
+            "minimum": 0,
+            "maximum": 100
+        },
+        "upward_shortwave_radiation_flux": {
+            "minimum": 0,
+            "maximum": 1230
+        },
         "v_component_of_wind_10m_above_ground": {
             "minimum": -63.78,
             "maximum": 59.39
+        },
+        "v_component_of_wind_planetary_boundary_layer": {
+            "minimum": -63.08,
+            "maximum": 57.6
+        },
+        "ventilation_rate": {
+            "minimum": 0,
+            "maximum": 234000
         }
     }
 }

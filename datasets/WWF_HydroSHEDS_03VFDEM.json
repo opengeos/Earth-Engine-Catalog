@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "WWF/HydroSHEDS/03VFDEM",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "HydroSHEDS is a mapping product that provides hydrographic\ninformation for regional and global-scale applications in a consistent\nformat. It offers a suite of geo-referenced datasets (vector and\nraster) at various scales, including river networks, watershed\nboundaries, drainage directions, and flow accumulations. HydroSHEDS\nis based on elevation data obtained in 2000 by NASA's Shuttle Radar\nTopography Mission (SRTM).\n\nThis void-filled elevation dataset is the first step\ntowards producing the conditioned DEM datasets. Spikes and wells\nin the SRTM data were detected and voided out. Small voids were\nfilled by interpolation of surrounding elevations. The ocean\nwas set to an elevation of 0 meters, and lakes, islands, and\nrivers were filled using other techniques. Full details of the\nunderlying digital elevation model are available in the HydroSHEDS\nwebsite and documentation.\n\nThis dataset is at 3 arc-second\nresolution. The datasets available at 3 arc-seconds are the Void-Filled\nDEM, Hydrologically Conditioned DEM, and Drainage (Flow) Direction.\n\nNote that the quality of the HydroSHEDS data is significantly lower for regions above\n60 degrees northern latitude as there is no underlying SRTM elevation data available\nand thus a coarser-resolution DEM was (HYDRO1k provided by USGS).\n\nHydroSHEDS was developed by the World Wildlife Fund (WWF)\nConservation Science Program in partnership with the U.S. Geological\nSurvey, the International Centre for Tropical Agriculture, The\nNature Conservancy, and the Center for Environmental Systems Research\nof the University of Kassel, Germany.\n",
     "links": [
         {
@@ -67,7 +67,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "dem",
         "elevation",

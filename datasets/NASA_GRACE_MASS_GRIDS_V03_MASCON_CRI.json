@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NASA/GRACE/MASS_GRIDS_V03/MASCON_CRI",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This dataset contains gridded monthly global water storage/height anomalies\nrelative to a time-mean, derived from GRACE and GRACE-FO and processed at\nJPL using the Mascon approach (RL06.1Mv03). This version of the data employs\na Coastal Resolution Improvement (CRI) filter that reduces signal leakage\nerrors across coastlines. These data are provided in a single data file in\nnetCDF format, and can be used for analysis for ocean, ice, and hydrology\nphenomena. The water storage/height anomalies are given in equivalent water\nthickness units (cm). The solution provided here is derived from solving for\nmonthly gravity field variations in terms of geolocated spherical cap mass\nconcentration functions, rather than global spherical harmonic coefficients.\nAdditionally, realistic geophysical information is introduced during the\nsolution inversion to intrinsically remove correlated error. Thus, these\nMascon grids do not need to be destriped or smoothed, like traditional\nspherical harmonic gravity solutions. The complete Mascon solution consists\nof 4,551 relatively independent estimates of surface mass change that have\nbeen derived using an equal-area 3-degree grid of individual mascons.\nA subset of these individual mascons span coastlines, and contain mixed land\nand ocean mass change signals. In a post-processing step, the CRI filter is\napplied to those mixed land/ocean Mascons to separate land and ocean mass.\nThe land mask used to perform this separation is provided in the same\ndirectory as this dataset. Since the individual mascons act as an inherent\nsmoother on the gravity field, a set of optional gain factors\n(for continental hydrology applications) that can be applied to the solution\nto study mass change signals at sub-mascon resolution is also provided\nwithin the same data directory as the Mascon data. This RL06.1Mv03 is an\nupdated version of the previous [Tellus JPL Mascon RL06Mv02](https://doi.org/10.5067/TEMSC-3JC62).\nRL06.1Mv03 differs from RL06Mv02 only in the Level-1B accelerometer\ntransplant data that is used for the GF2 (GRACE-FO 2)satellite;\nRL06.1Mv03 uses the ACH data product. For more information,\nplease visit [GRACE page](https://grace.jpl.nasa.gov/data/get-data/jpl_global_mascons/).\nFor a detailed description on the Mascon solution, including the\nmathematical derivation, implementation of geophysical constraints, and\nsolution validation, please see [Watkins et al., 2015](https://doi.org/10.1002/2014JB011547).\nFor a detailed description of the CRI filter implementation,\nplease see [Wiese et al., 2016](https://doi.org/10.1002/2016WR019344).\n",
     "links": [
         {
@@ -94,7 +94,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "grace",
         "gravity",

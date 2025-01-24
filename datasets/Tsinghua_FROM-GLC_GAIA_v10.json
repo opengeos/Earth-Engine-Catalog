@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "Tsinghua/FROM-GLC/GAIA/v10",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This dataset contains annual change information of global impervious surface area from 1985 to\n2018 at a 30m resolution. Change from pervious to impervious was determined using a combined\napproach of supervised classification and temporal consistency checking. Impervious pixels are\ndefined as above 50% impervious. The year of the transition (from pervious to impervious) can\nbe identified from the pixel value, ranging from 34 (year: 1985) to 1 (year: 2018). For\nexample, the impervious surface in 1990 can be revealed as the pixel value greater than 29\n(see the lookup table). This dataset is temporally consistent, following the conversion from\npervious (e.g., non-urban) to impervious (e.g., urban) monotonically. For more information\nabout the mapping approach and assessment, see\n[Annual maps of global artificial impervious area (GAIA) between 1985 and 2018\n(Gong et al. 2020)](https://doi.org/10.1016/j.rse.2019.111510).\n",
     "links": [
         {

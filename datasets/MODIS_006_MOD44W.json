@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/006/MOD44W",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MOD44W V6 land/water mask 250m product is derived using a\ndecision tree classifier trained with MODIS data and validated with the\nMOD44W V5 product. A series of masks are applied to address known issues\ncaused by terrain shadow, burn scars, cloudiness, or ice cover in oceans.\n",
     "links": [
         {
@@ -79,7 +79,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "geophysical",
         "mod44w",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "DOE/ORNL/LandScan_HD/Ukraine_202201",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "[LandScan High Definition (HD)](https://landscan.ornl.gov)\nprovides gridded population estimates at 3\narc-second (~100m) resolution. Values for each LandScan HD cell represent an\nambient (i.e. 24 hour average) population count estimate.  In this way, the\ndata capture the full potential activity space of people throughout the\ncourse of the day and night rather than just a residential location. The\nLandScan HD model incorporates current land use and infrastructure data from\na variety of sources, applies facility occupancy estimates from ORNL's\nPopulation Density Tables (PDT) project, and leverages novel image\nprocessing algorithms developed at ORNL to rapidly map building\nstructures and neighborhood areas using high-performance computing\nenvironments.\n\nThe source for subnational population counts used in the development of this\ndata comes from\n[State Statistics Service of Ukraine](https://ukrstat.org/en/operativ/operativ2021/ds/kn/arh_kn2021_e.html).\n\nThese subnational estimates were adjusted to the country total population\nprovided by the\n[CIA World Factbook](https://www.cia.gov/the-world-factbook/countries/ukraine/#people-and-society).\n",
     "links": [
         {

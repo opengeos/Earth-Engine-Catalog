@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "LANDSAT/COMPOSITES/C02/T1_L2_ANNUAL_BAI",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "These Landsat Collection 2 Tier 1 Level 2 composites are made from Tier 1 Level 2 orthorectified scenes.\n\nThe Burn Area Index (BAI) is generated from the Red and\nNear-IR bands, and measures the spectral distance of each pixel from a\nreference spectral point (the measured reflectance of charcoal).  This\nindex is intended to emphasize the charcoal signal in post-fire\nimages. See\n[Chuvieco et al. (2002)](https://www.tandfonline.com/doi/abs/10.1080/01431160210153129)\nfor details.\n\nThese composites are created from\nall the scenes in\neach annual period beginning from the first day of the year and\ncontinuing to the last day of the year.  All the images from each year\nare included in the composite, with the most recent pixel as the composite value.\n\nNotes:\n\n* Only daytime images with WRS_ROW < 122 are included.\n\n* For Landsat 7 , images after 2017-01-01 are excluded due to orbital drift.\n\n* For Landsat 8, images before 2013-05-01 are excluded due to pointing issues.\n",
     "links": [
         {
@@ -74,7 +74,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "bai",
         "landsat",

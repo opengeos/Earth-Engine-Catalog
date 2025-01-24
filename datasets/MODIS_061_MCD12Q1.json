@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/061/MCD12Q1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Terra and Aqua combined Moderate Resolution Imaging Spectroradiometer\n(MODIS) Land Cover Type (MCD12Q1) Version 6.1 data product provides global\nland cover types at yearly intervals. The MCD12Q1 Version 6.1\ndata product is derived using supervised classifications of MODIS Terra and\nAqua reflectance data. Land cover types are derived from the International\nGeosphere-Biosphere Programme (IGBP), University of Maryland (UMD), Leaf\nArea Index (LAI), BIOME-Biogeochemical Cycles (BGC), and Plant Functional\nTypes (PFT) classification schemes. The supervised classifications then\nunderwent additional post-processing that incorporate prior knowledge and\nancillary information to further refine specific classes. Additional land\ncover property assessment layers are provided by the Food and Agriculture\nOrganization (FAO) Land Cover Classification System (LCCS) for land cover,\nland use, and surface hydrology.\n\nLayers for Land Cover Type 1-5, Land Cover Property 1-3, Land Cover Property\nAssessment 1-3, Land Cover Quality Control (QC), and a Land Water Mask are\nalso provided.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1409/MCD12_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/86/MCD12_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MCD12Q1)\n",
     "links": [
         {
@@ -94,7 +94,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "landcover",
         "modis",

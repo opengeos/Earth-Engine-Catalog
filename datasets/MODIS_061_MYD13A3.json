@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/061/MYD13A3",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Aqua Moderate Resolution Imaging Spectroradiometer (MODIS) Vegetation\nIndices (MYD13A3) Version 6.1 data are provided monthly at 1 kilometer (km)\nspatial resolution as a gridded Level 3 product in the sinusoidal\nprojection. In generating this monthly product, the algorithm ingests all\nthe MYD13A2 products that overlap the month and employs a weighted temporal\naverage.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/621/MOD13_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/104/MOD13_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD13A3)\n",
     "links": [
         {
@@ -82,7 +82,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "aqua",
         "evi",

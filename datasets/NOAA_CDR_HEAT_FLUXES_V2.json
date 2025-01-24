@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NOAA/CDR/HEAT_FLUXES/V2",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Ocean Heat Fluxes dataset is part of the NOAA Ocean Surface Bundle (OSB)\nand provides a high quality Climate Data Record (CDR) of the air/ocean heat\nfluxes over ice-free oceans.\n\nThis dataset is calculated from the OSB CDR parameters of near-surface\natmospheric and sea surface temperature using a neural-network\nemulator of the TOGA-COARE Bulk Air-Sea Flux Algorithm.\n",
     "links": [
         {
@@ -79,7 +79,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "atmospheric",
         "cdr",

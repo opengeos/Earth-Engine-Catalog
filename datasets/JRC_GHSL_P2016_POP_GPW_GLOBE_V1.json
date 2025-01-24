@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "JRC/GHSL/P2016/POP_GPW_GLOBE_V1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The GHSL relies on the design and implementation of new spatial data mining\ntechnologies allowing to automatically process and extract analytics and\nknowledge from large amount of heterogeneous data including: global,\nfine-scale satellite image data streams, census data, and crowd sources or\nvolunteered geographic information sources.\n\nThis dataset depicts the distribution and density of population, expressed\nas the number of people per cell, for reference epochs: 1975, 1990, 2000,\n2015.\n\nResidential population estimates were provided by CIESIN GPW v4. These were\ndisaggregated from census or administrative units to grid cells, informed by\nthe distribution and density of built-up as mapped in the GHSL global layer\nper corresponding epoch. (See [\"Development of New Open and Free\nMulti-temporal Global Population Grids at 250 m\nResolution.\"](https://publications.jrc.ec.europa.eu/repository/handle/JRC100523))\n\nThis dataset was produced in the World Mollweide projection (EPSG:54009).\n\nFor more information visit: [https://ghsl.jrc.ec.europa.eu/ghs_pop.php](https://ghsl.jrc.ec.europa.eu/ghs_pop.php).\n\nThe Global Human Settlement Layer (GHSL) project is supported by the\nEuropean Commission, Joint Research Center, and Directorate-General for\nRegional and Urban Policy. The GHSL produces new global spatial information,\nevidence-based analytics, and knowledge describing the human presence in\nthe planet.\n",
     "links": [
         {
@@ -84,7 +84,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "ciesin_derived",
         "ghsl",

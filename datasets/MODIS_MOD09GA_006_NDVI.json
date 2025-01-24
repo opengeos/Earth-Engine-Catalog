@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/MOD09GA_006_NDVI",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Normalized Difference Vegetation Index is\ngenerated from the Near-IR and Red bands of each scene as (NIR - Red) /\n(NIR + Red), and ranges in value from -1.0 to 1.0. This product is generated from the MODIS/006/MOD09GA surface reflectance composites.\n",
     "links": [
         {
@@ -85,7 +85,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "modis",
         "ndvi",

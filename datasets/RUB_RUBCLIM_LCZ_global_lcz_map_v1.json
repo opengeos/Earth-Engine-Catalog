@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "RUB/RUBCLIM/LCZ/global_lcz_map/v1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Since their introduction in 2012, Local Climate Zones (LCZs) emerged as\na new standard for characterizing urban landscapes, providing a holistic\nclassification approach that takes into account micro-scale land-cover and\nassociated physical properties.\n\nThis global map of Local Climate Zones, at 100m pixel size and\nrepresentative for the nominal year 2018, is derived from multiple earth\nobservation datasets and expert LCZ class labels. LCZ_Filter is the\nrecommended band for most users. The other classification band, LCZ, is\nonly provided as it is used to calculate the LCZ_Probability band.\n\nThe LCZ scheme complements other land use / land cover schemes by\nits focus on urban and rural landscape types, which can be described by\nany of the 17 classes in the LCZ scheme. Out of the 17 LCZ classes, 10\nreflect the 'built' environment, and each LCZ type is associated with\ngeneric numerical descriptions of key urban canopy parameters critical to\nmodel atmospheric responses to urbanisation.  In addition, since LCZs were\noriginally designed as a new framework for urban heat island studies, they\nalso contain a limited set (7) of 'natural' land-cover classes that can be\nused as 'control' or 'natural reference' areas.\n\nAs these seven natural classes in the LCZ scheme can not capture the\nheterogeneity of the world's existing natural ecosystems, we advise\nusers - if required - to combine the built LCZ classes with any other\nland-cover product that provides a wider range of natural land-cover\nclasses.\n\nSee also:\n\n* [LCZ Typology](https://doi.org/10.1175/BAMS-D-11-00019.1)\n\n* [Global map of LCZs - paper](https://doi.org/10.5194/essd-14-3835-2022)\n\n* [Global map of LCZs - dataset](https://doi.org/10.5281/zenodo.6364593)\n\n* [LCZ Gaussian filtering](https://doi.org/10.1038/s41597-020-00605-z)\n",
     "links": [
         {
@@ -93,7 +93,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "climate",
         "landcover",

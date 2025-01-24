@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/006/MCD43A2",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MCD43A2 V6 Bidirectional Reflectance Distribution\nFunction and Albedo (BRDF/Albedo) Quality dataset is a 500 meter\ndaily 16-day product. It contains all the quality information\nfor the corresponding 16-day MCD43A3 Albedo and the MCD43A4 Nadir-BRDF\n(NBAR) products.\n\nThe MCD43A2 contains individual band quality\nand observation information for the MODIS land bands\n1-7, along with the overall BRDF/Albedo quality information.\n\nSee\n[dataset user guide](https://www.umb.edu/spectralmass/terra_aqua_modis/v006/mcd43a2_albedo_product)\nfor more information.\n\nDocumentation:\n\n* [User's Guide](https://www.umb.edu/spectralmass/terra_aqua_modis/v006)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/97/MCD43_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MCD43A2)\n",
     "links": [
         {
@@ -102,7 +102,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "albedo",
         "brdf",

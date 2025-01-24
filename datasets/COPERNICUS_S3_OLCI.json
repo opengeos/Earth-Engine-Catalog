@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "COPERNICUS/S3/OLCI",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Ocean and Land Color Instrument (OLCI) Earth Observation\nFull Resolution (EFR) dataset contains top of atmosphere radiances\nat 21 spectral bands with center wavelengths ranging between\n0.4&micro;m and 1.02&micro;m at spatial resolution of 300m with\nworldwide coverage every ~2 days.\n\nOLCI is one of the instruments\nin the ESA/EUMETSAT Sentinel-3 mission for measuring sea-surface\ntopography, sea- and land-surface temperature, ocean color and\nland color with high-end accuracy and reliability to support\nocean forecasting systems, as well as environmental and climate\nmonitoring.\n\nThe Sentinel-3 OLCI instrument is based on the\noptomechanical and imaging design of ENVISAT's MERIS. It is designed\nto retrieve the spectral distribution of upwelling radiance just\nabove the sea surface (the water-leaving radiance).\n\nOLCI observation is performed simultaneously in 21 spectral bands\nranging from the visible to the near-infrared (400 to 1029nm).\n",
     "links": [
         {
@@ -65,12 +65,12 @@
             "interval": [
                 [
                     "2016-10-18T19:25:42Z",
-                    "2025-01-20T22:55:30Z"
+                    "2025-01-22T08:17:23Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "copernicus",
         "esa",

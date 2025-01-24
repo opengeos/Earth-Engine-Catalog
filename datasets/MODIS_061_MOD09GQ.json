@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/061/MOD09GQ",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MODIS Surface Reflectance products provide an estimate\nof the surface spectral reflectance as it would be measured at\nground level in the absence of atmospheric scattering or absorption.\nLow-level data are corrected for atmospheric gases and aerosols.\nMOD09GQ version 6.1 provides bands 1 and 2 at a 250m resolution in\na daily gridded L2G product in the Sinusoidal projection, including\na QC and five observation layers. This product is meant to be used\nin conjunction with the MOD09GA where important quality and viewing\ngeometry information is stored.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/306/MOD09_User_Guide_V6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/305/MOD09_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MOD09GQ)\n",
     "links": [
         {
@@ -89,12 +89,12 @@
             "interval": [
                 [
                     "2000-02-24T00:00:00Z",
-                    "2025-01-19T00:00:00Z"
+                    "2025-01-21T00:00:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "daily",
         "global",

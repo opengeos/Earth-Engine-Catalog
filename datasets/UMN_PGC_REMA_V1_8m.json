@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "UMN/PGC/REMA/V1/8m",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Reference Elevation Model of Antarctica (REMA) is a high resolution,\ntime-stamped Digital Surface Model (DSM) of Antarctica at 2-meter and 8-meter\nspatial resolutions.\n\nStrip DEM files correspond to the overlapping area of the input stereoscopic\nimagery pair strips as they are collected by DigitalGlobe's constellation\nof polar-orbiting satellites. Strip DEM dimensions will vary according to\nthe satellite sensor that acquired the images and the off-nadir angle of\ncollection. Most strips are between 13 km and 17 km in width, and 110 km\nand 120 km in length.\n",
     "links": [
         {
@@ -74,7 +74,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "dem",
         "geophysical",

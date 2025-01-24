@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/006/MCD15A3H",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MCD15A3H V6 level 4, Combined Fraction of Photosynthetically\nActive Radiation (FPAR), and Leaf Area Index (LAI) product is a\n4-day composite data set with 500 meter pixel size. The algorithm\nchooses the \\\"best\\\" pixel available from all the acquisitions of\nboth MODIS sensors located on NASA's Terra and Aqua satellites\nfrom within the 4-day period.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/624/MOD15_User_Guide_V6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/90/MOD15_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MCD15A3H)\n",
     "links": [
         {
@@ -96,7 +96,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "4_day",
         "fpar",

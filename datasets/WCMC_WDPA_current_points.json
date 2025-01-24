@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "WCMC/WDPA/current/points",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The World Database on Protected Areas (WDPA) is the\nmost up-to-date and complete source of information on protected\nareas, updated monthly with submissions from governments, non-governmental\norganizations, landowners, and communities. It is managed by\nthe United Nations Environment Programme's World Conservation\nMonitoring Centre (UNEP-WCMC) with support from IUCN and its\nWorld Commission on Protected Areas (WCPA).\n\n**WDPA User Manual.** For details including methodologies,standards, data\nproviders, metadata field definitions and descriptions, refer\nto the [WDPA User Manual](https://pp-import-production.s3.amazonaws.com/WDPA_Manual_1_5.pdf).\n\nThe WDPA has two feature classes with associated spatial\nand tabular data on more than 200k protected areas. About 91%\ncontain polygon boundaries, with the remaining only as points,\nrepresenting the center of the protected area as much as possible.\n\n**Asset Naming Conventions.** WCMC updates the WDPA on a\nmonthly basis. The most recent version is always available as\nWCMC/WDPA/current/polygons and WCMC/WDPA/current/points. Historical\nversions, starting with July 2017, are available in the format\nWCMC/WDPA/YYYYMM/polygons and WCMC/WDPA/YYYYMM/points.\n\nPlease see the [WDPA User Manual](https://pp-import-production.s3.amazonaws.com/WDPA_Manual_1_5.pdf)\nfor additional details on the field list.\n",
     "links": [
         {
@@ -76,7 +76,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "boundaries",
         "iucn",

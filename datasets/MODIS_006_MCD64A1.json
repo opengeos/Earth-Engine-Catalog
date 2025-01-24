@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/006/MCD64A1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Terra and Aqua combined MCD64A1 Version 6 Burned Area data product is\na monthly, global gridded 500m product containing per-pixel burned-area\nand quality information. The MCD64A1 burned-area mapping approach employs\n500m MODIS Surface Reflectance imagery coupled with 1km MODIS active\nfire observations. The algorithm uses a burn sensitive vegetation index (VI)\nto create dynamic thresholds that are applied to the composite data.\nThe VI is derived from MODIS shortwave infrared atmospherically corrected\nsurface reflectance bands 5 and 7 with a measure of temporal texture.\nThe algorithm identifies the date of burn for the 500m grid cells within\neach individual MODIS tile. The date is encoded in a single data layer as\nthe ordinal day of the calendar year on which the burn occurred, with\nvalues assigned to unburned land pixels and additional special values\nreserved for missing data and water grid cells.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/751/MCD64_User_Guide_V6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/115/MCD64_ATBD_V6.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MCD64A1)\n",
     "links": [
         {
@@ -96,7 +96,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "burn",
         "fire",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NOAA/VIIRS/001/VNP43IA2",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Suomi National Polar-Orbiting Partnership (Suomi NPP) NASA Visible\nInfrared Imaging Radiometer Suite (VIIRS) Bidirectional Reflectance\nDistribution Function (BRDF) and Albedo Quality (VNP43IA2) Version 1 product\nprovides BRDF and Albedo quality at 500m resolution. The VNP43IA2\nproduct is produced daily using 16 days of VIIRS data and is weighted\ntemporally to the ninth day, which is reflected in the file name.\nThe VNP43IA2 product provides information regarding band quality and days\nof valid observation within a 16-day period for the VIIRS imagery bands.\nThe VNP43 data products are designed to promote the continuity of\nNASA&apos;s Moderate Resolution Imaging Spectroradiometer (MODIS)\nBRDF/Albedo data product suite.\n\nDocumentation:\n\n* [User's Guide](https://www.umb.edu/spectralmass/viirs_user_guide/vnp43ia2_and_vnp43ma2_brdf_albedo_quality_product)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/194/VNP43_ATBD_V1.pdf)\n\n* [General Documentation](https://lpdaac.usgs.gov/products/vnp43ia2v001/)\n\n* [Land Product Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/browse?sensor=VIIRS&sat=SNPP)\n",
     "links": [
         {
@@ -82,7 +82,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "land",
         "nasa",

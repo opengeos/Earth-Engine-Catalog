@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "UTOKYO/WTLAB/KBDI/v1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Keetch-Byram Drought Index (KBDI) is a continuous reference scale for estimating the dryness of\nthe soil and duff layers. The index increases for each day without rain (the amount of increase\ndepends on the daily high temperature) and decreases when it rains. This system is based\nprimarily on recent rainfall patterns. It is a measure of meteorological drought; it reflects\nwater gain or loss within the soil.\n\nThe scale ranges from 0 (no moisture deficit) to 800 (extreme drought). The range of the index\nis determined by assuming that there is 20 cm of moisture in a saturated soil that is readily\navailable to the vegetation (Keetch and Byram, 1968). KBDI is world widely used for drought\nmonitoring for national weather forecast, wildfire prevention and usefully especially in regions\nwith rain-fed crops.\n",
     "links": [
         {
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2007-01-01T00:00:00Z",
-                    "2025-01-21T00:00:00Z"
+                    "2025-01-22T00:00:00Z"
                 ]
             ]
         }

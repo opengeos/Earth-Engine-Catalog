@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "TIGER/2010/Blocks",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The United States Census Bureau regularly releases\na geodatabase named TIGER. This dataset contains the 2010 census\nblocks, roughly equivalent to a city block. There are just over\n11 million polygon features covering the United States, the District\nof Columbia, Puerto Rico, and the\n[Island areas](https://www.census.gov/data/tables/2010/dec/2010-island-areas.html).\n\nFor full technical details on all TIGER 2010 products, see the\n[TIGER technical documentation](https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2010/TGRSHP10SF1.pdf).\n",
     "links": [
         {
@@ -75,7 +75,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "census",
         "city",

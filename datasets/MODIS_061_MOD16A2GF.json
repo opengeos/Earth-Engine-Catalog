@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/061/MOD16A2GF",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Terra Moderate Resolution Imaging Spectroradiometer (MODIS) MOD16A2GF\nVersion 6.1 Evapotranspiration/Latent Heat Flux (ET/LE) product is a\nyear-end gap-filled 8-day composite dataset produced at 500 meter (m) pixel\nresolution. The algorithm used for the MOD16 data product collection is\nbased on the logic of the Penman-Monteith equation, which includes inputs of\ndaily meteorological reanalysis data along with MODIS remotely sensed data\nproducts such as vegetation property dynamics, albedo, and land cover.\n\nThe pixel values for the two Evapotranspiration layers (ET and PET) are the\nsum of all eight days within the composite period, and the pixel values for\nthe two Latent Heat layers (LE and PLE) are the average of all eight days\nwithin the composite period. The last acquisition period of each year is a\n5 or 6-day composite period, depending on the year.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/931/MOD16_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/93/MOD16_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MOD16A2GF)\n",
     "links": [
         {
@@ -82,7 +82,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "8_day",
         "evapotranspiration",

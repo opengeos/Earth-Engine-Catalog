@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "JRC/GHSL/P2023A/GHS_BUILT_S_10m",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This raster dataset depicts the distribution of built-up surfaces,\nexpressed in square metres per 10 m grid cell, for 2018\nas observed from the S2 image data.\n\nThe datasets measure:\na) the total built-up surface, and b) the built-up surface allocated to grid\ncells of predominant non-residential (NRES) use.\n\nThe complete information about the GHSL main products can be\nfound in the [GHSL Data Package 2023 report]\n(https://ghsl.jrc.ec.europa.eu/documents/GHSL_Data_Package_2023.pdf?t=1683540422)\n\nThe Global Human Settlement Layer (GHSL) project is supported by the\nEuropean Commission, Joint Research Centre, and Directorate-General for\nRegional and Urban Policy.\n",
     "links": [
         {
@@ -79,7 +79,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "built",
         "builtup",

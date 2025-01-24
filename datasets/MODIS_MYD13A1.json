@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/MYD13A1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Global MODIS vegetation indices are designed to\nprovide consistent spatial and temporal comparisons of vegetation conditions.\nBlue, red, and near-infrared reflectances, centered at 469-nanometers,\n645-nanometers, and 858-nanometers, respectively, are used to determine the\nMODIS daily vegetation indices.\n\nThe MODIS Normalized Difference Vegetation Index (NDVI) complements\nNOAA's Advanced Very High Resolution Radiometer (AVHRR) NDVI products\nprovide continuity for time series historical applications. MODIS also\nincludes a new Enhanced Vegetation Index (EVI) that minimizes canopy\nbackground variations and maintains sensitivity over dense vegetation\nconditions. The EVI also uses the blue band to remove residual atmosphere\ncontamination caused by smoke and sub-pixel thin cloud clouds. The MODIS\nNDVI and EVI products are computed from atmospherically corrected\nbi-directional surface reflectances that have been masked for water, clouds,\nheavy aerosols, and cloud shadows.\n\nGlobal MYD13A1 data are provided every 16 days at 500-meter spatial\nresolution as a gridded level-3 product in the Sinusoidal projection.\nVegetation indices are used for global monitoring of vegetation conditions\nand are used in products displaying land cover and land cover changes. These\ndata may be used as input for modeling global biogeochemical and hydrologic\nprocesses and global and regional climate. These data also may be used for\ncharacterizing land surface biophysical properties and processes, including\nprimary production and land cover conversion.\n\nVersion-5 MODIS Vegetation Indices products have attained Validation Stage\n3.\n\nVegetation Indices production is phased between Terra and Aqua\nacquisitions, with Terra beginning on Day 001 and Aqua beginning on Day\n008.\n\nPlease visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data) for information on citing LP DAAC datasets.\n",
     "links": [
         {
@@ -86,7 +86,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "16_day",
         "aqua",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/006/MYD17A3HGF",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Version 6 MODIS data products. Users are advised to transition to the\nimproved Version 6.1.\n\nThe MYD17A3HGF V6 product provides information about\nannual Net Primary Productivity (NPP) at 500m pixel resolution.\n Annual NPP is derived from the sum of all 8-day Net Photosynthesis\n(PSN) products (MYD17A2H) from the given year.  The PSN value\nis the difference of the Gross Primary Productivity (GPP) and the\nMaintenance Respiration (MR) (GPP-MR).\n",
     "links": [
         {
@@ -96,7 +96,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "aqua",
         "global",

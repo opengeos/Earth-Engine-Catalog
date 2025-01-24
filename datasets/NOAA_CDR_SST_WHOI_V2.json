@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NOAA/CDR/SST_WHOI/V2",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Sea Surface Temperature - WHOI dataset is part of the NOAA Ocean Surface\nBundle (OSB) and provides a high quality Climate Data Record (CDR) of sea\nsurface temperature over ice-free oceans.\n\nThe SST values are found through modeling the diurnal variability in\ncombination with AVHRR observations of sea surface temperature.\n",
     "links": [
         {
@@ -79,7 +79,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "atmospheric",
         "cdr",

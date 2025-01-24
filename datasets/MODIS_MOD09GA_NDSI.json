@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/MOD09GA_NDSI",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Normalized Difference Snow Index is used to\nidentify snow, based on its characteristically higher reflectance in\nthe visible portion of the spectrum compared to the mid-IR.  NDSI is\ncomputed using the Green and Mid-IR bands, and has a range of -1.0 to\n1.0. See\n[Riggs et al. (1994)](https://doi.org/10.1109/IGARSS.1994.399618)\nfor details. This product is generated from the MODIS/MOD09GA surface reflectance composites.\n",
     "links": [
         {
@@ -87,7 +87,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "modis",
         "ndsi",

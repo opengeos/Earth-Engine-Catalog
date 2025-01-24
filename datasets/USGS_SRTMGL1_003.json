@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "USGS/SRTMGL1_003",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Shuttle Radar Topography Mission (SRTM, see [Farr\net al. 2007](https://onlinelibrary.wiley.com/doi/10.1029/2005RG000183/full))\ndigital elevation data is an international research effort that\nobtained digital elevation models on a near-global scale. This\nSRTM V3 product (SRTM Plus) is provided by NASA JPL\nat a resolution of 1 arc-second (approximately 30m).\n\nThis dataset has undergone a void-filling process using open-source data\n(ASTER GDEM2, GMTED2010, and NED), as opposed to other versions that\ncontain voids or have been void-filled with commercial sources.\nFor more information on the different versions see the\n[SRTM Quick Guide](https://lpdaac.usgs.gov/documents/13/SRTM_Quick_Guide.pdf).\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/179/SRTM_User_Guide_V3.pdf)\n\n* [General Documentation](https://lpdaac.usgs.gov/documents/13/SRTM_Quick_Guide.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://doi.org/10.1029/2005RG000183)\n",
     "links": [
         {
@@ -72,7 +72,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "dem",
         "elevation",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NASA/ASTER_GED/AG100_003",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Advanced Spaceborne Thermal Emission and Reflection Radiometer Global\nEmissivity Database (ASTER-GED) was developed by the National Aeronautics\nand Space Administration's (NASA) Jet Propulsion Laboratory (JPL),\nCalifornia Institute of Technology. This product includes the mean\nemissivity and standard deviation for all 5 ASTER Thermal Infrared bands,\nmean land surface temperature (LST) and standard deviation, a re-sampled\nASTER GDEM, land-water mask, mean Normalized Difference Vegetation Index\n(NDVI) and standard deviation, and observation count.\n\nASTER-GED land surface temperature and emissivity (LST&E) are generated\nusing the ASTER Temperature Emissivity Separation (TES) algorithm in\ncombination with a Water Vapor Scaling (WVS) atmospheric correction method\nusing MODIS MOD07 atmospheric profiles and the MODTRAN 5.2 radiative\ntransfer model.\n\nThis product was derived from clear-sky pixels for all available ASTER data\n(2000-2008).\n\n[User's Guide] (https://lpdaac.usgs.gov/documents/120/ASTERGED_User_Guide_V3.pdf)\n",
     "links": [
         {
@@ -77,7 +77,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "aster",
         "caltech",

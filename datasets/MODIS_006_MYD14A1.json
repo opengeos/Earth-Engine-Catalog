@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/006/MYD14A1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MYD14A1 V6 dataset provides daily fire mask composites\nat 1km resolution derived from the MODIS 4- and 11-micrometer radiances.\nThe fire detection strategy is based on absolute detection of a\nfire (when the fire strength is sufficient to detect), and on detection\nrelative to its background (to account for variability of the surface\ntemperature and reflection by sunlight). The product distinguishes\nbetween fire, no fire and no observation. This information is used\nfor monitoring the spatial and temporal distribution of fires in\ndifferent ecosystems, detecting changes in fire distribution and\nidentifying new fire frontiers, wild fires, and changes in the\nfrequency of the fires  or their relative strength.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/88/MOD14_User_Guide_v6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/87/MOD14_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MYD14A1)\n",
     "links": [
         {
@@ -96,7 +96,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "aqua",
         "daily",

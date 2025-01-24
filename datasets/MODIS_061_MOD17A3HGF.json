@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/061/MOD17A3HGF",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MOD17A3HGF V6.1 product provides information about annual Gross and Net\nPrimary Productivity (GPP and NPP) at 500m pixel resolution. Annual NPP is\nderived from the sum of all 8-day Net Photosynthesis(PSN) products\n(MOD17A2H) from the given year.  The PSN value is the difference of the\nGross Primary Productivity (GPP) and the Maintenance Respiration (MR)\n(GPP-MR).\n",
     "links": [
         {
@@ -94,7 +94,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "global",
         "gpp",

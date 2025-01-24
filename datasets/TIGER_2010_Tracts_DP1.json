@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "TIGER/2010/Tracts_DP1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The United States Census Bureau regularly releases\na geodatabase named TIGER. This table contains the 2010 census\nDemographic Profile 1 values aggregated by census tract. Tract\nareas vary tremendously, but in urban areas are roughly equivalent\nto a neighborhood. There are about 74,000 polygon features covering\nthe United States, the District of Columbia, Puerto Rico, and\nthe [Island areas](https://www.census.gov/data/tables/2010/dec/2010-island-areas.html).\n\nFor full technical details on all TIGER 2010 products, see\nthe [TIGER technical documentation](https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2010/TGRSHP10SF1.pdf).\n\nEach tract also includes attributes with sums of the DP1\npopulation measurements that intersect the boundary. The columns\nhave the same name as the shortname column in the [DP1 lookup\ntable](https://developers.google.com/earth-engine/tiger_2010_tract_dp1_metadata).\n",
     "links": [
         {
@@ -75,7 +75,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "census",
         "demographic",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NOAA/CPC/Temperature",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This dataset provides a gridded analysis of daily surface air temperature\nover global land areas, including daily maximum (Tmax), minimum (Tmin)\ntemperatures. Spanning from 1979 to the present, the data is presented on\n0.5-degree latitude/longitude grids, aligning with the resolution of CPC's\ngauge-based global daily precipitation analysis. The construction of this\ndataset considers orographic effects. Its primary purpose is to support\nclimate monitoring and forecast verification activities. Input data\noriginates from the CPC archive of GTS (Global Telecommunication System)\ndaily reports, incorporating Tmax and Tmin data from approximately 6,000 to\n7,000 global stations.\n\nRefer [this](https://ftp.cpc.ncep.noaa.gov/precip/PEOPLE/wd52ws/global_temp/CPC-GLOBAL-T.pdf)\nfor technical documentation.\n",
     "links": [
         {
@@ -60,12 +60,12 @@
             "interval": [
                 [
                     "1979-01-01T00:00:00Z",
-                    "2025-01-21T00:00:00Z"
+                    "2025-01-22T00:00:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "daily",
         "noaa",

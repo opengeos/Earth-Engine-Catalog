@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "USGS/3DEP/10m_metadata",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This is a table with metadata [for the 3DEP 10m DEM asset](USGS_3DEP_10m).\n\nThe Work unit Extent Spatial Metadata (WESM) contains current lidar data\navailability and basic information about lidar projects, including lidar\nquality level, data acquisition dates, and links to project-level metadata.\n\nSee more details\n[in this document](https://prd-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/atoms/files/3DEP_Spatial_Metadata_Glossary_0.pdf) (taken from\n[this page](https://www.usgs.gov/media/files/3dep-spatial-metadata-glossary)).\n\nDataset uploaded by [Farmers Business Network](https://fbn.com).\n",
     "links": [
         {
@@ -75,7 +75,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "3dep",
         "usgs"

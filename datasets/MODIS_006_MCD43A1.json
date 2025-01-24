@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/006/MCD43A1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MCD43A1 V6 Bidirectional Reflectance Distribution\nFunction and Albedo (BRDF/Albedo) Model Parameters dataset is\na 500 meter daily 16-day product. The Julian date represents\nthe 9th day of the 16-day retrieval period, and consequently\nthe observations are weighted to estimate the BRDF/Albedo for\nthat day. The MCD43A1 algorithm, as is with all combined products,\nchooses the best representative pixel from a pool that includes\nall the acquisitions from both the Terra and Aqua sensors from\nthe retrieval period.\n\nThe MCD43A1 provides the three model\nweighting parameters (isotropic, volumetric, and geometric) for\neach of the MODIS bands 1 through 7 and the visible (vis), near\ninfrared (nir), and shortwave bands used to derive the Albedo\nand BRDF products (MCD43A3 and MCD43A4). The Mandatory Quality\nlayers for each of the 10 bands are supplied as well.\n\nSee\n[dataset user guide](https://www.umb.edu/spectralmass/terra_aqua_modis/v006/mcd43a1_brdif_albedo_model_parameters_product)\nfor more information.\n\nDocumentation:\n\n* [User's Guide](https://www.umb.edu/spectralmass/terra_aqua_modis/v006)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/97/MCD43_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MCD43A1)\n",
     "links": [
         {
@@ -102,7 +102,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "albedo",
         "brdf",

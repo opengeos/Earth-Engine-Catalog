@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NASA/HLS/HLSL30/v002",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Harmonized Landsat Sentinel-2 (HLS) project provides consistent surface\nreflectance (SR) and top of atmosphere (TOA) brightness data from a virtual\nconstellation of satellite sensors. The Operational Land Imager (OLI) is\nhoused aboard the joint NASA/USGS Landsat 8 and Landsat 9 satellites, while\nthe Multi-Spectral Instrument (MSI) is mounted aboard Europe's Copernicus\nSentinel-2A and Sentinel-2B satellites. The combined measurement enables\nglobal observations of the land every 2 to 3 days at 30m spatial\nresolution.\nThe HLS project uses a set of algorithms\nto obtain seamless products from OLI and MSI that include atmospheric\ncorrection, cloud and cloud-shadow masking, spatial co-registration and\ncommon gridding, illumination and view angle normalization, and spectral\nbandpass adjustment.\n\nThe HLS project distributes data as two separate products: HLSL30\n(Landsat 8/9) and HLSS30 (Sentinel-2 A/B). They both provide 30m Nadir\nBidirectional Reflectance Distribution Function (BRDF), Adjusted Reflectance\n(NBAR).\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1698/HLS_User_Guide_V2.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/769/HLS_ATBD_V15_provisional.pdf)\n\n* [General Documentation](https://lpdaac.usgs.gov/products/hlsl30v002/)\n* S30 catalog link: [NASA/HLS/HLSS30/v002](NASA_HLS_HLSS30_v002)\n",
     "links": [
         {
@@ -70,12 +70,12 @@
             "interval": [
                 [
                     "2013-04-11T00:00:00Z",
-                    "2025-01-17T08:22:56Z"
+                    "2025-01-21T22:55:16Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "landsat",
         "nasa",

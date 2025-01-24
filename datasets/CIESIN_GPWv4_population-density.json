@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "CIESIN/GPWv4/population-density",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Gridded Population of World Version 4 (GPWv4) models the distribution\nof global human population for the years 2000, 2005, 2010, 2015, and 2020\non 30 arc-second (approximately 1km) grid cells. Population is distributed\nto cells using proportional allocation of population from census and\nadministrative units. Population input data are collected at the most\ndetailed spatial resolution available from the results of the 2010 round of\ncensuses, which occurred between 2005 and 2014. The input data are\nextrapolated to produce population estimates for each modeled year.\n\nThese population density grids contain estimates of the number of persons\nper square kilometer consistent with national censuses and population\nregisters. There is one image for each modeled year.\n\n[General Documentation](https://sedac.ciesin.columbia.edu/data/set/gpw-v4-population-count-rev11/docs)\n",
     "links": [
         {

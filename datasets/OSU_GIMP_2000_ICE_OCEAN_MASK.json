@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "OSU/GIMP/2000_ICE_OCEAN_MASK",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This dataset provides complete land ice and ocean\nclassification masks at 15 m for the Greenland ice sheet.\nIce cover was mapped using\na combination of orthorectified panchromatic (band 8)\nimagery from the Landsat 7 Enhanced Thematic Mapper\nPlus (ETM+), distributed by the USGS, and RADARSAT-1\nSynthetic Amplitude Radar (SAR) amplitude images produced\nand distributed by I. Joughin at the Applied Physics\nLaboratory, University of Washington.\n\nThe Landsat imagery was acquired for the months of July\nthrough September in 1999, 2000 and 2001 (mostly 2000)\nand the RADARSAT imagery was acquired in fall of 2000.\n",
     "links": [
         {
@@ -74,7 +74,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "arctic",
         "gimp",

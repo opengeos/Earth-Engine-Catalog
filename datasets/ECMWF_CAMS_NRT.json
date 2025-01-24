@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "ECMWF/CAMS/NRT",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Copernicus Atmosphere Monitoring Service provides the capacity to\ncontinuously monitor the composition of the Earth's atmosphere at global and\nregional scales. The main global near-real-time production system is a data\nassimilation and forecasting suite providing two 5-day forecasts per day for\naerosols and chemical compounds that are part of the chemical scheme.\n\nPrior to 2021-07-01 only two parameters were available,\n1. Total Aerosol Optical Depth at 550 nm surface\n2. Particulate matter d < 25 um surface\nNote that system:time_start refers to forecast time.\n",
     "links": [
         {
@@ -86,7 +86,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "aerosol",
         "atmosphere",

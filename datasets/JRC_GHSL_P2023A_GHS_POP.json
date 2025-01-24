@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "JRC/GHSL/P2023A/GHS_POP",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This raster dataset depicts the spatial distribution of residential\npopulation, expressed as the absolute number of inhabitants of the cell.\nResidential population estimates between 1975 and 2020 in 5-year intervals\nand projections to 2025 and 2030 derived from CIESIN GPWv4.11 were\ndisaggregated from census or administrative units to grid cells, informed by\nthe distribution, volume, and classification of built-up area as mapped in\nthe [global GHSL built-up surface layers](https://developers.google.com/earth-engine/datasets/catalog/JRC_GHSL_P2023A_GHS_BUILT_S)\nper epoch.\n\nMore information about the GHSL main products can be found in the\n[GHSL Data Package 2023 report]\n(https://ghsl.jrc.ec.europa.eu/documents/GHSL_Data_Package_2023.pdf?t=1683540422)\n\nThe Global Human Settlement Layer (GHSL) project is supported by the\nEuropean Commission, Joint Research Center, and Directorate-General for\nRegional and Urban Policy.\n",
     "links": [
         {
@@ -91,7 +91,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "ghsl",
         "jrc",

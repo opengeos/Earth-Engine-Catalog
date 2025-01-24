@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "OpenLandMap/SOL/SOL_GRTGROUP_USDA-SOILTAX-HAPLUDALFS_P/v01",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Predicted USDA soil great groups at 250 m (probabilities).\n\nDistribution of the USDA soil great groups based on machine learning predictions\nfrom global compilation of soil profiles. To learn more about soil great groups\nplease refer to the [Illustrated Guide to Soil Taxonomy - NRCS - USDA](https://www.nrcs.usda.gov/wps/PA_NRCSConsumption/download/?cid=stelprdb1247203.pdf).\n\n* Processing steps are described in detail [here](https://gitlab.com/openlandmap/global-layers/tree/master/soil)\n* Antarctica is not included.\n\nTo access and visualize maps outside of Earth Engine, use [this page](https://opengeohub.org/about-openlandmap).\n\nIf you discover a bug, artifact or inconsistency in the LandGIS maps\nor if you have a question please use the following channels:\n\n *  [Technical issues and questions about the code](https://gitlab.com/openlandmap/global-layers/issues)\n *  [General questions and comments](https://disqus.com/home/forums/landgis/)\n",
     "links": [
         {

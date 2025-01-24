@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "COPERNICUS/CORINE/V18_5_1/100m",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The CORINE (coordination of information on the environment) Land Cover\n(CLC) inventory was initiated in 1985 to standardize data collection on land\nin Europe to support environmental policy development. The project is\ncoordinated by the European Environment Agency (EEA) in the frame of the EU\nCopernicus programme and implemented by national teams. The number of\nparticipating countries has increased over time currently including 33 (EEA)\nmember countries and six cooperating countries (EEA39) with a total area of\nover 5.8 Mkm2.\n\nThe reference year of the first CLC inventory was 1990 and the first update\ncreated in 2000. Later, the update cycle has become 6 years. Satellite\nimagery provides the geometrical and thematic basis for mapping with in-situ\ndata as essential ancillary information. The basic technical parameters of\nCLC (i.e. 44 classes in nomenclature, 25 hectares minimum mapping unit\n(MMU), and 100 meters minimum mapping width) have not changed since the\nbeginning, therefore the results of the different inventories are\ncomparable.\n",
     "links": [
         {
@@ -97,7 +97,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "clc",
         "copernicus",

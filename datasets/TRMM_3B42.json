@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "TRMM/3B42",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Tropical Rainfall Measuring Mission (TRMM) is a\njoint mission between NASA and the Japan Aerospace Exploration\nAgency (JAXA) designed to monitor and study tropical rainfall.\nThe 34B2 product contains a gridded, TRMM-adjusted, merged infrared\nprecipitation (mm/hr) and RMS precipitation-error estimate, with\na 3-hour temporal resolution and a 0.25 degree spatial resolution.\n\nSee the [algorithm description](https://trmm.gsfc.nasa.gov/3b42.html)\nand the [file specification](https://storm.pps.eosdis.nasa.gov/storm/data/docs/filespec.TRMM.V7.3B42.pdf)\nfor details.\n\nDocumentation:\n\n* [PI Documentation](https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/3B42_3B43_doc_V7.pdf)\n\n* [File Specification for TRMM Products](https://pps.gsfc.nasa.gov/Documents/filespec.TRMM.V7.pdf)\n\n* [Comparison between TRMM versions 6 and 7](https://pps.gsfc.nasa.gov/Documents/formatChangesV7.pdf)\n\n* [Readme](https://disc2.gesdisc.eosdis.nasa.gov/data/TRMM_L3/TRMM_3B42/doc/README.TRMM_V7.pdf)\n\n* [Details of the TMPA algorithm used in this product](https://pmm.nasa.gov/sites/default/files/imce/3B42_3B43_TMPA_restart.pdf)\n\n* [TRMM Data Gaps](https://web.archive.org/web/20200701000000*/ftp://gpmweb2.pps.eosdis.nasa.gov/tsdis/AB/docs/anomalous.html)\n\n* [Transition from TMPA to IMERG](https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/TMPA-to-IMERG_transition.pdf)\n",
     "links": [
         {
@@ -95,7 +95,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "3_hourly",
         "climate",

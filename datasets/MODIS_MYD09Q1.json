@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/MYD09Q1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MODIS Surface Reflectance products\nprovide an estimate of the surface spectral reflectance as it would be\nmeasured at ground level in the absence of atmospheric scattering or\nabsorption. Low-level data are corrected for atmospheric gases and\naerosols, yielding a level-2 basis for several higher-order gridded\nlevel-2 (L2G) and level-3 products.\n\nMYD09Q1 provides Bands 1\nand 2 at 250-meter resolution in an 8-day gridded level-3 product in the\nSinusoidal projection. Each MYD09Q1 pixel contains the best possible L2G\nobservation during an 8-day period as selected on the basis of\nhigh observation coverage, low view angle, the absence of clouds or cloud\nshadow, and aerosol loading. Science Data Sets provided for this product\ninclude reflectance values for Bands 1 and 2, and a quality rating.\n\nPlease visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data) for information on citing LP DAAC datasets.\n",
     "links": [
         {
@@ -86,7 +86,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "8_day",
         "aqua",

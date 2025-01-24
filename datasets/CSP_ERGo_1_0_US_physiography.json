@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "CSP/ERGo/1_0/US/physiography",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Physiography dataset represents the spatial intersection of landforms\n(available in EE as ERGo/1_0/US/landforms) and lithology (available in EE\nas ERGo/1_0/US/lithology) data layers. It provides 247 unique combinations\nout of a possible 270. The values for each type are formed by concatenating\nthe landform and lithology types (e.g., 1101 is \\\"Peak/ridge\\\" landform on\n\\\"carbonate\\\" lithology). This data layer is sometimes referred to as\ncharacterizing \\\"land facets\\\".\n\nThe landforms layer is based on the USGS's 10m NED DEM (available in EE\nas USGS/NED). The lithology layer is not basen on any DEM.\n\nThis dataset is provided just for the US, because of the availability\nof the lithology data layer, though these data are likely available for\nother countries.\n",
     "links": [
         {

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "CPOM/CryoSat2/ANTARCTICA_DEM",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This dataset is a digital elevation model (DEM) of the\nAntarctic ice sheet and ice shelves based on\nobservations recorded by the CryoSat-2 satellite\nradar altimeter between July 2010 and July 2016.\n\nThe DEM is formed from spatio-temporal fits to elevation\nmeasurements accumulated within 1, 2, and 5 km grid cells,\nand is posted at the modal resolution of 1 km. The median\nand root mean square difference between the DEM and 2.3*10&#8311;\nairborne laser altimeter measurements acquired during\nNASA Operation IceBridge campaigns are -0.30 and 13.50 m,\nrespectively.\n\nThe DEM uncertainty rises in regions of high slope,\nespecially where elevation measurements were acquired in\nlow-resolution mode; taking this into account, we estimate\nthe average accuracy to be 9.5 m.\n",
     "links": [
         {
@@ -74,7 +74,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "antarctica",
         "cpom",

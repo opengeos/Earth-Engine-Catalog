@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/061/MOD17A2HGF",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MOD17A2HGF Version 6.1 Gross Primary Productivity (GPP) product\nis a cumulative 8-day composite of values with 500 meter (m) pixel size\nbased on the radiation use efficiency concept that can be potentially used\nas inputs to data models to calculate terrestrial energy, carbon,\nwater cycle processes, and biogeochemistry of vegetation.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/972/MOD17_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/95/MOD17_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MOD17A2HGF)\n",
     "links": [
         {
@@ -82,7 +82,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "8_day",
         "global",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NASA/ORNL/DAYMET_V4",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Daymet V4 provides gridded estimates of daily weather parameters for\nContinental North America, Hawaii, and Puerto Rico (Data for Puerto Rico is available starting\nin 1950). It is derived from selected meteorological station data and various supporting data\nsources.\n\nCompared to the previous version, Daymet V4 provides effective solutions to known issues and\nfurther considers improvements to what were believed to be input weather station biases.\nImprovements include:\n\n- Reductions in the timing bias of input reporting weather station measurements.\n\n- Improvement to the three-dimensional regression model techniques in the core algorithm.\n\n- A novel approach to handling high elevation temperature measurement biases.\n\n2020 and 2021 data are ingested from V4 R1 sources\n\nDocumentation:\n\n* [ORNL DAAC Dataset Documentation](https://daac.ornl.gov/DAYMET/guides/Daymet_Daily_V4.html)\n\n* [Dataset Documentation](https://daac.ornl.gov/daacdata/daymet/Daymet_Daily_V4/comp/Daymet_Daily_V4.pdf)\n\n* [The THREDDS location for this Collection](https://thredds.daac.ornl.gov/thredds/catalogs/ornldaac/Regional_and_Global_Data/DAYMET_COLLECTIONS/DAYMET_COLLECTIONS.html)\n",
     "links": [
         {
@@ -100,7 +100,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "climate",
         "daily",

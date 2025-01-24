@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "OpenET/ENSEMBLE/CONUS/GRIDMET/MONTHLY/v2_0",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The OpenET dataset includes satellite-based data on the total amount of\nwater that is transferred from the land surface to the atmosphere through\nthe process of evapotranspiration (ET). OpenET provides ET data from\nmultiple satellite-driven models, and also calculates a single \"ensemble\nvalue\" from the model ensemble. The models currently included in the OpenET\nmodel ensemble are ALEXI/DisALEXI, eeMETRIC, geeSEBAL, PT-JPL, SIMS, and\nSSEBop. The OpenET ensemble ET value is calculated as the mean of the\nensemble after filtering and removing outliers using the median absolute\ndeviation approach. All models currently use Landsat satellite data to\nproduce ET data at a pixel size of 30 meters by 30 meters (0.22 acres per\npixel). The monthly ET dataset provides data on total ET by month as an\nequivalent depth of water in millimeters.\n\n[Additional information](https://openetdata.org/methodologies/)\n",
     "links": [
         {

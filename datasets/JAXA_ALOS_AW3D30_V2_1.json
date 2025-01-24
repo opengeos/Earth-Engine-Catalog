@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "JAXA/ALOS/AW3D30/V2_1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "ALOS World 3D - 30m (AW3D30) is a global digital surface\nmodel (DSM) dataset with a horizontal resolution of approximately\n30 meters (1 arcsec mesh). The dataset is based on the DSM dataset\n(5-meter mesh version) of the [World 3D Topographic Data](https://www.aw3d.jp/en/).\nMore details are available in the dataset [documentation](https://www.eorc.jaxa.jp/ALOS/en/aw3d30/aw3d30v11_format_e.pdf).\n\nIn the version 2.1, released in April 2018, the source AW3D DSM has been upgraded\nto version 2. Masks of the land water and low correlation pixels were also filled\nwith existing DEMs in addition to the cloud and snow pixels between 60 degrees\nNorth and 60 degrees South. In Japan area, filling was carried out after updating\ncoastline information.\n\nThe AW3D DSM elevation is calculated by an image matching process\nthat uses a stereo pair of optical images. Clouds, snow, and ice are\nautomatically identified during processing and applied the\nmask information. However, mismatched points sometimes\nremain especially surrounding (or at the edges of) clouds, snow,\nand ice areas, which cause some height errors in the final DSM.\n\nHere are some example areas with data values outside of valid elevation\nrange. Impossibly low negative values are concentrated in Antarctica around\n(-63.77, -61.660), (-77.22, -150.27), and (-73.29, 168.14); in Indonesia\naround (-5.36, 134.55); in Brazil around (-1.667113844, -50.6269684);\nand in Peru around (-10.45048137, -75.39459876) with approximate values of\n-1013, -998, -635, and -610 respectively. Impossibly high\npositive values are found in several locations in the Arctic around\n(79.83, -77.67) and (69.54, -75.42); in Fiji around (-16.58, 179.44)\nand (-18.96, 178.39); and in Nepal around (28.50, 84.56) with\napproximate values of 15369, 15213, and 10900 respectively.\n",
     "links": [
         {
@@ -105,7 +105,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "alos",
         "dem",

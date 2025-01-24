@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "LANDSAT/LT05/C02/T1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Landsat 5 TM Collection 2 Tier 1 DN values, representing scaled, calibrated at-sensor radiance.\n\nLandsat scenes with the highest available data quality\nare placed into Tier 1 and are considered suitable for time-series processing\nanalysis. Tier 1 includes Level-1 Precision Terrain (L1TP) processed data\nthat have well-characterized radiometry and are inter-calibrated across the\ndifferent Landsat sensors. The georegistration of Tier 1 scenes will be\nconsistent and within prescribed tolerances [<=12 m root mean square error\n(RMSE)]. All Tier 1 Landsat data can be considered consistent and\ninter-calibrated (regardless of sensor) across the full collection. See more\ninformation [in the USGS\ndocs](https://www.usgs.gov/core-science-systems/nli/landsat/landsat-collections).\n",
     "links": [
         {

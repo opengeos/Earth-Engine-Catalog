@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "OpenLandMap/SOL/SOL_ORGANIC-CARBON_USDA-6A1C_M/v02",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Soil organic carbon content in x 5 g / kg at 6 standard depths\n(0, 10, 30, 60, 100 and 200 cm) at 250 m resolution\n\nPredicted from a global compilation of soil points. Processing steps are described\nin detail [here](https://gitlab.com/openlandmap/global-layers/tree/master/soil).\nAntarctica is not included.\n\nTo access and visualize maps outside of Earth Engine, use [this page](https://opengeohub.org/about-openlandmap).\n\nIf you discover a bug, artifact or inconsistency in the LandGIS maps\nor if you have a question please use the following channels:\n\n *  [Technical issues and questions about the code](https://gitlab.com/openlandmap/global-layers/issues)\n *  [General questions and comments](https://disqus.com/home/forums/landgis/)\n",
     "links": [
         {

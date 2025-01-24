@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "LANDSAT/LC08/C02/T2_TOA",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Landsat 8 Collection 2 Tier 2\n  calibrated top-of-atmosphere (TOA) reflectance.\n  Calibration coefficients are extracted from the image metadata.\n  See [Chander et al. (2009)](https://www.sciencedirect.com/science/article/pii/S0034425709000169)\n  for details on the TOA computation.\nScenes not meeting Tier 1 criteria during\nprocessing are assigned to Tier 2. This includes Systematic terrain (L1GT) and\nSystematic (L1GS) processed scenes, as well as any L1TP scenes that do not meet\nthe Tier 1 specifications due to significant cloud cover, insufficient ground\ncontrol, and other factors. Users interested in Tier 2 scenes can analyze the\nRMSE and other properties to determine the suitability for use in individual\napplications and studies. See more information [in the USGS\ndocs](https://www.usgs.gov/core-science-systems/nli/landsat/landsat-collections).\n",
     "links": [
         {

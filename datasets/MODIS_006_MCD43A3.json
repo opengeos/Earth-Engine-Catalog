@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/006/MCD43A3",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MCD43A3 V6 Albedo Model dataset is a daily 16-day\nproduct. It provides both directional hemispherical reflectance\n(black sky albedo) and bihemispherical reflectance (white sky albedo)\nfor each of the MODIS surface reflectance bands (band 1 through\nband 7) as well as 3 broad spectrum bands (visible, near infrared,\nand shortwave).  Each 500m/pixel daily image is generated using\n16 days of data, centered on the given day.  A quality band is\nalso provided for each of the 10 albedo bands.\n\nDocumentation:\n\n* [User's Guide](https://www.umb.edu/spectralmass/terra_aqua_modis/v006)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/97/MCD43_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MCD43A3)\n",
     "links": [
         {
@@ -96,7 +96,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "albedo",
         "black_sky",

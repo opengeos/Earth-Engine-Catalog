@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "LANDFIRE/Vegetation/BPS/v1_4_0",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "LANDFIRE (LF), Landscape Fire and Resource Management Planning Tools, is a\nshared program between the wildland fire management programs of the U.S.\nDepartment of Agriculture's Forest Service, U.S. Department of the Interior's\nGeological Survey, and The Nature Conservancy.\n\nLANDFIRE (LF) layers are created using predictive landscape models based on\nextensive field-referenced data, satellite imagery and biophysical gradient\nlayers using classification and regression trees.\n\nLANDFIRE's (LF) Biophysical Settings (BPS) represents the vegetation that may have been dominant on the landscape prior to Euro-American settlement and is based on both the current biophysical environment and an approximation of the historical disturbance regime.\nMap units are based on NatureServe's Ecological Systems classification and represent the natural plant communities that may have been present during the reference period. Each BPS map unit is matched with a model of vegetation succession, and both serve as key inputs to the LANDSUM landscape succession model.\nThe actual time period for this data set is a composite of both the historical context provided by the fire regime and vegetation dynamics models and the more recent field and geospatial inputs used to create it.\nLF's current BPS is unchanged from LF National's BPS except for updates made to water, barren, and snow classes (additions or removal), so that non-vegetated cover types within the BPS product matches LF existing vegetation and fuel products.\nWith the final release of LF Remap for CONUS in mid to late 2020, the LF Remap BPS product will include the following as attributes: Mean Fire Return Interval (MFRI), Percent of Low-severity Fire (PLS), Percent of Mixed-severity Fire (PMS), Percent of Replacement-severity Fire (PRS), and Fire Regime Groups (FRG), so that the linkage of these characteristics to BPS is maintained.\nLF uses BPS to depict reference conditions of vegetation across landscapes.\n\nThe LANDIFRE Vegetation datasets include:\n\n* Biophysical Settings (BPS)\n* Environmental Site Potential (ESP)\n* Existing Vegetation Canopy Cover (EVC)\n* Existing Vegetation Height (EVH).\n* Existing Vegetation Type (EVT)\nThese layers are created using predictive landscape models based on extensive\nfield-referenced data, satellite imagery and biophysical gradient layers using\nclassification and regression trees.\n",
     "links": [
         {
@@ -70,7 +70,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "doi",
         "fire",

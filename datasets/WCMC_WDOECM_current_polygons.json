@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "WCMC/WDOECM/current/polygons",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "A geographically defined area other than a Protected Area, which is governed\nand managed in ways that achieve positive and sustained long-term outcomes\nfor the in situ conservation of biodiversity, with associated ecosystem\nfunctions and services and where applicable, cultural, spiritual,\nsocio-economic, and other locally relevant values.\n\nThe WDOECM has two feature classes with associated spatial\nand tabular data.\nThe World Database on Other Effective Area-based Conservation Measures\n(WDOECM) is a global repository of information on Other Effective\nArea-based Conservation Measures (OECMs). It is managed by the United\nNations Environment Programme's World Conservation Monitoring Centre\n(UNEP-WCMC) with support from the Convention on Biological Diversity\n(CBD).\n\n**WDOECM User Manual.** For details including methodologies,standards, data\nproviders, metadata field definitions and descriptions, refer\nto the [WDOECM User Manual](https://wdpa.s3-eu-west-1.amazonaws.com/WDPA_Manual/English/WDPA_WDOECM_Manual_1_6.pdf).\n\n**Asset Naming Conventions.** WCMC updates the WDOECM on a\nmonthly basis. The most recent version is always available as\nWCMC/WDOECM/current/polygons and WCMC/WDOECM/current/points. Historical\nversions, starting with May 2024, are available in the format\nWCMC/WDOECM/YYYYMM/polygons and WCMC/WDOECM/YYYYMM/points.\n\nPlease see the [WDOECM User Manual](https://wdpa.s3-eu-west-1.amazonaws.com/WDPA_Manual/English/WDPA_WDOECM_Manual_1_6.pdf)\nfor additional details on the field list.\n",
     "links": [
         {
@@ -76,7 +76,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "boundaries",
         "iucn",

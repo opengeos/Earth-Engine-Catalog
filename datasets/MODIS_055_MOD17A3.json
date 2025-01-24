@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/055/MOD17A3",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MOD17A3 V055 product provides information about\nannual Gross and Net Primary Productivity (NPP) at 1km pixel resolution.\nNet Primary Productivity (NPP) defines the rate at which all plants\nin an ecosystem produce net useful chemical energy.  In other words,\nNPP is equal to the difference between the rate at which plants\nin an ecosystem produce useful chemical energy (or GPP), and the\nrate at which they expend some of that energy for respiration.\n\nThe version 055 of the NPP product is produced by the Numerical\nTerradynamic Simulation Group ([NTSG](https://www.ntsg.umt.edu)),\nUniversity of Montana (UMT).  It corrects the problem with cloud-contaminated\nMODIS LAI-FPAR inputs to the MOD17 algorithm. The original, uncorrected\ndatasets constitute the version 4 NPP products. For further details\nregarding the differences between the NTSG and NASA versions of\nthis product, please consult [this document](https://lpdaac.usgs.gov/documents/188/MOD17_NTSG_Note.pdf)\n",
     "links": [
         {
@@ -88,7 +88,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "global",
         "gpp",

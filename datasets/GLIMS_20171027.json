@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "GLIMS/20171027",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Global Land Ice Measurements from Space (GLIMS) is\nan international initiative with the goal of repeatedly surveying\nthe world's estimated 200,000 glaciers.\n\nThe project seeks\nto create a globally comprehensive inventory of land ice, including\nmeasurements of glacier area, geometry, surface velocity, and\nsnow line elevation. To perform these analyses, the GLIMS project\nuses satellite data, primarily from the Advanced Spaceborne Thermal\nEmission and Reflection Radiometer (ASTER) and the Landsat Enhanced\nThematic Mapper Plus (ETM+), as well as historical information\nderived from maps and aerial photographs.\n\nEach feature in this dataset is a polygonal boundary of a glacier at the\ntime of analysis.  A few glacier IDs have hundreds of distinct rows over\ntime.\n\nThis dataset is a snapshot of the inventory of glacier boundaries as of\nOctober 27, 2017, providing over 690,000 rows.\n",
     "links": [
         {
@@ -103,7 +103,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "glacier",
         "glims",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "projects/geoscience-aus-cat/assets/ga_ls8c_nbart_gm_cyear_3",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This product provides statistical tools to exploit the time series of Landsat 8 data available in Digital Earth Australia, providing annual images of general conditions and how much an area changes for a given year.\n\nThe geomedian part of the product provides an \"average\" cloud-free image over the given year. The geomedian image is calculated with a multi-dimensional median, using all the spectral measurements from the satellite imagery at the same time in order to maintain the relationships among the measurements.\n\nThe median absolute deviation part of the product uses three measures of variance, each of which provides a \"second order\" high dimensional statistical composite for the given year. The three variance measures show how much an area varies from the \"average\" in terms of \"distance\" based on factors such as brightness and spectra:\n\n* Euclidean distance (EMAD)\n* Cosine (spectral) distance (SMAD)\n* Bray Curtis dissimilarity (BCMAD)\n\nTogether, they provide information on variance in the landscape over the given year and are useful for change detection applications.\n\nFor more information, please see the [DEA Geometric Median and Median Absolute Deviation Landsat](https://cmi.ga.gov.au/data-products/dea/645/dea-geometric-median-and-median-absolute-deviation-landsat)\n\nThis product is part of the [Digital Earth Australia Program](https://www.dea.ga.gov.au/)\n",
     "links": [
         {

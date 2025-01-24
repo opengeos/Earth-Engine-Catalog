@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/MCD43A1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MODerate-resolution Imaging Spectroradiometer\n(MODIS) BRDF/Albedo Model Parameters product (MCD43A1) contains datasets\nproviding users with weighting parameters for the models used to derive the\nAlbedo and BRDF products (MCD43A3 and MCD43A4). The models support the spatial\nrelationship and parameter characterization best describing the differences in\nradiation due to the scattering (anisotropy) of each pixel, relying on\nmulti-date, atmospherically corrected, cloud-cleared input data measured over\n16-day periods. Both Terra and Aqua data are used in the generation of this\nproduct, providing the highest probability for quality input data and\ndesignating it as an MCD, meaning Combined, product.\n\nVersion-5 MODIS/Terra+Aqua BRDF/Albedo\nproducts are Validated Stage 1, meaning that accuracy has been\nestimated using a small number of independent measurements obtained\nfrom selected locations and time periods and ground-truth/field\nprogram efforts. Although there may be later improved versions, these\ndata are ready for use in scientific publications.\n\nPlease visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data) for information on citing LP DAAC datasets.\n",
     "links": [
         {
@@ -86,7 +86,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "16_day",
         "albedo",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/006/MOD14A2",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MOD14A2 V6 dataset provides 8-day fire mask composites\nat 1km resolution. It contains the maximum value of the individual\npixel classes over the compositing period. Along with the fire\nmask, an associated quality information layer is also provided.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/88/MOD14_User_Guide_v6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/87/MOD14_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MOD14A2)\n",
     "links": [
         {
@@ -96,7 +96,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "8_day",
         "fire",

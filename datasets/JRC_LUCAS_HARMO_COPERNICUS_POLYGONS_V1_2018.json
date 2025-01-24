@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "JRC/LUCAS_HARMO/COPERNICUS_POLYGONS/V1/2018",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The\n[Land Use/Cover Area frame Survey (LUCAS)](https://ec.europa.eu/eurostat/web/lucas)\nin the European Union (EU) was set up to provide statistical information.\nIt represents a triennial in-situ landcover and land-use data-collection\nexercise that extends over the whole of the EU's territory.  LUCAS collects\ninformation on land cover and land use, agro-environmental variables, soil,\nand grassland. The surveys also provide spatial information to analyse the\nmutual influences between agriculture, environment, and countryside, such as\nirrigation and land management.\n\nThe dataset presented here is the LUCAS Copernicus module. It was set set up\nin 2018 to provide Earth Observation relevant data for the first time in\nLUCAS history. The dataset consist of 63,287 polygons of various sizes and\nshapes with consistent land cover, making the ideal tool for polygon-based\nextraction from remote sensing data. The harmonization process has improved\nthe land cover legend to LUCAS Level-3, and has joined, wherever deemed\nappropriate, the attribute data from the 2018 LUCAS survey, augmenting the\npossibilities for data extraction to the fullest potential of the LUCAS\ncollected variables.\n\nThe text \"C1 (Instructions)\" in the table schema descriptions refers to\n[this document](https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_harmonised/3_supporting/LUCAS2018-C1-Instructions.pdf).\n\nSee also [the LUCAS points dataset](JRC_LUCAS_HARMO_THLOC_V1).\n",
     "links": [
         {

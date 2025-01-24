@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NASA/VIIRS/002/VNP21A1N",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The NASA Suomi National Polar-Orbiting Partnership (Suomi NPP) Visible\nInfrared Imaging Radiometer Suite (VIIRS) Land Surface Temperature and\nEmissivity (LST&E) Night Version 1 product (VNP21A1N) is compiled daily\nfrom nighttime Level 2 Gridded (L2G) intermediate products.\n\nThe L2G process maps the daily VNP21 swath granules onto a sinusoidal MODIS\ngrid and stores all observations overlapping a gridded cell for a given\nnight. The VNP21A1 algorithm sorts through all these observations for each\ncell and estimates the final LST value as an average from all cloud-free\nobservations that have good LST accuracies. Only observations having\nobservation coverage more than a certain threshold (15%) are considered for\nthis averaging.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/429/VNP21_User_Guide_V1.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/1332/VNP21_ATBD_V1.pdf)\n\n* [General Documentation](https://lpdaac.usgs.gov/products/vnp21a1nv002/)\n\n* [Land Product Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/browse?sensor=VIIRS&sat=SNPP)\n",
     "links": [
         {
@@ -89,12 +89,12 @@
             "interval": [
                 [
                     "2012-01-19T00:00:00Z",
-                    "2025-01-19T00:00:00Z"
+                    "2025-01-22T00:00:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "daily",
         "land",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/061/MOD10A2",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "MOD10A2 is a snow cover dataset from the MODIS on the Terra satellite.\nThe dataset reports the maximum snow cover extent during an eight-day\nperiod at the resolution of 500 m.\n\nAn eight-day compositing period was chosen because that is the exact ground\ntrack repeat period of the Terra and Aqua platforms. Snow cover over eight\ndays is mapped as maximum snow extent in one SDS and as a chronology of\nobservations in the other SDS. Eight-day periods begin on the first day of\nthe year and extend into the next year. The product can be produced with\ntwo to eight days of input. There may not always be eight days of input,\nbecause of various reasons, so the user should check the attributes to\ndetermine on what days observations were obtained.\n\n* [General documentation](https://doi.org/10.5067/MODIS/MOD10A2.061)\n* [User's Guide]( https://modis-snow-ice.gsfc.nasa.gov/uploads/snow_user_guide_C6.1_final_revised_april.pdf),\n",
     "links": [
         {
@@ -77,12 +77,12 @@
             "interval": [
                 [
                     "2000-02-18T00:00:00Z",
-                    "2025-01-01T00:00:00Z"
+                    "2025-01-09T00:00:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "daily",
         "geophysical",

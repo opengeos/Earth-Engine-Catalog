@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NASA/GEOS-CF/v1/rpl/htf",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This dataset contains meteorological replay (rpl) of high-temporal\nfrequency data (htf).\nThe Goddard Earth Observing System Composition Forecast (GEOS-CF) system is\na high-resolution (0.25&deg;) global constituent prediction system from\nNASA's [Global Modeling and Assimilation Office(GMAO)](\nhttps://gmao.gsfc.nasa.gov/).\n\nGEOS-CF offers a new tool for atmospheric chemistry research, with the goal\nto supplement NASA's broad range of space-based and in-situ observations.\nGEOS-CF expands on the GEOS weather and aerosol modeling system by\nintroducing the [GEOS-Chem](http://wiki.seas.harvard.edu/geos-chem/)\nchemistry module to provide hindcasts and 5-days forecasts of atmospheric\nconstituents including ozone (O3), carbon monoxide (CO), nitrogen dioxide\n(NO2), sulfur dioxide (SO2), and fine particulate matter (PM2.5). The\nchemistry module integrated in GEOS-CF is identical to the offline GEOS-Chem\nmodel and readily benefits from the innovations provided by the GEOS-Chem\ncommunity.\n\nEvaluation of GEOS-CF against satellite, ozonesonde, and surface\nobservations for years 2018&ndash;2019 shows realistic simulated\nconcentrations of O3, NO2, and CO, with normalized mean biases of &minus;0.1\nto 0.3, normalized root mean square errors between 0.1&ndash;0.4, and\ncorrelations between 0.3&ndash;0.8. Comparisons against surface observations\nhighlight the successful representation of air pollutants in many regions of\nthe world and during all seasons, yet also highlight current limitations,\nsuch as a global high bias in SO2 and an overprediction of summertime O3\nover the Southeast United States.\n\nGEOS-CF v1.0 generally overestimates aerosols by 20%&ndash;50% due to known\nissues in GEOS-Chem v12.0.1 that have been addressed in later versions. The\n5-days forecasts have skill scores comparable to the 1-day hindcast. Model\nskills can be improved significantly by applying a bias-correction to the\nsurface model output using a machine-learning approach.\n",
     "links": [
         {
@@ -65,12 +65,12 @@
             "interval": [
                 [
                     "2018-01-01T00:00:00Z",
-                    "2025-01-21T12:00:00Z"
+                    "2025-01-22T12:00:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "composition",
         "forecast",

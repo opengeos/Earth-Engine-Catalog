@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "IDAHO_EPSCOR/PDSI",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Palmer Drought Severity Index dataset provides\nhigh spatial resolution (~4-km) thrice-monthly estimates of this\nwidely used measure of integrated water supply and demand anomalies\nacross the contiguous United States from 1979-present. The PDSI\nis calculated using precipitation and potential evapotranspiration\nderived from the gridded meteorological dataset of Abatzoglou (2013).\n\nPotential evapotranspiration is computed using the Penman-Montieth\nequation for a reference grass surface. Available soil water holding\ncapacity in the top 2.5m of the soil was derived from the STATSGO\nsoils database and used in the computations. Whereas PDSI has typically\nbeen computed on monthly timescales, we compute these data three-times\na month to provide more timely updates. Due to the spin-up of PDSI\ncalculations, data for the first year of record should be used\nsparingly.\n\nThis dataset contains provisional products that are replaced with\nupdated versions when the complete source data become available.\nProducts can be distinguished by the value of the 'status' property.\nAt first, assets are ingested with status='early'. After several\ndays, they are replaced by assets with status='provisional'.\nAfter about 2 months, they are replaced by the final assets with\nstatus='permanent'.\n",
     "links": [
         {
@@ -82,7 +82,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "climate",
         "conus",

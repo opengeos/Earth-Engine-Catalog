@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "JCU/Murray/GIC/global_tidal_wetland_change/2019",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Murray Global Tidal Wetland Change Dataset contains maps of the global\nextent of tidal wetlands and their change. The maps were developed from a three\nstage classification that sought to (i) estimate the global distribution of\ntidal wetlands (defined as either tidal marsh, tidal flat or mangrove\necosystems), (ii) detect their change over the study period, and (iii) estimate\nthe ecosystem type and timing of tidal wetland change events.\n\nThe dataset was produced by combining observations from 1,166,385 satellite\nimages acquired by Landsat 5 to 8 with environmental data of variables known\nto influence the distributions of each ecosystem type, including temperature,\nslope, and elevation. The image contains bands for a tidal wetland extent\nproduct (random forest probability of tidal wetland occurrence) for the\nstart and end time-steps of the study period and a tidal wetland change product\nover the full study period (loss and gain of tidal wetlands).\n\nPlease see the [usage notes](https://www.globalintertidalchange.org/data-usage)\non the [project website](https://www.globalintertidalchange.org/). A full\ndescription of the methods, validation, and limitations of the data produced by\nthis software is available in the associated scientific paper.\n\nSee also\n[UQ/murray/Intertidal/v1_1/global_intertidal](UQ_murray_Intertidal_v1_1_global_intertidal)\nfor global maps of the distribution of tidal flat ecosystems.\n",
     "links": [
         {

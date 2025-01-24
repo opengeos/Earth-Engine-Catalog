@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/006/MYDOCGA",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MYDOCGA V6 ocean reflectance product consists of\n1 kilometer reflectance data from Aqua MODIS bands 8-16. The product\nis referred to as ocean reflectance, because bands 8-16 are used\nprimarily to produce ocean products, but this is not an ocean product\nas the tiles produced are land tiles.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/306/MOD09_User_Guide_V6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/305/MOD09_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MYDOCGA)\n",
     "links": [
         {
@@ -82,7 +82,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "aqua",
         "daily",

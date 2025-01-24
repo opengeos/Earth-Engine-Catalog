@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "JAXA/ALOS/PALSAR/YEARLY/SAR_EPOCH",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The global 25m PALSAR/PALSAR-2 mosaic is a seamless global\nSAR image created by mosaicking strips of SAR imagery\nfrom PALSAR/PALSAR-2. For each year and location,\nthe strip data were selected through visual inspection of the\nbrowse mosaics available over the period, with those showing minimum\nresponse to surface moisture preferentially used.\nOnly data from the target year have been used for each annual mosaic,\nand hence no gap-filling using data from previous years in case of gaps\nin the annual global coverage.\n\nThere is no data for 2011-2014 due to the gap between ALOS and ALOS-2\ntemporal coverage.\n\nThe SAR imagery was ortho-rectificatied and slope corrected using the\ndigital surface model ALOS World 3D - 30m (AW3D30).\n\nA destriping process (Shimada & Isoguchi, 2002, 2010) was applied\nto equalize the intensity differences between neighboring strips,\noccurring largely due to seasonal and daily differences\nin surface moisture conditions.\n\nPolarization data are stored as 16-bit digital numbers (DN).\nThe DN values can be converted to gamma naught values\nin decibel unit (dB) using the following equation:\n\n  *    &#947;&#8320; = 10log&#8321;&#8320;(DN&#178;) - 83.0 dB\n\nAttention:\n\n*   Backscatter values may vary significantly from path to path\n    over high latitude forest areas. This is due to the change of\n    backscattering intensity caused by freezing trees in winter.\n\nMore information is available in the provider's\n[Dataset Description](https://www.eorc.jaxa.jp/ALOS/en/dataset/pdf/DatasetDescription_PALSAR2_Mosaic_ver212.pdf).\n",
     "links": [
         {
@@ -69,7 +69,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "alos",
         "alos2",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NASA/GSFC/MERRA/flx/2",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "M2T1NXFLX (or tavg1_2d_flx_Nx) is an hourly time-averaged data\ncollection in Modern-Era Retrospective analysis for Research and\nApplications version 2 (MERRA-2). This collection consists of\nassimilated surface flux diagnostics, such as total precipitation, bias\ncorrected total precipitation, surface air temperature, surface specific\nhumidity, surface wind speed, and evaporation from turbulence. The\n\"surface\" in this data collection is the model surface layer. The\nheights of the model surface layer (HLML) vary with time and location,\nwith the value of ~60 meters above ground. The data field is time-stamped\nwith the central time of an hour starting from 00:30 UTC, e.g.: 00:30,\n01:30, ... , 23:30 UTC.\n\nMERRA-2 is the latest version of global atmospheric reanalysis for the\nsatellite era produced by [NASA Global Modeling and Assimilation Office\n(GMAO)](https://gmao.gsfc.nasa.gov/) using the [Goddard Earth Observing\nSystem Model (GEOS)](https://gmao.gsfc.nasa.gov/GEOS_systems/) version\n5.12.4. The dataset covers the period of 1980-present with the latency\nof ~3 weeks after the end of a month.\n",
     "links": [
         {
@@ -77,7 +77,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "merra",
         "sea_salt",

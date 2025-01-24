@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "UMN/PGC/ArcticDEM/V2/5m",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "ArcticDEM is a digital surface model (DSM) that portrays first-return\nelevation values that include vegetation, tree canopy, buildings, and other\nman-made surface features. The 2m asset is a collection of strips rather\nthan a single mosaic due to projection differences between strips.\n\nMosaicked DEM files are compiled from the best quality strip DEM files\nwhich have been blended and feathered to reduce void areas and edge-matching\nartifacts. Filtered IceSAT altimetry data has been applied to the raster\nfiles to improve absolute accuracy.\n",
     "links": [
         {
@@ -83,7 +83,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "arctic",
         "dem",

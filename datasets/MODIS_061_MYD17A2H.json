@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/061/MYD17A2H",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MYD17A2H V6.1 Gross Primary Productivity (GPP) product\nis a cumulative 8-day composite with a 500m resolution. The product\nis based on the radiation-use efficiency concept and can be potentially\nused as inputs to data models to calculate terrestrial energy,\ncarbon, water cycle processes, and biogeochemistry of vegetation.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/972/MOD17_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/95/MOD17_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MYD17A2H)\n",
     "links": [
         {
@@ -89,12 +89,12 @@
             "interval": [
                 [
                     "2021-01-01T00:00:00Z",
-                    "2025-01-01T00:00:00Z"
+                    "2025-01-09T00:00:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "8_day",
         "aqua",

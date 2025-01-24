@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/061/MOD13A3",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MOD13A3 V6.1 product data is provided monthly at 1 kilometer (km)\nspatial resolution. In generating this monthly product, the algorithm\ningests all the MOD13A2 products that overlap the month and employs a\nweighted temporal average.\n\nVegetation indices are used for global monitoring of vegetation conditions\nand are used in products displaying land cover and land cover changes. These\ndata may be used as input for modeling global biogeochemical and hydrologic\nprocesses as well as global and regional climate. Additional applications\ninclude characterizing land surface biophysical properties and processes,\nsuch as primary production and land cover conversion.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/621/MOD13_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/104/MOD13_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MOD13A3)\n",
     "links": [
         {
@@ -82,7 +82,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "evi",
         "global",

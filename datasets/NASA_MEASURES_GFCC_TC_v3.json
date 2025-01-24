@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NASA/MEASURES/GFCC/TC/v3",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Landsat Vegetation Continuous Fields (VCF) tree cover layers contain\nestimates of the percentage of horizontal ground in each 30-m pixel covered\nby woody vegetation greater than 5 meters in height. The dataset is available\nfor four epochs centered on the years 2000, 2005, 2010 and 2015. The dataset\nis derived from the GFCC Surface Reflectance product (GFCC30SR), which is\nbased on enhanced Global Land Survey (GLS) datasets. The GLS datasets are\ncomposed of high-resolution Landsat 5 Thematic Mapper (TM) and Landsat 7\nEnhanced Thematic Mapper Plus (ETM+) images at 30 meter resolution.\n\nTree cover, the proportional, vertically projected area of vegetation\n(including leaves, stems, branches, etc.) of woody plants above a given\nheight, affects terrestrial energy and water exchanges, photosynthesis and\ntranspiration, net primary production, and carbon and nutrient fluxes. Tree\ncover also affects habitat quality and movements of wildlife, residential\nproperty value for humans, and other ecosystem services. The continuous\nclassification scheme of the VCF product enables better depiction of land\ncover gradients than traditional discrete classification schemes.\nImportantly for detection and monitoring of forest changes (e.g.,\ndeforestation and degradation), tree cover provides a measurable attribute\nupon which to define forest cover and its changes. Changes in tree cover\nover time can be used to monitor and retrieve site-specific histories of\nforest change.\n\nThe dataset has been produced for four year epochs: 2000, 2005, 2010, and\n2015 with an image in the collection for each available WRS2 path/row.\n\nDocumentation:\n\n* [User's guide](https://lpdaac.usgs.gov/documents/1371/GFCC_User_Guide_V1.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/1370/GFCC_ATBD.pdf)\n\nProvider's Note: Due to the end of NASA MEaSUREs funding, free versions of this dataset are no\nlonger being produced. Interested parties can obtain updated and expanded versions at\nwww.terraPulse.com.\n",
     "links": [
         {
@@ -80,7 +80,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "forest",
         "glcf",

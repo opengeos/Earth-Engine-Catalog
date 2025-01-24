@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "LANDSAT/MANGROVE_FORESTS",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The database was prepared using Landsat satellite data from the year 2000.\nMore than 1,000 Landsat scenes obtained from the USGS Earth Resources\nObservation and Science Center (EROS) were classified using hybrid\nsupervised and unsupervised digital image classification techniques. This\ndatabase is the first, most comprehensive mangrove assessment of the world\n([Giri et al., 2011](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1466-8238.2010.00584.x)).\nPartial funding of this research was provided by NASA.\n\nThe mangrove database is being used for identifying priority areas\nfor mangrove conservation, studying the role of mangrove forests in\nsaving lives and properties from natural disasters (e.g. tsunami),\ncarbon accounting, and biodiversity conservation. The USGS EROS has\nbeen using the data to study the impact of sea level rise on mangrove\necosystems. The database serves as a baseline for mangrove\nmonitoring.\n\n[General Documentation](https://sedac.ciesin.columbia.edu/data/set/lulc-global-mangrove-forests-distribution-2000/docs)\n",
     "links": [
         {
@@ -83,7 +83,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "annual",
         "ciesin",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "LANDSAT/GLS1975_MOSAIC",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Global Land Survey (GLS) 1975 is a\nglobal collection of imagery from the Landsat Multispectral Scanner\n(MSS).  Most scenes were acquired by Landsat 1&ndash;3 during the\nyears from 1972&ndash;1983.  A few gaps in the Landsat 1&ndash;3 data\nhave been filled with scenes acquired by Landsat 4&ndash;5 during the\nyears 1982&ndash;1987.\n\nThese data contain 4 spectral bands:\nGreen, Red, an NIR band, and a SWIR band.  In the typical false-color\npresentation the images appear red because the NIR band, displayed as\nred, highlights vegetation.\n\nAll scenes in the collection are included in this composite image.\n",
     "links": [
         {

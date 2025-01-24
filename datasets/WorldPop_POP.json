@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "WorldPop/POP",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "High-resolution, contemporary data on human population distributions are\na prerequisite for the accurate measurement of the impacts of population\ngrowth, for monitoring changes, and for planning interventions. The WorldPop\nproject aims to meet these needs through the provision of detailed and open\naccess population distribution datasets built using transparent and\npeer-reviewed approaches.\n\nFull details on the methods and datasets used in constructing the data,\nalong with open access publications, are provided on the [WorldPop\nwebsite](https://www.worldpop.org/). In brief, recent census-based\npopulation counts matched to their associated administrative units are\ndisaggregated to &asymp;100x100m grid cells through machine learning\napproaches that exploit the relationships between population densities and a\nrange of geospatial covariate layers. The datasets depict estimated number\nof people residing in each grid cell in 2010, 2015, and other years.\n\nFurther WorldPop gridded datasets on population age structures,\npoverty, urban growth, and population dynamics are freely available on\nthe WorldPop website. WorldPop represents a collaboration between\nresearchers at the University of Southampton, Universite Libre de\nBruxelles, and University of Louisville. The project is principally\nfunded by the Bill and Melinda Gates Foundation.\n",
     "links": [
         {

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "UMT/NTSG/v2/MODIS/GPP",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MODIS Gross Primary Production (GPP) CONUS dataset estimates GPP using\nMODIS Surface Reflectance for CONUS. GPP is the amount of\ncarbon captured by plants in an ecosystem and is an essential component in\nthe calculations of Net Primary Production (NPP). GPP is calculated using the\nMOD17 algorithm (see [MOD17 User\nGuide](https://www.ntsg.umt.edu/files/modis/MOD17UsersGuide2015_v3.pdf)) with\nMODIS Surface Reflectance, gridMET, and the National Land Cover Database.\n",
     "links": [
         {
@@ -75,7 +75,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "8_day",
         "conus",

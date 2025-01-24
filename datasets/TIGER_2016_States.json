@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "TIGER/2016/States",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The United States Census Bureau TIGER dataset contains the 2016 boundaries\nfor the primary governmental divisions of the United States. In addition\nto the fifty states, the Census Bureau treats the District of Columbia,\nPuerto Rico, and each of the island areas (American Samoa, the Commonwealth\nof the Northern Mariana Islands, Guam, and the U.S. Virgin Islands) as the\nstatistical equivalents of States for the purpose of data presentation.\nEach feature represents a state or state equivalent.\n\nFor full technical details on all TIGER 2016 products, see the [TIGER\ntechnical documentation](https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2016/TGRSHP2016_TechDoc.pdf).\n",
     "links": [
         {
@@ -79,7 +79,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "census",
         "state",

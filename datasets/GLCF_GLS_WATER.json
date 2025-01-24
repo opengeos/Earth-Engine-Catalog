@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "GLCF/GLS_WATER",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Global Inland Water dataset shows inland surface water bodies, including\nfresh and saline lakes, rivers, and reservoirs.\n\nFrom the GLS 2000 epoch, 3,650,723 km2 of inland water were identified,\naround three quarters of which were in North America and Asia. Boreal\nforests and tundra hold the largest portion of inland water, about 40% of\nthe global total. The data exhibits strong linear correlation with both the\nMODIS dataset as well as 30-m resolution datasets over the United States\nand Canada. Residual errors were due primarily to the seasonality of water\ncover, snow and ice, and residual clouds.\n\nThe dataset contains one or more image for each available Landsat WRS2\npath/row.\n\nDocumentation:\n\n* [User's guide](https://lpdaac.usgs.gov/documents/1371/GFCC_User_Guide_V1.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/1370/GFCC_ATBD.pdf)\n",
     "links": [
         {
@@ -76,7 +76,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "glcf",
         "landsat_derived",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "WRI/Aqueduct_Water_Risk/V4/baseline_annual",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Aqueduct 4.0 is the latest iteration of WRI's water risk framework designed\nto translate complex hydrological data into intuitive indicators of water\nrelated risk. This dataset has curated 13 water risk indicators for\nquantity, quality and reputational concerns into a comprehensive framework.\nFor 5 of the 13 indicators, a global hydrological model called PCR-GLOBWB 2\nhas been used to generate novel datasets on sub-basic water supply.\nThe PCR-GLOBWB 2 model is also used to project future sub-basin water\nconditions using CMIP6 climate forcings. The projections center around\nthree periods (2030, 2050, and 2080) under three future scenarios\n(business-as-usual SSP 3 RCP 7.0, optimistic SSP 1 RCP 2.6, and\npessimistic SSP 5 RCP 8.5).\n\nThe water risk indicators have been aggregated by category (quantity,\nquality, reputational, and overall) into composite risk scores using\nsector-specific weighting schemes. In addition, select sub-basin scores have\nbeen aggregated into country and provincial administrative boundaries using\na weighted average approach, where sub-basins with more demand have a higher\ninfluence over the final administrative score.\n\nThe WRI Aqueduct baseline annual dataset provides a comprehensive overview\nof water-related risks on an annual basis which includes indicators such as\nbaseline water stress, baseline water depletion and interannual variability.\nThis annual data is essential for understanding long-term trends in water\nrisk, assessing the cumulative impacts of human activities on water\nresources, and developing long-term water management strategies.\n\nThis [technical note](https://www.wri.org/research/aqueduct-40-updated-decision-relevant-global-water-risk-indicators)\nexplains in detail the framework, methodology, and data used\nin developing Aqueduct Floods.\n",
     "links": [
         {
@@ -77,7 +77,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "monitoring",
         "wri",

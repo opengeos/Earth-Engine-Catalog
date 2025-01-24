@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "UMT/NTSG/v2/LANDSAT/NPP",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Landsat Net Primary Production (NPP) CONUS dataset estimates NPP using\nLandsat Surface Reflectance for CONUS. NPP is the amount of\ncarbon captured by plants in an ecosystem, after accounting for losses due to\nrespiration. NPP is calculated using the MOD17 algorithm (see [MOD17 User\nGuide](https://www.ntsg.umt.edu/files/modis/MOD17UsersGuide2015_v3.pdf)) with\nLandsat Surface Reflectance, gridMET, and the National Land Cover Database.\n",
     "links": [
         {
@@ -75,7 +75,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "conus",
         "gridmet_derived",

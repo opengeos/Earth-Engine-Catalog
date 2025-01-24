@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "OREGONSTATE/PRISM/AN81d",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The PRISM daily and monthly datasets are gridded climate\ndatasets for the conterminous United States, produced by the\nPRISM Climate Group at Oregon State University.\n\nGrids are\ndeveloped using PRISM (Parameter-elevation Regressions on Independent\nSlopes Model). PRISM interpolation routines simulate how weather\nand climate vary with elevation, and account for coastal effects,\ntemperature inversions, and terrain barriers that can cause rain\nshadows. Station data are assimilated from many networks across\nthe country. For more information, see the [Descriptions of PRISM\nSpatial Climate Datasets](https://www.prism.oregonstate.edu/documents/PRISM_datasets.pdf).\n\n**Note**\n\n* **Warning**: This dataset should not be\n  used to calculate century-long climate trends due to non-climatic\n  variations from to station equipment and location changes, openings\n  and closings, varying observation times, and the use of relatively\n  short-term networks. Please see the [dataset documentation\n  ](https://www.prism.oregonstate.edu/documents/PRISM_datasets.pdf)\n  for more details.\n* The assets have start time of noon UTC, not midnight UTC.\n* It takes time for observation networks to conduct quality control and\n  release station data. Therefore,\n  PRISM datasets are re-modeled several times until six months\n  have elapsed, when they are considered permanent. A [release\n  schedule is available](https://www.prism.oregonstate.edu/calendar/).\n* For use of the 30 arc-second (~800 m) version of this dataset\n  please contact the provider at prism-questions@nacse.org\n",
     "links": [
         {
@@ -73,12 +73,12 @@
             "interval": [
                 [
                     "1981-01-01T00:00:00Z",
-                    "2025-01-19T12:00:00Z"
+                    "2025-01-20T12:00:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "climate",
         "daily",

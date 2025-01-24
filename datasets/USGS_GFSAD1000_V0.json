@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "USGS/GFSAD1000_V0",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The GFSAD is a NASA-funded project to provide high-resolution global\ncropland data and their water use that contributes towards global food\nsecurity in the twenty-first century. The GFSAD products are derived\nthrough multi-sensor remote sensing data (e.g., Landsat, MODIS, AVHRR),\nsecondary data, and field-plot data and aims at documenting cropland\ndynamics.\n\nAt a nominal 1km scale, V0.0 provides the spatial distribution of the\nfive major global cropland types (wheat, rice, corn, barley, and soybeans)\nwhich occupy 60% of all global cropland areas. The map is produced by\noverlaying these crops over the remote sensing derived global irrigated and\nrainfed cropland area map of the International Water Management Institute.\nV0.0 an 8-class product that provides information on global: cropland\nextent, crop dominance, irrigated versus rainfed cropping, and cropping\nintensity (single, double, triple, and continuous crops). The GFSAD1000\nnominal 2010 product was created with data from 2007 to 2012.\n",
     "links": [
         {
@@ -83,7 +83,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "crop",
         "gfsad",

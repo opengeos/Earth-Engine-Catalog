@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "JRC/GSW1_1/GlobalSurfaceWater",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This dataset contains maps of the location and temporal\ndistribution of surface water from 1984 to 2018 and provides\nstatistics on the extent and change of those water surfaces.\nFor more information see the associated journal article: [High-resolution\nmapping of global surface water and its long-term changes](https://www.nature.com/nature/journal/v540/n7633/full/nature20584.html)\n(Nature, 2016) and the online [Data Users Guide](https://storage.googleapis.com/global-surface-water/downloads_ancillary/DataUsersGuidev2.pdf).\n\nThese data were generated using 3,865,618 scenes from Landsat\n5, 7, and 8 acquired between 16 March 1984 and 31 December 2018.\nEach pixel was individually classified into water / non-water\nusing an expert system and the results were collated into a monthly\nhistory for the entire time period and two epochs (1984-1999,\n2000-2018) for change detection.\n\nThis mapping layers product consists of 1 image containing 7 bands.\nIt maps different facets of the spatial and temporal distribution of\nsurface water over the last 35 years. Areas where water has\nnever been detected are masked.\n",
     "links": [
         {
@@ -84,7 +84,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "geophysical",
         "google",

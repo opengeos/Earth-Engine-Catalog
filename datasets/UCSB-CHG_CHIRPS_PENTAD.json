@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "UCSB-CHG/CHIRPS/PENTAD",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Climate Hazards Center InfraRed Precipitation with Station data (CHIRPS)\nis a 30+ year quasi-global rainfall dataset. CHIRPS incorporates\n0.05\u00b0 resolution satellite imagery with in-situ station data\nto create gridded rainfall time series for trend analysis and seasonal\ndrought monitoring.\n",
     "links": [
         {
@@ -76,7 +76,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "chg",
         "climate",

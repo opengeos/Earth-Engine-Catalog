@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "ESA/GLOBCOVER_L4_200901_200912_V2_3",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "GlobCover 2009 is a global land cover map based on ENVISAT's Medium\nResolution Imaging Spectrometer (MERIS) Level 1B data acquired in full\nresolution mode with a spatial resolution of approximately 300 meters.\n",
     "links": [
         {
@@ -70,7 +70,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "esa",
         "globcover",

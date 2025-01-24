@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "TUBerlin/BigEarthNet/v1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "BigEarthNet is a new large-scale Sentinel-2 benchmark archive, consisting of\n590,326 Sentinel-2 image patches.  To construct BigEarthNet, 125 Sentinel-2\ntiles were acquired between June 2017 and May 2018 over the 10 countries\n(Austria, Belgium, Finland, Ireland, Kosovo, Lithuania, Luxembourg,\nPortugal, Serbia, Switzerland) of Europe. All the tiles were atmospherically\ncorrected by the Sentinel-2 Level 2A product generation and formatting tool\n(sen2cor).  Then, they were divided into 590,326 non-overlapping image\npatches. Each image patch was annotated by the multiple land-cover classes\n(i.e., multi-labels) that were provided from the CORINE Land Cover database\nof the year 2018 (CLC 2018).\n",
     "links": [
         {
@@ -69,7 +69,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "chip",
         "copernicus",

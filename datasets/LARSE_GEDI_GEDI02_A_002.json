@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "LARSE/GEDI/GEDI02_A_002",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "GEDI's Level 2A Geolocated Elevation and Height Metrics Product (GEDI02_A)\nis primarily composed of 100 Relative Height (RH) metrics, which\ncollectively describe the waveform collected by GEDI.\n\nThe original GEDI02_A product is a table of point with a spatial resolution\n(average footprint) of 25 meters.\n\nPlease see [User Guide](https://lpdaac.usgs.gov/documents/986/GEDI02_UserGuide_V2.pdf)\nfor more information.\n\nThe Global Ecosystem Dynamics Investigation [GEDI](https://gedi.umd.edu/)\nmission aims to characterize ecosystem structure and dynamics to enable\nradically improved quantification and understanding of the Earth's carbon cycle\nand biodiversity. The GEDI instrument, attached to the International Space\nStation (ISS), collects data globally between 51.6&deg; N and 51.6&deg; S\nlatitudes at the highest resolution and densest sampling of the\n3-dimensional structure of the Earth. The GEDI instrument consists of three\nlasers producing a total of eight beam ground transects, which instantaneously\nsample eight ~25 m footprints spaced approximately every 60 m along-track.\n\nProduct                 | Description\n:---------------------  | :----------------------------------------------\nL2A Vector         | [LARSE/GEDI/GEDI02_A_002](LARSE_GEDI_GEDI02_A_002)\nL2A Monthly raster | [LARSE/GEDI/GEDI02_A_002_MONTHLY](LARSE_GEDI_GEDI02_A_002_MONTHLY)\nL2A table index    | [LARSE/GEDI/GEDI02_A_002_INDEX](LARSE_GEDI_GEDI02_A_002_INDEX)\nL2B Vector         | [LARSE/GEDI/GEDI02_B_002](LARSE_GEDI_GEDI02_B_002)\nL2B Monthly raster | [LARSE/GEDI/GEDI02_B_002_MONTHLY](LARSE_GEDI_GEDI02_B_002_MONTHLY)\nL2B table index    | [LARSE/GEDI/GEDI02_B_002_INDEX](LARSE_GEDI_GEDI02_B_002_INDEX)\nL4A Biomass Vector | [LARSE/GEDI/GEDI04_A_002](LARSE_GEDI_GEDI04_A_002)\nL4A Monthly raster | [LARSE/GEDI/GEDI04_A_002_MONTHLY](LARSE_GEDI_GEDI04_A_002_MONTHLY)\nL4A table index    | [LARSE/GEDI/GEDI04_A_002_INDEX](LARSE_GEDI_GEDI04_A_002_INDEX)\nL4B Biomass        | [LARSE/GEDI/GEDI04_B_002](LARSE_GEDI_GEDI04_B_002)",
     "links": [
         {
@@ -69,7 +69,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "elevation",
         "gedi",

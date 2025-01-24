@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "GFW/GFF/V1/fishing_hours",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Fishing effort, measured in hours of inferred fishing activity. Each asset\nis the effort for a given flag state and day, with one band for the\nfishing activity of each gear type.\n\nSee [sample Earth Engine\nscripts](https://globalfishingwatch.org/research/global-footprint-of-fisheries/).\nAlso see [the main GFW site](https://GlobalFishingWatch.org) for program\ninformation, fully interactive visualization maps, and impacts.\n",
     "links": [
         {

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NOAA/VIIRS/001/VNP64A1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The daily Suomi National Polar-Orbiting Partnership (Suomi NPP) NASA Visible\nInfrared Imaging Radiometer Suite (VIIRS) Burned Area (VNP64A1) Version 1\ndata product is a monthly, global gridded 500m product containing per-pixel\nburned area and quality information. The VNP64 burned area mapping approach\nemploys 750m VIIRS imagery coupled with 750m VIIRS active fire\nobservations.\n\nVIIRS bands that are both sensitive and insensitive to biomass burning are\nused to detect changes caused by fire and to differentiate them from other\ntypes of change.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1330/VNP64A1_User_Guide_V1.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/572/VNP64A1_ATBD_V1.pdf)\n\n* [General Documentation](https://lpdaac.usgs.gov/products/vnp64a1v001/)\n\n* [Land Product Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/browse?sensor=VIIRS&sat=SNPP)\n",
     "links": [
         {
@@ -82,7 +82,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "burn",
         "change_detection",

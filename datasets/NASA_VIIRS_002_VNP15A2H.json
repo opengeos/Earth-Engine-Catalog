@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NASA/VIIRS/002/VNP15A2H",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Visible Infrared Imaging Radiometer Suite (VIIRS) Leaf Area Index (LAI)\nand Fraction of Photosynthetically Active Radiation (FPAR) Version 1 data\nproduct provides information about the vegetative canopy layer at 500 meter\nresolution (VNP15A2H). The VIIRS sensor is located onboard the NOAA/NASA\njoint Suomi National Polar-Orbiting Partnership (Suomi NPP) satellite. LAI\nis an index that quantifies the one-sided leaf area of a canopy, while FPAR\nis the fraction of incoming solar energy absorbed through photosynthesis at\n400 to 700 nanometers. This product is intentionally designed after the\nTerra and Aqua Moderate Resolution Imaging Spectroradiometer (MODIS)\nLAI/FPAR operational algorithm to promote the continuity of the Earth\nObservation System (EOS) mission.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/126/VNP15_User_Guide.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/125/VNP15_ATBD.pdf)\n\n* [General Documentation](https://lpdaac.usgs.gov/products/vnp15a2hv002/)\n\n* [Land Product Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/browse?sensor=VIIRS&sat=SNPP)\n",
     "links": [
         {
@@ -94,7 +94,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "land",
         "nasa",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NOAA/CDR/ATMOS_NEAR_SURFACE/V2",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Ocean Near-Surface Atmospheric Properties dataset is part of the NOAA\nOcean Surface Bundle (OSB) and provides a high quality Climate Data Record\n(CDR) of air temperature, wind speed, and specific humidity over ice-free\nocean surfaces.\n\nThese atmospheric properties are calculated based on brightness temperature\ndata from the Special Sensor Microwave/Imager (SSM/I) and the Special Sensor\nMicrowave/Imager Sounder (SSMIS) on the Defense Meteorological Satellite\nProgram (DMSP) spacecraft, using a neural network.\n",
     "links": [
         {
@@ -79,7 +79,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "air_temperature",
         "atmospheric",

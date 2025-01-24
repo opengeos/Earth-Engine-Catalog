@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "FAO/GHG/1/DROSA_A",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "\nThe two related FAO datasets on Drained Organic Soils provide estimates of:\n\n1. DROSA-A: area of Organic Soils (in hectares) drained for agricultural\nactivities (cropland and grazed grassland)\n\n2. DROSE-A: carbon (C) and nitrous oxide (N2O) estimates (in gigagrams) from\nthe agricultural drainage of organic soils under these land uses.\n\nAnnual data are available at 0.0083333 X 0.0083333 resolution (~1 km at the\nequator), with global coverage for the period 1992 - 2018.\n\nFAOSTAT estimates follow the Intergovernmental Panel on Climate Change\nGuidelines (IPCC) and use histosols as proxy for the presence of organic\nsoils and annual land cover maps as time- dependent component. Additionally,\nsoils characteristics, land use, and climate information are applied in the\nanalysis. The carbon emissions can be converted to CO2, multiplying pixel\nvalues by the ratio of the molecular weight of carbon dioxide (CO2) to that\nof C (44/12).\n\nOrganic soils develop in wet soil ecosystems. They include tropical and\nboreal peatlands, high-latitude bogs, ferns, and mires. Organic soils cover\nglobally a mere 3 percent of the terrestrial land area but represent up to\n30 percent of the total soil carbon, thus playing an important role in\nmaintaining the earth's carbon balance. Agriculture is a major cause of\ndrainage of organic soils around the world.  Drainage exposes to aerobic\nconditions the organic matter of organic soils that oxidizes releasing large\namounts of harmful greenhouse gases (GHG) to the atmosphere.\n\nDROSA-A and DROSE-A are the basis for country and regional statistics on\ndrained organic soils disseminated in three FAOSTAT datasets (Cultivation of\nOrganic Soils; Cropland; and Grassland).\n",
     "links": [
         {
@@ -82,7 +82,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "agriculture",
         "climate_change",

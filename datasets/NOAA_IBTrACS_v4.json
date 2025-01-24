@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NOAA/IBTrACS/v4",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The International Best Track Archive for Climate Stewardship (IBTrACS)\nprovides location and intensity for global tropical cyclones. The data span\nfrom the 1840s to present, generally providing data at 3-hour intervals.\nWhile the best track data is focused on position and intensity\n(maximum sustained wind speed or minimum central pressure), other parameters\nare provided by some agencies (e.g., radius of maximum winds, environmental\npressure, radius of hurricane force winds, etc.) and are likewise provided\nin IBTrACS. Files are available subset by Basin or time period, where basins\ninclude: East Pacific, North Atlantic, North Indian, South Atlantic,\nSouth Indian, South Pacific, and the West Pacific.\n",
     "links": [
         {
@@ -77,7 +77,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "hurricane",
         "noaa",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NASA/VIIRS/002/VNP09H1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The 8-day Visible Infrared Imaging Radiometer Suite (VIIRS) Surface\nReflectance (VNP09H1) Version 1 composite product provides an estimate of\nland surface reflectance from the Suomi National Polar-orbiting Partnership\n(Suomi NPP) VIIRS sensor for three imagery bands (I1, I2, I3) at nominal\n500m resolution (~463m). The 500m dataset is derived through resampling the\nnative 375m VIIRS resolution in the L2 input product. The data are corrected\nfor atmospheric conditions such as the effects of molecular gases, including\nozone and water vapor, and for the effects of atmospheric aerosols. Each\npixel represents the best possible Level 2G observation during an 8-day\nperiod, which is selected on the basis of high observation coverage, low\nsensor angle, the absence of clouds or cloud shadow, and aerosol loading.\nThe three reflectance bands, this product includes a state quality assurance\n(QA) layer and a reflectance band quality layer.\n\nDocumentation:\n\n* [User's Guide]( https://lpdaac.usgs.gov/documents/1657/VNP09_User_Guide_V2.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/122/VNP09_ATBD.pdf)\n\n* [General Documentation](https://lpdaac.usgs.gov/products/vnp09h1v002/)\n\n* [Land Product Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/browse?sensor=VIIRS&sat=SNPP)\n",
     "links": [
         {
@@ -94,7 +94,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "daily",
         "nasa",

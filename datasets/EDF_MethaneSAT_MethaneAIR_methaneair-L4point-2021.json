@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "EDF/MethaneSAT/MethaneAIR/methaneair-L4point-2021",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This dataset provides high-emitting methane point source detections (kg/hr)\nover the Permian Delaware sub-basin in southern New Mexico and western Texas\nas well as for the Uinta basin in Utah.\n\nMethane is a potent greenhouse gas that has more than 80 times the warming\npower of carbon dioxide over the first 20 years after it reaches the\natmosphere. At least 30% of today's global warming is driven by methane from\nhuman actions. Cutting methane emissions associated with human activities\n- including avoidable emissions from oil and gas operations, agriculture,\nand waste management - is the single fastest way to slow the rate of global\nwarming.\n\nThis dataset was generated using MethaneAIR measurements taken on 8 August\n2021 (research flight RF06) over the Permian and 11 August 2021 (RF08) over\nUinta. MethaneAIR is an airborne precursor of the MethaneSAT satellite\nmission, managed by [MethaneSAT LLC](https://www.methanesat.org/), a wholly\nowned subsidiary of Environmental Defense Fund.\n\nFor additional information about the MethaneAIR instrument, instrument\ncalibration and emission detections, please refer to recent publications\nby [Staebell et al. (2021)](https://doi.org/10.5194/amt-14-3737-2021),\n[Conway et al. (2023)](https://doi.org/10.5194/amt-2023-111), [Chulakadabba\net al. (2023)](https://doi.org/10.5194/egusphere-2023-822), [Abbadi et al.\n(2023)](https://doi.org/10.31223/X51D4C), [Omara et al. (2023)](https://doi.org/10.5194/essd-15-3761-2023),\nand [Miller et al. (2023)](https://doi.org/10.5194/egusphere-2023-1962).\n\nContact the data provider for more information about the project at this link:\n[https://www.methanesat.org/contact/](https://www.methanesat.org/contact/)\n",
     "links": [
         {
@@ -94,7 +94,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "climate",
         "emissions",

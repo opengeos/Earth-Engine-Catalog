@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "UMD/hansen/global_forest_change_2022_v1_10",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Results from time-series analysis of Landsat images in characterizing\nglobal forest extent and change.\n\nThe 'first' and 'last' bands are reference multispectral imagery from the\nfirst and last available years for Landsat spectral bands corresponding to\nred, NIR, SWIR1, and SWIR2.  Reference composite imagery represents median\nobservations from a set of quality-assessed growing-season observations for\neach of these bands.\n\nPlease see the [User Notes](https://storage.googleapis.com/earthenginepartners-hansen/GFC-2022-v1.10/download.html)\nfor this Version 1.10 update, as well as the associated journal article:\nHansen, Potapov, Moore, Hancher et al. \"High-resolution global maps of\n21st-century forest cover change.\" Science 342.6160 (2013): 850-853.\n",
     "links": [
         {

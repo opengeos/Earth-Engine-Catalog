@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/006/MOD16A2",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MOD16A2 Version 6 Evapotranspiration/Latent Heat Flux product is an\n8-day composite product produced at 500 meter pixel resolution. The\nalgorithm used for the MOD16 data product collection is based on the logic\nof the Penman-Monteith equation, which includes inputs of daily\nmeteorological reanalysis data along with MODIS remotely sensed data\nproducts such as vegetation property dynamics, albedo, and land cover.\n\nThe pixel values for the two Evapotranspiration layers (ET & PET) are the\nsum of all eight days within the composite period. The pixel values for\nthe two Latent Heat layers (LE & PLE) are the average of all eight days\nwithin the composite period. Note that the last 8-day period of each year\nis a 5 or 6-day composite period, depending on the year.\n\nAccording to\n[the \\\"Layers\\\" section of the dataset docs](https://lpdaac.usgs.gov/products/mod16a2v006),\nthe class assignment in fill values 32761 through 32767 might be inaccurate.\nThey are not included in the EE assets.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/494/MOD16_User_Guide_V6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/93/MOD16_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MOD16A2)\n",
     "links": [
         {
@@ -96,7 +96,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "8_day",
         "evapotranspiration",

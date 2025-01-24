@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/MCD43A2",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MODerate-resolution Imaging\nSpectroradiometer (MODIS) BRDF/Albedo Quality product (MCD43A2)\ndescribes the overall condition of the other BRDF and Albedo\nproducts. The MCD43A2 product contains 16 days of data at 500 meter\nspatial resolution provided in a level-3 gridded data set in\nSinusoidal projection, and includes albedo quality, snow conditions,\nancillary information, and inversion information.  Both Terra and Aqua\ndata are used in the generation of this product, providing the highest\nprobability for quality input data and designating it as an MCD,\nmeaning Combined, product.\n\nVersion-5 MODIS/Terra+Aqua BRDF/Albedo\nproducts are Validated Stage 1, meaning that accuracy has been\nestimated using a small number of independent measurements obtained\nfrom selected locations and time periods and ground-truth/field\nprogram efforts. Although there may be later improved versions, these\ndata are ready for use in scientific publications.\n\nPlease visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data) for information on citing LP DAAC datasets.\n",
     "links": [
         {
@@ -86,7 +86,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "16_day",
         "albedo",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "ISDASOIL/Africa/v1/fcc",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Soil fertility capability classification derived using slope, chemical,\nand physical soil properties.  For more information about this layer, please\nvisit [this page](https://www.isda-africa.com/isdasoil/faq/#faq7).\n\nThe classes for the 'fcc' band apply to pixel values that must be\nback-transformed with `x modulo 3000`.\n\nIn areas of dense jungle (generally over central Africa), model accuracy is\nlow and therefore artifacts such as banding (striping) might be seen.\n\nSoil property predictions were made by\n[Innovative Solutions for Decision Agriculture Ltd. (iSDA)](https://isda-africa.com/)\nat 30 m pixel size using machine learning coupled with remote sensing data\nand a training set of over 100,000 analyzed soil samples.\n\nFurther information can be found in the\n[FAQ](https://www.isda-africa.com/isdasoil/faq/) and\n[technical information documentation](https://www.isda-africa.com/isdasoil/technical-information/). To submit an issue or request support, please visit\n[the iSDAsoil site](https://isda-africa.com/isdasoil).\n",
     "links": [
         {

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/061/MOD21C1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MOD21C1 dataset is produced daily in a 0.05 degree (5,600 meters at the\nequator) Climate Modeling Grid (CMG) from daytime Level 2 Gridded (L2G)\nintermediate LST products. The L2G process maps the daily MOD21 swath\ngranules onto a sinusoidal MODIS grid and stores all observations falling\nover a gridded cell for a given day. The MOD21C1 algorithm sorts through\nthese observations for each cell and estimates the final LST value as an\naverage from all observations that are cloud free and have good LST&E\naccuracies. The daytime average is weighted by the observation coverage for\nthat cell. Only observations having an observation coverage greater than a\n15% threshold are considered. The MOD21C1 product contains the calculated\nLST as well as quality control, the three emissivity bands, view zenith\nangle, and time of observation.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1398/MOD21_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/1399/MOD21_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MOD21C1)\n",
     "links": [
         {
@@ -77,12 +77,12 @@
             "interval": [
                 [
                     "2000-02-24T00:00:00Z",
-                    "2025-01-19T00:00:00Z"
+                    "2025-01-22T00:00:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "daily",
         "emissivity",

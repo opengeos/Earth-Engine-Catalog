@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "COPERNICUS/Landcover/100m/Proba-V/Global",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Copernicus Global Land Service (CGLS) is earmarked as a component of\nthe Land service to operate a multi-purpose service component that provides\na series of bio-geophysical products on the status and evolution of land\nsurface at global scale.\n\nThe Dynamic Land Cover map at 100 m resolution (CGLS-LC100) is a new product\nin the portfolio of the CGLS and delivers a global land cover map at 100 m\nspatial resolution. The CGLS Land Cover product provides a primary land\ncover scheme. Next to these discrete classes, the product also includes\ncontinuous field layers for all basic land cover classes that provide\nproportional estimates for vegetation/ground cover for the land cover types.\nThis continuous classification scheme may depict areas of heterogeneous\nland cover better than the standard classification scheme and, as such,\ncan be tailored for application use (e.g. forest monitoring, crop monitoring,\nbiodiversity and conservation, monitoring environment and security in Africa,\nclimate modelling, etc.).\n\nThis Land Cover map is provided for the 2015 reference year over\nthe entire Globe, derived from the PROBA-V 100 m time-series, a database\nof high quality land cover training sites and several ancillary datasets,\nreaching an accuracy of 80 % at Level1.\n",
     "links": [
         {
@@ -93,7 +93,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "copernicus",
         "eea",

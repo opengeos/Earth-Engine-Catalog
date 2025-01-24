@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "FAO/WAPOR/2/L1_E_D",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The evaporation (E) data component (dekadal, in mm/day) is the actual\nevaporation of the soil surface. The value of each pixel represents the\naverage daily actual evaporation for that specific dekad.\n",
     "links": [
         {
@@ -80,7 +80,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "agriculture",
         "fao",

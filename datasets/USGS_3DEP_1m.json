@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "USGS/3DEP/1m",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This is a tiled collection of images with 1m pixel size from the 3D\nElevation Program (3DEP). The 3DEP data holdings serve as the elevation\nlayer of The National Map and provide foundational elevation information for\nearth science studies and mapping applications in the United States.\n\nThe elevations in this DEM represent the topographic bare-earth surface.\nUSGS standard 1m pixel size DEMs are produced exclusively from high\nresolution light detection and ranging (lidar) source data of images with 1m\npixel size or higher resolution. 1m pixel size DEM surfaces are seamless\nwithin collection projects but not necessarily seamless across projects.\nThe spatial reference used for tiles of the 1m pixel size DEM within the\nconterminous United States (CONUS) is Universal Transverse Mercator (UTM) in\nunits of meters and in conformance with the North American Datum of 1983\n(NAD83). All bare earth elevation values are in meters and are referenced to\nthe North American Vertical Datum of 1988 (NAVD88). Each tile is distributed\nin the UTM Zone in which it lies. If a tile crosses two UTM zones, it is\ndelivered in both zones.\nIn this and other cases of image overlaps, elevation values might be\nslightly different in different images covering the same area.\n\nThe 1m pixel size DEM is the highest resolution standard DEM offered in the\n3DEP product suite. The 10m 3DEP dataset is available at\n[USGS_3DEP_10m](USGS_3DEP_10m).\n",
     "links": [
         {
@@ -76,7 +76,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "3dep",
         "dem",

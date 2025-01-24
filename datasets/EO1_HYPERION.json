@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "EO1/HYPERION",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Hyperion is a high resolution hyperspectral imager producing 220 unique\nspectral channels ranging from 0.357 to 2.576 micrometers with a 10-nm\nbandwidth. The instrument operates in a pushbroom fashion, with a spatial\nresolution of 30 meters for all bands and a standard scene width of 7.7\nkilometers.\n\nThis dataset contains level 1A radiance images, radiometrically calibrated\nand orthorectified. The SWIR bands have a scaling factor of 80 and the VNIR\nbands have a scaling factor of 40 applied.\n\n- VNIR bands (B008-B057, 426.82nm - 925.41nm): L = Digital Number / 40\n\n- SWIR bands (B077-B224, 912.45nm - 2395.50nm): L = Digital Number / 80\n\nNote that bands B001-B007, B058-B076, and B225-242 are not calibrated,\nhave no valid values and are not included into EE assets. See the\n[detailed spectral coverage information](https://doi.org/10.5066/P9JXHMO2).\n\nThis is a preview dataset; only a portion of the data from the\noriginal source have been downloaded.\n",
     "links": [
         {
@@ -72,7 +72,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "eo_1",
         "hyperion",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "Slovakia/orthos/25cm",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Orthophotomosaic of the Slovak Republic is a set of color orthoimages\nwithout overlaps, gaps and visible brightness and color differences along\nthe connecting lines.\n\nFor more information, please see the\n[Slovakia orthophotos documentation](https://www.geoportal.sk/files/zbgis/orto/technicka_sprava_ortofotomozaika_sr_2017-2019.pdf)\n",
     "links": [
         {
@@ -67,7 +67,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "orthophoto",
         "rgb"

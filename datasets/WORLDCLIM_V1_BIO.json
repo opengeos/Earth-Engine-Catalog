@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "WORLDCLIM/V1/BIO",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "WorldClim V1 Bioclim provides bioclimatic variables that are derived from\nthe monthly temperature and rainfall in order to generate more biologically\nmeaningful values.\n\nThe bioclimatic variables represent annual trends (e.g., mean annual\ntemperature, annual precipitation), seasonality (e.g., annual range in\ntemperature and precipitation), and extreme or limiting environmental\nfactors (e.g., temperature of the coldest and warmest month, and\nprecipitation of the wet and dry quarters).\n\nThe bands scheme follows that of ANUCLIM, except that for temperature\nseasonality the standard deviation was used because a coefficient of\nvariation does not make sense with temperatures between -1 and 1.\n\nWorldClim version 1 was developed by Robert J. Hijmans, Susan Cameron,\nand Juan Parra, at the Museum of Vertebrate Zoology, University of\nCalifornia, Berkeley, in collaboration with Peter Jones and Andrew Jarvis\n(CIAT), and with Karen Richardson (Rainforest CRC).\n",
     "links": [
         {

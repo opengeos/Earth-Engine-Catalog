@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "UMD/GLAD/PRIMARY_HUMID_TROPICAL_FORESTS/v1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Primary humid tropical forests provide numerous global ecosystem services,\nbut are under continuing threat of clearing from economic drivers. To facilitate\nnational land use planning and balancing the goals of economic development and\nmaintenance of ecosystem services, a primary humid tropical forest map was\ncreated by the UMD GLAD team. The primary forest extent was mapped\nfor the year 2001 at a spatial resolution of 30 meters using globally acquired,\nfree-of-charge, and consistently processed Landsat imagery.\n",
     "links": [
         {
@@ -70,7 +70,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "forest",
         "glad",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NASA/GIMMS/3GV0",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "GIMMS NDVI is generated from several NOAA's AVHRR sensors for a global\n1/12-degree lat/lon grid. The latest version of the GIMMS NDVI dataset\nis named NDVI3g (third generation GIMMS NDVI from AVHRR sensors).\n",
     "links": [
         {
@@ -72,7 +72,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "avhrr",
         "gimms",

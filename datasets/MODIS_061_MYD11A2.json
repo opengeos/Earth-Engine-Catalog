@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/061/MYD11A2",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MYD11A2 V6.1 product provides an average 8-day land\nsurface temperature (LST)  in a 1200 x 1200 kilometer grid.  Each\npixel value in MYD11A2 is a simple average of all the corresponding\nMYD11A1 LST pixels collected within that 8 day period. The MYD11A2 does a\nsimple averaging of all daily LST values, without any filtering for specific\nQA bits. Each of the MYD11A2 QA values are set based on what majority of\ninput daily QA values are for any given pixel.\n\nThe 8 day compositing period was chosen because twice that period is\nthe exact ground track repeat period of the Terra and Aqua platforms.\nIn this product, along with both the day- and night-time surface\ntemperature bands and their quality indicator (QC) layers, are\nalso MODIS bands 31 and 32 and eight observation layers.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/118/MOD11_User_Guide_V6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/119/MOD11_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD11A2)\n",
     "links": [
         {
@@ -94,7 +94,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "8_day",
         "aqua",

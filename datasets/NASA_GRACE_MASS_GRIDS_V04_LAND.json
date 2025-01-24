@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NASA/GRACE/MASS_GRIDS_V04/LAND",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The monthly land mass grids contain water mass anomalies given as equivalent\nwater thickness derived from GRACE & GRACE-FO time-variable gravity\nobservations during the specified timespan, and relative to the specified\ntime-mean reference period. The equivalent water thickness represents the\ntotal terrestrial water storage anomalies from soil moisture, snow, surface\nwater (incl. rivers, lakes, reservoirs etc.), as well as groundwater and\naquifers. A glacial isostatic adjustment (GIA) correction has been applied,\nand standard corrections for geocenter (degree-1), C20 (degree-20) and\nC30 (degree-30) are incorporated. Post-processing filters have been applied\nto reduce correlated errors. Version 04 (v04) of the terrestrial water\nstorage data uses updated and consistent C20 and Geocenter corrections\n(i.e., Technical Notes TN-14 and TN-13), as well as an ellipsoidal\ncorrection to account for the non-spherical shape of the Earth when mapping\ngravity anomalies to surface mass change.\n\nThe GRACE Tellus (GRCTellus) Monthly Mass Grids dataset is produced\nby three centers: CSR (U. Texas / Center for Space Research),\nGFZ (GeoForschungsZentrum Potsdam), and JPL\n(NASA Jet Propulsion Laboratory). Each center is a part\nof the GRACE Ground System and generates Level-2 data\n(spherical harmonic fields) used in this dataset.\nThe output includes spherical harmonic coefficients\nof the gravity field and of the dealiasing fields used to compute them.\nSince each center independently produces the coefficients, the results\nmay be slightly different. It is recommended for most users to\nuse the mean of all three datasets. See the provider's [choosing a\nsolution](https://grace.jpl.nasa.gov/data/choosing-a-solution/) page\nfor more details.\n",
     "links": [
         {
@@ -96,7 +96,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "crs",
         "gfz",

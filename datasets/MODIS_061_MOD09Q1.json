@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/061/MOD09Q1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MOD09Q1 product provides an estimate of the surface\nspectral reflectance of bands 1 and 2 at 250m resolution and corrected\nfor atmospheric conditions such as gasses, aerosols, and Rayleigh\nscattering. Along with the two reflectance bands, a quality layer\nis also included. For each pixel, a value is selected from all\nthe acquisitions within the 8-day composite on the basis of high\nobservation coverage, low view angle, the absence of clouds or\ncloud shadow, and aerosol loading.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/306/MOD09_User_Guide_V6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/305/MOD09_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MOD09Q1)\n",
     "links": [
         {
@@ -89,12 +89,12 @@
             "interval": [
                 [
                     "2000-02-18T00:00:00Z",
-                    "2025-01-01T00:00:00Z"
+                    "2025-01-09T00:00:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "8_day",
         "global",

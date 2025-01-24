@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NOAA/VIIRS/DNB/ANNUAL_V22",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Annual global VIIRS nighttime lights dataset is a time series produced from\nmonthly cloud-free average radiance grids for 2022. Data for earlier\nyears are available in the\n[NOAA/VIIRS/DNB/ANNUAL_V21](NOAA_VIIRS_DNB_ANNUAL_V21) dataset.\n\nAn initial filtering step removed sunlit, moonlit and cloudy pixels,\nleading to rough composites that contains lights, fires, aurora and\nbackground. The rough annual composites are made on monthly increments and\nthen combined to form rough annual composites.\n\nThe subsequent steps uses the twelve-month median radiance to discard high\nand low radiance outliers, filtering out most fires and isolating the\nbackground. Background areas are zeroed out using the data range (DR)\ncalculated from 3x3 grid cells. The DR threshold for background is indexed\nto cloud-cover levels, with higher DR thresholds in areas having low numbers\nof cloud-free coverages.\n",
     "links": [
         {
@@ -75,7 +75,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "annual",
         "dnb",

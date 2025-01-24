@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "FAO/WAPOR/2/L1_RET_E",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Reference evapotranspiration (RET) is defined as the evapotranspiration from a\nhypothetical reference crop and it simulates the behaviour of a well-watered\ngrass surface. Each pixel represents the daily reference evapotranspiration in mm.\n",
     "links": [
         {
@@ -80,7 +80,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "agriculture",
         "fao",

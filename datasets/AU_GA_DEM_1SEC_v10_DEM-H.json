@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "AU/GA/DEM_1SEC/v10/DEM-H",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Hydrologically Enforced Digital Elevation Model\n(DEM-H) was derived from the SRTM data acquired by NASA in February\n2000. The model has been hydrologically conditioned and drainage\nenforced. The DEM-H captures flow paths based on SRTM elevations\nand mapped stream lines, and supports delineation of catchments\nand related hydrological attributes. The dataset was derived from\nthe 1 second smoothed Digital Elevation Model (DEM-S; ANZCW0703014016)\nby enforcing hydrological connectivity with the ANUDEM software,\nusing selected AusHydro V1.6 (February 2010) 1:250,000 scale watercourse\nlines (ANZCW0503900101) and lines derived from DEM-S to define\nthe watercourses. The drainage enforcement has produced a consistent\nrepresentation of hydrological connectivity with some elevation\nartifacts resulting from the drainage enforcement. A full description\nof the methods is in preparation (Dowling et al., in prep).\n\nThis product provides a DEM suitable for use in hydrological analysis\nsuch as catchment definition and flow routing.\n\nThere are several areas with unexpected negative values: close to\nCanberra around (150.443044, -35.355281) with values of -55 and in Western\nAustralia around (124.84, -16.44) with -43.\n",
     "links": [
         {

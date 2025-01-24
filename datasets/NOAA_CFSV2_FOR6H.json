@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NOAA/CFSV2/FOR6H",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The National Centers for Environmental Prediction (NCEP) Climate Forecast\nSystem (CFS) is a fully coupled model representing the interaction between\nthe Earth's atmosphere, oceans, land, and sea ice. CFS was developed at the\nEnvironmental Modeling Center (EMC) at NCEP. The operational CFS was\nupgraded to version 2 (CFSv2) on March 30, 2011.\n\nForecasts are initialized four times per day (0000, 0600, 1200, and 1800\nUTC). This is the same model that was used to create the NCEP Climate\nForecast System Reanalysis (CFSR), and the purpose of the CFSv2 dataset is\nto extend CFSR. We ingest only a subset of bands from files matching\ncdas1.t??z.sfluxgrbf**06**.grib2.\n\nFor more information about CFS, please see the [CFS NOAA site](https://cfs.ncep.noaa.gov/).\n",
     "links": [
         {
@@ -74,12 +74,12 @@
             "interval": [
                 [
                     "1979-01-01T00:00:00Z",
-                    "2025-01-22T12:00:00Z"
+                    "2025-01-23T00:00:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "climate",
         "daylight",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "OREGONSTATE/PRISM/AN81m",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The PRISM daily and monthly datasets are gridded climate\ndatasets for the conterminous United States, produced by the\nPRISM Climate Group at Oregon State University.\n\nGrids are\ndeveloped using PRISM (Parameter-elevation Regressions on Independent\nSlopes Model). PRISM interpolation routines simulate how weather\nand climate vary with elevation, and account for coastal effects,\ntemperature inversions, and terrain barriers that can cause rain\nshadows. Station data are assimilated from many networks across\nthe country. For more information, see the [Descriptions of PRISM\nSpatial Climate Datasets](https://www.prism.oregonstate.edu/documents/PRISM_datasets.pdf).\n\n**Note**\n\n* **Warning**, this dataset should not be\n  used to calculate century-long climate trends due to non-climatic\n  variations from to station equipment and location changes, openings\n  and closings, varying observation times, and the use of relatively\n  short-term networks. Please see the [dataset\n  documentation](https://www.prism.oregonstate.edu/documents/PRISM_datasets.pdf)\n  for more details.\n* It takes time for observation networks to conduct quality control\n  and release station data. Therefore, PRISM datasets are re-modeled\n  several times until six months have elapsed, when they are\n  considered permanent. A [release schedule is\n  available](https://www.prism.oregonstate.edu/calendar/).\n* For use of the 30 arc-second (~800 m) version of this dataset\n  please contact the provider at prism-questions@nacse.org.\n",
     "links": [
         {
@@ -78,7 +78,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "climate",
         "geophysical",

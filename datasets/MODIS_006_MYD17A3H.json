@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/006/MYD17A3H",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The MYD17A3H V6 product provides information about\nannual Net Primary Productivity (NPP) at 500m pixel resolution.\n Annual NPP is derived from the sum of the 45 8-day Net Photosynthesis\n(PSN) products (MYD17A2H) from the given year.  The PSN value\nis the difference of the GPP and the Maintenance Respiration\n(MR) (GPP-MR).\n\nThis is a NASA version of this product. Another\nversion is produced by the Numerical Terradynamic Simulation\nGroup ([NTSG](https://www.ntsg.umt.edu)), University of Montana\n(UMT).  The NTSG version corrects the problem with cloud-contaminated\nMODIS LAI-FPAR inputs to the MOD17 algorithm, but its resolution\nis 1km. It is ingested into Earth Engine as MODIS/055/MOD17A3.\n\nFor further details regarding the differences between the NTSG\nand NASA versions of this product, please consult [this document\n](https://lpdaac.usgs.gov/documents/188/MOD17_NTSG_Note.pdf).\n",
     "links": [
         {
@@ -96,7 +96,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "aqua",
         "global",

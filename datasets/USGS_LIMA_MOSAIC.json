@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "USGS/LIMA/MOSAIC",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Landsat Image Mosaic of Antarctica (LIMA) is a seamless\nand virtually cloudless mosaic created from processed\nLandsat 7 ETM+ scenes.\n\nThis LIMA dataset is the 16-bit Intermediate LIMA.\nThe mosaic consists of pan-sharpened normalized surface reflectance\nscenes (Landsat ETM+ bands 1, 2, 3, and 4). The mosaic was\nconstructed by ordering cloud free images on top and trimming\nimage boundaries when tile discontinuities occurred.\n\nUsers can find the mosaic tile footprints available at:\n[USGS/LIMA/MOSAIC_TILE_FOOTPRINTS](https://code.earthengine.google.com/?asset=USGS/LIMA/MOSAIC_TILE_FOOTPRINTS)\n",
     "links": [
         {
@@ -67,7 +67,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "antarctica",
         "ice",

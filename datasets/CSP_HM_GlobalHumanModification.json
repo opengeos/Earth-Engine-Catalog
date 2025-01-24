@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "CSP/HM/GlobalHumanModification",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The global Human Modification dataset (gHM) provides a cumulative measure of human modification\nof terrestrial lands globally at 1 square-kilometer resolution. The gHM\nvalues range from 0.0-1.0 and are calculated by estimating the proportion of a given location\n(pixel) that is modified, the estimated intensity of modification\nassociated with a given type of human modification or \"stressor\".\n5 major anthropogenic stressors circa 2016 were mapped using 13\nindividual datasets:\n\n* human settlement (population density, built-up areas)\n* agriculture (cropland, livestock)\n* transportation (major, minor, and two-track roads; railroads)\n* mining and energy production\n* electrical infrastructure (power lines, nighttime lights)\n\nPlease see the paper for additional methodological details.\nThis asset was re-projected to WGS84 for use in Earth Engine.\n",
     "links": [
         {

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "ISDASOIL/Africa/v1/nitrogen_total",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Total nitrogen at soil depths of 0-20 cm and 20-50 cm,\npredicted mean and standard deviation.\n\nPixel values must be back-transformed with `exp(x/100)-1`.\n\nIn areas of dense jungle (generally over central Africa), model accuracy is\nlow and therefore artifacts such as banding (striping) might be seen.\n\nSoil property predictions were made by\n[Innovative Solutions for Decision Agriculture Ltd. (iSDA)](https://isda-africa.com/)\nat 30 m pixel size using machine learning coupled with remote sensing data\nand a training set of over 100,000 analyzed soil samples.\n\nFurther information can be found in the\n[FAQ](https://www.isda-africa.com/isdasoil/faq/) and\n[technical information documentation](https://www.isda-africa.com/isdasoil/technical-information/). To submit an issue or request support, please visit\n[the iSDAsoil site](https://isda-africa.com/isdasoil).\n",
     "links": [
         {

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "UMN/PGC/ArcticDEM/V3/2m_mosaic",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "ArcticDEM is a National Geospatial-Intelligence Agency (NGA) and National\nScience Foundation (NSF) public-private initiative to automatically produce\na high-resolution, high-quality digital surface model (DSM) of the Arctic\nusing optical stereo imagery, high-performance computing, and open source\nphotogrammetry software. It includes vegetation, tree canopy, buildings, and\nother man-made surface features. The 2m asset is a collection of strips rather\nthan a single mosaic due to projection differences between strips.\n\nMosaicked DEM files are compiled from the best quality strip DEM files\nwhich have been blended and feathered to reduce void areas and edge-matching\nartifacts. Filtered IceSAT altimetry data has been applied to the raster\nfiles to improve absolute accuracy.\n",
     "links": [
         {
@@ -86,7 +86,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "arctic",
         "dem",

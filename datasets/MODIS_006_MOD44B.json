@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/006/MOD44B",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Terra MODIS Vegetation Continuous Fields (VCF)\nproduct is a sub-pixel-level representation of surface vegetation\ncover estimates globally. Designed to continuously represent\nEarth's terrestrial surface as a proportion of basic vegetation\ntraits, it provides a gradation of three surface cover components:\npercent tree cover, percent non-tree cover, and percent bare.\nVCF products provide a continuous, quantitative portrayal of\nland surface cover with improved spatial detail, and hence, are\nwidely used in environmental modeling and monitoring applications.\n\nGenerated yearly, the VCF product is produced using monthly\ncomposites of Terra MODIS 250 and 500 meters Land Surface Reflectance\ndata, including all seven bands, and Land Surface Temperature.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1322/MOD44B_User_Guide_V6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/113/MOD44B_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MOD44B)\n",
     "links": [
         {
@@ -77,7 +77,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "annual",
         "geophysical",

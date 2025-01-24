@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "FORMA/FORMA_500m",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "FORMA is a MODIS-based deforestation alerting system for the humid tropical\nforests. FORMA is designed for quick identification of new areas of tree\ncover loss. The system analyzes data gathered daily by the MODIS sensor,\nwhich operates on NASA's Terra and Aqua satellites. The FORMA alerts system\nthen detects pronounced changes in vegetation cover over time, as measured\nby the Normalized Difference Vegetation Index (NDVI), a measure of\nvegetation greenness. These pronounced changes in vegetation cover are\nlikely to indicate forest being cleared, burned, or defoliated. An alert is\nadded to the dataset by setting the pixel value to the date at which a\nchange was detected. FORMA alerts only appear in areas where the probability\nof tree cover loss is greater than or equal to 50%. FORMA data has 500-meter\nspatial resolution and twice-monthly update interval. FORMA alerts start in\nJanuary 2006.\n",
     "links": [
         {
@@ -77,7 +77,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "alerts",
         "deforestation",

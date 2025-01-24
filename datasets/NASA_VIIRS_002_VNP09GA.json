@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NASA/VIIRS/002/VNP09GA",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Visible Infrared Imaging Radiometer Suite (VIIRS) daily surface\nreflectance (VNP09GA) product provides an estimate of land\nsurface reflectance from the Suomi National Polar-Orbiting Partnership\n(S-NPP) VIIRS sensor. Data are provided for three imagery bands\n(I1, I2, I3) at nominal 500 meter resolution (~463 meter) and nine\nmoderate-resolution bands (M1, M2, M3, M4, M5, M7, M8, M10, M11) at nominal\n1 kilometer (~926 meter) resolution. The 500 meter and 1 kilometer datasets\nare derived through resampling the native 375 meter and 750 meter VIIRS\nresolutions, respectively, in the L2 input product. These bands are\ncorrected for atmospheric conditions to provide an estimate\nof the surface spectral reflectance as it would be measured at ground level.\n\nThe data is temporally aggregated over each of the 16 possible passes per\nday. When multiple observations are present for each day, only the first\nof the highest-quality observations is included.\n\nThe band scale factors are already applied.\n\nFor additional information, visit the VIIRS [Land Product Quality\nAssessment website](https://landweb.modaps.eosdis.nasa.gov/browse?sensor=VIIRS&sat=SNPP)\n\nDocumentation:\n\n* [User's Guide] (https://lpdaac.usgs.gov/documents/1657/VNP09_User_Guide_V2.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)] (https://lpdaac.usgs.gov/documents/122/VNP09_ATBD.pdf)\n",
     "links": [
         {
@@ -89,12 +89,12 @@
             "interval": [
                 [
                     "2012-01-19T00:00:00Z",
-                    "2025-01-19T00:00:00Z"
+                    "2025-01-22T00:00:00Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "daily",
         "nasa",

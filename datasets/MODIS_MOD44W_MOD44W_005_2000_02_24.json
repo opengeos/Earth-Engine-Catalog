@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MODIS/MOD44W/MOD44W_005_2000_02_24",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "The Global Water Mask uses the SWBD (SRTM Water Body\nData) in combination with MODIS 250m data to create a complete\nglobal map of surface water at 250m spatial resolution, circa 2000-2002.  This\ndataset is intended for use in processing of raster data and for\nmasking out water in final raster data products.\n",
     "links": [
         {
@@ -69,7 +69,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "geophysical",
         "mod44w",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "Spain/PNOA/PNOA10",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Mosaics of orthophotos from flights carried out between 2007 and 2018 by\nvarious public administration bodies at 10cm pixel resolution.\nThis data is provided by National Plan for Aerial Orthophotography Spain\n([PNOA](https://pnoa.ign.es)).\n\nFor more information, please see the\n[Spain orthophotos documentation](https://pnoa.ign.es/web/portal/pnoa-imagen/proceso-fotogrametrico)\n",
     "links": [
         {
@@ -67,7 +67,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "orthophoto",
         "pnoa",

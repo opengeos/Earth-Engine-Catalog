@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NOAA/VIIRS/DNB/MONTHLY_V1/VCMSLCFG",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Monthly average radiance composite images using nighttime data from the\nVisible Infrared Imaging Radiometer Suite (VIIRS) Day/Night Band (DNB).\n\nAs these data are composited monthly, there are many areas of the globe\nwhere it is impossible to get good quality data coverage for that month.\nThis can be due to cloud cover, especially in the tropical regions, or due\nto solar illumination, as happens toward the poles in their respective\nsummer months. Therefore it is recommended that users of these data utilize\nthe 'cf_cvg' band and not assume a value of zero in the average radiance\nimage means that no lights were observed.\n\nCloud cover is determined using the VIIRS Cloud\nMask product (VCM). In addition, data near the edges of the swath are not\nincluded in the composites (aggregation zones 29-32). Version 1 has NOT\nbeen filtered to screen out lights from aurora, fires, boats, and other\ntemporal lights. This separation is under development and will be included\nin a later version of this time series. Also in development is a method to\nseparate lights from background (non-light) values.\n\nThis product is an alternative configuration of the VIIRS DNB using a\nprocedure to correct for stray light. The correction procedure extends\nvisible areas closer to the poles and improves dynamic range. It should be\nnoted some artifacts are introduced due to the procedure used in twilight\nregions; see\n[reference paper](https://spie.org/Publications/Proceedings/Paper/10.1117/12.2023107)\nfor more details. This product excludes data\nimpacted by cloud cover.\n",
     "links": [
         {
@@ -72,7 +72,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "dnb",
         "eog",

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "NASA/GRACE/MASS_GRIDS/OCEAN_EOFR",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "GRACE Tellus Monthly Mass Grids provides monthly\ngravitational anomalies relative to a 2004-2010 time-mean baseline.\nThe data contained in this dataset are units of \\\"Equivalent Water Thickness\\\"\nwhich represent the deviations of mass in terms of vertical extent\nof water in centimeters. See the provider's [Monthly Mass\nGrids Overview](https://grace.jpl.nasa.gov/data/monthly-mass-grids/)\nfor more details.\n\nThis dataset is a filtered version of the GRACE Tellus (GRCTellus)\nOcean dataset. The 'EOFR' bottom pressure (OBP) grids are obtained by\nprojecting the data from the regular GRC Ocean grids product\nonto the Empirical Orthogonal Functions (EOFs) of the\nOcean Model for Circulation and Tides (OMCT). This effectively\nfilters out signals in the GRACE data that are inconsistent\nwith the physics and OBP variations in the OMCT ocean model.\n\nThe EOFR filtered reconstructed OBP fields agree\nbetter with radar altimetric sea surface height,\nreduce leakage around ice sheets and glaciers, and reduce\nnoise in the mid latitudes where OBP variability is lower.\n[(Chambers and Willis, 2010)](https://doi.org/10.1175/2010JTECHO738.1)\n\n**Note**\n\n* The GRCTellus Ocean datasets are optimized to examine regional\n  ocean bottom pressure, but NOT intended to be spatially\n  averaged to determine global mean ocean mass.\n",
     "links": [
         {
@@ -79,7 +79,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "other",
     "keywords": [
         "crs",
         "gfz",
