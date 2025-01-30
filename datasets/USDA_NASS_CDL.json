@@ -103,7 +103,12 @@
                 "description": "Main crop-specific land cover classification.",
                 "gee:classes": [
                     {
-                        "color": "ffd300",
+                        "color": "000000",
+                        "description": "Background",
+                        "value": 0
+                    },
+                    {
+                        "color": "ffd400",
                         "description": "Corn",
                         "value": 1
                     },
@@ -113,17 +118,17 @@
                         "value": 2
                     },
                     {
-                        "color": "00a8e2",
+                        "color": "00a9e6",
                         "description": "Rice",
                         "value": 3
                     },
                     {
-                        "color": "ff9e0a",
+                        "color": "ff9e0f",
                         "description": "Sorghum",
                         "value": 4
                     },
                     {
-                        "color": "267000",
+                        "color": "267300",
                         "description": "Soybeans",
                         "value": 5
                     },
@@ -133,77 +138,77 @@
                         "value": 6
                     },
                     {
-                        "color": "70a500",
+                        "color": "70a800",
                         "description": "Peanuts",
                         "value": 10
                     },
                     {
-                        "color": "00af49",
+                        "color": "00af4d",
                         "description": "Tobacco",
                         "value": 11
                     },
                     {
-                        "color": "dda50a",
+                        "color": "e0a60f",
                         "description": "Sweet Corn",
                         "value": 12
                     },
                     {
-                        "color": "dda50a",
+                        "color": "e0a60f",
                         "description": "Pop or Orn Corn",
                         "value": 13
                     },
                     {
-                        "color": "7cd3ff",
+                        "color": "80d4ff",
                         "description": "Mint",
                         "value": 14
                     },
                     {
-                        "color": "e2007c",
+                        "color": "e2007f",
                         "description": "Barley",
                         "value": 21
                     },
                     {
-                        "color": "896054",
+                        "color": "8a6453",
                         "description": "Durum Wheat",
                         "value": 22
                     },
                     {
-                        "color": "d8b56b",
+                        "color": "d9b56c",
                         "description": "Spring Wheat",
                         "value": 23
                     },
                     {
-                        "color": "a57000",
+                        "color": "a87000",
                         "description": "Winter Wheat",
                         "value": 24
                     },
                     {
-                        "color": "d69ebc",
+                        "color": "d69dbc",
                         "description": "Other Small Grains",
                         "value": 25
                     },
                     {
-                        "color": "707000",
+                        "color": "737300",
                         "description": "Dbl Crop WinWht/Soybeans",
                         "value": 26
                     },
                     {
-                        "color": "aa007c",
+                        "color": "ae017e",
                         "description": "Rye",
                         "value": 27
                     },
                     {
-                        "color": "a05989",
+                        "color": "a15889",
                         "description": "Oats",
                         "value": 28
                     },
                     {
-                        "color": "700049",
+                        "color": "73004c",
                         "description": "Millet",
                         "value": 29
                     },
                     {
-                        "color": "d69ebc",
+                        "color": "d69dbc",
                         "description": "Speltz",
                         "value": 30
                     },
@@ -213,7 +218,7 @@
                         "value": 31
                     },
                     {
-                        "color": "7c99ff",
+                        "color": "8099ff",
                         "description": "Flaxseed",
                         "value": 32
                     },
@@ -228,57 +233,57 @@
                         "value": 34
                     },
                     {
-                        "color": "00af49",
+                        "color": "00af4d",
                         "description": "Mustard",
                         "value": 35
                     },
                     {
-                        "color": "ffa5e2",
+                        "color": "ffa8e3",
                         "description": "Alfalfa",
                         "value": 36
                     },
                     {
-                        "color": "a5f28c",
+                        "color": "a5f58d",
                         "description": "Other Hay/Non Alfalfa",
                         "value": 37
                     },
                     {
-                        "color": "00af49",
+                        "color": "00af4d",
                         "description": "Camelina",
                         "value": 38
                     },
                     {
-                        "color": "d69ebc",
+                        "color": "d69dbc",
                         "description": "Buckwheat",
                         "value": 39
                     },
                     {
-                        "color": "a800e2",
+                        "color": "a900e6",
                         "description": "Sugarbeets",
                         "value": 41
                     },
                     {
-                        "color": "a50000",
+                        "color": "a80000",
                         "description": "Dry Beans",
                         "value": 42
                     },
                     {
-                        "color": "702600",
+                        "color": "732600",
                         "description": "Potatoes",
                         "value": 43
                     },
                     {
-                        "color": "00af49",
+                        "color": "00af4d",
                         "description": "Other Crops",
                         "value": 44
                     },
                     {
-                        "color": "af7cff",
+                        "color": "b380ff",
                         "description": "Sugarcane",
                         "value": 45
                     },
                     {
-                        "color": "702600",
+                        "color": "732600",
                         "description": "Sweet Potatoes",
                         "value": 46
                     },
@@ -303,22 +308,22 @@
                         "value": 50
                     },
                     {
-                        "color": "00af49",
+                        "color": "00af4d",
                         "description": "Chick Peas",
                         "value": 51
                     },
                     {
-                        "color": "00ddaf",
+                        "color": "00deb0",
                         "description": "Lentils",
                         "value": 52
                     },
                     {
-                        "color": "54ff00",
+                        "color": "55ff00",
                         "description": "Peas",
                         "value": 53
                     },
                     {
-                        "color": "f2a377",
+                        "color": "f5a27a",
                         "description": "Tomatoes",
                         "value": 54
                     },
@@ -328,42 +333,42 @@
                         "value": 55
                     },
                     {
-                        "color": "00af49",
+                        "color": "00af4d",
                         "description": "Hops",
                         "value": 56
                     },
                     {
-                        "color": "7cd3ff",
+                        "color": "80d4ff",
                         "description": "Herbs",
                         "value": 57
                     },
                     {
-                        "color": "e8bfff",
+                        "color": "e8beff",
                         "description": "Clover/Wildflowers",
                         "value": 58
                     },
                     {
-                        "color": "afffdd",
+                        "color": "b2ffde",
                         "description": "Sod/Grass Seed",
                         "value": 59
                     },
                     {
-                        "color": "00af49",
+                        "color": "00af4d",
                         "description": "Switchgrass",
                         "value": 60
                     },
                     {
-                        "color": "bfbf77",
+                        "color": "bfbf7a",
                         "description": "Fallow/Idle Cropland",
                         "value": 61
                     },
                     {
-                        "color": "93cc93",
+                        "color": "95ce93",
                         "description": "Forest",
                         "value": 63
                     },
                     {
-                        "color": "c6d69e",
+                        "color": "c7d79e",
                         "description": "Shrubland",
                         "value": 64
                     },
@@ -378,12 +383,12 @@
                         "value": 66
                     },
                     {
-                        "color": "ff8eaa",
+                        "color": "ff91ab",
                         "description": "Peaches",
                         "value": 67
                     },
                     {
-                        "color": "ba004f",
+                        "color": "b90050",
                         "description": "Apples",
                         "value": 68
                     },
@@ -393,62 +398,62 @@
                         "value": 69
                     },
                     {
-                        "color": "007777",
+                        "color": "007878",
                         "description": "Christmas Trees",
                         "value": 70
                     },
                     {
-                        "color": "af9970",
+                        "color": "b39c70",
                         "description": "Other Tree Crops",
                         "value": 71
                     },
                     {
-                        "color": "ffff7c",
+                        "color": "ffff80",
                         "description": "Citrus",
                         "value": 72
                     },
                     {
-                        "color": "b5705b",
+                        "color": "b6705c",
                         "description": "Pecans",
                         "value": 74
                     },
                     {
-                        "color": "00a582",
+                        "color": "00a884",
                         "description": "Almonds",
                         "value": 75
                     },
                     {
-                        "color": "e8d6af",
+                        "color": "ebd6b0",
                         "description": "Walnuts",
                         "value": 76
                     },
                     {
-                        "color": "af9970",
+                        "color": "b39c70",
                         "description": "Pears",
                         "value": 77
                     },
                     {
-                        "color": "f2f2f2",
+                        "color": "f7f7f7",
                         "description": "Clouds/No Data",
                         "value": 81
                     },
                     {
-                        "color": "999999",
+                        "color": "9c9c9c",
                         "description": "Developed",
                         "value": 82
                     },
                     {
-                        "color": "4970a3",
+                        "color": "4d70a3",
                         "description": "Water",
                         "value": 83
                     },
                     {
-                        "color": "7cafaf",
+                        "color": "80b3b3",
                         "description": "Wetlands",
                         "value": 87
                     },
                     {
-                        "color": "e8ffbf",
+                        "color": "e9ffbe",
                         "description": "Nonag/Undefined",
                         "value": 88
                     },
@@ -458,32 +463,32 @@
                         "value": 92
                     },
                     {
-                        "color": "4970a3",
+                        "color": "4d70a3",
                         "description": "Open Water",
                         "value": 111
                     },
                     {
-                        "color": "d3e2f9",
+                        "color": "d4e3fc",
                         "description": "Perennial Ice/Snow",
                         "value": 112
                     },
                     {
-                        "color": "999999",
+                        "color": "9c9c9c",
                         "description": "Developed/Open Space",
                         "value": 121
                     },
                     {
-                        "color": "999999",
+                        "color": "9c9c9c",
                         "description": "Developed/Low Intensity",
                         "value": 122
                     },
                     {
-                        "color": "999999",
+                        "color": "9c9c9c",
                         "description": "Developed/Med Intensity",
                         "value": 123
                     },
                     {
-                        "color": "999999",
+                        "color": "9c9c9c",
                         "description": "Developed/High Intensity",
                         "value": 124
                     },
@@ -493,37 +498,37 @@
                         "value": 131
                     },
                     {
-                        "color": "93cc93",
+                        "color": "95ce93",
                         "description": "Deciduous Forest",
                         "value": 141
                     },
                     {
-                        "color": "93cc93",
+                        "color": "95ce93",
                         "description": "Evergreen Forest",
                         "value": 142
                     },
                     {
-                        "color": "93cc93",
+                        "color": "95ce93",
                         "description": "Mixed Forest",
                         "value": 143
                     },
                     {
-                        "color": "c6d69e",
+                        "color": "c7d79e",
                         "description": "Shrubland",
                         "value": 152
                     },
                     {
-                        "color": "e8ffbf",
-                        "description": "Grassland/Pasture",
+                        "color": "e9ffbe",
+                        "description": "Grass/Pasture",
                         "value": 176
                     },
                     {
-                        "color": "7cafaf",
+                        "color": "80b3b3",
                         "description": "Woody Wetlands",
                         "value": 190
                     },
                     {
-                        "color": "7cafaf",
+                        "color": "80b3b3",
                         "description": "Herbaceous Wetlands",
                         "value": 195
                     },
@@ -533,7 +538,7 @@
                         "value": 204
                     },
                     {
-                        "color": "d69ebc",
+                        "color": "d69dbc",
                         "description": "Triticale",
                         "value": 205
                     },
@@ -558,17 +563,17 @@
                         "value": 209
                     },
                     {
-                        "color": "ff8eaa",
+                        "color": "ff91ab",
                         "description": "Prunes",
                         "value": 210
                     },
                     {
-                        "color": "334933",
+                        "color": "344a34",
                         "description": "Olives",
                         "value": 211
                     },
                     {
-                        "color": "e27026",
+                        "color": "e67525",
                         "description": "Oranges",
                         "value": 212
                     },
@@ -583,7 +588,7 @@
                         "value": 214
                     },
                     {
-                        "color": "739755",
+                        "color": "66994d",
                         "description": "Avocados",
                         "value": 215
                     },
@@ -593,12 +598,12 @@
                         "value": 216
                     },
                     {
-                        "color": "af9970",
+                        "color": "b39c70",
                         "description": "Pomegranates",
                         "value": 217
                     },
                     {
-                        "color": "ff8eaa",
+                        "color": "ff91ab",
                         "description": "Nectarines",
                         "value": 218
                     },
@@ -608,7 +613,7 @@
                         "value": 219
                     },
                     {
-                        "color": "ff8eaa",
+                        "color": "ff91ab",
                         "description": "Plums",
                         "value": 220
                     },
@@ -623,22 +628,22 @@
                         "value": 222
                     },
                     {
-                        "color": "ff8eaa",
+                        "color": "ff91ab",
                         "description": "Apricots",
                         "value": 223
                     },
                     {
-                        "color": "00af49",
+                        "color": "00af4d",
                         "description": "Vetch",
                         "value": 224
                     },
                     {
-                        "color": "ffd300",
+                        "color": "ffd400",
                         "description": "Dbl Crop WinWht/Corn",
                         "value": 225
                     },
                     {
-                        "color": "ffd300",
+                        "color": "ffd400",
                         "description": "Dbl Crop Oats/Corn",
                         "value": 226
                     },
@@ -648,7 +653,7 @@
                         "value": 227
                     },
                     {
-                        "color": "f8d248",
+                        "color": "ffd400",
                         "description": "Dbl Crop Triticale/Corn",
                         "value": 228
                     },
@@ -658,7 +663,7 @@
                         "value": 229
                     },
                     {
-                        "color": "896054",
+                        "color": "8a6453",
                         "description": "Dbl Crop Lettuce/Durum Wht",
                         "value": 230
                     },
@@ -673,47 +678,47 @@
                         "value": 232
                     },
                     {
-                        "color": "e2007c",
+                        "color": "e2007f",
                         "description": "Dbl Crop Lettuce/Barley",
                         "value": 233
                     },
                     {
-                        "color": "ff9e0a",
+                        "color": "ff9e0f",
                         "description": "Dbl Crop Durum Wht/Sorghum",
                         "value": 234
                     },
                     {
-                        "color": "ff9e0a",
+                        "color": "ff9e0f",
                         "description": "Dbl Crop Barley/Sorghum",
                         "value": 235
                     },
                     {
-                        "color": "a57000",
+                        "color": "a87000",
                         "description": "Dbl Crop WinWht/Sorghum",
                         "value": 236
                     },
                     {
-                        "color": "ffd300",
+                        "color": "ffd400",
                         "description": "Dbl Crop Barley/Corn",
                         "value": 237
                     },
                     {
-                        "color": "a57000",
+                        "color": "a87000",
                         "description": "Dbl Crop WinWht/Cotton",
                         "value": 238
                     },
                     {
-                        "color": "267000",
+                        "color": "267300",
                         "description": "Dbl Crop Soybeans/Cotton",
                         "value": 239
                     },
                     {
-                        "color": "267000",
+                        "color": "267300",
                         "description": "Dbl Crop Soybeans/Oats",
                         "value": 240
                     },
                     {
-                        "color": "ffd300",
+                        "color": "ffd400",
                         "description": "Dbl Crop Corn/Soybeans",
                         "value": 241
                     },
@@ -763,7 +768,7 @@
                         "value": 250
                     },
                     {
-                        "color": "267000",
+                        "color": "267300",
                         "description": "Dbl Crop Barley/Soybeans",
                         "value": 254
                     }
@@ -838,127 +843,129 @@
                             11
                         ],
                         "palette": [
-                            "ffd300",
+                            "ffd400",
                             "ff2626",
-                            "00a8e2",
-                            "ff9e0a",
-                            "267000",
+                            "00a9e6",
+                            "ff9e0f",
+                            "267300",
                             "ffff00",
-                            "70a500",
-                            "00af49",
-                            "dda50a",
-                            "dda50a",
-                            "7cd3ff",
-                            "e2007c",
-                            "896054",
-                            "d8b56b",
-                            "a57000",
-                            "d69ebc",
-                            "707000",
-                            "aa007c",
-                            "a05989",
-                            "700049",
-                            "d69ebc",
+                            "70a800",
+                            "00af4d",
+                            "e0a60f",
+                            "e0a60f",
+                            "80d4ff",
+                            "e2007f",
+                            "8a6453",
+                            "d9b56c",
+                            "a87000",
+                            "d69dbc",
+                            "737300",
+                            "ae017e",
+                            "a15889",
+                            "73004c",
+                            "d69dbc",
                             "d1ff00",
-                            "7c99ff",
+                            "8099ff",
                             "d6d600",
                             "d1ff00",
-                            "00af49",
-                            "ffa5e2",
-                            "a5f28c",
-                            "00af49",
-                            "d69ebc",
-                            "a800e2",
-                            "a50000",
-                            "702600",
-                            "00af49",
-                            "af7cff",
-                            "702600",
+                            "00af4d",
+                            "ffa8e3",
+                            "a5f58d",
+                            "00af4d",
+                            "d69dbc",
+                            "a900e6",
+                            "a80000",
+                            "732600",
+                            "00af4d",
+                            "b380ff",
+                            "732600",
                             "ff6666",
                             "ff6666",
                             "ffcc66",
                             "ff6666",
-                            "00af49",
-                            "00ddaf",
-                            "54ff00",
-                            "f2a377",
+                            "00af4d",
+                            "00deb0",
+                            "55ff00",
+                            "f5a27a",
                             "ff6666",
-                            "00af49",
-                            "7cd3ff",
-                            "e8bfff",
-                            "afffdd",
-                            "00af49",
-                            "bfbf77",
-                            "93cc93",
-                            "c6d69e",
+                            "00af4d",
+                            "80d4ff",
+                            "e8beff",
+                            "b2ffde",
+                            "00af4d",
+                            "bfbf7a",
+                            "95ce93",
+                            "c7d79e",
                             "ccbfa3",
                             "ff00ff",
-                            "ff8eaa",
-                            "ba004f",
+                            "ff91ab",
+                            "b90050",
                             "704489",
-                            "007777",
-                            "af9970",
-                            "ffff7c",
-                            "b5705b",
-                            "00a582",
-                            "e8d6af",
-                            "af9970",
-                            "f2f2f2",
-                            "999999",
-                            "4970a3",
-                            "7cafaf",
-                            "e8ffbf",
+                            "007878",
+                            "b39c70",
+                            "ffff80",
+                            "b6705c",
+                            "00a884",
+                            "ebd6b0",
+                            "b39c70",
+                            "f7f7f7",
+                            "9c9c9c",
+                            "4d70a3",
+                            "80b3b3",
+                            "e9ffbe",
                             "00ffff",
-                            "4970a3",
-                            "d3e2f9",
-                            "999999",
-                            "999999",
-                            "999999",
-                            "999999",
+                            "4d70a3",
+                            "d4e3fc",
+                            "9c9c9c",
+                            "9c9c9c",
+                            "9c9c9c",
+                            "9c9c9c",
                             "ccbfa3",
-                            "93cc93",
-                            "93cc93",
-                            "93cc93",
-                            "c6d69e",
-                            "e8ffbf",
-                            "7cafaf",
-                            "7cafaf",
+                            "95ce93",
+                            "95ce93",
+                            "95ce93",
+                            "c7d79e",
+                            "e9ffbe",
+                            "80b3b3",
+                            "80b3b3",
                             "00ff8c",
-                            "d69ebc",
+                            "d69dbc",
                             "ff6666",
                             "ff6666",
                             "ff6666",
                             "ff6666",
-                            "ff8eaa",
-                            "334933",
-                            "e27026",
+                            "ff91ab",
+                            "344a34",
+                            "e67525",
                             "ff6666",
                             "ff6666",
+                            "66994d",
                             "ff6666",
-                            "af9970",
-                            "ff8eaa",
+                            "b39c70",
+                            "ff91ab",
                             "ff6666",
-                            "ff8eaa",
-                            "ff6666",
-                            "ff6666",
-                            "ff8eaa",
-                            "00af49",
-                            "ffd300",
-                            "ffd300",
+                            "ff91ab",
                             "ff6666",
                             "ff6666",
-                            "896054",
+                            "ff91ab",
+                            "00af4d",
+                            "ffd400",
+                            "ffd400",
+                            "ff6666",
+                            "ffd400",
+                            "ff6666",
+                            "8a6453",
                             "ff6666",
                             "ff2626",
-                            "e2007c",
-                            "ff9e0a",
-                            "ff9e0a",
-                            "a57000",
-                            "ffd300",
-                            "a57000",
-                            "267000",
-                            "267000",
-                            "ffd300",
+                            "e2007f",
+                            "ff9e0f",
+                            "ff9e0f",
+                            "a87000",
+                            "ffd400",
+                            "a87000",
+                            "267300",
+                            "267300",
+                            "ffd400",
                             "000099",
                             "ff6666",
                             "ff6666",
@@ -968,7 +975,7 @@
                             "ff6666",
                             "ff6666",
                             "ff6666",
-                            "267000"
+                            "267300"
                         ]
                     }
                 },
