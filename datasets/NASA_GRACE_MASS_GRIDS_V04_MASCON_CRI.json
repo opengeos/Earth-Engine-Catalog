@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "NASA/GRACE/MASS_GRIDS_V03/MASCON",
+    "id": "NASA/GRACE/MASS_GRIDS_V04/MASCON_CRI",
     "stac_version": "1.1.0",
-    "description": "This dataset contains gridded monthly global water storage/height anomalies\nrelative to a time-mean, derived from GRACE and GRACE-FO and processed at\nJPL using the Mascon approach (RL06.1Mv03). These data are provided in a\nsingle data file in netCDF format, and can be used for analysis for ocean,\nice, and hydrology phenomena. The water storage/height anomalies are given\nin equivalent water thickness units (cm). The solution provided here is\nderived from solving for monthly gravity field variations in terms of\ngeolocated spherical cap mass concentration functions, rather than global\nspherical harmonic coefficients. Additionally, realistic geophysical\ninformation is introduced during the solution inversion to intrinsically\nremove correlated error. Thus, these Mascon grids do not need to be\ndestriped or smoothed, like traditional spherical harmonic gravity\nsolutions. The complete Mascon solution consists of 4,551 relatively\nindependent estimates of surface mass change that have been derived using an\nequal-area 3-degree grid of individual mascons. It should be noted that this\ndataset does not correct for leakage errors across coastlines; it is\ntherefore recommended only for users who want to apply their own algorithm\nto separate between land and ocean mass very near coastlines.\nThis RL06.1Mv03 is an updated version of the previous [Tellus JPL Mascon\nRL06Mv02](https://doi.org/10.5067/TEMSC-3JC62). RL06.1Mv03 differs from RL06Mv02 only\nin the Level-1B accelerometer transplant data that is used for the GF2\n(GRACE-FO 2) satellite; RL06.1Mv03 uses the ACH data product.\nFor more information,\nplease visit [GRACE page](https://grace.jpl.nasa.gov/data/get-data/jpl_global_mascons/).\nFor a detailed description on the Mascon solution, including\nthe mathematical derivation, implementation of geophysical constraints, and\nsolution validation, please see [Watkins et al., 2015](https://doi.org/10.1002/2014JB011547).\nThis product is intended for expert use only; other users are encouraged to\nuse the [CRI-filtered Mascon dataset](https://podaac.jpl.nasa.gov/dataset/TELLUS_GRAC-GRFO_MASCON_GRID_RL06.1_V3).\n",
+    "description": "This dataset contains gridded monthly global water storage/height anomalies\nrelative to a time-mean, derived from GRACE and GRACE-FO and processed at\nJPL using the Mascon approach (RL06.3Mv04). These data are provided in a\nsingle data file in netCDF format, and can be used for analysis for ocean,\nice, and hydrology phenomena. The water storage/height anomalies are given\nin equivalent water thickness units (cm). The solution provided here is\nderived from solving for monthly gravity field variations in terms of\ngeolocated spherical cap mass concentration functions, rather than global\nspherical harmonic coefficients. Additionally, realistic geophysical\ninformation is introduced during the solution inversion to intrinsically\nremove correlated error. Thus, these Mascon grids do not need to be\nde-correlated or smoothed, like traditional spherical harmonic gravity\nsolutions.\n\nThe complete Mascon solution consists of 4,551 relatively\nindependent estimates of surface mass change that have been derived using an\nequal-area 3-degree grid of individual mascons. It should be noted that this\ndataset does not correct for leakage errors across coastlines; it is\ntherefore recommended only for users who want to apply their own algorithm\nto separate between land and ocean mass very near coastlines.\n\nFor more information, please visit [GRACE page](https://grace.jpl.nasa.gov/data/get-data/jpl_global_mascons/).\nFor a detailed description on the Mascon solution, including\nthe mathematical derivation, implementation of geophysical constraints, and\nsolution validation, please see [Watkins et al., 2015](https://doi.org/10.1002/2014JB011547).\nThis product is intended for expert use only; other users are encouraged to\nuse the [CRI-filtered Mascon dataset](https://podaac.jpl.nasa.gov/dataset/TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.3_V4).\n\nThis RL06.3Mv04 is an updated version of the previous [Tellus JPL Mascon\nRL06.1Mv03](https://doi.org/10.5067/TEMSC-3MJ63).\n",
     "links": [
         {
             "rel": "root",
@@ -12,42 +12,36 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_GRACE_MASS_GRIDS_V03_MASCON",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_GRACE_MASS_GRIDS_V04_MASCON_CRI",
             "type": "text/html",
-            "title": "Run the example for NASA/GRACE/MASS_GRIDS_V03/MASCON in the Earth Engine Code Editor",
+            "title": "Run the example for NASA/GRACE/MASS_GRIDS_V04/MASCON_CRI in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_GRACE_MASS_GRIDS_V03_MASCON_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_GRACE_MASS_GRIDS_V04_MASCON_CRI_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GRACE_MASS_GRIDS_V03_MASCON#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GRACE_MASS_GRIDS_V04_MASCON_CRI#terms-of-use",
             "type": "text/html"
         },
         {
             "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_GRACE_MASS_GRIDS_V04_MASCON.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_GRACE_MASS_GRIDS_V04_MASCON_CRI.json",
             "type": "application/json",
-            "title": "NASA/GRACE/MASS_GRIDS_V04/MASCON"
+            "title": "NASA/GRACE/MASS_GRIDS_V04/MASCON_CRI"
         },
         {
             "rel": "predecessor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_GRACE_MASS_GRIDS_MASCON.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_GRACE_MASS_GRIDS_V03_MASCON_CRI.json",
             "type": "application/json",
-            "title": "NASA/GRACE/MASS_GRIDS/MASCON"
-        },
-        {
-            "rel": "successor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_GRACE_MASS_GRIDS_V04_MASCON.json",
-            "type": "application/json",
-            "title": "NASA/GRACE/MASS_GRIDS_V04/MASCON"
+            "title": "NASA/GRACE/MASS_GRIDS_V03/MASCON_CRI"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_GRACE_MASS_GRIDS_V03_MASCON.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_GRACE_MASS_GRIDS_V04_MASCON_CRI.json",
             "type": "application/json"
         },
         {
@@ -63,12 +57,11 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:provider_ids": [
-        "C2536982552-POCLOUD"
+        "C3195527175-POCLOUD"
     ],
-    "gee:status": "deprecated",
     "gee:terms_of_use": "All NASA-produced data from the GRACE mission is made freely available\nfor the public to use. When using any of the GRCTellus data, please\nadd an acknowledgment: \"GRACE land are available at\n[https://grace.jpl.nasa.gov](https://grace.jpl.nasa.gov),\nsupported by the NASA MEaSUREs Program.\" and cite with the\ncitations provided.\n",
     "gee:type": "image_collection",
-    "sci:citation": "D.N. Wiese. 2015. GRACE monthly global water mass grids NETCDF\nRELEASE 6.1. Ver. 3.0. PO.DAAC, CA, USA.. Dataset accessed [YYYY-MM-DD] at\n[https://doi.org/10.5067/TEMSC-3MJ63](https://doi.org/10.5067/TEMSC-3MJ63).\n",
+    "sci:citation": "D. N. Wiese, D.-N. Yuan, C. Boening, F. W. Landerer, M. M. Watkins. 2023.\nJPL GRACE and GRACE-FO Mascon Ocean, Ice, and Hydrology Equivalent Water\nHeight CRI Filtered RL06.3Mv04. Ver. RL06.3Mv04. PO.DAAC, CA, USA. Dataset\naccessed [YYYY-MM-DD] at\n[https://doi.org/10.5067/TEMSC-3JC634](https://doi.org/10.5067/TEMSC-3JC634).\n",
     "sci:publications": [
         {
             "citation": "Watkins, M. M., D. N. Wiese, D.-N. Yuan, C. Boening, and F. W.\nLanderer (2015), Improved methods for observing Earth's time variable mass,\nmass distribution with GRACE using spherical cap mascons, J. Geophys. Res\nSolid Earth, 120,\n[doi:10.1002/2014JB011547](https://doi.org/10.1002/2014JB011547).\n",
@@ -79,9 +72,8 @@
             "doi": "10.1002/2016WR019344"
         }
     ],
-    "version": "Release 06.1",
-    "deprecated": true,
-    "title": "GRACE Monthly Mass Grids Release 6.1 Version 3 - Global Mascons [deprecated]",
+    "version": "Release 06.3",
+    "title": "GRACE Monthly Mass Grids Version 04 - Global Mascon (CRI Filtered)",
     "extent": {
         "spatial": {
             "bbox": [
@@ -97,7 +89,7 @@
             "interval": [
                 [
                     "2002-03-31T00:00:00Z",
-                    "2024-03-31T00:00:00Z"
+                    "2024-09-30T00:00:00Z"
                 ]
             ]
         }
@@ -127,7 +119,7 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GRACE_MASS_GRIDS_V03_MASCON"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GRACE_MASS_GRIDS_V04_MASCON_CRI"
         }
     ],
     "summaries": {
