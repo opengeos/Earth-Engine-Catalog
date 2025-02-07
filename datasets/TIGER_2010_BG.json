@@ -200,7 +200,7 @@
             "max_features_per_tile": 16000,
             "prerender_tiles": true,
             "thinning_ranking": [
-                "STATEFP ASC"
+                "STATEFP10 ASC"
             ],
             "thinning_strategy": "HIGHER_DENSITY"
         }

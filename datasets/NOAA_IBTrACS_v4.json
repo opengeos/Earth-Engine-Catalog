@@ -128,11 +128,11 @@
             "max_features_per_tile": 6000,
             "prerender_tiles": true,
             "thinning_ranking": [
-                "id DESC"
+                ".minZoomLevel DESC"
             ],
             "thinning_strategy": "GLOBALLY_CONSISTENT",
             "z_order_ranking": [
-                "seq ASC"
+                "SID ASC"
             ]
         }
     }
