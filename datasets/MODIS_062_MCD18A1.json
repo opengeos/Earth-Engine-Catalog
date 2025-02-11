@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "MODIS/061/MCD18A1",
+    "id": "MODIS/062/MCD18A1",
     "stac_version": "1.1.0",
-    "description": "The MCD18A1 Version 6.1\nis a Moderate Resolution Imaging Spectroradiometer\n(MODIS) Terra and Aqua combined Downward Shortwave Radiation (DSR) gridded\nLevel 3 product produced daily at 1 kilometer pixel resolution with\nestimates of DSR every 3 hours. DSR is incident solar radiation over land\nsurfaces in the shortwave spectrum (300-4,000 nanometers) and is an\nimportant variable in land-surface models that address a variety of\nscientific and application issues. The MCD18 products are based on a\nprototyping algorithm that uses multi-temporal signatures of MODIS data to\nderive surface reflectance and then calculate incident DSR using the look-up\ntable (LUT) approach. The LUTs consider different types of loadings of\naerosols and clouds at a variety of illumination/viewing geometry. Global\nDSR products are generated from MODIS and geostationary satellite data.\nAdditional details regarding the methodology used to create the data are\navailable in the\n[Algorithm Theoretical Basis Document](https://lpdaac.usgs.gov/documents/106/MCD18_ATBD.pdf).\n",
+    "description": "The MCD18A1 Version 6.2\nis a Moderate Resolution Imaging Spectroradiometer\n(MODIS) Terra and Aqua combined Downward Shortwave Radiation (DSR) gridded\nLevel 3 product produced daily at 1 kilometer pixel resolution with\nestimates of DSR every 3 hours. DSR is incident solar radiation over land\nsurfaces in the shortwave spectrum (300-4,000 nanometers) and is an\nimportant variable in land-surface models that address a variety of\nscientific and application issues. The MCD18 products are based on a\nprototyping algorithm that uses multi-temporal signatures of MODIS data to\nderive surface reflectance and then calculate incident DSR using the look-up\ntable (LUT) approach. The LUTs consider different types of loadings of\naerosols and clouds at a variety of illumination/viewing geometry. Global\nDSR products are generated from MODIS and geostationary satellite data.\nAdditional details regarding the methodology used to create the data are\navailable in the\n[Algorithm Theoretical Basis Document](https://lpdaac.usgs.gov/documents/106/MCD18_ATBD.pdf).\n",
     "links": [
         {
             "rel": "root",
@@ -12,24 +12,24 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_061_MCD18A1",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_062_MCD18A1",
             "type": "text/html",
-            "title": "Run the example for MODIS/061/MCD18A1 in the Earth Engine Code Editor",
+            "title": "Run the example for MODIS/062/MCD18A1 in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MCD18A1_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_062_MCD18A1_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD18A1#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_062_MCD18A1#terms-of-use",
             "type": "text/html"
         },
         {
             "rel": "cite-as",
-            "href": "https://doi.org/10.5067/MODIS/MCD18A1.061"
+            "href": "https://doi.org/10.5067/MODIS/MCD18A1.062"
         },
         {
             "rel": "latest-version",
@@ -38,14 +38,14 @@
             "title": "MODIS/062/MCD18A1"
         },
         {
-            "rel": "successor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_062_MCD18A1.json",
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MCD18A1.json",
             "type": "application/json",
-            "title": "MODIS/062/MCD18A1"
+            "title": "MODIS/061/MCD18A1"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MCD18A1.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_062_MCD18A1.json",
             "type": "application/json"
         },
         {
@@ -65,14 +65,12 @@
         "type": "cadence",
         "unit": "day"
     },
-    "gee:status": "deprecated",
     "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
     "gee:type": "image_collection",
     "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
-    "sci:doi": "10.5067/MODIS/MCD18A1.061",
-    "version": "6.1",
-    "deprecated": true,
-    "title": "MCD18A1.061 Surface Radiation Daily/3-Hour [deprecated]",
+    "sci:doi": "10.5067/MODIS/MCD18A1.062",
+    "version": "6.2",
+    "title": "MCD18A1.062 Surface Radiation Daily/3-Hour",
     "extent": {
         "spatial": {
             "bbox": [
@@ -87,8 +85,8 @@
         "temporal": {
             "interval": [
                 [
-                    "2000-02-24T00:00:00Z",
-                    "2024-06-01T00:00:00Z"
+                    "2000-03-03T00:00:00Z",
+                    "2005-09-24T00:00:00Z"
                 ]
             ]
         }
@@ -105,14 +103,14 @@
                 "licensor",
                 "producer"
             ],
-            "url": "https://lpdaac.usgs.gov/products/mcd18a1v061/"
+            "url": "https://lpdaac.usgs.gov/products/mcd18a1v062/"
         },
         {
             "name": "Google Earth Engine",
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD18A1"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_062_MCD18A1"
         }
     ],
     "summaries": {
