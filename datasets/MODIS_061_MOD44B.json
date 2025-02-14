@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "MODIS/061/MCD15A3H",
+    "id": "MODIS/061/MOD44B",
     "stac_version": "1.1.0",
-    "description": "The MCD15A3H Version 6.1 Moderate Resolution Imaging Spectroradiometer (MODIS) Level 4, Combined Fraction of Photosynthetically Active Radiation (FPAR), and Leaf Area Index (LAI) product is a 4-day composite data set with 500 meter pixel size. The algorithm chooses the best pixel available from all the acquisitions of both MODIS sensors located on NASA's Terra and Aqua satellites from within the 4-day period.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/624/MOD15_User_Guide_V6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/90/MOD15_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MCD15A3H)\n",
+    "description": "The Terra MODIS Vegetation Continuous Fields (VCF)\nproduct is a sub-pixel-level representation of surface vegetation\ncover estimates globally. Designed to continuously represent\nEarth's terrestrial surface as a proportion of basic vegetation\ntraits, it provides a gradation of three surface cover components:\npercent tree cover, percent non-tree cover, and percent bare.\nVCF products provide a continuous, quantitative portrayal of\nland surface cover with improved spatial detail, and hence, are\nwidely used in environmental modeling and monitoring applications.\n\nGenerated yearly, the VCF product is produced using monthly\ncomposites of Terra MODIS 250 and 500 meters Land Surface Reflectance\ndata, including all seven bands, and Land Surface Temperature.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1494/MOD44B_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/113/MOD44B_ATBD.pdf)\n\n* [General Documentation](https://lpdaac.usgs.gov/products/mod44bv061/)\n",
     "links": [
         {
             "rel": "root",
@@ -12,40 +12,36 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_061_MCD15A3H",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_061_MOD44B",
             "type": "text/html",
-            "title": "Run the example for MODIS/061/MCD15A3H in the Earth Engine Code Editor",
+            "title": "Run the example for MODIS/061/MOD44B in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MCD15A3H_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MOD44B_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD15A3H#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD44B#terms-of-use",
             "type": "text/html"
         },
         {
-            "rel": "cite-as",
-            "href": "https://doi.org/10.5067/MODIS/MCD15A3H.061"
-        },
-        {
             "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MCD15A3H.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MOD44B.json",
             "type": "application/json",
-            "title": "MODIS/061/MCD15A3H"
+            "title": "MODIS/061/MOD44B"
         },
         {
             "rel": "predecessor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MCD15A3H.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MOD44B.json",
             "type": "application/json",
-            "title": "MODIS/006/MCD15A3H"
+            "title": "MODIS/006/MOD44B"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MCD15A3H.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MOD44B.json",
             "type": "application/json"
         },
         {
@@ -61,19 +57,18 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:interval": {
-        "interval": 4,
+        "interval": 1,
         "type": "cadence",
-        "unit": "day"
+        "unit": "year"
     },
     "gee:provider_ids": [
-        "C1620262642-LPDAAC_ECS"
+        "C2565805839-LPCLOUD"
     ],
     "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
     "gee:type": "image_collection",
     "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
-    "sci:doi": "10.5067/MODIS/MCD15A3H.061",
     "version": "6.1",
-    "title": "MCD15A3H.061 MODIS Leaf Area Index/FPAR 4-Day Global 500m",
+    "title": "MOD44B.061 Terra Vegetation Continuous Fields Yearly Global 250m",
     "extent": {
         "spatial": {
             "bbox": [
@@ -88,22 +83,22 @@
         "temporal": {
             "interval": [
                 [
-                    "2002-07-04T00:00:00Z",
-                    "2025-02-06T00:00:00Z"
+                    "2000-03-05T00:00:00Z",
+                    "2023-03-06T00:00:00Z"
                 ]
             ]
         }
     },
     "license": "other",
     "keywords": [
-        "4_day",
-        "fpar",
+        "annual",
+        "geophysical",
         "global",
-        "lai",
-        "mcd15a3h",
+        "mod44b",
         "modis",
         "nasa",
-        "usgs",
+        "terra",
+        "tree_cover",
         "vegetation"
     ],
     "providers": [
@@ -113,247 +108,153 @@
                 "licensor",
                 "producer"
             ],
-            "url": "https://doi.org/10.5067/MODIS/MCD15A3H.061"
+            "url": "https://doi.org/10.5067/MODIS/MOD44B.006"
         },
         {
             "name": "Google Earth Engine",
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD15A3H"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD44B"
         }
     ],
     "summaries": {
         "eo:bands": [
             {
-                "center_wavelength": 0.55,
-                "description": "FPAR absorbed by the green elements of a vegetation canopy",
-                "gee:scale": 0.01,
-                "gee:wavelength": "400-700nm",
-                "name": "Fpar"
+                "description": "Percent of a pixel which is covered by tree canopy",
+                "gee:units": "%",
+                "name": "Percent_Tree_Cover"
             },
             {
-                "description": "One-sided green leaf area per unit ground area in\nbroadleaf canopies; one-half the total needle surface area per\nunit ground area in coniferous canopies\n",
-                "gee:scale": 0.1,
-                "name": "Lai"
+                "description": "Percent of a pixel which is covered by non-tree vegetation",
+                "gee:units": "%",
+                "name": "Percent_NonTree_Vegetation"
             },
             {
-                "description": "Quality for Lai and Fpar",
+                "description": "Percent of a pixel which is not vegetated",
+                "gee:units": "%",
+                "name": "Percent_NonVegetated"
+            },
+            {
+                "description": "Describes those inputs that had poor quality (cloudy,\nhigh aerosol, cloud shadow, or view zenith >45&deg;). Each bit\nin the field represents 1 out of 8 input surface reflectance\nfiles to the model.\n",
                 "gee:bitmask": {
                     "bitmask_parts": [
                         {
                             "bit_count": 1,
-                            "description": "MODLAND_QC bits",
+                            "description": "State of input layers DOY 065-097",
                             "first_bit": 0,
                             "values": [
                                 {
-                                    "description": "Good quality (main algorithm with or without saturation)",
+                                    "description": "Clear",
                                     "value": 0
                                 },
                                 {
-                                    "description": "Other quality (back-up algorithm or fill values)",
+                                    "description": "Bad",
                                     "value": 1
                                 }
                             ]
                         },
                         {
                             "bit_count": 1,
-                            "description": "Sensor",
+                            "description": "State of input layers DOY 113-145",
                             "first_bit": 1,
                             "values": [
                                 {
-                                    "description": "Terra",
+                                    "description": "Clear",
                                     "value": 0
                                 },
                                 {
-                                    "description": "Aqua",
+                                    "description": "Bad",
                                     "value": 1
                                 }
                             ]
                         },
                         {
                             "bit_count": 1,
-                            "description": "Dead detector",
+                            "description": "State of input layers DOY 161-193",
                             "first_bit": 2,
                             "values": [
                                 {
-                                    "description": "Detectors apparently fine for up to 50% of channels 1, 2",
+                                    "description": "Clear",
                                     "value": 0
                                 },
                                 {
-                                    "description": "Dead detectors caused >50% adjacent detector retrieval",
+                                    "description": "Bad",
                                     "value": 1
                                 }
                             ]
                         },
                         {
-                            "bit_count": 2,
-                            "description": "Cloud state",
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 209-241",
                             "first_bit": 3,
                             "values": [
                                 {
-                                    "description": "Significant clouds NOT present (clear)",
+                                    "description": "Clear",
                                     "value": 0
                                 },
                                 {
-                                    "description": "Significant clouds WERE present",
-                                    "value": 1
-                                },
-                                {
-                                    "description": "Mixed cloud present in pixel",
-                                    "value": 2
-                                },
-                                {
-                                    "description": "Cloud state not defined, assumed clear",
-                                    "value": 3
-                                }
-                            ]
-                        },
-                        {
-                            "bit_count": 3,
-                            "description": "SCF_QC",
-                            "first_bit": 5,
-                            "values": [
-                                {
-                                    "description": "Main (RT) method used with no saturation, best result possible",
-                                    "value": 0
-                                },
-                                {
-                                    "description": "Main (RT) method used with saturation, good and very usable",
-                                    "value": 1
-                                },
-                                {
-                                    "description": "Main (RT) method failed due to bad geometry, empirical algorithm used",
-                                    "value": 2
-                                },
-                                {
-                                    "description": "Main (RT) method failed due to problems other\nthan geometry, empirical algorithm used",
-                                    "value": 3
-                                },
-                                {
-                                    "description": "Pixel not produced at all, value couldn''t\nbe retrieved (possible reasons: bad L1B data, unusable\nMOD09GA data)\n",
-                                    "value": 4
-                                }
-                            ]
-                        }
-                    ],
-                    "total_bit_count": 8
-                },
-                "name": "FparLai_QC"
-            },
-            {
-                "description": "Extra detail quality for LAI and FPAR",
-                "gee:bitmask": {
-                    "bitmask_parts": [
-                        {
-                            "bit_count": 2,
-                            "description": "Land-sea pass-thru",
-                            "first_bit": 0,
-                            "values": [
-                                {
-                                    "description": "LAND",
-                                    "value": 0
-                                },
-                                {
-                                    "description": "SHORE",
-                                    "value": 1
-                                },
-                                {
-                                    "description": "FRESHWATER",
-                                    "value": 2
-                                },
-                                {
-                                    "description": "OCEAN",
-                                    "value": 3
-                                }
-                            ]
-                        },
-                        {
-                            "bit_count": 1,
-                            "description": "Snow ice",
-                            "first_bit": 2,
-                            "values": [
-                                {
-                                    "description": "No snow/ice detected",
-                                    "value": 0
-                                },
-                                {
-                                    "description": "Snow/ice detected",
+                                    "description": "Bad",
                                     "value": 1
                                 }
                             ]
                         },
                         {
                             "bit_count": 1,
-                            "description": "Aerosol",
-                            "first_bit": 3,
-                            "values": [
-                                {
-                                    "description": "No or low atmospheric aerosol levels detected",
-                                    "value": 0
-                                },
-                                {
-                                    "description": "Average or high aerosol levels detected",
-                                    "value": 1
-                                }
-                            ]
-                        },
-                        {
-                            "bit_count": 1,
-                            "description": "Cirrus",
+                            "description": "State of input layers DOY 257-289",
                             "first_bit": 4,
                             "values": [
                                 {
-                                    "description": "No cirrus detected",
+                                    "description": "Clear",
                                     "value": 0
                                 },
                                 {
-                                    "description": "Cirrus detected",
+                                    "description": "Bad",
                                     "value": 1
                                 }
                             ]
                         },
                         {
                             "bit_count": 1,
-                            "description": "Internal cloud mask",
+                            "description": "State of input layers DOY 305-337",
                             "first_bit": 5,
                             "values": [
                                 {
-                                    "description": "No clouds",
+                                    "description": "Clear",
                                     "value": 0
                                 },
                                 {
-                                    "description": "Clouds were detected",
+                                    "description": "Bad",
                                     "value": 1
                                 }
                             ]
                         },
                         {
                             "bit_count": 1,
-                            "description": "Cloud shadow",
+                            "description": "State of input layers DOY 353-017",
                             "first_bit": 6,
                             "values": [
                                 {
-                                    "description": "No cloud shadow detected",
+                                    "description": "Clear",
                                     "value": 0
                                 },
                                 {
-                                    "description": "Cloud shadow detected",
+                                    "description": "Bad",
                                     "value": 1
                                 }
                             ]
                         },
                         {
                             "bit_count": 1,
-                            "description": "SCF biome mask",
+                            "description": "State of input layers DOY 033-045",
                             "first_bit": 7,
                             "values": [
                                 {
-                                    "description": "Biome outside interval <1,4>",
+                                    "description": "Clear",
                                     "value": 0
                                 },
                                 {
-                                    "description": "Biome in interval <1,4>",
+                                    "description": "Bad",
                                     "value": 1
                                 }
                             ]
@@ -361,26 +262,157 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "FparExtra_QC"
+                "name": "Quality"
             },
             {
-                "description": "Standard deviation of Fpar",
+                "description": "Standard deviation (SD) of the 30 models that were\nused to generate the pixel value in the percent tree cover data\nlayer\n",
                 "gee:scale": 0.01,
-                "name": "FparStdDev"
+                "gee:units": "%",
+                "name": "Percent_Tree_Cover_SD"
             },
             {
-                "description": "Standard deviation for Lai",
-                "gee:scale": 0.1,
-                "name": "LaiStdDev"
+                "description": "Standard deviation (SD) of the 30 models that were\nused to generate the pixel value in the percent non-vegetated\ndata layer\n",
+                "gee:scale": 0.01,
+                "gee:units": "%",
+                "name": "Percent_NonVegetated_SD"
+            },
+            {
+                "description": "Clarifies the 'Quality' layer to give the user an\nindication that the 'bad' data refers to cloudy input data. Each\nbit in the field represents 1 out of 8 input surface reflectance\nfiles to the model.\n",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 065-097",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Cloudy",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 113-145",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Cloudy",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 161-193",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Cloudy",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 209-241",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Cloudy",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 257-289",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Cloudy",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 305-337",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Cloudy",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 353-017",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Cloudy",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "State of input layers DOY 033-045",
+                            "first_bit": 7,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Cloudy",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 8
+                },
+                "name": "Cloud"
             }
         ],
         "gee:visualizations": [
             {
-                "display_name": "Default visualization",
+                "display_name": "Percent Tree Cover",
                 "image_visualization": {
                     "band_vis": {
                         "bands": [
-                            "Fpar"
+                            "Percent_Tree_Cover"
                         ],
                         "max": [
                             100
@@ -389,45 +421,47 @@
                             0
                         ],
                         "palette": [
-                            "e1e4b4",
-                            "999d60",
-                            "2ec409",
-                            "0a4b06"
+                            "bbe029",
+                            "0a9501",
+                            "074b03"
                         ]
                     }
                 },
                 "lookat": {
                     "lat": 46.529,
                     "lon": 6.746,
-                    "zoom": 6
+                    "zoom": 3
                 }
             }
         ],
         "gsd": [
-            500
+            250
         ],
         "instruments": [
             "MODIS"
         ],
         "platform": [
-            "Aqua",
             "Terra"
         ],
-        "Fpar": {
+        "Percent_NonTree_Vegetation": {
             "minimum": 0,
             "maximum": 100
         },
-        "FparStdDev": {
+        "Percent_NonVegetated": {
             "minimum": 0,
             "maximum": 100
         },
-        "Lai": {
+        "Percent_NonVegetated_SD": {
+            "minimum": 0,
+            "maximum": 32767
+        },
+        "Percent_Tree_Cover": {
             "minimum": 0,
             "maximum": 100
         },
-        "LaiStdDev": {
+        "Percent_Tree_Cover_SD": {
             "minimum": 0,
-            "maximum": 100
+            "maximum": 32767
         }
     }
 }

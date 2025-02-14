@@ -28,6 +28,18 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MOD44B.json",
+            "type": "application/json",
+            "title": "MODIS/061/MOD44B"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MOD44B.json",
+            "type": "application/json",
+            "title": "MODIS/061/MOD44B"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MOD44B.json",
             "type": "application/json"
@@ -52,11 +64,13 @@
     "gee:provider_ids": [
         "C1374355842-LPDAAC_ECS"
     ],
+    "gee:status": "deprecated",
     "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
     "gee:type": "image_collection",
     "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
-    "version": "6",
-    "title": "MOD44B.006 Terra Vegetation Continuous Fields Yearly Global 250m",
+    "version": "6.0",
+    "deprecated": true,
+    "title": "MOD44B.006 Terra Vegetation Continuous Fields Yearly Global 250m [deprecated]",
     "extent": {
         "spatial": {
             "bbox": [
@@ -72,7 +86,7 @@
             "interval": [
                 [
                     "2000-03-05T00:00:00Z",
-                    "2020-03-05T00:00:00Z"
+                    "2023-07-31T00:00:00Z"
                 ]
             ]
         }
@@ -124,7 +138,7 @@
                 "name": "Percent_NonVegetated"
             },
             {
-                "description": "Describes those inputs that had poor quality (cloudy,\nhigh aerosol, cloud shadow, or view zenith >45\u00b0). Each bit\nin the field represents 1 out of 8 input surface reflectance\nfiles to the model.\n",
+                "description": "Describes those inputs that had poor quality (cloudy,\nhigh aerosol, cloud shadow, or view zenith >45&deg;). Each bit\nin the field represents 1 out of 8 input surface reflectance\nfiles to the model.\n",
                 "gee:bitmask": {
                     "bitmask_parts": [
                         {
