@@ -1,0 +1,280 @@
+{
+    "type": "Collection",
+    "id": "WRI/SBTN/naturalLands/v1_1/2020",
+    "stac_version": "1.1.0",
+    "description": "The SBTN Natural Lands Map v1.1 is a 2020 baseline map of natural and\nnon-natural land covers intended for use by companies setting\n[science-based targets for nature](https://sciencebasedtargetsnetwork.org/companies/take-action/),\nspecifically the SBTN Land target #1: no conversion of natural ecosystems.\n\n\"Natural\" and \"non-natural\" definitions were adapted from the\n[Accountability Framework initiative's definition of a natural\necosystem](https://accountability-framework.org/use-the-accountability-framework/definitions/natural-ecosystem/)\nas \"one that substantially resembles - in terms of species composition,\nstructure, and ecological function - what would be found in a given area\nin the absence of major human impacts\" and can include managed ecosystems\nas well as degraded ecosystems that are expected to regenerate either\nnaturally or through management (AFi 2024). The SBTN Natural Lands Map\noperationalizes this definition by using proxies based on available data\nthat align with AFi guidance to the extent possible.\n\nThis map was made by compiling existing global\nand regional data.You can find the full technical note explaining the\nmethodology linked on the\n[Natural Lands GitHub](https://github.com/wri/natural-lands-map).\nThis work was a collaboration between Land & Carbon Lab at the World\nResources Institute, World Wildlife Fund US, Systemiq, and SBTN.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WRI/WRI_SBTN_naturalLands_v1_1_2020",
+            "type": "text/html",
+            "title": "Run the example for WRI/SBTN/naturalLands/v1_1/2020 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/WRI/WRI_SBTN_naturalLands_v1_1_2020_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/WRI_SBTN_naturalLands_v1_1_2020#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-SA-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WRI/WRI_SBTN_naturalLands_v1_1_2020.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WRI/catalog.json",
+            "type": "application/json",
+            "title": "WRI"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:terms_of_use": "[CC-BY-SA-4.0](https://spdx.org/licenses/CC-BY-SA-4.0.html)",
+    "gee:type": "image",
+    "gee:unusual_terms_of_use": true,
+    "sci:citation": "Mazur, E., M. Sims, E. Goldman, M. Schneider, M.D. Pirri, C.R. Beatty, F.\nStolle, M. Stevenson. 2025. \"SBTN Natural Lands Map v1.1: Technical\nDocumentation\". Science Based Targets for Land Version 1 - Supplementary\nMaterial. Science Based Targets Network.\n[https://sciencebasedtargetsnetwork.org/wp-content/uploads/2025/02/Technical-Guidance-2025-Step3-Land-v1_1-Natural-Lands-Map.pdf](https://sciencebasedtargetsnetwork.org/wp-content/uploads/2025/02/Technical-Guidance-2025-Step3-Land-v1_1-Natural-Lands-Map.pdf)\n",
+    "version": "v1.1",
+    "title": "SBTN Natural Lands Map v1.1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60,
+                    180,
+                    75
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    "2020-12-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-SA-4.0",
+    "keywords": [
+        "wri",
+        "landcover"
+    ],
+    "providers": [
+        {
+            "name": "WRI",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://github.com/wri/natural-lands-map/tree/main"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/WRI_SBTN_naturalLands_v1_1_2020"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Land cover classification.",
+                "gee:classes": [
+                    {
+                        "color": "246E24",
+                        "description": "natural forests",
+                        "value": 2
+                    },
+                    {
+                        "color": "B9B91E",
+                        "description": "natural short vegetation",
+                        "value": 3
+                    },
+                    {
+                        "color": "6BAED6",
+                        "description": "natural water",
+                        "value": 4
+                    },
+                    {
+                        "color": "06A285",
+                        "description": "mangroves",
+                        "value": 5
+                    },
+                    {
+                        "color": "FEFECC",
+                        "description": "bare",
+                        "value": 6
+                    },
+                    {
+                        "color": "ACD1E8",
+                        "description": "snow",
+                        "value": 7
+                    },
+                    {
+                        "color": "589558",
+                        "description": "wet natural forests",
+                        "value": 8
+                    },
+                    {
+                        "color": "093D09",
+                        "description": "natural peat forests",
+                        "value": 9
+                    },
+                    {
+                        "color": "DBDB7B",
+                        "description": "wet natural short vegetation",
+                        "value": 10
+                    },
+                    {
+                        "color": "99991A",
+                        "description": "natural peat short vegetation",
+                        "value": 11
+                    },
+                    {
+                        "color": "D3D3D3",
+                        "description": "crop",
+                        "value": 12
+                    },
+                    {
+                        "color": "D3D3D3",
+                        "description": "built",
+                        "value": 13
+                    },
+                    {
+                        "color": "D3D3D3",
+                        "description": "non-natural tree cover",
+                        "value": 14
+                    },
+                    {
+                        "color": "D3D3D3",
+                        "description": "non-natural short vegetation",
+                        "value": 15
+                    },
+                    {
+                        "color": "D3D3D3",
+                        "description": "non-natural water",
+                        "value": 16
+                    },
+                    {
+                        "color": "D3D3D3",
+                        "description": "wet non-natural tree cover",
+                        "value": 17
+                    },
+                    {
+                        "color": "D3D3D3",
+                        "description": "non-natural peat tree cover",
+                        "value": 18
+                    },
+                    {
+                        "color": "D3D3D3",
+                        "description": "wet non-natural short vegetation",
+                        "value": 19
+                    },
+                    {
+                        "color": "D3D3D3",
+                        "description": "non-natural peat short vegetation",
+                        "value": 20
+                    },
+                    {
+                        "color": "D3D3D3",
+                        "description": "non-natural bare",
+                        "value": 21
+                    }
+                ],
+                "name": "classification"
+            },
+            {
+                "description": "Land cover classification.",
+                "gee:classes": [
+                    {
+                        "color": "969696",
+                        "description": "Non-natural land",
+                        "value": 0
+                    },
+                    {
+                        "color": "a8ddb5",
+                        "description": "Natural land",
+                        "value": 1
+                    }
+                ],
+                "name": "natural"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Array of hex code color strings used for the classification palette.",
+                "name": "classification_class_palette",
+                "type": "STRING_LIST"
+            },
+            {
+                "description": "Value of the land cover classification.",
+                "name": "classification_class_values",
+                "type": "INT_LIST"
+            },
+            {
+                "description": "Array of hex code color strings used for the natural binary mask palette.",
+                "name": "natural_class_palette",
+                "type": "STRING_LIST"
+            },
+            {
+                "description": "Value of the natural binary mask",
+                "name": "natural_class_values",
+                "type": "INT_LIST"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Natural lands",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "natural"
+                        ],
+                        "palette": [
+                            "969696",
+                            "a8ddb5"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 0,
+                    "lon": 0,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ],
+        "classification": {
+            "minimum": 2,
+            "maximum": 21
+        },
+        "natural": {
+            "minimum": 0,
+            "maximum": 1
+        }
+    }
+}
