@@ -76,6 +76,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "cryosphere"
+    ],
     "gee:status": "deprecated",
     "gee:terms_of_use": "For the creation of any reports, publications, new\ndata sets, derived products, or services resulting from the data\nset, users should cite: GLIMS and NSIDC (2005, updated 2013): Global\nLand Ice Measurements from Space glacier database.  Compiled and\nmade available by the international GLIMS community and the National\nSnow and Ice Data Center, Boulder CO, U.S.A.,\n[doi:10.7265/N5V98602](https://doi.org/10.7265/N5V98602)\n",
     "gee:type": "table",

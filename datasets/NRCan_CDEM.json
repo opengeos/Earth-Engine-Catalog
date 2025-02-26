@@ -51,6 +51,9 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "elevation-topography"
+    ],
     "gee:terms_of_use": "Licensed under the\n[Open Government Licence - Canada](https://open.canada.ca/en/open-government-licence-canada).\n",
     "gee:type": "image_collection",
     "title": "Canadian Digital Elevation Model",

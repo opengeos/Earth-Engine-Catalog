@@ -48,6 +48,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "elevation-topography"
+    ],
     "gee:terms_of_use": "National Science Foundation (PGC's primary funding source) policy requires\nresearchers to acknowledge NSF support in all publications, web pages, and\nmedia interviews.\n\nBy using PGC data in Earth Engine, users agree to cite PGC\nand its sponsorship by the NSF. The original source of any third-party data\nsupplied by PGC must also be properly attributed.\n\nFor more information see the PGC's\n[Acknowledgement Policy](https://www.pgc.umn.edu/guides/user-services/acknowledgement-policy/).\n",
     "gee:type": "image",
     "sci:citation": "Howat, I. M., Porter, C., Smith, B. E., Noh, M.-J., and Morin, P.:\nThe Reference Elevation Model of Antarctica, The Cryosphere, 13, 665-674, 2019.\n",

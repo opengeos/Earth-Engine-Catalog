@@ -42,6 +42,9 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "atmosphere"
+    ],
     "gee:interval": {
         "interval": 2,
         "type": "revisit_interval",
@@ -65,7 +68,7 @@
             "interval": [
                 [
                     "2018-04-30T10:50:26Z",
-                    "2025-02-09T11:38:52Z"
+                    "2025-02-10T11:19:55Z"
                 ]
             ]
         }

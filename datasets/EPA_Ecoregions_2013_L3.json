@@ -55,6 +55,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "ecosystems"
+    ],
     "gee:terms_of_use": "There are no restrictions on use of this US public domain data.",
     "gee:type": "table",
     "sci:citation": "Commission for Environmental Cooperation. 1997. Ecological regions\nof North America: toward a common perspective. Commission for Environmental\nCooperation, Montreal, Quebec, Canada. 71p. Map (scale 1:12,500,000).\nRevised 2006.\n",

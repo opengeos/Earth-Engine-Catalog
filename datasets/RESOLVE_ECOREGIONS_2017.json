@@ -49,6 +49,9 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "ecosystems"
+    ],
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "table",
     "sci:citation": "[Bioscience, An Ecoregions-Based Approach to Protecting Half the\nTerrestrial Realm](https://academic.oup.com/bioscience/article/67/6/534/3102935)\n[doi:10.1093/biosci/bix014](https://doi.org/10.1093/biosci/bix014)\n",

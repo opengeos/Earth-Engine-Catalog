@@ -44,6 +44,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "elevation-topography"
+    ],
     "gee:terms_of_use": "[etalab-2.0](https://spdx.org/licenses/etalab-2.0.html)",
     "gee:type": "image_collection",
     "sci:citation": "IGN (2021). RGE ALTI 1m [Data set]. Accessed 2022-07-01 from\n[IGN website](https://geoservices.ign.fr/rgealti#telechargement1m)\n",

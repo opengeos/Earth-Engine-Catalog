@@ -50,6 +50,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "ecosystems"
+    ],
     "gee:terms_of_use": "Global Ecosystem Typology datasets are provided under the CC BY 4.0 license,\nwhich allows re-distribution and re-use of a licensed work on the condition\nthat the creator is appropriately credited.\n",
     "gee:type": "table",
     "sci:publications": [

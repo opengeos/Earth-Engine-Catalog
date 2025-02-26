@@ -44,6 +44,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "atmosphere"
+    ],
     "gee:terms_of_use": "Unless otherwise noted, all NASA-produced data may be used for any purpose\nwithout prior permission. For more information and exceptions visit the\n[NASA Data & Information Policy page](https://earthdata.nasa.gov/collaborate/open-data-services-and-software/data-information-policy).\n",
     "gee:type": "image_collection",
     "sci:citation": "Keller, C. A., Knowland, K. E., Duncan, B. N., Liu, J., Anderson, D. C.,\nDas, S., ... & Pawson, S. (2021). Description of the NASA GEOS composition\nforecast modeling system GEOS-CF v1. 0. Journal of Advances in Modeling\nEarth Systems, 13(4), e2020MS002413.\n[doi:10.1029/2020MS002413](https://doi.org/10.1029/2020MS002413)\n",
@@ -65,7 +68,7 @@
             "interval": [
                 [
                     "2018-01-01T00:00:00Z",
-                    "2025-02-23T12:00:00Z"
+                    "2025-02-24T12:00:00Z"
                 ]
             ]
         }

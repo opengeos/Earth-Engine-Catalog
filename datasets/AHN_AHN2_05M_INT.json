@@ -42,6 +42,9 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "elevation-topography"
+    ],
     "gee:terms_of_use": "The datasets of the AHN are available as Open Data.\nThis means that the data can be used by anyone for free and without\nrestrictions. For more information visit the\n[Open Data](https://www.ahn.nl/open-data/) page. Downloads are available\nunder the terms of the\n[CC-0 license](https://data.overheid.nl/licenties-voor-hergebruik).\n",
     "gee:type": "image",
     "title": "AHN Netherlands 0.5m DEM, Interpolated",

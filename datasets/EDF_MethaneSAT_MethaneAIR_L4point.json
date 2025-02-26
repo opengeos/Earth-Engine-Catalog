@@ -55,6 +55,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "atmosphere"
+    ],
     "gee:terms_of_use": "Use of this data is subject to [MethaneSAT's Content License Terms of\nUse](https://www.methanesat.org/sites/default/files/2024-10/MethaneSATGEE%20Terms%20of%20Use%20October%202024.pdf).\n",
     "gee:type": "table",
     "gee:unusual_terms_of_use": true,

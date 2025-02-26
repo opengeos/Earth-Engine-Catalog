@@ -47,6 +47,10 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "atmosphere",
+        "satellite-imagery"
+    ],
     "gee:interval": {
         "interval": 10,
         "type": "cadence",
@@ -80,7 +84,7 @@
             "interval": [
                 [
                     "2017-07-10T00:00:00Z",
-                    "2025-02-25T01:28:55Z"
+                    "2025-02-26T03:28:25Z"
                 ]
             ]
         }

@@ -48,6 +48,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "elevation-topography"
+    ],
     "gee:terms_of_use": "[proprietary](Use a custom URL for the non-standard license)",
     "gee:type": "image",
     "sci:citation": "Slater, T., Shepherd, A., McMillan, M., Muir, A., Gilbert, L.,\nHogg, A. E., Konrad, H. and Parrinello, T.: A new Digital Elevation\nModel of Antarctica derived from CryoSat-2 altimetry, The Cryosphere,\n[doi:10.5194/tc-2017-223](https://doi.org/10.5194/tc-2017-223), 2018\n",

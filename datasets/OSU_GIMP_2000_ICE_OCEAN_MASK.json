@@ -48,6 +48,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "cryosphere"
+    ],
     "gee:terms_of_use": "As a condition of using these data, you must cite the use of this\ndata set using the given citation.\n",
     "gee:type": "image",
     "sci:citation": "Howat, I.M., A. Negrete, B.E. Smith, 2014, The Greenland Ice\nMapping Project (GIMP) land classification and surface elevation\ndatasets, The Cryosphere, 8, 1509-1518,\n[doi:10.5194/tc-8-1509-2014](https://doi.org/10.5194/tc-8-1509-2014)\n[article pdf](https://www.the-cryosphere.net/8/1509/2014/tc-8-1509-2014.pdf)\n",

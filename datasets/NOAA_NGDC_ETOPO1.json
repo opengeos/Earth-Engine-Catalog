@@ -51,6 +51,9 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "elevation-topography"
+    ],
     "gee:terms_of_use": "It is not necessary to obtain written permission to\nuse ETOPO1 or other NOAA products that are in the public domain,\nnor are there any fees for using them. We ask only that you cite\nNCEI as source.\n",
     "gee:type": "image",
     "sci:citation": "Amante, C. and B. W. Eakins, ETOPO1 1 Arc-Minute Global Relief\nModel: Procedures, Data Sources and Analysis. NOAA Technical Memorandum\nNESDIS NGDC-24, 19 pp, March 2009.\n",

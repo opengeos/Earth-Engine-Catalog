@@ -42,6 +42,9 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "atmosphere"
+    ],
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -65,7 +68,7 @@
             "interval": [
                 [
                     "2011-01-01T00:00:00Z",
-                    "2025-02-24T18:00:00Z"
+                    "2025-02-25T18:00:00Z"
                 ]
             ]
         }
