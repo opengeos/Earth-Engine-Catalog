@@ -44,6 +44,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "landuse-landcover"
+    ],
     "gee:terms_of_use": "The GlobCover products have been processed by ESA and by the Universit\u00e9\nCatholique de Louvain. They are made available to the public by ESA.\nYou may use the GlobCover land cover map for educational and/or scientific\npurposes, without any fee on the condition that you credit ESA and the\nUniversit\u00e9 Catholique de Louvain as the source of the GlobCover products.\n",
     "gee:type": "image",
     "gee:unusual_terms_of_use": true,

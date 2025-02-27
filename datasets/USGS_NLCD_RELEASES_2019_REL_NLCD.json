@@ -56,6 +56,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "landuse-landcover"
+    ],
     "gee:terms_of_use": "Most U.S. Geological Survey (USGS) information is federally created data and\ntherefore reside in the public domain and may be used, transferred, or\nreproduced without copyright restriction.\nAdditional information on [Acknowledging or Crediting USGS as Information\nSource](https://www.usgs.gov/centers/eros/data-citation) is available.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
