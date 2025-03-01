@@ -50,6 +50,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "forest-biomass"
+    ],
     "gee:interval": {
         "interval": 5,
         "type": "cadence",
@@ -91,6 +94,7 @@
     "license": "other",
     "keywords": [
         "forest",
+        "forest-biomass",
         "glcf",
         "landsat_derived",
         "nasa",

@@ -44,6 +44,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "climate"
+    ],
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -69,7 +72,7 @@
             "interval": [
                 [
                     "1950-01-02T00:00:00Z",
-                    "2025-02-20T00:00:00Z"
+                    "2025-02-21T00:00:00Z"
                 ]
             ]
         }

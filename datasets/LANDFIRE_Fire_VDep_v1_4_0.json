@@ -44,6 +44,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "fire"
+    ],
     "gee:terms_of_use": "LANDFIRE data are public domain data with no use restrictions, though if modifications\nor derivatives of the product(s) are created, then please add some descriptive modifier\nto the data set to avoid confusion.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,

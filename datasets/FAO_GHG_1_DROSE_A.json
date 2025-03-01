@@ -44,6 +44,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "climate"
+    ],
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -85,6 +88,7 @@
     "license": "other",
     "keywords": [
         "agriculture",
+        "climate",
         "climate_change",
         "emissions",
         "fao",

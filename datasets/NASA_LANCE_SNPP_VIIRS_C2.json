@@ -44,6 +44,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "fire"
+    ],
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -72,7 +75,7 @@
             "interval": [
                 [
                     "2023-09-03T00:00:00Z",
-                    "2025-02-27T00:00:00Z"
+                    "2025-02-28T00:00:00Z"
                 ]
             ]
         }

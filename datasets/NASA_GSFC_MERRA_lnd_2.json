@@ -48,6 +48,9 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "climate"
+    ],
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -79,6 +82,7 @@
     },
     "license": "other",
     "keywords": [
+        "climate",
         "evaporation",
         "ice",
         "merra",

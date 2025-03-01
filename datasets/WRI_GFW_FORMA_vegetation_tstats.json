@@ -42,6 +42,9 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "forest-biomass"
+    ],
     "gee:terms_of_use": "The FORMA datasets are available without restriction\non use or distribution. WRI does request that the\nuser give proper attribution and identify WRI and GFW, where applicable,\nas the source of the data.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
@@ -71,6 +74,7 @@
         "daily",
         "deforestation",
         "forest",
+        "forest-biomass",
         "forma",
         "gfw",
         "modis",

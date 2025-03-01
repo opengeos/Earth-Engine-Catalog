@@ -60,6 +60,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "plant-productivity"
+    ],
     "gee:interval": {
         "interval": 4,
         "type": "cadence",
@@ -105,6 +108,7 @@
         "mcd115a3h",
         "modis",
         "nasa",
+        "plant-productivity",
         "usgs",
         "vegetation"
     ],

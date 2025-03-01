@@ -67,6 +67,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "forest-biomass"
+    ],
     "gee:status": "deprecated",
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image",
@@ -97,6 +100,7 @@
     "license": "CC-BY-4.0",
     "keywords": [
         "forest",
+        "forest-biomass",
         "geophysical",
         "hansen",
         "landsat_derived",

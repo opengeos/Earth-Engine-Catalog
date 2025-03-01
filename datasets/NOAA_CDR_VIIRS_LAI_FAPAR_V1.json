@@ -48,6 +48,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "plant-productivity"
+    ],
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -74,20 +77,21 @@
             "interval": [
                 [
                     "2014-01-01T00:00:00Z",
-                    "2025-02-23T00:00:00Z"
+                    "2025-02-25T00:00:00Z"
                 ]
             ]
         }
     },
     "license": "other",
     "keywords": [
-        "viirs",
         "cdr",
         "daily",
         "fapar",
         "lai",
         "land",
-        "noaa"
+        "noaa",
+        "plant-productivity",
+        "viirs"
     ],
     "providers": [
         {

@@ -50,6 +50,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "fire"
+    ],
     "gee:status": "deprecated",
     "gee:terms_of_use": "The FORMA datasets are available without restriction on use or distribution.\nWRI does request that the user give proper attribution and identify WRI and\nGFW, where applicable, as the source of the data.\n",
     "gee:type": "image",
@@ -81,6 +84,7 @@
     "keywords": [
         "alerts",
         "deforestation",
+        "fire",
         "forest",
         "forma",
         "geophysical",

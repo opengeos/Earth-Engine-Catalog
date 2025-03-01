@@ -42,6 +42,9 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "climate"
+    ],
     "gee:terms_of_use": "The NOAA CPC datasets are available without restriction\non use or distribution. NOAA PSL does request that the\nuser give proper attribution and identify NOAA PSL, where applicable,\nas the source of the data.\n",
     "gee:type": "image_collection",
     "title": "CPC Global Unified Temperature",
@@ -67,6 +70,7 @@
     },
     "license": "other",
     "keywords": [
+        "climate",
         "daily",
         "noaa",
         "precipitation",

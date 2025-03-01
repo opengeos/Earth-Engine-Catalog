@@ -43,6 +43,9 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "forest-biomass"
+    ],
     "gee:terms_of_use": "- The national level dataset is freely available for use for\n  scientific, conservation, and educational purposes.\n- Users acknowledge that they themselves are responsible for determining\n  whether the dataset is of sufficient quality and appropriateness for\n  their objectives.\n- Users agree that they will make reasonable efforts to provide appropriate\n  feedbacks and notification of any significant errors that they identify\n  in the dataset.\n",
     "gee:type": "image",
     "sci:citation": "A. Baccini, S J. Goetz, W.S. Walker, N. T. Laporte, M. Sun, D.\nSulla-Menashe, J. Hackler, P.S.A. Beck, R. Dubayah, M.A. Friedl, S. Samanta\nand R. A. Houghton. Estimated carbon dioxide emissions from tropical\ndeforestation improved by carbon-density maps. 2012 Nature Climate Change,\n[doi:10.1038/NCLIMATE1354](https://doi.org/10.1038/NCLIMATE1354)\n",
@@ -72,6 +75,7 @@
         "aboveground",
         "biomass",
         "carbon",
+        "forest-biomass",
         "geophysical",
         "pantropical",
         "tropical",

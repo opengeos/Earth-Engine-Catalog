@@ -53,6 +53,9 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "climate"
+    ],
     "gee:terms_of_use": "NOAA data, information, and products, regardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use.\n",
     "gee:type": "table",
     "version": "2019-05-10",
@@ -79,6 +82,7 @@
     },
     "license": "other",
     "keywords": [
+        "climate",
         "hurricane",
         "nhc",
         "noaa",

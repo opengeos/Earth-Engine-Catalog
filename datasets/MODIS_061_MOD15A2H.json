@@ -60,6 +60,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "plant-productivity"
+    ],
     "gee:interval": {
         "interval": 8,
         "type": "cadence",
@@ -103,6 +106,7 @@
         "mod15a2h",
         "modis",
         "nasa",
+        "plant-productivity",
         "terra",
         "usgs"
     ],
