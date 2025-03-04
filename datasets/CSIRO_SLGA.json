@@ -102,6 +102,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "soil"
+    ],
     "gee:terms_of_use": "All products developed by the Soil and Landscape Grid of Australia are\navailable at no cost under a\n[Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/)\n(CC BY) and users should read the\n[Disclaimer](https://www.clw.csiro.au/aclep/soilandlandscapegrid/About-Disclaimer.html).\n",
     "gee:type": "image_collection",
     "sci:citation": "Viscarra Rossel, Raphael; Chen, Charlie; Grundy, Mike; Searle, Ross;\nClifford, David; Odgers, Nathan; Holmes, Karen; Griffin, Ted; Liddicoat,\nCraig; Kidd, Darren (2014): Soil and Landscape Grid National Soil Attribute\nMaps - SOIL ATTRIBUTE Release 1. v2. CSIRO. Data Collection\n[doi:10.1071/SR14366](https://doi.org/10.1071/SR14366).\n",
