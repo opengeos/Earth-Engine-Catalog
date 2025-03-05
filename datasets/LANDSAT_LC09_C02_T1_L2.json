@@ -47,6 +47,9 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
     "gee:interval": {
         "interval": 16,
         "type": "revisit_interval",
@@ -70,7 +73,7 @@
             "interval": [
                 [
                     "2021-10-31T00:00:00Z",
-                    "2025-03-01T23:57:20Z"
+                    "2025-03-01T23:58:56Z"
                 ]
             ]
         }
@@ -87,6 +90,7 @@
         "lc09",
         "lst",
         "reflectance",
+        "satellite-imagery",
         "sr",
         "usgs"
     ],

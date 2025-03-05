@@ -48,6 +48,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
     "gee:provider_ids": [
         "C1602494076-NSIDC_ECS"
     ],
@@ -85,7 +88,8 @@
         "imagery",
         "nasa",
         "polar",
-        "radarsat_1"
+        "radarsat_1",
+        "satellite-imagery"
     ],
     "providers": [
         {

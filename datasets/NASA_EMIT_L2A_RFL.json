@@ -44,6 +44,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -70,7 +73,7 @@
             "interval": [
                 [
                     "2022-08-09T00:00:00Z",
-                    "2025-03-03T00:45:23Z"
+                    "2025-03-03T00:47:10Z"
                 ]
             ]
         }
@@ -80,7 +83,8 @@
         "daily",
         "emit",
         "nasa",
-        "reflectance"
+        "reflectance",
+        "satellite-imagery"
     ],
     "providers": [
         {

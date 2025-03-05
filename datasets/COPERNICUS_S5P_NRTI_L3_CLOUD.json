@@ -52,7 +52,7 @@
     },
     "gee:terms_of_use": "The use of Sentinel data is governed by the [Copernicus\nSentinel Data Terms and Conditions.](https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice)\n",
     "gee:type": "image_collection",
-    "title": "Sentinel-5P NRTI CLOUD: Near Real-Time Cloud",
+    "title": "Sentinel-5P NRTI CLOUD: Near Real-Time Cloud Properties",
     "extent": {
         "spatial": {
             "bbox": [
@@ -68,7 +68,7 @@
             "interval": [
                 [
                     "2018-07-05T23:24:16Z",
-                    "2025-03-03T10:26:14Z"
+                    "2025-03-04T09:46:13Z"
                 ]
             ]
         }
@@ -131,7 +131,6 @@
             },
             {
                 "description": "Retrieved cloud optical depth",
-                "gee:units": "m",
                 "name": "cloud_optical_depth"
             },
             {
@@ -241,7 +240,7 @@
                 "type": "STRING"
             },
             {
-                "description": "Spatial resolution at nadir. For most products this is `3.5x7km2`,\nexcept for `L2__O3__PR`, which uses `28x21km2`, and\n`L2__CO____` and `L2__CH4___`, which both use `7x7km2`.\nThis attribute originates from the CCI standard.\n",
+                "description": "Spatial resolution at nadir. For most products this is `3.5x7 km2`,\nexcept for `L2__O3__PR`, which uses `28x21km2`, and\n`L2__CO____` and `L2__CH4___`, which both use `7x7 km2`.\nThis attribute originates from the CCI standard.\n",
                 "name": "SPATIAL_RESOLUTION",
                 "type": "STRING"
             },
@@ -266,7 +265,7 @@
                 "type": "STRING"
             },
             {
-                "description": "This dataset uses some dynamic auxiliary data from the European Centre\nfor Medium-Range Weather Forecasts.  If the ECMWF data was used, this\nfield will have the value 'Nominal'.  If the ECMWF data was not used, a\nfallback solution was used, and this field will have the value of\n\\\"Fallback\\\".\n",
+                "description": "This dataset uses some dynamic auxiliary data from the European Centre\nfor Medium-Range Weather Forecasts.  If the ECMWF data was used, this\nfield will have the value 'Nominal'.  If the ECMWF data was not used, a\nfallback solution was used, and this field will have the value of\n\"Fallback\".\n",
                 "name": "STATUS_MET_2D",
                 "type": "STRING"
             }

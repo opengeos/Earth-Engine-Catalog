@@ -47,6 +47,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
     "gee:provider_ids": [
         "C2021957657-LPCLOUD"
     ],
@@ -70,7 +73,7 @@
             "interval": [
                 [
                     "2013-04-11T00:00:00Z",
-                    "2025-02-28T23:59:18Z"
+                    "2025-03-01T21:51:21Z"
                 ]
             ]
         }
@@ -79,6 +82,7 @@
     "keywords": [
         "landsat",
         "nasa",
+        "satellite-imagery",
         "sentinel",
         "usgs"
     ],

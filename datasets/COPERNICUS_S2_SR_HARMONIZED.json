@@ -55,6 +55,9 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
     "gee:interval": {
         "interval": 5,
         "type": "revisit_interval",
@@ -63,7 +66,7 @@
     "gee:terms_of_use": "The use of Sentinel data is governed by the [Copernicus\nSentinel Data Terms and Conditions.](https://scihub.copernicus.eu/twiki/pub/SciHubWebPortal/TermsConditions/Sentinel_Data_Terms_and_Conditions.pdf)\n",
     "gee:type": "image_collection",
     "version": "harmonized",
-    "title": "Harmonized Sentinel-2 MSI: MultiSpectral Instrument, Level-2A",
+    "title": "Harmonized Sentinel-2 MSI: MultiSpectral Instrument, Level-2A (SR)",
     "extent": {
         "spatial": {
             "bbox": [
@@ -79,7 +82,7 @@
             "interval": [
                 [
                     "2017-03-28T00:00:00Z",
-                    "2025-03-03T22:48:07Z"
+                    "2025-03-05T00:47:55Z"
                 ]
             ]
         }
@@ -91,6 +94,7 @@
         "eu",
         "msi",
         "reflectance",
+        "satellite-imagery",
         "sentinel",
         "sr"
     ],

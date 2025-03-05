@@ -42,6 +42,9 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
     "gee:interval": {
         "interval": 16,
         "type": "revisit_interval",
@@ -65,7 +68,7 @@
             "interval": [
                 [
                     "2021-10-31T00:00:00Z",
-                    "2025-03-03T07:08:57Z"
+                    "2025-03-04T06:02:58Z"
                 ]
             ]
         }
@@ -75,6 +78,7 @@
         "c2",
         "global",
         "landsat",
+        "satellite-imagery",
         "toa",
         "usgs"
     ],

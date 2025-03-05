@@ -44,6 +44,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
     "sci:citation": "Pasquarella, V. J., Brown, C. F., Czerwinski, W., & Rucklidge, W. J. (2023)\nComprehensive Quality Assessment of Optical Satellite Imagery Using Weakly\nSupervised Video Learning. In Proceedings of the IEEE/CVF Conference on\nComputer Vision and Pattern Recognition (pp. 2124-2134).\n[PDF](https://openaccess.thecvf.com/content/CVPR2023W/EarthVision/html/Pasquarella_Comprehensive_Quality_Assessment_of_Optical_Satellite_Imagery_Using_Weakly_Supervised_CVPRW_2023_paper.html)\n",
@@ -64,7 +67,7 @@
             "interval": [
                 [
                     "2015-06-27T00:00:00Z",
-                    "2025-03-03T19:25:05Z"
+                    "2025-03-04T18:57:08Z"
                 ]
             ]
         }
@@ -73,6 +76,7 @@
     "keywords": [
         "cloud",
         "google",
+        "satellite-imagery",
         "sentinel2_derived"
     ],
     "providers": [

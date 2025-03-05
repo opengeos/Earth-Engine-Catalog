@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "COPERNICUS/S3/OLCI",
     "stac_version": "1.1.0",
-    "description": "The Ocean and Land Color Instrument (OLCI) Earth Observation\nFull Resolution (EFR) dataset contains top of atmosphere radiances\nat 21 spectral bands with center wavelengths ranging between\n0.4&micro;m and 1.02&micro;m at spatial resolution of 300m with\nworldwide coverage every ~2 days.\n\nOLCI is one of the instruments\nin the ESA/EUMETSAT Sentinel-3 mission for measuring sea-surface\ntopography, sea- and land-surface temperature, ocean color and\nland color with high-end accuracy and reliability to support\nocean forecasting systems, as well as environmental and climate\nmonitoring.\n\nThe Sentinel-3 OLCI instrument is based on the\noptomechanical and imaging design of ENVISAT's MERIS. It is designed\nto retrieve the spectral distribution of upwelling radiance just\nabove the sea surface (the water-leaving radiance).\n\nOLCI observation is performed simultaneously in 21 spectral bands\nranging from the visible to the near-infrared (400 to 1029nm).\n",
+    "description": "The Ocean and Land Color Instrument (OLCI) Earth Observation\nFull Resolution (EFR) dataset contains top of atmosphere radiances\nat 21 spectral bands with center wavelengths ranging between\n0.4&micro;m and 1.02&micro;m at spatial resolution of 300m with\nworldwide coverage every ~2 days.\n\nOLCI is one of the instruments\nin the ESA/EUMETSAT Sentinel-3 mission for measuring sea-surface\ntopography, sea- and land-surface temperature, ocean color and\nland color with high-end accuracy and reliability to support\nocean forecasting systems, as well as environmental and climate\nmonitoring.\n\nThe Sentinel-3 OLCI instrument is based on the\noptomechanical and imaging design of ENVISAT's MERIS. It is designed\nto retrieve the spectral distribution of upwelling radiance just\nabove the sea surface (the water-leaving radiance).\n\nOLCI observation is performed simultaneously in 21 spectral bands\nranging from the visible to the near-infrared (400 to 1029 nm).\n",
     "links": [
         {
             "rel": "root",
@@ -42,6 +42,9 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
     "gee:interval": {
         "interval": 2,
         "type": "revisit_interval",
@@ -65,7 +68,7 @@
             "interval": [
                 [
                     "2016-10-18T19:25:42Z",
-                    "2025-03-03T00:47:05Z"
+                    "2025-03-04T08:27:51Z"
                 ]
             ]
         }
@@ -77,6 +80,7 @@
         "eu",
         "olci",
         "radiance",
+        "satellite-imagery",
         "sentinel",
         "toa"
     ],

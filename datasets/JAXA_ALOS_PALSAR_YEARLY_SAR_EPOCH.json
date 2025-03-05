@@ -44,6 +44,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
     "gee:terms_of_use": "JAXA retains ownership of the dataset and cannot guarantee\nany problem caused by or possibly caused by using the datasets.\nAnyone wishing to publish any results using the datasets should\nclearly acknowledge the ownership of the data in the publication.\n",
     "gee:type": "image_collection",
     "sci:citation": "Masanobu Shimada, Takuya Itoh, Takeshi Motooka, Manabu Watanabe,\nShiraishi Tomohiro, Rajesh Thapa, and Richard Lucas, \"New Global\nForest/Non-forest Maps from ALOS PALSAR Data (2007-2010)\", Remote Sensing\nof Environment, 155, pp. 13-31, December 2014.\n[doi:10.1016/j.rse.2014.04.014.](https://doi.org/10.1016/j.rse.2014.04.014)\n",
@@ -77,7 +80,8 @@
         "jaxa",
         "palsar",
         "palsar2",
-        "sar"
+        "sar",
+        "satellite-imagery"
     ],
     "providers": [
         {

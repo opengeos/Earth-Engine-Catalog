@@ -48,6 +48,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -92,6 +95,7 @@
         "maiac",
         "modis",
         "nasa",
+        "satellite-imagery",
         "terra",
         "usgs"
     ],

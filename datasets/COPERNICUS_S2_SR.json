@@ -55,6 +55,9 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
     "gee:interval": {
         "interval": 5,
         "type": "revisit_interval",
@@ -65,7 +68,7 @@
     "gee:type": "image_collection",
     "version": "raw",
     "deprecated": true,
-    "title": "Sentinel-2 MSI: MultiSpectral Instrument, Level-2A [deprecated]",
+    "title": "Sentinel-2 MSI: MultiSpectral Instrument, Level-2A (SR) [deprecated]",
     "extent": {
         "spatial": {
             "bbox": [
@@ -81,7 +84,7 @@
             "interval": [
                 [
                     "2017-03-28T00:00:00Z",
-                    "2025-03-03T23:24:12Z"
+                    "2025-03-05T00:47:55Z"
                 ]
             ]
         }
@@ -93,6 +96,7 @@
         "eu",
         "msi",
         "reflectance",
+        "satellite-imagery",
         "sentinel",
         "sr"
     ],

@@ -60,6 +60,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -89,7 +92,7 @@
             "interval": [
                 [
                     "2002-07-04T00:00:00Z",
-                    "2025-02-27T00:00:00Z"
+                    "2025-03-02T00:00:00Z"
                 ]
             ]
         }
@@ -102,6 +105,7 @@
         "modis",
         "myd09gq",
         "nasa",
+        "satellite-imagery",
         "sr",
         "surface_reflectance",
         "usgs"

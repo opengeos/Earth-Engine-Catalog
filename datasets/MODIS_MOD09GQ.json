@@ -55,6 +55,9 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -92,6 +95,7 @@
         "global",
         "mod09gq",
         "modis",
+        "satellite-imagery",
         "surface_reflectance",
         "terra",
         "usgs"

@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "COPERNICUS/S2_CLOUD_PROBABILITY",
     "stac_version": "1.1.0",
-    "description": "The S2 cloud probability is created with the\n[sentinel2-cloud-detector](https://github.com/sentinel-hub/sentinel2-cloud-detector)\nlibrary (using [LightGBM](https://github.com/microsoft/LightGBM)).\nAll bands are upsampled using bilinear interpolation to 10m resolution\nbefore the gradient boost base algorithm is applied.  The resulting\n`0..1` floating point probability is scaled to `0..100` and stored as\na UINT8.  Areas missing any or all of the bands are masked out.\nHigher values are more likely to be clouds or highly reflective surfaces\n(e.g. roof tops or snow).\n\nSentinel-2 is a wide-swath, high-resolution, multi-spectral\nimaging mission supporting Copernicus Land Monitoring studies,\nincluding the monitoring of vegetation, soil and water cover,\nas well as observation of inland waterways and coastal areas.\n\nThe Level-2 data can be found in the collection\n[COPERNICUS/S2_SR_HARMONIZED](COPERNICUS_S2_SR_HARMONIZED).  The Level-1B data can be found in the collection\n[COPERNICUS/S2_HARMONIZED](COPERNICUS_S2_HARMONIZED).  Additional metadata is available on assets in those\ncollections.\n\nSee\n[this tutorial](https://developers.google.com/earth-engine/tutorials/community/sentinel-2-s2cloudless)\nexplaining how to apply the cloud mask.\n",
+    "description": "The S2 cloud probability is created with the\n[sentinel2-cloud-detector](https://github.com/sentinel-hub/sentinel2-cloud-detector)\nlibrary (using [LightGBM](https://github.com/microsoft/LightGBM)).\nAll bands are upsampled using bilinear interpolation to 10m resolution\nbefore the gradient boost base algorithm is applied.  The resulting\n`0..1` floating point probability is scaled to `0..100` and stored as\nan UINT8.  Areas missing any or all of the bands are masked out.\nHigher values are more likely to be clouds or highly reflective surfaces\n(e.g. roof tops or snow).\n\nSentinel-2 is a wide-swath, high-resolution, multi-spectral\nimaging mission supporting Copernicus Land Monitoring studies,\nincluding the monitoring of vegetation, soil and water cover,\nas well as observation of inland waterways and coastal areas.\n\nThe Level-2 data can be found in the collection\n[COPERNICUS/S2_SR_HARMONIZED](COPERNICUS_S2_SR_HARMONIZED).  The Level-1B data can be found in the collection\n[COPERNICUS/S2_HARMONIZED](COPERNICUS_S2_HARMONIZED).  Additional metadata is available on assets in those\ncollections.\n\nSee\n[this tutorial](https://developers.google.com/earth-engine/tutorials/community/sentinel-2-s2cloudless)\nexplaining how to apply the cloud mask.\n",
     "links": [
         {
             "rel": "root",
@@ -42,6 +42,9 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
     "gee:interval": {
         "interval": 5,
         "type": "revisit_interval",
@@ -65,7 +68,7 @@
             "interval": [
                 [
                     "2015-06-27T00:00:00Z",
-                    "2025-03-03T23:06:29Z"
+                    "2025-03-05T00:47:11Z"
                 ]
             ]
         }
@@ -78,6 +81,7 @@
         "eu",
         "msi",
         "radiance",
+        "satellite-imagery",
         "sentinel",
         "sentinelhub"
     ],

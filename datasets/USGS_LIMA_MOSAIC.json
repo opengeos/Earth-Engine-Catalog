@@ -43,6 +43,9 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
     "gee:terms_of_use": "These images are in the public domain and can be used freely\nand without acknowledgement. However, credit to the Landsat\nImage Mosaic of Antarctica (LIMA) Project is greatly appreciated.\n",
     "gee:type": "image",
     "sci:citation": "Bindschadler, R., Vornberger, P., Fleming, A., Fox, A., Mullins, J.,\nBinnie, D., Paulson, S., Granneman, B., and Gorodetzky, D., 2008,\nThe Landsat Image Mosaic of Antarctica, Remote Sensing of\nEnvironment, 112, pp. 4214-4226.\n[PDF](https://lima.usgs.gov/LIMA_paper.pdf)\n",
@@ -74,6 +77,7 @@
         "landsat_derived",
         "lima",
         "mosaic",
+        "satellite-imagery",
         "sr",
         "usgs"
     ],

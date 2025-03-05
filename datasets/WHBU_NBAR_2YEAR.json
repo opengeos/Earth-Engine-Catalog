@@ -47,6 +47,9 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -87,6 +90,7 @@
         "modis_derived",
         "nbar",
         "reflectance",
+        "satellite-imagery",
         "whrc"
     ],
     "providers": [

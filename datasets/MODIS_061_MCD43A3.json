@@ -60,6 +60,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -89,7 +92,7 @@
             "interval": [
                 [
                     "2000-02-24T00:00:00Z",
-                    "2025-02-20T00:00:00Z"
+                    "2025-02-23T00:00:00Z"
                 ]
             ]
         }
@@ -102,6 +105,7 @@
         "global",
         "modis",
         "nasa",
+        "satellite-imagery",
         "usgs",
         "white_sky"
     ],

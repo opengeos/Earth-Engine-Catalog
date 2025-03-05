@@ -43,6 +43,9 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
     "gee:terms_of_use": "This dataset is made available publicly under the Creative Commons by\nAttribution license(CC-BY-4.0).\n",
     "gee:type": "image_collection",
     "sci:citation": "\u00a9 \\<year\\> Planet Labs Inc.",
@@ -73,6 +76,7 @@
         "multispectral",
         "pansharpened",
         "planet",
+        "satellite-imagery",
         "skysat"
     ],
     "providers": [
