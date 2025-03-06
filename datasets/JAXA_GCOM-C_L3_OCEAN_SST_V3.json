@@ -49,6 +49,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "oceanography"
+    ],
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -74,7 +77,7 @@
             "interval": [
                 [
                     "2018-01-22T00:00:00Z",
-                    "2025-03-02T00:00:00Z"
+                    "2025-03-03T00:00:00Z"
                 ]
             ]
         }
@@ -87,6 +90,7 @@
         "gcom_c",
         "jaxa",
         "ocean",
+        "oceanography",
         "sea_surface_temperature",
         "sst"
     ],

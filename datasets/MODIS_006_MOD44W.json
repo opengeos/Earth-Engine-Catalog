@@ -48,6 +48,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "surface-ground-water"
+    ],
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -86,6 +89,7 @@
         "modis",
         "nasa",
         "srtm",
+        "surface-ground-water",
         "usgs",
         "water_mask"
     ],

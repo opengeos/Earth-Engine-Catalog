@@ -56,6 +56,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "oceanography"
+    ],
     "gee:provider_ids": [
         "C2077042363-POCLOUD",
         "C2077042412-POCLOUD",
@@ -105,6 +108,7 @@
         "mass",
         "nasa",
         "ocean",
+        "oceanography",
         "tellus",
         "water"
     ],

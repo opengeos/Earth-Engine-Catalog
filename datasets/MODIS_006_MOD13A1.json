@@ -66,6 +66,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "vegetation-indices"
+    ],
     "gee:interval": {
         "interval": 16,
         "type": "cadence",
@@ -113,7 +116,8 @@
         "ndvi",
         "terra",
         "usgs",
-        "vegetation"
+        "vegetation",
+        "vegetation-indices"
     ],
     "providers": [
         {

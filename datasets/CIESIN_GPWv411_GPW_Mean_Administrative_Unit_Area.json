@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "CIESIN/GPWv411/GPW_Mean_Administrative_Unit_Area",
     "stac_version": "1.1.0",
-    "description": "This dataset contains the mean area of the input unit(s) from which population count and density grids are created.\n\n[General documentation](https://sedac.ciesin.columbia.edu/data/set/gpw-v4-admin-unit-center-points-population-estimates-rev11/docs)\n\nThe Gridded Population of World Version 4 (GPWv4), Revision 11 models the distribution\nof global human population for the years 2000, 2005, 2010, 2015, and 2020\non 30 arc-second (approximately 1km) grid cells. Population is distributed\nto cells using proportional allocation of population from census and\nadministrative units. Population input data are collected at the most\ndetailed spatial resolution available from the results of the 2010 round of\ncensuses, which occurred between 2005 and 2014. The input data are\nextrapolated to produce population estimates for each modeled year.\n",
+    "description": "This dataset contains the mean area of the input unit(s) from which population count and density grids are created.\n\n[General documentation](https://sedac.ciesin.columbia.edu/data/set/gpw-v4-admin-unit-center-points-population-estimates-rev11/docs)\n\nThe Gridded Population of World Version 4 (GPWv4), Revision 11 models the distribution\nof global human population for the years 2000, 2005, 2010, 2015, and 2020\non 30 arc-second (approximately 1 km) grid cells. Population is distributed\nto cells using proportional allocation of population from census and\nadministrative units. Population input data are collected at the most\ndetailed spatial resolution available from the results of the 2010 round of\ncensuses, which occurred between 2005 and 2014. The input data are\nextrapolated to produce population estimates for each modeled year.\n",
     "links": [
         {
             "rel": "root",
@@ -52,6 +52,9 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "population"
     ],
     "gee:provider_ids": [
         "C1596819702-SEDAC"

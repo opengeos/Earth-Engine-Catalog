@@ -49,6 +49,9 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "surface-ground-water"
+    ],
     "gee:terms_of_use": "HydroSHEDS data are free for non-commercial and commercial\nuse. For more information, please refer to the [License Agreement](https://www.hydrosheds.org/page/license).\n",
     "gee:type": "table",
     "gee:user_uploaded": true,
@@ -88,6 +91,7 @@
         "hydrosheds",
         "river_networks",
         "srtm",
+        "surface-ground-water",
         "water",
         "wwf"
     ],

@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "CIESIN/GPWv411/GPW_Water_Mask",
     "stac_version": "1.1.0",
-    "description": "This dataset identifies water pixels; non-water pixels are masked.\nThe water mask was used to exclude areas of water and permanent ice\nfrom the population allocation.\n\n[General Documentation](https://sedac.ciesin.columbia.edu/data/set/gpw-v4-basic-demographic-characteristics-rev11/docs)\n\nThe Gridded Population of World Version 4 (GPWv4), Revision 11 models the distribution\nof global human population for the years 2000, 2005, 2010, 2015, and 2020\non 30 arc-second (approximately 1km) grid cells. Population is distributed\nto cells using proportional allocation of population from census and\nadministrative units. Population input data are collected at the most\ndetailed spatial resolution available from the results of the 2010 round of\ncensuses, which occurred between 2005 and 2014. The input data are\nextrapolated to produce population estimates for each modeled year.\n",
+    "description": "This dataset identifies water pixels; non-water pixels are masked.\nThe water mask was used to exclude areas of water and permanent ice\nfrom the population allocation.\n\n[General Documentation](https://sedac.ciesin.columbia.edu/data/set/gpw-v4-basic-demographic-characteristics-rev11/docs)\n\nThe Gridded Population of World Version 4 (GPWv4), Revision 11 models the distribution\nof global human population for the years 2000, 2005, 2010, 2015, and 2020\non 30 arc-second (approximately 1 km) grid cells. Population is distributed\nto cells using proportional allocation of population from census and\nadministrative units. Population input data are collected at the most\ndetailed spatial resolution available from the results of the 2010 round of\ncensuses, which occurred between 2005 and 2014. The input data are\nextrapolated to produce population estimates for each modeled year.\n",
     "links": [
         {
             "rel": "root",
@@ -53,6 +53,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "surface-ground-water"
+    ],
     "gee:provider_ids": [
         "C1597149689-SEDAC"
     ],
@@ -88,7 +91,8 @@
         "ciesin",
         "gpw",
         "nasa",
-        "population"
+        "population",
+        "surface-ground-water"
     ],
     "providers": [
         {

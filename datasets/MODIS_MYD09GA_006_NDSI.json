@@ -55,6 +55,9 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "vegetation-indices"
+    ],
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -94,7 +97,8 @@
         "myd09ga",
         "ndsi",
         "surface_reflectance",
-        "usgs"
+        "usgs",
+        "vegetation-indices"
     ],
     "providers": [
         {

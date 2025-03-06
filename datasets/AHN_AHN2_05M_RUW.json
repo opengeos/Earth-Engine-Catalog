@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "AHN/AHN2_05M_RUW",
     "stac_version": "1.1.0",
-    "description": "The AHN DEM is a 0.5m DEM covering the Netherlands. It was generated from\nLIDAR data taken in the spring between 2007 and 2012.\n\nThis version contains both ground level samples and items above ground level\n(such as buildings, bridges, trees etc). The point cloud was converted to a\n0.5m grid using an squared inverse distance weighting method.\n",
+    "description": "The AHN DEM is a 0.5m DEM covering the Netherlands. It was generated from\nLIDAR data taken in the spring between 2007 and 2012.\n\nThis version contains both ground level samples and items above ground level\n(such as buildings, bridges, trees etc). The point cloud was converted to a\n0.5m grid using a squared inverse distance weighting method.\n",
     "links": [
         {
             "rel": "root",

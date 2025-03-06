@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "CAS/IGSNRR/PML/V2_v017",
     "stac_version": "1.1.0",
-    "description": "Penman-Monteith-Leuning Evapotranspiration V2 (PML_V2) products include\nevapotranspiration (ET), its three components, and\ngross primary product (GPP) at 500m and 8-day resolution during 2000-2017\nand with spatial range from -60&deg;S to 90&deg;\u00b0N. The major advantages of the\nPML_V2 products are:\n\n  1. Coupled estimates of transpiration and GPP via canopy\n  conductance (Gan et al., 2018; Zhang et al., 2019)\n  2. Partitioning ET into three components: transpiration from vegetation,\n  direct evaporation from the soil and vaporization of intercepted\n   rainfall from vegetation (Zhang et al., 2016).\n\nThe PML_V2 products perform well against observations\nat 95 flux sites across globe, and are similar to or noticeably better than\nmajor state-of-the-art ET and GPP products widely used by water and ecology\nscience communities (Zhang et al., 2019).\n",
+    "description": "Penman-Monteith-Leuning Evapotranspiration V2 (PML_V2) products include\nevapotranspiration (ET), its three components, and\ngross primary production (GPP) at 500m and 8-day resolution during 2000-2017\nand with spatial range from -60&deg;S to 90&deg;N. The major advantages of the\nPML_V2 products are:\n\n  1. Coupled estimates of transpiration and GPP via canopy\n  conductance (Gan et al., 2018; Zhang et al., 2019)\n  2. Partitioning ET into three components: transpiration from vegetation,\n  direct evaporation from the soil and vaporization of intercepted\n   rainfall from vegetation (Zhang et al., 2016).\n\nThe PML_V2 products perform well against observations\nat 95 flux sites across the globe, and are similar to or noticeably better than\nmajor state-of-the-art ET and GPP products widely used by water and ecology\nresearch communities (Zhang et al., 2019).\n",
     "links": [
         {
             "rel": "root",
@@ -134,7 +134,7 @@
     "summaries": {
         "eo:bands": [
             {
-                "description": "Gross primary product",
+                "description": "Gross primary production",
                 "gee:units": "gC m-2 d-1",
                 "name": "GPP"
             },
@@ -154,7 +154,7 @@
                 "name": "Ei"
             },
             {
-                "description": "Water body, snow and ice evaporation. Penman evapotranspiration is\nregarded as actual evaporation for them.\n",
+                "description": "Evaporation from water bodies, snow, and ice. Calculated using the\nPenman equation, which is considered a good estimate of actual\nevaporation for these surfaces.\n",
                 "gee:units": "mm/d",
                 "name": "ET_water"
             }

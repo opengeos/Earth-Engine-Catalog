@@ -48,6 +48,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "surface-ground-water"
+    ],
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)\n\nThis work is licensed under a Creative Commons Attribution 4.0\nInternational License.\n\nAny use of the intertidal data must include proper acknowledgement,\nincluding citing the associated journal article.\n",
     "gee:type": "image",
     "gee:user_uploaded": true,
@@ -87,6 +90,7 @@
         "intertidal",
         "landsat_derived",
         "murray",
+        "surface-ground-water",
         "tidal_flats",
         "uq"
     ],

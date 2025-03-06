@@ -56,6 +56,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "surface-ground-water"
+    ],
     "gee:terms_of_use": "All data here is produced under the Copernicus Programme and is provided\nfree of charge, without restriction of use. For the full license\ninformation see the Copernicus Regulation.\n\nPublications, models, and data products that make use of these datasets\nmust include proper acknowledgement, including citing datasets and the\njournal article as in the following citation.\n\nIf you are using the data as a layer in a published map, please include the\nfollowing attribution text: 'Source: EC JRC/Google'\n",
     "gee:type": "image",
     "gee:user_uploaded": true,
@@ -90,6 +93,7 @@
         "jrc",
         "landsat_derived",
         "surface",
+        "surface-ground-water",
         "water"
     ],
     "providers": [

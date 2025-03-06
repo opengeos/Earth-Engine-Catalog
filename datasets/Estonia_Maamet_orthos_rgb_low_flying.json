@@ -43,6 +43,9 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "orthophotos"
+    ],
     "gee:terms_of_use": "The data is free to use for commercial and non-commercial purposes for a\nnon-specified term, provided that proper attribution is given to the\nlicensor (e.g. Estonian Land Board) along with the title and age of the\ndata.\n\nFor more details please see the\n[Terms of use](https://geoportaal.maaamet.ee/docs/Avaandmed/Licence-of-open-data-of-Estonian-Land-Board.pdf)\n",
     "gee:type": "image_collection",
     "sci:citation": "Map data: Estonian Land Board",
@@ -71,7 +74,7 @@
     "keywords": [
         "estonia",
         "low_flying",
-        "orthophoto",
+        "orthophotos",
         "rgb"
     ],
     "providers": [

@@ -42,6 +42,9 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "surface-ground-water"
+    ],
     "gee:terms_of_use": "The WRI datasets are available without restriction\non use or distribution. WRI does request that the\nuser give proper attribution and identify WRI, where applicable,\nas the source of the data. For more information check\n[WRI's open data commitment](https://www.wri.org/data/open-data-commitment),\n",
     "gee:type": "image_collection",
     "title": "WRI Aqueduct Floods Hazard Maps Version 2",
@@ -69,6 +72,7 @@
     "keywords": [
         "flood",
         "monitoring",
+        "surface-ground-water",
         "wri"
     ],
     "providers": [

@@ -67,6 +67,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "population"
+    ],
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "table",
     "gee:user_uploaded": true,
@@ -100,6 +103,7 @@
         "building",
         "built_up",
         "open_buildings",
+        "population",
         "south_asia",
         "southeast_asia",
         "structure"

@@ -48,6 +48,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "population"
+    ],
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -57,7 +60,7 @@
     "gee:type": "image_collection",
     "gee:unusual_terms_of_use": true,
     "gee:user_uploaded": true,
-    "sci:citation": "Kennedy, C.M., J.R. Oakleaf, D.M. Theobald, S. Baurch-Murdo, and J. Kiesecker. 2019. Managing\nthe middle: A shift in conservation priorities based on the global human modification gradient.\nGlobal Change Biology 00:1-16. [doi:10.1111/gcb.14549](https://doi.org/10.1111/gcb.14549)\n",
+    "sci:citation": "Kennedy, C.M., J.R. Oakleaf, D.M. Theobald, S. Baruch-Murdo, and J. Kiesecker. 2019. Managing\nthe middle: A shift in conservation priorities based on the global human modification gradient.\nGlobal Change Biology 00:1-16. [doi:10.1111/gcb.14549](https://doi.org/10.1111/gcb.14549)\n",
     "version": "1.0",
     "title": "CSP gHM: Global Human Modification",
     "extent": {
@@ -87,6 +90,7 @@
         "human_modification",
         "landcover",
         "landscape_gradient",
+        "population",
         "stressors",
         "tnc"
     ],

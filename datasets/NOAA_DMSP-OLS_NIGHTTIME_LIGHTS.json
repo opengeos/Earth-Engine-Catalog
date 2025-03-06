@@ -43,6 +43,9 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "population"
+    ],
     "gee:terms_of_use": "NOAA data, information, and products, regardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use. The\nforgoing data is in the public domain and is being provided without\nrestriction on use and distribution.\n",
     "gee:type": "image_collection",
     "version": "Version 4",
@@ -75,6 +78,7 @@
         "lights",
         "nighttime",
         "ols",
+        "population",
         "visible",
         "yearly"
     ],

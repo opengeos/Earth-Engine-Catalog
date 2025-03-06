@@ -56,6 +56,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "surface-ground-water"
+    ],
     "gee:provider_ids": [
         "C3195502222-POCLOUD"
     ],
@@ -102,6 +105,7 @@
         "mascon",
         "mass",
         "nasa",
+        "surface-ground-water",
         "tellus",
         "water"
     ],

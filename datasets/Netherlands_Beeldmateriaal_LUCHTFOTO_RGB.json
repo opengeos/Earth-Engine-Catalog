@@ -43,6 +43,9 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "orthophotos"
+    ],
     "gee:terms_of_use": "The images are made available with a CC BY 4.0 license. The user is required\nto add a reference to the datasource as \"opendata.beeldmaterial.nl\".\n",
     "gee:type": "image_collection",
     "sci:citation": "opendata.beeldmaterial.nl",
@@ -70,7 +73,7 @@
     "license": "CC-BY-4.0",
     "keywords": [
         "netherlands",
-        "orthophoto",
+        "orthophotos",
         "rgb"
     ],
     "providers": [

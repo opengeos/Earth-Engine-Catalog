@@ -44,6 +44,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "oceanography"
+    ],
     "gee:terms_of_use": "All NASA-produced data from the GRACE mission is made freely available\nfor the public to use. When using any of the GRCTellus data, please\nadd an acknowledgment: \"GRACE land are available at\n[https://grace.jpl.nasa.gov](https://grace.jpl.nasa.gov),\nsupported by the NASA MEaSUREs Program.\" and cite with the\ncitations provided.\n",
     "gee:type": "image_collection",
     "sci:citation": "D.P. Chambers. 2012. GRACE MONTHLY OCEAN MASS GRIDS NETCDF\nRELEASE 5.0. Ver. 5.0. PO.DAAC, CA, USA. Dataset accessed\n[YYYY-MM-DD] at [doi:10.5067/TEOCN-0N005](https://doi.org/10.5067/TEOCN-0N005).\n",
@@ -89,6 +92,7 @@
         "mass",
         "nasa",
         "ocean",
+        "oceanography",
         "tellus",
         "water"
     ],

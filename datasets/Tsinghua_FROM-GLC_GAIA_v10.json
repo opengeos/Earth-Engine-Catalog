@@ -47,6 +47,9 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "population"
+    ],
     "gee:terms_of_use": "This work is licensed under a Creative Commons Attribution 4.0 International License.\n[https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)\n",
     "gee:type": "image",
     "sci:citation": "Gong, P., Li, X., Wang, J., Bai, Y., Chen, B., Hu, T., ... & Zhou, Y. (2020).\nAnnual maps of global artificial impervious area (GAIA) between 1985 and 2018.\nRemote Sensing of Environment, 236, 111510.\n",
@@ -76,6 +79,7 @@
         "built",
         "development",
         "impervious",
+        "population",
         "tsinghua",
         "urban"
     ],

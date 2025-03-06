@@ -49,6 +49,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "vegetation-indices"
+    ],
     "gee:interval": {
         "interval": 1,
         "type": "cadence",
@@ -74,7 +77,7 @@
             "interval": [
                 [
                     "2021-11-29T00:00:00Z",
-                    "2025-03-02T00:00:00Z"
+                    "2025-03-03T00:00:00Z"
                 ]
             ]
         }
@@ -87,7 +90,8 @@
         "jaxa",
         "lai",
         "land",
-        "leaf_area_index"
+        "leaf_area_index",
+        "vegetation-indices"
     ],
     "providers": [
         {

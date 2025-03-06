@@ -61,6 +61,9 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "infrastructure-boundaries"
+    ],
     "gee:status": "deprecated",
     "gee:terms_of_use": "There are no restrictions on use of this US public domain data.",
     "gee:type": "table",
@@ -92,6 +95,7 @@
         "borders",
         "countries",
         "dos",
+        "infrastructure-boundaries",
         "political",
         "usdos"
     ],

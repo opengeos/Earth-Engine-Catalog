@@ -49,6 +49,9 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "infrastructure-boundaries"
+    ],
     "gee:terms_of_use": "geoBoundaries datasets are provided under the CC BY 4.0 license, which\nallows for most commmercial, noncommercial, and academic uses. See \n[provider terms of use](https://www.geoboundaries.org/index.html#usage).\n",
     "gee:type": "table",
     "version": "6.0.0",
@@ -76,7 +79,8 @@
     "license": "CC-BY-4.0",
     "keywords": [
         "borders",
-        "countries"
+        "countries",
+        "infrastructure-boundaries"
     ],
     "providers": [
         {

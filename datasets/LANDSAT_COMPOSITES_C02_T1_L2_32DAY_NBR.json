@@ -43,6 +43,9 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "vegetation-indices"
+    ],
     "gee:interval": {
         "interval": 32,
         "type": "cadence",
@@ -69,7 +72,7 @@
             "interval": [
                 [
                     "1984-01-01T00:00:00Z",
-                    "2025-02-02T00:00:00Z"
+                    "2025-03-06T00:00:00Z"
                 ]
             ]
         }
@@ -78,7 +81,8 @@
     "keywords": [
         "landsat",
         "nbrt",
-        "usgs"
+        "usgs",
+        "vegetation-indices"
     ],
     "providers": [
         {

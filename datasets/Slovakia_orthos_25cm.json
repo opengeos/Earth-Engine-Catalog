@@ -43,6 +43,9 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "orthophotos"
+    ],
     "gee:terms_of_use": "The User is entitled to combine the Source Data with other data, use it in\nthe creation of his/her own work for commercial and non-commercial purposes,\ncreate a new work, publish the work on the Internet, publish the Source Data\nas a base map, publish the Source Data in connection with other\ndata/thematic layers through web apps. The User is obliged to provide the\nname of the Author of the Source Data when creating his/her own work and\nwhen publishing it as follows: \"GK&Uacute; Bratislava, NLC\".\n\nFor more details, see [Terms of use](\n   https://www.geoportal.sk/files/zbgis/orto/licencne_podmienky_orto.zip)\n",
     "gee:type": "image_collection",
     "sci:citation": "GKU Bratislava, NLC",
@@ -69,7 +72,7 @@
     },
     "license": "other",
     "keywords": [
-        "orthophoto",
+        "orthophotos",
         "rgb"
     ],
     "providers": [

@@ -52,6 +52,9 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "population"
+    ],
     "gee:terms_of_use": "This dataset is licensed under\n[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).'\n",
     "gee:type": "image",
     "version": "202201",

@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "CIESIN/GPWv4/unwpp-adjusted-population-density",
     "stac_version": "1.1.0",
-    "description": "The Gridded Population of World Version 4 (GPWv4) models the distribution\nof global human population for the years 2000, 2005, 2010, 2015, and 2020\non 30 arc-second (approximately 1km) grid cells. Population is distributed\nto cells using proportional allocation of population from census and\nadministrative units. Population input data are collected at the most\ndetailed spatial resolution available from the results of the 2010 round of\ncensuses, which occurred between 2005 and 2014. The input data are\nextrapolated to produce population estimates for each modeled year.\n\nThese population density grids contain estimates of the number of persons\nper 30 arc-second grid cell, consistent with national censuses and\npopulation registers with respect to relative spatial distribution but\nadjusted to match the 2015 Revision of UN World Population Prospects\ncountry totals. There is one image for each modeled year.\n\n[General Documentation](https://beta.sedac.ciesin.columbia.edu/data/set/gpw-v4-population-count-adjusted-to-2015-unwpp-country-totals/docs)\n",
+    "description": "The Gridded Population of World Version 4 (GPWv4) models the distribution\nof global human population for the years 2000, 2005, 2010, 2015, and 2020\non 30 arc-second (approximately 1 km) grid cells. Population is distributed\nto cells using proportional allocation of population from census and\nadministrative units. Population input data are collected at the most\ndetailed spatial resolution available from the results of the 2010 round of\ncensuses, which occurred between 2005 and 2014. The input data are\nextrapolated to produce population estimates for each modeled year.\n\nThese population density grids contain estimates of the number of persons\nper 30 arc-second grid cell, consistent with national censuses and\npopulation registers with respect to relative spatial distribution but\nadjusted to match the 2015 Revision of UN World Population Prospects\ncountry totals. There is one image for each modeled year.\n\n[General Documentation](https://beta.sedac.ciesin.columbia.edu/data/set/gpw-v4-population-count-adjusted-to-2015-unwpp-country-totals/docs)\n",
     "links": [
         {
             "rel": "root",
@@ -64,6 +64,9 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "population"
     ],
     "gee:interval": {
         "interval": 5,
