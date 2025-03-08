@@ -72,6 +72,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "precipitation"
+    ],
     "gee:interval": {
         "interval": 30,
         "type": "cadence",
@@ -101,7 +104,7 @@
             "interval": [
                 [
                     "2000-06-01T00:00:00Z",
-                    "2025-02-27T18:30:00Z"
+                    "2025-03-03T11:30:00Z"
                 ]
             ]
         }

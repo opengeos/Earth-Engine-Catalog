@@ -43,6 +43,9 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "precipitation"
+    ],
     "gee:terms_of_use": "The work is licensed under an Open data license for use. The U.S. Drought Monitor is jointly produced by the National Drought Mitigation Center\nat the University of Nebraska-Lincoln, the United States Department of Agriculture and the National Oceanic and Atmospheric Administration. Map courtesy of NDMC.\n",
     "gee:type": "image_collection",
     "sci:citation": "National Drought Mitigation Center; U.S. Department of Agriculture; National Oceanic and Atmospheric Administration (2023). United States Drought Monitor. University of Nebraska-Lincoln. https://droughtmonitor.unl.edu/. Accessed 2023-09-17\n",
@@ -72,6 +75,7 @@
         "drought",
         "ndmc",
         "noaa",
+        "precipitation",
         "usda"
     ],
     "providers": [

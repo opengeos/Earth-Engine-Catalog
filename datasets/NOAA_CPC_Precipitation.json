@@ -43,6 +43,9 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
     ],
+    "gee:categories": [
+        "precipitation"
+    ],
     "gee:terms_of_use": "The NOAA CPC datasets are available without restriction\non use or distribution. NOAA PSL does request that the\nuser give proper attribution and identify NOAA PSL, where applicable,\nas the source of the data.\n",
     "gee:type": "image_collection",
     "sci:publications": [
@@ -70,7 +73,7 @@
             "interval": [
                 [
                     "2006-01-01T00:00:00Z",
-                    "2025-03-04T00:00:00Z"
+                    "2025-03-05T00:00:00Z"
                 ]
             ]
         }

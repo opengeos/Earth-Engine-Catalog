@@ -57,7 +57,7 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "oceanography"
+        "oceans"
     ],
     "gee:status": "deprecated",
     "gee:terms_of_use": "All NASA-produced data from the GRACE mission is made freely available\nfor the public to use. When using any of the GRCTellus data, please\nadd an acknowledgment: \"GRACE land are available at\n[https://grace.jpl.nasa.gov](https://grace.jpl.nasa.gov),\nsupported by the NASA MEaSUREs Program.\" and cite with the\ncitations provided.\n",
@@ -105,7 +105,7 @@
         "mass",
         "nasa",
         "ocean",
-        "oceanography",
+        "oceans",
         "tellus",
         "water"
     ],

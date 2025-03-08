@@ -61,7 +61,7 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "oceanography"
+        "oceans"
     ],
     "gee:interval": {
         "interval": 1,
@@ -89,7 +89,7 @@
             "interval": [
                 [
                     "1981-09-01T00:00:00Z",
-                    "2025-03-04T00:00:00Z"
+                    "2025-03-05T00:00:00Z"
                 ]
             ]
         }
@@ -102,7 +102,7 @@
         "ice",
         "noaa",
         "ocean",
-        "oceanography",
+        "oceans",
         "oisst",
         "real_time",
         "sst",
