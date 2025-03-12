@@ -1,0 +1,185 @@
+{
+    "type": "Collection",
+    "id": "projects/edf-methanesat-ee/assets/public-preview/L4area",
+    "stac_version": "1.1.0",
+    "description": "*The dispersed area emissions model is still in development and not \nrepresentative of a final product.*\n\nThis early \"Public Preview\" dataset provides high precision data for methane \nemissions over wide areas from the oil and gas sector. This includes total \nemissions that come from discrete point sources and dispersed area sources. \nThese emissions data come from the Appalachian, Permian, and Uinta basins \nin the United States; the Amu Darya and South Caspian basins in Turkmenistan; \nand the Maturin basin in Venezuela. These novel measurements demonstrate the \nimportance of quantifying total methane emissions with high resolution to \nmeet global methane mitigation goals.\n\nDispersed area emissions are estimated from methane concentration observations \nin the form of column-averaged dry-air mole fractions of methane (XCH4) using \nan inverse model. An atmospheric transport model - the Stochastic Time-Inverted \nLagrangian Transport (STILT) model; [Lin et al. (2003)](https://doi.org/10.1029/2002JD003161), \n[Fasoli et al. (2018)](https://doi.org/10.5194/gmd-11-2813-2018); driven \nby meteorological data from the National Centers for Environmental \nPrediction ([NCEP](https://www.weather.gov/ncep/)) Global Forecast System \n([GFS](https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php)) \n- is used to link variations in observed XCH4 to potential upwind sources. \n\nThe sources of variation in observed XCH4 include 1) dispersed area emissions, \n2) discrete point sources, 3) inflow across the domain boundary, and \n4) the background concentration. Discrete point source emissions are \ndetermined individually using a divergence integral approach described by \n[Chulakadaba et al. (2023)](https://egusphere.copernicus.org/preprints/2023/egusphere-2023-822/) \nand prescribed to the inverse model. XCH4 inflow across the domain boundary \nand dispersed area emissions are then estimated simultaneously using an \ninverse model with an enforced non-negative solution. Total emissions are \nthe sum of dispersed area and point source emissions.\n\nThis set of initial observations made by MethaneSAT are consistent with \nindependent empirical data where available from other sources.\nContact the data provider for more information about the project at this \nlink: [https://www.methanesat.org/contact/](https://www.methanesat.org/contact/).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/edf-methanesat-ee/projects_edf-methanesat-ee_assets_public-preview_L4area",
+            "type": "text/html",
+            "title": "Run the example for projects/edf-methanesat-ee/assets/public-preview/L4area in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/edf-methanesat-ee/projects_edf-methanesat-ee_assets_public-preview_L4area_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_edf-methanesat-ee_assets_public-preview_L4area#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://www.methanesat.org/sites/default/files/2025-02/MethaneSAT%20-%20Content%20License%20Terms%20of%20Use%20%28Revised%202-12-2025%29%5B25%5D.pdf",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/edf-methanesat-ee/projects_edf-methanesat-ee_assets_public-preview_L4area.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/edf-methanesat-ee/catalog.json",
+            "type": "application/json",
+            "title": "edf-methanesat-ee"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:interval": {
+        "interval": 7,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "Use of this data is subject to [MethaneSAT's Content License Terms of Use](https://www.methanesat.org/sites/default/files/2025-02/MethaneSAT%20-%20Content%20License%20Terms%20of%20Use%20%28Revised%202-12-2025%29%5B25%5D.pdf).\n\nYOUR LICENSE TO ACCESS THE DATA\n\n* We hereby grant you a limited, nonexclusive, nonassignable, nontransferable, revocable license to use, reproduce, publish, make derivative works, display and perform publicly any Data first made available through the Platform pursuant to the terms set forth herein, subject to your agreement to, compliance with and satisfaction of these Terms of Use (the \u201cLicense\u201d)\n* You agree to and acknowledge the following restrictions relating to the License:\n\n    * (1) To access the Data, you must complete this [Request Form](https://docs.google.com/forms/d/e/1FAIpQLSdzJDwpTs99tMT5bGk0gep10_UEHi64kGtJWat1FrP8ZjwQcA/viewform), which will ask for your contact information, intended use cases, target customers, and other details that will assist MethaneSAT\u2019s understanding of how the Data is being used by you, and, upon submission of such form, MethaneSAT may (in its sole discretion) grant you access to the Data;\n    * (2) With respect to certain aspects of the Data as described herein, you may use methane concentrations, in parts per billion or any other unit of concentration (\u201cLevel 3 Data\u201d or \u201cL3 Data\u201d) and methane emission fluxes, in kilograms per hour (\u201cLevel 4 Data\u201d or \u201cL4 Data\u201d) for:\n\n        * (i) internal business evaluation and testing,\n        * (ii) commercial applications, such as developing and selling derivative products and services that incorporate or are informed by the L3 Data or L4 Data,\n        * (iii) distribution of the Data made available herein to wholly controlled affiliates of which you will be responsible and liable on their behalf for adherence to these Terms of Use, or\n        * (iv) methane mitigation activities, including both commercial and non-commercial initiatives;\n    * (3) You are strictly prohibited from using L3 Data to calculate or derive L4 Data or any similar outputs, except and exclusively for internal use purposes and not to distribute to any third party;\n    * (4) You may not distribute, publish, sublicense, sell, or otherwise provide L3 Data or L4 Data in its raw form to any third parties, provided, however, that you may develop, commercialize, and sell derivative products and services based on your review of the L3 Data and L4 Data, provided, further (and for the avoidance of doubt), that the underlying L3 Data and L4 Data (in its raw form) shall not be shared nor made directly accessible to end users/third parties; and\n    * (5) That you are not permitted to distribute the Data on any other platform that would make the Data available to third parties, other than to you and your wholly controlled affiliates.\n\n* As a condition of accessing the Data, you further agree and acknowledge that:\n    * (1) MethaneSAT seeks information about how the Data will be used and, as such, you shall use best efforts, upon request by MethaneSAT, that you will\n\n        * (i) provide feedback on the quality of the Data and any proposed improvements thereto, and\n        * (ii) share anonymized insights on target customers and market applications;\n    * (2) MethaneSAT may use aggregated or anonymized insights to refine its Data offerings.\n\nATTRIBUTION\n\nIf you share or use the Data in any manner with any third parties, you must:\n\n* Explicitly state to these third parties that they are agreeing to be bound by the Terms of Use;\n* Display a citation that states: \u201cData from MethaneSAT\u201d and \u201cDownload the most current dataset at Google Earth Engine and/or Google Cloud\u201d; and\n* Explicitly state to these third parties that, if such third party creates a further project containing the Data, any such users of that project must also agree to be bound by these Terms of Use.\n",
+    "gee:type": "image_collection",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true,
+    "sci:citation": "Chulakadabba, A., Sargent, M., Lauvaux, T., Benmergui, J. S., Franklin, J.\nE., Chan Miller, C., Wilzewski, J. S., Roche, S., Conway, E., Souri, A. H.,\nSun, K., Luo, B., Hawthrone, J., Samra, J., Daube, B. C., Liu, X., Chance,\nK., Li, Y., Gautam, R., Omara, M., Rutherford, J. S., Sherwin, E. D.,\nBrandt, A., and Wofsy, S. C. 2023. Methane point source quantification using\nMethaneAIR: a new airborne imaging spectrometer, Atmos. Meas. Tech., 16,\n5771-5785.\n[doi:10.5194/amt-16-5771-2023](https://doi.org/10.5194/amt-16-5771-2023),\n",
+    "version": "1.0.0",
+    "title": "MethaneSAT L4 Area Sources Public Preview1.0.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-01-24T00:00:00Z",
+                    "2025-01-17T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "climate",
+        "edf",
+        "emissions",
+        "ghg",
+        "methane",
+        "methanesat"
+    ],
+    "providers": [
+        {
+            "name": "Environmental Defense Fund - MethaneSAT",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://methanesat.org"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_edf-methanesat-ee_assets_public-preview_L4area"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Methane emissions traceable to a 1km^2 area.",
+                "gee:units": "kg/h/km^2",
+                "gsd": 1000,
+                "name": "flux"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Total value of area emissions for this collection in kg/hr. Missing values are indicated by -1.",
+                "name": "area_source_total_kg_hr",
+                "type": "INT"
+            },
+            {
+                "description": "satellite observation number.",
+                "name": "collection_id",
+                "type": "STRING"
+            },
+            {
+                "description": "(internal) Processing run identifier that represents the calculations\nthat led to the features. It is not an attribute describing the\nflight, but the processing pipeline.\n",
+                "name": "processing_id",
+                "type": "STRING"
+            },
+            {
+                "description": "Satellite Target ID.",
+                "name": "target_id",
+                "type": "INT"
+            },
+            {
+                "description": "Data collection end time in YYYY-MM-DDThh:mm:ssZ format STRING (ISO 8601).",
+                "name": "time_coverage_end",
+                "type": "STRING"
+            },
+            {
+                "description": "Data collection start time in YYYY-MM-DDThh:mm:ssZ format STRING (ISO 8601).",
+                "name": "time_coverage_start",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Methane area sources flux in kg/h/km^2",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "flux"
+                        ],
+                        "max": [
+                            18
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "navy",
+                            "magenta",
+                            "orange",
+                            "yellow"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 31.85,
+                    "lon": -102.5,
+                    "zoom": 8
+                }
+            }
+        ],
+        "flux": {
+            "minimum": 0,
+            "maximum": 28.3
+        }
+    }
+}

@@ -1,0 +1,217 @@
+{
+    "type": "Collection",
+    "id": "ISRIC/SoilGrids250m/v20",
+    "stac_version": "1.1.0",
+    "description": "Volumetric Water Content at 10kPa, 33kPa, and 1500kPa suction in\n10^-3 cm^3/cm^3 (0.1 v% or 1 mm/m) at 6 standard depths (0-5cm, 5-15cm,\n15-30cm, 30-60cm, 60-100cm, 100-200cm). Predictions were derived using a\ndigital soil mapping approach based on Quantile Random Forest, drawing on a\nglobal compilation of soil profile data and environmental layers.\nThis dataset includes predictions for three different suction levels,\nproviding insights into soil water availability.\n\nDocumentation:\n\n* [Scientific Paper](https://www.sciencedirect.com/science/article/pii/S2095633922000636?via%3Dihub)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/ISRIC/ISRIC_SoilGrids250m_v20",
+            "type": "text/html",
+            "title": "Run the example for ISRIC/SoilGrids250m/v20 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/ISRIC/ISRIC_SoilGrids250m_v20_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/ISRIC_SoilGrids250m_v20#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://www.isric.org/explore/soilgrids"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ISRIC/ISRIC_SoilGrids250m_v20.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ISRIC/catalog.json",
+            "type": "application/json",
+            "title": "ISRIC"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "soil"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "sci:citation": "Global mapping of volumetric water retention at 100, 330 and 15000 cm\nsuction using the WoSIS database\nTurek M.E., Poggio L., Batjes N.H., Armindo R.A., de Jong van Lier Q.,\nde Sousa L., Heuvelink G.B.M. (2023)\nInternational Soil and Water Conservation Research, 11 (2), pp. 225-239.\n",
+    "sci:doi": "10.1016/j.iswcr.2022.08.001",
+    "version": "v1",
+    "title": "SoilGrids250m 2.0 - Volumetric Water Content",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -56,
+                    180,
+                    84
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1905-04-01T00:00:00Z",
+                    "2016-07-05T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "soil",
+        "soil_moisture",
+        "water"
+    ],
+    "providers": [
+        {
+            "name": "ISRIC - World Soil Information",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.isric.org/explore/soilgrids"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/ISRIC_SoilGrids250m_v20"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Volumetric Water Content at 10kPa (0-5cm depth)",
+                "gee:units": "cm^3/cm^3",
+                "name": "wv0010_0-5cm"
+            },
+            {
+                "description": "Volumetric Water Content at 10kPa (5-15cm depth)",
+                "gee:units": "cm^3/cm^3",
+                "name": "wv0010_5-15cm"
+            },
+            {
+                "description": "Volumetric Water Content at 10kPa (15-30cm depth)",
+                "gee:units": "cm^3/cm^3",
+                "name": "wv0010_15-30cm"
+            },
+            {
+                "description": "Volumetric Water Content at 10kPa (30-60cm depth)",
+                "gee:units": "cm^3/cm^3",
+                "name": "wv0010_30-60cm"
+            },
+            {
+                "description": "Volumetric Water Content at 10kPa (60-100cm depth)",
+                "gee:units": "cm^3/cm^3",
+                "name": "wv0010_60-100cm"
+            },
+            {
+                "description": "Volumetric Water Content at 10kPa (100-200cm depth)",
+                "gee:units": "cm^3/cm^3",
+                "name": "wv0010_100-200cm"
+            },
+            {
+                "description": "Volumetric Water Content at 33kPa (0-5cm depth)",
+                "gee:units": "cm^3/cm^3",
+                "name": "wv0033_0-5cm"
+            },
+            {
+                "description": "Volumetric Water Content at 33kPa (5-15cm depth)",
+                "gee:units": "cm^3/cm^3",
+                "name": "wv0033_5-15cm"
+            },
+            {
+                "description": "Volumetric Water Content at 33kPa (15-30cm depth)",
+                "gee:units": "cm^3/cm^3",
+                "name": "wv0033_15-30cm"
+            },
+            {
+                "description": "Volumetric Water Content at 33kPa (30-60cm depth)",
+                "gee:units": "cm^3/cm^3",
+                "name": "wv0033_30-60cm"
+            },
+            {
+                "description": "Volumetric Water Content at 33kPa (60-100cm depth)",
+                "gee:units": "cm^3/cm^3",
+                "name": "wv0033_60-100cm"
+            },
+            {
+                "description": "Volumetric Water Content at 33kPa (100-200cm depth)",
+                "gee:units": "cm^3/cm^3",
+                "name": "wv0033_100-200cm"
+            },
+            {
+                "description": "Volumetric Water Content at 1500kPa (0-5cm depth)",
+                "gee:units": "cm^3/cm^3",
+                "name": "wv1500_0-5cm"
+            },
+            {
+                "description": "Volumetric Water Content at 1500kPa (5-15cm depth)",
+                "gee:units": "cm^3/cm^3",
+                "name": "wv1500_5-15cm"
+            },
+            {
+                "description": "Volumetric Water Content at 1500kPa (15-30cm depth)",
+                "gee:units": "cm^3/cm^3",
+                "name": "wv1500_15-30cm"
+            },
+            {
+                "description": "Volumetric Water Content at 1500kPa (30-60cm depth)",
+                "gee:units": "cm^3/cm^3",
+                "name": "wv1500_30-60cm"
+            },
+            {
+                "description": "Volumetric Water Content at 1500kPa (60-100cm depth)",
+                "gee:units": "cm^3/cm^3",
+                "name": "wv1500_60-100cm"
+            },
+            {
+                "description": "Volumetric Water Content at 1500kPa (100-200cm depth)",
+                "gee:units": "cm^3/cm^3",
+                "name": "wv1500_100-200cm"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Volumetric Water Content",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "wv0010_0-5cm"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 52.5,
+                    "lon": -105.25,
+                    "zoom": 3
+                }
+            }
+        ],
+        "gsd": [
+            250
+        ]
+    }
+}
