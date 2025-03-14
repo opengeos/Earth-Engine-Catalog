@@ -48,7 +48,10 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
     ],
     "gee:categories": [
-        "precipitation"
+        "climate",
+        "precipitation",
+        "soil",
+        "water-vapor"
     ],
     "gee:interval": {
         "interval": 1,
@@ -96,7 +99,9 @@
         "precipitation",
         "pressure",
         "radiation",
+        "soil",
         "temperature",
+        "water-vapor",
         "wind"
     ],
     "providers": [

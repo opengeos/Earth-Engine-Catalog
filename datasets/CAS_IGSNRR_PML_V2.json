@@ -57,7 +57,8 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "plant-productivity"
+        "plant-productivity",
+        "water-vapor"
     ],
     "gee:interval": {
         "interval": 8,
@@ -106,7 +107,8 @@
     "keywords": [
         "evapotranspiration",
         "gpp",
-        "plant-productivity"
+        "plant-productivity",
+        "water-vapor"
     ],
     "providers": [
         {

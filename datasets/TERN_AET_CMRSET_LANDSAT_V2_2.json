@@ -62,7 +62,7 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "surface-ground-water"
+        "water-vapor"
     ],
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
@@ -99,9 +99,9 @@
         "evaporation",
         "evapotranspiration",
         "landsat_derived",
-        "surface-ground-water",
         "tern",
-        "viirs_derived"
+        "viirs_derived",
+        "water-vapor"
     ],
     "providers": [
         {

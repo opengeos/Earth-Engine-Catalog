@@ -61,7 +61,7 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "climate"
+        "water-vapor"
     ],
     "gee:interval": {
         "interval": 1,
@@ -113,7 +113,8 @@
         "monthly",
         "palmer",
         "precipitation",
-        "temperature"
+        "temperature",
+        "water-vapor"
     ],
     "providers": [
         {

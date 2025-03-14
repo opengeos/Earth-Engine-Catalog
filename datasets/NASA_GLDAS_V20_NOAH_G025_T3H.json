@@ -45,8 +45,11 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
+        "climate",
+        "cryosphere",
         "precipitation",
-        "soil"
+        "soil",
+        "water-vapor"
     ],
     "gee:interval": {
         "interval": 3,
@@ -90,6 +93,7 @@
     "keywords": [
         "3_hourly",
         "climate",
+        "cryosphere",
         "evaporation",
         "forcing",
         "geophysical",
@@ -104,6 +108,7 @@
         "soil_moisture",
         "surface",
         "temperature",
+        "water-vapor",
         "wind"
     ],
     "providers": [

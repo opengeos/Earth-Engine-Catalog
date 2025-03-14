@@ -51,7 +51,8 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "precipitation"
+        "precipitation",
+        "water-vapor"
     ],
     "gee:interval": {
         "interval": 10,
@@ -95,7 +96,8 @@
         "merced",
         "palmer",
         "pdsi",
-        "precipitation"
+        "precipitation",
+        "water-vapor"
     ],
     "providers": [
         {

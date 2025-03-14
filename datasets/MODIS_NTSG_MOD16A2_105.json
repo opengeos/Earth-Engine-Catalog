@@ -48,6 +48,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
+    "gee:categories": [
+        "water-vapor"
+    ],
     "gee:interval": {
         "interval": 8,
         "type": "cadence",
@@ -84,7 +87,8 @@
         "evapotranspiration",
         "global",
         "mod16a2",
-        "modis"
+        "modis",
+        "water-vapor"
     ],
     "providers": [
         {

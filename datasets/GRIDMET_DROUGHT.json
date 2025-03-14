@@ -45,7 +45,8 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "surface-ground-water"
+        "surface-ground-water",
+        "water-vapor"
     ],
     "gee:interval": {
         "interval": 5,
@@ -95,7 +96,8 @@
         "precipitation",
         "spei",
         "spi",
-        "surface-ground-water"
+        "surface-ground-water",
+        "water-vapor"
     ],
     "providers": [
         {

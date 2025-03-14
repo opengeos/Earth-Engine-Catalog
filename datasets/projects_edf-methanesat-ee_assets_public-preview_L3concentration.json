@@ -161,6 +161,11 @@
                 "type": "STRING"
             },
             {
+                "description": "Satellite Target ID.",
+                "name": "target_id",
+                "type": "INT"
+            },
+            {
                 "description": "Data collection end time in YYYY-MM-DDThh:mm:ssZ format STRING (ISO 8601).",
                 "name": "time_coverage_end",
                 "type": "STRING"
