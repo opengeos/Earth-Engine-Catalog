@@ -49,7 +49,9 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "climate"
+        "atmosphere",
+        "climate",
+        "water-vapor"
     ],
     "gee:interval": {
         "interval": 1,
@@ -82,6 +84,7 @@
     },
     "license": "other",
     "keywords": [
+        "atmosphere",
         "climate",
         "condensation",
         "humidity",
@@ -93,6 +96,7 @@
         "temperature",
         "vapor",
         "water",
+        "water-vapor",
         "wind"
     ],
     "providers": [

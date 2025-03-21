@@ -49,7 +49,11 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "climate"
+        "climate",
+        "cryosphere",
+        "precipitation",
+        "soil",
+        "water-vapor"
     ],
     "gee:interval": {
         "interval": 1,
@@ -83,10 +87,14 @@
     "license": "other",
     "keywords": [
         "climate",
+        "cryosphere",
         "evaporation",
         "ice",
         "merra",
-        "temperature"
+        "precipitation",
+        "soil",
+        "temperature",
+        "water-vapor"
     ],
     "providers": [
         {

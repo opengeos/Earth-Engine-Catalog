@@ -49,6 +49,7 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
+        "atmosphere",
         "climate"
     ],
     "gee:interval": {
@@ -83,6 +84,7 @@
     "license": "other",
     "keywords": [
         "albedo",
+        "atmosphere",
         "climate",
         "emissivity",
         "merra",
