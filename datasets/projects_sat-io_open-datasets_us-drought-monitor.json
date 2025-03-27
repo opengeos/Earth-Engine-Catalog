@@ -99,7 +99,7 @@
         "eo:bands": [
             {
                 "description": "Drought classes",
-                "name": "b1"
+                "name": "DM"
             }
         ],
         "gee:visualizations": [
@@ -108,7 +108,7 @@
                 "image_visualization": {
                     "band_vis": {
                         "bands": [
-                            "b1"
+                            "DM"
                         ],
                         "max": [
                             4
@@ -135,7 +135,7 @@
         "gsd": [
             250
         ],
-        "b1": {
+        "DM": {
             "minimum": 0,
             "maximum": 4
         }

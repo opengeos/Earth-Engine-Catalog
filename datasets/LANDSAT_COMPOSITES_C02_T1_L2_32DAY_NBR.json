@@ -106,7 +106,7 @@
             {
                 "description": "Normalized Burn Ratio Thermal",
                 "gsd": 30,
-                "name": "NBRT"
+                "name": "NBR"
             }
         ],
         "gee:visualizations": [
@@ -115,7 +115,7 @@
                 "image_visualization": {
                     "band_vis": {
                         "bands": [
-                            "NBRT"
+                            "NBR"
                         ],
                         "max": [
                             1

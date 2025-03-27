@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "NOAA/VIIRS/001/VNP46A2",
+    "id": "NASA/VIIRS/002/VNP46A2",
     "stac_version": "1.1.0",
-    "description": "The Suomi National Polar-orbiting Partnership (SNPP) Visible Infrared\nImaging Radiometer Suite (VIIRS) supports a Day-Night Band (DNB) sensor\nthat provides global daily measurements of nocturnal visible and\nnear-infrared (NIR) light that are suitable for Earth system science and\napplications. The VIIRS DNB's ultra-sensitivity in lowlight conditions\nenables us to generate a new set of science-quality nighttime products that\nmanifest substantial improvements in sensor resolution and calibration when\ncompared to the previous era of Defense Meteorological Satellite\nProgram/Operational Linescan System's (DMSP/OLS) nighttime lights image\nproducts.\n\nVNP46A2 dataset is a daily moonlight- and atmosphere-corrected Nighttime\nLights (NTL) product using the Bidirectional Reflectance Distribution\nFunction (BRDF).\n\nDocumentation:\n\n* [User's Guide](https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/Document%20Archive/Science%20Data%20Product%20Documentation/VIIRS_Black_Marble_UG_v1.3_Sep_2022.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/Document%20Archive/Science%20Data%20Product%20Documentation/Product%20Generation%20Algorithms/VIIRS_Black_Marble_ATBD_v1.1_July_2020.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/VNP46A2/)\n",
+    "description": "The Suomi National Polar-orbiting Partnership (SNPP) Visible Infrared\nImaging Radiometer Suite (VIIRS) supports a Day-Night Band (DNB) sensor that\nprovides global daily measurements of nocturnal visible and\nnear-infrared(NIR) light that are suitable for Earth system science and\napplications. The VIIRS DNB's ultra-sensitivity in lowlight conditions\nenable us to generate a new set of science-quality nighttime products that\nmanifest substantial improvements in sensor resolution and calibration when\ncompared to the previous era of Defense Meteorological Satellite\nProgram/Operational Linescan System's (DMSP/OLS) nighttime lights image\nproducts. Such improvements allow the VIIRS DNB products to better monitor\nboth the magnitude and signature of nighttime phenomena, and anthropogenic\nsources of light emissions.\n\nVNP46A2 is the short-name for the daily moonlight- and atmosphere-corrected\nNighttime Lights (NTL) product called VIIRS/NPP Gap-Filled Lunar\nBRDF-Adjusted Nighttime Lights Daily L3 Global 500m Linear Lat Lon Grid.\n\nDocumentation:\n\n* [User's Guide](https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/Document%20Archive/Science%20Data%20Product%20Documentation/VIIRS_Black_Marble_UG_v1.3_Sep_2022.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/Document%20Archive/Science%20Data%20Product%20Documentation/Product%20Generation%20Algorithms/VIIRS_Black_Marble_ATBD_v1.1_July_2020.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/VNP46A2/)\n",
     "links": [
         {
             "rel": "root",
@@ -12,35 +12,35 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_VIIRS_001_VNP46A2",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_VIIRS_002_VNP46A2",
             "type": "text/html",
-            "title": "Run the example for NOAA/VIIRS/001/VNP46A2 in the Earth Engine Code Editor",
+            "title": "Run the example for NASA/VIIRS/002/VNP46A2 in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_VIIRS_001_VNP46A2_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_VIIRS_002_VNP46A2_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP46A2#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_VNP46A2#terms-of-use",
             "type": "text/html"
         },
         {
             "rel": "cite-as",
-            "href": "https://doi.org/10.5067/VIIRS/VNP46A2.001"
+            "href": "https://doi.org/10.5067/VIIRS/VNP46A2.002"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_VIIRS_001_VNP46A2.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_VIIRS_002_VNP46A2.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
             "type": "application/json",
-            "title": "NOAA"
+            "title": "NASA"
         }
     ],
     "stac_extensions": [
@@ -57,16 +57,14 @@
         "unit": "day"
     },
     "gee:provider_ids": [
-        "C1373412048-LPDAAC_ECS"
+        "C3365931269-LAADS"
     ],
-    "gee:status": "deprecated",
     "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
     "gee:type": "image_collection",
-    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)",
-    "sci:doi": "10.5067/VIIRS/VNP46A2.001",
-    "version": "1",
-    "deprecated": true,
-    "title": "VNP46A2: VIIRS Lunar Gap-Filled BRDF Nighttime Lights Daily L3 Global 500m [deprecated]",
+    "sci:citation": "Rom\u00e1n, M.O., Wang, Z., Sun, Q., Kalb, V., Miller, S.D., Molthan, A.,\nSchultz, L., Bell, J., Stokes, E.C., Pandey, B. and Seto, K.C., et al.\n(2018). NASA's Black Marble nighttime lights product suite.\nRemote Sensing of Environment 210, 113-143.\n[10.1016/j.rse.2018.03.017](https://doi.org/10.1016/j.rse.2018.03.017)\n",
+    "sci:doi": "10.5067/VIIRS/VNP46A2.002",
+    "version": "2",
+    "title": "VNP46A2: VIIRS Lunar Gap-Filled BRDF Nighttime Lights Daily L3 Global 500m",
     "extent": {
         "spatial": {
             "bbox": [
@@ -82,7 +80,7 @@
             "interval": [
                 [
                     "2012-01-19T00:00:00Z",
-                    "2024-12-26T00:00:00Z"
+                    "2025-03-04T00:00:00Z"
                 ]
             ]
         }
@@ -103,14 +101,14 @@
                 "licensor",
                 "producer"
             ],
-            "url": "https://doi.org/10.5067/VIIRS/VNP46A2.001"
+            "url": "https://doi.org/10.5067/VIIRS/VNP46A2.002"
         },
         {
             "name": "Google Earth Engine",
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP46A2"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_VNP46A2"
         }
     ],
     "summaries": {
