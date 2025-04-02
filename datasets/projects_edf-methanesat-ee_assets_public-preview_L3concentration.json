@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "projects/edf-methanesat-ee/assets/public-preview/L3concentration",
     "stac_version": "1.1.0",
-    "description": "This early \"Public Preview\" dataset provides geospatial data for the\ncolumn-averaged dry-air mole fraction of methane in the atmosphere, \"XCH4\",\nretrieved from measurements by the MethaneSAT imaging spectrometer. XCH4 is\ndefined as the total column amount (number of molecules above a unit surface\narea) of methane (\"CH4\") divided by the total amount of air (number of molecules\nabove a unit surface area, water vapor amount removed) along the line of sight\nfrom the satellite\u2019s spectrometer to the Earth's surface and back up to the Sun.\nAdditional data layers are provided for reference: observed albedo at 1622 nm,\nsurface pressure, and terrain height.\n\nThe spatial footprint of individual MethaneSAT soundings is 110 m x 400 m when\nviewing at nadir, with the long side in the satellite\u2019s flight direction, and\nwith the short side that can be stretched wider at higher viewing zenith angles\n(which is why some targets appear more rectangular than others). At nadir, the\nswath width is ~220 km. The data on these native soundings is Level 2 (L2) data.\nThe precision of the L2 XCH4 is 22-35 ppb (corresponding to 0.7-0.2 surface albedo).\nL2 concentrations (XCH4) are retrieved from the measured high resolution (0.08 nm\nsampling, 0.24 nm resolution) spectra from the 1.6 micron band using the CO2-Proxy\nmethod ([Chan Miller et al. (2024)](https://doi.org/10.5194/amt-17-5429-2024)).\nThe Level 3 (L3) dataset is created by regridding the L2 data from the native\nsounding locations to a regular 45 m x 45 m grid using the approach detailed in\n[Sun et al. (2018)](https://doi.org/10.5194/amt-11-6679-2018).\n\nContact the data provider for more information about the project at this link:\n[https://www.methanesat.org/contact/](https://www.methanesat.org/contact/).\n",
+    "description": "This early \"Public Preview\" dataset provides geospatial data for the \ncolumn-averaged dry-air mole fraction of methane in the atmosphere, \"XCH4\", \nretrieved from measurements by the MethaneSAT imaging spectrometer. XCH4 is \ndefined as the total column amount (number of molecules above a unit surface \narea) of methane (\"CH4\") divided by the total amount of air (number of molecules \nabove a unit surface area, water vapor amount removed) along the line of sight \nfrom the satellite\u2019s spectrometer to the Earth's surface and back up to the Sun. \nAdditional data layers are provided for reference: observed albedo at 1622 nm, \nsurface pressure, and terrain height.\n\nThe spatial footprint of individual MethaneSAT soundings is 110 m x 400 m when \nviewing at nadir, with the long side in the satellite\u2019s flight direction, and \nwith the short side that can be stretched wider at higher viewing zenith angles \n(which is why some targets appear more rectangular than others). At nadir, the \nswath width is ~220 km. The data on these native soundings is Level 2 (L2) data. \nThe precision of the L2 XCH4 is 22-35 ppb (corresponding to 0.7-0.2 surface albedo).\nL2 concentrations (XCH4) are retrieved from the measured high resolution (0.08 nm \nsampling, 0.24 nm resolution) spectra from the 1.6 micron band using the CO2-Proxy \nmethod ([Chan Miller et al. (2024)](https://doi.org/10.5194/amt-17-5429-2024)). \nThe Level 3 (L3) dataset is created by regridding the L2 data from the native \nsounding locations to a regular 45 m x 45 m grid using the approach detailed in \n[Sun et al. (2018)](https://doi.org/10.5194/amt-11-6679-2018). \n\nContact the data provider for more information about the project at this link: \n[https://www.methanesat.org/contact/](https://www.methanesat.org/contact/).\n",
     "links": [
         {
             "rel": "root",
@@ -49,9 +49,6 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
-    "gee:categories": [
-        "atmosphere"
-    ],
     "gee:interval": {
         "interval": 7,
         "type": "cadence",
@@ -86,7 +83,6 @@
     },
     "license": "other",
     "keywords": [
-        "atmosphere",
         "climate",
         "edf",
         "emissions",
@@ -145,7 +141,7 @@
                 "type": "STRING"
             },
             {
-                "description": "The integral of the spatial pixel's super Gaussian function over the area of\nthat grid cell. This was the value used in this processing run of this collection.\n",
+                "description": "The integral of the spatial pixel's super Gaussian function over the area of \nthat grid cell. This was the value used in this processing run of this collection.\n",
                 "name": "num_samples",
                 "type": "STRING"
             },
