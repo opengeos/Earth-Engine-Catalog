@@ -32,6 +32,18 @@
             "href": "https://doi.org/10.5067/VIIRS/VNP46A2.001"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_VIIRS_002_VNP46A2.json",
+            "type": "application/json",
+            "title": "NASA/VIIRS/002/VNP46A2"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_VIIRS_002_VNP46A2.json",
+            "type": "application/json",
+            "title": "NASA/VIIRS/002/VNP46A2"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_VIIRS_001_VNP46A2.json",
             "type": "application/json"
@@ -92,6 +104,7 @@
         "brdf",
         "daily",
         "nasa",
+        "nighttime",
         "noaa",
         "population",
         "viirs"
