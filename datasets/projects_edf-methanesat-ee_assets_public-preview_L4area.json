@@ -114,9 +114,9 @@
     "summaries": {
         "eo:bands": [
             {
-                "description": "Methane emissions traceable to a 1km^2 area.",
-                "gee:units": "kg/h/km^2",
-                "gsd": 1000,
+                "description": "Methane emissions traceable to a 5km^2 area.",
+                "gee:units": "kg/h",
+                "gsd": 5000,
                 "name": "flux"
             }
         ],
@@ -154,14 +154,14 @@
         ],
         "gee:visualizations": [
             {
-                "display_name": "Methane area sources flux in kg/h/km^2",
+                "display_name": "Methane area sources flux in kg/h/",
                 "image_visualization": {
                     "band_vis": {
                         "bands": [
                             "flux"
                         ],
                         "max": [
-                            18
+                            625
                         ],
                         "min": [
                             0
@@ -183,7 +183,7 @@
         ],
         "flux": {
             "minimum": 0,
-            "maximum": 28.3
+            "maximum": 625
         }
     }
 }
