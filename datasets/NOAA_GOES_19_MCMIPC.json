@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "NOAA/GOES/18/MCMIPC",
+    "id": "NOAA/GOES/19/MCMIPC",
     "stac_version": "1.1.0",
-    "description": "[GOES](https://www.goes.noaa.gov) satellites are geostationary weather satellites run by NOAA.\n\nThe Cloud and Moisture Imagery products are all at 2km\nresolution. Bands 1-6 are reflective. The dimensionless \"reflectance factor\" quantity is\nnormalized by the solar zenith angle. These bands support the characterization of clouds,\nvegetation, snow/ice, and aerosols. Bands 7-16 are emissive. The brightness temperature at the\nTop-Of-Atmosphere (TOA) is measured in Kelvin. These bands support the characterization of the\nsurface, clouds, water vapor, ozone, volcanic ash, and dust based on emissive properties.\n\n[README](https://www.ncei.noaa.gov/products/satellite/goes-r-series)\n\nNOAA's Office of Satellite and Product Operations has a\n[General Satellite Messages](https://www.ospo.noaa.gov/Operations/messages.html)\nchannel with status updates.\n",
+    "description": "[GOES](https://www.goes.noaa.gov) satellites are geostationary weather satellites run by NOAA.\n\nThe Cloud and Moisture Imagery products are all at 2km\nresolution. Bands 1-6 are reflective. The dimensionless \"reflectance factor\" quantity is\nnormalized by the solar zenith angle. These bands support the characterization of clouds,\nvegetation, snow/ice, and aerosols. Bands 7-16 are emissive. The brightness temperature at the\nTop-Of-Atmosphere (TOA) is measured in Kelvin. These bands support the characterization of the\nsurface, clouds, water vapor, ozone, volcanic ash, and dust based on emissive properties.\n\nOperational data production for GOES-19 began April 7, 2025. Any data prior\nto this date is provisional.\n\n[README](https://www.ncei.noaa.gov/products/satellite/goes-r-series)\n\nNOAA's Office of Satellite and Product Operations has a\n[General Satellite Messages](https://www.ospo.noaa.gov/Operations/messages.html)\nchannel with status updates.\n",
     "links": [
         {
             "rel": "root",
@@ -12,28 +12,28 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_GOES_18_MCMIPC",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_GOES_19_MCMIPC",
             "type": "text/html",
-            "title": "Run the example for NOAA/GOES/18/MCMIPC in the Earth Engine Code Editor",
+            "title": "Run the example for NOAA/GOES/19/MCMIPC in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_GOES_18_MCMIPC_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_GOES_19_MCMIPC_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_GOES_18_MCMIPC#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_GOES_19_MCMIPC#terms-of-use",
             "type": "text/html"
         },
         {
             "rel": "source",
-            "href": "https://console.cloud.google.com/storage/browser/gcp-public-data-goes-18/ABI-L2-MCMIPC/"
+            "href": "https://console.cloud.google.com/storage/browser/gcp-public-data-goes-19/ABI-L2-MCMIPC/"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_GOES_18_MCMIPC.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_GOES_19_MCMIPC.json",
             "type": "application/json"
         },
         {
@@ -68,23 +68,23 @@
             "doi": "10.1175/BAMS-D-15-00230.1"
         }
     ],
-    "title": "GOES-18 MCMIPC Series ABI Level 2 Cloud and Moisture Imagery CONUS",
+    "title": "GOES-19 MCMIPC Series ABI Level 2 Cloud and Moisture Imagery CONUS",
     "extent": {
         "spatial": {
             "bbox": [
                 [
-                    -180,
-                    14.57,
-                    180,
-                    53.51
+                    -152.11,
+                    14,
+                    -49.18,
+                    56.77
                 ]
             ]
         },
         "temporal": {
             "interval": [
                 [
-                    "2018-12-04T16:30:38Z",
-                    "2025-04-17T02:21:16.600000Z"
+                    "2025-04-07T00:00:00Z",
+                    "2025-04-17T02:26:17.200000Z"
                 ]
             ]
         }
@@ -94,9 +94,9 @@
         "abi",
         "atmosphere",
         "goes",
-        "goes-18",
-        "goes-t",
-        "goes-west",
+        "goes-19",
+        "goes-east",
+        "goes-u",
         "mcmip",
         "nesdis",
         "noaa",
@@ -118,7 +118,7 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_GOES_18_MCMIPC"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_GOES_19_MCMIPC"
         }
     ],
     "summaries": {

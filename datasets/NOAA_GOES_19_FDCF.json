@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "NOAA/GOES/18/FDCF",
+    "id": "NOAA/GOES/19/FDCF",
     "stac_version": "1.1.0",
-    "description": "[GOES](https://www.goes.noaa.gov) satellites are geostationary weather satellites run by NOAA.\n\nThe Fire (HSC) product contains four images: one in the form\nof a fire mask and the other three with pixel values identifying fire temperature, fire area,\nand fire radiative power.\n\nThe ABI L2+ FHS metadata mask assigns a flag to every earth-navigated pixel\nthat indicates its disposition with respect to the FHS algorithm. Operational users who have\nthe lowest tolerance for false alarms should focus on the \"processed\" and\n\"saturated\" categories (mask codes 10, 11, 30, and 31), but within these categories there\ncan still be false alarms.\n\n[README](https://www.ncei.noaa.gov/products/goes-terrestrial-weather-abi-glm)\n\nNOAA provides the following scripts for suggested categories,\ncolor maps, and visualizations:\n\n - [GOES-16-17_FireDetection.js](https://github.com/google/earthengine-community/blob/master/datasets/scripts/GOES-16-17_FireDetection.js)\n - [GOES-16-17_FireReclassification.js](https://github.com/google/earthengine-community/blob/master/datasets/scripts/GOES-16-17_FireReclassification.js)\n\nNOAA's Office of Satellite and Product Operations has a\n[General Satellite Messages](https://www.ospo.noaa.gov/Operations/messages.html)\nchannel with status updates.\n",
+    "description": "[GOES](https://www.goes.noaa.gov) satellites are geostationary weather satellites run by NOAA.\n\nThe Fire (HSC) product contains four images: one in the form\nof a fire mask and the other three with pixel values identifying fire temperature, fire area,\nand fire radiative power.\n\nThe ABI L2+ FHS metadata mask assigns a flag to every earth-navigated pixel\nthat indicates its disposition with respect to the FHS algorithm. Operational users who have\nthe lowest tolerance for false alarms should focus on the \"processed\" and\n\"saturated\" categories (mask codes 10, 11, 30, and 31), but within these categories there\ncan still be false alarms.\n\nOperational data production for GOES-19 began April 7, 2025. Any data prior\nto this date is provisional.\n\n[README](https://www.ncei.noaa.gov/products/goes-terrestrial-weather-abi-glm)\n\nNOAA provides the following scripts for suggested categories,\ncolor maps, and visualizations:\n\n - [GOES-16-17_FireDetection.js](https://github.com/google/earthengine-community/blob/master/datasets/scripts/GOES-16-17_FireDetection.js)\n - [GOES-16-17_FireReclassification.js](https://github.com/google/earthengine-community/blob/master/datasets/scripts/GOES-16-17_FireReclassification.js)\n\nNOAA's Office of Satellite and Product Operations has a\n[General Satellite Messages](https://www.ospo.noaa.gov/Operations/messages.html)\nchannel with status updates.\n",
     "links": [
         {
             "rel": "root",
@@ -12,28 +12,28 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_GOES_18_FDCF",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_GOES_19_FDCF",
             "type": "text/html",
-            "title": "Run the example for NOAA/GOES/18/FDCF in the Earth Engine Code Editor",
+            "title": "Run the example for NOAA/GOES/19/FDCF in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_GOES_18_FDCF_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_GOES_19_FDCF_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_GOES_18_FDCF#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_GOES_19_FDCF#terms-of-use",
             "type": "text/html"
         },
         {
             "rel": "source",
-            "href": "https://console.cloud.google.com/storage/browser/gcp-public-data-goes-18/ABI-L2-FDCF/"
+            "href": "https://console.cloud.google.com/storage/browser/gcp-public-data-goes-19/ABI-L2-FDCF/"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_GOES_18_FDCF.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_GOES_19_FDCF.json",
             "type": "application/json"
         },
         {
@@ -64,7 +64,7 @@
             "doi": "10.1175/BAMS-D-15-00230.1"
         }
     ],
-    "title": "GOES-18 FDCF Series ABI Level 2 Fire/Hot Spot Characterization Full Disk",
+    "title": "GOES-19 FDCF Series ABI Level 2 Fire/Hot Spot Characterization Full Disk",
     "extent": {
         "spatial": {
             "bbox": [
@@ -79,8 +79,8 @@
         "temporal": {
             "interval": [
                 [
-                    "2022-10-13T16:10:21Z",
-                    "2025-04-17T02:20:19.900000Z"
+                    "2025-04-07T00:00:00Z",
+                    "2025-04-17T02:20:20.400000Z"
                 ]
             ]
         }
@@ -91,9 +91,9 @@
         "fdc",
         "fire",
         "goes",
-        "goes-18",
-        "goes-t",
-        "goes-west",
+        "goes-19",
+        "goes-east",
+        "goes-u",
         "hotspot",
         "nesdis",
         "noaa",
@@ -114,7 +114,7 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_GOES_18_FDCF"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_GOES_19_FDCF"
         }
     ],
     "summaries": {
