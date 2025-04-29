@@ -1,0 +1,271 @@
+{
+    "type": "Collection",
+    "id": "UMN/PGC/ArcticDEM/V4/2m_mosaic",
+    "stac_version": "1.1.0",
+    "description": "ArcticDEM is a National Geospatial-Intelligence Agency (NGA) and National\nScience Foundation (NSF) public-private initiative to automatically produce\na high-resolution, high-quality digital surface model (DSM) of the Arctic\nusing optical stereo imagery, high-performance computing, and open source\nphotogrammetry software. It includes vegetation, tree canopy, buildings, and\nother man-made surface features. The 2m asset is a collection of strips rather\nthan a single mosaic due to projection differences between strips.\n\nMosaicked DEM files are compiled from the best quality strip DEM files\nwhich have been blended and feathered to reduce void areas and edge-matching\nartifacts. Filtered IceSAT altimetry data has been applied to the raster\nfiles to improve absolute accuracy.\n\nThese version (V4.1) mosaics include additional raster bands:\n'count', 'mad','mindate', and 'maxdate' to provide\ninformation on data provenance and uncertainty.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/UMN/UMN_PGC_ArcticDEM_V4_2m_mosaic",
+            "type": "text/html",
+            "title": "Run the example for UMN/PGC/ArcticDEM/V4/2m_mosaic in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/UMN/UMN_PGC_ArcticDEM_V4_2m_mosaic_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/UMN_PGC_ArcticDEM_V4_2m_mosaic#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.7910/DVN/OHHUKH"
+        },
+        {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMN/UMN_PGC_ArcticDEM_V4_2m_mosaic.json",
+            "type": "application/json",
+            "title": "UMN/PGC/ArcticDEM/V4/2m_mosaic"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMN/UMN_PGC_ArcticDEM_V3_2m_mosaic.json",
+            "type": "application/json",
+            "title": "UMN/PGC/ArcticDEM/V3/2m_mosaic"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMN/UMN_PGC_ArcticDEM_V4_2m_mosaic.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMN/catalog.json",
+            "type": "application/json",
+            "title": "UMN"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "elevation-topography"
+    ],
+    "gee:terms_of_use": "National Science Foundation (PGC's primary funding source) policy requires\nresearchers to acknowledge NSF support in all publications, web pages, and\nmedia interviews.\n\nBy using PGC data in Earth Engine, users agree to cite PGC\nand its sponsorship by the NSF. The original source of any third-party data\nsupplied by PGC must also be properly attributed.\n\nFor more information see the PGC's\n[Acknowledgement Policy](https://www.pgc.umn.edu/guides/user-services/acknowledgement-policy/).\n",
+    "gee:type": "image",
+    "sci:citation": "DEM(s) created by the Polar Geospatial Center from DigitalGlobe, Inc. imagery.\nPorter, Claire; Morin, Paul; Howat, Ian; Noh, Myoung-Jon; Bates, Brian;\nPeterman, Kenneth; Keesey, Scott; Schlenk, Matthew; Gardiner, Judith;\nTomko, Karen; Willis, Michael; Kelleher, Cole; Cloutier, Michael; Husby, Eric;\nFoga, Steven; Nakamura, Hitomi; Platson, Melisa; Wethington, Michael, Jr.;\nWilliamson, Cathleen; Bauer, Gregory; Enos, Jeremy; Arnold, Galen; Kramer, William;\nBecker, Peter; Doshi, Abhijit; D'Souza, Cristelle; Cummens, Pat; Laurier, Fabien;\nBojesen, Mikkel, 2018, ArcticDEM, Harvard Dataverse, V1, [Date Accessed].\n",
+    "sci:doi": "10.7910/DVN/OHHUKH",
+    "version": "4.1",
+    "title": "ArcticDEM Mosaic V4.1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    50,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-06-03T00:00:00Z",
+                    "2020-09-03T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "arctic",
+        "dem",
+        "elevation-topography",
+        "geophysical",
+        "pgc",
+        "umn"
+    ],
+    "providers": [
+        {
+            "name": "University of Minnesota Polar Geospatial Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.pgc.umn.edu/data/arcticdem/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/UMN_PGC_ArcticDEM_V4_2m_mosaic"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Elevation",
+                "gee:units": "m",
+                "name": "elevation"
+            },
+            {
+                "description": "Number of source DEMs used to calculate the elevation value at that pixel.",
+                "name": "count"
+            },
+            {
+                "description": "Median absolute deviation of the stack of source datasets from the median elevation value.",
+                "gee:units": "m",
+                "name": "mad"
+            },
+            {
+                "description": "Earliest date of the source DEMs used to build the mosaic, as the number of days since January 1, 2000.",
+                "name": "mindate"
+            },
+            {
+                "description": "Latest date of the source DEMs used to build the mosaic, as the number of days since January 1, 2000.",
+                "name": "maxdate"
+            },
+            {
+                "description": "Data mask indicates whether the elevation was 0 or 1.\nwhere 0 indicates , Filled/merged with another dataset or\nmasked out as NoData in quality control steps.\n1 indicates output by SETSM, the Ohio State University\u2019s\nSurface Extraction with TIN-based Search-space\nMinimization software package.\n",
+                "name": "datamask"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Elevation",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "elevation"
+                        ],
+                        "max": [
+                            1000
+                        ],
+                        "min": [
+                            -50
+                        ],
+                        "palette": [
+                            "0d13d8",
+                            "60e1ff",
+                            "ffffff"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 66.368,
+                    "lon": -63.402,
+                    "zoom": 7
+                }
+            },
+            {
+                "display_name": "Data Count",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "count"
+                        ],
+                        "max": [
+                            10
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "black",
+                            "blue",
+                            "purple",
+                            "cyan",
+                            "green",
+                            "yellow",
+                            "red"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 66.368,
+                    "lon": -63.402,
+                    "zoom": 7
+                }
+            },
+            {
+                "display_name": "MAD",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "mad"
+                        ],
+                        "max": [
+                            50
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "006633",
+                            "E69800",
+                            "D4E157",
+                            "FFF59D"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 66.368,
+                    "lon": -63.402,
+                    "zoom": 7
+                }
+            },
+            {
+                "display_name": "Data Mask",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "datamask"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "black",
+                            "white"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 66.368,
+                    "lon": -63.402,
+                    "zoom": 7
+                }
+            }
+        ],
+        "gsd": [
+            2
+        ],
+        "platform": [
+            "GeoEye-1",
+            "WorldView-1",
+            "WorldView-2",
+            "WorldView-3"
+        ],
+        "elevation": {
+            "minimum": -416.45,
+            "maximum": 5971.24
+        }
+    }
+}

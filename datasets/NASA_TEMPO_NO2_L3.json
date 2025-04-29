@@ -1,0 +1,150 @@
+{
+    "type": "Collection",
+    "id": "NASA/TEMPO/NO2_L3",
+    "stac_version": "1.1.0",
+    "description": "Nitrogen dioxide Level 3 files provide trace gas information on a regular\ngrid covering the TEMPO field of regard for nominal TEMPO observations.\nLevel 3 files are derived by combining information from all Level 2 files\nconstituting a TEMPO East-West scan cycle. The rasters contain information\non tropospheric, stratospheric and total nitrogen dioxide vertical columns,\nancillary data used in air mass factor and stratospheric/tropospheric\nseparation calculations, and retrieval quality flags. The re-gridding\nalgorithm uses an area-weighted approach.\n\n* [General Documentation](https://asdc.larc.nasa.gov/documents/tempo/guide/TEMPO_Level-2-3_trace_gas_clouds_user_guide_V1.2.pdf)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_TEMPO_NO2_L3",
+            "type": "text/html",
+            "title": "Run the example for NASA/TEMPO/NO2_L3 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_TEMPO_NO2_L3_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_TEMPO_NO2_L3#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/IS-40e/TEMPO/NO2_L3.003"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_TEMPO_NO2_L3.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
+    "gee:provider_ids": [
+        "C2930763263-LARC_CLOUD"
+    ],
+    "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy](https://www.earthdata.nasa.gov/engage/open-data-services-and-software/data-and-information-policy)\nfor additional information.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "NASA/LARC/SD/ASDC. (n.d.). TEMPO gridded NO2 tropospheric and stratospheric\ncolumns V03 (PROVISIONAL) [Data set]. NASA Langley Atmospheric Science Data\nCenter DAAC. Retrieved from https://doi.org/10.5067/IS-40e/TEMPO/NO2_L3.003\n",
+    "version": "V03",
+    "title": "TEMPO gridded NO2 tropospheric and stratospheric columns V03",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-08-01T00:00:00Z",
+                    "2025-04-25T11:46:30Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "air-quality",
+        "nasa",
+        "nitrogen-dioxide",
+        "pollution",
+        "satellite-imagery",
+        "tropomi"
+    ],
+    "providers": [
+        {
+            "name": "NASA ASDC",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://asdc.larc.nasa.gov/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_TEMPO_NO2_L3"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Tropospheric NO2",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "vertical_column_troposphere"
+                        ],
+                        "max": [
+                            15000000000000000
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "000080",
+                            "0000D9",
+                            "4000FF",
+                            "8000FF",
+                            "0080FF",
+                            "00D9FF",
+                            "80FFFF",
+                            "FF8080",
+                            "D90000",
+                            "800000"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 35,
+                    "lon": -95,
+                    "zoom": 3
+                }
+            }
+        ],
+        "gsd": [
+            2226
+        ],
+        "instruments": [
+            "TEMPO"
+        ]
+    }
+}
