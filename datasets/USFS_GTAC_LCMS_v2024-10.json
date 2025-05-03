@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "USFS/GTAC/LCMS/v2023-9",
+    "id": "USFS/GTAC/LCMS/v2024-10",
     "stac_version": "1.1.0",
-    "description": "This product is part of the Landscape Change Monitoring System (LCMS) data suite.\nIt shows LCMS-modeled change, land cover, and/or land use classes for each year that\ncovers the Conterminous United States (CONUS) and areas outside the CONUS (OCONUS) that \ninclude Southeastern Alaska (SEAK), Puerto Rico-US Virgin Islands (PRUSVI), and Hawaii (HI). \n\nLCMS is a remote sensing-based system for mapping and monitoring landscape change across the\nUnited States. Its objective is to develop a consistent approach using the latest technology\nand advancements in change detection to produce a \"best available\" map of landscape change.\n\nOutputs include three annual products: change, land cover, and land use.\nChange relates specifically to vegetation cover and includes slow loss, fast loss (which also\nincludes hydrologic changes such as inundation or desiccation), and gain. These values are\npredicted for each year of the Landsat time series and serve as the foundational products for\nLCMS. Land cover and land use maps depict life-form level land cover and broad-level land use\nfor each year.\n\nBecause no algorithm performs best in all situations, LCMS uses an ensemble of models as\npredictors, which improves map accuracy across a range of ecosystems and change processes\n(Healey et al., 2018). The resulting suite of LCMS change, land cover, and land use maps offer\na holistic depiction of landscape change across the United States since 1985.\n\nPredictor layers for the LCMS model include outputs\nfrom the LandTrendr and CCDC change detection algorithms, and terrain information. These\ncomponents are all accessed and processed using Google Earth Engine (Gorelick et al., 2017).\n\nFor CCDC, United States Geological Survey (USGS) Collection 2 Landsat Tier 1 surface reflectance\ndata were used for the CONUS, and Landsat Tier 1 top of atmosphere reflectance data for SEAK, PRUSVI \nand HI. To produce annual composites for LandTrendr, USGS Collection 2 Landsat Tier 1 and Sentinel 2A,\n2B Level-1C top of atmosphere reflectance data were used. The cFmask cloud masking algorithm\n(Foga et al., 2017), which is an implementation of Fmask 2.0 (Zhu and Woodcock, 2012)\n(Landsat-only), cloudScore (Chastain et al., 2019) (Landsat-only), s2cloudless\n(Sentinel-Hub, 2021) and Cloud Score plus (Pasquarella et al., 2023) (Sentinel 2-only) are \nused to mask clouds, while TDOM (Chastain et al., 2019) is used to mask cloud shadows (Landsat and Sentinel\n2). For LandTrendr, the annual medoid is then computed to summarize cloud\nand cloud shadow-free values from each year into a single composite.\n\nThe composite time series is temporally segmented using LandTrendr\n(Kennedy et al., 2010; Kennedy et al., 2018; Cohen et al., 2018).\n\nAll cloud and cloud shadow free values are also temporally segmented using the CCDC algorithm\n(Zhu and Woodcock, 2014).\n\nPredictor data include raw composite values, LandTrendr fitted values, pair-wise differences,\nsegment duration, change magnitude, and slope, and CCDC sine and\ncosine coefficients (first 3 harmonics), fitted values, and pairwise\ndifferences, along with elevation, slope, sine of aspect, cosine of aspect,\nand topographic position indices (Weiss, 2001) from the 10 m USGS 3D Elevation\nProgram (3DEP) data (U.S. Geological Survey, 2019).\n\nReference data are collected using TimeSync, a web-based tool that helps\nanalysts visualize and interpret the Landsat data record from 1984-present (Cohen et al., 2010).\n\nRandom Forests models (Breiman, 2001) were trained using reference data from TimeSync and predictor data \nfrom LandTrendr, CCDC, and terrain indices to predict annual change, land cover, and land use classes. \nFollowing modeling, we instituted a series of probability thresholds and rulesets using ancillary datasets \nto improve qualitative map outputs and reduce commission and omission. More information can be found in \nthe LCMS Methods Brief included in the Description. \n\n**Additional Resources**\n\n* [A more detailed code example of using LCMS data](https://github.com/google/earthengine-community/blob/master/datasets/scripts/LCMS_Visualization.js).\n\n* The [LCMS Data Explorer](https://apps.fs.usda.gov/lcms-viewer) is a web-based application that\n  provides users the ability to view, analyze, summarize and download LCMS data.\n\n* Please see the [LCMS Methods Brief](https://data.fs.usda.gov/geodata/rastergateway/LCMS/LCMS_v2023-9_Methods.pdf)\n  for more detailed information regarding methods and accuracy assessment, or the\n  [LCMS Geodata Clearinghouse](https://data.fs.usda.gov/geodata/rastergateway/LCMS/index.php)\n  for data downloads, metadata, and support documents.\n\n* The CONUS land use product was updated on July 2nd 2024, to correct an issue with the developed class.\n\n* PRUSVI and HI data were released October 1st 2024. \n\nContact [sm.fs.lcms@usda.gov](mailto:sm.fs.lcms@usda.gov) with any\nquestions or specific data requests.\n",
+    "description": "This product is part of the Landscape Change Monitoring System (LCMS) data suite.\nIt shows LCMS-modeled change, land cover, and/or land use classes for each year and\ncovers the Conterminous United States (CONUS) as well as areas outside the CONUS (OCONUS) \nincluding Alaska (AK), Puerto Rico-US Virgin Islands (PRUSVI), and Hawaii (HI). PRUSVI and HI \nv2024.10 data will be released late summer 2025. For now v2023.9 PRUSVI and HI LCMS data can \nbe used (USFS/GTAC/LCMS/v2023-9). \n\nLCMS is a remote sensing-based system for mapping and monitoring landscape change across the\nUnited States. Its objective is to develop a consistent approach using the latest technology\nand advancements in change detection to produce a \"best available\" map of landscape change.\n\nOutputs include three annual products: change, land cover, and land use. The change model output relates specifically to vegetation cover and includes slow loss, fast loss (which also includes hydrologic changes such as inundation or desiccation), and gain. These values are predicted for each year of the Landsat time series and serve as the foundational products for LCMS. We apply a ruleset based on ancillary datasets to create the final change product, which is a\nrefinement/reclassification of the modeled change to 15 classes that explicitly provide information on the cause of landscape change (e.g., Tree Removal, Wildfire, Wind damage). Land cover and land use maps depict life-form level land cover and broad-level land use for each year.\n\nBecause no algorithm performs best in all situations, LCMS uses an ensemble of models as\npredictors, which improves map accuracy across a range of ecosystems and change processes\n(Healey et al., 2018). The resulting suite of LCMS change, land cover, and land use maps offer\na holistic depiction of landscape change across the United States since 1985.\n\nPredictor layers for the LCMS model include outputs from the LandTrendr and CCDC change detection \nalgorithms, and terrain information. These components are all accessed and processed using Google \nEarth Engine (Gorelick et al., 2017).\n\nTo produce annual composites for LandTrendr, USGS Collection 2 Landsat Tier 1 and Sentinel 2A,\n2B Level-1C top of atmosphere reflectance data were used. The cFmask cloud masking algorithm\n(Foga et al., 2017), which is an implementation of Fmask 2.0 (Zhu and Woodcock, 2012)\n(Landsat-only), cloudScore (Chastain et al., 2019) (Landsat-only), s2cloudless\n(Sentinel-Hub, 2021) and Cloud Score plus (Pasquarella et al., 2023) (Sentinel 2-only) are \nused to mask clouds, while TDOM (Chastain et al., 2019) is used to mask cloud shadows (Landsat and Sentinel\n2). For LandTrendr, the annual medoid is then computed to summarize cloud and cloud shadow-free values \nfrom each year into a single composite. For CCDC, United States Geological Survey (USGS) Collection 2 \nLandsat Tier 1 surface reflectance data were used for the CONUS, and Landsat Tier 1 top of atmosphere \nreflectance data for AK, PRUSVI, and HI. \n\nThe composite time series is temporally segmented using LandTrendr\n(Kennedy et al., 2010; Kennedy et al., 2018; Cohen et al., 2018).\n\nAll cloud and cloud shadow free values are also temporally segmented using the CCDC algorithm\n(Zhu and Woodcock, 2014).\n\nPredictor data include raw composite values, LandTrendr fitted values, pair-wise differences,\nsegment duration, change magnitude, and slope, and CCDC sine and\ncosine coefficients (first 3 harmonics), fitted values, and pairwise\ndifferences, along with elevation, slope, sine of aspect, cosine of aspect,\nand topographic position indices (Weiss, 2001) from the 10 m USGS 3D Elevation\nProgram (3DEP) data (U.S. Geological Survey, 2019).\n\nReference data are collected using TimeSync, a web-based tool that helps\nanalysts visualize and interpret the Landsat data record from 1984-present (Cohen et al., 2010).\n\nRandom Forest models (Breiman, 2001) were trained using reference data from TimeSync and predictor data \nfrom LandTrendr, CCDC, and terrain indices to predict annual change, land cover, and land use classes. \nFollowing modeling, we institute a series of probability thresholds and rulesets using ancillary datasets \nto improve qualitative map outputs and reduce commission and omission. More information can be found in \nthe LCMS Methods Brief included in the Description. \n\n**Additional Resources**\n\n* [A more detailed code example of using LCMS data](https://github.com/google/earthengine-community/blob/master/datasets/scripts/LCMS_Visualization.js).\n\n* The [LCMS Data Explorer](https://apps.fs.usda.gov/lcms-viewer) is a web-based application that\n  provides users the ability to view, analyze, summarize and download LCMS data.\n\n* Please see the [LCMS Methods Brief](https://data.fs.usda.gov/geodata/rastergateway/LCMS/LCMS_v2023-9_Methods.pdf)\n  for more detailed information regarding methods and accuracy assessment, or the\n  [LCMS Geodata Clearinghouse](https://data.fs.usda.gov/geodata/rastergateway/LCMS/index.php)\n  for data downloads, metadata, and support documents.\n\n* PRUSVI and HI data will be released late summer 2025. Previously released v2023.9 PRUSVI and HI LCMS data are available \n(USFS/GTAC/LCMS/v2023-9) \n\nContact [sm.fs.lcms@usda.gov](mailto:sm.fs.lcms@usda.gov) with any\nquestions or specific data requests.\n",
     "links": [
         {
             "rel": "root",
@@ -12,20 +12,24 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/USFS/USFS_GTAC_LCMS_v2023-9",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/USFS/USFS_GTAC_LCMS_v2024-10",
             "type": "text/html",
-            "title": "Run the example for USFS/GTAC/LCMS/v2023-9 in the Earth Engine Code Editor",
+            "title": "Run the example for USFS/GTAC/LCMS/v2024-10 in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/USFS/USFS_GTAC_LCMS_v2023-9_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/USFS/USFS_GTAC_LCMS_v2024-10_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/USFS_GTAC_LCMS_v2023-9#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/USFS_GTAC_LCMS_v2024-10#terms-of-use",
             "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://data.fs.usda.gov/geodata/rastergateway/LCMS/index.php"
         },
         {
             "rel": "latest-version",
@@ -35,19 +39,13 @@
         },
         {
             "rel": "predecessor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USFS/USFS_GTAC_LCMS_v2022-8.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USFS/USFS_GTAC_LCMS_v2023-9.json",
             "type": "application/json",
-            "title": "USFS/GTAC/LCMS/v2022-8"
-        },
-        {
-            "rel": "successor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USFS/USFS_GTAC_LCMS_v2024-10.json",
-            "type": "application/json",
-            "title": "USFS/GTAC/LCMS/v2024-10"
+            "title": "USFS/GTAC/LCMS/v2023-9"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USFS/USFS_GTAC_LCMS_v2023-9.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USFS/USFS_GTAC_LCMS_v2024-10.json",
             "type": "application/json"
         },
         {
@@ -65,11 +63,10 @@
     "gee:categories": [
         "landuse-landcover"
     ],
-    "gee:status": "deprecated",
-    "gee:terms_of_use": "The USDA Forest Service makes no warranty, expressed or implied, including the warranties of\nmerchantability and fitness for a particular purpose, nor assumes any legal liability or\nresponsibility for the accuracy, reliability, completeness or utility of these geospatial data,\nor for the improper or incorrect use of these geospatial data. These geospatial data and\nrelated maps or graphics are not legal documents and are not intended to be used as such. The\ndata and maps may not be used to determine title, ownership, legal descriptions or boundaries,\nlegal jurisdiction, or restrictions that may be in place on either public or private land.\nNatural hazards may or may not be depicted on the data and maps, and land users should exercise\ndue caution. The data are dynamic and may change over time. The user is responsible to verify\nthe limitations of the geospatial data and to use the data accordingly.\n\nThese data were collected using funding from the U.S. Government and can be used\nwithout additional permissions or fees. If you use these data in a publication, presentation, or\nother research product please use the following citation:\n\nUSDA Forest Service. 2024. USFS Landscape Change Monitoring System v2023.9\n(Conterminous United States and Outer Conterminous United States). Salt Lake City, Utah.\n",
+    "gee:terms_of_use": "The USDA Forest Service makes no warranty, expressed or implied, including the warranties of\nmerchantability and fitness for a particular purpose, nor assumes any legal liability or\nresponsibility for the accuracy, reliability, completeness or utility of these geospatial data,\nor for the improper or incorrect use of these geospatial data. These geospatial data and\nrelated maps or graphics are not legal documents and are not intended to be used as such. The\ndata and maps may not be used to determine title, ownership, legal descriptions or boundaries,\nlegal jurisdiction, or restrictions that may be in place on either public or private land.\nNatural hazards may or may not be depicted on the data and maps, and land users should exercise\ndue caution. The data are dynamic and may change over time. The user is responsible to verify\nthe limitations of the geospatial data and to use the data accordingly.\n\nThese data were collected using funding from the U.S. Government and can be used\nwithout additional permissions or fees. If you use these data in a publication, presentation, or\nother research product please use the following citation:\n\nUSDA Forest Service. 2025. USFS Landscape Change Monitoring System v2024.10\n(Conterminous United States and Outer Conterminous United States). Salt Lake City, Utah.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
-    "sci:citation": "USDA Forest Service. 2024. USFS Landscape Change Monitoring System\nv2023.9 (Conterminous United States and  Outer Conterminous United States).\nSalt Lake City, Utah.\n",
+    "sci:citation": "USDA Forest Service. 2025. USFS Landscape Change Monitoring System\nv2024.10 (Conterminous United States and  Outer Conterminous United States).\nSalt Lake City, Utah.\n",
     "sci:publications": [
         {
             "citation": "Breiman, L., 2001. Random Forests. In Machine Learning. Springer, 45: 5-32.\n[doi:10.1023/A:1010933404324](https://doi.org/10.1023/A:1010933404324)\n",
@@ -107,7 +104,7 @@
             "doi": "10.3390/rs10050691"
         },
         {
-            "citation": "Pasquarella, V. J., Brown, C. F., Czerwinski, W., and Rucklidge, W. J.,\n2023. Comprehensive Quality Assessment of Optical Satellite Imagery Using \nWeakly Supervised Video Learning. In Proceedings of the IEEE/CVF Conference \non Computer Vision and Pattern Recognition. 2124-2134.\n",
+            "citation": "Pasquarella, V. J., Brown, C. F., Czerwinski, W., and Rucklidge, W. J., 2023. \nComprehensive Quality Assessment of Optical Satellite Imagery Using \nWeakly Supervised Video Learning. In Proceedings of the IEEE/CVF Conference \non Computer Vision and Pattern Recognition. 2124-2134.\n",
             "doi": "10.3390/rs10050691"
         },
         {
@@ -125,9 +122,8 @@
             "doi": "10.1016/j.rse.2014.01.011"
         }
     ],
-    "version": "v2023.9",
-    "deprecated": true,
-    "title": "USFS Landscape Change Monitoring System v2023.9 (CONUS and OCONUS) [deprecated]",
+    "version": "v2024.10",
+    "title": "USFS Landscape Change Monitoring System  v2024.10 (CONUS and OCONUS)",
     "extent": {
         "spatial": {
             "bbox": [
@@ -143,7 +139,7 @@
             "interval": [
                 [
                     "1985-01-01T00:00:00Z",
-                    "2023-12-31T00:00:00Z"
+                    "2024-12-31T00:00:00Z"
                 ]
             ]
         }
@@ -154,19 +150,16 @@
         "forest",
         "gtac",
         "landcover",
-        "landsat-derived",
         "landuse",
         "landuse-landcover",
         "lcms",
         "redcastle-resources",
-        "sentinel-derived",
-        "time-series",
         "usda",
         "usfs"
     ],
     "providers": [
         {
-            "name": "USDA Forest Service (USFS) Geospatial Technology and Applications Center (GTAC)",
+            "name": "USDA Forest Service (USFS) Field Services and Innovation Center Geospatial Office (FSIC-GO)",
             "roles": [
                 "licensor",
                 "producer"
@@ -178,15 +171,30 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/USFS_GTAC_LCMS_v2023-9"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/USFS_GTAC_LCMS_v2024-10"
         }
     ],
     "summaries": {
         "gee:schema": [
             {
-                "description": "LCMS currently covers the conterminous United States, Southeastern Alaska, \nPuerto Rico-US Virgin Islands, and Hawaii. This version contains outputs across \nconterminous United States, Southeastern Alaska, Puerto Rico-US Virgin Islands, \nand Hawaii.\nPossible values: 'CONUS, SEAK, PRUSVI, HI'\n",
+                "description": "LCMS currently covers the conterminous United States, Alaska, \nPuerto Rico-US Virgin Islands, and Hawaii. This version contains CONUS. The \ndata for AK, PRUSVI, and HI will be released late summer 2025.\nPossible values: 'CONUS, AK'\n",
                 "name": "study_area",
                 "type": "STRING"
+            },
+            {
+                "description": "Version of the product",
+                "name": "version",
+                "type": "STRING"
+            },
+            {
+                "description": "Start year of the product",
+                "name": "startYear",
+                "type": "INT"
+            },
+            {
+                "description": "End year of the product",
+                "name": "endYear",
+                "type": "INT"
             },
             {
                 "description": "Year of the product",
