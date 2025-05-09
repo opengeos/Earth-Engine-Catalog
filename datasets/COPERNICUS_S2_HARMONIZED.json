@@ -66,6 +66,7 @@
     "gee:terms_of_use": "The use of Sentinel data is governed by the [Copernicus\nSentinel Data Terms and Conditions.](https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice)\n",
     "gee:type": "image_collection",
     "version": "harmonized",
+    "gee:status": "ready",
     "title": "Harmonized Sentinel-2 MSI: MultiSpectral Instrument, Level-1C (TOA)",
     "extent": {
         "spatial": {
@@ -82,7 +83,7 @@
             "interval": [
                 [
                     "2015-06-27T00:00:00Z",
-                    "2025-05-08T00:28:19.543000Z"
+                    "2025-05-08T23:48:33.918000Z"
                 ]
             ]
         }

@@ -57,6 +57,7 @@
     "sci:citation": "Green, R. (2022). EMIT L1B At-Sensor Calibrated Radiance and Geolocation\nData 60 m V001 dataset. NASA EOSDIS Land Processes Distributed Active\nArchive Center. Accessed 2024-05-20 from\n[https://doi.org/10.5067/EMIT/EMITL1BRAD.001](https://doi.org/10.5067/EMIT/EMITL1BRAD.001)\n",
     "sci:doi": "10.5067/EMIT/EMITL1BRAD.001",
     "version": "1",
+    "gee:status": "ready",
     "title": "EMIT L1B At-Sensor Calibrated Radiance and Geolocation Data 60 m",
     "extent": {
         "spatial": {
@@ -73,7 +74,7 @@
             "interval": [
                 [
                     "2022-08-09T00:00:00Z",
-                    "2025-05-05T11:36:28Z"
+                    "2025-05-05T14:48:29Z"
                 ]
             ]
         }

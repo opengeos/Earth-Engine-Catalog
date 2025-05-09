@@ -76,6 +76,7 @@
     "sci:citation": "Vermote, E., Franch, B., Claverie, M. (2023). VIIRS/NPP Surface Reflectance Daily L2G Global 1km and 500m SIN Grid V002 [Data set]. NASA EOSDIS Land Processes Distributed Active Archive Center.\n",
     "sci:doi": "10.5067/VIIRS/VNP09GA.002",
     "version": "v002",
+    "gee:status": "ready",
     "title": "VNP09GA: VIIRS Surface Reflectance Daily 500m and 1km",
     "extent": {
         "spatial": {
@@ -92,7 +93,7 @@
             "interval": [
                 [
                     "2012-01-19T00:00:00Z",
-                    "2025-05-05T00:00:00Z"
+                    "2025-05-06T00:00:00Z"
                 ]
             ]
         }

@@ -59,6 +59,7 @@
     "gee:type": "image_collection",
     "sci:citation": "NRT VIIRS 375 m Active Fire product VNP14IMGT distributed from NASA FIRMS.\nAvailable on-line https://earthdata.nasa.gov/firms.\n[doi:10.5067/FIRMS/VIIRS/VNP14IMGT_NRT.002](https://doi.org/10.5067/FIRMS/VIIRS/VNP14IMGT_NRT.002)\n",
     "version": "6",
+    "gee:status": "ready",
     "title": "VNP14IMGTDL_NRT Daily Raster: VIIRS (S-NPP) Band 375m Active Fire",
     "extent": {
         "spatial": {
@@ -75,7 +76,7 @@
             "interval": [
                 [
                     "2023-09-03T00:00:00Z",
-                    "2025-05-07T00:00:00Z"
+                    "2025-05-08T00:00:00Z"
                 ]
             ]
         }

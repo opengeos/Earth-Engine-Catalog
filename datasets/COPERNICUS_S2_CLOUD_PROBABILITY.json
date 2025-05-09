@@ -52,6 +52,7 @@
     },
     "gee:terms_of_use": "The use of Sentinel data is governed by the [Copernicus\nSentinel Data Terms and Conditions.](https://scihub.copernicus.eu/twiki/pub/SciHubWebPortal/TermsConditions/Sentinel_Data_Terms_and_Conditions.pdf)\n",
     "gee:type": "image_collection",
+    "gee:status": "ready",
     "title": "Sentinel-2: Cloud Probability",
     "extent": {
         "spatial": {
@@ -68,7 +69,7 @@
             "interval": [
                 [
                     "2015-06-27T00:00:00Z",
-                    "2025-05-08T00:26:31Z"
+                    "2025-05-09T00:46:49Z"
                 ]
             ]
         }

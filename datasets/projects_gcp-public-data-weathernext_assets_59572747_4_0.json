@@ -51,6 +51,7 @@
     "gee:unusual_terms_of_use": true,
     "gee:user_uploaded": true,
     "sci:citation": "For Real-Time Experimental Data, please see the applicable Terms of Use\nfor citation requirements.\n\nIf you disclose findings arising from the Historical Data, you must cite\n\"\u00a9 2024 DeepMind Technologies Limited's machine learning models used to\ncreate the experimental data made available at\n[https://developers.google.com/earth-engine/datasets/catalog/projects_gcp-public-data-weathernext_assets_59572747_4_0](https://developers.google.com/earth-engine/datasets/catalog/projects_gcp-public-data-weathernext_assets_59572747_4_0)\nunder CC BY 4.0 licence terms. This data is intended for experimental\nmodelling only and is not intended, validated, or approved for real\nworld use.\"\n",
+    "gee:status": "ready",
     "title": "WeatherNext Graph Forecasts",
     "extent": {
         "spatial": {
@@ -67,7 +68,7 @@
             "interval": [
                 [
                     "2020-01-01T00:00:00Z",
-                    "2025-05-07T18:00:00Z"
+                    "2025-05-08T18:00:00Z"
                 ]
             ]
         }

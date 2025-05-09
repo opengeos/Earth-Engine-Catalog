@@ -76,6 +76,7 @@
     "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
     "sci:doi": "10.5067/VIIRS/VNP21A1D.002",
     "version": "2",
+    "gee:status": "ready",
     "title": "VNP21A1D.002: Day Land Surface Temperature and Emissivity Daily 1km",
     "extent": {
         "spatial": {
@@ -92,7 +93,7 @@
             "interval": [
                 [
                     "2012-01-19T00:00:00Z",
-                    "2025-05-05T00:00:00Z"
+                    "2025-05-06T00:00:00Z"
                 ]
             ]
         }

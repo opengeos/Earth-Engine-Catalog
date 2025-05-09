@@ -66,6 +66,7 @@
     "gee:terms_of_use": "The use of Sentinel data is governed by the [Copernicus\nSentinel Data Terms and Conditions.](https://scihub.copernicus.eu/twiki/pub/SciHubWebPortal/TermsConditions/Sentinel_Data_Terms_and_Conditions.pdf)\n",
     "gee:type": "image_collection",
     "version": "harmonized",
+    "gee:status": "ready",
     "title": "Harmonized Sentinel-2 MSI: MultiSpectral Instrument, Level-2A (SR)",
     "extent": {
         "spatial": {
@@ -82,7 +83,7 @@
             "interval": [
                 [
                     "2017-03-28T00:00:00Z",
-                    "2025-05-08T00:22:51.463000Z"
+                    "2025-05-08T23:26:30.327000Z"
                 ]
             ]
         }
