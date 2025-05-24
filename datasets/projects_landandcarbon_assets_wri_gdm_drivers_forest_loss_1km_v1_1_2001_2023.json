@@ -1,0 +1,258 @@
+{
+    "type": "Collection",
+    "id": "projects/landandcarbon/assets/wri_gdm_drivers_forest_loss_1km/v1_1_2001_2023",
+    "stac_version": "1.1.0",
+    "description": "This dataset maps the dominant driver of tree cover loss from 2001-2023 globally at 1 km resolution. \nProduced by the World Resources Institute (WRI) and Google DeepMind, the data were developed using \na global neural network model (ResNet) trained on a set of samples collected through visual \ninterpretation of very high-resolution satellite imagery. The model used satellite imagery \n(Landsat 7 & 8, Sentinel-2) and ancillary data to classify seven driver categories: \npermanent agriculture, hard commodities, shifting cultivation, logging, wildfires, \nsettlements and infrastructure, and other natural disturbances. An independent stratified random \nsample collected through interpretation of very high resolution satellite imagery was used to \nestimate the accuracy of the map. \n\nA *driver* is defined as the direct cause of tree cover loss, and can include both temporary \ndisturbances (natural or anthropogenic) or permanent loss of tree cover due to a change to \na non-forest land use (e.g., deforestation).  The *dominant* driver is defined as the \ndirect driver that caused the majority of tree cover loss within each 1 km cell over the time \nperiod. Classes are defined as follows:\n* Permanent agriculture: Long-term, permanent tree cover loss for small- to large-scale agriculture. \nThis includes perennial tree crops, as well as pasture and seasonal crops and cropping systems, \nwhich may include a fallow period. Agricultural activities are considered \"permanent\" if there \nis visible evidence that they persist following the tree cover loss event and are not a part of \na temporary cultivation cycle. \n* Hard commodities: Loss due to the establishment or expansion of mining or energy infrastructure.\n* Shifting cultivation: Tree cover loss due to small- to medium-scale clearing for temporary \ncultivation that is later abandoned and followed by subsequent regrowth of secondary forest or \nvegetation.\n* Logging: Forest management and logging activities occurring within managed, natural or semi-natural \nforests and plantations, often with evidence of forest regrowth or planting in subsequent years. \nIncludes clear-cut and selective logging, establishment of logging roads, forest thinning, and \nsalvage or sanitation logging. \n* Wildfire: Tree cover loss due to fire with no visible human conversion or agricultural activity \nafterward. Fires may be started by natural causes (e.g. lightning) or may be related to human \nactivities (accidental or deliberate).\n* Settlements and infrastructure: Tree cover loss due to expansion and intensification of roads, \nsettlements, urban areas, or built infrastructure (not associated with other classes).\n* Other natural disturbances: Tree cover loss due to other non-fire natural disturbances \n(e.g., landslides, insect outbreaks, river meandering). If loss due to natural causes is followed \nby salvage or sanitation logging, it is classified as forest management.\n\n**Limitations**: This product does not distinguish between the loss of *natural forest* and *planted \ntrees* (e.g., plantations, tree crops, or agroforestry systems). While tree cover loss associated \nwith the *permanent agriculture*, *hard commodities*, and *settlements and infrastructure* classes represent \na close approximation of deforestation (permanent conversion of forest to another land use), these \nclasses may sometimes include the clearing of planted trees. For example, clearing and replanting an \norchard would be included in the *permanent agriculture* class, but is not deforestation of a natural forest. \nSimilarly, replacement of natural forest with wood fiber plantations is not distinguished from routine \nharvesting within existing plantations established before 2000, as these are both included in the logging \nclass. \n\nThis product shows the dominant driver in each 1km cell over the entire period. It does not show \nmultiple drivers if they occur in the same cell at smaller scales, nor does it detail the sequence of \ndrivers if multiple occurred at different times within the period. Additionally, these data are limited \nin scope to attributing drivers to tree cover loss as mapped by the \n[Global Forest Change v1.11](https://www.science.org/doi/10.1126/science.1244693) tree cover loss product, \nand therefore the detection of loss is subject to the accuracy of that product. \n\n**For a full description of the methods, technical specifications, definitions, accuracy, and \nlimitations, please see the publication**: \n[https://doi.org/10.1088/1748-9326/add606](https://doi.org/10.1088/1748-9326/add606). \nThe data is also available for download on [Zenodo](https://zenodo.org/records/15225267) and \nthe [WRI Data Explorer](https://datasets.wri.org/datasets/dominant-drivers-of-tree-cover-loss-at-1km-v1-1).  \n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/landandcarbon/projects_landandcarbon_assets_wri_gdm_drivers_forest_loss_1km_v1_1_2001_2023",
+            "type": "text/html",
+            "title": "Run the example for projects/landandcarbon/assets/wri_gdm_drivers_forest_loss_1km/v1_1_2001_2023 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/landandcarbon/projects_landandcarbon_assets_wri_gdm_drivers_forest_loss_1km_v1_1_2001_2023_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_landandcarbon_assets_wri_gdm_drivers_forest_loss_1km_v1_1_2001_2023#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/landandcarbon/projects_landandcarbon_assets_wri_gdm_drivers_forest_loss_1km_v1_1_2001_2023.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/landandcarbon/catalog.json",
+            "type": "application/json",
+            "title": "landandcarbon"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "forest-biomass"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image",
+    "sci:citation": "Sims, M., Stanimirova, R., Raichuk, A., Neumann, M., Richter, J., Follett, F., \nMacCarthy, J., Lister, K., Randle, C., Sloat, L., Esipova, E., Jupiter, J., Stanton, \nC., Morris, D., Slay, C. M., Purves, D., and Harris, N. (2025). \nGlobal drivers of forest loss at 1 km resolution. \nEnvironmental Research Letters. \n[doi:10.1088/1748-9326/add606](https://doi.org/10.1088/1748-9326/add606)\n",
+    "version": "1.1",
+    "title": "WRI/Google DeepMind Global Drivers of Forest Loss 2001-2023 v1.1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2024-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "agriculture",
+        "deforestation",
+        "forest",
+        "forest-biomass",
+        "google",
+        "landuse",
+        "wri"
+    ],
+    "providers": [
+        {
+            "name": "World Resources Institute",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://zenodo.org/records/15225267"
+        },
+        {
+            "name": "Google DeepMind",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://deepmind.google/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_landandcarbon_assets_wri_gdm_drivers_forest_loss_1km_v1_1_2001_2023"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Most likely class based on raw probabilities.",
+                "gee:classes": [
+                    {
+                        "color": "E39D29",
+                        "description": "Permanent agriculture",
+                        "value": 1
+                    },
+                    {
+                        "color": "E58074",
+                        "description": "Hard commodities",
+                        "value": 2
+                    },
+                    {
+                        "color": "E9D700",
+                        "description": "Shifting cultivation",
+                        "value": 3
+                    },
+                    {
+                        "color": "51A44E",
+                        "description": "Logging",
+                        "value": 4
+                    },
+                    {
+                        "color": "895128",
+                        "description": "Wildfire",
+                        "value": 5
+                    },
+                    {
+                        "color": "A354A0",
+                        "description": "Settlements and infrastructure",
+                        "value": 6
+                    },
+                    {
+                        "color": "3A209A",
+                        "description": "Other natural disturbances",
+                        "value": 7
+                    }
+                ],
+                "name": "classification"
+            },
+            {
+                "description": "Probability of \"Permanent agriculture\" class (scaled to [0-250]).",
+                "gee:scale": 0.004,
+                "name": "probability_1"
+            },
+            {
+                "description": "Probability of \"Hard commodities\" class (scaled to [0-250]).",
+                "gee:scale": 0.004,
+                "name": "probability_2"
+            },
+            {
+                "description": "Probability of \"Shifting cultivation\" class (scaled to [0-250]).",
+                "gee:scale": 0.004,
+                "name": "probability_3"
+            },
+            {
+                "description": "Probability of \"Logging\" class (scaled to [0-250]).",
+                "gee:scale": 0.004,
+                "name": "probability_4"
+            },
+            {
+                "description": "Probability of \"Wildfire\" class (scaled to [0-250]).",
+                "gee:scale": 0.004,
+                "name": "probability_5"
+            },
+            {
+                "description": "Probability of \"Settlements and infrastructure\" class (scaled to [0-250]).",
+                "gee:scale": 0.004,
+                "name": "probability_6"
+            },
+            {
+                "description": "Probability of \"Other natural disturbances\" class (scaled to [0-250]).",
+                "gee:scale": 0.004,
+                "name": "probability_7"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Drivers of forest loss classification",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "classification"
+                        ],
+                        "max": [
+                            7
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "E39D29",
+                            "E58074",
+                            "e9d700",
+                            "51a44e",
+                            "895128",
+                            "a354a0",
+                            "3a209a"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 20.65,
+                    "lon": -9.22,
+                    "zoom": 3
+                }
+            }
+        ],
+        "gsd": [
+            1111.95
+        ],
+        "classification": {
+            "minimum": 1,
+            "maximum": 7
+        },
+        "probability_1": {
+            "minimum": 0,
+            "maximum": 250
+        },
+        "probability_2": {
+            "minimum": 0,
+            "maximum": 250
+        },
+        "probability_3": {
+            "minimum": 0,
+            "maximum": 250
+        },
+        "probability_4": {
+            "minimum": 0,
+            "maximum": 250
+        },
+        "probability_5": {
+            "minimum": 0,
+            "maximum": 250
+        },
+        "probability_6": {
+            "minimum": 0,
+            "maximum": 250
+        },
+        "probability_7": {
+            "minimum": 0,
+            "maximum": 250
+        }
+    }
+}
