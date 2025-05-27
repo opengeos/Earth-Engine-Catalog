@@ -81,7 +81,7 @@
             "interval": [
                 [
                     "2000-02-24T00:00:00Z",
-                    "2025-05-22T00:00:00Z"
+                    "2025-05-25T00:00:00Z"
                 ]
             ]
         }
@@ -119,7 +119,6 @@
         "eo:bands": [
             {
                 "description": "Land Surface Temperature",
-                "gee:scale": 0.02,
                 "gee:units": "K",
                 "name": "LST_1KM"
             },
@@ -318,31 +317,23 @@
             },
             {
                 "description": "Band 29 emissivity",
-                "gee:offset": 0.49,
-                "gee:scale": 0.002,
                 "name": "Emis_29"
             },
             {
                 "description": "Band 31 emissivity",
-                "gee:offset": 0.49,
-                "gee:scale": 0.002,
                 "name": "Emis_31"
             },
             {
                 "description": "Band 32 emissivity",
-                "gee:offset": 0.49,
-                "gee:scale": 0.002,
                 "name": "Emis_32"
             },
             {
                 "description": "MODIS view zenith angle",
-                "gee:offset": -65,
                 "gee:units": "deg",
                 "name": "View_Angle"
             },
             {
                 "description": "Time of MODIS observation",
-                "gee:scale": 0.1,
                 "gee:units": "h",
                 "name": "View_Time"
             }
