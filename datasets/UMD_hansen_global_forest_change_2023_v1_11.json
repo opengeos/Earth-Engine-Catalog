@@ -34,15 +34,21 @@
         },
         {
             "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMD/UMD_hansen_global_forest_change_2023_v1_11.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMD/UMD_hansen_global_forest_change_2024_v1_12.json",
             "type": "application/json",
-            "title": "UMD/hansen/global_forest_change_2023_v1_11"
+            "title": "UMD/hansen/global_forest_change_2024_v1_12"
         },
         {
             "rel": "predecessor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMD/UMD_hansen_global_forest_change_2022_v1_10.json",
             "type": "application/json",
             "title": "UMD/hansen/global_forest_change_2022_v1_10"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMD/UMD_hansen_global_forest_change_2024_v1_12.json",
+            "type": "application/json",
+            "title": "UMD/hansen/global_forest_change_2024_v1_12"
         },
         {
             "rel": "self",
@@ -64,14 +70,15 @@
     "gee:categories": [
         "forest-biomass"
     ],
+    "gee:status": "deprecated",
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image",
     "gee:user_uploaded": true,
     "sci:citation": "Hansen, M. C., P. V. Potapov, R. Moore, M. Hancher, S. A. Turubanova, A.\nTyukavina, D. Thau, S. V. Stehman, S. J. Goetz, T. R. Loveland, A.\nKommareddy, A. Egorov, L. Chini, C. O. Justice, and J. R. G. Townshend.\n2013. \"High-Resolution Global Maps of 21st-Century Forest Cover Change.\"\nScience 342 (15 November): 850-53.\n[10.1126/science.1244693](https://doi.org/10.1126/science.1244693)\nData available on-line at:\n[https://glad.earthengine.app/view/global-forest-change](https://glad.earthengine.app/view/global-forest-change).\n",
     "sci:doi": "10.1126/science.1244693",
     "version": "v1.11",
-    "gee:status": "ready",
-    "title": "Hansen Global Forest Change v1.11 (2000-2023)",
+    "deprecated": true,
+    "title": "Hansen Global Forest Change v1.11 (2000-2023) [deprecated]",
     "extent": {
         "spatial": {
             "bbox": [
@@ -175,49 +182,49 @@
             },
             {
                 "center_wavelength": 0.66,
-                "description": "Landsat Red cloud-free image composite (corresponding to Landsat 5/7\nband 3 and Landsat 8/9 band 4). Reference multispectral imagery from\nthe first available year, typically 2000.\n",
+                "description": "Landsat Red cloud-free image composite (corresponding to Landsat 5/7 \nband 3 and Landsat 8/9 band 4). Reference multispectral imagery from \nthe first available year, typically 2000.\n",
                 "gee:wavelength": "0.63-0.69&micro;m",
                 "name": "first_b30"
             },
             {
                 "center_wavelength": 0.835,
-                "description": "Landsat NIR cloud-free image composite (corresponding to Landsat 5/7\nband 4 and Landsat 8/9 band 5). Reference multispectral imagery from\nthe first available year, typically 2000.\n",
+                "description": "Landsat NIR cloud-free image composite (corresponding to Landsat 5/7 \nband 4 and Landsat 8/9 band 5). Reference multispectral imagery from \nthe first available year, typically 2000.\n",
                 "gee:wavelength": "0.77-0.90&micro;m",
                 "name": "first_b40"
             },
             {
                 "center_wavelength": 1.65,
-                "description": "Landsat SWIR1 cloud-free image composite (corresponding to Landsat 5/7\nband 5 and Landsat 8/9 band 6). Reference multispectral imagery from\nthe first available year, typically 2000.\n",
+                "description": "Landsat SWIR1 cloud-free image composite (corresponding to Landsat 5/7 \nband 5 and Landsat 8/9 band 6). Reference multispectral imagery from \nthe first available year, typically 2000.\n",
                 "gee:wavelength": "1.55-1.75&micro;m",
                 "name": "first_b50"
             },
             {
                 "center_wavelength": 2.22,
-                "description": "Landsat SWIR2 cloud-free image composite (corresponding to Landsat 5/7\nband 7 and Landsat 8/9 band 7). Reference multispectral imagery from\nthe first available year, typically 2000.\n",
+                "description": "Landsat SWIR2 cloud-free image composite (corresponding to Landsat 5/7 \nband 7 and Landsat 8/9 band 7). Reference multispectral imagery from \nthe first available year, typically 2000.\n",
                 "gee:wavelength": "2.09-2.35&micro;m",
                 "name": "first_b70"
             },
             {
                 "center_wavelength": 0.66,
-                "description": "Landsat Red cloud-free image composite (corresponding to Landsat 5/7\nband 3 and Landsat 8/9 band 4). Reference multispectral imagery from\nthe last available year, typically the last year of the study period.\n",
+                "description": "Landsat Red cloud-free image composite (corresponding to Landsat 5/7 \nband 3 and Landsat 8/9 band 4). Reference multispectral imagery from \nthe last available year, typically the last year of the study period.\n",
                 "gee:wavelength": "0.63-0.69&micro;m",
                 "name": "last_b30"
             },
             {
                 "center_wavelength": 0.835,
-                "description": "Landsat NIR cloud-free image composite (corresponding to Landsat 5/7\nband 4 and Landsat 8/9 band 5). Reference multispectral imagery from\nthe last available year, typically the last year of the study period.\n",
+                "description": "Landsat NIR cloud-free image composite (corresponding to Landsat 5/7 \nband 4 and Landsat 8/9 band 5). Reference multispectral imagery from \nthe last available year, typically the last year of the study period.\n",
                 "gee:wavelength": "0.77-0.90&micro;m",
                 "name": "last_b40"
             },
             {
                 "center_wavelength": 1.65,
-                "description": "Landsat SWIR1 cloud-free image composite (corresponding to Landsat 5/7\nband 5 and Landsat 8/9 band 6). Reference multispectral imagery from\nthe last available year, typically the last year of the study period.\n",
+                "description": "Landsat SWIR1 cloud-free image composite (corresponding to Landsat 5/7 \nband 5 and Landsat 8/9 band 6). Reference multispectral imagery from \nthe last available year, typically the last year of the study period.\n",
                 "gee:wavelength": "1.55-1.75&micro;m",
                 "name": "last_b50"
             },
             {
                 "center_wavelength": 2.22,
-                "description": "Landsat SWIR2 cloud-free image composite (corresponding to Landsat 5/7\nband 7 and Landsat 8/9 band 7). Reference multispectral imagery from\nthe last available year, typically the last year of the study period.\n",
+                "description": "Landsat SWIR2 cloud-free image composite (corresponding to Landsat 5/7 \nband 7 and Landsat 8/9 band 7). Reference multispectral imagery from \nthe last available year, typically the last year of the study period.\n",
                 "gee:wavelength": "2.09-2.35&micro;m",
                 "name": "last_b70"
             },
