@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "NASA/TEMPO/NO2_L3",
     "stac_version": "1.1.0",
-    "description": "Nitrogen dioxide Level 3 files provide trace gas information on a\nregular grid covering the TEMPO field of regard for nominal TEMPO\nobservations. Level 3 files are derived by combining information from\nall Level 2 files constituting a TEMPO East-West scan cycle. The\nrasters contain information on tropospheric, stratospheric and total\nnitrogen dioxide vertical columns, ancillary data used in air mass\nfactor and stratospheric/tropospheric separation calculations, and\nretrieval quality flags. The re-gridding algorithm uses an area-weighted\napproach.\n\n* [General Documentation](https://asdc.larc.nasa.gov/documents/tempo/guide/TEMPO_Level-2-3_trace_gas_clouds_user_guide_V1.2.pdf)\n",
+    "description": "Nitrogen dioxide Level 3 files provide trace gas information on a\nregular grid covering the TEMPO field of regard for nominal TEMPO\nobservations. Level 3 files are derived by combining information from\nall Level 2 files constituting a TEMPO East-West scan cycle. The\nrasters contain information on tropospheric, stratospheric and total\nnitrogen dioxide vertical columns, ancillary data used in air mass\nfactor and stratospheric/tropospheric separation calculations, and\nretrieval quality flags. The re-gridding algorithm uses an area-weighted\napproach.\n\n* A version of this dataset with QA filters applied is available as [NASA/TEMPO/NO2_L3_QA](NASA_TEMPO_NO2_L3_QA)\n* [General Documentation](https://asdc.larc.nasa.gov/documents/tempo/guide/TEMPO_Level-2-3_trace_gas_clouds_user_guide_V1.2.pdf)\n",
     "links": [
         {
             "rel": "root",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2023-08-01T00:00:00Z",
-                    "2025-06-01T00:35:31Z"
+                    "2025-06-03T12:34:31Z"
                 ]
             ]
         }
