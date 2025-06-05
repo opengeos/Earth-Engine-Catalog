@@ -34,15 +34,21 @@
         },
         {
             "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JAXA/JAXA_ALOS_AW3D30_V3_2.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JAXA/JAXA_ALOS_AW3D30_V4_1.json",
             "type": "application/json",
-            "title": "JAXA/ALOS/AW3D30/V3_2"
+            "title": "JAXA/ALOS/AW3D30/V4_1"
         },
         {
             "rel": "predecessor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/JAXA/JAXA_ALOS_AW3D30_V2_2.json",
             "type": "application/json",
             "title": "JAXA/ALOS/AW3D30/V2_2"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JAXA/JAXA_ALOS_AW3D30_V4_1.json",
+            "type": "application/json",
+            "title": "JAXA/ALOS/AW3D30/V4_1"
         },
         {
             "rel": "self",
@@ -64,6 +70,7 @@
     "gee:categories": [
         "elevation-topography"
     ],
+    "gee:status": "deprecated",
     "gee:terms_of_use": "This dataset is available to use with no charge under\nthe conditions specified in the [Terms of use for ALOS Global Digital\nSurface Model](https://earth.jaxa.jp/en/data/policy/).\n",
     "gee:type": "image_collection",
     "sci:citation": "T. Tadono, H. Ishida, F. Oda, S. Naito, K. Minakawa, H. Iwamoto\n: Precise Global DEM Generation By ALOS PRISM, ISPRS Annals of\nthe Photogrammetry, Remote Sensing and Spatial Information Sciences,\nVol.II-4, pp.71-76, 2014. [PDF file](https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/II-4/71/2014/isprsannals-II-4-71-2014.pdf)\n",
@@ -79,8 +86,8 @@
         }
     ],
     "version": "3.2",
-    "gee:status": "ready",
-    "title": "ALOS DSM: Global 30m  v3.2",
+    "deprecated": true,
+    "title": "ALOS DSM: Global 30m  v3.2 [deprecated]",
     "extent": {
         "spatial": {
             "bbox": [
