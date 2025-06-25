@@ -1,0 +1,267 @@
+{
+    "type": "Collection",
+    "id": "NASA/TEMPO/HCHO_L3",
+    "stac_version": "1.1.0",
+    "description": "Formaldehyde Level 3 collection provides trace gas information on a\nregular grid covering the TEMPO field of regard for nominal TEMPO\nobservations. Level 3 files are derived by combining information from\nall Level 2 files constituting a TEMPO East-West scan cycle. The\nrasters contain information on formaldehyde vertical columns,\nancillary data used in air mass factor calculations and reference sector\nor de-striping corrections, and retrieval quality flags.\nThe re-gridding algorithm uses an area-weighted approach.\n\n* A version of this dataset with QA filters applied is available as [NASA/TEMPO/HCHO_L3_QA](NASA_TEMPO_HCHO_L3_QA)\n* [General Documentation](https://asdc.larc.nasa.gov/documents/tempo/guide/TEMPO_Level-2-3_trace_gas_clouds_user_guide_V1.2.pdf)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_TEMPO_HCHO_L3",
+            "type": "text/html",
+            "title": "Run the example for NASA/TEMPO/HCHO_L3 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_TEMPO_HCHO_L3_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_TEMPO_HCHO_L3#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/IS-40e/TEMPO/HCHO_L3.003"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_TEMPO_HCHO_L3.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
+    "gee:provider_ids": [
+        "C2930761273-LARC_CLOUD"
+    ],
+    "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy](https://www.earthdata.nasa.gov/engage/open-data-services-and-software/data-and-information-policy)\nfor additional information.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "NASA/LARC/SD/ASDC. (n.d.). TEMPO gridded HCHO vertical columns V03\n(PROVISIONAL) [Data set]. NASA Langley\nAtmospheric Science Data Center DAAC.\nRetrieved from https://doi.org/10.5067/IS-40e/TEMPO/HCHO_L3.003\n",
+    "version": "V03",
+    "gee:status": "ready",
+    "title": "TEMPO gridded HCHO vertical columns V03",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-08-01T00:00:00Z",
+                    "2025-06-24T12:27:23Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "air-quality",
+        "formaldehyde",
+        "nasa",
+        "pollution",
+        "satellite-imagery",
+        "tropomi"
+    ],
+    "providers": [
+        {
+            "name": "NASA ASDC",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://asdc.larc.nasa.gov/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_TEMPO_HCHO_L3"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Sum of Level 2 pixel overlap areas. Represents the weighting\nfactor for each grid cell, indicating the fraction of the grid\ncell area with valid data.\n",
+                "gee:units": "km^2",
+                "name": "weight"
+            },
+            {
+                "description": "HCHO vertical column",
+                "gee:units": "molecules/cm^2",
+                "name": "vertical_column"
+            },
+            {
+                "description": "HCHO vertical column uncertainty\n",
+                "gee:units": "molecules/cm^2",
+                "name": "vertical_column_uncertainty"
+            },
+            {
+                "description": "Main data quality flag. Provides an overall assessment of the\ndata quality\n",
+                "gee:classes": [
+                    {
+                        "description": "good",
+                        "value": 0
+                    },
+                    {
+                        "description": "suspect",
+                        "value": 1
+                    },
+                    {
+                        "description": "bad",
+                        "value": 2
+                    }
+                ],
+                "gee:units": "Dimensionless",
+                "name": "main_data_quality_flag"
+            },
+            {
+                "description": "Number of vertical column samples",
+                "gee:units": "Dimensionless",
+                "name": "num_vertical_column_samples"
+            },
+            {
+                "description": "Smallest vertical column sample",
+                "gee:units": "molecules/cm^2",
+                "name": "min_vertical_column_sample"
+            },
+            {
+                "description": "Largest vertical column sample",
+                "gee:units": "molecules/cm^2",
+                "name": "max_vertical_column_sample"
+            },
+            {
+                "description": "Solar zenith angle at pixel center",
+                "gee:units": "deg",
+                "name": "solar_zenith_angle"
+            },
+            {
+                "description": "Viewing zenith angle at pixel center",
+                "gee:units": "deg",
+                "name": "viewing_zenith_angle"
+            },
+            {
+                "description": "Relative azimuth angle at pixel center",
+                "gee:units": "deg",
+                "name": "relative_azimuth_angle"
+            },
+            {
+                "description": "Surface pressure",
+                "gee:units": "hPa",
+                "name": "surface_pressure"
+            },
+            {
+                "description": "Terrain height",
+                "gee:units": "m",
+                "name": "terrain_height"
+            },
+            {
+                "description": "Fraction of pixel area covered by snow and/or ice\n",
+                "gee:units": "Dimensionless",
+                "name": "snow_ice_fraction"
+            },
+            {
+                "description": "HCHO fitted slant column",
+                "gee:units": "molecules/cm^2",
+                "name": "fitted_slant_column"
+            },
+            {
+                "description": "HCHO fitted slant column uncertainty",
+                "gee:units": "molecules/cm^2",
+                "name": "fitted_slant_column_uncertainty"
+            },
+            {
+                "description": "Surface albedo",
+                "gee:units": "Dimensionless",
+                "name": "albedo"
+            },
+            {
+                "description": "HCHO air mass factor",
+                "gee:units": "Dimensionless",
+                "name": "amf"
+            },
+            {
+                "description": "Effective cloud fraction",
+                "gee:units": "Dimensionless",
+                "name": "eff_cloud_fraction"
+            },
+            {
+                "description": "Cloud radiance fraction for AMF calculation\n",
+                "gee:units": "Dimensionless",
+                "name": "amf_cloud_fraction"
+            },
+            {
+                "description": "Cloud pressure for AMF calculation",
+                "gee:units": "hPa",
+                "name": "amf_cloud_pressure"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "HCHO",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "vertical_column"
+                        ],
+                        "max": [
+                            15000000000000000
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "000080",
+                            "0000D9",
+                            "4000FF",
+                            "8000FF",
+                            "0080FF",
+                            "00D9FF",
+                            "80FFFF",
+                            "FF8080",
+                            "D90000",
+                            "800000"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 35,
+                    "lon": -95,
+                    "zoom": 3
+                }
+            }
+        ],
+        "gsd": [
+            2226
+        ],
+        "instruments": [
+            "TEMPO"
+        ]
+    }
+}
