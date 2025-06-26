@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "NASA/GDDP-CMIP6",
     "stac_version": "1.1.0",
-    "description": "The NEX-GDDP-CMIP6 dataset is comprised of global downscaled climate\nscenarios derived from the General Circulation Model (GCM) runs conducted\nunder the Coupled Model Intercomparison Project Phase 6 (CMIP6, see\n[Thrasher et al. 2022](https://doi.org/10.7917/OFSG3345)) and across two of\nthe four \"Tier 1\" greenhouse gas emissions scenarios known as Shared\nSocioeconomic Pathways (SSPs).\n\nThe CMIP6 GCM runs were developed in support of the Sixth Assessment Report\nof the Intergovernmental Panel on Climate Change (IPCC AR6). This dataset\nincludes downscaled projections from ScenarioMIP model runs for which daily\nscenarios were produced and distributed through the Earth System Grid\nFederation.\n\nThis collection contains 34 different models. One model, \"GFDL-CM4,\" has\ndata for two different configurations that can be differentiated by further\nfiltering on the *grid_label* property.\n\nSee also\n[the provider tech note](https://www.nccs.nasa.gov/sites/default/files/NEX-GDDP-CMIP6-Tech_Note.pdf).\n\n[You can submit data questions about CMIP6 to the provider](https://airtable.com/shr01weJfA7DYq6jf)\nand\n[see their answers](https://airtable.com/shrX4mj20TLSH0r2y/tblUMAYpCfCCwucSV).\n",
+    "description": "The NEX-GDDP-CMIP6 dataset is comprised of global downscaled climate\nscenarios derived from the General Circulation Model (GCM) runs conducted\nunder the Coupled Model Intercomparison Project Phase 6 (CMIP6, see\n[Thrasher et al. 2022](https://doi.org/10.7917/OFSG3345)) and across two of\nthe four \"Tier 1\" greenhouse gas emissions scenarios known as Shared\nSocioeconomic Pathways (SSPs).\n\nThe CMIP6 GCM runs were developed in support of the Sixth Assessment Report\nof the Intergovernmental Panel on Climate Change (IPCC AR6). This dataset\nincludes downscaled projections from ScenarioMIP model runs for which daily\nscenarios were produced and distributed through the Earth System Grid\nFederation.\n\nThis collection contains 34 different models. One model, \"GFDL-CM4,\" has\ndata for two different configurations that can be differentiated by further\nfiltering on the *grid_label* property.\n\nBands are replaced as new versions become available and the *version*\nproperty is updated with them.\n\nSee also\n[the provider tech note](https://www.nccs.nasa.gov/sites/default/files/NEX-GDDP-CMIP6-Tech_Note.pdf).\n\n[You can submit data questions about CMIP6 to the provider](https://airtable.com/shr01weJfA7DYq6jf)\nand\n[see their answers](https://airtable.com/shrX4mj20TLSH0r2y/tblUMAYpCfCCwucSV).\n",
     "links": [
         {
             "rel": "root",
@@ -200,6 +200,11 @@
                 "description": "Present and 'true' if data for a particular day has been filled in\nusing the value from the previous day. This happens when the\nsimulation does not produce a data band for every day in the year.\n\nThe following models always duplicate the last day in leap years\nbecause they only yield 365 bands: 'BCC-CSM2-MR', 'CanESM5', 'CESM2',\n'CESM2-WACCM', 'CMCC-CM2-SR5', 'CMCC-ESM2', 'FGOALS-g3', 'GFDL-CM4',\n'GFDL-ESM4', 'GISS-E2-1-G', 'INM-CM4-8', 'INM-CM5-0', 'KIOST-ESM',\n'NorESM2-LM', 'NorESM2-MM', 'TaiESM1'.\n\nThese models yield 360 bands per year and have the outstanding 5 or 6\ndays filled by duplicating one every 60-70 days: 'HadGEM3-GC31-LL',\n'HadGEM3-GC31-MM', 'KACE-1-0-G', 'UKESM1-0-LL'.\n\n'IITM-ESM' only has 364 bands in years divisible by 5 (and does not\nhave data for 2100 at all), so the final day is always duplicated,\nplus the midpoint day in leap years.\n",
                 "name": "interpolated",
                 "type": "STRING"
+            },
+            {
+                "description": "The version of the asset, possible values are 1.0, 1.1 and 1.2\n",
+                "name": "version",
+                "type": "DOUBLE"
             }
         ],
         "gee:visualizations": [
