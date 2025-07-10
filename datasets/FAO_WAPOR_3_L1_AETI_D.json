@@ -1,0 +1,148 @@
+{
+    "type": "Collection",
+    "id": "FAO/WAPOR/3/L1_AETI_D",
+    "stac_version": "1.1.0",
+    "description": "The actual evapotranspiration and interception (ETIa) (dekadal, in mm/day)\nis the sum of the soil evaporation (E), canopy transpiration (T), and\nevaporation from rainfall intercepted by leaves (I). The value of each pixel\nrepresents the average daily ETIa in a given dekad.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/FAO/FAO_WAPOR_3_L1_AETI_D",
+            "type": "text/html",
+            "title": "Run the example for FAO/WAPOR/3/L1_AETI_D in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/FAO/FAO_WAPOR_3_L1_AETI_D_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/FAO_WAPOR_3_L1_AETI_D#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/FAO/FAO_WAPOR_3_L1_AETI_D.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/FAO/catalog.json",
+            "type": "application/json",
+            "title": "FAO"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "water-vapor"
+    ],
+    "gee:interval": {
+        "interval": 10,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "The Food and Agriculture Organization of the United Nations (FAO) is\nmandated to collect, analyze, interpret, and disseminate information related\nto nutrition, food, and agriculture. In this regard, it publishes a number\nof databases on topics related to FAO's mandate, and encourages the use of\nthem for scientific and research purposes.  Consistent with the principles\nof openness and sharing envisioned under the [Open Data Licensing For\nStatistical Databases](http://www.fao.org/3/ca7570en/ca7570en.pdf), and\nconsistent with the mandate of FAO, data from the [Water Productivity Open\nAccess Portal (WaPOR)](https://www.fao.org/in-action/remote-sensing-for-water-productivity/wapor-data-access/en), as part\nof [AQUASTAT](http://www.fao.org/aquastat/en/) - FAO's Global Information\nSystem on Water and Agriculture, is available free to the user community.\n",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "sci:citation": "FAO 2018. WaPOR Database Methodology: Level 1. Remote Sensing for Water\nProductivity Technical Report: Methodology Series. Rome, FAO. 72 pages.\n",
+    "sci:publications": [
+        {
+            "citation": "FAO 2020. WaPOR V2 Database Methodology. Remote Sensing for Water\nProductivity Technical Report: Methodology Series. Rome, FAO.\n[https://www.fao.org/3/ca9894en/CA9894EN.pdf](\n  https://www.fao.org/3/ca9894en/CA9894EN.pdf)\n"
+        }
+    ],
+    "version": "3.0",
+    "gee:status": "ready",
+    "title": "WAPOR Actual Evapotranspiration and Interception 3.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-01-01T00:00:00Z",
+                    "2025-06-21T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "agriculture",
+        "fao",
+        "wapor",
+        "water",
+        "water-vapor"
+    ],
+    "providers": [
+        {
+            "name": "FAO UN",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.fao.org/in-action/remote-sensing-for-water-productivity/wapor-data-access/en"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/FAO_WAPOR_3_L1_AETI_D"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Actual Evapotranspiration and Interception (Dekadal) [mm]",
+                "gee:scale": 0.1,
+                "gee:units": "mm",
+                "name": "L1-AETI-D"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Actual Evapotranspiration and Interception (Dekadal) [mm]",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "L1-AETI-D"
+                        ],
+                        "max": [
+                            50
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 20,
+                    "lon": 17.5,
+                    "zoom": 3
+                }
+            }
+        ],
+        "gsd": [
+            248.2
+        ]
+    }
+}
