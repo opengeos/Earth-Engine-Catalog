@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "projects/edf-methanesat-ee/assets/public-preview/L3concentration",
     "stac_version": "1.1.0",
-    "description": "This early \"Public Preview\" dataset provides geospatial data for the\ncolumn-averaged dry-air mole fraction of methane in the atmosphere, \"XCH4\",\nretrieved from measurements by the MethaneSAT imaging spectrometer. XCH4 is\ndefined as the total column amount (number of molecules above a unit surface\narea) of methane (\"CH4\") divided by the total amount of air (number of molecules\nabove a unit surface area, water vapor amount removed) along the line of sight\nfrom the satellite\u2019s spectrometer to the Earth's surface and back up to the Sun.\nAdditional data layers are provided for reference: observed albedo at 1622 nm,\nsurface pressure, and terrain height.\n\nThe spatial footprint of individual MethaneSAT soundings is 110 m x 400 m when\nviewing at nadir, with the long side in the satellite\u2019s flight direction, and\nwith the short side that can be stretched wider at higher viewing zenith angles\n(which is why some targets appear more rectangular than others). At nadir, the\nswath width is ~220 km. The data on these native soundings is Level 2 (L2) data.\nThe precision of the L2 XCH4 is 22-35 ppb (corresponding to 0.7-0.2 surface albedo).\nL2 concentrations (XCH4) are retrieved from the measured high resolution (0.08 nm\nsampling, 0.24 nm resolution) spectra from the 1.6 micron band using the CO2-Proxy\nmethod ([Chan Miller et al. (2024)](https://doi.org/10.5194/amt-17-5429-2024)).\nThe Level 3 (L3) dataset is created by regridding the L2 data from the native\nsounding locations to a regular 45 m x 45 m grid using the approach detailed in\n[Sun et al. (2018)](https://doi.org/10.5194/amt-11-6679-2018).\n\nContact the data provider for more information about the project at this link:\n[https://www.methanesat.org/contact/](https://www.methanesat.org/contact/).\n",
+    "description": "This early \"Public Preview\" dataset provides geospatial data for the\ncolumn-averaged dry-air mole fraction of methane in the atmosphere, \"XCH4\",\nretrieved from measurements by the MethaneSAT imaging spectrometer. XCH4 is\ndefined as the total column amount (number of molecules above a unit surface\narea) of methane (\"CH4\") divided by the total amount of air (number of molecules\nabove a unit surface area, water vapor amount removed) along the line of sight\nfrom the satellite\u2019s spectrometer to the Earth's surface and back up to the Sun.\nAdditional data layers are provided for reference: observed albedo at 1622 nm,\nsurface pressure, and terrain height.\n\nThe spatial footprint of individual MethaneSAT soundings is 110 m x 400 m when\nviewing at nadir, with the long side in the satellite\u2019s flight direction, and\nwith the short side that can be stretched wider at higher viewing zenith angles\n(which is why some targets appear more rectangular than others). At nadir, the\nswath width is ~220 km. The data on these native soundings is Level 2 (L2) data.\nThe precision of the L2 XCH4 is 22-35 ppb (corresponding to 0.7-0.2 surface albedo).\nL2 concentrations (XCH4) are retrieved from the measured high resolution (0.08 nm\nsampling, 0.24 nm resolution) spectra from the 1.6 micron band using the CO2-Proxy\nmethod ([Chan Miller et al. (2024)](https://doi.org/10.5194/amt-17-5429-2024)).\nThe Level 3 (L3) dataset is created by regridding the L2 data from the native\nsounding locations to a regular 45 m x 45 m grid using the approach detailed in\n[Sun et al. (2018)](https://doi.org/10.5194/amt-11-6679-2018).\n\nNot all data products (L3 concentration, L4 area and L4 points) are available for all\ncollection IDs. Contact the data provider for more information about the project at this link:\n[https://www.methanesat.org/contact/](https://www.methanesat.org/contact/).\n\n---\n\n7/2/2025 Important Update: \n\nAs you may be aware, we recently lost contact with the satellite. After exploring all possible  \nrecovery options, we have now confirmed that it is no longer functioning, due to an\nundetermined problem with the outer platform carrying our methane detector. While there is no\nquestion this is a setback, we are undeterred in our efforts to drive down methane pollution.\nPlease see our official statement here:\n[MethaneSAT Loses Contact with Satellite | MethaneSAT](https://www.methanesat.org/project-updates/methanesat-loses-contact-satellite).\n\nWhat this means for the Public Preview data: The existing datasets will remain accessible on\nGoogle platforms and on our web portal for the foreseeable future. Additionally, over the next\nfew months, we will release substantial new data collected by MethaneSAT prior to the loss of\ncontact. This will include hundreds of scenes (of targets that are roughly 200kmx200km). We\nhope this will be useful for you. Should there be any changes to data availability, we will\nnotify you well in advance.\n\nLooking ahead: While we don\u2019t have all the answers yet, we plan to leverage our advanced Data\nProcessing Platform (DPP) to quantify other streams of satellite and/or aerial data. We will\nalso take the necessary time to evaluate the best next step in our efforts to enable methane\nreductions. To stay up to date with further updates, feel free to sign up for our\n[newsletter](https://mailchi.mp/methanesat/methanesat-newsletter-sign-up).\n",
     "links": [
         {
             "rel": "root",
@@ -79,7 +79,7 @@
         "temporal": {
             "interval": [
                 [
-                    "2006-01-24T00:00:00Z",
+                    "2024-05-22T00:00:00Z",
                     "2025-05-09T11:09:33.461000Z"
                 ]
             ]
@@ -136,11 +136,6 @@
         ],
         "gee:schema": [
             {
-                "description": "Designation if this is an area or point.",
-                "name": "area_or_point",
-                "type": "STRING"
-            },
-            {
                 "description": "Satellite Observation ID.",
                 "name": "collection_id",
                 "type": "STRING"
@@ -153,11 +148,6 @@
             {
                 "description": "Resampling method used.",
                 "name": "ovr_resampling",
-                "type": "STRING"
-            },
-            {
-                "description": "MethaneSAT or MethaneAIR",
-                "name": "platform",
                 "type": "STRING"
             },
             {
@@ -211,7 +201,7 @@
             }
         ],
         "gsd": [
-            10.2
+            46.38
         ],
         "XCH4": {
             "minimum": 1894,

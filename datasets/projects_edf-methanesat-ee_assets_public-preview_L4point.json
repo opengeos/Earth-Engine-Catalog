@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "projects/edf-methanesat-ee/assets/public-preview/L4point",
     "stac_version": "1.1.0",
-    "description": "The methane emission fluxes were produced using a point source detection and\nemissions quantification framework specialized to exploit the high spatial\nresolution, wide spatial coverage, and high precision of MethaneSAT data\n(methodology is described in [Chulakdabba et al. (2023)](https://doi.org/10.5194/amt-16-5771-2023).)\nThe point source quantification framework was extensively tested in blind\ncontrolled-release experiments as detailed in [Chulakdabba et al. (2023)](https://doi.org/10.5194/amt-16-5771-2023)\nand [Abbadi et al. (2024)](https://doi.org/10.1021/acs.est.4c02439). Not all\ndata products are available for all collections.\nFor additional information about the MethaneAIR instrument, instrument\ncalibration and emission detections, please refer to recent publications by\n[Loughner et al. (2021)](https://doi.org/10.1175/JAMC-D-20-0158.1),\n[Staebell et al. (2021)](https://doi.org/10.5194/amt-14-3737-2021),\n[Conway et al. (2023)](https://doi.org/10.5194/amt-2023-111),\n[Chulakadabba et al. (2023)](https://doi.org/10.5194/egusphere-2023-822),\n[Abbadi et al. (2023)](https://doi.org/10.31223/X51D4C),\n[Omara et al. (2023)](https://doi.org/10.5194/essd-15-3761-2023),\nand [Miller et al. (2023)](https://doi.org/10.5194/egusphere-2023-1962).\n\nContact the data provider for more information about the project at this\nlink: [https://www.methanesat.org/contact/](https://www.methanesat.org/contact/)",
+    "description": "This early \"Public Preview\" dataset provides high precision data for methane emissions from\ndiscrete point sources. These methane emission fluxes were produced using a point source\ndetection and emissions quantification framework specialized to exploit the high spatial\nresolution, wide spatial coverage, and high precision of MethaneSAT data (methodology is\ndescribed in [Chulakdabba et al. (2023)](https://doi.org/10.5194/amt-16-5771-2023).)\nThe point source quantification framework was extensively tested in blind controlled-release\nexperiments as detailed in\n[Chulakdabba et al. (2023)](https://doi.org/10.5194/amt-16-5771-2023) and\n[Abbadi et al. (2024)](https://doi.org/10.1021/acs.est.4c02439). \n\nTotal emissions for a scene\u2013from both dispersed area and point source emissions\u2013may be\nobtained by summing the area emissions and point source emissions for a given collection ID\n(see L4 Area Sources Public Preview).\n\nNot all data products (L3 concentration, L4 area and L4 points) are available for all\ncollection IDs. Contact the data provider for more information about the project at this link:\n[https://www.methanesat.org/contact/](https://www.methanesat.org/contact/).\n\n---\n\n7/2/2025 Important Update: \n\nAs you may be aware, we recently lost contact with the satellite. After exploring all possible  \nrecovery options, we have now confirmed that it is no longer functioning, due to an\nundetermined problem with the outer platform carrying our methane detector. While there is no\nquestion this is a setback, we are undeterred in our efforts to drive down methane pollution.\nPlease see our official statement here:\n[MethaneSAT Loses Contact with Satellite | MethaneSAT](https://www.methanesat.org/project-updates/methanesat-loses-contact-satellite).\n\nWhat this means for the Public Preview data: The existing datasets will remain accessible on\nGoogle platforms and on our web portal for the foreseeable future. Additionally, over the next\nfew months, we will release substantial new data collected by MethaneSAT prior to the loss of\ncontact. This will include hundreds of scenes (of targets that are roughly 200kmx200km). We\nhope this will be useful for you. Should there be any changes to data availability, we will\nnotify you well in advance.\n\nLooking ahead: While we don\u2019t have all the answers yet, we plan to leverage our advanced Data\nProcessing Platform (DPP) to quantify other streams of satellite and/or aerial data. We will\nalso take the necessary time to evaluate the best next step in our efforts to enable methane\nreductions. To stay up to date with further updates, feel free to sign up for our\n[newsletter](https://mailchi.mp/methanesat/methanesat-newsletter-sign-up).\nFor additional information about the MethaneAIR instrument, instrument\ncalibration and emission detections, please refer to recent publications by\n[Loughner et al. (2021)](https://doi.org/10.1175/JAMC-D-20-0158.1),\n[Staebell et al. (2021)](https://doi.org/10.5194/amt-14-3737-2021),\n[Conway et al. (2023)](https://doi.org/10.5194/amt-2023-111),\n[Chulakadabba et al. (2023)](https://doi.org/10.5194/egusphere-2023-822),\n[Abbadi et al. (2023)](https://doi.org/10.31223/X51D4C),\n[Omara et al. (2023)](https://doi.org/10.5194/essd-15-3761-2023),\nand [Miller et al. (2023)](https://doi.org/10.5194/egusphere-2023-1962).\n\nContact the data provider for more information about the project at this\nlink: [https://www.methanesat.org/contact/](https://www.methanesat.org/contact/)",
     "links": [
         {
             "rel": "root",
@@ -128,16 +128,21 @@
                 "type": "STRING"
             },
             {
-                "description": "Methane flux quantification.",
+                "description": "Methane flux quantification. Note: this may be null in the case that we're confident\nin the presence and location of the point but not its flux value.\n",
                 "name": "flux",
                 "type": "INT",
                 "units": "kg/h"
             },
             {
-                "description": "Standard deviation of methane flux quantification, in kg/h.",
+                "description": "Standard deviation of methane flux quantification, in kg/h. Note: this may be null in\nthe case that we're confident in the presence and location of the point but not its\nflux value.\n",
                 "name": "flux_sd",
                 "type": "INT",
                 "units": "kg/h"
+            },
+            {
+                "description": "(internal) Processing run identifier that represents the calculations\nthat led to the features. It is not an attribute describing the\nflight, but the processing pipeline.\n",
+                "name": "processing_id",
+                "type": "STRING"
             },
             {
                 "description": "Plume id (unique across satellite observations).",
