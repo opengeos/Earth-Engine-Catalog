@@ -1,0 +1,147 @@
+{
+    "type": "Collection",
+    "id": "projects/nature-trace/assets/forest_typology/natural_forest_2020_v1_0_collection",
+    "stac_version": "1.1.0",
+    "description": "Natural Forests of the World 2020, provides a global map of\nnatural forest probability for the year 2020 at a 10-meter resolution. It\nwas developed to support initiatives like the European Union's\nDeforestation Regulation (EUDR) and other efforts for forest conservation\nand monitoring.\nThe map represents the likelihood of an area being a natural forest, which\nincludes primary, naturally regenerating secondary, and managed natural\nforests. It distinguishes these from planted forests, tree crops, and\nother land cover types. The dataset was created using a multi-modal\ntemporal-spatial vision transformer model that analyzed seasonal\nmulti-temporal Sentinel-2 satellite imagery and topographical data\n(elevation, slope, aspect based on TanDEM-X's Copernicus GLO-30 DEM).\nThe data is provided as a probabilistic map, allowing users to apply a\nprobability threshold to create a binary natural forest map tailored to\ntheir specific needs.\n\nLimitations: While this map provides a valuable global baseline, users\nshould be aware of several limitations in our map (assessed at the OA\noptimal probability threshold of 0.52):\n\n* The model can have difficulty distinguishing complex agroforestry systems\n(e.g., with shaded tree crops), and smallholder agricultural mosaics can be\ndifficult to distinguish from natural forests.\n* Differentiating planted forests from naturally regenerating ones can be\nchallenging, especially in boreal and some temperate zones, where natural\nforests have lower species diversity and are harvested with longer rotation\ntimes compared to the tropics.\n* Sparse natural forests, such as savanna, are often at the threshold of\nnatural forest definition for the tree canopy height and coverage ratios.\nForest type assignment immediately after a disturbance event (e.g., fire,\nlogging) is inherently ambiguous. It may not be clear from satellite imagery\nwhether the forest will regenerate naturally or if the land will be\nconverted to another use (e.g., plantation, agriculture).\n* Other areas of potential confusion could include large parks within urban\nareas, or planted tree belts that meet forest definition criteria but are\nnot natural.\n* The accuracy of our natural forest map is intrinsically linked to the\nquality and consistency of the various input datasets used for training\nlabel generation. These datasets were created using different methodologies,\nspatial resolutions, temporal ranges, and definitions. Some label layers\nwere the outputs of other models, and are therefore limited by the quality\nof those models. While our approach aimed to harmonize sources and mitigate\nthe impact of individual dataset errors, inconsistencies and inaccuracies in\nthe underlying data could still influence the final map.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/nature-trace/projects_nature-trace_assets_forest_typology_natural_forest_2020_v1_0_collection",
+            "type": "text/html",
+            "title": "Run the example for projects/nature-trace/assets/forest_typology/natural_forest_2020_v1_0_collection in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/nature-trace/projects_nature-trace_assets_forest_typology_natural_forest_2020_v1_0_collection_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_forest_typology_natural_forest_2020_v1_0_collection#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/nature-trace/projects_nature-trace_assets_forest_typology_natural_forest_2020_v1_0_collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/nature-trace/catalog.json",
+            "type": "application/json",
+            "title": "nature-trace"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:categories": [
+        "forest-biomass"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "This dataset is licensed under\n[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) and requires the\nfollowing attribution: \"This dataset is produced by Google\".\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Maxim Neumann , Anton Raichuk, Radost Stanimirova, Michelle Sims , Sarah Carter,\nElizabeth Goldman, Melanie Rey, Yuchang Jiang, Keith Anderson, Petra Poklukar,\nKatelyn Tarrio, Myroslava Lesiv, Steffen Fritz, Nicholas Clinton,\nCharlotte Stanton, Dan Morris, Drew Purves, \"Natural forests of the world:\nA 2020 baseline for deforestation and degradation monitoring\" (in review).\n[doi:10.31223/X5ZX6P](https://doi.org/10.31223/X5ZX6P),\n",
+    "title": "Natural Forests of the World 2020",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    "2020-12-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "biodiversity",
+        "climate",
+        "conservation",
+        "deforestation",
+        "eudr",
+        "forest",
+        "forest-biomass"
+    ],
+    "providers": [
+        {
+            "name": "Google",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://deepmind.google/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_forest_typology_natural_forest_2020_v1_0_collection"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Natural forest probabilities (scaled to [0-1]).\n",
+                "name": "B0"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Natural forests 2020",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "B0"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "white",
+                            "green"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -30,
+                    "lon": 10,
+                    "zoom": 3
+                }
+            }
+        ],
+        "gsd": [
+            10
+        ],
+        "B0": {
+            "minimum": 0,
+            "maximum": 1
+        }
+    }
+}
