@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "MODIS/061/MYD17A2H",
+    "id": "MODIS/061/MYD16A2",
     "stac_version": "1.1.0",
-    "description": "The MYD17A2H V6.1 Gross Primary Productivity (GPP) product\nis a cumulative 8-day composite with a 500m resolution. The product\nis based on the radiation-use efficiency concept and can be potentially\nused as inputs to data models to calculate terrestrial energy,\ncarbon, water cycle processes, and biogeochemistry of vegetation.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/972/MOD17_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/95/MOD17_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MYD17A2H)\n",
+    "description": "The MYD16A2 Version 6.1 Evapotranspiration/Latent Heat Flux product is an\n8-day composite product at 500 meter pixel resolution. The algorithm used\nfor the MOD16 data product collection is based on the logic of the\nPenman-Monteith equation, which includes inputs of daily meteorological\nreanalysis data along with MODIS remotely sensed data products such as\nvegetation property dynamics, albedo, and land cover.\n\nThe pixel values for the ET, LE, PET and PLE layers are the sum for all days\nwithin the 8-day composite period.Note that the last 8-day period of each\nyear is a 5 or 6-day composite period, depending on the year.\n\nThe Version 6.1 Level-1B (L1B) products have been improved by undergoing\nvarious calibration changes that include: changes to the\nresponse-versus-scan angle (RVS) approach that affects reflectance bands\nfor Aqua and Terra MODIS, corrections to adjust for the optical crosstalk\nin Terra MODIS infrared (IR) bands, and corrections to the Terra MODIS\nforward look-up table (LUT) update for the period 2012 - 2017.\nA polarization correction has been applied to the L1B Reflective Solar\nBands (RSB). The product uses Climatology LAI/FPAR as back up to the\noperational LAI/FPAR.\n\nAccording to [the MODIS Science Team]\n(https://forum.earthdata.nasa.gov/viewtopic.php?p=15070#p15070),\nThe MYD16A2 6.1 product will not have data prior to 2021. The MODIS Science\nteam recommends using the gap-filled MYD16A2GF 6.1 product for data from\n2000 to 2021 -- and then also 2022 when the data are available.\nThey recommend this as the gap-filled product is expected to be superior in\nproduct quality, especially over areas where otherwise the routine product\nperformance would have been negatively impacted by cloudy or poor quality\ninput observations. For the current year, there will not be a gap-filled\nproduct until early the following year (i.e. 2023 data should be available\nin early 2024). So, if a user needs MYD16A2GF 6.1 data for the year 2023\n(or the \"current\" year in the future), they recommend using the MYD16A2 6.1\nproduct, which is generated using the daily observation with climatology\nobservation replacing for the cloudy or poor quality observations.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/494/MOD16_User_Guide_V6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/93/MOD16_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MYD16A2)\n",
     "links": [
         {
             "rel": "root",
@@ -12,40 +12,28 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_061_MYD17A2H",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_061_MYD16A2",
             "type": "text/html",
-            "title": "Run the example for MODIS/061/MYD17A2H in the Earth Engine Code Editor",
+            "title": "Run the example for MODIS/061/MYD16A2 in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MYD17A2H_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MYD16A2_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD17A2H#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD16A2#terms-of-use",
             "type": "text/html"
         },
         {
             "rel": "cite-as",
-            "href": "https://doi.org/10.5067/MODIS/MYD17A2H.061"
-        },
-        {
-            "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MYD17A2H.json",
-            "type": "application/json",
-            "title": "MODIS/061/MYD17A2H"
-        },
-        {
-            "rel": "predecessor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MYD17A2H.json",
-            "type": "application/json",
-            "title": "MODIS/006/MYD17A2H"
+            "href": "https://doi.org/10.5067/MODIS/MYD16A2.061"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MYD17A2H.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MYD16A2.json",
             "type": "application/json"
         },
         {
@@ -61,7 +49,7 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "plant-productivity"
+        "water-vapor"
     ],
     "gee:interval": {
         "interval": 8,
@@ -69,15 +57,15 @@
         "unit": "day"
     },
     "gee:provider_ids": [
-        "C203669706-LPDAAC_ECS"
+        "C2565794064-LPCLOUD"
     ],
     "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
     "gee:type": "image_collection",
-    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
-    "sci:doi": "10.5067/MODIS/MYD17A2H.061",
+    "sci:citation": "Please visit\n[LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/MODIS/MYD16A2.061",
     "version": "6.1",
     "gee:status": "ready",
-    "title": "MYD17A2H.061: Aqua Gross Primary Productivity 8-Day Global 500m",
+    "title": "MYD16A2.061: Aqua Net Evapotranspiration 8-Day L4 Global 500m SIN Grid V061",
     "extent": {
         "spatial": {
             "bbox": [
@@ -93,7 +81,7 @@
             "interval": [
                 [
                     "2021-01-01T00:00:00Z",
-                    "2025-07-28T00:00:00Z"
+                    "2025-07-20T00:00:00Z"
                 ]
             ]
         }
@@ -101,17 +89,11 @@
     "license": "other",
     "keywords": [
         "8-day",
-        "aqua",
+        "evapotranspiration",
         "global",
-        "gpp",
         "modis",
-        "myd17a2",
         "nasa",
-        "photosynthesis",
-        "plant-productivity",
-        "productivity",
-        "psn",
-        "usgs"
+        "water-vapor"
     ],
     "providers": [
         {
@@ -120,45 +102,57 @@
                 "licensor",
                 "producer"
             ],
-            "url": "https://doi.org/10.5067/MODIS/MYD17A2H.061"
+            "url": "https://doi.org/10.5067/MODIS/MYD16A2.061"
         },
         {
             "name": "Google Earth Engine",
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD17A2H"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD16A2"
         }
     ],
     "summaries": {
         "eo:bands": [
             {
-                "description": "Gross primary production",
-                "gee:scale": 0.0001,
-                "gee:units": "kg*C/m^2",
-                "name": "Gpp"
+                "description": "Total evapotranspiration",
+                "gee:scale": 0.1,
+                "gee:units": "kg/m^2/8day",
+                "name": "ET"
             },
             {
-                "description": "Net photosynthesis; GPP minus the maintenance respiration (MR)",
-                "gee:scale": 0.0001,
-                "gee:units": "kg*C/m^2",
-                "name": "PsnNet"
+                "description": "Average latent heat flux",
+                "gee:scale": 10000,
+                "gee:units": "J/m^2/day",
+                "name": "LE"
             },
             {
-                "description": "Quality control bits",
+                "description": "Total potential evapotranspiration",
+                "gee:scale": 0.1,
+                "gee:units": "kg/m^2/8day",
+                "name": "PET"
+            },
+            {
+                "description": "Average potential latent heat flux",
+                "gee:scale": 10000,
+                "gee:units": "J/m^2/day",
+                "name": "PLE"
+            },
+            {
+                "description": "Evapotranspiration quality control flags",
                 "gee:bitmask": {
                     "bitmask_parts": [
                         {
                             "bit_count": 1,
-                            "description": "MODLAND QC bits",
+                            "description": "MODLAND_QC bits",
                             "first_bit": 0,
                             "values": [
                                 {
-                                    "description": "Good quality",
+                                    "description": "Good quality (main algorithm with or without saturation)",
                                     "value": 0
                                 },
                                 {
-                                    "description": "Other quality",
+                                    "description": "Other quality (back-up algorithm or fill values)",
                                     "value": 1
                                 }
                             ]
@@ -218,59 +212,68 @@
                         },
                         {
                             "bit_count": 3,
-                            "description": "5-level confidence quality score",
+                            "description": "SCF_QC 5-level confidence quality score",
                             "first_bit": 5,
                             "values": [
                                 {
-                                    "description": "Very best possible",
+                                    "description": "Main (RT) method used, best result possible (no saturation)",
                                     "value": 0
                                 },
                                 {
-                                    "description": "Good, very usable, but not the best",
+                                    "description": "Main (RT) method used with saturation. Good, very usable",
                                     "value": 1
                                 },
                                 {
-                                    "description": "Substandard due to geometry problems - use with caution",
+                                    "description": "Main (RT) method failed due to bad geometry, empirical algorithm used",
                                     "value": 2
                                 },
                                 {
-                                    "description": "Substandard due to other than geometry problems - use with caution",
+                                    "description": "Main (RT) method failed due to problems other than geometry, empirical algorithm used",
                                     "value": 3
                                 },
                                 {
-                                    "description": "Couldn't retrieve pixel (NOT PRODUCED AT ALL - non-terrestrial biome)",
+                                    "description": "Pixel not produced at all, value couldn't be\nretrieved (possible reasons: bad L1B data, unusable MOD09GA data)\n",
                                     "value": 4
-                                },
-                                {
-                                    "description": "Fill Value",
-                                    "value": 7
                                 }
                             ]
                         }
                     ],
                     "total_bit_count": 8
                 },
-                "name": "Psn_QC"
+                "name": "ET_QC"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "The number of source tiles that were mosaicked to create this image.",
+                "name": "num_tiles",
+                "type": "INT"
             }
         ],
         "gee:visualizations": [
             {
-                "display_name": "GPP",
+                "display_name": "Evapotranspiration",
                 "image_visualization": {
                     "band_vis": {
                         "bands": [
-                            "Gpp"
+                            "ET"
                         ],
                         "max": [
-                            600
+                            300
                         ],
                         "min": [
                             0
                         ],
                         "palette": [
-                            "bbe029",
-                            "0a9501",
-                            "074b03"
+                            "ffffff",
+                            "fcd163",
+                            "99b718",
+                            "66a000",
+                            "3e8601",
+                            "207401",
+                            "056201",
+                            "004c00",
+                            "011301"
                         ]
                     }
                 },
@@ -290,13 +293,21 @@
         "platform": [
             "Aqua"
         ],
-        "Gpp": {
-            "minimum": 0,
-            "maximum": 3000
+        "ET": {
+            "minimum": -32767,
+            "maximum": 32700
         },
-        "PsnNet": {
-            "minimum": -3000,
-            "maximum": 3000
+        "LE": {
+            "minimum": -32767,
+            "maximum": 32700
+        },
+        "PET": {
+            "minimum": -32767,
+            "maximum": 32700
+        },
+        "PLE": {
+            "minimum": -32767,
+            "maximum": 32700
         }
     }
 }
