@@ -1,0 +1,153 @@
+{
+    "type": "Collection",
+    "id": "projects/malariaatlasproject/assets/EVI_v061/1km/8-Daily",
+    "stac_version": "1.1.0",
+    "description": "The underlying dataset for this Enhanced Vegetation Index (EVI)\nproduct is MODIS BRDF-corrected imagery (MCD43B4), which was gap-filled\nusing the approach outlined in Weiss et al. (2014) to eliminate missing\ndata caused by factors such as cloud cover. After gap-filling the data was clipped to thresholds of [0, 1] to ensure valid values. \n\nThe gap-filled 8-daily ~1km outputs are then aggregated temporally to produce monthly and annual products.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/malariaatlasproject/projects_malariaatlasproject_assets_EVI_v061_1km_8-Daily",
+            "type": "text/html",
+            "title": "Run the example for projects/malariaatlasproject/assets/EVI_v061/1km/8-Daily in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/malariaatlasproject/projects_malariaatlasproject_assets_EVI_v061_1km_8-Daily_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_malariaatlasproject_assets_EVI_v061_1km_8-Daily#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/malariaatlasproject/projects_malariaatlasproject_assets_EVI_v061_1km_8-Daily.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/malariaatlasproject/catalog.json",
+            "type": "application/json",
+            "title": "malariaatlasproject"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:categories": [
+        "vegetation-indices"
+    ],
+    "gee:interval": {
+        "interval": 8,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:status": "beta",
+    "gee:terms_of_use": "[CC-BY-NC-SA-4.0](https://spdx.org/licenses/CC-BY-NC-SA-4.0.html)",
+    "gee:type": "image_collection",
+    "gee:unusual_terms_of_use": true,
+    "sci:citation": "Weiss, D.J., P.M. Atkinson, S. Bhatt, B. Mappin, S.I. Hay & P.W. Gething\n(2014) An effective approach for gap-filling continental scale remotely\nsensed time-series. ISPRS Journal of Photogrammetry and Remote Sensing,\n98, 106-118. \n[doi:10.1016/j.isprsjprs.2014.10.001](https://doi.org/10.1016/j.isprsjprs.2014.10.001)\n",
+    "title": "EVI: Malaria Atlas Project Gap-Filled Enhanced Vegetation Index (8-Daily 1km)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-02-01T00:00:00Z",
+                    "2024-12-26T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-NC-SA-4.0",
+    "keywords": [
+        "evi",
+        "map",
+        "vegetation",
+        "vegetation-indices"
+    ],
+    "providers": [
+        {
+            "name": "The Malaria Atlas Project",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.malariaatlas.org"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_malariaatlasproject_assets_EVI_v061_1km_8-Daily"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "The mean value of the Enhanced Vegetation Index for each aggregated pixel.",
+                "name": "Mean"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Enhanced Vegetation Index",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Mean"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "ffffff",
+                            "fcd163",
+                            "99b718",
+                            "66a000",
+                            "3e8601",
+                            "207401",
+                            "056201",
+                            "004c00",
+                            "011301"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 26.4,
+                    "lon": -88.6,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            5000
+        ],
+        "Mean": {
+            "minimum": 0,
+            "maximum": 1
+        }
+    }
+}

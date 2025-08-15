@@ -28,6 +28,11 @@
             "type": "text/html"
         },
         {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/USDA/USDA_WRC_v0.json",
             "type": "application/json"
@@ -46,7 +51,7 @@
     "gee:categories": [
         "fire"
     ],
-    "gee:terms_of_use": "Data publications are made freely available to the public under our data\nuse agreement outlining conditions of use such as redistribution,\ncitation, notification, and distribution liability. The \n[Open Access - Data Use Agreement](https://www.fs.usda.gov/rds/archive/datauseinfo/open)\nis implicitly agreed to by anyone acquiring data from this repository.\nFormally, Archive-published datasets are released under the Creative Commons\nCC-BY license structure. This allows for broad use and re-use, while\npreserving the expectation of citation of the data publication to document\nthat use and credit the intellectual work of the author(s).\n\n",
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
     "sci:citation": "Scott, Joe H.; Dillon, Gregory K.; Jaffe, Melissa R.; Vogler, Kevin C.;\nOlszewski, Julia H.; Callahan, Michael N.; Karau, Eva C.; Lazarz,\nMitchell T.; Short, Karen C.; Riley, Karin L.; Finney, Mark A.; Grenfell,\nIsaac C. 2024. Wildfire Risk to Communities: Spatial datasets of\nlandscape-wide wildfire risk components for the United States. 2nd Edition.\nFort Collins, CO: Forest Service Research Data Archive.\n[doi:10.2737/RDS-2020-0016-2](https://doi.org/10.2737/RDS-2020-0016-2)\n\n",
     "sci:doi": "10.2737/RDS-2020-0016-2",

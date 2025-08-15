@@ -1,0 +1,165 @@
+{
+    "type": "Collection",
+    "id": "COPERNICUS/MARINE/OC_GLO_BGC/OPTICS_MULTI_4KM",
+    "stac_version": "1.1.0",
+    "description": "The Global Ocean Colour (Copernicus-GlobColour) dataset is a Bio-Geo-Chemical\n(BGC) product developed by ACRI-ST. Derived from multiple satellite sources\nlike SeaWiFS, MODIS, and OLCI. It provides a comprehensive range of\noceanographic variables, including: Chlorophyll (CHL),\nPhytoplankton Functional types and sizes (PFT), Primary Production (PP),\nSuspended Matter (SPM), Secchi Transparency Depth (ZSD),\nDiffuse Attenuation (KD490), Particulate Backscattering (BBP),\nAbsorption Coefficient (CDM), Reflectance (RRS) and more.\n\nOptics multi-sensor, 4km, monthly dataset provides Level 4 Bio-Geo-Chemical\n(BGC) data. Derived from multiple satellite observations, this product has a\nglobal spatial resolution of 4 km and a temporal resolution of one month.\n\nDocumentation:\n\n * [User's Guide](https://documentation.marine.copernicus.eu/PUM/CMEMS-OC-PUM.pdf)\n\n * [Quality Information Document](https://documentation.marine.copernicus.eu/QUID/CMEMS-OC-QUID-009-101to104-111-113-116-118.pdf)\n\n * [Copernicus Marine Datastore](https://data.marine.copernicus.eu/products)\n\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/COPERNICUS/COPERNICUS_MARINE_OC_GLO_BGC_OPTICS_MULTI_4KM",
+            "type": "text/html",
+            "title": "Run the example for COPERNICUS/MARINE/OC_GLO_BGC/OPTICS_MULTI_4KM in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/COPERNICUS/COPERNICUS_MARINE_OC_GLO_BGC_OPTICS_MULTI_4KM_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_MARINE_OC_GLO_BGC_OPTICS_MULTI_4KM#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_MARINE_OC_GLO_BGC_OPTICS_MULTI_4KM.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/catalog.json",
+            "type": "application/json",
+            "title": "COPERNICUS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:categories": [
+        "oceans"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "month"
+    },
+    "gee:terms_of_use": "This dataset is released for use under Service Level Agreement (SLA),\nusing the acronym \"CMEMS\" or the shortened name \"Copernicus Marine Service\"\nboth denote the E.U. Copernicus Marine Environment Monitoring Service.\nHighlights and key features of the licence are provided in this document\n[License](https://marine.copernicus.eu/user-corner/service-commitments-and-licence)\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Copernicus Global Ocean Colour:  Global Ocean Satellite Observations,\nACRI-ST company (Sophia Antipolis, France) is providing Bio-Geo-Chemical\n(BGC) products based on the Copernicus-GlobColour processor.\n[doi:10.48670/moi-00279](https://doi.org/10.48670/moi-00279)\n",
+    "gee:status": "ready",
+    "title": "Global Ocean Colour: Bio-Geo-Chemical, L4, from Satellite Observations, Optics, Multi-Sensor 4KM",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-04-01T00:00:00Z",
+                    "2025-06-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "copernicus",
+        "marine",
+        "oceans"
+    ],
+    "providers": [
+        {
+            "name": "Copernicus",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.48670/moi-00279"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_MARINE_OC_GLO_BGC_OPTICS_MULTI_4KM"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Particulate Backscattering",
+                "gee:units": "1/m",
+                "name": "BBP"
+            },
+            {
+                "description": "Particulate Backscattering - The uncertainty as measured in hundredths\nof a percent (e.g., a value of 5000 means 50%).\n",
+                "gee:units": "%",
+                "name": "BBP_uncertainty"
+            },
+            {
+                "description": "Absorption coefficient",
+                "gee:units": "1/m",
+                "name": "CDM"
+            },
+            {
+                "description": "Absorption coefficient - The uncertainty as measured in hundredths of\na percent (e.g., a value of 5000 means 50%).\n",
+                "gee:units": "%",
+                "name": "CDM_uncertainty"
+            },
+            {
+                "description": "Land water mask bit.\n\n  * 0: Water\n  * 1: Land\n",
+                "name": "flags"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "CDM",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "CDM"
+                        ],
+                        "max": [
+                            0.109
+                        ],
+                        "min": [
+                            0.003
+                        ],
+                        "palette": [
+                            "D7F9D0",
+                            "91CA85",
+                            "5AB05D",
+                            "129450",
+                            "0F7347",
+                            "195437",
+                            "122414"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 52,
+                    "lon": 71,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            4000
+        ]
+    }
+}
