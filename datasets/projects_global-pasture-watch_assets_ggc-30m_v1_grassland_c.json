@@ -45,7 +45,7 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "forest-biomass"
+        "landuse-landcover"
     ],
     "gee:interval": {
         "interval": 1,
@@ -87,11 +87,13 @@
     },
     "license": "CC-BY-4.0",
     "keywords": [
-        "forest-biomass",
         "global",
         "land",
         "landcover",
         "landuse",
+        "landuse-landcover",
+        "pasture",
+        "rangeland",
         "vegetation"
     ],
     "providers": [
@@ -122,12 +124,12 @@
                         "value": 0
                     },
                     {
-                        "color": "ff9916",
+                        "color": "ffcd73",
                         "description": "Cultivated grassland ",
                         "value": 1
                     },
                     {
-                        "color": "ffcd73",
+                        "color": "ff9916",
                         "description": "Natural/Semi-natural grassland",
                         "value": 2
                     }
@@ -159,8 +161,8 @@
                         ],
                         "palette": [
                             "ffffff",
-                            "ff9916",
-                            "ffcd73"
+                            "ffcd73",
+                            "ff9916"
                         ]
                     }
                 },

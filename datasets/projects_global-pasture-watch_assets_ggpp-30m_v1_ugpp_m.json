@@ -1,0 +1,164 @@
+{
+    "type": "Collection",
+    "id": "projects/global-pasture-watch/assets/ggpp-30m/v1/ugpp_m",
+    "stac_version": "1.1.0",
+    "description": "This dataset provides global uncalibrated EO-based Gross Primary Productivity \nfrom 2000 at 30-m spatial resolution. \nProduced by Land &#38; Carbon Lab Global Pasture Watch initiative, the current dataset provides \nGross Primary Productivity (GPP) values globally at 30-m spatial resolution from 2000 onwards. \nGPP values are modeled via a **light use efficiency (LUE)** approach, \nwhere [**GLAD Landsat ARD** (collection-2)](https://glad.umd.edu/ard/home) are aggregated every two months \n([Consoli et al., 2024](https://peerj.com/articles/18585/)) and combined with 1-km **MODIS \ntemperature** data and 1\u00b0 **CERES Photosynthetically Active Radiation** (PAR). \n\nTo keep the dataset flexible, the maximum light use efficiency (LUEmax) is set to 1 gC/m\u00b2/day/MJ \nfor **all land cover types**, allowing the users to later calibrate the \nGPP values according to specific land cover maps or regional conditions.\n\n**Bi-monthly uncalibrated Gross Primary Productivity (uGPP)** values (available in [OpenLandMap STAC](https://stac.openlandmap.org/gpw_ugpp.daily-30m/collection.json)) are averated by each year and accumulated over the full 365-day period to produce\nglobal annual uGPP values, expressed in units of gC/m\u00b2/year.\n\n**Grassland GPP** values are computed on-the-fly using [GEE App](https://global-pasture-watch.projects.earthengine.app/view/ggpp-30m).\n\n**Limitations:** \n\n- **Input data resolution mismatch**: The dataset is provided at 30 m resolution, but key input variables for temperature (MOD11A1) \nand photosynthetically active radiation (CERES PAR) were derived from much coarser products (1 km and ~111 km, respectively).\nThe downscaling of this information can introduce uncertainty and may not capture fine-scale microclimatic conditions affecting plant productivity.\n\n- **Data artifacts**: The dataset contains known visual artifacts, including vertical stripes (\"stripe effect\") in some areas, which are a result \nof issues with the Landsat 7 sensor (Scan Line Corrector failure) and the subsequent gap-filling process used to create the underlying \nreflectance archive ([Consoli et al., 2024](https://peerj.com/articles/18585/)). These artifacts can disrupt the spatial continuity \nof GPP estimates during cloudy and snow cover periods\n\n- **Temporal resolution**: The data is produced at a bimonthly temporal resolution. This timeframe may not be sufficient \nto capture key growth periods or a plant's rapid responses (intense rainfall) to environmental changes, making \nit difficult to accurately capture productivity peaks and seasonal variation.\n\n- **Grassland calibration**: Grassland GPP values are calculated using a single maximum light use efficiency (LUEmax) \nparameter (0.86 gC/m\u00b2/year/MJ) for all global grasslands, based on the MOD17 algorithm. This value is not optimized \nfor specific grassland types or local conditions. As a result, the model shows a tendency to underestimate GPP when \ncompared to ground-based flux tower measurements.\n\n- **Dependence on grassland maps accuracy**: The accuracy of the grassland GPP values is contingent on the accuracy of the \nunderlying [GPW grassland maps](https://developers.google.com/earth-engine/datasets/catalog/projects_global-pasture-watch_assets_ggc-30m_v1_grassland_c).\nAny misclassification of land cover in the source maps (e.g., shrublands or croplands identified as grassland) will \nlead to corresponding errors in the GPP estimates for those locations.\n\n**For more information see [Isik et. al, 2025](https://doi.org/10.7717/peerj.19774),\n[Zenodo](https://doi.org/10.5281/zenodo.15675358) and \n[https://github.com/wri/global-pasture-watch](https://github.com/wri/global-pasture-watch)**",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/global-pasture-watch/projects_global-pasture-watch_assets_ggpp-30m_v1_ugpp_m",
+            "type": "text/html",
+            "title": "Run the example for projects/global-pasture-watch/assets/ggpp-30m/v1/ugpp_m in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/global-pasture-watch/projects_global-pasture-watch_assets_ggpp-30m_v1_ugpp_m_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_global-pasture-watch_assets_ggpp-30m_v1_ugpp_m#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/global-pasture-watch/projects_global-pasture-watch_assets_ggpp-30m_v1_ugpp_m.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/global-pasture-watch/catalog.json",
+            "type": "application/json",
+            "title": "global-pasture-watch"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "plant-productivity"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:status": "beta",
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "sci:citation": "Isik, M. S., Mesquita, V., Parente, L., & Consoli, D. (2025). \nGlobal Pasture Watch - Source Code of the Global Uncalibrated EO-based GPP and \nGrassland GPP Maps at 30m. Zenodo.\n[Source code]. Zenodo\n[doi:https://doi.org/10.5281/zenodo.15675358](https://doi.org/10.5281/zenodo.15675358)\n",
+    "sci:doi": "10.5281/zenodo.13890401",
+    "sci:publications": [
+        {
+            "citation": "Isik MS, Parente L, Consoli D, et al. (2025). \nLight use efficiency (LUE) based bimonthly gross primary \nproductivity (GPP) for global grasslands at 30 m spatial \nresolution (2000\u20132022), PeerJ.\n[doi: https://doi.org/10.7717/peerj.19774](https://doi.org/10.7717/peerj.19774)\n",
+            "doi": "10.7717/peerj.19774"
+        }
+    ],
+    "version": "1",
+    "title": "GPW Annual uncalibrated Gross Primary Productivity (uGPP) v1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2024-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "global",
+        "land",
+        "landcover",
+        "landuse",
+        "plant-productivity",
+        "vegetation"
+    ],
+    "providers": [
+        {
+            "name": "Land and Carbon Lab Global Pasture Watch",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://landcarbonlab.org/data/global-grassland-and-livestock-monitoring"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_global-pasture-watch_assets_ggpp-30m_v1_ugpp_m"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Grams of carbon per square meter per year (gC/m\u00b2/year)",
+                "gsd": 30,
+                "name": "gc_m2"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Product version",
+                "name": "version",
+                "type": "INT"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "GPP value",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "gc_m2"
+                        ],
+                        "max": [
+                            4000
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "faccfa",
+                            "f19d6b",
+                            "828232",
+                            "226061",
+                            "011959"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -12.2,
+                    "lon": -55.5,
+                    "zoom": 4
+                }
+            }
+        ],
+        "gc_m2": {
+            "minimum": 0,
+            "maximum": 4000
+        }
+    }
+}

@@ -45,7 +45,7 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "forest-biomass"
+        "landuse-landcover"
     ],
     "gee:interval": {
         "interval": 1,
@@ -87,11 +87,13 @@
     },
     "license": "CC-BY-4.0",
     "keywords": [
-        "forest-biomass",
         "global",
         "land",
         "landcover",
         "landuse",
+        "landuse-landcover",
+        "pasture",
+        "rangeland",
         "vegetation"
     ],
     "providers": [
