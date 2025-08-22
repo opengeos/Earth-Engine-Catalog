@@ -1,0 +1,155 @@
+{
+    "type": "Collection",
+    "id": "COPERNICUS/MARINE/OC_GLO_BGC/PLANKTON_OLCI_300M",
+    "stac_version": "1.1.0",
+    "description": "The Global Ocean Colour (Copernicus-GlobColour) dataset is a Bio-Geo-Chemical\n(BGC) product developed by ACRI-ST. Derived from multiple satellite sources\nlike SeaWiFS, MODIS, and OLCI. It provides a comprehensive range of\noceanographic variables, including: Chlorophyll (CHL),\nPhytoplankton Functional types and sizes (PFT), Primary Production (PP),\nSuspended Matter (SPM), Secchi Transparency Depth (ZSD),\nDiffuse Attenuation (KD490), Particulate Backscattering (BBP),\nAbsorption Coefficient (CDM), Reflectance (RRS) and more.\n\nThis dataset is a global product from the Copernicus Marine Service (CMEMS)\nfocused on ocean plankton. This dataset is derived specifically from the\nOcean and Land Colour Instrument (OLCI) on the Sentinel-3 satellites and\nprovides a very high spatial resolution of 300 meters, making it ideal for\ncoastal and regional-scale analysis.The primary layer is chlorophyll-a\nconcentration (CHL), which serves as a proxy for the biomass of phytoplankton,\na crucial component of the marine food web.\n\nDocumentation:\n\n * [User's Guide](https://documentation.marine.copernicus.eu/PUM/CMEMS-OC-PUM.pdf)\n\n * [Quality Information Document](https://documentation.marine.copernicus.eu/QUID/CMEMS-OC-QUID-009-101to104-111-113-116-118.pdf)\n\n * [Copernicus Marine Datastore](https://data.marine.copernicus.eu/products)\n\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/COPERNICUS/COPERNICUS_MARINE_OC_GLO_BGC_PLANKTON_OLCI_300M",
+            "type": "text/html",
+            "title": "Run the example for COPERNICUS/MARINE/OC_GLO_BGC/PLANKTON_OLCI_300M in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/COPERNICUS/COPERNICUS_MARINE_OC_GLO_BGC_PLANKTON_OLCI_300M_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_MARINE_OC_GLO_BGC_PLANKTON_OLCI_300M#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_MARINE_OC_GLO_BGC_PLANKTON_OLCI_300M.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/catalog.json",
+            "type": "application/json",
+            "title": "COPERNICUS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:categories": [
+        "oceans"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "month"
+    },
+    "gee:terms_of_use": "This dataset is released for use under Service Level Agreement (SLA),\nusing the acronym \"CMEMS\" or the shortened name \"Copernicus Marine Service\"\nboth denote the E.U. Copernicus Marine Environment Monitoring Service.\nHighlights and key features of the licence are provided in this document\n[License](https://marine.copernicus.eu/user-corner/service-commitments-and-licence)\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Copernicus Global Ocean Colour:  Global Ocean Satellite Observations,\nACRI-ST company (Sophia Antipolis, France) is providing Bio-Geo-Chemical\n(BGC) products based on the Copernicus-GlobColour processor.\n[doi:10.48670/moi-00279](https://doi.org/10.48670/moi-00279)\n",
+    "gee:status": "ready",
+    "title": "Global Ocean Colour: Bio-Geo-Chemical, L4, from Satellite Observations, Plankton, OLCI, 300M",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-04-01T00:00:00Z",
+                    "2025-06-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "copernicus",
+        "marine",
+        "oceans"
+    ],
+    "providers": [
+        {
+            "name": "Copernicus",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.48670/moi-00279"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_MARINE_OC_GLO_BGC_PLANKTON_OLCI_300M"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Chlorophyll-a concentration",
+                "gee:units": "mg/m^3",
+                "name": "CHL"
+            },
+            {
+                "description": "Chlorophyll-a concentration - The uncertainty as measured in\nhundredths of a percent (e.g., a value of 5000 means 50%).\n",
+                "gee:units": "%",
+                "name": "CHL_uncertainty"
+            },
+            {
+                "description": "Land water mask bit.\n\n  * 0: Water\n  * 1: Land\n",
+                "name": "flags"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "CHL",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "CHL"
+                        ],
+                        "max": [
+                            1.813
+                        ],
+                        "min": [
+                            0.027
+                        ],
+                        "palette": [
+                            "D7F9D0",
+                            "91CA85",
+                            "5AB05D",
+                            "129450",
+                            "0F7347",
+                            "195437",
+                            "122414"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 52,
+                    "lon": 71,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            300
+        ]
+    }
+}

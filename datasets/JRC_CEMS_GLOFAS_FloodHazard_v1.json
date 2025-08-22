@@ -41,11 +41,13 @@
     ],
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
         "surface-ground-water"
     ],
+    "gee:status": "deprecated",
     "gee:terms_of_use": "The JRC datasets are available without restriction\non use or distribution. For more information check\n[access rights](https://data.jrc.ec.europa.eu/access-rights/no-limitations),\n",
     "gee:type": "image_collection",
     "sci:publications": [
@@ -54,8 +56,9 @@
             "doi": "10.1016/j.advwatres.2016.05.002"
         }
     ],
-    "gee:status": "ready",
-    "title": "JRC Global River Flood Hazard Maps Version 1",
+    "version": "V1",
+    "deprecated": true,
+    "title": "JRC Global River Flood Hazard Maps Version 1 [deprecated]",
     "extent": {
         "spatial": {
             "bbox": [
