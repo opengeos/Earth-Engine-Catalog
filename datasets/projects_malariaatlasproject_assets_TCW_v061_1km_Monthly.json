@@ -51,7 +51,6 @@
         "type": "cadence",
         "unit": "month"
     },
-    "gee:status": "beta",
     "gee:terms_of_use": "[CC-BY-NC-SA-4.0](https://spdx.org/licenses/CC-BY-NC-SA-4.0.html)",
     "gee:type": "image_collection",
     "gee:unusual_terms_of_use": true,
@@ -61,6 +60,7 @@
             "citation": "Lobser, S.E. & Cohen, W.B. (2007) MODIS tasselled cap: land cover\ncharacteristics expressed through transformed MODIS data. International\nJournal of Remote Sensing, 28, 5079-5101.\n"
         }
     ],
+    "gee:status": "ready",
     "title": "TCW: Malaria Atlas Project Gap-Filled Tasseled Cap Wetness (Monthly 1km)",
     "extent": {
         "spatial": {
