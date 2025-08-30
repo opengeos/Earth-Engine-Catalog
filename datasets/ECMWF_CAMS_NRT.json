@@ -28,11 +28,6 @@
             "type": "text/html"
         },
         {
-            "rel": "license",
-            "href": "https://ads.atmosphere.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf",
-            "type": "application/pdf"
-        },
-        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/ECMWF/ECMWF_CAMS_NRT.json",
             "type": "application/json"
@@ -57,7 +52,7 @@
         "type": "cadence",
         "unit": "day"
     },
-    "gee:terms_of_use": "There is no restriction on use or reproduction and redistribution, with or\nwithout adaptation, for commercial or non-commercial purposes. This data\npolicy applies to the data and information generated within the Copernicus\nprogramme, i.e., Sentinel mission data and Copernicus service information.\n\nSee the\n[full COPERNICUS data license](https://ads.atmosphere.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf).\n\nThe license clauses with attribution requirements are shown below:\n\n5.1.1. Where the Licensee communicates or distributes Copernicus Products to\nthe public, the Licensee shall inform the recipients of the source by using\nthe following or any similar notice:\n\n* 'Generated using Copernicus Climate Change Service information [Year]'\n  and/or\n* 'Generated using Copernicus Atmosphere Monitoring Service information\n  [Year]'.\n\n5.1.2. Where the Licensee makes or contributes to a publication or\ndistribution containing adapted or modified Copernicus Products, the\nLicensee shall provide the following or any similar notice:\n\n* 'Contains modified Copernicus Climate Change Service information [Year]';\n  and/or\n* 'Contains modified Copernicus Atmosphere Monitoring Service information\n  [Year]'\n\n5.1.3. Any such publication or distribution covered by clauses 5.1.1 and\n\n5.1.2 shall state that neither the European Commission nor ECMWF is\nresponsible for any use that may be made of the Copernicus information or\ndata it contains.\n",
+    "gee:terms_of_use": "There is no restriction on use or reproduction and redistribution, with or\nwithout adaptation, for commercial or non-commercial purposes. This data\npolicy applies to the data and information generated within the Copernicus\nprogramme, i.e., Sentinel mission data and Copernicus service information.\n\nSee the\n[full COPERNICUS data license](https://ads.atmosphere.copernicus.eu/disclaimer-privacy).\n\nThe license clauses with attribution requirements are shown below:\n\n5.1.1. Where the Licensee communicates or distributes Copernicus Products to\nthe public, the Licensee shall inform the recipients of the source by using\nthe following or any similar notice:\n\n* 'Generated using Copernicus Climate Change Service information [Year]'\n  and/or\n* 'Generated using Copernicus Atmosphere Monitoring Service information\n  [Year]'.\n\n5.1.2. Where the Licensee makes or contributes to a publication or\ndistribution containing adapted or modified Copernicus Products, the\nLicensee shall provide the following or any similar notice:\n\n* 'Contains modified Copernicus Climate Change Service information [Year]';\n  and/or\n* 'Contains modified Copernicus Atmosphere Monitoring Service information\n  [Year]'\n\n5.1.3. Any such publication or distribution covered by clauses 5.1.1 and\n\n5.1.2 shall state that neither the European Commission nor ECMWF is\nresponsible for any use that may be made of the Copernicus information or\ndata it contains.\n",
     "gee:type": "image_collection",
     "sci:citation": "Benedetti, A., and Coauthors, 2009: Aerosol analysis and forecast in the\nECMWF Integrated Forecast System. Part II : Data assimilation,\nJ. Geophys. Res., 114, D13205\n[doi:10.1029/2008JD011115](https://doi.org/10.1029/2008JD011115).\n",
     "sci:doi": "10.1029/2008JD011115",
@@ -85,7 +80,7 @@
             "interval": [
                 [
                     "2016-06-22T12:00:00Z",
-                    "2025-09-01T12:00:00Z"
+                    "2025-09-02T12:00:00Z"
                 ]
             ]
         }
