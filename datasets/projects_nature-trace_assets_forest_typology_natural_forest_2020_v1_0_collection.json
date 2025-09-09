@@ -29,7 +29,7 @@
         },
         {
             "rel": "license",
-            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "href": "https://spdx.org/licenses/CC-BY-SA-4.0.html",
             "type": "text/html"
         },
         {
@@ -50,8 +50,9 @@
     "gee:categories": [
         "forest-biomass"
     ],
-    "gee:terms_of_use": "This dataset is licensed under\n[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) and requires the\nfollowing attribution: \"This dataset is produced by Google\".\n",
+    "gee:terms_of_use": "This dataset is licensed under\n[CC-BY 4.0 ShareAlike](https://creativecommons.org/licenses/by-sa/4.0/) and requires the\nfollowing attribution: \"This dataset is produced by Google\".\n",
     "gee:type": "image_collection",
+    "gee:unusual_terms_of_use": true,
     "sci:citation": "Maxim Neumann , Anton Raichuk, Radost Stanimirova, Michelle Sims , Sarah Carter,\nElizabeth Goldman, Melanie Rey, Yuchang Jiang, Keith Anderson, Petra Poklukar,\nKatelyn Tarrio, Myroslava Lesiv, Steffen Fritz, Nicholas Clinton,\nCharlotte Stanton, Dan Morris, Drew Purves, \"Natural forests of the world:\nA 2020 baseline for deforestation and degradation monitoring\" (in review).\n[doi:10.31223/X5ZX6P](https://doi.org/10.31223/X5ZX6P),\n",
     "gee:status": "ready",
     "title": "Natural Forests of the World 2020",
@@ -75,7 +76,7 @@
             ]
         }
     },
-    "license": "CC-BY-4.0",
+    "license": "CC-BY-SA-4.0",
     "keywords": [
         "biodiversity",
         "climate",

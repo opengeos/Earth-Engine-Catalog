@@ -28,6 +28,12 @@
             "type": "text/html"
         },
         {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/malariaatlasproject/projects_malariaatlasproject_assets_LST_Day_v061_1km_Monthly.json",
+            "type": "application/json",
+            "title": "projects/malariaatlasproject/assets/LST_Day_v061/1km/Monthly"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/Oxford/Oxford_MAP_LST_Day_5km_Monthly.json",
             "type": "application/json"
@@ -41,7 +47,8 @@
     ],
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
         "climate"
@@ -51,12 +58,14 @@
         "type": "cadence",
         "unit": "month"
     },
+    "gee:status": "deprecated",
     "gee:terms_of_use": "[CC-BY-NC-SA-4.0](https://spdx.org/licenses/CC-BY-NC-SA-4.0.html)",
     "gee:type": "image_collection",
     "gee:unusual_terms_of_use": true,
     "sci:citation": "Weiss, D.J., P.M. Atkinson, S. Bhatt, B. Mappin, S.I. Hay & P.W. Gething\n(2014) An effective approach for gap-filling continental scale remotely\nsensed time-series. ISPRS Journal of Photogrammetry and Remote Sensing,\n98, 106-118.\n",
-    "gee:status": "ready",
-    "title": "Oxford MAP LST: Malaria Atlas Project Gap-Filled Daytime Land Surface Temperature",
+    "version": "Unknown",
+    "deprecated": true,
+    "title": "Oxford MAP LST: Malaria Atlas Project Gap-Filled Daytime Land Surface Temperature [deprecated]",
     "extent": {
         "spatial": {
             "bbox": [
