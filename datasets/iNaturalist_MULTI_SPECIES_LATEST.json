@@ -1,0 +1,174 @@
+{
+    "type": "Collection",
+    "id": "iNaturalist/MULTI_SPECIES/LATEST",
+    "stac_version": "1.1.0",
+    "description": "The iNaturalist Multispecies Range Dataset provides modeled geographic\nranges for thousands of species. Dataset contains species polygons, with\nattributes such as taxon_id, name, scientific_name, and geomodel_version.\nRanges are estimated from iNaturalist community observations and updated on\na monthly basis. These datasets enable large-scale biodiversity analyses,\necological modeling, and integration with other spatial data.\nThis dataset contains the latest available range maps for multiple species\nfrom iNaturalist. The dataset is available through BigQuery.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/iNaturalist/iNaturalist_MULTI_SPECIES_LATEST",
+            "type": "text/html",
+            "title": "Run the example for iNaturalist/MULTI_SPECIES/LATEST in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/iNaturalist/iNaturalist_MULTI_SPECIES_LATEST_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/iNaturalist_MULTI_SPECIES_LATEST#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://www.inaturalist.org/pages/range_maps"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/iNaturalist/iNaturalist_MULTI_SPECIES_LATEST.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/iNaturalist/catalog.json",
+            "type": "application/json",
+            "title": "iNaturalist"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:bq_table_name": "earth-engine-public-data.inaturalist_open_range_map.multispecies_latest",
+    "gee:categories": [
+        "ecosystems"
+    ],
+    "gee:skip_featureview_generation": true,
+    "gee:status": "beta",
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "bigquery_table",
+    "version": "2.23",
+    "title": "INaturalist Multispecies Open Range Maps",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-02-25T00:00:00Z",
+                    "2025-03-25T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "bigquery",
+        "biodiversity",
+        "ecosystems",
+        "range",
+        "species"
+    ],
+    "providers": [
+        {
+            "name": "iNaturalist",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.inaturalist.org"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/iNaturalist_MULTI_SPECIES_LATEST"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Unique identifier for a species in iNaturalist",
+                "name": "taxon_id",
+                "type": "STRING"
+            },
+            {
+                "description": "Identifier for the immediate higher-level taxon\n(e.g., genus or family), giving taxonomic context.\n",
+                "name": "parent_taxon_id",
+                "type": "STRING"
+            },
+            {
+                "description": "The scientific name of the species.",
+                "name": "name",
+                "type": "STRING"
+            },
+            {
+                "description": "Taxonomic rank of the taxon (e.g., species, genus, family, order).\nUseful for filtering or grouping taxa by level.\n",
+                "name": "rank",
+                "type": "STRING"
+            },
+            {
+                "description": "Internal identifier for one of iNaturalist's \"iconic taxa\" - broad,\nrecognizable groups such as Mammalia, Aves, Reptilia, Plantae.\n",
+                "name": "iconic_taxon_id",
+                "type": "STRING"
+            },
+            {
+                "description": "The iconic taxon name of the species (e.g., Mammalia, Aves).\n",
+                "name": "iconic_taxon_name",
+                "type": "STRING"
+            },
+            {
+                "description": "The version of the geomodel used.",
+                "name": "geomodel_version",
+                "type": "STRING"
+            },
+            {
+                "description": "Polygon or multipolygon in WGS84 (EPSG:4326) representing the\nmodeled distribution.\n",
+                "name": "geometry",
+                "type": "GEOMETRY"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "iNaturalist Multispecies Latest",
+                "lookat": {
+                    "lat": 0,
+                    "lon": 25,
+                    "zoom": 3
+                },
+                "polygon_visualization": {
+                    "property_name": "name",
+                    "property_vis": {
+                        "palette": [
+                            "E4004B",
+                            "ED775A",
+                            "FAD691",
+                            "C9CDCF"
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}
