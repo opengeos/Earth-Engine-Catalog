@@ -1,0 +1,168 @@
+{
+    "type": "Collection",
+    "id": "NASA/ECOSTRESS/L2T_STARS/V2",
+    "stac_version": "1.1.0",
+    "description": "The ECOSTRESS Tiled Ancillary NDVI and Albedo (ECO_L2T_STARS) V002 dataset\nprovides Normalized Difference Vegetation Index (NDVI) and albedo data at a\n70m spatial resolution. This ancillary product, essential for understanding\nplant water needs and stress, is created through a data fusion process that\ncombines Visible Infrared Imaging Radiometer Suite (VIIRS) and Harmonized\nLandsat Sentinel (HLS) data. The fusion is performed using the STARS\nalgorithm, a Bayesian timeseries methodology, to align the data with\ndaytime ECOSTRESS overpasses. This product is only generated for\ncorresponding ECOSTRESS Land Surface Temperature and Emissivity tiles.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1655/ECO_L1C-4_Grid_Tile_User_Guide_V2.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/1869/ECOSTRESSL3JET_ATBD_V1.pdf)\n\n* [General Documentation](https://github.com/nasa/ECOSTRESS-Data-Resources)\n\n* [Land Processes Distributed Active Archive Center](https://www.earthdata.nasa.gov/centers/lp-daac)\n\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_ECOSTRESS_L2T_STARS_V2",
+            "type": "text/html",
+            "title": "Run the example for NASA/ECOSTRESS/L2T_STARS/V2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_ECOSTRESS_L2T_STARS_V2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_ECOSTRESS_L2T_STARS_V2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/ECOSTRESS/ECO_L2T_STARS.002"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_ECOSTRESS_L2T_STARS_V2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "plant-productivity"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C2090073749-LPCLOUD"
+    ],
+    "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Hook, Simon, et al. ECOSTRESS Tiled Ancillary NDVI and Albedo L2 Global 70 m\nv002. NASA Land Processes Distributed Active Archive Center, 2023,\ndoi:[10.5067/ECOSTRESS/ECO_L2T_STARS.002](https://doi.org/10.5067/ECOSTRESS/ECO_L2T_STARS.002)\n",
+    "sci:doi": "10.5067/ECOSTRESS/ECO_L2T_STARS.002",
+    "version": "V002",
+    "gee:status": "ready",
+    "title": "ECOSTRESS Tiled Ancillary NDVI and Albedo L2 Global 70 m V002",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-07-09T00:00:00Z",
+                    "2025-04-10T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "albedo",
+        "ecostress",
+        "land",
+        "ndvi",
+        "plant-productivity"
+    ],
+    "providers": [
+        {
+            "name": "Land Processes Distributed Active Archive Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.earthdata.nasa.gov/data/catalog/lpcloud-eco-l2t-stars-002"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_ECOSTRESS_L2T_STARS_V2"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Normalized Difference Vegetation Index (NDVI)",
+                "name": "NDVI"
+            },
+            {
+                "description": "Normalized Difference Vegetation Index (NDVI) uncertainty.\n",
+                "name": "NDVI-UQ"
+            },
+            {
+                "description": "Albedo",
+                "name": "albedo"
+            },
+            {
+                "description": "Albedo uncertainty.\n",
+                "name": "albedo-UQ"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "NDVI",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "NDVI"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            -1
+                        ],
+                        "palette": [
+                            "00008B",
+                            "A9A9A9",
+                            "CD853F",
+                            "FFFF00",
+                            "90EE90",
+                            "006400"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 38.8904,
+                    "lon": -77.1056,
+                    "zoom": 10
+                }
+            }
+        ],
+        "gsd": [
+            70
+        ]
+    }
+}

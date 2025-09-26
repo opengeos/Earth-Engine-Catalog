@@ -1,0 +1,166 @@
+{
+    "type": "Collection",
+    "id": "projects/global-pasture-watch/assets/gsvh-30m/v1/short-veg-height_m",
+    "stac_version": "1.1.0",
+    "description": "This dataset provides global median vegetation height\nfrom 2000 at 30-m spatial resolution. \nProduced by the Land &#38; Carbon Lab\u2019s Global Pasture Watch initiative, this dataset provides **median vegetation \nheight** values (50th percentile) globally at 30-m spatial resolution from 2000 onwards. The dataset is based on \n**ICESat-2 ATL08** median height of vegetation returns and is modeled via machine learning (ensemble Gradient Boosted Trees) \nusing the [**GLAD Landsat ARD** (collection-2)](https://glad.umd.edu/ard/home) \naggregated every two months (see [Consoli et al., 2024](https://peerj.com/articles/18585/)) and combined with \nadditional covariates, including **terrain elevation** ([GEDTM30](https://doi.org/10.7717/peerj.19673)),\n**geometric mean temperature**, and **MODIS long-term temperature** and **water vapor**.\n\nOriginally designed to support the monitoring of **open ecosystems** (grasslands, open shrublands, savannas, tundra), the \ndataset offers wall-to-wall coverage of all terrestrial ecosystems. Thus, median height values of forest ecosystems \nshould not be interpreted as top of canopy. For comparison with other existing canopy height products access the app\n[GPW Height Comparison Toolkit (GPW-HCT)](https://gpw-lapig.projects.earthengine.app/view/hct).\n\nEstimates of **90% prediction interval values** (5th & 95th percentiles) are available in  [OpenLandMap STAC](https://stac.openlandmap.org/gpw_gsvh-30m/collection.json).\n\n**Per-pixel trend analysis** are computed on-the-fly using [GEE App](https://global-pasture-watch.projects.earthengine.app/view/gsvh-30m).\n\n**Limitations:** \n\n- **Vegetation heterogeneity**: The median height is sensitive to shrubs and trees within landscapes dominated by herbaceous cover. \nUsers focused on herbaceous biomass should consider using fractional cover maps to address sub-pixel mixtures. Future versions \nmay incorporate ICESat-2's vertical structure information for a better separation of woody cover.\n\n- **Sub-annual and seasonal patterns**: Current ICESat-2 data density is insufficient to map seasonal height changes common \nin grassy ecosystems. Increased Lidar acquisitions or denser sampling from ongoing measurement are needed to capture \nmore frequent snapshots, which would improve monitoring of intra-annual changes and disturbances, including grazing, fire, and harvesting.\n\n- **Data restrictions and uncertainty**: The training data was restricted to strong-beam, night-time measurements to minimize \nsignal noise, and additional filters were applied, but this does not fully account for all sources of data uncertainty \nin the ICESat-2 mission. Furthermore, cloud cover and smoke hinder signal penetration, increasing uncertainty in some regions. \nSpecifically for 2019, the model presented slightly poorer performance compared to more recent years, which might be \nrelated to differences in data availability and quality at the beginning of the ICESat-2 mission.\n\n- **Difficulty detecting very short vegetation**: Lidar sensors, including ICESat-2, struggle to accurately measure very \nlow canopies, especially with sparse cover or partial ground occlusion. The training data does not identify vegetation \nless than 50 cm from the ground surface, which may lead to overestimation of height in the shortest or most sparse land \ncovers, such as wetland saltpans.\n\n- **Underestimation of maximum heights**: The trained machine learning model exhibited a tendency toward the mean, which \nresulted in overly narrow and optimistic [prediction intervals]((https://stac.openlandmap.org/gpw_gsvh-30m/collection.json)). \nDue to the underestimation of vegetation height in the upper extremes, care should be taken when interpreting absolute \nvalues in regions with very tall forests, but relative patterns and trends are still informative.\n\n- **Limited independent validation**: While validated against ICESat-2 data (testing set), broader validation using airborne \nor drone Lidar would be necessary to fully assess the quality of the dataset at regional level.\t\n\n**For more information see [Hunter et. al, 2025](https://doi.org/10.1038/s41597-025-05739-6),\n[Zenodo](https://doi.org/10.5281/zenodo.15198654) and \n[Global Pasture Watch GitHub site](https://github.com/wri/global-pasture-watch)**",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/global-pasture-watch/projects_global-pasture-watch_assets_gsvh-30m_v1_short-veg-height_m",
+            "type": "text/html",
+            "title": "Run the example for projects/global-pasture-watch/assets/gsvh-30m/v1/short-veg-height_m in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/global-pasture-watch/projects_global-pasture-watch_assets_gsvh-30m_v1_short-veg-height_m_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_global-pasture-watch_assets_gsvh-30m_v1_short-veg-height_m#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/global-pasture-watch/projects_global-pasture-watch_assets_gsvh-30m_v1_short-veg-height_m.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/global-pasture-watch/catalog.json",
+            "type": "application/json",
+            "title": "global-pasture-watch"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "plant-productivity"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:status": "beta",
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "sci:citation": "Parente, L., Hunter, M., Ho, Y., Bonannella, C. el al. (2025).\nGlobal Pasture Watch - Annual short vegetation height maps at\n30-m spatial resolution (2000\u20142022) (Version v1)\n[Data set]. Zenodo. [doi:https://doi.org/10.5281/zenodo.15198654](https://doi.org/10.5281/zenodo.15198654)\n",
+    "sci:doi": "10.5281/zenodo.15198654",
+    "sci:publications": [
+        {
+            "citation": "Hunter, M.O., Parente, L., Ho, Yf. et al. (2025)\nGlobal 30-m annual median vegetation height maps (2000\u20142022)\nbased on ICESat-2 data and Machine Learning. Scientific Data 12, 1470.\n[doi: https://doi.org/10.1038/s41597-025-05739-6](https://doi.org/10.1038/s41597-025-05739-6)\n",
+            "doi": "10.1038/s41597-025-05739-6"
+        }
+    ],
+    "version": "1",
+    "title": "GPW Annual short vegetation height v1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2024-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "canopy",
+        "global",
+        "land",
+        "landcover",
+        "plant-productivity",
+        "vegetation"
+    ],
+    "providers": [
+        {
+            "name": "Land and Carbon Lab Global Pasture Watch",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://landcarbonlab.org/data/global-grassland-and-livestock-monitoring"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_global-pasture-watch_assets_gsvh-30m_v1_short-veg-height_m"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Median vegetation height",
+                "gee:scale": 0.1,
+                "gee:units": "m",
+                "gsd": 30,
+                "name": "height"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Product version",
+                "name": "version",
+                "type": "INT"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Median vegetation height",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "height"
+                        ],
+                        "max": [
+                            10
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "fcffa4",
+                            "f98d0a",
+                            "bb3755",
+                            "57106e",
+                            "000004"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -12.2,
+                    "lon": -55.5,
+                    "zoom": 4
+                }
+            }
+        ],
+        "height": {
+            "minimum": 0,
+            "maximum": 10
+        }
+    }
+}
