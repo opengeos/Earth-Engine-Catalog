@@ -1,0 +1,166 @@
+{
+    "type": "Collection",
+    "id": "COPERNICUS/MARINE/GLOBAL_SEA_SURFACE/NRT_DAILY",
+    "stac_version": "1.1.0",
+    "description": "Multi Observation Global Ocean Sea Surface Salinity and Sea Surface Density\nis an oceanographic product that provides daily, global, and gap-free\nLevel-4 (L4) analyses of Sea Surface Salinity (SSS) and Sea Surface Density\n(SSD) at a high resolution of 1/8 degree. This product is generated\nby blending observations from multiple satellite missions\n(like SMOS and SMAP) with in-situ measurements\n(such as those from Argo floats and TSGs) using a sophisticated\nmultivariate optimal interpolation algorithm, thereby creating a long and\nconsistent time series that includes both\nhistorical (reprocessed) data and near-real-time updates.\nBy delivering these climate variables, the dataset is useful\nfor monitoring the global water cycle, studying changes in ocean circulation\ndriven by density variations, and serving as an input for climate\nmodeling and ocean forecasting systems.\n\nThis dataset provides the Near-Real-Time (NRT) version of the daily,\nglobal, Level-4 analysis for Sea Surface Salinity (SSS) and Sea Surface\nDensity (SSD).\n\nDocumentation:\n\n * [User's Guide](https://documentation.marine.copernicus.eu/PUM/CMEMS-MOB-PUM-015-013.pdf)\n\n * [Quality Information Document](https://documentation.marine.copernicus.eu/QUID/CMEMS-MOB-QUID-015-013.pdf)\n\n * [Copernicus Marine Datastore](https://data.marine.copernicus.eu/products)\n\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/COPERNICUS/COPERNICUS_MARINE_GLOBAL_SEA_SURFACE_NRT_DAILY",
+            "type": "text/html",
+            "title": "Run the example for COPERNICUS/MARINE/GLOBAL_SEA_SURFACE/NRT_DAILY in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/COPERNICUS/COPERNICUS_MARINE_GLOBAL_SEA_SURFACE_NRT_DAILY_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_MARINE_GLOBAL_SEA_SURFACE_NRT_DAILY#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_MARINE_GLOBAL_SEA_SURFACE_NRT_DAILY.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/catalog.json",
+            "type": "application/json",
+            "title": "COPERNICUS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:categories": [
+        "oceans"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "This dataset is released for use under Service Level Agreement (SLA),\nusing the acronym \"CMEMS\" or the shortened name \"Copernicus Marine Service\"\nboth denote the E.U. Copernicus Marine Environment Monitoring Service.\nHighlights and key features of the licence are provided in this document\n[License](https://marine.copernicus.eu/user-corner/service-commitments-and-licence)\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Copernicus Multi Observation Global Ocean Sea Surface Salinity and Sea Surface\nDensity: Global Ocean Satellite and In-Situ Observations, CNR (Rome, Italy) is\nproviding daily Sea Surface Salinity and Sea Surface Density analyses.\n[doi:10.48670/moi-00051](https://doi.org/10.48670/moi-00051)\n",
+    "gee:status": "ready",
+    "title": "Multi Observation Global Ocean Sea Surface Salinity and Sea Surface Density : Daily, Near Real Time",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-01-01T00:00:00Z",
+                    "2025-09-24T12:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "copernicus",
+        "marine",
+        "oceans"
+    ],
+    "providers": [
+        {
+            "name": "Copernicus",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.48670/moi-00051"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_MARINE_GLOBAL_SEA_SURFACE_NRT_DAILY"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Sea Surface Salinity",
+                "gee:units": "psu",
+                "name": "sos"
+            },
+            {
+                "description": "Sea Surface Salinity Error",
+                "gee:units": "psu",
+                "name": "sos_error"
+            },
+            {
+                "description": "Sea Surface Density",
+                "gee:units": "kg/m^3",
+                "name": "dos"
+            },
+            {
+                "description": "Sea Surface Density Error",
+                "gee:units": "kg/m^3",
+                "name": "dos_error"
+            },
+            {
+                "description": "Sea Surface Ice Fraction",
+                "gee:units": "%",
+                "name": "sea_ice_fraction"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "DOS",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "dos"
+                        ],
+                        "max": [
+                            1027.596
+                        ],
+                        "min": [
+                            1020.41
+                        ],
+                        "palette": [
+                            "040613",
+                            "121328",
+                            "3F59A5",
+                            "3E80C0",
+                            "3EADCB",
+                            "8CCBD6",
+                            "EAFDFD"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 52,
+                    "lon": 71,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            14000
+        ]
+    }
+}
