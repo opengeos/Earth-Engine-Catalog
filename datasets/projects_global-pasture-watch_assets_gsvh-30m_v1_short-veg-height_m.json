@@ -52,7 +52,6 @@
         "type": "cadence",
         "unit": "year"
     },
-    "gee:status": "beta",
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
     "sci:citation": "Parente, L., Hunter, M., Ho, Y., Bonannella, C. el al. (2025).\nGlobal Pasture Watch - Annual short vegetation height maps at\n30-m spatial resolution (2000\u20142022) (Version v1)\n[Data set]. Zenodo. [doi:https://doi.org/10.5281/zenodo.15198654](https://doi.org/10.5281/zenodo.15198654)\n",
@@ -64,6 +63,7 @@
         }
     ],
     "version": "1",
+    "gee:status": "ready",
     "title": "GPW Annual short vegetation height v1",
     "extent": {
         "spatial": {
