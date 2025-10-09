@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MERIT/DEM/v1_0_3",
     "stac_version": "1.1.0",
-    "description": "MERIT DEM a high accuracy global DEM at 3 arc second resolution (~90 m at\nthe equator) produced by eliminating major error components from existing DEMs\n(NASA SRTM3 DEM, JAXA AW3D DEM, Viewfinder Panoramas DEM).\n\nMERIT DEM separates absolute bias, stripe noise, speckle\nnoise and tree height bias using multiple satellite datasets and filtering techniques.\nAfter the error removal, land areas mapped with 2 m or better vertical accuracy\nwere increased from 39% to 58%. Significant improvements were found in flat regions\nwhere height errors larger than topography variability, and landscapes such as\nriver networks and hill-valley structures became clearly represented.\n\n'MERIT DEM was developed by processing the following products as baseline data:\n\n* [NASA SRTM3 DEM v2.1](https://dds.cr.usgs.gov/srtm/version2_1/SRTM3)\n* [JAXA AW3D - 30 m DEM v1](https://www.eorc.jaxa.jp/ALOS/en/aw3d30/index.htm)\n* [Viewfinder Panoramas DEM](http://www.viewfinderpanoramas.org/dem3.html)\n\nIn addition to the above baseline dems, these products were used as supplementary data:\n\n* [NASA-NSIDC ICESat/GLAS GLA14 data](https://nsidc.org/data/gla14)\n* [U-Maryland Landsat forest cover data](https://glad.earthengine.app/view/global-forest-change)\n* [NASA Global Forest height data](https://www.nasa.gov/topics/earth/features/forest-height-map.html)\n* [JAMSTEC/U-Tokyo G3WBM water body data](http://hydro.iis.u-tokyo.ac.jp/~yamadai/G3WBM/index.html)\n",
+    "description": "MERIT DEM a high accuracy global DEM at 3 arc second resolution (~90 m at\nthe equator) produced by eliminating major error components from existing DEMs\n(NASA SRTM3 DEM, JAXA AW3D DEM, Viewfinder Panoramas DEM).\n\nMERIT DEM separates absolute bias, stripe noise, speckle\nnoise and tree height bias using multiple satellite datasets and filtering techniques.\nAfter the error removal, land areas mapped with 2 m or better vertical accuracy\nwere increased from 39% to 58%. Significant improvements were found in flat regions\nwhere height errors larger than topography variability, and landscapes such as\nriver networks and hill-valley structures became clearly represented.\n\n'MERIT DEM was developed by processing the following products as baseline data:\n\n* [NASA SRTM3 DEM v2.1](https://dds.cr.usgs.gov/srtm/version2_1/SRTM3)\n* [JAXA AW3D - 30 m DEM v1](https://www.eorc.jaxa.jp/ALOS/en/aw3d30/index.htm)\n* [Viewfinder Panoramas DEM](https://www.viewfinderpanoramas.org/dem3.html)\n\nIn addition to the above baseline dems, these products were used as supplementary data:\n\n* [NASA-NSIDC ICESat/GLAS GLA14 data](https://nsidc.org/data/gla14)\n* [U-Maryland Landsat forest cover data](https://glad.earthengine.app/view/global-forest-change)\n* [NASA Global Forest height data](https://www.nasa.gov/topics/earth/features/forest-height-map.html)\n* [JAMSTEC/U-Tokyo G3WBM water body data](https://hydro.iis.u-tokyo.ac.jp/~yamadai/G3WBM/index.html)\n",
     "links": [
         {
             "rel": "root",
@@ -29,7 +29,7 @@
         },
         {
             "rel": "license",
-            "href": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/index.html",
+            "href": "https://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/index.html",
             "type": "text/html"
         },
         {
@@ -95,7 +95,7 @@
                 "licensor",
                 "producer"
             ],
-            "url": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/index.html"
+            "url": "https://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/index.html"
         },
         {
             "name": "Google Earth Engine",
