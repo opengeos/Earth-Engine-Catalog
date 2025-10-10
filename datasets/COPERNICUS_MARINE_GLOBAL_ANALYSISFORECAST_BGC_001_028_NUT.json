@@ -1,0 +1,942 @@
+{
+    "type": "Collection",
+    "id": "COPERNICUS/MARINE/GLOBAL_ANALYSISFORECAST_BGC_001_028/NUT",
+    "stac_version": "1.1.0",
+    "description": "The Operational Mercator Ocean biogeochemical global ocean analysis and\nforecast system at 1/4 degree is providing 10 days of 3D global ocean\nforecasts updated weekly. The time series is aggregated in time, in order\nto reach a two full year's time series sliding window. This product\nincludes daily and monthly mean files of biogeochemical parameters\n(chlorophyll, nitrate, phosphate, silicate, dissolved oxygen, dissolved\niron, primary production, phytoplankton, zooplankton, PH, and surface\npartial pressure of carbon dioxide) over the global ocean. The global\nocean output files are displayed with a 1/4 degree horizontal resolution\nwith regular longitude/latitude equirectangular projection.\nThese products are provided on 50 vertical levels with\ndepths ranging from 0.49m to 5727.92m.\n<br><br> This dataset consists of nitrate, phosphate,\ndissolved silicate, and dissolved iron concentrations.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/COPERNICUS/COPERNICUS_MARINE_GLOBAL_ANALYSISFORECAST_BGC_001_028_NUT",
+            "type": "text/html",
+            "title": "Run the example for COPERNICUS/MARINE/GLOBAL_ANALYSISFORECAST_BGC_001_028/NUT in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/COPERNICUS/COPERNICUS_MARINE_GLOBAL_ANALYSISFORECAST_BGC_001_028_NUT_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_MARINE_GLOBAL_ANALYSISFORECAST_BGC_001_028_NUT#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_MARINE_GLOBAL_ANALYSISFORECAST_BGC_001_028_NUT.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/catalog.json",
+            "type": "application/json",
+            "title": "COPERNICUS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:categories": [
+        "oceans"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "The data is provided free of charge by the Copernicus Marine Service.\nUsers must acknowledge the Copernicus Marine Service as the data source\nwhen using the data. More details on the terms of use can be found on\nthe [Copernicus Marine Service website](https://marine.copernicus.eu/user-corner/service-commitments-and-licence).\n",
+    "gee:type": "image_collection",
+    "sci:citation": "E.U. Copernicus Marine Service Information.\n[https://doi.org/10.48670/moi-00015](https://doi.org/10.48670/moi-00015)\n",
+    "gee:status": "ready",
+    "title": "Copernicus Global Ocean Bio-Geo-Chemical Forecast - NUT",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-01-01T00:00:00Z",
+                    "2025-09-26T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "copernicus",
+        "daily",
+        "forecast",
+        "marine",
+        "ocean",
+        "oceans"
+    ],
+    "providers": [
+        {
+            "name": "Copernicus",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://marine.copernicus.eu/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_MARINE_GLOBAL_ANALYSISFORECAST_BGC_001_028_NUT"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Global BGC NUT Forecast - Nitrate",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "no3_depth1"
+                        ],
+                        "max": [
+                            20
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "black",
+                            "blue",
+                            "cyan",
+                            "green",
+                            "yellow",
+                            "red",
+                            "white"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 73.63,
+                    "lon": -140.5,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            27750
+        ],
+        "fe_depth1": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth10": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth11": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth12": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth13": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth14": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth15": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth16": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth17": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth18": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth19": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth2": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth20": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth21": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth22": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth23": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth24": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth25": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth26": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth27": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth28": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth29": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth3": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth30": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth31": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth32": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth33": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth34": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth35": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth36": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth37": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth38": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth39": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth4": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth40": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth41": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth42": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth43": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth44": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth45": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth46": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth47": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth48": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth49": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth5": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth50": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth6": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth7": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth8": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "fe_depth9": {
+            "minimum": 0,
+            "maximum": 0.01
+        },
+        "no3_depth1": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth10": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth11": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth12": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth13": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth14": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth15": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth16": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth17": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth18": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth19": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth2": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth20": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth21": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth22": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth23": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth24": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth25": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth26": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth27": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth28": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth29": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth3": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth30": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth31": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth32": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth33": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth34": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth35": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth36": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth37": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth38": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth39": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth4": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth40": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth41": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth42": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth43": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth44": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth45": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth46": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth47": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth48": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth49": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth5": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth50": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth6": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth7": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth8": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "no3_depth9": {
+            "minimum": 0,
+            "maximum": 126.3
+        },
+        "po4_depth1": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth10": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth11": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth12": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth13": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth14": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth15": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth16": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth17": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth18": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth19": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth2": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth20": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth21": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth22": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth23": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth24": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth25": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth26": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth27": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth28": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth29": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth3": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth30": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth31": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth32": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth33": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth34": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth35": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth36": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth37": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth38": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth39": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth4": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth40": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth41": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth42": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth43": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth44": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth45": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth46": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth47": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth48": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth49": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth5": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth50": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth6": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth7": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth8": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "po4_depth9": {
+            "minimum": 0,
+            "maximum": 9.8
+        },
+        "si_depth1": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth10": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth11": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth12": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth13": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth14": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth15": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth16": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth17": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth18": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth19": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth2": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth20": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth21": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth22": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth23": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth24": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth25": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth26": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth27": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth28": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth29": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth3": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth30": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth31": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth32": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth33": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth34": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth35": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth36": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth37": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth38": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth39": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth4": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth40": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth41": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth42": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth43": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth44": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth45": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth46": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth47": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth48": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth49": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth5": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth50": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth6": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth7": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth8": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        },
+        "si_depth9": {
+            "minimum": 0.26,
+            "maximum": 239.1
+        }
+    }
+}

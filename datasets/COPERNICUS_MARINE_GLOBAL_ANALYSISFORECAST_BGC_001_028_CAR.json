@@ -1,0 +1,542 @@
+{
+    "type": "Collection",
+    "id": "COPERNICUS/MARINE/GLOBAL_ANALYSISFORECAST_BGC_001_028/CAR",
+    "stac_version": "1.1.0",
+    "description": "The Operational Mercator Ocean biogeochemical global ocean analysis and\nforecast system at 1/4 degree is providing 10 days of 3D global ocean\nforecasts updated weekly. The time series is aggregated in time, in order\nto reach a two full year's time series sliding window. This product\nincludes daily and monthly mean files of biogeochemical parameters\n(chlorophyll, nitrate, phosphate, silicate, dissolved oxygen, dissolved\niron, primary production, phytoplankton, zooplankton, PH, and surface\npartial pressure of carbon dioxide) over the global ocean. The global\nocean output files are displayed with a 1/4 degree horizontal resolution\nwith regular longitude/latitude equirectangular projection.\nThese products are provided on 50 vertical levels with\ndepths ranging from 0.49m to 5727.92m.\n<br><br> This dataset consists of pH and dissolved\ninorganic carbon.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/COPERNICUS/COPERNICUS_MARINE_GLOBAL_ANALYSISFORECAST_BGC_001_028_CAR",
+            "type": "text/html",
+            "title": "Run the example for COPERNICUS/MARINE/GLOBAL_ANALYSISFORECAST_BGC_001_028/CAR in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/COPERNICUS/COPERNICUS_MARINE_GLOBAL_ANALYSISFORECAST_BGC_001_028_CAR_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_MARINE_GLOBAL_ANALYSISFORECAST_BGC_001_028_CAR#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_MARINE_GLOBAL_ANALYSISFORECAST_BGC_001_028_CAR.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/catalog.json",
+            "type": "application/json",
+            "title": "COPERNICUS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:categories": [
+        "oceans"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "The data is provided free of charge by the Copernicus Marine Service.\nUsers must acknowledge the Copernicus Marine Service as the data source\nwhen using the data. More details on the terms of use can be found on\nthe [Copernicus Marine Service website](https://marine.copernicus.eu/user-corner/service-commitments-and-licence).\n",
+    "gee:type": "image_collection",
+    "sci:citation": "E.U. Copernicus Marine Service Information.\n[https://doi.org/10.48670/moi-00015](https://doi.org/10.48670/moi-00015)\n",
+    "gee:status": "ready",
+    "title": "Copernicus Global Ocean Bio-Geo-Chemical Forecast - CAR",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-01-01T00:00:00Z",
+                    "2025-09-19T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "copernicus",
+        "daily",
+        "forecast",
+        "marine",
+        "ocean",
+        "oceans"
+    ],
+    "providers": [
+        {
+            "name": "Copernicus",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://marine.copernicus.eu/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_MARINE_GLOBAL_ANALYSISFORECAST_BGC_001_028_CAR"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Global BGC CAR Forecast",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "ph_depth1"
+                        ],
+                        "max": [
+                            8.2
+                        ],
+                        "min": [
+                            8
+                        ],
+                        "palette": [
+                            "black",
+                            "blue",
+                            "cyan",
+                            "green",
+                            "yellow",
+                            "red",
+                            "white"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 73.63,
+                    "lon": -140.5,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            27750
+        ],
+        "dissic_depth1": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth10": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth11": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth12": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth13": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth14": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth15": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth16": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth17": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth18": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth19": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth2": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth20": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth21": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth22": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth23": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth24": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth25": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth26": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth27": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth28": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth29": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth3": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth30": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth31": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth32": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth33": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth34": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth35": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth36": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth37": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth38": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth39": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth4": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth40": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth41": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth42": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth43": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth44": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth45": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth46": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth47": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth48": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth49": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth5": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth50": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth6": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth7": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth8": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "dissic_depth9": {
+            "minimum": 0.1,
+            "maximum": 10.358
+        },
+        "ph_depth1": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth10": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth11": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth12": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth13": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth14": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth15": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth16": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth17": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth18": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth19": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth2": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth20": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth21": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth22": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth23": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth24": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth25": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth26": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth27": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth28": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth29": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth3": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth30": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth31": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth32": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth33": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth34": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth35": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth36": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth37": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth38": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth39": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth4": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth40": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth41": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth42": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth43": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth44": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth45": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth46": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth47": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth48": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth49": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth5": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth50": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth6": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth7": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth8": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        },
+        "ph_depth9": {
+            "minimum": 6.1,
+            "maximum": 8.6
+        }
+    }
+}

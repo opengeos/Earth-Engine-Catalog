@@ -1,0 +1,153 @@
+{
+    "type": "Collection",
+    "id": "COPERNICUS/MARINE/GLOBAL_ANALYSISFORECAST_BGC_001_028/CO2",
+    "stac_version": "1.1.0",
+    "description": "The Operational Mercator Ocean biogeochemical global ocean analysis and\nforecast system at 1/4 degree is providing 10 days of 3D global ocean\nforecasts updated weekly. The time series is aggregated in time, in order\nto reach a two full year's time series sliding window. This product\nincludes daily and monthly mean files of biogeochemical parameters\n(chlorophyll, nitrate, phosphate, silicate, dissolved oxygen, dissolved\niron, primary production, phytoplankton, zooplankton, PH, and surface\npartial pressure of carbon dioxide) over the global ocean. The global\nocean output files are displayed with a 1/4 degree horizontal resolution\nwith regular longitude/latitude equirectangular projection.\n<br><br> This dataset consists of surface partial pressure\nof carbon dioxide.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/COPERNICUS/COPERNICUS_MARINE_GLOBAL_ANALYSISFORECAST_BGC_001_028_CO2",
+            "type": "text/html",
+            "title": "Run the example for COPERNICUS/MARINE/GLOBAL_ANALYSISFORECAST_BGC_001_028/CO2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/COPERNICUS/COPERNICUS_MARINE_GLOBAL_ANALYSISFORECAST_BGC_001_028_CO2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_MARINE_GLOBAL_ANALYSISFORECAST_BGC_001_028_CO2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_MARINE_GLOBAL_ANALYSISFORECAST_BGC_001_028_CO2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/catalog.json",
+            "type": "application/json",
+            "title": "COPERNICUS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:categories": [
+        "oceans"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "The data is provided free of charge by the Copernicus Marine Service.\nUsers must acknowledge the Copernicus Marine Service as the data source\nwhen using the data. More details on the terms of use can be found on\nthe [Copernicus Marine Service website](https://marine.copernicus.eu/user-corner/service-commitments-and-licence).\n",
+    "gee:type": "image_collection",
+    "sci:citation": "E.U. Copernicus Marine Service Information.\n[https://doi.org/10.48670/moi-00015](https://doi.org/10.48670/moi-00015)\n",
+    "gee:status": "ready",
+    "title": "Copernicus Global Ocean Bio-Geo-Chemical Forecast - CO2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-01-01T00:00:00Z",
+                    "2025-09-19T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "copernicus",
+        "daily",
+        "forecast",
+        "marine",
+        "ocean",
+        "oceans"
+    ],
+    "providers": [
+        {
+            "name": "Copernicus",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://marine.copernicus.eu/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_MARINE_GLOBAL_ANALYSISFORECAST_BGC_001_028_CO2"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Surface Partial Pressure of Carbon Dioxide",
+                "gee:units": "Pa",
+                "name": "spco2_depth1"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Global BGC CO2 Forecast",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "spco2_depth1"
+                        ],
+                        "max": [
+                            40
+                        ],
+                        "min": [
+                            20
+                        ],
+                        "palette": [
+                            "black",
+                            "blue",
+                            "cyan",
+                            "green",
+                            "yellow",
+                            "red",
+                            "white"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 73.63,
+                    "lon": -140.5,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            27750
+        ],
+        "spco2_depth1": {
+            "minimum": -14,
+            "maximum": 1460
+        }
+    }
+}
