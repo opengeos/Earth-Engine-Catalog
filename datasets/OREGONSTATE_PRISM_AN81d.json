@@ -77,7 +77,7 @@
             "interval": [
                 [
                     "1981-01-01T00:00:00Z",
-                    "2025-10-13T12:00:00Z"
+                    "2025-10-14T12:00:00Z"
                 ]
             ]
         }
@@ -177,8 +177,8 @@
                 "type": "STRING_LIST"
             },
             {
-                "description": "Data generated within 30 days of observation have\nthe status \"early\". Data generated within 1-6 months of observation\nmay have the status \"provisional\" and data older than 6 months\nare marked as \"permanent\".\n",
-                "name": "status",
+                "description": "An integer (1-8), stored as a string, indicating how many times\na grid has been re-modeled in the 6-month window. Grids are considered\nstable after 6 months.\n",
+                "name": "PRISM_DATASET_RELEASE_NUMBER",
                 "type": "STRING"
             }
         ],

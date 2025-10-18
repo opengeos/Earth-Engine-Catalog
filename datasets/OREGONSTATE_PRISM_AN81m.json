@@ -177,8 +177,8 @@
                 "type": "STRING_LIST"
             },
             {
-                "description": "Data generated within 30 days of observation have\nthe status \"early\". Data generated within 1-6 months of observation\nmay have the status \"provisional\" and data older than 6 months\nare marked as \"permanent\".\n",
-                "name": "status",
+                "description": "An integer (1-7), stored as a string, indicating how many times a\ngrid has been re-modeled in the 6-month window. Grids are\nconsidered stable after 6 months.\n",
+                "name": "PRISM_DATASET_RELEASE_NUMBER",
                 "type": "STRING"
             }
         ],
