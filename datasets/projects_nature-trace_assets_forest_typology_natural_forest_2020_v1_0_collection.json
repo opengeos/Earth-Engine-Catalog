@@ -106,7 +106,7 @@
     "summaries": {
         "eo:bands": [
             {
-                "description": "Natural forest probabilities (scaled to [0-1]).\n",
+                "description": "Natural forest probabilities (scaled to [0-250]).\n",
                 "name": "B0"
             }
         ],
@@ -142,7 +142,7 @@
         ],
         "B0": {
             "minimum": 0,
-            "maximum": 1
+            "maximum": 250
         }
     }
 }
