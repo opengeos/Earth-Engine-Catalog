@@ -1,0 +1,166 @@
+{
+    "type": "Collection",
+    "id": "LANDSAT/COMPOSITES/C02/T1_L2_8DAY",
+    "stac_version": "1.1.0",
+    "description": "These Landsat Collection 2 Tier 1 Level 2 composites are made from Tier 1\nLevel 2 orthorectified scenes, and include the SR bands:\nblue, green, red, nir, swir1, swir2, and thermal.\n\nThese composites are created from\nall the scenes in each\n8-day period beginning from the first day of the year and continuing\nto the 360th day of the year.  The last composite of the year,\nbeginning on day 361, will overlap the first composite of the\nfollowing year by 3 days.  All the images from each 8-day period are\nincluded in the composite, with the most recent pixel as the composite value.\n\nNotes:\n\n* The code used to create the composites\n  [can be seen here](https://github.com/google/earthengine-catalog/blob/main/pipelines/landsat.py).\n\n* Only daytime images with WRS_ROW < 122 are included.\n\n* For Landsat 7 , images after 2017-01-01 are excluded due to orbital drift.\n\n* For Landsat 8, images before 2013-05-01 are excluded due to pointing issues.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/LANDSAT/LANDSAT_COMPOSITES_C02_T1_L2_8DAY",
+            "type": "text/html",
+            "title": "Run the example for LANDSAT/COMPOSITES/C02/T1_L2_8DAY in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/LANDSAT/LANDSAT_COMPOSITES_C02_T1_L2_8DAY_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_COMPOSITES_C02_T1_L2_8DAY#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_COMPOSITES_C02_T1_L2_8DAY.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/catalog.json",
+            "type": "application/json",
+            "title": "LANDSAT"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
+    "gee:interval": {
+        "interval": 8,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:is_derived": true,
+    "gee:min_zoom_level": 4,
+    "gee:terms_of_use": "Landsat datasets are federally created data\nand therefore reside in the public domain and may be used, transferred, or reproduced without copyright restriction.\n\nAcknowledgement or credit of the USGS as data source should be provided\nby including a line of text citation such as the example shown below.\n\n(Product, Image, Photograph, or Dataset Name) courtesy of\nthe U.S. Geological Survey\n\nExample: Landsat-7 image courtesy of the U.S. Geological Survey\n\nSee the\n[USGS Visual Identity System Guidance](https://www.usgs.gov/information-policies-and-instructions/usgs-visual-identity-system)\nfor further details on proper citation and acknowledgement of USGS products.\n",
+    "gee:type": "image_collection",
+    "version": "COMPOSITES/C02",
+    "gee:status": "ready",
+    "title": "Landsat Collection 2 Tier 1 Level 2 8-Day Composite",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1984-01-01T00:00:00Z",
+                    "2025-11-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "landsat",
+        "satellite-imagery",
+        "sr",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "Google",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://earthengine.google.com"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_COMPOSITES_C02_T1_L2_8DAY"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Blue (surface reflectance)",
+                "name": "blue"
+            },
+            {
+                "description": "Green (surface reflectance)",
+                "name": "green"
+            },
+            {
+                "description": "Red (surface reflectance)",
+                "name": "red"
+            },
+            {
+                "description": "Near infrared (surface reflectance)",
+                "name": "nir"
+            },
+            {
+                "description": "Shortwave infrared 1 (surface reflectance)",
+                "name": "swir1"
+            },
+            {
+                "description": "Shortwave infrared 2 (surface reflectance)",
+                "name": "swir2"
+            },
+            {
+                "description": "Surface temperature",
+                "gee:units": "K",
+                "name": "thermal"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "True Color Composite",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "red",
+                            "green",
+                            "blue"
+                        ],
+                        "max": [
+                            0.3
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 46.529,
+                    "lon": 6.746,
+                    "zoom": 6
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    }
+}

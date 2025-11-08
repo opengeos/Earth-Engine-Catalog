@@ -1,0 +1,249 @@
+{
+    "type": "Collection",
+    "id": "projects/nature-trace/assets/species_distribution_models/australia_mammals/v0",
+    "stac_version": "1.1.0",
+    "description": "**Note: This dataset is not yet peer-reviewed.**\n\nThese species distribution model outputs, developed by Google in\ncollaboration with [QCIF](https://www.qcif.edu.au/) and\n[EcoCommons](https://www.ecocommons.org.au/), represent estimates of\nspecies\u2019 relative occurrence likelihoods (i.e., higher values indicate a\nhigher likelihood that the species would be detected at a location, for a\ngiven survey methodology and given survey effort, compared to lower values).\n\nThey were generated using a multi-species\n[heterogenous graph neural network model](https://ar5iv.labs.arxiv.org/html/2503.11900)\ntrained jointly on species observation data from the\n[Global Biodiversity Information Facility](https://www.gbif.org/) for 174\nAustralian mammals from 2017 - 2024 (inclusive), combined with species\n[trait](https://figshare.com/articles/dataset/COMBINE_a_Coalesced_Mammal_Database_of_Intrinsic_and_extrinsic_traits/13028255/4) and taxonomy data for the same species from COMBINE,\nand satellite and environmental as embedded by\n[AlphaEarth Foundations](https://deepmind.google/discover/blog/alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail/).\nEstimates of species\u2019 geographical distributions are made at c. 1km resolution (S2 cells level 13).\n\nThese distributions are intended to support conservation initiatives like\nthe [Global Biodiversity Framework](https://www.cbd.int/gbf/targets), which\nincludes [30x30](https://en.wikipedia.org/wiki/30_by_30). It is likely that\ndistributions could be significantly improved via fine tuning with\nadditional species observation data, where this is available.\n\nLimitations:\n\n* Experimental Status: These results are intended as demonstrations of early\n  research and have not yet been peer-reviewed.\n* Aggregate vs. Specific Validation: Model outputs have been evaluated\n  collectively against expert-produced Area of Habitation maps (mean ROC AUC\n  = 0.89 over all species,  AUC ROC > 0.9 for each of the released\n  species), but have not been vetted by species experts on a\n  species-by-species basis.\n* Presence-Only Data Constraints: These models are trained primarily on\n  presence-only data. Outputs represent a relative likelihood of detection\n  given current survey efforts, rather than true probability of occupancy.\n* Input Data Bias: The accuracy of these maps is intrinsically linked to the\n  input datasets. Biodiversity observation data is known to contain spatial,\n  temporal, and taxonomic biases (often reflecting accessibility near roads\n  or population centers rather than true biological distribution). The\n  availability of species observation data has also been found to [reflect\n  social and political inequities](https://www.science.org/doi/abs/10.1126/science.adh8874).\n  These biases may be propagated into the final model outputs.\n\nThis experimental preview was released November 5, 2025.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/nature-trace/projects_nature-trace_assets_species_distribution_models_australia_mammals_v0",
+            "type": "text/html",
+            "title": "Run the example for projects/nature-trace/assets/species_distribution_models/australia_mammals/v0 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/nature-trace/projects_nature-trace_assets_species_distribution_models_australia_mammals_v0_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_species_distribution_models_australia_mammals_v0#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/nature-trace/projects_nature-trace_assets_species_distribution_models_australia_mammals_v0.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/nature-trace/catalog.json",
+            "type": "application/json",
+            "title": "nature-trace"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:categories": [
+        "ecosystems"
+    ],
+    "gee:terms_of_use": "All materials are licensed under the [Creative Commons Attribution 4.0 International\nLicense (CC-BY 4.0)](https://creativecommons.org/licenses/by/4.0/).\n\nAttribution: \"Dataset developed by Google in collaboration with QCIF and\nEcoCommons.\"\n\nUnless required by applicable law or agreed to in writing, all materials distributed here\nunder the CC-BY license are distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR\nCONDITIONS OF ANY KIND, either express or implied.\nSee the [license](https://creativecommons.org/licenses/by/4.0/legalcode)\nfor the specific language governing permissions and limitations under those licenses.\n\nThis is not an official Google product.\n",
+    "gee:type": "image",
+    "sci:citation": "Google LLC, \"Australian mammal species distributions\" (2025). Available online at https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_species_distribution_models_australia_mammals_v0.\n",
+    "gee:status": "ready",
+    "title": "Species Distribution, Australia Mammals",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    112.9,
+                    -43.7,
+                    153.7,
+                    -10.4
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-11-05T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "alphaearth-derived",
+        "biodiversity",
+        "conservation",
+        "ecosystems",
+        "pre-review",
+        "species"
+    ],
+    "providers": [
+        {
+            "name": "Google",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://deepmind.google/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_species_distribution_models_australia_mammals_v0"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Greater Glider Occurrence",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "GreaterGlider"
+                        ],
+                        "max": [
+                            250
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "0000FF",
+                            "004FFF",
+                            "009DFF",
+                            "00ECFF",
+                            "00FFC4",
+                            "00FF75",
+                            "00FF27",
+                            "28FF00",
+                            "76FF00",
+                            "C5FF00",
+                            "FFEB00",
+                            "FF9C00",
+                            "FF4E00",
+                            "FF0000"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -26.6,
+                    "lon": 133.4,
+                    "zoom": 4
+                }
+            }
+        ],
+        "gsd": [
+            1000
+        ],
+        "AgileAntechinus": {
+            "minimum": 0,
+            "maximum": 254.48
+        },
+        "AustralianSwampRat": {
+            "minimum": 0,
+            "maximum": 253.85
+        },
+        "BlackFlyingFox": {
+            "minimum": 0,
+            "maximum": 254.94
+        },
+        "BrownAntechinus": {
+            "minimum": 0,
+            "maximum": 254.79
+        },
+        "Brush-TailedPhascogale": {
+            "minimum": 0,
+            "maximum": 242.99
+        },
+        "Brush-TailedRock-Wallaby": {
+            "minimum": 0,
+            "maximum": 252.78
+        },
+        "BushRat": {
+            "minimum": 0,
+            "maximum": 254.55
+        },
+        "CommonRingtailPossum": {
+            "minimum": 0,
+            "maximum": 254.98
+        },
+        "CommonWombat": {
+            "minimum": 0,
+            "maximum": 253.88
+        },
+        "EasternGreyKangaroo": {
+            "minimum": 0,
+            "maximum": 253.93
+        },
+        "GreaterGlider": {
+            "minimum": 0,
+            "maximum": 254.84
+        },
+        "HastingsRiverMouse": {
+            "minimum": 0,
+            "maximum": 243.4
+        },
+        "LeadbeatersPossum": {
+            "minimum": 0,
+            "maximum": 254.99
+        },
+        "Long-NosedBandicoot": {
+            "minimum": 0,
+            "maximum": 254.13
+        },
+        "Long-NosedPotoroo": {
+            "minimum": 0,
+            "maximum": 252.91
+        },
+        "LumholtzsTree-Kangaroo": {
+            "minimum": 0,
+            "maximum": 253.14
+        },
+        "MountainBrushtailPossum": {
+            "minimum": 0,
+            "maximum": 254.95
+        },
+        "NorthernBrownBandicoot": {
+            "minimum": 0,
+            "maximum": 247.76
+        },
+        "Platypus": {
+            "minimum": 0,
+            "maximum": 254.59
+        },
+        "Short-EaredPossum": {
+            "minimum": 0,
+            "maximum": 254.36
+        },
+        "SouthernBrownBandicoot": {
+            "minimum": 0,
+            "maximum": 254.41
+        },
+        "SquirrelGlider": {
+            "minimum": 0,
+            "maximum": 234.98
+        },
+        "SwampWallaby": {
+            "minimum": 0,
+            "maximum": 253.3
+        },
+        "WesternGreyKangaroo": {
+            "minimum": 0,
+            "maximum": 254.99
+        },
+        "Yellow-FootedAntechinus": {
+            "minimum": 0,
+            "maximum": 254.58
+        }
+    }
+}

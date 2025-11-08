@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MODIS/061/MOD09CMG",
     "stac_version": "1.1.0",
-    "description": "The MOD09CMG Version 6.1 product provides an estimate of the surface\nspectral reflectance of Terra Moderate Resolution Imaging Spectroradiometer\n(MODIS) Bands 1 through 7, resampled to 5600 meter pixel resolution and\ncorrected for atmospheric conditions such as gasses, aerosols, and Rayleigh\nscattering. The MOD09CMG data product provides 25 layers including MODIS\nbands 1 through 7; Brightness Temperature data from thermal bands 20, 21,\n31, and 32; along with Quality Assurance (QA) and observation bands.\nThis product is based on a Climate Modeling Grid (CMG) for use in climate\nsimulation models.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/925/MOD09_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/305/MOD09_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MOD09CMG)\n",
+    "description": "The MOD09CMG Version 6.1 product provides an estimate of the surface\nspectral reflectance of Terra Moderate Resolution Imaging Spectroradiometer\n(MODIS) Bands 1 through 7, resampled to 5600 meter pixel resolution and\ncorrected for atmospheric conditions such as gasses, aerosols, and Rayleigh\nscattering. The MOD09CMG data product provides 25 layers including MODIS\nbands 1 through 7; Brightness Temperature data from thermal bands 20, 21,\n31, and 32; along with Quality Assurance (QA) and observation bands.\nThis product is based on a Climate Modeling Grid (CMG) for use in climate\nsimulation models.\n\nNote that scale factors and offsets described in the MODIS documentation\nfor MOD09CMG bands are already applied to assets ingested into Earth\nEngine.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/925/MOD09_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/305/MOD09_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MOD09CMG)\n",
     "links": [
         {
             "rel": "root",
@@ -81,7 +81,7 @@
             "interval": [
                 [
                     "2000-02-24T00:00:00Z",
-                    "2025-11-04T00:00:00Z"
+                    "2025-11-05T00:00:00Z"
                 ]
             ]
         }
