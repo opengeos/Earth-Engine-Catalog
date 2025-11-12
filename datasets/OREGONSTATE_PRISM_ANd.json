@@ -179,7 +179,7 @@
                 "type": "STRING_LIST"
             },
             {
-                "description": "An integer (1-8) per band, indicating how many times\na grid has been re-modeled in the 6-month window. Grids are\nconsidered stable after 6 months. This property is not present on\nAN81 data.\n",
+                "description": "An integer (1-8) per band, indicating how many times\na grid has been re-modeled within the 6-month window. Grids are\nconsidered stable after 6 months. This property is not present on\nAN81 data.\n",
                 "name": "PRISM_DATASET_RELEASE_NUMBER",
                 "type": "INT_LIST"
             },
