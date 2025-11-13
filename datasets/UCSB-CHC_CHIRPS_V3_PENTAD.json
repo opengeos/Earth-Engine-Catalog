@@ -1,0 +1,173 @@
+{
+    "type": "Collection",
+    "id": "UCSB-CHC/CHIRPS/V3/PENTAD",
+    "stac_version": "1.1.0",
+    "description": "The Climate Hazards Center Infrared Precipitation with Stations (CHIRPS v3)\nis a 40+ year, high-resolution quasi-global rainfall dataset. It spans\n60&deg;N to 60&deg;S and covers all longitudes, providing data from 1981 to\nnear-present. CHIRPS v3 combines satellite-based thermal infrared rainfall\nestimates with in-situ station observations to produce a 0.05&deg; gridded\nrainfall time series over land. This is version 3.0 of the dataset, for more\ninformation see [the CHC page](https://www.chc.ucsb.edu/data/chirps3).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/UCSB-CHC/UCSB-CHC_CHIRPS_V3_PENTAD",
+            "type": "text/html",
+            "title": "Run the example for UCSB-CHC/CHIRPS/V3/PENTAD in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/UCSB-CHC/UCSB-CHC_CHIRPS_V3_PENTAD_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/UCSB-CHC_CHIRPS_V3_PENTAD#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UCSB-CHC/UCSB-CHC_CHIRPS_V3_PENTAD.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UCSB-CHC/catalog.json",
+            "type": "application/json",
+            "title": "UCSB-CHC"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "precipitation"
+    ],
+    "gee:interval": {
+        "description": "Each asset spans a pentad. Each of first 5 pentads in a month\nhave 5 days. The last pentad contains all the days from the 26th to the\nend of the month.\n",
+        "interval": 1,
+        "name": "pentad",
+        "type": "cadence",
+        "unit": "custom_time_unit"
+    },
+    "gee:terms_of_use": "This dataset is in the public domain. To the extent possible under law,\n[Pete Peterson](https://chc.ucsb.edu/people/pete-peterson)\nhas waived all copyright and related or neighboring rights to\nClimate Hazards Center Infrared Precipitation with Stations (CHIRPS).\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Climate Hazards Center Infrared Precipitation with Stations version 3.\nCHIRPS3 Data Repository [doi:10.15780/G2JQ0P](https://doi.org/10.15780/G2JQ0P) (2025).\n",
+    "version": "3.0",
+    "gee:status": "ready",
+    "title": "CHIRPS Precipitation Pentad: Climate Hazards Center InfraRed Precipitation With Station Data (Version 3.0)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60,
+                    180,
+                    60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1981-01-01T00:00:00Z",
+                    "2025-09-26T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "chc",
+        "chg",
+        "climate",
+        "geophysical",
+        "precipitation",
+        "ucsb",
+        "weather"
+    ],
+    "providers": [
+        {
+            "name": "UCSB/CHC",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.chc.ucsb.edu/data/chirps3"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/UCSB-CHC_CHIRPS_V3_PENTAD"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Precipitation",
+                "gee:units": "mm/pentad",
+                "name": "precipitation"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Month",
+                "name": "month",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Pentad",
+                "name": "pentad",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Year",
+                "name": "year",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Precipitation",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "precipitation"
+                        ],
+                        "max": [
+                            112
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "001137",
+                            "0aab1e",
+                            "e7eb05",
+                            "ff4a2d",
+                            "e90000"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 7.71,
+                    "lon": 17.93,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            5566
+        ],
+        "precipitation": {
+            "minimum": 0,
+            "maximum": 1072.43
+        }
+    }
+}
