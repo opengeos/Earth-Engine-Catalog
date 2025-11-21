@@ -1,0 +1,252 @@
+{
+    "type": "Collection",
+    "id": "OPERA/RTC/L2_V1/S1_STATIC",
+    "stac_version": "1.1.0",
+    "description": "This product contains static radar geometry layers associated with the\n[OPERA Radiometric Terrain Corrected SAR Backscatter from Sentinel-1 dataset](OPERA_RTC_L2_V1_S1).\n\nDue to the S1 mission\u2019s narrow orbital tube, radar-geometry layers such as\nincidence angle, local incidence angle, number of looks, and RTC Area\nNormalization Factor (ANF) vary slightly over time for each position on the\nground, and therefore are considered static. These static layers are\nprovided separately from the OPERA RTC-S1 product, as they are produced\nonly once or a limited number of times, to account for changes in the DEM,\nin the S1 orbit, or in the static-layers generation algorithm.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OPERA/OPERA_RTC_L2_V1_S1_STATIC",
+            "type": "text/html",
+            "title": "Run the example for OPERA/RTC/L2_V1/S1_STATIC in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/OPERA/OPERA_RTC_L2_V1_S1_STATIC_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/OPERA_RTC_L2_V1_S1_STATIC#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OPERA/OPERA_RTC_L2_V1_S1_STATIC.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OPERA/catalog.json",
+            "type": "application/json",
+            "title": "OPERA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "This dataset is openly shared, without restriction, in accordance with\nthe [EOSDIS Data Use and Citation Guidance](https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance)\n",
+    "gee:type": "image_collection",
+    "sci:citation": "NASA/JPL/OPERA. (2023). OPERA Radiometric Terrain Corrected SAR Backscatter\nfrom Sentinel-1 Static Layers validated product (Version 1) [Data set].\nNASA Alaska Satellite Facility Distributed Active Archive Center.\n[doi:10.5067/SNWG/OPERA_L2_RTC-S1-STATIC_V1](https://doi.org/10.5067/SNWG/OPERA_L2_RTC-S1-STATIC_V1)\n",
+    "sci:doi": "10.5067/SNWG/OPERA_L2_RTC-S1-STATIC_V1",
+    "version": "1.0",
+    "title": "OPERA Radiometric Terrain-Corrected SAR Backscatter from Sentinel-1 Static Layers V1.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-04-03T00:00:00Z",
+                    "2014-04-04T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "jpl",
+        "nasa",
+        "opera",
+        "sar",
+        "satellite-imagery",
+        "sentinel1-derived"
+    ],
+    "providers": [
+        {
+            "name": "NASA JPL",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.jpl.nasa.gov/go/opera"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/OPERA_RTC_L2_V1_S1_STATIC"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Angle between LOS vector and terrain normal vector at the\ntarget provided in the same geographic grid as the geocoded imagery.\n",
+                "gee:units": "deg",
+                "name": "local_incidence_angle"
+            },
+            {
+                "description": "Angle between LOS vector and the ellipsoid normal at the target\nprovided in the same geographic grid as the geocoded imagery.\n",
+                "gee:units": "deg",
+                "name": "incidence_angle"
+            },
+            {
+                "description": "The number of radar samples used to compute each RTC-S1 imagery\npixel, provided in the same geographic grid as the RTC-S1 product\nimagery.\n",
+                "name": "number_of_looks"
+            },
+            {
+                "description": "The factors to normalize the gamma0 backscatter to beta0, provided in\nthe same grid as the corresponding RTC-S1 imagery.\n",
+                "name": "rtc_anf_gamma0_to_beta0"
+            },
+            {
+                "description": "The factors to normalize the gamma0 backscatter to sigma0, provided\nin the same grid as the associated RTC-S1 imagery.\n",
+                "name": "rtc_anf_gamma0_to_sigma0"
+            },
+            {
+                "description": "Mask layer containing valid/invalid, layover, and shadow\nclassification computed using the RTC-S1 burst orbit,\nprovided over the same geographic grid as the associated\ngeocoded imagery.\n",
+                "gee:classes": [
+                    {
+                        "color": "000000",
+                        "description": "Valid sample not affected by layover or shadow",
+                        "value": 0
+                    },
+                    {
+                        "color": "FF0000",
+                        "description": "Valid sample affected by shadow",
+                        "value": 1
+                    },
+                    {
+                        "color": "00FF00",
+                        "description": "Valid sample affected by layover",
+                        "value": 2
+                    },
+                    {
+                        "color": "FFFF00",
+                        "description": "Valid sample affected by layover and shadow",
+                        "value": 3
+                    },
+                    {
+                        "color": "FFFFFF",
+                        "description": "Invalid sample",
+                        "value": 255
+                    }
+                ],
+                "name": "mask"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Absolute orbit number",
+                "name": "ABSOLUTE_ORBIT_NUMBER",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Acquisition mode",
+                "name": "ACQUISITION_MODE",
+                "type": "STRING"
+            },
+            {
+                "description": "Burst identification string",
+                "name": "BURST_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "List of input L1 SLC granules",
+                "name": "INPUT_L1_SLC_GRANULES",
+                "type": "STRING_LIST"
+            },
+            {
+                "description": "List of input orbit files",
+                "name": "INPUT_ORBIT_FILES",
+                "type": "STRING_LIST"
+            },
+            {
+                "description": "Name of the instrument used to collect the remote sensing\ndata provided in this product\n",
+                "name": "INSTRUMENT_NAME",
+                "type": "STRING"
+            },
+            {
+                "description": "Look direction",
+                "name": "LOOK_DIRECTION",
+                "type": "STRING"
+            },
+            {
+                "description": "Orbit pass direction",
+                "name": "ORBIT_PASS_DIRECTION",
+                "type": "STRING"
+            },
+            {
+                "description": "Product generation time in UTC. Format: YYYY-MM-DDTHH:MM:SSZ\n",
+                "name": "PROCESSING_DATETIME",
+                "type": "STRING"
+            },
+            {
+                "description": "Processing type. One of: \"NOMINAL\", \"URGENT\", \"CUSTOM\", or\n\"UNDEFINED\"\n",
+                "name": "PROCESSING_TYPE",
+                "type": "STRING"
+            },
+            {
+                "description": "Sub-swath identifier",
+                "name": "SUB_SWATH_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "Track number",
+                "name": "TRACK_NUMBER",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Number of Looks",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "number_of_looks"
+                        ],
+                        "max": [
+                            18
+                        ],
+                        "min": [
+                            15
+                        ],
+                        "palette": [
+                            "yellow",
+                            "green"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 54.5,
+                    "lon": -5,
+                    "zoom": 4
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    }
+}

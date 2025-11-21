@@ -1,0 +1,267 @@
+{
+    "type": "Collection",
+    "id": "OPERA/RTC/L2_V1/S1",
+    "stac_version": "1.1.0",
+    "description": "This product consists of radar backscatter normalized with respect to the\ntopography. It maps signals related to the physical properties of ground\nscattering objects, such as surface roughness and soil moisture and/or\nvegetation. The OPERA RTC-S1 product is derived from Copernicus Sentinel-1\nInterferometric Wide (IW) Single Look Complex (SLC) data with a near global\nscope and temporal sampling coincident with the availability of SLC data.\n\nEach OPERA RTC-S1 product corresponds to a single S1 burst projected onto\na pre-defined UTM/Polar stereographic map projection system map grid with\na 30-meter spacing. The Copernicus global 30 m (GLO-30) Digital Elevation\nModel (DEM) is the reference DEM used to correct for the impacts of\ntopography and to geocode the product. The OPERA RTC-S1 product is\nnormalized to the backscatter coefficient gamma0 obtained from the\noriginal radar brightness beta0 through radiometric terrain correction.\n\nDue to the S1 mission\u2019s narrow orbital tube, radar-geometry layers such as\nincidence angle, local incidence angle, number of looks, and RTC Area\nNormalization Factor (ANF) vary slightly over time for each position on the\nground, and therefore are considered static. These static layers are\nprovided separately from the OPERA RTC-S1 product, as they are produced\nonly once or a limited number of times, to account for changes in the DEM,\nin the S1 orbit, or in the static-layers generation algorithm. The static\nlayers are available in the associated\n[OPERA Radiometric Terrain Corrected SAR Backscatter from Sentinel-1 Static Layers dataset](OPERA_RTC_L2_V1_S1_STATIC).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OPERA/OPERA_RTC_L2_V1_S1",
+            "type": "text/html",
+            "title": "Run the example for OPERA/RTC/L2_V1/S1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/OPERA/OPERA_RTC_L2_V1_S1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/OPERA_RTC_L2_V1_S1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OPERA/OPERA_RTC_L2_V1_S1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OPERA/catalog.json",
+            "type": "application/json",
+            "title": "OPERA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:status": "beta",
+    "gee:terms_of_use": "This dataset is openly shared, without restriction, in accordance with the\n[EOSDIS Data Use and Citation Guidance](https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance)\n",
+    "gee:type": "image_collection",
+    "sci:citation": "NASA/JPL/OPERA. (2023). OPERA Radiometric Terrain Corrected SAR\nBackscatter from Sentinel-1 validated product (Version 1) [Data set].\nNASA Alaska Satellite Facility Distributed Active Archive Center.\n[doi:10.5067/SNWG/OPERA_L2_RTC-S1_V1](https://doi.org/10.5067/SNWG/OPERA_L2_RTC-S1_V1)\n",
+    "sci:doi": "10.5067/SNWG/OPERA_L2_RTC-S1_V1",
+    "version": "1.0",
+    "title": "OPERA Radiometric Terrain-Corrected SAR Backscatter from Sentinel-1 V1.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-04-14T00:00:00Z",
+                    "2025-11-20T17:09:40Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "backscatter",
+        "jpl",
+        "nasa",
+        "opera",
+        "polarization",
+        "radar",
+        "sar",
+        "satellite-imagery",
+        "sentinel1-derived"
+    ],
+    "providers": [
+        {
+            "name": "NASA JPL",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.jpl.nasa.gov/go/opera"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/OPERA_RTC_L2_V1_S1"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "VV polarization radar backscatter normalized to gamma0.",
+                "name": "VV"
+            },
+            {
+                "description": "VH polarization radar backscatter normalized to gamma0.",
+                "name": "VH"
+            },
+            {
+                "description": "Mask layer containing valid/invalid, layover, and shadow\nclassification computed using the RTC-S1 burst orbit,\nprovided over the same geographic grid as the associated\ngeocoded imagery.\n",
+                "gee:classes": [
+                    {
+                        "color": "000000",
+                        "description": "Valid sample not affected by layover or shadow",
+                        "value": 0
+                    },
+                    {
+                        "color": "FF0000",
+                        "description": "Valid sample affected by shadow",
+                        "value": 1
+                    },
+                    {
+                        "color": "00FF00",
+                        "description": "Valid sample affected by layover",
+                        "value": 2
+                    },
+                    {
+                        "color": "FFFF00",
+                        "description": "Valid sample affected by layover and shadow",
+                        "value": 3
+                    },
+                    {
+                        "color": "FFFFFF",
+                        "description": "Invalid sample",
+                        "value": 255
+                    }
+                ],
+                "name": "mask"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Absolute orbit number",
+                "name": "ABSOLUTE_ORBIT_NUMBER",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Acquisition mode",
+                "name": "ACQUISITION_MODE",
+                "type": "STRING"
+            },
+            {
+                "description": "Burst identification string",
+                "name": "BURST_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "List of input L1 SLC granules",
+                "name": "INPUT_L1_SLC_GRANULES",
+                "type": "STRING_LIST"
+            },
+            {
+                "description": "List of input orbit files",
+                "name": "INPUT_ORBIT_FILES",
+                "type": "STRING_LIST"
+            },
+            {
+                "description": "Name of the instrument used to collect the remote sensing\ndata provided in this product\n",
+                "name": "INSTRUMENT_NAME",
+                "type": "STRING"
+            },
+            {
+                "description": "Look direction",
+                "name": "LOOK_DIRECTION",
+                "type": "STRING"
+            },
+            {
+                "description": "Orbit pass direction",
+                "name": "ORBIT_PASS_DIRECTION",
+                "type": "STRING"
+            },
+            {
+                "description": "Product generation time in UTC. Format: YYYY-MM-DDTHH:MM:SSZ\n",
+                "name": "PROCESSING_DATETIME",
+                "type": "STRING"
+            },
+            {
+                "description": "Processing type. One of: \"NOMINAL\", \"URGENT\", \"CUSTOM\", or\n\"UNDEFINED\"\n",
+                "name": "PROCESSING_TYPE",
+                "type": "STRING"
+            },
+            {
+                "description": "Product version",
+                "name": "PRODUCT_VERSION",
+                "type": "STRING"
+            },
+            {
+                "description": "An estimate of the localization error bias in the easting direction'\n",
+                "name": "QA_GEOMETRIC_ACCURACY_BIAS_X",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "An estimate of the localization error bias in the northing direction'\n",
+                "name": "QA_GEOMETRIC_ACCURACY_BIAS_Y",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "An estimate of the localization error standard deviation\nin the easting direction\n",
+                "name": "QA_GEOMETRIC_ACCURACY_STDDEV_X",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "An estimate of the localization error standard deviation\nin the northing direction\n",
+                "name": "QA_GEOMETRIC_ACCURACY_STDDEV_Y",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Sub-swath identifier",
+                "name": "SUB_SWATH_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "Track number",
+                "name": "TRACK_NUMBER",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "VV Polarization",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "VV"
+                        ],
+                        "max": [
+                            0.5
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 54.5,
+                    "lon": -5,
+                    "zoom": 4
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    }
+}
