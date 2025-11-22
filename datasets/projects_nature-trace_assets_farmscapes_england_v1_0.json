@@ -29,7 +29,7 @@
         },
         {
             "rel": "license",
-            "href": "https://spdx.org/licenses/CC-BY-NC-4.0.html",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
             "type": "text/html"
         },
         {
@@ -50,9 +50,8 @@
     "gee:categories": [
         "landuse-landcover"
     ],
-    "gee:terms_of_use": "This dataset is licensed under\n[CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) and requires\nthe following attribution: \"This dataset is produced by Google\".\n",
+    "gee:terms_of_use": "This dataset is licensed under\n[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) and requires the\nfollowing attribution: \"This dataset is produced by Google\".\n",
     "gee:type": "image_collection",
-    "gee:unusual_terms_of_use": true,
     "sci:citation": "Michelangelo Conserva, Alex Wilson, Charlotte Stanton, Vishal Batchu, Varun\nGulshan , \"Mapping Farmed Landscapes from Remote Sensing\" (in review).\n[doi:10.48550/arXiv.2506.13993](https://doi.org/10.48550/arXiv.2506.13993),\n",
     "gee:status": "ready",
     "title": "Farmscapes 2020",
@@ -76,7 +75,7 @@
             ]
         }
     },
-    "license": "CC-BY-NC-4.0",
+    "license": "CC-BY-4.0",
     "keywords": [
         "biodiversity",
         "climate",
