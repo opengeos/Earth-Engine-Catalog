@@ -1,0 +1,122 @@
+{
+    "type": "Collection",
+    "id": "COPERNICUS/MARINE/INSITU_MULTI_4KM/DRIFTER",
+    "stac_version": "1.1.0",
+    "description": "The In Situ TAC is a distributed centre organized around 7 oceanographic\nregions: the global ocean and the 6 EUROGOOS regional alliances. It involves\n14 partners from 11 countries in Europe. It doesn't deploy any observing\nsystem and relies on data, exclusively funded by other sources than\nCopernicus Marine Service.\n\nRegarding the production of global ocean products like the present one,\nactivities among partners are organized according to the expertise and\nbackground in data management for operational oceanography. Drifter data\nin this collection come from two main sources: near-surface velocity\nmeasurements (15 m depth) from the French project Coriolis, part of the\nDBCP's Global Drifter Program, and drifter data retrieved from the OGS\nMediterranean drifter dataset. The latter includes raw data from various\nresearch institutions and international data centers, processed using\ntechniques described in Menna et al. (2017, 2018). The drifters have\nvarying drogue depths, mostly between 0 and 15 m, but ranging from 0 to\n300 m.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/COPERNICUS/COPERNICUS_MARINE_INSITU_MULTI_4KM_DRIFTER",
+            "type": "text/html",
+            "title": "Run the example for COPERNICUS/MARINE/INSITU_MULTI_4KM/DRIFTER in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/COPERNICUS/COPERNICUS_MARINE_INSITU_MULTI_4KM_DRIFTER_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_MARINE_INSITU_MULTI_4KM_DRIFTER#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_MARINE_INSITU_MULTI_4KM_DRIFTER.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/catalog.json",
+            "type": "application/json",
+            "title": "COPERNICUS"
+        }
+    ],
+    "gee:bq_table_name": "earth-engine-public-data.insitu_nrt_currents.drifter_latest",
+    "gee:categories": [
+        "oceans"
+    ],
+    "gee:skip_featureview_generation": true,
+    "gee:terms_of_use": "The data is provided free of charge by the Copernicus Marine Service.\nUsers must acknowledge the Copernicus Marine Service as the data source\nwhen using the data. More details on the terms of use can be found on\nthe [Copernicus Marine Service website](https://marine.copernicus.eu/user-corner/service-commitments-and-licence).\n",
+    "gee:type": "bigquery_table",
+    "gee:status": "ready",
+    "title": "Copernicus Global In-situ Observations of Ocean Currents - Drifter",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-03-28T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "copernicus",
+        "currents",
+        "marine",
+        "ocean",
+        "oceans"
+    ],
+    "providers": [
+        {
+            "name": "Copernicus",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://marine.copernicus.eu/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_MARINE_INSITU_MULTI_4KM_DRIFTER"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Sea Water Temperature",
+                "image_visualization": {
+                    "band_names": [
+                        "TEMP"
+                    ],
+                    "max": 25,
+                    "min": 18,
+                    "palette": [
+                        "d7191c",
+                        "fdae61",
+                        "ffffbf",
+                        "abd9e9",
+                        "2c7bb6"
+                    ]
+                },
+                "lookat": {
+                    "lat": 30.2,
+                    "lon": -100.5,
+                    "zoom": 3
+                }
+            }
+        ]
+    }
+}
