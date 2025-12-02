@@ -1,0 +1,140 @@
+{
+    "type": "Collection",
+    "id": "projects/malariaatlasproject/assets/accessibility/accessibility_to_healthcare/2019",
+    "stac_version": "1.1.0",
+    "description": "This global accessibility map enumerates land-based travel time (in\nminutes) to the nearest hospital or clinic for all areas between 85\ndegrees north and 60 degrees south for a nominal year 2019. \n\nMajor data collection efforts underway by OpenStreetMap, Google Maps, and\nacademic researchers have been harnessed to compile the most complete\ncollection of healthcare facility locations to date. This map was\nproduced through a collaboration between MAP (University of Oxford),\nTelethon Kids Institute (Perth, Australia), Google, and the University\nof Twente, Netherlands.\n\nThis project builds on previous work published by Weiss et al 2018\n([doi:10.1038/nature25181](https://doi.org/10.1038/nature25181)).\nWeiss et al (2018) utilising datasets for roads\n(comprising the first ever global-scale use of Open Street Map and Google\nroads datasets), railways, rivers, lakes, oceans, topographic conditions\n(slope and elevation), landcover types, and national borders. These\ndatasets were each allocated a speed or speeds of travel in terms of time\nto cross each pixel of that type. The datasets were then combined to\nproduce a \"friction surface\": a map where every pixel is allocated a\nnominal overall speed of travel based on the types occurring within that\npixel. For the current project, an updated friction surface was created to\nincorporate recent improvements within OSM roads data.\n\nLeast-cost-path algorithms (run in Google Earth Engine and, for\nhigh-latitude areas, in R) were used in conjunction with this friction\nsurface to calculate the time of travel from all locations to the nearest\n(in time) healthcare facility. The healthcare facilities dataset utilised\nlocation data from two of the largest global databases: (1) OSM data that\nwas collated and made available for download at\n[www.healthsites.io](https://www.healthsites.io/); and (2) data\nextracted from Google Maps. The global datasets were augmented with\ncontinental-scale facility locations that were recently published for\nAfrica and Australia. To facilitate comparisons between data sources, only\nfacilities defined as hospitals and clinics were used. Multiple points\nfound within the same pixel were merged to match the resolution of the\nanalysis as defined by the selected gridded representation of the Earth's\nsurface. Each pixel in the resultant accessibility map thus represents the\nmodelled shortest time (in minutes) from that location to a hospital or\nclinic.\n\nSource dataset credits are as described in the accompanying paper.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/malariaatlasproject/projects_malariaatlasproject_assets_accessibility_accessibility_to_healthcare_2019",
+            "type": "text/html",
+            "title": "Run the example for projects/malariaatlasproject/assets/accessibility/accessibility_to_healthcare/2019 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/malariaatlasproject/projects_malariaatlasproject_assets_accessibility_accessibility_to_healthcare_2019_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_malariaatlasproject_assets_accessibility_accessibility_to_healthcare_2019#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/malariaatlasproject/projects_malariaatlasproject_assets_accessibility_accessibility_to_healthcare_2019.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/malariaatlasproject/catalog.json",
+            "type": "application/json",
+            "title": "malariaatlasproject"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:categories": [
+        "population"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "This work is licensed under a [Creative Commons Attribution\n4.0 International License](https://creativecommons.org/licenses/by/4.0/).\n",
+    "gee:type": "image",
+    "gee:user_uploaded": true,
+    "sci:citation": "D.J. Weiss, A. Nelson, C.A. Vargas-Ruiz, K. Gligori&cacute;, S. Bavadekar,\nE. Gabrilovich, A. Bertozzi-Villa, J. Rozier, H.S. Gibson, T. Shekel,\nC. Kamath, A. Lieber, K. Schulman, Y. Shao, V. Qarkaxhija, A.K. Nandi,\nS.H. Keddie, S. Rumisha, E. Cameron, K.E. Battle, S. Bhatt, P.W. Gething.\nGlobal maps of travel time to healthcare facilities. Nature Medicine (2020).\n",
+    "title": "Malaria Atlas Project Accessibility to Healthcare 2019",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60,
+                    180,
+                    85
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-01-01T00:00:00Z",
+                    "2020-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "accessibility",
+        "map",
+        "population"
+    ],
+    "providers": [
+        {
+            "name": "Malaria Atlas Project",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://malariaatlas.org/project-resources/accessibility-to-healthcare/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_malariaatlasproject_assets_accessibility_accessibility_to_healthcare_2019"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Travel time to the nearest hospital or clinic.",
+                "gee:units": "min",
+                "name": "accessibility"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Accessibility",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "accessibility"
+                        ],
+                        "gamma": [
+                            4
+                        ],
+                        "max": [
+                            41556
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 6.66,
+                    "lon": 18.98,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            927.67
+        ],
+        "accessibility": {
+            "minimum": 0,
+            "maximum": 41504.1
+        }
+    }
+}

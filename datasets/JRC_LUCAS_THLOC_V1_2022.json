@@ -1,0 +1,143 @@
+{
+    "type": "Collection",
+    "id": "JRC/LUCAS/THLOC/V1/2022",
+    "stac_version": "1.1.0",
+    "description": "The\n[Land Use/Cover Area frame Survey (LUCAS)](https://ec.europa.eu/eurostat/web/lucas)\nin the European Union (EU) was set up to provide statistical information.\nIt represents a triennial in-situ landcover and land-use data-collection\nexercise that extends over the whole of the EU's territory. LUCAS collects\ninformation on land cover and land use, agro-environmental variables, soil,\nand grassland. The surveys also provide spatial information to analyse the\nmutual influences between agriculture, environment, and countryside, such as\nirrigation and land management.\n\nThe dataset presented here is the 2022 version of the LUCAS\nsurveys. Each point's location is using\nthe fields 'POINT_LAT' and 'POINT_LON', that is, the LUCAS theoretical\nlocation (THLOC), as prescribed by the LUCAS grid.  For more information\nplease see Citations.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JRC/JRC_LUCAS_THLOC_V1_2022",
+            "type": "text/html",
+            "title": "Run the example for JRC/LUCAS/THLOC/V1/2022 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/JRC/JRC_LUCAS_THLOC_V1_2022_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/JRC_LUCAS_THLOC_V1_2022#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JRC/JRC_LUCAS_THLOC_V1_2022_FeatureView",
+            "type": "text/html",
+            "title": "Run the example for JRC/LUCAS/THLOC/V1/2022 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_LUCAS_THLOC_V1_2022.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/catalog.json",
+            "type": "application/json",
+            "title": "JRC"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "landuse-landcover"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "table",
+    "sci:citation": "Ghassemi, B., Izquierdo-Verdiguier, E., Verhegghen, A. et al.\nEuropean Union crop map 2022: Earth observation\u2019s 10-meter dive into\nEurope's crop tapestry. Sci Data 11, 1048 (2024).\n[doi:10.1038/s41597-024-03884-y](https://doi.org/10.1038/s41597-024-03884-y)\n",
+    "version": "V1",
+    "gee:status": "ready",
+    "title": "LUCAS THLOC (Points with attributes, 2022) V1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -13.359375,
+                    34.307144,
+                    34.804688,
+                    71.187754
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-01-01T00:00:00Z",
+                    "2022-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "eu",
+        "jrc",
+        "landcover",
+        "landuse",
+        "landuse-landcover",
+        "lucas",
+        "table"
+    ],
+    "providers": [
+        {
+            "name": "Joint Research Center, Unit D5",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://ec.europa.eu/eurostat/web/lucas/database/2022"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/JRC_LUCAS_THLOC_V1_2022"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "LUCAS Points",
+                "lookat": {
+                    "lat": 37,
+                    "lon": -6,
+                    "zoom": 10
+                },
+                "table_visualization": {
+                    "color": "489734",
+                    "point_size": 3
+                }
+            },
+            {
+                "display_name": "LUCAS Points",
+                "lookat": {
+                    "lat": 37,
+                    "lon": -6,
+                    "zoom": 10
+                },
+                "visualize_as": "FeatureView"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 1500,
+            "thinning_strategy": "HIGHER_DENSITY"
+        }
+    }
+}

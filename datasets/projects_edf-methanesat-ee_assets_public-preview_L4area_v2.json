@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "projects/edf-methanesat-ee/assets/public-preview/L4area_v2",
     "stac_version": "1.1.0",
-    "description": "*The dispersed area emissions model is still in development and not\nrepresentative of a final product.*\n\nThis early \"Public Preview\" dataset provides high precision data for methane\nemissions from dispersed area sources. These emissions data come from the\nAppalachian, Permian, and Uinta basins in the United States; the Amu Darya and\nSouth Caspian basins in Turkmenistan; and the Maturin basin in Venezuela. These\nnovel measurements demonstrate the importance of quantifying total methane emissions\nwith high resolution to meet global methane mitigation goals.\n\nTotal emissions for a scene\u2013from both dispersed area and point source emissions\u2013may\nbe obtained by summing the area emissions and point source emissions for a given\ncollection ID (see L4 Point Sources Public Preview).\n\nDispersed area emissions are estimated from methane concentration observations\nin the form of column-averaged dry-air mole fractions of methane (XCH4) using\nan inverse model. An atmospheric transport model - the Stochastic Time-Inverted\nLagrangian Transport (STILT) model; [Lin et al. (2003)](https://doi.org/10.1029/2002JD003161),\n[Fasoli et al. (2018)](https://doi.org/10.5194/gmd-11-2813-2018); driven\nby meteorological data from the National Centers for Environmental\nPrediction ([NCEP](https://www.weather.gov/ncep/)) Global Forecast System\n([GFS](https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php))\n- is used to link variations in observed XCH4 to potential upwind sources.\n\nThese predictive linkages are used to invert an estimated set of emissions from the\nobservations of MethaneSAT using a novel Markov Chain Monte Carlo technique nicknamed CORE\n(Conserved and Optimized Retrieval of Emissions). Inflow across the domain boundary and\npre-existing background concentrations are estimated, but not reported. \n\nThis set of initial observations made by MethaneSAT are consistent with\nindependent empirical data where available from other sources. Not all data products\n(L3 concentration, L4 area and L4 points) are available for all collection IDs.\nContact the data provider for more information about the project at this\nlink: [https://www.methanesat.org/contact/](https://www.methanesat.org/contact/).\n\n---\n\n7/2/2025 Important Update: \n\nAs you may be aware, we recently lost contact with the satellite. After exploring all possible  \nrecovery options, we have now confirmed that it is no longer functioning, due to an\nundetermined problem with the outer platform carrying our methane detector. While there is no\nquestion this is a setback, we are undeterred in our efforts to drive down methane pollution.\nPlease see our official statement here:\n[MethaneSAT Loses Contact with Satellite | MethaneSAT](https://www.methanesat.org/project-updates/methanesat-loses-contact-satellite).\n\nWhat this means for the Public Preview data: The existing datasets will remain accessible on\nGoogle platforms and on our web portal for the foreseeable future. Additionally, over the next\nfew months, we will release substantial new data collected by MethaneSAT prior to the loss of\ncontact. This will include hundreds of scenes (of targets that are roughly 200kmx200km). We\nhope this will be useful for you. Should there be any changes to data availability, we will\nnotify you well in advance.\n\nLooking ahead: While we don\u2019t have all the answers yet, we plan to leverage our advanced Data\nProcessing Platform (DPP) to quantify other streams of satellite and/or aerial data. We will\nalso take the necessary time to evaluate the best next step in our efforts to enable methane\nreductions. To stay up to date with further updates, feel free to sign up for our\n[newsletter](https://mailchi.mp/methanesat/methanesat-newsletter-sign-up).\n",
+    "description": "*The dispersed area emissions model is still in development and not\nrepresentative of a final product.*\n\nThis early \"Public Preview\" dataset provides high precision data for methane\nemissions from dispersed area sources. These novel measurements demonstrate\nthe importance of quantifying total methane emissions with high resolution\nto meet global methane mitigation goals.\n\nTotal emissions for a scene may be obtained by summing the area emissions\nfor a given collection ID.\n\nDispersed area emissions are estimated from methane concentration observations\nin the form of column-averaged dry-air mole fractions of methane (XCH4) using\nan inverse model. An atmospheric transport model - the Stochastic Time-Inverted\nLagrangian Transport (STILT) model; [Lin et al. (2003)](https://doi.org/10.1029/2002JD003161),\n[Fasoli et al. (2018)](https://doi.org/10.5194/gmd-11-2813-2018); driven\nby meteorological data from the National Centers for Environmental\nPrediction ([NCEP](https://www.weather.gov/ncep/)) Global Forecast System\n([GFS](https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php))\n- is used to link variations in observed XCH4 to potential upwind sources.\n\nThese predictive linkages are used to invert an estimated set of emissions\nfrom the observations of MethaneSAT using a novel Markov Chain Monte Carlo\ntechnique nicknamed CORE (Conserved and Optimized Retrieval of Emissions).\nInflow across the domain boundary and pre-existing background concentrations\nare estimated, but not reported. \n\nThis set of initial observations made by MethaneSAT are consistent with\nindependent empirical data where available from other sources. Not all data\nproducts (L3 concentration, L4 area and L4 points) are available for all\ncollection IDs. Individual heat maps can have spatial misallocations due to\nseveral factors, including wind field uncertainty, observational\nuncertainty and variable emission rates. Users are advised to interpret\nindividual emission grids with caution. For more about definitions and\nlimitations, see our\n[technical explanation](https://www.methanesat.org/sites/default/files/2025-11/MethaneSAT%20Dispersed%20Area%20Emissions_Definitions%20and%20Limitations.pdf).\nContact the data provider for more information about the project at this\nlink:\n[https://www.methanesat.org/contact/](https://www.methanesat.org/contact/).\n\n---\n\n7/2/2025 Important Update: \n\nAs you may be aware, we recently lost contact with the satellite. After\nexploring all possible recovery options, we have now confirmed that it is\nno longer functioning, due to an undetermined problem with the outer\nplatform carrying our methane detector. While there is no question this is\na setback, we are undeterred in our efforts to drive down methane pollution.\nPlease see our official statement here:\n[MethaneSAT Loses Contact with Satellite | MethaneSAT](https://www.methanesat.org/project-updates/methanesat-loses-contact-satellite).\n\nWhat this means for the Public Preview data: The existing datasets will\nremain accessible on Google platforms and on our web portal for the\nforeseeable future. Additionally, over the next few months, we will release\nsubstantial new data collected by MethaneSAT prior to the loss of contact.\nThis will include hundreds of scenes (of targets that are roughly\n200kmx200km). We hope this will be useful for you. Should there be any\nchanges to data availability, we will notify you well in advance.\n\nLooking ahead: While we don\u2019t have all the answers yet, we plan to leverage\nour advanced Data Processing Platform (DPP) to quantify other streams of\nsatellite and/or aerial data. We will also take the necessary time to\nevaluate the best next step in our efforts to enable methane reductions. To\nstay up to date with further updates, feel free to sign up for our\n[newsletter](https://mailchi.mp/methanesat/methanesat-newsletter-sign-up).\n",
     "links": [
         {
             "rel": "root",
@@ -126,6 +126,11 @@
                 "description": "Upper bound on the 95% confidence interval of flux.",
                 "gee:units": "kg/h",
                 "name": "upper_bound_flux"
+            },
+            {
+                "description": "* 0: Emitter that is likely non-emitting and below noise threshold of\n  1 kg/hr/km^2. Emitter not included in emission totals.\n* 1: Emitter that is likely emitting and above noise threshold of 1\n  kg/hr/km^2. Emitter included in emission totals.\n\nOnly present on two step CORE products.\n",
+                "gee:units": "count",
+                "name": "l4_retained_emitter"
             }
         ],
         "gee:schema": [
@@ -142,6 +147,21 @@
             {
                 "description": "Upper bound on the 95% confidence interval of the total value of area emissions for this collection in kg/hr.",
                 "name": "total_flux_upper_bound_kg_hr",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Total value of area emissions in the target for this collection in kg/hr. Missing values are indicated by -1.",
+                "name": "target_mean_total_kg_hr",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Lower bound on the 95% confidence interval of the total value of area emissions in the target for this collection in kg/hr.",
+                "name": "target_total_flux_lower_bound_kg_hr",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Upper bound on the 95% confidence interval of the total value of area emissions in the target for this collection in kg/hr.",
+                "name": "target_total_flux_upper_bound_kg_hr",
                 "type": "DOUBLE"
             },
             {
@@ -177,6 +197,11 @@
             {
                 "description": "Data collection start time in YYYY-MM-DDThh:mm:ssZ format STRING (ISO 8601).",
                 "name": "time_coverage_start",
+                "type": "STRING"
+            },
+            {
+                "description": "Only present on two step CORE products.",
+                "name": "two_step_core",
                 "type": "STRING"
             }
         ],

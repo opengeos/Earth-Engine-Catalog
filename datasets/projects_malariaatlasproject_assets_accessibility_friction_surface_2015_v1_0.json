@@ -1,0 +1,142 @@
+{
+    "type": "Collection",
+    "id": "projects/malariaatlasproject/assets/accessibility/friction_surface/2015_v1_0",
+    "stac_version": "1.1.0",
+    "description": "Note: this surface is replaced by \"Malaria Atlas Project Global \nFriction Surface 2019\".\n\nThis global friction surface enumerates land-based travel\nspeed for all land pixels between 85 degrees north and 60 degrees\nsouth for a nominal year 2015.\n\nThis map was produced through\na collaboration between the University of Oxford Malaria Atlas\nProject (MAP), Google, the European Union Joint Research Centre\n(JRC), and the University of Twente, Netherlands. The underlying\ndatasets used to produce the map include roads (comprising the\nfirst ever global-scale use of Open Street Map and Google roads\ndatasets), railways, rivers, lakes, oceans, topographic conditions\n(slope and elevation), landcover types, and national borders.\n\nThese datasets were each allocated a speed or speeds of travel in terms\nof time to cross each pixel of that type. The datasets were then\ncombined to produce this \"friction surface\": a map\nwhere every pixel is allocated a nominal overall speed of travel\nbased on the types occurring within that pixel, with the fastest\ntravel mode intersecting the pixel being used to determine the\nspeed of travel in that pixel (with some exceptions such as national\nboundaries, which have the effect of imposing a travel time penalty).\n\nThis map represents the travel speed from this allocation process, expressed\nin units of minutes required to travel one meter. It forms the\nunderlying dataset behind the global accessibility map described\nin the referenced paper.\n\nSource dataset credits are as described in the accompanying paper.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/malariaatlasproject/projects_malariaatlasproject_assets_accessibility_friction_surface_2015_v1_0",
+            "type": "text/html",
+            "title": "Run the example for projects/malariaatlasproject/assets/accessibility/friction_surface/2015_v1_0 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/malariaatlasproject/projects_malariaatlasproject_assets_accessibility_friction_surface_2015_v1_0_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_malariaatlasproject_assets_accessibility_friction_surface_2015_v1_0#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/malariaatlasproject/projects_malariaatlasproject_assets_accessibility_friction_surface_2015_v1_0.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/malariaatlasproject/catalog.json",
+            "type": "application/json",
+            "title": "malariaatlasproject"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "population"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "This work is licensed under a [Creative Commons Attribution\n4.0 International License](https://creativecommons.org/licenses/by/4.0/).\n",
+    "gee:type": "image",
+    "gee:user_uploaded": true,
+    "sci:citation": "D.J. Weiss, A. Nelson, H.S. Gibson, W. Temperley, S. Peedell, A.\nLieber, M. Hancher, E. Poyart, S. Belchior, N. Fullman, B. Mappin,\nU. Dalrymple, J. Rozier, T.C.D. Lucas, R.E. Howes, L.S. Tusting,\nS.Y. Kang, E. Cameron, D. Bisanzio, K.E. Battle, S. Bhatt, and\nP.W. Gething. A global map of travel time to cities to assess inequalities\nin accessibility in 2015. Nature (2018).\n[doi:10.1038/nature25181](https://doi.org/10.1038/nature25181)\n",
+    "version": "1,0",
+    "title": "Malaria Atlas Project Global Friction Surface 2015",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60,
+                    180,
+                    85
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-01-01T00:00:00Z",
+                    "2016-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "accessibility",
+        "map",
+        "population"
+    ],
+    "providers": [
+        {
+            "name": "Malaria Atlas Project",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://malariaatlas.org/project-resources/accessibility-to-healthcare/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_malariaatlasproject_assets_accessibility_friction_surface_2015_v1_0"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Land-based travel speed.",
+                "gee:units": "min/m",
+                "name": "friction"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Land-based travel speed",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "friction"
+                        ],
+                        "gamma": [
+                            1.6
+                        ],
+                        "max": [
+                            0.2
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 22.92,
+                    "lon": 104.77,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            927.67
+        ],
+        "friction": {
+            "minimum": 0.0005,
+            "maximum": 87.307472
+        }
+    }
+}
