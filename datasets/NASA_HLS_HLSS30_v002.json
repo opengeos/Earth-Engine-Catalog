@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "NASA/HLS/HLSS30/v002",
     "stac_version": "1.1.0",
-    "description": "The Harmonized Landsat Sentinel-2 (HLS) project provides consistent surface\nreflectance data from the Operational Land Imager (OLI) aboard the joint\nNASA/USGS Landsat 8 satellite and the Multi-Spectral Instrument (MSI) aboard\nEurope's Copernicus Sentinel-2A satellites. The combined\nmeasurement enables global observations of the land every 2-3 days at\n30-meter (m) spatial resolution.\nThe HLS project uses a set of algorithms\nto obtain seamless products from OLI and MSI that include atmospheric\ncorrection, cloud and cloud-shadow masking, spatial co-registration and\ncommon gridding, illumination and view angle normalization, and spectral\nbandpass adjustment.\n\nThe HLS project distributes data as two separate products: HLSL30\n(Landsat 8/9) and HLSS30 (Sentinel-2 A/B). They both provide 30m Nadir\nBidirectional Reflectance Distribution Function (BRDF), Adjusted Reflectance\n(NBAR).\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1698/HLS_User_Guide_V2.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/769/HLS_ATBD_V15_provisional.pdf)\n\n* [General Documentation](https://lpdaac.usgs.gov/products/hlss30v002/)\n* L30 catalog link: [NASA/HLS/HLSL30/v002](NASA_HLS_HLSL30_v002)\n\nNote: The historical assets are currently being ingested and this process\nis expected to finish in 2025.\n",
+    "description": "The Harmonized Landsat Sentinel-2 (HLS) project provides consistent surface\nreflectance data from the Operational Land Imager (OLI) aboard the joint\nNASA/USGS Landsat 8 satellite and the Multi-Spectral Instrument (MSI) aboard\nEurope's Copernicus Sentinel-2A satellites. The combined\nmeasurement enables global observations of the land every 2-3 days at\n30-meter (m) spatial resolution.\nThe HLS project uses a set of algorithms\nto obtain seamless products from OLI and MSI that include atmospheric\ncorrection, cloud and cloud-shadow masking, spatial co-registration and\ncommon gridding, illumination and view angle normalization, and spectral\nbandpass adjustment.\n\nThe HLS project distributes data as two separate products: HLSL30\n(Landsat 8/9) and HLSS30 (Sentinel-2 A/B). They both provide 30m Nadir\nBidirectional Reflectance Distribution Function (BRDF), Adjusted Reflectance\n(NBAR).\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1698/HLS_User_Guide_V2.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/769/HLS_ATBD_V15_provisional.pdf)\n\n* [General Documentation](https://lpdaac.usgs.gov/products/hlss30v002/)\n* L30 catalog link: [NASA/HLS/HLSL30/v002](NASA_HLS_HLSL30_v002)\n",
     "links": [
         {
             "rel": "root",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2015-11-28T00:00:00Z",
-                    "2025-12-06T23:19:01Z"
+                    "2025-12-07T13:42:21Z"
                 ]
             ]
         }
