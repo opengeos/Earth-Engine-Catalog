@@ -1,0 +1,415 @@
+{
+    "type": "Collection",
+    "id": "projects/mapbiomas-public/assets/brazil/lulc/v1",
+    "stac_version": "1.1.0",
+    "description": "MapBiomas Land Use and Land Cover (LULC) dataset for Brazil is produced annually by the MapBiomas Project using Landsat satellite imagery and machine learning classification techniques.\nThe dataset provides consistent, thematically detailed maps at 30-meter resolution, covering multiple decades and updated each year.\n\nEach image in the collection contains annual land cover classifications with pixel values representing categorical land cover classes, such as forest, agriculture, pasture, water bodies, and urban areas.\nThe classification legend is standardized and maintained across all years, enabling multi-temporal analyses of land use change, deforestation, reforestation, and other landscape dynamics.\n\nThe classification is based on Landsat 5 (TM), Landsat 7 (ETM+), Landsat 8 and 9 (OLI/TIRS) surface reflectance data, preprocessed and mosaicked to generate cloud-free composites for each year.\nThe classification process includes automated decision trees trained with reference samples, along with manual validation by regional experts.\n\nEach image contains one band named \"classification\", representing the land cover classification for that specific year, version and collection id.\n\nFor more information, classification legend, methodology, and accuracy assessments, visit the [MapBiomas website](https://mapbiomas.org/en).\n\nIt is recommended to consult the classification legend to interpret the class values.\nNote that MapBiomas provides discrete classification maps, not probabilities.\nThese maps are most appropriate for map transitions, time series analysis, and land policy monitoring applications.\n\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/mapbiomas-public/projects_mapbiomas-public_assets_brazil_lulc_v1",
+            "type": "text/html",
+            "title": "Run the example for projects/mapbiomas-public/assets/brazil/lulc/v1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/mapbiomas-public/projects_mapbiomas-public_assets_brazil_lulc_v1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_mapbiomas-public_assets_brazil_lulc_v1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/mapbiomas-public/projects_mapbiomas-public_assets_brazil_lulc_v1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/mapbiomas-public/catalog.json",
+            "type": "application/json",
+            "title": "mapbiomas-public"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "landuse-landcover"
+    ],
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "sci:citation": "Souza et al. (2020) \u2013 Reconstructing Three Decades of Land Use and Land Cover Changes in Brazilian Biomes with Landsat Archive and Earth Engine \u2013 Remote Sensing, \nVolume 12, Issue 17, 10.3390/rs12172735.\n\n[doi:10.3390/rs12172735](https://doi.org/10.3390/rs12172735)\n\n",
+    "sci:doi": "10.3390/rs12172735",
+    "version": "1.0",
+    "gee:status": "ready",
+    "title": "MapBiomas Land Use and Land Cover - Brazil V1.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -74,
+                    -34,
+                    -34.7,
+                    5.45
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1985-01-01T00:00:00Z",
+                    "2024-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "landsat-derived",
+        "landuse-landcover"
+    ],
+    "providers": [
+        {
+            "name": "MapBiomas",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://mapbiomas.org"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_mapbiomas-public_assets_brazil_lulc_v1"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Land use and land cover classification, with integer values corresponding to MapBiomas legend classes.",
+                "gee:classes": [
+                    {
+                        "color": "1f8d49",
+                        "description": "Forest",
+                        "value": 1
+                    },
+                    {
+                        "color": "1f8d49",
+                        "description": "Forest Formation",
+                        "value": 3
+                    },
+                    {
+                        "color": "7dc975",
+                        "description": "Savanna Formation",
+                        "value": 4
+                    },
+                    {
+                        "color": "04381d",
+                        "description": "Mangrove",
+                        "value": 5
+                    },
+                    {
+                        "color": "007785",
+                        "description": "Floodable Forest",
+                        "value": 6
+                    },
+                    {
+                        "color": "7a5900",
+                        "description": "Forest Plantation",
+                        "value": 9
+                    },
+                    {
+                        "color": "d6bc74",
+                        "description": "Herbaceous and Shrubby Vegetation",
+                        "value": 10
+                    },
+                    {
+                        "color": "519799",
+                        "description": "Wetland",
+                        "value": 11
+                    },
+                    {
+                        "color": "d6bc74",
+                        "description": "Grassland",
+                        "value": 12
+                    },
+                    {
+                        "color": "ffefc3",
+                        "description": "Farming",
+                        "value": 14
+                    },
+                    {
+                        "color": "edde8e",
+                        "description": "Pasture",
+                        "value": 15
+                    },
+                    {
+                        "color": "e974ed",
+                        "description": "Agriculture",
+                        "value": 18
+                    },
+                    {
+                        "color": "c27ba0",
+                        "description": "Temporary Crop",
+                        "value": 19
+                    },
+                    {
+                        "color": "db7093",
+                        "description": "Sugar cane",
+                        "value": 20
+                    },
+                    {
+                        "color": "ffefc3",
+                        "description": "Mosaic of Uses",
+                        "value": 21
+                    },
+                    {
+                        "color": "d4271e",
+                        "description": "Non vegetated area",
+                        "value": 22
+                    },
+                    {
+                        "color": "ffa07a",
+                        "description": "Beach, Dune and Sand Spot",
+                        "value": 23
+                    },
+                    {
+                        "color": "d4271e",
+                        "description": "Urban Area",
+                        "value": 24
+                    },
+                    {
+                        "color": "db4d4f",
+                        "description": "Other non Vegetated Areas",
+                        "value": 25
+                    },
+                    {
+                        "color": "2532e4",
+                        "description": "Water",
+                        "value": 26
+                    },
+                    {
+                        "color": "ffaa5f",
+                        "description": "Rocky Outcrop",
+                        "value": 29
+                    },
+                    {
+                        "color": "9c0027",
+                        "description": "Mining",
+                        "value": 30
+                    },
+                    {
+                        "color": "091077",
+                        "description": "Aquaculture",
+                        "value": 31
+                    },
+                    {
+                        "color": "fc8114",
+                        "description": "Hypersaline Tidal Flat",
+                        "value": 32
+                    },
+                    {
+                        "color": "2532e4",
+                        "description": "River, Lake and Ocean",
+                        "value": 33
+                    },
+                    {
+                        "color": "9065d0",
+                        "description": "Palm Oil",
+                        "value": 35
+                    },
+                    {
+                        "color": "d082de",
+                        "description": "Perennial Crop",
+                        "value": 36
+                    },
+                    {
+                        "color": "f5b3c8",
+                        "description": "Soybean",
+                        "value": 39
+                    },
+                    {
+                        "color": "c71585",
+                        "description": "Rice",
+                        "value": 40
+                    },
+                    {
+                        "color": "f54ca9",
+                        "description": "Other Temporary Crops",
+                        "value": 41
+                    },
+                    {
+                        "color": "d68fe2",
+                        "description": "Coffee",
+                        "value": 46
+                    },
+                    {
+                        "color": "9932cc",
+                        "description": "Citrus",
+                        "value": 47
+                    },
+                    {
+                        "color": "e6ccff",
+                        "description": "Other Perennial Crops",
+                        "value": 48
+                    },
+                    {
+                        "color": "02d659",
+                        "description": "Wooded Sandbank Vegetation",
+                        "value": 49
+                    },
+                    {
+                        "color": "ad5100",
+                        "description": "Herbaceous Sandbank Vegetation",
+                        "value": 50
+                    },
+                    {
+                        "color": "ff69b4",
+                        "description": "Cotton (beta)",
+                        "value": 62
+                    },
+                    {
+                        "color": "c12100",
+                        "description": "Photovoltaic Power Plant (beta)",
+                        "value": 75
+                    }
+                ],
+                "name": "classification"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Year of the land use and land cover classification.\n",
+                "name": "year",
+                "type": "INT"
+            },
+            {
+                "description": "Version of the land use and land cover classification.\n",
+                "name": "version",
+                "type": "STRING"
+            },
+            {
+                "description": "Collection identifier of the land use and land cover classification.\n",
+                "name": "collection_id",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Land Use and Cover - MapBiomas",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "classification"
+                        ],
+                        "max": [
+                            75
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "ffffff",
+                            "32a65e",
+                            "32a65e",
+                            "1f8d49",
+                            "7dc975",
+                            "04381d",
+                            "026975",
+                            "000000",
+                            "000000",
+                            "7a6c00",
+                            "ad975a",
+                            "519799",
+                            "d6bc74",
+                            "d89f5c",
+                            "FFFFB2",
+                            "edde8e",
+                            "000000",
+                            "000000",
+                            "f5b3c8",
+                            "C27BA0",
+                            "db7093",
+                            "ffefc3",
+                            "db4d4f",
+                            "ffa07a",
+                            "d4271e",
+                            "db4d4f",
+                            "0000FF",
+                            "000000",
+                            "000000",
+                            "ffaa5f",
+                            "9c0027",
+                            "091077",
+                            "fc8114",
+                            "2532e4",
+                            "93dfe6",
+                            "9065d0",
+                            "d082de",
+                            "000000",
+                            "000000",
+                            "f5b3c8",
+                            "c71585",
+                            "f54ca9",
+                            "cca0d4",
+                            "dbd26b",
+                            "807a40",
+                            "e04cfa",
+                            "d68fe2",
+                            "9932cc",
+                            "e6ccff",
+                            "02d659",
+                            "ad5100",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "CC66FF",
+                            "FF6666",
+                            "006400",
+                            "8d9e8b",
+                            "f5d5d5",
+                            "ff69b4",
+                            "ebf8b5",
+                            "000000",
+                            "000000",
+                            "91ff36",
+                            "7dc975",
+                            "e97a7a",
+                            "0fffe3",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "c12100"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -14,
+                    "lon": -54,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    }
+}

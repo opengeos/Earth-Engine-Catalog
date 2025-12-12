@@ -1,0 +1,210 @@
+{
+    "type": "Collection",
+    "id": "COPERNICUS/MARINE/INSITU_MULTI_4KM/ARGO",
+    "stac_version": "1.1.0",
+    "description": "The In Situ TAC is a distributed centre organized around 7 oceanographic\nregions: the global ocean and the 6 EUROGOOS regional alliances. It involves\n14 partners from 11 countries in Europe. It doesn't deploy any observing\nsystem and relies on data, exclusively funded by other sources than\nCopernicus Marine Service.\n\nThis dataset is derived from the original trajectory data from Argo GDAC\n(Global Data Assembly Center). In 2020, the GDAC distributes data from more\nthan 15,000 Argo floats. Deep ocean current is calculated from floats drift\nat parking depth, surface current is calculated from float surface drift.\n\nFor more details refer to this\n[user manual](https://documentation.marine.copernicus.eu/PUM/CMEMS-INS-PUM-013-048.pdf)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/COPERNICUS/COPERNICUS_MARINE_INSITU_MULTI_4KM_ARGO",
+            "type": "text/html",
+            "title": "Run the example for COPERNICUS/MARINE/INSITU_MULTI_4KM/ARGO in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/COPERNICUS/COPERNICUS_MARINE_INSITU_MULTI_4KM_ARGO_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_MARINE_INSITU_MULTI_4KM_ARGO#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_MARINE_INSITU_MULTI_4KM_ARGO.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/catalog.json",
+            "type": "application/json",
+            "title": "COPERNICUS"
+        }
+    ],
+    "gee:bq_table_name": "earth-engine-public-data.insitu_nrt_currents.argo_latest",
+    "gee:categories": [
+        "oceans"
+    ],
+    "gee:skip_featureview_generation": true,
+    "gee:terms_of_use": "The data is provided free of charge by the Copernicus Marine Service.\nUsers must acknowledge the Copernicus Marine Service as the data source\nwhen using the data. More details on the terms of use can be found on\nthe [Copernicus Marine Service website](https://marine.copernicus.eu/user-corner/service-commitments-and-licence).\n",
+    "gee:type": "bigquery_table",
+    "gee:status": "ready",
+    "title": "Copernicus Global In-situ Observations of Ocean Currents - Argo",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-03-28T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "copernicus",
+        "currents",
+        "insitu",
+        "marine",
+        "ocean",
+        "oceans"
+    ],
+    "providers": [
+        {
+            "name": "Copernicus",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://marine.copernicus.eu/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_MARINE_INSITU_MULTI_4KM_ARGO"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Datetime of the observation",
+                "name": "TIME",
+                "type": "DATETIME"
+            },
+            {
+                "description": "Number of depth levels",
+                "name": "DEPTH",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Latitude of the observation",
+                "name": "LATITUDE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Longitude of the observation",
+                "name": "LONGITUDE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Representative pressure of the current observation. Can be 0 or\nparking depth pressure (decibar).\n",
+                "name": "PRES",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Trajectory identifier",
+                "name": "TRAJECTORY",
+                "type": "STRING"
+            },
+            {
+                "description": "Quality control flag for PRES.\n\n* 0: No QC was performed\n* 1: good\n* 2: probably good\n* 3: Bad data that are potentially correctable\n* 4: Bad data\n* 5: value changed\n* 6: Not used\n* 7: nominal\n* 8: interpolated\n* 9: Missing value\n\nNote that a valid value for the corresponding variable has a QC bit\nequal to 1, 2, 5, 7, or 8.\n",
+                "name": "PRES_QC",
+                "type": "INT"
+            },
+            {
+                "description": "West-East sea water velocity at the\nrepresentative pressure (m/s)\n",
+                "name": "EWCT",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Quality control flag for EWCT.\n\n* 0: No QC was performed\n* 1: good\n* 2: probably good\n* 3: Bad data that are potentially correctable\n* 4: Bad data\n* 5: value changed\n* 6: Not used\n* 7: nominal\n* 8: interpolated\n* 9: Missing value\n\nNote that a valid value for the corresponding variable has a QC bit\nequal to 1, 2, 5, 7, or 8.\n",
+                "name": "EWCT_QC",
+                "type": "INT"
+            },
+            {
+                "description": "South-North sea water velocity at the representative pressure (m/s)\n",
+                "name": "NSCT",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Quality control flag for NSCT.\n\n* 0: No QC was performed\n* 1: good\n* 2: probably good\n* 3: Bad data that are potentially correctable\n* 4: Bad data\n* 5: value changed\n* 6: Not used\n* 7: nominal\n* 8: interpolated\n* 9: Missing value\n\nNote that a valid value for the corresponding variable has a QC bit\nequal to 1, 2, 5, 7, or 8.\n",
+                "name": "NSCT_QC",
+                "type": "INT"
+            },
+            {
+                "description": "Quality control flag for TIME.\n\n* 0: No QC was performed\n* 1: good\n* 2: probably good\n* 3: Bad data that are potentially correctable\n* 4: Bad data\n* 5: value changed\n* 6: Not used\n* 7: nominal\n* 8: interpolated\n* 9: Missing value\n\nNote that a valid value for the corresponding variable has a QC bit\nequal to 1, 2, 5, 7, or 8.\n",
+                "name": "TIME_QC",
+                "type": "INT"
+            },
+            {
+                "description": "Quality control flag for POSITION.\n\n* 0: No QC was performed\n* 1: good\n* 2: probably good\n* 3: Bad data that are potentially correctable\n* 4: Bad data\n* 5: value changed\n* 6: Not used\n* 7: nominal\n* 8: interpolated\n* 9: Missing value\n\nNote that a valid value for the corresponding variable has a QC bit\nequal to 1, 2, 5, 7, or 8.\n",
+                "name": "POSITION_QC",
+                "type": "INT"
+            },
+            {
+                "description": "Cycle number of the Argo float",
+                "name": "CYCLE_NUMBER",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Indicates the best estimate of whether the float touched the ground\nfor that cycle. The conventions are described below:\n\n* Y: Yes, the float touched the ground\n* B: Yes, the float touched the ground after bathymetry check with an\n    outside database\n* N: No, the float did not touch the ground\n* S: Float is known to be drifting at a shallower depth than\n    originally programmed\n* U: Unknown\n",
+                "name": "GROUNDED",
+                "type": "STRING"
+            },
+            {
+                "description": "Duration of measurement",
+                "name": "DURATION",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Geographic location of the observation",
+                "name": "geometry",
+                "type": "GEOMETRY"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Global INSITU Argo EWCT",
+                "image_visualization": {
+                    "band_names": [
+                        "EWCT"
+                    ],
+                    "max": 0.5,
+                    "min": -0.5,
+                    "palette": [
+                        "a50026",
+                        "d73027",
+                        "333333",
+                        "4575b4",
+                        "313695"
+                    ]
+                },
+                "lookat": {
+                    "lat": 30.2,
+                    "lon": -100.5,
+                    "zoom": 3
+                }
+            }
+        ]
+    }
+}

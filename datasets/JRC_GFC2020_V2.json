@@ -29,15 +29,21 @@
         },
         {
             "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GFC2020_V2.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GFC2020_V3.json",
             "type": "application/json",
-            "title": "JRC/GFC2020/V2"
+            "title": "JRC/GFC2020/V3"
         },
         {
             "rel": "predecessor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GFC2020_V1.json",
             "type": "application/json",
             "title": "JRC/GFC2020/V1"
+        },
+        {
+            "rel": "successor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GFC2020_V3.json",
+            "type": "application/json",
+            "title": "JRC/GFC2020/V3"
         },
         {
             "rel": "self",
@@ -64,6 +70,7 @@
         "type": "cadence",
         "unit": "year"
     },
+    "gee:status": "deprecated",
     "gee:terms_of_use": "The data may be used by anyone, anywhere, anytime without permission,\nlicense or royalty payment. Attribution using the recommended citation\nis requested.\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
@@ -77,8 +84,8 @@
         }
     ],
     "version": "V2",
-    "gee:status": "ready",
-    "title": "EC JRC global map of forest cover 2020, V2",
+    "deprecated": true,
+    "title": "EC JRC global map of forest cover 2020, V2 [deprecated]",
     "extent": {
         "spatial": {
             "bbox": [

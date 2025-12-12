@@ -1,0 +1,161 @@
+{
+    "type": "Collection",
+    "id": "JRC/GFC2020/V3",
+    "stac_version": "1.1.0",
+    "description": "The global map of forest cover provides a spatially explicit representation\nof forest presence and absence for the year 2020 at 10m spatial resolution.\n\nThe year 2020 corresponds to the cut-off date of the Regulation from the\nEuropean Union \"on the making available on the Union market and the export\nfrom the Union of certain commodities and products associated with\ndeforestation and forest degradation\" (EUDR, Regulation (EU) 2023/1115).\nIn the context of the EUDR, the global forest cover map can be used as a\nnon-mandatory, non-exclusive and not legally binding source of information.\nFurther information about the map and its use can be found on the [EU\nObservatory on Deforestation and Forest Degradation](https://forest-observatory.ec.europa.eu/forest/) (EUFO) and namely in\nthe section on Frequently Asked Questions.\n\nForest means land spanning more than 0.5 hectares with trees higher than\n5 meters and a canopy cover of more than 10%, or trees able to reach those\nthresholds in situ, excluding land that is predominantly under agricultural\nor urban land use. Agricultural use means the use of land for the purpose of\nagriculture, including for agricultural plantations (i.e. tree stands in\nagricultural production systems such as fruit tree plantations, oil palm\nplantations, olive orchards and agroforestry systems) and set- aside\nagricultural areas, and for rearing livestock. All plantations of relevant\ncommodities other than wood, that is cattle, cocoa, coffee, oil palm,\nrubber, soya are excluded from the forest definition.\n\nIn a first step, the workflow identifies the maximum potential extent of forest\ncover circa 2020 by integrating global tree- and mangrove cover data for the year 2020 \n(e.g. [Copernicus global land cover map](https://land.copernicus.eu/en/products/global-dynamic-land-cover/land-cover-2020-raster-10-m-global-annual)).\nIn addition, this delineation uses historical time-series of tree cover and loss to\nidentify areas of potentially unstocked forest due to e.g., natural disturbances or\nforest management practices. In a second step, this maximum potential forest extent\nis intersected with various other data layers on tree height, deforestation, cropland,\nagroforestry, and other land uses. The application of a series of complex Boolean decision\nrules excludes areas that are not forest according to the definition of the FAO-FRA and EUDR.\n\nThe global input layers, mapping approach, and accuracy of GFC 2020 version 3 will be\ndescribed in a separate technical report, expected to be released by March 2026. A technical\nreport ([Bourgoin et al 2024](https://op.europa.eu/en/publication-detail/-/publication/f9baaa45-e73f-11ee-9ea8-01aa75ed71a1/language-en)) describes the mapping approach for the first version; methodological\nchanges in version 2 and comparisons with other maps are described in [Bourgoin et al. (2025)](https://op.europa.eu/en/publication-detail/-/publication/e2c286ac-14e9-11f0-b1a3-01aa75ed71a1/language-en).\n[Colditz et al. (2025)](https://op.europa.eu/en/publication-detail/-/publication/e86f56dd-15b5-11f0-b1a3-01aa75ed71a1/language-en) describe the accuracy assessment protocol and results for GFC 2020 version 2.\n[Bourgoin et al. 2025](https://essd.copernicus.org/preprints/essd-2025-351/) present the mapping methodology and accuracy and compare the map to other\nglobal products. A comparative study between GFC 2020 version 1 and a national map was carried\nout over Ivory Coast ([Verhegghen et al, 2024](https://op.europa.eu/en/publication-detail/-/publication/ff3a48df-7957-11ef-bbbe-01aa75ed71a1/language-en)). A user guide explains how to visualize and interact\nwith GFC2020 to support the EUDR risk assessment ([Simonetti et al. 2025](https://op.europa.eu/en/publication-detail/-/publication/a9ec1c5d-3780-11f0-8a44-01aa75ed71a1/language-en)). \n\nThe GFC 2020 map may be revised if new information, additional large-scale data layers\nor revised global spatial data layers for year 2020 will be made available.\n\nFor a list of known issues please refer to [this website](https://forobs.jrc.ec.europa.eu/GFC).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JRC/JRC_GFC2020_V3",
+            "type": "text/html",
+            "title": "Run the example for JRC/GFC2020/V3 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/JRC/JRC_GFC2020_V3_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GFC2020_V3#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GFC2020_V3.json",
+            "type": "application/json",
+            "title": "JRC/GFC2020/V3"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GFC2020_V2.json",
+            "type": "application/json",
+            "title": "JRC/GFC2020/V2"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GFC2020_V3.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/catalog.json",
+            "type": "application/json",
+            "title": "JRC"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "forest-biomass"
+    ],
+    "gee:terms_of_use": "The data may be used by anyone, anywhere, anytime without permission,\nlicense or royalty payment. Attribution using the recommended citation\nis requested.\n",
+    "gee:type": "image",
+    "sci:citation": "Bourgoin, Clement; Verhegghen, Astrid; Ameztoy, Iban;\nCarboni, Silvia; Achard, Frederic; Colditz, Rene (2024): Global map of\nforest cover 2020 - version 3. European Commission, Joint Research\nPID: [http://data.europa.eu/89h/8c561543-31df-4e1b-9994-e529afecaf54](http://data.europa.eu/89h/8c561543-31df-4e1b-9994-e529afecaf54)\n",
+    "sci:publications": [
+        {
+            "citation": "Bourgoin, C., Verhegghen, A., Carboni, S., Ameztoy, I., Degreve, L.,\nFritz, S., Herold, M., Tsendbazar, N., Lesiv, M., Achard, F., and Colditz,\nR.: GFC2020: A Global Map of Forest Land Use for year 2020 to Support\nthe EU Deforestation Regulation, Earth Syst. Sci. Data Discuss.\n[https://doi.org/10.5194/essd-2025-351](https://doi.org/10.5194/essd-2025-351),\n2025.\n"
+        }
+    ],
+    "version": "V3",
+    "gee:status": "ready",
+    "title": "EC JRC global map of forest cover 2020, V3",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-12-31T00:00:00Z",
+                    "2020-12-31T00:00:01Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "eudr",
+        "forest",
+        "forest-biomass",
+        "jrc"
+    ],
+    "providers": [
+        {
+            "name": "Joint Research Centre, European Commission",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://forest-observatory.ec.europa.eu/forest/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GFC2020_V3"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Global forest cover 2020",
+                "gee:classes": [
+                    {
+                        "color": "4d9221",
+                        "description": "Forest",
+                        "value": 1
+                    }
+                ],
+                "name": "Map"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "GFC",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Map"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "4d9221"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 0,
+                    "lon": 0,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            10
+        ]
+    }
+}
