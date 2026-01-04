@@ -1,0 +1,231 @@
+{
+    "type": "Collection",
+    "id": "COPERNICUS/MARINE/INSITU_MULTI_4KM/RADAR_TOTAL",
+    "stac_version": "1.1.0",
+    "description": "The In Situ TAC is a distributed centre organized around 7 oceanographic\nregions: the global ocean and the 6 EUROGOOS regional alliances. It involves\n14 partners from 11 countries in Europe. It doesn't deploy any observing\nsystem and relies on data, exclusively funded by other sources than\nCopernicus Marine Service.\n\nThis dataset contains sea surface current observations from High-Frequency\n(HF) radars. Sea surface currents measured by HF radar are an average over\nthe top 0.3-2.5 m of the water column, depending on the operating central\nfrequency.\n\nThis dataset provides total velocity components. It comprises gridded maps\nof total velocity fields of the surface current averaged over a time\ninterval. Total velocities are derived using an un-weighted least-square fit\nthat maps radial velocities, measured by individual measurement stations,\nonto a Cartesian grid. The final product is a map of the zonal and\nmeridional components of the ocean currents on a regular grid in the area of\noverlap of two or more radar stations.\n\nFor more details refer to this\n[user manual](https://documentation.marine.copernicus.eu/PUM/CMEMS-INS-PUM-013-048.pdf)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/COPERNICUS/COPERNICUS_MARINE_INSITU_MULTI_4KM_RADAR_TOTAL",
+            "type": "text/html",
+            "title": "Run the example for COPERNICUS/MARINE/INSITU_MULTI_4KM/RADAR_TOTAL in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/COPERNICUS/COPERNICUS_MARINE_INSITU_MULTI_4KM_RADAR_TOTAL_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_MARINE_INSITU_MULTI_4KM_RADAR_TOTAL#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_MARINE_INSITU_MULTI_4KM_RADAR_TOTAL.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/catalog.json",
+            "type": "application/json",
+            "title": "COPERNICUS"
+        }
+    ],
+    "gee:bq_table_name": "earth-engine-public-data.insitu_nrt_currents.radar_total_latest",
+    "gee:categories": [
+        "oceans"
+    ],
+    "gee:skip_featureview_generation": true,
+    "gee:terms_of_use": "The data is provided free of charge by the Copernicus Marine Service.\nUsers must acknowledge the Copernicus Marine Service as the data source\nwhen using the data. More details on the terms of use can be found on\nthe [Copernicus Marine Service website](https://marine.copernicus.eu/user-corner/service-commitments-and-licence).\n",
+    "gee:type": "bigquery_table",
+    "gee:status": "ready",
+    "title": "Copernicus Global In-situ Observations of Ocean Currents - Radar Total",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-03-28T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "copernicus",
+        "currents",
+        "insitu",
+        "marine",
+        "ocean",
+        "oceans",
+        "radar"
+    ],
+    "providers": [
+        {
+            "name": "Copernicus",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://marine.copernicus.eu/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_MARINE_INSITU_MULTI_4KM_RADAR_TOTAL"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Datetime of the observation",
+                "name": "TIME",
+                "type": "DATETIME"
+            },
+            {
+                "description": "Latitude of the observation",
+                "name": "LATITUDE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Longitude of the observation",
+                "name": "LONGITUDE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Number of depth levels",
+                "name": "DEPTH",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Depth of the observation (m)",
+                "name": "DEPH",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Geometric Dilution of Precision",
+                "name": "GDOP",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Quality control flag for DDNS.\n\n* 0: No QC was performed\n* 1: good\n* 2: probably good\n* 3: Bad data that are potentially correctable\n* 4: Bad data\n* 5: value changed\n* 6: Not used\n* 7: nominal\n* 8: interpolated\n* 9: Missing value\n\nNote that a valid value for the corresponding variable has a QC bit\nequal to 1, 2, 5, 7, or 8.\n",
+                "name": "DDNS_QC",
+                "type": "INT"
+            },
+            {
+                "description": "Quality control flag for CSPD.\n\n* 0: No QC was performed\n* 1: good\n* 2: probably good\n* 3: Bad data that are potentially correctable\n* 4: Bad data\n* 5: value changed\n* 6: Not used\n* 7: nominal\n* 8: interpolated\n* 9: Missing value\n\nNote that a valid value for the corresponding variable has a QC bit\nequal to 1, 2, 5, 7, or 8.\n",
+                "name": "CSPD_QC",
+                "type": "INT"
+            },
+            {
+                "description": "Quality control flag for VART.\n\n* 0: No QC was performed\n* 1: good\n* 2: probably good\n* 3: Bad data that are potentially correctable\n* 4: Bad data\n* 5: value changed\n* 6: Not used\n* 7: nominal\n* 8: interpolated\n* 9: Missing value\n\nNote that a valid value for the corresponding variable has a QC bit\nequal to 1, 2, 5, 7, or 8.\n",
+                "name": "VART_QC",
+                "type": "INT"
+            },
+            {
+                "description": "Quality control flag for GDOP.\n\n* 0: No QC was performed\n* 1: good\n* 2: probably good\n* 3: Bad data that are potentially correctable\n* 4: Bad data\n* 5: value changed\n* 6: Not used\n* 7: nominal\n* 8: interpolated\n* 9: Missing value\n\nNote that a valid value for the corresponding variable has a QC bit\nequal to 1, 2, 5, 7, or 8.\n",
+                "name": "GDOP_QC",
+                "type": "INT"
+            },
+            {
+                "description": "Overall quality flag\n\nNote: a value of 1 here indicates that all data in that row's source\nfile was good, but because each row has QC bits for individual fields,\na value other than 1 here does not necessarily mean that a row cannot\nor should not be used.\n",
+                "name": "QCflag",
+                "type": "INT"
+            },
+            {
+                "description": "Surface Eastward sea water velocity (m/s)",
+                "name": "EWCT",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Surface Northward sea water velocity (m/s)",
+                "name": "NSCT",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Standard Deviation Of Surface Eastward Sea Water Velocity (m/s)\n",
+                "name": "EWCS",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Standard Deviation Of Surface Northward Sea Water Velocity (m/s)\n",
+                "name": "NSCS",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Covariance of Surface Sea Water Velocity (m^2/s^2)",
+                "name": "CCOV",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Quality control flag for POSITION.\n\n* 0: No QC was performed\n* 1: good\n* 2: probably good\n* 3: Bad data that are potentially correctable\n* 4: Bad data\n* 5: value changed\n* 6: Not used\n* 7: nominal\n* 8: interpolated\n* 9: Missing value\n\nNote that a valid value for the corresponding variable has a QC bit\nequal to 1, 2, 5, 7, or 8.\n",
+                "name": "POSITION_QC",
+                "type": "INT"
+            },
+            {
+                "description": "Station identifier",
+                "name": "SDN_STATION",
+                "type": "STRING"
+            },
+            {
+                "description": "Quality control flag for TIME.\n\n* 0: No QC was performed\n* 1: good\n* 2: probably good\n* 3: Bad data that are potentially correctable\n* 4: Bad data\n* 5: value changed\n* 6: Not used\n* 7: nominal\n* 8: interpolated\n* 9: Missing value\n\nNote that a valid value for the corresponding variable has a QC bit\nequal to 1, 2, 5, 7, or 8.\n",
+                "name": "TIME_QC",
+                "type": "INT"
+            },
+            {
+                "description": "Quality control flag for DEPH.\n\n* 0: No QC was performed\n* 1: good\n* 2: probably good\n* 3: Bad data that are potentially correctable\n* 4: Bad data\n* 5: value changed\n* 6: Not used\n* 7: nominal\n* 8: interpolated\n* 9: Missing value\n\nNote that a valid value for the corresponding variable has a QC bit\nequal to 1, 2, 5, 7, or 8.\n",
+                "name": "DEPH_QC",
+                "type": "INT"
+            },
+            {
+                "description": "Geographic location of the observation",
+                "name": "geometry",
+                "type": "GEOMETRY"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Global INSITU Radar Total EWCT",
+                "image_visualization": {
+                    "band_names": [
+                        "EWCT"
+                    ],
+                    "max": 0.5,
+                    "min": -0.5,
+                    "palette": [
+                        "a50026",
+                        "d73027",
+                        "333333",
+                        "4575b4",
+                        "313695"
+                    ]
+                },
+                "lookat": {
+                    "lat": 71.5,
+                    "lon": 25.5,
+                    "zoom": 8
+                }
+            }
+        ]
+    }
+}

@@ -25,8 +25,6 @@ for catalog in catalogs:
     try:
         for index, collection in enumerate(cat.get_all_collections()):
             data = collection.to_dict()
-            print(f'{i}: {data["id"]}')
-            i = i + 1
             dataset = {}
             output = out_dir + "/" + data["id"].replace("/", "_") + ".json"
             if not os.path.exists(os.path.dirname(output)):
@@ -34,15 +32,27 @@ for catalog in catalogs:
             with open(output, "w") as f:
                 json.dump(data, f, indent=4)
 
+            if "deprecated" in data and os.path.exists(output):
+                os.remove(output)
+                continue
+            print(f'{i}: {data["id"]}')
+            i = i + 1
+
             dataset["id"] = data["id"]
+
             dataset["title"] = data["title"]
             dataset["type"] = data["gee:type"]
             if dataset["type"] == "image":
                 dataset["snippet"] = f"ee.Image('{dataset['id']}')"
             elif dataset["type"] == "image_collection":
                 dataset["snippet"] = f"ee.ImageCollection('{dataset['id']}')"
-            else:
+            elif dataset["type"] == "table":
                 dataset["snippet"] = f"ee.FeatureCollection('{dataset['id']}')"
+            elif dataset["type"] == "bigquery_table":
+                print(dataset)
+                dataset["snippet"] = (
+                    f"ee.FeatureCollection.loadBigQueryTable('{data['gee:bq_table_name']}')"
+                )
 
             dataset["provider"] = data["providers"][0]["name"].replace("\n", " ")
             dataset["state_date"] = data["extent"]["temporal"]["interval"][0][0].split(
@@ -58,6 +68,7 @@ for catalog in catalogs:
                 dataset["deprecated"] = data["deprecated"]
             else:
                 dataset["deprecated"] = False
+            dataset["category"] = ", ".join(data["gee:categories"])
             dataset["keywords"] = ", ".join(data["keywords"])
 
             link = ""
