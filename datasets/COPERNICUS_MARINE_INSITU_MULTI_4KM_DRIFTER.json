@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "COPERNICUS/MARINE/INSITU_MULTI_4KM/DRIFTER",
     "stac_version": "1.1.0",
-    "description": "The In Situ TAC is a distributed centre organized around 7 oceanographic\nregions: the global ocean and the 6 EUROGOOS regional alliances. It involves\n14 partners from 11 countries in Europe. It doesn't deploy any observing\nsystem and relies on data, exclusively funded by other sources than\nCopernicus Marine Service.\n\nRegarding the production of global ocean products like the present one,\nactivities among partners are organized according to the expertise and\nbackground in data management for operational oceanography. Drifter data\nin this collection come from two main sources: near-surface velocity\nmeasurements (15 m depth) from the French project Coriolis, part of the\nDBCP's Global Drifter Program, and drifter data retrieved from the OGS\nMediterranean drifter dataset. The latter includes raw data from various\nresearch institutions and international data centers, processed using\ntechniques described in Menna et al. (2017, 2018). The drifters have\nvarying drogue depths, mostly between 0 and 15 m, but ranging from 0 to\n300 m.\n",
+    "description": "The In Situ TAC is a distributed centre organized around 7 oceanographic\nregions: the global ocean and the 6 EUROGOOS regional alliances. It involves\n14 partners from 11 countries in Europe. It doesn't deploy any observing\nsystem and relies on data, exclusively funded by other sources than\nCopernicus Marine Service.\n\nRegarding the production of global ocean products like the present one,\nactivities among partners are organized according to the expertise and\nbackground in data management for operational oceanography. Drifter data\nin this collection come from two main sources: near-surface velocity\nmeasurements (15 m depth) from the French project Coriolis, part of the\nDBCP's Global Drifter Program, and drifter data retrieved from the OGS\nMediterranean drifter dataset. The latter includes raw data from various\nresearch institutions and international data centers, processed using\ntechniques described in Menna et al. (2017, 2018). The drifters have\nvarying drogue depths, mostly between 0 and 15 m, but ranging from 0 to\n300 m.\n\nFor more details refer to this\n[user manual](https://documentation.marine.copernicus.eu/PUM/CMEMS-INS-PUM-013-048.pdf)\n",
     "links": [
         {
             "rel": "root",
@@ -72,6 +72,7 @@
     "keywords": [
         "copernicus",
         "currents",
+        "insitu",
         "marine",
         "ocean",
         "oceans"

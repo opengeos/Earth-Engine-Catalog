@@ -1,0 +1,124 @@
+{
+    "type": "Collection",
+    "id": "COPERNICUS/MARINE/INSITU_MULTI_4KM/RADAR_RADIAL",
+    "stac_version": "1.1.0",
+    "description": "The In Situ TAC is a distributed centre organized around 7 oceanographic\nregions: the global ocean and the 6 EUROGOOS regional alliances. It involves\n14 partners from 11 countries in Europe. It doesn't deploy any observing\nsystem and relies on data, exclusively funded by other sources than\nCopernicus Marine Service.\n\nThis dataset contains sea surface current observations from High-Frequency\n(HF) radars. Sea surface currents measured by HF radar are an average over\nthe top 0.3-2.5 m of the water column, depending on the operating central\nfrequency.\n\nThis dataset provides radial velocity components. It comprises gridded maps\nof radial velocity fields of the surface current averaged over a time\ninterval. Radial velocities are measured on a polar grid and then remapped\nonto a Cartesian grid. The final product is a map of the zonal and\nmeridional components of the radial ocean currents on a regular grid in the\narea covered by the individual radar stations.\n\nFor more details refer to this\n[user manual](https://documentation.marine.copernicus.eu/PUM/CMEMS-INS-PUM-013-048.pdf)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/COPERNICUS/COPERNICUS_MARINE_INSITU_MULTI_4KM_RADAR_RADIAL",
+            "type": "text/html",
+            "title": "Run the example for COPERNICUS/MARINE/INSITU_MULTI_4KM/RADAR_RADIAL in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/COPERNICUS/COPERNICUS_MARINE_INSITU_MULTI_4KM_RADAR_RADIAL_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_MARINE_INSITU_MULTI_4KM_RADAR_RADIAL#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_MARINE_INSITU_MULTI_4KM_RADAR_RADIAL.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/catalog.json",
+            "type": "application/json",
+            "title": "COPERNICUS"
+        }
+    ],
+    "gee:bq_table_name": "earth-engine-public-data.insitu_nrt_currents.radar_radial_latest",
+    "gee:categories": [
+        "oceans"
+    ],
+    "gee:skip_featureview_generation": true,
+    "gee:terms_of_use": "The data is provided free of charge by the Copernicus Marine Service.\nUsers must acknowledge the Copernicus Marine Service as the data source\nwhen using the data. More details on the terms of use can be found on\nthe [Copernicus Marine Service website](https://marine.copernicus.eu/user-corner/service-commitments-and-licence).\n",
+    "gee:type": "bigquery_table",
+    "gee:status": "ready",
+    "title": "Copernicus Global In-situ Observations of Ocean Currents - Radar Radial",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-03-28T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "copernicus",
+        "currents",
+        "insitu",
+        "marine",
+        "ocean",
+        "oceans",
+        "radar"
+    ],
+    "providers": [
+        {
+            "name": "Copernicus",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://marine.copernicus.eu/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_MARINE_INSITU_MULTI_4KM_RADAR_RADIAL"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Global INSITU Radar Radial RDVA",
+                "image_visualization": {
+                    "band_names": [
+                        "RDVA"
+                    ],
+                    "max": 1,
+                    "min": -1,
+                    "palette": [
+                        "a50026",
+                        "d73027",
+                        "333333",
+                        "4575b4",
+                        "313695"
+                    ]
+                },
+                "lookat": {
+                    "lat": 42.76,
+                    "lon": -9.46,
+                    "zoom": 8
+                }
+            }
+        ]
+    }
+}
