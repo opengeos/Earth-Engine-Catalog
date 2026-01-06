@@ -1,0 +1,210 @@
+{
+    "type": "Collection",
+    "id": "overture-maps/places_place",
+    "stac_version": "1.1.0",
+    "description": "The Overture Maps Places theme contains more than 64 million point\nrepresentations of real-world entities: businesses, schools, hospitals,\nreligious organizations, landmarks, mountain peaks, and much more.\n\nEach place record includes location coordinates, names, categories,\ncontact information (websites, social media, emails, phones), brand\ninformation, addresses, and operating status. A confidence score\nindicates the certainty of each place's existence.\n\nThis dataset is part of the Overture Maps Foundation's collaborative\neffort to develop interoperable open map data. The data is released\nmonthly and always reflects the most recent release.\n\nData source: [Overture Maps Foundation](https://overturemaps.org/)\n\nDocumentation: [Places Theme Guide](https://docs.overturemaps.org/guides/places/)\n\nBigQuery table: `bigquery-public-data.overture_maps.place`\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/overture-maps/overture-maps_places_place",
+            "type": "text/html",
+            "title": "Run the example for overture-maps/places_place in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/overture-maps/overture-maps_places_place_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/overture-maps_places_place#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/ODbL-1.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://console.cloud.google.com/bigquery?p=bigquery-public-data&d=overture_maps&t=place"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/overture-maps/overture-maps_places_place.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/overture-maps/catalog.json",
+            "type": "application/json",
+            "title": "overture-maps"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:bq_table_name": "bigquery-public-data.overture_maps.place",
+    "gee:categories": [
+        "infrastructure-boundaries"
+    ],
+    "gee:skip_featureview_generation": true,
+    "gee:status": "beta",
+    "gee:terms_of_use": "[ODbL-1.0](https://spdx.org/licenses/ODbL-1.0.html)",
+    "gee:type": "bigquery_table",
+    "gee:unusual_terms_of_use": true,
+    "version": "latest",
+    "title": "Overture Maps - Places: Place",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-07-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "ODbL-1.0",
+    "keywords": [
+        "global",
+        "infrastructure-boundaries",
+        "map",
+        "population",
+        "urban"
+    ],
+    "providers": [
+        {
+            "name": "Overture Maps Foundation",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://overturemaps.org/"
+        },
+        {
+            "name": "CARTO",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://carto.com/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/overture-maps_places_place"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "The addresses of the place. Array of address records, each containing:\nfreeform (street address text), locality (city/town name), postcode,\nregion (administrative region code, e.g., \"US-NY\"), and country\n(ISO country code, e.g., \"US\").\n",
+                "name": "addresses",
+                "type": "RECORD_LIST"
+            },
+            {
+                "description": "Bounding box of the feature geometry. Record with fields: xmin\n(minimum longitude), xmax (maximum longitude), ymin (minimum\nlatitude), ymax (maximum latitude).\n",
+                "name": "bbox",
+                "type": "RECORD"
+            },
+            {
+                "description": "The brand of the place. Record containing: names (brand name\ncontainer with primary and common names) and wikidata (Wikidata\nidentifier for the brand). Places with multiple brands are\nrepresented as separate place entries.\n",
+                "name": "brand",
+                "type": "RECORD"
+            },
+            {
+                "description": "The categories of the place. Record containing: primary (the main\ncategory of the place) and alternate (array of additional applicable\ncategories). Complete list available on\n[GitHub](https://github.com/OvertureMaps/schema/blob/main/docs/schema/concepts/by-theme/places/overture_categories.csv).\n",
+                "name": "categories",
+                "type": "RECORD"
+            },
+            {
+                "description": "The confidence of the existence of the place. A number between 0\nand 1, where higher values indicate greater certainty.\n",
+                "name": "confidence",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "The email addresses associated with the place. Array of records\ncontaining email address strings.\n",
+                "name": "emails",
+                "type": "RECORD_LIST"
+            },
+            {
+                "description": "Point geometry in WGS84 (EPSG:4326).",
+                "name": "geometry",
+                "type": "GEOMETRY"
+            },
+            {
+                "description": "A feature ID. This may be an ID associated with the Global Entity\nReference System (GERS).\n",
+                "name": "id",
+                "type": "STRING"
+            },
+            {
+                "description": "The names of the place. Record containing: primary (main name),\ncommon (translations by language code, e.g., \"es\" for Spanish),\nand rules (array of naming variants such as short forms or\nabbreviations).\n",
+                "name": "names",
+                "type": "RECORD"
+            },
+            {
+                "description": "Indicates operating status of a place. Possible values: 'open',\n'permanently_closed', or 'temporarily_closed'.\n",
+                "name": "operating_status",
+                "type": "STRING"
+            },
+            {
+                "description": "The phone numbers associated with the place. Array of records\ncontaining phone number strings.\n",
+                "name": "phones",
+                "type": "RECORD_LIST"
+            },
+            {
+                "description": "The social media profiles of the place. Array of records containing\nURLs to social media pages.\n",
+                "name": "socials",
+                "type": "RECORD_LIST"
+            },
+            {
+                "description": "Source attribution for the feature properties. Array of records,\neach containing: property (property name in JSON Pointer notation),\ndataset (source dataset name), and record_id (identifier in the\nsource dataset).\n",
+                "name": "sources",
+                "type": "RECORD_LIST"
+            },
+            {
+                "description": "Version number of the feature, incremented in each Overture release\nwhere geometry or attributes changed.\n",
+                "name": "version",
+                "type": "INT"
+            },
+            {
+                "description": "The websites associated with the place. Array of records containing\nURLs to the place's websites.\n",
+                "name": "websites",
+                "type": "RECORD_LIST"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Overture Places",
+                "lookat": {
+                    "lat": 40.7128,
+                    "lon": -74.006,
+                    "zoom": 12
+                },
+                "table_visualization": {
+                    "color": "4285f4",
+                    "point_size": 2
+                }
+            }
+        ]
+    }
+}

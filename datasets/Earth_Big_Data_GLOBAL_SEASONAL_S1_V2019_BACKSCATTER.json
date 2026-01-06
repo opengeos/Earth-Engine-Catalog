@@ -1,0 +1,258 @@
+{
+    "type": "Collection",
+    "id": "Earth_Big_Data/GLOBAL_SEASONAL_S1/V2019/BACKSCATTER",
+    "stac_version": "1.1.0",
+    "description": "This data set is the first-of-its-kind spatial representation of\nmulti-seasonal, global C-band Synthetic Aperture Radar (SAR)\ninterferometric repeat-pass coherence and backscatter signatures.\nCoverage comprises land masses and ice sheets from 82 degrees\nNorthern to 79 degrees Southern latitudes. The data set is derived\nfrom multi-temporal repeat-pass interferometric processing of about\n205,000 Sentinel-1 C-band SAR images acquired in Interferometric\nWide-Swath Mode from 1-Dec-2019 to 30-Nov-2020.\n\nThis dataset contains mean Radiometrically Terrain Corrected (RTC)\nbackscatter. The raw signal intensity has been adjusted to account for the\ninfluence of local topography (like hills and slopes) on the measured radar\ncross-section. This correction is performed to produce a\nterrain-flattened backscatter value that is more representative of the\nintrinsic scattering properties of the surface itself.\n\nIf you would like to do calculations using the digital numbers from the\noriginal rasters, load\n*Earth_Big_Data/GLOBAL_SEASONAL_S1/V2019/BACKSCATTER_RAW* instead.\n\nOther datasets derived from Sentinel-1 observations over the same time\nperiod include:\n\n* [Coherence](Earth_Big_Data_GLOBAL_SEASONAL_S1_V2019_COHERENCE)\n* [Decay Model Parameters](Earth_Big_Data_GLOBAL_SEASONAL_S1_V2019_DECAY_MODEL_PARAMETERS)\n* [Incidence Layover Shadow](Earth_Big_Data_GLOBAL_SEASONAL_S1_V2019_INCIDENCE_LAYOVER_SHADOW)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/Earth_Big_Data/Earth_Big_Data_GLOBAL_SEASONAL_S1_V2019_BACKSCATTER",
+            "type": "text/html",
+            "title": "Run the example for Earth_Big_Data/GLOBAL_SEASONAL_S1/V2019/BACKSCATTER in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/Earth_Big_Data/Earth_Big_Data_GLOBAL_SEASONAL_S1_V2019_BACKSCATTER_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/Earth_Big_Data_GLOBAL_SEASONAL_S1_V2019_BACKSCATTER#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Earth_Big_Data/Earth_Big_Data_GLOBAL_SEASONAL_S1_V2019_BACKSCATTER.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Earth_Big_Data/catalog.json",
+            "type": "application/json",
+            "title": "Earth_Big_Data"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "sci:citation": "Kellndorfer, J., Cartus, O., Lavalle, M. et al. Global seasonal Sentinel-1\ninterferometric coherence and backscatter data set. Sci Data 9, 73 (2022).\n[doi:10.1038/s41597-022-01189-6](https://doi.org/10.1038/s41597-022-01189-6).\n",
+    "sci:doi": "10.1038/s41597-022-01189-6",
+    "version": "2019",
+    "title": "Global Seasonal Sentinel-1 Interferometric Coherence and Backscatter V2019 Backscatter",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -79,
+                    180,
+                    82
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-12-01T00:00:00Z",
+                    "2020-12-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "backscatter",
+        "earth-big-data",
+        "jpl",
+        "nasa",
+        "polarization",
+        "radar",
+        "sar",
+        "satellite-imagery",
+        "seasonal",
+        "sentinel1-derived"
+    ],
+    "providers": [
+        {
+            "name": "Earth Big Data LLC",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.earthbigdata.com/"
+        },
+        {
+            "name": "Alaska Satellite Facility",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://asf.alaska.edu/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/Earth_Big_Data_Earth_Big_Data_GLOBAL_SEASONAL_S1_V2019_BACKSCATTER"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Fall (Sep-Nov 2020) HH backscatter amplitude.",
+                "gee:polarization": "HH",
+                "gee:units": "dB",
+                "name": "fall_hh_AMP"
+            },
+            {
+                "description": "Fall (Sep-Nov 2020) HV backscatter amplitude.",
+                "gee:polarization": "HV",
+                "gee:units": "dB",
+                "name": "fall_hv_AMP"
+            },
+            {
+                "description": "Fall (Sep-Nov 2020) VH backscatter amplitude.",
+                "gee:polarization": "VH",
+                "gee:units": "dB",
+                "name": "fall_vh_AMP"
+            },
+            {
+                "description": "Fall (Sep-Nov 2020) VV backscatter amplitude.",
+                "gee:polarization": "VV",
+                "gee:units": "dB",
+                "name": "fall_vv_AMP"
+            },
+            {
+                "description": "Spring (Mar-May 2020) HH backscatter amplitude.",
+                "gee:polarization": "HH",
+                "gee:units": "dB",
+                "name": "spring_hh_AMP"
+            },
+            {
+                "description": "Spring (Mar-May 2020) HV backscatter amplitude.",
+                "gee:polarization": "HV",
+                "gee:units": "dB",
+                "name": "spring_hv_AMP"
+            },
+            {
+                "description": "Spring (Mar-May 2020) VH backscatter amplitude.",
+                "gee:polarization": "VH",
+                "gee:units": "dB",
+                "name": "spring_vh_AMP"
+            },
+            {
+                "description": "Spring (Mar-May 2020) VV backscatter amplitude.",
+                "gee:polarization": "VV",
+                "gee:units": "dB",
+                "name": "spring_vv_AMP"
+            },
+            {
+                "description": "Summer (Jun-Aug 2020) HH backscatter amplitude.",
+                "gee:polarization": "HH",
+                "gee:units": "dB",
+                "name": "summer_hh_AMP"
+            },
+            {
+                "description": "Summer (Jun-Aug 2020) HV backscatter amplitude.",
+                "gee:polarization": "HV",
+                "gee:units": "dB",
+                "name": "summer_hv_AMP"
+            },
+            {
+                "description": "Summer (Jun-Aug 2020) VH backscatter amplitude.",
+                "gee:polarization": "VH",
+                "gee:units": "dB",
+                "name": "summer_vh_AMP"
+            },
+            {
+                "description": "Summer (Jun-Aug 2020) VV backscatter amplitude.",
+                "gee:polarization": "VV",
+                "gee:units": "dB",
+                "name": "summer_vv_AMP"
+            },
+            {
+                "description": "Winter (Dec 2019-Feb 2020) HH backscatter amplitude.",
+                "gee:polarization": "HH",
+                "gee:units": "dB",
+                "name": "winter_hh_AMP"
+            },
+            {
+                "description": "Winter (Dec 2019-Feb 2020) HV backscatter amplitude.",
+                "gee:polarization": "HV",
+                "gee:units": "dB",
+                "name": "winter_hv_AMP"
+            },
+            {
+                "description": "Winter (Dec 2019-Feb 2020) VH backscatter amplitude.",
+                "gee:polarization": "VH",
+                "gee:units": "dB",
+                "name": "winter_vh_AMP"
+            },
+            {
+                "description": "Winter (Dec 2019-Feb 2020) VV backscatter amplitude.",
+                "gee:polarization": "VV",
+                "gee:units": "dB",
+                "name": "winter_vv_AMP"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Tile ID",
+                "name": "tile_id",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Fall HH AMP",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "fall_hh_AMP"
+                        ],
+                        "max": [
+                            1.25
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 64.177,
+                    "lon": -45.2,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            92.7
+        ],
+        "sar:polarizations": [
+            "HH",
+            "HV",
+            "VH",
+            "VV"
+        ],
+        "sar:product_type": [
+            "SLC"
+        ]
+    }
+}

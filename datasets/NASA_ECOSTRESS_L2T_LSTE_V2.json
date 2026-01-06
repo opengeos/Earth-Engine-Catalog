@@ -1,0 +1,355 @@
+{
+    "type": "Collection",
+    "id": "NASA/ECOSTRESS/L2T_LSTE/V2",
+    "stac_version": "1.1.0",
+    "description": "The ECOSTRESS Land Surface Temperature and Emissivity (ECO_L2T_LSTE) V002\ndataset provides Land Surface Temperature (LST), LST error, Quality Control\nflags, Broadband Emissivity, cloud mask, surface height, water mask, and\nview zenith angle data at a 70m spatial resolution. This product is derived\nfrom ECOSTRESS observations and is essential for understanding surface energy\nbalance and water stress.\n\nNOTE: Currently, only tiles covering the Los Angeles metro area have been\ningested into Earth Engine. We plan to expand coverage in the future.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1655/ECO_L1C-4_Grid_Tile_User_Guide_V2.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/1869/ECOSTRESSL3JET_ATBD_V1.pdf)\n\n* [General Documentation](https://github.com/nasa/ECOSTRESS-Data-Resources)\n\n* [Land Processes Distributed Active Archive Center](https://www.earthdata.nasa.gov/centers/lp-daac)\n\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_ECOSTRESS_L2T_LSTE_V2",
+            "type": "text/html",
+            "title": "Run the example for NASA/ECOSTRESS/L2T_LSTE/V2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_ECOSTRESS_L2T_LSTE_V2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_ECOSTRESS_L2T_LSTE_V2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/ECOSTRESS/ECO_L2T_LSTE.002"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_ECOSTRESS_L2T_LSTE_V2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "plant-productivity"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C2076090826-LPCLOUD"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Hook, Simon, et al. ECOSTRESS Land Surface Temperature and Emissivity L2 Global 70 m\nv002. NASA Land Processes Distributed Active Archive Center, 2023,\ndoi:[10.5067/ECOSTRESS/ECO_L2T_LSTE.002](https://doi.org/10.5067/ECOSTRESS/ECO_L2T_LSTE.002)\n",
+    "sci:doi": "10.5067/ECOSTRESS/ECO_L2T_LSTE.002",
+    "version": "V002",
+    "title": "ECOSTRESS Land Surface Temperature and Emissivity L2 Global 70 m V002",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-07-09T00:00:00Z",
+                    "2025-12-15T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "ecostress",
+        "emissivity",
+        "land",
+        "lst",
+        "plant-productivity",
+        "temperature"
+    ],
+    "providers": [
+        {
+            "name": "Land Processes Distributed Active Archive Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.earthdata.nasa.gov/data/catalog/lpcloud-eco-l2t-lste-002"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_ECOSTRESS_L2T_LSTE_V2"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Land Surface Temperature",
+                "gee:units": "K",
+                "name": "LST"
+            },
+            {
+                "description": "Land Surface Temperature error",
+                "gee:units": "K",
+                "name": "LST_err"
+            },
+            {
+                "description": "Quality Control flags for LST and emissivity",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "LST Quality",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Good Quality",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Degraded Quality",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "LST Error Estimate",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "Good",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Degraded",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "LST Temporal Interpolation",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Sky Condition",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "Clear Sky",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Cloudy Sky",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "LST Outlier",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Slope Consistency",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "Consistent",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Inconsistent",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Snow/Ice",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Land/Water",
+                            "first_bit": 7,
+                            "values": [
+                                {
+                                    "description": "Land",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Water",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 8
+                },
+                "name": "QC"
+            },
+            {
+                "description": "Wide band Emissivity",
+                "name": "EmisWB"
+            },
+            {
+                "description": "Cloud mask",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Clear",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Cloud",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 1
+                },
+                "name": "cloud"
+            },
+            {
+                "description": "Surface elevation of observation\"",
+                "gee:units": "m",
+                "name": "height"
+            },
+            {
+                "description": "Water mask",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Land/Water",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Not water",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Water",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 1
+                },
+                "name": "water"
+            },
+            {
+                "description": "View Zenith Angle",
+                "gee:units": "deg",
+                "name": "view_zenith"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Land Surface Temperature",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "LST"
+                        ],
+                        "max": [
+                            323.15
+                        ],
+                        "min": [
+                            273.15
+                        ],
+                        "palette": [
+                            "00008B",
+                            "0000FF",
+                            "00FFFF",
+                            "00FF00",
+                            "FFFF00",
+                            "FF0000",
+                            "8B0000"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 38.8904,
+                    "lon": -77.1056,
+                    "zoom": 10
+                }
+            }
+        ],
+        "gsd": [
+            70
+        ]
+    }
+}

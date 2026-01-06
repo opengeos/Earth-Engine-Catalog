@@ -1,0 +1,220 @@
+{
+    "type": "Collection",
+    "id": "projects/ee-kbas-in-gee/assets/current",
+    "stac_version": "1.1.0",
+    "description": "**If you are interested in accessing the KBA dataset please complete the\n[KBA data request form](https://www.keybiodiversityareas.org/kba-data/request)\nwhich will allow access directly in GEE once approved.**\n\nKey Biodiversity Areas (KBAs) are 'sites contributing\nsignificantly to the global persistence of biodiversity\u2019,\nin terrestrial, freshwater and marine ecosystems. Sites\ncan be identified as KBAs if they meet at least one of\nthe KBA criteria set out in the KBA Standard (IUCN, 2016) for threatened or geographically\nrestricted species or ecosystems, ecological integrity, biological processes, or\nirreplaceability. Both tabular and spatial data for KBAs are\nmanaged in the World Database of Key Biodiversity Areas (WDKBA).\n\nThe identification of KBAs draws upon the efforts of huge networks\nof local experts and relies on locally collected data. The process\nto reassess existing or identify new KBAs, is highly inclusive,\nconsultative and nationally driven. Anyone with appropriate data may\npropose a site as a KBA, although consultation with relevant stakeholders\nat the local and national level is required when identifying the site and\nneeds to be documented in the proposal. KBAs can be identified by a KBA\nNational Coordination Group (KBA NCG) if this has been established in a\ncountry or by an individual or small group of proposers. Further information\nabout KBAs can be found on the [KBA website](https://www.keybiodiversityareas.org/).\n\n**Data Sources.** Sites of importance for biodiversity that had been identified using other\npre-existing criteria formed the basis of the KBA dataset prior to the\nlaunch of the KBA Standard in 2016. These were principally the Important\nBird and Biodiversity Areas (IBAs) identified by BirdLife International,\nplus Alliance for Zero Extinction (AZE) sites and KBAs covering multiple\ntaxonomic groups in freshwater, marine and terrestrial systems under previously\npublished criteria. Since 2016, many of these sites have been reassessed\nagainst the Global Standard.\nCurrently, the global KBA network consists of >16,500 sites and these are classified\nas Global (those meeting Global KBA criteria), Regional (those not meeting Global KBA\ncriteria but continuing\tto meet other pre-existing criteria) or Global/ Regional to\nbe determined (those legacy sites with insufficient information to demonstrate whether\nthey meet Global KBA criteria). Further details about the current KBA dataset are published\non the KBA website.\n\n**Asset Naming Conventions.** An updated version of the WDKBA is currently\nreleased every six months. The most recent version is permanently available\nas projects/ee-kbas-in-gee/assets/current. Previous versions, starting from\nMarch 2025, are available in the format projects/ee-kbas-in-gee/assets/YYYYMM.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/ee-kbas-in-gee/projects_ee-kbas-in-gee_assets_current",
+            "type": "text/html",
+            "title": "Run the example for projects/ee-kbas-in-gee/assets/current in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/ee-kbas-in-gee/projects_ee-kbas-in-gee_assets_current_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_ee-kbas-in-gee_assets_current#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/ee-kbas-in-gee/projects_ee-kbas-in-gee_assets_current_FeatureView",
+            "type": "text/html",
+            "title": "Run the example for projects/ee-kbas-in-gee/assets/current in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ee-kbas-in-gee/projects_ee-kbas-in-gee_assets_current.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ee-kbas-in-gee/catalog.json",
+            "type": "application/json",
+            "title": "ee-kbas-in-gee"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "ecosystems",
+        "oceans"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "Please visit the [full terms and conditions page](https://www.keybiodiversityareas.org/termsofservice)\nof the World Database of KBAs. Select highlights below:\n\n**No Commercial Use.** You may not use, nor facilitate or assist others to use,\neither (a) KBA Data or (b) any Derivative Works (as further defined in clause 5)\nfor Commercial Use without the prior written permission of BirdLife International\non behalf of the KBA Secretariat, which grants permission on behalf of the owners\nof the relevant intellectual property rights. \\\"Commercial Use\\\" means a) any\nuse by, on behalf of, or to inform or assist the activities of, a commercial\nentity (an entity that operates 'for profit') or b) use by any individual\nor non-profit entity for the purposes of revenue generation.\n\n**Disclaimer.** The designation of geographical entities on The KBA Website do\nnot imply the expression of, or represent, any opinion by the KBA Partners\nconcerning the legal status of any country, territory or area, or concerning\nthe delimitation of its frontiers or boundaries.\n\n**Attribution.** The recipient of the data will provide full acknowledgement\nand citation (which includes reference to the version of the KBA Data used)\nin any materials or publications derived in part or in whole from the data.\n",
+    "gee:type": "table",
+    "gee:unusual_terms_of_use": true,
+    "sci:citation": "BirdLife International (year). Digital boundaries of Key Biodiversity\nAreas from the World Database of Key Biodiversity Areas. Developed by\nthe KBA Partnership: BirdLife International, International Union for\nthe Conservation of Nature, American Bird Conservancy, Amphibian Survival\nAlliance, Conservation International, Critical Ecosystem Partnership Fund,\nGlobal Environment Facility, Re:Wild, NatureServe, Rainforest Trust, Royal\nSociety for the Protection of Birds, Wildlife Conservation Society and World\nWildlife Fund. [insert month/year of version used].  Available at http://www.keybiodiversityareas.org/kba-data/request.\n",
+    "version": "September 2025",
+    "title": "WDKBA: World Database of Key Biodiversity Areas (KBAs) - September 2025",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-01-01T00:00:00Z",
+                    "2025-09-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "biodiversity",
+        "boundaries",
+        "ecosystems",
+        "global",
+        "iucn",
+        "management",
+        "marine",
+        "oceans",
+        "table"
+    ],
+    "providers": [
+        {
+            "name": "BirdLife International",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.birdlife.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_ee-kbas-in-gee_assets_current"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Whether or not the KBA is an Alliance for Zero Extinction (AZE) site (confirmed or \"\").",
+                "name": "AzeStatus",
+                "type": "STRING"
+            },
+            {
+                "description": "Name of country/territory containing the KBA.",
+                "name": "Country",
+                "type": "STRING"
+            },
+            {
+                "description": "Notes relating to the digitisation of the polygon.",
+                "name": "DelTxt",
+                "type": "STRING"
+            },
+            {
+                "description": "The Important Bird and Biodiversity Area (IBA) status of the KBA, taking one\nof the following values: candidate, confirmed, de-listed, does not qualify,\nsuperseded or \"\".\n",
+                "name": "IbaStatus",
+                "type": "STRING"
+            },
+            {
+                "description": "Name of KBA to be used internationally, typically in English.",
+                "name": "IntName",
+                "type": "STRING"
+            },
+            {
+                "description": "ISO3 code of country/territory containing the KBA.",
+                "name": "ISO3",
+                "type": "STRING"
+            },
+            {
+                "description": "The classification of KBAs as one of the following:\n\n* Global \u2014 KBAs that meet KBA criteria.\n* Regional - KBAs identified prior to the KBA Standard that meet other pre-existing criteria.\n* Global/Regional TBD - KBAs identified prior to the KBA Standard using pre-existing criteria\nbut with insufficient evidence to show whether they continue to meet criteria. Sites in this\ngroup are prioritised for reassessment.\n",
+                "name": "KbaClass",
+                "type": "STRING"
+            },
+            {
+                "description": "Current state of the KBA's assessment, this field equals confirmed for all published sites",
+                "name": "KbaStatus",
+                "type": "STRING"
+            },
+            {
+                "description": "Year in which the underlying KBA data was last updated.",
+                "name": "LastUpdate",
+                "type": "STRING"
+            },
+            {
+                "description": "Whether the KBA was identified using KBA criteria from before the publication\nof the [KBA standard](https://www.keybiodiversityareas.org/working-with-kbas/proposing-updating/criteria).\n",
+                "name": "LegacyKba",
+                "type": "STRING"
+            },
+            {
+                "description": "Name of KBA used nationally, typically in the language of its country.",
+                "name": "NatName",
+                "type": "STRING"
+            },
+            {
+                "description": "Name of region containing the KBA.",
+                "name": "Region",
+                "type": "STRING"
+            },
+            {
+                "description": "Calculated site area in KM2.",
+                "name": "SitAreaKM2",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Latitude coordinate of centroid.",
+                "name": "SitLat",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Longitude coordinate of centroid.",
+                "name": "SitLong",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Unique identifier for a KBA.",
+                "name": "SitRecID",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Origin of the spatial data.",
+                "name": "Source",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Key Biodiversity Areas",
+                "lookat": {
+                    "lat": 0,
+                    "lon": 0,
+                    "zoom": 4
+                },
+                "table_visualization": {
+                    "color": "ffd700",
+                    "fill_color": "FFD70066"
+                }
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 1500,
+            "thinning_strategy": "HIGHER_DENSITY"
+        }
+    }
+}

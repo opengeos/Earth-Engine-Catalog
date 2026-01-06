@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "UCSB-CHG/CHIRPS/DAILY",
+    "id": "UCSB-CHC/CHIRPS/V3/DAILY_RNL",
     "stac_version": "1.1.0",
-    "description": "Climate Hazards Center InfraRed Precipitation with Station data (CHIRPS)\nis a 30+ year quasi-global rainfall dataset. CHIRPS incorporates\n0.05\u00b0 resolution satellite imagery with in-situ station data\nto create gridded rainfall time series for trend analysis and seasonal\ndrought monitoring.\n",
+    "description": "The Climate Hazards Center Infrared Precipitation with Stations (CHIRPS v3)\nis a 40+ year, high-resolution quasi-global rainfall dataset. It spans\n60&deg;N to 60&deg;S and covers all longitudes, providing data from 1981 to\nnear-present. CHIRPS v3 combines satellite-based thermal infrared rainfall\nestimates with in-situ station observations to produce a 0.05&deg; gridded\nrainfall time series over land. This is version 3.0 of the dataset, for more\ninformation see [the CHC page](https://www.chc.ucsb.edu/data/chirps3).\n\nCHIRPS is fundamentally a pentad and monthly product from which other\ntime steps are derived. This daily dataset ('rnl') uses daily precipitation\nfrom the ECMWF ERA Reanalysis v5 (ERA5) data product to partition\npentadal CHIRPS-v3 precipitation totals into daily amounts.\n",
     "links": [
         {
             "rel": "root",
@@ -12,31 +12,31 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/UCSB-CHG/UCSB-CHG_CHIRPS_DAILY",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/UCSB-CHC/UCSB-CHC_CHIRPS_V3_DAILY_RNL",
             "type": "text/html",
-            "title": "Run the example for UCSB-CHG/CHIRPS/DAILY in the Earth Engine Code Editor",
+            "title": "Run the example for UCSB-CHC/CHIRPS/V3/DAILY_RNL in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/UCSB-CHG/UCSB-CHG_CHIRPS_DAILY_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/UCSB-CHC/UCSB-CHC_CHIRPS_V3_DAILY_RNL_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/UCSB-CHG_CHIRPS_DAILY#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/UCSB-CHC_CHIRPS_V3_DAILY_RNL#terms-of-use",
             "type": "text/html"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UCSB-CHG/UCSB-CHG_CHIRPS_DAILY.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UCSB-CHC/UCSB-CHC_CHIRPS_V3_DAILY_RNL.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UCSB-CHG/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UCSB-CHC/catalog.json",
             "type": "application/json",
-            "title": "UCSB-CHG"
+            "title": "UCSB-CHC"
         }
     ],
     "stac_extensions": [
@@ -54,18 +54,18 @@
     },
     "gee:terms_of_use": "This dataset is in the public domain. To the extent possible under law,\n[Pete Peterson](https://chc.ucsb.edu/people/pete-peterson)\nhas waived all copyright and related or neighboring rights to\nClimate Hazards Center Infrared Precipitation with Stations (CHIRPS).\n",
     "gee:type": "image_collection",
-    "sci:citation": "Funk, Chris, Pete Peterson, Martin Landsfeld, Diego Pedreros, James\nVerdin, Shraddhanand Shukla, Gregory Husak, James Rowland, Laura Harrison,\nAndrew Hoell & Joel Michaelsen. \"The climate hazards infrared precipitation\nwith stations-a new environmental record for monitoring extremes\".\nScientific Data 2, 150066. [doi:10.1038/sdata.2015.66](https://doi.org/10.1038/sdata.2015.66)\n2015.\n",
-    "version": "2.0",
+    "sci:citation": "Climate Hazards Center Infrared Precipitation with Stations version 3.\nCHIRPS3 Data Repository [doi:10.15780/G2JQ0P](https://doi.org/10.15780/G2JQ0P) (2025).\n",
+    "version": "3.0",
     "gee:status": "ready",
-    "title": "CHIRPS Precipitation Daily: Climate Hazards Center InfraRed Precipitation With Station Data (Version 2.0 Final)",
+    "title": "CHIRPS Precipitation Daily Reanalysis: Climate Hazards Center InfraRed Precipitation With Station Data (Version 3.0, ERA5-based)",
     "extent": {
         "spatial": {
             "bbox": [
                 [
                     -180,
-                    -50,
+                    -60,
                     180,
-                    50
+                    60
                 ]
             ]
         },
@@ -80,7 +80,7 @@
     },
     "license": "other",
     "keywords": [
-        "chg",
+        "chc",
         "climate",
         "geophysical",
         "precipitation",
@@ -89,19 +89,19 @@
     ],
     "providers": [
         {
-            "name": "UCSB/CHG",
+            "name": "UCSB/CHC",
             "roles": [
                 "licensor",
                 "producer"
             ],
-            "url": "https://chc.ucsb.edu/data/chirps"
+            "url": "https://www.chc.ucsb.edu/data/chirps3"
         },
         {
             "name": "Google Earth Engine",
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/UCSB-CHG_CHIRPS_DAILY"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/UCSB-CHC_CHIRPS_V3_DAILY_RNL"
         }
     ],
     "summaries": {
@@ -110,6 +110,23 @@
                 "description": "Precipitation",
                 "gee:units": "mm/d",
                 "name": "precipitation"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Year",
+                "name": "year",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Month",
+                "name": "month",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Day",
+                "name": "day",
+                "type": "DOUBLE"
             }
         ],
         "gee:visualizations": [
@@ -130,8 +147,8 @@
                             "001137",
                             "0aab1e",
                             "e7eb05",
-                            "ff4a2d",
-                            "e90000"
+                            "2c7fb8",
+                            "253494"
                         ]
                     }
                 },

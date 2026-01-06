@@ -1,0 +1,279 @@
+{
+    "type": "Collection",
+    "id": "Earth_Big_Data/GLOBAL_SEASONAL_S1/V2019/DECAY_MODEL_PARAMETERS",
+    "stac_version": "1.1.0",
+    "description": "This data set is the first-of-its-kind spatial representation of\nmulti-seasonal, global C-band Synthetic Aperture Radar (SAR)\ninterferometric repeat-pass coherence and backscatter signatures.\nCoverage comprises land masses and ice sheets from 82 degrees\nNorthern to 79 degrees Southern latitudes. The data set is derived\nfrom multi-temporal repeat-pass interferometric processing of about\n205,000 Sentinel-1 C-band SAR images acquired in Interferometric\nWide-Swath Mode from 1-Dec-2019 to 30-Nov-2020.\n\nThis dataset includes parameters for the coherence decay model, an\nexponential function fitted to the seasonal median coherence values as a\nfunction of the repeat interval to quantify how quickly coherence is lost\nover time. The parameters are:\n\n* **rho**: Represents the long-term coherence, the value that the model\n  predicts as the repeat interval increases to infinity. It is a measure of\n  the temporal stability of the scattering elements in the target area.\n\n* **tau**: Represents the rate of coherence decay, a measure of how quickly\n the coherence drops from its initial high value towards *rho*. Lower\n values indicate faster decorrelation.\n\n* **rmse**: The root mean square error, a quality indicator of the model\n  fit. It quantifies the difference between the modeled coherence curve and\n  the original, non-aggregated coherence observations used to fit the model.\n\nThe scale factor has already been applied to each of the bands. If you\nwould like to do calculations using the digital numbers from the original\nrasters, load\n*Earth_Big_Data/GLOBAL_SEASONAL_S1/V2019/DECAY_MODEL_PARAMETERS_RAW*\ninstead.\n\nOther datasets derived from Sentinel-1 observations over the same time\nperiod include:\n\n* [Backscatter](Earth_Big_Data_GLOBAL_SEASONAL_S1_V2019_BACKSCATTER)\n* [Coherence](Earth_Big_Data_GLOBAL_SEASONAL_S1_V2019_COHERENCE)\n* [Incidence Layover Shadow](Earth_Big_Data_GLOBAL_SEASONAL_S1_V2019_INCIDENCE_LAYOVER_SHADOW)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/Earth_Big_Data/Earth_Big_Data_GLOBAL_SEASONAL_S1_V2019_DECAY_MODEL_PARAMETERS",
+            "type": "text/html",
+            "title": "Run the example for Earth_Big_Data/GLOBAL_SEASONAL_S1/V2019/DECAY_MODEL_PARAMETERS in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/Earth_Big_Data/Earth_Big_Data_GLOBAL_SEASONAL_S1_V2019_DECAY_MODEL_PARAMETERS_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/Earth_Big_Data_GLOBAL_SEASONAL_S1_V2019_DECAY_MODEL_PARAMETERS#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Earth_Big_Data/Earth_Big_Data_GLOBAL_SEASONAL_S1_V2019_DECAY_MODEL_PARAMETERS.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Earth_Big_Data/catalog.json",
+            "type": "application/json",
+            "title": "Earth_Big_Data"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "sci:citation": "Kellndorfer, J., Cartus, O., Lavalle, M. et al. Global seasonal Sentinel-1\ninterferometric coherence and backscatter data set. Sci Data 9, 73 (2022).\n[doi:10.1038/s41597-022-01189-6](https://doi.org/10.1038/s41597-022-01189-6).\n",
+    "sci:doi": "10.1038/s41597-022-01189-6",
+    "version": "2019",
+    "title": "Global Seasonal Sentinel-1 Interferometric Coherence and Backscatter V2019 Decay Model Parameters",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -79,
+                    180,
+                    82
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-12-01T00:00:00Z",
+                    "2020-12-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "earth-big-data",
+        "jpl",
+        "nasa",
+        "polarization",
+        "radar",
+        "sar",
+        "satellite-imagery",
+        "seasonal",
+        "sentinel1-derived"
+    ],
+    "providers": [
+        {
+            "name": "Earth Big Data LLC",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.earthbigdata.com/"
+        },
+        {
+            "name": "Alaska Satellite Facility",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://asf.alaska.edu/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/Earth_Big_Data_Earth_Big_Data_GLOBAL_SEASONAL_S1_V2019_DECAY_MODEL_PARAMETERS"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Fall (Sep-Nov 2020) HH rho.",
+                "gee:polarization": "HH",
+                "name": "fall_hh_rho"
+            },
+            {
+                "description": "Fall (Sep-Nov 2020) HH rmse.",
+                "gee:polarization": "HH",
+                "name": "fall_hh_rmse"
+            },
+            {
+                "description": "Fall (Sep-Nov 2020) HH tau.",
+                "gee:polarization": "HH",
+                "name": "fall_hh_tau"
+            },
+            {
+                "description": "Fall (Sep-Nov 2020) VV rho.",
+                "gee:polarization": "VV",
+                "name": "fall_vv_rho"
+            },
+            {
+                "description": "Fall (Sep-Nov 2020) VV rmse.",
+                "gee:polarization": "VV",
+                "name": "fall_vv_rmse"
+            },
+            {
+                "description": "Fall (Sep-Nov 2020) VV tau.",
+                "gee:polarization": "VV",
+                "name": "fall_vv_tau"
+            },
+            {
+                "description": "Spring (Mar-May 2020) HH rho.",
+                "gee:polarization": "HH",
+                "name": "spring_hh_rho"
+            },
+            {
+                "description": "Spring (Mar-May 2020) HH rmse.",
+                "gee:polarization": "HH",
+                "name": "spring_hh_rmse"
+            },
+            {
+                "description": "Spring (Mar-May 2020) HH tau.",
+                "gee:polarization": "HH",
+                "name": "spring_hh_tau"
+            },
+            {
+                "description": "Spring (Mar-May 2020) VV rho.",
+                "gee:polarization": "VV",
+                "name": "spring_vv_rho"
+            },
+            {
+                "description": "Spring (Mar-May 2020) VV rmse.",
+                "gee:polarization": "VV",
+                "name": "spring_vv_rmse"
+            },
+            {
+                "description": "Spring (Mar-May 2020) VV tau.",
+                "gee:polarization": "VV",
+                "name": "spring_vv_tau"
+            },
+            {
+                "description": "Summer (Jun-Aug 2020) HH rho.",
+                "gee:polarization": "HH",
+                "name": "summer_hh_rho"
+            },
+            {
+                "description": "Summer (Jun-Aug 2020) HH rmse.",
+                "gee:polarization": "HH",
+                "name": "summer_hh_rmse"
+            },
+            {
+                "description": "Summer (Jun-Aug 2020) HH tau.",
+                "gee:polarization": "HH",
+                "name": "summer_hh_tau"
+            },
+            {
+                "description": "Summer (Jun-Aug 2020) VV rho.",
+                "gee:polarization": "VV",
+                "name": "summer_vv_rho"
+            },
+            {
+                "description": "Summer (Jun-Aug 2020) VV rmse.",
+                "gee:polarization": "VV",
+                "name": "summer_vv_rmse"
+            },
+            {
+                "description": "Summer (Jun-Aug 2020) VV tau.",
+                "gee:polarization": "VV",
+                "name": "summer_vv_tau"
+            },
+            {
+                "description": "Winter (Dec 2019-Feb 2020) HH rho.",
+                "gee:polarization": "HH",
+                "name": "winter_hh_rho"
+            },
+            {
+                "description": "Winter (Dec 2019-Feb 2020) HH rmse.",
+                "gee:polarization": "HH",
+                "name": "winter_hh_rmse"
+            },
+            {
+                "description": "Winter (Dec 2019-Feb 2020) HH tau.",
+                "gee:polarization": "HH",
+                "name": "winter_hh_tau"
+            },
+            {
+                "description": "Winter (Dec 2019-Feb 2020) VV rho.",
+                "gee:polarization": "VV",
+                "name": "winter_vv_rho"
+            },
+            {
+                "description": "Winter (Dec 2019-Feb 2020) VV rmse.",
+                "gee:polarization": "VV",
+                "name": "winter_vv_rmse"
+            },
+            {
+                "description": "Winter (Dec 2019-Feb 2020) VV tau.",
+                "gee:polarization": "VV",
+                "name": "winter_vv_tau"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Tile ID",
+                "name": "tile_id",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Fall HH rho",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "fall_hh_rho"
+                        ],
+                        "max": [
+                            0.4
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 64.177,
+                    "lon": -45.2,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            92.7
+        ],
+        "sar:polarizations": [
+            "HH",
+            "VV"
+        ],
+        "sar:product_type": [
+            "SLC"
+        ]
+    }
+}
