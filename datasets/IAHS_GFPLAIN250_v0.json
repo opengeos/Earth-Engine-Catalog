@@ -1,0 +1,144 @@
+{
+    "type": "Collection",
+    "id": "IAHS/GFPLAIN250/v0",
+    "stac_version": "1.1.0",
+    "description": "The GFPLAIN250m includes raster data of Earth's floodplains identified\nusing a geomorphic approach presented in Nardi et al. (2006, 2018).\nThe 250m floodplain dataset is derived by processing the NASA SRTM\nDigital Elevation model gathered from\n[http://srtm.csi.cgiar.org/](http://srtm.csi.cgiar.org/),\nand in particular the 250-m SRTM version 4.1 DTM. The coding used\nfor each continent and additional information are detailed in the\nmetadata included in the GFPLAIN250m data repository.\n\nThe elevation data are processed by a fast geospatial tool for floodplain\nmapping available for download at\n[https://github.com/fnardi/GFPLAIN](https://github.com/fnardi/GFPLAIN).\nThe tool first preprocesses DEM to derive hydrologic features\n(filled DEM, flow direction, flow accumulation, stream network),\nthen computes floodplain extents.\n\nThis dataset is applicable in regions where water-driven erosion and\ndepositional processes govern the morphology of floodplain landscape\nfeatures, and excludes deserts with low water availability and\nice-covered regions with insignificant river flows. It is fit for\nriver basins with a contributing area greater than 1000 km2.\nThe GFPLAIN250m dataset can be used in combination with global\ndatasets of human settlements to support large-scale studies of\nhuman-flood interactions, human pressure on rivers, and changes\nover time of floodplain and wetland habitats at risk.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/IAHS/IAHS_GFPLAIN250_v0",
+            "type": "text/html",
+            "title": "Run the example for IAHS/GFPLAIN250/v0 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/IAHS/IAHS_GFPLAIN250_v0_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/IAHS_GFPLAIN250_v0#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/IAHS/IAHS_GFPLAIN250_v0.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/IAHS/catalog.json",
+            "type": "application/json",
+            "title": "IAHS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:categories": [
+        "surface-ground-water"
+    ],
+    "gee:terms_of_use": "This dataset is licensed under a Creative Commons Attribution 4.0\nInternational License.\n",
+    "gee:type": "image",
+    "sci:publications": [
+        {
+            "citation": "Nardi, F. et al. GFPLAIN250m, a global high-resolution dataset of\nEarth's floodplains.\nSci. Data. 6:180309 doi: 10.1038/sdata.2018.309 (2019).\n[https://doi.org/10.6084/m9.figshare.6665165.v1](https://doi.org/10.6084/m9.figshare.6665165.v1),\n",
+            "doi": "10.1038/sdata.2018.309"
+        }
+    ],
+    "gee:status": "ready",
+    "title": "GFPLAIN250m: Global 250m Floodplain Dataset",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -56,
+                    180,
+                    60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-11-11T00:00:00Z",
+                    "2018-11-12T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "flood",
+        "monitoring",
+        "surface-ground-water"
+    ],
+    "providers": [
+        {
+            "name": "IAHS",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://iahs.info/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/IAHS_GFPLAIN250_v0"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Flood plain",
+                "name": "flood"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Floodplains",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "flood"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "ffffff",
+                            "0000ff"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 30.05,
+                    "lon": 31.25,
+                    "zoom": 7
+                }
+            }
+        ],
+        "gsd": [
+            250
+        ],
+        "flood": {
+            "minimum": 0,
+            "maximum": 1
+        }
+    }
+}
