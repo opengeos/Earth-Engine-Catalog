@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "COPERNICUS/MARINE/OC_GLO_BGC/REFLECTANCE_OLCI_300M",
     "stac_version": "1.1.0",
-    "description": "The Global Ocean Colour (Copernicus-GlobColour) dataset is a Bio-Geo-Chemical\n(BGC) product developed by ACRI-ST. Derived from multiple satellite sources\nlike SeaWiFS, MODIS, and OLCI. It provides a comprehensive range of\noceanographic variables, including: Chlorophyll (CHL),\nPhytoplankton Functional types and sizes (PFT), Primary Production (PP),\nSuspended Matter (SPM), Secchi Transparency Depth (ZSD),\nDiffuse Attenuation (KD490), Particulate Backscattering (BBP),\nAbsorption Coefficient (CDM), Reflectance (RRS) and more.\n\nThis dataset is a global product from the Copernicus Marine Service (CMEMS).\nIt provides Remote-Sensing Reflectance (Rrs), a fundamental optical property\nof the water that represents the light leaving the ocean surface.\nDerived from the Ocean and Land Colour Instrument (OLCI), this L4 dataset is\nprocessed into a ready-to-use format. With an exceptionally high spatial\nresolution of 300 meters, this dataset is particularly valuable for detailed\ncoastal and regional studies of water quality and marine constituents.\n\nDocumentation:\n\n * [User's Guide](https://documentation.marine.copernicus.eu/PUM/CMEMS-OC-PUM.pdf)\n\n * [Quality Information Document](https://documentation.marine.copernicus.eu/QUID/CMEMS-OC-QUID-009-101to104-111-113-116-118.pdf)\n\n * [Copernicus Marine Datastore](https://data.marine.copernicus.eu/products)\n\n",
+    "description": "The Global Ocean Colour (Copernicus-GlobColour) dataset is a Bio-Geo-Chemical\n(BGC) product developed by ACRI-ST. Derived from multiple satellite sources\nlike SeaWiFS, MODIS, and OLCI. It provides a comprehensive range of\noceanographic variables, including: Chlorophyll (CHL),\nPhytoplankton Functional types and sizes (PFT), Primary Production (PP),\nSuspended Matter (SPM), Secchi Transparency Depth (ZSD),\nDiffuse Attenuation (KD490), Particulate Backscattering (BBP),\nAbsorption Coefficient (CDM), Reflectance (RRS) and more.\n\nThis dataset is a global product from the Copernicus Marine Service (CMEMS).\nIt provides Remote-Sensing Reflectance (Rrs), a fundamental optical property\nof the water that represents the light leaving the ocean surface.\nDerived from the Ocean and Land Colour Instrument (OLCI), this L4 dataset is\nprocessed into a ready-to-use format. With an exceptionally high spatial\nresolution of 300 meters, this dataset is particularly valuable for detailed\ncoastal and regional studies of water quality and marine constituents.\n\nDocumentation:\n\n * [User's Guide](https://documentation.marine.copernicus.eu/PUM/CMEMS-OC-PUM.pdf)\n\n * [Quality Information Document](https://documentation.marine.copernicus.eu/QUID/CMEMS-OC-QUID-009-101to104-111-113-116-118.pdf)\n\n * [Copernicus Marine Datastore](https://data.marine.copernicus.eu/products)\n\nNOTE: The provider may remove Copernicus Marine data (especially Near\n Real-Time, NRT, observations) from their repository after some time,\n possibly aggregating that data into different (e.g., monthly) products.\n However, the corresponding assets remain available in the Earth Engine\n collection.\n\n",
     "links": [
         {
             "rel": "root",
@@ -70,7 +70,7 @@
         "temporal": {
             "interval": [
                 [
-                    "2023-04-01T00:00:00Z",
+                    "2025-03-01T00:00:00Z",
                     "2025-12-01T00:00:00Z"
                 ]
             ]
