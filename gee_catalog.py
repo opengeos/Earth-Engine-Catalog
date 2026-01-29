@@ -55,12 +55,10 @@ for catalog in catalogs:
                 )
 
             dataset["provider"] = data["providers"][0]["name"].replace("\n", " ")
-            dataset["state_date"] = data["extent"]["temporal"]["interval"][0][0].split(
-                "T"
-            )[0]
-            dataset["end_date"] = data["extent"]["temporal"]["interval"][0][1].split(
-                "T"
-            )[0]
+            start_date = data["extent"]["temporal"]["interval"][0][0]
+            end_date = data["extent"]["temporal"]["interval"][0][1]
+            dataset["state_date"] = start_date.split("T")[0] if start_date else None
+            dataset["end_date"] = end_date.split("T")[0] if end_date else None
             dataset["bbox"] = ", ".join(
                 [str(coord) for coord in data["extent"]["spatial"]["bbox"][0]]
             )
