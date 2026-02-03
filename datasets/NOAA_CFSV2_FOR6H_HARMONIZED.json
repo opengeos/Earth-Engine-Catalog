@@ -68,12 +68,12 @@
         "type": "cadence",
         "unit": "hour"
     },
-    "gee:status": "beta",
     "gee:terms_of_use": "NOAA data, information, and products, regardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use. The\nforgoing data is in the public domain and is being provided without\nrestriction on use and distribution. For more information visit the\n[NWS disclaimer site](https://www.weather.gov/disclaimer/).\n",
     "gee:type": "image_collection",
     "sci:citation": "Saha, S., et al. 2011, updated daily. NCEP Climate Forecast System\nVersion 2 (CFSv2) 6-hourly Products. Research Data Archive at the National\nCenter for Atmospheric Research, Computational and Information Systems\nLaboratory. [https://doi.org/10.5065/D61C1TXF](https://doi.org/10.5065/D61C1TXF).\nAccessed dd mmm yyyy.\n",
     "sci:doi": "10.5065/D61C1TXF",
     "version": "V2_HARMONIZED",
+    "gee:status": "ready",
     "title": "CFSV2: NCEP Climate Forecast System Version 2, 6-Hourly Products Harmonized",
     "extent": {
         "spatial": {
@@ -90,7 +90,7 @@
             "interval": [
                 [
                     "1979-01-01T00:00:00Z",
-                    "2026-02-01T06:00:00Z"
+                    "2026-02-02T00:00:00Z"
                 ]
             ]
         }

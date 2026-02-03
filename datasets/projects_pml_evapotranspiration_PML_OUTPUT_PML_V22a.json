@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "CAS/IGSNRR/PML/V2_v018",
+    "id": "projects/pml_evapotranspiration/PML/OUTPUT/PML_V22a",
     "stac_version": "1.1.0",
-    "description": "Penman-Monteith-Leuning Evapotranspiration V2 (PML_V2) products include\nevapotranspiration (ET), its three components, and\ngross primary production (GPP) at 500m and 8-day resolution during 2000-2023\nand with spatial range from -60&deg;S to 90&deg;N. The major advantages of the\nPML_V2 products are:\n\n  1. Coupled estimates of transpiration and GPP via canopy\n  conductance (Gan et al., 2018; Zhang et al., 2019)\n  2. Partitioning ET into three components: transpiration from vegetation,\n  direct evaporation from the soil, and vaporization of intercepted\n   rainfall from vegetation (Zhang et al., 2016).\n\nThe PML_V2 products perform well against observations\nat 95 flux sites across the globe, and are similar to or noticeably better than\nmajor state-of-the-art ET and GPP products widely used by water and ecology\nresearch communities (Zhang et al., 2019).\n\nNote on versioning: For consistency in naming conventions, PML-V2.1.8 replaces the previous PML-V2 0.1.8.\n\nKey changes in V2.1.8 compared with the original V2.0 (Zhang et al., 2019):\n1. Temporal coverage is lengthened to the latest (may update annually) with the MODIS C6.1 data.\n2. MODIS Terra LAI (MOD15A2H) is used rather than the composite LAI (MCD15A3H).\n3. Parameters are recalibrated with the change in LAI, while other forcings remain the same.\n",
+    "description": "The dataset is produced by the Large Scale Hydrology Lab, which specializes in advancing global and regional water cycle research \nthrough big data analytics and advanced hydrological modeling. \n\nThe PML-V2.2a product provides 500m 8-day resolution global terrestrial evapotranspiration (ET) \nand gross primary production (GPP) from 2000 to 2024. Driven by MSWEP and MSWX, this version \nfeatures expanded bottom-up calibration using 208 flux sites and refined parameterization \ndistinguishing irrigated from rainfed croplands.\n\nValidation confirms high accuracy across plant functional types (NSE > 0.60, absolute bias < 5%) \nand reliable basin-scale water-balance performance (NSE: 0.89\u20130.91). This MODIS-based \nrecord is optimized for high-resolution near-present monitoring.\n\nThis dataset is part of the broader PML-V2.2 suite. For the long-term 43-year consolidated \nrecord (PML-V2.2b/c at 0.1\u00b0 with different remote sensing forcing), please visit the [TPDC data repository](https://doi.org/10.11888/Terre.tpdc.303314).\n",
     "links": [
         {
             "rel": "root",
@@ -12,31 +12,36 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/CAS/CAS_IGSNRR_PML_V2_v018",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/pml_evapotranspiration/projects_pml_evapotranspiration_PML_OUTPUT_PML_V22a",
             "type": "text/html",
-            "title": "Run the example for CAS/IGSNRR/PML/V2_v018 in the Earth Engine Code Editor",
+            "title": "Run the example for projects/pml_evapotranspiration/PML/OUTPUT/PML_V22a in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/CAS/CAS_IGSNRR_PML_V2_v018_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/pml_evapotranspiration/projects_pml_evapotranspiration_PML_OUTPUT_PML_V22a_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/CAS_IGSNRR_PML_V2_v018#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_pml_evapotranspiration_PML_OUTPUT_PML_V22a#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
             "type": "text/html"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CAS/CAS_IGSNRR_PML_V2_v018.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/pml_evapotranspiration/projects_pml_evapotranspiration_PML_OUTPUT_PML_V22a.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CAS/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/pml_evapotranspiration/catalog.json",
             "type": "application/json",
-            "title": "CAS"
+            "title": "pml_evapotranspiration"
         }
     ],
     "stac_extensions": [
@@ -53,7 +58,8 @@
         "type": "cadence",
         "unit": "day"
     },
-    "gee:terms_of_use": "Acknowledgements\n\nWhenever PML datasets are used in a scientific publication, the given\nreferences should be cited.\n\nLicense\n\nThe dataset is licensed under the\n[CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).\n",
+    "gee:status": "beta",
+    "gee:terms_of_use": "Acknowledgements\nWhenever PML datasets are used in a scientific publication, the given references should be cited.\n\nLicense\nThe dataset is licensed under the [CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
     "sci:citation": "Zhang, Y., Kong, D., Gan, R., Chiew, F.H.S., McVicar, T.R., Zhang, Q.,\nand Yang, Y., 2019. Coupled estimation of 500m and 8-day resolution global\nevapotranspiration and gross primary production in 2002-2017.\nRemote Sens. Environ. 222, 165-182,\n[doi:10.1016/j.rse.2018.12.031](https://doi.org/10.1016/j.rse.2018.12.031)\n",
@@ -67,9 +73,8 @@
             "doi": "10.1038/srep19124"
         }
     ],
-    "version": "0.1.8",
-    "gee:status": "ready",
-    "title": "PML_V2.1.8: Coupled Evapotranspiration and Gross Primary Product (GPP)",
+    "version": "2.2a",
+    "title": "PML_V2.2a: Coupled Evapotranspiration and Gross Primary Product (GPP)",
     "extent": {
         "spatial": {
             "bbox": [
@@ -84,8 +89,8 @@
         "temporal": {
             "interval": [
                 [
-                    "2000-02-26T00:00:00Z",
-                    "2023-12-27T00:00:00Z"
+                    "2000-03-05T00:00:00Z",
+                    "2024-12-26T00:00:00Z"
                 ]
             ]
         }
@@ -99,59 +104,76 @@
     ],
     "providers": [
         {
-            "name": "PML_V2",
+            "name": "Large Scale Hydrology Lab",
             "roles": [
                 "licensor",
                 "producer"
             ],
-            "url": "https://github.com/kongdd/PML"
+            "url": "https://scholar.google.com/citations?user=t5iGFeAAAAAJ&hl=en"
         },
         {
             "name": "Google Earth Engine",
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/CAS_IGSNRR_PML_V2_v018"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_pml_evapotranspiration_PML_OUTPUT_PML_V22a"
         }
     ],
     "summaries": {
         "eo:bands": [
             {
                 "description": "Gross primary production",
+                "gee:scale": 0.01,
                 "gee:units": "gC m-2 d-1",
                 "name": "GPP"
             },
             {
+                "description": "Actual evapotranspiration",
+                "gee:scale": 0.01,
+                "gee:units": "mm/d",
+                "name": "ET"
+            },
+            {
                 "description": "Vegetation transpiration",
+                "gee:scale": 0.01,
                 "gee:units": "mm/d",
                 "name": "Ec"
             },
             {
                 "description": "Soil evaporation",
+                "gee:scale": 0.01,
                 "gee:units": "mm/d",
                 "name": "Es"
             },
             {
                 "description": "Interception from vegetation canopy",
+                "gee:scale": 0.01,
                 "gee:units": "mm/d",
                 "name": "Ei"
             },
             {
-                "description": "Evaporation from water bodies, snow, and ice. Calculated using the\nPenman equation, which is considered a good estimate of actual\nevaporation for these surfaces.\n",
+                "description": "Potential evapotranspiration (PET). Calculated using the Shuttleworth-simplified \nversion of the Penman equation, which provides estimates of evaporation \nfrom water bodies, snow, and ice.\n",
+                "gee:scale": 0.01,
                 "gee:units": "mm/d",
-                "name": "ET_water"
+                "name": "PET"
+            },
+            {
+                "description": "Evaporation from water bodies, snow, and ice. Calculated using the\nPenman equation, which is considered a good estimate of actual\nevaporation for these surfaces.\n",
+                "gee:scale": 0.01,
+                "gee:units": "mm/d",
+                "name": "Ew"
             }
         ],
         "gee:visualizations": [
             {
-                "display_name": "PML_V2 0.1.8 Gross Primary Product (GPP)",
+                "display_name": "PML_V2.2a GPP",
                 "image_visualization": {
                     "band_vis": {
                         "bands": [
                             "GPP"
                         ],
                         "max": [
-                            9
+                            900
                         ],
                         "min": [
                             0
@@ -172,34 +194,42 @@
                     }
                 },
                 "lookat": {
-                    "lat": 15,
-                    "lon": 66.3,
-                    "zoom": 2
+                    "lat": 40,
+                    "lon": 116.3,
+                    "zoom": 5
                 }
             }
         ],
         "gsd": [
             500
         ],
-        "ET_water": {
+        "ET": {
             "minimum": 0,
-            "maximum": 20.11
+            "maximum": 2011
         },
         "Ec": {
             "minimum": 0,
-            "maximum": 15.33
+            "maximum": 1533
         },
         "Ei": {
             "minimum": 0,
-            "maximum": 12.56
+            "maximum": 1256
         },
         "Es": {
             "minimum": 0,
-            "maximum": 8.2
+            "maximum": 820
+        },
+        "Ew": {
+            "minimum": 0,
+            "maximum": 2011
         },
         "GPP": {
             "minimum": 0,
-            "maximum": 39.01
+            "maximum": 3901
+        },
+        "PET": {
+            "minimum": 0,
+            "maximum": 2011
         }
     }
 }

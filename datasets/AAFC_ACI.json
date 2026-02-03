@@ -146,6 +146,11 @@
                         "value": 50
                     },
                     {
+                        "color": "666666",
+                        "description": "Forest Fire and Burnt Area",
+                        "value": 60
+                    },
+                    {
                         "color": "993399",
                         "description": "Wetland",
                         "value": 80
@@ -164,6 +169,11 @@
                         "color": "cc6600",
                         "description": "Agriculture (undifferentiated)",
                         "value": 120
+                    },
+                    {
+                        "color": "ff9933",
+                        "description": "Cropland",
+                        "value": 121
                     },
                     {
                         "color": "ffcc33",
@@ -191,7 +201,7 @@
                         "value": 133
                     },
                     {
-                        "color": "d6cc00",
+                        "color": "99cc00",
                         "description": "Other Grains",
                         "value": 134
                     },
@@ -206,7 +216,7 @@
                         "value": 136
                     },
                     {
-                        "color": "cace32",
+                        "color": "cacd32",
                         "description": "Rye",
                         "value": 137
                     },
@@ -241,18 +251,18 @@
                         "value": 143
                     },
                     {
-                        "color": "92a55b",
+                        "color": "809769",
                         "description": "Winter Wheat",
                         "value": 145
                     },
                     {
-                        "color": "809769",
+                        "color": "92a55b",
                         "description": "Spring Wheat",
                         "value": 146
                     },
                     {
                         "color": "ffff99",
-                        "description": "Corn",
+                        "description": "Corn for Grain",
                         "value": 147
                     },
                     {
@@ -309,6 +319,11 @@
                         "color": "cc9933",
                         "description": "Soybeans",
                         "value": 158
+                    },
+                    {
+                        "color": "5ea296",
+                        "description": "Other Oilseeds",
+                        "value": 159
                     },
                     {
                         "color": "896e43",
@@ -392,7 +407,7 @@
                     },
                     {
                         "color": "dc3200",
-                        "description": "Other Berry",
+                        "description": "Other Berries",
                         "value": 185
                     },
                     {
@@ -411,7 +426,7 @@
                         "value": 190
                     },
                     {
-                        "color": "ffcccc",
+                        "color": "ffcc99",
                         "description": "Hops",
                         "value": 191
                     },
@@ -505,10 +520,10 @@
                             "landcover"
                         ],
                         "max": [
-                            255
+                            230
                         ],
                         "min": [
-                            0
+                            10
                         ],
                         "palette": [
                             "000000",
@@ -517,27 +532,29 @@
                             "cc6699",
                             "e1e1e1",
                             "ffff00",
+                            "666666",
                             "993399",
                             "501b50",
                             "cccc00",
                             "cc6600",
+                            "ff9933",
                             "ffcc33",
                             "7899f6",
                             "ff9900",
                             "660000",
                             "dae31d",
-                            "d6cc00",
+                            "99cc00",
                             "d2db25",
                             "d1d52b",
-                            "cace32",
+                            "cacd32",
                             "c3c63a",
                             "b9bc44",
                             "a7b34d",
                             "b9c64e",
                             "999900",
                             "e9e2b1",
-                            "92a55b",
                             "809769",
+                            "92a55b",
                             "ffff99",
                             "98887c",
                             "799b93",
@@ -550,6 +567,7 @@
                             "ff7f00",
                             "315491",
                             "cc9933",
+                            "5ea296",
                             "896e43",
                             "996633",
                             "8f6c3d",
@@ -570,7 +588,7 @@
                             "ff6666",
                             "c5453b",
                             "7442bd",
-                            "ffcccc",
+                            "ffcc99",
                             "b5fb05",
                             "ccff05",
                             "07f98c",
@@ -597,8 +615,8 @@
             30
         ],
         "landcover": {
-            "minimum": 1,
-            "maximum": 255
+            "minimum": 10,
+            "maximum": 230
         }
     }
 }
