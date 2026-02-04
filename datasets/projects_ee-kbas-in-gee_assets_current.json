@@ -96,10 +96,17 @@
     ],
     "providers": [
         {
-            "name": "BirdLife International",
+            "name": "KBA Partnership",
             "roles": [
                 "licensor",
                 "producer"
+            ],
+            "url": "https://www.keybiodiversityareas.org/about-kbas/kba-programme/kba-partnership"
+        },
+        {
+            "name": "BirdLife International",
+            "roles": [
+                "processor"
             ],
             "url": "https://www.birdlife.org/"
         },
