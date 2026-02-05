@@ -1,0 +1,529 @@
+{
+    "type": "Collection",
+    "id": "OPERA/DSWX/L3_V1/HLS",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains Level-3 Dynamic OPERA surface water extent product\nversion 1. The data are validated surface water extent observations\nbeginning April 2023. Known issues and caveats on usage are described\nin the product documentation. The input dataset for generating each product is\nthe Harmonized Landsat-8 and Sentinel-2A/B/C (HLS) product version 2.0.\nHLS products provide surface reflectance (SR) data from the\nOperational Land Imager (OLI) aboard the Landsat 8 satellite and the\nMultiSpectral Instrument (MSI) aboard the Sentinel-2A/B/C satellite.\n\nDocumentation:\n\n  * [DSWx-HLS Product Specification Document](https://d2pn8kiwq2w21t.cloudfront.net/documents/OPERA_DSWx-HLS_ProductSpec_v1.0.0_D-107395_RevB.pdf)\n  * [DSWx Product Suite Website](https://www.jpl.nasa.gov/go/opera/products/dswx-product-suite/)\n  * [DSWx-HLS Algorithm Theoretical Basis Document (ATBD)](https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/web-misc/opera/atbd/DSWx-HLS_ATBD_V1_4_DAAC_Distribution.pdf)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OPERA/OPERA_DSWX_L3_V1_HLS",
+            "type": "text/html",
+            "title": "Run the example for OPERA/DSWX/L3_V1/HLS in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/OPERA/OPERA_DSWX_L3_V1_HLS_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/OPERA_DSWX_L3_V1_HLS#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/OPDSW-PL3V1"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OPERA/OPERA_DSWX_L3_V1_HLS.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OPERA/catalog.json",
+            "type": "application/json",
+            "title": "OPERA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "surface-ground-water"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "This dataset is openly shared, without restriction, in accordance with\nthe [EOSDIS Data Use and Citation Guidance](https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance)\n",
+    "gee:type": "image_collection",
+    "sci:citation": "OPERA . 2023. OPERA Dynamic Surface Water Extent from Harmonized Landsat\nSentinel-2 (Version 1). Ver. 1.0. PO.DAAC, CA, USA. Dataset accessed\n[YYYY-MM-DD] at https://doi.org/10.5067/OPDSW-PL3V1\n",
+    "sci:doi": "10.5067/OPDSW-PL3V1",
+    "version": "V1",
+    "title": "Dynamic Surface Water Extent from Harmonized Landsat Sentinel-2 (DSWx-HLS) V1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -84,
+                    180,
+                    84
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-04-04T04:37:01Z",
+                    "2026-01-13T23:58:23Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "geophysical",
+        "landsat-derived",
+        "nasa",
+        "opera",
+        "sentinel2-derived",
+        "surface",
+        "surface-ground-water",
+        "water"
+    ],
+    "providers": [
+        {
+            "name": "NASA JPL",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.jpl.nasa.gov/go/opera"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/OPERA_DSWX_L3_V1_HLS"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Water Classification - This represents pixel-wise classification\ninto one of three water classes (not water, open water, and\npartial surface water), snow/ice, cloud/cloud shadow and\nadjacent to cloud/cloud shadow, ocean masked, or no data\nclasses as a result of processing the diagnostic\n(DIAG) layer through all intermediate steps/layers\n",
+                "gee:classes": [
+                    {
+                        "color": "ffffff",
+                        "description": "Not water - An area with valid reflectance data that is\nnot water, snow/ice, cloud/cloud shadow, or ocean mask,\na landcover masked may be applied.\n",
+                        "value": 0
+                    },
+                    {
+                        "color": "0000ff",
+                        "description": "Open water - an area that is entirely water and unobstructed to\nthe sensor, including obstructions by vegetation, terrain, and\nbuildings.\n",
+                        "value": 1
+                    },
+                    {
+                        "color": "0088ff",
+                        "description": "Partial surface water - an inundated area that is at least 20%\nand less than 100% open water. This may be referred to as\n\"subpixel inundation\" when referring to a pixel\u2019s area.\nExamples include wetlands, water bodies with\nemergent vegetation, and pixels bisected by coastlines.\n",
+                        "value": 2
+                    },
+                    {
+                        "color": "f2f2f2",
+                        "description": "Snow/ice - an area identified as snow/ice according to input\nHLS Fmask quality assurance (QA) data.\n",
+                        "value": 252
+                    },
+                    {
+                        "color": "dfdfdf",
+                        "description": "Cloud/cloud shadow - an area identified as cloud, cloud shadow,\nor adjacent to those features according to input HLS Fmask\nquality assurance (QA) data.\n",
+                        "value": 253
+                    },
+                    {
+                        "color": "da00ff",
+                        "description": "Ocean masked - an area identified as ocean using\na shoreline database with an added margin.\n",
+                        "value": 254
+                    }
+                ],
+                "name": "WTR_Water_classification"
+            },
+            {
+                "description": "The binary water map is derived from the WTR layer as a union of\nwater classes (open water and partial surface water) into a\nbinary map indicating areas with and without water. This layer\nis meant to provide users with a quick view for water/no-water.\nInvalid data classes (snow/ice, cloud/cloud shadow along with\nadjacent to cloud/cloud shadow, ocean masked, and fill value)\nare also provided to indicate areas in which the binary\nclassification does not provide water/no-water classification.\n",
+                "gee:classes": [
+                    {
+                        "color": "ffffff",
+                        "description": "Not water - an area with valid reflectance data that is not\nwater (class 1) and not snow/ice (class 252),\ncloud/cloud shadow (class 253), or ocean masked (class 254).\n",
+                        "value": 0
+                    },
+                    {
+                        "color": "0000ff",
+                        "description": "Water - an area classified as \"open water\" or\n\"partial surface water\" (see WTR layer).\n",
+                        "value": 1
+                    },
+                    {
+                        "color": "f2f2f2",
+                        "description": "Snow/ice - an area identified as snow/ice according to\ninput HLS Fmask quality assurance (QA) data.\n",
+                        "value": 252
+                    },
+                    {
+                        "color": "dfdfdf",
+                        "description": "Cloud/cloud shadow - an area identified as\ncloud or cloud shadow or adjacent to cloud/cloud shadow\naccording to input HLS Fmask quality assurance (QA) data.\n",
+                        "value": 253
+                    },
+                    {
+                        "color": "da00ff",
+                        "description": "Ocean masked - an area identified as ocean using a\nshoreline database with an added margin\n",
+                        "value": 254
+                    }
+                ],
+                "name": "BWTR_Binary_water"
+            },
+            {
+                "description": "A representation of the confidence associated with the WTR\nclassification that is based on a combination of DIAG results\nand quality assurance information provided with the input HLS\ndata. For example, the Open water class of the WTR layer is\nsplit into two classes: High Confidence and Moderate Confidence\nwhile WTR Partial surface water class pixels of WTR are flagged\nas either partial surface water conservative or partial surface\nwater aggressive, with the latter exhibiting less certainty.\nAs in the WTR and BWTR layers, pixels for which water\nretrievals are difficult or impossible due to snow/ice,\ncloud/shadow, or fill values are also noted in the CONF layer.\n",
+                "gee:classes": [
+                    {
+                        "color": "ffffff",
+                        "description": "Not water - an area with valid reflectance data that is not\nwater or ocean masked (class 254) and is not identified as\nsnow/ice, cloud/cloud shadow, adjacent to cloud/cloud shadow,\nor snow/ice in the input HLS Fmask quality assurance (QA) data.\n\"not water\" (class 0) also exists where terrain shadow and/or\nland cover masking is applied.\n",
+                        "value": 0
+                    },
+                    {
+                        "color": "0000ff",
+                        "description": "Open water high-confidence - an area that is entirely\nwater with high-confidence that has not also been ocean masked\n(class 254) and is not identified as snow/ice, cloud/cloud shadow,\nadjacent to cloud/cloud shadow, or snow/ice in the input HLS Fmask\nquality assurance (QA) data.\n",
+                        "value": 1
+                    },
+                    {
+                        "color": "0088ff",
+                        "description": "Open water moderate-confidence - an area that is entirely water\nwith moderate-confidence that has not also been ocean masked\n(class 254) and is not identified as snow/ice, or cloud/cloud shadow,\nadjacent to cloud/cloud shadow, or snow/ice in the input HLS\nFmask quality assurance (QA) data.\n",
+                        "value": 2
+                    },
+                    {
+                        "color": "66a3ff",
+                        "description": "Partial surface water conservative - an inundated area that is\nat least approximately 50% and less than 100% open water with\na conservative classification that has not also been ocean masked\n(class 254) and is not identified as snow/ice, cloud/cloud shadow'\n",
+                        "value": 3
+                    },
+                    {
+                        "color": "b3d9ff",
+                        "description": "Partial surface water aggressive - an inundated area that is at\nleast approximately 20% and less than 100% open water with an\naggressive classification that has not also been ocean masked\n(class 254) and is not identified as snow/ice, cloud/cloud shadow\n",
+                        "value": 4
+                    },
+                    {
+                        "color": "cccccc",
+                        "description": "Not water - an area with valid reflectance data that is not water\nor ocean masked (class 254) but is potentially obstructed by\ncloud/cloud shadow according to the input HLS Fmask\n",
+                        "value": 10
+                    },
+                    {
+                        "color": "0000ff",
+                        "description": "Open water high-confidence - an area that is entirely water\nwith high-confidence that has not also been ocean masked\n(class 254) but is potentially obstructed by cloud/cloud\nshadow according to the input HLS Fmask.\n",
+                        "value": 11
+                    },
+                    {
+                        "color": "00aaff",
+                        "description": "Open water moderate-confidence - an area that is entirely\nwater with moderate-confidence that has not also been ocean\nmasked (class 254) but is potentially obstructed by cloud/cloud\nshadow according to the input HLS Fmask.\n",
+                        "value": 12
+                    },
+                    {
+                        "color": "2244ff",
+                        "description": "Partial surface water conservative - an inundated area that is\nat least approximately 50% and less than 100% open water\nwith a conservative classification that has not also been\nocean masked (class 254) but is potentially obstructed by\ncloud/cloud shadow according to the input HLS Fmask.\n",
+                        "value": 13
+                    },
+                    {
+                        "color": "6644ff",
+                        "description": "Partial surface water aggressive - an inundated area that is at\nleast 20% and less than approximately 50% open water and\nless than 100% open water with a less strict classification that\nhas not also been ocean masked (class 254) but is potentially\nobstructed by cloud/cloud shadow according to the input HLS \nFmask.\n",
+                        "value": 14
+                    },
+                    {
+                        "color": "ffffff",
+                        "description": "Not water - an area with valid reflectance data that is not\nwater, that is marked as snow/ice according to the input HLS\nFmask, but not obstructed by cloud/cloud shadow according to\nthe input HLS Fmask and is not ocean masked (class 254). \"not\nwater\" (class 0) also exists where terrain shadow and/or land\ncover masking is applied.\n",
+                        "value": 20
+                    },
+                    {
+                        "color": "0000ff",
+                        "description": "Open water high-confidence - an area that is entirely water\nwith high-confidence and that is marked as snow/ice according\nto the input HLS Fmask, but not obstructed by cloud/cloud\nshadow according to the input HLS Fmask and is not ocean masked\n(class 254)\n",
+                        "value": 21
+                    },
+                    {
+                        "color": "5555ff",
+                        "description": "Open water moderate-confidence - an area that is entirely\nwater with moderate-confidence and that is marked as snow/ice\naccording to the input HLS Fmask, but not obstructed by\ncloud/cloud shadow according to the input HLS Fmask and is not\nocean masked (class 254).\n",
+                        "value": 22
+                    },
+                    {
+                        "color": "7777ff",
+                        "description": "Partial surface water conservative - an inundated area that\nis at least 50% and less than 100% open water with a\nconservative classification and that is marked as snow/ice\naccording to the input HLS Fmask, but not obstructed by\ncloud/cloud shadow according to the input HLS Fmask and\nis not ocean masked (class 254).\n",
+                        "value": 23
+                    },
+                    {
+                        "color": "2222cc",
+                        "description": "Partial surface water aggressive - an inundated area\nthat is at least 20% and less than approximately 50%\nopen water, that is a less strict classification and\nthat is marked as snow/ice according to the input HLS\nFmask, but not obstructed by cloud/cloud shadow\naccording to the input HLS Fmask and is not ocean\nmasked (class 254).\n",
+                        "value": 24
+                    },
+                    {
+                        "color": "da00ff",
+                        "description": "Ocean masked - an area identified as ocean using a\nshoreline database with an added margin.\n",
+                        "value": 254
+                    }
+                ],
+                "name": "CONF_Confidence"
+            },
+            {
+                "description": "A layer coded to indicate which of five initial DSWx-HLS tests\nwere positive for water detection on a per-pixel basis. Values\nrange from 0 (i.e, 00000), indicating that none of the five\nDSWx-HLS tests returned a positive result, to 11111, denoting\nthat all tests resulted positive. The tests are described in\n[DSWX-HLS ATBD](https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/web-misc/opera/atbd/DSWx-HLS_ATBD_V1_4_DAAC_Distribution.pdf)\nand [Jones, John W. 2019](https://doi.org/10.3390/rs11040374)\nare used to derive the confidence layer above. The\ncombination of positive tests for a particular class determines\nits confidence value. The Fill value (no data) is represented\nby the number 65535.\n",
+                "name": "DIAG_diagnostic"
+            },
+            {
+                "description": "Classification of the DIAG layer results in open water, partial\nsurface water, and no-water. This layer is further refined\nthrough the application of masks resulting in Layers 6 (WTR-2)\nand 1 (WTR).\n",
+                "gee:classes": [
+                    {
+                        "color": "ffffff",
+                        "description": "Not water - an area with valid reflectance data that is\nnot open water (class 1) or partial surface water (class 2).\n",
+                        "value": 0
+                    },
+                    {
+                        "color": "0000ff",
+                        "description": "Open water - an area that is entirely water and unobstructed\nto the sensor, including obstructions by vegetation, terrain,\nand buildings.\n",
+                        "value": 1
+                    },
+                    {
+                        "color": "0088ff",
+                        "description": "Partial surface water - an inundated area that is at least\n20% and less than 100% open water. This may be referred to as\n\"subpixel inundation\" when referring to a pixel's area. Examples\ninclude wetlands, water bodies with emergent vegetation, and\npixels bisected by coastlines.\n",
+                        "value": 2
+                    },
+                    {
+                        "color": "da00ff",
+                        "description": "Ocean masked - an area identified as ocean using a shoreline\ndatabase with an added margin (not applicable for the standard\nDSWx-HLS product v1.0).\n",
+                        "value": 254
+                    }
+                ],
+                "name": "WTR1_Interpretation_of_diagnostic_layer_into_water_classes"
+            },
+            {
+                "description": "The WTR-2 layer is derived from the WTR-1 (Layer 5) outcome by\napplying additional tests based on land cover and terrain shadow\ninformation, and aerosol overcorrection mitigation, as described\nin [DSWX-HLS ATBD](https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/web-misc/opera/atbd/DSWx-HLS_ATBD_V1_4_DAAC_Distribution.pdf)\nand [Jones, John W. 2019](https://doi.org/10.3390/rs11040374)\nto mask (eliminate) false-positive water detections.\n",
+                "gee:classes": [
+                    {
+                        "color": "ffffff",
+                        "description": "Not water - an area with valid reflectance data that is not\nopen water (class 1) or partial surface water (class 2)\n",
+                        "value": 0
+                    },
+                    {
+                        "color": "0000ff",
+                        "description": "Open water - an area that is entirely water and unobstructed\nto the sensor, including obstructions by vegetation, terrain,\nand buildings.\n",
+                        "value": 1
+                    },
+                    {
+                        "color": "0088ff",
+                        "description": "Partial surface water - an inundated area that is at least 20%\nand less than 100% open water. This may be referred to as\n\"subpixel inundation\" when referring to a pixel's area.\nExamples include wetlands, water bodies with emergent vegetation,\nand pixels bisected by coastlines.\n",
+                        "value": 2
+                    },
+                    {
+                        "color": "da00ff",
+                        "description": "Ocean masked - an area identified as ocean using a shoreline\ndatabase with an added margin.\n",
+                        "value": 254
+                    }
+                ],
+                "name": "WTR2_Refined_WTR1_given_HLS_FMASK"
+            },
+            {
+                "description": "Land cover thematic layer used to determine where additional\ntesting is performed to potentially mask WTR-1 layer water\ndetections to produce the intermediate WTR-2 layer.\n",
+                "gee:classes": [
+                    {
+                        "color": "e6e6e6",
+                        "description": "Low intensity developed. Values range from 0 to 99\n(number = last two digits of ESA WorldCover dataset year)\n",
+                        "value": 0
+                    },
+                    {
+                        "color": "cccccc",
+                        "description": "High intensity developed. Values range from 100 to 199. \n(number = 100 + last two digits of ESA WorldCover dataset year)\n",
+                        "value": 100
+                    },
+                    {
+                        "color": "0000ff",
+                        "description": "Water, wetland, mangrove forest",
+                        "value": 200
+                    },
+                    {
+                        "color": "00ff00",
+                        "description": "A variety of forest classes",
+                        "value": 201
+                    }
+                ],
+                "name": "LAND_land_cover_classification"
+            },
+            {
+                "description": "Mask used to eliminate likely locations of terrain-induced shadow\nbased on a classification of shadow areas generated for the capture\ndate/time of the input HLS image from Digital Elevation Model\ndata. This is used in the creation of the intermediate layer\nWTR-2.\n",
+                "gee:classes": [
+                    {
+                        "color": "808080",
+                        "description": "Shadow",
+                        "value": 0
+                    },
+                    {
+                        "color": "ffffff",
+                        "description": "Not shadow",
+                        "value": 1
+                    }
+                ],
+                "name": "SHAD_terrain_shadow"
+            },
+            {
+                "description": "Cloud, cloud-shadow, and snow/ice classification layer from HLS input.\n",
+                "gee:classes": [
+                    {
+                        "color": "ffffff",
+                        "description": "Not masked",
+                        "value": 0
+                    },
+                    {
+                        "color": "a9a9a9",
+                        "description": "Cloud shadow, adjacent to cloud/cloud shadow, or both\n",
+                        "value": 1
+                    },
+                    {
+                        "color": "f2f2f2",
+                        "description": "Snow/ice",
+                        "value": 2
+                    },
+                    {
+                        "color": "d3d3d3",
+                        "description": "Snow/ice and class 1 (cloud shadow or adjacent\nto cloud/cloud shadow)\n",
+                        "value": 3
+                    },
+                    {
+                        "color": "dfdfdf",
+                        "description": "Cloud",
+                        "value": 4
+                    },
+                    {
+                        "color": "c0c0c0",
+                        "description": "Cloud and class 1 (cloud shadow or adjacent to\ncloud/cloud shadow)\n",
+                        "value": 5
+                    },
+                    {
+                        "color": "b0b0b0",
+                        "description": "Cloud and snow/ice",
+                        "value": 6
+                    },
+                    {
+                        "color": "a0a0a0",
+                        "description": "Cloud, snow/ice, and class 1 (cloud shadow or adjacent\nto cloud/cloud shadow)\n",
+                        "value": 7
+                    },
+                    {
+                        "color": "0000ff",
+                        "description": "Fmask identified water",
+                        "value": 8
+                    },
+                    {
+                        "color": "87cefa",
+                        "description": "Fmask identified water, cloud shadow or\nadjacent to cloud/cloud shadow'\n",
+                        "value": 9
+                    },
+                    {
+                        "color": "add8e6",
+                        "description": "Fmask identified water, snow/ice",
+                        "value": 10
+                    },
+                    {
+                        "color": "b0e0e6",
+                        "description": "Fmask identified water, snow/ice and class 1\n(cloud shadow or adjacent to cloud/cloud shadow)\n",
+                        "value": 11
+                    },
+                    {
+                        "color": "6495ed",
+                        "description": "Fmask identified water, cloud",
+                        "value": 12
+                    },
+                    {
+                        "color": "4682b4",
+                        "description": "Fmask identified water, cloud and class 1 (cloud shadow\nor adjacent to cloud/cloud shadow)\n",
+                        "value": 13
+                    },
+                    {
+                        "color": "4169e1",
+                        "description": "Fmask identified water, cloud and snow/ice",
+                        "value": 14
+                    },
+                    {
+                        "color": "1e90ff",
+                        "description": "Fmask identified water, cloud, snow/ice, and\nclass 1 (cloud shadow or adjacent to cloud/cloud shadow)\n",
+                        "value": 15
+                    }
+                ],
+                "name": "HLS_CLOUD_SNOW_FMASK_classification"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Indicates if the aerosol class remapping is enabled (TRUE)\nor disabled (FALSE).\n",
+                "name": "AEROSOL_CLASS_REMAPPING_ENABLED",
+                "type": "STRING"
+            },
+            {
+                "description": "The percentage of pixels with observational data (as opposed\nto fill value and ocean masked) that HLS QA mask marks as\ncloud, cloud shadow, or adjacent-to-cloud.\n",
+                "name": "CLOUD_COVERAGE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "The percentage of the tile area with observational data\n(as opposed to fill value) in the input HLS product.\n",
+                "name": "INPUT_HLS_PRODUCT_CLOUD_COVERAGE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "The solar zenith angle used in Nadir Bidirectional\nReflectance Distribution Function Adjusted Reflectance\n(NBAR) derivation.\n",
+                "name": "NBAR_SOLAR_ZENITH",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "DSWx-HLS product processing date. Format: YYYY-MM-DDTHH:MM:SSZ.\n",
+                "name": "PROCESSING_DATETIME",
+                "type": "STRING"
+            },
+            {
+                "description": "The DSWx-HLS product version (same as in the product filename).\nIt increments with changes to the structure and/or metadata\ncontained within the product.\n",
+                "name": "PRODUCT_VERSION",
+                "type": "STRING"
+            },
+            {
+                "description": "Name of the sensor instrument (e.g., \"OLI\" or \"MSI\")",
+                "name": "SENSOR",
+                "type": "STRING"
+            },
+            {
+                "description": "Name of the sensor platform (e.g., \"Landsat-8\", \"Sentinel-2A\",\nor \"Sentinel-2B\")\n",
+                "name": "SPACECRAFT_NAME",
+                "type": "STRING"
+            },
+            {
+                "description": "The percentage of the tile area with observational data (as\nopposed to fill value and ocean masked) excluding masked ocean.\n",
+                "name": "SPATIAL_COVERAGE_EXCLUDING_MASKED_OCEAN",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Surface Water",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "WTR_Water_classification"
+                        ],
+                        "max": [
+                            3
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "white",
+                            "blue",
+                            "cyan",
+                            "black"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 30,
+                    "lon": -93,
+                    "zoom": 12
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    }
+}

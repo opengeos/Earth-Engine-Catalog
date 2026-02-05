@@ -1,0 +1,350 @@
+{
+    "type": "Collection",
+    "id": "OPERA/DSWX/L3_V1/S1",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains Level-3 Dynamic OPERA surface water extent from\nSentinel-1 (DSWX-S1). DSWx-S1 provides near-global geographical\nmapping of surface water extent over land at a spatial resolution\nof 30 meters over the Military Grid reference System (MGRS) grid\nsystem, with a temporal revisit frequency between 6-12 days.\nUsing Sentinel-1 radar observations, DSWx-S1 maps open inland water\nbodies greater than 3 hectares and 200 meters in width, irrespective\nof cloud conditions and daylight illumination that often pose\nchallenges to optical sensors. Forward production of the DSWx-S1 data\nrecord began in Sept 2024.\n\nDocumentation:\n\n  * [DSWx-S1 Product Specification Document](https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/web-misc/opera/D-108761_OPERA_DSWx_S1AB_ProductSpec_Rev_A.pdf)\n  * [DSWx Product Suite Website](https://www.jpl.nasa.gov/go/opera/products/dswx-product-suite/)\n  * [DSWx-S1 Algorithm Theoretical Basis Document](https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/web-misc/opera/atbd/D-108763_Rev_A_OPERA_DSWx_S1_NI_ATBD_20240530_SIGNED.pdf)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OPERA/OPERA_DSWX_L3_V1_S1",
+            "type": "text/html",
+            "title": "Run the example for OPERA/DSWX/L3_V1/S1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/OPERA/OPERA_DSWX_L3_V1_S1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/OPERA_DSWX_L3_V1_S1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/OPDSWS1-L3V1"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OPERA/OPERA_DSWX_L3_V1_S1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OPERA/catalog.json",
+            "type": "application/json",
+            "title": "OPERA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "surface-ground-water"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "This dataset is openly shared, without restriction, in accordance with\nthe [EOSDIS Data Use and Citation Guidance](https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance)\n",
+    "gee:type": "image_collection",
+    "sci:citation": "OPERA . 2024. OPERA Dynamic Surface Water Extent from Sentinel-1 product\n(Version 1). Ver. 1.0. PO.DAAC, CA, USA. Dataset accessed [YYYY-MM-DD]\nat https://doi.org/10.5067/OPDSWS1-L3V1\n",
+    "sci:doi": "10.5067/OPDSWS1-L3V1",
+    "version": "V1",
+    "title": "Dynamic Surface Water Extent from Sentinel-1 (DSWx-S1) V1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -84,
+                    180,
+                    84
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2024-08-01T00:00:00Z",
+                    "2026-02-04T09:05:26Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "geophysical",
+        "nasa",
+        "opera",
+        "sentinel1-derived",
+        "surface",
+        "surface-ground-water",
+        "water"
+    ],
+    "providers": [
+        {
+            "name": "NASA JPL",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.jpl.nasa.gov/go/opera"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/OPERA_DSWX_L3_V1_S1"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Masked interpreted water classification layer. This represents\npixel-wise classification into one of three water\nclasses (not water, open water and inundated vegetation), masks\n(HAND mask and layover/shadow mask), or no data\nclasses.\n",
+                "gee:classes": [
+                    {
+                        "color": "ffffff",
+                        "description": "Not water - an area with valid data that is not open water\n(class 1), inundated vegetation (class 3), height above nearest\ndrainage masked (class 250), or layover/shadow masked\n(class 251). Masking can result in \u201cnot water\u201d (class 0) where\nland cover masking is applied.\n",
+                        "value": 0
+                    },
+                    {
+                        "color": "0000ff",
+                        "description": "Open water - an area that is entirely water and unobstructed\nto the sensor, including obstructions by vegetation, terrain,\nand buildings.\n",
+                        "value": 1
+                    },
+                    {
+                        "color": "66c2a5",
+                        "description": "Inundated vegetation - an area that is considered inundated,\nextracted from the high value in dual polarization ratio\nand the wetland class in land cover map.\n",
+                        "value": 3
+                    },
+                    {
+                        "color": "d3d3d3",
+                        "description": "Height Above Nearest Drainage (HAND) masked - an area where\ntopographic height is higher than the HAND threshold.\n",
+                        "value": 250
+                    },
+                    {
+                        "color": "a9a9a9",
+                        "description": "Layover/shadow masked - an area identified as layover or\nshadow computed from the geometry of the digital elevation\nmodel and sensor. The area is directly copied from input\nburst RTC-S1 products.\n",
+                        "value": 251
+                    },
+                    {
+                        "color": "000080",
+                        "description": "Ocean masked - an area identified as ocean using\na shoreline database with an added margin.\n",
+                        "value": 254
+                    }
+                ],
+                "name": "WTR_Water_classification"
+            },
+            {
+                "description": "The binary water map is derived from the WTR layer as a union\nof water classes (open water and inundated vegetation) into a\nbinary map indicating areas with and without water. Invalid\ndata classes (HAND masked, layover/shadow masked and fill\nvalue) are also provided to indicate areas in which the binary\nclassification does not provide water/not water classification.\n",
+                "gee:classes": [
+                    {
+                        "color": "ffffff",
+                        "description": "Not water - an area with valid data that is not water\n(class 1) and not HAND masked (class 252), layover or\nshadow (class 253)\n",
+                        "value": 0
+                    },
+                    {
+                        "color": "0000ff",
+                        "description": "water - an area classified as \"open water\" or\n\"inundated vegetation\" (see WTR layer).\n",
+                        "value": 1
+                    },
+                    {
+                        "color": "d3d3d3",
+                        "description": "Height Above Nearest Drainage (HAND) masked - an area where\ntopographic height is higher than the HAND threshold.\n",
+                        "value": 250
+                    },
+                    {
+                        "color": "a9a9a9",
+                        "description": "Layover/shadow masked - an area identified as layover or\nshadow computed from the geometry of the digital elevation\nmodel and sensor. The area is directly copied from input\nburst RTC-S1 products.\n",
+                        "value": 251
+                    }
+                ],
+                "name": "BWTR_Binary_water"
+            },
+            {
+                "description": "A representation of the confidence associated with the WTR\nclassification that is based on DIAG results. For example,\nthe Open water class of the WTR layer is split into two\nclasses: High Confidence and Moderate Confidence.\nAdditionally, this layer includes areas characterized by low\nbackscattering that are not water: Low-backscattering not water\nand land cover masked. Detailed explanations of these\nclassifications are outlined in the\n[DSWx-S1 ATBD](https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/web-misc/opera/atbd/D-108763_Rev_A_OPERA_DSWx_S1_NI_ATBD_20240530_SIGNED.pdf).\nSimilar to the WTR and BWTR\nlayers, the Confidence (CONF) layer also marks pixels where water\ndetection is challenging or unfeasible due to factors like\nlayover/shadow effects, no-data areas, and regions where water\npresence is hydrologically unrealistic (identified by HAND mask).\n",
+                "gee:classes": [
+                    {
+                        "color": "ffffff",
+                        "description": "Not water - an area with valid data that is not open water\nhigh-confidence (class 1), open water moderate-confidence\n(class 2), inundated vegetation (class 3), low-backscattering\nnot water estimated from bimodality test(class 5),\nlow-backscattering not water estimated from ancillary mask\n(class 6), height above nearest drainage masked (class 250),\nor layover/shadow masked (class 251).\n",
+                        "value": 0
+                    },
+                    {
+                        "color": "0000ff",
+                        "description": "Open water high-confidence - an area that is entirely water\nand unobstructed to the sensor, including obstructions by\nvegetation, terrain, and buildings and is not overlapping\nwith wetland areas in the Input land cover map.\n",
+                        "value": 1
+                    },
+                    {
+                        "color": "0088ff",
+                        "description": "Open water moderate-confidence - an area with higher\nbackscattering than initial thresholds, considered as water\ndue to the unimodal distribution with surrounding water pixels\nand not overlapping with wetland areas in the Input land cover\nmap.\n",
+                        "value": 2
+                    },
+                    {
+                        "color": "66c2a5",
+                        "description": "Potential inundated vegetation - an area with a high dual\npolarization ratio that is not overlapping with wetland areas\nin the input land cover map.\n",
+                        "value": 5
+                    },
+                    {
+                        "color": "e0e0e0",
+                        "description": "Low-backscattering not water (bimodality test) - an area with\nlower backscattering than thresholds, not considered water\nbased on the bimodality test, and not overlapping with wetland\nareas in the input land cover map.\n",
+                        "value": 6
+                    },
+                    {
+                        "color": "cccccc",
+                        "description": "Low-backscattering not water (ancillary mask) - an area\nwith lower backscattering than the threshold, considered not\nwater based on historical records of water extents,\nbackscattering level, slope angle, and land cover classes,\nand not overlapping with wetland areas in the input land\ncover map.\n",
+                        "value": 7
+                    },
+                    {
+                        "color": "aaaaaa",
+                        "description": "Not water - an area with valid data that is not open water\nhigh-confidence (class 31), open water moderate-confidence\n(class 32), inundated vegetation (class 35), low-backscattering\nnot water estimated from bimodality test(class 36),\nlowbackscattering not water estimated from ancillary mask\n(class 37), height above nearest drainage masked (class 250),\nor layover/shadow masked (class 251) and overlap with wetland\nareas in the Input land cover map.\n",
+                        "value": 30
+                    },
+                    {
+                        "color": "0040ff",
+                        "description": "Open water high-confidence - an area entirely composed of\nwater, unobstructed to the sensor by vegetation, terrain, or\nbuildings, and overlapping with wetland areas in the input\nland cover map.\n",
+                        "value": 31
+                    },
+                    {
+                        "color": "4080ff",
+                        "description": "Open water moderate-confidence - an area with higher\nbackscattering than initial thresholds, considered water\ndue to its unimodal distribution with surrounding water\npixels, and overlapping with wetland areas in the input\nland cover map\n",
+                        "value": 32
+                    },
+                    {
+                        "color": "20b2aa",
+                        "description": "Inundated vegetation - an area considered inundated due\nto a high value in dual polarization ratio and overlapping with\nwetland areas in the input land cover map.\n",
+                        "value": 35
+                    },
+                    {
+                        "color": "bbbbbb",
+                        "description": "Low-backscattering not water (bimodality test) - an area with\nlower backscattering than thresholds, not considered water\nbased on the bimodality test, and overlapping with wetland\nareas in the input land cover map.\n",
+                        "value": 36
+                    },
+                    {
+                        "color": "888888",
+                        "description": "Low-backscattering not water (ancillary mask) - an area with\nlower backscattering than the threshold, considered not water\nbased on historical records of water extents, backscattering\nlevel, slope angle, and land cover classes, and overlapping\nwith wetland areas in the input land cover map.\n",
+                        "value": 37
+                    },
+                    {
+                        "color": "d3d3d3",
+                        "description": "Height Above Nearest Drainage (HAND) masked - an area\nwhere topographic height is higher than the HAND threshold.\n",
+                        "value": 250
+                    },
+                    {
+                        "color": "a9a9a9",
+                        "description": "Layover/shadow masked - an area identified as layover\nor shadow computed from the geometry of the digital\nelevation model and sensor. The area is directly\ncopied from input burst RTC products.\n",
+                        "value": 251
+                    }
+                ],
+                "name": "CONF_Confidence"
+            },
+            {
+                "description": "A metric of Fuzzy values is computed using ancillary\ndata, including HAND, terrain slope angle, reference water,\nand RTC-S1 backscattering, applying specific thresholds.\nThese values fall within a range of 0 to 100, where a higher\nvalue signifies a greater likelihood of the presence of open water.\n",
+                "gee:classes": [
+                    {
+                        "color": "bb0000",
+                        "description": "Fuzzy value associated with the WTR classification that\nis computed from backscattering intensity, reference water,\nslope angle, and HAND values.  (Values 0 to 100)\n",
+                        "value": 0
+                    },
+                    {
+                        "color": "d3d3d3",
+                        "description": "Height Above Nearest Drainage (HAND) masked - an area where\ntopographic height is higher than the HAND threshold.\n",
+                        "value": 252
+                    },
+                    {
+                        "color": "a9a9a9",
+                        "description": "Layover/shadow masked - an area identified as layover or\nshadow computed from the geometry of the digital elevation\nmodel and sensor. The area is directly copied from input\nburst RTC-S1 products.\n",
+                        "value": 253
+                    }
+                ],
+                "name": "DIAG_diagnostic"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "The DSWx-S1 product version",
+                "name": "DSWX_PRODUCT_VERSION",
+                "type": "STRING"
+            },
+            {
+                "description": "The percentage of layover and shadow in the DSWx-S1\nproduct based on OPERA RTC-S1 product.\n",
+                "name": "LAYOVER_SHADOW_COVERAGE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Polarizations (e.g. VV, VH)",
+                "name": "POLARIZATION",
+                "type": "STRING"
+            },
+            {
+                "description": "DSWx-S1 product processing date. Format: YYYY-MM-DDTHH:MM:SSZ.\n",
+                "name": "PROCESSING_DATETIME",
+                "type": "STRING"
+            },
+            {
+                "description": "Orbit direction (e.g. Ascending or Descending).",
+                "name": "RTC_ORBIT_PASS_DIRECTION",
+                "type": "STRING"
+            },
+            {
+                "description": "The version of OPERA RTC algorithm used for RTC products.",
+                "name": "RTC_PRODUCT_VERSION",
+                "type": "STRING"
+            },
+            {
+                "description": "Name of the sensor instrument (e.g., \"IW\")",
+                "name": "SENSOR",
+                "type": "STRING"
+            },
+            {
+                "description": "Name of the sensor platform (e.g., Sentinel-1A/B)",
+                "name": "SPACECRAFT_NAME",
+                "type": "STRING"
+            },
+            {
+                "description": "The area percentage of the tile with data.",
+                "name": "SPATIAL_COVERAGE",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Surface Water",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "WTR_Water_classification"
+                        ],
+                        "max": [
+                            3
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "white",
+                            "blue",
+                            "cyan",
+                            "black"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 30,
+                    "lon": -93,
+                    "zoom": 12
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    }
+}
