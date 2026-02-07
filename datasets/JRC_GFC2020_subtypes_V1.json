@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "JRC/GFC2020_subtypes/V0",
+    "id": "JRC/GFC2020_subtypes/V1",
     "stac_version": "1.1.0",
-    "description": "The global map of forest types provides a spatially explicit representation\nof primary forest, naturally regenerating forest and planted forest (including\nplantation forest) for the year 2020 at 10m spatial resolution. The base layer\nfor mapping these forest types is the extent of forest cover of version 1 of\nthe Global Forest Cover map for year 2020 (JRC GFC 2020). The definitions of\nthe forest types follow the definitions of the Regulation from the European\nUnion \"on the making available on the Union market and the export from the\nUnion of certain commodities and products associated with deforestation and\nforest degradation\" (EUDR, Regulation (EU) 2023/1115), which are similar to\ncharacteristics and specific forest categories from the FAO Global Forest\nResources Assessment. The year 2020 corresponds to the cut-off date of the\nEUDR.\n\nIn the context of the EUDR, the global forest types map can be used as a\nnon-mandatory, non-exclusive and not legally binding source of information,\nnamely in the phase of risk assessment by operators and traders. Further\ninformation about the map and its use can be found on the EU Observatory on\nDeforestation and Forest Degradation. The definition of forest degradation\nunder the EUDR implies that for year 2020 it is only necessary to assess the\npresence of primary forests and naturally regenerating forests; all other\nforests, including plantation forests, were mapped under class \"planted\nforests\". Class \"other wooded land\" exists only outside the extent of forest\ncover in the Global Forest Cover map for year 2020 and is therefore not\nmapped in GFT 2020.\n\nData for deriving a harmonized, globally consistent representation of forest\ntypes are scarce, and mapping of the respective forest types from Earth\nObservation data is challenging. This map of global forest types is released\nas a preliminary version (version 0) for feedback by the user community that\nis concerned or interested in the issue of forest degradation under the\nEUDR. Based on expected feedback and future additional or improved data\nsets, the JRC aims to produce a consolidated map during year 2025.\n\nThe global map of forest types v0 combines available global datasets\n(wall-to-wall or global in their scope) that indicate or are proxies for the\nfour main forest types The main data layers that are used to delineate primary\nforests in GFT 2020 are:\n\n1. The Forest Landscape Integrity Index in 2019\n1. Map of undisturbed tropical mangroves in 2020 and degradation and\ndeforestation in tropical moist forests from 1990 to 2020 (from JRC-TMF)\n1. Map of Intact Forest Landscapes 2020\n1. World Database on Protected Areas\n1. The European Primary Forest Dataset from Sabatini et al. 2021\n1. Global tree cover loss from 2001 to 2020 in combination with the map of\ndrivers of global forest loss\n1. A map on global mining land use.\n\nThe main layers to map planted forests (including plantation forests) are:\n\n1. The WRI Spatial Database on Planted Trees (version 2.1)\n1. IIASA Forest Management classes on planted/plantation forest\n1. The Global Forest Canopy Height dataset in 2019\n1. global tree cover in 2000 and loss from 2001 to 2020.\n\nThe global input layers and mapping approach are described in\n[this technical report](https://op.europa.eu/en/publication-detail/-/publication/e2c286ac-14e9-11f0-b1a3-01aa75ed71a1/language-en).\n\nFor a list of known issues please refer to\n[this website](https://forobs.jrc.ec.europa.eu/GFC).\n",
+    "description": "The global map of forest types provides a spatially explicit representation\nof primary forest, naturally regenerating forest and planted forest (including\nplantation forest) for the year 2020 at 10m spatial resolution. The base layer\nfor mapping these forest types is the extent of forest cover of version 3 of\nthe Global Forest Cover map for year 2020 (JRC GFC 2020). The definitions of\nthe forest types follow the definitions of the Regulation from the European\nUnion \"on the making available on the Union market and the export from the\nUnion of certain commodities and products associated with deforestation and\nforest degradation\" (EUDR, Regulation (EU) 2023/1115), which are similar to\ncharacteristics and specific forest categories from the FAO Global Forest\nResources Assessment. The year 2020 corresponds to the cut-off date of the\nEUDR.\n\nIn the context of the EUDR, the global forest type map can be used as a\nnon-mandatory, non-exclusive and not legally binding source of information,\nnamely in the phase of risk assessment by operators and traders. Further\ninformation about the map and its use can be found on the EU Observatory on\nDeforestation and Forest Degradation. The definition of forest degradation\nunder the EUDR implies that for year 2020 it is only necessary to assess the\npresence of primary forests and naturally regenerating forests; all other\nforests, including plantation forests, were mapped under class \"planted\nforests\". Class \"other wooded land\" exists only outside the extent of forest\ncover in the Global Forest Cover map for year 2020 and is therefore not\nmapped in GFT 2020.\n\nThe global map of forest types v1 combines available global datasets\n(wall-to-wall or global in their scope) that indicate or are proxies for the\nfour main forest types The main data layers that are used to delineate primary\nforests in GFT 2020 are:\n\n1. The Forest Landscape Integrity Index in 2019\n1. Map of undisturbed tropical mangroves in 2020 and degradation and\ndeforestation in tropical moist forests from 1990 to 2020 (from JRC-TMF)\n1. Deforestation alerts (RADD) up to end of 2020\n1. Map of Intact Forest Landscapes 2020\n1. World Database on Protected Areas\n1. The European Primary Forest Dataset from Sabatini et al. 2021\n1. Global tree cover loss from 2001 to 2020 in combination with the map of\ndrivers of global forest loss\n1. A map on global mining land use.\n\nThe main layers to map planted forests (including plantation forests) are:\n\n1. The WRI Spatial Database on Planted Trees (version 3)\n1. IIASA Forest Management classes on planted/plantation forest\n1. The Global Forest Canopy Height dataset in 2019\n1. global tree cover in 2000 and loss from 2001 to 2020.\n1. global drivers of forest loss.\n1. Global natural forests 2020.\n\nThe global input layers and mapping approach of GFT 2020 version 1 will be\ndescribed in a separate technical report, expected to be released by March 2026.\nA technical report [Bourgoin et al. 2025](https://op.europa.eu/en/publication-detail/-/publication/e2c286ac-14e9-11f0-b1a3-01aa75ed71a1/language-en)\ndescribes the mapping approach for the preliminary version (version 0) of GFT 2020.\n\nFor a list of known issues please refer to\n[this website](https://forobs.jrc.ec.europa.eu/GFT).\n",
     "links": [
         {
             "rel": "root",
@@ -12,24 +12,36 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JRC/JRC_GFC2020_subtypes_V0",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JRC/JRC_GFC2020_subtypes_V1",
             "type": "text/html",
-            "title": "Run the example for JRC/GFC2020_subtypes/V0 in the Earth Engine Code Editor",
+            "title": "Run the example for JRC/GFC2020_subtypes/V1 in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/JRC/JRC_GFC2020_subtypes_V0_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/JRC/JRC_GFC2020_subtypes_V1_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GFC2020_subtypes_V0#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GFC2020_subtypes_V1#terms-of-use",
             "type": "text/html"
         },
         {
-            "rel": "self",
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GFC2020_subtypes_V1.json",
+            "type": "application/json",
+            "title": "JRC/GFC2020_subtypes/V1"
+        },
+        {
+            "rel": "predecessor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GFC2020_subtypes_V0.json",
+            "type": "application/json",
+            "title": "JRC/GFC2020_subtypes/V0"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GFC2020_subtypes_V1.json",
             "type": "application/json"
         },
         {
@@ -47,23 +59,18 @@
     "gee:categories": [
         "forest-biomass"
     ],
-    "gee:interval": {
-        "interval": 1,
-        "type": "cadence",
-        "unit": "year"
-    },
     "gee:terms_of_use": "The data may be used by anyone, anywhere, anytime without permission,\nlicense or royalty payment. Attribution using the recommended citation is\nrequested.\n",
-    "gee:type": "image_collection",
+    "gee:type": "image",
     "gee:user_uploaded": true,
-    "sci:citation": "Bourgoin, Clement; Verhegghen, Astrid; Carboni, Silvia; Ameztoy, Iban;\nCeccherini, Guido; Colditz, Rene; Achard, Frederic (2024): Global map\nof forest types 2020 - version 0. European Commission, Joint Research Centre\n(JRC) [Dataset] PID:\n[http://data.europa.eu/89h/037ca376-ba92-49db-a8f7-0c277c1e5436](http://data.europa.eu/89h/037ca376-ba92-49db-a8f7-0c277c1e5436).\n",
+    "sci:citation": "Bourgoin, Clement; Ameztoy, Iban; Verhegghen, Astrid; Carboni, Silvia; \nAchard, Frederic; Colditz, Rene (2026): Global map\nof forest types 2020 - version 1. European Commission, Joint Research Centre\n(JRC) [Dataset] PID:\n[http://data.europa.eu/89h/45182662-3015-4a25-8d1e-aa857d75235d](http://data.europa.eu/89h/45182662-3015-4a25-8d1e-aa857d75235d).\n",
     "sci:publications": [
         {
             "citation": "Bourgoin, C., Verhegghen, A., Carboni, S., Degreve, L., Ameztoy Aramendi, I., Ceccherini, G., Colditz, R. and Achard, F., Global Forest Maps for the Year 2020 to Support the EU Regulation on Deforestation-free Supply Chains, Publications Office of the European Union, Luxembourg, 2025, [https://data.europa.eu/doi/10.2760/1975879](https://data.europa.eu/doi/10.2760/1975879), JRC141702.\n"
         }
     ],
-    "version": "V0",
+    "version": "V1",
     "gee:status": "ready",
-    "title": "Global map of forest types 2020",
+    "title": "EC JRC global map of forest types 2020, V1",
     "extent": {
         "spatial": {
             "bbox": [
@@ -107,7 +114,7 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GFC2020_subtypes_V0"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GFC2020_subtypes_V1"
         }
     ],
     "summaries": {
