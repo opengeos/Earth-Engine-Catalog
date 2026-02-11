@@ -33,6 +33,12 @@
             "type": "text/html"
         },
         {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CAS/CAS_IGSNRR_PML_V2_v018.json",
+            "type": "application/json",
+            "title": "CAS/IGSNRR/PML/V2_v018"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/pml_evapotranspiration/projects_pml_evapotranspiration_PML_OUTPUT_PML_V22a.json",
             "type": "application/json"
@@ -58,7 +64,6 @@
         "type": "cadence",
         "unit": "day"
     },
-    "gee:status": "beta",
     "gee:terms_of_use": "Acknowledgements\nWhenever PML datasets are used in a scientific publication, the given references should be cited.\n\nLicense\nThe dataset is licensed under the [CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
@@ -74,6 +79,7 @@
         }
     ],
     "version": "2.2a",
+    "gee:status": "ready",
     "title": "PML_V2.2a: Coupled Evapotranspiration and Gross Primary Product (GPP)",
     "extent": {
         "spatial": {
