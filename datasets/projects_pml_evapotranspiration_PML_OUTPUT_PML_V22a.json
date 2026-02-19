@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "projects/pml_evapotranspiration/PML/OUTPUT/PML_V22a",
     "stac_version": "1.1.0",
-    "description": "The dataset is produced by the Large Scale Hydrology Lab, which specializes in advancing global and regional water cycle research \nthrough big data analytics and advanced hydrological modeling. \n\nThe PML-V2.2a product provides 500m 8-day resolution global terrestrial evapotranspiration (ET) \nand gross primary production (GPP) from 2000 to 2024. Driven by MSWEP and MSWX, this version \nfeatures expanded bottom-up calibration using 208 flux sites and refined parameterization \ndistinguishing irrigated from rainfed croplands.\n\nValidation confirms high accuracy across plant functional types (NSE > 0.60, absolute bias < 5%) \nand reliable basin-scale water-balance performance (NSE: 0.89\u20130.91). This MODIS-based \nrecord is optimized for high-resolution near-present monitoring.\n\nThis dataset is part of the broader PML-V2.2 suite. For the long-term 43-year consolidated \nrecord (PML-V2.2b/c at 0.1\u00b0 with different remote sensing forcing), please visit the [TPDC data repository](https://doi.org/10.11888/Terre.tpdc.303314).\n",
+    "description": "The dataset is produced by the Large Scale Hydrology Lab, which specializes in advancing global and \nregional water cycle research by synthesizing multi-source Earth observations with process-based modeling. \n\nThe PML-V2.2a product provides 500m 8-day resolution global terrestrial evapotranspiration (ET) \nand gross primary production (GPP) from 2000 to 2024. Driven by MSWEP and MSWX, this version \nfeatures expanded bottom-up calibration using 208 flux sites and refined parameterization \ndistinguishing irrigated from rainfed croplands.\n\nValidation confirms high accuracy across plant functional types (NSE > 0.60, absolute bias < 5%) \nand reliable basin-scale water-balance performance (NSE: 0.89\u20130.91). This MODIS-based \nrecord is optimized for high-resolution near-present monitoring.\n\nThis dataset is part of the broader PML-V2.2 suite. For the long-term and consolidated record \n(1982-near present, PML-V2.2a/b/c at 0.1\u00b0 resolution with different remote sensing forcings), \nplease visit the [TPDC data repository](https://doi.org/10.11888/Terre.tpdc.303314).\n",
     "links": [
         {
             "rel": "root",
@@ -115,7 +115,7 @@
                 "licensor",
                 "producer"
             ],
-            "url": "https://scholar.google.com/citations?user=t5iGFeAAAAAJ&hl=en"
+            "url": "https://zhang-hydrolab.github.io/"
         },
         {
             "name": "Google Earth Engine",
@@ -158,13 +158,13 @@
                 "name": "Ei"
             },
             {
-                "description": "Potential evapotranspiration (PET). Calculated using the Shuttleworth-simplified \nversion of the Penman equation, which provides estimates of evaporation \nfrom water bodies, snow, and ice.\n",
+                "description": "Potential evapotranspiration (PET) estimated using the Shuttleworth-simplified \nPenman equation.\n",
                 "gee:scale": 0.01,
                 "gee:units": "mm/d",
                 "name": "PET"
             },
             {
-                "description": "Evaporation from water bodies, snow, and ice. Calculated using the\nPenman equation, which is considered a good estimate of actual\nevaporation for these surfaces.\n",
+                "description": "Evaporation from water bodies, snow, and ice, estimated using the\nPenman equation with unlimited water supply.\n",
                 "gee:scale": 0.01,
                 "gee:units": "mm/d",
                 "name": "Ew"
