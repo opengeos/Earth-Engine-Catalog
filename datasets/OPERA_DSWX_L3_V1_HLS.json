@@ -51,12 +51,12 @@
     "gee:categories": [
         "surface-ground-water"
     ],
-    "gee:status": "beta",
     "gee:terms_of_use": "This dataset is openly shared, without restriction, in accordance with\nthe [EOSDIS Data Use and Citation Guidance](https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance)\n",
     "gee:type": "image_collection",
     "sci:citation": "OPERA . 2023. OPERA Dynamic Surface Water Extent from Harmonized Landsat\nSentinel-2 (Version 1). Ver. 1.0. PO.DAAC, CA, USA. Dataset accessed\n[YYYY-MM-DD] at https://doi.org/10.5067/OPDSW-PL3V1\n",
     "sci:doi": "10.5067/OPDSW-PL3V1",
     "version": "V1",
+    "gee:status": "ready",
     "title": "Dynamic Surface Water Extent from Harmonized Landsat Sentinel-2 (DSWx-HLS) V1",
     "extent": {
         "spatial": {
@@ -73,7 +73,7 @@
             "interval": [
                 [
                     "2023-04-04T04:37:01Z",
-                    "2026-02-22T23:22:09Z"
+                    "2026-02-23T23:59:36Z"
                 ]
             ]
         }

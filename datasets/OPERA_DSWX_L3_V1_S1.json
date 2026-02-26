@@ -51,12 +51,12 @@
     "gee:categories": [
         "surface-ground-water"
     ],
-    "gee:status": "beta",
     "gee:terms_of_use": "This dataset is openly shared, without restriction, in accordance with\nthe [EOSDIS Data Use and Citation Guidance](https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance)\n",
     "gee:type": "image_collection",
     "sci:citation": "OPERA . 2024. OPERA Dynamic Surface Water Extent from Sentinel-1 product\n(Version 1). Ver. 1.0. PO.DAAC, CA, USA. Dataset accessed [YYYY-MM-DD]\nat https://doi.org/10.5067/OPDSWS1-L3V1\n",
     "sci:doi": "10.5067/OPDSWS1-L3V1",
     "version": "V1",
+    "gee:status": "ready",
     "title": "Dynamic Surface Water Extent from Sentinel-1 (DSWx-S1) V1",
     "extent": {
         "spatial": {
@@ -73,7 +73,7 @@
             "interval": [
                 [
                     "2024-08-01T00:00:00Z",
-                    "2026-02-24T16:13:28Z"
+                    "2026-02-25T02:09:29Z"
                 ]
             ]
         }
