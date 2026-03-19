@@ -106,7 +106,10 @@
         "eo:bands": [
             {
                 "description": "Drainage direction possible values: 1=E, 2=SE, 4=S,\n8=SW, 16=W, 32=NW, 64=N, 128=NE; final outlet cells to the ocean\nare flagged with a value of 0 and cells that mark the lowest\npoint of an endorheic basin (inland sink) are flagged with a\nvalue of 255 (original value of -1)\n",
-                "name": "b1"
+                "name": "b1",
+                "gsd": [
+                    463.83
+                ]
             }
         ],
         "gee:visualizations": [

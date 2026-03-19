@@ -93,7 +93,7 @@
             "interval": [
                 [
                     "2012-01-19T00:00:00Z",
-                    "2026-03-07T00:00:00Z"
+                    "2026-03-09T00:00:00Z"
                 ]
             ]
         }
@@ -129,19 +129,31 @@
         "eo:bands": [
             {
                 "description": "BRDF corrected DNB NTL",
-                "name": "DNB_BRDF_Corrected_NTL"
+                "name": "DNB_BRDF_Corrected_NTL",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Gap Filled BRDF corrected DNB NTL",
-                "name": "Gap_Filled_DNB_BRDF_Corrected_NTL"
+                "name": "Gap_Filled_DNB_BRDF_Corrected_NTL",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "DNB Lunar Irradiance",
-                "name": "DNB_Lunar_Irradiance"
+                "name": "DNB_Lunar_Irradiance",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Latest high quality BRDF corrected DNB radiance retrieval",
-                "name": "Latest_High_Quality_Retrieval"
+                "name": "Latest_High_Quality_Retrieval",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Mandatory quality flag",
@@ -163,7 +175,10 @@
                         "value": 255
                     }
                 ],
-                "name": "Mandatory_Quality_Flag"
+                "name": "Mandatory_Quality_Flag",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Flag for snow cover",
@@ -177,7 +192,10 @@
                         "value": 1
                     }
                 ],
-                "name": "Snow_Flag"
+                "name": "Snow_Flag",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Quality flag for cloud mask",
@@ -319,7 +337,10 @@
                     ],
                     "total_bit_count": 11
                 },
-                "name": "QF_Cloud_Mask"
+                "name": "QF_Cloud_Mask",
+                "gsd": [
+                    500
+                ]
             }
         ],
         "gee:visualizations": [

@@ -132,7 +132,10 @@
         "eo:bands": [
             {
                 "description": "The estimated number of persons per 30 arc-second grid cell.",
-                "name": "population_count"
+                "name": "population_count",
+                "gsd": [
+                    927.67
+                ]
             }
         ],
         "gee:visualizations": [

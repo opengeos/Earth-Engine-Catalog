@@ -110,7 +110,10 @@
             {
                 "description": "Antarctic ice sheet and ice shelf elevation.",
                 "gee:units": "m",
-                "name": "elevation"
+                "name": "elevation",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Data processing method of elevation per grid cell.",
@@ -136,22 +139,34 @@
                         "value": 3
                     }
                 ],
-                "name": "data_composition"
+                "name": "data_composition",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Slope derived from elevation gradient.",
                 "gee:units": "deg",
-                "name": "slope"
+                "name": "slope",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Smoothed version of elevation model using a median filter.",
                 "gee:units": "m",
-                "name": "z_smoothed"
+                "name": "z_smoothed",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Certainty of elevation model derived from RMS of elevation\nresiduals in observed grid cells and the kriging variance error\nin interpolated grid cells.\n",
                 "gee:units": "m",
-                "name": "z_uncertainty"
+                "name": "z_uncertainty",
+                "gsd": [
+                    1000
+                ]
             }
         ],
         "gee:visualizations": [

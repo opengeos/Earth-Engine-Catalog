@@ -125,62 +125,95 @@
                 "description": "Top of canopy reflectance RED channel",
                 "full_width_half_max": 0.082,
                 "gee:wavelength": "658nm, FWHM: 82nm",
-                "name": "RED"
+                "name": "RED",
+                "gsd": [
+                    333
+                ]
             },
             {
                 "center_wavelength": 0.834,
                 "description": "Top of canopy reflectance NIR channel",
                 "full_width_half_max": 0.121,
                 "gee:wavelength": "834nm, FWHM: 121nm",
-                "name": "NIR"
+                "name": "NIR",
+                "gsd": [
+                    333
+                ]
             },
             {
                 "center_wavelength": 0.46,
                 "description": "Top of canopy reflectance BLUE channel",
                 "full_width_half_max": 0.042,
                 "gee:wavelength": "460nm, FWHM: 42nm",
-                "name": "BLUE"
+                "name": "BLUE",
+                "gsd": [
+                    333
+                ]
             },
             {
                 "center_wavelength": 1.61,
                 "description": "Top of canopy reflectance SWIR channel",
                 "full_width_half_max": 0.089,
                 "gee:wavelength": "1610nm, FWHM: 89nm",
-                "name": "SWIR"
+                "name": "SWIR",
+                "gsd": [
+                    333
+                ]
             },
             {
                 "description": "Normalized Difference Vegetation Index",
-                "name": "NDVI"
+                "name": "NDVI",
+                "gsd": [
+                    333
+                ]
             },
             {
                 "description": "Solar zenith angle",
                 "gee:units": "deg",
-                "name": "SZA"
+                "name": "SZA",
+                "gsd": [
+                    333
+                ]
             },
             {
                 "description": "Solar azimuth angle",
                 "gee:units": "deg",
-                "name": "SAA"
+                "name": "SAA",
+                "gsd": [
+                    333
+                ]
             },
             {
                 "description": "Viewing azimuth angles SWIR detector",
                 "gee:units": "deg",
-                "name": "SWIRVAA"
+                "name": "SWIRVAA",
+                "gsd": [
+                    333
+                ]
             },
             {
                 "description": "Viewing zenith angle SWIR detector",
                 "gee:units": "deg",
-                "name": "SWIRVZA"
+                "name": "SWIRVZA",
+                "gsd": [
+                    333
+                ]
             },
             {
                 "description": "Viewing azimuth angle VNIR detector",
                 "gee:units": "deg",
-                "name": "VNIRVAA"
+                "name": "VNIRVAA",
+                "gsd": [
+                    333
+                ]
             },
             {
                 "description": "Viewing zenith angle VNIR detector",
                 "gee:units": "deg",
-                "name": "VNIRVZA"
+                "name": "VNIRVZA",
+                "gsd": [
+                    333
+                ]
             },
             {
                 "description": "Quality / Information band.",
@@ -291,12 +324,18 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "SM"
+                "name": "SM",
+                "gsd": [
+                    333
+                ]
             },
             {
                 "description": "Time elapsed since the start of image collection of this mosaic",
                 "gee:units": "min",
-                "name": "TIME"
+                "name": "TIME",
+                "gsd": [
+                    333
+                ]
             }
         ],
         "gee:schema": [

@@ -116,7 +116,10 @@
                 "description": "Transpiration (Dekadal) [mm]",
                 "gee:scale": 0.1,
                 "gee:units": "mm",
-                "name": "L1-T-D"
+                "name": "L1-T-D",
+                "gsd": [
+                    248.2
+                ]
             }
         ],
         "gee:visualizations": [

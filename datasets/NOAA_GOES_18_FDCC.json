@@ -81,7 +81,7 @@
             "interval": [
                 [
                     "2022-10-13T16:01:17Z",
-                    "2026-03-18T02:16:17.200000Z"
+                    "2026-03-19T00:11:17.400000Z"
                 ]
             ]
         }
@@ -125,14 +125,20 @@
                 "gee:offset": 4000,
                 "gee:scale": 60.98,
                 "gee:units": "m^2",
-                "name": "Area"
+                "name": "Area",
+                "gsd": [
+                    2000
+                ]
             },
             {
                 "description": "Fire temperature",
                 "gee:offset": 400,
                 "gee:scale": 0.05493667,
                 "gee:units": "K",
-                "name": "Temp"
+                "name": "Temp",
+                "gsd": [
+                    2000
+                ]
             },
             {
                 "description": "Fire mask categories.  Pixel values in the fire mask image\nidentify a fire category and diagnostic information associated\nwith algorithm execution. The six fire categories include: Good\nquality or temporally filtered good quality fire pixel;\nSaturated fire pixel or temporally filtered saturated fire\npixel; Cloud contaminated or temporally filtered cloud\ncontaminated fire pixel; High probability or temporally filtered\nhigh probability fire pixel; Medium probability or temporally\nfiltered high probability fire pixel; Low probability or\ntemporally filtered high probability fire. Temporally filtered\nfire pixels are those resulting from fire pixels that are in\nclose proximity in both space and time.\n",
@@ -198,12 +204,18 @@
                         "value": 35
                     }
                 ],
-                "name": "Mask"
+                "name": "Mask",
+                "gsd": [
+                    2000
+                ]
             },
             {
                 "description": "Fire radiative power",
                 "gee:units": "MW",
-                "name": "Power"
+                "name": "Power",
+                "gsd": [
+                    2000
+                ]
             },
             {
                 "description": "Data quality flags",
@@ -239,7 +251,10 @@
                         "value": 5
                     }
                 ],
-                "name": "DQF"
+                "name": "DQF",
+                "gsd": [
+                    2000
+                ]
             }
         ],
         "gee:visualizations": [

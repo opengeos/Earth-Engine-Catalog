@@ -114,19 +114,31 @@
         "eo:bands": [
             {
                 "description": "The number of shots. For a shot to be counted in this layer the\nfollowing fields need to be valid: longitude, latitude, elevation of the\nlowest mode, decimal date, and orbit.\n",
-                "name": "shots_count"
+                "name": "shots_count",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "The number of unique orbits.\n",
-                "name": "orbits_uniq"
+                "name": "orbits_uniq",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "The number of unique tracks. A track is the combination of orbit and\nbeam.\n",
-                "name": "tracks_uniq"
+                "name": "tracks_uniq",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "The Nearest Neighbor Index (Evans et al. 2023).\n",
-                "name": "shots_nni"
+                "name": "shots_nni",
+                "gsd": [
+                    1000
+                ]
             }
         ],
         "gee:visualizations": [

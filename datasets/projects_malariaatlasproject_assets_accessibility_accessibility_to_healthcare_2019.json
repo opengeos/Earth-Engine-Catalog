@@ -100,7 +100,10 @@
             {
                 "description": "Travel time to the nearest hospital or clinic.",
                 "gee:units": "min",
-                "name": "accessibility"
+                "name": "accessibility",
+                "gsd": [
+                    927.67
+                ]
             }
         ],
         "gee:visualizations": [

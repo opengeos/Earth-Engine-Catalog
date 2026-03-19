@@ -123,12 +123,18 @@
             {
                 "description": "geeSEBAL ET value",
                 "gee:units": "mm",
-                "name": "et"
+                "name": "et",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Number of cloud free values",
                 "gee:units": "count",
-                "name": "count"
+                "name": "count",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:schema": [

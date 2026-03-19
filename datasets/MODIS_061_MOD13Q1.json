@@ -134,12 +134,18 @@
             {
                 "description": "Normalized Difference Vegetation Index",
                 "gee:scale": 0.0001,
-                "name": "NDVI"
+                "name": "NDVI",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Enhanced Vegetation Index",
                 "gee:scale": 0.0001,
-                "name": "EVI"
+                "name": "EVI",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "VI quality indicators",
@@ -359,57 +365,84 @@
                     ],
                     "total_bit_count": 16
                 },
-                "name": "DetailedQA"
+                "name": "DetailedQA",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "center_wavelength": 0.645,
                 "description": "Red surface reflectance",
                 "gee:scale": 0.0001,
                 "gee:wavelength": "645nm",
-                "name": "sur_refl_b01"
+                "name": "sur_refl_b01",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "center_wavelength": 0.858,
                 "description": "NIR surface reflectance",
                 "gee:scale": 0.0001,
                 "gee:wavelength": "858nm",
-                "name": "sur_refl_b02"
+                "name": "sur_refl_b02",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "center_wavelength": 0.469,
                 "description": "Blue surface reflectance",
                 "gee:scale": 0.0001,
                 "gee:wavelength": "469nm",
-                "name": "sur_refl_b03"
+                "name": "sur_refl_b03",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "center_wavelength": 2.13,
                 "description": "MIR surface reflectance",
                 "gee:scale": 0.0001,
                 "gee:wavelength": "2130nm/2105 - 2155nm",
-                "name": "sur_refl_b07"
+                "name": "sur_refl_b07",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "View zenith angle",
                 "gee:scale": 0.01,
                 "gee:units": "deg",
-                "name": "ViewZenith"
+                "name": "ViewZenith",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Solar zenith angle",
                 "gee:scale": 0.01,
                 "gee:units": "deg",
-                "name": "SolarZenith"
+                "name": "SolarZenith",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Relative azimuth angle",
                 "gee:scale": 0.01,
                 "gee:units": "deg",
-                "name": "RelativeAzimuth"
+                "name": "RelativeAzimuth",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Julian day of year",
-                "name": "DayOfYear"
+                "name": "DayOfYear",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Quality reliability of VI pixel",
@@ -441,7 +474,10 @@
                     ],
                     "total_bit_count": 2
                 },
-                "name": "SummaryQA"
+                "name": "SummaryQA",
+                "gsd": [
+                    250
+                ]
             }
         ],
         "gee:visualizations": [

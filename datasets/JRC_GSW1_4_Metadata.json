@@ -117,15 +117,24 @@
         "eo:bands": [
             {
                 "description": "The number of water detections in the study period.",
-                "name": "detections"
+                "name": "detections",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "The number of valid observations in the study period.",
-                "name": "valid_obs"
+                "name": "valid_obs",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "The total number of available observations (i.e. scenes) in the study period.",
-                "name": "total_obs"
+                "name": "total_obs",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

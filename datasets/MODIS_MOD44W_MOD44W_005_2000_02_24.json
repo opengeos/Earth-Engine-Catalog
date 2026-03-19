@@ -123,7 +123,10 @@
                     ],
                     "total_bit_count": 1
                 },
-                "name": "water_mask"
+                "name": "water_mask",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Shows which data source provided the water pixel.",
@@ -163,7 +166,10 @@
                     ],
                     "total_bit_count": 4
                 },
-                "name": "water_mask_qa"
+                "name": "water_mask_qa",
+                "gsd": [
+                    250
+                ]
             }
         ],
         "gee:visualizations": [

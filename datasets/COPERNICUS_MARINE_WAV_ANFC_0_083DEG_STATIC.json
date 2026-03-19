@@ -100,7 +100,10 @@
             {
                 "description": "Sea floor depth",
                 "gee:units": "m",
-                "name": "deptho"
+                "name": "deptho",
+                "gsd": [
+                    9276.62
+                ]
             }
         ],
         "gee:visualizations": [

@@ -69,7 +69,7 @@
             "interval": [
                 [
                     "2019-02-08T08:13:16Z",
-                    "2026-03-13T21:13:02Z"
+                    "2026-03-15T01:58:41Z"
                 ]
             ]
         }
@@ -110,46 +110,73 @@
             {
                 "description": "Column-averaged dry air mixing ratio of methane, as parts-per-billion\n",
                 "gee:units": "Mol fraction",
-                "name": "CH4_column_volume_mixing_ratio_dry_air"
+                "name": "CH4_column_volume_mixing_ratio_dry_air",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Aerosol height parameter in the CH<sub>4</sub> retrieval",
                 "gee:units": "m",
-                "name": "aerosol_height"
+                "name": "aerosol_height",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "aerosol optical thickness in the SWIR band",
-                "name": "aerosol_optical_depth"
+                "name": "aerosol_optical_depth",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Azimuth angle of the satellite at the ground pixel location (WGS84); angle\nmeasured East-of-North.",
                 "gee:units": "deg",
-                "name": "sensor_azimuth_angle"
+                "name": "sensor_azimuth_angle",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Zenith angle of the satellite at the ground pixel location (WGS84); angle\nmeasured away from the vertical.\n",
                 "gee:units": "deg",
-                "name": "sensor_zenith_angle"
+                "name": "sensor_zenith_angle",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Azimuth angle of the Sun at the ground pixel location (WGS84); angle\nmeasured East-of-North.",
                 "gee:units": "deg",
-                "name": "solar_azimuth_angle"
+                "name": "solar_azimuth_angle",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Zenith angle of the satellite at the ground pixel location (WGS84); angle\nmeasured away from the vertical.\n",
                 "gee:units": "deg",
-                "name": "solar_zenith_angle"
+                "name": "solar_zenith_angle",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Column-averaged dry air mixing ratio of methane, as parts-per-billion,\ncorrected for surface albedo\n",
                 "gee:units": "Mol fraction",
-                "name": "CH4_column_volume_mixing_ratio_dry_air_bias_corrected"
+                "name": "CH4_column_volume_mixing_ratio_dry_air_bias_corrected",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Uncertainty of the column averaged dry air mixing ratio of methane\n(1 sigma error)\n",
                 "gee:units": "Mol fraction",
-                "name": "CH4_column_volume_mixing_ratio_dry_air_uncertainty"
+                "name": "CH4_column_volume_mixing_ratio_dry_air_uncertainty",
+                "gsd": [
+                    1113.2
+                ]
             }
         ],
         "gee:schema": [

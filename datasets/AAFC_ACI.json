@@ -491,7 +491,10 @@
                         "value": 230
                     }
                 ],
-                "name": "landcover"
+                "name": "landcover",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:schema": [

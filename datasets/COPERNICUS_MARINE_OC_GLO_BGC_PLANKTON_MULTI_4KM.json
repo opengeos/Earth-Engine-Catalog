@@ -71,7 +71,7 @@
             "interval": [
                 [
                     "2025-02-10T00:00:00Z",
-                    "2026-03-15T00:00:00Z"
+                    "2026-03-16T00:00:00Z"
                 ]
             ]
         }
@@ -104,16 +104,25 @@
             {
                 "description": "Chlorophyll-a concentration",
                 "gee:units": "mg/m^3",
-                "name": "CHL"
+                "name": "CHL",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Chlorophyll-a concentration - The uncertainty as measured in\nhundredths of a percent (e.g., a value of 5000 means 50%).\n",
                 "gee:units": "%",
-                "name": "CHL_uncertainty"
+                "name": "CHL_uncertainty",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Land water mask bit.\n\n  * 0: Water\n  * 1: Land\n",
-                "name": "flags"
+                "name": "flags",
+                "gsd": [
+                    4000
+                ]
             }
         ],
         "gee:visualizations": [

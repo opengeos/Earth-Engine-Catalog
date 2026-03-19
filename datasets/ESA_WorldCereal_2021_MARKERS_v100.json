@@ -113,7 +113,10 @@
         "eo:bands": [
             {
                 "description": "Classification: 0 or 100",
-                "name": "classification"
+                "name": "classification",
+                "gsd": [
+                    10
+                ]
             }
         ],
         "gee:schema": [

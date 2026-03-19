@@ -131,43 +131,64 @@
                 "description": "Gross primary production",
                 "gee:scale": 0.01,
                 "gee:units": "gC m-2 d-1",
-                "name": "GPP"
+                "name": "GPP",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Actual evapotranspiration",
                 "gee:scale": 0.01,
                 "gee:units": "mm/d",
-                "name": "ET"
+                "name": "ET",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Vegetation transpiration",
                 "gee:scale": 0.01,
                 "gee:units": "mm/d",
-                "name": "Ec"
+                "name": "Ec",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Soil evaporation",
                 "gee:scale": 0.01,
                 "gee:units": "mm/d",
-                "name": "Es"
+                "name": "Es",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Interception from vegetation canopy",
                 "gee:scale": 0.01,
                 "gee:units": "mm/d",
-                "name": "Ei"
+                "name": "Ei",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Potential evapotranspiration (PET) estimated using the Shuttleworth-simplified \nPenman equation.\n",
                 "gee:scale": 0.01,
                 "gee:units": "mm/d",
-                "name": "PET"
+                "name": "PET",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Evaporation from water bodies, snow, and ice, estimated using the\nPenman equation with unlimited water supply.\n",
                 "gee:scale": 0.01,
                 "gee:units": "mm/d",
-                "name": "Ew"
+                "name": "Ew",
+                "gsd": [
+                    500
+                ]
             }
         ],
         "gee:visualizations": [

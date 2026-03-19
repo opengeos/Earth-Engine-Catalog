@@ -220,7 +220,10 @@
                         "value": 32
                     }
                 ],
-                "name": "biome_type"
+                "name": "biome_type",
+                "gsd": [
+                    1000
+                ]
             }
         ],
         "gee:visualizations": [

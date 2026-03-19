@@ -219,7 +219,10 @@
                         "value": 230
                     }
                 ],
-                "name": "landcover"
+                "name": "landcover",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Binary quality band indicating whether the reference dataset has been used instead of the output of the GlobCover classification scheme.\n",
@@ -243,7 +246,10 @@
                     ],
                     "total_bit_count": 1
                 },
-                "name": "qa"
+                "name": "qa",
+                "gsd": [
+                    300
+                ]
             }
         ],
         "gee:visualizations": [

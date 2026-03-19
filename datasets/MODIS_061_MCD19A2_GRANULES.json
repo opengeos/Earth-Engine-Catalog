@@ -136,29 +136,44 @@
                 "center_wavelength": 0.47,
                 "description": "Aerosol optical depth over land retrieved in the MODIS Blue band (0.47\n&mu;m). AOD is not received at high altitude (greater than 4.2 km)\nexcept when smoke or dust is detected; rather, we report a static\nvalue of 0.02 used for atmospheric correction.\n",
                 "gee:scale": 0.001,
-                "name": "Optical_Depth_047"
+                "name": "Optical_Depth_047",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "center_wavelength": 0.55,
                 "description": "Aerosol optical depth over land retrieved in the MODIS Green band\n(0.55 &mu;m).\n",
                 "gee:scale": 0.001,
-                "name": "Optical_Depth_055"
+                "name": "Optical_Depth_055",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "AOD uncertainty based on blue-band surface brightness (reflectance)\n",
                 "gee:scale": 0.0001,
-                "name": "AOD_Uncertainty"
+                "name": "AOD_Uncertainty",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Fine mode fraction for ocean and large inland lakes",
-                "name": "FineModeFraction"
+                "name": "FineModeFraction",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "center_wavelength": 0.94,
                 "description": "Column water vapor over land, retrieved from MODIS near-IR bands at\n0.94 &mu;m. When reported for cloudy pixels, it represents water vapor\nabove the cloud.\n",
                 "gee:scale": 0.001,
                 "gee:units": "cm",
-                "name": "Column_WV"
+                "name": "Column_WV",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "AOD QA",
@@ -356,42 +371,66 @@
                     ],
                     "total_bit_count": 16
                 },
-                "name": "AOD_QA"
+                "name": "AOD_QA",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Smoke injection height",
                 "gee:units": "m",
-                "name": "Injection_Height"
+                "name": "Injection_Height",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Angstrom exponent 470-780nm over the ocean",
                 "gee:scale": 0.0001,
-                "name": "AngstromExp_470-780"
+                "name": "AngstromExp_470-780",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Cosine of solar zenith angle (5 km resolution)",
                 "gee:scale": 0.0001,
-                "name": "cosSZA"
+                "name": "cosSZA",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Cosine view zenith angle (5 km resolution)",
                 "gee:scale": 0.0001,
-                "name": "cosVZA"
+                "name": "cosVZA",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Relative azimuth angle (5 km resolution)",
                 "gee:scale": 0.01,
-                "name": "RelAZ"
+                "name": "RelAZ",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Scattering angle (5 km resolution)",
                 "gee:scale": 0.01,
-                "name": "Scattering_Angle"
+                "name": "Scattering_Angle",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Glint angle (5 km resolution)",
                 "gee:scale": 0.01,
-                "name": "Glint_Angle"
+                "name": "Glint_Angle",
+                "gsd": [
+                    1000
+                ]
             }
         ],
         "gee:visualizations": [

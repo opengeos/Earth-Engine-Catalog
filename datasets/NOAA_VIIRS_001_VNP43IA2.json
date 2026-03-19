@@ -134,7 +134,10 @@
                         "value": 3
                     }
                 ],
-                "name": "BRDF_Albedo_Band_Quality_I1"
+                "name": "BRDF_Albedo_Band_Quality_I1",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "BRDF inversion information I2",
@@ -156,7 +159,10 @@
                         "value": 3
                     }
                 ],
-                "name": "BRDF_Albedo_Band_Quality_I2"
+                "name": "BRDF_Albedo_Band_Quality_I2",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "BRDF inversion information I3",
@@ -178,7 +184,10 @@
                         "value": 3
                     }
                 ],
-                "name": "BRDF_Albedo_Band_Quality_I3"
+                "name": "BRDF_Albedo_Band_Quality_I3",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Land/Water type",
@@ -216,35 +225,56 @@
                         "value": 7
                     }
                 ],
-                "name": "BRDF_Albedo_LandWaterType"
+                "name": "BRDF_Albedo_LandWaterType",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Solar zenith angle at local solar noon",
                 "gee:units": "deg",
-                "name": "BRDF_Albedo_LocalSolarNoon"
+                "name": "BRDF_Albedo_LocalSolarNoon",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Platform name",
-                "name": "BRDF_Albedo_Platform"
+                "name": "BRDF_Albedo_Platform",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Weight of Determination (WoD) of WSA",
-                "name": "BRDF_Albedo_Uncertainty"
+                "name": "BRDF_Albedo_Uncertainty",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Days of valid observation within 16-day period for band \nI1",
                 "gee:units": "d",
-                "name": "BRDF_Albedo_ValidObs_I1"
+                "name": "BRDF_Albedo_ValidObs_I1",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Days of valid observation within 16-day period for band \nI2",
                 "gee:units": "d",
-                "name": "BRDF_Albedo_ValidObs_I2"
+                "name": "BRDF_Albedo_ValidObs_I2",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Days of valid observation within 16-day period for band \nI3",
                 "gee:units": "d",
-                "name": "BRDF_Albedo_ValidObs_I3"
+                "name": "BRDF_Albedo_ValidObs_I3",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Snow flag",
@@ -258,7 +288,10 @@
                         "value": 1
                     }
                 ],
-                "name": "Snow_BRDF_Albedo"
+                "name": "Snow_BRDF_Albedo",
+                "gsd": [
+                    500
+                ]
             }
         ],
         "gee:visualizations": [

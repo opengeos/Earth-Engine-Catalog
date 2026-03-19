@@ -73,7 +73,7 @@
             "interval": [
                 [
                     "1979-01-01T00:00:00Z",
-                    "2026-03-15T06:00:00Z"
+                    "2026-03-16T06:00:00Z"
                 ]
             ]
         }
@@ -115,82 +115,130 @@
             {
                 "description": "Precipitation amount",
                 "gee:units": "mm, daily total",
-                "name": "pr"
+                "name": "pr",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Maximum relative humidity",
                 "gee:units": "%",
-                "name": "rmax"
+                "name": "rmax",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Minimum relative humidity",
                 "gee:units": "%",
-                "name": "rmin"
+                "name": "rmin",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Specific humididy",
                 "gee:units": "Mass fraction",
-                "name": "sph"
+                "name": "sph",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Surface downward shortwave radiation",
                 "gee:units": "W/m^2",
-                "name": "srad"
+                "name": "srad",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Wind direction",
                 "gee:units": "deg",
-                "name": "th"
+                "name": "th",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Minimum temperature",
                 "gee:units": "K",
-                "name": "tmmn"
+                "name": "tmmn",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Maximum temperature",
                 "gee:units": "K",
-                "name": "tmmx"
+                "name": "tmmx",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Wind velocity at 10m",
                 "gee:units": "m/s",
-                "name": "vs"
+                "name": "vs",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Energy release component",
                 "gee:units": "NFDRS fire danger index",
-                "name": "erc"
+                "name": "erc",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Daily grass reference evapotranspiration",
                 "gee:units": "mm",
-                "name": "eto"
+                "name": "eto",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Burning index",
                 "gee:units": "NFDRS fire danger index",
-                "name": "bi"
+                "name": "bi",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "100-hour dead fuel moisture",
                 "gee:units": "%",
-                "name": "fm100"
+                "name": "fm100",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "1000-hour dead fuel moisture",
                 "gee:units": "%",
-                "name": "fm1000"
+                "name": "fm1000",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Daily alfalfa reference evapotranspiration",
                 "gee:units": "mm",
-                "name": "etr"
+                "name": "etr",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Mean vapor pressure deficit",
                 "gee:units": "kPa",
-                "name": "vpd"
+                "name": "vpd",
+                "gsd": [
+                    4638.3
+                ]
             }
         ],
         "gee:schema": [

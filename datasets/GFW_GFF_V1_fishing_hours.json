@@ -111,32 +111,50 @@
             {
                 "description": "Hours per sq. km of fishing with drifting longlines.",
                 "gee:units": "h/km^2",
-                "name": "drifting_longlines"
+                "name": "drifting_longlines",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Hours per sq. km of fishing with fixed gear.",
                 "gee:units": "h/km^2",
-                "name": "fixed_gear"
+                "name": "fixed_gear",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Hours per sq. km of fishing with other gear types.",
                 "gee:units": "h/km^2",
-                "name": "other_fishing"
+                "name": "other_fishing",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Hours per sq. km of fishing with purse seines.",
                 "gee:units": "h/km^2",
-                "name": "purse_seines"
+                "name": "purse_seines",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Hours per sq. km of fishing with squid jiggers.",
                 "gee:units": "h/km^2",
-                "name": "squid_jigger"
+                "name": "squid_jigger",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Hours per sq. km of fishing with trawlers.",
                 "gee:units": "h/km^2",
-                "name": "trawlers"
+                "name": "trawlers",
+                "gsd": [
+                    1113.2
+                ]
             }
         ],
         "gee:schema": [

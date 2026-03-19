@@ -69,7 +69,7 @@
             "interval": [
                 [
                     "2018-07-10T11:17:44Z",
-                    "2026-03-17T05:21:22Z"
+                    "2026-03-18T08:27:23Z"
                 ]
             ]
         }
@@ -112,37 +112,58 @@
             {
                 "description": "The aerosol layer pressure is converted into an aerosol layer altitude using an\nappropriate temperature profile, i.e. the temperature profile used in the retrieval.\nThe value is given relative to the geoid.\n",
                 "gee:units": "m",
-                "name": "aerosol_height"
+                "name": "aerosol_height",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Pressure of an aerosol layer with an assumed pressure thickness of (currently) 50\nhPa and a constant aerosol volume extinction coefficient and single scattering\nalbedo.\n",
                 "gee:units": "Pa",
-                "name": "aerosol_pressure"
+                "name": "aerosol_pressure",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Aerosol optical thickness &tau; of the assumed aerosol layer. The optical thickness\nholds for 760 nm.",
                 "gee:units": "Pa",
-                "name": "aerosol_optical_depth"
+                "name": "aerosol_optical_depth",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Azimuth angle of the satellite at the ground pixel location (WGS84); angle\nmeasured East-of-North.",
                 "gee:units": "deg",
-                "name": "sensor_azimuth_angle"
+                "name": "sensor_azimuth_angle",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Zenith angle of the satellite at the ground pixel location (WGS84); angle\nmeasured away from the vertical.\n",
                 "gee:units": "deg",
-                "name": "sensor_zenith_angle"
+                "name": "sensor_zenith_angle",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Azimuth angle of the Sun at the ground pixel location (WGS84); angle\nmeasured East-of-North.",
                 "gee:units": "deg",
-                "name": "solar_azimuth_angle"
+                "name": "solar_azimuth_angle",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Zenith angle of the satellite at the ground pixel location (WGS84); angle\nmeasured away from the vertical.\n",
                 "gee:units": "deg",
-                "name": "solar_zenith_angle"
+                "name": "solar_zenith_angle",
+                "gsd": [
+                    1113.2
+                ]
             }
         ],
         "gee:schema": [

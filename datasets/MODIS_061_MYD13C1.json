@@ -117,11 +117,17 @@
         "eo:bands": [
             {
                 "description": "16-day NDVI average",
-                "name": "NDVI"
+                "name": "NDVI",
+                "gsd": [
+                    5600
+                ]
             },
             {
                 "description": "16-day EVI average",
-                "name": "EVI"
+                "name": "EVI",
+                "gsd": [
+                    5600
+                ]
             },
             {
                 "description": "VI Quality indicators",
@@ -341,54 +347,84 @@
                     ],
                     "total_bit_count": 16
                 },
-                "name": "DetailedQA"
+                "name": "DetailedQA",
+                "gsd": [
+                    5600
+                ]
             },
             {
                 "center_wavelength": 0.645,
                 "description": "Surface reflectance band 1 (red)",
                 "gee:wavelength": "620-670nm",
-                "name": "sur_refl_b01"
+                "name": "sur_refl_b01",
+                "gsd": [
+                    5600
+                ]
             },
             {
                 "center_wavelength": 0.8585,
                 "description": "Surface reflectance band 2 (near-infrared)",
                 "gee:wavelength": "841-876nm",
-                "name": "sur_refl_b02"
+                "name": "sur_refl_b02",
+                "gsd": [
+                    5600
+                ]
             },
             {
                 "center_wavelength": 0.469,
                 "description": "Surface reflectance band 3 (blue)",
                 "gee:wavelength": "459-479nm",
-                "name": "sur_refl_b03"
+                "name": "sur_refl_b03",
+                "gsd": [
+                    5600
+                ]
             },
             {
                 "center_wavelength": 2.13,
                 "description": "Surface reflectance band 7 (mid-infrared)",
                 "gee:wavelength": "2105-2155nm",
-                "name": "sur_refl_b07"
+                "name": "sur_refl_b07",
+                "gsd": [
+                    5600
+                ]
             },
             {
                 "description": "View zenith angle of VI Pixel",
                 "gee:units": "deg",
-                "name": "SolarZenith"
+                "name": "SolarZenith",
+                "gsd": [
+                    5600
+                ]
             },
             {
                 "description": "Standard deviation computed from input NDVI pixels",
-                "name": "NDVIStdDev"
+                "name": "NDVIStdDev",
+                "gsd": [
+                    5600
+                ]
             },
             {
                 "description": "Standard deviation computed from input NDVI pixels",
-                "name": "EVIStdDev"
+                "name": "EVIStdDev",
+                "gsd": [
+                    5600
+                ]
             },
             {
                 "description": "Number of 1 km input pixels used",
                 "gee:units": "count",
-                "name": "Pixel_1km"
+                "name": "Pixel_1km",
+                "gsd": [
+                    5600
+                ]
             },
             {
                 "description": "Number of 1 km input pixels used with VZ angle less than + or - 30 degs",
                 "gee:units": "count",
-                "name": "Pixel_30deg_1km"
+                "name": "Pixel_30deg_1km",
+                "gsd": [
+                    5600
+                ]
             },
             {
                 "description": "Quality reliability of VI pixel",
@@ -410,7 +446,10 @@
                         "value": 3
                     }
                 ],
-                "name": "SummaryQA"
+                "name": "SummaryQA",
+                "gsd": [
+                    5600
+                ]
             }
         ],
         "gee:visualizations": [

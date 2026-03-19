@@ -133,12 +133,18 @@
             {
                 "description": "Built-up surface per grid cell",
                 "gee:units": "m^2",
-                "name": "built_surface"
+                "name": "built_surface",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Non-residential built-up surface per grid cell",
                 "gee:units": "m^2",
-                "name": "built_surface_nres"
+                "name": "built_surface_nres",
+                "gsd": [
+                    100
+                ]
             }
         ],
         "gee:visualizations": [

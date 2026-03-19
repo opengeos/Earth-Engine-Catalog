@@ -116,7 +116,10 @@
                 "description": "16-day gross primary production",
                 "gee:scale": 0.0001,
                 "gee:units": "kg*C/m^2/16-day",
-                "name": "GPP"
+                "name": "GPP",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Indicates the quality of the Landsat NDVI pixel used in the GPP Calculation",
@@ -162,7 +165,10 @@
                         "value": 41
                     }
                 ],
-                "name": "QC"
+                "name": "QC",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

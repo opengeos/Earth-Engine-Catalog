@@ -135,17 +135,26 @@
             {
                 "description": "Equivalent liquid water thickness in centimeters calculated by CSR.",
                 "gee:units": "cm",
-                "name": "lwe_thickness_csr"
+                "name": "lwe_thickness_csr",
+                "gsd": [
+                    111320
+                ]
             },
             {
                 "description": "Equivalent liquid water thickness in centimeters calculated by GFZ.",
                 "gee:units": "cm",
-                "name": "lwe_thickness_gfz"
+                "name": "lwe_thickness_gfz",
+                "gsd": [
+                    111320
+                ]
             },
             {
                 "description": "Equivalent liquid water thickness in centimeters calculated by JPL.",
                 "gee:units": "cm",
-                "name": "lwe_thickness_jpl"
+                "name": "lwe_thickness_jpl",
+                "gsd": [
+                    111320
+                ]
             }
         ],
         "gee:schema": [

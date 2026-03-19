@@ -78,7 +78,7 @@
             "interval": [
                 [
                     "2007-01-01T00:00:00Z",
-                    "2026-03-16T00:00:00Z"
+                    "2026-03-17T00:00:00Z"
                 ]
             ]
         }
@@ -114,7 +114,10 @@
         "eo:bands": [
             {
                 "description": "Keetch-Byram Drought Index",
-                "name": "KBDI"
+                "name": "KBDI",
+                "gsd": [
+                    4000
+                ]
             }
         ],
         "gee:visualizations": [

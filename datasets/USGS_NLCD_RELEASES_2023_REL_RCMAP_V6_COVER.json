@@ -118,52 +118,82 @@
             {
                 "description": "Percent of the pixel covered by annual herbaceous vegetation.",
                 "gee:units": "%",
-                "name": "rangeland_annual_herbaceous"
+                "name": "rangeland_annual_herbaceous",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Percent of the pixel covered by bare ground.",
                 "gee:units": "%",
-                "name": "rangeland_bare_ground"
+                "name": "rangeland_bare_ground",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Percent of the pixel covered by non-sagebrush shrubs.",
                 "gee:units": "%",
-                "name": "rangeland_non_sagebrush_shrub"
+                "name": "rangeland_non_sagebrush_shrub",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Percent of the pixel covered by herbaceous vegetation.",
                 "gee:units": "%",
-                "name": "rangeland_herbaceous"
+                "name": "rangeland_herbaceous",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Percent of the pixel covered by litter.",
                 "gee:units": "%",
-                "name": "rangeland_litter"
+                "name": "rangeland_litter",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Percent of the pixel covered by sagebrush (*Artemisia* spp).",
                 "gee:units": "%",
-                "name": "rangeland_sagebrush"
+                "name": "rangeland_sagebrush",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Percent of the pixel covered by shrub.",
                 "gee:units": "%",
-                "name": "rangeland_shrub"
+                "name": "rangeland_shrub",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Average height of shrubs in centimeters.",
                 "gee:units": "cm",
-                "name": "rangeland_shrub_height"
+                "name": "rangeland_shrub_height",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Percent of the pixel covered by perennial herbaceous vegetation.",
                 "gee:units": "%",
-                "name": "rangeland_perennial_herbaceous"
+                "name": "rangeland_perennial_herbaceous",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Percent of the pixel covered by tree.",
                 "gee:units": "%",
-                "name": "rangeland_tree"
+                "name": "rangeland_tree",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

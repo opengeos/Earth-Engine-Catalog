@@ -117,24 +117,36 @@
                 "description": "Mean temperature",
                 "gee:scale": 0.1,
                 "gee:units": "&deg;C",
-                "name": "tavg"
+                "name": "tavg",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Minimum temperature",
                 "gee:scale": 0.1,
                 "gee:units": "&deg;C",
-                "name": "tmin"
+                "name": "tmin",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Maximum temperature",
                 "gee:scale": 0.1,
                 "gee:units": "&deg;C",
-                "name": "tmax"
+                "name": "tmax",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Precipitation",
                 "gee:units": "mm",
-                "name": "prec"
+                "name": "prec",
+                "gsd": [
+                    927.67
+                ]
             }
         ],
         "gee:schema": [

@@ -107,25 +107,37 @@
                 "center_wavelength": 0.55,
                 "description": "Green",
                 "gee:wavelength": "0.50 - 0.60 &mu;m",
-                "name": "10"
+                "name": "10",
+                "gsd": [
+                    60
+                ]
             },
             {
                 "center_wavelength": 0.65,
                 "description": "Red",
                 "gee:wavelength": "600-700 &mu;m",
-                "name": "20"
+                "name": "20",
+                "gsd": [
+                    60
+                ]
             },
             {
                 "center_wavelength": 0.75,
                 "description": "Near infrared",
                 "gee:wavelength": "0.70-0.80 &mu;m",
-                "name": "30"
+                "name": "30",
+                "gsd": [
+                    60
+                ]
             },
             {
                 "center_wavelength": 0.95,
                 "description": "Short-wavelength infrared",
                 "gee:wavelength": "0.80-1.10 &mu;m",
-                "name": "40"
+                "name": "40",
+                "gsd": [
+                    60
+                ]
             }
         ],
         "gee:visualizations": [

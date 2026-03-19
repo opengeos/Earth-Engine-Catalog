@@ -117,7 +117,10 @@
             {
                 "description": "global Human Modification",
                 "gee:units": "km^2",
-                "name": "gHM"
+                "name": "gHM",
+                "gsd": [
+                    1000
+                ]
             }
         ],
         "gee:visualizations": [

@@ -778,7 +778,10 @@
                         "value": 254
                     }
                 ],
-                "name": "cropland"
+                "name": "cropland",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Classification layer for identifying cultivated and non-cultivated land cover. Available from 2013 to 2023.",
@@ -794,11 +797,17 @@
                         "value": 2
                     }
                 ],
-                "name": "cultivated"
+                "name": "cultivated",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Per-pixel predicted confidence of the given classification,\nwith 0 being the least confident and 100 the most confident. Available\nfrom 2008 to 2023 (Note: Confidence for Florida and Washington D.C.\nis unavailable for 2010).\n",
-                "name": "confidence"
+                "name": "confidence",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:schema": [

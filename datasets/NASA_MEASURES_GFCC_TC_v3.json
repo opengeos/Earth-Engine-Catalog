@@ -115,15 +115,24 @@
             {
                 "description": "The percentage of pixel area covered by trees.",
                 "gee:units": "%",
-                "name": "tree_canopy_cover"
+                "name": "tree_canopy_cover",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "RMSE for tree-canopy_cover",
-                "name": "uncertainty"
+                "name": "uncertainty",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Identity of source image used for the particular pixel. This is an index\ninto the per image metadata array 'sources'. Only available for 2000, 2005, and 2010.\n",
-                "name": "source_index"
+                "name": "source_index",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:schema": [

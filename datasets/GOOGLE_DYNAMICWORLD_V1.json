@@ -79,7 +79,7 @@
             "interval": [
                 [
                     "2015-06-27T00:00:00Z",
-                    "2026-03-17T23:19:24.087000Z"
+                    "2026-03-18T20:40:05.610000Z"
                 ]
             ]
         }
@@ -123,39 +123,66 @@
         "eo:bands": [
             {
                 "description": "Estimated probability of complete coverage by water",
-                "name": "water"
+                "name": "water",
+                "gsd": [
+                    10
+                ]
             },
             {
                 "description": "Estimated probability of complete coverage by trees",
-                "name": "trees"
+                "name": "trees",
+                "gsd": [
+                    10
+                ]
             },
             {
                 "description": "Estimated probability of complete coverage by grass",
-                "name": "grass"
+                "name": "grass",
+                "gsd": [
+                    10
+                ]
             },
             {
                 "description": "Estimated probability of complete coverage by flooded vegetation",
-                "name": "flooded_vegetation"
+                "name": "flooded_vegetation",
+                "gsd": [
+                    10
+                ]
             },
             {
                 "description": "Estimated probability of complete coverage by crops",
-                "name": "crops"
+                "name": "crops",
+                "gsd": [
+                    10
+                ]
             },
             {
                 "description": "Estimated probability of complete coverage by shrub and scrub",
-                "name": "shrub_and_scrub"
+                "name": "shrub_and_scrub",
+                "gsd": [
+                    10
+                ]
             },
             {
                 "description": "Estimated probability of complete coverage by built",
-                "name": "built"
+                "name": "built",
+                "gsd": [
+                    10
+                ]
             },
             {
                 "description": "Estimated probability of complete coverage by bare",
-                "name": "bare"
+                "name": "bare",
+                "gsd": [
+                    10
+                ]
             },
             {
                 "description": "Estimated probability of complete coverage by snow and ice",
-                "name": "snow_and_ice"
+                "name": "snow_and_ice",
+                "gsd": [
+                    10
+                ]
             },
             {
                 "description": "Index of the band with the highest estimated probability",
@@ -206,7 +233,10 @@
                         "value": 8
                     }
                 ],
-                "name": "label"
+                "name": "label",
+                "gsd": [
+                    10
+                ]
             }
         ],
         "gee:schema": [

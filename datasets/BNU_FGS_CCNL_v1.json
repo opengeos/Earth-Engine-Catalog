@@ -113,7 +113,10 @@
         "eo:bands": [
             {
                 "description": "Corrected nighttime light intensity.",
-                "name": "b1"
+                "name": "b1",
+                "gsd": [
+                    1000
+                ]
             }
         ],
         "gee:visualizations": [

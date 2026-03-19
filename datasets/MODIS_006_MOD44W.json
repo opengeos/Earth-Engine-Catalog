@@ -135,7 +135,10 @@
                     ],
                     "total_bit_count": 1
                 },
-                "name": "water_mask"
+                "name": "water_mask",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Quality assurance (QA)",
@@ -187,7 +190,10 @@
                     ],
                     "total_bit_count": 4
                 },
-                "name": "water_mask_QA"
+                "name": "water_mask_QA",
+                "gsd": [
+                    250
+                ]
             }
         ],
         "gee:visualizations": [

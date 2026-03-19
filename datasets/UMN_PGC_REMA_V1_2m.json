@@ -109,7 +109,10 @@
             {
                 "description": "Elevation",
                 "gee:units": "m",
-                "name": "elevation"
+                "name": "elevation",
+                "gsd": [
+                    2
+                ]
             },
             {
                 "description": "Bitmask raster indicating DEM pixels processing",
@@ -133,7 +136,10 @@
                     ],
                     "total_bit_count": 1
                 },
-                "name": "matchtag"
+                "name": "matchtag",
+                "gsd": [
+                    2
+                ]
             }
         ],
         "gee:visualizations": [

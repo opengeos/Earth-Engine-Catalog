@@ -115,13 +115,19 @@
             {
                 "description": "Normalized difference vegetation index",
                 "gee:scale": 0.0001,
-                "name": "NDVI"
+                "name": "NDVI",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "description": "Hours since start of day",
                 "gee:scale": 0.01,
                 "gee:units": "h",
-                "name": "TIMEOFDAY"
+                "name": "TIMEOFDAY",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "description": "Quality control bit flags",
@@ -370,7 +376,10 @@
                     ],
                     "total_bit_count": 16
                 },
-                "name": "QA"
+                "name": "QA",
+                "gsd": [
+                    5566
+                ]
             }
         ],
         "gee:schema": [

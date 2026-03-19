@@ -132,7 +132,10 @@
         "eo:bands": [
             {
                 "description": "The estimated number of persons per square kilometer.",
-                "name": "unwpp-adjusted_population_density"
+                "name": "unwpp-adjusted_population_density",
+                "gsd": [
+                    927.67
+                ]
             }
         ],
         "gee:visualizations": [

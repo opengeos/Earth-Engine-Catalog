@@ -135,18 +135,27 @@
                 "description": "Gross primary productivity",
                 "gee:scale": 0.0001,
                 "gee:units": "kg*C/m^2",
-                "name": "Gpp"
+                "name": "Gpp",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Net primary productivity",
                 "gee:scale": 0.0001,
                 "gee:units": "kg*C/m^2",
-                "name": "Npp"
+                "name": "Npp",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Quality control percentage",
                 "gee:units": "%",
-                "name": "Npp_QC"
+                "name": "Npp_QC",
+                "gsd": [
+                    500
+                ]
             }
         ],
         "gee:visualizations": [

@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2013-04-11T00:00:00Z",
-                    "2026-03-15T23:59:41Z"
+                    "2026-03-16T23:54:50Z"
                 ]
             ]
         }
@@ -108,43 +108,73 @@
         "eo:bands": [
             {
                 "description": "Coastal Aerosol",
-                "name": "B1"
+                "name": "B1",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Blue",
-                "name": "B2"
+                "name": "B2",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Green",
-                "name": "B3"
+                "name": "B3",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Red",
-                "name": "B4"
+                "name": "B4",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "NIR",
-                "name": "B5"
+                "name": "B5",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "SWIR1",
-                "name": "B6"
+                "name": "B6",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "SWIR2",
-                "name": "B7"
+                "name": "B7",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Cirrus",
-                "name": "B9"
+                "name": "B9",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "TIRS1",
-                "name": "B10"
+                "name": "B10",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "TIRS2",
-                "name": "B11"
+                "name": "B11",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Quality Bits",
@@ -266,27 +296,42 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "Fmask"
+                "name": "Fmask",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Sun Zenith Angle",
                 "gee:units": "deg",
-                "name": "SZA"
+                "name": "SZA",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Sun Azimuth Angle",
                 "gee:units": "deg",
-                "name": "SAA"
+                "name": "SAA",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "View Zenith Angle",
                 "gee:units": "deg",
-                "name": "VZA"
+                "name": "VZA",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "View Azimuth Angle",
                 "gee:units": "deg",
-                "name": "VAA"
+                "name": "VAA",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:schema": [

@@ -71,7 +71,7 @@
             "interval": [
                 [
                     "1978-11-01T00:00:00Z",
-                    "2026-03-14T00:00:00Z"
+                    "2026-03-16T00:00:00Z"
                 ]
             ]
         }
@@ -111,7 +111,10 @@
             {
                 "description": "Total column ozone",
                 "gee:units": "Dobson",
-                "name": "ozone"
+                "name": "ozone",
+                "gsd": [
+                    111000
+                ]
             }
         ],
         "gee:visualizations": [

@@ -108,32 +108,50 @@
             {
                 "description": "All Daytime UHI",
                 "gee:units": "&deg;C",
-                "name": "all_daytime_UHI"
+                "name": "all_daytime_UHI",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "All Nighttime UHI",
                 "gee:units": "&deg;C",
-                "name": "all_nighttime_UHI"
+                "name": "all_nighttime_UHI",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "summer Daytime UHI",
                 "gee:units": "&deg;C",
-                "name": "summer_daytime_UHI"
+                "name": "summer_daytime_UHI",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Summer Nighttime UHI",
                 "gee:units": "&deg;C",
-                "name": "summer_nighttime_UHI"
+                "name": "summer_nighttime_UHI",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Winter Daytime UHI",
                 "gee:units": "&deg;C",
-                "name": "winter_daytime_UHI"
+                "name": "winter_daytime_UHI",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Winter Nighttime UHI",
                 "gee:units": "&deg;C",
-                "name": "winter_nighttime_UHI"
+                "name": "winter_nighttime_UHI",
+                "gsd": [
+                    300
+                ]
             }
         ],
         "gee:visualizations": [

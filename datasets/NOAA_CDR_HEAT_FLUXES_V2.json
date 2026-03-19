@@ -117,12 +117,18 @@
             {
                 "description": "Flux of heat from the Earth's surface to the atmosphere which causes a\nchange in phase of matter, e.g. evaporation of water at the surface and\nsubsequent condensation of water vapor in the troposphere\n",
                 "gee:units": "W/m^2",
-                "name": "surface_upward_latent_heat_flux"
+                "name": "surface_upward_latent_heat_flux",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Flux of heat from the Earth's surface to the atmosphere which causes a\nchange in air temperature, primarily through conduction and convection\n",
                 "gee:units": "W/m^2",
-                "name": "surface_upward_sensible_heat_flux"
+                "name": "surface_upward_sensible_heat_flux",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Quality control flags",
@@ -166,7 +172,10 @@
                     ],
                     "total_bit_count": 3
                 },
-                "name": "fill_missing_qc"
+                "name": "fill_missing_qc",
+                "gsd": [
+                    27830
+                ]
             }
         ],
         "gee:visualizations": [

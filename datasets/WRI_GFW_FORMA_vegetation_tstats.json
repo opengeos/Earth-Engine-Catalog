@@ -103,7 +103,10 @@
         "eo:bands": [
             {
                 "description": "Reversed rectified, ie (max(0,-t_stat)), t-statistics.",
-                "name": "tstat_r"
+                "name": "tstat_r",
+                "gsd": [
+                    250
+                ]
             }
         ],
         "gee:schema": [

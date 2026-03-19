@@ -117,7 +117,10 @@
         "eo:bands": [
             {
                 "description": "Irrigated pixels have the value of 1, the other pixels are masked out.",
-                "name": "classification"
+                "name": "classification",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

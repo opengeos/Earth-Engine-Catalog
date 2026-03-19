@@ -126,7 +126,10 @@
             {
                 "description": "The recurrence value expressed as a percentage for this month.",
                 "gee:units": "%",
-                "name": "monthly_recurrence"
+                "name": "monthly_recurrence",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "A flag to indicate if the month has observations.",
@@ -150,7 +153,10 @@
                     ],
                     "total_bit_count": 1
                 },
-                "name": "has_observations"
+                "name": "has_observations",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:schema": [

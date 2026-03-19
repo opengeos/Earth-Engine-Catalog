@@ -115,7 +115,10 @@
         "eo:bands": [
             {
                 "description": "Displays a quantitative surface that indicates the size of the\ninput units in square kilometers from which population count and\ndensity grids are derived.\n",
-                "name": "mean_administrative_unit_area"
+                "name": "mean_administrative_unit_area",
+                "gsd": [
+                    927.67
+                ]
             }
         ],
         "gee:visualizations": [

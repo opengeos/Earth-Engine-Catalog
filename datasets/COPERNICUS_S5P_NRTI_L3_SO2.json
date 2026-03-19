@@ -69,7 +69,7 @@
             "interval": [
                 [
                     "2018-07-10T11:17:44Z",
-                    "2026-03-17T05:21:22Z"
+                    "2026-03-18T08:27:23Z"
                 ]
             ]
         }
@@ -112,47 +112,74 @@
             {
                 "description": "SO<sub>2</sub> vertical column density at ground level,\ncalculated using the DOAS technique.",
                 "gee:units": "mol/m^2",
-                "name": "SO2_column_number_density"
+                "name": "SO2_column_number_density",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Weighted mean of cloudy and clear air mass factor (amf) weighted by\nintensity-weighted cloud fraction.",
                 "gee:units": "mol/m^2",
-                "name": "SO2_column_number_density_amf"
+                "name": "SO2_column_number_density_amf",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "SO<sub>2</sub> ring corrected slant column number density",
                 "gee:units": "mol/m^2",
-                "name": "SO2_slant_column_number_density"
+                "name": "SO2_slant_column_number_density",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Effective cloud fraction.  See the [Sentinel 5P L2 Input/Output Data Definition Spec](https://sentinels.copernicus.eu/documents/247904/3119978/Sentinel-5P-Level-2-Input-Output-Data-Definition),\np.220.\n",
                 "gee:units": "Fraction",
-                "name": "cloud_fraction"
+                "name": "cloud_fraction",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Azimuth angle of the satellite at the ground pixel location (WGS84); angle\nmeasured East-of-North.",
                 "gee:units": "deg",
-                "name": "sensor_azimuth_angle"
+                "name": "sensor_azimuth_angle",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Zenith angle of the satellite at the ground pixel location (WGS84); angle\nmeasured away from the vertical.\n",
                 "gee:units": "deg",
-                "name": "sensor_zenith_angle"
+                "name": "sensor_zenith_angle",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Azimuth angle of the Sun at the ground pixel location (WGS84); angle\nmeasured East-of-North.",
                 "gee:units": "deg",
-                "name": "solar_azimuth_angle"
+                "name": "solar_azimuth_angle",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Zenith angle of the satellite at the ground pixel location (WGS84); angle\nmeasured away from the vertical.\n",
                 "gee:units": "deg",
-                "name": "solar_zenith_angle"
+                "name": "solar_zenith_angle",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "SO<sub>2</sub> vertical column density at 15km,\ncalculated using the DOAS technique.",
                 "gee:units": "mol/m^2",
-                "name": "SO2_column_number_density_15km"
+                "name": "SO2_column_number_density_15km",
+                "gsd": [
+                    1113.2
+                ]
             }
         ],
         "gee:schema": [

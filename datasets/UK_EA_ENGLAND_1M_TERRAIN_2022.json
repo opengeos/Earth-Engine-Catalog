@@ -110,17 +110,26 @@
             {
                 "description": "Digital Terrain Model",
                 "gee:units": "m",
-                "name": "dtm"
+                "name": "dtm",
+                "gsd": [
+                    1
+                ]
             },
             {
                 "description": "First Return Digital Surface Model",
                 "gee:units": "m",
-                "name": "dsm_first"
+                "name": "dsm_first",
+                "gsd": [
+                    1
+                ]
             },
             {
                 "description": "Last Return Digital Surface Model",
                 "gee:units": "m",
-                "name": "dsm_last"
+                "name": "dsm_last",
+                "gsd": [
+                    1
+                ]
             }
         ],
         "gee:visualizations": [

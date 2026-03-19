@@ -100,7 +100,10 @@
         "eo:bands": [
             {
                 "description": "Drought classes",
-                "name": "DM"
+                "name": "DM",
+                "gsd": [
+                    250
+                ]
             }
         ],
         "gee:visualizations": [

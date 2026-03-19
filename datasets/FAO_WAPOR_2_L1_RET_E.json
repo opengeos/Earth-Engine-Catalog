@@ -115,7 +115,10 @@
                 "description": "Reference Evapotranspiration (Daily) [mm]",
                 "gee:scale": 0.1,
                 "gee:units": "mm",
-                "name": "L1_RET_E"
+                "name": "L1_RET_E",
+                "gsd": [
+                    18924
+                ]
             }
         ],
         "gee:visualizations": [

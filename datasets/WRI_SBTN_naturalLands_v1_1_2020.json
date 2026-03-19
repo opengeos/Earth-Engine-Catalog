@@ -210,7 +210,10 @@
                         "value": 21
                     }
                 ],
-                "name": "classification"
+                "name": "classification",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Land cover classification.",
@@ -226,7 +229,10 @@
                         "value": 1
                     }
                 ],
-                "name": "natural"
+                "name": "natural",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:schema": [

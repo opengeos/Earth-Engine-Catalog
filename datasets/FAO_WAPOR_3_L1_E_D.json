@@ -115,7 +115,10 @@
                 "description": "Evaporation (Dekadal) [mm]",
                 "gee:scale": 0.1,
                 "gee:units": "mm",
-                "name": "L1-E-D"
+                "name": "L1-E-D",
+                "gsd": [
+                    248.2
+                ]
             }
         ],
         "gee:visualizations": [

@@ -112,7 +112,10 @@
             {
                 "description": "Elevation",
                 "gee:units": "m",
-                "name": "elevation"
+                "name": "elevation",
+                "gsd": [
+                    30.92
+                ]
             }
         ],
         "gee:visualizations": [

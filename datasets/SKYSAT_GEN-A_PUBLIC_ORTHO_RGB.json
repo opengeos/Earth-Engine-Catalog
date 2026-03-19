@@ -102,17 +102,26 @@
             {
                 "description": "Red",
                 "gee:wavelength": "605-695nm",
-                "name": "R"
+                "name": "R",
+                "gsd": [
+                    0.8
+                ]
             },
             {
                 "description": "Green",
                 "gee:wavelength": "515-595nm",
-                "name": "G"
+                "name": "G",
+                "gsd": [
+                    0.8
+                ]
             },
             {
                 "description": "Blue",
                 "gee:wavelength": "450-515nm",
-                "name": "B"
+                "name": "B",
+                "gsd": [
+                    0.8
+                ]
             }
         ],
         "gee:schema": [

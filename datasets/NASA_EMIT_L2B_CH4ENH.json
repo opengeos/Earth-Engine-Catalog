@@ -109,7 +109,10 @@
             {
                 "description": "Total vertical column enhancement estimate of methane\n",
                 "gee:units": "ppm m",
-                "name": "vertical_column_enhancement"
+                "name": "vertical_column_enhancement",
+                "gsd": [
+                    72000
+                ]
             }
         ],
         "gee:schema": [

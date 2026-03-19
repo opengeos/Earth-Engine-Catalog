@@ -142,7 +142,10 @@
                     "total_bit_count": 1
                 },
                 "gee:units": "occurrence",
-                "name": "classification"
+                "name": "classification",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

@@ -115,38 +115,62 @@
             {
                 "description": "Elevation",
                 "gee:units": "m",
-                "name": "elv"
+                "name": "elv",
+                "gsd": [
+                    92.77
+                ]
             },
             {
                 "description": "Flow Direction (Local Drainage Direction)\n\n* 1: east\n* 2: southeast\n* 4: south\n* 8: southwest\n* 16: west\n* 32: northwest\n* 64: north\n* 128: northeast\n* 0: river mouth\n* -1: inland depression\n",
-                "name": "dir"
+                "name": "dir",
+                "gsd": [
+                    92.77
+                ]
             },
             {
                 "description": "River channel width at the channel centerlines. River channel width is\ncalculated by the method described in [Yamazaki et al. 2012, WRR], with some\nimprovements/changes on the algorithm.\n",
-                "name": "wth"
+                "name": "wth",
+                "gsd": [
+                    92.77
+                ]
             },
             {
                 "description": "Land and permanent water\n\n* 0: Land\n* 1: permanent water",
-                "name": "wat"
+                "name": "wat",
+                "gsd": [
+                    92.77
+                ]
             },
             {
                 "description": "Upstream drainage area (flow accumulation area)",
                 "gee:units": "km^2",
-                "name": "upa"
+                "name": "upa",
+                "gsd": [
+                    92.77
+                ]
             },
             {
                 "description": "Upstream drainage pixel (flow accumulation grid).",
                 "gee:units": "Number of upstream pixels",
-                "name": "upg"
+                "name": "upg",
+                "gsd": [
+                    92.77
+                ]
             },
             {
                 "description": "Hydrologically adjusted elevations, also know as \"hand\" (height above\nthe nearest drainage). The elevations are adjusted to\nsatisfy the condition \"downstream is not higher than its upstream\" while\nminimizing the required modifications from the original DEM.  The elevation\nabove EGM96 geoid is represented in meters, and the vertical increment is set to\n10cm. For detailed method, see [Yamazaki et al., 2012, WRR].\n",
                 "gee:units": "m",
-                "name": "hnd"
+                "name": "hnd",
+                "gsd": [
+                    92.77
+                ]
             },
             {
                 "description": "Visualization of the river channel width.",
-                "name": "viswth"
+                "name": "viswth",
+                "gsd": [
+                    92.77
+                ]
             }
         ],
         "gee:visualizations": [

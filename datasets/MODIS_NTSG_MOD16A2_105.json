@@ -114,25 +114,37 @@
                 "description": "Evapotranspiration, aggregated for period of coverage.",
                 "gee:scale": 0.1,
                 "gee:units": "kg/m^2",
-                "name": "ET"
+                "name": "ET",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Latent heat flux, averaged daily over the period of coverage.",
                 "gee:scale": 10000,
                 "gee:units": "J/m^2/day",
-                "name": "LE"
+                "name": "LE",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Potential evapotranspiration, aggregated for period of coverage.",
                 "gee:scale": 0.1,
                 "gee:units": "kg/m^2",
-                "name": "PET"
+                "name": "PET",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Potential Latent Heat Flux, averaged daily over the period ofcoverage.",
                 "gee:scale": 10000,
                 "gee:units": "J/m^2/day",
-                "name": "PLE"
+                "name": "PLE",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "ET quality control.",
@@ -236,7 +248,10 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "ET_QC"
+                "name": "ET_QC",
+                "gsd": [
+                    1000
+                ]
             }
         ],
         "gee:schema": [

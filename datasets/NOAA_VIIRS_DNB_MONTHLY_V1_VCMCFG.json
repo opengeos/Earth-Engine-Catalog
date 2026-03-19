@@ -110,11 +110,17 @@
             {
                 "description": "Average DNB radiance values.",
                 "gee:units": "nanoWatts/sr/cm^2",
-                "name": "avg_rad"
+                "name": "avg_rad",
+                "gsd": [
+                    463.83
+                ]
             },
             {
                 "description": "Cloud-free coverages; the total number of observations that\nwent into each pixel. This band can be used to identify areas with low\nnumbers of observations where the quality is reduced.\n",
-                "name": "cf_cvg"
+                "name": "cf_cvg",
+                "gsd": [
+                    463.83
+                ]
             }
         ],
         "gee:visualizations": [

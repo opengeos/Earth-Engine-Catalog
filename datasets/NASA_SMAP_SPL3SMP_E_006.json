@@ -130,74 +130,122 @@
             {
                 "description": "Retrieved soil moisture estimate from the\ndisaggregated/downscaled vertical polarization brightness temperature\nat 9-km grid cell; AM overpass\n",
                 "gee:units": "Volume fraction",
-                "name": "soil_moisture_am"
+                "name": "soil_moisture_am",
+                "gsd": [
+                    9000
+                ]
             },
             {
                 "description": "Weighted average of horizontally polarized brightness\ntemperatures. This value represents the corrected land brightness\ntemperature if the water fraction is lower than 0.9\n(otherwise no correction is applied) or represents the corrected water\nbrightness temperature if the water fraction is greater than 0.1\n(otherwise no correction is applied); AM overpass\n",
                 "gee:units": "K",
-                "name": "tb_h_corrected_am"
+                "name": "tb_h_corrected_am",
+                "gsd": [
+                    9000
+                ]
             },
             {
                 "description": "Weighted average of vertically polarized brightness\ntemperatures. This value represents the corrected land brightness\ntemperature if the water fraction is lower than 0.9\n(otherwise no correction is applied) or represents the corrected water\nbrightness temperature if the water fraction is greater than 0.1\n(otherwise no correction is applied); AM overpass\n",
                 "gee:units": "K",
-                "name": "tb_v_corrected_am"
+                "name": "tb_v_corrected_am",
+                "gsd": [
+                    9000
+                ]
             },
             {
                 "description": "Vegetation water content at 9-km spatial scale. This\nparameter is used as input ancillary data parameter to the SPL2SMAP\nprocessing software when the baseline algorithm is used. The valid\nminimum and maximum below are subject to further analysis. AM overpass\n",
                 "gee:units": "kg/m^2",
-                "name": "vegetation_water_content_am"
+                "name": "vegetation_water_content_am",
+                "gsd": [
+                    9000
+                ]
             },
             {
                 "description": "0 = Pass: Soil moisture  with acceptable quality;\n1 = Fail: Soil moisture does  with unacceptable quality; AM overpass\n",
-                "name": "retrieval_qual_flag_am"
+                "name": "retrieval_qual_flag_am",
+                "gsd": [
+                    9000
+                ]
             },
             {
                 "description": "0= brightness temperatures with unacceptable quality;\n1= brightness temperatures with acceptable quality; AM overpass\n",
-                "name": "tb_qual_flag_h_am"
+                "name": "tb_qual_flag_h_am",
+                "gsd": [
+                    9000
+                ]
             },
             {
                 "description": "0= brightness temperatures with unacceptable quality;\n1= brightness temperatures with acceptable quality; AM overpass\n",
-                "name": "tb_qual_flag_v_am"
+                "name": "tb_qual_flag_v_am",
+                "gsd": [
+                    9000
+                ]
             },
             {
                 "description": "Retrieved soil moisture estimate from the\ndisaggregated/downscaled vertical polarization brightness temperature\nat 9-km grid cell; PM overpass\n",
                 "gee:units": "Volume fraction",
-                "name": "soil_moisture_pm"
+                "name": "soil_moisture_pm",
+                "gsd": [
+                    9000
+                ]
             },
             {
                 "description": "Weighted average of horizontally polarized brightness\ntemperatures. This value represents the corrected land brightness\ntemperature if the water fraction is lower than 0.9 (otherwise no\ncorrection is applied) or represents the corrected water brightness\ntemperature if the water fraction is greater than 0.1 (otherwise no\ncorrection is applied); PM overpass\n",
                 "gee:units": "K",
-                "name": "tb_h_corrected_pm"
+                "name": "tb_h_corrected_pm",
+                "gsd": [
+                    9000
+                ]
             },
             {
                 "description": "Weighted average of vertically polarized brightness\ntemperatures. This value represents the corrected land brightness\ntemperature if the water fraction is lower than 0.9 (otherwise no\ncorrection is applied) or represents the corrected water brightness\ntemperature if the water fraction is greater than 0.1 (otherwise no\ncorrection is applied); PM overpass\n",
                 "gee:units": "K",
-                "name": "tb_v_corrected_pm"
+                "name": "tb_v_corrected_pm",
+                "gsd": [
+                    9000
+                ]
             },
             {
                 "description": "Vegetation water content at 9-km spatial scale. This\nparameter is used as input ancillary data parameter to the SPL2SMAP\nprocessing software when the baseline algorithm is used. The valid\nminimum and maximum below are subject to further analysis. PM overpass\n",
                 "gee:units": "kg/m^2",
-                "name": "vegetation_water_content_pm"
+                "name": "vegetation_water_content_pm",
+                "gsd": [
+                    9000
+                ]
             },
             {
                 "description": "0 = Pass: Soil moisture  with acceptable quality;\n1 = Fail: Soil moisture does  with unacceptable quality;  PM overpass\n",
-                "name": "retrieval_qual_flag_pm"
+                "name": "retrieval_qual_flag_pm",
+                "gsd": [
+                    9000
+                ]
             },
             {
                 "description": "0= brightness temperatures with unacceptable quality;\n1= brightness temperatures with acceptable quality; PM overpass\n",
-                "name": "tb_qual_flag_h_pm"
+                "name": "tb_qual_flag_h_pm",
+                "gsd": [
+                    9000
+                ]
             },
             {
                 "description": "0= brightness temperatures with unacceptable quality;\n1= brightness temperatures with acceptable quality; PM overpass\n",
-                "name": "tb_qual_flag_v_pm"
+                "name": "tb_qual_flag_v_pm",
+                "gsd": [
+                    9000
+                ]
             },
             {
                 "description": "Experimental. Difference of the 30-day average of 'soil_moisture_am',\ncentered on asset date, relative to the same 30-day period averaged\nacross years from 2015 to present, excluding asset year.\n\nSee\n[this script](https://github.com/google/earthengine-community/blob/master/datasets/smap_anomaly_l3.py)\nfor anomaly computations.\n",
-                "name": "soil_moisture_am_anomaly"
+                "name": "soil_moisture_am_anomaly",
+                "gsd": [
+                    9000
+                ]
             },
             {
                 "description": "Experimental. Difference of the 30-day average of 'soil_moisture_pm',\ncentered on asset date, relative to the same 30-day period averaged\nacross years from 2015 to present, excluding asset year.\n\nSee\n[this script](https://github.com/google/earthengine-community/blob/master/datasets/smap_anomaly_l3.py)\nfor anomaly computations.\n",
-                "name": "soil_moisture_pm_anomaly"
+                "name": "soil_moisture_pm_anomaly",
+                "gsd": [
+                    9000
+                ]
             }
         ],
         "gee:visualizations": [

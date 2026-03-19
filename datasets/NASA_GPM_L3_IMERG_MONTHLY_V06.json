@@ -117,27 +117,42 @@
             {
                 "description": "Weighting of gauge precipitation relative to the multi-satellite precipitation",
                 "gee:units": "%",
-                "name": "gaugeRelativeWeighting"
+                "name": "gaugeRelativeWeighting",
+                "gsd": [
+                    11132
+                ]
             },
             {
                 "description": "Merged satellite-gauge precipitation estimate",
                 "gee:units": "mm/hr",
-                "name": "precipitation"
+                "name": "precipitation",
+                "gsd": [
+                    11132
+                ]
             },
             {
                 "description": "Quality Index for precipitation field",
                 "gee:units": "Equivalent gauges per 2.5 degree box",
-                "name": "precipitationQualityIndex"
+                "name": "precipitationQualityIndex",
+                "gsd": [
+                    11132
+                ]
             },
             {
                 "description": "Accumulation-weighted probability of liquid precipitation phase",
                 "gee:units": "%",
-                "name": "probabilityLiquidPrecipitation"
+                "name": "probabilityLiquidPrecipitation",
+                "gsd": [
+                    11132
+                ]
             },
             {
                 "description": "Random error for merged satellite-gauge precipitation",
                 "gee:units": "mm/hr",
-                "name": "randomError"
+                "name": "randomError",
+                "gsd": [
+                    11132
+                ]
             }
         ],
         "gee:visualizations": [

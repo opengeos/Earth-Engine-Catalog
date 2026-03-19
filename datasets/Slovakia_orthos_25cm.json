@@ -98,17 +98,26 @@
             {
                 "description": "Red",
                 "gee:units": "dn",
-                "name": "R"
+                "name": "R",
+                "gsd": [
+                    0.25
+                ]
             },
             {
                 "description": "Green",
                 "gee:units": "dn",
-                "name": "G"
+                "name": "G",
+                "gsd": [
+                    0.25
+                ]
             },
             {
                 "description": "Blue",
                 "gee:units": "dn",
-                "name": "B"
+                "name": "B",
+                "gsd": [
+                    0.25
+                ]
             }
         ],
         "gee:visualizations": [

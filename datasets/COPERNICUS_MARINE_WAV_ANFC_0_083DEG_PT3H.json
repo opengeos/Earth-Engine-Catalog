@@ -71,7 +71,7 @@
             "interval": [
                 [
                     "2022-06-01T00:00:00Z",
-                    "2026-03-26T00:00:00Z"
+                    "2026-03-27T00:00:00Z"
                 ]
             ]
         }
@@ -106,97 +106,154 @@
             {
                 "description": "Spectral significant wave height",
                 "gee:units": "m",
-                "name": "VHM0"
+                "name": "VHM0",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Significant wave height of wind sea",
                 "gee:units": "m",
-                "name": "VHM0_WW"
+                "name": "VHM0_WW",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Spectral moments (0,1) wave period of primary swell",
                 "gee:units": "seconds",
-                "name": "VTM01_SW1"
+                "name": "VTM01_SW1",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Spectral moments (0,1) wave period of secondary swell",
                 "gee:units": "seconds",
-                "name": "VTM01_SW2"
+                "name": "VTM01_SW2",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Spectral moments (-1,0) wave period",
                 "gee:units": "seconds",
-                "name": "VTM10"
+                "name": "VTM10",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Significant wave height of primary swell",
                 "gee:units": "m",
-                "name": "VHM0_SW1"
+                "name": "VHM0_SW1",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Significant wave height of secondary swell",
                 "gee:units": "m",
-                "name": "VHM0_SW2"
+                "name": "VHM0_SW2",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Wave period at spectral peak",
                 "gee:units": "seconds",
-                "name": "VTPK"
+                "name": "VTPK",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Stokes drift U component",
                 "gee:units": "m/s",
-                "name": "VSDX"
+                "name": "VSDX",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Stokes drift V component",
                 "gee:units": "m/s",
-                "name": "VSDY"
+                "name": "VSDY",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Maximum crest trough wave height",
                 "gee:units": "m",
-                "name": "VCMX"
+                "name": "VCMX",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Spectral moments (0,2) wave period",
                 "gee:units": "seconds",
-                "name": "VTM02"
+                "name": "VTM02",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Spectral moments (0,1) wave period of wind sea",
                 "gee:units": "seconds",
-                "name": "VTM01_WW"
+                "name": "VTM01_WW",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Mean wave direction of wind sea",
                 "gee:units": "deg",
-                "name": "VMDR_WW"
+                "name": "VMDR_WW",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Mean wave direction of primary swell",
                 "gee:units": "deg",
-                "name": "VMDR_SW1"
+                "name": "VMDR_SW1",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Mean wave direction of secondary swell",
                 "gee:units": "deg",
-                "name": "VMDR_SW2"
+                "name": "VMDR_SW2",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Mean wave direction",
                 "gee:units": "deg",
-                "name": "VMDR"
+                "name": "VMDR",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Peak wave direction",
                 "gee:units": "deg",
-                "name": "VPED"
+                "name": "VPED",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Height of the highest crest",
                 "gee:units": "m",
-                "name": "VMXL"
+                "name": "VMXL",
+                "gsd": [
+                    9276.62
+                ]
             }
         ],
         "gee:schema": [

@@ -107,7 +107,10 @@
         "eo:bands": [
             {
                 "description": "NDVI",
-                "name": "ndvi"
+                "name": "ndvi",
+                "gsd": [
+                    9277
+                ]
             },
             {
                 "description": "QA flag",
@@ -151,7 +154,10 @@
                     ],
                     "total_bit_count": 3
                 },
-                "name": "qa"
+                "name": "qa",
+                "gsd": [
+                    9277
+                ]
             }
         ],
         "gee:visualizations": [

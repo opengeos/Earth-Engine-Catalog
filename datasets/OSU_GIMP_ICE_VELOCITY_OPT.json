@@ -114,22 +114,34 @@
             {
                 "description": "Ice flow x velocity",
                 "gee:units": "meter/year",
-                "name": "velocity_x"
+                "name": "velocity_x",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Ice flow y velocity",
                 "gee:units": "meter/year",
-                "name": "velocity_y"
+                "name": "velocity_y",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Ice flow x error",
                 "gee:units": "meter/year",
-                "name": "error_x"
+                "name": "error_x",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Ice flow y error",
                 "gee:units": "meter/year",
-                "name": "error_y"
+                "name": "error_y",
+                "gsd": [
+                    100
+                ]
             }
         ],
         "gee:schema": [

@@ -178,7 +178,10 @@
                     ],
                     "total_bit_count": 4
                 },
-                "name": "FireMask"
+                "name": "FireMask",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Pixel quality indicators",
@@ -225,7 +228,10 @@
                     ],
                     "total_bit_count": 3
                 },
-                "name": "QA"
+                "name": "QA",
+                "gsd": [
+                    1000
+                ]
             }
         ],
         "gee:visualizations": [

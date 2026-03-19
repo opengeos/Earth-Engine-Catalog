@@ -161,7 +161,10 @@
                         "value": 254
                     }
                 ],
-                "name": "Maximum_Snow_Extent"
+                "name": "Maximum_Snow_Extent",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Snow chronology bit flags for each day in the eight-day\nobservation period.\n",
@@ -210,7 +213,10 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "Eight_Day_Snow_Cover"
+                "name": "Eight_Day_Snow_Cover",
+                "gsd": [
+                    500
+                ]
             }
         ],
         "gee:visualizations": [

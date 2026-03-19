@@ -105,7 +105,7 @@
             "interval": [
                 [
                     "1998-01-01T00:00:00Z",
-                    "2026-03-17T03:30:00Z"
+                    "2026-03-17T18:30:00Z"
                 ]
             ]
         }
@@ -144,7 +144,10 @@
             {
                 "description": "PMW source time",
                 "gee:units": "min. into half hour",
-                "name": "MWobservationTime"
+                "name": "MWobservationTime",
+                "gsd": [
+                    11132
+                ]
             },
             {
                 "description": "PMW source sensor identifier",
@@ -220,42 +223,66 @@
                     ],
                     "total_bit_count": 4
                 },
-                "name": "MWprecipSource"
+                "name": "MWprecipSource",
+                "gsd": [
+                    11132
+                ]
             },
             {
                 "description": "merged PMW precipitation",
                 "gee:units": "mm/hr",
-                "name": "MWprecipitation"
+                "name": "MWprecipitation",
+                "gsd": [
+                    11132
+                ]
             },
             {
                 "description": "Kalman filter weight for IR",
                 "gee:units": "%",
-                "name": "IRinfluence"
+                "name": "IRinfluence",
+                "gsd": [
+                    11132
+                ]
             },
             {
                 "description": "IR precipitation",
                 "gee:units": "mm/hr",
-                "name": "IRprecipitation"
+                "name": "IRprecipitation",
+                "gsd": [
+                    11132
+                ]
             },
             {
                 "description": "snapshot precipitation - calibrated",
                 "gee:units": "mm/hr",
-                "name": "precipitation"
+                "name": "precipitation",
+                "gsd": [
+                    11132
+                ]
             },
             {
                 "description": "snapshot precipitation - uncalibrated",
                 "gee:units": "mm/hr",
-                "name": "precipitationUncal"
+                "name": "precipitationUncal",
+                "gsd": [
+                    11132
+                ]
             },
             {
                 "description": "probability of liquid precipitation phase",
                 "gee:units": "%",
-                "name": "probabilityLiquidPrecipitation"
+                "name": "probabilityLiquidPrecipitation",
+                "gsd": [
+                    11132
+                ]
             },
             {
                 "description": "calibrated-precipitation random error",
                 "gee:units": "mm/hr",
-                "name": "randomError"
+                "name": "randomError",
+                "gsd": [
+                    11132
+                ]
             }
         ],
         "gee:visualizations": [

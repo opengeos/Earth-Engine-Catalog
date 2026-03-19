@@ -137,7 +137,10 @@
                     "total_bit_count": 1
                 },
                 "gee:units": "occurrence",
-                "name": "datamask"
+                "name": "datamask",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

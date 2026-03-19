@@ -111,102 +111,162 @@
             {
                 "description": "Sum of Level 2 pixel overlap areas. Represents the weighting\nfactor for each grid cell, indicating the fraction of the grid\ncell area with valid data.\n",
                 "gee:units": "km^2",
-                "name": "weight"
+                "name": "weight",
+                "gsd": [
+                    2226
+                ]
             },
             {
                 "description": "HCHO vertical column",
                 "gee:units": "molecules/cm^2",
-                "name": "vertical_column"
+                "name": "vertical_column",
+                "gsd": [
+                    2226
+                ]
             },
             {
                 "description": "HCHO vertical column uncertainty\n",
                 "gee:units": "molecules/cm^2",
-                "name": "vertical_column_uncertainty"
+                "name": "vertical_column_uncertainty",
+                "gsd": [
+                    2226
+                ]
             },
             {
                 "description": "Main data quality flag which is always 0, indicating good quality data.\n",
                 "gee:units": "Dimensionless",
-                "name": "main_data_quality_flag"
+                "name": "main_data_quality_flag",
+                "gsd": [
+                    2226
+                ]
             },
             {
                 "description": "Number of vertical column samples",
                 "gee:units": "Dimensionless",
-                "name": "num_vertical_column_samples"
+                "name": "num_vertical_column_samples",
+                "gsd": [
+                    2226
+                ]
             },
             {
                 "description": "Smallest vertical column sample",
                 "gee:units": "molecules/cm^2",
-                "name": "min_vertical_column_sample"
+                "name": "min_vertical_column_sample",
+                "gsd": [
+                    2226
+                ]
             },
             {
                 "description": "Largest vertical column sample",
                 "gee:units": "molecules/cm^2",
-                "name": "max_vertical_column_sample"
+                "name": "max_vertical_column_sample",
+                "gsd": [
+                    2226
+                ]
             },
             {
                 "description": "Data is filtered to include only observations with solar zenith angle\nless than or equal to 80 degrees.\n",
                 "gee:units": "deg",
-                "name": "solar_zenith_angle"
+                "name": "solar_zenith_angle",
+                "gsd": [
+                    2226
+                ]
             },
             {
                 "description": "Viewing zenith angle at pixel center",
                 "gee:units": "deg",
-                "name": "viewing_zenith_angle"
+                "name": "viewing_zenith_angle",
+                "gsd": [
+                    2226
+                ]
             },
             {
                 "description": "Relative azimuth angle at pixel center",
                 "gee:units": "deg",
-                "name": "relative_azimuth_angle"
+                "name": "relative_azimuth_angle",
+                "gsd": [
+                    2226
+                ]
             },
             {
                 "description": "Surface pressure",
                 "gee:units": "hPa",
-                "name": "surface_pressure"
+                "name": "surface_pressure",
+                "gsd": [
+                    2226
+                ]
             },
             {
                 "description": "Terrain height",
                 "gee:units": "m",
-                "name": "terrain_height"
+                "name": "terrain_height",
+                "gsd": [
+                    2226
+                ]
             },
             {
                 "description": "Fraction of pixel area covered by snow and/or ice\n",
                 "gee:units": "Dimensionless",
-                "name": "snow_ice_fraction"
+                "name": "snow_ice_fraction",
+                "gsd": [
+                    2226
+                ]
             },
             {
                 "description": "HCHO fitted slant column",
                 "gee:units": "molecules/cm^2",
-                "name": "fitted_slant_column"
+                "name": "fitted_slant_column",
+                "gsd": [
+                    2226
+                ]
             },
             {
                 "description": "HCHO fitted slant column uncertainty",
                 "gee:units": "molecules/cm^2",
-                "name": "fitted_slant_column_uncertainty"
+                "name": "fitted_slant_column_uncertainty",
+                "gsd": [
+                    2226
+                ]
             },
             {
                 "description": "Surface albedo",
                 "gee:units": "Dimensionless",
-                "name": "albedo"
+                "name": "albedo",
+                "gsd": [
+                    2226
+                ]
             },
             {
                 "description": "HCHO air mass factor",
                 "gee:units": "Dimensionless",
-                "name": "amf"
+                "name": "amf",
+                "gsd": [
+                    2226
+                ]
             },
             {
                 "description": "Data is filtered to include only observations with effective cloud fraction\nless than or equal to 50%.\n",
                 "gee:units": "Dimensionless",
-                "name": "eff_cloud_fraction"
+                "name": "eff_cloud_fraction",
+                "gsd": [
+                    2226
+                ]
             },
             {
                 "description": "Cloud radiance fraction for AMF calculation\n",
                 "gee:units": "Dimensionless",
-                "name": "amf_cloud_fraction"
+                "name": "amf_cloud_fraction",
+                "gsd": [
+                    2226
+                ]
             },
             {
                 "description": "Cloud pressure for AMF calculation",
                 "gee:units": "hPa",
-                "name": "amf_cloud_pressure"
+                "name": "amf_cloud_pressure",
+                "gsd": [
+                    2226
+                ]
             }
         ],
         "gee:visualizations": [

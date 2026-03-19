@@ -106,17 +106,26 @@
             {
                 "description": "Hedgerow probability (scaled to [0-250]).",
                 "gee:scale": 0.004,
-                "name": "B0"
+                "name": "B0",
+                "gsd": [
+                    0.25
+                ]
             },
             {
                 "description": "Stone wall probability (scaled to [0-250]).",
                 "gee:scale": 0.004,
-                "name": "B1"
+                "name": "B1",
+                "gsd": [
+                    0.25
+                ]
             },
             {
                 "description": "Woodland/tree probability (scaled to [0-250]).",
                 "gee:scale": 0.004,
-                "name": "B2"
+                "name": "B2",
+                "gsd": [
+                    0.25
+                ]
             }
         ],
         "gee:visualizations": [

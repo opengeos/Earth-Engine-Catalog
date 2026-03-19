@@ -169,7 +169,10 @@
                         "value": 12
                     }
                 ],
-                "name": "texture_0_20"
+                "name": "texture_0_20",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "USDA Texture Class at 20-50 cm depth",
@@ -235,7 +238,10 @@
                         "value": 12
                     }
                 ],
-                "name": "texture_20_50"
+                "name": "texture_20_50",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

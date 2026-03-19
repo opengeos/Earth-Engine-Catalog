@@ -135,52 +135,82 @@
             {
                 "description": "Aerosol optical thickness at 0.55 microns for both\nocean (best) and land (corrected): mean of daily mean\n",
                 "gee:scale": 0.001,
-                "name": "Aerosol_Optical_Depth_Land_Ocean_Mean_Mean"
+                "name": "Aerosol_Optical_Depth_Land_Ocean_Mean_Mean",
+                "gsd": [
+                    111320
+                ]
             },
             {
                 "description": "Aerosol optical thickness at 0.55 microns for both\nocean (best) and land (corrected): mean of daily standard deviation\n",
                 "gee:scale": 0.001,
-                "name": "Aerosol_Optical_Depth_Land_Ocean_Std_Deviation_Mean"
+                "name": "Aerosol_Optical_Depth_Land_Ocean_Std_Deviation_Mean",
+                "gsd": [
+                    111320
+                ]
             },
             {
                 "description": "Corrected aerosol optical depth (land) at 0.47 microns:\nmean of level-3 QA weighted mean",
                 "gee:scale": 0.001,
-                "name": "Aerosol_Optical_Depth_Land_QA_Mean_Mean_470"
+                "name": "Aerosol_Optical_Depth_Land_QA_Mean_Mean_470",
+                "gsd": [
+                    111320
+                ]
             },
             {
                 "description": "Corrected aerosol optical depth (land) at 0.47 microns:\nmean of level-3 weighted QA standard deviation",
                 "gee:scale": 0.001,
-                "name": "Aerosol_Optical_Depth_Land_QA_Std_Deviation_Mean_470"
+                "name": "Aerosol_Optical_Depth_Land_QA_Std_Deviation_Mean_470",
+                "gsd": [
+                    111320
+                ]
             },
             {
                 "description": "Cirrus area fraction: mean of daily fraction",
                 "gee:scale": 0.0001,
-                "name": "Cirrus_Fraction_SWIR_FMean"
+                "name": "Cirrus_Fraction_SWIR_FMean",
+                "gsd": [
+                    111320
+                ]
             },
             {
                 "description": "Cirrus area fraction: standard deviation of daily fraction",
                 "gee:scale": 0.0001,
-                "name": "Cirrus_Fraction_SWIR_FStd"
+                "name": "Cirrus_Fraction_SWIR_FStd",
+                "gsd": [
+                    111320
+                ]
             },
             {
                 "description": "Liquid water cloud optical thickness: mean of daily log mean",
                 "gee:scale": 0.001,
-                "name": "Cloud_Optical_Thickness_Liquid_Log_Mean_Mean"
+                "name": "Cloud_Optical_Thickness_Liquid_Log_Mean_Mean",
+                "gsd": [
+                    111320
+                ]
             },
             {
                 "description": "Liquid water cloud optical thickness: mean of daily log standard deviation",
                 "gee:scale": 0.001,
-                "name": "Cloud_Optical_Thickness_Liquid_Log_Std_Deviation_Mean"
+                "name": "Cloud_Optical_Thickness_Liquid_Log_Std_Deviation_Mean",
+                "gsd": [
+                    111320
+                ]
             },
             {
                 "description": "Liquid water cloud optical thickness: multi-day absolute\nuncertainty estimate derived from the daily absolute uncertainty\nestimate\n",
                 "gee:scale": 0.01,
-                "name": "Cloud_Optical_Thickness_Liquid_Mean_Uncertainty"
+                "name": "Cloud_Optical_Thickness_Liquid_Mean_Uncertainty",
+                "gsd": [
+                    111320
+                ]
             },
             {
                 "description": "Liquid water cloud optical thickness: multi-day absolute\nlog uncertainty estimate derived from the daily absolute log\nuncertainty estimate\n",
                 "gee:scale": 0.001,
-                "name": "Cloud_Optical_Thickness_Liquid_Log_Mean_Uncertainty"
+                "name": "Cloud_Optical_Thickness_Liquid_Log_Mean_Uncertainty",
+                "gsd": [
+                    111320
+                ]
             }
         ],
         "gee:visualizations": [

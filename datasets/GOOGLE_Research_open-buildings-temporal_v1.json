@@ -119,16 +119,25 @@
         "eo:bands": [
             {
                 "description": "Source data for deriving building counts for a given AOI. Please see\naccompanying example scripts.\n",
-                "name": "building_fractional_count"
+                "name": "building_fractional_count",
+                "gsd": [
+                    4
+                ]
             },
             {
                 "description": "Building height relative to the terrain in range [0m, 100m].",
                 "gee:units": "m",
-                "name": "building_height"
+                "name": "building_height",
+                "gsd": [
+                    4
+                ]
             },
             {
                 "description": "Model confidence values (i.e. how confident a model is that the pixel is\npart of a building) in range [0.0, 1.0]. Note that model confidence\nvalues are uncalibrated, meaning, if model confidence for a certain\npixel is 0.8, it doesn't mean the actual likelihood of building\npresence is 80%. As such, confidence values can only be used for\nrelative ranking (eg. thresholding) of pixels. Also, the model\nconfidence can vary across location and time based on a number\nof factors such as cloud cover, imagery misalignment, etc.\n",
-                "name": "building_presence"
+                "name": "building_presence",
+                "gsd": [
+                    4
+                ]
             }
         ],
         "gee:schema": [

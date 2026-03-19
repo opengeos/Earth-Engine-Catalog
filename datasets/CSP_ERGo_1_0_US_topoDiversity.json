@@ -109,7 +109,10 @@
         "eo:bands": [
             {
                 "description": "NED-derived topographic diversity",
-                "name": "constant"
+                "name": "constant",
+                "gsd": [
+                    90
+                ]
             }
         ],
         "gee:visualizations": [

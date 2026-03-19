@@ -98,7 +98,10 @@
             {
                 "description": "Forest age",
                 "gee:units": "y",
-                "name": "forest"
+                "name": "forest",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

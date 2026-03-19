@@ -127,7 +127,10 @@
         "eo:bands": [
             {
                 "description": "Estimates for land area within each 30-arc second pixel.",
-                "name": "land_area"
+                "name": "land_area",
+                "gsd": [
+                    927.67
+                ]
             }
         ],
         "gee:visualizations": [

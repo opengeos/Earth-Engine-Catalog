@@ -119,26 +119,41 @@
             {
                 "description": "The frequency with which water was present.",
                 "gee:units": "%",
-                "name": "occurrence"
+                "name": "occurrence",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Absolute change in occurrence between two epochs: 1984-1999 vs 2000-2021.",
                 "gee:units": "%",
-                "name": "change_abs"
+                "name": "change_abs",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Normalized change in occurrence. (epoch1-epoch2)/(epoch1+epoch2) * 100",
                 "gee:units": "%",
-                "name": "change_norm"
+                "name": "change_norm",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Number of months water is present.",
-                "name": "seasonality"
+                "name": "seasonality",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "The frequency with which water returns from year to year.",
                 "gee:units": "%",
-                "name": "recurrence"
+                "name": "recurrence",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Categorical classification of change between first and last year.",
@@ -199,7 +214,10 @@
                         "value": 10
                     }
                 ],
-                "name": "transition"
+                "name": "transition",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Binary image containing 1 anywhere water has ever been detected.",
@@ -223,7 +241,10 @@
                     ],
                     "total_bit_count": 1
                 },
-                "name": "max_extent"
+                "name": "max_extent",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

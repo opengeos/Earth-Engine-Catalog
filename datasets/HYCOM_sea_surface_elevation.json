@@ -123,7 +123,10 @@
                 "description": "Sea surface elevation anomaly relative to the modeled elevation mean",
                 "gee:scale": 0.001,
                 "gee:units": "m",
-                "name": "surface_elevation"
+                "name": "surface_elevation",
+                "gsd": [
+                    8905.6
+                ]
             }
         ],
         "gee:schema": [

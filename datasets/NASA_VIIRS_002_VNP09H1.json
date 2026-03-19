@@ -130,15 +130,24 @@
         "eo:bands": [
             {
                 "description": "500 m Surface Reflectance Band I1",
-                "name": "SurfReflect_I1"
+                "name": "SurfReflect_I1",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "500 m Surface Reflectance Band I2",
-                "name": "SurfReflect_I2"
+                "name": "SurfReflect_I2",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "500 m Surface Reflectance Band I3",
-                "name": "SurfReflect_I3"
+                "name": "SurfReflect_I3",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Surface Reflectance Band Quality Control (QC)",
@@ -332,7 +341,10 @@
                     ],
                     "total_bit_count": 15
                 },
-                "name": "SurfReflect_QC_500m"
+                "name": "SurfReflect_QC_500m",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Surface Reflectance State Quality Assurance (QA)",
@@ -554,7 +566,10 @@
                     ],
                     "total_bit_count": 16
                 },
-                "name": "SurfReflect_State_500m"
+                "name": "SurfReflect_State_500m",
+                "gsd": [
+                    500
+                ]
             }
         ],
         "gee:visualizations": [

@@ -117,43 +117,64 @@
                 "center_wavelength": 0.645,
                 "description": "Best NBAR at local solar noon for band 1",
                 "gee:wavelength": "620-670nm",
-                "name": "Nadir_Reflectance_Band1"
+                "name": "Nadir_Reflectance_Band1",
+                "gsd": [
+                    463
+                ]
             },
             {
                 "center_wavelength": 0.8585,
                 "description": "Best NBAR at local solar noon for band 2",
                 "gee:wavelength": "841-876nm",
-                "name": "Nadir_Reflectance_Band2"
+                "name": "Nadir_Reflectance_Band2",
+                "gsd": [
+                    463
+                ]
             },
             {
                 "center_wavelength": 0.469,
                 "description": "Best NBAR at local solar noon for band 3",
                 "gee:wavelength": "459-479nm",
-                "name": "Nadir_Reflectance_Band3"
+                "name": "Nadir_Reflectance_Band3",
+                "gsd": [
+                    463
+                ]
             },
             {
                 "center_wavelength": 0.555,
                 "description": "Best NBAR at local solar noon for band 4",
                 "gee:wavelength": "545-565nm",
-                "name": "Nadir_Reflectance_Band4"
+                "name": "Nadir_Reflectance_Band4",
+                "gsd": [
+                    463
+                ]
             },
             {
                 "center_wavelength": 1.24,
                 "description": "Best NBAR at local solar noon for band 5",
                 "gee:wavelength": "1230-1250nm",
-                "name": "Nadir_Reflectance_Band5"
+                "name": "Nadir_Reflectance_Band5",
+                "gsd": [
+                    463
+                ]
             },
             {
                 "center_wavelength": 1.64,
                 "description": "Best NBAR at local solar noon for band 6",
                 "gee:wavelength": "1628-1652nm",
-                "name": "Nadir_Reflectance_Band6"
+                "name": "Nadir_Reflectance_Band6",
+                "gsd": [
+                    463
+                ]
             },
             {
                 "center_wavelength": 2.13,
                 "description": "Best NBAR at local solar noon for band 7",
                 "gee:wavelength": "2105-2155nm",
-                "name": "Nadir_Reflectance_Band7"
+                "name": "Nadir_Reflectance_Band7",
+                "gsd": [
+                    463
+                ]
             }
         ],
         "gee:visualizations": [

@@ -128,17 +128,26 @@
             {
                 "description": "Percent of a pixel which is covered by tree canopy",
                 "gee:units": "%",
-                "name": "Percent_Tree_Cover"
+                "name": "Percent_Tree_Cover",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Percent of a pixel which is covered by non-tree vegetation",
                 "gee:units": "%",
-                "name": "Percent_NonTree_Vegetation"
+                "name": "Percent_NonTree_Vegetation",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Percent of a pixel which is not vegetated",
                 "gee:units": "%",
-                "name": "Percent_NonVegetated"
+                "name": "Percent_NonVegetated",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Describes those inputs that had poor quality (cloudy,\nhigh aerosol, cloud shadow, or view zenith >45&deg;). Each bit\nin the field represents 1 out of 8 input surface reflectance\nfiles to the model.\n",
@@ -267,19 +276,28 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "Quality"
+                "name": "Quality",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Standard deviation (SD) of the 30 models that were\nused to generate the pixel value in the percent tree cover data\nlayer\n",
                 "gee:scale": 0.01,
                 "gee:units": "%",
-                "name": "Percent_Tree_Cover_SD"
+                "name": "Percent_Tree_Cover_SD",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Standard deviation (SD) of the 30 models that were\nused to generate the pixel value in the percent non-vegetated\ndata layer\n",
                 "gee:scale": 0.01,
                 "gee:units": "%",
-                "name": "Percent_NonVegetated_SD"
+                "name": "Percent_NonVegetated_SD",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Clarifies the 'Quality' layer to give the user an\nindication that the 'bad' data refers to cloudy input data. Each\nbit in the field represents 1 out of 8 input surface reflectance\nfiles to the model.\n",
@@ -408,7 +426,10 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "Cloud"
+                "name": "Cloud",
+                "gsd": [
+                    250
+                ]
             }
         ],
         "gee:visualizations": [

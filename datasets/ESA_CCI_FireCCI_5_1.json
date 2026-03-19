@@ -133,12 +133,18 @@
         "eo:bands": [
             {
                 "description": "Estimated day of the year of the first detection of the burn",
-                "name": "BurnDate"
+                "name": "BurnDate",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Probability of detecting a pixel as burned, expressing the uncertainty of\nthe detection for all pixels, even if they are classified as unburned.\n",
                 "gee:units": "%",
-                "name": "ConfidenceLevel"
+                "name": "ConfidenceLevel",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Land cover category of the burned pixels, extracted from the CCI LandCover\nv2.0.7 product. See Defourny, P., Lamarche, C., Bontemps, S., De Maet, T.,\nVan Bogaert, E., Moreau, I., Brockmann, C., Boettcher, M., Kirches, G.,\nWevers, J., Santoro, M., Ramoino, F., &amp; Arino, O.  (2017). Land Cover\nClimate Change Initiative - Product User Guide v2. Issue 2.0. [online]\nAvailable at: [https://maps.elie.ucl.ac.be/CCI/viewer/download/ESACCI-LC-Ph2-PUGv2_2.0.pdf](https://maps.elie.ucl.ac.be/CCI/viewer/download/ESACCI-LC-Ph2-PUGv2_2.0.pdf)\naccessed: July 2020. &copy; ESA Climate Change Initiative - Land Cover led by UCLouvain (2017).\n",
@@ -234,11 +240,17 @@
                         "value": 180
                     }
                 ],
-                "name": "LandCover"
+                "name": "LandCover",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Flags indicating why a pixel was not processed.\n\n* -2: the pixel is not burnable (water bodies, bare areas, urban areas,\npermanent snow and ice)\n* -1: the pixel has not been observed during the month (due to clouds,\ncloud shadows or sensor failure)\n",
-                "name": "ObservedFlag"
+                "name": "ObservedFlag",
+                "gsd": [
+                    250
+                ]
             }
         ],
         "gee:visualizations": [

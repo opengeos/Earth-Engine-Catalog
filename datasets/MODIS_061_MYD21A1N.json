@@ -120,7 +120,10 @@
             {
                 "description": "Land Surface Temperature",
                 "gee:units": "K",
-                "name": "LST_1KM"
+                "name": "LST_1KM",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Quality Control",
@@ -313,29 +316,47 @@
                     ],
                     "total_bit_count": 16
                 },
-                "name": "QC"
+                "name": "QC",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Band 29 emissivity",
-                "name": "Emis_29"
+                "name": "Emis_29",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Band 31 emissivity",
-                "name": "Emis_31"
+                "name": "Emis_31",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Band 32 emissivity",
-                "name": "Emis_32"
+                "name": "Emis_32",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "MODIS view zenith angle",
                 "gee:units": "deg",
-                "name": "View_Angle"
+                "name": "View_Angle",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Time of MODIS observation",
                 "gee:units": "h",
-                "name": "View_Time"
+                "name": "View_Time",
+                "gsd": [
+                    1000
+                ]
             }
         ],
         "gee:visualizations": [

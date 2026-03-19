@@ -100,15 +100,24 @@
         "eo:bands": [
             {
                 "description": "Near-Infrared",
-                "name": "N"
+                "name": "N",
+                "gsd": [
+                    0.5
+                ]
             },
             {
                 "description": "Red",
-                "name": "R"
+                "name": "R",
+                "gsd": [
+                    0.5
+                ]
             },
             {
                 "description": "Green",
-                "name": "G"
+                "name": "G",
+                "gsd": [
+                    0.5
+                ]
             }
         ],
         "gee:visualizations": [

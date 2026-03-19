@@ -133,17 +133,26 @@
             {
                 "description": "Merged microwave/IR precipitation estimate",
                 "gee:units": "mm/hr",
-                "name": "precipitation"
+                "name": "precipitation",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Merged microwave/IR precipitation random error estimate",
                 "gee:units": "mm/hr",
-                "name": "relativeError"
+                "name": "relativeError",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Relative weighting of the rain gauges used in calibration",
                 "gee:units": "%",
-                "name": "gaugeRelativeWeighting"
+                "name": "gaugeRelativeWeighting",
+                "gsd": [
+                    27830
+                ]
             }
         ],
         "gee:visualizations": [

@@ -116,7 +116,10 @@
         "eo:bands": [
             {
                 "description": "Estimates for water area within each 30-arc second pixel.",
-                "name": "water_area"
+                "name": "water_area",
+                "gsd": [
+                    927.67
+                ]
             }
         ],
         "gee:visualizations": [

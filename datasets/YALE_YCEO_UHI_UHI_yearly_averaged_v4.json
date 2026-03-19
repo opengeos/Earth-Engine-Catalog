@@ -108,12 +108,18 @@
             {
                 "description": "Daytime UHI",
                 "gee:units": "&deg;C",
-                "name": "Daytime"
+                "name": "Daytime",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Nighttime UHI",
                 "gee:units": "&deg;C",
-                "name": "Nighttime"
+                "name": "Nighttime",
+                "gsd": [
+                    300
+                ]
             }
         ],
         "gee:visualizations": [

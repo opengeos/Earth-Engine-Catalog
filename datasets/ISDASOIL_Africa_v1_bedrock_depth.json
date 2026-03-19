@@ -108,12 +108,18 @@
             {
                 "description": "Depth to bedrock, predicted mean at 0-200 cm depth",
                 "gee:units": "cm",
-                "name": "mean_0_200"
+                "name": "mean_0_200",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Depth to bedrock, standard deviation at 0-20 cm depth",
                 "gee:units": "cm",
-                "name": "stdev_0_200"
+                "name": "stdev_0_200",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

@@ -122,35 +122,59 @@
         "eo:bands": [
             {
                 "description": "Total PAR at GMT 00:00",
-                "name": "GMT_0000_PAR"
+                "name": "GMT_0000_PAR",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Total PAR at GMT 03:00",
-                "name": "GMT_0300_PAR"
+                "name": "GMT_0300_PAR",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Total PAR at GMT 06:00",
-                "name": "GMT_0600_PAR"
+                "name": "GMT_0600_PAR",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Total PAR at GMT 09:00",
-                "name": "GMT_0900_PAR"
+                "name": "GMT_0900_PAR",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Total PAR at GMT 12:00",
-                "name": "GMT_1200_PAR"
+                "name": "GMT_1200_PAR",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Total PAR at GMT 15:00",
-                "name": "GMT_1500_PAR"
+                "name": "GMT_1500_PAR",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Total PAR at GMT 18:00",
-                "name": "GMT_1800_PAR"
+                "name": "GMT_1800_PAR",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Total PAR at GMT 21:00",
-                "name": "GMT_2100_PAR"
+                "name": "GMT_2100_PAR",
+                "gsd": [
+                    500
+                ]
             }
         ],
         "gee:visualizations": [

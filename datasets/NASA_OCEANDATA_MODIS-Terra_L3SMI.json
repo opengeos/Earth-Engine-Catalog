@@ -138,92 +138,134 @@
             {
                 "description": "Chlorophyll a concentration",
                 "gee:units": "mg/m^3",
-                "name": "chlor_a"
+                "name": "chlor_a",
+                "gsd": [
+                    4616
+                ]
             },
             {
                 "description": "Normalized fluorescence line height",
                 "gee:units": "mW cm-2 &mu;m-1 sr-1",
-                "name": "nflh"
+                "name": "nflh",
+                "gsd": [
+                    4616
+                ]
             },
             {
                 "description": "Particulate organic carbon",
                 "gee:units": "mg/m^3",
-                "name": "poc"
+                "name": "poc",
+                "gsd": [
+                    4616
+                ]
             },
             {
                 "center_wavelength": 0.412,
                 "description": "Remote sensing reflectance at band 412nm",
                 "gee:units": "sr-1",
                 "gee:wavelength": "412nm",
-                "name": "Rrs_412"
+                "name": "Rrs_412",
+                "gsd": [
+                    4616
+                ]
             },
             {
                 "center_wavelength": 0.443,
                 "description": "Remote sensing reflectance at band 443nm",
                 "gee:units": "sr-1",
                 "gee:wavelength": "443nm",
-                "name": "Rrs_443"
+                "name": "Rrs_443",
+                "gsd": [
+                    4616
+                ]
             },
             {
                 "center_wavelength": 0.469,
                 "description": "Remote sensing reflectance at band 469nm",
                 "gee:units": "sr-1",
                 "gee:wavelength": "469nm",
-                "name": "Rrs_469"
+                "name": "Rrs_469",
+                "gsd": [
+                    4616
+                ]
             },
             {
                 "center_wavelength": 0.488,
                 "description": "Remote sensing reflectance at band 488nm",
                 "gee:units": "sr-1",
                 "gee:wavelength": "488nm",
-                "name": "Rrs_488"
+                "name": "Rrs_488",
+                "gsd": [
+                    4616
+                ]
             },
             {
                 "center_wavelength": 0.531,
                 "description": "Remote sensing reflectance at band 531nm",
                 "gee:units": "sr-1",
                 "gee:wavelength": "531nm",
-                "name": "Rrs_531"
+                "name": "Rrs_531",
+                "gsd": [
+                    4616
+                ]
             },
             {
                 "center_wavelength": 0.547,
                 "description": "Remote sensing reflectance at band 547nm",
                 "gee:units": "sr-1",
                 "gee:wavelength": "547nm",
-                "name": "Rrs_547"
+                "name": "Rrs_547",
+                "gsd": [
+                    4616
+                ]
             },
             {
                 "center_wavelength": 0.555,
                 "description": "Remote sensing reflectance at band 555nm",
                 "gee:units": "sr-1",
                 "gee:wavelength": "555nm",
-                "name": "Rrs_555"
+                "name": "Rrs_555",
+                "gsd": [
+                    4616
+                ]
             },
             {
                 "center_wavelength": 0.645,
                 "description": "Remote sensing reflectance at band 645nm",
                 "gee:units": "sr-1",
                 "gee:wavelength": "645nm",
-                "name": "Rrs_645"
+                "name": "Rrs_645",
+                "gsd": [
+                    4616
+                ]
             },
             {
                 "center_wavelength": 0.667,
                 "description": "Remote sensing reflectance at band 667nm",
                 "gee:units": "sr-1",
                 "gee:wavelength": "667nm",
-                "name": "Rrs_667"
+                "name": "Rrs_667",
+                "gsd": [
+                    4616
+                ]
             },
             {
                 "center_wavelength": 0.678,
                 "description": "Remote sensing reflectance at band 678nm",
                 "gee:units": "sr-1",
                 "gee:wavelength": "678nm",
-                "name": "Rrs_678"
+                "name": "Rrs_678",
+                "gsd": [
+                    4616
+                ]
             },
             {
                 "description": "Sea surface temperature",
                 "gee:units": "&deg;C",
-                "name": "sst"
+                "name": "sst",
+                "gsd": [
+                    4616
+                ]
             }
         ],
         "gee:visualizations": [

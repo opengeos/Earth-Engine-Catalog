@@ -117,7 +117,10 @@
             {
                 "description": "Concentration of the green pigment (chlorophyll-a) in phytoplankton in sea surface layer.",
                 "gee:units": "mg/m^3",
-                "name": "CHLA_AVE"
+                "name": "CHLA_AVE",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "CHLA QA",
@@ -149,7 +152,10 @@
                     ],
                     "total_bit_count": 2
                 },
-                "name": "CHLA_QA_flag"
+                "name": "CHLA_QA_flag",
+                "gsd": [
+                    4638.3
+                ]
             }
         ],
         "gee:schema": [

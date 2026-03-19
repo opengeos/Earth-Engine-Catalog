@@ -126,7 +126,10 @@
             {
                 "description": "Average daily evapotranspiration",
                 "gee:units": "mm/d",
-                "name": "ETa"
+                "name": "ETa",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Pixel QA attributes",
@@ -193,7 +196,10 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "pixel_qa"
+                "name": "pixel_qa",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

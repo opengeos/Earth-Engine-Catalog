@@ -118,12 +118,18 @@
             {
                 "description": "Area of cropland organic soils (histosols)",
                 "gee:units": "ha",
-                "name": "cropland"
+                "name": "cropland",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Area of grassland organic soils (histosols)",
                 "gee:units": "ha",
-                "name": "grassland"
+                "name": "grassland",
+                "gsd": [
+                    927.67
+                ]
             }
         ],
         "gee:visualizations": [

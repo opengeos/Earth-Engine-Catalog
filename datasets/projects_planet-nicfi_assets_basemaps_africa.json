@@ -110,22 +110,34 @@
             {
                 "description": "Blue",
                 "gee:scale": 0.0001,
-                "name": "B"
+                "name": "B",
+                "gsd": [
+                    4.77
+                ]
             },
             {
                 "description": "Green",
                 "gee:scale": 0.0001,
-                "name": "G"
+                "name": "G",
+                "gsd": [
+                    4.77
+                ]
             },
             {
                 "description": "Red",
                 "gee:scale": 0.0001,
-                "name": "R"
+                "name": "R",
+                "gsd": [
+                    4.77
+                ]
             },
             {
                 "description": "Near-infrared",
                 "gee:scale": 0.0001,
-                "name": "N"
+                "name": "N",
+                "gsd": [
+                    4.77
+                ]
             }
         ],
         "gee:schema": [

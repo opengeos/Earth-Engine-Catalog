@@ -93,7 +93,7 @@
             "interval": [
                 [
                     "2002-07-04T00:00:00Z",
-                    "2026-03-15T00:00:00Z"
+                    "2026-03-16T00:00:00Z"
                 ]
             ]
         }
@@ -133,7 +133,10 @@
         "eo:bands": [
             {
                 "description": "NDSI snow cover. This value is\ncomputed for MOD10_L2 and retrieved when the observation of\nthe day is selected. Provider values above 100 are masked out in\nthis band (they can be found in the \"NDSI_Snow_Cover_Class\" band).\n",
-                "name": "NDSI_Snow_Cover"
+                "name": "NDSI_Snow_Cover",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "A basic estimate of the quality of the algorithm result.\nThis value is computed for MOD10_L2 and retrieved with the corresponding\nobservation of the day.\n",
@@ -173,7 +176,10 @@
                     ],
                     "total_bit_count": 16
                 },
-                "name": "NDSI_Snow_Cover_Basic_QA"
+                "name": "NDSI_Snow_Cover_Basic_QA",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Bit flags indicating screen results and the presence\nof inland water. These flags are set when MOD10_L2 is generated\nand retrieved with the corresponding observation of the day.\n",
@@ -286,24 +292,39 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "NDSI_Snow_Cover_Algorithm_Flags_QA"
+                "name": "NDSI_Snow_Cover_Algorithm_Flags_QA",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Raw NDSI (i.e. prior to screening). This value is\ncomputed for MOD10_L2 and retrieved with the corresponding observation\nof the day.\n",
                 "gee:scale": 0.0001,
-                "name": "NDSI"
+                "name": "NDSI",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Snow albedo percentage. Provider values above 100 are masked out in\nthis band (they can be found in the \"Snow_Albedo_Daily_Tile_Class\" band).\n",
-                "name": "Snow_Albedo_Daily_Tile"
+                "name": "Snow_Albedo_Daily_Tile",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Pointer to the orbit number of the swath that was\nselected as the observation of the day. The pointer references\nby index the list of orbit numbers written to the ORBITNUMBERARRAY\nmetadata object in ArchiveMetadata.0.\n",
-                "name": "orbit_pnt"
+                "name": "orbit_pnt",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Pointer to the granule (swath) that was mapped into\nthe tile. The pointer references the corresponding value in the\nGRANULEPOINTERARRAY metadata object written to ArchiveMetadata.0.\n",
-                "name": "granule_pnt"
+                "name": "granule_pnt",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Landcover classes from the \"NDSI_Snow_Cover\" subdataset\n(provider values less than or equal to 100 are masked out).\n",
@@ -337,7 +358,10 @@
                         "value": 254
                     }
                 ],
-                "name": "NDSI_Snow_Cover_Class"
+                "name": "NDSI_Snow_Cover_Class",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Landcover classes from the \"Snow_Albedo_Daily_Tile\" subdataset\n(provider values less than or equal to 100 are masked out).\n",
@@ -391,7 +415,10 @@
                         "value": 254
                     }
                 ],
-                "name": "Snow_Albedo_Daily_Tile_Class"
+                "name": "Snow_Albedo_Daily_Tile_Class",
+                "gsd": [
+                    500
+                ]
             }
         ],
         "gee:visualizations": [

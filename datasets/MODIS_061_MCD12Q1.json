@@ -215,7 +215,10 @@
                         "value": 17
                     }
                 ],
-                "name": "LC_Type1"
+                "name": "LC_Type1",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Land Cover Type 2: Annual University of Maryland (UMD) classification",
@@ -301,7 +304,10 @@
                         "value": 15
                     }
                 ],
-                "name": "LC_Type2"
+                "name": "LC_Type2",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Land Cover Type 3: Annual Leaf Area Index (LAI) classification",
@@ -362,7 +368,10 @@
                         "value": 10
                     }
                 ],
-                "name": "LC_Type3"
+                "name": "LC_Type3",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Land Cover Type 4: Annual BIOME-Biogeochemical Cycles (BGC) classification",
@@ -413,7 +422,10 @@
                         "value": 8
                     }
                 ],
-                "name": "LC_Type4"
+                "name": "LC_Type4",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Land Cover Type 5: Annual Plant Functional Types classification",
@@ -479,22 +491,34 @@
                         "value": 11
                     }
                 ],
-                "name": "LC_Type5"
+                "name": "LC_Type5",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "LCCS1 land cover layer confidence",
                 "gee:units": "%",
-                "name": "LC_Prop1_Assessment"
+                "name": "LC_Prop1_Assessment",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "LCCS2 land use layer confidence",
                 "gee:units": "%",
-                "name": "LC_Prop2_Assessment"
+                "name": "LC_Prop2_Assessment",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "LCCS3 surface hydrology layer confidence",
                 "gee:units": "%",
-                "name": "LC_Prop3_Assessment"
+                "name": "LC_Prop3_Assessment",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "FAO-Land Cover Classification System 1 (LCCS1) land cover layer",
@@ -580,7 +604,10 @@
                         "value": 43
                     }
                 ],
-                "name": "LC_Prop1"
+                "name": "LC_Prop1",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "FAO-LCCS2 land use layer",
@@ -641,7 +668,10 @@
                         "value": 40
                     }
                 ],
-                "name": "LC_Prop2"
+                "name": "LC_Prop2",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "FAO-LCCS3 surface hydrology layer",
@@ -697,7 +727,10 @@
                         "value": 51
                     }
                 ],
-                "name": "LC_Prop3"
+                "name": "LC_Prop3",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Product quality flags",
@@ -743,7 +776,10 @@
                         "value": 9
                     }
                 ],
-                "name": "QC"
+                "name": "QC",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Binary land (class 2) / water (class 1) mask derived from MOD44W",
@@ -759,7 +795,10 @@
                         "value": 2
                     }
                 ],
-                "name": "LW"
+                "name": "LW",
+                "gsd": [
+                    500
+                ]
             }
         ],
         "gee:visualizations": [

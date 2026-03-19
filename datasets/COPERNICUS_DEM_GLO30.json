@@ -98,7 +98,10 @@
         "eo:bands": [
             {
                 "description": "Digital Surface Model",
-                "name": "DEM"
+                "name": "DEM",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "The Edit Data Mask indicates all DEM pixels that were modified\nduring the terrain and hydro editing process.\n",
@@ -160,7 +163,10 @@
                         "value": 13
                     }
                 ],
-                "name": "EDM"
+                "name": "EDM",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "The Filling Mask is created primarily during the terrain\nediting process.\n",
@@ -214,11 +220,17 @@
                         "value": 101
                     }
                 ],
-                "name": "FLM"
+                "name": "FLM",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "The Height Error Mask represents the corresponding height error\nfor each DEM pixel in the form of the standard deviation derived from\nthe interferometric coherence and geometrical considerations.\n",
-                "name": "HEM"
+                "name": "HEM",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "The Water Body Mask shows all DEM pixels which are classified as water\nand edited according to the categories Ocean, Lake or River.\n",
@@ -240,7 +252,10 @@
                         "value": 3
                     }
                 ],
-                "name": "WBM"
+                "name": "WBM",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

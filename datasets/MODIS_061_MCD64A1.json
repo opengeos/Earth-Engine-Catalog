@@ -132,11 +132,17 @@
         "eo:bands": [
             {
                 "description": "Burn day of year. Possible values: 0 (unburned), 1-366\n(approximate Julian day of burning).",
-                "name": "BurnDate"
+                "name": "BurnDate",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Estimated uncertainty in burn day",
-                "name": "Uncertainty"
+                "name": "Uncertainty",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Quality assurance indicators",
@@ -255,15 +261,24 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "QA"
+                "name": "QA",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "First day of the year of reliable change detection",
-                "name": "FirstDay"
+                "name": "FirstDay",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Last day of the year of reliable change detection",
-                "name": "LastDay"
+                "name": "LastDay",
+                "gsd": [
+                    500
+                ]
             }
         ],
         "gee:visualizations": [

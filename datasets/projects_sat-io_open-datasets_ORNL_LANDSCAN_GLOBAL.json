@@ -99,7 +99,10 @@
         "eo:bands": [
             {
                 "description": "Estimated Population count",
-                "name": "b1"
+                "name": "b1",
+                "gsd": [
+                    1000
+                ]
             }
         ],
         "gee:visualizations": [

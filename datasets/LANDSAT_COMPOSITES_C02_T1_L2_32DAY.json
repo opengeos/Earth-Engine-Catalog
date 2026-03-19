@@ -106,32 +106,53 @@
         "eo:bands": [
             {
                 "description": "Blue (surface reflectance)",
-                "name": "blue"
+                "name": "blue",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Green (surface reflectance)",
-                "name": "green"
+                "name": "green",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Red (surface reflectance)",
-                "name": "red"
+                "name": "red",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Near infrared (surface reflectance)",
-                "name": "nir"
+                "name": "nir",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Shortwave infrared 1 (surface reflectance)",
-                "name": "swir1"
+                "name": "swir1",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Shortwave infrared 2 (surface reflectance)",
-                "name": "swir2"
+                "name": "swir2",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Surface temperature",
                 "gee:units": "K",
-                "name": "thermal"
+                "name": "thermal",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

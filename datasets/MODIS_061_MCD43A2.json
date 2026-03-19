@@ -152,7 +152,10 @@
                     ],
                     "total_bit_count": 1
                 },
-                "name": "Snow_BRDF_Albedo"
+                "name": "Snow_BRDF_Albedo",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "BRDF albedo platform information",
@@ -180,7 +183,10 @@
                     ],
                     "total_bit_count": 2
                 },
-                "name": "BRDF_Albedo_Platform"
+                "name": "BRDF_Albedo_Platform",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Land/water type",
@@ -228,12 +234,18 @@
                     ],
                     "total_bit_count": 3
                 },
-                "name": "BRDF_Albedo_LandWaterType"
+                "name": "BRDF_Albedo_LandWaterType",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Solar zenith angle of local solar noon",
                 "gee:units": "deg",
-                "name": "BRDF_Albedo_LocalSolarNoon"
+                "name": "BRDF_Albedo_LocalSolarNoon",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Valid observation for band 1",
@@ -482,31 +494,52 @@
                     ],
                     "total_bit_count": 16
                 },
-                "name": "BRDF_Albedo_ValidObs_Band1"
+                "name": "BRDF_Albedo_ValidObs_Band1",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Valid observation for band 2 (same bit meaning as in band 1)",
-                "name": "BRDF_Albedo_ValidObs_Band2"
+                "name": "BRDF_Albedo_ValidObs_Band2",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Valid observation for band 3 (same bit meaning as in band 1)",
-                "name": "BRDF_Albedo_ValidObs_Band3"
+                "name": "BRDF_Albedo_ValidObs_Band3",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Valid observation for band 4 (same bit meaning as in band 1)",
-                "name": "BRDF_Albedo_ValidObs_Band4"
+                "name": "BRDF_Albedo_ValidObs_Band4",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Valid observation for band 5 (same bit meaning as in band 1)",
-                "name": "BRDF_Albedo_ValidObs_Band5"
+                "name": "BRDF_Albedo_ValidObs_Band5",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Valid observation for band 6 (same bit meaning as in band 1)",
-                "name": "BRDF_Albedo_ValidObs_Band6"
+                "name": "BRDF_Albedo_ValidObs_Band6",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Valid observation for band 7 (same bit meaning as in band 1)",
-                "name": "BRDF_Albedo_ValidObs_Band7"
+                "name": "BRDF_Albedo_ValidObs_Band7",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "BRDF inversion information for band 1",
@@ -542,7 +575,10 @@
                     ],
                     "total_bit_count": 3
                 },
-                "name": "BRDF_Albedo_Band_Quality_Band1"
+                "name": "BRDF_Albedo_Band_Quality_Band1",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "BRDF inversion information for band 2",
@@ -578,7 +614,10 @@
                     ],
                     "total_bit_count": 3
                 },
-                "name": "BRDF_Albedo_Band_Quality_Band2"
+                "name": "BRDF_Albedo_Band_Quality_Band2",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "BRDF inversion information for band 3",
@@ -614,7 +653,10 @@
                     ],
                     "total_bit_count": 3
                 },
-                "name": "BRDF_Albedo_Band_Quality_Band3"
+                "name": "BRDF_Albedo_Band_Quality_Band3",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "BRDF inversion information for band 4",
@@ -650,7 +692,10 @@
                     ],
                     "total_bit_count": 3
                 },
-                "name": "BRDF_Albedo_Band_Quality_Band4"
+                "name": "BRDF_Albedo_Band_Quality_Band4",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "BRDF inversion information for band 5",
@@ -686,7 +731,10 @@
                     ],
                     "total_bit_count": 3
                 },
-                "name": "BRDF_Albedo_Band_Quality_Band5"
+                "name": "BRDF_Albedo_Band_Quality_Band5",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "BRDF inversion information for band 6",
@@ -722,7 +770,10 @@
                     ],
                     "total_bit_count": 3
                 },
-                "name": "BRDF_Albedo_Band_Quality_Band6"
+                "name": "BRDF_Albedo_Band_Quality_Band6",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "BRDF inversion information for band 7",
@@ -758,12 +809,18 @@
                     ],
                     "total_bit_count": 3
                 },
-                "name": "BRDF_Albedo_Band_Quality_Band7"
+                "name": "BRDF_Albedo_Band_Quality_Band7",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "BRDF inversion information",
                 "gee:scale": 0.001,
-                "name": "BRDF_Albedo_Uncertainty"
+                "name": "BRDF_Albedo_Uncertainty",
+                "gsd": [
+                    500
+                ]
             }
         ],
         "gee:visualizations": [

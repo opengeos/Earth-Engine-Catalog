@@ -68,7 +68,7 @@
             "interval": [
                 [
                     "2015-06-27T00:00:00Z",
-                    "2026-03-17T18:14:08.932000Z"
+                    "2026-03-18T19:21:11.579000Z"
                 ]
             ]
         }
@@ -102,12 +102,18 @@
             {
                 "description": "Pixel quality score based on spectral distance from a\n(theoretical) clear reference\n",
                 "gee:units": "Dimensionless",
-                "name": "cs"
+                "name": "cs",
+                "gsd": [
+                    10
+                ]
             },
             {
                 "description": "Value of the cumulative distribution function of possible\n`cs` values for the estimated `cs` value\n",
                 "gee:units": "Dimensionless",
-                "name": "cs_cdf"
+                "name": "cs_cdf",
+                "gsd": [
+                    10
+                ]
             }
         ],
         "gee:schema": [

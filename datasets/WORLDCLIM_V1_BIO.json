@@ -120,106 +120,163 @@
                 "description": "Annual mean temperature",
                 "gee:scale": 0.1,
                 "gee:units": "&deg;C",
-                "name": "bio01"
+                "name": "bio01",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Mean diurnal range (mean of monthly (max temp - min temp))",
                 "gee:scale": 0.1,
                 "gee:units": "&deg;C",
-                "name": "bio02"
+                "name": "bio02",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Isothermality (bio02/bio07 * 100)",
                 "gee:units": "%",
-                "name": "bio03"
+                "name": "bio03",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Temperature seasonality (Standard deviation * 100)",
                 "gee:scale": 0.01,
                 "gee:units": "&deg;C",
-                "name": "bio04"
+                "name": "bio04",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Max temperature of warmest month",
                 "gee:scale": 0.1,
                 "gee:units": "&deg;C",
-                "name": "bio05"
+                "name": "bio05",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Min temperature of coldest month",
                 "gee:scale": 0.1,
                 "gee:units": "&deg;C",
-                "name": "bio06"
+                "name": "bio06",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Temperature annual range (bio05-bio06)",
                 "gee:scale": 0.1,
                 "gee:units": "&deg;C",
-                "name": "bio07"
+                "name": "bio07",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Mean temperature of wettest quarter",
                 "gee:scale": 0.1,
                 "gee:units": "&deg;C",
-                "name": "bio08"
+                "name": "bio08",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Mean temperature of driest quarter",
                 "gee:scale": 0.1,
                 "gee:units": "&deg;C",
-                "name": "bio09"
+                "name": "bio09",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Mean temperature of warmest quarter",
                 "gee:scale": 0.1,
                 "gee:units": "&deg;C",
-                "name": "bio10"
+                "name": "bio10",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Mean temperature of coldest quarter",
                 "gee:scale": 0.1,
                 "gee:units": "&deg;C",
-                "name": "bio11"
+                "name": "bio11",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Annual precipitation",
                 "gee:units": "mm",
-                "name": "bio12"
+                "name": "bio12",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Precipitation of wettest month",
                 "gee:units": "mm",
-                "name": "bio13"
+                "name": "bio13",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Precipitation of driest month",
                 "gee:units": "mm",
-                "name": "bio14"
+                "name": "bio14",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Precipitation seasonality",
                 "gee:units": "Coefficient of Variation",
-                "name": "bio15"
+                "name": "bio15",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Precipitation of wettest quarter",
                 "gee:units": "mm",
-                "name": "bio16"
+                "name": "bio16",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Precipitation of driest quarter",
                 "gee:units": "mm",
-                "name": "bio17"
+                "name": "bio17",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Precipitation of warmest quarter",
                 "gee:units": "mm",
-                "name": "bio18"
+                "name": "bio18",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Precipitation of coldest quarter",
                 "gee:units": "mm",
-                "name": "bio19"
+                "name": "bio19",
+                "gsd": [
+                    927.67
+                ]
             }
         ],
         "gee:visualizations": [

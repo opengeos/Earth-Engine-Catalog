@@ -118,37 +118,58 @@
                 "gee:offset": 273.15,
                 "gee:scale": 0.01,
                 "gee:units": "K",
-                "name": "sea_surface_temperature"
+                "name": "sea_surface_temperature",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "The difference between this SST and the previous day's.",
                 "gee:scale": 0.1,
                 "gee:units": "K",
-                "name": "dt_analysis"
+                "name": "dt_analysis",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "These wind speeds were created by NCEP-DOE Atmospheric Model\nIntercomparison Project (AMIP-II) reanalysis (R-2) and represent winds at\n10 meters above the sea surface.\n",
                 "gee:units": "m/s",
-                "name": "wind_speed"
+                "name": "wind_speed",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Sea ice concentration data are taken from the EUMETSAT Ocean\nand Sea Ice Satellite Application Facility (OSISAF) [Global Daily Sea Ice\nConcentration Reprocessing Data Set\naccession.nodc.noaa.gov/0068294](https://data.cnra.ca.gov/dataset/global-daily-sea-ice-concentration-reprocessing-data-set-for-1978-2007-from-the-eumetsat-ocean-) when these data are available.\nThe data are reprojected and interpolated from their original polar\nstereographic projection at 10km spatial resolution to the 4km Pathfinder\nVersion 5.3 grid. When the OSISAF data are not available for both\nhemispheres on a given day, the sea ice concentration data are taken from\nthe sea_ice_fraction variable found in the L4 GHRSST DailyOI SST product\nfrom NOAA/NCDC, and are interpolated from the 25km DailyOI grid to the 4km\nPathfinder Version 5.3 grid.\n",
                 "gee:scale": 0.01,
-                "name": "sea_ice_fraction"
+                "name": "sea_ice_fraction",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Aerosol optical thickness (100 KM) data are taken from the\nCLASS AERO100 products, which are created from AVHRR channel 1 optical\nthickness retrievals from AVHRR global area coverage (GAC) data. The\naerosol optical thickness measurements are interpolated from their\noriginal 1 degree x 1 degree resolution to the 4km Pathfinder Version\n5.3 grid.\n",
                 "gee:offset": 1.1,
                 "gee:scale": 0.01,
-                "name": "aerosol_dynamic_indicator"
+                "name": "aerosol_dynamic_indicator",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Note, the native Pathfinder processing system returns\nquality levels ranging from 0 to 7 (7 is best quality; -1 represents\nmissing data) and has been converted to the extent possible into\nthe six levels required by the GDS2 (ranging from 0 to 5, where 5\nis best). Below is the conversion table:\n\n- GDS2 required quality_level 5 = native Pathfinder quality\n  level 7 == best_quality\n\n- GDS2 required quality_level 4 = native Pathfinder quality\n  level 4-6 == acceptable_quality\n\n- GDS2 required quality_level 3 = native Pathfinder quality\n  level 2-3 == low_quality\n\n- GDS2 required quality_level 2 = native Pathfinder\n  quality level 1 == worst_quality\n\n- GDS2 required quality_level 1 = native Pathfinder quality\n  level 0 = bad_data\n\n- GDS2 required quality_level 0 = native Pathfinder quality\n  level -1 = missing_data\n\nThe original Pathfinder quality level is recorded in the optional\nvariable pathfinder_quality_level.\n",
-                "name": "quality_level"
+                "name": "quality_level",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "The native Pathfinder processing system quality levels,\nranging from 0 to 7, where 0 is worst and 7 is best.\n",
-                "name": "pathfinder_quality_level"
+                "name": "pathfinder_quality_level",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Used to specify the type of input SST data and pass\nthrough native flags from the input L2 SST data set.\n",
@@ -228,7 +249,10 @@
                     ],
                     "total_bit_count": 5
                 },
-                "name": "l2p_flags"
+                "name": "l2p_flags",
+                "gsd": [
+                    4000
+                ]
             }
         ],
         "gee:schema": [

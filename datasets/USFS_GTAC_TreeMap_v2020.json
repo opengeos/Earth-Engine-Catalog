@@ -149,42 +149,66 @@
             {
                 "description": "All-Live-Tree Stocking. The sum of stocking percent values of all live trees on\nthe condition.\n",
                 "gee:units": "%",
-                "name": "ALSTK"
+                "name": "ALSTK",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Live Tree Basal Area. Basal area in square feet per acre of all live trees\n\u22651.0 inch d.b.h./d.r.c. sampled in the condition.\n",
                 "gee:units": "ft^2/acre",
-                "name": "BALIVE"
+                "name": "BALIVE",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Live Canopy Cover. Derived from the Forest Vegetation Simulator.\n",
                 "gee:units": "%",
-                "name": "CANOPYPCT"
+                "name": "CANOPYPCT",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Carbon, Standing Dead. Calculated via the following FIA query:\nSum (DRYBIO_BOLE, DRYBIO_TOP, DRYBIO_STUMP, DRYBIO_SAPLING, DRYBIO_WDLD_SPP)\n/ 2 /2000*TPA_UNADJ WHERE (((COND.COND_STATUS_CD)=1) AND ((TREE.STATUSCD)=2) AND\n((TREE.DIA)>=5) AND ((TREE.STANDING_DEAD_CD)=1))\n",
                 "gee:units": "tons/acre",
-                "name": "CARBON_D"
+                "name": "CARBON_D",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Carbon, Down Dead. Carbon (tons per acre) of woody material >3 inches in\ndiameter on the ground, and stumps and their roots >3 inches in diameter.\nEstimated from models based on geographic area, forest type, and live tree\ncarbon density (Smith and Heath 2008).\n",
                 "gee:units": "tons/acre",
-                "name": "CARBON_DWN"
+                "name": "CARBON_DWN",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Carbon, Live Above Ground. Calculated via the following FIA query:\nSum (DRYBIO_BOLE, DRYBIO_TOP, DRYBIO_STUMP, DRYBIO_SAPLING, DRYBIO_WDLD_SPP)\n/ 2 /2000*TPA_UNADJ WHERE (((COND.COND_STATUS_CD)=1) AND ((TREE.STATUSCD)=1))\n",
                 "gee:units": "tons/acre",
-                "name": "CARBON_L"
+                "name": "CARBON_L",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Dry Standing Dead Tree Biomass, Above Ground. Calculated via the following FIA\nquery: Sum (DRYBIO_BOLE, DRYBIO_TOP, DRYBIO_STUMP, DRYBIO_SAPLING,\nDRYBIO_WDLD_SPP) /2000*TPA_UNADJ WHERE (((COND.COND_STATUS_CD)=1) AND\n((TREE.STATUSCD)=2) AND ((TREE.DIA)>=5) AND ((TREE.STANDING_DEAD_CD)=1))\n",
                 "gee:units": "tons/acre",
-                "name": "DRYBIO_D"
+                "name": "DRYBIO_D",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Dry Live Tree Biomass, Above Ground. Calculated via the following FIA query:\nSum (DRYBIO_BOLE, DRYBIO_TOP, DRYBIO_STUMP, DRYBIO_SAPLING, DRYBIO_WDLD_SPP)\n/2000*TPA_UNADJ WHERE (((COND.COND_STATUS_CD)=1) AND ((TREE.STATUSCD)=1))\n",
                 "gee:units": "tons/acre",
-                "name": "DRYBIO_L"
+                "name": "DRYBIO_L",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Field Stand-Size Class Code - Field-assigned classification of the predominant\n(based on stocking) diameter class of live trees within the condition.\n",
@@ -220,7 +244,10 @@
                         "value": 5
                     }
                 ],
-                "name": "FLDSZCD"
+                "name": "FLDSZCD",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Field Forest Type Code - A code indicating the forest type, assigned by the\nfield crew, based on the tree species or species groups forming a plurality of\nall live stocking. The field crew assesses the forest type based on the acre\nof forest land around the plot, in addition to the species sampled on the\ncondition.\n",
@@ -926,7 +953,10 @@
                         "value": 995
                     }
                 ],
-                "name": "FLDTYPCD"
+                "name": "FLDTYPCD",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Algorithm Forest Type Code - This is the forest type used for reporting\npurposes. It is primarily derived using a computer algorithm, except when less\nthan 25 percent of the plot samples a particular forest condition or in a few\nother cases.\n",
@@ -1642,27 +1672,42 @@
                         "value": 999
                     }
                 ],
-                "name": "FORTYPCD"
+                "name": "FORTYPCD",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Growing-Stock Stocking. The sum of stocking percent values of all growing-stock\ntrees on the condition.\n",
                 "gee:units": "%",
-                "name": "GSSTK"
+                "name": "GSSTK",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Stand Quadratic Mean Diameter. The quadratic mean diameter, or the diameter of\nthe tree of average basal area, on the condition. Based on live trees\n\u22651.0 inch d.b.h./d.r.c.\n",
                 "gee:units": "in",
-                "name": "QMD"
+                "name": "QMD",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Sum of Stand Density Index. Stand density index (SDI). A relative measure of\nstand density for live trees (greater than or equal to 1.0 inch d.b.h./d.r.c.)\non the condition, expressed as a sum of the maximum stand density index (SDI).\n",
                 "gee:units": "Dimensionless",
-                "name": "SDIsum"
+                "name": "SDIsum",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Height of dominant trees. Derived from the Forest Vegetation Simulator.\n",
                 "gee:units": "ft",
-                "name": "STANDHT"
+                "name": "STANDHT",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Algorithm Stand-Size Class Code - A classification of the predominant (based on\nstocking) diameter class of live trees within the condition assigned using an\nalgorithm.\n",
@@ -1688,37 +1733,58 @@
                         "value": 5
                     }
                 ],
-                "name": "STDSZCD"
+                "name": "STDSZCD",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Dead Trees Per Acre. Number of dead standing trees per acre (DIA >= 5\u201d).\nCalculated via the following FIA query: Sum TREE.TPA_UNADJ WHERE\n(((COND.COND_STATUS_CD)=1) AND ((TREE.STATUSCD)=2) AND ((TREE.DIA)>=5)\nAND ((TREE.STANDING_DEAD_CD)=1))\n",
                 "gee:units": "count/acre",
-                "name": "TPA_DEAD"
+                "name": "TPA_DEAD",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Live Trees Per Acre. Number of live trees per acre (DIA > 1\"). Calculated via\nthe following FIA query: Sum TREE.TPA_UNADJ WHERE (((COND.COND_STATUS_CD)=1)\nAND ((TREE.STATUSCD)=1) AND ((TREE.DIA)>=1))\n",
                 "gee:units": "count/acre",
-                "name": "TPA_LIVE"
+                "name": "TPA_LIVE",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Raw TreeMap identifier dataset values. This dataset is useful to see spatial\ngroupings of individual modeled plot values.\n",
                 "gee:units": "Dimensionless",
-                "name": "TM_ID"
+                "name": "TM_ID",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Volume, Live (log rule: Int\u2019l \u00bc inch). Calculated via the following FIA query:\nSum VOLBFNET * TPA_UNADJ WHERE (((TREE.TREECLCD)=2) AND\n((COND.COND_STATUS_CD)=1) AND ((TREE.STATUSCD)=1))\n",
                 "gee:units": "sawlog-board-ft/acre",
-                "name": "VOLBFNET_L"
+                "name": "VOLBFNET_L",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Volume, Standing Dead. Calculated via the following FIA query:\nSum VOLCFNET*TPA_UNADJ WHERE (((COND.COND_STATUS_CD)=1) AND ((TREE.STATUSCD)=2)\nAND ((TREE.DIA)>=5) AND ((TREE.STANDING_DEAD_CD)=1))\n",
                 "gee:units": "ft^3/acre",
-                "name": "VOLCFNET_D"
+                "name": "VOLCFNET_D",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Volume, Live. Calculated via the following FIA query:\nSum VOLCFNET*TPA_UNADJ WHERE (((COND.COND_STATUS_CD)=1) AND ((TREE.STATUSCD)=1))\n",
                 "gee:units": "ft^3/acre",
-                "name": "VOLCFNET_L"
+                "name": "VOLCFNET_L",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:schema": [

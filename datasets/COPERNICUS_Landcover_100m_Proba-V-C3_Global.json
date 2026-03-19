@@ -279,12 +279,18 @@
                         "value": 200
                     }
                 ],
-                "name": "discrete_classification"
+                "name": "discrete_classification",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Quality indicator (classification probability) of the discrete classification",
                 "gee:units": "%",
-                "name": "discrete_classification-proba"
+                "name": "discrete_classification-proba",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Forest type for all pixels with tree percentage vegetation cover bigger than 1 %",
@@ -320,65 +326,104 @@
                         "value": 5
                     }
                 ],
-                "name": "forest_type"
+                "name": "forest_type",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Percent vegetation cover for bare-sparse-vegetation land cover class",
                 "gee:units": "%",
-                "name": "bare-coverfraction"
+                "name": "bare-coverfraction",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Percent vegetation cover for cropland land cover class",
                 "gee:units": "%",
-                "name": "crops-coverfraction"
+                "name": "crops-coverfraction",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Percent vegetation cover for herbaceous vegetation land cover class",
                 "gee:units": "%",
-                "name": "grass-coverfraction"
+                "name": "grass-coverfraction",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Percent vegetation cover for moss and lichen land cover class",
                 "gee:units": "%",
-                "name": "moss-coverfraction"
+                "name": "moss-coverfraction",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Percent vegetation cover for shrubland land cover class",
                 "gee:units": "%",
-                "name": "shrub-coverfraction"
+                "name": "shrub-coverfraction",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Percent vegetation cover for forest land cover class",
                 "gee:units": "%",
-                "name": "tree-coverfraction"
+                "name": "tree-coverfraction",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Percent ground cover for snow and ice land cover class",
                 "gee:units": "%",
-                "name": "snow-coverfraction"
+                "name": "snow-coverfraction",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Percent ground cover for built-up land cover class",
                 "gee:units": "%",
-                "name": "urban-coverfraction"
+                "name": "urban-coverfraction",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Percent ground cover for permanent water land cover class",
                 "gee:units": "%",
-                "name": "water-permanent-coverfraction"
+                "name": "water-permanent-coverfraction",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Percent ground cover for seasonal water land cover class",
                 "gee:units": "%",
-                "name": "water-seasonal-coverfraction"
+                "name": "water-seasonal-coverfraction",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Data density indicator for algorithm input data",
-                "name": "data-density-indicator"
+                "name": "data-density-indicator",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "This layer is only provided for years after the BaseYear 2015.\n\n* 0 - No change. No change in discrete class between year and previous year\n  detected.\n* 1 - Potential change. BFASTmon detected break in second half of NRT year -\n  potential change.\n* 2 - Medium confidence. Imprint of urban, permanent water, snow or wetland\n  OR change detected by BFAST but HMM model didn't confirm this break\n  in higher resolution OR change detected by BFASTmon in the first half\n  of NRT year.\n* 3 - High confidence. BFAST detected a change and HMM confirmed\n  this change in higher resolution.\n",
-                "name": "change-confidence"
+                "name": "change-confidence",
+                "gsd": [
+                    100
+                ]
             }
         ],
         "gee:schema": [

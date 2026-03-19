@@ -70,7 +70,7 @@
             "interval": [
                 [
                     "2004-01-01T00:00:00Z",
-                    "2026-03-18T00:30:00Z"
+                    "2026-03-19T00:30:00Z"
                 ]
             ]
         }
@@ -106,7 +106,10 @@
             {
                 "description": "Precipitation estimate",
                 "gee:units": "mm/hr",
-                "name": "precipitation"
+                "name": "precipitation",
+                "gsd": [
+                    5000
+                ]
             }
         ],
         "gee:schema": [

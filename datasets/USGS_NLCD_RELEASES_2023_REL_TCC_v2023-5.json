@@ -167,17 +167,26 @@
             {
                 "description": "The raw direct model outputs. Each pixel has a mean predicted tree canopy \ncover value for each year.\n",
                 "gee:units": "%",
-                "name": "Science_Percent_Tree_Canopy_Cover"
+                "name": "Science_Percent_Tree_Canopy_Cover",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "The standard deviation of the predicted values from all regression trees we refer \nto as standard error. Each pixel has a standard error for each year.\n",
                 "gee:units": "%",
-                "name": "Science_Percent_Tree_Canopy_Cover_Standard_Error"
+                "name": "Science_Percent_Tree_Canopy_Cover_Standard_Error",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "To produce NLCD tree canopy cover, a post-processing workflow is applied to the direct \nmodel output that identifies and sets non-treed pixel values to zero percent \ntree canopy cover. \n",
                 "gee:units": "%",
-                "name": "NLCD_Percent_Tree_Canopy_Cover"
+                "name": "NLCD_Percent_Tree_Canopy_Cover",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Three values representing areas of no data, mapped tree canopy cover, and non-processing area. \nThe non-processing area is where pixels within the study area have no cloud or cloud shadow-free \ndata available to produce an output.\n",
@@ -205,7 +214,10 @@
                     ],
                     "total_bit_count": 2
                 },
-                "name": "data_mask"
+                "name": "data_mask",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:schema": [

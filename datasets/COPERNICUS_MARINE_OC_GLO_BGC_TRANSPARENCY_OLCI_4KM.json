@@ -104,16 +104,25 @@
             {
                 "description": "Diffuse attenuation coefficient at 490 nm",
                 "gee:units": "1/m",
-                "name": "KD490"
+                "name": "KD490",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Diffuse attenuation coefficient at 490 nm - The uncertainty as\nmeasured in hundredths of a percent (e.g., a value of 5000 means 50%).\n",
                 "gee:units": "%",
-                "name": "KD490_uncertainty"
+                "name": "KD490_uncertainty",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Land water mask bit.\n\n  * 0: Water\n  * 1: Land\n",
-                "name": "flags"
+                "name": "flags",
+                "gsd": [
+                    4000
+                ]
             }
         ],
         "gee:visualizations": [

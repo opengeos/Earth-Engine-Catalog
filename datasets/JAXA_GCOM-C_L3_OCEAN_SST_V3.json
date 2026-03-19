@@ -78,7 +78,7 @@
             "interval": [
                 [
                     "2018-01-22T00:00:00Z",
-                    "2026-03-15T00:00:00Z"
+                    "2026-03-16T00:00:00Z"
                 ]
             ]
         }
@@ -117,7 +117,10 @@
             {
                 "description": "Temperature of sea surface.",
                 "gee:units": "&deg;C",
-                "name": "SST_AVE"
+                "name": "SST_AVE",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "SST QA",
@@ -172,7 +175,10 @@
                     ],
                     "total_bit_count": 4
                 },
-                "name": "SST_QA_flag"
+                "name": "SST_QA_flag",
+                "gsd": [
+                    4638.3
+                ]
             }
         ],
         "gee:schema": [

@@ -108,22 +108,34 @@
             {
                 "description": "Stone content, predicted mean at 0-20 cm depth",
                 "gee:units": "%",
-                "name": "mean_0_20"
+                "name": "mean_0_20",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Stone content, predicted mean at 20-50 cm depth",
                 "gee:units": "%",
-                "name": "mean_20_50"
+                "name": "mean_20_50",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Stone content, standard deviation at 0-20 cm depth",
                 "gee:units": "%",
-                "name": "stdev_0_20"
+                "name": "stdev_0_20",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Stone content, standard deviation at 20-50 cm depth",
                 "gee:units": "%",
-                "name": "stdev_20_50"
+                "name": "stdev_20_50",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

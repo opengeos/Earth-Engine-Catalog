@@ -108,22 +108,34 @@
             {
                 "description": "Carbon, total, predicted mean at 0-20 cm depth",
                 "gee:units": "g/kg",
-                "name": "mean_0_20"
+                "name": "mean_0_20",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Carbon, total, predicted mean at 20-50 cm depth",
                 "gee:units": "g/kg",
-                "name": "mean_20_50"
+                "name": "mean_20_50",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Carbon, total, standard deviation at 0-20 cm depth",
                 "gee:units": "g/kg",
-                "name": "stdev_0_20"
+                "name": "stdev_0_20",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Carbon, total, standard deviation at 20-50 cm depth",
                 "gee:units": "g/kg",
-                "name": "stdev_20_50"
+                "name": "stdev_20_50",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

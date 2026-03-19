@@ -219,12 +219,18 @@
                         "value": 95
                     }
                 ],
-                "name": "landcover"
+                "name": "landcover",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Percent of the pixel covered by developed impervious surface.\n",
                 "gee:units": "%",
-                "name": "impervious"
+                "name": "impervious",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Defines which impervious layer pixels are roads and provides the best fit description for impervious pixels that are not roads.\n",
@@ -285,7 +291,10 @@
                         "value": 29
                     }
                 ],
-                "name": "impervious_descriptor"
+                "name": "impervious_descriptor",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:schema": [

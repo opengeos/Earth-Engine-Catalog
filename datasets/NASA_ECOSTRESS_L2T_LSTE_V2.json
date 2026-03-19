@@ -117,12 +117,18 @@
             {
                 "description": "Land Surface Temperature",
                 "gee:units": "K",
-                "name": "LST"
+                "name": "LST",
+                "gsd": [
+                    70
+                ]
             },
             {
                 "description": "Land Surface Temperature error",
                 "gee:units": "K",
-                "name": "LST_err"
+                "name": "LST_err",
+                "gsd": [
+                    70
+                ]
             },
             {
                 "description": "Quality Control flags for LST and emissivity",
@@ -251,11 +257,17 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "QC"
+                "name": "QC",
+                "gsd": [
+                    70
+                ]
             },
             {
                 "description": "Wide band Emissivity",
-                "name": "EmisWB"
+                "name": "EmisWB",
+                "gsd": [
+                    70
+                ]
             },
             {
                 "description": "Cloud mask",
@@ -279,12 +291,18 @@
                     ],
                     "total_bit_count": 1
                 },
-                "name": "cloud"
+                "name": "cloud",
+                "gsd": [
+                    70
+                ]
             },
             {
                 "description": "Surface elevation of observation\"",
                 "gee:units": "m",
-                "name": "height"
+                "name": "height",
+                "gsd": [
+                    70
+                ]
             },
             {
                 "description": "Water mask",
@@ -308,12 +326,18 @@
                     ],
                     "total_bit_count": 1
                 },
-                "name": "water"
+                "name": "water",
+                "gsd": [
+                    70
+                ]
             },
             {
                 "description": "View Zenith Angle",
                 "gee:units": "deg",
-                "name": "view_zenith"
+                "name": "view_zenith",
+                "gsd": [
+                    70
+                ]
             }
         ],
         "gee:visualizations": [

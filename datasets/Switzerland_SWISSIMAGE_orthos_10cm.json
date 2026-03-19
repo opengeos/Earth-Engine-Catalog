@@ -101,19 +101,28 @@
                 "center_wavelength": 0.63,
                 "description": "Red",
                 "gee:wavelength": "619-651nm",
-                "name": "R"
+                "name": "R",
+                "gsd": [
+                    0.1
+                ]
             },
             {
                 "center_wavelength": 0.56,
                 "description": "Green",
                 "gee:wavelength": "525-585nm",
-                "name": "G"
+                "name": "G",
+                "gsd": [
+                    0.1
+                ]
             },
             {
                 "center_wavelength": 0.47,
                 "description": "Blue",
                 "gee:wavelength": "435-495nm",
-                "name": "B"
+                "name": "B",
+                "gsd": [
+                    0.1
+                ]
             }
         ],
         "gee:visualizations": [

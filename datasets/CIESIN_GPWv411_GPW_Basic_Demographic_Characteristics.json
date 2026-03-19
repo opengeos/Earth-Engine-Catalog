@@ -120,7 +120,10 @@
         "eo:bands": [
             {
                 "description": "The estimated number of persons, by age and sex, per 30 arc-second grid cell.",
-                "name": "basic_demographic_characteristics"
+                "name": "basic_demographic_characteristics",
+                "gsd": [
+                    927.67
+                ]
             }
         ],
         "gee:schema": [

@@ -119,62 +119,98 @@
             {
                 "description": "Jan Precipitation monthly",
                 "gee:units": "mm",
-                "name": "jan"
+                "name": "jan",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Feb Precipitation monthly",
                 "gee:units": "mm",
-                "name": "feb"
+                "name": "feb",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Mar Precipitation monthly",
                 "gee:units": "mm",
-                "name": "mar"
+                "name": "mar",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Apr Precipitation monthly",
                 "gee:units": "mm",
-                "name": "apr"
+                "name": "apr",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "May Precipitation monthly",
                 "gee:units": "mm",
-                "name": "may"
+                "name": "may",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Jun Precipitation monthly",
                 "gee:units": "mm",
-                "name": "jun"
+                "name": "jun",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Jul Precipitation monthly",
                 "gee:units": "mm",
-                "name": "jul"
+                "name": "jul",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Aug Precipitation monthly",
                 "gee:units": "mm",
-                "name": "aug"
+                "name": "aug",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Sep Precipitation monthly",
                 "gee:units": "mm",
-                "name": "sep"
+                "name": "sep",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Oct Precipitation monthly",
                 "gee:units": "mm",
-                "name": "oct"
+                "name": "oct",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Nov Precipitation monthly",
                 "gee:units": "mm",
-                "name": "nov"
+                "name": "nov",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Dec Precipitation monthly",
                 "gee:units": "mm",
-                "name": "dec"
+                "name": "dec",
+                "gsd": [
+                    1000
+                ]
             }
         ],
         "gee:visualizations": [

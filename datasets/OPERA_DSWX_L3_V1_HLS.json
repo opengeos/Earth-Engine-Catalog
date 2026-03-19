@@ -73,7 +73,7 @@
             "interval": [
                 [
                     "2023-04-04T04:37:01Z",
-                    "2026-03-15T23:59:41Z"
+                    "2026-03-16T23:54:50Z"
                 ]
             ]
         }
@@ -142,7 +142,10 @@
                         "value": 254
                     }
                 ],
-                "name": "WTR_Water_classification"
+                "name": "WTR_Water_classification",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "The binary water map is derived from the WTR layer as a union of\nwater classes (open water and partial surface water) into a\nbinary map indicating areas with and without water. This layer\nis meant to provide users with a quick view for water/no-water.\nInvalid data classes (snow/ice, cloud/cloud shadow along with\nadjacent to cloud/cloud shadow, ocean masked, and fill value)\nare also provided to indicate areas in which the binary\nclassification does not provide water/no-water classification.\n",
@@ -173,7 +176,10 @@
                         "value": 254
                     }
                 ],
-                "name": "BWTR_Binary_water"
+                "name": "BWTR_Binary_water",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "A representation of the confidence associated with the WTR\nclassification that is based on a combination of DIAG results\nand quality assurance information provided with the input HLS\ndata. For example, the Open water class of the WTR layer is\nsplit into two classes: High Confidence and Moderate Confidence\nwhile WTR Partial surface water class pixels of WTR are flagged\nas either partial surface water conservative or partial surface\nwater aggressive, with the latter exhibiting less certainty.\nAs in the WTR and BWTR layers, pixels for which water\nretrievals are difficult or impossible due to snow/ice,\ncloud/shadow, or fill values are also noted in the CONF layer.\n",
@@ -259,11 +265,17 @@
                         "value": 254
                     }
                 ],
-                "name": "CONF_Confidence"
+                "name": "CONF_Confidence",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "A layer coded to indicate which of five initial DSWx-HLS tests\nwere positive for water detection on a per-pixel basis. Values\nrange from 0 (i.e, 00000), indicating that none of the five\nDSWx-HLS tests returned a positive result, to 11111, denoting\nthat all tests resulted positive. The tests are described in\n[DSWX-HLS ATBD](https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/web-misc/opera/atbd/DSWx-HLS_ATBD_V1_4_DAAC_Distribution.pdf)\nand [Jones, John W. 2019](https://doi.org/10.3390/rs11040374)\nare used to derive the confidence layer above. The\ncombination of positive tests for a particular class determines\nits confidence value. The Fill value (no data) is represented\nby the number 65535.\n",
-                "name": "DIAG_diagnostic"
+                "name": "DIAG_diagnostic",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Classification of the DIAG layer results in open water, partial\nsurface water, and no-water. This layer is further refined\nthrough the application of masks resulting in Layers 6 (WTR-2)\nand 1 (WTR).\n",
@@ -289,7 +301,10 @@
                         "value": 254
                     }
                 ],
-                "name": "WTR1_Interpretation_of_diagnostic_layer_into_water_classes"
+                "name": "WTR1_Interpretation_of_diagnostic_layer_into_water_classes",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "The WTR-2 layer is derived from the WTR-1 (Layer 5) outcome by\napplying additional tests based on land cover and terrain shadow\ninformation, and aerosol overcorrection mitigation, as described\nin [DSWX-HLS ATBD](https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/web-misc/opera/atbd/DSWx-HLS_ATBD_V1_4_DAAC_Distribution.pdf)\nand [Jones, John W. 2019](https://doi.org/10.3390/rs11040374)\nto mask (eliminate) false-positive water detections.\n",
@@ -315,7 +330,10 @@
                         "value": 254
                     }
                 ],
-                "name": "WTR2_Refined_WTR1_given_HLS_FMASK"
+                "name": "WTR2_Refined_WTR1_given_HLS_FMASK",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Land cover thematic layer used to determine where additional\ntesting is performed to potentially mask WTR-1 layer water\ndetections to produce the intermediate WTR-2 layer.\n",
@@ -341,7 +359,10 @@
                         "value": 201
                     }
                 ],
-                "name": "LAND_land_cover_classification"
+                "name": "LAND_land_cover_classification",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Mask used to eliminate likely locations of terrain-induced shadow\nbased on a classification of shadow areas generated for the capture\ndate/time of the input HLS image from Digital Elevation Model\ndata. This is used in the creation of the intermediate layer\nWTR-2.\n",
@@ -357,7 +378,10 @@
                         "value": 1
                     }
                 ],
-                "name": "SHAD_terrain_shadow"
+                "name": "SHAD_terrain_shadow",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Cloud, cloud-shadow, and snow/ice classification layer from HLS input.\n",
@@ -443,7 +467,10 @@
                         "value": 15
                     }
                 ],
-                "name": "HLS_CLOUD_SNOW_FMASK_classification"
+                "name": "HLS_CLOUD_SNOW_FMASK_classification",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:schema": [

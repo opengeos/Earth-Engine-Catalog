@@ -130,21 +130,30 @@
                 "description": "Bidirectional surface reflectance",
                 "gee:scale": 0.0001,
                 "gee:wavelength": "640nm",
-                "name": "SREFL_CH1"
+                "name": "SREFL_CH1",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "center_wavelength": 0.86,
                 "description": "Bidirectional surface reflectance",
                 "gee:scale": 0.0001,
                 "gee:wavelength": "860nm",
-                "name": "SREFL_CH2"
+                "name": "SREFL_CH2",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "center_wavelength": 3.75,
                 "description": "Bidirectional surface reflectance",
                 "gee:scale": 0.0001,
                 "gee:wavelength": "3.75&micro;m",
-                "name": "SREFL_CH3"
+                "name": "SREFL_CH3",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "center_wavelength": 3.75,
@@ -152,7 +161,10 @@
                 "gee:scale": 0.1,
                 "gee:units": "K",
                 "gee:wavelength": "3.75&micro;m",
-                "name": "BT_CH3"
+                "name": "BT_CH3",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "center_wavelength": 11,
@@ -160,7 +172,10 @@
                 "gee:scale": 0.1,
                 "gee:units": "K",
                 "gee:wavelength": "11.0&micro;m",
-                "name": "BT_CH4"
+                "name": "BT_CH4",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "center_wavelength": 12,
@@ -168,31 +183,46 @@
                 "gee:scale": 0.1,
                 "gee:units": "K",
                 "gee:wavelength": "12.0&micro;m",
-                "name": "BT_CH5"
+                "name": "BT_CH5",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "description": "Hours since start of day",
                 "gee:scale": 0.01,
                 "gee:units": "h",
-                "name": "TIMEOFDAY"
+                "name": "TIMEOFDAY",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "description": "Relative sensor azimuth angle",
                 "gee:scale": 0.01,
                 "gee:units": "deg",
-                "name": "RELAZ"
+                "name": "RELAZ",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "description": "Solar zenith angle",
                 "gee:scale": 0.01,
                 "gee:units": "deg",
-                "name": "SZEN"
+                "name": "SZEN",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "description": "View zenith angle, scale 0.01",
                 "gee:scale": 0.01,
                 "gee:units": "deg",
-                "name": "VZEN"
+                "name": "VZEN",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "description": "Quality control bit flags",
@@ -441,7 +471,10 @@
                     ],
                     "total_bit_count": 16
                 },
-                "name": "QA"
+                "name": "QA",
+                "gsd": [
+                    5566
+                ]
             }
         ],
         "gee:schema": [

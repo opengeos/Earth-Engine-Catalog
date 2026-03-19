@@ -124,7 +124,10 @@
         "eo:bands": [
             {
                 "description": "Estimated number of people residing in each grid cell",
-                "name": "population"
+                "name": "population",
+                "gsd": [
+                    92.77
+                ]
             }
         ],
         "gee:schema": [

@@ -149,7 +149,7 @@
             "interval": [
                 [
                     "2015-07-01T00:00:00Z",
-                    "2026-03-17T18:00:00Z"
+                    "2026-03-18T18:00:00Z"
                 ]
             ]
         }
@@ -195,111 +195,177 @@
             {
                 "description": "Temperature 2m above ground",
                 "gee:units": "&deg;C",
-                "name": "temperature_2m_above_ground"
+                "name": "temperature_2m_above_ground",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Specific humidity 2m above ground",
                 "gee:units": "Mass fraction",
-                "name": "specific_humidity_2m_above_ground"
+                "name": "specific_humidity_2m_above_ground",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Dew point temperature 2m above ground (available starting from 2025/01/15)",
                 "gee:units": "&deg;C",
-                "name": "dew_point_temperature_2m_above_ground"
+                "name": "dew_point_temperature_2m_above_ground",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Relative humidity 2m above ground",
                 "gee:units": "%",
-                "name": "relative_humidity_2m_above_ground"
+                "name": "relative_humidity_2m_above_ground",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Maximum temperature 2m above ground (available starting from 2025/01/15, but only for assets with forecast_hours > 0)",
                 "gee:units": "&deg;C",
-                "name": "maximum_temperature_2m_above_ground"
+                "name": "maximum_temperature_2m_above_ground",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Minimum temperature 2m above ground (available starting from 2025/01/15, but only for assets with forecast_hours > 0)",
                 "gee:units": "&deg;C",
-                "name": "minimum_temperature_2m_above_ground"
+                "name": "minimum_temperature_2m_above_ground",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "U component of wind 10m above ground",
                 "gee:units": "m/s",
-                "name": "u_component_of_wind_10m_above_ground"
+                "name": "u_component_of_wind_10m_above_ground",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "V component of wind 10m above ground",
                 "gee:units": "m/s",
-                "name": "v_component_of_wind_10m_above_ground"
+                "name": "v_component_of_wind_10m_above_ground",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Cumulative precipitation at surface for the previous 1-6 hours,\ndepending on the value of the \"forecast_hours\" property according to\nthe formula ((F - 1) % 6) + 1 (and only for assets with\nforecast_hours > 0).\n\nAs a consequence, to calculate the total precipitation by hour X,\ndouble-counting should be avoided by only summing the values for\nforecast_hours that are multiples of 6 plus any remainder to reach\nX. It also means that to determine the precipitation for just hour\nX, one must subtract the value for the preceding hour unless X is the\nfirst hour in a 6-hour window.\n",
                 "gee:units": "kg/m^2",
-                "name": "total_precipitation_surface"
+                "name": "total_precipitation_surface",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Precipitable water for entire atmosphere",
                 "gee:units": "kg/m^2",
-                "name": "precipitable_water_entire_atmosphere"
+                "name": "precipitable_water_entire_atmosphere",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "U component of wind planetary boundary layer (available starting from 2025/01/15)",
                 "gee:units": "m/s",
-                "name": "u_component_of_wind_planetary_boundary_layer"
+                "name": "u_component_of_wind_planetary_boundary_layer",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "V component of wind planetary boundary layer (available starting from 2025/01/15)",
                 "gee:units": "m/s",
-                "name": "v_component_of_wind_planetary_boundary_layer"
+                "name": "v_component_of_wind_planetary_boundary_layer",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Wind Speed (Gust) (available starting from 2025/01/15)",
                 "gee:units": "m/s",
-                "name": "gust"
+                "name": "gust",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Precipitation Rate (available starting from 2025/01/15)",
                 "gee:units": "kg/m^2/s",
-                "name": "precipitation_rate"
+                "name": "precipitation_rate",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Haines Index (available starting from 2025/01/15)",
-                "name": "haines_index"
+                "name": "haines_index",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Ventilation Rate (available starting from 2025/01/15)",
                 "gee:units": "m^2/s",
-                "name": "ventilation_rate"
+                "name": "ventilation_rate",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Total cloud cover for entire atmosphere (previously only for assets with forecast_hours > 0, but available for those with forecast_hours == 0 starting from 2025/01/15)",
                 "gee:units": "%",
-                "name": "total_cloud_cover_entire_atmosphere"
+                "name": "total_cloud_cover_entire_atmosphere",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Downward shortwave radiation flux (only for assets with forecast_hours > 0)",
                 "gee:units": "W/m^2",
-                "name": "downward_shortwave_radiation_flux"
+                "name": "downward_shortwave_radiation_flux",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Downward longwave radiation flux (available starting from 2025/01/15, but only for assets with forecast_hours > 0)",
                 "gee:units": "W/m^2",
-                "name": "downward_longwave_radiation_flux"
+                "name": "downward_longwave_radiation_flux",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Upward shortwave radiation flux (available starting from 2025/01/15, but only for assets with forecast_hours > 0)",
                 "gee:units": "W/m^2",
-                "name": "upward_shortwave_radiation_flux"
+                "name": "upward_shortwave_radiation_flux",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Upward longwave radiation flux (available starting from 2025/01/15, but only for assets with forecast_hours > 0)",
                 "gee:units": "W/m^2",
-                "name": "upward_longwave_radiation_flux"
+                "name": "upward_longwave_radiation_flux",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Planetary boundary layer height (available starting from 2025/01/15)",
                 "gee:units": "m",
-                "name": "planetary_boundary_layer_height"
+                "name": "planetary_boundary_layer_height",
+                "gsd": [
+                    27830
+                ]
             }
         ],
         "gee:schema": [

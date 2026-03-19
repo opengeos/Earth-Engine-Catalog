@@ -111,7 +111,10 @@
             {
                 "description": "Precipitation",
                 "gee:units": "mm/pentad",
-                "name": "precipitation"
+                "name": "precipitation",
+                "gsd": [
+                    5566
+                ]
             }
         ],
         "gee:schema": [

@@ -128,12 +128,18 @@
             {
                 "description": "Leaf area index",
                 "gee:scale": 0.001,
-                "name": "LAI"
+                "name": "LAI",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "description": "Fraction of absorbed photosynthetic active radiation",
                 "gee:scale": 0.001,
-                "name": "FAPAR"
+                "name": "FAPAR",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "description": "Quality control bit flags",
@@ -226,7 +232,10 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "QA"
+                "name": "QA",
+                "gsd": [
+                    5566
+                ]
             }
         ],
         "gee:schema": [

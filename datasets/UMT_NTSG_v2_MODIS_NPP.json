@@ -117,12 +117,18 @@
                 "description": "Annual net primary productivity",
                 "gee:scale": 0.0001,
                 "gee:units": "kg*C/m^2",
-                "name": "annualNPP"
+                "name": "annualNPP",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Percentage of gap-filled NDVI values.",
                 "gee:units": "%",
-                "name": "QC"
+                "name": "QC",
+                "gsd": [
+                    250
+                ]
             }
         ],
         "gee:visualizations": [

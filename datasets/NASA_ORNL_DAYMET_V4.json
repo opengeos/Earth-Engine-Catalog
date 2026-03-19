@@ -144,37 +144,58 @@
             {
                 "description": "Duration of the daylight period. Based on the period\nof the day during which the sun is above a hypothetical flat horizon.\n",
                 "gee:units": "seconds",
-                "name": "dayl"
+                "name": "dayl",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Daily total precipitation, sum of all forms converted to\nwater-equivalent.",
                 "gee:units": "mm",
-                "name": "prcp"
+                "name": "prcp",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Incident shortwave radiation flux density, taken as an average\nover the daylight period of the day.",
                 "gee:units": "W/m^2",
-                "name": "srad"
+                "name": "srad",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Snow water equivalent, the amount of water contained within\nthe snowpack.",
                 "gee:units": "kg/m^2",
-                "name": "swe"
+                "name": "swe",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Daily maximum 2-meter air temperature.",
                 "gee:units": "&deg;C",
-                "name": "tmax"
+                "name": "tmax",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Daily minimum 2-meter air temperature.",
                 "gee:units": "&deg;C",
-                "name": "tmin"
+                "name": "tmin",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Daily average partial pressure of water vapor.",
                 "gee:units": "Pa",
-                "name": "vp"
+                "name": "vp",
+                "gsd": [
+                    1000
+                ]
             }
         ],
         "gee:visualizations": [

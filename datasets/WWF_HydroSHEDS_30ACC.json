@@ -106,7 +106,10 @@
         "eo:bands": [
             {
                 "description": "Flow accumulation",
-                "name": "b1"
+                "name": "b1",
+                "gsd": [
+                    927.67
+                ]
             }
         ],
         "gee:visualizations": [

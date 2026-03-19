@@ -124,54 +124,78 @@
             {
                 "description": "Chlorophyll a concentration",
                 "gee:units": "mg/m^3",
-                "name": "chlor_a"
+                "name": "chlor_a",
+                "gsd": [
+                    9200
+                ]
             },
             {
                 "description": "Particulate organic carbon",
                 "gee:units": "mg/m^3",
-                "name": "poc"
+                "name": "poc",
+                "gsd": [
+                    9200
+                ]
             },
             {
                 "center_wavelength": 0.412,
                 "description": "Remote sensing reflectance at band 412nm",
                 "gee:units": "sr-1",
                 "gee:wavelength": "412nm",
-                "name": "Rrs_412"
+                "name": "Rrs_412",
+                "gsd": [
+                    9200
+                ]
             },
             {
                 "center_wavelength": 0.443,
                 "description": "Remote sensing reflectance at band 443nm",
                 "gee:units": "sr-1",
                 "gee:wavelength": "443nm",
-                "name": "Rrs_443"
+                "name": "Rrs_443",
+                "gsd": [
+                    9200
+                ]
             },
             {
                 "center_wavelength": 0.49,
                 "description": "Remote sensing reflectance at band 469nm",
                 "gee:units": "sr-1",
                 "gee:wavelength": "490nm",
-                "name": "Rrs_490"
+                "name": "Rrs_490",
+                "gsd": [
+                    9200
+                ]
             },
             {
                 "center_wavelength": 0.51,
                 "description": "Remote sensing reflectance at band 488nm",
                 "gee:units": "sr-1",
                 "gee:wavelength": "510nm",
-                "name": "Rrs_510"
+                "name": "Rrs_510",
+                "gsd": [
+                    9200
+                ]
             },
             {
                 "center_wavelength": 0.555,
                 "description": "Remote sensing reflectance at band 555nm",
                 "gee:units": "sr-1",
                 "gee:wavelength": "555nm",
-                "name": "Rrs_555"
+                "name": "Rrs_555",
+                "gsd": [
+                    9200
+                ]
             },
             {
                 "center_wavelength": 0.67,
                 "description": "Remote sensing reflectance at band 531nm",
                 "gee:units": "sr-1",
                 "gee:wavelength": "670nm",
-                "name": "Rrs_670"
+                "name": "Rrs_670",
+                "gsd": [
+                    9200
+                ]
             }
         ],
         "gee:schema": [

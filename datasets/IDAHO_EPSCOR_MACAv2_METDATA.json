@@ -109,47 +109,74 @@
             {
                 "description": "Maximum daily temperature near surface",
                 "gee:units": "K",
-                "name": "tasmax"
+                "name": "tasmax",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Minimum daily temperature near surface",
                 "gee:units": "K",
-                "name": "tasmin"
+                "name": "tasmin",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Maximum daily relative humidity near surface, not present in models CCSM4 or NorESM1-M",
                 "gee:units": "%",
-                "name": "rhsmax"
+                "name": "rhsmax",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Minimum daily relative humidity near surface, not present in models CCSM4 or NorESM1-M",
                 "gee:units": "%",
-                "name": "rhsmin"
+                "name": "rhsmin",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Average daily specific humidity near surface",
                 "gee:units": "Mass fraction",
-                "name": "huss"
+                "name": "huss",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Average daily precipitation amount at surface",
                 "gee:units": "mm",
-                "name": "pr"
+                "name": "pr",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Average daily downward shortwave radiation at surface",
                 "gee:units": "W/m^2",
-                "name": "rsds"
+                "name": "rsds",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Average daily eastward component of wind near surface",
                 "gee:units": "m/s",
-                "name": "uas"
+                "name": "uas",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Average daily northward component of wind near surface",
                 "gee:units": "m/s",
-                "name": "vas"
+                "name": "vas",
+                "gsd": [
+                    4638.3
+                ]
             }
         ],
         "gee:schema": [

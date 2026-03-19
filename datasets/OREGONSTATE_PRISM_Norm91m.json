@@ -136,57 +136,90 @@
             {
                 "description": "30-year average of monthly total precipitation (including rain and melted snow)",
                 "gee:units": "mm",
-                "name": "ppt"
+                "name": "ppt",
+                "gsd": [
+                    928
+                ]
             },
             {
                 "description": "30-year average of monthly mean temperature (calculated as (tmin+tmax)/2)",
                 "gee:units": "&deg;C",
-                "name": "tmean"
+                "name": "tmean",
+                "gsd": [
+                    928
+                ]
             },
             {
                 "description": "30-year average of monthly minimum temperature",
                 "gee:units": "&deg;C",
-                "name": "tmin"
+                "name": "tmin",
+                "gsd": [
+                    928
+                ]
             },
             {
                 "description": "30-year average of monthly maximum temperature",
                 "gee:units": "&deg;C",
-                "name": "tmax"
+                "name": "tmax",
+                "gsd": [
+                    928
+                ]
             },
             {
                 "description": "30-year average of monthly mean dew point temperature",
                 "gee:units": "&deg;C",
-                "name": "tdmean"
+                "name": "tdmean",
+                "gsd": [
+                    928
+                ]
             },
             {
                 "description": "30-year average of monthly minimum vapor pressure deficit",
                 "gee:units": "hPa",
-                "name": "vpdmin"
+                "name": "vpdmin",
+                "gsd": [
+                    928
+                ]
             },
             {
                 "description": "30-year average of monthly maximum vapor pressure deficit",
                 "gee:units": "hPa",
-                "name": "vpdmax"
+                "name": "vpdmax",
+                "gsd": [
+                    928
+                ]
             },
             {
                 "description": "30-year average of monthly global shortwave solar radiation\nreceived on a horizontal surface under clear sky conditions\n",
                 "gee:units": "MJ m^-2 day^-1",
-                "name": "solclear"
+                "name": "solclear",
+                "gsd": [
+                    928
+                ]
             },
             {
                 "description": "30-year average of monthly global shortwave solar radiation\nreceived on a sloped surface\n",
                 "gee:units": "MJ m^-2 day^-1",
-                "name": "solslope"
+                "name": "solslope",
+                "gsd": [
+                    928
+                ]
             },
             {
                 "description": "30-year average of monthly global shortwave solar\nradiation received on a horizontal surface\n",
                 "gee:units": "MJ m^-2 day^-1",
-                "name": "soltotal"
+                "name": "soltotal",
+                "gsd": [
+                    928
+                ]
             },
             {
                 "description": "30-year average of atmospheric transmittance (cloudiness)",
                 "gee:units": "Fraction",
-                "name": "soltrans"
+                "name": "soltrans",
+                "gsd": [
+                    928
+                ]
             }
         ],
         "gee:schema": [

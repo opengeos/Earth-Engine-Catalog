@@ -117,37 +117,58 @@
             {
                 "description": "Standard Deviation",
                 "gee:units": "m",
-                "name": "std"
+                "name": "std",
+                "gsd": [
+                    231.92
+                ]
             },
             {
                 "description": "Minimum",
                 "gee:units": "m",
-                "name": "min"
+                "name": "min",
+                "gsd": [
+                    231.92
+                ]
             },
             {
                 "description": "Median",
                 "gee:units": "m",
-                "name": "med"
+                "name": "med",
+                "gsd": [
+                    231.92
+                ]
             },
             {
                 "description": "Mean",
                 "gee:units": "m",
-                "name": "mea"
+                "name": "mea",
+                "gsd": [
+                    231.92
+                ]
             },
             {
                 "description": "Maximum",
                 "gee:units": "m",
-                "name": "max"
+                "name": "max",
+                "gsd": [
+                    231.92
+                ]
             },
             {
                 "description": "Sample",
                 "gee:units": "m",
-                "name": "dsc"
+                "name": "dsc",
+                "gsd": [
+                    231.92
+                ]
             },
             {
                 "description": "Breakline emphasis maintains the critical topographic features\n(streams or ridges) within the landscape by maintaining any minimum\nelevation or maximum elevation value on a breakline that passes within\nthe specified analysis window.\n",
                 "gee:units": "m",
-                "name": "be75"
+                "name": "be75",
+                "gsd": [
+                    231.92
+                ]
             }
         ],
         "gee:visualizations": [

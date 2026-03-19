@@ -100,37 +100,55 @@
                 "center_wavelength": 0.485,
                 "description": "Blue",
                 "gee:wavelength": "0.45 - 0.52 &mu;m",
-                "name": "10"
+                "name": "10",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "center_wavelength": 0.56,
                 "description": "Green",
                 "gee:wavelength": "0.52 - 0.60 &mu;m",
-                "name": "20"
+                "name": "20",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "center_wavelength": 0.66,
                 "description": "Red",
                 "gee:wavelength": "0.63 - 0.69 &mu;m",
-                "name": "30"
+                "name": "30",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "center_wavelength": 0.835,
                 "description": "Near infrared",
                 "gee:wavelength": "0.76 - 0.90 &mu;m",
-                "name": "40"
+                "name": "40",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "center_wavelength": 1.65,
                 "description": "Shortwave infrared 1",
                 "gee:wavelength": "1.55 - 1.75 &mu;m",
-                "name": "50"
+                "name": "50",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "center_wavelength": 2.215,
                 "description": "Shortwave infrared 2",
                 "gee:wavelength": "2.08 - 2.35 &mu;m",
-                "name": "70"
+                "name": "70",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

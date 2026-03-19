@@ -108,52 +108,82 @@
             {
                 "description": "Daily total precipitation.",
                 "gee:units": "mm/d",
-                "name": "CHIRPS"
+                "name": "CHIRPS",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "description": "Daily maximum Heat Index.",
                 "gee:units": "&deg;C",
-                "name": "himax"
+                "name": "himax",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "description": "Relative Humidity.",
                 "gee:units": "%",
-                "name": "RH"
+                "name": "RH",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "description": "Relative humidity at the hour of maximum temperature",
                 "gee:units": "%",
-                "name": "RHx"
+                "name": "RHx",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "description": "Relative humidity at the hour of minimum temperature.",
                 "gee:units": "%",
-                "name": "RHn"
+                "name": "RHn",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "description": "Daily maximum wet bulb globe temperature.",
                 "gee:units": "&deg;C",
-                "name": "wbgtmax"
+                "name": "wbgtmax",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "description": "Daily vapor pressure deficit.",
                 "gee:units": "kPa",
-                "name": "vpd"
+                "name": "vpd",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "description": "Daily average saturation vapor pressure.",
                 "gee:units": "kPa",
-                "name": "svp"
+                "name": "svp",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "description": "Daily maximum near-surface air temperature.",
                 "gee:units": "&deg;C",
-                "name": "Tmax"
+                "name": "Tmax",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "description": "Daily minimum near-surface air temperature.",
                 "gee:units": "&deg;C",
-                "name": "Tmin"
+                "name": "Tmin",
+                "gsd": [
+                    5566
+                ]
             }
         ],
         "gee:schema": [

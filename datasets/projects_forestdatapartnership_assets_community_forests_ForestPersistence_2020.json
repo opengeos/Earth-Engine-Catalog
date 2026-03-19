@@ -110,7 +110,10 @@
         "eo:bands": [
             {
                 "description": "A value that indicates numerical support for the pixel being occupied \nby undisturbed forest in year 2020.\n",
-                "name": "value"
+                "name": "value",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

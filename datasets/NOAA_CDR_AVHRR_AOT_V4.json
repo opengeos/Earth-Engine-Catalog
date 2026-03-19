@@ -129,7 +129,10 @@
         "eo:bands": [
             {
                 "description": "Atmosphere optical thickness; the degree to which aerosols\nprevent the transmission of light by absorption or scattering of light.\nA value of 0.01 corresponds to an extremely clean atmosphere, and a\nvalue of 0.4 would correspond to a very hazy condition. An average\naerosol optical depth for the U.S. is 0.1 to 0.15.\n",
-                "name": "aot"
+                "name": "aot",
+                "gsd": [
+                    11132
+                ]
             }
         ],
         "gee:visualizations": [

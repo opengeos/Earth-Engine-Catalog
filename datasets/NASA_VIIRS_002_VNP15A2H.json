@@ -128,7 +128,10 @@
         "eo:bands": [
             {
                 "description": "Fraction of Photosynthetically Active Radiation.\n",
-                "name": "Fpar"
+                "name": "Fpar",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Pass-through Quality Control (QC) for FPAR",
@@ -228,7 +231,10 @@
                     ],
                     "total_bit_count": 7
                 },
-                "name": "FparExtra_QC"
+                "name": "FparExtra_QC",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Quality for LAI and FPAR",
@@ -338,21 +344,33 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "FparLai_QC"
+                "name": "FparLai_QC",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Standard deviation of FPAR",
-                "name": "FparStdDev"
+                "name": "FparStdDev",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Leaf Area Index",
                 "gee:units": "Area fraction",
-                "name": "Lai"
+                "name": "Lai",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Standard deviation for LAI",
                 "gee:units": "Area fraction",
-                "name": "LaiStdDev"
+                "name": "LaiStdDev",
+                "gsd": [
+                    500
+                ]
             }
         ],
         "gee:visualizations": [

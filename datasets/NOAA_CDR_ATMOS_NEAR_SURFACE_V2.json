@@ -118,17 +118,26 @@
             {
                 "description": "Air temperature at 10m",
                 "gee:units": "&deg;C",
-                "name": "air_temperature"
+                "name": "air_temperature",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Specific humidity at 10m",
                 "gee:units": "g/kg",
-                "name": "specific_humidity"
+                "name": "specific_humidity",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Wind speed at 10m",
                 "gee:units": "m/s",
-                "name": "wind_speed"
+                "name": "wind_speed",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Quality control flags",
@@ -168,7 +177,10 @@
                     ],
                     "total_bit_count": 3
                 },
-                "name": "fill_missing_qc"
+                "name": "fill_missing_qc",
+                "gsd": [
+                    27830
+                ]
             }
         ],
         "gee:visualizations": [

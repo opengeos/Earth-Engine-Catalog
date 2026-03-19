@@ -110,7 +110,10 @@
             {
                 "description": "ALOS-derived mTPI ranging from negative (valleys) to positive (ridges) values",
                 "gee:units": "m",
-                "name": "AVE"
+                "name": "AVE",
+                "gsd": [
+                    270
+                ]
             }
         ],
         "gee:visualizations": [

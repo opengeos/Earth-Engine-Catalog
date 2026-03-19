@@ -135,11 +135,17 @@
         "eo:bands": [
             {
                 "description": "Height above sea level. Signed 16 bits.\nElevation (in meter) converted from the ellipsoidal height based on ITRF97\nand GRS80, using EGM96&#8224;1 geoid model.\n",
-                "name": "DSM"
+                "name": "DSM",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Stacking number of the scene unit DSM used in producing\nDSM. The band is derived by resampling the stacking number for\n5m resolution DSM to 30m resolution.\n",
-                "name": "STK"
+                "name": "STK",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "8-bit mask for the band.",
@@ -223,7 +229,10 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "MSK"
+                "name": "MSK",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

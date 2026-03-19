@@ -90,7 +90,7 @@
             "interval": [
                 [
                     "1979-01-01T00:00:00Z",
-                    "2026-03-17T12:00:00Z"
+                    "2026-03-18T06:00:00Z"
                 ]
             ]
         }
@@ -135,112 +135,178 @@
             {
                 "description": "Downward long-wave radiation flux at surface, 6-hour average",
                 "gee:units": "W/m^2",
-                "name": "Downward_Long-Wave_Radp_Flux_surface_6_Hour_Average"
+                "name": "Downward_Long-Wave_Radp_Flux_surface_6_Hour_Average",
+                "gsd": [
+                    22264
+                ]
             },
             {
                 "description": "Downward short-wave radiation flux at surface, 6-hour average",
                 "gee:units": "W/m^2",
-                "name": "Downward_Short-Wave_Radiation_Flux_surface_6_Hour_Average"
+                "name": "Downward_Short-Wave_Radiation_Flux_surface_6_Hour_Average",
+                "gsd": [
+                    22264
+                ]
             },
             {
                 "description": "Geopotential height at surface",
                 "gee:units": "gpm",
-                "name": "Geopotential_height_surface"
+                "name": "Geopotential_height_surface",
+                "gsd": [
+                    22264
+                ]
             },
             {
                 "description": "Latent heat net flux at surface, 6-hour average",
                 "gee:units": "W/m^2",
-                "name": "Latent_heat_net_flux_surface_6_Hour_Average"
+                "name": "Latent_heat_net_flux_surface_6_Hour_Average",
+                "gsd": [
+                    22264
+                ]
             },
             {
                 "description": "Maximum specific humidity 2m above ground, 6-hour interval",
                 "gee:units": "Mass fraction",
-                "name": "Maximum_specific_humidity_at_2m_height_above_ground_6_Hour_Interval"
+                "name": "Maximum_specific_humidity_at_2m_height_above_ground_6_Hour_Interval",
+                "gsd": [
+                    22264
+                ]
             },
             {
                 "description": "Maximum temperature 2m above ground, 6-hour interval",
                 "gee:units": "K",
-                "name": "Maximum_temperature_height_above_ground_6_Hour_Interval"
+                "name": "Maximum_temperature_height_above_ground_6_Hour_Interval",
+                "gsd": [
+                    22264
+                ]
             },
             {
                 "description": "Minimum specific humidity 2m above ground, 6-hour interval",
                 "gee:units": "Mass fraction",
-                "name": "Minimum_specific_humidity_at_2m_height_above_ground_6_Hour_Interval"
+                "name": "Minimum_specific_humidity_at_2m_height_above_ground_6_Hour_Interval",
+                "gsd": [
+                    22264
+                ]
             },
             {
                 "description": "Minimum temperature 2m above ground, 6-hour interval",
                 "gee:units": "K",
-                "name": "Minimum_temperature_height_above_ground_6_Hour_Interval"
+                "name": "Minimum_temperature_height_above_ground_6_Hour_Interval",
+                "gsd": [
+                    22264
+                ]
             },
             {
                 "description": "Potential evaporation rate at surface, 6-hour average",
                 "gee:units": "W/m^2",
-                "name": "Potential_Evaporation_Rate_surface_6_Hour_Average"
+                "name": "Potential_Evaporation_Rate_surface_6_Hour_Average",
+                "gsd": [
+                    22264
+                ]
             },
             {
                 "description": "Precipitation rate at surface, 6-hour average",
                 "gee:units": "kg/m^2/s",
-                "name": "Precipitation_rate_surface_6_Hour_Average"
+                "name": "Precipitation_rate_surface_6_Hour_Average",
+                "gsd": [
+                    22264
+                ]
             },
             {
                 "description": "Pressure at surface",
                 "gee:units": "Pa",
-                "name": "Pressure_surface"
+                "name": "Pressure_surface",
+                "gsd": [
+                    22264
+                ]
             },
             {
                 "description": "Sensible heat net flux at surface, 6-hour average",
                 "gee:units": "W/m^2",
-                "name": "Sensible_heat_net_flux_surface_6_Hour_Average"
+                "name": "Sensible_heat_net_flux_surface_6_Hour_Average",
+                "gsd": [
+                    22264
+                ]
             },
             {
                 "description": "Specific humidity 2m above ground",
                 "gee:units": "Mass fraction",
-                "name": "Specific_humidity_height_above_ground"
+                "name": "Specific_humidity_height_above_ground",
+                "gsd": [
+                    22264
+                ]
             },
             {
                 "description": "Temperature 2m above ground",
                 "gee:units": "K",
-                "name": "Temperature_height_above_ground"
+                "name": "Temperature_height_above_ground",
+                "gsd": [
+                    22264
+                ]
             },
             {
                 "description": "U-component of wind 10m above ground",
                 "gee:units": "m/s",
-                "name": "u-component_of_wind_height_above_ground"
+                "name": "u-component_of_wind_height_above_ground",
+                "gsd": [
+                    22264
+                ]
             },
             {
                 "description": "Upward long-wave radiation flux at surface, 6-hour average",
                 "gee:units": "W/m^2",
-                "name": "Upward_Long-Wave_Radp_Flux_surface_6_Hour_Average"
+                "name": "Upward_Long-Wave_Radp_Flux_surface_6_Hour_Average",
+                "gsd": [
+                    22264
+                ]
             },
             {
                 "description": "Upward short-wave radiation flux at surface, 6-hour average",
                 "gee:units": "W/m^2",
-                "name": "Upward_Short-Wave_Radiation_Flux_surface_6_Hour_Average"
+                "name": "Upward_Short-Wave_Radiation_Flux_surface_6_Hour_Average",
+                "gsd": [
+                    22264
+                ]
             },
             {
                 "description": "V-component of wind 10m above ground",
                 "gee:units": "m/s",
-                "name": "v-component_of_wind_height_above_ground"
+                "name": "v-component_of_wind_height_above_ground",
+                "gsd": [
+                    22264
+                ]
             },
             {
                 "description": "Volumetric soil moisture content 5cm below surface layer",
                 "gee:units": "Fraction",
-                "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_5_cm"
+                "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_5_cm",
+                "gsd": [
+                    22264
+                ]
             },
             {
                 "description": "Volumetric soil moisture content 25cm below surface layer",
                 "gee:units": "Fraction",
-                "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_25_cm"
+                "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_25_cm",
+                "gsd": [
+                    22264
+                ]
             },
             {
                 "description": "Volumetric soil moisture content 70cm below surface layer",
                 "gee:units": "Fraction",
-                "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_70_cm"
+                "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_70_cm",
+                "gsd": [
+                    22264
+                ]
             },
             {
                 "description": "Volumetric soil moisture content 150cm below surface layer",
                 "gee:units": "Fraction",
-                "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_150_cm"
+                "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_150_cm",
+                "gsd": [
+                    22264
+                ]
             }
         ],
         "gee:schema": [

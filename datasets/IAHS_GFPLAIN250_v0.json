@@ -103,7 +103,10 @@
         "eo:bands": [
             {
                 "description": "Flood plain",
-                "name": "flood"
+                "name": "flood",
+                "gsd": [
+                    250
+                ]
             }
         ],
         "gee:visualizations": [

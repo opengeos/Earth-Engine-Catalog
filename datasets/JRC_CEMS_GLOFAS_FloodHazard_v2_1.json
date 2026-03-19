@@ -119,73 +119,121 @@
             {
                 "description": "Flood inundation depth for return period 10 years",
                 "gee:units": "m",
-                "name": "RP10_depth"
+                "name": "RP10_depth",
+                "gsd": [
+                    90
+                ]
             },
             {
                 "description": "Flood inundation depth for return period 20 years",
                 "gee:units": "m",
-                "name": "RP20_depth"
+                "name": "RP20_depth",
+                "gsd": [
+                    90
+                ]
             },
             {
                 "description": "Flood inundation depth for return period 50 years",
                 "gee:units": "m",
-                "name": "RP50_depth"
+                "name": "RP50_depth",
+                "gsd": [
+                    90
+                ]
             },
             {
                 "description": "Flood inundation depth for return period 75 years",
                 "gee:units": "m",
-                "name": "RP75_depth"
+                "name": "RP75_depth",
+                "gsd": [
+                    90
+                ]
             },
             {
                 "description": "Flood inundation depth for return period 100 years",
                 "gee:units": "m",
-                "name": "RP100_depth"
+                "name": "RP100_depth",
+                "gsd": [
+                    90
+                ]
             },
             {
                 "description": "Flood inundation depth for return period 200 years",
                 "gee:units": "m",
-                "name": "RP200_depth"
+                "name": "RP200_depth",
+                "gsd": [
+                    90
+                ]
             },
             {
                 "description": "Flood inundation depth for return period 500 years",
                 "gee:units": "m",
-                "name": "RP500_depth"
+                "name": "RP500_depth",
+                "gsd": [
+                    90
+                ]
             },
             {
                 "description": "Water depth categorized as the GloFAS Flood hazard 100 year return\nperiod static layer for return period\n10 years",
-                "name": "RP10_depth_category"
+                "name": "RP10_depth_category",
+                "gsd": [
+                    90
+                ]
             },
             {
                 "description": "Water depth categorized as the GloFAS Flood hazard 100 year return\nperiod static layer for return period\n20 years",
-                "name": "RP20_depth_category"
+                "name": "RP20_depth_category",
+                "gsd": [
+                    90
+                ]
             },
             {
                 "description": "Water depth categorized as the GloFAS Flood hazard 100 year return\nperiod static layer for return period\n50 years",
-                "name": "RP50_depth_category"
+                "name": "RP50_depth_category",
+                "gsd": [
+                    90
+                ]
             },
             {
                 "description": "Water depth categorized as the GloFAS Flood hazard 100 year return\nperiod static layer for return period\n75 years",
-                "name": "RP75_depth_category"
+                "name": "RP75_depth_category",
+                "gsd": [
+                    90
+                ]
             },
             {
                 "description": "Water depth categorized as the GloFAS Flood hazard 100 year return\nperiod static layer for return period\n100 years",
-                "name": "RP100_depth_category"
+                "name": "RP100_depth_category",
+                "gsd": [
+                    90
+                ]
             },
             {
                 "description": "Water depth categorized as the GloFAS Flood hazard 100 year return\nperiod static layer for return period\n200 years",
-                "name": "RP200_depth_category"
+                "name": "RP200_depth_category",
+                "gsd": [
+                    90
+                ]
             },
             {
                 "description": "Water depth categorized as the GloFAS Flood hazard 100 year return\nperiod static layer for return period\n500 years",
-                "name": "RP500_depth_category"
+                "name": "RP500_depth_category",
+                "gsd": [
+                    90
+                ]
             },
             {
                 "description": "Permanent water bodies used to patch the flood hazard maps\n",
-                "name": "permanent_water_class"
+                "name": "permanent_water_class",
+                "gsd": [
+                    90
+                ]
             },
             {
                 "description": "Identifies areas where depths >10m are predicted in small channels\n(<3,000km^2) for the 10-year return period, plus a 2km buffer\n",
-                "name": "spurious_depth_category"
+                "name": "spurious_depth_category",
+                "gsd": [
+                    90
+                ]
             }
         ],
         "gee:schema": [

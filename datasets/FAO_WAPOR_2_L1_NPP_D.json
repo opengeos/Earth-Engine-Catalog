@@ -115,7 +115,10 @@
                 "description": "Net Primary Production",
                 "gee:scale": 0.001,
                 "gee:units": "g/m^2",
-                "name": "L1_NPP_D"
+                "name": "L1_NPP_D",
+                "gsd": [
+                    248.2
+                ]
             }
         ],
         "gee:visualizations": [

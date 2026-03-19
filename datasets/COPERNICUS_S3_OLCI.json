@@ -69,7 +69,7 @@
             "interval": [
                 [
                     "2016-10-18T19:25:42Z",
-                    "2026-03-17T07:40:46Z"
+                    "2026-03-18T08:10:53Z"
                 ]
             ]
         }
@@ -110,7 +110,10 @@
                 "gee:scale": 0.01394646,
                 "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "400nm/15nm",
-                "name": "Oa01_radiance"
+                "name": "Oa01_radiance",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "center_wavelength": 0.4125,
@@ -118,7 +121,10 @@
                 "gee:scale": 0.01338726,
                 "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "412.5nm/10nm",
-                "name": "Oa02_radiance"
+                "name": "Oa02_radiance",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "center_wavelength": 0.4425,
@@ -126,7 +132,10 @@
                 "gee:scale": 0.01214812,
                 "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "442.5nm/10nm",
-                "name": "Oa03_radiance"
+                "name": "Oa03_radiance",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "center_wavelength": 0.49,
@@ -134,7 +143,10 @@
                 "gee:scale": 0.01151982,
                 "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "490nm/10nm",
-                "name": "Oa04_radiance"
+                "name": "Oa04_radiance",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "center_wavelength": 0.51,
@@ -142,7 +154,10 @@
                 "gee:scale": 0.01009526,
                 "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "510nm/10nm",
-                "name": "Oa05_radiance"
+                "name": "Oa05_radiance",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "center_wavelength": 0.56,
@@ -150,7 +165,10 @@
                 "gee:scale": 0.0123538,
                 "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "560nm/10nm",
-                "name": "Oa06_radiance"
+                "name": "Oa06_radiance",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "center_wavelength": 0.62,
@@ -158,7 +176,10 @@
                 "gee:scale": 0.00879161,
                 "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "620nm/10nm",
-                "name": "Oa07_radiance"
+                "name": "Oa07_radiance",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "center_wavelength": 0.665,
@@ -166,7 +187,10 @@
                 "gee:scale": 0.00876539,
                 "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "665nm/10nm",
-                "name": "Oa08_radiance"
+                "name": "Oa08_radiance",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "center_wavelength": 0.67375,
@@ -174,7 +198,10 @@
                 "gee:scale": 0.0095103,
                 "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "673.75nm/7.5nm",
-                "name": "Oa09_radiance"
+                "name": "Oa09_radiance",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "center_wavelength": 0.68125,
@@ -182,7 +209,10 @@
                 "gee:scale": 0.00773378,
                 "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "681.25nm/7.5nm",
-                "name": "Oa10_radiance"
+                "name": "Oa10_radiance",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "center_wavelength": 0.70875,
@@ -190,7 +220,10 @@
                 "gee:scale": 0.00675523,
                 "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "708.75nm/10nm",
-                "name": "Oa11_radiance"
+                "name": "Oa11_radiance",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "center_wavelength": 0.75375,
@@ -198,7 +231,10 @@
                 "gee:scale": 0.0071996,
                 "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "753.75nm/7.5nm",
-                "name": "Oa12_radiance"
+                "name": "Oa12_radiance",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "center_wavelength": 0.76125,
@@ -206,7 +242,10 @@
                 "gee:scale": 0.00749684,
                 "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "761.25nm/7.5nm",
-                "name": "Oa13_radiance"
+                "name": "Oa13_radiance",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "center_wavelength": 0.764375,
@@ -214,7 +253,10 @@
                 "gee:scale": 0.0086512,
                 "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "764.375nm/3.75nm",
-                "name": "Oa14_radiance"
+                "name": "Oa14_radiance",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "center_wavelength": 0.7675,
@@ -222,7 +264,10 @@
                 "gee:scale": 0.00526779,
                 "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "767.5nm/2.5nm",
-                "name": "Oa15_radiance"
+                "name": "Oa15_radiance",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "center_wavelength": 0.77875,
@@ -230,7 +275,10 @@
                 "gee:scale": 0.00530267,
                 "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "778.75nm/15nm",
-                "name": "Oa16_radiance"
+                "name": "Oa16_radiance",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "center_wavelength": 0.865,
@@ -238,7 +286,10 @@
                 "gee:scale": 0.00493004,
                 "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "865nm/20nm",
-                "name": "Oa17_radiance"
+                "name": "Oa17_radiance",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "center_wavelength": 0.885,
@@ -246,7 +297,10 @@
                 "gee:scale": 0.00549962,
                 "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "885nm/10nm",
-                "name": "Oa18_radiance"
+                "name": "Oa18_radiance",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "center_wavelength": 0.9,
@@ -254,7 +308,10 @@
                 "gee:scale": 0.00502847,
                 "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "900nm/10nm",
-                "name": "Oa19_radiance"
+                "name": "Oa19_radiance",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "center_wavelength": 0.94,
@@ -262,7 +319,10 @@
                 "gee:scale": 0.00326378,
                 "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "940nm/20nm",
-                "name": "Oa20_radiance"
+                "name": "Oa20_radiance",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "center_wavelength": 1.029,
@@ -270,7 +330,10 @@
                 "gee:scale": 0.00324118,
                 "gee:units": "W m^-2 sr^-1 &micro;m^-1",
                 "gee:wavelength": "1029nm/40nm",
-                "name": "Oa21_radiance"
+                "name": "Oa21_radiance",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Quality flags",
@@ -759,7 +822,10 @@
                     ],
                     "total_bit_count": 32
                 },
-                "name": "quality_flags"
+                "name": "quality_flags",
+                "gsd": [
+                    300
+                ]
             }
         ],
         "gee:visualizations": [

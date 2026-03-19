@@ -120,7 +120,10 @@
             {
                 "description": "Built-up surface per grid cell",
                 "gee:units": "m^2",
-                "name": "built_surface"
+                "name": "built_surface",
+                "gsd": [
+                    10
+                ]
             },
             {
                 "description": "Non-residential built-up class (NRES)",
@@ -136,7 +139,10 @@
                         "value": 1
                     }
                 ],
-                "name": "built_surface_nres"
+                "name": "built_surface_nres",
+                "gsd": [
+                    10
+                ]
             }
         ],
         "gee:visualizations": [

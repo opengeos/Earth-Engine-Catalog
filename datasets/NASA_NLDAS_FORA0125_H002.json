@@ -81,7 +81,7 @@
             "interval": [
                 [
                     "1979-01-01T13:00:00Z",
-                    "2026-03-13T12:00:00Z"
+                    "2026-03-14T17:00:00Z"
                 ]
             ]
         }
@@ -127,56 +127,89 @@
             {
                 "description": "Air temperature at 2 meters above the surface",
                 "gee:units": "&deg;C",
-                "name": "temperature"
+                "name": "temperature",
+                "gsd": [
+                    13915
+                ]
             },
             {
                 "description": "Specific humidity at 2 meters above the surface",
                 "gee:units": "Mass fraction",
-                "name": "specific_humidity"
+                "name": "specific_humidity",
+                "gsd": [
+                    13915
+                ]
             },
             {
                 "description": "Surface pressure",
                 "gee:units": "Pa",
-                "name": "pressure"
+                "name": "pressure",
+                "gsd": [
+                    13915
+                ]
             },
             {
                 "description": "U wind component at 10 meters above the surface",
                 "gee:units": "m/s",
-                "name": "wind_u"
+                "name": "wind_u",
+                "gsd": [
+                    13915
+                ]
             },
             {
                 "description": "V wind component at 10 meters above the surface",
                 "gee:units": "m/s",
-                "name": "wind_v"
+                "name": "wind_v",
+                "gsd": [
+                    13915
+                ]
             },
             {
                 "description": "Surface downward longwave radiation",
                 "gee:units": "W/m^2",
-                "name": "longwave_radiation"
+                "name": "longwave_radiation",
+                "gsd": [
+                    13915
+                ]
             },
             {
                 "description": "Fraction of total precipitation that is convective: from NARR",
-                "name": "convective_fraction"
+                "name": "convective_fraction",
+                "gsd": [
+                    13915
+                ]
             },
             {
                 "description": "Convective available potential energy (J/kg): from NARR",
                 "gee:units": "J/kg",
-                "name": "potential_energy"
+                "name": "potential_energy",
+                "gsd": [
+                    13915
+                ]
             },
             {
                 "description": "Potential evaporation: from NARR",
                 "gee:units": "kg/m^2",
-                "name": "potential_evaporation"
+                "name": "potential_evaporation",
+                "gsd": [
+                    13915
+                ]
             },
             {
                 "description": "Hourly total precipitation",
                 "gee:units": "kg/m^2",
-                "name": "total_precipitation"
+                "name": "total_precipitation",
+                "gsd": [
+                    13915
+                ]
             },
             {
                 "description": "Surface downward shortwave radiation - bias corrected",
                 "gee:units": "W/m^2",
-                "name": "shortwave_radiation"
+                "name": "shortwave_radiation",
+                "gsd": [
+                    13915
+                ]
             }
         ],
         "gee:schema": [

@@ -117,7 +117,10 @@
             {
                 "description": "Methane emissions traceable to a ~5km^2 area.",
                 "gee:units": "kg/h",
-                "name": "flux"
+                "name": "flux",
+                "gsd": [
+                    5565.97
+                ]
             }
         ],
         "gee:schema": [

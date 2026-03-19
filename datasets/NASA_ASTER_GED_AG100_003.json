@@ -120,79 +120,124 @@
             {
                 "description": "Mean band 10",
                 "gee:scale": 0.001,
-                "name": "emissivity_band10"
+                "name": "emissivity_band10",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Mean band 11",
                 "gee:scale": 0.001,
-                "name": "emissivity_band11"
+                "name": "emissivity_band11",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Mean band 12",
                 "gee:scale": 0.001,
-                "name": "emissivity_band12"
+                "name": "emissivity_band12",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Mean band 13",
                 "gee:scale": 0.001,
-                "name": "emissivity_band13"
+                "name": "emissivity_band13",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Mean band 14",
                 "gee:scale": 0.001,
-                "name": "emissivity_band14"
+                "name": "emissivity_band14",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Standard deviation band 10",
                 "gee:scale": 0.0001,
-                "name": "emissivity_sdev_band10"
+                "name": "emissivity_sdev_band10",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Standard deviation band 11",
                 "gee:scale": 0.0001,
-                "name": "emissivity_sdev_band11"
+                "name": "emissivity_sdev_band11",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Standard deviation band 12",
                 "gee:scale": 0.0001,
-                "name": "emissivity_sdev_band12"
+                "name": "emissivity_sdev_band12",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Standard deviation band 13",
                 "gee:scale": 0.0001,
-                "name": "emissivity_sdev_band13"
+                "name": "emissivity_sdev_band13",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Standard deviation band 14",
                 "gee:scale": 0.0001,
-                "name": "emissivity_sdev_band14"
+                "name": "emissivity_sdev_band14",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Temperature mean",
                 "gee:scale": 0.01,
                 "gee:units": "K",
-                "name": "temperature"
+                "name": "temperature",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Temperature standard deviation",
                 "gee:scale": 0.01,
                 "gee:units": "K",
-                "name": "temperature_sdev"
+                "name": "temperature_sdev",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "NDVI mean",
                 "gee:scale": 0.01,
-                "name": "ndvi"
+                "name": "ndvi",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "NDVI standard deviation",
                 "gee:scale": 0.01,
-                "name": "ndvi_sdev"
+                "name": "ndvi_sdev",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "ASTER Global Digital Elevation Model V002",
                 "gee:units": "m",
-                "name": "elevation"
+                "name": "elevation",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Land water map",
@@ -208,12 +253,18 @@
                         "value": 2
                     }
                 ],
-                "name": "land_water_map"
+                "name": "land_water_map",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Number of observations",
                 "gee:units": "Number per pixel",
-                "name": "num_obs"
+                "name": "num_obs",
+                "gsd": [
+                    100
+                ]
             }
         ],
         "gee:visualizations": [

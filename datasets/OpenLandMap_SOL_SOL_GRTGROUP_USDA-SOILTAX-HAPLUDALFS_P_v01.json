@@ -114,7 +114,10 @@
             {
                 "description": "Predicted Hapludalfs probability",
                 "gee:units": "%",
-                "name": "grtgroup"
+                "name": "grtgroup",
+                "gsd": [
+                    250
+                ]
             }
         ],
         "gee:visualizations": [

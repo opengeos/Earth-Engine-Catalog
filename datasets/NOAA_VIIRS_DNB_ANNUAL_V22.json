@@ -113,40 +113,64 @@
             {
                 "description": "Average DNB radiance values.",
                 "gee:units": "nanoWatts/sr/cm^2",
-                "name": "average"
+                "name": "average",
+                "gsd": [
+                    463.83
+                ]
             },
             {
                 "description": "Average Masked DNB radiance values",
                 "gee:units": "nanoWatts/sr/cm^2",
-                "name": "average_masked"
+                "name": "average_masked",
+                "gsd": [
+                    463.83
+                ]
             },
             {
                 "description": "Cloud-free coverages; the total number of observations that\nwent into each pixel. This band can be used to identify areas with low\nnumbers of observations where the quality is reduced.\n",
-                "name": "cf_cvg"
+                "name": "cf_cvg",
+                "gsd": [
+                    463.83
+                ]
             },
             {
                 "description": "Total number of observations free of sunlight and moonlight.\n",
-                "name": "cvg"
+                "name": "cvg",
+                "gsd": [
+                    463.83
+                ]
             },
             {
                 "description": "Maximum DNB radiance values.",
                 "gee:units": "nanoWatts/sr/cm^2",
-                "name": "maximum"
+                "name": "maximum",
+                "gsd": [
+                    463.83
+                ]
             },
             {
                 "description": "Median DNB radiance values",
                 "gee:units": "nanoWatts/sr/cm^2",
-                "name": "median"
+                "name": "median",
+                "gsd": [
+                    463.83
+                ]
             },
             {
                 "description": "Median masked DNB radiance values.",
                 "gee:units": "nanoWatts/sr/cm^2",
-                "name": "median_masked"
+                "name": "median_masked",
+                "gsd": [
+                    463.83
+                ]
             },
             {
                 "description": "Minimum DNB radiance values",
                 "gee:units": "nanoWatts/sr/cm^2",
-                "name": "minimum"
+                "name": "minimum",
+                "gsd": [
+                    463.83
+                ]
             }
         ],
         "gee:visualizations": [

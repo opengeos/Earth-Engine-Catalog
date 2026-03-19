@@ -113,47 +113,74 @@
             {
                 "description": "Average air temperature at 2m height (daily average)",
                 "gee:units": "K",
-                "name": "mean_2m_air_temperature"
+                "name": "mean_2m_air_temperature",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Minimum air temperature at 2m height (daily minimum)",
                 "gee:units": "K",
-                "name": "minimum_2m_air_temperature"
+                "name": "minimum_2m_air_temperature",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Maximum air temperature at 2m height (daily maximum)",
                 "gee:units": "K",
-                "name": "maximum_2m_air_temperature"
+                "name": "maximum_2m_air_temperature",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Dewpoint temperature at 2m height (daily average)",
                 "gee:units": "K",
-                "name": "dewpoint_2m_temperature"
+                "name": "dewpoint_2m_temperature",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Total precipitation (daily sums)",
                 "gee:units": "m",
-                "name": "total_precipitation"
+                "name": "total_precipitation",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Surface pressure (daily average)",
                 "gee:units": "Pa",
-                "name": "surface_pressure"
+                "name": "surface_pressure",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Mean sea level pressure (daily average)",
                 "gee:units": "Pa",
-                "name": "mean_sea_level_pressure"
+                "name": "mean_sea_level_pressure",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "10m u-component of wind (daily average)",
                 "gee:units": "m/s",
-                "name": "u_component_of_wind_10m"
+                "name": "u_component_of_wind_10m",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "10m v-component of wind (daily average)",
                 "gee:units": "m/s",
-                "name": "v_component_of_wind_10m"
+                "name": "v_component_of_wind_10m",
+                "gsd": [
+                    27830
+                ]
             }
         ],
         "gee:schema": [

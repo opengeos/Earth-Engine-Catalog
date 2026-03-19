@@ -117,47 +117,74 @@
             {
                 "description": "Near-surface relative humidity. Not present in these models:\n'BCC-CSM2-MR', 'NESM3', 'KIOST-ESM' (only for scenario 'ssp245' in\n2058).\n",
                 "gee:units": "%",
-                "name": "hurs"
+                "name": "hurs",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Near-surface specific humidity. Not present in these models:\n'IPSL-CM6A-LR', 'MIROC6', 'NESM3'.\n",
                 "gee:units": "Mass fraction",
-                "name": "huss"
+                "name": "huss",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Precipitation (mean of the daily precipitation rate)",
                 "gee:units": "kg/m^2/s",
-                "name": "pr"
+                "name": "pr",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Surface downwelling longwave radiation",
                 "gee:units": "W/m^2",
-                "name": "rlds"
+                "name": "rlds",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Surface downwelling shortwave radiation",
                 "gee:units": "W/m^2",
-                "name": "rsds"
+                "name": "rsds",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Daily-mean near-surface wind speed",
                 "gee:units": "m/s",
-                "name": "sfcWind"
+                "name": "sfcWind",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Daily near-surface air temperature. Not present in these models:\n'NorESM2-LM' (only for scenario 'ssp585' in 2096).\n",
                 "gee:units": "K",
-                "name": "tas"
+                "name": "tas",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Daily minimum near-surface air temperature. Not present in these\nmodels: 'CESM2', 'CESM2-WACCM', 'IITM-ESM', 'TaiESM1' (only for\nscenario 'ssp585' in 2093).\n",
                 "gee:units": "K",
-                "name": "tasmin"
+                "name": "tasmin",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Daily maximum near-surface air temperature. Not present in these\nmodels: 'CESM2', 'CESM2-WACCM', 'IITM-ESM'.\n",
                 "gee:units": "K",
-                "name": "tasmax"
+                "name": "tasmax",
+                "gsd": [
+                    27830
+                ]
             }
         ],
         "gee:schema": [

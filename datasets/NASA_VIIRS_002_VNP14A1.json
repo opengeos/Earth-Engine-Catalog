@@ -93,7 +93,7 @@
             "interval": [
                 [
                     "2012-01-19T00:00:00Z",
-                    "2026-03-08T00:00:00Z"
+                    "2026-03-13T00:00:00Z"
                 ]
             ]
         }
@@ -170,12 +170,18 @@
                         "value": 9
                     }
                 ],
-                "name": "FireMask"
+                "name": "FireMask",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Maximum Fire Radiative Power",
                 "gee:units": "MW",
-                "name": "MaxFRP"
+                "name": "MaxFRP",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Global Land Surface Phenology Quality Control",
@@ -388,11 +394,17 @@
                     ],
                     "total_bit_count": 32
                 },
-                "name": "QA"
+                "name": "QA",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Sample number within a swath",
-                "name": "sample"
+                "name": "sample",
+                "gsd": [
+                    1000
+                ]
             }
         ],
         "gee:visualizations": [

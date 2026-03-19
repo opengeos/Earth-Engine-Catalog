@@ -101,12 +101,18 @@
             {
                 "description": "Elevation of the ground",
                 "gee:units": "m",
-                "name": "dtm"
+                "name": "dtm",
+                "gsd": [
+                    0.5
+                ]
             },
             {
                 "description": "Elevation of the tallest surfaces at that point",
                 "gee:units": "m",
-                "name": "dsm"
+                "name": "dsm",
+                "gsd": [
+                    0.5
+                ]
             }
         ],
         "gee:visualizations": [

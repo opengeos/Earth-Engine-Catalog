@@ -113,17 +113,26 @@
             {
                 "description": "Daily mean of precipitation at surface; includes both\nliquid and solid phases from all types of clouds (both large-scale\nand convective)\n",
                 "gee:units": "kg/m^2/s",
-                "name": "pr"
+                "name": "pr",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Daily mean of the daily-minimum near-surface air temperature",
                 "gee:units": "K",
-                "name": "tasmin"
+                "name": "tasmin",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Daily mean of the daily-maximum near-surface air temperature",
                 "gee:units": "K",
-                "name": "tasmax"
+                "name": "tasmax",
+                "gsd": [
+                    27830
+                ]
             }
         ],
         "gee:schema": [

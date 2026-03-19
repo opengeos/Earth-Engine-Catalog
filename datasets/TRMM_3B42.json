@@ -133,12 +133,18 @@
             {
                 "description": "Merged microwave/IR precipitation estimate",
                 "gee:units": "mm/hr",
-                "name": "precipitation"
+                "name": "precipitation",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Merged microwave/IR precipitation random error estimate",
                 "gee:units": "mm/hr",
-                "name": "relativeError"
+                "name": "relativeError",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Flag to show source of data",
@@ -198,22 +204,34 @@
                     ],
                     "total_bit_count": 6
                 },
-                "name": "satPrecipitationSource"
+                "name": "satPrecipitationSource",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Pre-gauge-adjusted microwave precipitation estimate",
                 "gee:units": "mm/hr",
-                "name": "HQprecipitation"
+                "name": "HQprecipitation",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Pre-gauge-adjusted infrared precipitation estimate",
                 "gee:units": "mm/hr",
-                "name": "IRprecipitation"
+                "name": "IRprecipitation",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Satellite observation time minus the time of the granule.\nIn case of overlapping satellite observations, the two or more\nobservation times are equal-weighting averaged.\n",
                 "gee:units": "min",
-                "name": "satObservationTime"
+                "name": "satObservationTime",
+                "gsd": [
+                    27830
+                ]
             }
         ],
         "gee:visualizations": [

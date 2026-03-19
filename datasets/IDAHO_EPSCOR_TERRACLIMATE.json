@@ -119,81 +119,123 @@
                 "description": "Actual evapotranspiration, derived using a one-dimensional soil water balance model",
                 "gee:scale": 0.1,
                 "gee:units": "mm",
-                "name": "aet"
+                "name": "aet",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Climate water deficit, derived using a one-dimensional soil water balance model",
                 "gee:scale": 0.1,
                 "gee:units": "mm",
-                "name": "def"
+                "name": "def",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Palmer Drought Severity Index",
                 "gee:scale": 0.01,
-                "name": "pdsi"
+                "name": "pdsi",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Reference evapotranspiration (ASCE Penman-Montieth)",
                 "gee:scale": 0.1,
                 "gee:units": "mm",
-                "name": "pet"
+                "name": "pet",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Precipitation accumulation",
                 "gee:units": "mm",
-                "name": "pr"
+                "name": "pr",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Runoff, derived using a one-dimensional soil water balance model",
                 "gee:units": "mm",
-                "name": "ro"
+                "name": "ro",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Soil moisture, derived using a one-dimensional soil water balance model",
                 "gee:scale": 0.1,
                 "gee:units": "mm",
-                "name": "soil"
+                "name": "soil",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Downward surface shortwave radiation",
                 "gee:scale": 0.1,
                 "gee:units": "W/m^2",
-                "name": "srad"
+                "name": "srad",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Snow water equivalent, derived using a one-dimensional soil water balance model",
                 "gee:units": "mm",
-                "name": "swe"
+                "name": "swe",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Minimum temperature",
                 "gee:scale": 0.1,
                 "gee:units": "&deg;C",
-                "name": "tmmn"
+                "name": "tmmn",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Maximum temperature",
                 "gee:scale": 0.1,
                 "gee:units": "&deg;C",
-                "name": "tmmx"
+                "name": "tmmx",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Vapor pressure",
                 "gee:scale": 0.001,
                 "gee:units": "kPa",
-                "name": "vap"
+                "name": "vap",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Vapor pressure deficit",
                 "gee:scale": 0.01,
                 "gee:units": "kPa",
-                "name": "vpd"
+                "name": "vpd",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Wind-speed at 10m",
                 "gee:scale": 0.01,
                 "gee:units": "m/s",
-                "name": "vs"
+                "name": "vs",
+                "gsd": [
+                    4638.3
+                ]
             }
         ],
         "gee:schema": [

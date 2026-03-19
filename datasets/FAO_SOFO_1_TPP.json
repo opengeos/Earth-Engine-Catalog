@@ -142,22 +142,34 @@
             {
                 "description": "Number of people living in or within 1 km from agricultural lands\nwith at least 10% of tree cover\n",
                 "gee:units": "Number of people/ha",
-                "name": "TPP_1km"
+                "name": "TPP_1km",
+                "gsd": [
+                    0.0009
+                ]
             },
             {
                 "description": "Number of people living in or within 1 km from croplands with at\nleast 10% of tree cover\n",
                 "gee:units": "Number of people/ha",
-                "name": "TPP_1km_cropland"
+                "name": "TPP_1km_cropland",
+                "gsd": [
+                    0.0009
+                ]
             },
             {
                 "description": "Number of people living in or within 500 m from agricultural lands\nwith at least 10% of tree cover\n",
                 "gee:units": "Number of people/ha",
-                "name": "TPP_500m"
+                "name": "TPP_500m",
+                "gsd": [
+                    0.0009
+                ]
             },
             {
                 "description": "Number of people living in or within 500 m from croplands with at\nleast 10% of tree cover\n",
                 "gee:units": "Number of people/ha",
-                "name": "TPP_500m_cropland"
+                "name": "TPP_500m_cropland",
+                "gsd": [
+                    0.0009
+                ]
             }
         ],
         "gee:visualizations": [

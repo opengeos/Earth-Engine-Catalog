@@ -105,36 +105,60 @@
         "eo:bands": [
             {
                 "description": "Annual Burn Probability.",
-                "name": "BP"
+                "name": "BP",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Conditional Flame Length; mean flame length for fire burning in direction of maximum spread if a fire were to occur. Avg. measure of wildfire intensity.",
                 "gee:units": "ft",
-                "name": "CFL"
+                "name": "CFL",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Conditional Risk to Potential Structures; potential consequences of fire to a home at a given location, if a fire occurs there and if a home were located there.",
-                "name": "CRPS"
+                "name": "CRPS",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Measure of how exposed a housing unit would be to wildfire. A value of 1 is \"direct\" exposure. Values between 0 and 1 represent \"indirect\" exposure, with higher values representing closer proximity to directly exposed areas",
-                "name": "Exposure"
+                "name": "Exposure",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Flame Length Exceedance Probability - 4 ft; conditional probability that flame length at a pixel will exceed 4 feet if a fire occurs; indicates the potential for moderate to high wildfire intensity.",
-                "name": "FLEP4"
+                "name": "FLEP4",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Farm Length Exceedance Probability - 8 ft; conditional probability that flame length at a pixel will exceed 8 feet if a fire occurs; indicates the potential for high wildfire intensity.",
-                "name": "FLEP8"
+                "name": "FLEP8",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Risk to Potential Structures; relative risk to a house if one existed at that location.",
-                "name": "RPS"
+                "name": "RPS",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Wildfire Hazard Potential index.",
-                "name": "WHP"
+                "name": "WHP",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

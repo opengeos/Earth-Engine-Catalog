@@ -109,7 +109,10 @@
         "eo:bands": [
             {
                 "description": "Landforms and lithology intersection",
-                "name": "constant"
+                "name": "constant",
+                "gsd": [
+                    90
+                ]
             }
         ],
         "gee:visualizations": [

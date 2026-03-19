@@ -123,57 +123,90 @@
             {
                 "description": "Instantaneous total DSR at MODIS overpass",
                 "gee:units": "W/m^2",
-                "name": "DSR"
+                "name": "DSR",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Instantaneous direct DSR at MODIS overpass",
                 "gee:units": "W/m^2",
-                "name": "Direct"
+                "name": "Direct",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Instantaneous diffuse DSR at MODIS overpass",
                 "gee:units": "W/m^2",
-                "name": "Diffuse"
+                "name": "Diffuse",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Total DSR at GMT 00:00",
                 "gee:units": "W/m^2",
-                "name": "GMT_0000_DSR"
+                "name": "GMT_0000_DSR",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Total DSR at GMT 03:00",
                 "gee:units": "W/m^2",
-                "name": "GMT_0300_DSR"
+                "name": "GMT_0300_DSR",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Total DSR at GMT 06:00",
                 "gee:units": "W/m^2",
-                "name": "GMT_0600_DSR"
+                "name": "GMT_0600_DSR",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Total DSR at GMT 09:00",
                 "gee:units": "W/m^2",
-                "name": "GMT_0900_DSR"
+                "name": "GMT_0900_DSR",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Total DSR at GMT 12:00",
                 "gee:units": "W/m^2",
-                "name": "GMT_1200_DSR"
+                "name": "GMT_1200_DSR",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Total DSR at GMT 15:00",
                 "gee:units": "W/m^2",
-                "name": "GMT_1500_DSR"
+                "name": "GMT_1500_DSR",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Total DSR at GMT 18:00",
                 "gee:units": "W/m^2",
-                "name": "GMT_1800_DSR"
+                "name": "GMT_1800_DSR",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Total DSR at GMT 21:00",
                 "gee:units": "W/m^2",
-                "name": "GMT_2100_DSR"
+                "name": "GMT_2100_DSR",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Quality flag",
@@ -201,7 +234,10 @@
                     ],
                     "total_bit_count": 2
                 },
-                "name": "DSR_Quality"
+                "name": "DSR_Quality",
+                "gsd": [
+                    500
+                ]
             }
         ],
         "gee:visualizations": [

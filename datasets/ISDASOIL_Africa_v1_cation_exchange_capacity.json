@@ -108,22 +108,34 @@
             {
                 "description": "Effective Cation Exchange Capacity, predicted mean at 0-20 cm depth",
                 "gee:units": "cmol(+)/kg",
-                "name": "mean_0_20"
+                "name": "mean_0_20",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Effective Cation Exchange Capacity, predicted mean at 20-50 cm depth",
                 "gee:units": "cmol(+)/kg",
-                "name": "mean_20_50"
+                "name": "mean_20_50",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Effective Cation Exchange Capacity, standard deviation at 0-20 cm depth",
                 "gee:units": "cmol(+)/kg",
-                "name": "stdev_0_20"
+                "name": "stdev_0_20",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Effective Cation Exchange Capacity, standard deviation at 20-50 cm depth",
                 "gee:units": "cmol(+)/kg",
-                "name": "stdev_20_50"
+                "name": "stdev_20_50",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

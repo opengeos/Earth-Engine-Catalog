@@ -115,7 +115,10 @@
         "eo:bands": [
             {
                 "description": "An integer that represents the census data source used\nto produce the GPWv4.11 population estimates. Pixels (grid cells) that have\nthe same value reflect the same data source, most often a country or\nterritory. Note that these data represent the area covered by the\nstatistical data as provided, and are not official representations of\ncountry or territory boundaries.\n",
-                "name": "national_identifier_grid"
+                "name": "national_identifier_grid",
+                "gsd": [
+                    927.67
+                ]
             }
         ],
         "gee:visualizations": [

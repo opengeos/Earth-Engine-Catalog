@@ -73,7 +73,7 @@
             "interval": [
                 [
                     "1948-01-01T00:00:00Z",
-                    "2026-03-14T18:00:00Z"
+                    "2026-03-15T18:00:00Z"
                 ]
             ]
         }
@@ -111,7 +111,10 @@
                 "description": "Sea level pressure",
                 "gee:scale": 0.01,
                 "gee:units": "mbar",
-                "name": "slp"
+                "name": "slp",
+                "gsd": [
+                    278300
+                ]
             }
         ],
         "gee:visualizations": [

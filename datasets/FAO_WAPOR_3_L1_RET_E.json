@@ -79,7 +79,7 @@
             "interval": [
                 [
                     "2018-01-01T00:00:00Z",
-                    "2026-03-15T00:00:00Z"
+                    "2026-03-16T00:00:00Z"
                 ]
             ]
         }
@@ -115,7 +115,10 @@
                 "description": "Reference Evapotranspiration (Daily) [mm]",
                 "gee:scale": 0.1,
                 "gee:units": "mm",
-                "name": "L1-RET-E"
+                "name": "L1-RET-E",
+                "gsd": [
+                    18924
+                ]
             }
         ],
         "gee:visualizations": [

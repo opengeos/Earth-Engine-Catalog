@@ -107,17 +107,26 @@
             {
                 "description": "Aboveground tree biomass: biomass derived from total merchantable volume estimates produced by provincial agencies",
                 "gee:units": "tonnes/hectare",
-                "name": "biomass"
+                "name": "biomass",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Crown closure (%): percentage of pixel covered by the tree canopy",
                 "gee:units": "%",
-                "name": "closure"
+                "name": "closure",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Height (meters): vegetation height",
                 "gee:units": "m",
-                "name": "height"
+                "name": "height",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "NFI land cover class values: Land cover classes include Bryoid (1), Herbs (2), Rock (3), Shrub (4),\n                        Treed broadleaf (5), Treed conifer (6), Treed mixed (7) and  Water (8)",
@@ -163,57 +172,90 @@
                         "value": 8
                     }
                 ],
-                "name": "nfiLandCover"
+                "name": "nfiLandCover",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Balsam fir (%): estimated as the proportion of the canopy covered by Abies balsamea",
                 "gee:units": "%",
-                "name": "balsamFir"
+                "name": "balsamFir",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Black spruce (%): estimated as the proportion of the canopy covered by Picea mariana",
                 "gee:units": "%",
-                "name": "blackSpruce"
+                "name": "blackSpruce",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Douglas fir (%): estimated as the proportion of the canopy covered by Pseudotsuga menziesii",
                 "gee:units": "%",
-                "name": "douglasFir"
+                "name": "douglasFir",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Jack pine (%): estimated as the proportion of the canopy covered by Pinus banksiana",
                 "gee:units": "%",
-                "name": "jackPine"
+                "name": "jackPine",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Lodgepole pine (%): estimated as the proportion of the canopy covered by Pinus contorta",
                 "gee:units": "%",
-                "name": "lodgepolePine"
+                "name": "lodgepolePine",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Ponderosa pine (%): estimated as the proportion of the canopy covered by Pinus ponderosa",
                 "gee:units": "%",
-                "name": "ponderosaPine"
+                "name": "ponderosaPine",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Broadleaf tree cover in percentage (PrcB)",
                 "gee:units": "%",
-                "name": "prcB"
+                "name": "prcB",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Other coniferous tree cover in percentage (PrcC)",
                 "gee:units": "%",
-                "name": "prcC"
+                "name": "prcC",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Tamarack_tree (%): estimated as the proportion of the canopy covered by Larix laricina",
                 "gee:units": "%",
-                "name": "tamarack"
+                "name": "tamarack",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "White and red pine (%): estimated as the proportion of the canopy covered by Pinus strobus and Pinus resinosa",
                 "gee:units": "%",
-                "name": "whiteRedPine"
+                "name": "whiteRedPine",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Flag for marking Arctic unreliable extrapolated pixels",
@@ -224,7 +266,10 @@
                         "value": 1
                     }
                 ],
-                "name": "articExtrapolationArea"
+                "name": "articExtrapolationArea",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

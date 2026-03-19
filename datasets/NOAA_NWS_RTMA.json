@@ -69,7 +69,7 @@
             "interval": [
                 [
                     "2011-01-01T00:00:00Z",
-                    "2026-03-17T18:00:00Z"
+                    "2026-03-18T20:00:00Z"
                 ]
             ]
         }
@@ -114,67 +114,106 @@
             {
                 "description": "Model terrain elevation",
                 "gee:units": "m",
-                "name": "HGT"
+                "name": "HGT",
+                "gsd": [
+                    2500
+                ]
             },
             {
                 "description": "Pressure",
                 "gee:units": "Pa",
-                "name": "PRES"
+                "name": "PRES",
+                "gsd": [
+                    2500
+                ]
             },
             {
                 "description": "Temperature",
                 "gee:units": "&deg;C",
-                "name": "TMP"
+                "name": "TMP",
+                "gsd": [
+                    2500
+                ]
             },
             {
                 "description": "Dew point temperature",
                 "gee:units": "&deg;C",
-                "name": "DPT"
+                "name": "DPT",
+                "gsd": [
+                    2500
+                ]
             },
             {
                 "description": "U-component of wind",
                 "gee:units": "m/s",
-                "name": "UGRD"
+                "name": "UGRD",
+                "gsd": [
+                    2500
+                ]
             },
             {
                 "description": "V-component of wind",
                 "gee:units": "m/s",
-                "name": "VGRD"
+                "name": "VGRD",
+                "gsd": [
+                    2500
+                ]
             },
             {
                 "description": "Specific humidity",
                 "gee:units": "Mass fraction",
-                "name": "SPFH"
+                "name": "SPFH",
+                "gsd": [
+                    2500
+                ]
             },
             {
                 "description": "Wind direction (from which blowing)",
                 "gee:units": "deg",
-                "name": "WDIR"
+                "name": "WDIR",
+                "gsd": [
+                    2500
+                ]
             },
             {
                 "description": "Wind speed",
                 "gee:units": "m/s",
-                "name": "WIND"
+                "name": "WIND",
+                "gsd": [
+                    2500
+                ]
             },
             {
                 "description": "Wind speed (gust)",
                 "gee:units": "m/s",
-                "name": "GUST"
+                "name": "GUST",
+                "gsd": [
+                    2500
+                ]
             },
             {
                 "description": "Visibility",
                 "gee:units": "m",
-                "name": "VIS"
+                "name": "VIS",
+                "gsd": [
+                    2500
+                ]
             },
             {
                 "description": "Total cloud cover",
                 "gee:units": "%",
-                "name": "TCDC"
+                "name": "TCDC",
+                "gsd": [
+                    2500
+                ]
             },
             {
                 "description": "Total precipitation",
                 "gee:units": "kg/m^2",
-                "name": "ACPC01"
+                "name": "ACPC01",
+                "gsd": [
+                    2500
+                ]
             }
         ],
         "gee:visualizations": [

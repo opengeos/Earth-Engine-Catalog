@@ -76,7 +76,7 @@
             "interval": [
                 [
                     "2023-09-03T00:00:00Z",
-                    "2026-03-17T00:00:00Z"
+                    "2026-03-18T00:00:00Z"
                 ]
             ]
         }
@@ -116,39 +116,63 @@
             {
                 "description": "VIIRS I-4 channel brightness temperature of the fire pixel.\n",
                 "gee:units": "K",
-                "name": "Bright_ti4"
+                "name": "Bright_ti4",
+                "gsd": [
+                    375
+                ]
             },
             {
                 "description": "VIIRS I-5 Channel brightness temperature of the fire pixel.\n",
                 "gee:units": "K",
-                "name": "Bright_ti5"
+                "name": "Bright_ti5",
+                "gsd": [
+                    375
+                ]
             },
             {
                 "description": "A detection confidence intended to help users gauge the\nquality of individual active fire pixels. The confidence estimate ranges\nbetween 'low': 0, 'nominal': 1 and 'high': 2 for all fire pixels within\nthe fire mask. Low confidence daytime fire pixels are typically\nassociated with areas of Sun glint and lower relative temperature\nanomaly (&lt;15 K) in the mid-infrared channel I4. Nominal confidence\npixels are those free of potential Sun glint contamination during the\nday and marked by strong (&gt;15 K) temperature anomaly in either day or\nnighttime data. High confidence fire pixels are associated with day or\nnighttime saturated pixels.\n\nPlease note: Low confidence nighttime pixels occur only over the\ngeographic area extending from 11&deg; E to 110&deg; W and 7&deg; N to\n55&deg; S. This area describes the region of influence of the South\nAtlantic Magnetic Anomaly which can cause spurious brightness\ntemperatures in the mid-infrared channel I4 leading to potential false\npositive alarms. These have been removed from the NRT data distributed\nby FIRMS.\n",
-                "name": "confidence"
+                "name": "confidence",
+                "gsd": [
+                    375
+                ]
             },
             {
                 "description": "Line number in the FIRMS CSV file that the pixel came from.",
-                "name": "line_number"
+                "name": "line_number",
+                "gsd": [
+                    375
+                ]
             },
             {
                 "description": "FRP depicts the pixel-integrated fire radiative power in megawatts (MW).\nGiven the unique spatial and spectral resolution of the data, the VIIRS\n375m fire detection algorithm was customized and tuned to optimize its\nresponse over small fires while balancing the occurrence of false alarms\n. Frequent saturation of the mid-infrared I4 channel (3.55-3.93 &mu;m)\ndriving the detection of active fires requires additional tests and\nprocedures to avoid pixel classification errors. As a result, sub-pixel\nfire characterization (e.g., fire radiative power [FRP] retrieval) is\nonly viable across small and/or low-intensity fires. Systematic FRP\nretrievals are based on a hybrid approach combining 375 and 750m data.\n",
                 "gee:units": "MW",
-                "name": "frp"
+                "name": "frp",
+                "gsd": [
+                    375
+                ]
             },
             {
                 "description": "Acquisation timestamp in seconds",
                 "gee:units": "seconds",
-                "name": "acq_epoch"
+                "name": "acq_epoch",
+                "gsd": [
+                    375
+                ]
             },
             {
                 "description": "The time of day in seconds since midnight",
                 "gee:units": "seconds",
-                "name": "acq_time"
+                "name": "acq_time",
+                "gsd": [
+                    375
+                ]
             },
             {
                 "description": "1= Daytime fire, 0= Nighttime fire",
-                "name": "DayNight"
+                "name": "DayNight",
+                "gsd": [
+                    375
+                ]
             }
         ],
         "gee:visualizations": [

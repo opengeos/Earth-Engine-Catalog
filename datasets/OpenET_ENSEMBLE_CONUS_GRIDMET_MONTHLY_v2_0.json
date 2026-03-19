@@ -112,21 +112,33 @@
             {
                 "description": "Ensemble ET value, computed as the mean of the ensemble\nafter filtering outliers using the median absolute deviation (mad)\n",
                 "gee:units": "mm",
-                "name": "et_ensemble_mad"
+                "name": "et_ensemble_mad",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "The minimum value in the ensemble range, after filtering for\noutliers using the median absolute deviation (mad)\n",
                 "gee:units": "mm",
-                "name": "et_ensemble_mad_min"
+                "name": "et_ensemble_mad_min",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "The maximum value in the ensemble range, after filtering for\noutliers using the median absolute deviation (mad)\n",
                 "gee:units": "mm",
-                "name": "et_ensemble_mad_max"
+                "name": "et_ensemble_mad_max",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "The number of models used to compute the ensemble ET value, after\nfiltering for outliers using the median absolute deviation (mad)\n",
-                "name": "et_ensemble_mad_count"
+                "name": "et_ensemble_mad_count",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Bitmask indicating which models were included in the ensemble ET\nvalue, after filtering for outliers using the median absolute\ndeviation (mad)\n",
@@ -225,12 +237,18 @@
                     ],
                     "total_bit_count": 6
                 },
-                "name": "et_ensemble_mad_index"
+                "name": "et_ensemble_mad_index",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "The simple arithmetic mean (sam) of all six models in the OpenETmodel ensemble",
                 "gee:units": "mm",
-                "name": "et_ensemble_sam"
+                "name": "et_ensemble_sam",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:schema": [

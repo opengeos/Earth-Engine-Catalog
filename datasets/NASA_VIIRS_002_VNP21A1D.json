@@ -132,7 +132,10 @@
             {
                 "description": "Daily 1 km Land Surface Temperature.\n",
                 "gee:units": "K",
-                "name": "LST_1KM"
+                "name": "LST_1KM",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Daily Quality control for LST and emissivity",
@@ -325,29 +328,47 @@
                     ],
                     "total_bit_count": 16
                 },
-                "name": "QC"
+                "name": "QC",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Daily M14 emissivity",
-                "name": "Emis_14"
+                "name": "Emis_14",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Daily M15 emissivity",
-                "name": "Emis_15"
+                "name": "Emis_15",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Daily M16 emissivity",
-                "name": "Emis_16"
+                "name": "Emis_16",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "View zenith angle of LST",
                 "gee:units": "deg",
-                "name": "View_Angle"
+                "name": "View_Angle",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Time of LST observation",
                 "gee:units": "h",
-                "name": "View_Time"
+                "name": "View_Time",
+                "gsd": [
+                    1000
+                ]
             }
         ],
         "gee:visualizations": [

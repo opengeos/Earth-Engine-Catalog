@@ -109,7 +109,10 @@
             {
                 "description": "Canopy Height Model",
                 "gee:units": "m",
-                "name": "CHM"
+                "name": "CHM",
+                "gsd": [
+                    1
+                ]
             }
         ],
         "gee:schema": [

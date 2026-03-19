@@ -69,7 +69,7 @@
             "interval": [
                 [
                     "2018-07-05T23:24:16Z",
-                    "2026-03-17T05:21:22Z"
+                    "2026-03-18T09:32:23Z"
                 ]
             ]
         }
@@ -108,55 +108,88 @@
             {
                 "description": "Retrieved effective radiometric cloud fraction",
                 "gee:units": "Fraction",
-                "name": "cloud_fraction"
+                "name": "cloud_fraction",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Retrieved atmospheric pressure at the level of cloud top",
                 "gee:units": "Pa",
-                "name": "cloud_top_pressure"
+                "name": "cloud_top_pressure",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Retrieved altitude of the cloud top",
                 "gee:units": "m",
-                "name": "cloud_top_height"
+                "name": "cloud_top_height",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Cloud base pressure",
                 "gee:units": "Pa",
-                "name": "cloud_base_pressure"
+                "name": "cloud_base_pressure",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Cloud base height",
                 "gee:units": "m",
-                "name": "cloud_base_height"
+                "name": "cloud_base_height",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Retrieved cloud optical depth",
-                "name": "cloud_optical_depth"
+                "name": "cloud_optical_depth",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Surface albedo",
-                "name": "surface_albedo"
+                "name": "surface_albedo",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Azimuth angle of the satellite at the ground pixel location (WGS84); angle\nmeasured East-of-North.",
                 "gee:units": "deg",
-                "name": "sensor_azimuth_angle"
+                "name": "sensor_azimuth_angle",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Zenith angle of the satellite at the ground pixel location (WGS84); angle\nmeasured away from the vertical.\n",
                 "gee:units": "deg",
-                "name": "sensor_zenith_angle"
+                "name": "sensor_zenith_angle",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Azimuth angle of the Sun at the ground pixel location (WGS84); angle\nmeasured East-of-North.",
                 "gee:units": "deg",
-                "name": "solar_azimuth_angle"
+                "name": "solar_azimuth_angle",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Zenith angle of the satellite at the ground pixel location (WGS84); angle\nmeasured away from the vertical.\n",
                 "gee:units": "deg",
-                "name": "solar_zenith_angle"
+                "name": "solar_zenith_angle",
+                "gsd": [
+                    1113.2
+                ]
             }
         ],
         "gee:schema": [

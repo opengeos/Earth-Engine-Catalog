@@ -104,26 +104,41 @@
             {
                 "description": "Particulate Backscattering",
                 "gee:units": "1/m",
-                "name": "BBP"
+                "name": "BBP",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Particulate Backscattering - The uncertainty as measured in hundredths\nof a percent (e.g., a value of 5000 means 50%).\n",
                 "gee:units": "%",
-                "name": "BBP_uncertainty"
+                "name": "BBP_uncertainty",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Absorption coefficient",
                 "gee:units": "1/m",
-                "name": "CDM"
+                "name": "CDM",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Absorption coefficient - The uncertainty as measured in hundredths of\na percent (e.g., a value of 5000 means 50%).\n",
                 "gee:units": "%",
-                "name": "CDM_uncertainty"
+                "name": "CDM_uncertainty",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Land water mask bit.\n\n  * 0: Water\n  * 1: Land\n",
-                "name": "flags"
+                "name": "flags",
+                "gsd": [
+                    4000
+                ]
             }
         ],
         "gee:visualizations": [

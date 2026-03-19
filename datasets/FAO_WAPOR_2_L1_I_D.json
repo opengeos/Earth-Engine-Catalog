@@ -115,7 +115,10 @@
                 "description": "Interception (Dekadal) [mm]",
                 "gee:scale": 0.1,
                 "gee:units": "mm",
-                "name": "L1_I_D"
+                "name": "L1_I_D",
+                "gsd": [
+                    248.2
+                ]
             }
         ],
         "gee:visualizations": [

@@ -123,7 +123,10 @@
             {
                 "description": "Average building height per grid cell",
                 "gee:units": "m",
-                "name": "built_height"
+                "name": "built_height",
+                "gsd": [
+                    100
+                ]
             }
         ],
         "gee:visualizations": [

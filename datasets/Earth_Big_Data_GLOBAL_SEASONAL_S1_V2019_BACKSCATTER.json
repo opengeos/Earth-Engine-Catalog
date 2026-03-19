@@ -119,97 +119,145 @@
                 "description": "Fall (Sep-Nov 2020) HH backscatter amplitude.",
                 "gee:polarization": "HH",
                 "gee:units": "dB",
-                "name": "fall_hh_AMP"
+                "name": "fall_hh_AMP",
+                "gsd": [
+                    92.7
+                ]
             },
             {
                 "description": "Fall (Sep-Nov 2020) HV backscatter amplitude.",
                 "gee:polarization": "HV",
                 "gee:units": "dB",
-                "name": "fall_hv_AMP"
+                "name": "fall_hv_AMP",
+                "gsd": [
+                    92.7
+                ]
             },
             {
                 "description": "Fall (Sep-Nov 2020) VH backscatter amplitude.",
                 "gee:polarization": "VH",
                 "gee:units": "dB",
-                "name": "fall_vh_AMP"
+                "name": "fall_vh_AMP",
+                "gsd": [
+                    92.7
+                ]
             },
             {
                 "description": "Fall (Sep-Nov 2020) VV backscatter amplitude.",
                 "gee:polarization": "VV",
                 "gee:units": "dB",
-                "name": "fall_vv_AMP"
+                "name": "fall_vv_AMP",
+                "gsd": [
+                    92.7
+                ]
             },
             {
                 "description": "Spring (Mar-May 2020) HH backscatter amplitude.",
                 "gee:polarization": "HH",
                 "gee:units": "dB",
-                "name": "spring_hh_AMP"
+                "name": "spring_hh_AMP",
+                "gsd": [
+                    92.7
+                ]
             },
             {
                 "description": "Spring (Mar-May 2020) HV backscatter amplitude.",
                 "gee:polarization": "HV",
                 "gee:units": "dB",
-                "name": "spring_hv_AMP"
+                "name": "spring_hv_AMP",
+                "gsd": [
+                    92.7
+                ]
             },
             {
                 "description": "Spring (Mar-May 2020) VH backscatter amplitude.",
                 "gee:polarization": "VH",
                 "gee:units": "dB",
-                "name": "spring_vh_AMP"
+                "name": "spring_vh_AMP",
+                "gsd": [
+                    92.7
+                ]
             },
             {
                 "description": "Spring (Mar-May 2020) VV backscatter amplitude.",
                 "gee:polarization": "VV",
                 "gee:units": "dB",
-                "name": "spring_vv_AMP"
+                "name": "spring_vv_AMP",
+                "gsd": [
+                    92.7
+                ]
             },
             {
                 "description": "Summer (Jun-Aug 2020) HH backscatter amplitude.",
                 "gee:polarization": "HH",
                 "gee:units": "dB",
-                "name": "summer_hh_AMP"
+                "name": "summer_hh_AMP",
+                "gsd": [
+                    92.7
+                ]
             },
             {
                 "description": "Summer (Jun-Aug 2020) HV backscatter amplitude.",
                 "gee:polarization": "HV",
                 "gee:units": "dB",
-                "name": "summer_hv_AMP"
+                "name": "summer_hv_AMP",
+                "gsd": [
+                    92.7
+                ]
             },
             {
                 "description": "Summer (Jun-Aug 2020) VH backscatter amplitude.",
                 "gee:polarization": "VH",
                 "gee:units": "dB",
-                "name": "summer_vh_AMP"
+                "name": "summer_vh_AMP",
+                "gsd": [
+                    92.7
+                ]
             },
             {
                 "description": "Summer (Jun-Aug 2020) VV backscatter amplitude.",
                 "gee:polarization": "VV",
                 "gee:units": "dB",
-                "name": "summer_vv_AMP"
+                "name": "summer_vv_AMP",
+                "gsd": [
+                    92.7
+                ]
             },
             {
                 "description": "Winter (Dec 2019-Feb 2020) HH backscatter amplitude.",
                 "gee:polarization": "HH",
                 "gee:units": "dB",
-                "name": "winter_hh_AMP"
+                "name": "winter_hh_AMP",
+                "gsd": [
+                    92.7
+                ]
             },
             {
                 "description": "Winter (Dec 2019-Feb 2020) HV backscatter amplitude.",
                 "gee:polarization": "HV",
                 "gee:units": "dB",
-                "name": "winter_hv_AMP"
+                "name": "winter_hv_AMP",
+                "gsd": [
+                    92.7
+                ]
             },
             {
                 "description": "Winter (Dec 2019-Feb 2020) VH backscatter amplitude.",
                 "gee:polarization": "VH",
                 "gee:units": "dB",
-                "name": "winter_vh_AMP"
+                "name": "winter_vh_AMP",
+                "gsd": [
+                    92.7
+                ]
             },
             {
                 "description": "Winter (Dec 2019-Feb 2020) VV backscatter amplitude.",
                 "gee:polarization": "VV",
                 "gee:units": "dB",
-                "name": "winter_vv_AMP"
+                "name": "winter_vv_AMP",
+                "gsd": [
+                    92.7
+                ]
             }
         ],
         "gee:schema": [

@@ -64,7 +64,7 @@
             "interval": [
                 [
                     "1979-01-01T00:00:00Z",
-                    "2026-03-16T00:00:00Z"
+                    "2026-03-17T00:00:00Z"
                 ]
             ]
         }
@@ -99,20 +99,32 @@
             {
                 "description": "daily maximum temperature",
                 "gee:units": "&deg;C",
-                "name": "tmax"
+                "name": "tmax",
+                "gsd": [
+                    55500
+                ]
             },
             {
                 "description": "daily minimum temperature",
                 "gee:units": "&deg;C",
-                "name": "tmin"
+                "name": "tmin",
+                "gsd": [
+                    55500
+                ]
             },
             {
                 "description": "number of reports for maximum temperature",
-                "name": "nmax"
+                "name": "nmax",
+                "gsd": [
+                    55500
+                ]
             },
             {
                 "description": "number of reports for minimum temperature",
-                "name": "nmin"
+                "name": "nmin",
+                "gsd": [
+                    55500
+                ]
             }
         ],
         "gee:visualizations": [

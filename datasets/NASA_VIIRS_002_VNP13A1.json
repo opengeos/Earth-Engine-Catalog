@@ -132,39 +132,60 @@
         "eo:bands": [
             {
                 "description": "3 band Enhanced Vegetation Index",
-                "name": "EVI"
+                "name": "EVI",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "2 band Enhanced Vegetation Index",
-                "name": "EVI2"
+                "name": "EVI2",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Normalized Difference Vegetation Index",
-                "name": "NDVI"
+                "name": "NDVI",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "center_wavelength": 0.866,
                 "description": "Near-infrared Radiation reflectance",
                 "gee:wavelength": "846-885nm",
-                "name": "NIR_reflectance"
+                "name": "NIR_reflectance",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "center_wavelength": 1.24,
                 "description": "Shortwave Infrared Radiation reflectance",
                 "gee:wavelength": "1230-1250nm",
-                "name": "SWIR1_reflectance"
+                "name": "SWIR1_reflectance",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "center_wavelength": 1.61,
                 "description": "Shortwave Infrared Radiation reflectance",
                 "gee:wavelength": "1580-1640nm",
-                "name": "SWIR2_reflectance"
+                "name": "SWIR2_reflectance",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "center_wavelength": 2.25,
                 "description": "Shortwave Infrared Radiation reflectance",
                 "gee:wavelength": "2225-2275nm",
-                "name": "SWIR3_reflectance"
+                "name": "SWIR3_reflectance",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Quality Assessment (QA) bit-field.",
@@ -392,30 +413,45 @@
                     ],
                     "total_bit_count": 16
                 },
-                "name": "VI_Quality"
+                "name": "VI_Quality",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "center_wavelength": 0.64,
                 "description": "Red band reflectance",
                 "gee:wavelength": "600-680nm",
-                "name": "red_reflectance"
+                "name": "red_reflectance",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "center_wavelength": 0.601,
                 "description": "Green band reflectance",
                 "gee:wavelength": "545-656nm",
-                "name": "green_reflectance"
+                "name": "green_reflectance",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "center_wavelength": 0.488,
                 "description": "Blue band reflectance",
                 "gee:wavelength": "478-498nm",
-                "name": "blue_reflectance"
+                "name": "blue_reflectance",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Julian day of year",
                 "gee:units": "d",
-                "name": "composite_day_of_the_year"
+                "name": "composite_day_of_the_year",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Pixel usefulness using a simple rank class",
@@ -469,22 +505,34 @@
                         "value": 11
                     }
                 ],
-                "name": "pixel_reliability"
+                "name": "pixel_reliability",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Relative azimuth angle for each pixel",
                 "gee:units": "deg",
-                "name": "relative_azimuth_angle"
+                "name": "relative_azimuth_angle",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Sun zenith angle for each pixel",
                 "gee:units": "deg",
-                "name": "sun_zenith_angle"
+                "name": "sun_zenith_angle",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "View zenith angle for each pixel",
                 "gee:units": "deg",
-                "name": "view_zenith_angle"
+                "name": "view_zenith_angle",
+                "gsd": [
+                    500
+                ]
             }
         ],
         "gee:visualizations": [

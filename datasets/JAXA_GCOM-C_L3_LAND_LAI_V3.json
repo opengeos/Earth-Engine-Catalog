@@ -78,7 +78,7 @@
             "interval": [
                 [
                     "2021-11-29T00:00:00Z",
-                    "2026-03-15T00:00:00Z"
+                    "2026-03-17T00:00:00Z"
                 ]
             ]
         }
@@ -115,7 +115,10 @@
         "eo:bands": [
             {
                 "description": "The sum of the one-sided green leaf area per unit ground area.",
-                "name": "LAI_AVE"
+                "name": "LAI_AVE",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "LAI QA",
@@ -147,7 +150,10 @@
                     ],
                     "total_bit_count": 2
                 },
-                "name": "LAI_QA_flag"
+                "name": "LAI_QA_flag",
+                "gsd": [
+                    4638.3
+                ]
             }
         ],
         "gee:schema": [

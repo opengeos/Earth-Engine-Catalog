@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2016-04-14T00:00:00Z",
-                    "2026-03-17T16:49:47Z"
+                    "2026-03-18T15:52:23Z"
                 ]
             ]
         }
@@ -112,11 +112,17 @@
         "eo:bands": [
             {
                 "description": "VV polarization radar backscatter normalized to gamma0.",
-                "name": "VV"
+                "name": "VV",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "VH polarization radar backscatter normalized to gamma0.",
-                "name": "VH"
+                "name": "VH",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Mask layer containing valid/invalid, layover, and shadow\nclassification computed using the RTC-S1 burst orbit,\nprovided over the same geographic grid as the associated\ngeocoded imagery.\n",
@@ -147,7 +153,10 @@
                         "value": 255
                     }
                 ],
-                "name": "mask"
+                "name": "mask",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:schema": [

@@ -126,7 +126,10 @@
                         "value": 1
                     }
                 ],
-                "name": "BRDF_Albedo_Band_Mandatory_Quality_I1"
+                "name": "BRDF_Albedo_Band_Mandatory_Quality_I1",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "BRDF/Albedo mandatory quality for band I2",
@@ -140,7 +143,10 @@
                         "value": 1
                     }
                 ],
-                "name": "BRDF_Albedo_Band_Mandatory_Quality_I2"
+                "name": "BRDF_Albedo_Band_Mandatory_Quality_I2",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "BRDF/Albedo mandatory quality for band I3",
@@ -154,43 +160,73 @@
                         "value": 1
                     }
                 ],
-                "name": "BRDF_Albedo_Band_Mandatory_Quality_I3"
+                "name": "BRDF_Albedo_Band_Mandatory_Quality_I3",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Isotropic parameter for band I1",
-                "name": "BRDF_Albedo_Parameters_fiso_I1"
+                "name": "BRDF_Albedo_Parameters_fiso_I1",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Volumetric parameter for band I1",
-                "name": "BRDF_Albedo_Parameters_fvol_I1"
+                "name": "BRDF_Albedo_Parameters_fvol_I1",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Geometric parameter for band I1",
-                "name": "BRDF_Albedo_Parameters_fgeo_I1"
+                "name": "BRDF_Albedo_Parameters_fgeo_I1",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Isotropic parameter for band I2",
-                "name": "BRDF_Albedo_Parameters_fiso_I2"
+                "name": "BRDF_Albedo_Parameters_fiso_I2",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Volumetric parameter for band I2",
-                "name": "BRDF_Albedo_Parameters_fvol_I2"
+                "name": "BRDF_Albedo_Parameters_fvol_I2",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Geometric parameter for band I2",
-                "name": "BRDF_Albedo_Parameters_fgeo_I2"
+                "name": "BRDF_Albedo_Parameters_fgeo_I2",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Isotropic parameter for band I3",
-                "name": "BRDF_Albedo_Parameters_fiso_I3"
+                "name": "BRDF_Albedo_Parameters_fiso_I3",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Volumetric parameter for band I3",
-                "name": "BRDF_Albedo_Parameters_fvol_I3"
+                "name": "BRDF_Albedo_Parameters_fvol_I3",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Geometric parameter for band I3",
-                "name": "BRDF_Albedo_Parameters_fgeo_I3"
+                "name": "BRDF_Albedo_Parameters_fgeo_I3",
+                "gsd": [
+                    500
+                ]
             }
         ],
         "gee:visualizations": [

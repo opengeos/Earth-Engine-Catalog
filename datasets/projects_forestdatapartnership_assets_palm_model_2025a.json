@@ -118,7 +118,10 @@
         "eo:bands": [
             {
                 "description": "Probability that the pixel includes palm trees for the given year.\n",
-                "name": "probability"
+                "name": "probability",
+                "gsd": [
+                    10
+                ]
             }
         ],
         "gee:visualizations": [

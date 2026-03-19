@@ -124,7 +124,10 @@
             {
                 "description": "Primary product: elevation in meter units relative to modelled Mean\nSea Level (MSL).\n[Band details](https://cmi.ga.gov.au/data-products/dea/325/dea-intertidal-elevation-landsat#details)\n",
                 "gee:units": "m",
-                "name": "nidem"
+                "name": "nidem",
+                "gsd": [
+                    25
+                ]
             },
             {
                 "description": "Quality flag.\n[Band details](https://cmi.ga.gov.au/data-products/dea/325/dea-intertidal-elevation-landsat#details)\n",
@@ -145,17 +148,26 @@
                         "value": 3
                     }
                 ],
-                "name": "nidem_mask"
+                "name": "nidem_mask",
+                "gsd": [
+                    25
+                ]
             },
             {
                 "description": "Uncertainty meters.\n[Band details](https://cmi.ga.gov.au/data-products/dea/325/dea-intertidal-elevation-landsat#details)\n",
                 "gee:units": "m",
-                "name": "nidem_uncertainty"
+                "name": "nidem_uncertainty",
+                "gsd": [
+                    25
+                ]
             },
             {
                 "description": "Un-cleaned elevation in meters.\n[Band details](https://cmi.ga.gov.au/data-products/dea/325/dea-intertidal-elevation-landsat#details)\n",
                 "gee:units": "m",
-                "name": "nidem_unfiltered"
+                "name": "nidem_unfiltered",
+                "gsd": [
+                    25
+                ]
             }
         ],
         "gee:visualizations": [

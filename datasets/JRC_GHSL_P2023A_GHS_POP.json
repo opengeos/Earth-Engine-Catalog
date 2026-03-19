@@ -124,7 +124,10 @@
         "eo:bands": [
             {
                 "description": "Population count by epoch",
-                "name": "population_count"
+                "name": "population_count",
+                "gsd": [
+                    100
+                ]
             }
         ],
         "gee:visualizations": [

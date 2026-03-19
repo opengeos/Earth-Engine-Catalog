@@ -113,21 +113,33 @@
             {
                 "description": "Retrieved column-averaged dry-air CH4 mole fraction.",
                 "gee:units": "ppb",
-                "name": "XCH4"
+                "name": "XCH4",
+                "gsd": [
+                    10.2
+                ]
             },
             {
                 "description": "Ratio of solar radiance at the ground to observed radiance at the sensor.",
-                "name": "albedo"
+                "name": "albedo",
+                "gsd": [
+                    10.2
+                ]
             },
             {
                 "description": "Air pressure at the surface.",
                 "gee:units": "hPa",
-                "name": "surface_pressure"
+                "name": "surface_pressure",
+                "gsd": [
+                    10.2
+                ]
             },
             {
                 "description": "Elevation with respect to WGS84 reference ellipsoid.",
                 "gee:units": "km",
-                "name": "terrain_height"
+                "name": "terrain_height",
+                "gsd": [
+                    10.2
+                ]
             }
         ],
         "gee:schema": [

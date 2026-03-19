@@ -98,15 +98,24 @@
         "eo:bands": [
             {
                 "description": "Red",
-                "name": "R"
+                "name": "R",
+                "gsd": [
+                    0.4
+                ]
             },
             {
                 "description": "Green",
-                "name": "G"
+                "name": "G",
+                "gsd": [
+                    0.4
+                ]
             },
             {
                 "description": "Blue",
-                "name": "B"
+                "name": "B",
+                "gsd": [
+                    0.4
+                ]
             }
         ],
         "gee:visualizations": [

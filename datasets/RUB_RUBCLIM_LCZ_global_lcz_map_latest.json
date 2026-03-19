@@ -210,7 +210,10 @@
                         "value": 17
                     }
                 ],
-                "name": "LCZ"
+                "name": "LCZ",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "The recommended global LCZ map with LCZ classes.  LCZ labels are\nobtained after applying the morphological Gaussian filter\ndescribed in Demuzere et al. (2020)\n",
@@ -301,12 +304,18 @@
                         "value": 17
                     }
                 ],
-                "name": "LCZ_Filter"
+                "name": "LCZ_Filter",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "A probability layer that identifies how often the modal LCZ was\nchosen per pixel (e.g. a probability of 60% means that the modal\nLCZ class was mapped 30 times out of 50 LCZ models). This is a\npixel-based probability derived from the LCZ layer\n",
                 "gee:units": "%",
-                "name": "LCZ_Probability"
+                "name": "LCZ_Probability",
+                "gsd": [
+                    100
+                ]
             }
         ],
         "gee:visualizations": [

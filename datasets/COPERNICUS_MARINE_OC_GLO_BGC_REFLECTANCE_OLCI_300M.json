@@ -104,116 +104,185 @@
             {
                 "description": "Remote Sensing Reflectance at 400 nm",
                 "gee:units": "sr^-1",
-                "name": "RRS400"
+                "name": "RRS400",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Remote Sensing Reflectance at 400 nm - The uncertainty as measured in\nhundredths of a percent (e.g., a value of 5000 means 50%).\n",
                 "gee:units": "%",
-                "name": "RRS400_uncertainty"
+                "name": "RRS400_uncertainty",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Remote Sensing Reflectance at 412 nm",
                 "gee:units": "sr^-1",
-                "name": "RRS412"
+                "name": "RRS412",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Remote Sensing Reflectance at 412 nm - The uncertainty as measured in\nhundredths of a percent (e.g., a value of 5000 means 50%).\n",
                 "gee:units": "%",
-                "name": "RRS412_uncertainty"
+                "name": "RRS412_uncertainty",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Remote Sensing Reflectance at 443 nm",
                 "gee:units": "sr^-1",
-                "name": "RRS443"
+                "name": "RRS443",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Remote Sensing Reflectance at 443 nm - The uncertainty as measured in\nhundredths of a percent (e.g., a value of 5000 means 50%).\n",
                 "gee:units": "%",
-                "name": "RRS443_uncertainty"
+                "name": "RRS443_uncertainty",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Remote Sensing Reflectance at 490 nm",
                 "gee:units": "sr^-1",
-                "name": "RRS490"
+                "name": "RRS490",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Remote Sensing Reflectance at 490 nm - The uncertainty as measured in\nhundredths of a percent (e.g., a value of 5000 means 50%).\n",
                 "gee:units": "%",
-                "name": "RRS490_uncertainty"
+                "name": "RRS490_uncertainty",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Remote Sensing Reflectance at 510 nm",
                 "gee:units": "sr^-1",
-                "name": "RRS510"
+                "name": "RRS510",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Remote Sensing Reflectance at 510 nm - The uncertainty as measured in\nhundredths of a percent (e.g., a value of 5000 means 50%).\n",
                 "gee:units": "%",
-                "name": "RRS510_uncertainty"
+                "name": "RRS510_uncertainty",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Remote Sensing Reflectance at 560 nm",
                 "gee:units": "sr^-1",
-                "name": "RRS560"
+                "name": "RRS560",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Remote Sensing Reflectance at 560 nm - The uncertainty as measured in\nhundredths of a percent (e.g., a value of 5000 means 50%).\n",
                 "gee:units": "%",
-                "name": "RRS560_uncertainty"
+                "name": "RRS560_uncertainty",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Remote Sensing Reflectance at 620 nm",
                 "gee:units": "sr^-1",
-                "name": "RRS620"
+                "name": "RRS620",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Remote Sensing Reflectance at 620 nm - The uncertainty as measured in\nhundredths of a percent (e.g., a value of 5000 means 50%).\n",
                 "gee:units": "%",
-                "name": "RRS620_uncertainty"
+                "name": "RRS620_uncertainty",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Remote Sensing Reflectance at 665 nm",
                 "gee:units": "sr^-1",
-                "name": "RRS665"
+                "name": "RRS665",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Remote Sensing Reflectance at 665 nm - The uncertainty as measured in\nhundredths of a percent (e.g., a value of 5000 means 50%).\n",
                 "gee:units": "%",
-                "name": "RRS665_uncertainty"
+                "name": "RRS665_uncertainty",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Remote Sensing Reflectance at 674 nm",
                 "gee:units": "sr^-1",
-                "name": "RRS674"
+                "name": "RRS674",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Remote Sensing Reflectance at 674 nm - The uncertainty as measured in\nhundredths of a percent (e.g., a value of 5000 means 50%).\n",
                 "gee:units": "%",
-                "name": "RRS674_uncertainty"
+                "name": "RRS674_uncertainty",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Remote Sensing Reflectance at 681 nm",
                 "gee:units": "sr^-1",
-                "name": "RRS681"
+                "name": "RRS681",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Remote Sensing Reflectance at 681 nm - The uncertainty as measured in\nhundredths of a percent (e.g., a value of 5000 means 50%).\n",
                 "gee:units": "%",
-                "name": "RRS681_uncertainty"
+                "name": "RRS681_uncertainty",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Remote Sensing Reflectance at 709 nm",
                 "gee:units": "sr^-1",
-                "name": "RRS709"
+                "name": "RRS709",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Remote Sensing Reflectance at 709 nm - The uncertainty as measured in\nhundredths of a percent (e.g., a value of 5000 means 50%).\n",
                 "gee:units": "%",
-                "name": "RRS709_uncertainty"
+                "name": "RRS709_uncertainty",
+                "gsd": [
+                    300
+                ]
             },
             {
                 "description": "Land water mask bit.\n\n* 0: Water\n* 1: Land\n",
-                "name": "flags"
+                "name": "flags",
+                "gsd": [
+                    300
+                ]
             }
         ],
         "gee:visualizations": [

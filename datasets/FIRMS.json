@@ -76,7 +76,7 @@
             "interval": [
                 [
                     "2000-11-01T00:00:00Z",
-                    "2026-03-17T00:00:00Z"
+                    "2026-03-18T00:00:00Z"
                 ]
             ]
         }
@@ -115,16 +115,25 @@
             {
                 "description": "The brightness temperature of a fire pixel using MODIS channels 21/22.",
                 "gee:units": "K",
-                "name": "T21"
+                "name": "T21",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "A detection confidence intended to help users gauge the\nquality of individual active fire pixels. The confidence estimate ranges\nbetween 0% and 100% for all fire pixels within the fire mask. The\nconfidence field should be used with caution; it is likely that it will\nvary in meaning in different parts of the world.\n",
                 "gee:units": "%",
-                "name": "confidence"
+                "name": "confidence",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Line number in the FIRMS CSV file that the pixel came from.",
-                "name": "line_number"
+                "name": "line_number",
+                "gsd": [
+                    1000
+                ]
             }
         ],
         "gee:visualizations": [

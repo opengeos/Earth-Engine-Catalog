@@ -135,12 +135,18 @@
                 "description": "FPAR absorbed by the green elements of a vegetation canopy",
                 "gee:scale": 0.01,
                 "gee:wavelength": "400-700nm",
-                "name": "Fpar"
+                "name": "Fpar",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "One-sided green leaf area per unit ground area in\nbroadleaf canopies; one-half the total needle surface area per\nunit ground area in coniferous canopies\n",
                 "gee:scale": 0.1,
-                "name": "Lai"
+                "name": "Lai",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Quality for Lai and Fpar",
@@ -244,7 +250,10 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "FparLai_QC"
+                "name": "FparLai_QC",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Extra detail quality for LAI and FPAR",
@@ -366,17 +375,26 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "FparExtra_QC"
+                "name": "FparExtra_QC",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Standard deviation of Fpar",
                 "gee:scale": 0.01,
-                "name": "FparStdDev"
+                "name": "FparStdDev",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Standard deviation for Lai",
                 "gee:scale": 0.1,
-                "name": "LaiStdDev"
+                "name": "LaiStdDev",
+                "gsd": [
+                    500
+                ]
             }
         ],
         "gee:visualizations": [

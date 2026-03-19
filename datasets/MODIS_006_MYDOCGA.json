@@ -121,70 +121,100 @@
         "eo:bands": [
             {
                 "description": "Number of observations per pixel",
-                "name": "num_observations"
+                "name": "num_observations",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "center_wavelength": 0.4125,
                 "description": "MODIS band 8 surface reflectance",
                 "gee:scale": 0.0001,
                 "gee:wavelength": "405-420nm",
-                "name": "sur_refl_b08"
+                "name": "sur_refl_b08",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "center_wavelength": 0.443,
                 "description": "MODIS band 9 surface reflectance",
                 "gee:scale": 0.0001,
                 "gee:wavelength": "438-448nm",
-                "name": "sur_refl_b09"
+                "name": "sur_refl_b09",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "center_wavelength": 0.488,
                 "description": "MODIS band 10 surface reflectance",
                 "gee:scale": 0.0001,
                 "gee:wavelength": "483-493nm",
-                "name": "sur_refl_b10"
+                "name": "sur_refl_b10",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "center_wavelength": 0.531,
                 "description": "MODIS band 11 surface reflectance",
                 "gee:scale": 0.0001,
                 "gee:wavelength": "526-536nm",
-                "name": "sur_refl_b11"
+                "name": "sur_refl_b11",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "center_wavelength": 0.551,
                 "description": "MODIS band 12 surface reflectance",
                 "gee:scale": 0.0001,
                 "gee:wavelength": "546-556nm",
-                "name": "sur_refl_b12"
+                "name": "sur_refl_b12",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "center_wavelength": 0.667,
                 "description": "MODIS band 13 surface reflectance",
                 "gee:scale": 0.0001,
                 "gee:wavelength": "662-672nm",
-                "name": "sur_refl_b13"
+                "name": "sur_refl_b13",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "center_wavelength": 0.677,
                 "description": "MODIS band 14 surface reflectance",
                 "gee:scale": 0.0001,
                 "gee:wavelength": "673-683nm",
-                "name": "sur_refl_b14"
+                "name": "sur_refl_b14",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "center_wavelength": 0.747,
                 "description": "MODIS band 15 surface reflectance",
                 "gee:scale": 0.0001,
                 "gee:wavelength": "743-753nm",
-                "name": "sur_refl_b15"
+                "name": "sur_refl_b15",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "center_wavelength": 0.8695,
                 "description": "MODIS band 16 surface reflectance",
                 "gee:scale": 0.0001,
                 "gee:wavelength": "862-877nm",
-                "name": "sur_refl_b16"
+                "name": "sur_refl_b16",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Band quality for MODIS bands 8-15",
@@ -569,7 +599,10 @@
                     ],
                     "total_bit_count": 32
                 },
-                "name": "QC_b8_15_1km"
+                "name": "QC_b8_15_1km",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Band quality for MODIS band 16",
@@ -636,15 +669,24 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "QC_b16_15_1km"
+                "name": "QC_b16_15_1km",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Pointer to the orbit of each observation",
-                "name": "orbit_pnt"
+                "name": "orbit_pnt",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Pointer to the granule of each observation",
-                "name": "granule_pnt"
+                "name": "granule_pnt",
+                "gsd": [
+                    1000
+                ]
             }
         ],
         "gee:visualizations": [

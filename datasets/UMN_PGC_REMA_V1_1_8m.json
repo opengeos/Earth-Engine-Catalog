@@ -109,7 +109,10 @@
             {
                 "description": "Elevation",
                 "gee:units": "m",
-                "name": "elevation"
+                "name": "elevation",
+                "gsd": [
+                    8
+                ]
             }
         ],
         "gee:visualizations": [

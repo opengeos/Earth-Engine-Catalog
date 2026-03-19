@@ -104,22 +104,34 @@
             {
                 "description": "Red",
                 "gee:units": "dn",
-                "name": "R"
+                "name": "R",
+                "gsd": [
+                    0.6
+                ]
             },
             {
                 "description": "Green",
                 "gee:units": "dn",
-                "name": "G"
+                "name": "G",
+                "gsd": [
+                    0.6
+                ]
             },
             {
                 "description": "Blue",
                 "gee:units": "dn",
-                "name": "B"
+                "name": "B",
+                "gsd": [
+                    0.6
+                ]
             },
             {
                 "description": "Near infrared",
                 "gee:units": "dn",
-                "name": "N"
+                "name": "N",
+                "gsd": [
+                    0.6
+                ]
             }
         ],
         "gee:visualizations": [

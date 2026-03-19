@@ -104,7 +104,10 @@
             {
                 "description": "The thresholds at which, when crossed, a FORMA alert is produced",
                 "gee:units": "%",
-                "name": "delta_bound"
+                "name": "delta_bound",
+                "gsd": [
+                    250
+                ]
             }
         ],
         "gee:schema": [

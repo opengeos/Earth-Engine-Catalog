@@ -134,49 +134,70 @@
                 "description": "NBAR at local solar noon for band 1",
                 "gee:scale": 0.0001,
                 "gee:wavelength": "620-670nm",
-                "name": "Nadir_Reflectance_Band1"
+                "name": "Nadir_Reflectance_Band1",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "center_wavelength": 0.8585,
                 "description": "NBAR at local solar noon for band 2",
                 "gee:scale": 0.0001,
                 "gee:wavelength": "841-876nm",
-                "name": "Nadir_Reflectance_Band2"
+                "name": "Nadir_Reflectance_Band2",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "center_wavelength": 0.469,
                 "description": "NBAR at local solar noon for band 3",
                 "gee:scale": 0.0001,
                 "gee:wavelength": "459-479nm",
-                "name": "Nadir_Reflectance_Band3"
+                "name": "Nadir_Reflectance_Band3",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "center_wavelength": 0.555,
                 "description": "NBAR at local solar noon for band 4",
                 "gee:scale": 0.0001,
                 "gee:wavelength": "545-565nm",
-                "name": "Nadir_Reflectance_Band4"
+                "name": "Nadir_Reflectance_Band4",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "center_wavelength": 1.24,
                 "description": "NBAR at local solar noon for band 5",
                 "gee:scale": 0.0001,
                 "gee:wavelength": "1230-1250nm",
-                "name": "Nadir_Reflectance_Band5"
+                "name": "Nadir_Reflectance_Band5",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "center_wavelength": 1.64,
                 "description": "NBAR at local solar noon for band 6",
                 "gee:scale": 0.0001,
                 "gee:wavelength": "1628-1652nm",
-                "name": "Nadir_Reflectance_Band6"
+                "name": "Nadir_Reflectance_Band6",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "center_wavelength": 2.13,
                 "description": "NBAR at local solar noon for band 7",
                 "gee:scale": 0.0001,
                 "gee:wavelength": "2105-2155nm",
-                "name": "Nadir_Reflectance_Band7"
+                "name": "Nadir_Reflectance_Band7",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "BRDF albedo mandatory quality for band 1",
@@ -200,7 +221,10 @@
                     ],
                     "total_bit_count": 1
                 },
-                "name": "BRDF_Albedo_Band_Mandatory_Quality_Band1"
+                "name": "BRDF_Albedo_Band_Mandatory_Quality_Band1",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "BRDF albedo mandatory quality for band 2",
@@ -224,7 +248,10 @@
                     ],
                     "total_bit_count": 1
                 },
-                "name": "BRDF_Albedo_Band_Mandatory_Quality_Band2"
+                "name": "BRDF_Albedo_Band_Mandatory_Quality_Band2",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "BRDF albedo mandatory quality for band 3",
@@ -248,7 +275,10 @@
                     ],
                     "total_bit_count": 1
                 },
-                "name": "BRDF_Albedo_Band_Mandatory_Quality_Band3"
+                "name": "BRDF_Albedo_Band_Mandatory_Quality_Band3",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "BRDF albedo mandatory quality for band 4",
@@ -272,7 +302,10 @@
                     ],
                     "total_bit_count": 1
                 },
-                "name": "BRDF_Albedo_Band_Mandatory_Quality_Band4"
+                "name": "BRDF_Albedo_Band_Mandatory_Quality_Band4",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "BRDF albedo mandatory quality for band 5",
@@ -296,7 +329,10 @@
                     ],
                     "total_bit_count": 1
                 },
-                "name": "BRDF_Albedo_Band_Mandatory_Quality_Band5"
+                "name": "BRDF_Albedo_Band_Mandatory_Quality_Band5",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "BRDF albedo mandatory quality for band 6",
@@ -320,7 +356,10 @@
                     ],
                     "total_bit_count": 1
                 },
-                "name": "BRDF_Albedo_Band_Mandatory_Quality_Band6"
+                "name": "BRDF_Albedo_Band_Mandatory_Quality_Band6",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "BRDF albedo mandatory quality for band 7",
@@ -344,7 +383,10 @@
                     ],
                     "total_bit_count": 1
                 },
-                "name": "BRDF_Albedo_Band_Mandatory_Quality_Band7"
+                "name": "BRDF_Albedo_Band_Mandatory_Quality_Band7",
+                "gsd": [
+                    500
+                ]
             }
         ],
         "gee:visualizations": [

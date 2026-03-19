@@ -119,37 +119,58 @@
             {
                 "description": "Monthly total precipitation (including rain and melted snow)",
                 "gee:units": "mm",
-                "name": "ppt"
+                "name": "ppt",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Monthly average of daily mean temperature (calculated as (tmin+tmax)/2)",
                 "gee:units": "&deg;C",
-                "name": "tmean"
+                "name": "tmean",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Monthly minimum temperature",
                 "gee:units": "&deg;C",
-                "name": "tmin"
+                "name": "tmin",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Monthly average of daily maximum temperature",
                 "gee:units": "&deg;C",
-                "name": "tmax"
+                "name": "tmax",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Monthly average of daily mean dew point temperature",
                 "gee:units": "&deg;C",
-                "name": "tdmean"
+                "name": "tdmean",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Monthly average of daily minimum vapor pressure deficit",
                 "gee:units": "hPa",
-                "name": "vpdmin"
+                "name": "vpdmin",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Monthly average of daily maximum vapor pressure deficit",
                 "gee:units": "hPa",
-                "name": "vpdmax"
+                "name": "vpdmax",
+                "gsd": [
+                    4638.3
+                ]
             }
         ],
         "gee:schema": [

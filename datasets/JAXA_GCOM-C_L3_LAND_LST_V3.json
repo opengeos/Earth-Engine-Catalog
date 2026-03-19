@@ -78,7 +78,7 @@
             "interval": [
                 [
                     "2021-11-29T00:00:00Z",
-                    "2026-03-15T00:00:00Z"
+                    "2026-03-16T00:00:00Z"
                 ]
             ]
         }
@@ -116,7 +116,10 @@
             {
                 "description": "Temperature of land surface.",
                 "gee:units": "K",
-                "name": "LST_AVE"
+                "name": "LST_AVE",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "LST QA",
@@ -148,7 +151,10 @@
                     ],
                     "total_bit_count": 2
                 },
-                "name": "LST_QA_flag"
+                "name": "LST_QA_flag",
+                "gsd": [
+                    4638.3
+                ]
             }
         ],
         "gee:schema": [

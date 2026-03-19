@@ -106,11 +106,17 @@
         "eo:bands": [
             {
                 "description": "Average digital band numbers from observations with cloud-free light detection.",
-                "name": "avg_vis"
+                "name": "avg_vis",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Cloud-free coverages, the total number of observations that\nwent into each 30-arc second grid cell. This image can be used to identify\nareas with low numbers of observations where the quality is reduced.\n",
-                "name": "cf_cvg"
+                "name": "cf_cvg",
+                "gsd": [
+                    927.67
+                ]
             }
         ],
         "gee:visualizations": [

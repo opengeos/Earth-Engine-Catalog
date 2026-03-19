@@ -71,7 +71,7 @@
             "interval": [
                 [
                     "2023-01-01T00:00:00Z",
-                    "2026-03-11T12:00:00Z"
+                    "2026-03-12T12:00:00Z"
                 ]
             ]
         }
@@ -104,27 +104,42 @@
             {
                 "description": "Sea Surface Salinity",
                 "gee:units": "psu",
-                "name": "sos"
+                "name": "sos",
+                "gsd": [
+                    14000
+                ]
             },
             {
                 "description": "Sea Surface Salinity Error",
                 "gee:units": "psu",
-                "name": "sos_error"
+                "name": "sos_error",
+                "gsd": [
+                    14000
+                ]
             },
             {
                 "description": "Sea Surface Density",
                 "gee:units": "kg/m^3",
-                "name": "dos"
+                "name": "dos",
+                "gsd": [
+                    14000
+                ]
             },
             {
                 "description": "Sea Surface Density Error",
                 "gee:units": "kg/m^3",
-                "name": "dos_error"
+                "name": "dos_error",
+                "gsd": [
+                    14000
+                ]
             },
             {
                 "description": "Sea Surface Ice Fraction",
                 "gee:units": "%",
-                "name": "sea_ice_fraction"
+                "name": "sea_ice_fraction",
+                "gsd": [
+                    14000
+                ]
             }
         ],
         "gee:visualizations": [

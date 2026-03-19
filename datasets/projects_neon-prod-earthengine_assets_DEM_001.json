@@ -109,12 +109,18 @@
             {
                 "description": "Digital Terrain Model",
                 "gee:units": "m",
-                "name": "DTM"
+                "name": "DTM",
+                "gsd": [
+                    1
+                ]
             },
             {
                 "description": "Digital Surface Model",
                 "gee:units": "m",
-                "name": "DSM"
+                "name": "DSM",
+                "gsd": [
+                    1
+                ]
             }
         ],
         "gee:schema": [

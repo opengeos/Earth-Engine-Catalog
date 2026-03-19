@@ -105,61 +105,97 @@
             {
                 "description": "Carbon monoxide (CO, MW = 28.00 g mol-1) volume mixing ratio dry air",
                 "gee:units": "Mol fraction",
-                "name": "CO"
+                "name": "CO",
+                "gsd": [
+                    27750
+                ]
             },
             {
                 "description": "Nitrogen dioxide (NO2, MW = 46.00 g mol-1) volume mixing ratio dry air",
                 "gee:units": "Mol fraction",
-                "name": "NO2"
+                "name": "NO2",
+                "gsd": [
+                    27750
+                ]
             },
             {
                 "description": "Ozone (O3, MW = 48.00 g mol-1) volume mixing ratio dry air",
                 "gee:units": "Mol fraction",
-                "name": "O3"
+                "name": "O3",
+                "gsd": [
+                    27750
+                ]
             },
             {
                 "description": "Particulate matter with diameter below 2.5 um RH 35",
                 "gee:units": "ug m-3",
-                "name": "PM25_RH35_GCC"
+                "name": "PM25_RH35_GCC",
+                "gsd": [
+                    27750
+                ]
             },
             {
                 "description": "Total reconstructed PM2.5 RH 35",
                 "gee:units": "kg/m^3",
-                "name": "PM25_RH35_GOCART"
+                "name": "PM25_RH35_GOCART",
+                "gsd": [
+                    27750
+                ]
             },
             {
                 "description": "Specific humidity",
                 "gee:units": "Mass fraction",
-                "name": "Q"
+                "name": "Q",
+                "gsd": [
+                    27750
+                ]
             },
             {
                 "description": "Relative humidity after moist",
-                "name": "RH"
+                "name": "RH",
+                "gsd": [
+                    27750
+                ]
             },
             {
                 "description": "Sea level pressure",
                 "gee:units": "Pa",
-                "name": "SLP"
+                "name": "SLP",
+                "gsd": [
+                    27750
+                ]
             },
             {
                 "description": "Sulfur dioxide (SO2, MW = 64.00 g mol-1) volume mixing ratio dry air",
                 "gee:units": "Mol fraction",
-                "name": "SO2"
+                "name": "SO2",
+                "gsd": [
+                    27750
+                ]
             },
             {
                 "description": "Air temperature",
                 "gee:units": "K",
-                "name": "T"
+                "name": "T",
+                "gsd": [
+                    27750
+                ]
             },
             {
                 "description": "Eastward wind",
                 "gee:units": "m/s",
-                "name": "U"
+                "name": "U",
+                "gsd": [
+                    27750
+                ]
             },
             {
                 "description": "Northward wind",
                 "gee:units": "m/s",
-                "name": "V"
+                "name": "V",
+                "gsd": [
+                    27750
+                ]
             }
         ],
         "gee:schema": [

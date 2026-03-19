@@ -109,7 +109,10 @@
             {
                 "description": "Precipitation",
                 "gee:units": "mm/d",
-                "name": "precipitation"
+                "name": "precipitation",
+                "gsd": [
+                    5566
+                ]
             }
         ],
         "gee:visualizations": [

@@ -117,27 +117,45 @@
         "eo:bands": [
             {
                 "description": "BRDF/Albedo mandatory quality for band I1",
-                "name": "BRDF_Albedo_Band_Mandatory_Quality_I1"
+                "name": "BRDF_Albedo_Band_Mandatory_Quality_I1",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "BRDF/Albedo mandatory quality for band I2",
-                "name": "BRDF_Albedo_Band_Mandatory_Quality_I2"
+                "name": "BRDF_Albedo_Band_Mandatory_Quality_I2",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "BRDF/Albedo mandatory quality for band I3",
-                "name": "BRDF_Albedo_Band_Mandatory_Quality_I3"
+                "name": "BRDF_Albedo_Band_Mandatory_Quality_I3",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Nadir BRDF/Albedo Reflectance at local solar noon for band\nI1",
-                "name": "Nadir_Reflectance_I1"
+                "name": "Nadir_Reflectance_I1",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Nadir BRDF/Albedo Reflectance at local solar noon for band\nI2",
-                "name": "Nadir_Reflectance_I2"
+                "name": "Nadir_Reflectance_I2",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Nadir BRDF/Albedo Reflectance at local solar noon for band\nI3",
-                "name": "Nadir_Reflectance_I3"
+                "name": "Nadir_Reflectance_I3",
+                "gsd": [
+                    500
+                ]
             }
         ],
         "gee:visualizations": [

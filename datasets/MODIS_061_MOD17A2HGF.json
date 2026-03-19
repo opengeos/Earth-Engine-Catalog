@@ -123,13 +123,19 @@
                 "description": "Gross primary production",
                 "gee:scale": 0.0001,
                 "gee:units": "kg*C/m^2",
-                "name": "Gpp"
+                "name": "Gpp",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Net photosynthesis; GPP minus the maintenance respiration (MR)",
                 "gee:scale": 0.0001,
                 "gee:units": "kg*C/m^2",
-                "name": "PsnNet"
+                "name": "PsnNet",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Quality control bits",
@@ -237,7 +243,10 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "Psn_QC"
+                "name": "Psn_QC",
+                "gsd": [
+                    500
+                ]
             }
         ],
         "gee:visualizations": [

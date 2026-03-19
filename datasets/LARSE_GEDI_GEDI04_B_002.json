@@ -113,45 +113,75 @@
             {
                 "description": "Mean aboveground biomass density (MU): Estimated mean AGBD for the\n1 km grid cell, including forest and non-forest.\n",
                 "gee:units": "Mg/ha",
-                "name": "MU"
+                "name": "MU",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Variance component 1 (V1): Uncertainty in the estimate of mean\nbiomass due to the field-to-GEDI model used in L4A.\n",
-                "name": "V1"
+                "name": "V1",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Variance component 2 (V2)\n\n* If Mode of Inference = 1,\n  this is the uncertainty due to GEDI&apos;s sampling of the 1 km cell.\n* If Mode of Inference = 2,\n  this is uncertainty owing to the model predicting biomass using\n  wall-to-wall data, calibrated with the L4A footprint product.\n",
-                "name": "V2"
+                "name": "V2",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Mean aboveground biomass density standard error (SE): Standard Error\nof the mean estimate, combining sampling and modeling uncertainty.\n",
                 "gee:units": "Mg/ha",
-                "name": "SE"
+                "name": "SE",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Standard error as a fraction of the estimated mean AGBD (PE).\nIf >100%, the cell values are truncated to 100.\n",
                 "gee:units": "%",
-                "name": "PE"
+                "name": "PE",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Number of clusters (NC): Number of unique GEDI ground tracks with at\nleast one high-quality waveform intersecting the grid cell.\n",
-                "name": "NC"
+                "name": "NC",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Number of samples (NS): Total number of high-quality waveforms across\nall ground tracks within the grid cell.\n",
-                "name": "NS"
+                "name": "NS",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Quality flag (QF)\n\n* 0=Outside the GEDI domain\n* 1=Land surface\n* 2=Land surface and meets GEDI mission L1 requirement\n(Percent standard error <20% or Standard Error < 20 Mg ha-1)\n",
-                "name": "QF"
+                "name": "QF",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Prediction stratum (PS) determined by plant functional type and\ncontinent. PS is associated with an L4A model parameter covariance\nmatrix that contributes to the Model Error Variance (Table 2).\n",
-                "name": "PS"
+                "name": "PS",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Mode of interference (MI): Method used for a particular cell.\nUntil mission completion, only those cells where hybrid inference\nis possible will be populated with a mean biomass value.\n\n* 0=None applied\n* 1=Hybrid Model-Based\n* 2=Generalized Hierarchical Model-Based\n",
-                "name": "MI"
+                "name": "MI",
+                "gsd": [
+                    1000
+                ]
             }
         ],
         "gee:visualizations": [

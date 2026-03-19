@@ -197,102 +197,162 @@
                         "value": 17
                     }
                 ],
-                "name": "Overall_Class"
+                "name": "Overall_Class",
+                "gsd": [
+                    5000
+                ]
             },
             {
                 "description": "Percentage of water",
                 "gee:units": "%",
-                "name": "Water"
+                "name": "Water",
+                "gsd": [
+                    5000
+                ]
             },
             {
                 "description": "Percentage of evergreen needleleaf forest",
                 "gee:units": "%",
-                "name": "Evergreen_Needleleaf_Forest"
+                "name": "Evergreen_Needleleaf_Forest",
+                "gsd": [
+                    5000
+                ]
             },
             {
                 "description": "Percentage of evergreen broadleaf forest",
                 "gee:units": "%",
-                "name": "Evergreen_Broadleaf_Forest"
+                "name": "Evergreen_Broadleaf_Forest",
+                "gsd": [
+                    5000
+                ]
             },
             {
                 "description": "Percentage of deciduous needleleaf forest",
                 "gee:units": "%",
-                "name": "Deciduous_Needleleaf_Forest"
+                "name": "Deciduous_Needleleaf_Forest",
+                "gsd": [
+                    5000
+                ]
             },
             {
                 "description": "Percentage of deciduous broadleaf forest",
                 "gee:units": "%",
-                "name": "Deciduous_Broadleaf_Forest"
+                "name": "Deciduous_Broadleaf_Forest",
+                "gsd": [
+                    5000
+                ]
             },
             {
                 "description": "Percentage of mixed forest",
                 "gee:units": "%",
-                "name": "Mixed_Forest"
+                "name": "Mixed_Forest",
+                "gsd": [
+                    5000
+                ]
             },
             {
                 "description": "Percentage of closed shrublands",
                 "gee:units": "%",
-                "name": "Closed_Shrublands"
+                "name": "Closed_Shrublands",
+                "gsd": [
+                    5000
+                ]
             },
             {
                 "description": "Percentage of open shrublands",
                 "gee:units": "%",
-                "name": "Open_Shrublands"
+                "name": "Open_Shrublands",
+                "gsd": [
+                    5000
+                ]
             },
             {
                 "description": "Percentage of woody savannas",
                 "gee:units": "%",
-                "name": "Woody_Savannas"
+                "name": "Woody_Savannas",
+                "gsd": [
+                    5000
+                ]
             },
             {
                 "description": "Percentage of savannas",
                 "gee:units": "%",
-                "name": "Savannas"
+                "name": "Savannas",
+                "gsd": [
+                    5000
+                ]
             },
             {
                 "description": "Percentage of grasslands",
                 "gee:units": "%",
-                "name": "Grasslands"
+                "name": "Grasslands",
+                "gsd": [
+                    5000
+                ]
             },
             {
                 "description": "Percentage of permanent wetlands",
                 "gee:units": "%",
-                "name": "Permanent_Wetlands"
+                "name": "Permanent_Wetlands",
+                "gsd": [
+                    5000
+                ]
             },
             {
                 "description": "Percentage of croplands",
                 "gee:units": "%",
-                "name": "Croplands"
+                "name": "Croplands",
+                "gsd": [
+                    5000
+                ]
             },
             {
                 "description": "Percentage of urban and built up",
                 "gee:units": "%",
-                "name": "Urban_And_Built_Up"
+                "name": "Urban_And_Built_Up",
+                "gsd": [
+                    5000
+                ]
             },
             {
                 "description": "Percentage of cropland natural vegetation mosaic",
                 "gee:units": "%",
-                "name": "Cropland_Natural_Vegetation_Mosaic"
+                "name": "Cropland_Natural_Vegetation_Mosaic",
+                "gsd": [
+                    5000
+                ]
             },
             {
                 "description": "Percentage of snow and ice",
                 "gee:units": "%",
-                "name": "Snow_And_Ice"
+                "name": "Snow_And_Ice",
+                "gsd": [
+                    5000
+                ]
             },
             {
                 "description": "Percentage of barren or sparsely populated",
                 "gee:units": "%",
-                "name": "Barren_Or_Sparsely_Populated"
+                "name": "Barren_Or_Sparsely_Populated",
+                "gsd": [
+                    5000
+                ]
             },
             {
                 "description": "Percentage of unclassified",
                 "gee:units": "%",
-                "name": "Unclassified"
+                "name": "Unclassified",
+                "gsd": [
+                    5000
+                ]
             },
             {
                 "description": "Percentage of no data",
                 "gee:units": "%",
-                "name": "No_Data"
+                "name": "No_Data",
+                "gsd": [
+                    5000
+                ]
             }
         ],
         "gee:visualizations": [

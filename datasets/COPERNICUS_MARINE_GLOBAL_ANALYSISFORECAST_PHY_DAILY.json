@@ -71,7 +71,7 @@
             "interval": [
                 [
                     "2022-06-01T00:00:00Z",
-                    "2026-03-26T00:00:00Z"
+                    "2026-03-27T00:00:00Z"
                 ]
             ]
         }
@@ -106,72 +106,114 @@
             {
                 "description": "Mean albedo over sea ice",
                 "gee:units": "%",
-                "name": "sialb"
+                "name": "sialb",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Mean sea ice age",
                 "gee:units": "y",
-                "name": "siage"
+                "name": "siage",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Sea Ice Concentration",
                 "gee:units": "Dimensionless",
-                "name": "siconc"
+                "name": "siconc",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Sea Ice Surface Temperature",
                 "gee:units": "&deg;C",
-                "name": "ist"
+                "name": "ist",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Sea Ice Velocity",
                 "gee:units": "m/s",
-                "name": "sivelo"
+                "name": "sivelo",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Sea Ice Thickness",
                 "gee:units": "m",
-                "name": "sithick"
+                "name": "sithick",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Sea Ice Surface Snow Thickness",
                 "gee:units": "m",
-                "name": "sisnthick"
+                "name": "sisnthick",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Mixed Layer Depth",
                 "gee:units": "m",
-                "name": "mlotst"
+                "name": "mlotst",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Sea Water Pressure at Sea floor",
                 "gee:units": "Pa",
-                "name": "pbo"
+                "name": "pbo",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Sea Bottom Salinity",
                 "gee:units": "psu",
-                "name": "sob"
+                "name": "sob",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Sea Surface Height",
                 "gee:units": "m",
-                "name": "zos"
+                "name": "zos",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Sea Bottom Temperature",
                 "gee:units": "&deg;C",
-                "name": "tob"
+                "name": "tob",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Sea Ice Eastward Velocity",
                 "gee:units": "m/s",
-                "name": "usi"
+                "name": "usi",
+                "gsd": [
+                    9276.62
+                ]
             },
             {
                 "description": "Sea Ice Northward Velocity",
                 "gee:units": "m/s",
-                "name": "vsi"
+                "name": "vsi",
+                "gsd": [
+                    9276.62
+                ]
             }
         ],
         "gee:schema": [

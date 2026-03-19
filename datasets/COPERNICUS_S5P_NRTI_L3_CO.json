@@ -69,7 +69,7 @@
             "interval": [
                 [
                     "2018-11-22T12:00:13Z",
-                    "2026-03-17T15:32:24Z"
+                    "2026-03-18T21:47:23Z"
                 ]
             ]
         }
@@ -111,42 +111,66 @@
             {
                 "description": "Vertically integrated CO column density.",
                 "gee:units": "mol/m^2",
-                "name": "CO_column_number_density"
+                "name": "CO_column_number_density",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Water vapor column.",
                 "gee:units": "mol/m^2",
-                "name": "H2O_column_number_density"
+                "name": "H2O_column_number_density",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Scattering layer height.",
                 "gee:units": "m",
-                "name": "cloud_height"
+                "name": "cloud_height",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Altitude of the satellite with respect to the geodetic sub-satellite point\n(WGS84).",
                 "gee:units": "m",
-                "name": "sensor_altitude"
+                "name": "sensor_altitude",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Azimuth angle of the satellite at the ground pixel location (WGS84); angle\nmeasured East-of-North.",
                 "gee:units": "deg",
-                "name": "sensor_azimuth_angle"
+                "name": "sensor_azimuth_angle",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Zenith angle of the satellite at the ground pixel location (WGS84); angle\nmeasured away from the vertical.\n",
                 "gee:units": "deg",
-                "name": "sensor_zenith_angle"
+                "name": "sensor_zenith_angle",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Azimuth angle of the Sun at the ground pixel location (WGS84); angle\nmeasured East-of-North.",
                 "gee:units": "deg",
-                "name": "solar_azimuth_angle"
+                "name": "solar_azimuth_angle",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Zenith angle of the satellite at the ground pixel location (WGS84); angle\nmeasured away from the vertical.\n",
                 "gee:units": "deg",
-                "name": "solar_zenith_angle"
+                "name": "solar_zenith_angle",
+                "gsd": [
+                    1113.2
+                ]
             }
         ],
         "gee:schema": [

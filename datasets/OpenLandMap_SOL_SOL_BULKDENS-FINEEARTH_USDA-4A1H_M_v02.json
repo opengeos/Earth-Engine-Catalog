@@ -115,37 +115,55 @@
                 "description": "Soil bulk density at 0 cm depth",
                 "gee:scale": 10,
                 "gee:units": "kg/m^3",
-                "name": "b0"
+                "name": "b0",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Soil bulk density at 10 cm depth",
                 "gee:scale": 10,
                 "gee:units": "kg/m^3",
-                "name": "b10"
+                "name": "b10",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Soil bulk density at 30 cm depth",
                 "gee:scale": 10,
                 "gee:units": "kg/m^3",
-                "name": "b30"
+                "name": "b30",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Soil bulk density at 60 cm depth",
                 "gee:scale": 10,
                 "gee:units": "kg/m^3",
-                "name": "b60"
+                "name": "b60",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Soil bulk density at 100 cm depth",
                 "gee:scale": 10,
                 "gee:units": "kg/m^3",
-                "name": "b100"
+                "name": "b100",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Soil bulk density at 200 cm depth",
                 "gee:scale": 10,
                 "gee:units": "kg/m^3",
-                "name": "b200"
+                "name": "b200",
+                "gsd": [
+                    250
+                ]
             }
         ],
         "gee:visualizations": [

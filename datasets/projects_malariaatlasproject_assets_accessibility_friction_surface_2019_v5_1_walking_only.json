@@ -102,7 +102,10 @@
             {
                 "description": "Land-based travel speed using non-motorized transport.",
                 "gee:units": "min/m",
-                "name": "friction"
+                "name": "friction",
+                "gsd": [
+                    927.67
+                ]
             }
         ],
         "gee:visualizations": [

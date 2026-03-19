@@ -123,7 +123,10 @@
             {
                 "description": "Tree canopy cover for year 2000, defined as canopy closure for all\nvegetation taller than 5m in height.\n",
                 "gee:units": "%",
-                "name": "treecover2000"
+                "name": "treecover2000",
+                "gsd": [
+                    30.92
+                ]
             },
             {
                 "description": "Forest loss during the study period, defined as a stand-replacement\ndisturbance (a change from a forest to non-forest state).\n",
@@ -147,7 +150,10 @@
                     ],
                     "total_bit_count": 1
                 },
-                "name": "loss"
+                "name": "loss",
+                "gsd": [
+                    30.92
+                ]
             },
             {
                 "description": "Forest gain during the period 2000-2012, defined as the inverse of\nloss (a non-forest to forest change entirely within the study\nperiod). Note that this has not been updated in subsequent versions.\n",
@@ -171,59 +177,89 @@
                     ],
                     "total_bit_count": 1
                 },
-                "name": "gain"
+                "name": "gain",
+                "gsd": [
+                    30.92
+                ]
             },
             {
                 "description": "Year of gross forest cover loss event. Forest loss during the study\nperiod, defined as a stand-replacement disturbance, or a change from a\nforest to non-forest state. Encoded as either 0 (no loss) or else a value\nin the range 1-24, representing loss detected primarily in the year\n2001-2024, respectively.\n",
-                "name": "lossyear"
+                "name": "lossyear",
+                "gsd": [
+                    30.92
+                ]
             },
             {
                 "center_wavelength": 0.66,
                 "description": "Landsat Red cloud-free image composite (corresponding to Landsat 5/7 \nband 3 and Landsat 8/9 band 4). Reference multispectral imagery from \nthe first available year, typically 2000.\n",
                 "gee:wavelength": "0.63-0.69&micro;m",
-                "name": "first_b30"
+                "name": "first_b30",
+                "gsd": [
+                    30.92
+                ]
             },
             {
                 "center_wavelength": 0.835,
                 "description": "Landsat NIR cloud-free image composite (corresponding to Landsat 5/7 \nband 4 and Landsat 8/9 band 5). Reference multispectral imagery from \nthe first available year, typically 2000.\n",
                 "gee:wavelength": "0.77-0.90&micro;m",
-                "name": "first_b40"
+                "name": "first_b40",
+                "gsd": [
+                    30.92
+                ]
             },
             {
                 "center_wavelength": 1.65,
                 "description": "Landsat SWIR1 cloud-free image composite (corresponding to Landsat 5/7 \nband 5 and Landsat 8/9 band 6). Reference multispectral imagery from \nthe first available year, typically 2000.\n",
                 "gee:wavelength": "1.55-1.75&micro;m",
-                "name": "first_b50"
+                "name": "first_b50",
+                "gsd": [
+                    30.92
+                ]
             },
             {
                 "center_wavelength": 2.22,
                 "description": "Landsat SWIR2 cloud-free image composite (corresponding to Landsat 5/7 \nband 7 and Landsat 8/9 band 7). Reference multispectral imagery from \nthe first available year, typically 2000.\n",
                 "gee:wavelength": "2.09-2.35&micro;m",
-                "name": "first_b70"
+                "name": "first_b70",
+                "gsd": [
+                    30.92
+                ]
             },
             {
                 "center_wavelength": 0.66,
                 "description": "Landsat Red cloud-free image composite (corresponding to Landsat 5/7 \nband 3 and Landsat 8/9 band 4). Reference multispectral imagery from \nthe last available year, typically the last year of the study period.\n",
                 "gee:wavelength": "0.63-0.69&micro;m",
-                "name": "last_b30"
+                "name": "last_b30",
+                "gsd": [
+                    30.92
+                ]
             },
             {
                 "center_wavelength": 0.835,
                 "description": "Landsat NIR cloud-free image composite (corresponding to Landsat 5/7 \nband 4 and Landsat 8/9 band 5). Reference multispectral imagery from \nthe last available year, typically the last year of the study period.\n",
                 "gee:wavelength": "0.77-0.90&micro;m",
-                "name": "last_b40"
+                "name": "last_b40",
+                "gsd": [
+                    30.92
+                ]
             },
             {
                 "center_wavelength": 1.65,
                 "description": "Landsat SWIR1 cloud-free image composite (corresponding to Landsat 5/7 \nband 5 and Landsat 8/9 band 6). Reference multispectral imagery from \nthe last available year, typically the last year of the study period.\n",
                 "gee:wavelength": "1.55-1.75&micro;m",
-                "name": "last_b50"
+                "name": "last_b50",
+                "gsd": [
+                    30.92
+                ]
             },
             {
                 "center_wavelength": 2.22,
                 "description": "Landsat SWIR2 cloud-free image composite (corresponding to Landsat 5/7 \nband 7 and Landsat 8/9 band 7). Reference multispectral imagery from \nthe last available year, typically the last year of the study period.\n",
                 "gee:wavelength": "2.09-2.35&micro;m",
-                "name": "last_b70"
+                "name": "last_b70",
+                "gsd": [
+                    30.92
+                ]
             },
             {
                 "description": "Three values representing areas of no data, mapped land surface, and permanent water bodies.",
@@ -251,7 +287,10 @@
                     ],
                     "total_bit_count": 2
                 },
-                "name": "datamask"
+                "name": "datamask",
+                "gsd": [
+                    30.92
+                ]
             }
         ],
         "gee:visualizations": [

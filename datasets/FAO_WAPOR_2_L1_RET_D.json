@@ -115,7 +115,10 @@
                 "description": "Reference Evapotranspiration (Dekadal) [mm]",
                 "gee:scale": 0.1,
                 "gee:units": "mm",
-                "name": "L1_RET_D"
+                "name": "L1_RET_D",
+                "gsd": [
+                    18924
+                ]
             }
         ],
         "gee:visualizations": [

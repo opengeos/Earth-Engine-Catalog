@@ -134,122 +134,194 @@
             {
                 "description": "Aerodynamic conductance",
                 "gee:units": "m/s",
-                "name": "ACond_tavg"
+                "name": "ACond_tavg",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Average surface skin temperature",
                 "gee:units": "K",
-                "name": "AvgSurfT_tavg"
+                "name": "AvgSurfT_tavg",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Plant canopy surface water",
                 "gee:units": "kg/m^2",
-                "name": "CanopInt_tavg"
+                "name": "CanopInt_tavg",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Canopy water evaporation",
                 "gee:units": "kg/m^2/s",
-                "name": "ECanop_tavg"
+                "name": "ECanop_tavg",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Direct evaporation from bare soil",
                 "gee:units": "kg/m^2/s",
-                "name": "ESoil_tavg"
+                "name": "ESoil_tavg",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Snow Evaporation",
                 "gee:units": "kg/m^2/s",
-                "name": "EvapSnow_tavg"
+                "name": "EvapSnow_tavg",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Evapotranspiration",
                 "gee:units": "kg/m^2/s",
-                "name": "Evap_tavg"
+                "name": "Evap_tavg",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Ground water storage",
                 "gee:units": "mm",
-                "name": "GWS_tavg"
+                "name": "GWS_tavg",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Net long-wave radiation flux",
                 "gee:units": "W/m^2",
-                "name": "Lwnet_tavg"
+                "name": "Lwnet_tavg",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Heat flux",
                 "gee:units": "W/m^2",
-                "name": "Qg_tavg"
+                "name": "Qg_tavg",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Sensible heat net flux",
                 "gee:units": "W/m^2",
-                "name": "Qh_tavg"
+                "name": "Qh_tavg",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Latent heat net flux",
                 "gee:units": "W/m^2",
-                "name": "Qle_tavg"
+                "name": "Qle_tavg",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Baseflow-groundwater runoff",
                 "gee:units": "kg/m^2/s",
-                "name": "Qsb_tavg"
+                "name": "Qsb_tavg",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Snow melt",
                 "gee:units": "kg/m^2/s",
-                "name": "Qsm_tavg"
+                "name": "Qsm_tavg",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Storm surface runoff",
                 "gee:units": "kg/m^2/s",
-                "name": "Qs_tavg"
+                "name": "Qs_tavg",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Snow depth",
                 "gee:units": "m",
-                "name": "SnowDepth_tavg"
+                "name": "SnowDepth_tavg",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Snow Surface temperature",
                 "gee:units": "K",
-                "name": "SnowT_tavg"
+                "name": "SnowT_tavg",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Profile Soil moisture",
                 "gee:units": "kg/m^2",
-                "name": "SoilMoist_P_tavg"
+                "name": "SoilMoist_P_tavg",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Root Zone Soil moisture",
                 "gee:units": "kg/m^2",
-                "name": "SoilMoist_RZ_tavg"
+                "name": "SoilMoist_RZ_tavg",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Surface Soil moisture",
                 "gee:units": "kg/m^2",
-                "name": "SoilMoist_S_tavg"
+                "name": "SoilMoist_S_tavg",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Snow depth water equivalent",
                 "gee:units": "kg/m^2",
-                "name": "SWE_tavg"
+                "name": "SWE_tavg",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Net short wave radiation flux",
                 "gee:units": "W/m^2",
-                "name": "Swnet_tavg"
+                "name": "Swnet_tavg",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Transpiration",
                 "gee:units": "kg/m^2/s",
-                "name": "TVeg_tavg"
+                "name": "TVeg_tavg",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Terrestrial water storage",
                 "gee:units": "mm",
-                "name": "TWS_tavg"
+                "name": "TWS_tavg",
+                "gsd": [
+                    27830
+                ]
             }
         ],
         "gee:schema": [

@@ -240,7 +240,10 @@
                         "value": 25
                     }
                 ],
-                "name": "geomorphic"
+                "name": "geomorphic",
+                "gsd": [
+                    5
+                ]
             },
             {
                 "description": "Classification of dominant benthic composition.",
@@ -281,7 +284,10 @@
                         "value": 18
                     }
                 ],
-                "name": "benthic"
+                "name": "benthic",
+                "gsd": [
+                    5
+                ]
             },
             {
                 "description": "Globally standardised reef extent product that integrates a number of global\nreef classification and bahtymetry products (\"Reef Extent\" on the Atlas portal).\n",
@@ -297,7 +303,10 @@
                         "value": 1
                     }
                 ],
-                "name": "reef_mask"
+                "name": "reef_mask",
+                "gsd": [
+                    5
+                ]
             }
         ],
         "gee:visualizations": [

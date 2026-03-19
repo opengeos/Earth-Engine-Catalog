@@ -105,7 +105,10 @@
             {
                 "description": "Megagrams of aboveground live woody biomass per Hectare",
                 "gee:units": "Mg/ha",
-                "name": "Mg"
+                "name": "Mg",
+                "gsd": [
+                    500
+                ]
             }
         ],
         "gee:visualizations": [

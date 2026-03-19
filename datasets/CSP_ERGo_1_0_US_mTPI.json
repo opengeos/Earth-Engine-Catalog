@@ -110,7 +110,10 @@
             {
                 "description": "NED-derived mTPI ranging from negative (valleys) to positive (ridges) values",
                 "gee:units": "m",
-                "name": "elevation"
+                "name": "elevation",
+                "gsd": [
+                    270
+                ]
             }
         ],
         "gee:visualizations": [

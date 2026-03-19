@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2015-11-28T00:00:00Z",
-                    "2026-03-15T23:52:31Z"
+                    "2026-03-16T23:46:19Z"
                 ]
             ]
         }
@@ -108,55 +108,94 @@
         "eo:bands": [
             {
                 "description": "Coastal Aerosol",
-                "name": "B1"
+                "name": "B1",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Blue",
-                "name": "B2"
+                "name": "B2",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Green",
-                "name": "B3"
+                "name": "B3",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Red",
-                "name": "B4"
+                "name": "B4",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Red-Edge 1",
-                "name": "B5"
+                "name": "B5",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Red-Edge 2",
-                "name": "B6"
+                "name": "B6",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Red-Edge 3",
-                "name": "B7"
+                "name": "B7",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "NIR Broad",
-                "name": "B8"
+                "name": "B8",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "NIR Narrow",
-                "name": "B8A"
+                "name": "B8A",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Water vapor",
-                "name": "B9"
+                "name": "B9",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Cirrus",
-                "name": "B10"
+                "name": "B10",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "SWIR 1",
-                "name": "B11"
+                "name": "B11",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "SWIR 2",
-                "name": "B12"
+                "name": "B12",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Quality Bits",
@@ -278,27 +317,42 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "Fmask"
+                "name": "Fmask",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Sun Zenith Angle",
                 "gee:units": "deg",
-                "name": "SZA"
+                "name": "SZA",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Sun Azimuth Angle",
                 "gee:units": "deg",
-                "name": "SAA"
+                "name": "SAA",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "View Zenith Angle",
                 "gee:units": "deg",
-                "name": "VZA"
+                "name": "VZA",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "View Azimuth Angle",
                 "gee:units": "deg",
-                "name": "VAA"
+                "name": "VAA",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

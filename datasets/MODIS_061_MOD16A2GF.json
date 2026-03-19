@@ -118,25 +118,37 @@
                 "description": "Total evapotranspiration",
                 "gee:scale": 0.1,
                 "gee:units": "kg/m^2/8day",
-                "name": "ET"
+                "name": "ET",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Average latent heat flux",
                 "gee:scale": 10000,
                 "gee:units": "J/m^2/day",
-                "name": "LE"
+                "name": "LE",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Total potential evapotranspiration",
                 "gee:scale": 0.1,
                 "gee:units": "kg/m^2/8day",
-                "name": "PET"
+                "name": "PET",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Average potential latent heat flux",
                 "gee:scale": 10000,
                 "gee:units": "J/m^2/day",
-                "name": "PLE"
+                "name": "PLE",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Evapotranspiration quality control flags",
@@ -240,7 +252,10 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "ET_QC"
+                "name": "ET_QC",
+                "gsd": [
+                    500
+                ]
             }
         ],
         "gee:visualizations": [

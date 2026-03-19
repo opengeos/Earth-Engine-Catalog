@@ -117,73 +117,109 @@
                 "description": "Long-term Land Surface Temperature daytime monthly stddev, January",
                 "gee:scale": 0.02,
                 "gee:units": "K",
-                "name": "jan"
+                "name": "jan",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Long-term Land Surface Temperature daytime monthly stddev, February",
                 "gee:scale": 0.02,
                 "gee:units": "K",
-                "name": "feb"
+                "name": "feb",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Long-term Land Surface Temperature daytime monthly stddev, March",
                 "gee:scale": 0.02,
                 "gee:units": "K",
-                "name": "mar"
+                "name": "mar",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Long-term Land Surface Temperature daytime monthly stddev, April",
                 "gee:scale": 0.02,
                 "gee:units": "K",
-                "name": "apr"
+                "name": "apr",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Long-term Land Surface Temperature daytime monthly stddev, May",
                 "gee:scale": 0.02,
                 "gee:units": "K",
-                "name": "may"
+                "name": "may",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Long-term Land Surface Temperature daytime monthly stddev, June",
                 "gee:scale": 0.02,
                 "gee:units": "K",
-                "name": "jun"
+                "name": "jun",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Long-term Land Surface Temperature daytime monthly stddev, July",
                 "gee:scale": 0.02,
                 "gee:units": "K",
-                "name": "jul"
+                "name": "jul",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Long-term Land Surface Temperature daytime monthly stddev, August",
                 "gee:scale": 0.02,
                 "gee:units": "K",
-                "name": "aug"
+                "name": "aug",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Long-term Land Surface Temperature daytime monthly stddev, September",
                 "gee:scale": 0.02,
                 "gee:units": "K",
-                "name": "sep"
+                "name": "sep",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Long-term Land Surface Temperature daytime monthly stddev, October",
                 "gee:scale": 0.02,
                 "gee:units": "K",
-                "name": "oct"
+                "name": "oct",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Long-term Land Surface Temperature daytime monthly stddev, November",
                 "gee:scale": 0.02,
                 "gee:units": "K",
-                "name": "nov"
+                "name": "nov",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Long-term Land Surface Temperature daytime monthly stddev, December",
                 "gee:scale": 0.02,
                 "gee:units": "K",
-                "name": "dec"
+                "name": "dec",
+                "gsd": [
+                    1000
+                ]
             }
         ],
         "gee:visualizations": [

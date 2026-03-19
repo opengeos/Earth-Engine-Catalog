@@ -106,7 +106,10 @@
         "eo:bands": [
             {
                 "description": "Natural forest probabilities (scaled to [0-250]).\n",
-                "name": "B0"
+                "name": "B0",
+                "gsd": [
+                    10
+                ]
             }
         ],
         "gee:visualizations": [

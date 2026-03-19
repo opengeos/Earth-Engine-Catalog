@@ -105,25 +105,37 @@
                 "center_wavelength": 0.485,
                 "description": "Blue",
                 "gee:wavelength": "0.45 - 0.52 &mu;m",
-                "name": "B1"
+                "name": "B1",
+                "gsd": [
+                    15
+                ]
             },
             {
                 "center_wavelength": 0.56,
                 "description": "Green",
                 "gee:wavelength": "0.52 - 0.60 &mu;m",
-                "name": "B2"
+                "name": "B2",
+                "gsd": [
+                    15
+                ]
             },
             {
                 "center_wavelength": 0.66,
                 "description": "Red",
                 "gee:wavelength": "0.63 - 0.69 &mu;m",
-                "name": "B3"
+                "name": "B3",
+                "gsd": [
+                    15
+                ]
             },
             {
                 "center_wavelength": 0.835,
                 "description": "Near infrared",
                 "gee:wavelength": "0.77 - 0.90 &mu;m",
-                "name": "B4"
+                "name": "B4",
+                "gsd": [
+                    15
+                ]
             }
         ],
         "gee:visualizations": [

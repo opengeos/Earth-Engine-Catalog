@@ -110,7 +110,10 @@
             {
                 "description": "Total cloud cover",
                 "gee:units": "%",
-                "name": "tcdc"
+                "name": "tcdc",
+                "gsd": [
+                    278300
+                ]
             }
         ],
         "gee:visualizations": [

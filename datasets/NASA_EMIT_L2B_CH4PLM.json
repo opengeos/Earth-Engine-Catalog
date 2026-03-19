@@ -109,7 +109,10 @@
             {
                 "description": "Estimated Methane plume complex.",
                 "gee:units": "ppm m",
-                "name": "methane_plume_complex"
+                "name": "methane_plume_complex",
+                "gsd": [
+                    72000
+                ]
             }
         ],
         "gee:schema": [

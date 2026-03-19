@@ -109,32 +109,50 @@
             {
                 "description": "Monthly average of maximum daily temperature near surface",
                 "gee:units": "K",
-                "name": "tasmax"
+                "name": "tasmax",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Monthly average of minimum daily temperature near surface",
                 "gee:units": "K",
-                "name": "tasmin"
+                "name": "tasmin",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Monthly average of mean daily specific humidity near surface",
                 "gee:units": "Mass fraction",
-                "name": "huss"
+                "name": "huss",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Total monthly precipitation amount at surface",
                 "gee:units": "mm",
-                "name": "pr"
+                "name": "pr",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Monthly average of mean daily downward shortwave radiation at surface",
                 "gee:units": "W/m^2",
-                "name": "rsds"
+                "name": "rsds",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "Monthly average of mean daily near surface wind speed",
                 "gee:units": "m/s",
-                "name": "was"
+                "name": "was",
+                "gsd": [
+                    4638.3
+                ]
             }
         ],
         "gee:schema": [

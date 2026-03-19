@@ -73,7 +73,7 @@
             "interval": [
                 [
                     "1948-01-01T00:00:00Z",
-                    "2026-03-14T18:00:00Z"
+                    "2026-03-15T18:00:00Z"
                 ]
             ]
         }
@@ -111,7 +111,10 @@
             {
                 "description": "Total column water vapor",
                 "gee:units": "kg/m^2",
-                "name": "pr_wtr"
+                "name": "pr_wtr",
+                "gsd": [
+                    278300
+                ]
             }
         ],
         "gee:visualizations": [

@@ -69,7 +69,7 @@
             "interval": [
                 [
                     "2018-04-30T10:50:26Z",
-                    "2026-03-02T11:08:55Z"
+                    "2026-03-03T10:50:00Z"
                 ]
             ]
         }
@@ -110,27 +110,47 @@
             {
                 "description": "Average tropospheric ozone mixing ratio based on CCD algorithm.",
                 "gee:units": "mol/m^2",
-                "name": "ozone_tropospheric_mixing_ratio"
+                "name": "ozone_tropospheric_mixing_ratio",
+                "gsd": [
+                    111320,
+                    55660
+                ]
             },
             {
                 "description": "Standard deviation of tropospheric ozone mixing ratio based on CCD algorithm.",
                 "gee:units": "mol/m^2",
-                "name": "ozone_tropospheric_mixing_ratio_precision"
+                "name": "ozone_tropospheric_mixing_ratio_precision",
+                "gsd": [
+                    111320,
+                    55660
+                ]
             },
             {
                 "description": "Average tropospheric ozone column based on CCD algorithm.",
                 "gee:units": "mol/m^2",
-                "name": "ozone_tropospheric_vertical_column"
+                "name": "ozone_tropospheric_vertical_column",
+                "gsd": [
+                    111320,
+                    55660
+                ]
             },
             {
                 "description": "Standard deviation of tropospheric ozone column based on CCD algorithm.",
                 "gee:units": "mol/m^2",
-                "name": "ozone_tropospheric_vertical_column_precision"
+                "name": "ozone_tropospheric_vertical_column_precision",
+                "gsd": [
+                    111320,
+                    55660
+                ]
             },
             {
                 "description": "A continuous quality descriptor, varying between 0 (no data) and 100\n(full quality data). Pixels with qa_value <= 70 are masked out.\n",
                 "gee:units": "mol/m^2",
-                "name": "qa_value"
+                "name": "qa_value",
+                "gsd": [
+                    111320,
+                    55660
+                ]
             }
         ],
         "gee:schema": [

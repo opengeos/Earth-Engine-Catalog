@@ -101,7 +101,10 @@
             {
                 "description": "Maximum depth",
                 "gee:units": "m",
-                "name": "b1"
+                "name": "b1",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

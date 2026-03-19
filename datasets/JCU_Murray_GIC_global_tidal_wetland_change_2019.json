@@ -114,35 +114,59 @@
         "eo:bands": [
             {
                 "description": "Set to 1 for loss locations, masked out otherwise.",
-                "name": "loss"
+                "name": "loss",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Integer representing the end year of the time-step of loss analysis\n(e.g., 19 = 2017-2019).\n",
-                "name": "lossYear"
+                "name": "lossYear",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Loss type\n\n* 2 - Tidal Flat\n* 3 - Mangrove\n* 5 - Tidal Marsh\n",
-                "name": "lossType"
+                "name": "lossType",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Set to 1 for gain locations, masked out otherwise.",
-                "name": "gain"
+                "name": "gain",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Integer representing the end year of the time-step of gain analysis\n(e.g., 19 = 2017-2019).\n",
-                "name": "gainYear"
+                "name": "gainYear",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Gain type:\n\n* 2 - Tidal Flat\n* 3 - Mangrove\n* 5 - Tidal Marsh\n",
-                "name": "gainType"
+                "name": "gainType",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Random forest agreement of the overarching tidal wetland class for\nthe first time step (1999-2001). Integer between 0 and 100.\n",
-                "name": "twprobabilityStart"
+                "name": "twprobabilityStart",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Random forest agreement of the overarching tidal wetland class for\nthe last time step (2017-2019). Integer between 0 and 100.\n",
-                "name": "twprobabilityEnd"
+                "name": "twprobabilityEnd",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

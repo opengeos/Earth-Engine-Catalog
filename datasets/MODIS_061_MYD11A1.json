@@ -135,7 +135,10 @@
                 "description": "Daytime Land Surface Temperature",
                 "gee:scale": 0.02,
                 "gee:units": "K",
-                "name": "LST_Day_1km"
+                "name": "LST_Day_1km",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Daytime LST Quality Indicators",
@@ -236,25 +239,37 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "QC_Day"
+                "name": "QC_Day",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Local time of day observation",
                 "gee:scale": 0.1,
                 "gee:units": "h",
-                "name": "Day_view_time"
+                "name": "Day_view_time",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "View zenith angle of day observation",
                 "gee:offset": -65,
                 "gee:units": "deg",
-                "name": "Day_view_angle"
+                "name": "Day_view_angle",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Nighttime Land Surface Temperature",
                 "gee:scale": 0.02,
                 "gee:units": "K",
-                "name": "LST_Night_1km"
+                "name": "LST_Night_1km",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Nighttime LST Quality indicators",
@@ -355,41 +370,62 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "QC_Night"
+                "name": "QC_Night",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Local time of night observation",
                 "gee:scale": 0.1,
                 "gee:units": "h",
-                "name": "Night_view_time"
+                "name": "Night_view_time",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "View zenith angle of night observation",
                 "gee:offset": -65,
                 "gee:units": "deg",
-                "name": "Night_view_angle"
+                "name": "Night_view_angle",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Band 31 emissivity",
                 "gee:offset": 0.49,
                 "gee:scale": 0.002,
-                "name": "Emis_31"
+                "name": "Emis_31",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Band 32 emissivity",
                 "gee:offset": 0.49,
                 "gee:scale": 0.002,
-                "name": "Emis_32"
+                "name": "Emis_32",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Day clear-sky coverage",
                 "gee:scale": 0.0005,
-                "name": "Clear_day_cov"
+                "name": "Clear_day_cov",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Night clear-sky coverage",
                 "gee:scale": 0.0005,
-                "name": "Clear_night_cov"
+                "name": "Clear_night_cov",
+                "gsd": [
+                    1000
+                ]
             }
         ],
         "gee:visualizations": [

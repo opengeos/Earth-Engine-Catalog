@@ -105,94 +105,157 @@
         "eo:bands": [
             {
                 "description": "Number of observations from MERIS sensor",
-                "name": "MERIS_nobs"
+                "name": "MERIS_nobs",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Number of observations from MODIS-A sensor",
-                "name": "MODISA_nobs"
+                "name": "MODISA_nobs",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Number of observations from OLCI-A sensor",
-                "name": "OLCI-A_nobs"
+                "name": "OLCI-A_nobs",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Number of observations from OLCI-B sensor",
-                "name": "OLCI-B_nobs"
+                "name": "OLCI-B_nobs",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Number of observations from SeaWiFS sensor",
-                "name": "SeaWiFS_nobs"
+                "name": "SeaWiFS_nobs",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Number of observations from VIIRS sensor",
-                "name": "VIIRS_nobs"
+                "name": "VIIRS_nobs",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Chlorophyll-a concentration",
                 "gee:units": "mg/m^3",
-                "name": "chlor_a"
+                "name": "chlor_a",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Total number of observations",
-                "name": "total_nobs"
+                "name": "total_nobs",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Remote sensing reflectance at 412 nm",
                 "gee:units": "sr^-1",
-                "name": "Rrs_412"
+                "name": "Rrs_412",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Remote sensing reflectance at 443 nm",
                 "gee:units": "sr^-1",
-                "name": "Rrs_443"
+                "name": "Rrs_443",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Remote sensing reflectance at 490 nm",
                 "gee:units": "sr^-1",
-                "name": "Rrs_490"
+                "name": "Rrs_490",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Remote sensing reflectance at 510 nm",
                 "gee:units": "sr^-1",
-                "name": "Rrs_510"
+                "name": "Rrs_510",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Remote sensing reflectance at 560 nm",
                 "gee:units": "sr^-1",
-                "name": "Rrs_560"
+                "name": "Rrs_560",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Remote sensing reflectance at 665 nm",
                 "gee:units": "sr^-1",
-                "name": "Rrs_665"
+                "name": "Rrs_665",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Number of observations from MERIS sensor",
-                "name": "Rrs_MERIS_nobs"
+                "name": "Rrs_MERIS_nobs",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Number of observations from MODIS-A sensor",
-                "name": "Rrs_MODISA_nobs"
+                "name": "Rrs_MODISA_nobs",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Number of observations from OLCI-A sensor",
-                "name": "Rrs_OLCI-A_nobs"
+                "name": "Rrs_OLCI-A_nobs",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Number of observations from OLCI-B sensor",
-                "name": "Rrs_OLCI-B_nobs"
+                "name": "Rrs_OLCI-B_nobs",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Number of observations from SeaWiFS sensor",
-                "name": "Rrs_SeaWiFS_nobs"
+                "name": "Rrs_SeaWiFS_nobs",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Number of observations from VIIRS sensor",
-                "name": "Rrs_VIIRS_nobs"
+                "name": "Rrs_VIIRS_nobs",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Total number of observations from RRS sensors",
-                "name": "Rrs_total_nobs"
+                "name": "Rrs_total_nobs",
+                "gsd": [
+                    4000
+                ]
             }
         ],
         "gee:visualizations": [

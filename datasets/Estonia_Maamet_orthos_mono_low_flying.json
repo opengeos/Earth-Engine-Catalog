@@ -98,7 +98,10 @@
         "eo:bands": [
             {
                 "description": "Grayscale",
-                "name": "mono"
+                "name": "mono",
+                "gsd": [
+                    0.4
+                ]
             }
         ],
         "gee:visualizations": [

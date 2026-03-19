@@ -118,7 +118,10 @@
             {
                 "description": "Optimum Interpolation Sea Surface Temperature (OISST), with a diurnal warming correction",
                 "gee:units": "&deg;C",
-                "name": "sea_surface_temperature"
+                "name": "sea_surface_temperature",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Quality control flags",
@@ -158,7 +161,10 @@
                     ],
                     "total_bit_count": 3
                 },
-                "name": "fill_missing_qc"
+                "name": "fill_missing_qc",
+                "gsd": [
+                    27830
+                ]
             }
         ],
         "gee:visualizations": [

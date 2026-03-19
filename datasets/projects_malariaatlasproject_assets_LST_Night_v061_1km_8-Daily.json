@@ -105,7 +105,10 @@
         "eo:bands": [
             {
                 "description": "The mean value of nighttime land surface temperature for each aggregated pixel.",
-                "name": "Mean"
+                "name": "Mean",
+                "gsd": [
+                    5000
+                ]
             }
         ],
         "gee:visualizations": [

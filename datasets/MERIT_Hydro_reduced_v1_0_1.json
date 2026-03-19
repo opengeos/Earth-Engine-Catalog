@@ -114,12 +114,18 @@
         "eo:bands": [
             {
                 "description": "River channel width at the channel centerlines. River channel width is\ncalculated by the method described in [Yamazaki et al. 2012, WRR], with some\nimprovements/changes on the algorithm. This band was upscaled to 18 arc seconds\nfrom the original 3 arc seconds for better visualization at global scale.\n",
-                "name": "wth"
+                "name": "wth",
+                "gsd": [
+                    556.6
+                ]
             },
             {
                 "description": "Upstream drainage area (flow accumulation area). This band was upscaled\nto 18 arc seconds from the original 3 arc seconds for better visualization\nat global scale.\n",
                 "gee:units": "km^2",
-                "name": "upa"
+                "name": "upa",
+                "gsd": [
+                    556.6
+                ]
             }
         ],
         "gee:visualizations": [

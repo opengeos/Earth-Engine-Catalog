@@ -122,32 +122,50 @@
             {
                 "description": "The lowest air temperature recorded at 2 meters above the ground\nsurface over a 24-hour period.\n",
                 "gee:units": "&deg;C",
-                "name": "minimum_temperature"
+                "name": "minimum_temperature",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "description": "The highest air temperature recorded at 2 meters above the ground\nsurface over a 24-hour period.\n",
                 "gee:units": "&deg;C",
-                "name": "maximum_temperature"
+                "name": "maximum_temperature",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "description": "The maximum amount of water vapor that the air can hold at a given\ntemperature and pressure at 2 meters above ground.\n",
                 "gee:units": "kPa",
-                "name": "saturation_vapor_pressure"
+                "name": "saturation_vapor_pressure",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "description": "The difference between the saturation vapor pressure and the actual\nvapor pressure at 2 meters above ground.\n",
                 "gee:units": "kPa",
-                "name": "vapor_pressure_deficit"
+                "name": "vapor_pressure_deficit",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "description": "The ratio of the actual amount of water vapor in the air to the\nmaximum amount it could hold at that temperature and pressure\n(saturation vapor pressure) at 2 meters above ground.\n",
                 "gee:units": "%",
-                "name": "relative_humidity"
+                "name": "relative_humidity",
+                "gsd": [
+                    5566
+                ]
             },
             {
                 "description": "A measure of how hot it feels when temperature and humidity are\ncombined.\n",
                 "gee:units": "&deg;F",
-                "name": "heat_index"
+                "name": "heat_index",
+                "gsd": [
+                    5566
+                ]
             }
         ],
         "gee:visualizations": [

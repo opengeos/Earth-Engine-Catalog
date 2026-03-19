@@ -122,7 +122,10 @@
                 "gee:offset": -0.2,
                 "gee:scale": 2.75e-05,
                 "gee:wavelength": "0.435-0.451 &mu;m",
-                "name": "SR_B1"
+                "name": "SR_B1",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "center_wavelength": 0.482,
@@ -130,7 +133,10 @@
                 "gee:offset": -0.2,
                 "gee:scale": 2.75e-05,
                 "gee:wavelength": "0.452-0.512 &mu;m",
-                "name": "SR_B2"
+                "name": "SR_B2",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "center_wavelength": 0.562,
@@ -138,7 +144,10 @@
                 "gee:offset": -0.2,
                 "gee:scale": 2.75e-05,
                 "gee:wavelength": "0.533-0.590 &mu;m",
-                "name": "SR_B3"
+                "name": "SR_B3",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "center_wavelength": 0.655,
@@ -146,7 +155,10 @@
                 "gee:offset": -0.2,
                 "gee:scale": 2.75e-05,
                 "gee:wavelength": "0.636-0.673 &mu;m",
-                "name": "SR_B4"
+                "name": "SR_B4",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "center_wavelength": 0.865,
@@ -154,7 +166,10 @@
                 "gee:offset": -0.2,
                 "gee:scale": 2.75e-05,
                 "gee:wavelength": "0.851-0.879 &mu;m",
-                "name": "SR_B5"
+                "name": "SR_B5",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "center_wavelength": 1.609,
@@ -162,7 +177,10 @@
                 "gee:offset": -0.2,
                 "gee:scale": 2.75e-05,
                 "gee:wavelength": "1.566-1.651 &mu;m",
-                "name": "SR_B6"
+                "name": "SR_B6",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "center_wavelength": 2.201,
@@ -170,7 +188,10 @@
                 "gee:offset": -0.2,
                 "gee:scale": 2.75e-05,
                 "gee:wavelength": "2.107-2.294 &mu;m",
-                "name": "SR_B7"
+                "name": "SR_B7",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Aerosol attributes",
@@ -232,7 +253,10 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "SR_QA_AEROSOL"
+                "name": "SR_QA_AEROSOL",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "center_wavelength": 10.895,
@@ -241,52 +265,79 @@
                 "gee:scale": 0.00341802,
                 "gee:units": "K",
                 "gee:wavelength": "10.60-11.19 &mu;m",
-                "name": "ST_B10"
+                "name": "ST_B10",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Atmospheric Transmittance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
                 "gee:scale": 0.0001,
-                "name": "ST_ATRAN"
+                "name": "ST_ATRAN",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Pixel distance to cloud.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
                 "gee:scale": 0.01,
                 "gee:units": "km",
-                "name": "ST_CDIST"
+                "name": "ST_CDIST",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Downwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
                 "gee:scale": 0.001,
                 "gee:units": "W/(m^2*sr*um)/ DN",
-                "name": "ST_DRAD"
+                "name": "ST_DRAD",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Emissivity of Band 10 estimated from ASTER GED.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
                 "gee:scale": 0.0001,
-                "name": "ST_EMIS"
+                "name": "ST_EMIS",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Emissivity standard deviation.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
                 "gee:scale": 0.0001,
-                "name": "ST_EMSD"
+                "name": "ST_EMSD",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Uncertainty of the Surface Temperature band.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
                 "gee:scale": 0.01,
                 "gee:units": "K",
-                "name": "ST_QA"
+                "name": "ST_QA",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Thermal band converted to radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
                 "gee:scale": 0.001,
                 "gee:units": "W/(m^2*sr*um)/ DN",
-                "name": "ST_TRAD"
+                "name": "ST_TRAD",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Upwelled Radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
                 "gee:scale": 0.001,
                 "gee:units": "W/(m^2*sr*um)/ DN",
-                "name": "ST_URAD"
+                "name": "ST_URAD",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Pixel quality attributes generated from the CFMASK algorithm.",
@@ -437,7 +488,10 @@
                     ],
                     "total_bit_count": 16
                 },
-                "name": "QA_PIXEL"
+                "name": "QA_PIXEL",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Radiometric saturation QA",
@@ -506,7 +560,10 @@
                     ],
                     "total_bit_count": 12
                 },
-                "name": "QA_RADSAT"
+                "name": "QA_RADSAT",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

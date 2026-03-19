@@ -120,72 +120,114 @@
             {
                 "description": "Jan Potential FAPAR monthly",
                 "gee:units": "Fraction",
-                "name": "jan"
+                "name": "jan",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Feb Potential FAPAR monthly",
                 "gee:units": "Fraction",
-                "name": "feb"
+                "name": "feb",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Mar Potential FAPAR monthly",
                 "gee:units": "Fraction",
-                "name": "mar"
+                "name": "mar",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Apr Potential FAPAR monthly",
                 "gee:units": "Fraction",
-                "name": "apr"
+                "name": "apr",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "May Potential FAPAR monthly",
                 "gee:units": "Fraction",
-                "name": "may"
+                "name": "may",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Jun Potential FAPAR monthly",
                 "gee:units": "Fraction",
-                "name": "jun"
+                "name": "jun",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Jul Potential FAPAR monthly",
                 "gee:units": "Fraction",
-                "name": "jul"
+                "name": "jul",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Aug Potential FAPAR monthly",
                 "gee:units": "Fraction",
-                "name": "aug"
+                "name": "aug",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Sep Potential FAPAR monthly",
                 "gee:units": "Fraction",
-                "name": "sep"
+                "name": "sep",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Oct Potential FAPAR monthly",
                 "gee:units": "Fraction",
-                "name": "oct"
+                "name": "oct",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Nov Potential FAPAR monthly",
                 "gee:units": "Fraction",
-                "name": "nov"
+                "name": "nov",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Dec Potential FAPAR monthly",
                 "gee:units": "Fraction",
-                "name": "dec"
+                "name": "dec",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Anuual Potential FAPAR monthly",
                 "gee:units": "Fraction",
-                "name": "annual"
+                "name": "annual",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Annual Difference Potential FAPAR monthly",
                 "gee:units": "Fraction",
-                "name": "annualdiff"
+                "name": "annualdiff",
+                "gsd": [
+                    1000
+                ]
             }
         ],
         "gee:visualizations": [

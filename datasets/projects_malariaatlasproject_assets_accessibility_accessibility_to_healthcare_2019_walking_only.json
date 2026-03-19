@@ -100,7 +100,10 @@
             {
                 "description": "Travel time to the nearest hospital or clinic using non-motorized transport.",
                 "gee:units": "min",
-                "name": "accessibility_walking_only"
+                "name": "accessibility_walking_only",
+                "gsd": [
+                    927.67
+                ]
             }
         ],
         "gee:visualizations": [

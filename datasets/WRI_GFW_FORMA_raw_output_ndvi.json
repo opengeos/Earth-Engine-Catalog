@@ -104,22 +104,34 @@
             {
                 "description": "Percentage of clearing in the last 96 days",
                 "gee:units": "%",
-                "name": "delta"
+                "name": "delta",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Percentage of clearing in the last 32 days",
                 "gee:units": "%",
-                "name": "near_term_delta"
+                "name": "near_term_delta",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Confidence in predictions",
                 "gee:units": "%",
-                "name": "accuracy"
+                "name": "accuracy",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Percentage of clearing in the last 365 days",
                 "gee:units": "%",
-                "name": "clearing"
+                "name": "clearing",
+                "gsd": [
+                    250
+                ]
             }
         ],
         "gee:schema": [

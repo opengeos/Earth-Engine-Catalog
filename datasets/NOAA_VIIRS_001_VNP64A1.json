@@ -118,12 +118,18 @@
         "eo:bands": [
             {
                 "description": "Ordinal day of burn (1-366) for each 500-m grid cell.\n",
-                "name": "Burn_Date"
+                "name": "Burn_Date",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Estimated uncertainty in date of burn, in days. Unburned, unmapped,\nand water grid cells are masked out.\n",
                 "gee:units": "%",
-                "name": "Burn_Date_Uncertainty"
+                "name": "Burn_Date_Uncertainty",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Quality Assurance Indicators",
@@ -242,15 +248,24 @@
                     ],
                     "total_bit_count": 8
                 },
-                "name": "QA"
+                "name": "QA",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "First day of the year of reliable change detection",
-                "name": "First_Day"
+                "name": "First_Day",
+                "gsd": [
+                    500
+                ]
             },
             {
                 "description": "Last day of the year of reliable change detection",
-                "name": "Last_Day"
+                "name": "Last_Day",
+                "gsd": [
+                    500
+                ]
             }
         ],
         "gee:visualizations": [

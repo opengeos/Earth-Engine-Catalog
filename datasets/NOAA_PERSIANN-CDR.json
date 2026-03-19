@@ -126,7 +126,10 @@
             {
                 "description": "Estimated daily precipitation",
                 "gee:units": "mm",
-                "name": "precipitation"
+                "name": "precipitation",
+                "gsd": [
+                    27830
+                ]
             }
         ],
         "gee:visualizations": [

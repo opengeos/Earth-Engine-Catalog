@@ -106,12 +106,18 @@
             {
                 "description": "Percentage of clearing which during the 6 MODIS periods (96 + N days)\npreceding the corresponding alert_date value for the pixel\n",
                 "gee:units": "%",
-                "name": "alert_delta"
+                "name": "alert_delta",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Timestamp in milliseconds since 1970/01/01",
                 "gee:units": "ms",
-                "name": "alert_date"
+                "name": "alert_date",
+                "gsd": [
+                    250
+                ]
             }
         ],
         "gee:schema": [

@@ -109,7 +109,10 @@
         "eo:bands": [
             {
                 "description": "ALOS-derived topographic diversity",
-                "name": "constant"
+                "name": "constant",
+                "gsd": [
+                    270
+                ]
             }
         ],
         "gee:visualizations": [

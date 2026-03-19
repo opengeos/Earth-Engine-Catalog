@@ -106,122 +106,194 @@
             {
                 "description": "Mean Volumetric Water Content (0-5cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_0_5cm_mean"
+                "name": "val_0_5cm_mean",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Q0.05 Volumetric Water Content (0-5cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_0_5cm_Q0_05"
+                "name": "val_0_5cm_Q0_05",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Q0.5 Volumetric Water Content (0-5cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_0_5cm_Q0_5"
+                "name": "val_0_5cm_Q0_5",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Q0.95 Volumetric Water Content (0-5cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_0_5cm_Q0_95"
+                "name": "val_0_5cm_Q0_95",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Mean Volumetric Water Content (5-15cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_5_15cm_mean"
+                "name": "val_5_15cm_mean",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Q0.05 Volumetric Water Content (5-15cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_5_15cm_Q0_05"
+                "name": "val_5_15cm_Q0_05",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Q0.5 Volumetric Water Content (5-15cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_5_15cm_Q0_5"
+                "name": "val_5_15cm_Q0_5",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Q0.95 Volumetric Water Content (5-15cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_5_15cm_Q0_95"
+                "name": "val_5_15cm_Q0_95",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Mean Volumetric Water Content (15-30cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_15_30cm_mean"
+                "name": "val_15_30cm_mean",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Q0.05 Volumetric Water Content (15-30cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_15_30cm_Q0_05"
+                "name": "val_15_30cm_Q0_05",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Q0.5 Volumetric Water Content (15-30cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_15_30cm_Q0_5"
+                "name": "val_15_30cm_Q0_5",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Q0.95 Volumetric Water Content (15-30cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_15_30cm_Q0_95"
+                "name": "val_15_30cm_Q0_95",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Mean Volumetric Water Content (30-60cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_30_60cm_mean"
+                "name": "val_30_60cm_mean",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Q0.05 Volumetric Water Content (30-60cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_30_60cm_Q0_05"
+                "name": "val_30_60cm_Q0_05",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Q0.5 Volumetric Water Content (30-60cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_30_60cm_Q0_5"
+                "name": "val_30_60cm_Q0_5",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Q0.95 Volumetric Water Content (30-60cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_30_60cm_Q0_95"
+                "name": "val_30_60cm_Q0_95",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Mean Volumetric Water Content (60-100cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_60_100cm_mean"
+                "name": "val_60_100cm_mean",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Q0.05 Volumetric Water Content (60-100cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_60_100cm_Q0_05"
+                "name": "val_60_100cm_Q0_05",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Q0.5 Volumetric Water Content (60-100cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_60_100cm_Q0_5"
+                "name": "val_60_100cm_Q0_5",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Q0.95 Volumetric Water Content (60-100cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_60_100cm_Q0_95"
+                "name": "val_60_100cm_Q0_95",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Mean Volumetric Water Content (100-200cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_100_200cm_mean"
+                "name": "val_100_200cm_mean",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Q0.05 Volumetric Water Content (100-200cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_100_200cm_Q0_05"
+                "name": "val_100_200cm_Q0_05",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Q0.5 Volumetric Water Content (100-200cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_100_200cm_Q0_5"
+                "name": "val_100_200cm_Q0_5",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Q0.95 Volumetric Water Content (100-200cm depth)",
                 "gee:units": "cm^3/cm^3",
-                "name": "val_100_200cm_Q0_95"
+                "name": "val_100_200cm_Q0_95",
+                "gsd": [
+                    250
+                ]
             }
         ],
         "gee:visualizations": [

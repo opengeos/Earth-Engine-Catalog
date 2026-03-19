@@ -104,16 +104,25 @@
             {
                 "description": "Primary Production",
                 "gee:units": "mg/day/m^2",
-                "name": "PP"
+                "name": "PP",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Primary Production - The uncertainty as measured in hundredths of a\npercent (e.g., a value of 5000 means 50%).'\n",
                 "gee:units": "%",
-                "name": "PP_uncertainty"
+                "name": "PP_uncertainty",
+                "gsd": [
+                    4000
+                ]
             },
             {
                 "description": "Land water mask bit.\n\n  * 0: Water\n  * 1: Land\n",
-                "name": "flags"
+                "name": "flags",
+                "gsd": [
+                    4000
+                ]
             }
         ],
         "gee:visualizations": [

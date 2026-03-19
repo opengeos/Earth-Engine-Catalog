@@ -90,7 +90,7 @@
             "interval": [
                 [
                     "1981-09-01T00:00:00Z",
-                    "2026-03-15T00:00:00Z"
+                    "2026-03-16T00:00:00Z"
                 ]
             ]
         }
@@ -132,25 +132,37 @@
                 "description": "Daily sea surface temperature",
                 "gee:scale": 0.01,
                 "gee:units": "&deg;C",
-                "name": "sst"
+                "name": "sst",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Temperature anomaly; the daily OISST minus a 30-year climatological mean.",
                 "gee:scale": 0.01,
                 "gee:units": "&deg;C",
-                "name": "anom"
+                "name": "anom",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Seven-day median of daily sea ice concentrations.",
                 "gee:scale": 0.01,
                 "gee:units": "%",
-                "name": "ice"
+                "name": "ice",
+                "gsd": [
+                    27830
+                ]
             },
             {
                 "description": "Estimated error; standard deviation of analyzed sea surface temperature.",
                 "gee:scale": 0.01,
                 "gee:units": "&deg;C",
-                "name": "err"
+                "name": "err",
+                "gsd": [
+                    27830
+                ]
             }
         ],
         "gee:schema": [

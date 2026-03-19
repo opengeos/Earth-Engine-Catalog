@@ -118,26 +118,41 @@
         "eo:bands": [
             {
                 "description": "Maximum extent of flood water during an event.\n\n* 1 - area of surface water\n* 0 - no water",
-                "name": "flooded"
+                "name": "flooded",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Duration of surface water during an event in days. Pixel values indicate\nthe number of composite days a pixel's area was considered water during an\nevent. 3-day MODIS composites were used.\n",
                 "gee:units": "d",
-                "name": "duration"
+                "name": "duration",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Number of cloud-free observations in days between the start and end day\nof each event. Cloud coverage is determined by the MODIS Quality\nAssurance band ('state_1km').\n",
                 "gee:units": "d",
-                "name": "clear_views"
+                "name": "clear_views",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Percentage of clear view observations during a given flood event. This is\nequivalent to the 'clear_views' band but normalized to the number of MODIS\nimages per flood event.  Cloud coverage is determined by the MODIS\nQuality Assurance band ('state_1km').\n",
                 "gee:units": "%",
-                "name": "clear_perc"
+                "name": "clear_perc",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Permanent water determined by the JRC Global Surface Water dataset using the\n'transition' band.  Resolution is maintained as the original 30-meter\nresolution of the JRC dataset.\n\n* 1 - permanent water\n* 0 - non-water.\n",
-                "name": "jrc_perm_water"
+                "name": "jrc_perm_water",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:schema": [

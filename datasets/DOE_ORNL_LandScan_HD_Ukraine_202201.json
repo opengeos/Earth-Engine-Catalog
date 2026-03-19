@@ -107,7 +107,10 @@
         "eo:bands": [
             {
                 "description": "24 hour average population count estimate",
-                "name": "population"
+                "name": "population",
+                "gsd": [
+                    100
+                ]
             }
         ],
         "gee:visualizations": [

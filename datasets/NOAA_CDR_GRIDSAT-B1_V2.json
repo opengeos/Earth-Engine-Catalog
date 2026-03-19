@@ -126,82 +126,127 @@
                 "gee:offset": 200,
                 "gee:scale": 0.01,
                 "gee:units": "K",
-                "name": "irwin_cdr"
+                "name": "irwin_cdr",
+                "gsd": [
+                    7792
+                ]
             },
             {
                 "description": "Brightness temperature near 11&micro;m, second-best observation\n(based on view zenith angle)",
                 "gee:offset": 200,
                 "gee:scale": 0.01,
                 "gee:units": "K",
-                "name": "irwin_2"
+                "name": "irwin_2",
+                "gsd": [
+                    7792
+                ]
             },
             {
                 "description": "Brightness temperature, third-best observation based on\nview zenith angle",
                 "gee:offset": 200,
                 "gee:scale": 0.01,
                 "gee:units": "K",
-                "name": "irwin_3"
+                "name": "irwin_3",
+                "gsd": [
+                    7792
+                ]
             },
             {
                 "description": "Brightness temperature near 6.7&micro;m, nadir-most observation",
                 "gee:offset": 200,
                 "gee:scale": 0.01,
                 "gee:units": "K",
-                "name": "irwvp"
+                "name": "irwvp",
+                "gsd": [
+                    7792
+                ]
             },
             {
                 "description": "Brightness temperature near 6.7&micro;m, second-best observation\nbased on view zenith angle",
                 "gee:offset": 200,
                 "gee:scale": 0.01,
                 "gee:units": "K",
-                "name": "irwvp_2"
+                "name": "irwvp_2",
+                "gsd": [
+                    7792
+                ]
             },
             {
                 "description": "Visible reflectance near 0.6&micro;m, nadir-most observation",
                 "gee:offset": 1,
                 "gee:scale": 4e-05,
-                "name": "vschn"
+                "name": "vschn",
+                "gsd": [
+                    7792
+                ]
             },
             {
                 "description": "Visible reflectance near 0.6&micro;m, second-best observation\nbased on view zenith angle",
                 "gee:offset": 1,
                 "gee:scale": 4e-05,
-                "name": "vschn_2"
+                "name": "vschn_2",
+                "gsd": [
+                    7792
+                ]
             },
             {
                 "description": "Adjustment made to all IRWIN channels. Provided to allow\nusers to reverse the view zenith correction for the irwin_cdr variable.\n",
                 "gee:offset": -10,
                 "gee:scale": 0.25,
                 "gee:units": "K",
-                "name": "irwin_vza_adj"
+                "name": "irwin_vza_adj",
+                "gsd": [
+                    7792
+                ]
             },
             {
                 "description": "satid values for irwin_cdr. For this and other satid bands,\nthe mappings of satid to satellite name are given in the properties for\neach image\n",
-                "name": "satid_ir1"
+                "name": "satid_ir1",
+                "gsd": [
+                    7792
+                ]
             },
             {
                 "description": "satid values per pixel for irwin_2",
-                "name": "satid_ir2"
+                "name": "satid_ir2",
+                "gsd": [
+                    7792
+                ]
             },
             {
                 "description": "satid values per pixel for irwin_3",
-                "name": "satid_ir3"
+                "name": "satid_ir3",
+                "gsd": [
+                    7792
+                ]
             },
             {
                 "description": "satid values per pixel for irwvp",
-                "name": "satid_wv1"
+                "name": "satid_wv1",
+                "gsd": [
+                    7792
+                ]
             },
             {
                 "description": "satid values per pixel for irwvp2",
-                "name": "satid_wv2"
+                "name": "satid_wv2",
+                "gsd": [
+                    7792
+                ]
             },
             {
                 "description": "satid values per pixel for vischn",
-                "name": "satid_vs1"
+                "name": "satid_vs1",
+                "gsd": [
+                    7792
+                ]
             },
             {
                 "description": "satid values per pixel for vischn2",
-                "name": "satid_vs2"
+                "name": "satid_vs2",
+                "gsd": [
+                    7792
+                ]
             }
         ],
         "gee:schema": [

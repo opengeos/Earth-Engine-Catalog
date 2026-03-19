@@ -67,7 +67,7 @@
             "interval": [
                 [
                     "2014-08-04T00:00:00Z",
-                    "2026-02-17T07:28:12.995000Z"
+                    "2026-02-28T16:09:57.031000Z"
                 ]
             ]
         }
@@ -103,17 +103,26 @@
         "eo:bands": [
             {
                 "description": "HH polarization Terrain-flattened Gamma-Nought backscatter\ncoefficient.\n",
-                "name": "HH"
+                "name": "HH",
+                "gsd": [
+                    25
+                ]
             },
             {
                 "description": "HV polarization Terrain-flattened Gamma-Nought backscatter\ncoefficient.\n",
-                "name": "HV"
+                "name": "HV",
+                "gsd": [
+                    25
+                ]
             },
             {
                 "description": "Local incidence angle. The angle formed by the radar irradiation\ndirection and the normal of the slope.\n",
                 "gee:scale": 0.01,
                 "gee:units": "deg",
-                "name": "LIN"
+                "name": "LIN",
+                "gsd": [
+                    25
+                ]
             },
             {
                 "description": "Data quality bitmask.",
@@ -149,7 +158,10 @@
                     ],
                     "total_bit_count": 3
                 },
-                "name": "MSK"
+                "name": "MSK",
+                "gsd": [
+                    25
+                ]
             }
         ],
         "gee:visualizations": [

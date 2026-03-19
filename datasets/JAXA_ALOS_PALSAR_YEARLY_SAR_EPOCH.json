@@ -105,20 +105,32 @@
         "eo:bands": [
             {
                 "description": "HH polarization backscattering coefficient, 16-bit DN.",
-                "name": "HH"
+                "name": "HH",
+                "gsd": [
+                    25
+                ]
             },
             {
                 "description": "HV polarization backscattering coefficient, 16-bit DN.",
-                "name": "HV"
+                "name": "HV",
+                "gsd": [
+                    25
+                ]
             },
             {
                 "description": "Local incidence angle.",
                 "gee:units": "deg",
-                "name": "angle"
+                "name": "angle",
+                "gsd": [
+                    25
+                ]
             },
             {
                 "description": "Observation date timestamp (milliseconds since Jan 1, 1970).\nThis band is computed on the fly from the 'date' band of the\nraw data, which represents the difference in days between\n2014-05-24 and the observation date.\n",
-                "name": "epoch"
+                "name": "epoch",
+                "gsd": [
+                    25
+                ]
             },
             {
                 "description": "Processing information.",
@@ -149,7 +161,10 @@
                         "value": 255
                     }
                 ],
-                "name": "qa"
+                "name": "qa",
+                "gsd": [
+                    25
+                ]
             }
         ],
         "gee:visualizations": [

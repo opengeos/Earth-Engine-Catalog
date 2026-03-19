@@ -98,7 +98,10 @@
             {
                 "description": "Flood inundation depth",
                 "gee:units": "m",
-                "name": "inundation_depth"
+                "name": "inundation_depth",
+                "gsd": [
+                    1000
+                ]
             }
         ],
         "gee:schema": [

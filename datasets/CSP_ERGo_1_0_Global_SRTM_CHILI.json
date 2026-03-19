@@ -109,7 +109,10 @@
         "eo:bands": [
             {
                 "description": "SRTM-derived CHILI index ranging from 0 (very cool) to 255\n(very warm). This was rescaled from the [0,1] range in the publication.\n",
-                "name": "constant"
+                "name": "constant",
+                "gsd": [
+                    90
+                ]
             }
         ],
         "gee:visualizations": [

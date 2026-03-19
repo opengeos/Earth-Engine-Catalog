@@ -69,7 +69,7 @@
             "interval": [
                 [
                     "2018-07-10T10:05:44Z",
-                    "2026-03-17T20:32:23Z"
+                    "2026-03-18T21:52:23Z"
                 ]
             ]
         }
@@ -111,62 +111,98 @@
             {
                 "description": "Total vertical column of NO<sub>2</sub> (ratio of the slant column density of NO<sub>2</sub>\nand the total air mass factor).\n",
                 "gee:units": "mol/m^2",
-                "name": "NO2_column_number_density"
+                "name": "NO2_column_number_density",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "tropospheric vertical column of NO<sub>2</sub>",
                 "gee:units": "mol/m^2",
-                "name": "tropospheric_NO2_column_number_density"
+                "name": "tropospheric_NO2_column_number_density",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "stratospheric vertical column of NO<sub>2</sub>",
                 "gee:units": "mol/m^2",
-                "name": "stratospheric_NO2_column_number_density"
+                "name": "stratospheric_NO2_column_number_density",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "NO<sub>2</sub> slant column density",
                 "gee:units": "mol/m^2",
-                "name": "NO2_slant_column_number_density"
+                "name": "NO2_slant_column_number_density",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "topopause pressure",
                 "gee:units": "Pa",
-                "name": "tropopause_pressure"
+                "name": "tropopause_pressure",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Aerosol index (at wavelengths 354/388 nm, i.e. the OMI pair) from the AER_AI\nlevel 2 product.  See [Level 2 Algorithms - Ultraviolet Aerosol Index](https://sentinel.esa.int/web/sentinel/data-products/-/asset_publisher/fp37fc19FN8F/content/sentinel-5-precursor-level-2-ultraviolet-aerosol-index).\n",
                 "gee:units": "Dimensionless",
-                "name": "absorbing_aerosol_index"
+                "name": "absorbing_aerosol_index",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Effective cloud fraction.\nSee the [Sentinel 5P L2 Input/Output Data Definition Spec](https://sentinels.copernicus.eu/documents/247904/3119978/Sentinel-5P-Level-2-Input-Output-Data-Definition), p.220.\n",
                 "gee:units": "Fraction",
-                "name": "cloud_fraction"
+                "name": "cloud_fraction",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Altitude of the satellite with respect to the geodetic sub-satellite point\n(WGS84).",
                 "gee:units": "m",
-                "name": "sensor_altitude"
+                "name": "sensor_altitude",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Azimuth angle of the satellite at the ground pixel location (WGS84); angle\nmeasured East-of-North.",
                 "gee:units": "deg",
-                "name": "sensor_azimuth_angle"
+                "name": "sensor_azimuth_angle",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Zenith angle of the satellite at the ground pixel location (WGS84); angle\nmeasured away from the vertical.\n",
                 "gee:units": "deg",
-                "name": "sensor_zenith_angle"
+                "name": "sensor_zenith_angle",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Azimuth angle of the Sun at the ground pixel location (WGS84); angle\nmeasured East-of-North.",
                 "gee:units": "deg",
-                "name": "solar_azimuth_angle"
+                "name": "solar_azimuth_angle",
+                "gsd": [
+                    1113.2
+                ]
             },
             {
                 "description": "Zenith angle of the satellite at the ground pixel location (WGS84); angle\nmeasured away from the vertical.\n",
                 "gee:units": "deg",
-                "name": "solar_zenith_angle"
+                "name": "solar_zenith_angle",
+                "gsd": [
+                    1113.2
+                ]
             }
         ],
         "gee:schema": [

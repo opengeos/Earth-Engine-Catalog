@@ -132,11 +132,17 @@
             {
                 "description": "Equivalent liquid water thickness in centimeters.",
                 "gee:units": "cm",
-                "name": "lwe_thickness"
+                "name": "lwe_thickness",
+                "gsd": [
+                    55660
+                ]
             },
             {
                 "description": "1-sigma uncertainty for each 3-degree mascon estimate.\nThe provided estimates of uncertainty are regarded to be conservative.\nSee the provider's [Error & Uncertainty Estimates\nsection](https://grace.jpl.nasa.gov/data/get-data/jpl_global_mascons/)\n",
-                "name": "uncertainty"
+                "name": "uncertainty",
+                "gsd": [
+                    55660
+                ]
             }
         ],
         "gee:visualizations": [

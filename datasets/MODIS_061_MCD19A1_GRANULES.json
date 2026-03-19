@@ -122,72 +122,114 @@
             {
                 "description": "Surface reflectance at 500m for band 1.\n",
                 "gee:scale": 0.0001,
-                "name": "Sur_refl1"
+                "name": "Sur_refl1",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Surface reflectance at 500m for band 2.\n",
                 "gee:scale": 0.0001,
-                "name": "Sur_refl2"
+                "name": "Sur_refl2",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Surface reflectance at 500m for band 3.\n",
                 "gee:scale": 0.0001,
-                "name": "Sur_refl3"
+                "name": "Sur_refl3",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Surface reflectance at 500m for band 4.\n",
                 "gee:scale": 0.0001,
-                "name": "Sur_refl4"
+                "name": "Sur_refl4",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Surface reflectance at 500m for band 5.\n",
                 "gee:scale": 0.0001,
-                "name": "Sur_refl5"
+                "name": "Sur_refl5",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Surface reflectance at 500m for band 6.\n",
                 "gee:scale": 0.0001,
-                "name": "Sur_refl6"
+                "name": "Sur_refl6",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Surface reflectance at 500m for band 7.\n",
                 "gee:scale": 0.0001,
-                "name": "Sur_refl7"
+                "name": "Sur_refl7",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Surface reflectance at 1km for band 8.\n",
                 "gee:scale": 0.0001,
-                "name": "Sur_refl8"
+                "name": "Sur_refl8",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Surface reflectance at 1km for band 9.\n",
                 "gee:scale": 0.0001,
-                "name": "Sur_refl9"
+                "name": "Sur_refl9",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Surface reflectance at 1km for band 10.\n",
                 "gee:scale": 0.0001,
-                "name": "Sur_refl10"
+                "name": "Sur_refl10",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Surface reflectance at 1km for band 11.\n",
                 "gee:scale": 0.0001,
-                "name": "Sur_refl11"
+                "name": "Sur_refl11",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Surface reflectance at 1km for band 12.\n",
                 "gee:scale": 0.0001,
-                "name": "Sur_refl12"
+                "name": "Sur_refl12",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "BRFn uncertainty over time at 1km, for band 1\n",
                 "gee:scale": 0.0001,
-                "name": "Sigma_BRFn1"
+                "name": "Sigma_BRFn1",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "BRFn uncertainty over time at 1km, for band 2",
                 "gee:scale": 0.0001,
-                "name": "Sigma_BRFn2"
+                "name": "Sigma_BRFn2",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "QA bits",
@@ -376,50 +418,80 @@
                     ],
                     "total_bit_count": 16
                 },
-                "name": "Status_QA"
+                "name": "Status_QA",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Cosine of Solar zenith angle (5 km resolution)",
                 "gee:scale": 0.0001,
-                "name": "cosSZA"
+                "name": "cosSZA",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Cosine view zenith angle (5 km resolution)",
                 "gee:scale": 0.0001,
-                "name": "cosVZA"
+                "name": "cosVZA",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Relative azimuth angle (5 km resolution)",
                 "gee:scale": 0.01,
-                "name": "RelAZ"
+                "name": "RelAZ",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Scattering angle (5 km resolution)",
                 "gee:scale": 0.01,
-                "name": "Scattering_Angle"
+                "name": "Scattering_Angle",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Solar Azimuth Angle (5 km resolution)",
                 "gee:scale": 0.01,
-                "name": "SAZ"
+                "name": "SAZ",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "View Azimuth Angle (5 km resolution)",
                 "gee:scale": 0.01,
-                "name": "VAZ"
+                "name": "VAZ",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "Glint angle (5 km resolution)",
                 "gee:scale": 0.01,
-                "name": "Glint_Angle"
+                "name": "Glint_Angle",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "RTLS volumetric kernel (5 km resolution)",
-                "name": "Fv"
+                "name": "Fv",
+                "gsd": [
+                    1000
+                ]
             },
             {
                 "description": "RTLS geometric kernel (5 km resolution)",
-                "name": "Fg"
+                "name": "Fg",
+                "gsd": [
+                    1000
+                ]
             }
         ],
         "gee:visualizations": [

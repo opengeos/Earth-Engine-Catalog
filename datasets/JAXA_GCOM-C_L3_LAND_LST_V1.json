@@ -116,7 +116,10 @@
             {
                 "description": "Temperature of land surface.",
                 "gee:units": "K",
-                "name": "LST_AVE"
+                "name": "LST_AVE",
+                "gsd": [
+                    4638.3
+                ]
             },
             {
                 "description": "LST QA",
@@ -148,7 +151,10 @@
                     ],
                     "total_bit_count": 2
                 },
-                "name": "LST_QA_flag"
+                "name": "LST_QA_flag",
+                "gsd": [
+                    4638.3
+                ]
             }
         ],
         "gee:schema": [

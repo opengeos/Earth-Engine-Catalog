@@ -113,11 +113,17 @@
         "eo:bands": [
             {
                 "description": "Classification: 0 or 100",
-                "name": "classification"
+                "name": "classification",
+                "gsd": [
+                    10
+                ]
             },
             {
                 "description": "Confidence, 0 to 100",
-                "name": "confidence"
+                "name": "confidence",
+                "gsd": [
+                    10
+                ]
             }
         ],
         "gee:schema": [

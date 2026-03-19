@@ -118,17 +118,26 @@
             {
                 "description": "Surface downwelling photosynthetic radiative flux in air",
                 "gee:units": "W/m^2",
-                "name": "PAR_Daily"
+                "name": "PAR_Daily",
+                "gsd": [
+                    5500
+                ]
             },
             {
                 "description": "Surface diffuse downwelling photosynthetic radiative flux in air",
                 "gee:units": "W/m^2",
-                "name": "PARdiff_Daily"
+                "name": "PARdiff_Daily",
+                "gsd": [
+                    5500
+                ]
             },
             {
                 "description": "Surface downwelling shortwave flux in air",
                 "gee:units": "W/m^2",
-                "name": "RSDN_Daily"
+                "name": "RSDN_Daily",
+                "gsd": [
+                    5500
+                ]
             }
         ],
         "gee:visualizations": [

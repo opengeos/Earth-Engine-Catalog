@@ -105,24 +105,39 @@
             {
                 "description": "Angle between LOS vector and terrain normal vector at the\ntarget provided in the same geographic grid as the geocoded imagery.\n",
                 "gee:units": "deg",
-                "name": "local_incidence_angle"
+                "name": "local_incidence_angle",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Angle between LOS vector and the ellipsoid normal at the target\nprovided in the same geographic grid as the geocoded imagery.\n",
                 "gee:units": "deg",
-                "name": "incidence_angle"
+                "name": "incidence_angle",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "The number of radar samples used to compute each RTC-S1 imagery\npixel, provided in the same geographic grid as the RTC-S1 product\nimagery.\n",
-                "name": "number_of_looks"
+                "name": "number_of_looks",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "The factors to normalize the gamma0 backscatter to beta0, provided in\nthe same grid as the corresponding RTC-S1 imagery.\n",
-                "name": "rtc_anf_gamma0_to_beta0"
+                "name": "rtc_anf_gamma0_to_beta0",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "The factors to normalize the gamma0 backscatter to sigma0, provided\nin the same grid as the associated RTC-S1 imagery.\n",
-                "name": "rtc_anf_gamma0_to_sigma0"
+                "name": "rtc_anf_gamma0_to_sigma0",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Mask layer containing valid/invalid, layover, and shadow\nclassification computed using the RTC-S1 burst orbit,\nprovided over the same geographic grid as the associated\ngeocoded imagery.\n",
@@ -153,7 +168,10 @@
                         "value": 255
                     }
                 ],
-                "name": "mask"
+                "name": "mask",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:schema": [

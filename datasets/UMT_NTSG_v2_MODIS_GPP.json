@@ -117,11 +117,17 @@
                 "description": "8-day gross primary production",
                 "gee:scale": 0.0001,
                 "gee:units": "kg*C/m^2/8-day",
-                "name": "GPP"
+                "name": "GPP",
+                "gsd": [
+                    250
+                ]
             },
             {
                 "description": "Indicates if the original NDVI value was adjusted through the\nsmoothing algorithm. 0 denotes the value was not adjusted. 1 indicates\nthe value was adjusted.\n",
-                "name": "QC"
+                "name": "QC",
+                "gsd": [
+                    250
+                ]
             }
         ],
         "gee:visualizations": [

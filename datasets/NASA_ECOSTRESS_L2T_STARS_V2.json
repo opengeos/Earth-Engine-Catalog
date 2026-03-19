@@ -81,7 +81,7 @@
             "interval": [
                 [
                     "2018-07-09T00:00:00Z",
-                    "2026-03-12T00:00:00Z"
+                    "2026-03-13T00:00:00Z"
                 ]
             ]
         }
@@ -115,19 +115,31 @@
         "eo:bands": [
             {
                 "description": "Normalized Difference Vegetation Index (NDVI)",
-                "name": "NDVI"
+                "name": "NDVI",
+                "gsd": [
+                    70
+                ]
             },
             {
                 "description": "Normalized Difference Vegetation Index (NDVI) uncertainty.\n",
-                "name": "NDVI-UQ"
+                "name": "NDVI-UQ",
+                "gsd": [
+                    70
+                ]
             },
             {
                 "description": "Albedo",
-                "name": "albedo"
+                "name": "albedo",
+                "gsd": [
+                    70
+                ]
             },
             {
                 "description": "Albedo uncertainty.\n",
-                "name": "albedo-UQ"
+                "name": "albedo-UQ",
+                "gsd": [
+                    70
+                ]
             }
         ],
         "gee:visualizations": [

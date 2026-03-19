@@ -126,12 +126,18 @@
             {
                 "description": "Number of people living in or within 1 kilometer of forests.\n",
                 "gee:units": "Number of people/ha",
-                "name": "FPP_1km"
+                "name": "FPP_1km",
+                "gsd": [
+                    0.0009
+                ]
             },
             {
                 "description": "Number of people living in or within 5 kilometer of forests.\n",
                 "gee:units": "Number of people/ha",
-                "name": "FPP_5km"
+                "name": "FPP_5km",
+                "gsd": [
+                    0.0009
+                ]
             }
         ],
         "gee:visualizations": [

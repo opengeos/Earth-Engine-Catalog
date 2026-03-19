@@ -113,12 +113,18 @@
             {
                 "description": "Elevation at ground level and at the base of the Antarctic and Greenland ice sheets",
                 "gee:units": "m",
-                "name": "bedrock"
+                "name": "bedrock",
+                "gsd": [
+                    1855
+                ]
             },
             {
                 "description": "Elevation at ground level and at the top of the Antarctic and Greenland ice sheets",
                 "gee:units": "m",
-                "name": "ice_surface"
+                "name": "ice_surface",
+                "gsd": [
+                    1855
+                ]
             }
         ],
         "gee:visualizations": [

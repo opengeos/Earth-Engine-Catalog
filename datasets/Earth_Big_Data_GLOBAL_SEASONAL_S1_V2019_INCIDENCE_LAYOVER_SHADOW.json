@@ -116,11 +116,17 @@
             {
                 "description": "The angle between the incoming radar signal path and the normal\nvector to the local ground surface at each pixel.\n",
                 "gee:units": "deg",
-                "name": "inc"
+                "name": "inc",
+                "gsd": [
+                    92.7
+                ]
             },
             {
                 "description": "Layover/Shadow mask:\n\n* 1 = No Shadow or Layover\n* 5 = Layover: A geometric distortion where features at higher\n  elevations are displaced toward the radar (appearing before features\n  at lower elevations), making measurement impossible.\n* 17 = Shadow: Areas hidden from the radar beam (behind steep slopes\n  or tall objects) where no signal is received, resulting in zero or\n  near-zero measured backscatter and coherence.\n* 21 = Shadow in Layover\n",
-                "name": "lsmap"
+                "name": "lsmap",
+                "gsd": [
+                    92.7
+                ]
             }
         ],
         "gee:schema": [

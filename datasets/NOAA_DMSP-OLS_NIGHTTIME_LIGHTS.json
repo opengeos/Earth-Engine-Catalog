@@ -104,19 +104,31 @@
         "eo:bands": [
             {
                 "description": "The average of the visible band digital number values with no further filtering.",
-                "name": "avg_vis"
+                "name": "avg_vis",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "The cleaned up avg_vis contains the lights from cities,\ntowns, and other sites with persistent lighting, including gas flares.\nEphemeral events, such as fires, have been discarded. The background noise\nwas identified and replaced with values of zero.\n",
-                "name": "stable_lights"
+                "name": "stable_lights",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "Cloud-free coverages tally the total number of observations\nthat went into each 30-arc second grid cell. This band can be used to\nidentify areas with low numbers of observations where the quality is\nreduced.\n",
-                "name": "cf_cvg"
+                "name": "cf_cvg",
+                "gsd": [
+                    927.67
+                ]
             },
             {
                 "description": "The average visible band digital number (DN) of cloud-free\nlight detections multiplied by the percent frequency of light detection.\nThe inclusion of the percent frequency of detection term normalizes the\nresulting digital values for variations in the persistence of lighting.\nFor instance, the value for a light only detected half the time is\ndiscounted by 50%. Note that this product contains detections from fires\nand a variable amount of background noise.\n",
-                "name": "avg_lights_x_pct"
+                "name": "avg_lights_x_pct",
+                "gsd": [
+                    927.67
+                ]
             }
         ],
         "gee:visualizations": [

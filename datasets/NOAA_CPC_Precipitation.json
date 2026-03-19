@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2006-01-01T00:00:00Z",
-                    "2026-03-16T00:00:00Z"
+                    "2026-03-17T00:00:00Z"
                 ]
             ]
         }
@@ -108,11 +108,17 @@
             {
                 "description": "Daily total precipitation estimate in 0.1 mm",
                 "gee:units": "mm",
-                "name": "precipitation"
+                "name": "precipitation",
+                "gsd": [
+                    55500
+                ]
             },
             {
                 "description": "Number of rain gauges contributing to the precipitation estimate\nwithin the 0.5-degree grid cell\n",
-                "name": "num_gauges"
+                "name": "num_gauges",
+                "gsd": [
+                    55500
+                ]
             }
         ],
         "gee:visualizations": [

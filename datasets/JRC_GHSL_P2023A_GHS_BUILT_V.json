@@ -120,12 +120,18 @@
             {
                 "description": "Total building volume per grid cell",
                 "gee:units": "m^3",
-                "name": "built_volume_total"
+                "name": "built_volume_total",
+                "gsd": [
+                    100
+                ]
             },
             {
                 "description": "Non-residential building volume per grid cell",
                 "gee:units": "m^3",
-                "name": "built_volume_nres"
+                "name": "built_volume_nres",
+                "gsd": [
+                    100
+                ]
             }
         ],
         "gee:visualizations": [

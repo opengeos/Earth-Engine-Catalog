@@ -121,28 +121,46 @@
             {
                 "description": "Elevation",
                 "gee:units": "m",
-                "name": "elevation"
+                "name": "elevation",
+                "gsd": [
+                    2
+                ]
             },
             {
                 "description": "Number of source DEMs used to calculate the elevation value at that pixel.",
-                "name": "count"
+                "name": "count",
+                "gsd": [
+                    2
+                ]
             },
             {
                 "description": "Median absolute deviation of the stack of source datasets from the median elevation value.",
                 "gee:units": "m",
-                "name": "mad"
+                "name": "mad",
+                "gsd": [
+                    2
+                ]
             },
             {
                 "description": "Earliest date of the source DEMs used to build the mosaic, as the number of days since January 1, 2000.",
-                "name": "mindate"
+                "name": "mindate",
+                "gsd": [
+                    2
+                ]
             },
             {
                 "description": "Latest date of the source DEMs used to build the mosaic, as the number of days since January 1, 2000.",
-                "name": "maxdate"
+                "name": "maxdate",
+                "gsd": [
+                    2
+                ]
             },
             {
                 "description": "Data mask indicates whether the elevation was 0 or 1.\nwhere 0 indicates , Filled/merged with another dataset or\nmasked out as NoData in quality control steps.\n1 indicates output by SETSM, the Ohio State University\u2019s\nSurface Extraction with TIN-based Search-space\nMinimization software package.\n",
-                "name": "datamask"
+                "name": "datamask",
+                "gsd": [
+                    2
+                ]
             }
         ],
         "gee:visualizations": [

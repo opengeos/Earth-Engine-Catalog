@@ -107,19 +107,31 @@
         "eo:bands": [
             {
                 "description": "pH, predicted mean at 0-20 cm depth",
-                "name": "mean_0_20"
+                "name": "mean_0_20",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "pH, predicted mean at 20-50 cm depth",
-                "name": "mean_20_50"
+                "name": "mean_20_50",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "pH, standard deviation at 0-20 cm depth",
-                "name": "stdev_0_20"
+                "name": "stdev_0_20",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "pH, standard deviation at 20-50 cm depth",
-                "name": "stdev_20_50"
+                "name": "stdev_20_50",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

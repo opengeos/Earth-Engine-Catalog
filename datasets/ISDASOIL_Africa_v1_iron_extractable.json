@@ -108,22 +108,34 @@
             {
                 "description": "Iron, extractable, predicted mean at 0-20 cm depth",
                 "gee:units": "ppm",
-                "name": "mean_0_20"
+                "name": "mean_0_20",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Iron, extractable, predicted mean at 20-50 cm depth",
                 "gee:units": "ppm",
-                "name": "mean_20_50"
+                "name": "mean_20_50",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Iron, extractable, standard deviation at 0-20 cm depth",
                 "gee:units": "ppm",
-                "name": "stdev_0_20"
+                "name": "stdev_0_20",
+                "gsd": [
+                    30
+                ]
             },
             {
                 "description": "Iron, extractable, standard deviation at 20-50 cm depth",
                 "gee:units": "ppm",
-                "name": "stdev_20_50"
+                "name": "stdev_20_50",
+                "gsd": [
+                    30
+                ]
             }
         ],
         "gee:visualizations": [

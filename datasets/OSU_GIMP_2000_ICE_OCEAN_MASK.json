@@ -122,7 +122,10 @@
                         "value": 1
                     }
                 ],
-                "name": "ocean_mask"
+                "name": "ocean_mask",
+                "gsd": [
+                    15
+                ]
             },
             {
                 "description": "Ice mask",
@@ -138,7 +141,10 @@
                         "value": 1
                     }
                 ],
-                "name": "ice_mask"
+                "name": "ice_mask",
+                "gsd": [
+                    15
+                ]
             }
         ],
         "gee:visualizations": [
