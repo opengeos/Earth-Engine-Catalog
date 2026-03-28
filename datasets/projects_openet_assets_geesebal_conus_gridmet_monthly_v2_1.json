@@ -1,0 +1,290 @@
+{
+    "type": "Collection",
+    "id": "projects/openet/assets/geesebal/conus/gridmet/monthly/v2_1",
+    "stac_version": "1.1.0",
+    "description": "Implementation of geeSEBAL was completed within the OpenET framework.\nAn overview of the current geeSEBAL version can be found in Laipelt et al.\n(2021), which is based on the original algorithms developed by\nBastiaanssen et al. (1998). The OpenET geeSEBAL implementation uses land\nsurface temperature (LST) data from Landsat Collection 2, in addition to\nNLDAS and gridMET datasets as instantaneous and daily meteorological\ninputs, respectively.\n\nThe automated statistical algorithm to select the hot and cold endmembers\nis based on a simplified version of the Calibration using Inverse Modeling\nat Extreme Conditions (CIMEC) algorithm proposed by Allen et al. (2013),\nwhere quantiles of LST and the normalized difference vegetation index\n(NDVI) values are used to select endmember candidates in the Landsat\ndomain area. The cold and wet endmember candidates are selected in well\nvegetated areas, while the hot and dry endmember candidates are selected\nin the least vegetated cropland areas.Based on the selected endmembers,\ngeeSEBAL assumes that in the cold and wet endmember all available energy\nis converted to latent heat (with high rates of transpiration), while in\nthe hot and dry endmember all available energy is converted to sensible\nheat. Finally, estimates of daily evapotranspiration are upscaled from\ninstantaneous estimates based on the evaporative fraction, assuming it is\nconstant during the daytime without significant changes in soil moisture\nand advection.\n\nBased on the results from the OpenET Accuracy Assessment and\nIntercomparison study, the OpenET geeSEBAL algorithm was modified as\nfollows:\n\n1. The simplified version of CIMEC was improved by using additional\nfilters to select the endmembers, including the use of the USDA Cropland\nData Layer (CDL) and filters for NDVI, LST and albedo.\n2. Corrections to LST for endmembers based on antecedent precipitation.\n3. Definition of NLDAS wind speed thresholds to reduce model instability\nduring the atmospheric correction.\n4. Improvements to estimate daily net radiation, using FAO-56 as reference\n(Allen et al., 1998).\n\nOverall, geeSEBAL performance is dependent on topographic, climate, and\nmeteorological conditions, with higher sensitivity and uncertainty related\nto hot and cold endmember selections for the CIMEC automated calibration,\nand lower sensitivity and uncertainty related to meteorological inputs\n(Laipelt et al., 2021 and Kayser et al., 2022). To reduce uncertainties\nrelated to complex terrain, improvements were added to correct LST and\nglobal (incident) radiation on the surface (including the environmental\nlapse rate, elevation slope and aspect) to represent the effects of\ntopographic features on the model\u2019s endmember selection algorithm and ET\nestimates.\n\n[Additional information](https://etdata.org/methods/)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OpenET/projects_openet_assets_geesebal_conus_gridmet_monthly_v2_1",
+            "type": "text/html",
+            "title": "Run the example for projects/openet/assets/geesebal/conus/gridmet/monthly/v2_1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/OpenET/projects_openet_assets_geesebal_conus_gridmet_monthly_v2_1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_openet_assets_geesebal_conus_gridmet_monthly_v2_1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/projects_openet_assets_geesebal_conus_gridmet_monthly_v2_1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/catalog.json",
+            "type": "application/json",
+            "title": "OpenET"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "water-vapor"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "month"
+    },
+    "gee:status": "beta",
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "sci:citation": "Laipelt, L., Kayser, R.H.B., Fleischmann, A.S., Ruhoff, A., Bastiaanssen,\nW., Erickson, T.A. and Melton, F., 2021. Long-term monitoring of\nevapotranspiration using the SEBAL algorithm and Google Earth Engine cloud\ncomputing. ISPRS Journal of Photogrammetry and Remote Sensing, 178,\npp.81-96.\n[doi:10.1016/j.isprsjprs.2021.05.018](https://doi.org/10.1016/j.isprsjprs.2021.05.018)\n",
+    "sci:doi": "10.1016/j.isprsjprs.2021.05.018",
+    "sci:publications": [
+        {
+            "citation": "Bastiaanssen, W.G., Menenti, M., Feddes, R.A. and Holtslag, A.A.M.,\n1998. A remote sensing surface energy balance algorithm for land\n(SEBAL). 1. Formulation. Journal of hydrology, 212, pp.198-212.\n[doi:S0022-1694(98)00253-4](https://doi.org/10.1016/S0022-1694(98)00253-4)\n"
+        },
+        {
+            "citation": "Kayser, R.H., Ruhoff, A., Laipelt, L., de Mello Kich, E., Roberti, D.\nR., de Arruda Souza, V., Rubert, G.C.D., Collischonn, W. and Neale,\nC.M.U., 2022. Assessing geeSEBAL automated calibration and\nmeteorological reanalysis uncertainties to estimate evapotranspiration\nin subtropical humid climates. Agricultural and Forest Meteorology,\n314, p.108775.\n[doi:10.1016/j.agrformet.2021.108775](https://doi.org/10.1016/j.agrformet.2021.108775)\n"
+        },
+        {
+            "citation": "Allen, R.G., Burnett, B., Kramber, W., Huntington, J., Kjaersgaard, J.,\nKilic, A., Kelly, C. and Trezza, R., 2013. Automated calibration of the\nmetric-landsat evapotranspiration process. JAWRA Journal of the American\nWater Resources Association, 49(3), pp.563-576.\n[doi:10.1111/jawr.12056](https://doi.org/10.1111/jawr.12056)\n"
+        }
+    ],
+    "version": "2.1",
+    "title": "OpenET geeSEBAL Monthly Evapotranspiration v2.1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -126,
+                    25,
+                    -66,
+                    50
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-10-01T00:00:00Z",
+                    "2026-02-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "evapotranspiration",
+        "gridmet-derived",
+        "landsat-derived",
+        "monthly",
+        "openet",
+        "water",
+        "water-vapor"
+    ],
+    "providers": [
+        {
+            "name": "OpenET, Inc.",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://etdata.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_openet_assets_geesebal_conus_gridmet_monthly_v2_1"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "geeSEBAL ET value",
+                "gee:units": "mm",
+                "name": "et",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Number of cloud free values",
+                "gee:units": "count",
+                "name": "count",
+                "gsd": [
+                    30
+                ]
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Date assets were built",
+                "name": "build_date",
+                "type": "STRING"
+            },
+            {
+                "description": "Status can be \"permanent\" or \"provisional\".  Images flagged as \"provisional\" may be updated in the future.",
+                "name": "build_status",
+                "type": "STRING"
+            },
+            {
+                "description": "Maximum CLOUD_COVER_LAND percent value for Landsat images included in interpolation",
+                "name": "cloud_cover_max",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "List of Landsat collections for Landsat images included in the interpolation",
+                "name": "collections",
+                "type": "STRING"
+            },
+            {
+                "description": "OpenET core library version",
+                "name": "core_version",
+                "type": "STRING"
+            },
+            {
+                "description": "End date of month",
+                "name": "end_date",
+                "type": "STRING"
+            },
+            {
+                "description": "Band in et_reference_source that contains the daily reference ET data",
+                "name": "et_reference_band",
+                "type": "STRING"
+            },
+            {
+                "description": "Spatial interpolation mode to resample daily reference ET data",
+                "name": "et_reference_resample",
+                "type": "STRING"
+            },
+            {
+                "description": "Collection ID for the daily reference ET data",
+                "name": "et_reference_source",
+                "type": "STRING"
+            },
+            {
+                "description": "Number of scene images used in the interpolation",
+                "name": "image_source_count",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Maximum number of days before and after each image date to include in interpolation",
+                "name": "interp_days",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Method used to interpolate between Landsat model estimates",
+                "name": "interp_method",
+                "type": "STRING"
+            },
+            {
+                "description": "Number of available images in the interpolation source image collection for the target month",
+                "name": "interp_source_count",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "MGRS grid zone ID",
+                "name": "mgrs_tile",
+                "type": "STRING"
+            },
+            {
+                "description": "OpenET model name",
+                "name": "model_name",
+                "type": "STRING"
+            },
+            {
+                "description": "OpenET model version",
+                "name": "model_version",
+                "type": "STRING"
+            },
+            {
+                "description": "Scaling factor that should be applied to the count band",
+                "name": "scale_factor_count",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Scaling factor that should be applied to the et band",
+                "name": "scale_factor_et",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Start date of month",
+                "name": "start_date",
+                "type": "STRING"
+            },
+            {
+                "description": "Units of the \"et\" band",
+                "name": "units_et",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "OpenET geeSEBAL Monthly ET",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "et"
+                        ],
+                        "max": [
+                            1400
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "9e6212",
+                            "ac7d1d",
+                            "ba9829",
+                            "c8b434",
+                            "d6cf40",
+                            "bed44b",
+                            "9fcb51",
+                            "80c256",
+                            "61b95c",
+                            "42b062",
+                            "45b677",
+                            "49bc8d",
+                            "4dc2a2",
+                            "51c8b8",
+                            "55cece",
+                            "4db4ba",
+                            "459aa7",
+                            "3d8094",
+                            "356681",
+                            "2d4c6e"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 38,
+                    "lon": -100,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    }
+}
