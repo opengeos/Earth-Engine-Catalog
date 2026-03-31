@@ -1,0 +1,133 @@
+{
+    "type": "Collection",
+    "id": "USDA/SOLUS100/V0",
+    "stac_version": "1.1.0",
+    "description": "SOLUS (Soil Landscapes of the United States) is a national map product\ndeveloped by the National Cooperative Soil Survey that is focused on\nproviding a consistent set of spatially continuous soil property maps to\nsupport large scope soil investigations and land use decisions. SOLUS maps\nuse a digital soil mapping framework that combines multiple sources of soil\nsurvey data with environmental covariate data and machine learning.\nSOLUS100 is 100 m spatial resolution. Each 100 m raster cell represents\na 100 m by 100 m square on the ground with soil property values\nestimated at seven depths: 0, 5, 15, 30, 60, 100, and 150 cm.\n\nIt provides estimates for soil organic carbon, bulk density, pH,\ntexture fractions (clay, silt, sand), calcium carbonate equivalent,\nand depth to an anylithic contact (e.g. bedrock).\n\nEach soil property is represented by a separate image in this collection.\nFor each soil property except depth to anylithic contact, bands are\nprovided for 7 depths: 0, 5, 15, 30, 60, 100, and 150cm. For each depth,\n4 layers are provided: predicted value, lower 95% confidence limit,\nupper 95% confidence limit, and a relative property index.\nFor depth to anylithic contact, a single image provides the 4 layers\nrepresenting depth in cm.\n\nImage IDs correspond to soil properties:\n\n*   `soc`: Soil organic carbon (%)\n*   `bd`: Bulk density (g/cm^3)\n*   `phh2o`: pH in water\n*   `claytotal`: Clay (%)\n*   `silttotal`: Silt (%)\n*   `sandtotal`: Sand (%)\n*   `caco3`: Calcium Carbonate (%)\n*   `anylithicdpt`: Depth to an Anylithic Contact (cm)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/USDA/USDA_SOLUS100_V0",
+            "type": "text/html",
+            "title": "Run the example for USDA/SOLUS100/V0 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/USDA/USDA_SOLUS100_V0_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/USDA_SOLUS100_V0#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USDA/USDA_SOLUS100_V0.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/USDA/catalog.json",
+            "type": "application/json",
+            "title": "USDA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:categories": [
+        "soil"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:terms_of_use": "The SOLUS dataset is in the public domain and is available without\nrestriction on use or distribution.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Nauman, T. W., Kienast-Brown, S., Roecker, S. M., Brungard, C., White,\nD., Philippe, J., & Thompson, J. A. (2024). Soil landscapes of the\nUnited States (SOLUS): developing predictive soil property maps of the\nconterminous United States using hybrid training sets. Soil Science\nSociety of America Journal, 1-20.\n[doi:10.1002/saj2.20769](https://doi.org/10.1002/saj2.20769)\n",
+    "sci:doi": "10.1002/saj2.20769",
+    "gee:status": "ready",
+    "title": "SOLUS: Soil properties of the conterminous United States at 100-m resolution",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    24,
+                    -66,
+                    50
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-12-15T00:00:00Z",
+                    "2024-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "soil",
+        "usda"
+    ],
+    "providers": [
+        {
+            "name": "USDA-ARS",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.nrcs.usda.gov/resources/data-and-reports/soil-landscapes-of-the-united-states-solus"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/USDA_SOLUS100_V0"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Soil Organic Carbon",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "r_0_cm_p"
+                        ],
+                        "max": [
+                            2000
+                        ],
+                        "min": [
+                            0
+                        ]
+                    },
+                    "image_id": [
+                        "USDA/SOLUS100/V0/soc"
+                    ]
+                },
+                "lookat": {
+                    "lat": 38,
+                    "lon": -95,
+                    "zoom": 4
+                }
+            }
+        ],
+        "gsd": [
+            100
+        ]
+    }
+}

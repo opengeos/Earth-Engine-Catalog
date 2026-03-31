@@ -1,0 +1,185 @@
+{
+    "type": "Collection",
+    "id": "AIRBUS/SPOT_2_4_5/BRAZIL/2007_2009/MS/V1",
+    "stac_version": "1.1.0",
+    "description": "This collection provides 2008-era raw multispectral imagery from the SPOT 2, 4, and 5 satellites over the country of Brazil. These missions, operated by CNES, were designed to provide high-resolution, wide-area optical imagery for managing Earth's resources. SPOT 2 and 4 utilized HRV and HRVIR \"pushbroom\" sensors with a 60 km swath. SPOT 5 introduced the High-Resolution Geometric (HRG) instrument, offering improved 10m multispectral resolution. This raw image collection can be used for historical environmental analysis such as in the context of the [Brazil Forest Code](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12651.htm). See also [Brazil Forest Imagery Dataset 2008: Analytic Basemap](/earth-engine/datasets/catalog/GOOGLE_BRAZIL_FOREST_2008_V1_ANALYTIC).\n\nA cloud mask can be added to images in this collection by linking the [MS_NC collection](/earth-engine/datasets/catalog/AIRBUS_SPOT_2_4_5_BRAZIL_2007_2009_MS_NC_V1). See the example below.\n\n\n### Data access\n\nTo access this dataset, please fill out the [request form](https://forms.gle/jQmCbWgarjENQBYz6).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/AIRBUS/AIRBUS_SPOT_2_4_5_BRAZIL_2007_2009_MS_V1",
+            "type": "text/html",
+            "title": "Run the example for AIRBUS/SPOT_2_4_5/BRAZIL/2007_2009/MS/V1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/AIRBUS/AIRBUS_SPOT_2_4_5_BRAZIL_2007_2009_MS_V1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/AIRBUS_SPOT_2_4_5_BRAZIL_2007_2009_MS_V1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/Earth_Engine_SPOT_542_Datasets_License.pdf",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/AIRBUS/AIRBUS_SPOT_2_4_5_BRAZIL_2007_2009_MS_V1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/AIRBUS/catalog.json",
+            "type": "application/json",
+            "title": "AIRBUS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "Use of this dataset is subject to the [Brazil Forest Imagery Dataset 2008 license agreement](https://developers.google.com/earth-engine/datasets/catalog/Earth_Engine_SPOT_542_Datasets_License.pdf) and requires the following attribution:\n\n\u201cGoogle LLC, Brazil Forest Imagery Dataset 2008 created from circa 2008 SPOT images acquired by CNES's Spot World Heritage Programme.\u201d\n\nContains modified imagery from SPOT satellites made available by the CNES SPOT World Heritage Programme (https://regards.cnes.fr/html/swh/Home-swh3.html).\n",
+    "gee:type": "image_collection",
+    "version": "V1",
+    "title": "SPOT Multispectral Imagery 10-20m, Brazil",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -74,
+                    -34,
+                    -34,
+                    6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2007-01-01T00:00:00Z",
+                    "2009-11-26T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "airbus",
+        "brazil",
+        "forest-code",
+        "multispectral",
+        "satellite-imagery",
+        "spot"
+    ],
+    "providers": [
+        {
+            "name": "Airbus / CNES",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://regards.cnes.fr/html/swh/Home-swh3.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/AIRBUS_SPOT_2_4_5_BRAZIL_2007_2009_MS_V1"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Green (0.50-0.59 \u00b5m)",
+                "gee:units": "dn",
+                "name": "G",
+                "gsd": [
+                    20
+                ]
+            },
+            {
+                "description": "Red (0.61-0.68 \u00b5m)",
+                "gee:units": "dn",
+                "name": "R",
+                "gsd": [
+                    20
+                ]
+            },
+            {
+                "description": "Near-Infrared (NIR) (0.78-0.89 \u00b5m)",
+                "gee:units": "dn",
+                "name": "N",
+                "gsd": [
+                    20
+                ]
+            },
+            {
+                "description": "Shortwave near-Infrared SWIR (1.53-1.78 \u00b5m). Available for SPOT 4/5",
+                "gee:units": "dn",
+                "name": "S",
+                "gsd": [
+                    20
+                ]
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Multispectral (NIR/R/G)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "N",
+                            "R",
+                            "G"
+                        ],
+                        "max": [
+                            255
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -10,
+                    "lon": -55,
+                    "zoom": 6
+                }
+            }
+        ],
+        "gsd": [
+            20
+        ],
+        "G": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "N": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "R": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "S": {
+            "minimum": 0,
+            "maximum": 255
+        }
+    }
+}

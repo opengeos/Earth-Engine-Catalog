@@ -1,0 +1,311 @@
+{
+    "type": "Collection",
+    "id": "AIRBUS/SPOT_2_4_5/BRAZIL/2007_2009/PMS_NC/V1",
+    "stac_version": "1.1.0",
+    "description": "This collection provides high-resolution pansharpened pseudo-natural color SPOT imagery satellites 2, 4, and 5 for Brazil circa 2008. Where a corresponding high-resolution panchromatic image was available, it was fused with [multispectral data](/earth-engine/datasets/catalog/AIRBUS_SPOT_2_4_5_BRAZIL_2007_2009_MS_V1) to achieve enhanced spatial detail (up to 5m for SPOT 5 or 10m for SPOT 2/4). This raw image collection can be used for historical environmental visualization and visual interpretation. See also [Brazil Forest Imagery Dataset 2008: Visual Basemap](/earth-engine/datasets/catalog/GOOGLE_BRAZIL_FOREST_2008_V1_VISUAL).\n\n\n### Google modifications\n\nAddition of a cloud mask band. Google manually delineated polygons around clouds, wisps, and shadows for each image in this collection, converting the polygons into a mask image added as an additional band to the image.\n\n\n### Data access\n\nTo access this dataset, please fill out the [request form](https://forms.gle/jQmCbWgarjENQBYz6).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/AIRBUS/AIRBUS_SPOT_2_4_5_BRAZIL_2007_2009_PMS_NC_V1",
+            "type": "text/html",
+            "title": "Run the example for AIRBUS/SPOT_2_4_5/BRAZIL/2007_2009/PMS_NC/V1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/AIRBUS/AIRBUS_SPOT_2_4_5_BRAZIL_2007_2009_PMS_NC_V1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/AIRBUS_SPOT_2_4_5_BRAZIL_2007_2009_PMS_NC_V1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/Earth_Engine_SPOT_542_Datasets_License.pdf",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/AIRBUS/AIRBUS_SPOT_2_4_5_BRAZIL_2007_2009_PMS_NC_V1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/AIRBUS/catalog.json",
+            "type": "application/json",
+            "title": "AIRBUS"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "Use of this dataset is subject to the [Brazil Forest Imagery Dataset 2008 license agreement](https://developers.google.com/earth-engine/datasets/catalog/Earth_Engine_SPOT_542_Datasets_License.pdf) and requires the following attribution:\n\n\u201cGoogle LLC, Brazil Forest Imagery Dataset 2008 created from circa 2008 SPOT images acquired by CNES's Spot World Heritage Programme.\u201d\n\nContains modified imagery from SPOT satellites made available by the CNES SPOT World Heritage Programme (https://regards.cnes.fr/html/swh/Home-swh3.html).\n",
+    "gee:type": "image_collection",
+    "version": "V1",
+    "title": "SPOT Pansharpened Pseudo Natural Color Imagery 5-10m, Brazil",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -74,
+                    -34,
+                    -34,
+                    6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2007-01-01T00:00:00Z",
+                    "2009-11-26T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "airbus",
+        "brazil",
+        "forest-code",
+        "rgb",
+        "satellite-imagery",
+        "spot"
+    ],
+    "providers": [
+        {
+            "name": "Airbus / CNES",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://regards.cnes.fr/html/swh/Home-swh3.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/AIRBUS_SPOT_2_4_5_BRAZIL_2007_2009_PMS_NC_V1"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Red reflectance",
+                "gee:units": "dn",
+                "name": "R",
+                "gsd": [
+                    10
+                ]
+            },
+            {
+                "description": "Green reflectance",
+                "gee:units": "dn",
+                "name": "G",
+                "gsd": [
+                    10
+                ]
+            },
+            {
+                "description": "Pansharpened blue reflectance, representing the synthetic blue channel of the pseudo-natural color product for SPOT 2, 4, and 5",
+                "gee:units": "dn",
+                "name": "B",
+                "gsd": [
+                    10
+                ]
+            },
+            {
+                "description": "Cloud mask: 0 = cloud/shadow, 1 = clear",
+                "name": "cloud_mask",
+                "gsd": [
+                    10
+                ]
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Scene-wide cloud cover estimate",
+                "name": "cloud_cover",
+                "type": "DOUBLE",
+                "units": "%"
+            },
+            {
+                "description": "The K-J grid reference identifies the nominal scene center, where K is the column and J is the row of the SPOT Grid Reference System (GRS).",
+                "name": "grid_reference",
+                "type": "STRING"
+            },
+            {
+                "description": "Set to TRUE for all images.",
+                "name": "high_quality",
+                "type": "STRING"
+            },
+            {
+                "description": "Incidence angle",
+                "name": "incidence_angle",
+                "type": "DOUBLE",
+                "units": "deg"
+            },
+            {
+                "description": "Imaging instrument",
+                "name": "instrument",
+                "type": "STRING"
+            },
+            {
+                "description": "Provider-set field denoting unique identifier for processing job.",
+                "name": "job_id",
+                "type": "STRING"
+            },
+            {
+                "description": "Nadir latitude",
+                "name": "nadir_lat",
+                "type": "DOUBLE",
+                "units": "deg"
+            },
+            {
+                "description": "Nadir longitude",
+                "name": "nadir_lon",
+                "type": "DOUBLE",
+                "units": "deg"
+            },
+            {
+                "description": "Nominal scale",
+                "name": "pixel_size_meters",
+                "type": "DOUBLE",
+                "units": "m"
+            },
+            {
+                "description": "Indicates the level of radiometric and geometric correction applied. Possible values: 1A (radiometric only)",
+                "name": "processing_level",
+                "type": "STRING"
+            },
+            {
+                "description": "Scene identifier",
+                "name": "product_id",
+                "type": "STRING"
+            },
+            {
+                "description": "Date of processing.",
+                "name": "production_date",
+                "type": "STRING"
+            },
+            {
+                "description": "Source satellite: \"SPOT2\", \"SPOT4\", or \"SPOT5\"",
+                "name": "satellite",
+                "type": "STRING"
+            },
+            {
+                "description": "Satellite orbit altitude",
+                "name": "satellite_altitude",
+                "type": "DOUBLE",
+                "units": "km"
+            },
+            {
+                "description": "Calibration coefficient for converting DNs to radiance for sensor",
+                "name": "sensor_gain_number",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Calibration coefficient for converting DNs to radiance for sensor",
+                "name": "sensor_gain_value",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Processing software",
+                "name": "software",
+                "type": "STRING"
+            },
+            {
+                "description": "Dataset_Sources/Source_Information/SOURCE_ID",
+                "name": "source_id",
+                "type": "STRING"
+            },
+            {
+                "description": "Sun azimuth",
+                "name": "sun_azimuth",
+                "type": "DOUBLE",
+                "units": "deg"
+            },
+            {
+                "description": "Sun elevation",
+                "name": "sun_elevation",
+                "type": "DOUBLE",
+                "units": "deg"
+            },
+            {
+                "description": "Viewing angle",
+                "name": "viewing_angle",
+                "type": "DOUBLE",
+                "units": "deg"
+            },
+            {
+                "description": "Google-added field denoting status of manual cloud masking QA. Possible values: \"accept\", \"reject_for_cloud\", \"reject_for_other\", \"not_evaluated\", or absent if QA has not been performed.",
+                "name": "google_cloud_mask_qa",
+                "type": "STRING"
+            },
+            {
+                "description": "Google-added property denoting the percent of viable pixels after cloud and cloud shadow removal",
+                "name": "percent_valid_pixels",
+                "type": "DOUBLE",
+                "units": "%"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Natural Color RGB",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "R",
+                            "G",
+                            "B"
+                        ],
+                        "max": [
+                            255
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -10,
+                    "lon": -55,
+                    "zoom": 6
+                }
+            }
+        ],
+        "gsd": [
+            10
+        ],
+        "B": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "G": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "R": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "cloud_mask": {
+            "minimum": 0,
+            "maximum": 1
+        }
+    }
+}

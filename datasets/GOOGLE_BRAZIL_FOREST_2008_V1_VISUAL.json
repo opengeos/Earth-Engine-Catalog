@@ -1,0 +1,208 @@
+{
+    "type": "Collection",
+    "id": "GOOGLE/BRAZIL_FOREST_2008/V1/VISUAL",
+    "stac_version": "1.1.0",
+    "description": "This dataset provides a visual imagery basemap of Brazil with up to 5-meter resolution, primarily captured in 2008, to support implementation of the [Brazil Forest Code](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/L12651compilado.htm). The mosaic is synthesized from SPOT 2, 4, and 5 satellite data. It serves as a high-resolution alternative to Landsat for identifying consolidated areas, Permanent Protection Areas (APPs), and legal reserves as they existed on the July 22, 2008 regulatory deadline. Gaps in SPOT coverage are represented by a transparent mask to maintain data integrity.\n\n### Why Google created this basemap\n\nWhile raw image collections are also available (see [MS](/earth-engine/datasets/catalog/AIRBUS_SPOT_2_4_5_BRAZIL_2007_2009_MS_V1), [MS_NC](/earth-engine/datasets/catalog/AIRBUS_SPOT_2_4_5_BRAZIL_2007_2009_MS_NC_V1), [PMS_NC](/earth-engine/datasets/catalog/AIRBUS_SPOT_2_4_5_BRAZIL_2007_2009_PMS_NC_V1), [PAN](/earth-engine/datasets/catalog/AIRBUS_SPOT_2_4_5_BRAZIL_2007_2009_PAN_V1)), Google synthesized this mosaic to provide a seamless, ready-to-use product. By performing radiometric and geometric corrections at scale, Google transformed raw, disparate satellite scenes into a unified layer that allows for immediate visualization within applications like [SICAR](https://car.gov.br) (the Rural Environmental Registry System of Brazil).\n\n\n### Geographic prioritization and coverage\n\nTo maximize immediate environmental impact, image selection prioritized achieving near-complete, high-resolution coverage for privately held lands registered in the **Rural Environmental Registry (CAR)**. Specific focus was given to the **Amazon biome** and five states in the **\"Arc of Deforestation\"** - Maranh\u00e3o, Mato Grosso, Par\u00e1, Rond\u00f4nia, and Tocantins - where there is an average of 93% state-wide coverage. The average coverage across Brazil is 68% in v1. Gaps in coverage are represented by a transparent mask to maintain data integrity where high-quality 2008-era imagery was unavailable.\n\n\n### Processing methodology\n\nPlease see the [methodology guide](/earth-engine/guides/spot_brazil_forest_imagery_dataset_2008_v1) for an in-depth description of the processing, including:\n\n* **Radiometric calibration:** Raw digital numbers were converted to TOA reflectance using band-specific physical gain and bias metadata, normalized by solar irradiance and Earth-Sun distance.\n* **Radiometric normalization:** To minimize inter-image radiometric discontinuities pixel values were adjusted via histogram matching to a consistent Landsat 2008 mosaic target.\n* **Edge refinement:** Google applied a 2.5-pixel focal minimum erosion to image masks to remove lossy compression artifacts present in the source data.\n* **Cloud masking:** Trained surveyors manually delineated polygons around clouds and shadows, which were converted to a mask to ensure that only the most useful pixels are included in the composite.\n* **Automated misregistration correction:** Select scenes were coregistered using the `ee.Image.register` algorithm against a 2008-era Landsat reference composite.\n* **Composition:** The final mosaic prioritizes the highest resolution pixels available, layering SPOT 5 imagery (10 m) on top of SPOT 4 and 2\\.\n\n\n### Limitations and known issues\n\n* **Spatial completeness:** Gaps exist where no imagery met the project\u2019s strict 2008-era temporal window (2007\u20132009), cloud-cover thresholds, or quality standards.\n* **Variable native resolution:**Boundaries between different nominal resolutions of source imagery may be visible because nearest neighbor resampling was used during processing..\n* **Residual misregistration:** Spatial shifts may persist in some areas, particularly in regions with extreme terrain relief or dense, homogeneous forest areas.\n* **Atmospheric and cloud artifacts:** Manual cloud masking is not exhaustive; users may encounter occasional residual artifacts like thin cirrus haze or small cloud shadows.\n* **Radiometric inconsistency:** Residual spectral variation remains between adjacent images, which may increase spectral variance and reduce the precision of class separation during machine learning inference.\n* **Spectral saturation:** In areas of extreme brightness, pixels may reach the sensor\u2019s maximum detectable limit, resulting in a loss of texture and detail.\n\n\n### Data access\n\nTo access this dataset, please fill out the [request form](https://forms.gle/jQmCbWgarjENQBYz6).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/GOOGLE/GOOGLE_BRAZIL_FOREST_2008_V1_VISUAL",
+            "type": "text/html",
+            "title": "Run the example for GOOGLE/BRAZIL_FOREST_2008/V1/VISUAL in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/GOOGLE/GOOGLE_BRAZIL_FOREST_2008_V1_VISUAL_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_BRAZIL_FOREST_2008_V1_VISUAL#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/Earth_Engine_SPOT_542_Datasets_License.pdf",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GOOGLE/GOOGLE_BRAZIL_FOREST_2008_V1_VISUAL.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GOOGLE/catalog.json",
+            "type": "application/json",
+            "title": "GOOGLE"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "Use of this dataset is subject to the [Brazil Forest Imagery Dataset 2008 license agreement](https://developers.google.com/earth-engine/datasets/catalog/Earth_Engine_SPOT_542_Datasets_License.pdf) and requires the following attribution:\n\n\u201cGoogle LLC, Brazil Forest Imagery Dataset 2008 created from circa 2008 SPOT images acquired by CNES's Spot World Heritage Programme.\u201d\n\nContains modified imagery from SPOT satellites made available by the CNES SPOT World Heritage Programme (https://regards.cnes.fr/html/swh/Home-swh3.html).\n",
+    "gee:type": "image",
+    "version": "V1",
+    "title": "Brazil Forest Imagery Dataset 2008: Visual Basemap",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -74,
+                    -34,
+                    -34,
+                    6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2007-01-01T00:00:00Z",
+                    "2009-11-26T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "brazil",
+        "deforestation",
+        "forest-code",
+        "google",
+        "rgb",
+        "satellite-imagery",
+        "spot"
+    ],
+    "providers": [
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://earthengine.google.com/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_BRAZIL_FOREST_2008_V1_VISUAL"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Red reflectance",
+                "name": "R",
+                "gsd": [
+                    5
+                ]
+            },
+            {
+                "description": "Green reflectance",
+                "name": "G",
+                "gsd": [
+                    5
+                ]
+            },
+            {
+                "description": "Blue reflectance, representing the synthetic blue channel of the pseudo-natural color product for SPOT 2, 4, and 5",
+                "name": "B",
+                "gsd": [
+                    5
+                ]
+            },
+            {
+                "description": "Observation date as epoch (seconds)",
+                "gee:units": "seconds",
+                "name": "date",
+                "gsd": [
+                    5
+                ]
+            },
+            {
+                "description": "Pixel size of source image (see [Methodology](/earth-engine/guides/spot_brazil_forest_imagery_dataset_2008_v1))",
+                "name": "scale",
+                "gsd": [
+                    5
+                ]
+            },
+            {
+                "description": "Source satellite (SPOT 2, 4, or 5)",
+                "name": "satellite",
+                "gsd": [
+                    5
+                ]
+            },
+            {
+                "description": "Boolean: 1 if automated misregistration correction was applied (see [Methodology](/earth-engine/guides/spot_brazil_forest_imagery_dataset_2008_v1))",
+                "name": "coregistered",
+                "gsd": [
+                    5
+                ]
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Visual Basemap RGB",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "R",
+                            "G",
+                            "B"
+                        ],
+                        "max": [
+                            255
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -10,
+                    "lon": -55,
+                    "zoom": 6
+                }
+            }
+        ],
+        "gsd": [
+            5
+        ],
+        "B": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "G": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "R": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "coregistered": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "satellite": {
+            "minimum": 2,
+            "maximum": 5
+        }
+    }
+}
