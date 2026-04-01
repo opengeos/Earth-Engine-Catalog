@@ -51,10 +51,10 @@
     "gee:categories": [
         "satellite-imagery"
     ],
-    "gee:status": "beta",
     "gee:terms_of_use": "Use of this dataset is subject to the [Brazil Forest Imagery Dataset 2008 license agreement](https://developers.google.com/earth-engine/datasets/catalog/Earth_Engine_SPOT_542_Datasets_License.pdf) and requires the following attribution:\n\n\u201cGoogle LLC, Brazil Forest Imagery Dataset 2008 created from circa 2008 SPOT images acquired by CNES's Spot World Heritage Programme.\u201d\n\nContains modified imagery from SPOT satellites made available by the CNES SPOT World Heritage Programme (https://regards.cnes.fr/html/swh/Home-swh3.html).\n",
     "gee:type": "image",
     "version": "V1",
+    "gee:status": "ready",
     "title": "Brazil Forest Imagery Dataset 2008: Visual Basemap",
     "extent": {
         "spatial": {
@@ -88,12 +88,12 @@
     ],
     "providers": [
         {
-            "name": "Google Earth Engine",
+            "name": "Google",
             "roles": [
                 "licensor",
                 "producer"
             ],
-            "url": "https://earthengine.google.com/"
+            "url": "https://developers.google.com/earth-engine/guides/spot_brazil_forest_imagery_dataset_2008_v1"
         },
         {
             "name": "Google Earth Engine",
