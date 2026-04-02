@@ -52,7 +52,6 @@
         "type": "cadence",
         "unit": "month"
     },
-    "gee:status": "beta",
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
     "sci:citation": "Anderson, M., Gao, F., Knipper, K., Hain, C., Dulaney, W., Baldocchi, D .,\nEichelmann, E., Hemes, K., Yang, Y., Medellin-Azuara, J. and Kustas, W.,\n2018. Field-scale assessment of land and water use change over the\nCalifornia Delta using remote sensing. Remote Sensing, 10(6), p.889.\n[doi:10.3390/rs10060889](https://doi.org/10.3390/rs10060889)\n",
@@ -63,6 +62,7 @@
         }
     ],
     "version": "2.1",
+    "gee:status": "ready",
     "title": "OpenET DisALEXI Monthly Evapotranspiration v2.1",
     "extent": {
         "spatial": {

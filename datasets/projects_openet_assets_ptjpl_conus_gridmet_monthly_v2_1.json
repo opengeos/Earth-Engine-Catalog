@@ -52,7 +52,6 @@
         "type": "cadence",
         "unit": "month"
     },
-    "gee:status": "beta",
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
     "sci:citation": "Fisher, J.B., Tu, K.P. and Baldocchi, D.D., 2008. Global estimates of the\nland\u2013atmosphere water flux based on monthly AVHRR and ISLSCP-II data,\nvalidated at 16 FLUXNET sites. Remote Sensing of Environment, 112(3),\npp.901-919.\n[doi:10.1016/j.rse.2007.06.025](https://doi.org/10.1016/j.rse.2007.06.025)\n",
@@ -63,6 +62,7 @@
         }
     ],
     "version": "2.1",
+    "gee:status": "ready",
     "title": "OpenET PT-JPL Monthly Evapotranspiration v2.1",
     "extent": {
         "spatial": {

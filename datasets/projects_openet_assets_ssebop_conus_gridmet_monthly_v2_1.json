@@ -52,7 +52,6 @@
         "type": "cadence",
         "unit": "month"
     },
-    "gee:status": "beta",
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
     "sci:citation": "Senay, G.B., Parrish, G.E., Schauer, M., Friedrichs, M., Khand, K., Boiko,\nO., Kagone, S., Dittmeier, R., Arab, S. and Ji, L., 2023. Improving the\nOperational Simplified Surface Energy Balance Evapotranspiration Model Using\nthe Forcing and Normalizing Operation. Remote Sensing, 15(1), p.260.\n[doi:10.3390/rs15010260](https://doi.org/10.3390/rs15010260)\n",
@@ -72,6 +71,7 @@
         }
     ],
     "version": "2.1",
+    "gee:status": "ready",
     "title": "OpenET SSEBop Monthly Evapotranspiration v2.1",
     "extent": {
         "spatial": {

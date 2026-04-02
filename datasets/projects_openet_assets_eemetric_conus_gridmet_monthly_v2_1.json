@@ -52,7 +52,6 @@
         "type": "cadence",
         "unit": "month"
     },
-    "gee:status": "beta",
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
     "sci:citation": "Kilic, A., Allen, R.G., Blankenau, P., ReVelle, P., Ozturk, D. and\nHuntington, J., 2021. Global production and free access to Landsat-scale\nEvapotranspiration with EEFlux and eeMETRIC. In 6th Decennial National\nIrrigation Symposium, 6-8, December 2021, San Diego, California\n(p. 1). American Society of Agricultural and Biological Engineers.\n[doi:10.13031/irrig.2020-038](https://doi.org/10.13031/irrig.2020-038)\n",
@@ -93,6 +92,7 @@
         }
     ],
     "version": "2.1",
+    "gee:status": "ready",
     "title": "OpenET eeMETRIC Monthly Evapotranspiration v2.1",
     "extent": {
         "spatial": {
