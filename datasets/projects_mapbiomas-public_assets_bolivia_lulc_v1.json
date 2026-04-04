@@ -1,0 +1,390 @@
+{
+    "type": "Collection",
+    "id": "projects/mapbiomas-public/assets/bolivia/lulc/v1",
+    "stac_version": "1.1.0",
+    "description": "MapBiomas Land Use and Land Cover (LULC) dataset for Bolivia is produced annually\nby the MapBiomas Project using Landsat satellite imagery and machine learning\nclassification techniques. The dataset provides consistent annual land cover maps\nat 30-meter resolution covering the period from 1985 to 2024.\n\nBolivia's territory spans several major biomes, including the Amazon rainforest,\nCerrado, Chaco, Pantanal, and the Andean highlands (Altiplano). This diversity\nis reflected in the classification legend, which includes classes specific to\nAndean ecosystems such as Andean grassland and shrubland and Flooded Andean\ngrassland and shrubland.\n\nEach image in the collection contains one band named \"classification\", with\ninteger values representing categorical land cover classes for that year. The\nclassification is based on Landsat 5 (TM), Landsat 7 (ETM+), Landsat 8 and 9\n(OLI/TIRS) surface reflectance data, preprocessed to generate annual cloud-free\ncomposites. The classification process uses automated decision trees trained with\nreference samples and validated by regional experts.\n\nFor more information, classification legend, methodology, and accuracy assessments,\nvisit the [MapBiomas website](https://mapbiomas.org/en).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/mapbiomas-public/projects_mapbiomas-public_assets_bolivia_lulc_v1",
+            "type": "text/html",
+            "title": "Run the example for projects/mapbiomas-public/assets/bolivia/lulc/v1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/mapbiomas-public/projects_mapbiomas-public_assets_bolivia_lulc_v1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_mapbiomas-public_assets_bolivia_lulc_v1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/mapbiomas-public/projects_mapbiomas-public_assets_bolivia_lulc_v1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/mapbiomas-public/catalog.json",
+            "type": "application/json",
+            "title": "mapbiomas-public"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "landuse-landcover"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "sci:citation": "Souza et al. (2020) - Reconstructing Three Decades of Land Use and Land Cover\nChanges in Brazilian Biomes with Landsat Archive and Earth Engine - Remote Sensing,\nVolume 12, Issue 17, 10.3390/rs12172735.\n\n[doi:10.3390/rs12172735](https://doi.org/10.3390/rs12172735)\n",
+    "sci:doi": "10.3390/rs12172735",
+    "version": "1.0",
+    "title": "MapBiomas Land Use and Land Cover - Bolivia V1.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -69.6644,
+                    -23.3146,
+                    -57.3608,
+                    -9.6792
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1985-01-01T00:00:00Z",
+                    "2024-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "landsat-derived",
+        "landuse-landcover"
+    ],
+    "providers": [
+        {
+            "name": "MapBiomas",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://mapbiomas.org"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_mapbiomas-public_assets_bolivia_lulc_v1"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Land use and land cover classification, with integer values\ncorresponding to MapBiomas Bolivia legend classes.\n",
+                "gee:classes": [
+                    {
+                        "color": "1f8d49",
+                        "description": "Forest Formation",
+                        "value": 1
+                    },
+                    {
+                        "color": "1f8d49",
+                        "description": "Forest",
+                        "value": 3
+                    },
+                    {
+                        "color": "7dc975",
+                        "description": "Open Forest",
+                        "value": 4
+                    },
+                    {
+                        "color": "026975",
+                        "description": "Flooded Forest",
+                        "value": 6
+                    },
+                    {
+                        "color": "d6bc74",
+                        "description": "Grassland and shrubland",
+                        "value": 10
+                    },
+                    {
+                        "color": "519799",
+                        "description": "Flooded grassland/shrubland",
+                        "value": 11
+                    },
+                    {
+                        "color": "d6bc74",
+                        "description": "Grassland/shrubland",
+                        "value": 12
+                    },
+                    {
+                        "color": "d89f5c",
+                        "description": "Other non-forest natural formation",
+                        "value": 13
+                    },
+                    {
+                        "color": "ffefc3",
+                        "description": "Farming",
+                        "value": 14
+                    },
+                    {
+                        "color": "edde8e",
+                        "description": "Pasture",
+                        "value": 15
+                    },
+                    {
+                        "color": "e974ed",
+                        "description": "Agriculture",
+                        "value": 18
+                    },
+                    {
+                        "color": "ffefc3",
+                        "description": "Mosaic of Uses",
+                        "value": 21
+                    },
+                    {
+                        "color": "d4271e",
+                        "description": "Non-vegetated area",
+                        "value": 22
+                    },
+                    {
+                        "color": "ffa07a",
+                        "description": "Beach, dune and sandbank",
+                        "value": 23
+                    },
+                    {
+                        "color": "d4271e",
+                        "description": "Urban Infrastructure",
+                        "value": 24
+                    },
+                    {
+                        "color": "db4d4f",
+                        "description": "Other non-vegetated anthropic area",
+                        "value": 25
+                    },
+                    {
+                        "color": "2532e4",
+                        "description": "Water",
+                        "value": 26
+                    },
+                    {
+                        "color": "ffffff",
+                        "description": "Not observed",
+                        "value": 27
+                    },
+                    {
+                        "color": "ffaa5f",
+                        "description": "Rocky outcrop",
+                        "value": 29
+                    },
+                    {
+                        "color": "9c0027",
+                        "description": "Mining",
+                        "value": 30
+                    },
+                    {
+                        "color": "091077",
+                        "description": "Aquaculture",
+                        "value": 31
+                    },
+                    {
+                        "color": "2532e4",
+                        "description": "River and lake",
+                        "value": 33
+                    },
+                    {
+                        "color": "93dfe6",
+                        "description": "Glacier",
+                        "value": 34
+                    },
+                    {
+                        "color": "f5b3c8",
+                        "description": "Soybean",
+                        "value": 39
+                    },
+                    {
+                        "color": "f5d5d5",
+                        "description": "Salt flat",
+                        "value": 61
+                    },
+                    {
+                        "color": "a89358",
+                        "description": "Scrubland",
+                        "value": 66
+                    },
+                    {
+                        "color": "e97a7a",
+                        "description": "Other non-vegetated natural area",
+                        "value": 68
+                    },
+                    {
+                        "color": "c1799c",
+                        "description": "Other crops",
+                        "value": 72
+                    },
+                    {
+                        "color": "c8c099",
+                        "description": "Andean grassland and shrubland",
+                        "value": 81
+                    },
+                    {
+                        "color": "66b2a3",
+                        "description": "Flooded Andean grassland and shrubland",
+                        "value": 82
+                    }
+                ],
+                "name": "classification",
+                "gsd": [
+                    30
+                ]
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Year of the land use and land cover classification.\n",
+                "name": "year",
+                "type": "INT"
+            },
+            {
+                "description": "Version of the land use and land cover classification.\n",
+                "name": "version",
+                "type": "STRING"
+            },
+            {
+                "description": "Collection identifier of the land use and land cover classification.\n",
+                "name": "collection_id",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Land Use and Cover - MapBiomas Bolivia",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "classification"
+                        ],
+                        "max": [
+                            82
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "000000",
+                            "1f8d49",
+                            "000000",
+                            "1f8d49",
+                            "7dc975",
+                            "000000",
+                            "026975",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "d6bc74",
+                            "519799",
+                            "d6bc74",
+                            "d89f5c",
+                            "ffefc3",
+                            "edde8e",
+                            "000000",
+                            "000000",
+                            "e974ed",
+                            "000000",
+                            "000000",
+                            "ffefc3",
+                            "d4271e",
+                            "ffa07a",
+                            "d4271e",
+                            "db4d4f",
+                            "2532e4",
+                            "ffffff",
+                            "000000",
+                            "ffaa5f",
+                            "9c0027",
+                            "091077",
+                            "000000",
+                            "2532e4",
+                            "93dfe6",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "f5b3c8",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "f5d5d5",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "a89358",
+                            "000000",
+                            "e97a7a",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "c1799c",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "c8c099",
+                            "66b2a3"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -16.5,
+                    "lon": -63.5,
+                    "zoom": 6
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    }
+}
