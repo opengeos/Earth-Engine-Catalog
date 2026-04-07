@@ -28,12 +28,6 @@
             "type": "text/html"
         },
         {
-            "rel": "predecessor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/projects_openet_assets_ensemble_conus_gridmet_monthly_v2_0.json",
-            "type": "application/json",
-            "title": "projects/openet/assets/ensemble/conus/gridmet/monthly/v2_0"
-        },
-        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/projects_openet_assets_ensemble_conus_gridmet_monthly_v2_1.json",
             "type": "application/json"
@@ -80,7 +74,7 @@
             "interval": [
                 [
                     "2015-10-01T00:00:00Z",
-                    "2026-02-01T00:00:00Z"
+                    "2026-03-01T00:00:00Z"
                 ]
             ]
         }
