@@ -47,12 +47,12 @@
     "gee:categories": [
         "landuse-landcover"
     ],
-    "gee:status": "beta",
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
     "sci:citation": "Souza et al. (2020) - Reconstructing Three Decades of Land Use and Land Cover\nChanges in Brazilian Biomes with Landsat Archive and Earth Engine - Remote Sensing,\nVolume 12, Issue 17, 10.3390/rs12172735.\n\n[doi:10.3390/rs12172735](https://doi.org/10.3390/rs12172735)\n",
     "sci:doi": "10.3390/rs12172735",
     "version": "1.0",
+    "gee:status": "ready",
     "title": "MapBiomas Land Use and Land Cover - Bolivia V1.0",
     "extent": {
         "spatial": {
