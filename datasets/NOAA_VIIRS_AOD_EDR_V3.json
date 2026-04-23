@@ -1,0 +1,182 @@
+{
+    "type": "Collection",
+    "id": "NOAA/VIIRS/AOD_EDR/V3",
+    "stac_version": "1.1.0",
+    "description": "The VIIRS Aerosol Optical Depth (AOD) and Aerosol Particle Size (APS)\nEnvironmental Data Records (EDRs) product provides aerosol properties\nretrieved from the Visible Infrared Imaging Radiometer Suite (VIIRS) sensor.\nThe primary product is the AOD at 550 nm, with additional retrievals at\nother sensor channels and Angstrom Exponent over oceans. The spatial\nresolution is 750 meters.\n\nWe project the source rasters into a north-up lat-lon (EPSG:4326) grid using\n[GDAL libraries](https://github.com/google/earthengine-catalog/blob/main/pipelines/viirs_aod.py).\nData beyond 85\u00b0S and 85\u00b0N are excluded to avoid geometric complications\nwhen generating asset footprints for bounds filtering.\n\nFor more details and access to raw data, see:\n\n* [JPSS Aerosols page](https://www.star.nesdis.noaa.gov/jpss/aerosols.php)\n* [Algorithm Theoretical Basis Document](https://www.star.nesdis.noaa.gov/jpss/documents/ATBD/ATBD_EPS_Aerosol_AOD_v3.4.pdf)\n* [Google Cloud JPSS main page](https://console.cloud.google.com/marketplace/product/noaa-public/noaa-jpss)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_VIIRS_AOD_EDR_V3",
+            "type": "text/html",
+            "title": "Run the example for NOAA/VIIRS/AOD_EDR/V3 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_VIIRS_AOD_EDR_V3_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_AOD_EDR_V3#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_VIIRS_AOD_EDR_V3.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/catalog.json",
+            "type": "application/json",
+            "title": "NOAA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "atmosphere"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:status": "beta",
+    "gee:terms_of_use": "There are no restrictions on the use of JPSS data, and it can be used or\nredistributed as desired.\n",
+    "gee:type": "image_collection",
+    "version": "3",
+    "title": "VIIRS Aerosol Optical Depth and Aerosol Particle Size EDRs V3",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -85,
+                    180,
+                    85
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-10-29T00:00:00Z",
+                    "2023-11-18T03:08:03.900000Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "aerosol",
+        "aod",
+        "atmosphere",
+        "noaa",
+        "viirs"
+    ],
+    "providers": [
+        {
+            "name": "NOAA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.noaa.gov/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_AOD_EDR_V3"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Product version",
+                "name": "version",
+                "type": "INT"
+            },
+            {
+                "description": "Product revision",
+                "name": "revision",
+                "type": "INT"
+            },
+            {
+                "description": "Product creation time (Unix timestamp)",
+                "name": "creation_time",
+                "type": "INT"
+            },
+            {
+                "description": "0 (ascend) or 1 (descend)",
+                "name": "ascend_descend_data_flag",
+                "type": "INT"
+            },
+            {
+                "description": "\"day\" or \"night\"",
+                "name": "day_night_data_flag",
+                "type": "STRING"
+            },
+            {
+                "description": "End orbit number",
+                "name": "end_orbit_number",
+                "type": "INT"
+            },
+            {
+                "description": "Satellite name: \"NOAA-20\", \"NOAA-21\", or \"NPP\"",
+                "name": "satellite_name",
+                "type": "STRING"
+            },
+            {
+                "description": "Start orbit number",
+                "name": "start_orbit_number",
+                "type": "INT"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "AOD 550nm",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "AOD550"
+                        ],
+                        "max": [
+                            0.5
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "800080",
+                            "0000ff",
+                            "00ffff",
+                            "008000",
+                            "ffff00",
+                            "ff0000"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 0,
+                    "lon": 0,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            750
+        ]
+    }
+}
