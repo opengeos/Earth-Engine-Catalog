@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2016-04-14T00:00:00Z",
-                    "2026-04-22T08:51:07Z"
+                    "2026-04-23T09:07:11Z"
                 ]
             ]
         }
@@ -120,6 +120,20 @@
             {
                 "description": "VH polarization radar backscatter normalized to gamma0.",
                 "name": "VH",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "HV polarization radar backscatter normalized to gamma0.",
+                "name": "HV",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "HH polarization radar backscatter normalized to gamma0.",
+                "name": "HH",
                 "gsd": [
                     30
                 ]
@@ -199,6 +213,11 @@
                 "description": "Orbit pass direction",
                 "name": "ORBIT_PASS_DIRECTION",
                 "type": "STRING"
+            },
+            {
+                "description": "The polarization bands available in the asset, a list with the valid\nvalues being: \"VV\", \"VH\", \"HV\" and \"HH\".\n",
+                "name": "POLARIZATIONS",
+                "type": "STRING_LIST"
             },
             {
                 "description": "Product generation time in UTC. Format: YYYY-MM-DDTHH:MM:SSZ\n",
