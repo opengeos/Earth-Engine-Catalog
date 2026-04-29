@@ -47,12 +47,12 @@
     "gee:categories": [
         "satellite-imagery"
     ],
-    "gee:status": "beta",
     "gee:terms_of_use": "This dataset is openly shared, without restriction, in accordance with\nthe [EOSDIS Data Use and Citation Guidance](https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance)\n",
     "gee:type": "image_collection",
     "sci:citation": "NASA/JPL/OPERA. (2023). OPERA Radiometric Terrain Corrected SAR Backscatter\nfrom Sentinel-1 Static Layers validated product (Version 1) [Data set].\nNASA Alaska Satellite Facility Distributed Active Archive Center.\n[doi:10.5067/SNWG/OPERA_L2_RTC-S1-STATIC_V1](https://doi.org/10.5067/SNWG/OPERA_L2_RTC-S1-STATIC_V1)\n",
     "sci:doi": "10.5067/SNWG/OPERA_L2_RTC-S1-STATIC_V1",
     "version": "1.0",
+    "gee:status": "ready",
     "title": "OPERA Radiometric Terrain-Corrected SAR Backscatter from Sentinel-1 Static Layers V1.0",
     "extent": {
         "spatial": {

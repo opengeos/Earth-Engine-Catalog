@@ -59,9 +59,9 @@
     "gee:type": "table",
     "gee:unusual_terms_of_use": true,
     "sci:citation": "BirdLife International (year). Digital boundaries of Key Biodiversity\nAreas from the World Database of Key Biodiversity Areas. Developed by\nthe KBA Partnership: BirdLife International, International Union for\nthe Conservation of Nature, American Bird Conservancy, Amphibian Survival\nAlliance, Conservation International, Critical Ecosystem Partnership Fund,\nGlobal Environment Facility, Re:Wild, NatureServe, Rainforest Trust, Royal\nSociety for the Protection of Birds, Wildlife Conservation Society and World\nWildlife Fund. [insert month/year of version used].  Available at http://www.keybiodiversityareas.org/kba-data/request.\n",
-    "version": "September 2025",
+    "version": "March 2026",
     "gee:status": "ready",
-    "title": "WDKBA: World Database of Key Biodiversity Areas (KBAs) - September 2025",
+    "title": "WDKBA: World Database of Key Biodiversity Areas (KBAs) - March 2026",
     "extent": {
         "spatial": {
             "bbox": [
@@ -77,7 +77,7 @@
             "interval": [
                 [
                     "2016-01-01T00:00:00Z",
-                    "2025-09-01T00:00:00Z"
+                    "2026-03-01T00:00:00Z"
                 ]
             ]
         }
@@ -128,11 +128,6 @@
             {
                 "description": "Name of country/territory containing the KBA.",
                 "name": "Country",
-                "type": "STRING"
-            },
-            {
-                "description": "Notes relating to the digitisation of the polygon.",
-                "name": "DelTxt",
                 "type": "STRING"
             },
             {
