@@ -45,7 +45,8 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "climate"
+        "climate",
+        "oceans"
     ],
     "gee:interval": {
         "interval": 12,
@@ -73,7 +74,7 @@
             "interval": [
                 [
                     "2024-11-12T12:00:00Z",
-                    "2026-05-03T12:00:00Z"
+                    "2026-05-04T12:00:00Z"
                 ]
             ]
         }
@@ -84,7 +85,7 @@
         "ecmwf",
         "forecast",
         "global",
-        "ocean"
+        "oceans"
     ],
     "providers": [
         {

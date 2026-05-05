@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "UMD/hansen/global_forest_change_2024_v1_12",
+    "id": "UMD/hansen/global_forest_change_2025_v1_13",
     "stac_version": "1.1.0",
-    "description": "Results from time-series analysis of Landsat images in characterizing\nglobal forest extent and change.\n\nThe 'first' and 'last' bands are reference multispectral imagery from the\nfirst and last available years for Landsat spectral bands corresponding to\nred, NIR, SWIR1, and SWIR2.  Reference composite imagery represents median\nobservations from a set of quality-assessed growing-season observations for\neach of these bands.\n\nPlease see the [User Notes](https://storage.googleapis.com/earthenginepartners-hansen/GFC-2024-v1.12/download.html)\nfor this update, as well as the associated journal article:\nHansen, Potapov, Moore, Hancher et al. \"High-resolution global maps of\n21st-century forest cover change.\" Science 342.6160 (2013): 850-853.\n",
+    "description": "Results from time-series analysis of Landsat images in characterizing\nglobal forest extent and change.\n\nThe 'first' and 'last' bands are reference multispectral imagery from the\nfirst and last available years for Landsat spectral bands corresponding to\nred, NIR, SWIR1, and SWIR2.  Reference composite imagery represents median\nobservations from a set of quality-assessed growing-season observations for\neach of these bands.\n\nPlease see the [User Notes](https://storage.googleapis.com/earthenginepartners-hansen/GFC-2025-v1.13/download.html)\nfor this update, as well as the associated journal article:\nHansen, Potapov, Moore, Hancher et al. \"High-resolution global maps of\n21st-century forest cover change.\" Science 342.6160 (2013): 850-853.\n",
     "links": [
         {
             "rel": "root",
@@ -12,19 +12,19 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/UMD/UMD_hansen_global_forest_change_2024_v1_12",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/UMD/UMD_hansen_global_forest_change_2025_v1_13",
             "type": "text/html",
-            "title": "Run the example for UMD/hansen/global_forest_change_2024_v1_12 in the Earth Engine Code Editor",
+            "title": "Run the example for UMD/hansen/global_forest_change_2025_v1_13 in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/UMD/UMD_hansen_global_forest_change_2024_v1_12_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/UMD/UMD_hansen_global_forest_change_2025_v1_13_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/UMD_hansen_global_forest_change_2024_v1_12#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/UMD_hansen_global_forest_change_2025_v1_13#terms-of-use",
             "type": "text/html"
         },
         {
@@ -34,19 +34,19 @@
         },
         {
             "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMD/UMD_hansen_global_forest_change_2025_v1_13.json",
+            "type": "application/json",
+            "title": "UMD/hansen/global_forest_change_2025_v1_13"
+        },
+        {
+            "rel": "predecessor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMD/UMD_hansen_global_forest_change_2024_v1_12.json",
             "type": "application/json",
             "title": "UMD/hansen/global_forest_change_2024_v1_12"
         },
         {
-            "rel": "predecessor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMD/UMD_hansen_global_forest_change_2023_v1_11.json",
-            "type": "application/json",
-            "title": "UMD/hansen/global_forest_change_2023_v1_11"
-        },
-        {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMD/UMD_hansen_global_forest_change_2024_v1_12.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/UMD/UMD_hansen_global_forest_change_2025_v1_13.json",
             "type": "application/json"
         },
         {
@@ -64,14 +64,14 @@
     "gee:categories": [
         "forest-biomass"
     ],
+    "gee:status": "beta",
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image",
     "gee:user_uploaded": true,
     "sci:citation": "Hansen, M. C., P. V. Potapov, R. Moore, M. Hancher, S. A. Turubanova, A.\nTyukavina, D. Thau, S. V. Stehman, S. J. Goetz, T. R. Loveland, A.\nKommareddy, A. Egorov, L. Chini, C. O. Justice, and J. R. G. Townshend.\n2013. \"High-Resolution Global Maps of 21st-Century Forest Cover Change.\"\nScience 342 (15 November): 850-53.\n[10.1126/science.1244693](https://doi.org/10.1126/science.1244693)\nData available on-line at:\n[https://glad.earthengine.app/view/global-forest-change](https://glad.earthengine.app/view/global-forest-change).\n",
     "sci:doi": "10.1126/science.1244693",
-    "version": "v1.12",
-    "gee:status": "ready",
-    "title": "Hansen Global Forest Change v1.12 (2000-2024)",
+    "version": "v1.13",
+    "title": "Hansen Global Forest Change v1.13 (2000-2025)",
     "extent": {
         "spatial": {
             "bbox": [
@@ -87,7 +87,7 @@
             "interval": [
                 [
                     "2000-01-01T00:00:00Z",
-                    "2024-12-31T00:00:00Z"
+                    "2025-12-31T00:00:00Z"
                 ]
             ]
         }
@@ -115,7 +115,7 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/UMD_hansen_global_forest_change_2024_v1_12"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/UMD_hansen_global_forest_change_2025_v1_13"
         }
     ],
     "summaries": {
@@ -183,7 +183,7 @@
                 ]
             },
             {
-                "description": "Year of gross forest cover loss event. Forest loss during the study\nperiod, defined as a stand-replacement disturbance, or a change from a\nforest to non-forest state. Encoded as either 0 (no loss) or else a value\nin the range 1-24, representing loss detected primarily in the year\n2001-2024, respectively.\n",
+                "description": "Year of gross forest cover loss event. Forest loss during the study\nperiod, defined as a stand-replacement disturbance, or a change from a\nforest to non-forest state. Encoded as either 0 (no loss) or else a value\nin the range 1-25, representing loss detected primarily in the year\n2001-2025, respectively.\n",
                 "name": "lossyear",
                 "gsd": [
                     30.92
@@ -330,7 +330,7 @@
         ],
         "lossyear": {
             "minimum": 0,
-            "maximum": 24
+            "maximum": 25
         },
         "treecover2000": {
             "minimum": 0,
