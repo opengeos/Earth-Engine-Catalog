@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "projects/openet/assets/ssebop/conus/gridmet/monthly/v2_1",
+    "id": "projects/openet/assets/geesebal/conus/gridmet/monthly/v2_0_pre2000",
     "stac_version": "1.1.0",
-    "description": "Operational Simplified Surface Energy Balance (SSEBop).\n\nThe Operational Simplified Surface Energy Balance (SSEBop) model\n(Senay et al., 2013; 2023) is a thermal based approach for estimating\nactual evapotranspiration (ET) using the principles of satellite\npsychrometry (Senay, 2018). As one of the core models in the OpenET\nensemble, SSEBop provides a computationally efficient framework for large-\narea, operational ET mapping.\n\nThe OpenET Collection 2.1 implementation of SSEBop relies on two primary\ninputs:\n\n1. Land surface temperature from Landsat Collection 2 Level 2 Science\nProducts.\n2. Gridded reference ET from gridMET (Abotzoglou, 2013).\n\nKey model parameters, including the cold/wet bulb reference temperature\n(Tc) and the surface psychrometric constant (1/dT), are derived using a\ncombination of observed surface temperature, normalized difference\nvegetation index (NDVI), and ERA5 net radiation data\n(DOI: 10.5066/P9JBW6R9). These components are integrated within the Google\nEarth Engine processing environment, which links the full suite of SSEBop\nalgorithms to generate both intermediate outputs and aggregated ET\nproducts. Extensive evaluation across the conterminous United States\n(Senay et al., 2022; Volk et al., 2024; Ji et al., 2025; Khand et al, 2025)\nhas guided the cloud-based implementation and demonstrated the model\u2019s\nutility for applications such as crop water use assessment and regional\nwater budget analysis.\n\nFor OpenET Collection 2.1, SSEBop model v0.7.1 (Senay et al., 2026)\nincludes a notable enhancement: an improved implementation of the Forcing\nand Normalizing Operation (FANO) equation for determining Tc. This update\nstrengthens the model\u2019s ability to represent wet surfaces with low NDVI,\nimproving performance in areas where vegetation signals are weak or mixed,\nparticularly over farmlands and grasslands during sparse canopy cover.\n**OpenET Collection v2.1**\n\nOpenET Collection v2.1 is a reprocessed and updated version of Collection\nv2.0, designed primarily to address known v2.0 issues, while also\nincorporating minor model improvements and input-data updates. It is\nexpected that there will be noticeable differences in ET between the two\ncollection versions for some places and times. Some of the updates and changes \ninclude:\n\n* Additional cloud screening and filtering to skip Landsat images with \nunmasked clouds and/or extensive snow cover.\n* Reprocessing to incorporate updates to the NLDAS-2 and GRIDMET\ninput meteorology datasets.\n* Incorporation of the USGS Annual NLCD product for all models that require \nland cover information.\n* Incorporation of the latest USDA CDL for all models that require crop type \ninformation.\n* Updates to the interpolation so monthly ET is only produced when all\ndays in the month have interpolated values (reducing \u201ccount=0\u201d months in\ncloudy/snowy or low-coverage periods).\n* Application of an emissivity correction to address a known issue in\nLandsat LST data.\n\n[Additional information](https://etdata.org/methods/)",
+    "description": "Google Earth Engine implementation of the Surface Energy Balance Algorithm\nfor Land (SEBAL) model.\n\nAn overview of the current geeSEBAL version can be found in Laipelt et al.\n(2021), which is based on the original algorithms developed by\nBastiaanssen et al. (1998). The OpenET geeSEBAL implementation uses land\nsurface temperature (LST) data from Landsat Collection 2, in addition to\nNLDAS-2 and gridMET datasets as instantaneous and daily meteorological\ninputs, respectively.\n\nThe automated statistical algorithm to select the hot and cold endmembers\nis based on a simplified version of the Calibration using Inverse Modeling\nat Extreme Conditions (CIMEC) algorithm proposed by Allen et al. (2013),\nwhere quantiles of LST and the normalized difference vegetation index\n(NDVI) values are used to select endmember candidates in the Landsat\ndomain area. The cold and wet endmember candidates are selected in well\nvegetated areas, while the hot and dry endmember candidates are selected\nin the least vegetated cropland areas.Based on the selected endmembers,\ngeeSEBAL assumes that in the cold and wet endmember all available energy\nis converted to latent heat (with high rates of transpiration), while in\nthe hot and dry endmember all available energy is converted to sensible\nheat. Finally, estimates of daily evapotranspiration are upscaled from\ninstantaneous estimates based on the evaporative fraction, assuming it is\nconstant during the daytime without significant changes in soil moisture\nand advection.\n\nBased on the results from the OpenET Accuracy Assessment and\nIntercomparison study, the OpenET geeSEBAL algorithm was modified as\nfollows:\n\n1. The simplified version of CIMEC was improved by using additional\nfilters to select the endmembers, including the use of the USDA Cropland\nData Layer (CDL) and filters for NDVI, LST and albedo.\n2. Corrections to LST for endmembers based on antecedent precipitation.\n3. Definition of NLDAS-2 wind speed thresholds to reduce model instability\nduring the atmospheric correction.\n4. Improvements to estimate daily net radiation, using FAO-56 as reference\n(Allen et al., 1998).\n\nOverall, geeSEBAL performance is dependent on topographic, climate, and\nmeteorological conditions, with higher sensitivity and uncertainty related\nto hot and cold endmember selections for the CIMEC automated calibration,\nand lower sensitivity and uncertainty related to meteorological inputs\n(Laipelt et al., 2021 and Kayser et al., 2022). To reduce uncertainties\nrelated to complex terrain, improvements were added to correct LST and\nglobal (incident) radiation on the surface (including the environmental\nlapse rate, elevation slope and aspect) to represent the effects of\ntopographic features on the model\u2019s endmember selection algorithm and ET\nestimates.\n**OpenET Collection v2.0, pre-2000 (1985-1999)**\n\n**Attention** This collection should not be merged with the main v2.0\ncollection to compute long-term trends, annual totals, or difference from\naverage type calculations, unless care is taken to identify and fill gaps\nor missing data. This collection was generated using Landsat 5 data only,\nand will have more data gaps (both spatially and temporally) than the main\nv2.0 collection, which incorporates data from multiple Landsat satellites\n(5 & 7, 7 & 8, etc.). This pre-2000 collection may have long periods\nwithout data, especially in the winter months, and large regions without\ndata whatsoever in the earlier years (1985-1993).\n\n[Additional information](https://etdata.org/methods/)",
     "links": [
         {
             "rel": "root",
@@ -12,24 +12,24 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OpenET/projects_openet_assets_ssebop_conus_gridmet_monthly_v2_1",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OpenET/projects_openet_assets_geesebal_conus_gridmet_monthly_v2_0_pre2000",
             "type": "text/html",
-            "title": "Run the example for projects/openet/assets/ssebop/conus/gridmet/monthly/v2_1 in the Earth Engine Code Editor",
+            "title": "Run the example for projects/openet/assets/geesebal/conus/gridmet/monthly/v2_0_pre2000 in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/OpenET/projects_openet_assets_ssebop_conus_gridmet_monthly_v2_1_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/OpenET/projects_openet_assets_geesebal_conus_gridmet_monthly_v2_0_pre2000_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_openet_assets_ssebop_conus_gridmet_monthly_v2_1#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_openet_assets_geesebal_conus_gridmet_monthly_v2_0_pre2000#terms-of-use",
             "type": "text/html"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/projects_openet_assets_ssebop_conus_gridmet_monthly_v2_1.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/projects_openet_assets_geesebal_conus_gridmet_monthly_v2_0_pre2000.json",
             "type": "application/json"
         },
         {
@@ -52,27 +52,24 @@
         "type": "cadence",
         "unit": "month"
     },
+    "gee:status": "beta",
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
-    "sci:citation": "Senay, G.B., Parrish, G.E., Schauer, M., Friedrichs, M., Khand, K., Boiko,\nO., Kagone, S., Dittmeier, R., Arab, S. and Ji, L., 2023. Improving the\nOperational Simplified Surface Energy Balance Evapotranspiration Model Using\nthe Forcing and Normalizing Operation. Remote Sensing, 15(1), p.260.\n[doi:10.3390/rs15010260](https://doi.org/10.3390/rs15010260)\n",
-    "sci:doi": "10.3390/rs15010260",
+    "sci:citation": "Laipelt, L., Kayser, R.H.B., Fleischmann, A.S., Ruhoff, A., Bastiaanssen,\nW., Erickson, T.A. and Melton, F., 2021. Long-term monitoring of\nevapotranspiration using the SEBAL algorithm and Google Earth Engine cloud\ncomputing. ISPRS Journal of Photogrammetry and Remote Sensing, 178,\npp.81-96.\n[doi:10.1016/j.isprsjprs.2021.05.018](https://doi.org/10.1016/j.isprsjprs.2021.05.018)\n",
+    "sci:doi": "10.1016/j.isprsjprs.2021.05.018",
     "sci:publications": [
         {
-            "citation": "Senay, G.B., Bohms, S., Singh, R.K., Gowda, P.H., Velpuri, N.M., Alemu,\nH. and Verdin, J.P., 2013. Operational evapotranspiration mapping using\nremote sensing and weather datasets: A new parameterization for the SSEB\napproach. JAWRA Journal of the American Water Resources Association,\n49(3), pp.577-591.\n[doi:10.1111/jawr.12057](https://doi.org/10.1111/jawr.12057)\n"
+            "citation": "Bastiaanssen, W.G., Menenti, M., Feddes, R.A. and Holtslag, A.A.M.,\n1998. A remote sensing surface energy balance algorithm for land\n(SEBAL). 1. Formulation. Journal of hydrology, 212, pp.198-212.\n[doi:S0022-1694(98)00253-4](https://doi.org/10.1016/S0022-1694(98)00253-4)\n"
         },
         {
-            "citation": "Senay, G.B., Schauer, M., Friedrichs, M., Velpuri, N.M. and Singh, R.K.,\n2017. Satellite-based water use dynamics using historical Landsat data\n(1984\u20132014) in the southwestern United States. Remote Sensing of\nEnvironment, 202, pp.98-112.\n[doi:10.1016/j.rse.2017.05.005c](https://doi.org/10.1016/j.rse.2017.05.005)\n"
+            "citation": "Kayser, R.H., Ruhoff, A., Laipelt, L., de Mello Kich, E., Roberti, D.\nR., de Arruda Souza, V., Rubert, G.C.D., Collischonn, W. and Neale,\nC.M.U., 2022. Assessing geeSEBAL automated calibration and\nmeteorological reanalysis uncertainties to estimate evapotranspiration\nin subtropical humid climates. Agricultural and Forest Meteorology,\n314, p.108775.\n[doi:10.1016/j.agrformet.2021.108775](https://doi.org/10.1016/j.agrformet.2021.108775)\n"
         },
         {
-            "citation": "Senay, G.B., 2018. Satellite psychrometric formulation of the\nOperational Simplified Surface Energy Balance (SSEBop) model for\nquantifying and mapping evapotranspiration. Applied Engineering in\nAgriculture, 34(3), pp.555-566.\n[doi:10.13031/aea.12614](https://doi.org/10.13031/aea.12614)\n"
-        },
-        {
-            "citation": "Senay, G.B., Friedrichs, M., Morton, C., Parrish, G.E., Schauer, M.,\nKhand, K., Kagone, S., Boiko, O. and Huntington, J., 2022.  Mapping\nactual evapotranspiration using Landsat for the conterminous United\nStates: Google Earth Engine implementation and assessment of the SSEBop\nmodel. Remote Sensing of Environment, 275, p.113011.\n[doi:10.1016/j.rse.2022.113011](https://doi.org/10.1016/j.rse.2022.113011)\n"
+            "citation": "Allen, R.G., Burnett, B., Kramber, W., Huntington, J., Kjaersgaard, J.,\nKilic, A., Kelly, C. and Trezza, R., 2013. Automated calibration of the\nmetric-landsat evapotranspiration process. JAWRA Journal of the American\nWater Resources Association, 49(3), pp.563-576.\n[doi:10.1111/jawr.12056](https://doi.org/10.1111/jawr.12056)\n"
         }
     ],
-    "version": "2.1",
-    "gee:status": "ready",
-    "title": "OpenET SSEBop Monthly Evapotranspiration v2.1",
+    "version": "2.0",
+    "title": "OpenET geeSEBAL Monthly Evapotranspiration v2.0 (1985-1999)",
     "extent": {
         "spatial": {
             "bbox": [
@@ -87,8 +84,8 @@
         "temporal": {
             "interval": [
                 [
-                    "2015-10-01T00:00:00Z",
-                    "2026-04-01T00:00:00Z"
+                    "1984-10-01T00:00:00Z",
+                    "1999-10-01T00:00:00Z"
                 ]
             ]
         }
@@ -117,7 +114,7 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_openet_assets_ssebop_conus_gridmet_monthly_v2_1"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_openet_assets_geesebal_conus_gridmet_monthly_v2_0_pre2000"
         }
     ],
     "summaries": {
@@ -143,11 +140,6 @@
             {
                 "description": "Date assets were built",
                 "name": "build_date",
-                "type": "STRING"
-            },
-            {
-                "description": "Status can be \"permanent\" or \"provisional\".  Images flagged as \"provisional\" may be updated in the future.",
-                "name": "build_status",
                 "type": "STRING"
             },
             {
@@ -184,11 +176,6 @@
                 "description": "Collection ID for the daily reference ET data",
                 "name": "et_reference_source",
                 "type": "STRING"
-            },
-            {
-                "description": "Number of scene images used in the interpolation",
-                "name": "image_source_count",
-                "type": "DOUBLE"
             },
             {
                 "description": "Maximum number of days before and after each image date to include in interpolation",
@@ -234,16 +221,11 @@
                 "description": "Start date of month",
                 "name": "start_date",
                 "type": "STRING"
-            },
-            {
-                "description": "Units of the \"et\" band",
-                "name": "units_et",
-                "type": "STRING"
             }
         ],
         "gee:visualizations": [
             {
-                "display_name": "OpenET SSEBop Monthly ET",
+                "display_name": "OpenET geeSEBAL Monthly ET",
                 "image_visualization": {
                     "band_vis": {
                         "bands": [

@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "projects/openet/assets/disalexi/conus/gridmet/monthly/v2_0",
     "stac_version": "1.1.0",
-    "description": "Atmosphere-Land Exchange Inverse / Disaggregation of the Atmosphere-Land\nExchange Inverse (ALEXI/DisALEXI).\n\nDisALEXI was ported to Google Earth Engine as part of the OpenET\nframework. The baseline ALEXI/DisALEXI model structure is described by\nAnderson et al. (2012, 2018). The ALEXI evapotranspiration (ET) model\nspecifically uses time differential land surface temperature (LST)\nmeasurements from geostationary or moderate resolution polar orbiting\nplatforms to generate regional ET maps. DisALEXI then disaggregates the\nregional ALEXI ET to finer scales using Landsat data (30 m; biweekly) to\nresolve individual farm fields and other landscape features.\n\n[Additional information](https://etdata.org/methods/)\n",
+    "description": "Atmosphere-Land Exchange Inverse / Disaggregation of the Atmosphere-Land\nExchange Inverse (ALEXI/DisALEXI).\n\nDisALEXI was ported to Google Earth Engine as part of the OpenET\nframework. The baseline ALEXI/DisALEXI model structure is described by\nAnderson et al. (2012, 2018). The ALEXI evapotranspiration (ET) model\nspecifically uses time differential land surface temperature (LST)\nmeasurements from geostationary or moderate resolution polar orbiting\nplatforms to generate regional ET maps. DisALEXI then disaggregates the\nregional ALEXI ET to finer scales using Landsat data (30 m; biweekly) to\nresolve individual farm fields and other landscape features.\n\nNote: DisALEXI data does not exist before 2001 since the source ALEXI data\nis only available starting in 2001.\n\n[Additional information](https://etdata.org/methods/)\n",
     "links": [
         {
             "rel": "root",
@@ -99,7 +99,6 @@
     "license": "CC-BY-4.0",
     "keywords": [
         "evapotranspiration",
-        "gridmet-derived",
         "landsat-derived",
         "monthly",
         "openet",
@@ -126,7 +125,7 @@
     "summaries": {
         "eo:bands": [
             {
-                "description": "DisALEXI ET value",
+                "description": "Total actual evapotranspiration (ET)",
                 "gee:units": "mm",
                 "name": "et",
                 "gsd": [
@@ -134,7 +133,7 @@
                 ]
             },
             {
-                "description": "Number of cloud free values",
+                "description": "Number of cloud free observations in the month included in the interpolation",
                 "gee:units": "count",
                 "name": "count",
                 "gsd": [

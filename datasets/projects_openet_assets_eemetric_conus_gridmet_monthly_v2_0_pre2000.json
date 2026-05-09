@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "projects/openet/assets/eemetric/conus/gridmet/monthly/v2_0",
+    "id": "projects/openet/assets/eemetric/conus/gridmet/monthly/v2_0_pre2000",
     "stac_version": "1.1.0",
-    "description": "Google Earth Engine implementation of the Mapping Evapotranspiration\nat high Resolution with Internalized Calibration model (eeMETRIC).\n\neeMETRIC applies the advanced METRIC algorithms and process of Allen\net al. (2007; 2015) and Allen et al. (2013b), where a singular\nrelationship between the near surface air temperature difference (dT)\nand delapsed land surface temperature (TsDEM) is used to estimate sensible\nheat flux (H) and is applied to each Landsat scene. Automated selection of\nthe hot and cold pixels for an image generally follows a statistical\nisolation procedure described by Allen et al. (2013a) and ReVelle, Kilic\nand Allen (2019a,b). The calibration of H in eeMETRIC utilizes alfalfa\nreference ET calculated from the NLDAS-2 gridded weather dataset using a\nfixed 15% reduction in computed reference ET to account for known biases\nin the gridded data set. The fixed reduction does not impact the\ncalibration accuracy of eeMETRIC and mostly reduces impacts of boundary\nlayer buoyancy correction.\n\nThe identification of candidates for pools of hot and cold pixels has\nevolved in the eeMETRIC implementation of METRIC. The new automated\ncalibration process incorporates the combination of methodologies and\napproaches that stem from two development branches of EEFlux (Allen\net al., 2015). The first branch focused on improving the automated pixel\nselection process using standard lapse rates for land surface temperature\n(LST) without any further spatial delapsing (ReVelle et al., 2019b). The\nsecond branch incorporated a secondary spatial delapsing of LST as well as\nchanges to the pixel selection process (ReVelle et al., 2019a). The final,\ncombined approach is described by Kilic et al. (2021).\n\neeMETRIC employs the aerodynamic-related functions in complex terrain\n(mountains) developed by Allen et al. (2013b) to improve estimates for\naerodynamic roughness, wind speed and boundary layer stability as related\nto estimated terrain roughness, position on a slope and wind direction.\nThese functions tend to increase estimates for H (and reduce ET) on\nwindward slopes and may reduce H (and increase ET) on leeward slopes.\nOther METRIC functions employed in eeMETRIC that have been added since\nthe descriptions provided in Allen et al. (2007 and 2011) include\nreduction in soil heat flux (G) in the presence of organic mulch on the\nground surface, use of an excess aerodynamic resistance for shrublands,\nuse of the Perrier function for trees identified as forest (Allen et\nal., 2018; Santos et al., 2012) and aerodynamic estimation of evaporation\nfrom open water rather than using energy balance (Jensen and Allen 2016;\nAllen et al., 2018). In 2022, the Perrier function was applied to tree\n(orchard) crops and a 3-source partitioning of bulk surface temperature\ninto canopy temperature, shaded soil temperature and sunlit soil\ntemperature was applied to both orchards and vineyards. These latter\napplications were made where orchards and vineyards are identified by\nCDL or, in California, by a state-sponsored land use system. These\nfunctions and other enhancements to the original METRIC model are described\nin the most current METRIC users manual (Allen et al., 2018). eeMETRIC uses\nthe atmospherically corrected surface reflectance and LST from Landsat\nCollection 2 Level 2, with fallback to Collection 2 Level 1 when needed for\nnear real-time estimates.\n\n[Additional information](https://etdata.org/methods/)\n",
+    "description": "Google Earth Engine implementation of the Mapping Evapotranspiration\nat high Resolution with Internalized Calibration model (eeMETRIC).\n\neeMETRIC applies the advanced METRIC algorithms and process of Allen\net al. (2007; 2015) and Allen et al. (2013b), where a singular\nrelationship between the near surface air temperature difference (dT)\nand delapsed land surface temperature (TsDEM) is used to estimate sensible\nheat flux (H) and is applied to each Landsat scene. Automated selection of\nthe hot and cold pixels for an image generally follows a statistical\nisolation procedure described by Allen et al. (2013a) and ReVelle, Kilic\nand Allen (2019a,b). The calibration of H in eeMETRIC utilizes alfalfa\nreference ET calculated from the NLDAS-2 gridded weather dataset using a\nfixed 15% reduction in computed reference ET to account for known biases\nin the gridded data set. The fixed reduction does not impact the\ncalibration accuracy of eeMETRIC and mostly reduces impacts of boundary\nlayer buoyancy correction.\n\nThe identification of candidates for pools of hot and cold pixels has\nevolved in the eeMETRIC implementation of METRIC. The new automated\ncalibration process incorporates the combination of methodologies and\napproaches that stem from two development branches of EEFlux (Allen\net al., 2015). The first branch focused on improving the automated pixel\nselection process using standard lapse rates for land surface temperature\n(LST) without any further spatial delapsing (ReVelle et al., 2019b). The\nsecond branch incorporated a secondary spatial delapsing of LST as well as\nchanges to the pixel selection process (ReVelle et al., 2019a). The final,\ncombined approach is described by Kilic et al. (2021).\n\neeMETRIC employs the aerodynamic-related functions in complex terrain\n(mountains) developed by Allen et al. (2013b) to improve estimates for\naerodynamic roughness, wind speed and boundary layer stability as related\nto estimated terrain roughness, position on a slope and wind direction.\nThese functions tend to increase estimates for H (and reduce ET) on\nwindward slopes and may reduce H (and increase ET) on leeward slopes.\nOther METRIC functions employed in eeMETRIC that have been added since\nthe descriptions provided in Allen et al. (2007 and 2011) include\nreduction in soil heat flux (G) in the presence of organic mulch on the\nground surface, use of an excess aerodynamic resistance for shrublands,\nuse of the Perrier function for trees identified as forest (Allen et\nal., 2018; Santos et al., 2012) and aerodynamic estimation of evaporation\nfrom open water rather than using energy balance (Jensen and Allen 2016;\nAllen et al., 2018). In 2022, the Perrier function was applied to tree\n(orchard) crops and a 3-source partitioning of bulk surface temperature\ninto canopy temperature, shaded soil temperature and sunlit soil\ntemperature was applied to both orchards and vineyards. These latter\napplications were made where orchards and vineyards are identified by\nCDL or, in California, by a state-sponsored land use system. These\nfunctions and other enhancements to the original METRIC model are described\nin the most current METRIC users manual (Allen et al., 2018). eeMETRIC uses\nthe atmospherically corrected surface reflectance and LST from Landsat\nCollection 2 Level 2, with fallback to Collection 2 Level 1 when needed for\nnear real-time estimates.\n**OpenET Collection v2.0, pre-2000 (1985-1999)**\n\n**Attention** This collection should not be merged with the main v2.0\ncollection to compute long-term trends, annual totals, or difference from\naverage type calculations, unless care is taken to identify and fill gaps\nor missing data. This collection was generated using Landsat 5 data only,\nand will have more data gaps (both spatially and temporally) than the main\nv2.0 collection, which incorporates data from multiple Landsat satellites\n(5 & 7, 7 & 8, etc.). This pre-2000 collection may have long periods\nwithout data, especially in the winter months, and large regions without\ndata whatsoever in the earlier years (1985-1993).\n\n[Additional information](https://etdata.org/methods/)",
     "links": [
         {
             "rel": "root",
@@ -12,36 +12,24 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OpenET/projects_openet_assets_eemetric_conus_gridmet_monthly_v2_0",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OpenET/projects_openet_assets_eemetric_conus_gridmet_monthly_v2_0_pre2000",
             "type": "text/html",
-            "title": "Run the example for projects/openet/assets/eemetric/conus/gridmet/monthly/v2_0 in the Earth Engine Code Editor",
+            "title": "Run the example for projects/openet/assets/eemetric/conus/gridmet/monthly/v2_0_pre2000 in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/OpenET/projects_openet_assets_eemetric_conus_gridmet_monthly_v2_0_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/OpenET/projects_openet_assets_eemetric_conus_gridmet_monthly_v2_0_pre2000_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_openet_assets_eemetric_conus_gridmet_monthly_v2_0#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_openet_assets_eemetric_conus_gridmet_monthly_v2_0_pre2000#terms-of-use",
             "type": "text/html"
         },
         {
-            "rel": "predecessor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/OpenET_EEMETRIC_CONUS_GRIDMET_MONTHLY_v2_0.json",
-            "type": "application/json",
-            "title": "OpenET/EEMETRIC/CONUS/GRIDMET/MONTHLY/v2_0"
-        },
-        {
-            "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/projects_openet_assets_eemetric_conus_gridmet_monthly_v2_0.json",
-            "type": "application/json",
-            "title": "projects/openet/assets/eemetric/conus/gridmet/monthly/v2_0"
-        },
-        {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/projects_openet_assets_eemetric_conus_gridmet_monthly_v2_0.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/projects_openet_assets_eemetric_conus_gridmet_monthly_v2_0_pre2000.json",
             "type": "application/json"
         },
         {
@@ -64,6 +52,7 @@
         "type": "cadence",
         "unit": "month"
     },
+    "gee:status": "beta",
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
     "sci:citation": "Kilic, A., Allen, R.G., Blankenau, P., ReVelle, P., Ozturk, D. and\nHuntington, J., 2021. Global production and free access to Landsat-scale\nEvapotranspiration with EEFlux and eeMETRIC. In 6th Decennial National\nIrrigation Symposium, 6-8, December 2021, San Diego, California\n(p. 1). American Society of Agricultural and Biological Engineers.\n[doi:10.13031/irrig.2020-038](https://doi.org/10.13031/irrig.2020-038)\n",
@@ -104,8 +93,7 @@
         }
     ],
     "version": "2.0",
-    "gee:status": "ready",
-    "title": "OpenET eeMETRIC Monthly Evapotranspiration v2.0",
+    "title": "OpenET eeMETRIC Monthly Evapotranspiration v2.0 (1985-1999)",
     "extent": {
         "spatial": {
             "bbox": [
@@ -120,8 +108,8 @@
         "temporal": {
             "interval": [
                 [
-                    "1999-10-01T00:00:00Z",
-                    "2025-01-01T00:00:00Z"
+                    "1984-10-01T00:00:00Z",
+                    "1999-10-01T00:00:00Z"
                 ]
             ]
         }
@@ -150,7 +138,7 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_openet_assets_eemetric_conus_gridmet_monthly_v2_0"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_openet_assets_eemetric_conus_gridmet_monthly_v2_0_pre2000"
         }
     ],
     "summaries": {

@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "projects/openet/assets/disalexi/conus/gridmet/monthly/v2_1",
     "stac_version": "1.1.0",
-    "description": "Atmosphere-Land Exchange Inverse / Disaggregation of the Atmosphere-Land\nExchange Inverse (ALEXI/DisALEXI).\n\nDisALEXI was ported to Google Earth Engine as part of the OpenET\nframework. The baseline ALEXI/DisALEXI model structure is described by\nAnderson et al. (2012, 2018). The ALEXI evapotranspiration (ET) model\nspecifically uses time differential land surface temperature (LST)\nmeasurements from geostationary or moderate resolution polar orbiting\nplatforms to generate regional ET maps. DisALEXI then disaggregates the\nregional ALEXI ET to finer scales using Landsat data (30 m; biweekly) to\nresolve individual farm fields and other landscape features.\n\n[Additional information](https://etdata.org/methods/)\n",
+    "description": "Atmosphere-Land Exchange Inverse / Disaggregation of the Atmosphere-Land\nExchange Inverse (ALEXI/DisALEXI).\n\nDisALEXI was ported to Google Earth Engine as part of the OpenET\nframework. The baseline ALEXI/DisALEXI model structure is described by\nAnderson et al. (2012, 2018). The ALEXI evapotranspiration (ET) model\nspecifically uses time differential land surface temperature (LST)\nmeasurements from geostationary or moderate resolution polar orbiting\nplatforms to generate regional ET maps. DisALEXI then disaggregates the\nregional ALEXI ET to finer scales using Landsat data (30 m; biweekly) to\nresolve individual farm fields and other landscape features.\n\nNote: DisALEXI data does not exist before 2001 since the source ALEXI data\nis only available starting in 2001.\n**OpenET Collection v2.1**\n\nOpenET Collection v2.1 is a reprocessed and updated version of Collection\nv2.0, designed primarily to address known v2.0 issues, while also\nincorporating minor model improvements and input-data updates. It is\nexpected that there will be noticeable differences in ET between the two\ncollection versions for some places and times. Some of the updates and changes \ninclude:\n\n* Additional cloud screening and filtering to skip Landsat images with \nunmasked clouds and/or extensive snow cover.\n* Reprocessing to incorporate updates to the NLDAS-2 and GRIDMET\ninput meteorology datasets.\n* Incorporation of the USGS Annual NLCD product for all models that require \nland cover information.\n* Incorporation of the latest USDA CDL for all models that require crop type \ninformation.\n* Updates to the interpolation so monthly ET is only produced when all\ndays in the month have interpolated values (reducing \u201ccount=0\u201d months in\ncloudy/snowy or low-coverage periods).\n* Application of an emissivity correction to address a known issue in\nLandsat LST data.\n\n[Additional information](https://etdata.org/methods/)",
     "links": [
         {
             "rel": "root",
@@ -87,7 +87,6 @@
     "license": "CC-BY-4.0",
     "keywords": [
         "evapotranspiration",
-        "gridmet-derived",
         "landsat-derived",
         "monthly",
         "openet",
@@ -114,7 +113,7 @@
     "summaries": {
         "eo:bands": [
             {
-                "description": "DisALEXI ET value",
+                "description": "Total actual evapotranspiration (ET)",
                 "gee:units": "mm",
                 "name": "et",
                 "gsd": [
@@ -122,7 +121,7 @@
                 ]
             },
             {
-                "description": "Number of cloud free values",
+                "description": "Number of cloud free observations in the month included in the interpolation",
                 "gee:units": "count",
                 "name": "count",
                 "gsd": [

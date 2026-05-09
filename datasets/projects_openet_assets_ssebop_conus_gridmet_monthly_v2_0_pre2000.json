@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "projects/openet/assets/ssebop/conus/gridmet/monthly/v2_1",
+    "id": "projects/openet/assets/ssebop/conus/gridmet/monthly/v2_0_pre2000",
     "stac_version": "1.1.0",
-    "description": "Operational Simplified Surface Energy Balance (SSEBop).\n\nThe Operational Simplified Surface Energy Balance (SSEBop) model\n(Senay et al., 2013; 2023) is a thermal based approach for estimating\nactual evapotranspiration (ET) using the principles of satellite\npsychrometry (Senay, 2018). As one of the core models in the OpenET\nensemble, SSEBop provides a computationally efficient framework for large-\narea, operational ET mapping.\n\nThe OpenET Collection 2.1 implementation of SSEBop relies on two primary\ninputs:\n\n1. Land surface temperature from Landsat Collection 2 Level 2 Science\nProducts.\n2. Gridded reference ET from gridMET (Abotzoglou, 2013).\n\nKey model parameters, including the cold/wet bulb reference temperature\n(Tc) and the surface psychrometric constant (1/dT), are derived using a\ncombination of observed surface temperature, normalized difference\nvegetation index (NDVI), and ERA5 net radiation data\n(DOI: 10.5066/P9JBW6R9). These components are integrated within the Google\nEarth Engine processing environment, which links the full suite of SSEBop\nalgorithms to generate both intermediate outputs and aggregated ET\nproducts. Extensive evaluation across the conterminous United States\n(Senay et al., 2022; Volk et al., 2024; Ji et al., 2025; Khand et al, 2025)\nhas guided the cloud-based implementation and demonstrated the model\u2019s\nutility for applications such as crop water use assessment and regional\nwater budget analysis.\n\nFor OpenET Collection 2.1, SSEBop model v0.7.1 (Senay et al., 2026)\nincludes a notable enhancement: an improved implementation of the Forcing\nand Normalizing Operation (FANO) equation for determining Tc. This update\nstrengthens the model\u2019s ability to represent wet surfaces with low NDVI,\nimproving performance in areas where vegetation signals are weak or mixed,\nparticularly over farmlands and grasslands during sparse canopy cover.\n**OpenET Collection v2.1**\n\nOpenET Collection v2.1 is a reprocessed and updated version of Collection\nv2.0, designed primarily to address known v2.0 issues, while also\nincorporating minor model improvements and input-data updates. It is\nexpected that there will be noticeable differences in ET between the two\ncollection versions for some places and times. Some of the updates and changes \ninclude:\n\n* Additional cloud screening and filtering to skip Landsat images with \nunmasked clouds and/or extensive snow cover.\n* Reprocessing to incorporate updates to the NLDAS-2 and GRIDMET\ninput meteorology datasets.\n* Incorporation of the USGS Annual NLCD product for all models that require \nland cover information.\n* Incorporation of the latest USDA CDL for all models that require crop type \ninformation.\n* Updates to the interpolation so monthly ET is only produced when all\ndays in the month have interpolated values (reducing \u201ccount=0\u201d months in\ncloudy/snowy or low-coverage periods).\n* Application of an emissivity correction to address a known issue in\nLandsat LST data.\n\n[Additional information](https://etdata.org/methods/)",
+    "description": "Operational Simplified Surface Energy Balance (SSEBop).\n\nThe Operational Simplified Surface Energy Balance (SSEBop) model by Senay\net al. (2013, 2017) is a thermal-based simplified surface energy model for\nestimating actual ET based on the principles of satellite psychrometry\n(Senay 2018). The OpenET SSEBop implementation uses land surface temperature\n(Ts) from Landsat (Collection 2 Level-2 Science Products) with key model\nparameters (cold/wet-bulb reference, Tc, and surface psychrometric\nconstant, 1/dT) derived from a combination of observed surface temperature,\nnormalized difference vegetation index (NDVI), climatological average\n(1980-2017) daily maximum air temperature (Ta, 1-km) from Daymet, and\nnet radiation data from ERA-5. This model implementation uses the Google\nEarth Engine processing framework for connecting key SSEBop ET functions\nand algorithms together when generating both intermediate and aggregated ET\nresults. A detailed study and evaluation of the SSEBop model across CONUS\n(Senay et al., 2022) informs both cloud implementation and assessment for\nwater balance applications at broad scales. Notable model (v0.2.6)\nenhancements and performance against previous versions include additional\ncompatibility with Landsat 9 (launched Sep 2021), global model\nextensibility, and improved parameterization of SSEBop using\nFANO (Forcing and Normalizing Operation) to better estimate ET\nin all landscapes and all seasons regardless of vegetation cover density,\nthereby improving model accuracy by avoiding extrapolation of Tc to\nnon-calibration regions.\n**OpenET Collection v2.0, pre-2000 (1985-1999)**\n\n**Attention** This collection should not be merged with the main v2.0\ncollection to compute long-term trends, annual totals, or difference from\naverage type calculations, unless care is taken to identify and fill gaps\nor missing data. This collection was generated using Landsat 5 data only,\nand will have more data gaps (both spatially and temporally) than the main\nv2.0 collection, which incorporates data from multiple Landsat satellites\n(5 & 7, 7 & 8, etc.). This pre-2000 collection may have long periods\nwithout data, especially in the winter months, and large regions without\ndata whatsoever in the earlier years (1985-1993).\n\n[Additional information](https://etdata.org/methods/)",
     "links": [
         {
             "rel": "root",
@@ -12,24 +12,24 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OpenET/projects_openet_assets_ssebop_conus_gridmet_monthly_v2_1",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OpenET/projects_openet_assets_ssebop_conus_gridmet_monthly_v2_0_pre2000",
             "type": "text/html",
-            "title": "Run the example for projects/openet/assets/ssebop/conus/gridmet/monthly/v2_1 in the Earth Engine Code Editor",
+            "title": "Run the example for projects/openet/assets/ssebop/conus/gridmet/monthly/v2_0_pre2000 in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/OpenET/projects_openet_assets_ssebop_conus_gridmet_monthly_v2_1_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/OpenET/projects_openet_assets_ssebop_conus_gridmet_monthly_v2_0_pre2000_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_openet_assets_ssebop_conus_gridmet_monthly_v2_1#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_openet_assets_ssebop_conus_gridmet_monthly_v2_0_pre2000#terms-of-use",
             "type": "text/html"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/projects_openet_assets_ssebop_conus_gridmet_monthly_v2_1.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/projects_openet_assets_ssebop_conus_gridmet_monthly_v2_0_pre2000.json",
             "type": "application/json"
         },
         {
@@ -52,6 +52,7 @@
         "type": "cadence",
         "unit": "month"
     },
+    "gee:status": "beta",
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
     "sci:citation": "Senay, G.B., Parrish, G.E., Schauer, M., Friedrichs, M., Khand, K., Boiko,\nO., Kagone, S., Dittmeier, R., Arab, S. and Ji, L., 2023. Improving the\nOperational Simplified Surface Energy Balance Evapotranspiration Model Using\nthe Forcing and Normalizing Operation. Remote Sensing, 15(1), p.260.\n[doi:10.3390/rs15010260](https://doi.org/10.3390/rs15010260)\n",
@@ -70,16 +71,15 @@
             "citation": "Senay, G.B., Friedrichs, M., Morton, C., Parrish, G.E., Schauer, M.,\nKhand, K., Kagone, S., Boiko, O. and Huntington, J., 2022.  Mapping\nactual evapotranspiration using Landsat for the conterminous United\nStates: Google Earth Engine implementation and assessment of the SSEBop\nmodel. Remote Sensing of Environment, 275, p.113011.\n[doi:10.1016/j.rse.2022.113011](https://doi.org/10.1016/j.rse.2022.113011)\n"
         }
     ],
-    "version": "2.1",
-    "gee:status": "ready",
-    "title": "OpenET SSEBop Monthly Evapotranspiration v2.1",
+    "version": "2.0",
+    "title": "OpenET SSEBop Monthly Evapotranspiration v2.0 (1985-1999)",
     "extent": {
         "spatial": {
             "bbox": [
                 [
                     -126,
                     25,
-                    -66,
+                    -86,
                     50
                 ]
             ]
@@ -87,8 +87,8 @@
         "temporal": {
             "interval": [
                 [
-                    "2015-10-01T00:00:00Z",
-                    "2026-04-01T00:00:00Z"
+                    "1984-10-01T00:00:00Z",
+                    "1999-10-01T00:00:00Z"
                 ]
             ]
         }
@@ -117,7 +117,7 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_openet_assets_ssebop_conus_gridmet_monthly_v2_1"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_openet_assets_ssebop_conus_gridmet_monthly_v2_0_pre2000"
         }
     ],
     "summaries": {
@@ -143,11 +143,6 @@
             {
                 "description": "Date assets were built",
                 "name": "build_date",
-                "type": "STRING"
-            },
-            {
-                "description": "Status can be \"permanent\" or \"provisional\".  Images flagged as \"provisional\" may be updated in the future.",
-                "name": "build_status",
                 "type": "STRING"
             },
             {
@@ -184,11 +179,6 @@
                 "description": "Collection ID for the daily reference ET data",
                 "name": "et_reference_source",
                 "type": "STRING"
-            },
-            {
-                "description": "Number of scene images used in the interpolation",
-                "name": "image_source_count",
-                "type": "DOUBLE"
             },
             {
                 "description": "Maximum number of days before and after each image date to include in interpolation",
@@ -233,11 +223,6 @@
             {
                 "description": "Start date of month",
                 "name": "start_date",
-                "type": "STRING"
-            },
-            {
-                "description": "Units of the \"et\" band",
-                "name": "units_et",
                 "type": "STRING"
             }
         ],

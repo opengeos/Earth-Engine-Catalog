@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "projects/openet/assets/ensemble/conus/gridmet/monthly/v2_0",
+    "id": "projects/openet/assets/ensemble/conus/gridmet/monthly/v2_0_pre2000",
     "stac_version": "1.1.0",
-    "description": "The OpenET dataset includes satellite-based data on the total amount of\nwater that is transferred from the land surface to the atmosphere through\nthe process of evapotranspiration (ET). OpenET provides ET data from\nmultiple satellite-driven models, and also calculates a single \"ensemble\nvalue\" from the model ensemble. The models currently included in the OpenET\nmodel ensemble are ALEXI/DisALEXI, eeMETRIC, geeSEBAL, PT-JPL, SIMS, and\nSSEBop. The OpenET ensemble ET value is calculated as the mean of the\nensemble after filtering and removing outliers using the median absolute\ndeviation approach. All models currently use Landsat satellite data to\nproduce ET data at a pixel size of 30 meters by 30 meters (0.22 acres per\npixel). The monthly ET dataset provides data on total ET by month as an\nequivalent depth of water in millimeters.\n\nNote: DisALEXI cannot be generated before 2001 and is not included in the\nensemble calculation in 1999 or 2000.\n\n[Additional information](https://etdata.org/methods/)\n",
+    "description": "The OpenET dataset includes satellite-based data on the total amount of\nwater that is transferred from the land surface to the atmosphere through\nthe process of evapotranspiration (ET). OpenET provides ET data from\nmultiple satellite-driven models, and also calculates a single \"ensemble\nvalue\" from the model ensemble. The models currently included in the OpenET\nmodel ensemble are ALEXI/DisALEXI, eeMETRIC, geeSEBAL, PT-JPL, SIMS, and\nSSEBop. The OpenET ensemble ET value is calculated as the mean of the\nensemble after filtering and removing outliers using the median absolute\ndeviation approach. All models currently use Landsat satellite data to\nproduce ET data at a pixel size of 30 meters by 30 meters (0.22 acres per\npixel). The monthly ET dataset provides data on total ET by month as an\nequivalent depth of water in millimeters.\n\nNote: DisALEXI cannot be generated before 2001 and is not included in the\nensemble calculation for this collection.\n**OpenET Collection v2.0, pre-2000 (1985-1999)**\n\n**Attention** This collection should not be merged with the main v2.0\ncollection to compute long-term trends, annual totals, or difference from\naverage type calculations, unless care is taken to identify and fill gaps\nor missing data. This collection was generated using Landsat 5 data only,\nand will have more data gaps (both spatially and temporally) than the main\nv2.0 collection, which incorporates data from multiple Landsat satellites\n(5 & 7, 7 & 8, etc.). This pre-2000 collection may have long periods\nwithout data, especially in the winter months, and large regions without\ndata whatsoever in the earlier years (1985-1993).\n\n[Additional information](https://etdata.org/methods/)",
     "links": [
         {
             "rel": "root",
@@ -12,36 +12,24 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OpenET/projects_openet_assets_ensemble_conus_gridmet_monthly_v2_0",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OpenET/projects_openet_assets_ensemble_conus_gridmet_monthly_v2_0_pre2000",
             "type": "text/html",
-            "title": "Run the example for projects/openet/assets/ensemble/conus/gridmet/monthly/v2_0 in the Earth Engine Code Editor",
+            "title": "Run the example for projects/openet/assets/ensemble/conus/gridmet/monthly/v2_0_pre2000 in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/OpenET/projects_openet_assets_ensemble_conus_gridmet_monthly_v2_0_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/OpenET/projects_openet_assets_ensemble_conus_gridmet_monthly_v2_0_pre2000_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_openet_assets_ensemble_conus_gridmet_monthly_v2_0#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_openet_assets_ensemble_conus_gridmet_monthly_v2_0_pre2000#terms-of-use",
             "type": "text/html"
         },
         {
-            "rel": "predecessor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/OpenET_ENSEMBLE_CONUS_GRIDMET_MONTHLY_v2_0.json",
-            "type": "application/json",
-            "title": "OpenET/ENSEMBLE/CONUS/GRIDMET/MONTHLY/v2_0"
-        },
-        {
-            "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/projects_openet_assets_ensemble_conus_gridmet_monthly_v2_0.json",
-            "type": "application/json",
-            "title": "projects/openet/assets/ensemble/conus/gridmet/monthly/v2_0"
-        },
-        {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/projects_openet_assets_ensemble_conus_gridmet_monthly_v2_0.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OpenET/projects_openet_assets_ensemble_conus_gridmet_monthly_v2_0_pre2000.json",
             "type": "application/json"
         },
         {
@@ -64,13 +52,13 @@
         "type": "cadence",
         "unit": "month"
     },
+    "gee:status": "beta",
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
     "sci:citation": "Melton, F., Huntington, J., Grimm, R., Herring, J., Hall, M., Rollison, D.,\nErickson, T., Allen, R., Anderson, M., Fisher, J., Kilic, A., Senay, G.,\nvolk, J., Hain, C., Johnson, L., Ruhoff, A., Blankenau, P., Bromley, M.,\nCarrara, W., Daudert, B., Doherty, C., Dunkerly, C., Friedrichs, M., Guzman,\nA., Halverson, G., Hansen, J., Harding, J., Kang, Y., Ketchum, D., Minor,\nB., Morton, C., Revelle, P., Ortega-Salazar, S., Ott, T., Ozdogon, M.,\nSchull, M., Wang, T., Yang, Y., Anderson, R., 2021. OpenET: Filling a\nCritical Data Gap in Water Management for the Western United States.\nJournal of the American Water Resources Association, 2021 Nov 2.\n[doi:10.1111/1752-1688.12956](https://doi.org/10.1111/1752-1688.12956)\n",
     "sci:doi": "10.1111/1752-1688.12956",
     "version": "2.0",
-    "gee:status": "ready",
-    "title": "OpenET Ensemble Monthly Evapotranspiration v2.0",
+    "title": "OpenET Ensemble Monthly Evapotranspiration v2.0 (1985-1999)",
     "extent": {
         "spatial": {
             "bbox": [
@@ -85,8 +73,8 @@
         "temporal": {
             "interval": [
                 [
-                    "1999-10-01T00:00:00Z",
-                    "2025-01-01T00:00:00Z"
+                    "1984-10-01T00:00:00Z",
+                    "1999-10-01T00:00:00Z"
                 ]
             ]
         }
@@ -115,7 +103,7 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_openet_assets_ensemble_conus_gridmet_monthly_v2_0"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_openet_assets_ensemble_conus_gridmet_monthly_v2_0_pre2000"
         }
     ],
     "summaries": {

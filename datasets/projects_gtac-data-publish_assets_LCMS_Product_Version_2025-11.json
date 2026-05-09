@@ -1,0 +1,308 @@
+{
+    "type": "Collection",
+    "id": "projects/gtac-data-publish/assets/LCMS/Product_Version/2025-11",
+    "stac_version": "1.1.0",
+    "description": "This product is part of the Landscape Change Monitoring System (LCMS) data suite.\nIt shows LCMS-modeled change, land cover, and/or land use classes for each year and\ncovers the Conterminous United States (CONUS) as well as areas outside the CONUS (OCONUS) \nincluding Alaska (AK), Puerto Rico-US Virgin Islands (PRUSVI), and Hawaii (HI). PRUSVI and HI\nv2025-11 data will be released in late Summer 2026. \n\nLCMS is a remote sensing-based system for mapping and monitoring landscape change across the\nUnited States. Its objective is to develop a consistent approach using the latest technology\nand advancements in change detection to produce a \"best available\" map of landscape change. For full LCMS methodology, see Housman et al. (2026).\n\nOutputs include three annual products: change, land cover, and land use. The change model output relates specifically to vegetation cover and includes slow loss, fast loss (which also includes hydrologic changes such as inundation or desiccation), and gain. These values are predicted for each year of the Landsat time series and serve as the foundational products for LCMS. We apply a ruleset based on ancillary datasets to create the final change product, which is a refinement/reclassification of the modeled change to 15 classes that explicitly provide information on the cause of landscape change (e.g., Tree Removal, Wildfire, Wind damage). Land cover and land use maps depict life-form level land cover and broad-level land use for each year. \n\nBecause no algorithm performs best in all situations, LCMS uses an ensemble of models as\npredictors, which improves map accuracy across a range of ecosystems and change processes\n(Healey et al., 2018). The resulting suite of LCMS change, land cover, and land use maps offer\na holistic depiction of landscape change across the United States since 1985.\n\nPredictor layers for the LCMS model include outputs from the LandTrendr and CCDC change detection \nalgorithms, and terrain information. These components are all accessed and processed using Google \nEarth Engine (Gorelick et al., 2017).\n\nTo produce annual composites for LandTrendr, USGS Collection 2 Landsat Tier 1 and Sentinel 2A,\n2B Level-1C top of atmosphere reflectance data were used. The CFmask cloud masking algorithm\n(Foga et al., 2017), which is an implementation of Fmask 2.0 (Zhu and Woodcock, 2012)\n(Landsat-only), cloudScore (Chastain et al., 2019) (Landsat-only), s2cloudless\n(Sentinel-Hub, 2021) and Cloud Score+ (Pasquarella et al., 2023) (Sentinel 2-only) are \nused to mask clouds, while TDOM (Chastain et al., 2019) is used to mask cloud shadows (Landsat and Sentinel\n2). For LandTrendr, the annual medoid is then computed to summarize cloud and cloud shadow-free values \nfrom each year into a single composite. For CCDC, United States Geological Survey (USGS) Collection 2 \nLandsat Tier 1 surface reflectance data were used for the CONUS, and Landsat Tier 1 top of atmosphere \nreflectance data for AK, PRUSVI, and HAWAII. \n\nThe composite time series is temporally segmented using LandTrendr\n(Kennedy et al., 2010; Kennedy et al., 2018; Cohen et al., 2018).\n\nAll cloud and cloud shadow free values are also temporally segmented using the CCDC algorithm\n(Zhu and Woodcock, 2014).\n\nPredictor data include raw composite values, LandTrendr fitted values, pair-wise differences,\nsegment duration, change magnitude, and slope, and CCDC sine and\ncosine coefficients (first 3 harmonics), fitted values, and pairwise\ndifferences, along with elevation, slope, sine of aspect, cosine of aspect,\nand topographic position indices (Weiss, 2001) from the 10 m USGS 3D Elevation\nProgram (3DEP) data (U.S. Geological Survey, 2019).\n\nReference data are collected using TimeSync, a web-based tool that helps\nanalysts visualize and interpret the Landsat data record from 1984-present (Cohen et al., 2010).\n\nRandom Forest models (Breiman, 2001) were trained using reference data from TimeSync and predictor data from LandTrendr, CCDC, and terrain indices to predict annual change, land cover, and land use classes. Following modeling, we institute a series of probability thresholds and rulesets using ancillary datasets to improve qualitative map outputs and reduce commission and omission. More information can be found in the LCMS Methods Brief included in the Description and in Housman et al. (2026). \n\n**Additional Resources**\n\n* [A more detailed code example of using LCMS data](https://github.com/google/earthengine-community/blob/master/datasets/scripts/LCMS_Visualization.js).\n\n* The [LCMS Data Explorer](https://apps.fs.usda.gov/lcms-viewer) is a web-based application that\n  provides users the ability to view, analyze, summarize and download LCMS data.\n\n* Please see the [LCMS Methods Brief](https://data.fs.usda.gov/geodata/rastergateway/LCMS/LCMS_v2025-11_Methods.pdf)\n  for more detailed information regarding methods and accuracy assessment, or the\n  [LCMS Geodata Clearinghouse](https://data.fs.usda.gov/geodata/rastergateway/LCMS/index.php)\n  for data downloads, metadata, and support documents.\n\nContact [sm.fs.lcms@usda.gov](mailto:sm.fs.lcms@usda.gov) with any\nquestions or specific data requests.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/gtac-data-publish/projects_gtac-data-publish_assets_LCMS_Product_Version_2025-11",
+            "type": "text/html",
+            "title": "Run the example for projects/gtac-data-publish/assets/LCMS/Product_Version/2025-11 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/gtac-data-publish/projects_gtac-data-publish_assets_LCMS_Product_Version_2025-11_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_gtac-data-publish_assets_LCMS_Product_Version_2025-11#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://data.fs.usda.gov/geodata/rastergateway/LCMS/index.php"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/gtac-data-publish/projects_gtac-data-publish_assets_LCMS_Product_Version_2025-11.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/gtac-data-publish/catalog.json",
+            "type": "application/json",
+            "title": "gtac-data-publish"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "landuse-landcover"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "The USDA Forest Service makes no warranty, expressed or implied, including the warranties of\nmerchantability and fitness for a particular purpose, nor assumes any legal liability or\nresponsibility for the accuracy, reliability, completeness or utility of these geospatial data,\nor for the improper or incorrect use of these geospatial data. These geospatial data and\nrelated maps or graphics are not legal documents and are not intended to be used as such. The\ndata and maps may not be used to determine title, ownership, legal descriptions or boundaries,\nlegal jurisdiction, or restrictions that may be in place on either public or private land.\nNatural hazards may or may not be depicted on the data and maps, and land users should exercise\ndue caution. The data are dynamic and may change over time. The user is responsible to verify\nthe limitations of the geospatial data and to use the data accordingly.\n\nThese data were collected using funding from the U.S. Government and can be used\nwithout additional permissions or fees. If you use these data in a publication, presentation, or\nother research product please use the following citation:\n\nUSDA Forest Service. 2026. USFS Landscape Change Monitoring System v2025.11\n(Conterminous United States and Outer Conterminous United States). Salt Lake City, Utah.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "USDA Forest Service. 2026. USFS Landscape Change Monitoring System\nv2025.11 (Conterminous United States and  Outer Conterminous United States).\nSalt Lake City, Utah.\n",
+    "sci:publications": [
+        {
+            "citation": "Breiman, L., 2001. Random Forests. In Machine Learning. Springer, 45: 5-32.\n[doi:10.1023/A:1010933404324](https://doi.org/10.1023/A:1010933404324)\n",
+            "doi": "10.1023/A:1010933404324"
+        },
+        {
+            "citation": "Chastain, R., Housman, I., Goldstein, J., Finco, M., and Tenneson, K., 2019.\nEmpirical cross sensor comparison of Sentinel-2A and 2B MSI, Landsat-8 OLI, \nand Landsat-7 ETM top of atmosphere spectral characteristics over the \nconterminous United States. In Remote Sensing of Environment. Science Direct,\n221: 274-285. [doi:10.1016/j.rse.2018.11.012](https://doi.org/10.1016/j.rse.2018.11.012)\n",
+            "doi": "10.1016/j.rse.2018.11.012"
+        },
+        {
+            "citation": "Cohen, W. B., Yang, Z., and Kennedy, R., 2010. Detecting trends in forest \ndisturbance and recovery using yearly Landsat time series: 2. TimeSync - \nTools for calibration and validation. In Remote Sensing of Environment.\nScience Direct, 114(12): 2911-2924. [doi:10.1016/j.rse.2010.07.010]\n(https://doi.org/10.1016/j.rse.2010.07.010)\n",
+            "doi": "10.1016/j.rse.2010.07.010"
+        },
+        {
+            "citation": "Cohen, W. B., Yang, Z., Healey, S. P., Kennedy, R. E., and Gorelick, N., \n2018. A LandTrendr multispectral ensemble for forest disturbance detection. \nIn Remote Sensing of Environment. Science Direct, 205: 131-140.\n[doi:10.1016/j.rse.2017.11.015](https://doi.org/10.1016/j.rse.2017.11.015)\n",
+            "doi": "10.1016/j.rse.2017.11.015"
+        },
+        {
+            "citation": "Foga, S., Scaramuzza, P.L., Guo, S., Zhu, Z., Dilley, R.D., Beckmann,\nT., Schmidt, G.L., Dwyer, J.L., Hughes, M.J., Laue, B., 2017. Cloud\ndetection algorithm comparison and validation for operational Landsat data\nproducts. In Remote Sensing of Environment. Science Direct, 194: 379-390.\n[doi:10.1016/j.rse.2017.03.026](http://doi.org/10.1016/j.rse.2017.03.026)\n",
+            "doi": "10.1016/j.rse.2017.03.026"
+        },
+        {
+            "citation": "U.S. Geological Survey, 2019. USGS 3D Elevation Program Digital Elevation\nModel, accessed August 2022 at \nhttps://developers.google.com/earth-engine/datasets/catalog/USGS_3DEP_10m\n"
+        },
+        {
+            "citation": "Healey, S. P., Cohen, W. B., Yang, Z., Kenneth Brewer, C., Brooks, E. B.,\nGorelick, N., Hernandez, A. J., Huang, C., Joseph Hughes, M., Kennedy,\nR. E., Loveland, T. R., Moisen, G. G., Schroeder, T. A., Stehman, S. V.,\nVogelmann, J. E., Woodcock, C. E., Yang, L., and Zhu, Z., 2018. Mapping \nforest change using stacked generalization: An ensemble approach. In \nRemote Sensing of Environment. Science Direct, 204: 717-728.\n[doi:10.1016/j.rse.2017.09.029](https://doi.org/10.1016/j.rse.2017.09.029)\n",
+            "doi": "10.1016/j.rse.2017.09.029"
+        },
+        {
+            "citation": "Housman, I. W., Healey, S. P., Heyer, J., Hardwick, E., Yang, Z., Ross, J., \nand Megown, K. (2026). Coincident maps of changing land cover, land use, and \nforest condition in the United States, 1985-present. Scientific Data.\n",
+            "doi": "10.1038/s41597-026-06743-0"
+        },
+        {
+            "citation": "Kennedy, R. E., Yang, Z., and Cohen, W. B., 2010. Detecting trends \nin forest disturbance and recovery using yearly Landsat time series: 1. \nLandTrendr - Temporal segmentation algorithms. In Remote Sensing of Environment. \nScience Direct, 114(12): 2897-2910. [doi:10.1016/j.rse.2010.07.008]\n(https://doi.org/10.1016/j.rse.2010.07.008)\n",
+            "doi": "10.1016/j.rse.2010.07.008"
+        },
+        {
+            "citation": "Kennedy, R., Yang, Z., Gorelick, N., Braaten, J., Cavalcante, L., \nCohen, W., and Healey, S. 2018. Implementation of the LandTrendr \nAlgorithm on Google Earth Engine. In Remote Sensing. MDPI,\n10(5): 691. [doi:10.3390/rs10050691](https://doi.org/10.3390/rs10050691)\n",
+            "doi": "10.3390/rs10050691"
+        },
+        {
+            "citation": "Pasquarella, V. J., Brown, C. F., Czerwinski, W., and Rucklidge, W. J., 2023. \nComprehensive Quality Assessment of Optical Satellite Imagery Using \nWeakly Supervised Video Learning. In Proceedings of the IEEE/CVF Conference \non Computer Vision and Pattern Recognition. 2124-2134 [doi:10.1109/CVPRW59228.2023.00206](https://openaccess.thecvf.com/content/CVPR2023W/EarthVision/papers/Pasquarella_Comprehensive_Quality_Assessment_of_Optical_Satellite_Imagery_Using_Weakly_Supervised_CVPRW_2023_paper.pdf).\n",
+            "doi": "10.1109/CVPRW59228.2023.00206"
+        },
+        {
+            "citation": "Sentinel-Hub, 2021. Sentinel 2 Cloud Detector. [Online]. Available at: \n[https://github.com/sentinel-hub/sentinel2-cloud-detector](https://github.com/sentinel-hub/sentinel2-cloud-detector)\n"
+        },
+        {
+            "citation": "Weiss, A.D., 2001. Topographic position and landforms analysis \nPoster Presentation, ESRI Users Conference, San Diego, CAZhu, Z., \nand Woodcock, C. E. 2012. Object-based cloud and cloud shadow \ndetection in Landsat imagery. 118: 83-94.\n"
+        },
+        {
+            "citation": "Zhu, Z., and Woodcock, C. E., 2012. Object-based cloud and cloud shadow\ndetection in Landsat imagery. In Remote Sensing of Environment. Science Direct,\n118: 83-94. [doi:10.1016/j.rse.2011.10.028](https://doi.org/10.1016/j.rse.2011.10.028)\n",
+            "doi": "10.1016/j.rse.2011.10.028"
+        },
+        {
+            "citation": "Zhu, Z., and Woodcock, C. E., 2014. Continuous change detection \nand classification of land cover using all available Landsat data.\nIn Remote Sensing of Environment. Science Direct, 144: 152-171.\n[doi:10.1016/j.rse.2014.01.011](https://doi.org/10.1016/j.rse.2014.01.011)\n",
+            "doi": "10.1016/j.rse.2014.01.011"
+        }
+    ],
+    "version": "v2025-11",
+    "title": "USFS Landscape Change Monitoring System  v2025-11 (CONUS and OCONUS)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -135.286387,
+                    20.38379,
+                    -56.446306,
+                    52.459364
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1985-01-01T00:00:00Z",
+                    "2024-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "change-detection",
+        "forest",
+        "gtac",
+        "landcover",
+        "landuse",
+        "landuse-landcover",
+        "redcastle-resources",
+        "usda",
+        "usfs"
+    ],
+    "providers": [
+        {
+            "name": "USDA Forest Service (USFS) Field Services and Innovation Center Geospatial Office (FSIC-GO)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://apps.fs.usda.gov/lcms-viewer/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_gtac-data-publish_assets_LCMS_Product_Version_2025-11"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "This LCMS version covers the conterminous United States, Alaska, \nPuerto Rico-US Virgin Islands, and Hawaii.\nPossible values: 'CONUS, AK, PRUSVI, HAWAII'\n",
+                "name": "study_area",
+                "type": "STRING"
+            },
+            {
+                "description": "Version of the product",
+                "name": "version",
+                "type": "STRING"
+            },
+            {
+                "description": "Start year of the product",
+                "name": "startYear",
+                "type": "INT"
+            },
+            {
+                "description": "End year of the product",
+                "name": "endYear",
+                "type": "INT"
+            },
+            {
+                "description": "Year of the product",
+                "name": "year",
+                "type": "INT"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "ChangeViz",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Change"
+                        ],
+                        "max": [
+                            16
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "ff09f3",
+                            "541aff",
+                            "e4f5fd",
+                            "cc982e",
+                            "0adaff",
+                            "a10018",
+                            "d54309",
+                            "fafa4b",
+                            "afde1c",
+                            "ffc80d",
+                            "a64c28",
+                            "f39268",
+                            "c291d5",
+                            "00a398",
+                            "3d4551",
+                            "1b1716"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 37.09024,
+                    "lon": -95.712891,
+                    "zoom": 5
+                }
+            },
+            {
+                "display_name": "lcViz",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Land_Cover"
+                        ],
+                        "max": [
+                            15
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "004e2b",
+                            "009344",
+                            "61bb46",
+                            "acbb67",
+                            "8b8560",
+                            "cafd4b",
+                            "f89a1c",
+                            "8fa55f",
+                            "bebb8e",
+                            "e5e98a",
+                            "ddb925",
+                            "893f54",
+                            "e4f5fd",
+                            "00b6f0",
+                            "1b1716"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 37.09024,
+                    "lon": -95.712891,
+                    "zoom": 5
+                }
+            },
+            {
+                "display_name": "luViz",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Land_Use"
+                        ],
+                        "max": [
+                            6
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "fbff97",
+                            "e6558b",
+                            "004e2b",
+                            "9dbac5",
+                            "a6976a",
+                            "1b1716"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 37.09024,
+                    "lon": -95.712891,
+                    "zoom": 5
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    }
+}
