@@ -36,7 +36,7 @@
             "rel": "parent",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/gcp-public-data-weathernext/catalog.json",
             "type": "application/json",
-            "title": "gcp-public-data-weathernext"
+            "title": "WeatherNext"
         }
     ],
     "stac_extensions": [
@@ -68,7 +68,7 @@
             "interval": [
                 [
                     "2020-01-01T00:00:00Z",
-                    "2026-05-12T18:00:00Z"
+                    "2026-05-13T18:00:00Z"
                 ]
             ]
         }

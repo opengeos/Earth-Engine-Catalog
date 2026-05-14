@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "TOMS/MERGED",
+    "id": "TOMS/MERGED_V4",
     "stac_version": "1.1.0",
-    "description": "The Total Ozone Mapping Spectrometer (TOMS) data represent the primary\nlong-term, continuous record of satellite-based observations available for\nuse in monitoring global and regional trends in total ozone over the past\n25 years. The data are produced by the Laboratory for Atmospheres at NASA's\nGoddard Space Flight Center. Version 8 TOMS data products include level 3\ngridded data (1.0 x 1.25 deg). The Ozone Monitoring Instrument (OMI), aboard\nthe Aura satellite (July 2004 - current), has a higher resolution\n(1.0 x 1.0 deg).\n\nThese data represent a merged ozone product from TOMS/EarthProbe,\nTOMS/Nimbus-7, TOMS/Meteor-3, OMI/Aura and USGS-interpolated data for dates\nwith no data.\n\n[Additional TOMS and OMI information](https://ozoneaq.gsfc.nasa.gov/missions/)\n",
+    "description": "The Total Ozone Mapping Spectrometer (TOMS) data represent the primary\nlong-term, continuous record of satellite-based observations available for\nuse in monitoring global and regional trends in total ozone over the past\n25 years. The data are produced by the Laboratory for Atmospheres at NASA's\nGoddard Space Flight Center. Version 8 TOMS data products include level 3\ngridded data (1.0 x 1.25 deg). The Ozone Monitoring Instrument (OMI), aboard\nthe Aura satellite (July 2004 - current), has a higher resolution\n(1.0 x 1.0 deg).\n\nThese data represent a merged ozone product from TOMS/EarthProbe,\nTOMS/Nimbus-7, TOMS/Meteor-3, OMI/Aura and USGS-interpolated data for dates\nwith no data.\n\n\nSee [this document](https://acd-ext.gsfc.nasa.gov/anonftp/toms/omi/Changes_OMI_TO3_col4_col3.pdf) for a summary of changes between v3 and v4.\n\n[Additional TOMS and OMI information](https://ozoneaq.gsfc.nasa.gov/missions/)\n",
     "links": [
         {
             "rel": "root",
@@ -12,24 +12,36 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/TOMS/TOMS_MERGED",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/TOMS/TOMS_MERGED_V4",
             "type": "text/html",
-            "title": "Run the example for TOMS/MERGED in the Earth Engine Code Editor",
+            "title": "Run the example for TOMS/MERGED_V4 in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/TOMS/TOMS_MERGED_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/TOMS/TOMS_MERGED_V4_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/TOMS_MERGED#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/TOMS_MERGED_V4#terms-of-use",
             "type": "text/html"
         },
         {
-            "rel": "self",
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/TOMS/TOMS_MERGED_V4.json",
+            "type": "application/json",
+            "title": "TOMS/MERGED_V4"
+        },
+        {
+            "rel": "predecessor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/TOMS/TOMS_MERGED.json",
+            "type": "application/json",
+            "title": "TOMS/MERGED"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/TOMS/TOMS_MERGED_V4.json",
             "type": "application/json"
         },
         {
@@ -41,7 +53,8 @@
     ],
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
         "climate"
@@ -51,11 +64,12 @@
         "type": "cadence",
         "unit": "day"
     },
+    "gee:status": "beta",
     "gee:terms_of_use": "Distribution of data from the Goddard Earth Sciences Data and\nInformation Services Center (GES DISC) is funded by NASA's Science Mission\nDirectorate (SMD). Consistent with NASA\n[Earth Science Data and Information Policy](https://www.earthdata.nasa.gov/engage/open-data-services-and-software/data-and-information-policy/),\ndata from the GES DISC archive are available free to the user community.\nFor more information visit the GES DISC\n[Data Policy](https://disc.sci.gsfc.nasa.gov/citing) page.\n",
     "gee:type": "image_collection",
-    "sci:citation": "The data set source should be properly cited when the data are used.\nA formal reference of the form: \\\\<authors\\\\>, 2012, last updated 2013:\n\\\\<dataset name\\\\>. NASA/GSFC, Greenbelt, MD, USA, NASA Goddard Earth Sciences\nData and Information Services Center (GES DISC). Accessed\n\\\\<enter user data access date\\\\> at \\\\<DOI\\\\> is suggested following\nParsons et al. (2010),\n[doi:10.1029/2010EO340001](https://doi.org/10.1029/2010EO340001)\n",
-    "gee:status": "ready",
-    "title": "TOMS and OMI Merged Ozone Data",
+    "sci:citation": "The data set source should be properly cited when the data are used.\nA formal reference of the form: \\<authors\\>, 2012, last updated 2013:\n\\<dataset name\\>. NASA/GSFC, Greenbelt, MD, USA, NASA Goddard Earth Sciences\nData and Information Services Center (GES DISC). Accessed\n\\<enter user data access date\\> at \\<DOI\\> is suggested following\nParsons et al. (2010),\n[doi:10.1029/2010EO340001](https://doi.org/10.1029/2010EO340001)\n",
+    "version": "4",
+    "title": "TOMS and OMI Merged Ozone Data v4",
     "extent": {
         "spatial": {
             "bbox": [
@@ -71,7 +85,7 @@
             "interval": [
                 [
                     "1978-11-01T00:00:00Z",
-                    "2026-04-11T00:00:00Z"
+                    "2026-05-03T00:00:00Z"
                 ]
             ]
         }
@@ -103,7 +117,7 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/TOMS_MERGED"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/TOMS_MERGED_V4"
         }
     ],
     "summaries": {

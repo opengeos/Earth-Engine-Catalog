@@ -36,7 +36,7 @@
             "rel": "parent",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/landandcarbon/catalog.json",
             "type": "application/json",
-            "title": "landandcarbon"
+            "title": "Land & Carbon Lab"
         }
     ],
     "stac_extensions": [
@@ -47,11 +47,11 @@
     "gee:categories": [
         "forest-biomass"
     ],
-    "gee:status": "beta",
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image",
     "sci:citation": "Sims, M.J., R. Stanimirova, A. Raichuk, M. Neumann, J. Richter, F. Follett, \nJ. MacCarthy, K. Lister, C. Randle, L. Sloat, E. Esipova, J. Jupiter, C. Stanton, \nD. Morris, C.M. Slay, D. Purves, and N. Harris. 2025. \n\u201cGlobal Drivers of Forest Loss at 1 Km Resolution.\u201d \nEnvironmental Research Letters 20 (7): 074027. \n[doi:10.1088/1748-9326/add606](https://doi.org/10.1088/1748-9326/add606)\n",
     "version": "1.3",
+    "gee:status": "ready",
     "title": "WRI/Google DeepMind Global Drivers of Forest Loss 2001-2025 v1.3",
     "extent": {
         "spatial": {
