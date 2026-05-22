@@ -154,6 +154,27 @@
                 "gsd": [
                     111320
                 ]
+            },
+            {
+                "description": "Error estimation by CSR.",
+                "name": "uncertainty_csr",
+                "gsd": [
+                    111320
+                ]
+            },
+            {
+                "description": "Error estimation by GFZ.",
+                "name": "uncertainty_gfz",
+                "gsd": [
+                    111320
+                ]
+            },
+            {
+                "description": "Error estimation by JPL.",
+                "name": "uncertainty_jpl",
+                "gsd": [
+                    111320
+                ]
             }
         ],
         "gee:schema": [
