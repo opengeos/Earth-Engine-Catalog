@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "NOAA/VIIRS/001/VNP22Q2",
+    "id": "NASA/VIIRS/002/VNP22Q2",
     "stac_version": "1.1.0",
-    "description": "The Suomi National Polar-Orbiting Partnership (Suomi NPP) NASA Visible\nInfrared Imaging Radiometer Suite (VIIRS) Land Cover Dynamics data product\nprovides global land surface phenology (GLSP) metrics at yearly intervals.\nThe VNP22Q2 data product is derived from time series of the two-band\nEnhanced Vegetation Index (EVI2) calculated from VIIRS Nadir Bidirectional\nReflectance Distribution Function (BRDF)-Adjusted Reflectance (NBAR).\nVegetation phenology metrics at 500 meter spatial resolution are identified\nfor up to two detected growing cycles per year.\n\nThe product contains six phenological transition dates: onset of greenness\nincrease, onset of greenness maximum, onset of greenness decrease, onset of\ngreenness minimum, dates of mid-greenup, and senescence phases. The product\nalso includes the growing season length. The greenness-related metrics\nconsist of EVI2 onset of greenness increase, EVI2 onset of greenness\nmaximum, EVI2 growing season, rate of greenness increase, and rate of\ngreenness decrease. The confidence of phenology detection is provided as\ngreenness agreement growing season, proportion of good quality (PGQ)\ngrowing season, PGQ onset greenness increase, PGQ onset greenness maximum,\nPGQ onset greenness decrease, and PGQ onset greenness minimum.\nThe final layer is quality control specifying the overall quality of the\nproduct.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/637/VNP22_User_Guide_V1.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/637/VNP22_User_Guide_V1.pdf)\n\n* [General Documentation](https://lpdaac.usgs.gov/products/vnp22q2v001/)\n\n* [Land Product Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/browse?sensor=VIIRS&sat=SNPP)\n",
+    "description": "The Suomi National Polar-Orbiting Partnership (Suomi NPP) NASA Visible\nInfrared Imaging Radiometer Suite (VIIRS) Land Surface Phenology Yearly\n(VNP22Q2) Version 2 data product provides global land surface phenology (GLSP)\nmetrics at yearly intervals. The VNP22Q2 data product is derived from time\nseries of the two-band Enhanced Vegetation Index (EVI2) calculated from\nVIIRS Nadir Bidirectional Reflectance Distribution Function (BRDF)-Adjusted\nReflectance (NBAR). Vegetation phenology metrics at 500 meter spatial\nresolution are identified for up to two detected growing cycles per year.\n\nThe product contains six phenological transition dates: onset of greenness\nincrease, onset of greenness maximum, onset of greenness decrease, onset of\ngreenness minimum, dates of mid-greenup, and senescence phases. The product\nalso includes the growing season length. The greenness-related metrics\nconsist of EVI2 onset of greenness increase, EVI2 onset of greenness\nmaximum, EVI2 growing season, rate of greenness increase, and rate of\ngreenness decrease. The confidence of phenology detection is provided as\ngreenness agreement growing season, proportion of good quality (PGQ)\ngrowing season, PGQ onset greenness increase, PGQ onset greenness maximum,\nPGQ onset greenness decrease, and PGQ onset greenness minimum.\nThe final layer is quality control specifying the overall quality of the\nproduct.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/2263/VNP22_UserGuide_v2.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/2228/VNP22_ATBD_V2.pdf)\n\n* [General Documentation](https://doi.org/10.5067/VIIRS/VNP22Q2.002)\n\n* [Land Product Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/browse?sensor=VIIRS&sat=SNPP)\n",
     "links": [
         {
             "rel": "root",
@@ -12,35 +12,47 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_VIIRS_001_VNP22Q2",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_VIIRS_002_VNP22Q2",
             "type": "text/html",
-            "title": "Run the example for NOAA/VIIRS/001/VNP22Q2 in the Earth Engine Code Editor",
+            "title": "Run the example for NASA/VIIRS/002/VNP22Q2 in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_VIIRS_001_VNP22Q2_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_VIIRS_002_VNP22Q2_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP22Q2#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_VNP22Q2#terms-of-use",
             "type": "text/html"
         },
         {
             "rel": "cite-as",
-            "href": "https://doi.org/10.5067/VIIRS/VNP22Q2.001"
+            "href": "https://doi.org/10.5067/VIIRS/VNP22Q2.002"
+        },
+        {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_VIIRS_002_VNP22Q2.json",
+            "type": "application/json",
+            "title": "NASA/VIIRS/002/VNP22Q2"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_VIIRS_001_VNP22Q2.json",
+            "type": "application/json",
+            "title": "NOAA/VIIRS/001/VNP22Q2"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/NOAA_VIIRS_001_VNP22Q2.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_VIIRS_002_VNP22Q2.json",
             "type": "application/json"
         },
         {
             "rel": "parent",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NOAA/catalog.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
             "type": "application/json",
-            "title": "NOAA"
+            "title": "NASA"
         }
     ],
     "stac_extensions": [
@@ -49,23 +61,23 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "landuse-landcover"
+        "vegetation-indices"
     ],
     "gee:interval": {
-        "interval": 8,
+        "interval": 1,
         "type": "cadence",
-        "unit": "day"
+        "unit": "year"
     },
     "gee:provider_ids": [
-        "C1711966127-LPDAAC_ECS"
+        "C2847915918-LPCLOUD"
     ],
+    "gee:status": "beta",
     "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
     "gee:type": "image_collection",
     "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
-    "sci:doi": "10.5067/VIIRS/VNP22Q2.001",
-    "version": "V001",
-    "gee:status": "ready",
-    "title": "VNP22Q2: Land Surface Phenology Yearly L3 Global 500m SIN Grid",
+    "sci:doi": "10.5067/VIIRS/VNP22Q2.002",
+    "version": "2",
+    "title": "VNP22Q2.002: Land Surface Phenology Yearly L3 Global 500m SIN Grid",
     "extent": {
         "spatial": {
             "bbox": [
@@ -81,7 +93,7 @@
             "interval": [
                 [
                     "2013-01-01T00:00:00Z",
-                    "2022-01-01T00:00:00Z"
+                    "2024-01-01T00:00:00Z"
                 ]
             ]
         }
@@ -89,7 +101,6 @@
     "license": "other",
     "keywords": [
         "land",
-        "landuse-landcover",
         "nasa",
         "ndvi",
         "noaa",
@@ -98,6 +109,7 @@
         "phenology",
         "surface",
         "vegetation",
+        "vegetation-indices",
         "viirs"
     ],
     "providers": [
@@ -107,17 +119,24 @@
                 "licensor",
                 "producer"
             ],
-            "url": "https://doi.org/10.5067/VIIRS/VNP22Q2.001"
+            "url": "https://doi.org/10.5067/VIIRS/VNP22Q2.002"
         },
         {
             "name": "Google Earth Engine",
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP22Q2"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_VNP22Q2"
         }
     ],
     "summaries": {
+        "gee:schema": [
+            {
+                "description": "The number of source tiles that were mosaicked to create this image.",
+                "name": "num_tiles",
+                "type": "INT"
+            }
+        ],
         "gee:visualizations": [
             {
                 "display_name": "Default visualization",
