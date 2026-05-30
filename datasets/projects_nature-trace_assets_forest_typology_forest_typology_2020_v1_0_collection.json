@@ -1,0 +1,205 @@
+{
+    "type": "Collection",
+    "id": "projects/nature-trace/assets/forest_typology/forest_typology_2020_v1_0_collection",
+    "stac_version": "1.1.0",
+    "description": "The Forest Typology (ForTy) v1 dataset consists of a global per-class\nprobability map at 10 m resolution covering all land areas between\n65\u00b0S and 84\u00b0N latitude for the year 2020.\n\nThe six-class typology is aligned with FAO and EU Deforestation\nRegulation (EUDR) definitions:\n\n* Class 1 \u2013 Primary Forest: Natural forest of native species with no\nvisible indications of human-caused disturbance.\n* Class 2 \u2013 Naturally Regenerating Forest: Forests predominantly\nestablished through natural regeneration, including secondary forests\nrecovering from disturbance and mixed forests where natural\nregeneration dominates.\n* Class 3 \u2013 Planted Forest: Forests established predominantly through\nplanting or seeding, with an operational rotation period exceeding\n40 years.\n* Class 4 \u2013 Plantation Forest: Intensively managed forests\ncharacterized by one or two species, even age, regular spacing, and\na rotation period of 40 years or less.\n* Class 5 \u2013 Tree Crops and Agroforestry: Agricultural plantations\nproducing commodities other than wood (e.g., oil palm, rubber, fruit\norchards), including agroforestry systems. Classified as agricultural\nland use under EUDR.\n* Class 6 \u2013 Other Land: All non-tree land uses, sparse woody\nvegetation (canopy cover < 10%), other wooded land, trees in urban\nenvironments, and small tree patches that do not meet forest\nthresholds.\n\nThe primary data record is a five-band raster containing unsigned 8-bit\ninteger values (0\u2013250) representing quantized probability values for\neach of five forest type classes. The probability for the sixth class\n(Other land) is obtained as the complement: p_other = 250 \u2212 sum(p_i).\nThe map uses the Universal Transverse Mercator (UTM) coordinate system.\n\nTo get the probability score of the sixth, \"Other land\" class, you to\nsubtract from 250 the sum of the first five probabilities. A categorical\nmap can be derived by assigning each pixel to the class with the highest\nprobability (argmax). The probability\nrepresentation enables users to apply custom thresholds, assess\nprediction confidence, and compute uncertainty estimates for downstream\napplications.\n\nThe source data is provided as Cloud Optimized GeoTIFFs (COGs) stored\non Google Cloud Storage at\n`gs://nature-trace/export_rasters/forest_typology_2020_v1_0/`. The\nEarth Engine ImageCollection is backed by these COGs.\n\nLimitations: While this map provides a valuable global baseline, users\nshould be aware of several limitations:\n\n* Temporal reference date: The map represents the state of land cover\nas of the year 2020, based on multi-temporal satellite composites.\nRapid land-use changes occurring within the compositing period may not\nbe fully captured.\n* Definitional ambiguity: The FAO-based definitions underlying the\nEUDR classification rely on management intent and history, which are\nnot directly observable from satellite imagery. The model infers these\ncategories from proxy indicators (spectral signatures, canopy\nstructure, spatial patterns), introducing irreducible uncertainty at\nclass boundaries. For example, mature naturally regenerating\n(secondary) forests can be spectrally and structurally\nindistinguishable from undisturbed primary forests.\n* Agroforestry ambiguity: Mixed agroforestry systems\u2014where tree crops\nsuch as cocoa or coffee grow beneath a native canopy\u2014are among the\nmost challenging classes to resolve. Shaded cocoa and coffee\nagroforests can still be misclassified as natural forest in some\nregions.\n* Planted forest confusion: Planted forests exhibit the lowest\nclassification accuracy among all forest classes (F1 = 58.2%). This\nclass can be spectrally and structurally similar to naturally\nregenerating forests at one end and to plantation forests at the\nother, resulting in frequent misclassification in both directions.\n* Small patches and threshold canopy coverage: Isolated tree patches\nnear the FAO forest area threshold (0.5 ha) and areas at the canopy\ncover boundary (10%) are inherently ambiguous.\n* Probability calibration: The per-class probabilities represent\nensemble-averaged softmax outputs and have not been post-hoc\ncalibrated. Users requiring well-calibrated probabilities for\nquantitative risk assessment should consider regional recalibration\nusing independent reference data.\n* Wildfires: It is not always possible to determine the land use\nafter a wildfire.\n* Conservative primary forest mapping: The primary forest class\nboundary is conservative near human infrastructure. Due to a spatial\nbuffering effect inherited from the training data, the model\nsystematically excludes forest edges near roads, settlements, or\nagriculture from the primary forest class, often labeling them as\nnaturally regenerating instead.\n* Temporarily unstocked areas: Under FAO definitions, temporarily\nunstocked areas (such as recently harvested plantations awaiting\nreplanting or forests in early post-disturbance recovery) are still\nconsidered forest. However, because this map relies on a single year\nof observations (2020), these areas may appear as non-forest and be\nmisclassified as \"Other Land.\"\n* Planted vs. plantation proxy: The distinction between planted and\nplantation forests uses an operational 40-year rotation threshold as\na proxy. True EUDR/FAO management intensity criteria (e.g., even-aged\nclass, regular spacing) are not directly observable from satellite\nimagery.\n* Other Wooded Land (OWL) omission: The EUDR recognizes \"Other Wooded\nLand\" (OWL) as a distinct category, but in this dataset, OWL is not\nresolved as a separate class and is entirely subsumed into the\n\"Other Land\" category.\n* Sub-pixel heterogeneity: Mixed pixels, particularly in complex\nsmallholder landscapes, can reduce classification precision.\nAdditionally, while the output is at 10 m, the effective resolution\nof the model's input data might be coarser than 10 m.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/nature-trace/projects_nature-trace_assets_forest_typology_forest_typology_2020_v1_0_collection",
+            "type": "text/html",
+            "title": "Run the example for projects/nature-trace/assets/forest_typology/forest_typology_2020_v1_0_collection in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/nature-trace/projects_nature-trace_assets_forest_typology_forest_typology_2020_v1_0_collection_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_forest_typology_forest_typology_2020_v1_0_collection#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/nature-trace/projects_nature-trace_assets_forest_typology_forest_typology_2020_v1_0_collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/nature-trace/catalog.json",
+            "type": "application/json",
+            "title": "Nature Trace"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:categories": [
+        "forest-biomass"
+    ],
+    "gee:terms_of_use": "This dataset is licensed under\n[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) and requires the\nfollowing attribution: [PLACEHOLDER ATTRIBUTION].\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Maxim Neumann, Anton Raichuk, Peter Potapov, Myroslava Lesiv,\nMatthew Overlan, Melanie Rey, Ravindran Rajakumar, Michelangelo\nConserva, Radost Stanimirova, Michelle Sims, Sarah Carter,\nElizabeth Goldman, Yuchang Jiang, Linus Scheibenreif, Ivelina\nGeorgieva, Maria Shchepashchenko, Steffen Fritz, Nicholas Clinton,\nCharlotte Stanton, Dan Morris, Drew Purves: \"Global forest typology\nat 10-meter resolution for forest and land-use monitoring\", May 2026\n(preprint:\n[doi.org/10.31223/X58R27](https://doi.org/10.31223/X58R27)).\n",
+    "gee:status": "ready",
+    "title": "Forest Typology (ForTy) 2020 v1.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -65,
+                    180,
+                    84
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    "2020-12-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "alphaearth-derived",
+        "biodiversity",
+        "climate",
+        "conservation",
+        "deforestation",
+        "eudr",
+        "forest",
+        "forest-biomass"
+    ],
+    "providers": [
+        {
+            "name": "Google",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://deepmind.google/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_forest_typology_forest_typology_2020_v1_0_collection"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Quantized probability (unsigned 8-bit integer, 0\u2013250) that the\npixel belongs to the primary forest class.\n",
+                "gee:scale": 0.004,
+                "name": "PrimaryForest",
+                "gsd": [
+                    10
+                ]
+            },
+            {
+                "description": "Quantized probability (unsigned 8-bit integer, 0\u2013250) that the\npixel belongs to the naturally regenerating forest class.\n",
+                "gee:scale": 0.004,
+                "name": "NaturallyRegeneratingForest",
+                "gsd": [
+                    10
+                ]
+            },
+            {
+                "description": "Quantized probability (unsigned 8-bit integer, 0\u2013250) that the\npixel belongs to the planted forest class.\n",
+                "gee:scale": 0.004,
+                "name": "PlantedForest",
+                "gsd": [
+                    10
+                ]
+            },
+            {
+                "description": "Quantized probability (unsigned 8-bit integer, 0\u2013250) that the\npixel belongs to the plantation forest class.\n",
+                "gee:scale": 0.004,
+                "name": "PlantationForest",
+                "gsd": [
+                    10
+                ]
+            },
+            {
+                "description": "Quantized probability (unsigned 8-bit integer, 0\u2013250) that the\npixel belongs to the tree crops and agroforestry class. The\nprobability for the sixth class (Other land) is obtained as the\ncomplement: p_other = 250 \u2212 sum of all five band values.\n",
+                "gee:scale": 0.004,
+                "name": "TreeCropsAndAgroforestry",
+                "gsd": [
+                    10
+                ]
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Forest Typology 2020 - Classification",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "PrimaryForest"
+                        ],
+                        "max": [
+                            6
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "1B7837",
+                            "7FBF7B",
+                            "1D91C0",
+                            "E65FA9",
+                            "E6AB02",
+                            "FDE278"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 10,
+                    "lon": 20,
+                    "zoom": 3
+                }
+            }
+        ],
+        "gsd": [
+            10
+        ],
+        "NaturallyRegeneratingForest": {
+            "minimum": 0,
+            "maximum": 250
+        },
+        "PlantationForest": {
+            "minimum": 0,
+            "maximum": 250
+        },
+        "PlantedForest": {
+            "minimum": 0,
+            "maximum": 250
+        },
+        "PrimaryForest": {
+            "minimum": 0,
+            "maximum": 250
+        },
+        "TreeCropsAndAgroforestry": {
+            "minimum": 0,
+            "maximum": 250
+        }
+    }
+}

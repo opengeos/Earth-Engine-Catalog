@@ -1,0 +1,188 @@
+{
+    "type": "Collection",
+    "id": "projects/mangrovedatahub2/assets/CGMD-AFCC30",
+    "stac_version": "1.1.0",
+    "description": "This dataset provides global annual mangrove fractional canopy cover (FCC) at 30-m spatial resolution from 1984 to 2023 to support \nlarge-scale analyses of long-term mangrove dynamics, including canopy degradation and recovery, blue carbon assessment, and coastal ecosystem monitoring. \nFCC quantifies the proportion of each Landsat pixel occupied by mangrove canopy and is expressed as a percentage ranging from 0% to 100%.\n\nThe dataset was generated using time-series Landsat imagery within the Google Earth Engine platform. \nAnnual Landsat composites were produced after strict cloud, cloud-shadow, and low-quality observation filtering. \nFCC was then estimated using a linear spectral unmixing approach and spatially constrained to the global mangrove extent for each year. \n\nThe FCC estimates were evaluated against high-resolution Planet imagery across different regions, with root mean square error (RMSE) ranging from 9% to 22%.\n\nUsers should note that FCC values are derived from annual median Landsat composites. \nAs a result, canopy changes occurring late in a calendar year may be captured in the following year's composite, \nwhich can introduce a one-year lag in the timing of detected FCC change.\nFor quick visualization and exploratory analysis, users are encouraged to access \n[the CGMD Earth Engine App](https://zhenzhang.users.earthengine.app/view/globalmangrovedynamic).   \n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/mangrovedatahub2/projects_mangrovedatahub2_assets_CGMD-AFCC30",
+            "type": "text/html",
+            "title": "Run the example for projects/mangrovedatahub2/assets/CGMD-AFCC30 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/mangrovedatahub2/projects_mangrovedatahub2_assets_CGMD-AFCC30_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_mangrovedatahub2_assets_CGMD-AFCC30#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/mangrovedatahub2/projects_mangrovedatahub2_assets_CGMD-AFCC30.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/mangrovedatahub2/catalog.json",
+            "type": "application/json",
+            "title": "Continuous Global Mangrove Dynamics"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "forest-biomass",
+        "vegetation-indices"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:status": "beta",
+    "gee:terms_of_use": "Acknowledgements\n\nUsers should cite the associated scientific paper and the Zenodo data record when using this dataset in publications or derived products.\n\nLicense\n\nThe dataset is licensed under the [CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).\n",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "sci:citation": "Zhang, Z., Murray, N., Song, X., ... & Friess, D. (2026) Continuous Global Mangrove Dynamics: Annual mangrove fractional canopy cover, 1984-2023 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.18496588\n\n",
+    "sci:publications": [
+        {
+            "citation": "Zhang, Z., Murray, N., Song, X., ... & Friess, D. (2026) Unexpected expansion and regrowth in Earth's mangrove forests over the past four decades. Science. https://doi.org/10.1126/science.aec9773\n",
+            "doi": "10.1126/science.aec9773"
+        }
+    ],
+    "version": "1.0",
+    "title": "Global Annual Mangrove Fractional Canopy Cover (1984-2023)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1984-01-01T00:00:00Z",
+                    "2023-12-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "annual",
+        "coastal",
+        "forest-biomass",
+        "global",
+        "landsat-derived",
+        "mangrove",
+        "vegetation-indices",
+        "wetland"
+    ],
+    "providers": [
+        {
+            "name": "The Mangrove Lab",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.themangrovelab.com/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_mangrovedatahub2_assets_CGMD-AFCC30"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Mangrove fractional canopy cover stored as integer percentage cover from 0 to 100",
+                "gee:units": "%",
+                "name": "FCC",
+                "gsd": [
+                    30
+                ]
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Data year, ranging from 1984 to 2023.",
+                "name": "year",
+                "type": "INT"
+            },
+            {
+                "description": "Data region",
+                "name": "tile_id",
+                "type": "STRING"
+            },
+            {
+                "description": "Data version",
+                "name": "version",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Mangrove fractional canopy cover",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "FCC"
+                        ],
+                        "max": [
+                            100
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "ffffff",
+                            "d9f0a3",
+                            "78c679",
+                            "238443",
+                            "005a32"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -2.33,
+                    "lon": 133.55,
+                    "zoom": 10
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ],
+        "FCC": {
+            "minimum": 0,
+            "maximum": 100
+        }
+    }
+}
