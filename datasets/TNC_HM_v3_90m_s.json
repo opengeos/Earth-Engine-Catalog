@@ -1,0 +1,251 @@
+{
+    "type": "Collection",
+    "id": "TNC/HM/v3/90m_s",
+    "stac_version": "1.1.0",
+    "description": "The Global Human Modification v3 dataset measures cumulative human pressures on global\nterrestrial ecosystems (excluding Antarctica). It tracks data from 1990 to 2022 and is\nintended to help quantify human impact for conservation planning, policy-making, and research.\n\nThis is the 2022 static snapshot (\"s\" series) available at 90 meter resolution.\nBecause it uses updated satellite and land-cover inputs, it is not recommended for\ndirect quantitative comparison with the 1990\u20132020 \"c\" series.\n\nThe modification score per pixel is calculated using the formula:\nmodification = footprint proportion multiplied by stressor intensity.\nThe data values are stored as 32-bit floats ranging from 0.0 to 1.0, where\n0.0 indicates no detectable human modification and 1.0 represents the maximum modeled modification.\n\nThis dataset provides data for eight IUCN-aligned threat categories, plus one combined index.\nIt was rigorously validated using a spatially balanced sample from the Global Land\nUse Emergent Dataset (GLUED). It achieved a root-mean-squared error (RMSE) of 0.178 at 90m.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/TNC/TNC_HM_v3_90m_s",
+            "type": "text/html",
+            "title": "Run the example for TNC/HM/v3/90m_s in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/TNC/TNC_HM_v3_90m_s_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/TNC_HM_v3_90m_s#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://gdra-tnc.org/current/"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/TNC/TNC_HM_v3_90m_s.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/TNC/catalog.json",
+            "type": "application/json",
+            "title": "TNC"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "population"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "sci:citation": "Theobald, D.M., Oakleaf, J.R., Moncrieff, G., Voigt, M., Kiesecker, J. & Kennedy, C.M. (2025).\nGlobal extent and change in human modification of terrestrial ecosystems from 1990 to 2022.\nScientific Data 12, 489.\n[doi:10.1038/s41597-025-04892-2](https://doi.org/10.1038/s41597-025-04892-2)\n",
+    "sci:doi": "10.1038/s41597-025-04892-2",
+    "version": "3.0",
+    "gee:status": "ready",
+    "title": "TNC Global Human Modification v3 (Static Snapshot 90m)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-01-01T00:00:00Z",
+                    "2022-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "fragmentation",
+        "human-modification",
+        "landcover",
+        "landscape-gradient",
+        "population",
+        "stressors",
+        "tnc"
+    ],
+    "providers": [
+        {
+            "name": "The Nature Conservancy",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.nature.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/TNC_HM_v3_90m_s"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "All threats combined (overall modification)",
+                "name": "All_threats_combined",
+                "gsd": [
+                    90
+                ]
+            },
+            {
+                "description": "Agriculture (croplands, forestry)",
+                "name": "Agriculture",
+                "gsd": [
+                    90
+                ]
+            },
+            {
+                "description": "Built-Up (residential, commercial, recreation areas)",
+                "name": "Built_up",
+                "gsd": [
+                    90
+                ]
+            },
+            {
+                "description": "Energy production and mining",
+                "name": "Energy_production_and_mining",
+                "gsd": [
+                    90
+                ]
+            },
+            {
+                "description": "Biological resource use",
+                "name": "Biological_resource_use",
+                "gsd": [
+                    90
+                ]
+            },
+            {
+                "description": "Human accessibility (roads, trails, infrastructure)",
+                "name": "Human_accessibility",
+                "gsd": [
+                    90
+                ]
+            },
+            {
+                "description": "Natural system modification (e.g., dams, water regulation)",
+                "name": "Natural_system_modification",
+                "gsd": [
+                    90
+                ]
+            },
+            {
+                "description": "Pollution",
+                "name": "Pollution",
+                "gsd": [
+                    90
+                ]
+            },
+            {
+                "description": "Transportation and service corridors",
+                "name": "Transportation_and_service_corridors",
+                "gsd": [
+                    90
+                ]
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Human modification (All threats combined)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "All_threats_combined"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "0c0c0c",
+                            "071aff",
+                            "ff0000",
+                            "ffbd03",
+                            "fbff05",
+                            "fffdfd"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 40,
+                    "lon": -105,
+                    "zoom": 10
+                }
+            }
+        ],
+        "gsd": [
+            90
+        ],
+        "Agriculture": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "All_threats_combined": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "Biological_resource_use": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "Built_up": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "Energy_production_and_mining": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "Human_accessibility": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "Natural_system_modification": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "Pollution": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "Transportation_and_service_corridors": {
+            "minimum": 0,
+            "maximum": 1
+        }
+    }
+}
