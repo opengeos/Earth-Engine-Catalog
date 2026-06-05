@@ -63,7 +63,6 @@
         "forest-biomass",
         "landuse-landcover"
     ],
-    "gee:status": "beta",
     "gee:terms_of_use": "Acknowledgements\n\nUsers should cite the associated scientific paper and the Zenodo data record when using this dataset in publications or derived products.\n\nLicense\n\nThe dataset is licensed under the [CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).\n",
     "gee:type": "table",
     "gee:user_uploaded": true,
@@ -75,6 +74,7 @@
         }
     ],
     "version": "1.0",
+    "gee:status": "ready",
     "title": "Global Annual Mangrove Extent (1984-2023)",
     "extent": {
         "spatial": {
