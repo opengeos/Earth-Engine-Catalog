@@ -33,6 +33,12 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/pml_evapotranspiration/projects_pml_evapotranspiration_PML_OUTPUT_PML_V22a.json",
+            "type": "application/json",
+            "title": "projects/pml_evapotranspiration/PML/OUTPUT/PML_V22a"
+        },
+        {
             "rel": "predecessor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/CAS/CAS_IGSNRR_PML_V2_v018.json",
             "type": "application/json",

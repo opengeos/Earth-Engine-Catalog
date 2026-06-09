@@ -28,6 +28,18 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/malariaatlasproject/projects_malariaatlasproject_assets_accessibility_friction_surface_2019_v5_1.json",
+            "type": "application/json",
+            "title": "projects/malariaatlasproject/assets/accessibility/friction_surface/2019_v5_1"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Oxford/Oxford_MAP_friction_surface_2019.json",
+            "type": "application/json",
+            "title": "Oxford/MAP/friction_surface_2019"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/malariaatlasproject/projects_malariaatlasproject_assets_accessibility_friction_surface_2019_v5_1.json",
             "type": "application/json"
