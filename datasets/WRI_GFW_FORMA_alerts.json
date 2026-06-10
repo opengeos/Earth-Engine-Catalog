@@ -28,6 +28,18 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WRI/WRI_GFW_FORMA_alerts.json",
+            "type": "application/json",
+            "title": "WRI/GFW/FORMA/alerts"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/FORMA/FORMA_FORMA_500m.json",
+            "type": "application/json",
+            "title": "FORMA/FORMA_500m"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/WRI/WRI_GFW_FORMA_alerts.json",
             "type": "application/json"

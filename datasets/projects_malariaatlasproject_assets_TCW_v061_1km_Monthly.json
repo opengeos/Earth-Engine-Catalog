@@ -28,6 +28,18 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/malariaatlasproject/projects_malariaatlasproject_assets_TCW_v061_1km_Monthly.json",
+            "type": "application/json",
+            "title": "projects/malariaatlasproject/assets/TCW_v061/1km/Monthly"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Oxford/Oxford_MAP_TCW_5km_Monthly.json",
+            "type": "application/json",
+            "title": "Oxford/MAP/TCW_5km_Monthly"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/malariaatlasproject/projects_malariaatlasproject_assets_TCW_v061_1km_Monthly.json",
             "type": "application/json"
@@ -41,7 +53,8 @@
     ],
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
         "vegetation-indices"
@@ -60,6 +73,7 @@
             "citation": "Lobser, S.E. & Cohen, W.B. (2007) MODIS tasselled cap: land cover\ncharacteristics expressed through transformed MODIS data. International\nJournal of Remote Sensing, 28, 5079-5101.\n"
         }
     ],
+    "version": "v061",
     "gee:status": "ready",
     "title": "TCW: Malaria Atlas Project Gap-Filled Tasseled Cap Wetness (Monthly 1km)",
     "extent": {

@@ -28,6 +28,18 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OREGONSTATE/OREGONSTATE_PRISM_ANm.json",
+            "type": "application/json",
+            "title": "OREGONSTATE/PRISM/ANm"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OREGONSTATE/OREGONSTATE_PRISM_AN81m.json",
+            "type": "application/json",
+            "title": "OREGONSTATE/PRISM/AN81m"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/OREGONSTATE/OREGONSTATE_PRISM_ANm.json",
             "type": "application/json"

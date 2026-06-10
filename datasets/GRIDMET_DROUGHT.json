@@ -28,6 +28,18 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GRIDMET/GRIDMET_DROUGHT.json",
+            "type": "application/json",
+            "title": "GRIDMET/DROUGHT"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/IDAHO_EPSCOR/IDAHO_EPSCOR_PDSI.json",
+            "type": "application/json",
+            "title": "IDAHO_EPSCOR/PDSI"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/GRIDMET/GRIDMET_DROUGHT.json",
             "type": "application/json"

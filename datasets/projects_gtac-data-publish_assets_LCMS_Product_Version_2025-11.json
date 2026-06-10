@@ -28,8 +28,10 @@
             "type": "text/html"
         },
         {
-            "rel": "source",
-            "href": "https://data.fs.usda.gov/geodata/rastergateway/LCMS/index.php"
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/gtac-data-publish/projects_gtac-data-publish_assets_LCMS_Product_Version_2025-11.json",
+            "type": "application/json",
+            "title": "projects/gtac-data-publish/assets/LCMS/Product_Version/2025-11"
         },
         {
             "rel": "predecessor-version",
@@ -38,10 +40,8 @@
             "title": "USFS/GTAC/LCMS/v2024-10"
         },
         {
-            "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/gtac-data-publish/projects_gtac-data-publish_assets_LCMS_Product_Version_2025-11.json",
-            "type": "application/json",
-            "title": "projects/gtac-data-publish/assets/LCMS/Product_Version/2025-11"
+            "rel": "source",
+            "href": "https://data.fs.usda.gov/geodata/rastergateway/LCMS/index.php"
         },
         {
             "rel": "self",

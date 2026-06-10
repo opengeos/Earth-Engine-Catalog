@@ -51,10 +51,10 @@
         "type": "cadence",
         "unit": "day"
     },
-    "gee:status": "beta",
     "gee:terms_of_use": "There are no restrictions on the use of JPSS data, and it can be used or\nredistributed as desired.\n",
     "gee:type": "image_collection",
     "version": "3",
+    "gee:status": "ready",
     "title": "VIIRS Aerosol Optical Depth and Aerosol Particle Size EDRs V3",
     "extent": {
         "spatial": {
@@ -71,7 +71,7 @@
             "interval": [
                 [
                     "2022-10-29T00:00:00Z",
-                    "2026-06-08T18:44:00.400000Z"
+                    "2026-06-09T19:02:04.200000Z"
                 ]
             ]
         }

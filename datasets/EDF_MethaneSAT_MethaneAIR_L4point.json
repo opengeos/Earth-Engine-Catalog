@@ -28,6 +28,18 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/EDF/EDF_MethaneSAT_MethaneAIR_L4point.json",
+            "type": "application/json",
+            "title": "EDF/MethaneSAT/MethaneAIR/L4point"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/EDF/EDF_MethaneSAT_MethaneAIR_methaneair-L4point-2021.json",
+            "type": "application/json",
+            "title": "EDF/MethaneSAT/MethaneAIR/methaneair-L4point-2021"
+        },
+        {
             "rel": "related",
             "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/EDF/EDF_MethaneSAT_MethaneAIR_L4point_FeatureView",
             "type": "text/html",

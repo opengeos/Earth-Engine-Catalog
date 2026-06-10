@@ -28,6 +28,18 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_MEASURES_GFCC_TC_v3.json",
+            "type": "application/json",
+            "title": "NASA/MEASURES/GFCC/TC/v3"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GLCF/GLCF_GLS_TCC.json",
+            "type": "application/json",
+            "title": "GLCF/GLS_TCC"
+        },
+        {
             "rel": "cite-as",
             "href": "https://doi.org/10.5067/MEaSUREs/GFCC/GFCC30TC.003"
         },
@@ -45,7 +57,8 @@
     ],
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
         "forest-biomass"
@@ -62,6 +75,7 @@
     "gee:type": "image_collection",
     "sci:citation": "Paper/Methods Citation: Sexton, J. O., Song, X.-P., Feng, M., Noojipady,\nP., Anand, A., Huang, C., Kim, D.-H., Collins, K.M., Channan, S.,\nDiMiceli, C., Townshend, J.R.G. (2013). Global, 30-m resolution\ncontinuous fields of tree cover: Landsat-based rescaling of MODIS\nVegetation Continuous Fields with lidar-based estimates of error.\nInternational Journal of Digital Earth, 130321031236007.\n[doi:10.1080/17538947.2013.786146](https://doi.org/10.1080/17538947.2013.786146).\n",
     "sci:doi": "10.5067/MEaSUREs/GFCC/GFCC30TC.003",
+    "version": "v3",
     "gee:status": "ready",
     "title": "Global Forest Cover Change (GFCC) Tree Cover Multi-Year Global 30m",
     "extent": {

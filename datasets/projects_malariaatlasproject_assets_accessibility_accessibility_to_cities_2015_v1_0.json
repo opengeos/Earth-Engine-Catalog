@@ -28,6 +28,18 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/malariaatlasproject/projects_malariaatlasproject_assets_accessibility_accessibility_to_cities_2015_v1_0.json",
+            "type": "application/json",
+            "title": "projects/malariaatlasproject/assets/accessibility/accessibility_to_cities/2015_v1_0"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Oxford/Oxford_MAP_accessibility_to_cities_2015_v1_0.json",
+            "type": "application/json",
+            "title": "Oxford/MAP/accessibility_to_cities_2015_v1_0"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/malariaatlasproject/projects_malariaatlasproject_assets_accessibility_accessibility_to_cities_2015_v1_0.json",
             "type": "application/json"
@@ -41,7 +53,8 @@
     ],
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
         "population"
@@ -50,6 +63,7 @@
     "gee:type": "image",
     "gee:user_uploaded": true,
     "sci:citation": "D.J. Weiss, A. Nelson, H.S. Gibson, W. Temperley, S. Peedell, A.\nLieber, M. Hancher, E. Poyart, S. Belchior, N. Fullman, B. Mappin,\nU. Dalrymple, J. Rozier, T.C.D. Lucas, R.E. Howes, L.S. Tusting,\nS.Y. Kang, E. Cameron, D. Bisanzio, K.E. Battle, S. Bhatt, and\nP.W. Gething. A global map of travel time to cities to assess inequalities\nin accessibility in 2015. Nature (2018).\n[doi:10.1038/nature25181](https://doi.org/10.1038/nature25181)\n",
+    "version": "1.0",
     "gee:status": "ready",
     "title": "Malaria Atlas Project Accessibility to Cities 2015",
     "extent": {

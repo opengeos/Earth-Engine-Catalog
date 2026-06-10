@@ -28,6 +28,18 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/malariaatlasproject/projects_malariaatlasproject_assets_EVI_v061_1km_Monthly.json",
+            "type": "application/json",
+            "title": "projects/malariaatlasproject/assets/EVI_v061/1km/Monthly"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/Oxford/Oxford_MAP_EVI_5km_Monthly.json",
+            "type": "application/json",
+            "title": "Oxford/MAP/EVI_5km_Monthly"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/malariaatlasproject/projects_malariaatlasproject_assets_EVI_v061_1km_Monthly.json",
             "type": "application/json"
@@ -41,7 +53,8 @@
     ],
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
         "vegetation-indices"
@@ -55,6 +68,7 @@
     "gee:type": "image_collection",
     "gee:unusual_terms_of_use": true,
     "sci:citation": "Weiss, D.J., P.M. Atkinson, S. Bhatt, B. Mappin, S.I. Hay & P.W. Gething\n(2014) An effective approach for gap-filling continental scale remotely\nsensed time-series. ISPRS Journal of Photogrammetry and Remote Sensing,\n98, 106-118. \n[doi:10.1016/j.isprsjprs.2014.10.001](https://doi.org/10.1016/j.isprsjprs.2014.10.001)\n",
+    "version": "v061",
     "gee:status": "ready",
     "title": "EVI: Malaria Atlas Project Gap-Filled Enhanced Vegetation Index (Monthly 1km)",
     "extent": {

@@ -28,6 +28,18 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/EDF/EDF_OGIM_current.json",
+            "type": "application/json",
+            "title": "EDF/OGIM/current"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/EDF/EDF_OGIM_OGIM_v2-4_RF06_RF08.json",
+            "type": "application/json",
+            "title": "EDF/OGIM/OGIM_v2-4_RF06_RF08"
+        },
+        {
             "rel": "related",
             "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/EDF/EDF_OGIM_current_FeatureView",
             "type": "text/html",

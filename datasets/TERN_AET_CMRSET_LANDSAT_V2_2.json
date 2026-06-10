@@ -28,11 +28,6 @@
             "type": "text/html"
         },
         {
-            "rel": "license",
-            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
-            "type": "text/html"
-        },
-        {
             "rel": "latest-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/TERN/TERN_AET_CMRSET_LANDSAT_V2_2.json",
             "type": "application/json",
@@ -43,6 +38,11 @@
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/TERN/TERN_AET_CMRSET_LANDSAT_V2_1.json",
             "type": "application/json",
             "title": "TERN/AET/CMRSET_LANDSAT_V2_1"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
         },
         {
             "rel": "self",
