@@ -1,0 +1,172 @@
+{
+    "type": "Collection",
+    "id": "NASA/GEOS-CF/v2/fcst/tavg1hr",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains forecast (fcst) of time-averaged\nfrequency data (tavg1hr). It is built by merging the original GEOS-CF collections\nchm_tavg_1hr_glo_L1440x721_slv, met_tavg_1hr_glo_L1440x721_slv, and\nxgc_tavg_1hr_glo_L1440x721_slv. Use the 'creation_time' and 'forecast_time' properties\nto select data of interest.\nThe Goddard Earth Observing System Composition Forecast (GEOS-CF) system is\na global constituent prediction system from\nNASA's [Global Modeling and Assimilation Office(GMAO)](\nhttps://gmao.gsfc.nasa.gov/). \n\nGEOS-CF offers a tool for atmospheric chemistry research, with the goal\nto supplement NASA's broad range of space-based and in-situ observations.\nGEOS-CF expands on the GEOS weather and aerosol modeling system by\nintroducing the [GEOS-Chem](http://wiki.seas.harvard.edu/geos-chem/)\nchemistry module to provide hindcasts and 5-days forecasts of atmospheric\nconstituents including ozone (O<sub>3</sub>), carbon monoxide (CO), nitrogen dioxide\n(NO<sub>2</sub>), sulfur dioxide (SO<sub>2</sub>), coarse particulate matter \n(PM<sub>10</sub>), and fine particulate matter (PM<sub>2.5</sub>). The\nchemistry module integrated in GEOS-CF is identical to the offline GEOS-Chem\nmodel and readily benefits from the innovations provided by the GEOS-Chem\ncommunity. Outputs are provided globally at 0.25&deg; horizontal resolution. \n\nIn October 2025, a major update to the GEOS-CF system was introduced as \nGEOS-CF v2. This change included updates to the GEOS atmospheric general \ncirculation model and the GEOS-Chem chemical model, replaying meteorology to \n[GEOS IT](https://gmao.gsfc.nasa.gov/gmao-products/geos-it/), direct assimilation \nof stratospheric profiles and column ozone from NASA Aura OMI and MLS instruments, \nand updates to the anthropogenic emission source. Evaluation of these updates is \nongoing; results will be added into this description as they become available. \nPreliminary results suggest that, in relation to GEOS-CF v1, GEOS-CF v2 dramatically \nimproves the representation of PM<sub>2.5</sub> and SO<sub>2</sub> near the surface. \nWhile representations of O<sub>3</sub> and NO<sub>2</sub> are generally improved throughout\nmost of the atmospheric column, representation of near-surface concentrations (i.e., at \natmospheric levels directly relevant to air quality) may be degraded comapred to v1.\n\nUsers of GEOS-CF are encouraged to treat outputs from the original system (v1) \nand the new system (v2) separately in their analysis, due to the extensive changes \nbetween the systems.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_GEOS-CF_v2_fcst_tavg1hr",
+            "type": "text/html",
+            "title": "Run the example for NASA/GEOS-CF/v2/fcst/tavg1hr in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_GEOS-CF_v2_fcst_tavg1hr_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GEOS-CF_v2_fcst_tavg1hr#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_GEOS-CF_v2_fcst_tavg1hr.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "atmosphere"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "Unless otherwise noted, all NASA-produced data may be used for any purpose\nwithout prior permission. For more information and exceptions visit the\n[NASA Data & Information Policy page](https://earthdata.nasa.gov/collaborate/open-data-services-and-software/data-information-policy).\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Keller, C. A., Knowland, K. E., Duncan, B. N., Liu, J., Anderson, D. C.,\nDas, S., ... & Pawson, S. (2021). Description of the NASA GEOS composition\nforecast modeling system GEOS-CF v1.0. Journal of Advances in Modeling\nEarth Systems, 13(4), e2020MS002413.\n[doi:10.1029/2020MS002413](https://doi.org/10.1029/2020MS002413)\n\nKnowland, K. E., Keller, C. A., Wales, P. A., Wargan, K., Coy, L., \nJohnson, M.S., ... & Pawson, S. (2022). NASA GEOS Composition Forecast Modeling \nSystem GEOS\u2010CF v1.0: Stratospheric Composition. Journal of Advances in Modeling\nEarth Systems, 14, e2021MS002852. \n[doi:10.1029/2021MS002852](https://doi.org/10.1029/2021MS002852)\n\nNote: these citations refer to the original GEOS-CF (v1) system; citations describing \nthe new (v2) system will be added following publication.\n",
+    "sci:doi": "10.1029/2020MS002413",
+    "version": "v2",
+    "title": "GEOS-CF fcst tavg1hr v2: Goddard Earth Observing System Composition Forecast",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-08-04T00:00:00Z",
+                    "2026-06-18T09:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "atmosphere",
+        "composition",
+        "forecast",
+        "geos",
+        "geos-cf",
+        "gmao",
+        "nasa"
+    ],
+    "providers": [
+        {
+            "name": "NASA / GMAO",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://gmao.gsfc.nasa.gov/gmao-products/geos-cf/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GEOS-CF_v2_fcst_tavg1hr"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Time of creation",
+                "name": "creation_time",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Forecast time",
+                "name": "forecast_time",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Temperature",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "T"
+                        ],
+                        "max": [
+                            320
+                        ],
+                        "min": [
+                            220
+                        ],
+                        "palette": [
+                            "d7191c",
+                            "fdae61",
+                            "ffffbf",
+                            "abd9e9",
+                            "2c7bb6"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 20,
+                    "lon": 100,
+                    "zoom": 3
+                }
+            },
+            {
+                "display_name": "Nitrogen Dioxide",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "NO2"
+                        ],
+                        "max": [
+                            4.42e-08
+                        ],
+                        "min": [
+                            6.96e-11
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 20,
+                    "lon": 100,
+                    "zoom": 3
+                }
+            }
+        ],
+        "gsd": [
+            27750
+        ]
+    }
+}
