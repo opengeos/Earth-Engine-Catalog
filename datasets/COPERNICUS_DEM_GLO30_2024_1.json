@@ -1,6 +1,6 @@
 {
     "type": "Collection",
-    "id": "COPERNICUS/DEM/GLO30",
+    "id": "COPERNICUS/DEM/GLO30_2024_1",
     "stac_version": "1.1.0",
     "description": "The Copernicus DEM is a Digital Surface Model (DSM) which represents the\nsurface of the Earth including buildings, infrastructure and vegetation.\nThis DEM is derived from an edited DSM named WorldDEM&trade;, i.e., flattening of\nwater bodies and consistent flow of rivers has been included. Editing of\nshore- and coastlines, special features such as airports and implausible\nterrain structures has also been applied.\n\nThe WorldDEM product is based on the radar satellite data acquired during\nthe TanDEM-X Mission, which is funded by a Public Private Partnership\nbetween the German State, represented by the German Aerospace Centre (DLR)\nand Airbus Defence and Space. More details are available in the dataset\n[documentation](https://dataspace.copernicus.eu/sites/default/files/media/files/2024-06/geo1988-copernicusdem-spe-002_producthandbook_i5.0.pdf).\n\nThe DSM uses the EGM2008 vertical datum:\n[EPSG:3855](https://spatialreference.org/ref/epsg/3855/). This means a 0\nelevation at a location does not imply the location is at a mean sea level.\n\nEarth Engine asset has been ingested from the DGED files.\n\nNote: See the code example for the recommended way of computing slope.\nUnlike most DEMs in Earth Engine, this is an image collection due to\nmultiple resolutions of source files that make it impossible to mosaic them\ninto a single asset, so the slope computations need a reprojection.\n",
     "links": [
@@ -12,24 +12,36 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/COPERNICUS/COPERNICUS_DEM_GLO30",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/COPERNICUS/COPERNICUS_DEM_GLO30_2024_1",
             "type": "text/html",
-            "title": "Run the example for COPERNICUS/DEM/GLO30 in the Earth Engine Code Editor",
+            "title": "Run the example for COPERNICUS/DEM/GLO30_2024_1 in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/COPERNICUS/COPERNICUS_DEM_GLO30_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/COPERNICUS/COPERNICUS_DEM_GLO30_2024_1_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_DEM_GLO30#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_DEM_GLO30_2024_1#terms-of-use",
             "type": "text/html"
         },
         {
-            "rel": "self",
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_DEM_GLO30_2024_1.json",
+            "type": "application/json",
+            "title": "COPERNICUS/DEM/GLO30_2024_1"
+        },
+        {
+            "rel": "predecessor-version",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_DEM_GLO30.json",
+            "type": "application/json",
+            "title": "COPERNICUS/DEM/GLO30"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/COPERNICUS/COPERNICUS_DEM_GLO30_2024_1.json",
             "type": "application/json"
         },
         {
@@ -40,15 +52,17 @@
         }
     ],
     "stac_extensions": [
-        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
         "elevation-topography"
     ],
-    "gee:terms_of_use": "The GLO-30 dataset is available worldwide with a free license with the\nexception of two countries (Armenia and Azerbaijan). [License for Copernicus\nDEM](https://docs.sentinel-hub.com/api/latest/static/files/data/dem/resources/license/License-COPDEM-30.pdf).\n\n\u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided\nunder COPERNICUS by the European Union and ESA; all rights reserved.\n",
+    "gee:terms_of_use": "The GLO-30 dataset is available worldwide with a free license. [See the terms\nunder 'Licence for the use of the Copernicus\nWorldDEM-30'](https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf).\n\nWhen communicating to the General Public or distributing the Copernicus WorldDEM-30,\nthe User shall inform the General Public of the source by using the following notice:\n\u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS\nby the European Union and ESA; all rights reserved.\n\nWhere the Copernicus WorldDEM-30 data have been adapted or modified, the User shall\nprovide the following notice:\n\"produced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH\n2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\u201d.\n\nThe following sentence or its translation in any language shall be added by such Users\nin a licence or any legal warning or notice covering their distribution or communication\nto the General Public of the Copernicus WorldDEM30:\n\"The organisations in charge of the Copernicus programme by law or by delegation do not\nincur any liability for any use of the Copernicus WorldDEM-30\".\n",
     "gee:type": "image_collection",
+    "version": "2024_1",
     "gee:status": "ready",
-    "title": "Copernicus DEM GLO-30: Global 30m Digital Elevation Model",
+    "title": "Copernicus DEM GLO-30 (2024_1): Global 30m Digital Elevation Model",
     "extent": {
         "spatial": {
             "bbox": [
@@ -64,7 +78,7 @@
             "interval": [
                 [
                     "2010-12-01T00:00:00Z",
-                    "2015-01-31T00:00:00Z"
+                    "2020-11-13T00:00:00Z"
                 ]
             ]
         }
@@ -91,7 +105,7 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_DEM_GLO30"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_DEM_GLO30_2024_1"
         }
     ],
     "summaries": {
@@ -256,6 +270,13 @@
                 "gsd": [
                     30
                 ]
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "The release version of the Copernicus DEM tile (e.g., 02).",
+                "name": "tile_version",
+                "type": "STRING"
             }
         ],
         "gee:visualizations": [

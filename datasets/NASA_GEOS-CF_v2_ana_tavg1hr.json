@@ -47,12 +47,12 @@
     "gee:categories": [
         "atmosphere"
     ],
-    "gee:status": "beta",
     "gee:terms_of_use": "Unless otherwise noted, all NASA-produced data may be used for any purpose\nwithout prior permission. For more information and exceptions visit the\n[NASA Data & Information Policy page](https://earthdata.nasa.gov/collaborate/open-data-services-and-software/data-information-policy).\n",
     "gee:type": "image_collection",
     "sci:citation": "Keller, C. A., Knowland, K. E., Duncan, B. N., Liu, J., Anderson, D. C.,\nDas, S., ... & Pawson, S. (2021). Description of the NASA GEOS composition\nforecast modeling system GEOS-CF v1.0. Journal of Advances in Modeling\nEarth Systems, 13(4), e2020MS002413.\n[doi:10.1029/2020MS002413](https://doi.org/10.1029/2020MS002413)\n\nKnowland, K. E., Keller, C. A., Wales, P. A., Wargan, K., Coy, L., \nJohnson, M.S., ... & Pawson, S. (2022). NASA GEOS Composition Forecast Modeling \nSystem GEOS\u2010CF v1.0: Stratospheric Composition. Journal of Advances in Modeling\nEarth Systems, 14, e2021MS002852. \n[doi:10.1029/2021MS002852](https://doi.org/10.1029/2021MS002852)\n\nNote: these citations refer to the original GEOS-CF (v1) system; citations describing \nthe new (v2) system will be added following publication.\n",
     "sci:doi": "10.1029/2020MS002413",
     "version": "v2",
+    "gee:status": "ready",
     "title": "GEOS-CF ana tavg1hr v2: Goddard Earth Observing System Composition Forecast",
     "extent": {
         "spatial": {
@@ -69,7 +69,7 @@
             "interval": [
                 [
                     "2025-08-04T00:00:00Z",
-                    "2026-07-08T08:00:00Z"
+                    "2026-07-09T08:00:00Z"
                 ]
             ]
         }
