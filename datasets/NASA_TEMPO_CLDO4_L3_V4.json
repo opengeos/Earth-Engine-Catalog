@@ -1,0 +1,231 @@
+{
+    "type": "Collection",
+    "id": "NASA/TEMPO/CLDO4_L3_V4",
+    "stac_version": "1.1.0",
+    "description": "The TEMPO Level 3 Cloud Product (O2-O2 dimer) provides gridded cloud fraction\nand cloud pressure data. These parameters are derived from the O2-O2 absorption\nband near 477 nm and are essential for air quality retrievals and atmospheric\nmonitoring. The data are created by combining and re-gridding Level 2 files\nfrom single East-West scan cycles using an area-weighted methodology.\n\nDocumentation:\n\n* [User's Guide](https://asdc.larc.nasa.gov/documents/tempo/guide/TEMPO_Level-2-3_trace_gas_clouds_user_guide_V1.2.pdf)\n\n* [General Documentation](https://asdc.larc.nasa.gov/project/TEMPO)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_TEMPO_CLDO4_L3_V4",
+            "type": "text/html",
+            "title": "Run the example for NASA/TEMPO/CLDO4_L3_V4 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_TEMPO_CLDO4_L3_V4_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_TEMPO_CLDO4_L3_V4#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/IS-40e/TEMPO/CLDO4_L3.004"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_TEMPO_CLDO4_L3_V4.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
+    "gee:provider_ids": [
+        "C3685896149-LARC_CLOUD"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution.\nSee [NASA's Earth Science Data & Information Policy](https://www.earthdata.nasa.gov/engage/open-data-services-and-software/data-and-information-policy)\nfor additional information.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "NASA/LARC/SD/ASDC.(2025). TEMPO gridded cloud fraction and pressure (O2-O2 dimer) V04 (PROVISIONAL)\n[Data set]. NASA Langley Atmospheric Science Data Center DAAC.\nRetrieved from [10.5067/IS-40e/TEMPO/CLDO4_L3.004](https://doi.org/10.5067/IS-40e/TEMPO/CLDO4_L3.004)\n",
+    "sci:doi": "10.5067/IS-40e/TEMPO/CLDO4_L3.004",
+    "version": "V04",
+    "title": "TEMPO gridded cloud fraction and pressure (O2-O2 dimer) V04 (PROVISIONAL)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -170,
+                    10,
+                    -10,
+                    80
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-08-02T00:00:00Z",
+                    "2026-07-14T15:14:19Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "air-quality",
+        "cloud",
+        "nasa",
+        "pollution",
+        "satellite-imagery",
+        "tempo"
+    ],
+    "providers": [
+        {
+            "name": "NASA ASDC",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/IS-40e/TEMPO/CLDO4_L3.004"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_TEMPO_CLDO4_L3_V4"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Sum of Level 2 pixel overlap areas. Represents the weighting\nfactor for each grid cell, indicating the fraction of the grid\ncell area with valid data.\n",
+                "gee:units": "km^2",
+                "name": "weight",
+                "gsd": [
+                    2226
+                ]
+            },
+            {
+                "description": "Relative azimuth angle at pixel center",
+                "gee:units": "deg",
+                "name": "relative_azimuth_angle",
+                "gsd": [
+                    2226
+                ]
+            },
+            {
+                "description": "Solar zenith angle at pixel center",
+                "gee:units": "deg",
+                "name": "solar_zenith_angle",
+                "gsd": [
+                    2226
+                ]
+            },
+            {
+                "description": "Viewing zenith angle at pixel center",
+                "gee:units": "deg",
+                "name": "viewing_zenith_angle",
+                "gsd": [
+                    2226
+                ]
+            },
+            {
+                "description": "Cloud fraction derived from O2-O2 absorption",
+                "gee:units": "Dimensionless",
+                "name": "cloud_fraction",
+                "gsd": [
+                    2226
+                ]
+            },
+            {
+                "description": "Cloud top pressure derived from O2-O2 absorption",
+                "gee:units": "hPa",
+                "name": "cloud_pressure",
+                "gsd": [
+                    2226
+                ]
+            },
+            {
+                "description": "Cloud radiance fraction at 440 nm",
+                "gee:units": "Dimensionless",
+                "name": "CloudRadianceFraction440",
+                "gsd": [
+                    2226
+                ]
+            },
+            {
+                "description": "Cloud radiance fraction at 466 nm",
+                "gee:units": "Dimensionless",
+                "name": "CloudRadianceFraction466",
+                "gsd": [
+                    2226
+                ]
+            },
+            {
+                "description": "Geometry-dependent Lambertian Equivalent Reflectivity at 440 nm",
+                "gee:units": "Dimensionless",
+                "name": "GLER440",
+                "gsd": [
+                    2226
+                ]
+            },
+            {
+                "description": "Geometry-dependent Lambertian Equivalent Reflectivity at 466 nm",
+                "gee:units": "Dimensionless",
+                "name": "GLER466",
+                "gsd": [
+                    2226
+                ]
+            },
+            {
+                "description": "Surface pressure",
+                "gee:units": "hPa",
+                "name": "surface_pressure",
+                "gsd": [
+                    2226
+                ]
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Cloud Fraction",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "cloud_fraction"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 35,
+                    "lon": -95,
+                    "zoom": 3
+                }
+            }
+        ],
+        "gsd": [
+            2226
+        ],
+        "instruments": [
+            "TEMPO"
+        ]
+    }
+}

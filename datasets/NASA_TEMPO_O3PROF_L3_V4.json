@@ -1,0 +1,141 @@
+{
+    "type": "Collection",
+    "id": "NASA/TEMPO/O3PROF_L3_V4",
+    "stac_version": "1.1.0",
+    "description": "The TEMPO gridded ozone profile V04 (PROVISIONAL) is a Level 3 dataset\nproviding vertical ozone profile information on a regular grid across\nNorth America. Generated from the TEMPO instrument on the IS-40e platform,\nthe data is created by combining and re-gridding Level 2 files from single\nEast-West scan cycles using an area-weighted methodology. These measurements\nare critical for monitoring atmospheric ozone structure, stratospheric-tropospheric\nexchange, and continental air quality.\n\n### Multi-dimensional Band Flattening\nTo conform to Earth Engine's 2D image band model, multi-dimensional variables\nin the source NetCDF files are flattened during ingestion:\n\n*   **Flat Layer Bands:** Variables containing a vertical layer dimension (24 layers,\n    from layer `0` at the top of the atmosphere to layer `23` near the surface)\n    are split into 24 individual bands suffixed with `_0` to `_23`. These include\n    `ozone_profile`, `ozone_profile_error`, `ozone_profile_precision`,\n    `ozone_apriori_profile`, `ozone_apriori_profile_error`, `ozone_profile_altitude`,\n    and `ozone_profile_pressure`.\n\n*   **Layer Bounds (Top/Bottom) Bands:** Variables defining the layer boundaries are\n    split by both layer index (`0` to `23`) and boundary index (top and bottom bounds),\n    resulting in 48 bands suffixed with `_top` and `_bottom` (e.g., `_0_top`, `_0_bottom`\n    ... `_23_top`, `_23_bottom`). These include `ozone_profile_altitude_bounds` and\n    `ozone_profile_pressure_bounds`.\n\n### Spatial Reference for \"Top\" and \"Bottom\" Bounds\n`_top` and `_bottom` refer to spatial elevation relative to the Earth's\nsurface:\n*   **Altitude**: Value increases with height (`_top` > `_bottom`).\n*   **Pressure**: Value decreases with height (`_top` < `_bottom`).\n\nDocumentation:\n\n* [User's Guide](https://asdc.larc.nasa.gov/documents/tempo/guide/TEMPO_Level-2-3_O3PROF_user_guide_V1.1.pdf)\n\n* [General Documentation](https://asdc.larc.nasa.gov/project/TEMPO)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_TEMPO_O3PROF_L3_V4",
+            "type": "text/html",
+            "title": "Run the example for NASA/TEMPO/O3PROF_L3_V4 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_TEMPO_O3PROF_L3_V4_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_TEMPO_O3PROF_L3_V4#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/IS-40E/TEMPO/O3PROF_L3.004"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_TEMPO_O3PROF_L3_V4.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
+    "gee:provider_ids": [
+        "C3685896402-LARC_CLOUD"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution.\nSee [NASA's Earth Science Data & Information Policy](https://www.earthdata.nasa.gov/engage/open-data-services-and-software/data-and-information-policy)\nfor additional information.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "NASA/LARC/SD/ASDC.(2025). TEMPO gridded ozone profile V04 (PROVISIONAL)\n[Data set]. NASA Langley Atmospheric Science Data Center DAAC.\nRetrieved from [10.5067/IS-40E/TEMPO/O3PROF_L3.004](https://doi.org/10.5067/IS-40E/TEMPO/O3PROF_L3.004)\n",
+    "sci:doi": "10.5067/IS-40E/TEMPO/O3PROF_L3.004",
+    "version": "V04",
+    "title": "TEMPO gridded ozone profile V04 (PROVISIONAL)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -170,
+                    10,
+                    -10,
+                    80
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-08-02T00:00:00Z",
+                    "2026-07-14T14:14:19Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "air-quality",
+        "nasa",
+        "ozone",
+        "pollution",
+        "satellite-imagery",
+        "tempo"
+    ],
+    "providers": [
+        {
+            "name": "NASA ASDC",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/IS-40E/TEMPO/O3PROF_L3.004"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_TEMPO_O3PROF_L3_V4"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Total Ozone Column",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "total_ozone_column"
+                        ],
+                        "max": [
+                            500
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 35,
+                    "lon": -95,
+                    "zoom": 3
+                }
+            }
+        ],
+        "gsd": [
+            2226
+        ],
+        "instruments": [
+            "TEMPO"
+        ]
+    }
+}

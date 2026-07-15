@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "NASA/TEMPO/O3_L3_QA",
+    "id": "NASA/TEMPO/O3_L3_V4_QA",
     "stac_version": "1.1.0",
-    "description": "The TEMPO gridded ozone total column V03 (PROVISIONAL) is a Level 3 dataset\nproviding essential total column ozone information on a regular grid across\nNorth America. Generated from the TEMPO instrument on the IS-40e platform,\nthe data is created by combining and re-gridding Level 2 files from single\nEast-West scan cycles using an area-weighted methodology. These measurements\nare critical for monitoring continental air quality and atmospheric\nchemistry and are distributed by the NASA Langley Research Center (LaRC)\nASDC.\n\nThis Level 3 product serves as a quality-controlled version of the Level 2\ndata, pre-filtered to include only the highest-quality retrievals.\nSpecifically, it includes pixels with a quality flag of 0, solar and\nviewing zenith angles (SZA/VZA) below 80\u00b0, and an effective cloud fraction\nunder 0.5.\n\nThis dataset includes auxiliary measurements such as effective and radiative\ncloud properties, sulfur dioxide index, and terrain pressure. These\nparameters support a wide range of research applications while ensuring\nthat users have access to research-ready data that has already been\nscreened for common retrieval anomalies and extreme geometries.\n\nDocumentation:\n\n* [User's Guide](https://asdc.larc.nasa.gov/documents/tempo/guide/TEMPO_Level-2-3_O3TOT_user_guide_V2.0.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://asdc.larc.nasa.gov/documents/tempo/TEMPO_O3TOT_Algorithm_description_V2.0.pdf)\n\n* [General Documentation](https://asdc.larc.nasa.gov/project/TEMPO)\n",
+    "description": "The TEMPO gridded ozone total column V04 (PROVISIONAL) is a Level 3 dataset\nproviding essential total column ozone information on a regular grid across\nNorth America. Generated from the TEMPO instrument on the IS-40e platform,\nthe data is created by combining and re-gridding Level 2 files from single\nEast-West scan cycles using an area-weighted methodology. These measurements\nare critical for monitoring continental air quality and atmospheric\nchemistry and are distributed by the NASA Langley Research Center (LaRC)\nASDC.\n\nThis Level 3 product serves as a quality-controlled version of the Level 2\ndata, pre-filtered to include only the highest-quality retrievals.\nSpecifically, it includes pixels with a quality flag of 0, solar and\nviewing zenith angles (SZA/VZA) below 80\u00b0, and an effective cloud fraction\nunder 0.5.\n\nThis dataset includes auxiliary measurements such as effective and radiative\ncloud properties, sulfur dioxide index, and terrain pressure. These\nparameters support a wide range of research applications while ensuring\nthat users have access to research-ready data that has already been\nscreened for common retrieval anomalies and extreme geometries.\n\nDocumentation:\n\n* [User's Guide](https://asdc.larc.nasa.gov/documents/tempo/guide/TEMPO_Level-2-3_O3TOT_user_guide_V2.0.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://asdc.larc.nasa.gov/documents/tempo/TEMPO_O3TOT_Algorithm_description_V2.0.pdf)\n\n* [General Documentation](https://asdc.larc.nasa.gov/project/TEMPO)\n",
     "links": [
         {
             "rel": "root",
@@ -12,28 +12,40 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_TEMPO_O3_L3_QA",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_TEMPO_O3_L3_V4_QA",
             "type": "text/html",
-            "title": "Run the example for NASA/TEMPO/O3_L3_QA in the Earth Engine Code Editor",
+            "title": "Run the example for NASA/TEMPO/O3_L3_V4_QA in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_TEMPO_O3_L3_QA_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_TEMPO_O3_L3_V4_QA_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_TEMPO_O3_L3_QA#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_TEMPO_O3_L3_V4_QA#terms-of-use",
             "type": "text/html"
         },
         {
             "rel": "cite-as",
-            "href": "https://doi.org/10.5067/IS-40e/TEMPO/O3TOT_L3.003"
+            "href": "https://doi.org/10.5067/IS-40e/TEMPO/O3TOT_L3.004"
+        },
+        {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_TEMPO_O3_L3_V4_QA.json",
+            "type": "application/json",
+            "title": "NASA/TEMPO/O3_L3_V4_QA"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_TEMPO_O3_L3_QA.json",
+            "type": "application/json",
+            "title": "NASA/TEMPO/O3_L3_QA"
         },
         {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_TEMPO_O3_L3_QA.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_TEMPO_O3_L3_V4_QA.json",
             "type": "application/json"
         },
         {
@@ -52,15 +64,15 @@
         "satellite-imagery"
     ],
     "gee:provider_ids": [
-        "C2930764281-LARC_CLOUD"
+        "C3685896625-LARC_CLOUD"
     ],
+    "gee:status": "beta",
     "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution.\nSee [NASA's Earth Science Data & Information Policy](https://www.earthdata.nasa.gov/engage/open-data-services-and-software/data-and-information-policy)\nfor additional information.\n",
     "gee:type": "image_collection",
-    "sci:citation": "NASA/LARC/SD/ASDC.(2024). TEMPO gridded ozone total column V03 (PROVISIONAL)\n[Data set]. NASA Langley Atmospheric Science Data Center DAAC.\nRetrieved from [10.5067/IS-40e/TEMPO/O3TOT_L3.003](https://doi.org/10.5067/IS-40e/TEMPO/O3TOT_L3.003)\n",
-    "sci:doi": "10.5067/IS-40e/TEMPO/O3TOT_L3.003",
-    "version": "V03",
-    "gee:status": "ready",
-    "title": "TEMPO gridded ozone total column V03 (PROVISIONAL)",
+    "sci:citation": "NASA/LARC/SD/ASDC.(2025). TEMPO gridded ozone total column V04 (PROVISIONAL)\n[Data set]. NASA Langley Atmospheric Science Data Center DAAC.\nRetrieved from [10.5067/IS-40e/TEMPO/O3TOT_L3.004](https://doi.org/10.5067/IS-40e/TEMPO/O3TOT_L3.004)\n",
+    "sci:doi": "10.5067/IS-40e/TEMPO/O3TOT_L3.004",
+    "version": "V04",
+    "title": "TEMPO gridded ozone total column V04 (PROVISIONAL)",
     "extent": {
         "spatial": {
             "bbox": [
@@ -76,7 +88,7 @@
             "interval": [
                 [
                     "2023-08-02T00:00:00Z",
-                    "2025-09-16T00:00:00Z"
+                    "2026-07-14T15:14:19Z"
                 ]
             ]
         }
@@ -98,14 +110,14 @@
                 "licensor",
                 "producer"
             ],
-            "url": "https://asdc.larc.nasa.gov/"
+            "url": "https://doi.org/10.5067/IS-40e/TEMPO/O3TOT_L3.004"
         },
         {
             "name": "Google Earth Engine",
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_TEMPO_O3_L3_QA"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_TEMPO_O3_L3_V4_QA"
         }
     ],
     "summaries": {
