@@ -1,0 +1,152 @@
+{
+    "type": "Collection",
+    "id": "ECMWF/ERA5/HOURLY_PRESSURE_LEVELS",
+    "stac_version": "1.1.0",
+    "description": "ERA5 is the fifth generation ECMWF atmospheric reanalysis of the global\nclimate. Reanalysis combines model data with observations from across the\nworld into a globally complete and consistent dataset. ERA5 replaces its\npredecessor, the ERA-Interim reanalysis.\n\nThis dataset contains 3D parameters at 37 pressure levels.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/ECMWF/ECMWF_ERA5_HOURLY_PRESSURE_LEVELS",
+            "type": "text/html",
+            "title": "Run the example for ECMWF/ERA5/HOURLY_PRESSURE_LEVELS in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/ECMWF/ECMWF_ERA5_HOURLY_PRESSURE_LEVELS_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/ECMWF_ERA5_HOURLY_PRESSURE_LEVELS#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ECMWF/ECMWF_ERA5_HOURLY_PRESSURE_LEVELS.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ECMWF/catalog.json",
+            "type": "application/json",
+            "title": "ECMWF"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:categories": [
+        "climate"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "hour"
+    },
+    "gee:terms_of_use": "Please acknowledge the use of ERA5 as stated in the [Copernicus C3S/CAMS License agreement](https://apps.ecmwf.int/datasets/licences/copernicus/).\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Hersbach, H., Bell, B., Berrisford, P., Hirahara, S., Horanyi, A., Munoz-Sabater, J., ... & Thepaut, J. N. (2020). The ERA5 global reanalysis. Quarterly Journal of the Royal Meteorological Society, 146(730), 1999-2049.\n",
+    "gee:status": "ready",
+    "title": "ERA5 Hourly Pressure Levels - ECMWF Climate Reanalysis",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1940-01-01T00:00:00Z",
+                    "2026-06-19T23:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "atmosphere",
+        "climate",
+        "copernicus",
+        "ecmwf",
+        "era5",
+        "hourly",
+        "pressure",
+        "reanalysis",
+        "temperature",
+        "weather",
+        "wind"
+    ],
+    "providers": [
+        {
+            "name": "Copernicus Climate Change Service (C3S)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-pressure-levels?tab=overview"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/ECMWF_ERA5_HOURLY_PRESSURE_LEVELS"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Hour of the day",
+                "name": "hour",
+                "type": "INT"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "U component of wind at 1000hPa",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "u_component_of_wind_1000hPa"
+                        ],
+                        "max": [
+                            15
+                        ],
+                        "min": [
+                            -15
+                        ],
+                        "palette": [
+                            "blue",
+                            "cyan",
+                            "white",
+                            "yellow",
+                            "red"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 40.71,
+                    "lon": -100.55,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            27830
+        ]
+    }
+}
