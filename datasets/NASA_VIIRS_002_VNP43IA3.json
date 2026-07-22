@@ -1,0 +1,216 @@
+{
+    "type": "Collection",
+    "id": "NASA/VIIRS/002/VNP43IA3",
+    "stac_version": "1.1.0",
+    "description": "The NASA/NOAA Suomi National Polar-orbiting Partnership (Suomi NPP) Visible\nInfrared Imaging Radiometer Suite (VIIRS) Bidirectional Reflectance\nDistribution Function (BRDF) and Albedo (BRDF/Albedo) Version 2 product\nprovides albedo estimates at 500 meter resolution. The VNP43IA3 product is\nproduced daily using 16 days of VIIRS data and is weighted temporally to the\nninth day, which is reflected in the file name. It provides both directional\nhemispherical reflectance (black-sky albedo) at local solar noon and\nbihemispherical reflectance (white-sky albedo) for the three VIIRS imagery\nbands (I1, I2, and I3). The VNP43 data products are designed to promote the\ncontinuity of NASA's Moderate Resolution Imaging Spectroradiometer (MODIS)\nBRDF/Albedo data product suite.\n\nThe VNP43 algorithm uses the RossThick/Li-Sparse-Reciprocal (RTLSR)\nsemi-empirical kernel-driven BRDF model, with the three kernel weights from\nVNP43IA1 to reconstruct surface anisotropic effects, correcting the\ndirectional reflectance to a common view geometry (VNP43IA4), while\nalso computing integrated black-sky albedo (BSA) at local solar noon and\nwhite-sky albedo (WSA) (VNP43IA3). Researchers can use the BRDF model\nparameters with a simple polynomial, to obtain black-sky albedo at any solar\nillumination angle. Likewise, both the BSA and WSA Science Dataset (SDS)\nlayers can be used with a simple polynomial, to manually estimate\ninstantaneous actual albedo (blue-sky albedo). Additional details regarding\nthe methodology are available in the Algorithm Theoretical Basis Document\n(ATBD).\n\nDocumentation:\n\n* [User's Guide](https://www.umb.edu/spectralmass/viirs-user-guides-c1-and-c2/vnp43ia3-and-vnp43ma3-albedo-products/)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/194/VNP43_ATBD_V1.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/VIIRS/1/VNP43IA3)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_VIIRS_002_VNP43IA3",
+            "type": "text/html",
+            "title": "Run the example for NASA/VIIRS/002/VNP43IA3 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_VIIRS_002_VNP43IA3_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_VNP43IA3#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/VIIRS/VNP43IA3.002"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_VIIRS_002_VNP43IA3.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C2545314588-LPCLOUD"
+    ],
+    "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Schaaf, C., Z. Wang, A. Erb, I. Paynter. VIIRS/NPP BRDF/Albedo Albedo Daily L3\nGlobal 500m SIN Grid V002. 2024, distributed by NASA EOSDIS Land Processes\nDistributed Active Archive Center,\n[10.5067/VIIRS/VNP43IA3.002](https://doi.org/10.5067/VIIRS/VNP43IA3.002).\n",
+    "sci:doi": "10.5067/VIIRS/VNP43IA3.002",
+    "version": "002",
+    "gee:status": "ready",
+    "title": "VNP43IA3: BRDF/Albedo Daily L3 Global 500m SIN Grid",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-01-17T00:00:00Z",
+                    "2026-07-02T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "albedo",
+        "brdf",
+        "land",
+        "nasa",
+        "noaa",
+        "satellite-imagery",
+        "surface",
+        "viirs"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/VIIRS/VNP43IA3.002"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_VNP43IA3"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "BRDF/Albedo mandatory quality for band I1",
+                "name": "BRDF_Albedo_Band_Mandatory_Quality_I1",
+                "gsd": [
+                    500
+                ]
+            },
+            {
+                "description": "BRDF/Albedo mandatory quality for band I2",
+                "name": "BRDF_Albedo_Band_Mandatory_Quality_I2",
+                "gsd": [
+                    500
+                ]
+            },
+            {
+                "description": "BRDF/Albedo mandatory quality for band I3",
+                "name": "BRDF_Albedo_Band_Mandatory_Quality_I3",
+                "gsd": [
+                    500
+                ]
+            },
+            {
+                "description": "Black-sky albedo for band I1",
+                "name": "Albedo_BSA_I1",
+                "gsd": [
+                    500
+                ]
+            },
+            {
+                "description": "Black-sky albedo for band I2",
+                "name": "Albedo_BSA_I2",
+                "gsd": [
+                    500
+                ]
+            },
+            {
+                "description": "Black-sky albedo for band I3",
+                "name": "Albedo_BSA_I3",
+                "gsd": [
+                    500
+                ]
+            },
+            {
+                "description": "White-sky albedo for band I1",
+                "name": "Albedo_WSA_I1",
+                "gsd": [
+                    500
+                ]
+            },
+            {
+                "description": "White-sky albedo for band I2",
+                "name": "Albedo_WSA_I2",
+                "gsd": [
+                    500
+                ]
+            },
+            {
+                "description": "White-sky albedo for band I3",
+                "name": "Albedo_WSA_I3",
+                "gsd": [
+                    500
+                ]
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Black-sky albedo for band I1",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Albedo_BSA_I1"
+                        ],
+                        "max": [
+                            400
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 80,
+                    "lon": 66,
+                    "zoom": 6
+                }
+            }
+        ],
+        "gsd": [
+            500
+        ],
+        "instruments": [
+            "VIIRS"
+        ],
+        "platform": [
+            "Suomi NPP"
+        ]
+    }
+}
