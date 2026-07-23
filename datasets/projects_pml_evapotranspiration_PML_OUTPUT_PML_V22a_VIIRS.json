@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "projects/pml_evapotranspiration/PML/OUTPUT/PML_V22a",
+    "id": "projects/pml_evapotranspiration/PML/OUTPUT/PML_V22a_VIIRS",
     "stac_version": "1.1.0",
-    "description": "The dataset is produced by the Large Scale Hydrology Lab, which specializes in advancing global and \nregional water cycle research by synthesizing multi-source Earth observations with process-based modeling. \n\nThe PML-V2.2a (MODIS Edition) product provides global terrestrial evapotranspiration (ET) and gross \nprimary production (GPP) at a 500-m, 8-day resolution from 2000 to 2024. Forced by MSWEP and MSWX data, \nthis version features an expanded bottom-up calibration using 208 flux sites and refined parameterizations \nthat explicitly distinguish irrigated from rainfed croplands.\n\nValidation confirms high accuracy across plant functional types (NSE > 0.60, absolute bias < 5%) \nand reliable basin-scale water-balance performance (NSE: 0.89\u20130.91). Optimized for high-resolution \neco-hydrological monitoring, this MODIS-based record provides a robust historical baseline. Due to \nsatellite orbital drift, this asset will no longer be updated post-2024. For near-present monitoring \nand data extending to 2025, please refer to the companion VIIRS Edition asset, which ensures seamless data continuity.\n\nThis dataset is part of the broader PML-V2.2 suite, where the description preprint is available at [Earth System Science Data](https://essd.copernicus.org/preprints/essd-2026-94/). \nFor the long-term and consolidated record (1982-near present, PML-V2.2a/b/c at 0.1\u00b0 resolution with different remote sensing forcings), \nplease visit the [TPDC data repository](https://doi.org/10.11888/Terre.tpdc.303314).\n",
+    "description": "The dataset is produced by the Large Scale Hydrology Lab, which specializes in advancing global and \nregional water cycle research by synthesizing multi-source Earth observations with process-based modeling. \n\nThe PML-V2.2a (VIIRS Edition) product provides global terrestrial evapotranspiration (ET) and gross \nprimary production (GPP) at a 500-m, 8-day resolution from 2012 to 2025. Forced by MSWEP and MSWX data, \nthis version features an expanded bottom-up calibration using 208 flux sites and refined parameterizations \nthat explicitly distinguish irrigated from rainfed croplands.\n\nValidation confirms high accuracy across plant functional types (NSE > 0.60, absolute bias < 5%) \nand reliable basin-scale water-balance performance (NSE: 0.89\u20130.91). Optimized for high-resolution, \nnear-present monitoring, this VIIRS-based record ensures seamless data continuity. For the 2000\u20132024 \nperiod, please refer to the companion MODIS Edition asset, which will no longer be updated due to satellite orbital drift.\n\nThis dataset is part of the broader PML-V2.2 suite, where the description preprint is available at [Earth System Science Data](https://essd.copernicus.org/preprints/essd-2026-94/). \nFor the long-term and consolidated record (1982-near present, PML-V2.2a/b/c at 0.1\u00b0 resolution with different remote sensing forcings), \nplease visit the [TPDC data repository](https://doi.org/10.11888/Terre.tpdc.303314).\n",
     "links": [
         {
             "rel": "root",
@@ -12,19 +12,19 @@
         },
         {
             "rel": "related",
-            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/pml_evapotranspiration/projects_pml_evapotranspiration_PML_OUTPUT_PML_V22a",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/pml_evapotranspiration/projects_pml_evapotranspiration_PML_OUTPUT_PML_V22a_VIIRS",
             "type": "text/html",
-            "title": "Run the example for projects/pml_evapotranspiration/PML/OUTPUT/PML_V22a in the Earth Engine Code Editor",
+            "title": "Run the example for projects/pml_evapotranspiration/PML/OUTPUT/PML_V22a_VIIRS in the Earth Engine Code Editor",
             "code": "JavaScript"
         },
         {
             "rel": "preview",
-            "href": "https://developers.google.com/earth-engine/datasets/images/pml_evapotranspiration/projects_pml_evapotranspiration_PML_OUTPUT_PML_V22a_sample.png",
+            "href": "https://developers.google.com/earth-engine/datasets/images/pml_evapotranspiration/projects_pml_evapotranspiration_PML_OUTPUT_PML_V22a_VIIRS_sample.png",
             "type": "image/png"
         },
         {
             "rel": "license",
-            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_pml_evapotranspiration_PML_OUTPUT_PML_V22a#terms-of-use",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_pml_evapotranspiration_PML_OUTPUT_PML_V22a_VIIRS#terms-of-use",
             "type": "text/html"
         },
         {
@@ -33,20 +33,8 @@
             "type": "text/html"
         },
         {
-            "rel": "latest-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/pml_evapotranspiration/projects_pml_evapotranspiration_PML_OUTPUT_PML_V22a.json",
-            "type": "application/json",
-            "title": "projects/pml_evapotranspiration/PML/OUTPUT/PML_V22a"
-        },
-        {
-            "rel": "predecessor-version",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CAS/CAS_IGSNRR_PML_V2_v018.json",
-            "type": "application/json",
-            "title": "CAS/IGSNRR/PML/V2_v018"
-        },
-        {
             "rel": "self",
-            "href": "https://storage.googleapis.com/earthengine-stac/catalog/pml_evapotranspiration/projects_pml_evapotranspiration_PML_OUTPUT_PML_V22a.json",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/pml_evapotranspiration/projects_pml_evapotranspiration_PML_OUTPUT_PML_V22a_VIIRS.json",
             "type": "application/json"
         },
         {
@@ -70,6 +58,7 @@
         "type": "cadence",
         "unit": "day"
     },
+    "gee:status": "beta",
     "gee:terms_of_use": "Acknowledgements\nWhenever PML datasets are used in a scientific publication, the given references should be cited.\n\nLicense\nThe dataset is licensed under the [CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
@@ -84,9 +73,8 @@
             "doi": "10.1038/srep19124"
         }
     ],
-    "version": "2.2a",
-    "gee:status": "ready",
-    "title": "PML_V2.2a: Coupled Evapotranspiration and Gross Primary Product (MODIS Edition)",
+    "version": "V2.2a-VIIRS",
+    "title": "PML_V2.2a: Coupled Evapotranspiration and Gross Primary Product (VIIRS Edition)",
     "extent": {
         "spatial": {
             "bbox": [
@@ -101,8 +89,8 @@
         "temporal": {
             "interval": [
                 [
-                    "2000-03-05T00:00:00Z",
-                    "2024-12-26T00:00:00Z"
+                    "2012-01-25T00:00:00Z",
+                    "2025-12-27T00:00:00Z"
                 ]
             ]
         }
@@ -136,7 +124,7 @@
             "roles": [
                 "host"
             ],
-            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_pml_evapotranspiration_PML_OUTPUT_PML_V22a"
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_pml_evapotranspiration_PML_OUTPUT_PML_V22a_VIIRS"
         }
     ],
     "summaries": {

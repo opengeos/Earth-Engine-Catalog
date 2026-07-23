@@ -52,7 +52,6 @@
         "type": "cadence",
         "unit": "year"
     },
-    "gee:status": "beta",
     "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
     "gee:type": "image_collection",
     "sci:citation": "Parente, L., Ehrmann, S., Hengl, T., Fritz, S., Bonannella, C., et al. (2026). Global Pasture Watch - Annual livestock headcount layers for livestock, goats, sheep, horses, and buffaloes at 1-km 2000\u20132022 (FAOSTAT-adjusted) (Version v1) [Data set]. Zenodo. [doi:https://doi.org/10.5281/zenodo.20396303](https://doi.org/10.5281/zenodo.20396303)\n",
@@ -64,6 +63,7 @@
         }
     ],
     "version": "1",
+    "gee:status": "ready",
     "title": "GPW Annual livestock headcount FAOSTAT-adjusted v1",
     "extent": {
         "spatial": {
