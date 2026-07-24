@@ -1,0 +1,309 @@
+{
+    "type": "Collection",
+    "id": "LARSE/GEDI/GEDI04_D_002",
+    "stac_version": "1.1.0",
+    "description": "The GEDI Level 4D (L4D) product provides a 30-m spatial elaboration of the mission's sample of footprint-level L2A V002, L2B V002, and L4A Version 2.1 products globally between latitudes -51.6 and 51.6 degrees.\n\nA k-nearest neighbors (k-NN) algorithm was used with Landsat time series data to impute high-quality GEDI shots to every 30-m pixel. A different nearest neighbor model was developed for every 10 x 10-km tile, with potential imputed shots drawn from a support area of at least 30 x 30 km centered on the tile. The imputation assigns the single nearest neighbor using Landsat time series imagery centered on the target year 2023.\n\nThe most basic 30-m output is the shot number of the imputed pixel (relayed in fragments across five fields), from which any shot-level quantity may be retrieved. Predictions for commonly used waveform attributes are also included, such as relative height (RH) metrics from the L2A product, canopy cover from L2B, and aboveground biomass density (AGBD) from L4A.\n\nSee [User Guide](https://daac.ornl.gov/GEDI/guides/GEDI_L4D_Imputed_Waveforms.html) for more information.\n\nThe Global Ecosystem Dynamics Investigation [GEDI](https://gedi.umd.edu/)\nmission aims to characterize ecosystem structure and dynamics to enable\nradically improved quantification and understanding of the Earth's carbon cycle\nand biodiversity. The GEDI instrument, attached to the International Space\nStation (ISS), collects data globally between 51.6&deg; N and 51.6&deg; S\nlatitudes at the highest resolution and densest sampling of the\n3-dimensional structure of the Earth. The GEDI instrument consists of three\nlasers producing a total of eight beam ground transects, which instantaneously\nsample eight ~25 m footprints spaced approximately every 60 m along-track.\n\nProduct                 | Description\n:---------------------  | :----------------------------------------------\nL2A Vector         | [LARSE/GEDI/GEDI02_A_002](LARSE_GEDI_GEDI02_A_002)\nL2A Monthly raster | [LARSE/GEDI/GEDI02_A_002_MONTHLY](LARSE_GEDI_GEDI02_A_002_MONTHLY)\nL2A table index    | [LARSE/GEDI/GEDI02_A_002_INDEX](LARSE_GEDI_GEDI02_A_002_INDEX)\nL2B Vector         | [LARSE/GEDI/GEDI02_B_002](LARSE_GEDI_GEDI02_B_002)\nL2B Monthly raster | [LARSE/GEDI/GEDI02_B_002_MONTHLY](LARSE_GEDI_GEDI02_B_002_MONTHLY)\nL2B table index    | [LARSE/GEDI/GEDI02_B_002_INDEX](LARSE_GEDI_GEDI02_B_002_INDEX)\nL4A Biomass Vector | [LARSE/GEDI/GEDI04_A_002](LARSE_GEDI_GEDI04_A_002)\nL4A Monthly raster | [LARSE/GEDI/GEDI04_A_002_MONTHLY](LARSE_GEDI_GEDI04_A_002_MONTHLY)\nL4A table index    | [LARSE/GEDI/GEDI04_A_002_INDEX](LARSE_GEDI_GEDI04_A_002_INDEX)\nL4B Biomass        | [LARSE/GEDI/GEDI04_B_002](LARSE_GEDI_GEDI04_B_002)\nL4D Imputed Waveforms | [LARSE/GEDI/GEDI04_D_002](LARSE_GEDI_GEDI04_D_002)",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/LARSE/LARSE_GEDI_GEDI04_D_002",
+            "type": "text/html",
+            "title": "Run the example for LARSE/GEDI/GEDI04_D_002 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/LARSE/LARSE_GEDI_GEDI04_D_002_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/LARSE_GEDI_GEDI04_D_002#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.3334/ORNLDAAC/2455"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LARSE/LARSE_GEDI_GEDI04_D_002.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LARSE/catalog.json",
+            "type": "application/json",
+            "title": "LARSE"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "forest-biomass"
+    ],
+    "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy]\n(https://www.earthdata.nasa.gov/engage/open-data-services-and-software/data-and-information-policy)\nfor additional information.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Seo, E., Healey, S. P., Yang, Z., Dubayah, R. O., De Conto, T., & Armston, J. (2025). GEDI L4D Imputed Waveforms, Version 2 (Version 2). ORNL Distributed Active Archive Center. https://doi.org/10.3334/ORNLDAAC/2455\n",
+    "sci:doi": "10.3334/ORNLDAAC/2455",
+    "version": "2",
+    "gee:status": "ready",
+    "title": "GEDI L4D Imputed Waveforms, Version 2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-04-18T00:00:00Z",
+                    "2023-03-16T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "biomass",
+        "canopy",
+        "elevation",
+        "forest",
+        "forest-biomass",
+        "gedi",
+        "larse",
+        "nasa",
+        "tree-cover"
+    ],
+    "providers": [
+        {
+            "name": "ORNL DAAC",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://daac.ornl.gov/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/LARSE_GEDI_GEDI04_D_002"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Relative Height metric (rh10)",
+                "name": "rh10",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Relative Height metric (rh20)",
+                "name": "rh20",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Relative Height metric (rh30)",
+                "name": "rh30",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Relative Height metric (rh40)",
+                "name": "rh40",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Relative Height metric (rh50)",
+                "name": "rh50",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Relative Height metric (rh60)",
+                "name": "rh60",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Relative Height metric (rh70)",
+                "name": "rh70",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Relative Height metric (rh80)",
+                "name": "rh80",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Relative Height metric (rh90)",
+                "name": "rh90",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Relative Height metric (rh95)",
+                "name": "rh95",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Relative Height metric (rh98)",
+                "name": "rh98",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Canopy Cover",
+                "name": "cover_z_000",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Aboveground Biomass Density",
+                "name": "agbd",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Sensitivity",
+                "name": "sensitivity_a2",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Orbit component of shot number",
+                "name": "shot_orbit",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Beam component of shot number",
+                "name": "shot_beam",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Future component of shot number",
+                "name": "shot_future",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Granule component of shot number",
+                "name": "shot_granule",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Shot Index component of shot number",
+                "name": "shot_index",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Quality Assessment mask",
+                "gee:classes": [
+                    {
+                        "description": "No data (pixel outside zone boundary)",
+                        "value": 0
+                    },
+                    {
+                        "description": "Valid data",
+                        "value": 1
+                    },
+                    {
+                        "description": "No data (unavailability of cloud-free CCDC input features)",
+                        "value": 2
+                    },
+                    {
+                        "description": "No data (nearest shot number truncated in GEE L2A product)",
+                        "value": 3
+                    },
+                    {
+                        "description": "Masked out (pixels corresponding to permanent water bodies)",
+                        "value": 4
+                    }
+                ],
+                "name": "QA",
+                "gsd": [
+                    30
+                ]
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Aboveground Biomass Density",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "agbd"
+                        ],
+                        "max": [
+                            60
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "darkred",
+                            "red",
+                            "orange",
+                            "green",
+                            "darkgreen"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 0,
+                    "lon": 0,
+                    "zoom": 3
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    }
+}

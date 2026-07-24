@@ -265,6 +265,30 @@
                 "gsd": [
                     4616
                 ]
+            },
+            {
+                "description": "Nighttime Sea Surface Temperature",
+                "gee:units": "&deg;C",
+                "name": "nsst",
+                "gsd": [
+                    4616
+                ]
+            },
+            {
+                "description": "Photosynthetically Available Radiation",
+                "gee:units": "einstein/m^2/day",
+                "name": "par",
+                "gsd": [
+                    4616
+                ]
+            },
+            {
+                "description": "Diffuse attenuation coefficient at 490nm",
+                "gee:units": "m^-1",
+                "name": "Kd_490",
+                "gsd": [
+                    4616
+                ]
             }
         ],
         "gee:visualizations": [
@@ -295,6 +319,10 @@
         "gsd": [
             4616
         ],
+        "Kd_490": {
+            "minimum": 0.01,
+            "maximum": 6.4
+        },
         "Rrs_412": {
             "minimum": 0,
             "maximum": 0.11
@@ -342,6 +370,14 @@
         "nflh": {
             "minimum": -0.5,
             "maximum": 5.03
+        },
+        "nsst": {
+            "minimum": -2,
+            "maximum": 45
+        },
+        "par": {
+            "minimum": 0,
+            "maximum": 80
         },
         "poc": {
             "minimum": 4,
