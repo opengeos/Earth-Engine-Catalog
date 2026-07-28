@@ -46,7 +46,7 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
     ],
     "gee:categories": [
         "surface-ground-water"
@@ -73,7 +73,7 @@
             "interval": [
                 [
                     "2023-04-04T04:37:01Z",
-                    "2026-07-24T23:57:48Z"
+                    "2026-07-25T23:59:49Z"
                 ]
             ]
         }

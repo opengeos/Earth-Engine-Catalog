@@ -46,7 +46,7 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
     ],
     "gee:categories": [
         "plant-productivity"
@@ -81,7 +81,7 @@
             "interval": [
                 [
                     "2018-07-09T00:00:00Z",
-                    "2026-07-20T00:00:00Z"
+                    "2026-07-22T00:00:00Z"
                 ]
             ]
         }

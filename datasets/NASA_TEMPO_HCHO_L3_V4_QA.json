@@ -57,7 +57,7 @@
     ],
     "stac_extensions": [
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
     ],
     "gee:categories": [
         "satellite-imagery"
@@ -86,7 +86,7 @@
             "interval": [
                 [
                     "2023-08-01T00:00:00Z",
-                    "2026-07-25T14:14:57Z"
+                    "2026-07-27T14:14:55Z"
                 ]
             ]
         }
