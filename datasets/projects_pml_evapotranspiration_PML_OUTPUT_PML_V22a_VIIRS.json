@@ -58,7 +58,6 @@
         "type": "cadence",
         "unit": "day"
     },
-    "gee:status": "beta",
     "gee:terms_of_use": "Acknowledgements\nWhenever PML datasets are used in a scientific publication, the given references should be cited.\n\nLicense\nThe dataset is licensed under the [CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).\n",
     "gee:type": "image_collection",
     "gee:user_uploaded": true,
@@ -74,6 +73,7 @@
         }
     ],
     "version": "V2.2a-VIIRS",
+    "gee:status": "ready",
     "title": "PML_V2.2a: Coupled Evapotranspiration and Gross Primary Product (VIIRS Edition)",
     "extent": {
         "spatial": {
