@@ -50,7 +50,7 @@
         "type": "revisit_interval",
         "unit": "day"
     },
-    "gee:terms_of_use": "The use of Sentinel data is governed by the [Copernicus\nSentinel Data Terms and Conditions.](https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice)\n",
+    "gee:terms_of_use": "The use of Sentinel data is governed by the [Copernicus\nSentinel Data Terms and Conditions.](https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice)\n",
     "gee:type": "image_collection",
     "gee:status": "ready",
     "title": "Sentinel-5P OFFL SO2: Offline Sulfur Dioxide",
@@ -69,7 +69,7 @@
             "interval": [
                 [
                     "2018-12-05T11:53:01Z",
-                    "2026-08-04T07:51:49Z"
+                    "2026-08-05T10:55:44Z"
                 ]
             ]
         }
@@ -97,7 +97,7 @@
                 "licensor",
                 "producer"
             ],
-            "url": "https://sentinel.esa.int/web/sentinel/user-guides/sentinel-5p-tropomi"
+            "url": "https://sentiwiki.copernicus.eu/web/s5p-products"
         },
         {
             "name": "Google Earth Engine",

@@ -50,7 +50,7 @@
         "type": "revisit_interval",
         "unit": "day"
     },
-    "gee:terms_of_use": "The use of Sentinel data is governed by the [Copernicus\nSentinel Data Terms and Conditions.](https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice)\n",
+    "gee:terms_of_use": "The use of Sentinel data is governed by the [Copernicus\nSentinel Data Terms and Conditions.](https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice)\n",
     "gee:type": "image_collection",
     "gee:status": "ready",
     "title": "Sentinel-5P OFFL O3 TCL: Offline Tropospheric Ozone",
@@ -69,7 +69,7 @@
             "interval": [
                 [
                     "2018-04-30T10:50:26Z",
-                    "2026-07-22T11:59:47Z"
+                    "2026-07-23T11:40:43Z"
                 ]
             ]
         }
@@ -95,7 +95,7 @@
                 "licensor",
                 "producer"
             ],
-            "url": "https://sentinel.esa.int/web/sentinel/user-guides/sentinel-5p-tropomi"
+            "url": "https://sentiwiki.copernicus.eu/web/s5p-products"
         },
         {
             "name": "Google Earth Engine",
