@@ -41,7 +41,7 @@
     ],
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
         "atmosphere"
@@ -71,7 +71,7 @@
             "interval": [
                 [
                     "2022-10-29T00:00:00Z",
-                    "2026-08-08T18:40:33.200000Z"
+                    "2026-08-10T19:15:15Z"
                 ]
             ]
         }

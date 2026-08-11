@@ -52,7 +52,7 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
         "landuse-landcover"
@@ -79,7 +79,7 @@
             "interval": [
                 [
                     "2015-06-27T00:00:00Z",
-                    "2026-08-09T20:59:46.696000Z"
+                    "2026-08-10T20:12:38.030000Z"
                 ]
             ]
         }

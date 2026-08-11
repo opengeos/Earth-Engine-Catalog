@@ -58,7 +58,7 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
         "climate"
@@ -90,7 +90,7 @@
             "interval": [
                 [
                     "1979-01-01T00:00:00Z",
-                    "2026-08-08T12:00:00Z"
+                    "2026-08-10T12:00:00Z"
                 ]
             ]
         }

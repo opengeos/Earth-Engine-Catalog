@@ -58,7 +58,7 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/version/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
         "soil"
@@ -92,7 +92,7 @@
             "interval": [
                 [
                     "2015-03-31T00:00:00Z",
-                    "2026-08-06T22:30:00Z"
+                    "2026-08-07T22:30:00Z"
                 ]
             ]
         }
