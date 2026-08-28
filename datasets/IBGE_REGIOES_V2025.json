@@ -1,0 +1,160 @@
+{
+    "type": "Collection",
+    "id": "IBGE/REGIOES/V2025",
+    "stac_version": "1.1.0",
+    "description": "The Instituto Brasileiro de Geografia e Estat&iacute;stica (IBGE) provides official\ncartographic representations of the Brazilian territorial structure. This\ndataset contains the boundaries of the five official Macro Regions of Brazil\n(Norte, Nordeste, Sudeste, Sul, and Centro-Oeste) for reference year 2025\n(Malha Territorial 2025).\n\nMacro regions are groupings of Federation Units (states) established for\nstatistical, planning, and administrative purposes.\n\nFor more information on the methodology and technical specifications, visit\nthe [IBGE Municipal Mesh Documentation](https://www.ibge.gov.br/en/geosciences/territorial-organization/territorial-meshes/2786-np-municipal-mesh/18890-municipal-mesh.html).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/IBGE/IBGE_REGIOES_V2025",
+            "type": "text/html",
+            "title": "Run the example for IBGE/REGIOES/V2025 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/IBGE/IBGE_REGIOES_V2025_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/IBGE_REGIOES_V2025#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/IBGE/IBGE_REGIOES_V2025_FeatureView",
+            "type": "text/html",
+            "title": "Run the example for IBGE/REGIOES/V2025 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "source",
+            "href": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2025/Brasil/BR_Regioes_2025.zip"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/IBGE/IBGE_REGIOES_V2025.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/IBGE/catalog.json",
+            "type": "application/json",
+            "title": "IBGE"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "infrastructure-boundaries"
+    ],
+    "gee:terms_of_use": "This dataset is made available by the Instituto Brasileiro de Geografia e\nEstat&iacute;stica (IBGE) as open public data in accordance with Brazilian\nFederal Law No. 12.527/2011 (Access to Information Law). Users are free to\nuse, modify, and distribute the data for personal, educational, research,\nand commercial applications, with appropriate attribution to IBGE.\n",
+    "gee:type": "table",
+    "version": "2025",
+    "gee:status": "ready",
+    "title": "IBGE: Brazil Macro Regions 2025",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -73.99,
+                    -33.75,
+                    -28.85,
+                    5.27
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-01-01T00:00:00Z",
+                    "2026-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "borders",
+        "boundaries",
+        "brazil",
+        "ibge",
+        "infrastructure-boundaries",
+        "table"
+    ],
+    "providers": [
+        {
+            "name": "IBGE",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ibge.gov.br/en/home-eng.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/IBGE_REGIOES_V2025"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "1-digit Macro Region Code (1=Norte, 2=Nordeste, 3=Sudeste, 4=Sul, 5=Centro-Oeste)",
+                "name": "CD_REGIAO",
+                "type": "STRING"
+            },
+            {
+                "description": "Macro Region Name",
+                "name": "NM_REGIAO",
+                "type": "STRING"
+            },
+            {
+                "description": "Macro Region Abbreviation (N, NE, SE, S, CO)",
+                "name": "SIGLA_RG",
+                "type": "STRING"
+            },
+            {
+                "description": "Area in square kilometers",
+                "name": "AREA_KM2",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Macro Regions",
+                "lookat": {
+                    "lat": -14.235,
+                    "lon": -51.9253,
+                    "zoom": 4
+                },
+                "table_visualization": {
+                    "color": "1b9e77",
+                    "fill_color": "b5ffb4",
+                    "width": 1.5
+                }
+            },
+            {
+                "display_name": "Macro Regions",
+                "visualize_as": "FeatureView"
+            }
+        ],
+        "gee:feature_view_ingestion_params": {
+            "max_features_per_tile": 250,
+            "thinning_ranking": [
+                "AREA_KM2 DESC"
+            ],
+            "thinning_strategy": "HIGHER_DENSITY"
+        }
+    }
+}
