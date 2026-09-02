@@ -1,0 +1,168 @@
+{
+    "type": "Collection",
+    "id": "projects/gcp-public-data-weathernext/assets/weathernext_3_0_0_0p1deg",
+    "stac_version": "1.1.0",
+    "description": "This placeholder text will be replaced with final content later on.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/gcp-public-data-weathernext/projects_gcp-public-data-weathernext_assets_weathernext_3_0_0_0p1deg",
+            "type": "text/html",
+            "title": "Run the example for projects/gcp-public-data-weathernext/assets/weathernext_3_0_0_0p1deg in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/gcp-public-data-weathernext/projects_gcp-public-data-weathernext_assets_weathernext_3_0_0_0p1deg_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_gcp-public-data-weathernext_assets_weathernext_3_0_0_0p1deg#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/gcp-public-data-weathernext/projects_gcp-public-data-weathernext_assets_weathernext_3_0_0_0p1deg.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/gcp-public-data-weathernext/catalog.json",
+            "type": "application/json",
+            "title": "WeatherNext"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    ],
+    "gee:categories": [
+        "climate"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "This placeholder text will be replaced with final content later on.\n",
+    "gee:type": "image_collection",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true,
+    "sci:citation": "This placeholder text will be replaced with final content later on.\n",
+    "title": "WeatherNext 3 (0.1&deg;)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2026-01-01T00:00:00Z",
+                    "2026-09-01T20:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "climate",
+        "forecast",
+        "precipitation",
+        "temperature",
+        "weather",
+        "weathernext",
+        "wind"
+    ],
+    "providers": [
+        {
+            "name": "Google",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://developers.google.com/weathernext"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_gcp-public-data-weathernext_assets_weathernext_3_0_0_0p1deg"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "The initialization time of the forecast. This is the same for all\nforecast hours within a single model run.\n",
+                "name": "start_time",
+                "type": "STRING"
+            },
+            {
+                "description": "The valid time for this specific forecast. Calculated as\nstart_time + forecast_hour.\n",
+                "name": "end_time",
+                "type": "STRING"
+            },
+            {
+                "description": "The forecast lead time in hours. Represents the number of hours from\nthe start_time.\n",
+                "name": "forecast_hour",
+                "type": "INT"
+            },
+            {
+                "description": "The time when this forecast data became available in Earth Engine.\n",
+                "name": "ingestion_time_utc",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "The band names in the order, starting from B0 to B113.\n",
+                "name": "B_",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Temperature 2m Mean",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "temperature_2m_mean"
+                        ],
+                        "max": [
+                            350
+                        ],
+                        "min": [
+                            220
+                        ],
+                        "palette": [
+                            "darkblue",
+                            "blue",
+                            "cyan",
+                            "green",
+                            "yellow",
+                            "orange",
+                            "red",
+                            "darkred"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 52.48,
+                    "lon": 71.72,
+                    "zoom": 1
+                }
+            }
+        ],
+        "gsd": [
+            11132
+        ]
+    }
+}

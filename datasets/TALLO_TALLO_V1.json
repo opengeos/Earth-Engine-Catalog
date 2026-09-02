@@ -1,0 +1,214 @@
+{
+    "type": "Collection",
+    "id": "TALLO/TALLO_V1",
+    "stac_version": "1.1.0",
+    "description": "The Tallo database is a global collection of 498,838 georeferenced and\ntaxonomically standardized individual-tree records compiled across 61,856\nsampling sites globally. Spanning 5,163 tree species, 1,453 genera, and 187\nplant families, Tallo provides individual-tree measurements of stem\ndiameter (DBH), total tree height, and mean crown radius across all major\nterrestrial biomes.\n\nThe database was created to support research in forest ecology, remote\nsensing, and global vegetation carbon modeling. It is described in detail in\n[Jucker et al. (2022)](https://doi.org/10.1111/gcb.16302).\n\nThis dataset is available through BigQuery at\n`earth-engine-public-data.tallo.tallo_v1`.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/TALLO/TALLO_TALLO_V1",
+            "type": "text/html",
+            "title": "Run the example for TALLO/TALLO_V1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/TALLO/TALLO_TALLO_V1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/TALLO_TALLO_V1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "source",
+            "href": "https://doi.org/10.5281/zenodo.6637599"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/TALLO/TALLO_TALLO_V1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/TALLO/catalog.json",
+            "type": "application/json",
+            "title": "TALLO"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:bq_table_name": "earth-engine-public-data.tallo.tallo_v1",
+    "gee:categories": [
+        "forest-biomass",
+        "ecosystems"
+    ],
+    "gee:skip_featureview_generation": true,
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "bigquery_table",
+    "sci:citation": "Jucker, T., Fischer, F. J., Chave, J., Coomes, D. A., Caspersen, J., Ali, A.,\n... & Zavala, M. A. (2022). Tallo: A global tree allometry and crown\narchitecture database. Global Change Biology, 28(17), 5254-5268.\n[doi:10.1111/gcb.16302](https://doi.org/10.1111/gcb.16302)\n",
+    "sci:doi": "10.1111/gcb.16302",
+    "sci:publications": [
+        {
+            "citation": "Jucker, T., Fischer, F. J., Chave, J., Coomes, D. A., Caspersen, J., Ali, A.,\n... & Zavala, M. A. (2022). Tallo: a global tree allometry and crown\narchitecture database (Version 1.0.0) [Data set]. Zenodo.\n[doi:10.5281/zenodo.6637599](https://doi.org/10.5281/zenodo.6637599)\n",
+            "doi": "10.5281/zenodo.6637599"
+        }
+    ],
+    "version": "1.0.0",
+    "gee:status": "ready",
+    "title": "Tallo: A Global Tree Allometry and Crown Architecture Database V1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-06-08T00:00:00Z",
+                    "2022-06-09T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "bigquery",
+        "biodiversity",
+        "biomass",
+        "canopy",
+        "ecosystems",
+        "forest",
+        "forest-biomass",
+        "height",
+        "species"
+    ],
+    "providers": [
+        {
+            "name": "Tommaso Jucker / Selva Lab (University of Bristol)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://github.com/selva-lab-repo/TALLO"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/TALLO_TALLO_V1"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "Unique identifier for each individual tree record in the Tallo database",
+                "name": "tree_id",
+                "type": "STRING"
+            },
+            {
+                "description": "Major taxonomic division (Angiosperm or Gymnosperm)",
+                "name": "division",
+                "type": "STRING"
+            },
+            {
+                "description": "Taxonomic family of the tree (e.g. Rubiaceae, Pinaceae, Fabaceae)",
+                "name": "family",
+                "type": "STRING"
+            },
+            {
+                "description": "Taxonomic genus of the tree (e.g. Coprosma, Pinus, Quercus)",
+                "name": "genus",
+                "type": "STRING"
+            },
+            {
+                "description": "Binomial scientific name of the tree species (e.g. Coprosma ochracea)",
+                "name": "species",
+                "type": "STRING"
+            },
+            {
+                "description": "Latitude of the sampling location in decimal degrees (WGS84)",
+                "name": "latitude",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Longitude of the sampling location in decimal degrees (WGS84)",
+                "name": "longitude",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Geographic point geometry (WGS84)",
+                "name": "geo_point",
+                "type": "GEOMETRY"
+            },
+            {
+                "description": "Stem diameter at breast height (DBH) in centimeters",
+                "name": "stem_diameter_cm",
+                "type": "DOUBLE",
+                "units": "cm"
+            },
+            {
+                "description": "Total tree height in meters",
+                "name": "height_m",
+                "type": "DOUBLE",
+                "units": "m"
+            },
+            {
+                "description": "Mean crown radius of the tree in meters",
+                "name": "crown_radius_m",
+                "type": "DOUBLE",
+                "units": "m"
+            },
+            {
+                "description": "Outlier flag for tree height measurement (Y = outlier, N = valid)",
+                "name": "height_outlier",
+                "type": "STRING"
+            },
+            {
+                "description": "Outlier flag for crown radius measurement (Y = outlier, N = valid)",
+                "name": "crown_radius_outlier",
+                "type": "STRING"
+            },
+            {
+                "description": "Numerical identifier linking record to contributing data source citation",
+                "name": "reference_id",
+                "type": "INT"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Tallo Tree Sampling Locations",
+                "lookat": {
+                    "lat": 38,
+                    "lon": -100.5,
+                    "zoom": 4
+                },
+                "table_visualization": {
+                    "color": "228b22",
+                    "point_size": 2
+                }
+            }
+        ]
+    }
+}
