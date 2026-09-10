@@ -1,0 +1,429 @@
+{
+    "type": "Collection",
+    "id": "OPERA/DIST/L3_DIST-ANN-HLS/V1",
+    "stac_version": "1.1.0",
+    "description": "The Observational Products for End-Users from Remote Sensing Analysis (OPERA)\nLand Surface Disturbance Annual from Harmonized Landsat Sentinel-2 (DIST-ANN-HLS)\nproduct Version 1 summarizes the DIST-ALERT data product into an annual vegetation\ndisturbance data product.\n\nThe DIST-ANN-HLS product provides annual metrics and classifications of\nvegetation disturbance detected from Harmonized Landsat-8/9 and Sentinel-2A/B\n(HLS) surface reflectance data at 30-meter resolution. Disturbances include abrupt\nevents such as wildfire, logging, and clearing, as well as ongoing or longer-term\nchanges. The product includes both vegetation-specific disturbance metrics (VEG)\nand generic disturbance metrics (GEN) across 21 raster layers.\n\nDocumentation:\n\n  * [DIST Product Suite Website](https://www.jpl.nasa.gov/go/opera/products/dist-product-suite/)\n  * [OPERA DIST-HLS Product Specification Document](https://lpdaac.usgs.gov/documents/1766/OPERA_DIST_HLS_Product_Specification_V1.pdf)\n  * [OPERA DIST-HLS Algorithm Theoretical Basis Document](https://lpdaac.usgs.gov/documents/1835/OPERA_DIST_ATBD__V1.pdf)\n  * [NASA Earthdata Search](https://search.earthdata.nasa.gov/search/granules?p=C2519119034-LPCLOUD)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OPERA/OPERA_DIST_L3_DIST-ANN-HLS_V1",
+            "type": "text/html",
+            "title": "Run the example for OPERA/DIST/L3_DIST-ANN-HLS/V1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/OPERA/OPERA_DIST_L3_DIST-ANN-HLS_V1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/OPERA_DIST_L3_DIST-ANN-HLS_V1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/SNWG/OPERA_L3_DIST-ANN-HLS_V1.001"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OPERA/OPERA_DIST_L3_DIST-ANN-HLS_V1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/OPERA/catalog.json",
+            "type": "application/json",
+            "title": "OPERA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "forest-biomass"
+    ],
+    "gee:terms_of_use": "This dataset is openly shared, without restriction, in accordance with\nthe [EOSDIS Data Use and Citation Guidance](https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance)\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Hansen, M. (2024). OPERA Land Surface Disturbance Annual from Harmonized Landsat\nSentinel-2 product (Version 1) [Dataset]. NASA Land Processes Distributed Active\nArchive Center. https://doi.org/10.5067/SNWG/OPERA_L3_DIST-ANN-HLS_V1.001\n",
+    "sci:doi": "10.5067/SNWG/OPERA_L3_DIST-ANN-HLS_V1.001",
+    "version": "V1",
+    "gee:status": "ready",
+    "title": "OPERA Land Surface Disturbance Annual from Harmonized Landsat Sentinel-2 (DIST-ANN-HLS) V1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -84,
+                    180,
+                    84
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-01-01T00:00:00Z",
+                    "2025-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "disturbance",
+        "forest",
+        "forest-biomass",
+        "geophysical",
+        "landsat-derived",
+        "nasa",
+        "opera",
+        "sentinel2-derived",
+        "vegetation"
+    ],
+    "providers": [
+        {
+            "name": "NASA JPL",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.jpl.nasa.gov/go/opera"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/OPERA_DIST_L3_DIST-ANN-HLS_V1"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Status of vegetation disturbance within the calendar year.\n",
+                "gee:classes": [
+                    {
+                        "color": "2e7d32",
+                        "description": "No disturbance detected",
+                        "value": 0
+                    },
+                    {
+                        "color": "ffeb3b",
+                        "description": "Confirmed <50% ongoing disturbance",
+                        "value": 3
+                    },
+                    {
+                        "color": "f44336",
+                        "description": "Confirmed >=50% ongoing disturbance",
+                        "value": 6
+                    },
+                    {
+                        "color": "ff9800",
+                        "description": "Confirmed <50% finished disturbance",
+                        "value": 7
+                    },
+                    {
+                        "color": "b71c1c",
+                        "description": "Confirmed >=50% finished disturbance",
+                        "value": 8
+                    },
+                    {
+                        "color": "d7ccc8",
+                        "description": "Confirmed <50% disturbance from previous year",
+                        "value": 9
+                    },
+                    {
+                        "color": "8d6e63",
+                        "description": "Confirmed >=50% disturbance from previous year",
+                        "value": 10
+                    }
+                ],
+                "name": "VEG-DIST-STATUS",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Maximum vegetation loss anomaly observed during the year.",
+                "gee:units": "%",
+                "name": "VEG-ANOM-MAX",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Day of initial vegetation disturbance detection, denoted as the number of days\nsince December 31, 2020.\nFill value: -1.\n",
+                "gee:units": "d",
+                "name": "VEG-DIST-DATE",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Duration of ongoing vegetation loss anomalies in days.\nFill value: -1.\n",
+                "gee:units": "d",
+                "name": "VEG-DIST-DUR",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Confidence level of vegetation disturbance detection.\nFill value: -1.\n",
+                "name": "VEG-DIST-CONF",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Count of observations with detected vegetation loss during the calendar year.\n",
+                "gee:units": "count",
+                "name": "VEG-DIST-COUNT",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Vegetation loss alert from previous year confirmed in current year.\n",
+                "gee:classes": [
+                    {
+                        "color": "121212",
+                        "description": "No disturbance",
+                        "value": 0
+                    },
+                    {
+                        "color": "d7ccc8",
+                        "description": "Confirmed low previous year",
+                        "value": 1
+                    },
+                    {
+                        "color": "8d6e63",
+                        "description": "Confirmed high previous year",
+                        "value": 2
+                    }
+                ],
+                "name": "VEG-CONF-PREV",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Count of separate vegetation disturbance alerts during the calendar year.\n",
+                "gee:units": "count",
+                "name": "VEG-CONF-COUNT",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Day of last observation for vegetation disturbance monitoring, denoted as the\nnumber of days since December 31, 2020.\nFill value: -1.\n",
+                "gee:units": "d",
+                "name": "VEG-LAST-DATE",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Vegetation cover percent of baseline at time of maximum anomaly (0-100%, 200 = no disturbance).\n",
+                "gee:units": "%",
+                "name": "VEG-HIST",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Maximum vegetation cover indicator, representing estimated percent vegetation cover (0-100%).\n",
+                "gee:units": "%",
+                "name": "VEG-IND-MAX",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Minimum vegetation index percent over 3-year historical baseline.\n",
+                "gee:units": "%",
+                "name": "VEG-IND-3YR-MIN",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Status of generic spectral disturbance within the calendar year.\n",
+                "gee:classes": [
+                    {
+                        "color": "2e7d32",
+                        "description": "No disturbance detected",
+                        "value": 0
+                    },
+                    {
+                        "color": "ffeb3b",
+                        "description": "Confirmed <50% ongoing disturbance",
+                        "value": 3
+                    },
+                    {
+                        "color": "f44336",
+                        "description": "Confirmed >=50% ongoing disturbance",
+                        "value": 6
+                    },
+                    {
+                        "color": "ff9800",
+                        "description": "Confirmed <50% finished disturbance",
+                        "value": 7
+                    },
+                    {
+                        "color": "b71c1c",
+                        "description": "Confirmed >=50% finished disturbance",
+                        "value": 8
+                    },
+                    {
+                        "color": "d7ccc8",
+                        "description": "Confirmed <50% disturbance from previous year",
+                        "value": 9
+                    },
+                    {
+                        "color": "8d6e63",
+                        "description": "Confirmed >=50% disturbance from previous year",
+                        "value": 10
+                    }
+                ],
+                "name": "GEN-DIST-STATUS",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Maximum generic spectral anomaly observed during the year.\nFill value: -1.\n",
+                "name": "GEN-ANOM-MAX",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Day of initial generic disturbance detection, denoted as the number of days\nsince December 31, 2020.\nFill value: -1.\n",
+                "gee:units": "d",
+                "name": "GEN-DIST-DATE",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Duration of ongoing generic disturbance anomalies in days.\nFill value: -1.\n",
+                "gee:units": "d",
+                "name": "GEN-DIST-DUR",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Confidence level of generic disturbance detection.\nFill value: -1.\n",
+                "name": "GEN-DIST-CONF",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Count of observations with detected generic disturbance during the calendar year.\n",
+                "gee:units": "count",
+                "name": "GEN-DIST-COUNT",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Generic disturbance alert from previous year confirmed in current year.\n",
+                "gee:classes": [
+                    {
+                        "color": "121212",
+                        "description": "No disturbance",
+                        "value": 0
+                    },
+                    {
+                        "color": "d7ccc8",
+                        "description": "Confirmed low previous year",
+                        "value": 1
+                    },
+                    {
+                        "color": "8d6e63",
+                        "description": "Confirmed high previous year",
+                        "value": 2
+                    }
+                ],
+                "name": "GEN-CONF-PREV",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Count of separate generic disturbance alerts during the calendar year.\n",
+                "gee:units": "count",
+                "name": "GEN-CONF-COUNT",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Day of last observation for generic disturbance monitoring, denoted as the number\nof days since December 31, 2020.\nFill value: -1.\n",
+                "gee:units": "d",
+                "name": "GEN-LAST-DATE",
+                "gsd": [
+                    30
+                ]
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Percentage of valid data pixels within the granule tile footprint.",
+                "name": "Percent_data",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Vegetation Disturbance Status",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "VEG-DIST-STATUS"
+                        ],
+                        "max": [
+                            10
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "2e7d32",
+                            "2e7d32",
+                            "2e7d32",
+                            "ffeb3b",
+                            "ff9800",
+                            "ff5722",
+                            "f44336",
+                            "ff9800",
+                            "b71c1c",
+                            "d7ccc8",
+                            "8d6e63"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -14.05,
+                    "lon": -60.64,
+                    "zoom": 9
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    }
+}
