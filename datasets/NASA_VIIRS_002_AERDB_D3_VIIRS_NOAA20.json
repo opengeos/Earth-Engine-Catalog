@@ -1,0 +1,154 @@
+{
+    "type": "Collection",
+    "id": "NASA/VIIRS/002/AERDB_D3_VIIRS_NOAA20",
+    "stac_version": "1.1.0",
+    "description": "The Visible Infrared Imaging Radiometer Suite (VIIRS) Deep Blue Level-3\nDaily Global 1-Degree Gridded product (AERDB_D3_VIIRS_NOAA20) provides daily\nglobal gridded aerosol parameters derived from the NOAA-20 (JPSS-1) VIIRS\nsensor. Data are generated using the Deep Blue (DB) algorithm over land and\nthe Satellite Aerosol for Land and Ocean (SOAR) algorithm over ocean.\n\nThe product includes statistical summaries (mean, minimum, maximum, count,\nand standard deviation) of aerosol optical thickness (AOT) at 550 nm across\nland, ocean, and combined land/ocean scenes, along with Angstrom exponent\nretrievals, fine-mode fraction estimates over ocean, and aerosol type\nclassifications. Data are projected on a regular 1.0 degree equal-angle\nglobal grid (EPSG:4326).\n\nDocumentation:\n\n* [Product User Guide](https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/Document%20Archive/Science%20Data%20Product%20Documentation/VIIRS_Deep_Blue_Aerosol_UG_v2_March_2025.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/Document%20Archive/Science%20Data%20Product%20Documentation/Product%20Generation%20Algorithms/VIIRS_Deep_Blue_Aerosol_ATBD_March_2025.pdf)\n\n* [Deep Blue Project](https://deepblue.gsfc.nasa.gov/)\n\n* [LAADS DAAC Product Page](https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/AERDB_D3_VIIRS_NOAA20#documentation)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_VIIRS_002_AERDB_D3_VIIRS_NOAA20",
+            "type": "text/html",
+            "title": "Run the example for NASA/VIIRS/002/AERDB_D3_VIIRS_NOAA20 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_VIIRS_002_AERDB_D3_VIIRS_NOAA20_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_AERDB_D3_VIIRS_NOAA20#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/VIIRS/AERDB_D3_VIIRS_NOAA20.002"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_VIIRS_002_AERDB_D3_VIIRS_NOAA20.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "atmosphere"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "This dataset is freely available under the NASA Earth Science Open Data\nPolicy. Users are requested to cite the dataset using the DOI:\n[https://doi.org/10.5067/VIIRS/AERDB_D3_VIIRS_NOAA20.002](https://doi.org/10.5067/VIIRS/AERDB_D3_VIIRS_NOAA20.002).\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Hsu, C., et al. (2019). VIIRS/NOAA-20 Deep Blue Aerosol Optical Depth Daily L3\nGlobal 1.0 Deg Grid. NASA Goddard Space Flight Center,\n[doi:10.5067/VIIRS/AERDB_D3_VIIRS_NOAA20.002](https://doi.org/10.5067/VIIRS/AERDB_D3_VIIRS_NOAA20.002)\n",
+    "sci:doi": "10.5067/VIIRS/AERDB_D3_VIIRS_NOAA20.002",
+    "version": "2",
+    "gee:status": "ready",
+    "title": "AERDB_D3_VIIRS_NOAA20.002: VIIRS/NOAA-20 Deep Blue Aerosol Optical Depth Daily L3 Global 1.0 Deg Grid",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-02-17T00:00:00Z",
+                    "2026-09-06T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "aerosol",
+        "aot",
+        "atmosphere",
+        "daily",
+        "nasa",
+        "noaa",
+        "viirs"
+    ],
+    "providers": [
+        {
+            "name": "NASA Atmosphere SIPS / LAADS DAAC",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/VIIRS/AERDB_D3_VIIRS_NOAA20.002"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_AERDB_D3_VIIRS_NOAA20"
+        }
+    ],
+    "summaries": {
+        "gee:visualizations": [
+            {
+                "display_name": "Aerosol Optical Thickness at 550nm (Land and Ocean)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Aerosol_Optical_Thickness_550_Land_Ocean_Mean"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "0000ff",
+                            "00ffff",
+                            "00ff00",
+                            "ffff00",
+                            "ff0000"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 20,
+                    "lon": 0,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            111320
+        ],
+        "instruments": [
+            "VIIRS"
+        ],
+        "platform": [
+            "NOAA-20"
+        ]
+    }
+}

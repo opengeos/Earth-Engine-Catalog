@@ -1,0 +1,186 @@
+{
+    "type": "Collection",
+    "id": "CSIRO/BHI/v4",
+    "stac_version": "1.1.0",
+    "description": "The Biodiversity Habitat Index (BHI) v4 dataset, produced by CSIRO using the\nBILBI (Bio-climatic Indicator for Land-use and Biodiversity Impacts) framework,\nmodels global terrestrial biodiversity indicators at 30 arcsecond (~1 km) resolution\nannually from 2000 to 2024.\n\nA complementary static global weighting surface is available as a standalone image\nat CSIRO/BHI/v4_weights. It represents summed compositional similarity across\nterrestrial cells, which is used for calculating regional and global geometric\naggregations of the biodiversity indicators.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/CSIRO/CSIRO_BHI_v4",
+            "type": "text/html",
+            "title": "Run the example for CSIRO/BHI/v4 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/CSIRO/CSIRO_BHI_v4_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/CSIRO_BHI_v4#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.25919/3aka-y730"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CSIRO/CSIRO_BHI_v4.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/CSIRO/catalog.json",
+            "type": "application/json",
+            "title": "CSIRO"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "ecosystems"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:terms_of_use": "[CC-BY-NC-SA-4.0](https://spdx.org/licenses/CC-BY-NC-SA-4.0.html)",
+    "gee:type": "image_collection",
+    "gee:unusual_terms_of_use": true,
+    "sci:citation": "Ware, C., Valavi, R., Vickers, M., Giljohann, K., Mokany, K., Purvis, A.,\nWalkden, P., De Palma, A., Duffin, C., Contu, S., Harwood, T., Hoskins, A.,\nFerrier, S. (2024). Global biodiversity indicator data for BHI, BERI,\nPARC-representativeness, PARC-connectedness and ecosystem condition\n(2000-2024). CSIRO. [doi:10.25919/3aka-y730](https://doi.org/10.25919/3aka-y730)\n",
+    "sci:doi": "10.25919/3aka-y730",
+    "version": "v4",
+    "gee:status": "ready",
+    "title": "CSIRO Biodiversity Habitat Index v4 (BHI v4)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2025-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-NC-SA-4.0",
+    "keywords": [
+        "bhi",
+        "biodiversity",
+        "csiro",
+        "ecosystems",
+        "habitat",
+        "species"
+    ],
+    "providers": [
+        {
+            "name": "CSIRO",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.csiro.au/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/CSIRO_BHI_v4"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Biodiversity Habitat Index: Estimates the proportion of original native\nspecies richness and composition retained within each pixel considering\nlocal habitat condition and ecological context.\n",
+                "name": "bhi",
+                "gsd": [
+                    1000
+                ]
+            },
+            {
+                "description": "Bioclimatic Ecosystem Resilience Index: Measures how well protected area\nnetworks represent the full diversity of terrestrial ecosystems.\n",
+                "name": "beri",
+                "gsd": [
+                    1000
+                ]
+            },
+            {
+                "description": "Protected Area Representativeness: Measures spatial representativeness\nof protected area systems across ecological and climatic gradients.\n",
+                "name": "parc_rep",
+                "gsd": [
+                    1000
+                ]
+            },
+            {
+                "description": "Protected Area Connectedness: Evaluates structural and functional landscape\nconnectivity between protected reserves, critical for species migration\nunder climate change.\n",
+                "name": "parc_con",
+                "gsd": [
+                    1000
+                ]
+            },
+            {
+                "description": "Ecosystem Condition: Relative health and integrity of natural ecosystems\ncompared to undisturbed reference states (0-100%).\n",
+                "gee:units": "%",
+                "name": "ecosystem_condition",
+                "gsd": [
+                    1000
+                ]
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Biodiversity Habitat Index (BHI)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "bhi"
+                        ],
+                        "max": [
+                            1
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "440154",
+                            "3b528b",
+                            "21918c",
+                            "5ec962",
+                            "fde725"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -25.27,
+                    "lon": 133.78,
+                    "zoom": 4
+                }
+            }
+        ],
+        "gsd": [
+            1000
+        ]
+    }
+}
