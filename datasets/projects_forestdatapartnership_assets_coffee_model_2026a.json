@@ -28,6 +28,18 @@
             "type": "text/html"
         },
         {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/forestdatapartnership/projects_forestdatapartnership_assets_coffee_model_2026a.json",
+            "type": "application/json",
+            "title": "projects/forestdatapartnership/assets/coffee/model_2026a"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/forestdatapartnership/projects_forestdatapartnership_assets_coffee_model_2025b.json",
+            "type": "application/json",
+            "title": "projects/forestdatapartnership/assets/coffee/model_2025b"
+        },
+        {
             "rel": "self",
             "href": "https://storage.googleapis.com/earthengine-stac/catalog/forestdatapartnership/projects_forestdatapartnership_assets_coffee_model_2026a.json",
             "type": "application/json"
