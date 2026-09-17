@@ -1,0 +1,175 @@
+{
+    "type": "Collection",
+    "id": "projects/ee-earth-timelapse/assets/annual",
+    "stac_version": "1.1.0",
+    "description": "The Earth Timelapse dataset provides a four-decade visual record of\nplanetary change spanning from 1984 to 2022. Synthesized by Google from\npetabytes of spaceborne observations acquired by NASA/USGS Landsat missions\n(Landsat 4, 5, 7, 8, and 9) and ESA's Copernicus Sentinel-2 constellation,\nthe dataset is offered as annual mosaics for visual interpretation.\n\nThe annual mosaics are globally complete, gap-filled, and water-masked\nvisual basemaps that power the public Google Earth Timelapse interactive\nviewer. Pre-1999 observation voids are smoothly reconstructed using\npixel-wise temporal linear regression interpolation across adjacent\nvalid observation years. Open ocean waters are replaced with styled\nNOAA ETOPO1 shaded-relief bathymetry and global water masking (using Hansen\nGFC and MOD44W datasets). These data are suitable for: visual\ninterpretation, educational storytelling, base mapping, or custom video\nexports.\n\nSee [the Timelapse developer documentation](https://developers.google.com/earth-engine/timelapse/about)\nfor more details on data characteristics, processing, and limitations.\n\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/ee-earth-timelapse/projects_ee-earth-timelapse_assets_annual",
+            "type": "text/html",
+            "title": "Run the example for projects/ee-earth-timelapse/assets/annual in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/ee-earth-timelapse/projects_ee-earth-timelapse_assets_annual_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_ee-earth-timelapse_assets_annual#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ee-earth-timelapse/projects_ee-earth-timelapse_assets_annual.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/ee-earth-timelapse/catalog.json",
+            "type": "application/json",
+            "title": "Earth Timelapse"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
+    "gee:terms_of_use": "This dataset is licensed under\n[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)\nand requires the following attribution:\n\"Google Earth Timelapse (Google, Landsat, Copernicus)\"\nContains modified Copernicus Sentinel data [2015-present]. See the\n[Sentinel Data Legal Notice](https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice).\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Google Earth Timelapse (Google, Landsat, Copernicus). [Online](https://developers.google.com/earth-engine/timelapse/about)\n",
+    "version": "v0",
+    "gee:status": "ready",
+    "title": "Earth Timelapse v0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1984-01-01T00:00:00Z",
+                    "2022-12-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "change",
+        "copernicus",
+        "global",
+        "google",
+        "landsat",
+        "satellite-imagery",
+        "sentinel"
+    ],
+    "providers": [
+        {
+            "name": "Google Earth Outreach",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://developers.google.com/earth-engine/timelapse/about"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_ee-earth-timelapse_assets_annual"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Red value in 8-bits.\n",
+                "name": "red",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Green value in 8-bits.\n",
+                "name": "green",
+                "gsd": [
+                    30
+                ]
+            },
+            {
+                "description": "Blue value in 8-bits.\n",
+                "name": "blue",
+                "gsd": [
+                    30
+                ]
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Observation year of the annual mosaic.",
+                "name": "year",
+                "type": "INT"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Earth Timelapse Natural Color",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "red",
+                            "green",
+                            "blue"
+                        ],
+                        "max": [
+                            255
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 7,
+                    "lon": -7,
+                    "zoom": 6
+                }
+            }
+        ],
+        "gsd": [
+            30
+        ],
+        "blue": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "green": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "red": {
+            "minimum": 0,
+            "maximum": 255
+        }
+    }
+}
