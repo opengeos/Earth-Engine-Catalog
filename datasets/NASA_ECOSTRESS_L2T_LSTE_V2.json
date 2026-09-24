@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "NASA/ECOSTRESS/L2T_LSTE/V2",
     "stac_version": "1.1.0",
-    "description": "The ECOSTRESS Land Surface Temperature and Emissivity (ECO_L2T_LSTE) V002\ndataset provides Land Surface Temperature (LST), LST error, Quality Control\nflags, Broadband Emissivity, cloud mask, surface height, water mask, and\nview zenith angle data at a 70m spatial resolution. This product is derived\nfrom ECOSTRESS observations and is essential for understanding surface energy\nbalance and water stress.\n\nNOTE: Currently, only tiles covering the Los Angeles metro area have been\ningested into Earth Engine. We plan to expand coverage in the future.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1655/ECO_L1C-4_Grid_Tile_User_Guide_V2.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/1869/ECOSTRESSL3JET_ATBD_V1.pdf)\n\n* [General Documentation](https://github.com/nasa/ECOSTRESS-Data-Resources)\n\n* [Land Processes Distributed Active Archive Center](https://www.earthdata.nasa.gov/centers/lp-daac)\n\n",
+    "description": "The ECOSTRESS Land Surface Temperature and Emissivity (ECO_L2T_LSTE) V002\ndataset provides Land Surface Temperature (LST), LST error, Quality Control\nflags, Broadband Emissivity, cloud mask, surface height, water mask, and\nview zenith angle data at a 70m spatial resolution. This product is derived\nfrom ECOSTRESS observations and is essential for understanding surface\nenergy balance and water stress.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1655/ECO_L1C-4_Grid_Tile_User_Guide_V2.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/1869/ECOSTRESSL3JET_ATBD_V1.pdf)\n\n* [General Documentation](https://github.com/nasa/ECOSTRESS-Data-Resources)\n\n* [Land Processes Distributed Active Archive Center](https://www.earthdata.nasa.gov/centers/lp-daac)\n\n",
     "links": [
         {
             "rel": "root",
@@ -59,12 +59,12 @@
     "gee:provider_ids": [
         "C2076090826-LPCLOUD"
     ],
-    "gee:status": "beta",
     "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
     "gee:type": "image_collection",
     "sci:citation": "Hook, Simon, et al. ECOSTRESS Land Surface Temperature and Emissivity L2 Global 70 m\nv002. NASA Land Processes Distributed Active Archive Center, 2023,\ndoi:[10.5067/ECOSTRESS/ECO_L2T_LSTE.002](https://doi.org/10.5067/ECOSTRESS/ECO_L2T_LSTE.002)\n",
     "sci:doi": "10.5067/ECOSTRESS/ECO_L2T_LSTE.002",
     "version": "V002",
+    "gee:status": "ready",
     "title": "ECOSTRESS Land Surface Temperature and Emissivity L2 Global 70 m V002",
     "extent": {
         "spatial": {
@@ -81,7 +81,7 @@
             "interval": [
                 [
                     "2018-07-09T00:00:00Z",
-                    "2026-09-21T16:53:48Z"
+                    "2026-09-22T20:56:53Z"
                 ]
             ]
         }
