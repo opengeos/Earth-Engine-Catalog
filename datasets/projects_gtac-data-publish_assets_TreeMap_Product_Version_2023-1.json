@@ -68,7 +68,6 @@
     "gee:categories": [
         "forest-biomass"
     ],
-    "gee:status": "beta",
     "gee:terms_of_use": "The USDA Forest Service makes no warranty, expressed or implied, including the \nwarranties of merchantability and fitness for a particular purpose, nor assumes \nany legal liability or responsibility for the accuracy, reliability, \ncompleteness or utility of these geospatial data, or for the improper or \nincorrect use of these geospatial data. These geospatial data and related maps \nor graphics are not legal documents and are not intended to be used as such. The \ndata and maps may not be used to determine title, ownership, legal descriptions \nor boundaries, legal jurisdiction, or restrictions that may be in place on \neither public or private land. Natural hazards may or may not be depicted on the \ndata and maps, and land users should exercise due caution. The data are dynamic \nand may change over time. The user is responsible to verify the limitations of \nthe geospatial data and to use the data accordingly.\n\nThese data were collected using funding from the U.S. Government and can be used \nwithout additional permissions or fees. If you use these data in a publication, \npresentation, or other research product please use the appropriate citation for \neach year vintage.\n\nSee TreeMap in the Research Data Archive for additional information.\n* [TreeMap 2016](https://www.fs.usda.gov/rds/archive/catalog/RDS-2021-0074)\n* [TreeMap 2020](https://www.fs.usda.gov/rds/archive/catalog/RDS-2025-0031)  \n* [TreeMap 2022](https://www.fs.usda.gov/rds/archive/catalog/RDS-2025-0032)  \n* [TreeMap 2023](https://www.fs.usda.gov/rds/archive/catalog/RDS-2026-0038)\n\n",
     "gee:type": "image_collection",
     "sci:citation": "TreeMap is updated periodically. To ensure scientific reproducibility, please \ncite the specific version(s) corresponding to the data year(s) used in your \nanalysis. Individual citations for each TreeMap vintage are listed below.\n\n",
@@ -98,6 +97,7 @@
         }
     ],
     "version": "v2023-1",
+    "gee:status": "ready",
     "title": "USFS TreeMap 2023-1",
     "extent": {
         "spatial": {
