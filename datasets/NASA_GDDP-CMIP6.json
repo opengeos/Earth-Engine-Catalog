@@ -29,7 +29,7 @@
         },
         {
             "rel": "license",
-            "href": "https://pcmdi.llnl.gov/CMIP6/TermsOfUse/TermsOfUse6-1.html",
+            "href": "https://spdx.org/licenses/CC0-1.0.html",
             "type": "text/html"
         },
         {
@@ -57,7 +57,7 @@
         "type": "cadence",
         "unit": "day"
     },
-    "gee:terms_of_use": "All CMIP6 GCM model inputs and any derivatives work, such as this dataset,\nare governed by the original\n[Terms of use](https://pcmdi.llnl.gov/CMIP6/TermsOfUse/TermsOfUse6-1.html)\nand may have some restrictions on usage. See the \"license\" property on\neach EE Image that notes the specific license the data may fall under.\n\n(Note that while the official Terms of Use mention that some models are\nrestricted under 'CC-BY-SA-4.0' (Creative Commons Attribution Share Alike 4.0 International), models available in Earth Engine either fall\nunder 'CC-BY-4.0' (Creative Commons Attribution 4.0 International) or 'CC0-1.0' (Creative Commons Zero v1.0 Universal).)\n",
+    "gee:terms_of_use": "As of September 2022, all NEX-GDDP-CMIP6 outputs are made available by the\nprovider under a blanket [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html) license.\n\nSome models in the original dataset were initially released\nunder 'CC-BY-SA-4.0' (Creative Commons Attribution Share Alike 4.0 International), as required by the data\nlicense of the original CMIP6 inputs, and individual EE Images may still\ncarry a \"license\" property inherited from that original CMIP6 file\nmetadata. The blanket CC0 license supersedes those properties.\n",
     "gee:type": "image_collection",
     "sci:citation": "Thrasher, B., Maurer, E. P., McKellar, C., & Duffy, P. B., 2012:\nTechnical Note: Bias correcting climate model simulated daily temperature\nextremes with quantile mapping. Hydrology and Earth System Sciences,\n16(9), 3309-3314.\n[doi:10.5194/hess-16-3309-2012](https://doi.org/10.5194/hess-16-3309-2012)\n",
     "version": "1",
@@ -83,7 +83,7 @@
             ]
         }
     },
-    "license": "other",
+    "license": "CC0-1.0",
     "keywords": [
         "cag",
         "climate",
