@@ -73,7 +73,7 @@
             "interval": [
                 [
                     "2024-08-01T00:00:00Z",
-                    "2026-10-04T18:58:26Z"
+                    "2026-10-05T16:20:07Z"
                 ]
             ]
         }
@@ -134,11 +134,6 @@
                         "color": "a9a9a9",
                         "description": "Layover/shadow masked - an area identified as layover or\nshadow computed from the geometry of the digital elevation\nmodel and sensor. The area is directly copied from input\nburst RTC-S1 products.\n",
                         "value": 251
-                    },
-                    {
-                        "color": "000080",
-                        "description": "Ocean masked - an area identified as ocean using\na shoreline database with an added margin.\n",
-                        "value": 254
                     }
                 ],
                 "name": "WTR_Water_classification",
@@ -151,7 +146,7 @@
                 "gee:classes": [
                     {
                         "color": "ffffff",
-                        "description": "Not water - an area with valid data that is not water\n(class 1) and not HAND masked (class 252), layover or\nshadow (class 253)\n",
+                        "description": "Not water - an area with valid data that is not water\n(class 1) and not HAND masked (class 250), layover or\nshadow (class 251)\n",
                         "value": 0
                     },
                     {
