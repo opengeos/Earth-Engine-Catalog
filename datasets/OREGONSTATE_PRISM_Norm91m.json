@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "OREGONSTATE/PRISM/Norm91m",
     "stac_version": "1.1.0",
-    "description": "The PRISM daily and monthly datasets are gridded climate\ndatasets for the conterminous United States, produced by the\nPRISM Climate Group at Oregon State University.\n\nGrids are\ndeveloped using PRISM (Parameter-elevation Regressions on Independent\nSlopes Model). PRISM interpolation routines simulate how weather\nand climate vary with elevation, and account for coastal effects,\ntemperature inversions, and terrain barriers that can cause rain\nshadows. Station data are assimilated from many networks across\nthe country. For more information, see the [Descriptions of PRISM\nSpatial Climate Datasets](https://www.prism.oregonstate.edu/documents/PRISM_datasets.pdf).\n",
+    "description": "The PRISM daily and monthly datasets are gridded weather\ndatasets for the conterminous United States, produced by the\nPRISM Group at Oregon State University.\n\nGrids are\ndeveloped using PRISM (Parameter-elevation Regressions on Independent\nSlopes Model). PRISM interpolation routines simulate how weather\nvaries with elevation, and account for coastal effects,\ntemperature inversions, and terrain barriers that can cause rain\nshadows. Station data are assimilated from many networks across\nthe country. For more information, see the [Descriptions of PRISM\nSpatial Datasets](https://www.prism.oregonstate.edu/documents/PRISM_datasets.pdf).\n",
     "links": [
         {
             "rel": "root",
@@ -69,7 +69,7 @@
         "type": "climatological_interval",
         "unit": "month"
     },
-    "gee:terms_of_use": "These PRISM datasets are available without restriction\non use or distribution. PRISM Climate Group does request that the\nuser give proper attribution and identify PRISM, where applicable,\nas the source of the data.\n[https://prism.oregonstate.edu/terms/](https://prism.oregonstate.edu/terms/)\n",
+    "gee:terms_of_use": "These PRISM datasets are available without restriction\non use or distribution. PRISM Group does request that the\nuser give proper attribution and identify PRISM, where applicable,\nas the source of the data.\n[https://prism.oregonstate.edu/terms/](https://prism.oregonstate.edu/terms/)\n",
     "gee:type": "image_collection",
     "sci:citation": "Daly, C., Halbleib, M., Smith, J.I., Gibson, W.P., Doggett, M.K.,\nTaylor, G.H., Curtis, J., and Pasteris, P.A. 2008. Physiographically-sensitive\nmapping of temperature and precipitation across the conterminous\nUnited States. International Journal of Climatology, 28: 2031-2064\n[doi:10.1002/joc.1688](https://doi.org/10.1002/joc.1688)\n[pdf](https://www.prism.oregonstate.edu/documents/pubs/2008intjclim_physiographicMapping_daly.pdf).\n",
     "sci:publications": [
@@ -80,7 +80,7 @@
     ],
     "version": "91m",
     "gee:status": "ready",
-    "title": "PRISM Long-Term Average Climate Dataset Norm91m",
+    "title": "PRISM Long-Term Normals Dataset Norm91m",
     "extent": {
         "spatial": {
             "bbox": [

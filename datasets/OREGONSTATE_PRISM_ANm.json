@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "OREGONSTATE/PRISM/ANm",
     "stac_version": "1.1.0",
-    "description": "The PRISM daily and monthly datasets are gridded climate\ndatasets for the conterminous United States, produced by the\nPRISM Climate Group at Oregon State University.\nThis collection contains both AN81 and AN91\ndata, as indicated by the 'dataset_type' property.\n\nGrids are\ndeveloped using PRISM (Parameter-elevation Regressions on Independent\nSlopes Model). PRISM interpolation routines simulate how weather\nand climate vary with elevation, and account for coastal effects,\ntemperature inversions, and terrain barriers that can cause rain\nshadows. Station data are assimilated from many networks across\nthe country. For more information, see the [Descriptions of PRISM\nSpatial Climate Datasets](https://www.prism.oregonstate.edu/documents/PRISM_datasets.pdf).\n\n**Note**\n\n* **Warning**: This dataset should not be\n  used to calculate century-long climate trends due to non-climatic\n  variations from to station equipment and location changes, openings\n  and closings, varying observation times, and the use of relatively\n  short-term networks. Please see the [dataset documentation\n  ](https://www.prism.oregonstate.edu/documents/PRISM_datasets.pdf)\n  for more details.\n* The assets have start time of noon UTC, not midnight UTC.\n* It takes time for observation networks to conduct quality control and\n  release station data. Therefore,\n  PRISM datasets are re-modeled several times until six months\n  have elapsed, when they are considered permanent. A [release\n  schedule is available](https://www.prism.oregonstate.edu/calendar/).\n",
+    "description": "The PRISM daily and monthly datasets are gridded weather\ndatasets for the conterminous United States, produced by the\nPRISM Group at Oregon State University.\nThis collection contains both AN81 and AN91\ndata, as indicated by the 'dataset_type' property.\n\nGrids are\ndeveloped using PRISM (Parameter-elevation Regressions on Independent\nSlopes Model). PRISM interpolation routines simulate how weather\nvaries with elevation, and account for coastal effects,\ntemperature inversions, and terrain barriers that can cause rain\nshadows. Station data are assimilated from many networks across\nthe country. For more information, see the [Descriptions of PRISM\nSpatial Datasets](https://www.prism.oregonstate.edu/documents/PRISM_datasets.pdf).\n\n**Note**\n\n* **Warning**: This dataset should not be\n  used to calculate century-long trends due to non-weather-related\n  variations from station equipment and location changes, openings\n  and closings, varying observation times, and the use of relatively\n  short-term networks. Please see the [dataset documentation\n  ](https://www.prism.oregonstate.edu/documents/PRISM_datasets.pdf)\n  for more details.\n* The assets have start time of noon UTC, not midnight UTC.\n* It takes time for observation networks to conduct quality control and\n  release station data. Therefore,\n  PRISM datasets are re-modeled several times until six months\n  have elapsed, when they are considered permanent. A [release\n  schedule is available](https://www.prism.oregonstate.edu/calendar/).\n",
     "links": [
         {
             "rel": "root",
@@ -64,7 +64,7 @@
         "type": "cadence",
         "unit": "month"
     },
-    "gee:terms_of_use": "These PRISM datasets are available without restriction\non use or distribution. PRISM Climate Group does request that the\nuser give proper attribution and identify PRISM, where applicable,\nas the source of the data.\n",
+    "gee:terms_of_use": "These PRISM datasets are available without restriction\non use or distribution. PRISM Group does request that the\nuser give proper attribution and identify PRISM, where applicable,\nas the source of the data.\n",
     "gee:type": "image_collection",
     "sci:citation": "[Daly, C., Halbleib, M., Smith, J.I., Gibson, W.P., Doggett, M.K.,\nTaylor, G.H., Curtis, J., and Pasteris, P.A. 2008. Physiographically-sensitive\nmapping of temperature and precipitation across the conterminous\nUnited States. International Journal of Climatology, 28: 2031-2064](https://www.prism.oregonstate.edu/documents/pubs/2008intjclim_physiographicMapping_daly.pdf)\n",
     "sci:publications": [
@@ -75,7 +75,7 @@
     ],
     "version": "81_91",
     "gee:status": "ready",
-    "title": "PRISM Monthly Spatial Climate Dataset ANm",
+    "title": "PRISM Monthly Spatial Dataset ANm",
     "extent": {
         "spatial": {
             "bbox": [
