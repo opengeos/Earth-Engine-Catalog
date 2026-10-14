@@ -44,7 +44,7 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
     ],
     "gee:categories": [
-        "climate"
+        "weather-and-climate"
     ],
     "gee:interval": {
         "interval": 1,
@@ -71,7 +71,7 @@
             "interval": [
                 [
                     "1940-01-01T00:00:00Z",
-                    "2026-10-05T23:00:00Z"
+                    "2026-10-06T23:00:00Z"
                 ]
             ]
         }
@@ -88,6 +88,7 @@
         "reanalysis",
         "temperature",
         "weather",
+        "weather-and-climate",
         "wind"
     ],
     "providers": [

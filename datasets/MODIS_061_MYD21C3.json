@@ -49,7 +49,7 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "climate"
+        "weather-and-climate"
     ],
     "gee:interval": {
         "interval": 1,
@@ -89,14 +89,14 @@
     "license": "other",
     "keywords": [
         "aqua",
-        "climate",
         "emissivity",
         "global",
         "lst",
         "monthly",
         "nasa",
         "surface-temperature",
-        "usgs"
+        "usgs",
+        "weather-and-climate"
     ],
     "providers": [
         {

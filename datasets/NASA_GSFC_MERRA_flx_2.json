@@ -49,8 +49,8 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "climate",
-        "precipitation"
+        "precipitation",
+        "weather-and-climate"
     ],
     "gee:interval": {
         "interval": 1,
@@ -90,7 +90,8 @@
         "sea-salt",
         "so2",
         "so4",
-        "soil-moisture"
+        "soil-moisture",
+        "weather-and-climate"
     ],
     "providers": [
         {

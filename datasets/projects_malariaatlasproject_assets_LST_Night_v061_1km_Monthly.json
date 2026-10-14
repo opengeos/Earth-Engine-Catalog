@@ -57,7 +57,7 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "climate"
+        "weather-and-climate"
     ],
     "gee:interval": {
         "interval": 1,
@@ -93,10 +93,10 @@
     },
     "license": "CC-BY-NC-SA-4.0",
     "keywords": [
-        "climate",
         "lst",
         "map",
-        "surface-temperature"
+        "surface-temperature",
+        "weather-and-climate"
     ],
     "providers": [
         {

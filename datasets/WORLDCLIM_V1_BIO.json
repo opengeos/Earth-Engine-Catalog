@@ -50,7 +50,7 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "climate"
+        "weather-and-climate"
     ],
     "gee:terms_of_use": "[CC-BY-SA-4.0](https://spdx.org/licenses/CC-BY-SA-4.0.html)",
     "gee:type": "image",
@@ -94,6 +94,7 @@
         "temperature",
         "warmest",
         "weather",
+        "weather-and-climate",
         "wettest",
         "worldclim"
     ],

@@ -49,11 +49,11 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "climate",
         "cryosphere",
         "precipitation",
         "soil",
-        "water-vapor"
+        "water-vapor",
+        "weather-and-climate"
     ],
     "gee:interval": {
         "interval": 1,
@@ -113,6 +113,7 @@
         "soil-temperature",
         "temperature",
         "water-vapor",
+        "weather-and-climate",
         "wind"
     ],
     "providers": [

@@ -44,9 +44,9 @@
         "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
     ],
     "gee:categories": [
-        "climate",
         "precipitation",
-        "water-vapor"
+        "water-vapor",
+        "weather-and-climate"
     ],
     "gee:interval": {
         "interval": 1,
@@ -73,7 +73,7 @@
             "interval": [
                 [
                     "1979-01-01T00:00:00Z",
-                    "2026-10-09T06:00:00Z"
+                    "2026-10-10T06:00:00Z"
                 ]
             ]
         }
@@ -91,6 +91,7 @@
         "radiation",
         "temperature",
         "water-vapor",
+        "weather-and-climate",
         "wind"
     ],
     "providers": [

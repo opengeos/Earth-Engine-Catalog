@@ -50,7 +50,7 @@
     ],
     "gee:categories": [
         "atmosphere",
-        "climate"
+        "weather-and-climate"
     ],
     "gee:interval": {
         "interval": 1,
@@ -90,7 +90,8 @@
         "emissivity",
         "merra",
         "shortwave",
-        "temperature"
+        "temperature",
+        "weather-and-climate"
     ],
     "providers": [
         {

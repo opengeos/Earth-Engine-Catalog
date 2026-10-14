@@ -61,7 +61,7 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "climate"
+        "weather-and-climate"
     ],
     "gee:interval": {
         "interval": 1,
@@ -100,7 +100,6 @@
     },
     "license": "other",
     "keywords": [
-        "climate",
         "daily",
         "emissivity",
         "global",
@@ -110,7 +109,8 @@
         "nasa",
         "surface-temperature",
         "terra",
-        "usgs"
+        "usgs",
+        "weather-and-climate"
     ],
     "providers": [
         {

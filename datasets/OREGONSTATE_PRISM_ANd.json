@@ -57,7 +57,7 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "climate"
+        "weather-and-climate"
     ],
     "gee:interval": {
         "interval": 1,
@@ -91,14 +91,13 @@
             "interval": [
                 [
                     "1981-01-01T00:00:00Z",
-                    "2026-10-08T12:00:00Z"
+                    "2026-10-09T12:00:00Z"
                 ]
             ]
         }
     },
     "license": "other",
     "keywords": [
-        "climate",
         "daily",
         "geophysical",
         "oregonstate",
@@ -107,7 +106,8 @@
         "prism",
         "temperature",
         "vapor",
-        "weather"
+        "weather",
+        "weather-and-climate"
     ],
     "providers": [
         {

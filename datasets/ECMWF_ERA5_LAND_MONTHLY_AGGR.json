@@ -57,7 +57,7 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "climate"
+        "weather-and-climate"
     ],
     "gee:interval": {
         "interval": 1,
@@ -109,6 +109,7 @@
         "soil-water",
         "temperature",
         "vegetation",
+        "weather-and-climate",
         "wind"
     ],
     "providers": [

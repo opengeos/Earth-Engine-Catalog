@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "CSIRO/BHI/v4",
     "stac_version": "1.1.0",
-    "description": "The Biodiversity Habitat Index (BHI) v4 dataset, produced by CSIRO using the\nBILBI (Bio-climatic Indicator for Land-use and Biodiversity Impacts) framework,\nmodels global terrestrial biodiversity indicators at 30 arcsecond (~1 km) resolution\nannually from 2000 to 2024.\n\nA complementary static global weighting surface is available as a standalone image\nat CSIRO/BHI/v4_weights. It represents summed compositional similarity across\nterrestrial cells, which is used for calculating regional and global geometric\naggregations of the biodiversity indicators.\n",
+    "description": "The CSIRO biodiversity indicators v4 dataset, produced by CSIRO using the BILBI\n(Biogeographic Infrastructure for Large-scale Biodiversity Indicators) framework,\nmodels global terrestrial biodiversity indicators at 30 arcsecond (~1 km) resolution\nannually from 2000 to 2024. These indicators provide a system-level view of change\nin biodiversity protection, expected persistence, and resilience in the face of\nclimate change.\n\nA complementary static global weighting surface is available as a standalone image\nat CSIRO/BHI/v4_weights. It represents summed compositional similarity across\nterrestrial pixels, which is used for calculating regional and global geometric\naggregations of the biodiversity indicators.\n\nFor more detailed explanations of the indicators and how they are derived, see\n[CSIRO Biodiversity Modelling](https://research.csiro.au/biodiversitymodelling/indicators-tracking-progress-for-biodiversity/).\n",
     "links": [
         {
             "rel": "root",
@@ -63,7 +63,7 @@
     "sci:doi": "10.25919/3aka-y730",
     "version": "v4",
     "gee:status": "ready",
-    "title": "CSIRO Biodiversity Habitat Index v4 (BHI v4)",
+    "title": "CSIRO Global Biodiversity Indicators",
     "extent": {
         "spatial": {
             "bbox": [
@@ -113,35 +113,35 @@
     "summaries": {
         "eo:bands": [
             {
-                "description": "Biodiversity Habitat Index: Estimates the proportion of original native\nspecies richness and composition retained within each pixel considering\nlocal habitat condition and ecological context.\n",
+                "description": "Biodiversity Habitat Index: Estimates the proportion of species diversity\nretained within each pixel as a function of the area, condition, and\nconnectivity of natural ecosystems.\n",
                 "name": "bhi",
                 "gsd": [
                     1000
                 ]
             },
             {
-                "description": "Bioclimatic Ecosystem Resilience Index: Measures how well protected area\nnetworks represent the full diversity of terrestrial ecosystems.\n",
+                "description": "Bioclimatic Ecosystem Resilience Index: Estimates the capacity of landscapes to\nretain species diversity in the face of climate change as a function of the area,\ncondition, and connectivity of natural ecosystems across those landscapes.\n",
                 "name": "beri",
                 "gsd": [
                     1000
                 ]
             },
             {
-                "description": "Protected Area Representativeness: Measures spatial representativeness\nof protected area systems across ecological and climatic gradients.\n",
+                "description": "Protected Area Representativeness: Estimates the extent to which a system of\nterrestrial protected areas is ecologically representative of the full range of\nenvironmental and biological diversity in any region.\n",
                 "name": "parc_rep",
                 "gsd": [
                     1000
                 ]
             },
             {
-                "description": "Protected Area Connectedness: Evaluates structural and functional landscape\nconnectivity between protected reserves, critical for species migration\nunder climate change.\n",
+                "description": "Protected Area Connectedness: Estimates the extent to which protected areas are\nfunctionally connected to one another and to other areas of intact natural ecosystems.\n",
                 "name": "parc_con",
                 "gsd": [
                     1000
                 ]
             },
             {
-                "description": "Ecosystem Condition: Relative health and integrity of natural ecosystems\ncompared to undisturbed reference states (0-100%).\n",
+                "description": "Ecosystem Condition: Estimates the biological integrity of any location compared\nto undisturbed reference states (0-100%).\n",
                 "gee:units": "%",
                 "name": "ecosystem_condition",
                 "gsd": [

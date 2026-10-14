@@ -43,7 +43,7 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
     ],
     "gee:categories": [
-        "climate"
+        "weather-and-climate"
     ],
     "gee:terms_of_use": "The NOAA CPC datasets are available without restriction\non use or distribution. NOAA PSL does request that the\nuser give proper attribution and identify NOAA PSL, where applicable,\nas the source of the data.\n",
     "gee:type": "image_collection",
@@ -64,7 +64,7 @@
             "interval": [
                 [
                     "1979-01-01T00:00:00Z",
-                    "2026-10-10T00:00:00Z"
+                    "2026-10-11T00:00:00Z"
                 ]
             ]
         }
@@ -75,7 +75,8 @@
         "daily",
         "noaa",
         "precipitation",
-        "weather"
+        "weather",
+        "weather-and-climate"
     ],
     "providers": [
         {

@@ -45,7 +45,7 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "climate"
+        "weather-and-climate"
     ],
     "gee:interval": {
         "interval": 1,
@@ -98,6 +98,7 @@
         "reanalysis",
         "temperature",
         "ucsb",
+        "weather-and-climate",
         "wind"
     ],
     "providers": [

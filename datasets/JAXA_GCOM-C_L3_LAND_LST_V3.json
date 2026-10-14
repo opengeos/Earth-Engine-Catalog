@@ -50,7 +50,7 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "climate"
+        "weather-and-climate"
     ],
     "gee:interval": {
         "interval": 1,
@@ -78,7 +78,7 @@
             "interval": [
                 [
                     "2021-11-29T00:00:00Z",
-                    "2026-10-10T00:00:00Z"
+                    "2026-10-11T00:00:00Z"
                 ]
             ]
         }
@@ -92,7 +92,8 @@
         "jaxa",
         "land",
         "land-surface-temperature",
-        "lst"
+        "lst",
+        "weather-and-climate"
     ],
     "providers": [
         {

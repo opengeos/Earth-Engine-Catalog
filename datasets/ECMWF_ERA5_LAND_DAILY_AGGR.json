@@ -45,7 +45,7 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "climate"
+        "weather-and-climate"
     ],
     "gee:interval": {
         "interval": 1,
@@ -73,7 +73,7 @@
             "interval": [
                 [
                     "1950-01-02T00:00:00Z",
-                    "2026-10-04T00:00:00Z"
+                    "2026-10-05T00:00:00Z"
                 ]
             ]
         }
@@ -97,6 +97,7 @@
         "soil-water",
         "temperature",
         "vegetation",
+        "weather-and-climate",
         "wind"
     ],
     "providers": [

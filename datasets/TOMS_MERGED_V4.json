@@ -57,7 +57,7 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "climate"
+        "weather-and-climate"
     ],
     "gee:interval": {
         "interval": 1,
@@ -85,7 +85,7 @@
             "interval": [
                 [
                     "1978-11-01T00:00:00Z",
-                    "2026-10-09T00:00:00Z"
+                    "2026-10-10T00:00:00Z"
                 ]
             ]
         }
@@ -101,7 +101,8 @@
         "nasa",
         "omi",
         "ozone",
-        "toms"
+        "toms",
+        "weather-and-climate"
     ],
     "providers": [
         {

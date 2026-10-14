@@ -57,7 +57,7 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "climate"
+        "weather-and-climate"
     ],
     "gee:terms_of_use": "The Historic Experimental Data is licensed under the Creative Commons\nAttribution International License, Version 4.0 (CC BY 4.0).\n\nThe Real-Time Experimental Data is made available under the following\nGDM Real-Time Weather Forecasting Experimental Data [Terms of Use](https://storage.googleapis.com/weathernext-public/terms-of-use.pdf).\n\n**Third-party materials**\n\nUse of the third-party materials referred to in the Acknowledgements\nsection may be governed by separate terms and conditions or license\nprovisions. Your use of the third-party materials is subject to any such\nterms and you should check that you can comply with any applicable\nrestrictions or terms and conditions before use.\n",
     "gee:type": "image_collection",
@@ -82,18 +82,18 @@
             "interval": [
                 [
                     "2022-01-01T00:00:00Z",
-                    "2026-10-12T18:00:00Z"
+                    "2026-10-13T18:00:00Z"
                 ]
             ]
         }
     },
     "license": "other",
     "keywords": [
-        "climate",
         "forecast",
         "precipitation",
         "temperature",
         "weather",
+        "weather-and-climate",
         "weathernext",
         "wind"
     ],

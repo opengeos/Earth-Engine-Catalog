@@ -45,7 +45,7 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "climate"
+        "weather-and-climate"
     ],
     "gee:interval": {
         "interval": 1,
@@ -94,7 +94,8 @@
         "emissions",
         "fao",
         "ghg",
-        "organic-soils"
+        "organic-soils",
+        "weather-and-climate"
     ],
     "providers": [
         {

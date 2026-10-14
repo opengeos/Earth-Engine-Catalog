@@ -45,7 +45,7 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "climate"
+        "weather-and-climate"
     ],
     "gee:interval": {
         "interval": 12,
@@ -73,14 +73,13 @@
             "interval": [
                 [
                     "2024-11-12T12:00:00Z",
-                    "2026-10-12T18:00:00Z"
+                    "2026-10-13T18:00:00Z"
                 ]
             ]
         }
     },
     "license": "CC-BY-4.0",
     "keywords": [
-        "climate",
         "dewpoint",
         "ecmwf",
         "forecast",
@@ -94,6 +93,7 @@
         "soil-moisture",
         "soil-temperature",
         "temperature",
+        "weather-and-climate",
         "wind"
     ],
     "providers": [

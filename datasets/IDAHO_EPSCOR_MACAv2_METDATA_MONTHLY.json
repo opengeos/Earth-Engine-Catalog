@@ -45,7 +45,7 @@
         "https://stac-extensions.github.io/version/v1.2.0/schema.json"
     ],
     "gee:categories": [
-        "climate"
+        "weather-and-climate"
     ],
     "gee:interval": {
         "interval": 1,
@@ -85,7 +85,8 @@
         "geophysical",
         "idaho",
         "maca",
-        "monthly"
+        "monthly",
+        "weather-and-climate"
     ],
     "providers": [
         {
