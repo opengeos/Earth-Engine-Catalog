@@ -51,7 +51,7 @@
     "gee:categories": [
         "elevation-topography"
     ],
-    "gee:terms_of_use": "[proprietary](Use a custom URL for the non-standard license)",
+    "gee:terms_of_use": "The data are freely available. When using these data, please cite the\nprovided article.\n",
     "gee:type": "image",
     "sci:citation": "Slater, T., Shepherd, A., McMillan, M., Muir, A., Gilbert, L.,\nHogg, A. E., Konrad, H. and Parrinello, T.: A new Digital Elevation\nModel of Antarctica derived from CryoSat-2 altimetry, The Cryosphere,\n[doi:10.5194/tc-2017-223](https://doi.org/10.5194/tc-2017-223), 2018\n",
     "sci:doi": "10.5194/tc-2017-223",
@@ -95,7 +95,7 @@
                 "licensor",
                 "producer"
             ],
-            "url": "http://www.cpom.ucl.ac.uk/csopr/icesheets2/dems.php?ais_subject=dem&user_type=normal"
+            "url": "https://cpom.org.uk/datasets/"
         },
         {
             "name": "Google Earth Engine",

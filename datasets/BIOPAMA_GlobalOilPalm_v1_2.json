@@ -1,0 +1,222 @@
+{
+    "type": "Collection",
+    "id": "BIOPAMA/GlobalOilPalm/v1_2",
+    "stac_version": "1.1.0",
+    "description": "Global oil palm extent for 2016-2021 at 10 m resolution and oil palm\nplanting year from 1990 to 2021 at 30 m resolution. The dataset consists of\n609 100x100 km grid tiles covering tropical and subtropical oil-palm-growing\nregions worldwide, mapping 23.98 Mha of closed-canopy oil palm (16.69 Mha\n[69.6%] industrial and 7.29 Mha [30.4%] smallholder), with a sample-based\narea estimate of 16.82 \u00b1 0.19 Mha industrial and 7.37 \u00b1 0.25 Mha\nsmallholder. Note that although the catalog time range spans 1990-2021 to\nreflect the planting year range, this collection is a single static mosaic\nrather than a multi-temporal time series.\n\n### Methodology\n\n* **Oil Palm Extent (`classification`, 10 m):** Annual closed-canopy oil\n  palm maps for 2016-2021 were generated from Sentinel-1 C-band SAR GRD\n  dual-polarization (VV and VH) annual composites using a DeepLabv3+\n  (MobileNetV2 backbone) convolutional neural network (CNN) trained on 296\n  10x10 km regions. Daily Sentinel-1 scenes were corrected for local\n  incident angle using the SRTM v4 DEM, aggregated into annual median\n  composites separately for ascending and descending orbits, and averaged\n  across both orbits to avoid terrain artifacts when one orbit had more\n  passes. Unlike v1 (2019), Sentinel-2 red reflectance (Band 4) was excluded\n  because systematic Sentinel-2 Level-2A coverage of oil palm regions was\n  unavailable prior to 2019; to reuse the 3-channel DeepLabv3+ architecture\n  from v1, the VV and VH composites were stacked with a zero-filled third\n  channel.\n* To reduce false positives (such as coconut plantations and paddy fields),\n  overlapping cropland, built-up, waterbody, herbaceous wetland, and\n  mangrove classes from ESA WorldCover 10 m v200 were masked out, followed\n  by manual visual screening. In post-processing, 82 of the 100x100 km grid\n  cells from the 2019 v1 dataset were discarded (mostly false-positive\n  coconut regions in Mexico, India, the Philippines, and Indonesia) while\n  new hotspot grid cells (Andhra Pradesh in India, Congo Basin, Thailand,\n  and Central/South America) were added to arrive at the 609 tiles.\n* The six annual maps (2016-2021) were merged into a single static layer\n  prioritizing oil palm presence: a pixel is labeled industrial (`1`) if\n  classified as industrial in any year during 2016-2021; otherwise\n  smallholder (`2`) if classified as smallholder in any year during\n  2016-2021; and other land cover (`0`) otherwise.\n* **Planting Year (`planting_year`, 30 m):** Derived for all pixels mapped\n  as oil palm (`1` or `2`) using 30 m Landsat-5, Landsat-7, and Landsat-8\n  Collection 2 Tier 1 Level-2 surface reflectance time series from 1990\n  to 2021. A Random Forest classifier labeled each clear Landsat observation\n  as vegetation, bare land, or cloud to identify the Last Date of Land\n  Preparation (LDLP)\u2014the final bare-land observation corresponding to land\n  clearing before canopy closure\u2014smoothed with a spatial mode filter. The\n  planting year is defined as the calendar year with the minimum `(NIR -\n  SWIR2) / (NIR + SWIR2)` within the 5-year window preceding the LDLP\n  (referred to as Normalized Difference Water Index, `NDWI (Gao, 1996)`, in\n  the paper, though computed with `SWIR2` such as Landsat-8 Bands 5 and 7,\n  which is the standard Normalized Burn Ratio [NBR] formula and named\n  `minNBR` in the source GeoTIFF band description). In the `planting_year`\n  band, values span `1989` to `2022` (rather than `1990` to `2021`): because\n  the algorithm looks back up to 5 years before the LDLP, plantations\n  established before 1990 (see the note below in limitations about\n  left-censoring) are recorded as `1989` (~7.5% of oil palm pixels globally,\n  the single most frequent value in the dataset), and a small fraction of\n  pixels (~0.04%) have value `2022`.\n\n### Limitations\n\n* **Closed-canopy detection lag and 2019-2021 omission:** Sentinel-1 SAR\n  reliably detects oil palm only after stands reach full canopy closure\n  (typically ~3 years after planting). Consequently, newly established young\n  plantations planted during 2019-2021 are largely omitted from the extent\n  layer. Pixels with `planting_year` in 2019-2021 primarily represent\n  **replanting (rotation) of older plantations** that already had a closed\n  canopy during 2016-2018 before being clear-cut, and **must not** be used\n  to measure new oil palm expansion or deforestation between 2019 and 2021.\n* **Last rotation vs. initial establishment and 1989 left-censoring:**\n  Because the algorithm detects the *last* bare-land clearing event prior to\n  2021, `planting_year` records the establishment year of the current stand\n  as of 2021. In plantations that have undergone rotation (typically every\n  ~25 years), this reflects the most recent replanting year rather than\n  initial conversion to oil palm. Additionally, `planting_year` is\n  *left-censored* at `1989`; this means pixels with `planting_year == 1989`\n  (~7.5% of oil palm pixels globally) represent plantations established in\n  or before 1989 and should not be treated as literally planted in 1989 when\n  calculating plantation age.\n* **Post-clearing land-use conversion:** Because the 2016-2021 merge rule\n  retains any pixel detected as oil palm in at least one year, plantations\n  clear-cut between 2016 and 2021 and subsequently converted to a different\n  land use remain classified as oil palm.\n* **Omission of open-canopy and semi-wild oil palm:** The CNN only maps\n  closed-canopy stands and largely omits traditional, scattered, or\n  subsistence semi-wild oil palm groves (particularly in West Africa, such\n  as Nigeria) as well as stands with open canopies caused by fire, flooding,\n  disease, or agroforestry intercropping.\n* **Lower accuracy in smallholder plantations:** Across all 6,843\n  ground-truth planting-year observations, overall planting-year RMSE is\n  2.65 years (Mean Error = -0.24 years, R^2 = 0.86). Against visual\n  interpretation of Landsat time series (n = 841 points), exact-year\n  agreement of the Random Forest LDLP was only 59.6% overall (64.8%\n  industrial, 44.0% smallholder; 76.3% within \u00b13 years). Smallholder\n  plantations have lower classification accuracy (producer's accuracy 71.7%,\n  user's accuracy 72.4%) and higher planting-year error (RMSE = 4.89 years,\n  reaching 7.01 years in Cameroon) than industrial plantations (producer's\n  accuracy 91.0%, user's accuracy 91.8%, planting-year RMSE = 2.02 years).\n  Smallholder planting-year accuracy is degraded by mixed 30 m pixels along\n  irregular plot boundaries, multi-year sequential planting, and\n  \"under-planting\" (planting seedlings beneath old palms prior to felling,\n  which avoids a bare-soil stage).\n* **Narrow geographic coverage of field validation:** Field validation of\n  `planting_year` had narrow geographic coverage: only 3 countries for\n  industrial plantations (Brazil, Gabon, Indonesia) and 2 countries for\n  smallholders (Cameroon and Indonesia, 93.5% collected by a single company\n  via owner interviews, which are also subject to owner recall error on\n  older stands), with no field validation in Malaysia, Thailand, India, or\n  other producing regions.\n* **Resolution mismatch and grid offset between bands:** Because\n  `classification` is at 10 m and `planting_year` is at 30 m (with a 20 m\n  West-edge origin offset between the source GeoTIFF grids), ~5% of 10 m\n  oil palm pixels along plantation edges lack a `planting_year` value, and\n  30 m `planting_year` pixels along boundaries can spill onto adjacent 10 m\n  non-oil-palm (`0`) pixels.\n* **Regional artifacts from clouds and seasonality:** Persistent cloud cover\n  and sparse pre-2013 Landsat archive coverage in Equatorial and West Africa\n  (e.g., Cameroon, Gabon, Congo Basin) increase planting-year uncertainty.\n  In regions with strong dry seasons (notably Andhra Pradesh in India,\n  Thailand, and Sulawesi in Indonesia), seasonal drops in NDWI can trigger\n  false bare-land detections, biasing `planting_year` toward overly recent\n  years.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/BIOPAMA/BIOPAMA_GlobalOilPalm_v1_2",
+            "type": "text/html",
+            "title": "Run the example for BIOPAMA/GlobalOilPalm/v1_2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/BIOPAMA/BIOPAMA_GlobalOilPalm_v1_2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/BIOPAMA_GlobalOilPalm_v1_2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5281/zenodo.13379129"
+        },
+        {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/BIOPAMA/BIOPAMA_GlobalOilPalm_v1_2.json",
+            "type": "application/json",
+            "title": "BIOPAMA/GlobalOilPalm/v1_2"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/BIOPAMA/BIOPAMA_GlobalOilPalm_v1.json",
+            "type": "application/json",
+            "title": "BIOPAMA/GlobalOilPalm/v1"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/BIOPAMA/BIOPAMA_GlobalOilPalm_v1_2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/BIOPAMA/catalog.json",
+            "type": "application/json",
+            "title": "BIOPAMA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "agriculture",
+        "landuse-landcover"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "sci:citation": "Descals, A., Gaveau, D. L., Wich, S., Szantoi, Z., and Meijaard, E. (2024).\nGlobal mapping of oil palm planting year from 1990 to 2021.\nEarth System Science Data, 16(11), 5111-5129.\n[doi:10.5194/essd-16-5111-2024](https://doi.org/10.5194/essd-16-5111-2024)\n",
+    "sci:doi": "10.5194/essd-16-5111-2024",
+    "version": "v1.2",
+    "title": "Global Oil Palm Extent and Planting Year (1990-2021) v1.2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1990-01-01T00:00:00Z",
+                    "2021-12-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "agriculture",
+        "biodiversity",
+        "biopama",
+        "conservation",
+        "crop",
+        "global",
+        "landcover",
+        "landuse",
+        "landuse-landcover",
+        "palm",
+        "plantation"
+    ],
+    "providers": [
+        {
+            "name": "Biopama Programme",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5281/zenodo.13379129"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/BIOPAMA_GlobalOilPalm_v1_2"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Oil palm plantation type classification",
+                "gee:classes": [
+                    {
+                        "color": "696969",
+                        "description": "Other land covers that are not oil palm",
+                        "value": 0
+                    },
+                    {
+                        "color": "ff0000",
+                        "description": "Industrial closed-canopy oil palm plantations",
+                        "value": 1
+                    },
+                    {
+                        "color": "ef00ff",
+                        "description": "Smallholder closed-canopy oil palm plantations",
+                        "value": 2
+                    }
+                ],
+                "gsd": 10,
+                "name": "classification"
+            },
+            {
+                "description": "Estimated year of plantation establishment",
+                "gsd": 30,
+                "name": "planting_year"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Plantation Classification",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "classification"
+                        ],
+                        "max": [
+                            2
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "696969",
+                            "ff0000",
+                            "ef00ff"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 3.1,
+                    "lon": 101.7,
+                    "zoom": 10
+                }
+            },
+            {
+                "display_name": "Planting Year (1989-2022)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "planting_year"
+                        ],
+                        "max": [
+                            2022
+                        ],
+                        "min": [
+                            1989
+                        ],
+                        "palette": [
+                            "ffffb2",
+                            "fecc5c",
+                            "fd8d3c",
+                            "f03b20",
+                            "bd0026"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 3.1,
+                    "lon": 101.7,
+                    "zoom": 10
+                }
+            }
+        ],
+        "planting_year": {
+            "minimum": 1989,
+            "maximum": 2022
+        }
+    }
+}
