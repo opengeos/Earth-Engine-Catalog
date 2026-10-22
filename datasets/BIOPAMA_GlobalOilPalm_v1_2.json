@@ -134,17 +134,17 @@
                 "description": "Oil palm plantation type classification",
                 "gee:classes": [
                     {
-                        "color": "696969",
+                        "color": "18181b",
                         "description": "Other land covers that are not oil palm",
                         "value": 0
                     },
                     {
-                        "color": "ff0000",
+                        "color": "d97706",
                         "description": "Industrial closed-canopy oil palm plantations",
                         "value": 1
                     },
                     {
-                        "color": "ef00ff",
+                        "color": "06b6d4",
                         "description": "Smallholder closed-canopy oil palm plantations",
                         "value": 2
                     }
@@ -173,16 +173,16 @@
                             0
                         ],
                         "palette": [
-                            "696969",
-                            "ff0000",
-                            "ef00ff"
+                            "18181b",
+                            "d97706",
+                            "06b6d4"
                         ]
                     }
                 },
                 "lookat": {
-                    "lat": 3.1,
-                    "lon": 101.7,
-                    "zoom": 10
+                    "lat": 1.1,
+                    "lon": 101.31,
+                    "zoom": 11
                 }
             },
             {
@@ -199,18 +199,18 @@
                             1989
                         ],
                         "palette": [
-                            "ffffb2",
-                            "fecc5c",
-                            "fd8d3c",
-                            "f03b20",
-                            "bd0026"
+                            "451a03",
+                            "92400e",
+                            "d97706",
+                            "f59e0b",
+                            "fef08a"
                         ]
                     }
                 },
                 "lookat": {
-                    "lat": 3.1,
-                    "lon": 101.7,
-                    "zoom": 10
+                    "lat": 1.1,
+                    "lon": 101.31,
+                    "zoom": 11
                 }
             }
         ],
