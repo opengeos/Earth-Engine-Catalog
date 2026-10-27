@@ -1,0 +1,170 @@
+{
+    "type": "Collection",
+    "id": "WorldPop/GP/100m/R2025A/v1/pop",
+    "stac_version": "1.1.0",
+    "description": "The WorldPop project aims to provide detailed and open-access population\ndistribution datasets, built using transparent and peer-reviewed approaches,\nto facilitate the accurate measurement of the impacts of population growth,\nfor monitoring changes, and for planning interventions.\n\nFull details on the methods and datasets used in constructing the\ndata, along with open access publications, are provided on the\n[WorldPop website](https://www.worldpop.org/). In brief, recent census-based\npopulation counts matched to their associated administrative units are\ndisaggregated to ~100x100m grid cells through machine learning approaches\nthat exploit the relationships between population densities and a range of\ngeospatial covariate layers. The mapping approach\nis Random Forest-based dasymetric redistribution.\n\nThis dataset depicts estimated number of people\nresiding in each grid cell for annual epochs from 2015 through 2030 (Release R2025A, v1).\nIndividual country rasters are constrained to settlement areas and adjusted to\nmatch national population estimates.\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WorldPop/WorldPop_GP_100m_R2025A_v1_pop",
+            "type": "text/html",
+            "title": "Run the example for WorldPop/GP/100m/R2025A/v1/pop in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/WorldPop/WorldPop_GP_100m_R2025A_v1_pop_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/WorldPop_GP_100m_R2025A_v1_pop#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WorldPop/WorldPop_GP_100m_R2025A_v1_pop.json",
+            "type": "application/json",
+            "title": "WorldPop/GP/100m/R2025A/v1/pop"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WorldPop/WorldPop_GP_100m_pop.json",
+            "type": "application/json",
+            "title": "WorldPop/GP/100m/pop"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WorldPop/WorldPop_GP_100m_R2025A_v1_pop.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/WorldPop/catalog.json",
+            "type": "application/json",
+            "title": "WorldPop"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "population"
+    ],
+    "gee:terms_of_use": "WorldPop datasets are licensed under the Creative Commons Attribution 4.0\nInternational License. Users are free to use, copy, distribute, transmit,\nand adapt the work for commercial and non-commercial purposes, without\nrestriction, as long as clear attribution of the source is provided.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Bondarenko M., Priyatikanto R., Tejedor-Garavito N., Zhang W., McKeen T., Cunningham A.,\nWoods T., Hilton J., Cihan D., Nosatiuk B., Brinkhoff T., Tatem A., Sorichetta A. 2025.\nConstrained estimates of 2015-2030 total number of people per grid square at a resolution of 3 arc\n(approximately 100m at the equator) R2025A version v1. Global Demographic Data Project - Funded by\nThe Bill and Melinda Gates Foundation (INV-045237). WorldPop - School of Geography and Environmental\nScience, University of Southampton.\n[doi:10.5258/SOTON/WP00839](https://doi.org/10.5258/SOTON/WP00839)\n",
+    "sci:doi": "10.5258/SOTON/WP00839",
+    "version": "R2025A_v1",
+    "gee:status": "ready",
+    "title": "WorldPop Global Project Population Data (R2025A): Estimated Residential Population per 100x100m Grid Square",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-01-01T00:00:00Z",
+                    "2031-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "demography",
+        "population",
+        "worldpop"
+    ],
+    "providers": [
+        {
+            "name": "WorldPop",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.worldpop.org"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/WorldPop_GP_100m_R2025A_v1_pop"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Estimated number of people residing in each grid cell",
+                "name": "population",
+                "gsd": [
+                    100
+                ]
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "ISO 3166-1 alpha-3 country code, with optional _EAST / _WEST suffix for territories split by the antimeridian.",
+                "name": "country",
+                "type": "STRING"
+            },
+            {
+                "description": "Year of the population estimate (2015-2030)",
+                "name": "year",
+                "type": "DOUBLE"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Population",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "population"
+                        ],
+                        "max": [
+                            50
+                        ],
+                        "min": [
+                            0
+                        ],
+                        "palette": [
+                            "24126c",
+                            "1fff4f",
+                            "d4ff50"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 34.769,
+                    "lon": 113.643,
+                    "zoom": 7
+                }
+            }
+        ],
+        "gsd": [
+            100
+        ],
+        "population": {
+            "minimum": 0,
+            "maximum": 25000
+        }
+    }
+}
