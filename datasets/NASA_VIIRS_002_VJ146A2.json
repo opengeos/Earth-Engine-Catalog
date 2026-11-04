@@ -1,0 +1,398 @@
+{
+    "type": "Collection",
+    "id": "NASA/VIIRS/002/VJ146A2",
+    "stac_version": "1.1.0",
+    "description": "The NOAA-20 (JPSS-1) Visible Infrared Imaging Radiometer Suite (VIIRS)\nsupports a Day-Night Band (DNB) sensor that provides global daily\nmeasurements of nocturnal visible and near-infrared (NIR) light that are\nsuitable for Earth system science and applications. The VIIRS DNB's\nultra-sensitivity in lowlight conditions generates science-quality nighttime\nproducts that manifest substantial improvements in sensor resolution and\ncalibration when compared to previous eras (such as DMSP/OLS). Such\nimprovements allow the VIIRS DNB products to better monitor both the\nmagnitude and signature of nighttime phenomena, and anthropogenic sources\nof light emissions.\n\nVJ146A2 is the short-name for the daily moonlight- and atmosphere-corrected\nNighttime Lights (NTL) product called VIIRS/NOAA-20 Gap-Filled Lunar\nBRDF-Adjusted Nighttime Lights Daily L3 Global 500m Linear Lat Lon Grid.\n\nDocumentation:\n\n* [User's Guide](https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/Document%20Archive/Science%20Data%20Product%20Documentation/VIIRS_Black_Marble_UG_v1.3_Sep_2022.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/Document%20Archive/Science%20Data%20Product%20Documentation/Product%20Generation%20Algorithms/VIIRS_Black_Marble_ATBD_v1.1_July_2020.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/VJ146A2/)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_VIIRS_002_VJ146A2",
+            "type": "text/html",
+            "title": "Run the example for NASA/VIIRS/002/VJ146A2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_VIIRS_002_VJ146A2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_VJ146A2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/VIIRS/VJ146A2.002"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_VIIRS_002_VJ146A2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "population"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C3370789118-LAADS"
+    ],
+    "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Rom&aacute;n, M.O., Wang, Z., Sun, Q., Kalb, V., Miller, S.D., Molthan, A.,\nSchultz, L., Bell, J., Stokes, E.C., Pandey, B. and Seto, K.C., et al.\n(2018). NASA's Black Marble nighttime lights product suite.\nRemote Sensing of Environment 210, 113-143.\n[10.1016/j.rse.2018.03.017](https://doi.org/10.1016/j.rse.2018.03.017)\n",
+    "sci:doi": "10.5067/VIIRS/VJ146A2.002",
+    "version": "002",
+    "gee:status": "ready",
+    "title": "VJ146A2: VIIRS Lunar Gap-Filled BRDF Nighttime Lights Daily L3 Global 500m",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-01-19T00:00:00Z",
+                    "2026-11-02T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "brdf",
+        "daily",
+        "nasa",
+        "nighttime",
+        "noaa",
+        "population",
+        "viirs"
+    ],
+    "providers": [
+        {
+            "name": "NASA LAADS DAAC",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/VIIRS/VJ146A2.002"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_VJ146A2"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "BRDF corrected DNB NTL",
+                "name": "DNB_BRDF_Corrected_NTL",
+                "gsd": [
+                    500
+                ]
+            },
+            {
+                "description": "Gap Filled BRDF corrected DNB NTL",
+                "name": "Gap_Filled_DNB_BRDF_Corrected_NTL",
+                "gsd": [
+                    500
+                ]
+            },
+            {
+                "description": "DNB Lunar Irradiance",
+                "name": "DNB_Lunar_Irradiance",
+                "gsd": [
+                    500
+                ]
+            },
+            {
+                "description": "Latest high quality BRDF corrected DNB radiance retrieval",
+                "name": "Latest_High_Quality_Retrieval",
+                "gsd": [
+                    500
+                ]
+            },
+            {
+                "description": "Mandatory quality flag",
+                "gee:classes": [
+                    {
+                        "description": "High-quality, Persistent nighttime lights",
+                        "value": 0
+                    },
+                    {
+                        "description": "High-quality, Ephemeral nighttime Lights",
+                        "value": 1
+                    },
+                    {
+                        "description": "Poor-quality, Outlier, potential cloud contamination,\nor other issues\n",
+                        "value": 2
+                    },
+                    {
+                        "description": "No retrieval, Fill value (masked out on ingestion)",
+                        "value": 255
+                    }
+                ],
+                "name": "Mandatory_Quality_Flag",
+                "gsd": [
+                    500
+                ]
+            },
+            {
+                "description": "Flag for snow cover",
+                "gee:classes": [
+                    {
+                        "description": "No Snow/Ice",
+                        "value": 0
+                    },
+                    {
+                        "description": "Snow/Ice",
+                        "value": 1
+                    }
+                ],
+                "name": "Snow_Flag",
+                "gsd": [
+                    500
+                ]
+            },
+            {
+                "description": "Quality flag for cloud mask",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Day/Night",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Night",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Day",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 3,
+                            "description": "Land/Water Background",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "Land & Desert",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Land no Desert",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Inland Water",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Sea Water",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Coastal",
+                                    "value": 5
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Cloud Mask Quality",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "Poor",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Low",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Medium",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Cloud Detection Results & Confidence Indicator",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "Confident Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Probably Clear",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Probably Cloudy",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Confident Cloudy",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Shadow Detected",
+                            "first_bit": 8,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Cirrus Detection (IR) (BTM15 - BTM16)",
+                            "first_bit": 9,
+                            "values": [
+                                {
+                                    "description": "No cloud",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Cloud",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Snow/Ice Surface",
+                            "first_bit": 10,
+                            "values": [
+                                {
+                                    "description": "No Snow/Ice",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Snow/Ice",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 11
+                },
+                "name": "QF_Cloud_Mask",
+                "gsd": [
+                    500
+                ]
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "The number of source tiles that were mosaicked to create this image.\n",
+                "name": "num_tiles",
+                "type": "INT"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "brdf",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "DNB_BRDF_Corrected_NTL"
+                        ],
+                        "max": [
+                            100
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 7.71,
+                    "lon": 17.93,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            500
+        ],
+        "instruments": [
+            "VIIRS"
+        ],
+        "platform": [
+            "NOAA-20"
+        ],
+        "DNB_BRDF_Corrected_NTL": {
+            "minimum": 0,
+            "maximum": 6553.4
+        },
+        "DNB_Lunar_Irradiance": {
+            "minimum": 0,
+            "maximum": 6553.4
+        },
+        "Gap_Filled_DNB_BRDF_Corrected_NTL": {
+            "minimum": 0,
+            "maximum": 6553.4
+        },
+        "Mandatory_Quality_Flag": {
+            "minimum": 0,
+            "maximum": 3
+        },
+        "QF_Cloud_Mask": {
+            "minimum": 0,
+            "maximum": 65534
+        },
+        "Snow_Flag": {
+            "minimum": 0,
+            "maximum": 1
+        }
+    }
+}

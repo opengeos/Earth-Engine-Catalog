@@ -1,0 +1,445 @@
+{
+    "type": "Collection",
+    "id": "NASA/VIIRS/002/VJ214A1",
+    "stac_version": "1.1.0",
+    "description": "The daily NOAA-21 NASA Visible Infrared Imaging Radiometer Suite (VIIRS)\nThermal Anomalies/Fire (VJ214A1) Version 2 data product provides daily\ninformation about active fires and other thermal anomalies. The VJ214A1\ndata product is a global, 1km gridded composite of fire pixels detected\nfrom VIIRS 750m bands over a daily (24-hour) period. The VJ214 data\nproducts are designed after the Moderate Resolution Imaging\nSpectroradiometer (MODIS) Thermal Anomalies/Fire product suite.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/427/VNP14_User_Guide_V1.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/133/VNP14_ATBD.pdf)\n\n* [General Documentation](https://www.earthdata.nasa.gov/data/catalog/lpcloud-vj214a1-002)\n\n* [Land Product Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/browse?sensor=VIIRS&sat=J1)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_VIIRS_002_VJ214A1",
+            "type": "text/html",
+            "title": "Run the example for NASA/VIIRS/002/VJ214A1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_VIIRS_002_VJ214A1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_VJ214A1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/VIIRS/VJ214A1.002"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_VIIRS_002_VJ214A1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "fire"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C2830534683-LPCLOUD"
+    ],
+    "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/VIIRS/VJ214A1.002",
+    "version": "002",
+    "gee:status": "ready",
+    "title": "VJ214A1.002: Thermal Anomalies/Fire Daily L3 Global 1km SIN Grid",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-02-10T00:00:00Z",
+                    "2026-10-26T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "fire",
+        "land",
+        "nasa",
+        "noaa",
+        "surface",
+        "viirs"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/VIIRS/VJ214A1.002"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_VJ214A1"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Confidence of fire.\n",
+                "gee:classes": [
+                    {
+                        "description": "Not processed (no data or poor quality data)",
+                        "value": 0
+                    },
+                    {
+                        "description": "Not processed (bowtie deletion)",
+                        "value": 1
+                    },
+                    {
+                        "description": "Unused",
+                        "value": 2
+                    },
+                    {
+                        "description": "Water",
+                        "value": 3
+                    },
+                    {
+                        "description": "Cloud",
+                        "value": 4
+                    },
+                    {
+                        "description": "Land",
+                        "value": 5
+                    },
+                    {
+                        "description": "Unclassified",
+                        "value": 6
+                    },
+                    {
+                        "description": "Low confidence fire pixel",
+                        "value": 7
+                    },
+                    {
+                        "description": "Nominal confidence fire pixel",
+                        "value": 8
+                    },
+                    {
+                        "description": "High confidence fire pixel",
+                        "value": 9
+                    }
+                ],
+                "name": "FireMask",
+                "gsd": [
+                    1000
+                ]
+            },
+            {
+                "description": "Maximum Fire Radiative Power",
+                "gee:units": "MW",
+                "name": "MaxFRP",
+                "gsd": [
+                    1000
+                ]
+            },
+            {
+                "description": "Pixel quality indicators",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 2,
+                            "description": "land/water state",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "water",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "coast",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "land",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "unused",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "EDR ground trim zone",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "false",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "true",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "atmospheric correction performed",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "no",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "day/night algorithm",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "night",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "day",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "potential fire pixel",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "false",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "true",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Unused0",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "Unused value",
+                                    "value": 0
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 4,
+                            "description": "background window size parameter",
+                            "first_bit": 7
+                        },
+                        {
+                            "bit_count": 6,
+                            "description": "individual detection test flags",
+                            "first_bit": 11,
+                            "values": [
+                                {
+                                    "description": "fail",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "pass",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 3,
+                            "description": "Unused1",
+                            "first_bit": 17,
+                            "values": [
+                                {
+                                    "description": "Unused value",
+                                    "value": 0
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "adjacent cloud pixel",
+                            "first_bit": 20,
+                            "values": [
+                                {
+                                    "description": "no",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "adjacent water pixel",
+                            "first_bit": 21,
+                            "values": [
+                                {
+                                    "description": "no",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Sun glint level",
+                            "first_bit": 22,
+                            "values": [
+                                {
+                                    "description": "Sun glint level - 1",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Sun glint level - 2",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Sun glint level - 3",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Sun glint level - 4",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 5,
+                            "description": "individual rejection test flags",
+                            "first_bit": 24,
+                            "values": [
+                                {
+                                    "description": "false",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "true",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 3,
+                            "description": "Unused2",
+                            "first_bit": 29,
+                            "values": [
+                                {
+                                    "description": "Unused value",
+                                    "value": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 32
+                },
+                "name": "QA",
+                "gsd": [
+                    1000
+                ]
+            },
+            {
+                "description": "Sample number within a swath",
+                "name": "sample",
+                "gsd": [
+                    1000
+                ]
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "The number of source tiles that were mosaicked to create this image.\n",
+                "name": "num_tiles",
+                "type": "INT"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Maximum Fire Radiative Power",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "MaxFRP"
+                        ],
+                        "max": [
+                            10000
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "000000",
+                            "004400",
+                            "008800",
+                            "00bb00",
+                            "00ff00"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -1.94,
+                    "lon": 10.35,
+                    "zoom": 10
+                }
+            }
+        ],
+        "gsd": [
+            1000
+        ],
+        "instruments": [
+            "VIIRS"
+        ],
+        "platform": [
+            "NOAA-21"
+        ]
+    }
+}

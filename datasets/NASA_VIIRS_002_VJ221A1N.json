@@ -1,0 +1,415 @@
+{
+    "type": "Collection",
+    "id": "NASA/VIIRS/002/VJ221A1N",
+    "stac_version": "1.1.0",
+    "description": "The NOAA-21 Visible Infrared Imaging Radiometer Suite (VIIRS) Land Surface\nTemperature and Emissivity (LST&E) Night Version 2 product (VJ221A1N) is\ncompiled daily from nighttime Level 2 Gridded (L2G) intermediate products.\n\nThe L2G process maps the daily VJ221 swath granules onto a sinusoidal MODIS\ngrid and stores all observations overlapping a gridded cell for a given\nnight. The VJ221A1 algorithm sorts through all these observations for each\ncell and estimates the final LST value as an average from all cloud-free\nobservations that have good LST accuracies. Only observations having\nobservation coverage more than a certain threshold (15%) are considered for\nthis averaging.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/429/VNP21_User_Guide_V1.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/1332/VNP21_ATBD_V1.pdf)\n\n* [General Documentation](https://www.earthdata.nasa.gov/data/catalog/lpcloud-vj221a1n-002)\n\n* [Land Product Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/browse?sensor=VIIRS&sat=J1)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_VIIRS_002_VJ221A1N",
+            "type": "text/html",
+            "title": "Run the example for NASA/VIIRS/002/VJ221A1N in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_VIIRS_002_VJ221A1N_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_VJ221A1N#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/VIIRS/VJ221A1N.002"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_VIIRS_002_VJ221A1N.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "weather-and-climate"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C2831648565-LPCLOUD"
+    ],
+    "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/VIIRS/VJ221A1N.002",
+    "version": "002",
+    "gee:status": "ready",
+    "title": "VJ221A1N.002: Night Land Surface Temperature and Emissivity Daily 1km",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-02-10T00:00:00Z",
+                    "2026-10-26T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "daily",
+        "land",
+        "nasa",
+        "night",
+        "noaa",
+        "surface",
+        "temperature",
+        "viirs",
+        "weather-and-climate"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/VIIRS/VJ221A1N.002"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_VJ221A1N"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Daily 1 km Land Surface Temperature.\n",
+                "gee:units": "K",
+                "name": "LST_1KM",
+                "gsd": [
+                    1000
+                ]
+            },
+            {
+                "description": "Daily Quality control for LST and emissivity",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 2,
+                            "description": "Mandatory QA flags",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Pixel produced, good quality, no further QA info necessary\n",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Pixel produced but unreliable quality",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Pixel not produced due to cloud",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Pixel not produced due to reasons other than cloud\n",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Data quality flag",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "Good data quality of L1B bands 14, 15, 16",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Missing pixel",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Fairly calibrated",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Poorly calibrated, TES processing skipped",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Cloud Flag",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "Cloud-free",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Thin cirrus",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Pixel within 2 pixels of nearest cloud",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Cloudy pixels",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Iterations",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": " Slow convergence",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Nominal",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Nominal",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Fast",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Atmospheric Opacity",
+                            "first_bit": 8,
+                            "values": [
+                                {
+                                    "description": "&ge;3 (Warm, humid air; or cold land)",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "0.2 - 0.3 (Nominal value)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "0.1 - 0.2 (Nominal value)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "<0.1 (Dry, or high altitude pixel)",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "MMD",
+                            "first_bit": 10,
+                            "values": [
+                                {
+                                    "description": "&gt;0.15 (Most silicate rocks)",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "0.1 - 0.15 (Rocks, sand, some soils)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "0.03 - 0.1 (Mostly soils, mixed pixel)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "<0.03 (Vegetation, snow, water, ice, some soils)\n",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Emissivity accuracy",
+                            "first_bit": 12,
+                            "values": [
+                                {
+                                    "description": "&gt;0.02 (Poor performance)",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "0.015 - 0.02 (Marginal performance)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "0.01 - 0.015 (Good performance)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "<0.01 (Excellent performance)",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "LST accuracy",
+                            "first_bit": 14,
+                            "values": [
+                                {
+                                    "description": "&gt;2K (Poor performance)",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "1.5 - 2K (Marginal performance)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "1 - 1.5K (Good performance)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "<1K (Excellent performance)",
+                                    "value": 3
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 16
+                },
+                "name": "QC",
+                "gsd": [
+                    1000
+                ]
+            },
+            {
+                "description": "Daily M14 emissivity",
+                "name": "Emis_14",
+                "gsd": [
+                    1000
+                ]
+            },
+            {
+                "description": "Daily M15 emissivity",
+                "name": "Emis_15",
+                "gsd": [
+                    1000
+                ]
+            },
+            {
+                "description": "Daily M16 emissivity",
+                "name": "Emis_16",
+                "gsd": [
+                    1000
+                ]
+            },
+            {
+                "description": "View zenith angle of LST",
+                "gee:units": "deg",
+                "name": "View_Angle",
+                "gsd": [
+                    1000
+                ]
+            },
+            {
+                "description": "Time of LST observation",
+                "gee:units": "h",
+                "name": "View_Time",
+                "gsd": [
+                    1000
+                ]
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "The number of source tiles that were mosaicked to create this image.\n",
+                "name": "num_tiles",
+                "type": "INT"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Daily emissivity",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "LST_1KM"
+                        ],
+                        "max": [
+                            300
+                        ],
+                        "min": [
+                            200
+                        ],
+                        "palette": [
+                            "a50026",
+                            "d73027",
+                            "f46d43",
+                            "fdae61",
+                            "fee08b",
+                            "ffffbf",
+                            "d9ef8b",
+                            "a6d96a",
+                            "66bd63",
+                            "1a9850",
+                            "006837"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 41.2,
+                    "lon": 38.84,
+                    "zoom": 3
+                }
+            }
+        ],
+        "gsd": [
+            1000
+        ],
+        "instruments": [
+            "VIIRS"
+        ],
+        "platform": [
+            "NOAA-21"
+        ]
+    }
+}
