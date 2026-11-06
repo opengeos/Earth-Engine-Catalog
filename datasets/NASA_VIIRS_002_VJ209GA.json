@@ -1,0 +1,250 @@
+{
+    "type": "Collection",
+    "id": "NASA/VIIRS/002/VJ209GA",
+    "stac_version": "1.1.0",
+    "description": "The Visible Infrared Imaging Radiometer Suite (VIIRS) daily surface\nreflectance (VJ209GA) Version 2 product provides an estimate of land\nsurface reflectance from the Joint Polar Satellite System (JPSS-2) /\nNOAA-21 VIIRS sensor. Data are provided for three imagery bands\n(I1, I2, I3) at nominal 500 meter resolution (~463 meter) and nine\nmoderate-resolution bands (M1, M2, M3, M4, M5, M7, M8, M10, M11) at nominal\n1 kilometer (~926 meter) resolution. The 500 meter and 1 kilometer datasets\nare derived through resampling the native 375 meter and 750 meter VIIRS\nresolutions, respectively, in the L2 input product. These bands are\ncorrected for atmospheric conditions to provide an estimate\nof the surface spectral reflectance as it would be measured at ground level.\n\nThe data is temporally aggregated over each of the 16 possible passes per\nday. When multiple observations are present for each day, only the first\nof the highest-quality observations is included.\n\nThe band scale factors are already applied.\n\nFor additional information, visit the VIIRS [Land Product Quality\nAssessment website](https://landweb.modaps.eosdis.nasa.gov/browse?sensor=VIIRS&sat=J2).\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1657/VNP09_User_Guide_V2.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/122/VNP09_ATBD.pdf)\n\n* [General Documentation](https://www.earthdata.nasa.gov/data/catalog/lpcloud-vj209ga-002)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_VIIRS_002_VJ209GA",
+            "type": "text/html",
+            "title": "Run the example for NASA/VIIRS/002/VJ209GA in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_VIIRS_002_VJ209GA_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_VJ209GA#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/VIIRS/VJ209GA.002"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_VIIRS_002_VJ209GA.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C2817354878-LPCLOUD"
+    ],
+    "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Vermote, E., Franch, B., Claverie, M. (2023). VIIRS/JPSS2 Surface Reflectance Daily L2G Global 1km and 500m SIN Grid V002 [Data set]. NASA EOSDIS Land Processes Distributed Active Archive Center.\n",
+    "sci:doi": "10.5067/VIIRS/VJ209GA.002",
+    "version": "V002",
+    "gee:status": "ready",
+    "title": "VJ209GA: VIIRS Surface Reflectance Daily 500m and 1km",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-02-10T00:00:00Z",
+                    "2026-11-03T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "daily",
+        "nasa",
+        "noaa",
+        "noaa21",
+        "reflectance",
+        "satellite-imagery",
+        "sr",
+        "viirs",
+        "vj209ga"
+    ],
+    "providers": [
+        {
+            "name": "NASA Land SIPS",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/VIIRS/VJ209GA.002"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_VJ209GA"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "The number of source tiles that were mosaicked to create this image.\n",
+                "name": "num_tiles",
+                "type": "INT"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "RGB",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "M5",
+                            "M4",
+                            "M3"
+                        ],
+                        "max": [
+                            0.3
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 37.5,
+                    "lon": -120.5,
+                    "zoom": 6
+                }
+            }
+        ],
+        "instruments": [
+            "VIIRS"
+        ],
+        "platform": [
+            "NOAA-21"
+        ],
+        "I1": {
+            "minimum": -0.01,
+            "maximum": 1.6
+        },
+        "I2": {
+            "minimum": -0.01,
+            "maximum": 1.6
+        },
+        "I3": {
+            "minimum": -0.01,
+            "maximum": 1.6
+        },
+        "M1": {
+            "minimum": -0.01,
+            "maximum": 1.6
+        },
+        "M10": {
+            "minimum": -0.01,
+            "maximum": 1.6
+        },
+        "M11": {
+            "minimum": -0.01,
+            "maximum": 1.6
+        },
+        "M2": {
+            "minimum": -0.01,
+            "maximum": 1.6
+        },
+        "M3": {
+            "minimum": -0.01,
+            "maximum": 1.6
+        },
+        "M4": {
+            "minimum": -0.01,
+            "maximum": 1.6
+        },
+        "M5": {
+            "minimum": -0.01,
+            "maximum": 1.6
+        },
+        "M7": {
+            "minimum": -0.01,
+            "maximum": 1.6
+        },
+        "M8": {
+            "minimum": -0.01,
+            "maximum": 1.6
+        },
+        "SensorAzimuth": {
+            "minimum": -180,
+            "maximum": 180
+        },
+        "SensorZenith": {
+            "minimum": 0,
+            "maximum": 180
+        },
+        "SolarAzimuth": {
+            "minimum": -180,
+            "maximum": 180
+        },
+        "SolarZenith": {
+            "minimum": 0,
+            "maximum": 180
+        },
+        "iobs_res": {
+            "minimum": 0,
+            "maximum": 254
+        },
+        "land_water_mask": {
+            "minimum": 0,
+            "maximum": 7
+        },
+        "num_observations_1km": {
+            "minimum": 0,
+            "maximum": 127
+        },
+        "num_observations_500m": {
+            "minimum": 0,
+            "maximum": 127
+        },
+        "obscov_1km": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "obscov_500m": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "orbit_pnt": {
+            "minimum": 0,
+            "maximum": 15
+        }
+    }
+}
