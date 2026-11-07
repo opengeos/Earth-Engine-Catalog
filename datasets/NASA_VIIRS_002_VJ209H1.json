@@ -1,0 +1,568 @@
+{
+    "type": "Collection",
+    "id": "NASA/VIIRS/002/VJ209H1",
+    "stac_version": "1.1.0",
+    "description": "The 8-day Visible Infrared Imaging Radiometer Suite (VIIRS) Surface\nReflectance (VJ209H1) Version 2 composite product provides an estimate of\nland surface reflectance from the Joint Polar Satellite System (JPSS-2) /\nNOAA-21 VIIRS sensor for three imagery bands (I1, I2, I3) at nominal\n500 meter resolution (approximately 463 meter). The 500 meter dataset is\nderived through resampling the native 375 meter VIIRS resolution in the L2\ninput product. The data are corrected for atmospheric conditions such as the\neffects of molecular gases, including ozone and water vapor, and for the\neffects of atmospheric aerosols. Each pixel represents the best possible\nLevel 2G observation during an 8-day period, which is selected on the basis\nof high observation coverage, low sensor angle, the absence of clouds or\ncloud shadow, and aerosol loading. Along with the three reflectance bands,\nthis product includes a state quality assurance (QA) layer and a reflectance\nband quality layer.\n\nThe band scale factors are already applied.\n\nFor additional information, visit the VIIRS [Land Product Quality\nAssessment website](https://landweb.modaps.eosdis.nasa.gov/browse?sensor=VIIRS&sat=J2).\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1657/VNP09_User_Guide_V2.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/122/VNP09_ATBD.pdf)\n\n* [General Documentation](https://doi.org/10.5067/VIIRS/VJ209H1.002)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_VIIRS_002_VJ209H1",
+            "type": "text/html",
+            "title": "Run the example for NASA/VIIRS/002/VJ209H1 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_VIIRS_002_VJ209H1_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_VJ209H1#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/VIIRS/VJ209H1.002"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/NASA_VIIRS_002_VJ209H1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/NASA/catalog.json",
+            "type": "application/json",
+            "title": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
+    "gee:interval": {
+        "interval": 8,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C2817366221-LPCLOUD"
+    ],
+    "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
+    "gee:type": "image_collection",
+    "sci:citation": "Vermote, E., Franch, B., Claverie, M. (2023). VIIRS/JPSS2 Surface Reflectance 8-Day L3 Global 500m SIN Grid V002 [Data set]. NASA EOSDIS Land Processes Distributed Active Archive Center. [doi:10.5067/VIIRS/VJ209H1.002](https://doi.org/10.5067/VIIRS/VJ209H1.002)\n",
+    "sci:doi": "10.5067/VIIRS/VJ209H1.002",
+    "version": "V002",
+    "gee:status": "ready",
+    "title": "VJ209H1: VIIRS Surface Reflectance 8-Day L3 Global 500m",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-02-10T00:00:00Z",
+                    "2026-10-24T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "8-day",
+        "nasa",
+        "noaa",
+        "noaa21",
+        "reflectance",
+        "satellite-imagery",
+        "sr",
+        "viirs",
+        "vj209h1"
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/VIIRS/VJ209H1.002"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_VIIRS_002_VJ209H1"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "center_wavelength": 0.64,
+                "description": "500m surface reflectance band I1",
+                "gee:wavelength": "0.600 - 0.680&micro;m",
+                "name": "SurfReflect_I1",
+                "gsd": [
+                    500
+                ]
+            },
+            {
+                "center_wavelength": 0.865,
+                "description": "500m surface reflectance band I2",
+                "gee:wavelength": "0.850 - 0.880&micro;m",
+                "name": "SurfReflect_I2",
+                "gsd": [
+                    500
+                ]
+            },
+            {
+                "center_wavelength": 1.61,
+                "description": "500m surface reflectance band I3",
+                "gee:wavelength": "1.580 - 1.640&micro;m",
+                "name": "SurfReflect_I3",
+                "gsd": [
+                    500
+                ]
+            },
+            {
+                "description": "Surface Reflectance Band Quality Control (QC)",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 2,
+                            "description": "MODLAND QA bits",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Corrected product produced at ideal quality all bands\n",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Corrected product produced at less than ideal quality some\nor all bands\n",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Corrected product not produced due to cloud effects all\nbands\n",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Corrected product not produced due to other reasons some or\nall bands may be fill value [Note that a value of (11)\noverrides a value of (01)].\n",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Cloud state",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "Always set at 11. Users should use Cloud state of\nSurfReflect_State_500m.\n",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 4,
+                            "description": "Band 1 data quality four bit range",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "Highest quality",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Noisy detector",
+                                    "value": 7
+                                },
+                                {
+                                    "description": "Dead detector, data interpolated in L1B",
+                                    "value": 8
+                                },
+                                {
+                                    "description": "Solar zenith >= 86 degrees",
+                                    "value": 9
+                                },
+                                {
+                                    "description": "Solar zenith >= 85 and < 86 degrees",
+                                    "value": 10
+                                },
+                                {
+                                    "description": "Missing input",
+                                    "value": 11
+                                },
+                                {
+                                    "description": "Internal constant used in place of climatological data for\nat least one atmospheric constant\n",
+                                    "value": 12
+                                },
+                                {
+                                    "description": "Correction out of bounds, pixel constrained to extreme\nallowable value\n",
+                                    "value": 13
+                                },
+                                {
+                                    "description": "L1B data faulty",
+                                    "value": 14
+                                },
+                                {
+                                    "description": "Not processed due to deep ocean or clouds",
+                                    "value": 15
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 4,
+                            "description": "Band 2 data quality four bit range",
+                            "first_bit": 8,
+                            "values": [
+                                {
+                                    "description": "Highest quality",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Noisy detector",
+                                    "value": 7
+                                },
+                                {
+                                    "description": "Dead detector, data interpolated in L1B",
+                                    "value": 8
+                                },
+                                {
+                                    "description": "Solar zenith >= 86 degrees",
+                                    "value": 9
+                                },
+                                {
+                                    "description": "Solar zenith >= 85 and < 86 degrees",
+                                    "value": 10
+                                },
+                                {
+                                    "description": "Missing input",
+                                    "value": 11
+                                },
+                                {
+                                    "description": "Internal constant used in place of climatological data for\nat least one atmospheric constant\n",
+                                    "value": 12
+                                },
+                                {
+                                    "description": "Correction out of bounds, pixel constrained to extreme\nallowable value\n",
+                                    "value": 13
+                                },
+                                {
+                                    "description": "L1B data faulty",
+                                    "value": 14
+                                },
+                                {
+                                    "description": "Not processed due to deep ocean or clouds",
+                                    "value": 15
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Atmospheric correction performed",
+                            "first_bit": 12,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Adjacency correction performed",
+                            "first_bit": 13,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Different orbit from 500m",
+                            "first_bit": 14,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 15
+                },
+                "name": "SurfReflect_QC_500m",
+                "gsd": [
+                    500
+                ]
+            },
+            {
+                "description": "Surface Reflectance State Quality Assurance (QA)",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 2,
+                            "description": "Cloud state",
+                            "first_bit": 0,
+                            "values": [
+                                {
+                                    "description": "Clear",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Cloudy",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Mixed",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Not set, assumed clear",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Cloud shadow",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 3,
+                            "description": "Land/water flag",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "Shallow ocean",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Land",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Ocean coastlines and lake shorelines",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Shallow inland water",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Ephemeral water",
+                                    "value": 4
+                                },
+                                {
+                                    "description": "Deep inland water",
+                                    "value": 5
+                                },
+                                {
+                                    "description": "Continental/moderate ocean",
+                                    "value": 6
+                                },
+                                {
+                                    "description": "Deep ocean",
+                                    "value": 7
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Aerosol quantity: level of uncertainty in aerosol correction",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "Climatology",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Low",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Average",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Cirrus detected",
+                            "first_bit": 8,
+                            "values": [
+                                {
+                                    "description": "None",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Small",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Average",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Spare (unused)",
+                            "first_bit": 10
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Snow/ice flag",
+                            "first_bit": 12,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Pixel is adjacent to cloud",
+                            "first_bit": 13,
+                            "values": [
+                                {
+                                    "description": "No",
+                                    "value": 0
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 14
+                },
+                "name": "SurfReflect_State_500m",
+                "gsd": [
+                    500
+                ]
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "The number of source tiles that were mosaicked to create this image.",
+                "name": "num_tiles",
+                "type": "INT"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "False Color (I3, I2, I1)",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "SurfReflect_I3",
+                            "SurfReflect_I2",
+                            "SurfReflect_I1"
+                        ],
+                        "gamma": [
+                            1.4
+                        ],
+                        "max": [
+                            0.3
+                        ],
+                        "min": [
+                            0
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": -0.26,
+                    "lon": -162.64,
+                    "zoom": 4
+                }
+            }
+        ],
+        "gsd": [
+            500
+        ],
+        "instruments": [
+            "VIIRS"
+        ],
+        "platform": [
+            "NOAA-21"
+        ],
+        "SurfReflect_I1": {
+            "minimum": -0.01,
+            "maximum": 1.6
+        },
+        "SurfReflect_I2": {
+            "minimum": -0.01,
+            "maximum": 1.6
+        },
+        "SurfReflect_I3": {
+            "minimum": -0.01,
+            "maximum": 1.6
+        },
+        "SurfReflect_QC_500m": {
+            "minimum": 0,
+            "maximum": 32767
+        },
+        "SurfReflect_State_500m": {
+            "minimum": 0,
+            "maximum": 13311
+        }
+    }
+}
