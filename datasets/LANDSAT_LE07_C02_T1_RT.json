@@ -150,14 +150,14 @@
                 "center_wavelength": 11.45,
                 "description": "Low-gain Thermal Infrared 1. This band has expanded dynamic range\nand lower radiometric resolution (sensitivity), with less\nsaturation at high Digital Number (DN) values. Resampled from\n60m to 30m.\n",
                 "gee:wavelength": "10.40 - 12.50 &mu;m",
-                "gsd": 60,
+                "gsd": 30,
                 "name": "B6_VCID_1"
             },
             {
                 "center_wavelength": 11.45,
                 "description": "High-gain Thermal Infrared 1. This band has higher radiometric\nresolution (sensitivity), although it has a more restricted dynamic range.\nResampled from 60m to 30m.\n",
                 "gee:wavelength": "10.40 - 12.50 &mu;m",
-                "gsd": 60,
+                "gsd": 30,
                 "name": "B6_VCID_2"
             },
             {

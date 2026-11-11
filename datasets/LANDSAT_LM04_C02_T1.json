@@ -113,29 +113,37 @@
                 "center_wavelength": 0.55,
                 "description": "Green",
                 "gee:wavelength": "0.5 - 0.6 &mu;m",
-                "gsd": 60,
-                "name": "B1"
+                "name": "B1",
+                "gsd": [
+                    60
+                ]
             },
             {
                 "center_wavelength": 0.65,
                 "description": "Red",
                 "gee:wavelength": "0.6 - 0.7 &mu;m",
-                "gsd": 60,
-                "name": "B2"
+                "name": "B2",
+                "gsd": [
+                    60
+                ]
             },
             {
                 "center_wavelength": 0.75,
                 "description": "Near Infrared 1",
                 "gee:wavelength": "0.7 - 0.8 &mu;m",
-                "gsd": 60,
-                "name": "B3"
+                "name": "B3",
+                "gsd": [
+                    60
+                ]
             },
             {
                 "center_wavelength": 0.95,
                 "description": "Near Infrared 2",
                 "gee:wavelength": "0.8 - 1.1 &mu;m",
-                "gsd": 30,
-                "name": "B4"
+                "name": "B4",
+                "gsd": [
+                    60
+                ]
             },
             {
                 "description": "Landsat Collection 2 MSS QA Bitmask\n",
@@ -207,8 +215,10 @@
                     ],
                     "total_bit_count": 10
                 },
-                "gsd": 30,
-                "name": "QA_PIXEL"
+                "name": "QA_PIXEL",
+                "gsd": [
+                    60
+                ]
             },
             {
                 "description": "Radiometric saturation QA",
@@ -267,8 +277,10 @@
                     ],
                     "total_bit_count": 10
                 },
-                "gsd": 30,
-                "name": "QA_RADSAT"
+                "name": "QA_RADSAT",
+                "gsd": [
+                    60
+                ]
             }
         ],
         "gee:visualizations": [
@@ -306,6 +318,9 @@
                     "zoom": 6
                 }
             }
+        ],
+        "gsd": [
+            60
         ]
     }
 }

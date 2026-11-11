@@ -105,7 +105,7 @@
                 "gee:units": "1/m",
                 "name": "KD490",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
@@ -113,14 +113,14 @@
                 "gee:units": "%",
                 "name": "KD490_uncertainty",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
                 "description": "Land water mask bit.\n\n  * 0: Water\n  * 1: Land\n",
                 "name": "flags",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             }
         ],
@@ -157,7 +157,7 @@
             }
         ],
         "gsd": [
-            4000
+            4638.3
         ]
     }
 }

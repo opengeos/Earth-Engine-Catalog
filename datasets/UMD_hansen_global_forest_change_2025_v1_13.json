@@ -125,7 +125,7 @@
                 "gee:units": "%",
                 "name": "treecover2000",
                 "gsd": [
-                    30.92
+                    27.83
                 ]
             },
             {
@@ -152,7 +152,7 @@
                 },
                 "name": "loss",
                 "gsd": [
-                    30.92
+                    27.83
                 ]
             },
             {
@@ -179,14 +179,14 @@
                 },
                 "name": "gain",
                 "gsd": [
-                    30.92
+                    27.83
                 ]
             },
             {
                 "description": "Year of gross forest cover loss event. Forest loss during the study\nperiod, defined as a stand-replacement disturbance, or a change from a\nforest to non-forest state. Encoded as either 0 (no loss) or else a value\nin the range 1-25, representing loss detected primarily in the year\n2001-2025, respectively.\n",
                 "name": "lossyear",
                 "gsd": [
-                    30.92
+                    27.83
                 ]
             },
             {
@@ -195,7 +195,7 @@
                 "gee:wavelength": "0.63-0.69&micro;m",
                 "name": "first_b30",
                 "gsd": [
-                    30.92
+                    27.83
                 ]
             },
             {
@@ -204,7 +204,7 @@
                 "gee:wavelength": "0.77-0.90&micro;m",
                 "name": "first_b40",
                 "gsd": [
-                    30.92
+                    27.83
                 ]
             },
             {
@@ -213,7 +213,7 @@
                 "gee:wavelength": "1.55-1.75&micro;m",
                 "name": "first_b50",
                 "gsd": [
-                    30.92
+                    27.83
                 ]
             },
             {
@@ -222,7 +222,7 @@
                 "gee:wavelength": "2.09-2.35&micro;m",
                 "name": "first_b70",
                 "gsd": [
-                    30.92
+                    27.83
                 ]
             },
             {
@@ -231,7 +231,7 @@
                 "gee:wavelength": "0.63-0.69&micro;m",
                 "name": "last_b30",
                 "gsd": [
-                    30.92
+                    27.83
                 ]
             },
             {
@@ -240,7 +240,7 @@
                 "gee:wavelength": "0.77-0.90&micro;m",
                 "name": "last_b40",
                 "gsd": [
-                    30.92
+                    27.83
                 ]
             },
             {
@@ -249,7 +249,7 @@
                 "gee:wavelength": "1.55-1.75&micro;m",
                 "name": "last_b50",
                 "gsd": [
-                    30.92
+                    27.83
                 ]
             },
             {
@@ -258,7 +258,7 @@
                 "gee:wavelength": "2.09-2.35&micro;m",
                 "name": "last_b70",
                 "gsd": [
-                    30.92
+                    27.83
                 ]
             },
             {
@@ -289,7 +289,7 @@
                 },
                 "name": "datamask",
                 "gsd": [
-                    30.92
+                    27.83
                 ]
             }
         ],
@@ -326,7 +326,7 @@
             }
         ],
         "gsd": [
-            30.92
+            27.83
         ],
         "lossyear": {
             "minimum": 0,

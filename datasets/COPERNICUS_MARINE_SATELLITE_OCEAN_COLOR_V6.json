@@ -71,7 +71,7 @@
             "interval": [
                 [
                     "1997-01-01T00:00:00Z",
-                    "2026-03-31T00:00:00Z"
+                    "2026-09-30T00:00:00Z"
                 ]
             ]
         }
@@ -106,42 +106,42 @@
                 "description": "Number of observations from MERIS sensor",
                 "name": "MERIS_nobs",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
                 "description": "Number of observations from MODIS-A sensor",
                 "name": "MODISA_nobs",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
                 "description": "Number of observations from OLCI-A sensor",
                 "name": "OLCI-A_nobs",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
                 "description": "Number of observations from OLCI-B sensor",
                 "name": "OLCI-B_nobs",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
                 "description": "Number of observations from SeaWiFS sensor",
                 "name": "SeaWiFS_nobs",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
                 "description": "Number of observations from VIIRS sensor",
                 "name": "VIIRS_nobs",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
@@ -149,14 +149,14 @@
                 "gee:units": "mg/m^3",
                 "name": "chlor_a",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
                 "description": "Total number of observations",
                 "name": "total_nobs",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
@@ -164,7 +164,7 @@
                 "gee:units": "sr^-1",
                 "name": "Rrs_412",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
@@ -172,7 +172,7 @@
                 "gee:units": "sr^-1",
                 "name": "Rrs_443",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
@@ -180,7 +180,7 @@
                 "gee:units": "sr^-1",
                 "name": "Rrs_490",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
@@ -188,7 +188,7 @@
                 "gee:units": "sr^-1",
                 "name": "Rrs_510",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
@@ -196,7 +196,7 @@
                 "gee:units": "sr^-1",
                 "name": "Rrs_560",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
@@ -204,56 +204,56 @@
                 "gee:units": "sr^-1",
                 "name": "Rrs_665",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
                 "description": "Number of observations from MERIS sensor",
                 "name": "Rrs_MERIS_nobs",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
                 "description": "Number of observations from MODIS-A sensor",
                 "name": "Rrs_MODISA_nobs",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
                 "description": "Number of observations from OLCI-A sensor",
                 "name": "Rrs_OLCI-A_nobs",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
                 "description": "Number of observations from OLCI-B sensor",
                 "name": "Rrs_OLCI-B_nobs",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
                 "description": "Number of observations from SeaWiFS sensor",
                 "name": "Rrs_SeaWiFS_nobs",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
                 "description": "Number of observations from VIIRS sensor",
                 "name": "Rrs_VIIRS_nobs",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
                 "description": "Total number of observations from RRS sensors",
                 "name": "Rrs_total_nobs",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             }
         ],
@@ -289,7 +289,7 @@
             }
         ],
         "gsd": [
-            4000
+            4638.3
         ],
         "MERIS_nobs": {
             "minimum": 0.11,

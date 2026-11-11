@@ -71,7 +71,7 @@
             "interval": [
                 [
                     "2025-02-10T00:00:00Z",
-                    "2026-11-06T00:00:00Z"
+                    "2026-11-07T00:00:00Z"
                 ]
             ]
         }
@@ -105,7 +105,7 @@
                 "gee:units": "mg/m^3",
                 "name": "CHL",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
@@ -113,14 +113,14 @@
                 "gee:units": "%",
                 "name": "CHL_uncertainty",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
                 "description": "Land water mask bit.\n\n  * 0: Water\n  * 1: Land\n",
                 "name": "flags",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             }
         ],
@@ -157,7 +157,7 @@
             }
         ],
         "gsd": [
-            4000
+            4638.3
         ]
     }
 }

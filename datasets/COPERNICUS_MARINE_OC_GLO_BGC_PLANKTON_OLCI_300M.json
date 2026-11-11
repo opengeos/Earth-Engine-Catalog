@@ -105,7 +105,7 @@
                 "gee:units": "mg/m^3",
                 "name": "CHL",
                 "gsd": [
-                    300
+                    618.4
                 ]
             },
             {
@@ -113,14 +113,14 @@
                 "gee:units": "%",
                 "name": "CHL_uncertainty",
                 "gsd": [
-                    300
+                    618.4
                 ]
             },
             {
                 "description": "Land water mask bit.\n\n  * 0: Water\n  * 1: Land\n",
                 "name": "flags",
                 "gsd": [
-                    300
+                    618.4
                 ]
             }
         ],
@@ -157,7 +157,7 @@
             }
         ],
         "gsd": [
-            300
+            618.4
         ]
     }
 }

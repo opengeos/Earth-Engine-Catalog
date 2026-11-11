@@ -144,7 +144,7 @@
                 "gee:units": "Number of people/ha",
                 "name": "TPP_1km",
                 "gsd": [
-                    0.0009
+                    100
                 ]
             },
             {
@@ -152,7 +152,7 @@
                 "gee:units": "Number of people/ha",
                 "name": "TPP_1km_cropland",
                 "gsd": [
-                    0.0009
+                    100
                 ]
             },
             {
@@ -160,7 +160,7 @@
                 "gee:units": "Number of people/ha",
                 "name": "TPP_500m",
                 "gsd": [
-                    0.0009
+                    100
                 ]
             },
             {
@@ -168,7 +168,7 @@
                 "gee:units": "Number of people/ha",
                 "name": "TPP_500m_cropland",
                 "gsd": [
-                    0.0009
+                    100
                 ]
             }
         ],
@@ -201,7 +201,7 @@
             }
         ],
         "gsd": [
-            0.0009
+            100
         ]
     }
 }

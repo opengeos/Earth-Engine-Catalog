@@ -122,7 +122,7 @@
                 "gee:scale": 0.001,
                 "name": "emissivity_band10",
                 "gsd": [
-                    100
+                    111.32
                 ]
             },
             {
@@ -130,7 +130,7 @@
                 "gee:scale": 0.001,
                 "name": "emissivity_band11",
                 "gsd": [
-                    100
+                    111.32
                 ]
             },
             {
@@ -138,7 +138,7 @@
                 "gee:scale": 0.001,
                 "name": "emissivity_band12",
                 "gsd": [
-                    100
+                    111.32
                 ]
             },
             {
@@ -146,7 +146,7 @@
                 "gee:scale": 0.001,
                 "name": "emissivity_band13",
                 "gsd": [
-                    100
+                    111.32
                 ]
             },
             {
@@ -154,7 +154,7 @@
                 "gee:scale": 0.001,
                 "name": "emissivity_band14",
                 "gsd": [
-                    100
+                    111.32
                 ]
             },
             {
@@ -162,7 +162,7 @@
                 "gee:scale": 0.0001,
                 "name": "emissivity_sdev_band10",
                 "gsd": [
-                    100
+                    111.32
                 ]
             },
             {
@@ -170,7 +170,7 @@
                 "gee:scale": 0.0001,
                 "name": "emissivity_sdev_band11",
                 "gsd": [
-                    100
+                    111.32
                 ]
             },
             {
@@ -178,7 +178,7 @@
                 "gee:scale": 0.0001,
                 "name": "emissivity_sdev_band12",
                 "gsd": [
-                    100
+                    111.32
                 ]
             },
             {
@@ -186,7 +186,7 @@
                 "gee:scale": 0.0001,
                 "name": "emissivity_sdev_band13",
                 "gsd": [
-                    100
+                    111.32
                 ]
             },
             {
@@ -194,7 +194,7 @@
                 "gee:scale": 0.0001,
                 "name": "emissivity_sdev_band14",
                 "gsd": [
-                    100
+                    111.32
                 ]
             },
             {
@@ -203,7 +203,7 @@
                 "gee:units": "K",
                 "name": "temperature",
                 "gsd": [
-                    100
+                    111.32
                 ]
             },
             {
@@ -212,7 +212,7 @@
                 "gee:units": "K",
                 "name": "temperature_sdev",
                 "gsd": [
-                    100
+                    111.32
                 ]
             },
             {
@@ -220,7 +220,7 @@
                 "gee:scale": 0.01,
                 "name": "ndvi",
                 "gsd": [
-                    100
+                    111.32
                 ]
             },
             {
@@ -228,7 +228,7 @@
                 "gee:scale": 0.01,
                 "name": "ndvi_sdev",
                 "gsd": [
-                    100
+                    111.32
                 ]
             },
             {
@@ -236,7 +236,7 @@
                 "gee:units": "m",
                 "name": "elevation",
                 "gsd": [
-                    100
+                    111.32
                 ]
             },
             {
@@ -255,7 +255,7 @@
                 ],
                 "name": "land_water_map",
                 "gsd": [
-                    100
+                    111.32
                 ]
             },
             {
@@ -263,7 +263,7 @@
                 "gee:units": "Number per pixel",
                 "name": "num_obs",
                 "gsd": [
-                    100
+                    111.32
                 ]
             }
         ],
@@ -311,7 +311,7 @@
             }
         ],
         "gsd": [
-            100
+            111.32
         ],
         "elevation": {
             "minimum": -500,

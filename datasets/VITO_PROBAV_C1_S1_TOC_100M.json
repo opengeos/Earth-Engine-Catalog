@@ -127,7 +127,7 @@
                 "gee:wavelength": "658nm, FWHM: 82nm",
                 "name": "RED",
                 "gsd": [
-                    100
+                    110.4
                 ]
             },
             {
@@ -137,7 +137,7 @@
                 "gee:wavelength": "834nm, FWHM: 121nm",
                 "name": "NIR",
                 "gsd": [
-                    100
+                    110.4
                 ]
             },
             {
@@ -147,7 +147,7 @@
                 "gee:wavelength": "460nm, FWHM: 42nm",
                 "name": "BLUE",
                 "gsd": [
-                    100
+                    110.4
                 ]
             },
             {
@@ -157,14 +157,14 @@
                 "gee:wavelength": "1610nm, FWHM: 89nm",
                 "name": "SWIR",
                 "gsd": [
-                    100
+                    110.4
                 ]
             },
             {
                 "description": "Normalized Difference Vegetation Index",
                 "name": "NDVI",
                 "gsd": [
-                    100
+                    110.4
                 ]
             },
             {
@@ -172,7 +172,7 @@
                 "gee:units": "deg",
                 "name": "SZA",
                 "gsd": [
-                    100
+                    110.4
                 ]
             },
             {
@@ -180,7 +180,7 @@
                 "gee:units": "deg",
                 "name": "SAA",
                 "gsd": [
-                    100
+                    110.4
                 ]
             },
             {
@@ -188,7 +188,7 @@
                 "gee:units": "deg",
                 "name": "SWIRVAA",
                 "gsd": [
-                    100
+                    110.4
                 ]
             },
             {
@@ -196,7 +196,7 @@
                 "gee:units": "deg",
                 "name": "SWIRVZA",
                 "gsd": [
-                    100
+                    110.4
                 ]
             },
             {
@@ -204,7 +204,7 @@
                 "gee:units": "deg",
                 "name": "VNIRVAA",
                 "gsd": [
-                    100
+                    110.4
                 ]
             },
             {
@@ -212,7 +212,7 @@
                 "gee:units": "deg",
                 "name": "VNIRVZA",
                 "gsd": [
-                    100
+                    110.4
                 ]
             },
             {
@@ -326,7 +326,7 @@
                 },
                 "name": "SM",
                 "gsd": [
-                    100
+                    110.4
                 ]
             },
             {
@@ -334,7 +334,7 @@
                 "gee:units": "min",
                 "name": "TIME",
                 "gsd": [
-                    100
+                    110.4
                 ]
             }
         ],
@@ -436,7 +436,7 @@
             }
         ],
         "gsd": [
-            100
+            110.4
         ]
     }
 }

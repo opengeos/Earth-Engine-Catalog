@@ -105,7 +105,7 @@
                 "gee:units": "1/m",
                 "name": "BBP",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
@@ -113,7 +113,7 @@
                 "gee:units": "%",
                 "name": "BBP_uncertainty",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
@@ -121,7 +121,7 @@
                 "gee:units": "1/m",
                 "name": "CDM",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
@@ -129,14 +129,14 @@
                 "gee:units": "%",
                 "name": "CDM_uncertainty",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
                 "description": "Land water mask bit.\n\n  * 0: Water\n  * 1: Land\n",
                 "name": "flags",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             }
         ],
@@ -173,7 +173,7 @@
             }
         ],
         "gsd": [
-            4000
+            4638.3
         ]
     }
 }

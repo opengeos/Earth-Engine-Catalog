@@ -120,7 +120,7 @@
                 "gee:units": "K",
                 "name": "sea_surface_temperature",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
@@ -129,7 +129,7 @@
                 "gee:units": "K",
                 "name": "dt_analysis",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
@@ -137,7 +137,7 @@
                 "gee:units": "m/s",
                 "name": "wind_speed",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
@@ -145,7 +145,7 @@
                 "gee:scale": 0.01,
                 "name": "sea_ice_fraction",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
@@ -154,21 +154,21 @@
                 "gee:scale": 0.01,
                 "name": "aerosol_dynamic_indicator",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
                 "description": "Note, the native Pathfinder processing system returns\nquality levels ranging from 0 to 7 (7 is best quality; -1 represents\nmissing data) and has been converted to the extent possible into\nthe six levels required by the GDS2 (ranging from 0 to 5, where 5\nis best). Below is the conversion table:\n\n- GDS2 required quality_level 5 = native Pathfinder quality\n  level 7 == best_quality\n\n- GDS2 required quality_level 4 = native Pathfinder quality\n  level 4-6 == acceptable_quality\n\n- GDS2 required quality_level 3 = native Pathfinder quality\n  level 2-3 == low_quality\n\n- GDS2 required quality_level 2 = native Pathfinder\n  quality level 1 == worst_quality\n\n- GDS2 required quality_level 1 = native Pathfinder quality\n  level 0 = bad_data\n\n- GDS2 required quality_level 0 = native Pathfinder quality\n  level -1 = missing_data\n\nThe original Pathfinder quality level is recorded in the optional\nvariable pathfinder_quality_level.\n",
                 "name": "quality_level",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
                 "description": "The native Pathfinder processing system quality levels,\nranging from 0 to 7, where 0 is worst and 7 is best.\n",
                 "name": "pathfinder_quality_level",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             },
             {
@@ -251,7 +251,7 @@
                 },
                 "name": "l2p_flags",
                 "gsd": [
-                    4000
+                    4638.3
                 ]
             }
         ],
@@ -356,7 +356,7 @@
             }
         ],
         "gsd": [
-            4000
+            4638.3
         ],
         "aerosol_dynamic_indicator": {
             "minimum": -127,
