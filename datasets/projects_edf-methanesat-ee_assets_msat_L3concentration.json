@@ -69,7 +69,17 @@
     "gee:type": "image_collection",
     "gee:unusual_terms_of_use": true,
     "gee:user_uploaded": true,
-    "sci:citation": "Chulakadabba, A., Sargent, M., Lauvaux, T., Benmergui, J. S., Franklin, J.\nE., Chan Miller, C., Wilzewski, J. S., Roche, S., Conway, E., Souri, A. H.,\nSun, K., Luo, B., Hawthrone, J., Samra, J., Daube, B. C., Liu, X., Chance,\nK., Li, Y., Gautam, R., Omara, M., Rutherford, J. S., Sherwin, E. D.,\nBrandt, A., and Wofsy, S. C. 2023. Methane point source quantification using\nMethaneAIR: a new airborne imaging spectrometer, Atmos. Meas. Tech., 16,\n5771-5785.\n[doi:10.5194/amt-16-5771-2023](https://doi.org/10.5194/amt-16-5771-2023),\n",
+    "sci:citation": "Chulakadabba, A., Sargent, M., Lauvaux, T., Benmergui, J. S., Franklin, J.\nE., Chan Miller, C., Wilzewski, J. S., Roche, S., Conway, E., Souri, A. H.,\nSun, K., Luo, B., Hawthrone, J., Samra, J., Daube, B. C., Liu, X., Chance,\nK., Li, Y., Gautam, R., Omara, M., Rutherford, J. S., Sherwin, E. D.,\nBrandt, A., and Wofsy, S. C. 2023. Methane point source quantification using\nMethaneAIR: a new airborne imaging spectrometer, Atmos. Meas. Tech., 16,\n5771-5785.\n[doi:10.5194/amt-16-5771-2023](https://doi.org/10.5194/amt-16-5771-2023)\n",
+    "sci:publications": [
+        {
+            "citation": "Chan Miller, C., Roche, S., Wilzewski, J. S., Liu, X., Chance, K.,\nSouri, A. H., Conway, E., Luo, B., Samra, J., Hawthorne, J., Sun, K.,\nStaebell, C., Chulakadabba, A., Sargent, M., Benmergui, J. S., Franklin,\nJ. E., Daube, B. C., Li, Y., Laughner, J. L., Baier, B. C., Gautam, R.,\nOmara, M., and Wofsy, S. C. 2024. Methane retrieval from MethaneAIR\nusing the CO2 proxy approach: a demonstration for the upcoming\nMethaneSAT mission, Atmos. Meas. Tech., 17, 5429-5454.\n[doi:10.5194/amt-17-5429-2024](https://doi.org/10.5194/amt-17-5429-2024)\n",
+            "doi": "10.5194/amt-17-5429-2024"
+        },
+        {
+            "citation": "Sun, K., Zhu, L., Cady-Pereira, K., Chan Miller, C., Chance, K.,\nClarisse, L., Coheur, P.-F., Gonz&aacute;lez Abad, G., Huang, G., Liu,\nX., Van Damme, M., Yang, K., and Zondlo, M. 2018. A physics-based\napproach to oversample multi-satellite, multispecies observations to a\ncommon grid, Atmos. Meas. Tech., 11, 6679-6701.\n[doi:10.5194/amt-11-6679-2018](https://doi.org/10.5194/amt-11-6679-2018)\n",
+            "doi": "10.5194/amt-11-6679-2018"
+        }
+    ],
     "version": "1.0.0",
     "title": "MethaneSAT L3 Concentration V1.0.0",
     "extent": {
@@ -131,6 +141,7 @@
             },
             {
                 "description": "Ratio of solar radiance at the ground to observed radiance at the sensor.",
+                "gee:units": "Fraction",
                 "name": "albedo",
                 "gsd": [
                     46.38
