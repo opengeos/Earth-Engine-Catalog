@@ -1,0 +1,195 @@
+{
+    "type": "Collection",
+    "id": "JRC/GFC2020_subtypes/V2",
+    "stac_version": "1.1.0",
+    "description": "The global map of forest types provides a spatially explicit representation \nof primary forest, naturally regenerating forest and planted forest (including \nplantation forest) for the year 2020 at 10m spatial resolution. The base layer \nfor mapping these forest types is the extent of forest cover of version 4 of \nthe Global Forest Cover map for year 2020 (JRC GFC 2020). The definitions \nof the forest types follow the definitions of the Regulation from the European \nUnion \"on the making available on the Union market and the export from the Union \nof certain commodities and products associated with deforestation and forest \ndegradation\" (EUDR, Regulation (EU) 2023/1115), which are similar to \ncharacteristics and specific forest categories from the FAO Global Forest \nResources Assessment. The year 2020 corresponds to the cut-off date of the EUDR. \n\nIn the context of the EUDR, the global forest type map can be used as a \nnon-mandatory, non-exclusive and not legally binding source of information, \nnamely in the phase of risk assessment by operators and traders. Further \ninformation about the map and its use can be found on the EU Observatory on \nDeforestation and Forest Degradation. The definition of forest degradation \nunder the EUDR implies that for year 2020 it is only necessary to assess the \npresence of primary forests and naturally regenerating forests; all other \nforests, including plantation forests, were mapped under class \"planted forests\". \nClass \"other wooded land\" exists only outside the extent of forest cover in the \nGlobal Forest Cover map for year 2020 and is therefore not mapped in GFT 2020. \n\nBuilding on version 4 of the 2020 Global Forest Cover dataset (GFC2020 V4), \nthe workflow proceeds in two main steps. First, the extent of planted and \nplantation forests is identified by integrating global forest-type datasets with \nwall-to-wall maps of forest management. This step also includes temporarily \nunstocked forest land resulting from harvesting operations, using historical \ntime series of tree cover, forest loss, and tree-height dynamics. Second, the \nextent of primary forests is delineated by combining datasets on intact forests \nand protected areas, while excluding areas where anthropogenic disturbances \nhave been recorded over the past 20 to 30 years. The results of these two steps \nare harmonized to classify all forest areas mapped in GFC2020 V4 that are \nneither primary nor planted forests as naturally regenerating forests, followed \nby the application of a minimum mapping unit of 0.5 hectares to each forest type. \n\nThe main data layers that are used to delineate primary\nforests in GFT 2020 are:\n\n1. Global maps of forest typology and management in 2020 \n1. Map of undisturbed tropical mangroves in 2020 and degradation and\ndeforestation in tropical moist forests from 1990 to 2020 (from JRC-TMF)\n1. Deforestation alerts (RADD) up to end of 2020\n1. Map of Intact Forest Landscapes 2020\n1. World Database on Protected Areas\n1. The European Primary Forest Dataset from Sabatini et al. 2021\n1. Global tree cover loss from 2001 to 2020 in combination with the map of\ndrivers of global forest loss\n1. A map on global mining land use and tree crop commodity maps\n\nThe main layers to map planted forests (including plantation forests) are:\n\n1. The WRI Spatial Database on Planted Trees (version 3)\n1. Maps of global forest typology and management in 2020 \n1. 2018-2024 time series of global canopy heights \n1. Global tree cover in 2000 and loss from 2001 to 2020\n1. Global drivers of forest loss\n1. Global natural forests 2020\n\n\nThe global input layers and mapping approach of GFT 2020 version 2 will be \ndescribed in a separate technical report, expected to be released by December \n2026. A technical report ([Bourgoin et al. 2026](https://publications.jrc.ec.europa.eu/repository/handle/JRC146622)) \ndescribes the mapping approach for the first version of GFT 2020 (version 1). \n\n\nFor a list of known issues please refer to\n[this website](https://forobs.jrc.ec.europa.eu/GFT).\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JRC/JRC_GFC2020_subtypes_V2",
+            "type": "text/html",
+            "title": "Run the example for JRC/GFC2020_subtypes/V2 in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/JRC/JRC_GFC2020_subtypes_V2_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GFC2020_subtypes_V2#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "latest-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GFC2020_subtypes_V2.json",
+            "type": "application/json",
+            "title": "JRC/GFC2020_subtypes/V2"
+        },
+        {
+            "rel": "predecessor-version",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GFC2020_subtypes_V1.json",
+            "type": "application/json",
+            "title": "JRC/GFC2020_subtypes/V1"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/JRC_GFC2020_subtypes_V2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/JRC/catalog.json",
+            "type": "application/json",
+            "title": "JRC"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "forest-biomass"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "The data may be used by anyone, anywhere, anytime without permission,\nlicense or royalty payment. Attribution using the recommended citation is\nrequested.\n",
+    "gee:type": "image",
+    "gee:user_uploaded": true,
+    "sci:citation": "Bourgoin, Clement; Achard, Frederic; Beuchle, Rene; Carboni, Silvia; \nCarreiras, Joao; Korosuo, Anu; Rotllan-Puig, Xavier; Simonetti, Dario; \nColditz, Rene (2026): Global map\nof forest types 2020 - version 2. European Commission, Joint Research Centre\n(JRC). [Dataset]. [doi:10.2905/JRC.NP3B8MG](https://doi.org/10.2905/JRC.NP3B8MG). \nPID: [https://data.jrc.ec.europa.eu/dataset/07231b6b-23da-4f49-8132-481f241c97e3](https://data.jrc.ec.europa.eu/dataset/07231b6b-23da-4f49-8132-481f241c97e3)\n",
+    "sci:publications": [
+        {
+            "citation": "Bourgoin, C., Verhegghen, A., Ameztoy, I., Beuchle, R., Carboni, S. et al.,\nMaps of Global Forest Cover 2020 Version 3 and Global Forest Type 2020\nVersion 1 Supporting the EU Deforestation Regulation - Methodology,\nAccuracy Assessment and Comparison, Publications Office of the European\nUnion, Luxembourg, 2026,\n[https://data.europa.eu/doi/10.2760/9982436](https://data.europa.eu/doi/10.2760/9982436),\nJRC146622.\n"
+        }
+    ],
+    "version": "V2",
+    "title": "EC JRC global map of forest types 2020, V2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    "2020-12-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "eudr",
+        "forest",
+        "forest-biomass",
+        "jrc",
+        "landcover",
+        "primary-forest"
+    ],
+    "providers": [
+        {
+            "name": "Joint Research Centre, European Commission",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://forest-observatory.ec.europa.eu/forest/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/JRC_GFC2020_subtypes_V2"
+        }
+    ],
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Global forest types 2020",
+                "gee:classes": [
+                    {
+                        "color": "78c679",
+                        "description": "Naturally regenerating forest",
+                        "value": 1
+                    },
+                    {
+                        "color": "006837",
+                        "description": "Primary forest",
+                        "value": 10
+                    },
+                    {
+                        "color": "cc6600",
+                        "description": "Planted/Plantation forest",
+                        "value": 20
+                    }
+                ],
+                "name": "Map",
+                "gsd": [
+                    10
+                ]
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "GFT",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "Map"
+                        ],
+                        "max": [
+                            20
+                        ],
+                        "min": [
+                            1
+                        ],
+                        "palette": [
+                            "78c679",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "006837",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "000000",
+                            "cc6600"
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 0,
+                    "lon": 0,
+                    "zoom": 2
+                }
+            }
+        ],
+        "gsd": [
+            10
+        ]
+    }
+}
