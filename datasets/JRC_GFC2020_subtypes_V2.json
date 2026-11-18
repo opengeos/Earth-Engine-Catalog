@@ -59,10 +59,8 @@
     "gee:categories": [
         "forest-biomass"
     ],
-    "gee:status": "beta",
     "gee:terms_of_use": "The data may be used by anyone, anywhere, anytime without permission,\nlicense or royalty payment. Attribution using the recommended citation is\nrequested.\n",
     "gee:type": "image",
-    "gee:user_uploaded": true,
     "sci:citation": "Bourgoin, Clement; Achard, Frederic; Beuchle, Rene; Carboni, Silvia; \nCarreiras, Joao; Korosuo, Anu; Rotllan-Puig, Xavier; Simonetti, Dario; \nColditz, Rene (2026): Global map\nof forest types 2020 - version 2. European Commission, Joint Research Centre\n(JRC). [Dataset]. [doi:10.2905/JRC.NP3B8MG](https://doi.org/10.2905/JRC.NP3B8MG). \nPID: [https://data.jrc.ec.europa.eu/dataset/07231b6b-23da-4f49-8132-481f241c97e3](https://data.jrc.ec.europa.eu/dataset/07231b6b-23da-4f49-8132-481f241c97e3)\n",
     "sci:publications": [
         {
@@ -70,6 +68,7 @@
         }
     ],
     "version": "V2",
+    "gee:status": "ready",
     "title": "EC JRC global map of forest types 2020, V2",
     "extent": {
         "spatial": {
