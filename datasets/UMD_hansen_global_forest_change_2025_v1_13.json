@@ -183,7 +183,7 @@
                 ]
             },
             {
-                "description": "Year of gross forest cover loss event. Forest loss during the study\nperiod, defined as a stand-replacement disturbance, or a change from a\nforest to non-forest state. Encoded as either 0 (no loss) or else a value\nin the range 1-25, representing loss detected primarily in the year\n2001-2025, respectively.\n",
+                "description": "Year of gross forest cover loss event. Forest loss during the study\nperiod, defined as a stand-replacement disturbance, or a change from a\nforest to non-forest state. Encoded as a value in the range 1-25,\nrepresenting loss detected primarily in the years 2001-2025,\nrespectively. Pixels with no detected loss (0 in the downloadable\nsource data) are masked.\n",
                 "name": "lossyear",
                 "gsd": [
                     27.83
@@ -329,7 +329,7 @@
             27.83
         ],
         "lossyear": {
-            "minimum": 0,
+            "minimum": 1,
             "maximum": 25
         },
         "treecover2000": {
