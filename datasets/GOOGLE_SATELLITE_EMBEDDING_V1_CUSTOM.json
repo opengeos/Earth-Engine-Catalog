@@ -1,0 +1,438 @@
+{
+    "type": "Collection",
+    "id": "GOOGLE/SATELLITE_EMBEDDING/V1/CUSTOM",
+    "stac_version": "1.1.0",
+    "description": "This dataset folder contains the Custom Satellite Embeddings sample suite, a\ncurated set of analysis-ready sub-annual geospatial embeddings produced by\nAlphaEarth Foundations for specific regions and use cases. While the\n[global annual Satellite Embedding dataset](https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL#description)\nsummarizes surface conditions over a full calendar year, Custom Satellite\nEmbeddings are generated for custom sub-annual time windows such as monthly,\nseasonal, non-calendar-year-annual, or event-specific intervals.\n[Read more](https://mapsplatform.google.com/resources/blog/introducing-custom-satellite-embeddings-powered-by-alphaearth-foundations/)\nabout Custom Satellite Embeddings and express interest\n[here](https://mapsplatform.google.com/lp/geospatial-analytics-signup/).\n\nEach sample dataset in this folder is published as its own Earth Engine\n`ImageCollection` with a consistent geographic footprint and temporal cadence,\nand can be loaded directly using its `ImageCollection` ID in the table below.\nNote that time intervals in the table use an inclusive start time and an\nexclusive end time. The underlying Cloud-Optimized GeoTIFFs and manifest files\nare also available in Google Cloud Storage at\n`gs://alphaearth_foundations_custom/custom_satellite_embedding/v1/`. Read more\nin the [README](https://developers.google.com/earth-engine/guides/custom_embedding_samples_on_gcs_readme).\n\n| Sample Dataset | Earth Engine ImageCollection ID | Description and Temporal Coverage |\n| :--- | :--- | :--- |\n| Corcoran City Agricultural Change | `GOOGLE/SATELLITE_EMBEDDING/V1/CUSTOM/CORCORAN_CITY_2026_AGRICULTURAL_CHANGE` | Winter bare soil (Dec 15, 2025 &ndash; Feb 15, 2026) and spring peak greenness (Mar 15 &ndash; May 15, 2026) embeddings capturing agricultural crop dynamics over two seasonal windows across Corcoran and the surrounding agricultural region in California, USA. |\n| Futaleuf&uacute; Argentina Fire Scar | `GOOGLE/SATELLITE_EMBEDDING/V1/CUSTOM/FUTALEUFU_ARGENTINA_2026_FIRE_SCAR` | Pre-fire (Dec 1&ndash;31, 2025) and post-fire (Mar 1&ndash;31, 2026) embeddings capturing wildfire burn scar extent and forest canopy disturbance from the 2026 Los Alerces Wildfire across Los Alerces National Park and the surrounding region in Futaleuf&uacute; Department, Chubut Province, Argentina. |\n| King County Monthly | `GOOGLE/SATELLITE_EMBEDDING/V1/CUSTOM/KING_COUNTY_2025_MONTHLY` | Calendar-month embeddings for the King County administrative area in Washington, USA, for the first six months of 2025, covering diverse urban city infrastructure and forested land. |\n| Meloland California Crop Cycles | `GOOGLE/SATELLITE_EMBEDDING/V1/CUSTOM/MELOLAND_CALIFORNIA_2026_CROP_CYCLES` | Six sequential monthly (15th to 15th) embedding time steps (mid-November 2025 through mid-May 2026) tracking multi-crop rotation cycles across Meloland and surrounding agricultural fields in the Imperial Valley, California, USA. |\n| Pacific Palisades Fire Scar | `GOOGLE/SATELLITE_EMBEDDING/V1/CUSTOM/PACIFIC_PALISADES_2025_FIRE` | Pre-fire (Dec 7, 2024 &ndash; Jan 7, 2025) and post-fire (Jan 7 &ndash; Feb 7, 2025) 31-day embeddings capturing Palisades Fire wildfire impact and land cover change across Pacific Palisades and surrounding coastal hills in Los Angeles, California, USA. |\n| Theewaterskloof Dam Water Change | `GOOGLE/SATELLITE_EMBEDDING/V1/CUSTOM/THEEWATERSKLOOF_DAM_2026_WATER_CHANGE` | Dry-season (Jan 1&ndash;31, 2026) and wet-season recharge (Apr 15 &ndash; May 15, 2026) embeddings capturing reservoir water surface area changes at Theewaterskloof Dam in Theewaterskloof Local Municipality, South Africa. |\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/GOOGLE/GOOGLE_SATELLITE_EMBEDDING_V1_CUSTOM",
+            "type": "text/html",
+            "title": "Run the example for GOOGLE/SATELLITE_EMBEDDING/V1/CUSTOM in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/GOOGLE/GOOGLE_SATELLITE_EMBEDDING_V1_CUSTOM_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_CUSTOM#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GOOGLE/GOOGLE_SATELLITE_EMBEDDING_V1_CUSTOM.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/GOOGLE/catalog.json",
+            "type": "application/json",
+            "title": "GOOGLE"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "satellite-imagery"
+    ],
+    "gee:status": "beta",
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)\n\nThis collection of datasets is licensed under\n[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) and requires\nthe following attribution text: \"Custom Satellite Embeddings from\nAlphaEarth Foundations are produced by Google and Google DeepMind.\" Use\nof these public datasets is subject to the\n[Google Cloud Acceptable Use Policy](https://cloud.google.com/terms/aup).\n",
+    "gee:type": "folder",
+    "sci:citation": "Brown, C. F., Kazmierski, M. R., Pasquarella, V. J., Rucklidge, W. J.,\nSamsikova, M., Zhang, C., Shelhamer, E., Lahera, E., Wiles, O.,\nIlyushchenko, S., Gorelick, N., Zhang, L. L., Alj, S., Schechter, E.,\nAskay, S., Guinan, O., Moore, R., Boukouvalas, A., &amp; Kohli, P. (2025).\nAlphaEarth Foundations: An embedding field model for accurate and\nefficient global mapping from sparse label data. arXiv preprint\narXiv:2507.22291. [doi:10.48550/arXiv.2507.22291](https://doi.org/10.48550/arXiv.2507.22291)\n",
+    "version": "1",
+    "title": "Custom Satellite Embeddings Samples",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2024-12-07T00:00:00Z",
+                    "2026-05-15T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC-BY-4.0",
+    "keywords": [
+        "embeddings",
+        "google",
+        "landsat-derived",
+        "satellite-imagery",
+        "sentinel1-derived",
+        "sentinel2-derived"
+    ],
+    "providers": [
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://earthengine.google.com/"
+        },
+        {
+            "name": "Google DeepMind",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://deepmind.google/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_CUSTOM"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "The sample dataset name.",
+                "name": "DATASET",
+                "type": "STRING"
+            },
+            {
+                "description": "The dataset version.",
+                "name": "DATASET_VERSION",
+                "type": "STRING"
+            },
+            {
+                "description": "Exclusive end date of the time interval covered by the image (YYYY-MM-DD).",
+                "name": "END_DATE",
+                "type": "STRING"
+            },
+            {
+                "description": "Unique identifier of the image within the dataset.",
+                "name": "IMAGE_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "The version string uniquely identifying the model version used to produce the image.",
+                "name": "MODEL_VERSION",
+                "type": "STRING"
+            },
+            {
+                "description": "The version string uniquely identifying the model data processing software used to produce the image.",
+                "name": "PROCESSING_SOFTWARE_VERSION",
+                "type": "STRING"
+            },
+            {
+                "description": "Inclusive start date of the time interval covered by the image (YYYY-MM-DD).",
+                "name": "START_DATE",
+                "type": "STRING"
+            },
+            {
+                "description": "The UTM zone of the coordinate reference system used to produce the image.",
+                "name": "UTM_ZONE",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "Corcoran City Agricultural Change - A01, A16, A09",
+                "image_visualization": {
+                    "band_vis": {
+                        "bands": [
+                            "A01",
+                            "A16",
+                            "A09"
+                        ],
+                        "max": [
+                            0.3
+                        ],
+                        "min": [
+                            -0.3
+                        ]
+                    }
+                },
+                "lookat": {
+                    "lat": 36.1,
+                    "lon": -119.56,
+                    "zoom": 12
+                }
+            }
+        ],
+        "gsd": [
+            10
+        ],
+        "A00": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A01": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A02": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A03": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A04": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A05": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A06": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A07": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A08": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A09": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A10": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A11": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A12": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A13": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A14": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A15": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A16": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A17": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A18": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A19": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A20": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A21": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A22": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A23": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A24": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A25": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A26": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A27": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A28": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A29": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A30": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A31": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A32": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A33": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A34": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A35": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A36": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A37": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A38": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A39": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A40": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A41": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A42": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A43": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A44": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A45": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A46": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A47": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A48": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A49": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A50": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A51": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A52": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A53": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A54": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A55": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A56": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A57": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A58": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A59": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A60": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A61": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A62": {
+            "minimum": -1,
+            "maximum": 1
+        },
+        "A63": {
+            "minimum": -1,
+            "maximum": 1
+        }
+    }
+}

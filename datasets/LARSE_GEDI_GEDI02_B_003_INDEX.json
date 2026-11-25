@@ -1,0 +1,145 @@
+{
+    "type": "Collection",
+    "id": "LARSE/GEDI/GEDI02_B_003_INDEX",
+    "stac_version": "1.1.0",
+    "description": "This is a feature collection created from the geometries of L2B tables in\n[LARSE/GEDI/GEDI02_B_003](LARSE_GEDI_GEDI02_B_003). Each feature is\na polygon footprint of a source table with its asset ID and start/end\ntimestamps.\n\nPlease see the [User\nGuide](https://lpdaac.usgs.gov/documents/2442/GEDI02_User_Guide_V3.pdf)\nfor more information.\n\nThe Global Ecosystem Dynamics Investigation [GEDI](https://gedi.umd.edu/)\nmission aims to characterize ecosystem structure and dynamics to enable\nradically improved quantification and understanding of the Earth's carbon cycle\nand biodiversity. The GEDI instrument, attached to the International Space\nStation (ISS), collects data globally between 51.6&deg; N and 51.6&deg; S\nlatitudes at the highest resolution and densest sampling of the 3-dimensional\nstructure of the Earth. The GEDI instrument consists of three lasers producing\na total of eight beam ground transects, which instantaneously sample eight\n~25 m footprints spaced approximately every 60 m along-track. No data were\nacquired during the ISS hibernation period from March 17, 2023, to April 24,\n2024; operations resumed on April 26, 2024.\n\nProduct         | Description\n:-------------- | :------------------------------------------------------------\nL2A Vector      | [LARSE/GEDI/GEDI02_A_003](LARSE_GEDI_GEDI02_A_003)\nL2A table index | [LARSE/GEDI/GEDI02_A_003_INDEX](LARSE_GEDI_GEDI02_A_003_INDEX)\nL2B Vector      | [LARSE/GEDI/GEDI02_B_003](LARSE_GEDI_GEDI02_B_003)\nL2B table index | [LARSE/GEDI/GEDI02_B_003_INDEX](LARSE_GEDI_GEDI02_B_003_INDEX)\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+            "type": "application/json",
+            "title": "Google Earth Engine Catalog"
+        },
+        {
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/LARSE/LARSE_GEDI_GEDI02_B_003_INDEX",
+            "type": "text/html",
+            "title": "Run the example for LARSE/GEDI/GEDI02_B_003_INDEX in the Earth Engine Code Editor",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://developers.google.com/earth-engine/datasets/images/LARSE/LARSE_GEDI_GEDI02_B_003_INDEX_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/LARSE_GEDI_GEDI02_B_003_INDEX#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "self",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LARSE/LARSE_GEDI_GEDI02_B_003_INDEX.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LARSE/catalog.json",
+            "type": "application/json",
+            "title": "LARSE"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/version/v1.2.0/schema.json"
+    ],
+    "gee:categories": [
+        "forest-biomass"
+    ],
+    "gee:skip_featureview_generation": true,
+    "gee:status": "beta",
+    "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy]\n(https://www.earthdata.nasa.gov/engage/open-data-services-and-software/data-and-information-policy)\nfor additional information.\n",
+    "gee:type": "table",
+    "sci:citation": "Dubayah, R., H. Tang, J. Armston, S. Luthcke, M. Hofton, J. Blair. GEDI L2B\nCanopy Cover and Vertical Profile Metrics Data Global Footprint Level V003.\n2026, distributed by NASA EOSDIS Land Processes DAAC,\n[doi:10.5067/GEDI/GEDI02_B.003](https://doi.org/10.5067/GEDI/GEDI02_B.003).\nAccessed YYYY-MM-DD.\n",
+    "sci:doi": "10.5067/GEDI/GEDI02_B.003",
+    "version": "3",
+    "title": "GEDI L2B Table Index (Version 3)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -51.6,
+                    180,
+                    51.6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-04-04T00:00:00Z",
+                    "2025-09-04T00:30:53Z"
+                ]
+            ]
+        }
+    },
+    "license": "other",
+    "keywords": [
+        "elevation",
+        "forest-biomass",
+        "gedi",
+        "larse",
+        "nasa",
+        "table",
+        "tree-cover",
+        "usgs"
+    ],
+    "providers": [
+        {
+            "name": "Indexing: Google and USFS Laboratory for Applications of Remote Sensing in Ecology (LARSE)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.fs.usda.gov/"
+        },
+        {
+            "name": "NASA GEDI mission, accessed through the USGS LP DAAC",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://doi.org/10.5067/GEDI/GEDI02_B.003"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/LARSE_GEDI_GEDI02_B_003_INDEX"
+        }
+    ],
+    "summaries": {
+        "gee:schema": [
+            {
+                "description": "GEDI L2B table asset ID",
+                "name": "table_id",
+                "type": "STRING"
+            },
+            {
+                "description": "GEDI L2B table start time in ISO 8601 format",
+                "name": "time_start",
+                "type": "STRING"
+            },
+            {
+                "description": "GEDI L2B table end time in ISO 8601 format",
+                "name": "time_end",
+                "type": "STRING"
+            }
+        ],
+        "gee:visualizations": [
+            {
+                "display_name": "preview",
+                "lookat": {
+                    "lat": -5,
+                    "lon": -60,
+                    "zoom": 4
+                },
+                "table_visualization": {
+                    "color": "black",
+                    "point_size": 1
+                }
+            }
+        ]
+    }
+}
